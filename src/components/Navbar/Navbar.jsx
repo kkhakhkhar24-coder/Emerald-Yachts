@@ -1224,6 +1224,22 @@ const Navbar = () => {
               </NavLink>
 
               <NavLink
+                to="/celebrity-cruises/ships"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Celebrity Cruise Ships: Complete Fleet Guide
+              </NavLink>
+
+              <NavLink
+                to="/celebrity-cruises/staterooms-suites"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Celebrity Staterooms and Suites Guide
+              </NavLink>
+
+              <NavLink
                 to="/celebrity-cruises/ships/celebrity-beyond"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -1247,7 +1263,7 @@ const Navbar = () => {
                 Celebrity Edge Cruise Ship Guide
               </NavLink>
 
-               {/* <NavLink
+              {/* <NavLink
                 to="/celebrity-cruises/edge-vs-solstice-series"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -2450,6 +2466,22 @@ const Navbar = () => {
             </NavLink>
 
             <NavLink
+              to="/celebrity-cruises/ships"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Celebrity Cruise Ships: Complete Fleet Guide
+            </NavLink>
+
+            <NavLink
+              to="/celebrity-cruises/staterooms-suites"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Celebrity Staterooms and Suites Guide
+            </NavLink>
+
+            <NavLink
               to="/celebrity-cruises/ships/celebrity-beyond"
               className="nav-dropdown-single"
               onClick={toggleMenu}
@@ -2466,14 +2498,14 @@ const Navbar = () => {
             </NavLink>
 
             <NavLink
-                to="/celebrity-cruises/ships/celebrity-edge"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Celebrity Edge Cruise Ship Guide
-              </NavLink>
+              to="/celebrity-cruises/ships/celebrity-edge"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Celebrity Edge Cruise Ship Guide
+            </NavLink>
 
-               {/* <NavLink
+            {/* <NavLink
                 to="/celebrity-cruises/edge-vs-solstice-series"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}

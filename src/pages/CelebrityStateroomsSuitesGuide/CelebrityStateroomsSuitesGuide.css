@@ -1,0 +1,5392 @@
+/* =============================================================
+   CelebrityStateroomsSuites.css
+   Self-contained styles for "Celebrity Staterooms and Suites
+   Guide" page. Fully responsive (desktop → mobile).
+   Prefix: cess-
+   ============================================================= */
+
+:root {
+    --cess-navy: #274472;
+    --cess-navy-dark: #0f1c2e;
+    --cess-accent: #274472;
+    --cess-accent-light: #3b82f6;
+    --cess-bg-white: #ffffff;
+    --cess-bg-soft: #e2e8f0;
+    --cess-text-body: #4a5568;
+    --cess-text-muted: #64748b;
+    --cess-border: rgba(39, 68, 114, 0.12);
+    --cess-radius-lg: 20px;
+    --cess-radius-md: 12px;
+    --cess-shadow-soft: 0 24px 60px rgba(15, 28, 46, 0.12);
+    --cess-font: 'Montserrat', sans-serif;
+    --cess-heading-font: 'Playfair Display', serif;
+}
+
+.cess-hero-section h1,
+.cess-hero-section h2,
+.cess-hero-section h3,
+.cess-intro-section h1,
+.cess-intro-section h2,
+.cess-intro-section h3,
+.cess-toc-section h1,
+.cess-toc-section h2,
+.cess-toc-section h3,
+.cess-different-section h1,
+.cess-different-section h2,
+.cess-different-section h3,
+.cess-feature-section h1,
+.cess-feature-section h2,
+.cess-feature-section h3,
+.cess-simple-section h1,
+.cess-simple-section h2,
+.cess-simple-section h3,
+.cess-triple-section h1,
+.cess-triple-section h2,
+.cess-triple-section h3,
+.cess-table-section h1,
+.cess-table-section h2,
+.cess-table-section h3,
+.cess-value-section h1,
+.cess-value-section h2,
+.cess-value-section h3,
+.cess-takeaways-section h1,
+.cess-takeaways-section h2,
+.cess-takeaways-section h3,
+.cess-faq-section h1,
+.cess-faq-section h2,
+.cess-faq-section h3,
+.cess-cta-section h1,
+.cess-cta-section h2,
+.cess-cta-section h3,
+.cess-cta-redesign-section h1,
+.cess-cta-redesign-section h2,
+.cess-cta-redesign-section h3,
+.cess-expert-insight-section h1,
+.cess-expert-insight-section h2,
+.cess-expert-insight-section h3,
+.cess-hero-main-title,
+.cess-section-heading,
+.cess-section-heading1,
+.cess-dining-card-title {
+    font-family: var(--cess-heading-font);
+}
+
+.cess-hero-main-title {
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.cess-section-heading,
+.cess-section-heading1 {
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.cess-triple-title,
+.cess-comp-card-title,
+.cess-inclusion-card-title,
+.cess-wellness-card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.cess-hero-section *,
+.cess-intro-section *,
+.cess-toc-section *,
+.cess-different-section *,
+.cess-feature-section *,
+.cess-simple-section *,
+.cess-triple-section *,
+.cess-table-section *,
+.cess-value-section *,
+.cess-takeaways-section *,
+.cess-faq-section *,
+.cess-cta-section * {
+    box-sizing: border-box;
+    font-family: var(--cess-font);
+}
+
+/* ── SHARED ELEMENTS ─────────────────────────────────────────── */
+
+.cess-hero-section p,
+.cess-intro-section p,
+.cess-toc-section p,
+.cess-different-section p,
+.cess-feature-section p,
+.cess-simple-section p,
+.cess-triple-section p,
+.cess-table-section p,
+.cess-value-section p,
+.cess-takeaways-section p,
+.cess-faq-section p,
+.cess-cta-section p,
+.cess-cta-redesign-section p,
+.cess-expert-insight-section p {
+    font-size: 18px;
+}
+
+@media (max-width: 991px) {
+
+    .cess-hero-section p,
+    .cess-intro-section p,
+    .cess-toc-section p,
+    .cess-different-section p,
+    .cess-feature-section p,
+    .cess-simple-section p,
+    .cess-triple-section p,
+    .cess-table-section p,
+    .cess-value-section p,
+    .cess-takeaways-section p,
+    .cess-faq-section p,
+    .cess-cta-section p,
+    .cess-cta-redesign-section p,
+    .cess-expert-insight-section p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .cess-hero-section p,
+    .cess-intro-section p,
+    .cess-toc-section p,
+    .cess-different-section p,
+    .cess-feature-section p,
+    .cess-simple-section p,
+    .cess-triple-section p,
+    .cess-table-section p,
+    .cess-value-section p,
+    .cess-takeaways-section p,
+    .cess-faq-section p,
+    .cess-cta-section p,
+    .cess-cta-redesign-section p,
+    .cess-expert-insight-section p {
+        font-size: 16px;
+    }
+}
+
+.cess-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: var(--cess-accent);
+    display: block;
+    margin-bottom: 14px;
+}
+
+.cess-section-heading {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--cess-navy);
+    line-height: 1.25;
+    margin: 0 0 18px 0;
+}
+
+@media (max-width: 991px) {
+    .cess-section-heading {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 640px) {
+    .cess-section-heading {
+        font-size: 24px;
+    }
+}
+
+.cess-heading-separator-bar {
+    width: 64px;
+    height: 4px;
+    background: var(--cess-accent);
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 26px;
+}
+
+.cess-bar-centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cess-image-frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 340px;
+    border-radius: var(--cess-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--cess-shadow-soft);
+}
+
+.cess-frame-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cess-image-frame:hover .cess-frame-img {
+    transform: scale(1.045);
+}
+
+.cess-frame-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15, 28, 46, 0.5) 0%, rgba(15, 28, 46, 0.02) 55%);
+    z-index: 1;
+}
+
+.cess-image-badge {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: var(--cess-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 10px 16px;
+    border-radius: 30px;
+    z-index: 2;
+    box-shadow: 0 6px 20px rgba(15, 28, 46, 0.3);
+}
+
+/* ── HERO ─────────────────────────────────────────────────────── */
+
+.cess-hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cess-hero-background {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.4s ease-in-out;
+    z-index: 0;
+}
+
+.cess-hero-background.cess-active {
+    opacity: 1;
+}
+
+.cess-hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #0f1c2e 0%, #1a2a44 100%);
+    z-index: 0;
+}
+
+.cess-hero-overlay-layer {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 28, 46, 0.72);
+    z-index: 1;
+}
+
+.cess-hero-content-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cess-hero-eyebrow-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.cess-hero-main-title {
+    font-size: 60px;
+    line-height: 1.15;
+    font-weight: 700;
+    margin: 0 0 40px 0;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    text-align: center;
+    max-width: 900px;
+}
+
+.cess-hero-subtitle-text {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #e2e8f0;
+    margin-bottom: 40px;
+    max-width: 700px;
+    text-align: center;
+}
+
+/* ── INTRO ────────────────────────────────────────────────────── */
+
+.cess-intro-section {
+    background: var(--cess-bg-white);
+    padding: 80px 20px 60px;
+}
+
+.cess-intro-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cess-intro-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.cess-intro-text-col {
+    text-align: left;
+}
+
+.cess-intro-lead-card {
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.05) 0%, rgba(39, 68, 114, 0.01) 100%);
+    border-left: 4px solid var(--cess-navy);
+    padding: 24px 28px;
+    border-radius: 0 16px 16px 0;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(15, 28, 46, 0.03);
+}
+
+.cess-intro-lead {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--cess-navy);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.cess-intro-body {
+    font-size: 15.5px;
+    color: var(--cess-text-body);
+    line-height: 1.8;
+    margin: 0 0 18px 0;
+}
+
+.cess-intro-image-col {
+    width: 100%;
+}
+
+.cess-intro-image-frame {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    border-radius: var(--cess-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--cess-shadow-soft);
+}
+
+.cess-placeholder-frame {
+    background: linear-gradient(135deg, var(--cess-bg-soft) 0%, rgba(39, 68, 114, 0.08) 100%);
+    border: 2px dashed rgba(39, 68, 114, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.cess-placeholder-frame:hover {
+    background: linear-gradient(135deg, var(--cess-bg-soft) 0%, rgba(39, 68, 114, 0.12) 100%);
+    border-color: rgba(39, 68, 114, 0.4);
+}
+
+.cess-placeholder-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+}
+
+.cess-placeholder-icon {
+    color: var(--cess-navy);
+    opacity: 0.6;
+    animation: uincPulse 3s infinite ease-in-out;
+}
+
+.cess-placeholder-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--cess-navy);
+    opacity: 0.7;
+    letter-spacing: 0.02em;
+}
+
+@keyframes uincPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.05);
+        opacity: 0.75;
+    }
+}
+
+.cess-intro-image-badge {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: var(--cess-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 10px 16px;
+    border-radius: 30px;
+    z-index: 2;
+    box-shadow: 0 6px 20px rgba(15, 28, 46, 0.3);
+}
+
+@media (max-width: 991px) {
+    .cess-intro-grid {
+        gap: 30px;
+    }
+
+    .cess-intro-image-frame {
+        height: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cess-intro-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cess-intro-text-col {
+        text-align: center;
+    }
+
+    .cess-intro-lead-card {
+        border-left: none;
+        border-top: 4px solid var(--cess-navy);
+        border-radius: 0 0 16px 16px;
+        padding: 20px;
+    }
+
+    .cess-intro-image-frame {
+        height: 300px;
+    }
+}
+
+/* ── TOC ──────────────────────────────────────────────────────── */
+
+.cess-toc-section {
+    background: var(--cess-bg-soft);
+    padding: 44px 20px;
+}
+
+.cess-toc-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid var(--cess-border);
+    border-radius: var(--cess-radius-lg);
+    padding: 34px 36px;
+}
+
+.cess-toc-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--cess-navy);
+    margin: 0 0 20px 0;
+}
+
+.cess-toc-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 28px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: none;
+}
+
+.cess-toc-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14.5px;
+    color: var(--cess-text-body);
+    padding: 6px 0;
+    border-bottom: 1px dashed var(--cess-border);
+}
+
+.cess-toc-item svg {
+    color: var(--cess-accent);
+    flex-shrink: 0;
+}
+
+/* ── WHAT MAKES DIFFERENT ────────────────────────────────────── */
+
+.cess-different-section {
+    background: var(--cess-bg-soft);
+    padding: 84px 20px;
+    border-top: 1px solid rgba(39, 68, 114, 0.05);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.cess-different-container {
+    max-width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cess-different-body {
+    font-size: 16.5px;
+    color: var(--cess-text-body);
+    line-height: 1.8;
+    max-width: 760px;
+    margin: 0 auto 38px;
+}
+
+.cess-included-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    text-align: left;
+    margin-bottom: 36px;
+}
+
+.cess-included-chip {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: var(--cess-radius-md);
+    padding: 16px 20px;
+    font-size: 14.5px;
+    color: var(--cess-navy);
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(15, 28, 46, 0.04);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.cess-included-chip:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(15, 28, 46, 0.08);
+    border-color: rgba(39, 68, 114, 0.18);
+}
+
+.cess-included-chip svg {
+    color: var(--cess-accent);
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.cess-included-chip:hover svg {
+    transform: scale(1.1);
+}
+
+.cess-different-footer-card {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    box-shadow: 0 4px 20px rgba(15, 28, 46, 0.03);
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-size: 14.5px;
+    color: var(--cess-navy);
+    font-weight: 600;
+    margin: 24px auto 0 auto;
+    max-width: 840px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.cess-different-footer-card svg {
+    color: var(--cess-navy);
+    background: rgba(39, 68, 114, 0.08);
+    padding: 6px;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+/* ── FEATURE (IMAGE + TEXT) SECTIONS ─────────────────────────── */
+
+.cess-feature-section {
+    padding: 84px 20px;
+    background: var(--cess-bg-white);
+}
+
+.cess-bg-soft {
+    background: var(--cess-bg-soft);
+}
+
+.cess-bg-accomm {
+    background: #e2e8f0;
+}
+
+.cess-left-footnote-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: #ffffff;
+    border-left: 4px solid var(--cess-navy);
+    padding: 16px 20px;
+    border-radius: 0 12px 12px 0;
+    margin-top: 24px;
+    box-shadow: 0 4px 15px rgba(15, 28, 46, 0.03);
+}
+
+.cess-footnote-card-icon {
+    color: var(--cess-navy);
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.cess-left-footnote-text {
+    font-size: 14px;
+    color: var(--cess-text-body);
+    font-style: italic;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.cess-feature-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cess-feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.cess-feature-grid.cess-reverse .cess-feature-image-col {
+    order: 2;
+}
+
+.cess-feature-lead {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--cess-navy);
+    margin: 0 0 14px 0;
+    line-height: 1.55;
+}
+
+.cess-feature-body {
+    font-size: 15.5px;
+    color: var(--cess-text-body);
+    margin: 0 0 12px 0;
+    line-height: 1.75;
+}
+
+.cess-feature-footnote {
+    font-size: 14.5px;
+    color: var(--cess-text-muted);
+    font-style: italic;
+    margin-top: 18px;
+    line-height: 1.7;
+}
+
+.cess-wine-footnote-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(39, 68, 114, 0.04);
+    border-left: 3px solid var(--cess-navy);
+    padding: 8px 16px;
+    border-radius: 0 12px 12px 0;
+    font-size: 13.5px;
+    color: var(--cess-text-body);
+    font-weight: 500;
+    margin-top: 24px;
+}
+
+.cess-wine-footnote-badge svg {
+    color: var(--cess-navy);
+    flex-shrink: 0;
+}
+
+.cess-check-list {
+    list-style: none;
+    margin: 0 0 6px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cess-check-list-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+}
+
+.cess-check-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14.5px;
+    color: var(--cess-text-body);
+    line-height: 1.5;
+}
+
+.cess-check-list li svg {
+    color: var(--cess-accent);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.cess-inline-list {
+    list-style: none;
+    margin: 0 0 4px 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+}
+
+.cess-inline-list li {
+    background: var(--cess-bg-soft);
+    border: 1px solid var(--cess-border);
+    color: var(--cess-navy);
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 13px;
+    border-radius: 20px;
+}
+
+.cess-dining-redesign-section {
+    padding: 84px 20px;
+    background: var(--cess-bg-white);
+}
+
+.cess-dining-grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.cess-dining-left-col {
+    text-align: left;
+    position: sticky;
+    top: 100px;
+}
+
+.cess-dining-right-col {
+    width: 100%;
+}
+
+.cess-dining-intro-text {
+    font-size: 16px;
+    color: var(--cess-text-body);
+    line-height: 1.75;
+    margin: 18px 0 24px 0;
+}
+
+.cess-dining-image-box {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    border-radius: var(--cess-radius-md);
+    overflow: hidden;
+    box-shadow: var(--cess-shadow-soft);
+}
+
+.cess-dining-placeholder-box {
+    background: linear-gradient(135deg, var(--cess-bg-soft) 0%, rgba(39, 68, 114, 0.08) 100%);
+    border: 2px dashed rgba(39, 68, 114, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.cess-dining-placeholder-box:hover {
+    background: linear-gradient(135deg, var(--cess-bg-soft) 0%, rgba(39, 68, 114, 0.12) 100%);
+    border-color: rgba(39, 68, 114, 0.4);
+}
+
+.cess-dining-card-grid-split {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.cess-dining-card {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: var(--cess-radius-md);
+    padding: 24px;
+    box-shadow: 0 4px 15px rgba(15, 28, 46, 0.03);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    display: flex;
+    flex-direction: column;
+}
+
+.cess-dining-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(15, 28, 46, 0.07);
+    border-color: rgba(39, 68, 114, 0.16);
+}
+
+.cess-dining-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.06);
+    padding-bottom: 12px;
+}
+
+.cess-dining-card-icon-wrapper {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: rgba(39, 68, 114, 0.06);
+    color: var(--cess-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.cess-dining-card:hover .cess-dining-card-icon-wrapper {
+    background: var(--cess-navy);
+    color: #ffffff;
+}
+
+.cess-dining-card-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--cess-navy);
+    margin: 0;
+}
+
+.cess-dining-card-subtitle {
+    font-size: 13.5px;
+    color: var(--cess-text-muted);
+    margin: 0 0 12px 0;
+    font-weight: 500;
+}
+
+.cess-dining-tags {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 8px;
+}
+
+.cess-dining-tags li {
+    background: var(--cess-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.06);
+    color: var(--cess-navy);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+.cess-dining-card:hover .cess-dining-tags li {
+    background: #ffffff;
+    border-color: rgba(39, 68, 114, 0.15);
+}
+
+@media (max-width: 991px) {
+    .cess-dining-grid-layout {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .cess-dining-left-col {
+        position: static;
+        text-align: center;
+    }
+
+    .cess-dining-left-col .cess-heading-separator-bar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cess-dining-card-grid-split {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cess-dining-card-grid-split {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ── INSIDE STATEROOMS SECTION ──────────────────────────────── */
+
+.cess-inside-section {
+    position: relative;
+    padding: 60px 20px;
+    background: var(--cess-navy-dark);
+    overflow: hidden;
+}
+
+.cess-inside-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--cess-navy-dark) 0%, #1c2f4a 50%, var(--cess-navy) 100%);
+}
+
+.cess-inside-container {
+    position: relative;
+    z-index: 1;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.cess-inside-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.cess-inside-image-box {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    border-radius: var(--cess-radius-lg);
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.cess-inside-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(147, 197, 253, 0.15) 0%, rgba(39, 68, 114, 0.35) 100%);
+    border: 2px solid rgba(147, 197, 253, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cess-inside-placeholder-icon {
+    color: var(--cess-accent-light);
+    opacity: 0.6;
+}
+
+.cess-inside-badge {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    background: var(--cess-navy);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 8px 14px;
+    border-radius: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cess-inside-text-col {
+    color: #fff;
+}
+
+.cess-inside-text-col .cess-eyebrow {
+    color: var(--cess-accent-light);
+    margin-bottom: 10px;
+}
+
+.cess-inside-title {
+    font-family: var(--cess-heading-font);
+    font-size: 38px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 14px 0;
+    line-height: 1.2;
+}
+
+.cess-inside-divider {
+    width: 50px;
+    height: 3px;
+    background: var(--cess-accent-light);
+    border-radius: 3px;
+    margin-bottom: 18px;
+}
+
+.cess-inside-lead {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.65;
+    margin: 0 0 14px 0;
+}
+
+.cess-inside-body {
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.7;
+    margin: 0 0 14px 0;
+}
+
+.cess-inside-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+.cess-inside-pills span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+    padding: 7px 13px;
+    font-size: 12.5px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.cess-inside-pills svg {
+    color: var(--cess-accent-light);
+    flex-shrink: 0;
+}
+
+@media (max-width: 991px) {
+    .cess-inside-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .cess-inside-image-box {
+        height: 280px;
+    }
+
+    .cess-inside-title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cess-inside-section {
+        padding: 44px 16px;
+    }
+
+    .cess-inside-image-box {
+        height: 220px;
+    }
+
+    .cess-inside-title {
+        font-size: 26px;
+    }
+
+    .cess-inside-pills {
+        gap: 6px;
+    }
+
+    .cess-inside-pills span {
+        padding: 6px 10px;
+        font-size: 11.5px;
+    }
+}
+
+/* ── OCEAN VIEW STATEROOMS SECTION ──────────────────────────── */
+
+.cess-ocean-section {
+    position: relative;
+    padding: 84px 20px;
+    background: var(--cess-bg-white);
+}
+
+.cess-ocean-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cess-ocean-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.cess-ocean-grid .cess-ocean-image-col {
+    order: 2;
+}
+
+.cess-ocean-image-box {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    border-radius: var(--cess-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--cess-shadow-soft);
+}
+
+.cess-ocean-placeholder {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(147, 197, 253, 0.2) 0%, rgba(39, 68, 114, 0.12) 100%);
+    border: 2px dashed rgba(39, 68, 114, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: var(--cess-navy);
+    opacity: 0.8;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cess-ocean-placeholder-icon {
+    color: var(--cess-accent-light);
+    opacity: 0.6;
+}
+
+.cess-ocean-badge {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    background: var(--cess-navy);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 8px 14px;
+    border-radius: 24px;
+    box-shadow: 0 4px 12px rgba(15, 28, 46, 0.25);
+}
+
+.cess-ocean-text-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cess-ocean-text-col .cess-eyebrow {
+    color: var(--cess-accent);
+    margin-bottom: 10px;
+}
+
+.cess-ocean-title {
+    font-family: var(--cess-heading-font);
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--cess-navy);
+    margin: 0 0 14px 0;
+    line-height: 1.2;
+}
+
+.cess-ocean-divider {
+    width: 50px;
+    height: 3px;
+    background: var(--cess-accent-light);
+    border-radius: 3px;
+    margin-bottom: 18px;
+}
+
+.cess-ocean-lead {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--cess-navy);
+    line-height: 1.65;
+    margin: 0 0 12px 0;
+}
+
+.cess-ocean-body {
+    font-size: 14.5px;
+    color: var(--cess-text-body);
+    line-height: 1.7;
+    margin: 0 0 14px 0;
+}
+
+.cess-ocean-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+.cess-ocean-pills span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--cess-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    border-radius: 18px;
+    padding: 7px 13px;
+    font-size: 12.5px;
+    font-weight: 500;
+    color: var(--cess-navy);
+}
+
+.cess-ocean-pills svg {
+    color: var(--cess-accent);
+    flex-shrink: 0;
+}
+
+@media (max-width: 991px) {
+    .cess-ocean-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .cess-ocean-grid .cess-ocean-image-col {
+        order: 1;
+    }
+
+    .cess-ocean-image-box {
+        height: 280px;
+    }
+
+    .cess-ocean-title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cess-ocean-section {
+        padding: 50px 16px;
+    }
+
+    .cess-ocean-image-box {
+        height: 220px;
+    }
+
+    .cess-ocean-title {
+        font-size: 24px;
+    }
+
+    .cess-ocean-pills {
+        gap: 6px;
+    }
+
+    .cess-ocean-pills span {
+        padding: 6px 10px;
+        font-size: 11.5px;
+    }
+}
+
+/* ── INFINITE VERANDA SECTION ───────────────────────────────── */
+
+.cess-iv-section {
+    position: relative;
+    padding: 70px 20px;
+    background: var(--cess-navy-dark);
+    overflow: hidden;
+}
+
+.cess-iv-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--cess-navy-dark) 0%, #1c2f4a 50%, var(--cess-navy) 100%);
+}
+
+.cess-iv-container {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cess-iv-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 44px;
+    align-items: center;
+    margin-bottom: 44px;
+}
+
+.cess-iv-grid .cess-iv-image-col {
+    order: 2;
+}
+
+.cess-iv-image-box {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    border-radius: var(--cess-radius-lg);
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.cess-iv-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(147, 197, 253, 0.15) 0%, rgba(39, 68, 114, 0.35) 100%);
+    border: 2px solid rgba(147, 197, 253, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cess-iv-placeholder-icon {
+    color: var(--cess-accent-light);
+    opacity: 0.6;
+}
+
+.cess-iv-badge {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    background: var(--cess-navy);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 8px 14px;
+    border-radius: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cess-iv-text-col {
+    color: #fff;
+}
+
+.cess-iv-text-col .cess-eyebrow {
+    color: var(--cess-accent-light);
+    margin-bottom: 10px;
+}
+
+.cess-iv-title {
+    font-family: var(--cess-heading-font);
+    font-size: 38px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 14px 0;
+    line-height: 1.2;
+}
+
+.cess-iv-divider {
+    width: 50px;
+    height: 3px;
+    background: var(--cess-accent-light);
+    border-radius: 3px;
+    margin-bottom: 18px;
+}
+
+.cess-iv-lead {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.65;
+    margin: 0 0 12px 0;
+}
+
+.cess-iv-body {
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.7;
+    margin: 0 0 12px 0;
+}
+
+.cess-iv-compare {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--cess-radius-lg);
+    padding: 28px;
+}
+
+.cess-iv-compare-title {
+    font-family: var(--cess-heading-font);
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 18px 0;
+    text-align: center;
+}
+
+.cess-iv-compare-table-wrap {
+    overflow-x: auto;
+}
+
+.cess-iv-compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.cess-iv-compare-table th {
+    padding: 14px 18px;
+    font-size: 13.5px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background: rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cess-iv-compare-table th:first-child {
+    width: 34%;
+}
+
+.cess-iv-compare-table td {
+    padding: 13px 18px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.cess-iv-compare-table tr:last-child td {
+    border-bottom: none;
+}
+
+.cess-iv-compare-table tr:hover td {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.cess-iv-badge-inline {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(59, 130, 246, 0.15);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    color: var(--cess-accent-light);
+    border-radius: 16px;
+    padding: 5px 12px;
+    font-size: 12.5px;
+    font-weight: 600;
+}
+
+.cess-iv-compare-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 3px solid var(--cess-accent-light);
+    border-radius: 0 8px 8px 0;
+    padding: 12px 16px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.55;
+    margin-top: 20px;
+}
+
+.cess-iv-compare-note svg {
+    color: var(--cess-accent-light);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+@media (max-width: 991px) {
+    .cess-iv-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .cess-iv-grid .cess-iv-image-col {
+        order: 1;
+    }
+
+    .cess-iv-image-box {
+        height: 280px;
+    }
+
+    .cess-iv-title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cess-iv-section {
+        padding: 50px 16px;
+    }
+
+    .cess-iv-image-box {
+        height: 220px;
+    }
+
+    .cess-iv-title {
+        font-size: 24px;
+    }
+
+    .cess-iv-compare {
+        padding: 18px;
+    }
+}
+
+/* ── SINGLE STATEROOMS SECTION ───────────────────────────────── */
+
+.cess-single-section {
+    position: relative;
+    padding: 84px 20px;
+    background: linear-gradient(160deg, #e8eef5 0%, var(--cess-bg-white) 100%);
+}
+
+.cess-single-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cess-single-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.cess-single-image-box {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    border-radius: var(--cess-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--cess-shadow-soft);
+}
+
+.cess-single-placeholder {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(39, 68, 114, 0.12) 100%);
+    border: 2px dashed rgba(39, 68, 114, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: var(--cess-navy);
+    opacity: 0.8;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cess-single-placeholder-icon {
+    color: var(--cess-accent-light);
+    opacity: 0.6;
+}
+
+.cess-single-badge {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    background: var(--cess-navy);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 8px 14px;
+    border-radius: 24px;
+    box-shadow: 0 4px 12px rgba(15, 28, 46, 0.25);
+}
+
+.cess-single-text-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.cess-single-text-col .cess-eyebrow {
+    color: var(--cess-accent);
+    margin-bottom: 10px;
+}
+
+.cess-single-title {
+    font-family: var(--cess-heading-font);
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--cess-navy);
+    margin: 0 0 14px 0;
+    line-height: 1.2;
+}
+
+.cess-single-divider {
+    width: 50px;
+    height: 3px;
+    background: var(--cess-accent-light);
+    border-radius: 3px;
+    margin-bottom: 18px;
+}
+
+.cess-single-lead {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--cess-navy);
+    line-height: 1.65;
+    margin: 0 0 12px 0;
+}
+
+.cess-single-body {
+    font-size: 14.5px;
+    color: var(--cess-text-body);
+    line-height: 1.7;
+    margin: 0 0 14px 0;
+}
+
+.cess-single-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.cess-single-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    background: linear-gradient(135deg, var(--cess-navy) 0%, #1c2f4a 100%);
+    border-radius: var(--cess-radius-md);
+    padding: 16px 12px;
+    text-align: center;
+}
+
+.cess-single-stat-value {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.1;
+}
+
+.cess-single-stat-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.cess-single-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+.cess-single-pills span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.12);
+    border-radius: 18px;
+    padding: 7px 13px;
+    font-size: 12.5px;
+    font-weight: 500;
+    color: var(--cess-navy);
+    box-shadow: 0 2px 8px rgba(15, 28, 46, 0.04);
+}
+
+.cess-single-pills svg {
+    color: var(--cess-accent);
+    flex-shrink: 0;
+}
+
+@media (max-width: 991px) {
+    .cess-single-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .cess-single-image-box {
+        height: 300px;
+    }
+
+    .cess-single-title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cess-single-section {
+        padding: 50px 16px;
+    }
+
+    .cess-single-image-box {
+        height: 220px;
+    }
+
+    .cess-single-title {
+        font-size: 24px;
+    }
+
+    .cess-single-stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .cess-single-pills {
+        gap: 6px;
+    }
+
+    .cess-single-pills span {
+        padding: 6px 10px;
+        font-size: 11.5px;
+    }
+}
+
+/* ── CONCIERGE CLASS SECTION ───────────────────────────────── */
+
+.cess-concierge-section {
+    position: relative;
+    padding: 84px 20px;
+    background: var(--cess-bg-white);
+    overflow: hidden;
+}
+
+.cess-concierge-bg {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 85% 20%, rgba(59, 130, 246, 0.08) 0%, transparent 45%),
+        radial-gradient(circle at 10% 85%, rgba(39, 68, 114, 0.06) 0%, transparent 40%);
+}
+
+.cess-concierge-container {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cess-concierge-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.cess-concierge-grid.cess-concierge-reverse .cess-concierge-image-col {
+    order: 2;
+}
+
+.cess-concierge-image-box {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    border-radius: var(--cess-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--cess-shadow-soft);
+}
+
+.cess-concierge-placeholder {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.1) 0%, rgba(59, 130, 246, 0.14) 100%);
+    border: 2px dashed rgba(39, 68, 114, 0.22);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: var(--cess-navy);
+    opacity: 0.8;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cess-concierge-placeholder-icon {
+    color: var(--cess-accent-light);
+    opacity: 0.6;
+}
+
+.cess-concierge-badge {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    background: var(--cess-navy);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 8px 14px;
+    border-radius: 24px;
+    box-shadow: 0 4px 12px rgba(15, 28, 46, 0.25);
+}
+
+.cess-concierge-text-col {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 991px) {
+    .cess-concierge-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .cess-concierge-grid.cess-concierge-reverse .cess-concierge-image-col {
+        order: 1;
+    }
+
+    .cess-concierge-image-box {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cess-concierge-section {
+        padding: 50px 16px;
+    }
+
+    .cess-concierge-image-box {
+        height: 220px;
+    }
+}
+
+/* ── AQUACLASS SECTION ───────────────────────────────── */
+
+.cess-aqua-section {
+    position: relative;
+    padding: 84px 20px;
+    background: var(--cess-bg-white);
+    overflow: hidden;
+}
+
+.cess-aqua-bg {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 8% 15%, rgba(147, 197, 253, 0.25) 0%, transparent 40%),
+        radial-gradient(circle at 92% 85%, rgba(59, 130, 246, 0.1) 0%, transparent 45%);
+}
+
+.cess-aqua-container {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cess-aqua-top {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 44px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.cess-aqua-text-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.cess-aqua-image-box {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border-radius: var(--cess-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--cess-shadow-soft);
+}
+
+.cess-aqua-placeholder {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.08) 0%, rgba(59, 130, 246, 0.16) 100%);
+    border: 2px dashed rgba(39, 68, 114, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: var(--cess-navy);
+    opacity: 0.85;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cess-aqua-placeholder .cess-placeholder-icon {
+    color: var(--cess-accent-light);
+    opacity: 0.6;
+}
+
+.cess-aqua-series {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.cess-aqua-series .cess-dining-card {
+    margin: 0;
+}
+
+.cess-aqua-note {
+    margin: 22px 0 0 0;
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+    .cess-aqua-top {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .cess-aqua-image-box {
+        height: 260px;
+    }
+
+    .cess-aqua-series {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cess-aqua-section {
+        padding: 50px 16px;
+    }
+
+    .cess-aqua-image-box {
+        height: 200px;
+    }
+}
+
+/* ── THE RETREAT SECTION ───────────────────────────────── */
+
+.cess-retreat-section {
+    position: relative;
+    padding: 84px 20px;
+    background: var(--cess-bg-white);
+    overflow: hidden;
+}
+
+.cess-retreat-bg {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 12% 20%, rgba(59, 130, 246, 0.08) 0%, transparent 42%),
+        radial-gradient(circle at 88% 80%, rgba(39, 68, 114, 0.07) 0%, transparent 45%);
+}
+
+.cess-retreat-container {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cess-retreat-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.cess-retreat-image-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.cess-retreat-image-box {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    border-radius: var(--cess-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--cess-shadow-soft);
+}
+
+.cess-retreat-placeholder {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.1) 0%, rgba(59, 130, 246, 0.16) 100%);
+    border: 2px dashed rgba(39, 68, 114, 0.22);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: var(--cess-navy);
+    opacity: 0.85;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cess-retreat-placeholder-icon {
+    color: var(--cess-accent-light);
+    opacity: 0.6;
+}
+
+.cess-retreat-badge {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    background: var(--cess-navy);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 8px 14px;
+    border-radius: 24px;
+    box-shadow: 0 4px 12px rgba(15, 28, 46, 0.25);
+}
+
+.cess-retreat-text-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.cess-retreat-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 991px) {
+    .cess-retreat-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .cess-retreat-image-box {
+        height: 280px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cess-retreat-section {
+        padding: 50px 16px;
+    }
+
+    .cess-retreat-image-box {
+        height: 220px;
+    }
+
+    .cess-retreat-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ── SKY SUITES SECTION ───────────────────────────────── */
+
+.cess-sky-section {
+    position: relative;
+    padding: 84px 20px;
+    background: var(--cess-navy-dark);
+    overflow: hidden;
+}
+
+.cess-sky-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(160deg, var(--cess-navy-dark) 0%, #16273d 50%, var(--cess-navy) 100%);
+}
+
+.cess-sky-container {
+    position: relative;
+    z-index: 1;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cess-sky-container .cess-eyebrow {
+    color: var(--cess-accent-light);
+}
+
+.cess-sky-container .cess-section-heading {
+    color: #ffffff;
+}
+
+.cess-sky-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+    .cess-sky-section {
+        padding: 50px 16px;
+    }
+
+    .cess-sky-features {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+/* ── SUITE PROFILES SECTION ───────────────────────────────── */
+
+.cess-suite-section {
+    position: relative;
+    padding: 84px 20px;
+    background: var(--cess-navy-dark);
+    overflow: hidden;
+}
+
+.cess-suite-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(160deg, var(--cess-navy-dark) 0%, #16273d 50%, var(--cess-navy) 100%);
+}
+
+.cess-suite-container {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cess-suite-container .cess-eyebrow {
+    color: var(--cess-accent-light);
+    text-align: center;
+    display: block;
+}
+
+.cess-suite-container .cess-section-heading {
+    color: #ffffff;
+    text-align: center;
+}
+
+.cess-suite-container .cess-heading-separator-bar {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cess-suite-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cess-suite-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 22px;
+    border: none;
+    border-bottom: 3px solid transparent;
+    border-radius: 0;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-family: var(--cess-body-font);
+    white-space: nowrap;
+}
+
+.cess-suite-tab:hover {
+    color: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.cess-suite-tab-active {
+    color: #ffffff;
+    border-bottom-color: var(--cess-accent-light);
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.cess-suite-tab-active svg {
+    color: var(--cess-accent-light);
+}
+
+.cess-suite-tab svg {
+    flex-shrink: 0;
+}
+
+.cess-suite-panel {
+    animation: cessSuiteFadeIn 0.35s ease;
+    padding-top: 30px;
+}
+
+@keyframes cessSuiteFadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.cess-suite-image-box {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    border-radius: var(--cess-radius-lg) var(--cess-radius-lg) 0 0;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.cess-suite-image-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(39, 68, 114, 0.3) 100%);
+    border: 2px solid rgba(147, 197, 253, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cess-suite-placeholder-icon {
+    color: var(--cess-accent-light);
+    opacity: 0.5;
+}
+
+.cess-suite-image-badge {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    background: var(--cess-navy);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 8px 14px;
+    border-radius: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cess-suite-content-body {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: none;
+    border-radius: 0 0 var(--cess-radius-lg) var(--cess-radius-lg);
+    padding: 36px 40px;
+    text-align: left;
+}
+
+.cess-suite-content-inner {
+    max-width: 100%;
+}
+
+.cess-suite-content-title {
+    font-family: var(--cess-heading-font);
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+    text-align: left;
+}
+
+.cess-suite-content-divider {
+    width: 40px;
+    height: 3px;
+    background: var(--cess-accent-light);
+    border-radius: 3px;
+    margin-bottom: 18px;
+}
+
+.cess-suite-content-text {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.75;
+    margin: 0 0 16px 0;
+    text-align: left;
+}
+
+.cess-suite-content-text:last-of-type {
+    margin-bottom: 0;
+}
+
+.cess-suite-features-box {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--cess-radius-md);
+    padding: 20px 24px;
+    margin-top: 18px;
+}
+
+.cess-suite-features-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 14px 0;
+    text-align: left;
+}
+
+.cess-suite-features-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+    row-gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cess-suite-features-list li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13.5px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.cess-suite-features-list li:last-child {
+    grid-column: 1 / -1;
+}
+
+.cess-suite-features-list li svg {
+    color: var(--cess-accent-light);
+    flex-shrink: 0;
+}
+
+@media (max-width: 991px) {
+    .cess-suite-tabs {
+        gap: 0;
+    }
+
+    .cess-suite-tab {
+        padding: 12px 16px;
+        font-size: 13px;
+    }
+
+    .cess-suite-image-box {
+        height: 300px;
+    }
+
+    .cess-suite-content-body {
+        padding: 28px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cess-suite-section {
+        padding: 50px 16px;
+    }
+
+    .cess-suite-tab {
+        padding: 10px 12px;
+        font-size: 12px;
+        gap: 5px;
+    }
+
+    .cess-suite-tab svg {
+        display: none;
+    }
+
+    .cess-suite-image-box {
+        height: 220px;
+    }
+
+    .cess-suite-content-body {
+        padding: 20px;
+    }
+
+    .cess-suite-content-title {
+        font-size: 22px;
+    }
+
+    .cess-suite-features-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ── STATEROOM SIZES SECTION ───────────────────────────────── */
+
+.cess-sizes-section {
+    position: relative;
+    padding: 84px 20px;
+    background: var(--cess-navy-dark);
+    overflow: hidden;
+}
+
+.cess-sizes-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(160deg, var(--cess-navy-dark) 0%, #16273d 50%, var(--cess-navy) 100%);
+}
+
+.cess-sizes-container {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cess-sizes-container .cess-eyebrow {
+    color: var(--cess-accent-light);
+}
+
+.cess-sizes-container .cess-section-heading {
+    color: #ffffff;
+}
+
+.cess-sizes-intro {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 700px;
+    margin: 0 auto 36px;
+    line-height: 1.75;
+}
+
+.cess-sizes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.cess-sizes-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--cess-radius-lg);
+    overflow: hidden;
+    text-align: left;
+}
+
+.cess-sizes-card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 18px 22px;
+    background: rgba(255, 255, 255, 0.06);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+}
+
+.cess-sizes-card-header svg {
+    color: var(--cess-accent-light);
+    flex-shrink: 0;
+}
+
+.cess-sizes-card-title {
+    font-family: var(--cess-heading-font);
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.cess-sizes-card-body {
+    padding: 4px 0;
+}
+
+.cess-sizes-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    gap: 16px;
+}
+
+.cess-sizes-row:last-child {
+    border-bottom: none;
+}
+
+.cess-sizes-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.cess-sizes-value {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    white-space: nowrap;
+    text-align: right;
+}
+
+.cess-sizes-note {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 3px solid var(--cess-accent-light);
+    border-radius: 0 8px 8px 0;
+    padding: 14px 20px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.6;
+    text-align: left;
+}
+
+.cess-sizes-note svg {
+    color: var(--cess-accent-light);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+@media (max-width: 991px) {
+    .cess-sizes-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .cess-sizes-section {
+        padding: 50px 16px;
+    }
+
+    .cess-sizes-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        padding: 14px 18px;
+    }
+
+    .cess-sizes-value {
+        text-align: left;
+    }
+}
+
+/* ── COMMON AMENITIES SECTION ───────────────────────────────── */
+
+.cess-amenities-section {
+    position: relative;
+    padding: 84px 20px;
+    background: var(--cess-navy-dark);
+    overflow: hidden;
+}
+
+.cess-amenities-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(160deg, var(--cess-navy-dark) 0%, #16273d 50%, var(--cess-navy) 100%);
+}
+
+.cess-amenities-container {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cess-amenities-grid {
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+    gap: 44px;
+    align-items: center;
+}
+
+.cess-amenities-image-box {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    border-radius: var(--cess-radius-lg);
+    overflow: hidden;
+}
+
+.cess-amenities-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(39, 68, 114, 0.3) 100%);
+    border: 2px solid rgba(147, 197, 253, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cess-amenities-placeholder-icon {
+    color: var(--cess-accent-light);
+    opacity: 0.5;
+}
+
+.cess-amenities-badge {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    background: var(--cess-navy);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 8px 14px;
+    border-radius: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cess-amenities-content-col {
+    color: #ffffff;
+}
+
+.cess-amenities-content-col .cess-eyebrow {
+    color: var(--cess-accent-light);
+    margin-bottom: 10px;
+}
+
+.cess-amenities-content-col .cess-section-heading {
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 14px;
+}
+
+.cess-amenities-content-col .cess-heading-separator-bar {
+    margin-bottom: 16px;
+}
+
+.cess-amenities-intro {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.7;
+    margin: 0 0 20px 0;
+}
+
+.cess-amenities-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 18px;
+    row-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cess-amenities-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cess-amenities-icon-wrap {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: rgba(59, 130, 246, 0.12);
+    color: var(--cess-accent-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.cess-amenities-item span {
+    font-size: 13.5px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.4;
+}
+
+.cess-amenities-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 3px solid var(--cess-accent-light);
+    border-radius: 0 8px 8px 0;
+    padding: 14px 18px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.6;
+}
+
+.cess-amenities-note svg {
+    color: var(--cess-accent-light);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+@media (max-width: 991px) {
+    .cess-amenities-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .cess-amenities-image-box {
+        height: 300px;
+    }
+
+    .cess-amenities-content-col .cess-section-heading {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cess-amenities-section {
+        padding: 50px 16px;
+    }
+
+    .cess-amenities-image-box {
+        height: 220px;
+    }
+
+    .cess-amenities-content-col .cess-section-heading {
+        font-size: 24px;
+    }
+
+    .cess-amenities-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ── BALCONIES SECTION ───────────────────────────────── */
+
+.cess-balcony-section {
+    padding: 84px 20px;
+    background: #e8eef6;
+}
+
+.cess-balcony-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cess-balcony-intro {
+    font-size: 15px;
+    color: var(--cess-text-body);
+    margin: 0 auto 32px;
+    max-width: 600px;
+    line-height: 1.7;
+}
+
+.cess-balcony-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.cess-balcony-card {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    border-radius: var(--cess-radius-lg);
+    padding: 28px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(15, 28, 46, 0.04);
+    flex: 1 1 calc(33.333% - 16px);
+    max-width: calc(33.333% - 11px);
+    min-width: 280px;
+}
+
+.cess-balcony-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(15, 28, 46, 0.08);
+    border-color: rgba(59, 130, 246, 0.3);
+}
+
+.cess-balcony-card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: var(--cess-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cess-balcony-card-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--cess-navy);
+    line-height: 1.4;
+}
+
+.cess-balcony-note {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+    background: #f8fafc;
+    border-left: 3px solid var(--cess-accent);
+    border-radius: 0 8px 8px 0;
+    padding: 14px 20px;
+    font-size: 13px;
+    color: var(--cess-text-body);
+    line-height: 1.6;
+    text-align: left;
+}
+
+.cess-balcony-note svg {
+    color: var(--cess-accent);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+@media (max-width: 991px) {
+    .cess-balcony-card {
+        flex: 1 1 calc(50% - 16px);
+        max-width: calc(50% - 8px);
+    }
+}
+
+@media (max-width: 640px) {
+    .cess-balcony-section {
+        padding: 50px 16px;
+    }
+
+    .cess-balcony-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+/* ── EXCURSIONS REDESIGN ── */
+.cess-excursions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.cess-excursion-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.06);
+    border-radius: var(--cess-radius-md);
+    padding: 12px 16px;
+    font-size: 14px;
+    color: var(--cess-navy);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.cess-excursion-card:hover {
+    background: #ffffff;
+    transform: translateY(-2px);
+    border-color: rgba(39, 68, 114, 0.14);
+    box-shadow: 0 4px 15px rgba(15, 28, 46, 0.04);
+}
+
+.cess-excursion-card svg {
+    color: var(--cess-accent);
+}
+
+@media (max-width: 576px) {
+    .cess-excursions-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cess-pill-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.cess-pill {
+    background: var(--cess-navy);
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 24px;
+}
+
+.cess-wellness-redesign-section {
+    padding: 84px 20px;
+    background: var(--cess-bg-soft);
+}
+
+.cess-wellness-header-block {
+    max-width: 760px;
+    margin: 0 auto 38px;
+    text-align: center;
+}
+
+.cess-wellness-intro-text {
+    font-size: 16.5px;
+    color: var(--cess-text-body);
+    line-height: 1.8;
+    margin-top: 18px;
+}
+
+.cess-wellness-cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cess-wellness-card {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: var(--cess-radius-lg);
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(15, 28, 46, 0.03);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(25% - 24px);
+    min-width: 250px;
+    max-width: calc(25% - 24px);
+}
+
+.cess-wellness-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(15, 28, 46, 0.08);
+    border-color: rgba(39, 68, 114, 0.18);
+}
+
+.cess-wellness-card-placeholder {
+    height: 130px;
+    background: linear-gradient(135deg, var(--cess-bg-soft) 0%, rgba(39, 68, 114, 0.06) 100%);
+    border-bottom: 2px dashed rgba(39, 68, 114, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.cess-wellness-card:hover .cess-wellness-card-placeholder {
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.08) 0%, rgba(39, 68, 114, 0.03) 100%);
+}
+
+.cess-wellness-card-icon {
+    color: var(--cess-navy);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.cess-wellness-card:hover .cess-wellness-card-icon {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.cess-wellness-card-placeholder-label {
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--cess-navy);
+    opacity: 0.45;
+}
+
+.cess-wellness-card-info {
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cess-wellness-card-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--cess-navy);
+    line-height: 1.4;
+    margin: 0;
+}
+
+.cess-wellness-card-subtitle {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--cess-text-muted);
+}
+
+.cess-wellness-bottom-banner {
+    max-width: 680px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-left: 4px solid var(--cess-navy);
+    padding: 16px 22px;
+    border-radius: 0 12px 12px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 4px 15px rgba(15, 28, 46, 0.03);
+}
+
+.cess-wellness-banner-icon {
+    color: var(--cess-navy);
+    flex-shrink: 0;
+}
+
+.cess-wellness-banner-text {
+    font-size: 14.5px;
+    color: var(--cess-text-body);
+    font-style: italic;
+    margin: 0;
+    line-height: 1.5;
+}
+
+@media (max-width: 991px) {
+    .cess-wellness-card {
+        flex: 1 1 calc(33.333% - 20px);
+        max-width: calc(33.333% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .cess-wellness-card {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .cess-wellness-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .cess-wellness-bottom-banner {
+        flex-direction: column;
+        text-align: center;
+        border-left: none;
+        border-top: 4px solid var(--cess-navy);
+        border-radius: 0 0 12px 12px;
+        padding: 16px;
+    }
+}
+
+/* ── SIMPLE (ENTERTAINMENT) SECTION ──────────────────────────── */
+
+.cess-simple-section {
+    background: var(--cess-navy-dark);
+    padding: 84px 20px;
+    text-align: center;
+}
+
+.cess-simple-section .cess-eyebrow {
+    color: var(--cess-accent-light);
+}
+
+.cess-simple-section .cess-section-heading {
+    color: #ffffff;
+}
+
+.cess-simple-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.cess-simple-intro {
+    font-size: 15.5px;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 700px;
+    margin: 0 auto 36px;
+    line-height: 1.75;
+}
+
+.cess-card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.cess-mini-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: var(--cess-radius-md);
+    padding: 22px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    color: #ffffff;
+    font-size: 13.5px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.cess-mini-card svg {
+    color: var(--cess-accent-light);
+}
+
+.cess-entertainment-footnote-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 13.5px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.cess-entertainment-footnote-badge svg {
+    color: var(--cess-accent-light);
+    flex-shrink: 0;
+}
+
+/* ── TRIPLE (WIFI / TRANSFERS / GRATUITIES) ──────────────────── */
+
+.cess-triple-redesign-section {
+    background: #ffffff;
+    padding: 100px 20px;
+    border-top: 1px solid rgba(39, 68, 114, 0.05);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.cess-triple-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    padding-top: 25px;
+    /* offset for overlapping icons */
+}
+
+.cess-triple-card {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: var(--cess-radius-lg);
+    padding: 54px 30px 36px 30px;
+    box-shadow: 0 4px 20px rgba(15, 28, 46, 0.02);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.cess-triple-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--cess-navy) 0%, var(--cess-accent) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.cess-triple-card:hover {
+    background: #ffffff;
+    transform: translateY(-8px);
+    box-shadow: 0 16px 36px rgba(15, 28, 46, 0.08);
+    border-color: rgba(39, 68, 114, 0.16);
+}
+
+.cess-triple-card:hover::before {
+    opacity: 1;
+}
+
+.cess-triple-icon-wrapper {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: var(--cess-navy);
+    color: var(--cess-accent-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    transform: translateY(-50%);
+    box-shadow: 0 6px 15px rgba(15, 28, 46, 0.12);
+    border: 2.5px solid #ffffff;
+    transition: all 0.3s ease;
+}
+
+.cess-triple-card:hover .cess-triple-icon-wrapper {
+    background: var(--cess-accent-light);
+    color: var(--cess-navy);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.35);
+}
+
+.cess-triple-title {
+    font-size: 18px;
+    font-weight: 750;
+    color: var(--cess-navy);
+    margin: 0 0 12px 0;
+    line-height: 1.4;
+}
+
+.cess-triple-body {
+    font-size: 14.5px;
+    color: var(--cess-text-body);
+    line-height: 1.6;
+    margin: 0 0 18px 0;
+}
+
+.cess-triple-checklist {
+    list-style: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.cess-triple-checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--cess-text-body);
+    line-height: 1.4;
+}
+
+.cess-triple-checklist li svg {
+    color: var(--cess-accent);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.cess-triple-note {
+    font-size: 13px;
+    color: var(--cess-text-muted);
+    font-style: italic;
+    margin-top: auto;
+    padding-top: 14px;
+    border-top: 1px solid rgba(39, 68, 114, 0.06);
+    line-height: 1.5;
+}
+
+@media (max-width: 991px) {
+    .cess-triple-container {
+        grid-template-columns: 1fr;
+        gap: 48px;
+        padding-top: 30px;
+    }
+}
+
+/* ── TABLE SECTIONS ───────────────────────────────────────────── */
+
+.cess-table-section {
+    background: var(--cess-bg-white);
+    padding: 84px 20px;
+}
+
+.cess-table-container {
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cess-table-intro {
+    font-size: 15.5px;
+    color: var(--cess-text-body);
+    margin-bottom: 30px;
+}
+
+.cess-comparison-cards-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 40px auto;
+    text-align: left;
+    max-width: 980px;
+}
+
+.cess-comp-card {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: var(--cess-radius-lg);
+    box-shadow: 0 4px 20px rgba(15, 28, 46, 0.02);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.cess-comp-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(15, 28, 46, 0.06);
+}
+
+.cess-comp-card-header {
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #ffffff;
+}
+
+.cess-comp-included .cess-comp-card-header {
+    background: linear-gradient(135deg, #274472 0%, #3b82f6 100%);
+}
+
+.cess-comp-extra .cess-comp-card-header {
+    background: linear-gradient(135deg, #274472 0%, #475569 100%);
+}
+
+.cess-comp-card-title {
+    font-size: 16.5px;
+    font-weight: 750;
+    margin: 0;
+    color: #ffffff;
+}
+
+.cess-comp-list {
+    list-style: none;
+    margin: 0;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.cess-comp-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14.5px;
+    color: var(--cess-navy);
+    font-weight: 500;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.cess-comp-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.cess-comp-included .cess-comp-list li svg {
+    color: #3b82f6;
+    flex-shrink: 0;
+}
+
+.cess-comp-extra .cess-comp-list li svg {
+    color: #475569;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .cess-comparison-cards-layout {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+/* ── TRAVELER MATCH SECTION ── */
+.cess-traveler-match-section {
+    padding: 84px 20px;
+    background-color: #f0f3f6;
+}
+
+.cess-traveler-match-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cess-traveler-match-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cess-traveler-match-intro {
+    font-size: 16px;
+    color: var(--cess-text-body);
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.cess-traveler-match-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.cess-traveler-match-card {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.06);
+    border-radius: var(--cess-radius-md);
+    padding: 18px 24px;
+    box-shadow: 0 4px 12px rgba(15, 28, 46, 0.01);
+    transition: all 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.cess-traveler-match-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(15, 28, 46, 0.05);
+    border-color: rgba(39, 68, 114, 0.12);
+}
+
+.cess-traveler-match-card-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.cess-traveler-match-priority {
+    font-family: var(--cess-font);
+    font-size: 14.5px;
+    color: var(--cess-text-body);
+    font-weight: 600;
+    text-align: left;
+}
+
+.cess-traveler-match-badge {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(39, 68, 114, 0.06);
+    color: var(--cess-navy);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+.cess-traveler-match-card:hover .cess-traveler-match-badge {
+    background: var(--cess-navy);
+    color: #ffffff;
+}
+
+.cess-traveler-match-footer-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: var(--cess-radius-md);
+    padding: 16px 20px;
+    margin-top: 30px;
+    font-size: 13.5px;
+    color: var(--cess-text-body);
+    line-height: 1.5;
+    text-align: left;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cess-traveler-match-footer-badge svg {
+    color: var(--cess-navy);
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .cess-traveler-match-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .cess-traveler-match-card-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .cess-traveler-match-badge {
+        align-self: flex-start;
+    }
+}
+
+.cess-compare-wrapper {
+    width: 100%;
+    margin-top: 40px;
+    border-radius: var(--cess-radius-lg);
+    background: #ffffff;
+    box-shadow: 0 10px 40px rgba(15, 28, 46, 0.03);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.cess-compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.cess-compare-table th {
+    padding: 22px 24px;
+    font-size: 14.5px;
+    font-weight: 750;
+    color: var(--cess-navy);
+    border-bottom: 2px solid rgba(39, 68, 114, 0.08);
+    background: #ffffff;
+}
+
+.cess-compare-table th:first-child,
+.cess-compare-table td:first-child {
+    width: 30%;
+    padding-left: 32px;
+}
+
+.cess-compare-table th.cess-uni-header {
+    background: linear-gradient(135deg, var(--cess-navy) 0%, #1a2a44 100%);
+    color: #ffffff;
+    text-align: center;
+    width: 35%;
+}
+
+.cess-compare-table td.cess-uni-cell {
+    background: rgba(39, 68, 114, 0.02);
+    color: var(--cess-navy);
+    font-weight: 700;
+    text-align: center;
+    border-left: 1px solid rgba(39, 68, 114, 0.04);
+    border-right: 1px solid rgba(39, 68, 114, 0.04);
+}
+
+.cess-compare-table tr:hover td.cess-uni-cell {
+    background: rgba(39, 68, 114, 0.04);
+}
+
+.cess-compare-table th.cess-typical-header {
+    background: #ffffff;
+    color: var(--cess-text-muted);
+    text-align: center;
+    width: 35%;
+}
+
+.cess-compare-table td.cess-typical-cell {
+    color: var(--cess-text-body);
+    text-align: center;
+}
+
+.cess-compare-table td {
+    padding: 18px 24px;
+    font-size: 14px;
+    color: var(--cess-text-body);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.05);
+    transition: all 0.2s ease;
+}
+
+.cess-compare-table tr:hover td {
+    background: #ffffff;
+}
+
+.cess-compare-table tr:last-child td {
+    border-bottom: none;
+}
+
+.cess-compare-table .cess-feature-title {
+    font-weight: 700;
+    color: var(--cess-navy);
+}
+
+.cess-uni-badge {
+    background: rgba(39, 68, 114, 0.08);
+    color: var(--cess-navy);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.cess-typical-value {
+    color: var(--cess-text-muted);
+    font-size: 13.5px;
+    font-weight: 500;
+}
+
+.cess-table-footnote-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    box-shadow: 0 4px 15px rgba(15, 28, 46, 0.04);
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 13.5px;
+    color: var(--cess-navy);
+    font-weight: 500;
+    margin-top: 32px;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.cess-table-footnote-badge svg {
+    color: var(--cess-navy);
+    flex-shrink: 0;
+}
+
+/* ── VALUE SECTION ────────────────────────────────────────────── */
+
+.cess-value-section {
+    position: relative;
+    background: var(--cess-navy-dark);
+    padding: 100px 20px;
+    text-align: left;
+}
+
+.cess-value-container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.cess-value-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.cess-value-eyebrow-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--cess-accent-light);
+    margin-bottom: 16px;
+}
+
+.cess-value-eyebrow-text {
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+}
+
+.cess-value-heading {
+    font-family: var(--cess-heading-font);
+    font-size: clamp(28px, 3.5vw, 38px);
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 16px 0;
+    line-height: 1.25;
+}
+
+.cess-value-separator {
+    width: 60px;
+    height: 4px;
+    background: var(--cess-accent-light);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.cess-value-body-lead {
+    font-size: 16.5px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.75;
+    margin-bottom: 14px;
+    font-weight: 500;
+}
+
+.cess-value-body-desc {
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.cess-value-quote-card {
+    background: rgba(255, 255, 255, 0.04);
+    border-left: 4px solid var(--cess-accent-light);
+    border-radius: 0 12px 12px 0;
+    padding: 22px 26px;
+    position: relative;
+}
+
+.cess-quote-mark {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    font-size: 54px;
+    color: rgba(255, 255, 255, 0.06);
+    font-family: serif;
+    line-height: 1;
+}
+
+.cess-value-emphasis {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+/* Right Column Card styling */
+.cess-value-inclusion-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--cess-radius-lg);
+    padding: 34px;
+    backdrop-filter: blur(10px);
+}
+
+.cess-inclusion-card-title {
+    font-size: 18px;
+    font-weight: 750;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+}
+
+.cess-inclusion-card-subtitle {
+    font-size: 13.5px;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0 0 24px 0;
+    line-height: 1.5;
+}
+
+.cess-value-list-items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.cess-value-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.cess-value-item-icon {
+    color: var(--cess-accent-light);
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.cess-value-item-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.cess-value-item-title {
+    font-size: 14.5px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.cess-value-item-desc {
+    font-size: 12.5px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+@media (max-width: 991px) {
+    .cess-value-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .cess-value-left-col {
+        text-align: center;
+    }
+
+    .cess-value-eyebrow-row {
+        justify-content: center;
+    }
+
+    .cess-value-separator {
+        margin: 0 auto 30px;
+    }
+}
+
+/* ── KEY TAKEAWAYS ────────────────────────────────────────────── */
+
+/* ── KEY TAKEAWAYS CLEAN ──────────────────────────────────────── */
+
+.cess-takeaways-section-clean {
+    background: var(--cess-bg-soft);
+    padding: 60px 20px;
+}
+
+.cess-takeaways-container-clean {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cess-takeaways-clean-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.cess-takeaways-clean-left {
+    text-align: left;
+    position: sticky;
+    top: 100px;
+}
+
+.cess-takeaways-clean-title {
+    font-family: var(--cess-heading-font);
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--cess-navy);
+    margin: 0 0 12px 0;
+    line-height: 1.25;
+}
+
+.cess-takeaways-clean-divider {
+    width: 50px;
+    height: 3px;
+    background: var(--cess-navy);
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.cess-takeaways-clean-intro {
+    font-size: 15px;
+    color: var(--cess-text-body);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.cess-takeaways-clean-right {
+    width: 100%;
+}
+
+.cess-takeaways-clean-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.cess-takeaways-clean-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.cess-takeaways-clean-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.cess-takeaways-clean-badge {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--cess-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 12px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.cess-takeaways-clean-text {
+    font-size: 14.5px;
+    color: var(--cess-text-body);
+    line-height: 1.65;
+    margin: 0;
+}
+
+@media (max-width: 991px) {
+    .cess-takeaways-clean-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .cess-takeaways-clean-left {
+        position: static;
+        text-align: center;
+    }
+
+    .cess-takeaways-clean-divider {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cess-takeaways-clean-title {
+        font-size: 30px;
+    }
+}
+
+/* ── FAQ ──────────────────────────────────────────────────────── */
+
+.cess-faq-section {
+    background: linear-gradient(150deg, #e2e8f0 0%, #e2e8f0 50%, #e2e8f0 100%);
+    padding: 88px 20px;
+}
+
+.cess-faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cess-faq-list-wrapper {
+    margin-top: 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cess-faq-item {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.05);
+    border-radius: 16px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(15, 28, 46, 0.01);
+}
+
+.cess-faq-item:hover {
+    background: #ffffff;
+    border-color: var(--cess-navy);
+    box-shadow: 0 8px 25px rgba(39, 68, 114, 0.08);
+}
+
+.cess-faq-question-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.cess-faq-question-row span {
+    font-size: 16px;
+    font-weight: 550;
+    color: var(--cess-navy);
+    line-height: 1.4;
+}
+
+.cess-faq-toggle-icon {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--cess-navy);
+    flex-shrink: 0;
+}
+
+.cess-faq-answer-text {
+    margin-top: 14px;
+    font-size: 14.5px;
+    line-height: 1.65;
+    color: var(--cess-text-body);
+    border-top: 1px solid rgba(39, 68, 114, 0.06);
+    padding-top: 14px;
+    margin-bottom: 0;
+}
+
+/* ── CTA ──────────────────────────────────────────────────────── */
+
+/* ── CTA REDESIGN ────────────────────────────────────────────── */
+
+.cess-cta-redesign-section {
+    position: relative;
+    padding: 96px 20px;
+    background: linear-gradient(160deg, #0f1c2e 0%, #0f1c2e 30%, #1a2a44 60%, #0f1c2e 100%);
+    text-align: center;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.cess-cta-aurora-glow {
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+    height: 70%;
+    background: radial-gradient(ellipse at center, rgba(59, 130, 246, 0.12) 0%, rgba(59, 130, 246, 0.06) 40%, transparent 70%);
+    filter: blur(60px);
+    z-index: 0;
+    animation: cess-aurora-pulse 8s ease-in-out infinite alternate;
+}
+
+@keyframes cess-aurora-pulse {
+    0% {
+        opacity: 0.6;
+        transform: translateX(-50%) scale(1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) scale(1.08);
+    }
+}
+
+.cess-cta-crystal {
+    position: absolute;
+    border-radius: 4px;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(255, 255, 255, 0.05));
+    border: 1px solid rgba(59, 130, 246, 0.12);
+    z-index: 0;
+    backdrop-filter: blur(6px);
+}
+
+.cess-cta-crystal-1 {
+    width: 80px;
+    height: 80px;
+    top: 12%;
+    left: 8%;
+    transform: rotate(45deg);
+    animation: cess-crystal-float 12s ease-in-out infinite;
+}
+
+.cess-cta-crystal-2 {
+    width: 50px;
+    height: 50px;
+    top: 20%;
+    right: 12%;
+    transform: rotate(25deg);
+    animation: cess-crystal-float 10s ease-in-out 2s infinite;
+}
+
+.cess-cta-crystal-3 {
+    width: 35px;
+    height: 35px;
+    bottom: 18%;
+    left: 15%;
+    transform: rotate(60deg);
+    animation: cess-crystal-float 14s ease-in-out 4s infinite;
+}
+
+@keyframes cess-crystal-float {
+
+    0%,
+    100% {
+        transform: rotate(45deg) translateY(0);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: rotate(45deg) translateY(-18px);
+        opacity: 0.9;
+    }
+}
+
+.cess-cta-grid-lines {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(59, 130, 246, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0;
+}
+
+.cess-cta-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cess-cta-compass-ring {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 2px solid rgba(59, 130, 246, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(59, 130, 246, 0.8);
+    margin-bottom: 16px;
+    animation: cess-compass-spin 20s linear infinite;
+    background: rgba(59, 130, 246, 0.04);
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.08);
+}
+
+@keyframes cess-compass-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.cess-cta-compass-ring svg {
+    animation: cess-compass-counter-spin 20s linear infinite;
+}
+
+@keyframes cess-compass-counter-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.cess-cta-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: rgba(59, 130, 246, 0.7);
+    margin-bottom: 12px;
+    display: block;
+}
+
+.cess-cta-title {
+    font-family: var(--cess-heading-font);
+    font-size: clamp(24px, 3.5vw, 42px);
+    line-height: 1.15;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 18px;
+    max-width: 800px;
+}
+
+.cess-cta-bar {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(59, 130, 246, 0.2), rgba(59, 130, 246, 0.8), rgba(59, 130, 246, 0.2));
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.cess-cta-subtitle {
+    font-size: clamp(15px, 2vw, 17px);
+    line-height: 1.7;
+    color: rgba(226, 232, 240, 0.85);
+    max-width: 740px;
+    margin: 0 auto 34px;
+}
+
+.cess-cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.cess-cta-primary-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 34px;
+    background: linear-gradient(135deg, var(--cess-navy), #274472);
+    color: #ffffff;
+    border: 1px solid rgba(59, 130, 246, 0.15);
+    border-radius: 30px;
+    font-size: 14.5px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 8px 24px rgba(39, 68, 114, 0.35);
+    position: relative;
+    overflow: hidden;
+}
+
+.cess-cta-primary-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(39, 68, 114, 0.5);
+    border-color: rgba(59, 130, 246, 0.4);
+}
+
+.cess-cta-btn-arrow {
+    transition: transform 0.3s ease;
+}
+
+.cess-cta-primary-btn:hover .cess-cta-btn-arrow {
+    transform: translateX(4px);
+}
+
+.cess-cta-secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 34px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    font-size: 14.5px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cess-cta-secondary-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-3px);
+}
+
+/* =============================================================
+   RESPONSIVE BREAKPOINTS
+   ============================================================= */
+
+@media (max-width: 1024px) {
+    .cess-hero-main-title {
+        font-size: 32px;
+    }
+
+    .cess-hero-subtitle-text {
+        font-size: 17px;
+    }
+
+    .cess-feature-grid {
+        gap: 44px;
+    }
+
+    .cess-card-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cess-triple-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 860px) {
+    .cess-hero-main-title {
+        font-size: 26px;
+    }
+
+    .cess-hero-subtitle-text {
+        font-size: 16px;
+    }
+
+    .cess-hero-eyebrow-tag {
+        font-size: 10px;
+        padding: 5px 12px;
+    }
+
+    .cess-feature-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cess-feature-text-col {
+        order: 1;
+        text-align: left;
+    }
+
+    .cess-feature-text-col .cess-eyebrow,
+    .cess-feature-text-col .cess-section-heading {
+        text-align: center;
+    }
+
+    .cess-feature-text-col .cess-heading-separator-bar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cess-feature-text-col .cess-check-list {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .cess-feature-image-col {
+        order: 2;
+    }
+
+    .cess-image-frame {
+        min-height: 280px;
+    }
+
+    .cess-included-grid,
+    .cess-toc-list,
+    .cess-check-list-2col,
+    .cess-wellness-list,
+    .cess-takeaways-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cess-triple-container {
+        grid-template-columns: 1fr;
+    }
+
+    .cess-card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cess-toc-container {
+        padding: 28px 24px;
+    }
+
+    .cess-compare-table {
+        min-width: 680px;
+    }
+}
+
+@media (max-width: 640px) {
+    .cess-hero-main-title {
+        font-size: 26px;
+    }
+
+    .cess-hero-subtitle-text {
+        font-size: 16px;
+    }
+
+    .cess-hero-content-wrapper {
+        padding: 60px 18px;
+    }
+
+    .cess-intro-section,
+    .cess-different-section,
+    .cess-feature-section,
+    .cess-simple-section,
+    .cess-triple-section,
+    .cess-table-section,
+    .cess-value-section,
+    .cess-takeaways-section-clean,
+    .cess-faq-section,
+    .cess-cta-section,
+    .cess-cta-redesign-section {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+
+    .cess-card-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cess-cta-button-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cess-primary-btn,
+    .cess-secondary-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .cess-data-table {
+        min-width: 420px;
+    }
+
+    .cess-faq-question-row {
+        font-size: 14.5px;
+    }
+}
+
+@media (max-width: 420px) {
+    .cess-card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cess-value-card,
+    .cess-toc-container {
+        padding: 24px 18px;
+    }
+}
+
+.cess-expert-insight-section {
+    padding: 88px 24px;
+    background: #0f1c2e !important;
+    /* Navy Dark equivalent for this page */
+    position: relative;
+    overflow: hidden;
+}
+
+.cess-expert-insight-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 0.75fr 1.25fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.cess-expert-portrait-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.cess-expert-img-frame {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 380px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cess-expert-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.cess-expert-img-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15, 28, 46, 0.6) 0%, transparent 60%);
+}
+
+.cess-expert-badge {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    background: #3b82f6;
+    /* Soft Accent light blue tint */
+    color: #0f1c2e;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    padding: 6px 12px;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+
+.cess-expert-stats-strip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    width: 100%;
+}
+
+.cess-expert-stat-box {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 16px;
+    text-align: center;
+    transition: all 0.25s ease;
+}
+
+.cess-expert-stat-box:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: #3b82f6;
+}
+
+.cess-expert-stat-num {
+    font-size: 26px;
+    font-weight: 800;
+    color: #3b82f6;
+    line-height: 1.2;
+    margin-bottom: 2px;
+}
+
+.cess-expert-stat-lbl {
+    font-size: 11.5px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.cess-expert-eyebrow-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #3b82f6;
+    margin-bottom: 12px;
+}
+
+.cess-expert-eyebrow-row .cess-eyebrow {
+    margin-bottom: 0;
+}
+
+.cess-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #3b82f6;
+    display: block;
+}
+
+.cess-section-heading1 {
+    font-size: clamp(26px, 3.2vw, 38px);
+    font-weight: 700;
+    color: #ffffff !important;
+    line-height: 1.25;
+    margin: 0 0 14px;
+}
+
+.cess-heading-separator-bar {
+    width: 64px;
+    height: 4px;
+    background: #3b82f6;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+}
+
+/* Side-by-side sections: left-align on desktop */
+@media (min-width: 992px) {
+    .cess-feature-text-col .cess-heading-separator-bar,
+    .cess-dining-left-col .cess-heading-separator-bar,
+    .cess-amenities-content-col .cess-heading-separator-bar,
+    .cess-expert-content-panel .cess-heading-separator-bar {
+        margin-left: 0;
+        margin-right: auto;
+    }
+}
+
+/* Force center alignment on mobile/responsive layouts */
+@media (max-width: 991px) {
+    .cess-heading-separator-bar {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+.cess-expert-quote-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 4px solid #3b82f6;
+    border-radius: 0 16px 16px 0;
+    padding: 24px 28px 24px 34px;
+    margin: 28px 0;
+}
+
+.cess-expert-quote-mark {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    font-size: 48px;
+    color: rgba(59, 130, 246, 0.15);
+    font-family: 'Georgia', serif;
+    line-height: 1;
+}
+
+.cess-expert-quote-text {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff !important;
+    margin: 0;
+}
+
+.cess-priorities-title {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 14px;
+}
+
+.cess-expert-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 28px;
+}
+
+.cess-expert-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 12.5px;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 30px;
+    transition: all 0.2s ease;
+}
+
+.cess-expert-pill:hover {
+    background: rgba(255, 255, 255, 0.09);
+    border-color: #3b82f6;
+}
+
+.cess-expert-pill svg {
+    color: #3b82f6;
+}
+
+.cess-expert-footer-bio {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 24px;
+    margin-top: 24px;
+}
+
+.cess-expert-bio {
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.7) !important;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .cess-expert-insight-container {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .cess-expert-img-frame {
+        height: 320px;
+    }
+}
+
+/* ── SUITE BENEFITS & ACCESSIBILITY SECTION ──────────────────── */
+
+.cess-info-split-section {
+    padding: 84px 20px;
+    background: var(--cess-bg-white);
+}
+
+.cess-info-split-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cess-info-split-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.cess-info-split-col {
+    text-align: left;
+}
+
+.cess-info-split-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 16px;
+}
+
+.cess-info-split-icon-wrap {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    background: rgba(39, 68, 114, 0.06);
+    color: var(--cess-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.cess-info-split-title {
+    font-family: var(--cess-heading-font);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--cess-navy);
+    margin: 0;
+    line-height: 1.3;
+}
+
+.cess-info-split-divider {
+    width: 40px;
+    height: 3px;
+    background: var(--cess-navy);
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.cess-info-split-body {
+    font-size: 15px;
+    color: var(--cess-text-body);
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.cess-info-split-checklist {
+    list-style: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cess-info-split-checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14.5px;
+    color: var(--cess-text-body);
+    line-height: 1.4;
+}
+
+.cess-info-split-checklist li svg {
+    color: var(--cess-navy);
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.cess-info-split-note {
+    font-size: 13.5px;
+    color: var(--cess-text-muted);
+    font-style: italic;
+    margin-top: auto;
+    padding-top: 14px;
+    border-top: 1px solid rgba(39, 68, 114, 0.08);
+    line-height: 1.5;
+}
+
+@media (max-width: 991px) {
+    .cess-info-split-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+/* ── CABIN LOCATION TIPS SECTION ────────────────────────────── */
+
+.cess-loc-tips-section {
+    padding: 84px 20px;
+    background: var(--cess-bg-soft);
+}
+
+.cess-loc-tips-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cess-loc-tips-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cess-loc-tips-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.cess-loc-tips-card {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: var(--cess-radius-lg);
+    padding: 28px 24px;
+    flex: 1 1 calc(33.333% - 24px);
+    max-width: calc(33.333% - 16px);
+    min-width: 290px;
+    box-shadow: 0 4px 15px rgba(15, 28, 46, 0.02);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    display: flex;
+    flex-direction: column;
+}
+
+.cess-loc-tips-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(15, 28, 46, 0.08);
+    border-color: rgba(39, 68, 114, 0.16);
+}
+
+.cess-loc-tips-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cess-loc-tips-icon-wrap {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: rgba(39, 68, 114, 0.06);
+    color: var(--cess-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.cess-loc-tips-card:hover .cess-loc-tips-icon-wrap {
+    background: var(--cess-navy);
+    color: #ffffff;
+}
+
+.cess-loc-tips-title {
+    font-family: var(--cess-font);
+    font-size: 16.5px;
+    font-weight: 750;
+    color: var(--cess-navy);
+    margin: 0;
+}
+
+.cess-loc-tips-card-line {
+    width: 30px;
+    height: 2px;
+    background: var(--cess-navy);
+    margin: 12px 0 14px;
+    opacity: 0.15;
+}
+
+.cess-loc-tips-text {
+    font-size: 14px;
+    color: var(--cess-text-body);
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 991px) {
+    .cess-loc-tips-card {
+        flex: 1 1 calc(50% - 24px);
+        max-width: calc(50% - 12px);
+    }
+}
+
+@media (max-width: 640px) {
+    .cess-loc-tips-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+/* ── WHAT TO CHECK BEFORE BOOKING SECTION CLEAN ──────────────── */
+
+.cess-booking-checks-section-clean {
+    padding: 84px 20px;
+    background: var(--cess-bg-white);
+}
+
+.cess-booking-checks-container-clean {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cess-booking-checks-clean-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.cess-booking-checks-clean-left {
+    text-align: left;
+    position: sticky;
+    top: 100px;
+}
+
+.cess-booking-checks-clean-title {
+    font-family: var(--cess-heading-font);
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--cess-navy);
+    margin: 0 0 12px 0;
+    line-height: 1.25;
+}
+
+.cess-booking-checks-clean-divider {
+    width: 50px;
+    height: 3px;
+    background: var(--cess-navy);
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.cess-booking-checks-clean-intro {
+    font-size: 15px;
+    color: var(--cess-text-body);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.cess-booking-checks-clean-right {
+    width: 100%;
+}
+
+.cess-booking-checks-clean-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.cess-booking-checks-clean-item {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.cess-booking-checks-clean-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.cess-booking-checks-clean-header-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.cess-booking-checks-clean-icon-wrap {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: rgba(39, 68, 114, 0.06);
+    color: var(--cess-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.cess-booking-checks-clean-item-title {
+    font-family: var(--cess-font);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--cess-navy);
+    margin: 0;
+}
+
+.cess-booking-checks-clean-body {
+    font-size: 14.5px;
+    color: var(--cess-text-body);
+    line-height: 1.65;
+    margin: 0 0 14px 0;
+}
+
+.cess-booking-checks-clean-checklist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cess-booking-checks-clean-checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13.5px;
+    color: var(--cess-text-body);
+    line-height: 1.4;
+}
+
+.cess-booking-checks-clean-checklist li svg {
+    color: var(--cess-navy);
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+@media (max-width: 991px) {
+    .cess-booking-checks-clean-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .cess-booking-checks-clean-left {
+        position: static;
+        text-align: center;
+    }
+
+    .cess-booking-checks-clean-divider {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cess-booking-checks-clean-title {
+        font-size: 28px;
+    }
+}
+
+/* ── HOW TO CHOOSE CABIN SECTION ────────────────────────────── */
+
+.cess-choose-cabin-section {
+    padding: 84px 20px;
+    background: #e8eef6;
+}
+
+.cess-choose-cabin-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cess-choose-cabin-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cess-choose-cabin-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.cess-choose-cabin-card {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: var(--cess-radius-lg);
+    padding: 28px 24px;
+    flex: 1 1 calc(33.333% - 24px);
+    max-width: calc(33.333% - 16px);
+    min-width: 290px;
+    box-shadow: 0 4px 15px rgba(15, 28, 46, 0.02);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    display: flex;
+    flex-direction: column;
+}
+
+.cess-choose-cabin-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(15, 28, 46, 0.08);
+    border-color: rgba(39, 68, 114, 0.16);
+}
+
+.cess-choose-cabin-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cess-choose-cabin-num-badge {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--cess-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 13px;
+    flex-shrink: 0;
+}
+
+.cess-choose-cabin-card:hover .cess-choose-cabin-num-badge {
+    background: var(--cess-accent-light);
+    color: var(--cess-navy);
+}
+
+.cess-choose-cabin-card-title {
+    font-family: var(--cess-font);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--cess-navy);
+    margin: 0;
+}
+
+.cess-choose-cabin-card-line {
+    width: 30px;
+    height: 2px;
+    background: var(--cess-navy);
+    margin: 12px 0 14px;
+    opacity: 0.15;
+}
+
+.cess-choose-cabin-text {
+    font-size: 13.5px;
+    color: var(--cess-text-body);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.cess-choose-cabin-footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.cess-choose-cabin-pill-box {
+    text-align: left;
+}
+
+.cess-choose-cabin-pill-title {
+    font-family: var(--cess-font);
+    font-size: 14.5px;
+    font-weight: 700;
+    color: var(--cess-navy);
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.cess-choose-cabin-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.cess-choose-cabin-pill {
+    display: inline-block;
+    padding: 6px 12px;
+    background: rgba(39, 68, 114, 0.04);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 20px;
+    font-size: 13px;
+    color: var(--cess-text-body);
+    font-weight: 550;
+    transition: all 0.2s ease;
+}
+
+.cess-choose-cabin-pill:hover {
+    background: rgba(39, 68, 114, 0.08);
+    border-color: var(--cess-navy);
+    color: var(--cess-navy);
+}
+
+@media (max-width: 991px) {
+    .cess-choose-cabin-card {
+        flex: 1 1 calc(50% - 24px);
+        max-width: calc(50% - 12px);
+    }
+
+    .cess-choose-cabin-footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 640px) {
+    .cess-choose-cabin-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+/* ── VERANDA VS INFINITE VERANDA SECTION ────────────────────── */
+
+.cess-veranda-vs-section {
+    padding: 84px 20px;
+    background: var(--cess-bg-white);
+}
+
+.cess-veranda-vs-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cess-veranda-vs-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cess-veranda-vs-intro {
+    font-size: 15.5px;
+    color: var(--cess-text-body);
+    line-height: 1.7;
+    margin-top: 12px;
+    margin-bottom: 0;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cess-veranda-vs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: stretch;
+}
+
+.cess-veranda-vs-panel {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: var(--cess-radius-lg);
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(15, 28, 46, 0.02);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.cess-veranda-vs-panel:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(15, 28, 46, 0.06);
+    border-color: rgba(39, 68, 114, 0.15);
+}
+
+.cess-veranda-vs-visual {
+    width: 100%;
+    padding: 16px 16px 0 16px;
+}
+
+.cess-veranda-vs-img-frame {
+    height: 220px;
+    border-radius: var(--cess-radius-md);
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.05) 0%, rgba(39, 68, 114, 0.01) 100%);
+    border: 1.5px dashed rgba(39, 68, 114, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cess-veranda-vs-mock-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.cess-veranda-vs-sun-icon {
+    color: #eab308;
+}
+
+.cess-veranda-vs-layers-icon {
+    color: var(--cess-navy);
+}
+
+.cess-veranda-vs-label {
+    font-family: var(--cess-font);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--cess-navy);
+}
+
+.cess-veranda-vs-sublabel {
+    font-size: 12px;
+    color: var(--cess-text-muted);
+}
+
+.cess-veranda-vs-badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    padding: 4px 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--cess-navy);
+}
+
+.cess-veranda-vs-content {
+    padding: 24px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.cess-veranda-vs-title {
+    font-family: var(--cess-font);
+    font-size: 20px;
+    font-weight: 750;
+    color: var(--cess-navy);
+    margin: 0 0 10px 0;
+}
+
+.cess-veranda-vs-divider {
+    width: 30px;
+    height: 3px;
+    background: var(--cess-navy);
+    border-radius: 3px;
+    margin-bottom: 18px;
+}
+
+.cess-veranda-vs-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cess-veranda-vs-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--cess-text-body);
+    line-height: 1.45;
+}
+
+.cess-veranda-vs-list li svg {
+    color: var(--cess-navy);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+@media (max-width: 768px) {
+    .cess-veranda-vs-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}

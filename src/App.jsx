@@ -167,6 +167,8 @@ import UniworldvsScenicRiverCruises from "./pages/UniworldvsScenicRiverCruises/U
 import UniworldvsAmaWaterways from "./pages/UniworldvsAmaWaterways/UniworldvsAmaWaterways";
 import CelebrityCruises from "./pages/CelebrityCruises/CelebrityCruises";
 import WhatsIncludedCelebrityCruise from "./pages/WhatsIncludedCelebrityCruise/WhatsIncludedCelebrityCruise";
+import CelebrityCruiseShipsCompleteFleetGuide from "./pages/CelebrityCruiseShipsCompleteFleetGuide/CelebrityCruiseShipsCompleteFleetGuide";
+import CelebrityStateroomsSuitesGuide from "./pages/CelebrityStateroomsSuitesGuide/CelebrityStateroomsSuitesGuide";
 import Celebritybeyondcruiseshipguide from "./pages/Celebritybeyondcruiseshipguide/Celebritybeyondcruiseshipguide";
 import Celebrityapexcruiseshipguide from "./pages/Celebrityapexcruiseshipguide/Celebrityapexcruiseshipguide";
 import Celebrityedgecruiseshipguide from "./pages/Celebrityedgecruiseshipguide/Celebrityedgecruiseshipguide";
@@ -950,6 +952,16 @@ function App() {
           />
 
           <Route
+            path="/celebrity-cruises/ships"
+            element={<CelebrityCruiseShipsCompleteFleetGuide />}
+          />
+
+          <Route
+            path="/celebrity-cruises/staterooms-suites"
+            element={<CelebrityStateroomsSuitesGuide />}
+          />
+
+          <Route
             path="/celebrity-cruises/ships/celebrity-beyond"
             element={<Celebritybeyondcruiseshipguide />}
           />
@@ -961,7 +973,7 @@ function App() {
 
           <Route
             path="/celebrity-cruises/ships/celebrity-edge"
-            element={<Celebrityedgecruiseshipguide  />}
+            element={<Celebrityedgecruiseshipguide />}
           />
 
           {/* <Route
