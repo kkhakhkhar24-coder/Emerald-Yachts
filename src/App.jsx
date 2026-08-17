@@ -169,6 +169,10 @@ import CelebrityCruises from "./pages/CelebrityCruises/CelebrityCruises";
 import WhatsIncludedCelebrityCruise from "./pages/WhatsIncludedCelebrityCruise/WhatsIncludedCelebrityCruise";
 import Celebritybeyondcruiseshipguide from "./pages/Celebritybeyondcruiseshipguide/Celebritybeyondcruiseshipguide";
 import Celebrityapexcruiseshipguide from "./pages/Celebrityapexcruiseshipguide/Celebrityapexcruiseshipguide";
+import Celebrityedgecruiseshipguide from "./pages/Celebrityedgecruiseshipguide/Celebrityedgecruiseshipguide";
+// import Celebrityedgevssolsticeseries from "./pages/Celebrityedgevssolsticeseries/Celebrityedgevssolsticeseries";
+// import Celebrityrivercruises from "./pages/Celebrityrivercruises/Celebrityrivercruises";
+// import Celebrityrhinerivercruises  from "./pages/Celebrityrhinerivercruises/Celebrityrhinerivercruises";
 
 function App() {
   return (
@@ -954,6 +958,28 @@ function App() {
             path="/celebrity-cruises/ships/celebrity-apex"
             element={<Celebrityapexcruiseshipguide />}
           />
+
+          <Route
+            path="/celebrity-cruises/ships/celebrity-edge"
+            element={<Celebrityedgecruiseshipguide  />}
+          />
+
+          {/* <Route
+            path="/celebrity-cruises/edge-vs-solstice-series"
+            element={<Celebrityedgevssolsticeseries  />}
+          />
+
+          <Route
+            path="/celebrity-cruises/river-cruises"
+            element={<Celebrityrivercruises  />}
+          />
+
+          <Route
+            path="/celebrity-cruises/river-cruises/rhine"
+            element={<Celebrityrhinerivercruises   />}
+          />
+
+ */}
 
         </Routes>
       </BrowserRouter>

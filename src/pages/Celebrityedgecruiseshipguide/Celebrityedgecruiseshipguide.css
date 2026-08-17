@@ -1,18 +1,18 @@
 /* ============================================================
-   CELEBRITY BEYOND CRUISE SHIP GUIDE — PAGE STYLES
+   CELEBRITY EDGE CRUISE SHIP GUIDE — PAGE STYLES
    Reference Colors & Typography preserved.
-   Prefix: ceap- (used for all new/custom sections)
+   Prefix: cecs- (used for all new/custom sections)
    Matched layouts: fcel- (hero, intro, faq, cta), medi- (expert insight)
    ============================================================ */
 
 :root {
-    --ceap-navy: #274472;
-    --ceap-navy-light: #274472cc;
-    --ceap-bg-white: #ffffff;
-    --ceap-bg-soft: rgb(231, 243, 245);
-    --ceap-bg-dark: #0f1c2e;
-    --ceap-bg-dark2: #1c2f4a;
-    --ceap-green: #10b981;
+    --cecs-navy: #274472;
+    --cecs-navy-light: #274472cc;
+    --cecs-bg-white: #ffffff;
+    --cecs-bg-soft: rgb(231, 243, 245);
+    --cecs-bg-dark: #0f1c2e;
+    --cecs-bg-dark2: #1c2f4a;
+    --cecs-green: #10b981;
 }
 
 /* ============================================================
@@ -28,13 +28,13 @@
     font-weight: 500 !important;
     margin: 0 0 20px 0;
     letter-spacing: -0.01em;
-    color: var(--ceap-navy);
+    color: var(--cecs-navy);
 }
 
 .fcel-heading-bar {
     width: 60px;
     height: 4px;
-    background: var(--ceap-navy);
+    background: var(--cecs-navy);
     margin-bottom: 32px;
 }
 
@@ -50,22 +50,22 @@
     font-weight: 700 !important;
     letter-spacing: 0.12em !important;
     text-transform: uppercase !important;
-    color: var(--ceap-navy) !important;
-    background: var(--ceap-bg-soft) !important;
+    color: var(--cecs-navy) !important;
+    background: var(--cecs-bg-soft) !important;
     padding: 8px 16px !important;
     border-radius: 30px !important;
     margin-bottom: 18px !important;
 }
 
-.fcel-page-wrapper .ceap-eyebrow-white {
-    background: var(--ceap-bg-white) !important;
-    color: var(--ceap-navy) !important;
+.fcel-page-wrapper .cecs-eyebrow-white {
+    background: var(--cecs-bg-white) !important;
+    color: var(--cecs-navy) !important;
 }
 
-.fcel-page-wrapper .ceap-bg-soft .fcel-eyebrow-label,
-.fcel-page-wrapper .ceap-glance-section .fcel-eyebrow-label,
+.fcel-page-wrapper .cecs-bg-soft .fcel-eyebrow-label,
+.fcel-page-wrapper .cecs-glance-section .fcel-eyebrow-label,
 .fcel-page-wrapper .fcel-faq-section .fcel-eyebrow-label {
-    background: var(--ceap-bg-white) !important;
+    background: var(--cecs-bg-white) !important;
 }
 
 .fcel-lead-paragraph {
@@ -100,7 +100,7 @@
 /* ============================================================
    IMAGE PLACEHOLDER COMPONENT
    ============================================================ */
-.ceap-image-placeholder {
+.cecs-image-placeholder {
     width: 100%;
     height: 100%;
     min-height: 320px;
@@ -112,20 +112,20 @@
     align-items: center;
     justify-content: center;
     gap: 12px;
-    color: var(--ceap-navy);
+    color: var(--cecs-navy);
     padding: 24px;
     text-align: center;
     box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.02);
     transition: all 0.3s ease;
 }
 
-.ceap-image-placeholder span {
+.cecs-image-placeholder span {
     font-size: 15px;
     font-weight: 600;
     color: #475569;
 }
 
-.ceap-image-placeholder:hover {
+.cecs-image-placeholder:hover {
     background: linear-gradient(135deg, rgba(39, 68, 114, 0.08) 0%, rgba(231, 243, 245, 0.9) 100%);
     border-color: rgba(39, 68, 114, 0.3);
 }
@@ -208,7 +208,7 @@
 }
 
 .fcel-btn-primary {
-    background: var(--ceap-navy);
+    background: var(--cecs-navy);
     color: #ffffff;
     border: none;
     padding: 16px 36px;
@@ -333,7 +333,7 @@
 }
 
 .fcel-intro-image-frame img,
-.fcel-intro-image-frame .ceap-image-placeholder {
+.fcel-intro-image-frame .cecs-image-placeholder {
     width: 100%;
     min-height: 500px;
     object-fit: cover;
@@ -344,7 +344,7 @@
     position: absolute;
     bottom: 24px;
     left: 24px;
-    background: var(--ceap-navy);
+    background: var(--cecs-navy);
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 30px;
@@ -364,7 +364,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    background: var(--ceap-navy);
+    background: var(--cecs-navy);
     border-radius: 14px;
     padding: 26px 32px;
     margin-top: 20px;
@@ -400,7 +400,7 @@
     }
 
     .fcel-intro-image-frame img,
-    .fcel-intro-image-frame .ceap-image-placeholder {
+    .fcel-intro-image-frame .cecs-image-placeholder {
         min-height: 320px;
     }
 
@@ -432,7 +432,7 @@
     }
 
     .fcel-intro-image-frame img,
-    .fcel-intro-image-frame .ceap-image-placeholder {
+    .fcel-intro-image-frame .cecs-image-placeholder {
         min-height: 240px;
     }
 
@@ -447,19 +447,19 @@
 /* ============================================================
    QUICK ANSWER SECTION
    ============================================================ */
-.ceap-quick-answer-section {
-    background: var(--ceap-bg-white);
+.cecs-quick-answer-section {
+    background: var(--cecs-bg-white);
     padding: 100px 20px;
 }
 
-.ceap-quick-answer-container {
+.cecs-quick-answer-container {
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.ceap-quick-answer-card {
+.cecs-quick-answer-card {
     background: #faf8f5;
-    border-left: 5px solid var(--ceap-navy);
+    border-left: 5px solid var(--cecs-navy);
     border-radius: 0 20px 20px 0;
     padding: 40px;
     box-shadow: 0 10px 30px rgba(39, 68, 114, 0.03);
@@ -468,14 +468,14 @@
     border-bottom: 1px solid rgba(39, 68, 114, 0.05);
 }
 
-.ceap-quick-answer-title {
+.cecs-quick-answer-title {
     font-size: 28px;
     font-weight: 600;
-    color: var(--ceap-navy);
+    color: var(--cecs-navy);
     margin: 0 0 20px 0;
 }
 
-.ceap-quick-answer-text {
+.cecs-quick-answer-text {
     font-size: 18px;
     line-height: 1.7;
     color: #1e293b;
@@ -484,25 +484,25 @@
 }
 
 @media (max-width: 768px) {
-    .ceap-quick-answer-section {
+    .cecs-quick-answer-section {
         padding: 60px 18px;
     }
 
-    .ceap-quick-answer-card {
+    .cecs-quick-answer-card {
         padding: 24px;
     }
 }
 
 @media (max-width: 480px) {
-    .ceap-quick-answer-section {
+    .cecs-quick-answer-section {
         padding: 44px 14px;
     }
 
-    .ceap-quick-answer-title {
+    .cecs-quick-answer-title {
         font-size: 22px;
     }
 
-    .ceap-quick-answer-text {
+    .cecs-quick-answer-text {
         font-size: 15px;
     }
 }
@@ -510,7 +510,7 @@
 /* ============================================================
    INLINE CTA SECTION
    ============================================================ */
-.ceap-inline-cta-section {
+.cecs-inline-cta-section {
     background: linear-gradient(135deg, #faf8f5 0%, #e7f3f5 100%);
     padding: 60px 20px;
     text-align: center;
@@ -520,7 +520,7 @@
     overflow: hidden;
 }
 
-.ceap-inline-cta-section::before {
+.cecs-inline-cta-section::before {
     content: '';
     position: absolute;
     top: -50px;
@@ -532,7 +532,7 @@
     pointer-events: none;
 }
 
-.ceap-inline-cta-section::after {
+.cecs-inline-cta-section::after {
     content: '';
     position: absolute;
     bottom: -60px;
@@ -544,7 +544,7 @@
     pointer-events: none;
 }
 
-.ceap-inline-cta-container {
+.cecs-inline-cta-container {
     max-width: 850px;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.9);
@@ -561,27 +561,27 @@
     z-index: 1;
 }
 
-.ceap-inline-cta-tag {
+.cecs-inline-cta-tag {
     font-size: 11px;
     font-weight: 700;
-    color: var(--ceap-navy);
+    color: var(--cecs-navy);
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    background: var(--ceap-bg-soft);
+    background: var(--cecs-bg-soft);
     padding: 6px 14px;
     border-radius: 30px;
 }
 
-.ceap-inline-cta-text {
+.cecs-inline-cta-text {
     font-size: 22px;
     font-weight: 600;
-    color: var(--ceap-navy);
+    color: var(--cecs-navy);
     margin: 0;
     line-height: 1.45;
     max-width: 650px;
 }
 
-.ceap-inline-cta-btn-row {
+.cecs-inline-cta-btn-row {
     display: flex;
     gap: 16px;
     justify-content: center;
@@ -589,8 +589,8 @@
     margin-top: 6px;
 }
 
-.ceap-btn-primary {
-    background: var(--ceap-navy);
+.cecs-btn-primary {
+    background: var(--cecs-navy);
     color: #ffffff;
     border: none;
     padding: 14px 34px;
@@ -606,16 +606,16 @@
     box-shadow: 0 4px 15px rgba(39, 68, 114, 0.2);
 }
 
-.ceap-btn-primary:hover {
+.cecs-btn-primary:hover {
     background: #1e365a;
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(39, 68, 114, 0.3);
 }
 
-.ceap-btn-outline {
+.cecs-btn-outline {
     background: transparent;
-    color: var(--ceap-navy);
-    border: 2px solid var(--ceap-navy);
+    color: var(--cecs-navy);
+    border: 2px solid var(--cecs-navy);
     padding: 12px 32px;
     border-radius: 8px;
     font-size: 15px;
@@ -628,33 +628,33 @@
     transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.ceap-btn-outline:hover {
+.cecs-btn-outline:hover {
     background: rgba(39, 68, 114, 0.06);
     transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {
-    .ceap-inline-cta-section {
+    .cecs-inline-cta-section {
         padding: 40px 18px;
     }
 
-    .ceap-inline-cta-container {
+    .cecs-inline-cta-container {
         padding: 26px 30px;
     }
 
-    .ceap-inline-cta-text {
+    .cecs-inline-cta-text {
         font-size: 18px;
     }
 }
 
 @media (max-width: 480px) {
-    .ceap-inline-cta-btn-row {
+    .cecs-inline-cta-btn-row {
         flex-direction: column;
         width: 100%;
     }
 
-    .ceap-btn-primary,
-    .ceap-btn-outline {
+    .cecs-btn-primary,
+    .cecs-btn-outline {
         padding: 12px 22px;
         font-size: 14px;
         width: 100%;
@@ -665,47 +665,47 @@
 /* ============================================================
    AT A GLANCE TABLE
    ============================================================ */
-.ceap-glance-section {
-    background: var(--ceap-bg-soft);
+.cecs-glance-section {
+    background: var(--cecs-bg-soft);
     padding: 100px 20px;
 }
 
-.ceap-glance-container {
+.cecs-glance-container {
     max-width: 900px;
     margin: 0 auto;
 }
 
-.ceap-glance-table {
+.cecs-glance-table {
     margin-top: 40px;
-    background: var(--ceap-bg-white);
+    background: var(--cecs-bg-white);
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 15px 35px rgba(39, 68, 114, 0.06);
     border: 1px solid rgba(39, 68, 114, 0.08);
 }
 
-.ceap-glance-row {
+.cecs-glance-row {
     display: grid;
     grid-template-columns: 260px 1fr;
 }
 
-.ceap-glance-row:nth-child(even) {
+.cecs-glance-row:nth-child(even) {
     background: #faf8f5;
 }
 
-.ceap-glance-row:not(:last-child) {
+.cecs-glance-row:not(:last-child) {
     border-bottom: 1px solid rgba(39, 68, 114, 0.08);
 }
 
-.ceap-glance-feature {
+.cecs-glance-feature {
     padding: 18px 28px;
     font-size: 15px;
     font-weight: 700;
-    color: var(--ceap-navy);
-    background: var(--ceap-bg-soft);
+    color: var(--cecs-navy);
+    background: var(--cecs-bg-soft);
 }
 
-.ceap-glance-detail {
+.cecs-glance-detail {
     padding: 18px 28px;
     font-size: 15px;
     color: #334155;
@@ -713,26 +713,26 @@
 }
 
 @media (max-width: 768px) {
-    .ceap-glance-section {
+    .cecs-glance-section {
         padding: 60px 18px;
     }
 }
 
 @media (max-width: 480px) {
-    .ceap-glance-section {
+    .cecs-glance-section {
         padding: 44px 14px;
     }
 
-    .ceap-glance-row {
+    .cecs-glance-row {
         grid-template-columns: 1fr;
     }
 
-    .ceap-glance-feature {
+    .cecs-glance-feature {
         padding: 12px 18px 4px;
         font-size: 13px;
     }
 
-    .ceap-glance-detail {
+    .cecs-glance-detail {
         padding: 4px 18px 14px;
         font-size: 14px;
     }
@@ -742,24 +742,24 @@
    WHY SAIL / TAG GRID (used for Why Sail, Ship Layout,
    Pools & Wellness, Entertainment)
    ============================================================ */
-.ceap-tag-section {
+.cecs-tag-section {
     padding: 100px 20px;
 }
 
-.ceap-tag-container {
+.cecs-tag-container {
     max-width: 1280px;
     margin: 0 auto;
 }
 
-.ceap-tag-grid {
+.cecs-tag-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     margin-top: 40px;
 }
 
-.ceap-tag-card {
-    background: var(--ceap-bg-soft);
+.cecs-tag-card {
+    background: var(--cecs-bg-soft);
     border: 1px solid rgba(39, 68, 114, 0.08);
     border-radius: 16px;
     padding: 24px 18px;
@@ -771,67 +771,55 @@
     gap: 12px;
 }
 
-.ceap-tag-card:hover {
-    background: var(--ceap-bg-white);
+.cecs-tag-card:hover {
+    background: var(--cecs-bg-white);
     border-color: rgba(39, 68, 114, 0.2);
     transform: translateY(-5px);
     box-shadow: 0 15px 30px rgba(39, 68, 114, 0.08);
 }
 
-.ceap-bg-soft .ceap-tag-card {
-    background: var(--ceap-bg-white);
-    border-color: rgba(39, 68, 114, 0.06);
-}
-
-.ceap-bg-soft .ceap-tag-card:hover {
-    background: var(--ceap-bg-white);
-    border-color: rgba(39, 68, 114, 0.2);
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(39, 68, 114, 0.08);
-}
-
-.ceap-tag-icon {
+.cecs-tag-icon {
     width: 44px;
     height: 44px;
     border-radius: 50%;
     background: rgba(39, 68, 114, 0.08);
-    color: var(--ceap-navy);
+    color: var(--cecs-navy);
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
 
-.ceap-tag-card:hover .ceap-tag-icon {
-    background: var(--ceap-navy);
+.cecs-tag-card:hover .cecs-tag-icon {
+    background: var(--cecs-navy);
     color: #ffffff;
 }
 
-.ceap-tag-label {
+.cecs-tag-label {
     font-size: 15px;
     font-weight: 600;
-    color: var(--ceap-navy);
+    color: var(--cecs-navy);
     line-height: 1.4;
 }
 
 @media (max-width: 1024px) {
-    .ceap-tag-grid {
+    .cecs-tag-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 768px) {
-    .ceap-tag-section {
+    .cecs-tag-section {
         padding: 60px 18px;
     }
 }
 
 @media (max-width: 480px) {
-    .ceap-tag-section {
+    .cecs-tag-section {
         padding: 44px 14px;
     }
 
-    .ceap-tag-grid {
+    .cecs-tag-grid {
         grid-template-columns: 1fr;
         gap: 14px;
     }
@@ -841,51 +829,51 @@
    ALTERNATING FEATURE SECTIONS (Retreat, Cabins, Dining,
    Sunset Bar, Magic Carpet, Eden)
    ============================================================ */
-.ceap-feature-section {
+.cecs-feature-section {
     padding: 100px 20px;
 }
 
-.ceap-bg-white {
-    background: var(--ceap-bg-white) !important;
+.cecs-bg-white {
+    background: var(--cecs-bg-white) !important;
 }
 
-.ceap-bg-soft {
-    background: var(--ceap-bg-soft) !important;
+.cecs-bg-soft {
+    background: var(--cecs-bg-soft) !important;
 }
 
-.ceap-feature-container {
+.cecs-feature-container {
     max-width: 1280px;
     margin: 0 auto;
 }
 
-.ceap-feature-grid {
+.cecs-feature-grid {
     display: grid;
     grid-template-columns: 0.85fr 1.15fr;
     gap: 60px;
     align-items: center;
 }
 
-.ceap-feature-grid.ceap-reverse {
+.cecs-feature-grid.cecs-reverse {
     grid-template-columns: 1.15fr 0.85fr;
 }
 
-.ceap-feature-grid.ceap-reverse .ceap-feature-image-col {
+.cecs-feature-grid.cecs-reverse .cecs-feature-image-col {
     order: 2;
 }
 
-.ceap-feature-copy-col {
+.cecs-feature-copy-col {
     display: flex;
     flex-direction: column;
 }
 
-.ceap-feature-title {
+.cecs-feature-title {
     font-size: 32px;
     font-weight: 500;
-    color: var(--ceap-navy);
+    color: var(--cecs-navy);
     margin: 0 0 16px 0;
 }
 
-.ceap-feature-image-col {
+.cecs-feature-image-col {
     position: relative;
     border-radius: 24px;
     overflow: hidden;
@@ -898,18 +886,18 @@
     width: 100%;
 }
 
-.ceap-feature-image-col .ceap-image-placeholder {
+.cecs-feature-image-col .cecs-image-placeholder {
     min-height: 300px;
     height: 380px;
     flex-grow: 1;
 }
 
-.ceap-badge-overlay {
+.cecs-badge-overlay {
     position: absolute;
     top: 20px;
     right: 20px;
-    background: var(--ceap-bg-white);
-    color: var(--ceap-bg-dark);
+    background: var(--cecs-bg-white);
+    color: var(--cecs-bg-dark);
     padding: 6px 14px;
     border-radius: 30px;
     font-size: 12px;
@@ -924,14 +912,14 @@
     z-index: 2;
 }
 
-.ceap-feature-list {
+.cecs-feature-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
     margin-top: 24px;
 }
 
-.ceap-feature-item-card {
+.cecs-feature-item-card {
     background: rgba(255, 255, 255, 0.65);
     border: 1px solid rgba(39, 68, 114, 0.08);
     border-radius: 16px;
@@ -942,19 +930,19 @@
     gap: 16px;
 }
 
-.ceap-feature-item-card:hover {
+.cecs-feature-item-card:hover {
     background: #ffffff;
-    border-color: var(--ceap-navy);
+    border-color: var(--cecs-navy);
     transform: translateY(-3px);
     box-shadow: 0 12px 30px rgba(39, 68, 114, 0.08);
 }
 
-.ceap-feature-item-icon {
+.cecs-feature-item-icon {
     width: 40px;
     height: 40px;
     border-radius: 10px;
-    background: var(--ceap-bg-soft);
-    color: var(--ceap-navy);
+    background: var(--cecs-bg-soft);
+    color: var(--cecs-navy);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -962,12 +950,12 @@
     transition: all 0.3s ease;
 }
 
-.ceap-feature-item-card:hover .ceap-feature-item-icon {
-    background: var(--ceap-navy);
+.cecs-feature-item-card:hover .cecs-feature-item-icon {
+    background: var(--cecs-navy);
     color: #ffffff;
 }
 
-.ceap-feature-item-text {
+.cecs-feature-item-text {
     font-size: 15px;
     line-height: 1.6;
     color: #334155;
@@ -975,14 +963,14 @@
 }
 
 /* Dark theme variant for Retreat / Eden sections */
-.ceap-dark-section {
-    background: linear-gradient(135deg, var(--ceap-bg-dark) 0%, var(--ceap-bg-dark2) 100%) !important;
-    color: var(--ceap-bg-white);
+.cecs-dark-section {
+    background: linear-gradient(135deg, var(--cecs-bg-dark) 0%, var(--cecs-bg-dark2) 100%) !important;
+    color: var(--cecs-bg-white);
     position: relative;
     overflow: hidden;
 }
 
-.ceap-dark-section::before {
+.cecs-dark-section::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -990,163 +978,163 @@
     pointer-events: none;
 }
 
-.ceap-dark-section .ceap-feature-title {
-    color: var(--ceap-bg-white);
+.cecs-dark-section .cecs-feature-title {
+    color: var(--cecs-bg-white);
     font-size: 38px;
 }
 
-.ceap-dark-section .fcel-lead-paragraph {
-    color: var(--ceap-navy-white);
+.cecs-dark-section .fcel-lead-paragraph {
+    color: var(--cecs-navy-white);
 }
 
-.ceap-dark-section .ceap-feature-item-card {
+.cecs-dark-section .cecs-feature-item-card {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.06);
-    border-left: 3px solid var(--ceap-navy);
+    border-left: 3px solid var(--cecs-navy);
     border-radius: 0 16px 16px 0;
 }
 
-.ceap-dark-section .ceap-feature-item-card:hover {
+.cecs-dark-section .cecs-feature-item-card:hover {
     background: rgba(255, 255, 255, 0.07);
-    border-color: var(--ceap-bg-white);
-    border-left-color: var(--ceap-bg-white);
+    border-color: var(--cecs-bg-white);
+    border-left-color: var(--cecs-bg-white);
     transform: translateX(6px);
 }
 
-.ceap-dark-section .ceap-feature-item-icon {
+.cecs-dark-section .cecs-feature-item-icon {
     background: rgba(39, 68, 114, 0.15);
-    color: var(--ceap-bg-soft);
+    color: var(--cecs-bg-soft);
 }
 
-.ceap-dark-section .ceap-feature-item-card:hover .ceap-feature-item-icon {
-    background: var(--ceap-navy);
-    color: var(--ceap-bg-white);
+.cecs-dark-section .cecs-feature-item-card:hover .cecs-feature-item-icon {
+    background: var(--cecs-navy);
+    color: var(--cecs-bg-white);
 }
 
-.ceap-dark-section .ceap-feature-item-text {
-    color: var(--ceap-bg-soft);
+.cecs-dark-section .cecs-feature-item-text {
+    color: var(--cecs-bg-soft);
 }
 
 /* Cabins / Dining card-with-description variant */
-.ceap-feature-desc-list {
+.cecs-feature-desc-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
     margin-top: 24px;
 }
 
-.ceap-feature-desc-card {
+.cecs-feature-desc-card {
     background: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(39, 68, 114, 0.08);
-    border-left: 4px solid var(--ceap-navy);
+    border-left: 4px solid var(--cecs-navy);
     border-radius: 0 16px 16px 0;
     padding: 20px 24px;
     transition: all 0.3s ease;
 }
 
-.ceap-feature-desc-card:hover {
+.cecs-feature-desc-card:hover {
     background: #ffffff;
-    border-color: var(--ceap-navy);
+    border-color: var(--cecs-navy);
     transform: translateY(-3px);
     box-shadow: 0 12px 30px rgba(39, 68, 114, 0.06);
 }
 
-.ceap-feature-card-header {
+.cecs-feature-card-header {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 8px;
 }
 
-.ceap-feature-card-icon-inline {
-    color: var(--ceap-navy);
+.cecs-feature-card-icon-inline {
+    color: var(--cecs-navy);
     flex-shrink: 0;
 }
 
-.ceap-dark-section .ceap-feature-card-icon-inline {
-    color: var(--ceap-bg-soft);
+.cecs-dark-section .cecs-feature-card-icon-inline {
+    color: var(--cecs-bg-soft);
 }
 
-.ceap-feature-desc-title {
+.cecs-feature-desc-title {
     font-size: 17px;
     font-weight: 700;
-    color: var(--ceap-navy);
+    color: var(--cecs-navy);
     margin: 0 !important;
 }
 
-.ceap-feature-desc-text {
+.cecs-feature-desc-text {
     font-size: 14px;
     line-height: 1.6;
     color: #475569;
     margin: 0;
 }
 
-.ceap-dark-section .ceap-feature-desc-card {
+.cecs-dark-section .cecs-feature-desc-card {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.06);
-    border-left: 4px solid var(--ceap-navy);
+    border-left: 4px solid var(--cecs-navy);
 }
 
-.ceap-dark-section .ceap-feature-desc-title {
+.cecs-dark-section .cecs-feature-desc-title {
     color: #ffffff;
 }
 
-.ceap-dark-section .ceap-feature-desc-text {
-    color: var(--ceap-bg-soft);
+.cecs-dark-section .cecs-feature-desc-text {
+    color: var(--cecs-bg-soft);
 }
 
 @media (max-width: 1024px) {
 
-    .ceap-feature-grid,
-    .ceap-feature-grid.ceap-reverse {
+    .cecs-feature-grid,
+    .cecs-feature-grid.cecs-reverse {
         grid-template-columns: 1fr;
         gap: 40px;
     }
 
-    .ceap-feature-list,
-    .ceap-feature-desc-list {
+    .cecs-feature-list,
+    .cecs-feature-desc-list {
         grid-template-columns: 1fr;
     }
 
-    .ceap-feature-grid.ceap-reverse .ceap-feature-image-col {
+    .cecs-feature-grid.cecs-reverse .cecs-feature-image-col {
         order: -1;
     }
 
-    .ceap-feature-image-col {
+    .cecs-feature-image-col {
         order: -1;
     }
 
-    .ceap-feature-title {
+    .cecs-feature-title {
         text-align: center;
         font-size: 30px;
     }
 
-    .fcel-page-wrapper .ceap-feature-copy-col .fcel-eyebrow-label {
+    .fcel-page-wrapper .cecs-feature-copy-col .fcel-eyebrow-label {
         margin: 0 auto 20px !important;
         display: table !important;
     }
 }
 
 @media (max-width: 768px) {
-    .ceap-feature-section {
+    .cecs-feature-section {
         padding: 60px 18px;
     }
 }
 
 @media (max-width: 480px) {
-    .ceap-feature-section {
+    .cecs-feature-section {
         padding: 44px 14px;
     }
 
-    .ceap-feature-title {
+    .cecs-feature-title {
         font-size: 24px;
     }
 
-    .ceap-feature-image-col .ceap-image-placeholder {
+    .cecs-feature-image-col .cecs-image-placeholder {
         min-height: 260px;
     }
 
-    .ceap-feature-item-card {
+    .cecs-feature-item-card {
         padding: 14px 16px;
         gap: 12px;
     }
@@ -1155,41 +1143,41 @@
 /* ============================================================
    ITINERARIES
    ============================================================ */
-.ceap-itinerary-section {
-    background: var(--ceap-bg-white);
+.cecs-itinerary-section {
+    background: var(--cecs-bg-white);
     padding: 100px 20px;
 }
 
-.ceap-itinerary-container {
+.cecs-itinerary-container {
     max-width: 1100px;
     margin: 0 auto;
 }
 
-.ceap-itinerary-grid {
+.cecs-itinerary-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     margin-top: 40px;
 }
 
-.ceap-itinerary-card {
-    background: var(--ceap-bg-soft);
+.cecs-itinerary-card {
+    background: var(--cecs-bg-soft);
     border: 1px solid rgba(39, 68, 114, 0.08);
     border-radius: 20px;
     padding: 34px;
 }
 
-.ceap-itinerary-region {
+.cecs-itinerary-region {
     font-size: 20px;
     font-weight: 700;
-    color: var(--ceap-navy);
+    color: var(--cecs-navy);
     margin: 0 0 18px 0;
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.ceap-itinerary-list {
+.cecs-itinerary-list {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -1198,7 +1186,7 @@
     gap: 12px;
 }
 
-.ceap-itinerary-list li {
+.cecs-itinerary-list li {
     font-size: 15px;
     color: #334155;
     font-weight: 500;
@@ -1207,7 +1195,7 @@
     gap: 10px;
 }
 
-.ceap-itinerary-note {
+.cecs-itinerary-note {
     text-align: center;
     margin-top: 30px;
     font-size: 16px;
@@ -1216,21 +1204,21 @@
 }
 
 @media (max-width: 768px) {
-    .ceap-itinerary-section {
+    .cecs-itinerary-section {
         padding: 60px 18px;
     }
 
-    .ceap-itinerary-grid {
+    .cecs-itinerary-grid {
         grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 480px) {
-    .ceap-itinerary-section {
+    .cecs-itinerary-section {
         padding: 44px 14px;
     }
 
-    .ceap-itinerary-card {
+    .cecs-itinerary-card {
         padding: 24px;
     }
 }
@@ -1238,28 +1226,28 @@
 /* ============================================================
    WHAT'S INCLUDED CHECKLIST
    ============================================================ */
-.ceap-included-section {
-    background: var(--ceap-bg-soft);
+.cecs-included-section {
+    background: var(--cecs-bg-soft);
     padding: 100px 20px;
 }
 
-.ceap-included-container {
+.cecs-included-container {
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.ceap-included-grid {
+.cecs-included-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 18px;
     margin-top: 40px;
 }
 
-.ceap-included-item {
+.cecs-included-item {
     display: flex;
     align-items: center;
     gap: 12px;
-    background: var(--ceap-bg-white);
+    background: var(--cecs-bg-white);
     padding: 16px 20px;
     border-radius: 12px;
     border: 1px solid rgba(39, 68, 114, 0.08);
@@ -1268,12 +1256,12 @@
     font-weight: 600;
 }
 
-.ceap-included-icon {
+.cecs-included-icon {
     color: #10b981;
     flex-shrink: 0;
 }
 
-.ceap-included-note {
+.cecs-included-note {
     margin-top: 30px;
     text-align: center;
     font-size: 15px;
@@ -1282,27 +1270,27 @@
 }
 
 @media (max-width: 1024px) {
-    .ceap-included-grid {
+    .cecs-included-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 768px) {
-    .ceap-included-section {
+    .cecs-included-section {
         padding: 60px 18px;
     }
 }
 
 @media (max-width: 480px) {
-    .ceap-included-section {
+    .cecs-included-section {
         padding: 44px 14px;
     }
 
-    .ceap-included-grid {
+    .cecs-included-grid {
         grid-template-columns: 1fr;
     }
 
-    .ceap-included-item {
+    .cecs-included-item {
         font-size: 14px;
     }
 }
@@ -1310,19 +1298,19 @@
 /* ============================================================
    PROS & CONS — COMPARISON BOARD
    ============================================================ */
-.ceap-pros-section {
+.cecs-pros-section {
     padding: 100px 20px;
 }
 
-.ceap-pros-cons-container {
+.cecs-pros-cons-container {
     max-width: 1280px;
     margin: 0 auto;
 }
 
-.ceap-comparison-board {
+.cecs-comparison-board {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
-    background: var(--ceap-bg-white);
+    background: var(--cecs-bg-white);
     border: 1px solid rgba(39, 68, 114, 0.08);
     border-radius: 24px;
     overflow: hidden;
@@ -1331,18 +1319,18 @@
     text-align: left;
 }
 
-.ceap-pros-panel {
+.cecs-pros-panel {
     padding: 50px 40px;
-    background: var(--ceap-bg-white);
+    background: var(--cecs-bg-white);
     border-right: 1px solid rgba(39, 68, 114, 0.08);
 }
 
-.ceap-cons-panel {
+.cecs-cons-panel {
     padding: 50px 40px;
     background: #fafbfe;
 }
 
-.ceap-panel-title {
+.cecs-panel-title {
     font-size: 22px;
     font-weight: 700;
     margin: 0 0 35px 0;
@@ -1351,27 +1339,27 @@
     gap: 12px;
 }
 
-.ceap-panel-title.ceap-pros-title {
+.cecs-panel-title.cecs-pros-title {
     color: #10b981;
 }
 
-.ceap-panel-title.ceap-cons-title {
+.cecs-panel-title.cecs-cons-title {
     color: #ef4444;
 }
 
-.ceap-panel-list {
+.cecs-panel-list {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
-.ceap-list-item {
+.cecs-list-item {
     display: flex;
     align-items: center;
     gap: 16px;
 }
 
-.ceap-item-icon-wrap {
+.cecs-item-icon-wrap {
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -1381,69 +1369,69 @@
     flex-shrink: 0;
 }
 
-.ceap-item-icon-wrap.ceap-pro-icon {
+.cecs-item-icon-wrap.cecs-pro-icon {
     background: rgba(16, 185, 129, 0.1);
     color: #10b981;
 }
 
-.ceap-item-icon-wrap.ceap-con-icon {
+.cecs-item-icon-wrap.cecs-con-icon {
     background: rgba(239, 68, 68, 0.1);
     color: #ef4444;
 }
 
-.ceap-item-title {
+.cecs-item-title {
     font-size: 16px;
     font-weight: 600;
-    color: var(--ceap-navy);
+    color: var(--cecs-navy);
     margin: 0;
 }
 
 @media (max-width: 992px) {
-    .ceap-comparison-board {
+    .cecs-comparison-board {
         grid-template-columns: 1fr;
     }
 
-    .ceap-pros-panel {
+    .cecs-pros-panel {
         border-right: none;
         border-bottom: 1px solid rgba(39, 68, 114, 0.08);
         padding: 40px 30px;
     }
 
-    .ceap-cons-panel {
+    .cecs-cons-panel {
         padding: 40px 30px;
     }
 }
 
 @media (max-width: 768px) {
-    .ceap-pros-section {
+    .cecs-pros-section {
         padding: 60px 18px;
     }
 }
 
 @media (max-width: 480px) {
-    .ceap-pros-section {
+    .cecs-pros-section {
         padding: 44px 14px;
     }
 
-    .ceap-pros-panel,
-    .ceap-cons-panel {
+    .cecs-pros-panel,
+    .cecs-cons-panel {
         padding: 30px 20px;
     }
 
-    .ceap-panel-title {
+    .cecs-panel-title {
         font-size: 19px;
         margin-bottom: 25px;
     }
 
-    .ceap-panel-list {
+    .cecs-panel-list {
         gap: 20px;
     }
 
-    .ceap-list-item {
+    .cecs-list-item {
         gap: 12px;
     }
 
-    .ceap-item-title {
+    .cecs-item-title {
         font-size: 15px;
     }
 }
@@ -1451,26 +1439,26 @@
 /* ============================================================
    WHO SHOULD SAIL / AUDIENCE
    ============================================================ */
-.ceap-audience-section {
-    background: var(--ceap-bg-soft);
+.cecs-audience-section {
+    background: var(--cecs-bg-soft);
     padding: 100px 20px;
 }
 
-.ceap-audience-container {
+.cecs-audience-container {
     max-width: 900px;
     margin: 0 auto;
 }
 
-.ceap-audience-column {
-    background: var(--ceap-bg-white);
+.cecs-audience-column {
+    background: var(--cecs-bg-white);
     border-radius: 20px;
     padding: 40px;
     box-shadow: 0 10px 30px rgba(39, 68, 114, 0.03);
-    border-top: 4px solid var(--ceap-green);
+    border-top: 4px solid var(--cecs-green);
     margin-top: 20px;
 }
 
-.ceap-audience-list {
+.cecs-audience-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
@@ -1479,7 +1467,7 @@
     list-style: none;
 }
 
-.ceap-audience-item {
+.cecs-audience-item {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -1488,31 +1476,31 @@
     font-weight: 500;
 }
 
-.ceap-audience-check {
+.cecs-audience-check {
     color: #10b981;
     flex-shrink: 0;
 }
 
 @media (max-width: 768px) {
-    .ceap-audience-section {
+    .cecs-audience-section {
         padding: 60px 18px;
     }
 
-    .ceap-audience-column {
+    .cecs-audience-column {
         padding: 24px;
     }
 
-    .ceap-audience-list {
+    .cecs-audience-list {
         grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 480px) {
-    .ceap-audience-section {
+    .cecs-audience-section {
         padding: 44px 14px;
     }
 
-    .ceap-audience-item {
+    .cecs-audience-item {
         font-size: 14px;
     }
 }
@@ -1520,50 +1508,24 @@
 /* ============================================================
    IS IT WORTH THE MONEY
    ============================================================ */
-.ceap-worth-section {
+.cecs-worth-section {
     padding: 100px 20px;
     text-align: center;
 }
 
-.ceap-worth-section.ceap-dark-section {
-    background: linear-gradient(135deg, var(--ceap-bg-dark) 0%, var(--ceap-bg-dark2) 100%) !important;
-    color: var(--ceap-bg-white);
-    position: relative;
-    overflow: hidden;
-}
-
-.ceap-worth-section.ceap-dark-section .fcel-section-heading {
-    color: #ffffff !important;
-}
-
-.ceap-worth-section.ceap-dark-section .fcel-heading-bar {
-    background: #60a5fa !important;
-}
-
-.ceap-worth-section.ceap-dark-section .fcel-eyebrow-label {
-    background: rgba(255, 255, 255, 0.1) !important;
-    color: #cbd5e1 !important;
-}
-
-.ceap-worth-section.ceap-dark-section .fcel-lead-paragraph {
-    color: #cbd5e1 !important;
-}
-
-.ceap-worth-container {
+.cecs-worth-container {
     max-width: 800px;
     margin: 0 auto;
-    position: relative;
-    z-index: 1;
 }
 
 @media (max-width: 768px) {
-    .ceap-worth-section {
+    .cecs-worth-section {
         padding: 60px 18px;
     }
 }
 
 @media (max-width: 480px) {
-    .ceap-worth-section {
+    .cecs-worth-section {
         padding: 44px 14px;
     }
 }
@@ -1571,39 +1533,39 @@
 /* ============================================================
    WHY BOOK WITH US (DARK)
    ============================================================ */
-.ceap-why-book-section {
+.cecs-why-book-section {
     padding: 100px 20px;
     border-top: 1px solid rgba(39, 68, 114, 0.05);
-    background: var(--ceap-bg-dark) !important;
+    background: var(--cecs-bg-dark) !important;
 }
 
-.ceap-why-book-section .fcel-section-heading {
+.cecs-why-book-section .fcel-section-heading {
     color: #ffffff !important;
 }
 
-.ceap-why-book-section .fcel-heading-bar {
+.cecs-why-book-section .fcel-heading-bar {
     background: #60a5fa !important;
 }
 
-.fcel-page-wrapper .ceap-why-book-section .fcel-eyebrow-label {
+.fcel-page-wrapper .cecs-why-book-section .fcel-eyebrow-label {
     background: rgba(255, 255, 255, 0.1) !important;
     color: #cbd5e1 !important;
 }
 
-.ceap-why-book-container {
+.cecs-why-book-container {
     max-width: 1280px;
     margin: 0 auto;
 }
 
-.ceap-why-book-grid {
+.cecs-why-book-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     margin-top: 40px;
 }
 
-.ceap-why-book-card {
-    background: var(--ceap-bg-white) !important;
+.cecs-why-book-card {
+    background: var(--cecs-bg-white) !important;
     border: 1px solid rgba(255, 255, 255, 0.15) !important;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
     border-radius: 16px;
@@ -1614,34 +1576,34 @@
     overflow: hidden;
 }
 
-.ceap-why-book-card::before {
+.cecs-why-book-card::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 4px;
-    background: var(--ceap-navy);
+    background: var(--cecs-navy);
     transform: scaleX(0);
     transition: transform 0.3s ease;
     transform-origin: left;
 }
 
-.ceap-why-book-card:hover {
+.cecs-why-book-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 20px 45px rgba(39, 68, 114, 0.08);
 }
 
-.ceap-why-book-card:hover::before {
+.cecs-why-book-card:hover::before {
     transform: scaleX(1);
 }
 
-.ceap-why-book-icon {
+.cecs-why-book-icon {
     width: 52px;
     height: 52px;
     border-radius: 12px;
-    background: var(--ceap-bg-soft) !important;
-    color: var(--ceap-navy) !important;
+    background: var(--cecs-bg-soft) !important;
+    color: var(--cecs-navy) !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1650,19 +1612,19 @@
     box-shadow: 0 4px 10px rgba(39, 68, 114, 0.05);
 }
 
-.ceap-why-book-card:hover .ceap-why-book-icon {
-    background: var(--ceap-navy) !important;
+.cecs-why-book-card:hover .cecs-why-book-icon {
+    background: var(--cecs-navy) !important;
     color: #ffffff !important;
 }
 
-.ceap-why-book-title {
+.cecs-why-book-title {
     font-size: 18px;
     font-weight: 600;
-    color: var(--ceap-navy) !important;
+    color: var(--cecs-navy) !important;
     margin: 0 0 12px 0;
 }
 
-.ceap-why-book-desc {
+.cecs-why-book-desc {
     font-size: 15px;
     line-height: 1.6;
     color: #475569 !important;
@@ -1670,27 +1632,27 @@
 }
 
 @media (max-width: 1024px) {
-    .ceap-why-book-grid {
+    .cecs-why-book-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 768px) {
-    .ceap-why-book-section {
+    .cecs-why-book-section {
         padding: 60px 18px;
     }
 }
 
 @media (max-width: 480px) {
-    .ceap-why-book-section {
+    .cecs-why-book-section {
         padding: 44px 14px;
     }
 
-    .ceap-why-book-grid {
+    .cecs-why-book-grid {
         grid-template-columns: 1fr;
     }
 
-    .ceap-why-book-card {
+    .cecs-why-book-card {
         padding: 24px 20px;
     }
 }
@@ -1699,7 +1661,7 @@
    FAQ SECTION (MATCHED)
    ============================================================ */
 .fcel-faq-section {
-    background: var(--ceap-bg-soft);
+    background: var(--cecs-bg-soft);
     padding: 100px 20px;
 }
 
@@ -1735,12 +1697,12 @@
     gap: 16px;
     font-size: 17px;
     font-weight: 600;
-    color: var(--ceap-navy);
+    color: var(--cecs-navy);
 }
 
 .fcel-faq-toggle {
     font-size: 22px;
-    color: var(--ceap-navy);
+    color: var(--cecs-navy);
     flex-shrink: 0;
 }
 
@@ -1778,25 +1740,25 @@
 /* ============================================================
    RELATED GUIDES / RELATED CONTENT CTA
    ============================================================ */
-.ceap-related-section {
-    background: var(--ceap-bg-white);
+.cecs-related-section {
+    background: var(--cecs-bg-white);
     padding: 100px 20px;
 }
 
-.ceap-related-container {
+.cecs-related-container {
     max-width: 1280px;
     margin: 0 auto;
 }
 
-.ceap-related-grid {
+.cecs-related-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     margin-top: 40px;
 }
 
-.ceap-related-card {
-    background: var(--ceap-bg-soft);
+.cecs-related-card {
+    background: var(--cecs-bg-soft);
     border: 1px solid rgba(39, 68, 114, 0.08);
     border-radius: 16px;
     padding: 28px 24px;
@@ -1808,19 +1770,19 @@
     box-shadow: 0 4px 15px rgba(39, 68, 114, 0.01);
 }
 
-.ceap-related-card:hover {
-    background: var(--ceap-bg-white);
+.cecs-related-card:hover {
+    background: var(--cecs-bg-white);
     border-color: rgba(39, 68, 114, 0.2);
     transform: translateY(-5px);
     box-shadow: 0 15px 30px rgba(39, 68, 114, 0.08);
 }
 
-.ceap-related-icon {
+.cecs-related-icon {
     width: 44px;
     height: 44px;
     border-radius: 12px;
-    background: var(--ceap-bg-white);
-    color: var(--ceap-navy);
+    background: var(--cecs-bg-white);
+    color: var(--cecs-navy);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1828,19 +1790,19 @@
     box-shadow: 0 4px 10px rgba(39, 68, 114, 0.05);
 }
 
-.ceap-related-card:hover .ceap-related-icon {
-    background: var(--ceap-navy);
+.cecs-related-card:hover .cecs-related-icon {
+    background: var(--cecs-navy);
     color: #ffffff;
 }
 
-.ceap-related-title {
+.cecs-related-title {
     font-size: 17px;
     font-weight: 600;
-    color: var(--ceap-navy);
+    color: var(--cecs-navy);
     margin: 0 0 10px 0;
 }
 
-.ceap-related-desc {
+.cecs-related-desc {
     font-size: 14px;
     line-height: 1.6;
     color: #475569;
@@ -1848,10 +1810,10 @@
     flex-grow: 1;
 }
 
-.ceap-related-link {
+.cecs-related-link {
     font-size: 13px;
     font-weight: 700;
-    color: var(--ceap-navy);
+    color: var(--cecs-navy);
     display: inline-flex;
     align-items: center;
     gap: 6px;
@@ -1860,23 +1822,23 @@
 }
 
 @media (max-width: 1024px) {
-    .ceap-related-grid {
+    .cecs-related-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 768px) {
-    .ceap-related-section {
+    .cecs-related-section {
         padding: 60px 18px;
     }
 }
 
 @media (max-width: 480px) {
-    .ceap-related-section {
+    .cecs-related-section {
         padding: 44px 14px;
     }
 
-    .ceap-related-grid {
+    .cecs-related-grid {
         grid-template-columns: 1fr;
     }
 }
@@ -1886,7 +1848,7 @@
    ============================================================ */
 .fcel-cta-section {
     position: relative;
-    background: linear-gradient(135deg, var(--ceap-bg-dark) 0%, var(--ceap-navy) 100%);
+    background: linear-gradient(135deg, var(--cecs-bg-dark) 0%, var(--cecs-navy) 100%);
     padding: 110px 20px;
     text-align: center;
     overflow: hidden;
@@ -1974,20 +1936,21 @@
    GLOBAL TYPOGRAPHY & SECTION PADDING OVERRIDES
    ============================================================ */
 .fcel-intro-section,
-.ceap-quick-answer-section,
-.ceap-glance-section,
-.ceap-tag-section,
-.ceap-feature-section,
-.ceap-itinerary-section,
-.ceap-included-section,
-.ceap-pros-section,
-.ceap-audience-section,
-.ceap-worth-section,
-.ceap-why-book-section,
-.ceap-related-section,
+.cecs-quick-answer-section,
+.cecs-glance-section,
+.cecs-tag-section,
+.cecs-feature-section,
+.cecs-itinerary-section,
+.cecs-included-section,
+.cecs-pros-section,
+.cecs-audience-section,
+.cecs-worth-section,
+.cecs-why-book-section,
+.cecs-related-section,
 .fcel-faq-section,
 .fcel-cta-section,
-.ceap-inline-cta-section {
+.cecs-inline-cta-section,
+.cecs-veranda-section {
     padding: 60px 20px !important;
 }
 
@@ -1997,7 +1960,7 @@
 }
 
 .fcel-section-heading,
-.ceap-feature-title,
+.cecs-feature-title,
 .fcel-page-wrapper h2 {
     font-size: 48px !important;
 }
@@ -2015,7 +1978,7 @@
     }
 
     .fcel-section-heading,
-    .ceap-feature-title,
+    .cecs-feature-title,
     .fcel-page-wrapper h2 {
         font-size: 28px !important;
     }
@@ -2034,7 +1997,7 @@
     }
 
     .fcel-section-heading,
-    .ceap-feature-title,
+    .cecs-feature-title,
     .fcel-page-wrapper h2 {
         font-size: 24px !important;
     }
@@ -2048,14 +2011,14 @@
 /* ============================================================
    THE RETREAT REDESIGN (ROOT COLORS & GLASSMORPHISM)
    ============================================================ */
-.ceap-retreat-section {
-    background: radial-gradient(circle at 10% 20%, var(--ceap-bg-dark) 0%, var(--ceap-bg-dark2) 100%) !important;
+.cecs-retreat-section {
+    background: radial-gradient(circle at 10% 20%, var(--cecs-bg-dark) 0%, var(--cecs-bg-dark2) 100%) !important;
     position: relative;
     border-top: 1px solid rgba(39, 68, 114, 0.15);
     border-bottom: 1px solid rgba(39, 68, 114, 0.15);
 }
 
-.ceap-retreat-section::after {
+.cecs-retreat-section::after {
     content: '';
     position: absolute;
     bottom: -150px;
@@ -2067,14 +2030,14 @@
     z-index: 1;
 }
 
-.ceap-retreat-section .ceap-badge-overlay {
+.cecs-retreat-section .cecs-badge-overlay {
     background: rgba(255, 255, 255, 0.1) !important;
     border: 1px solid rgba(255, 255, 255, 0.2) !important;
-    color: var(--ceap-bg-soft) !important;
+    color: var(--cecs-bg-soft) !important;
 }
 
-.fcel-page-wrapper .ceap-retreat-eyebrow {
-    color: var(--ceap-bg-soft) !important;
+.fcel-page-wrapper .cecs-retreat-eyebrow {
+    color: var(--cecs-bg-soft) !important;
     background: rgba(231, 243, 245, 0.1) !important;
     border: 1px solid rgba(231, 243, 245, 0.2);
     padding: 6px 16px;
@@ -2095,7 +2058,7 @@
     display: inline-flex !important;
     align-items: center !important;
     gap: 8px !important;
-    background: var(--ceap-bg-soft) !important;
+    background: var(--cecs-bg-soft) !important;
     padding: 8px 16px !important;
     border-radius: 30px !important;
     width: fit-content !important;
@@ -2103,7 +2066,7 @@
 }
 
 .fcel-page-wrapper .medi-editorial-eyebrow {
-    color: var(--ceap-navy) !important;
+    color: var(--cecs-navy) !important;
     font-weight: 700 !important;
     font-size: 13px !important;
     letter-spacing: 0.08em !important;
@@ -2111,29 +2074,29 @@
 }
 
 .fcel-page-wrapper .medi-editorial-icon-badge {
-    color: var(--ceap-navy) !important;
+    color: var(--cecs-navy) !important;
     opacity: 1 !important;
 }
 
-.ceap-retreat-title {
+.cecs-retreat-title {
     font-size: 44px !important;
     font-weight: 600 !important;
     color: #ffffff !important;
     margin: 0 0 20px 0;
-    background: linear-gradient(135deg, #ffffff 40%, var(--ceap-bg-soft) 100%);
+    background: linear-gradient(135deg, #ffffff 40%, var(--cecs-bg-soft) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: -0.02em;
 }
 
-.ceap-retreat-lead {
+.cecs-retreat-lead {
     font-size: 18px !important;
     line-height: 1.7;
     color: #cbd5e1 !important;
     margin-bottom: 30px;
 }
 
-.ceap-retreat-grid {
+.cecs-retreat-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
@@ -2142,7 +2105,7 @@
     position: relative;
 }
 
-.ceap-retreat-card {
+.cecs-retreat-card {
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid rgba(231, 243, 245, 0.1);
     border-radius: 16px;
@@ -2154,20 +2117,20 @@
     backdrop-filter: blur(8px);
 }
 
-.ceap-retreat-card:hover {
+.cecs-retreat-card:hover {
     background: rgba(231, 243, 245, 0.06);
-    border-color: var(--ceap-bg-soft);
+    border-color: var(--cecs-bg-soft);
     transform: translateY(-4px) scale(1.02);
     box-shadow: 0 12px 30px rgba(39, 68, 114, 0.25),
         inset 0 0 15px rgba(231, 243, 245, 0.05);
 }
 
-.ceap-retreat-card-icon {
+.cecs-retreat-card-icon {
     width: 44px;
     height: 44px;
     border-radius: 12px;
     background: rgba(231, 243, 245, 0.1);
-    color: var(--ceap-bg-soft);
+    color: var(--cecs-bg-soft);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2176,51 +2139,51 @@
     border: 1px solid rgba(231, 243, 245, 0.15);
 }
 
-.ceap-retreat-card:hover .ceap-retreat-card-icon {
-    background: var(--ceap-bg-soft);
-    color: var(--ceap-bg-dark);
-    border-color: var(--ceap-bg-soft);
+.cecs-retreat-card:hover .cecs-retreat-card-icon {
+    background: var(--cecs-bg-soft);
+    color: var(--cecs-bg-dark);
+    border-color: var(--cecs-bg-soft);
     transform: rotate(5deg);
 }
 
-.ceap-retreat-card-text {
+.cecs-retreat-card-text {
     font-size: 15px;
     font-weight: 600;
     color: #f1f5f9;
     transition: color 0.3s ease;
 }
 
-.ceap-retreat-card:hover .ceap-retreat-card-text {
+.cecs-retreat-card:hover .cecs-retreat-card-text {
     color: #ffffff;
 }
 
-.ceap-retreat-footer-text {
+.cecs-retreat-footer-text {
     font-size: 16px !important;
     line-height: 1.7;
     color: #94a3b8 !important;
     margin-top: 10px;
     font-style: italic;
-    border-left: 3px solid var(--ceap-navy);
+    border-left: 3px solid var(--cecs-navy);
     padding-left: 16px;
 }
 
-.ceap-retreat-section .ceap-feature-image-col {
+.cecs-retreat-section .cecs-feature-image-col {
     max-height: 380px;
     align-self: center;
 }
 
-.ceap-retreat-section .ceap-feature-image-col .ceap-image-placeholder {
+.cecs-retreat-section .cecs-feature-image-col .cecs-image-placeholder {
     min-height: 300px;
     height: 380px;
 }
 
 @media (max-width: 600px) {
-    .ceap-retreat-grid {
+    .cecs-retreat-grid {
         grid-template-columns: 1fr;
         gap: 12px;
     }
 
-    .ceap-retreat-title {
+    .cecs-retreat-title {
         font-size: 32px !important;
     }
 }
@@ -2228,15 +2191,15 @@
 /* ============================================================
    ENTERTAINMENT GALLERY GRID
    ============================================================ */
-.ceap-entertainment-gallery-grid {
+.cecs-entertainment-gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     margin-top: 40px;
 }
 
-.ceap-entertainment-gallery-card {
-    background: var(--ceap-bg-white);
+.cecs-entertainment-gallery-card {
+    background: var(--cecs-bg-white);
     border: 1px solid rgba(39, 68, 114, 0.08);
     border-radius: 20px;
     overflow: hidden;
@@ -2246,65 +2209,65 @@
     flex-direction: column;
 }
 
-.ceap-entertainment-gallery-card:hover {
+.cecs-entertainment-gallery-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 20px 40px rgba(39, 68, 114, 0.08);
     border-color: rgba(39, 68, 114, 0.2);
 }
 
-.ceap-entertainment-card-image {
+.cecs-entertainment-card-image {
     height: 180px;
     overflow: hidden;
     position: relative;
 }
 
-.ceap-entertainment-card-image .ceap-image-placeholder {
+.cecs-entertainment-card-image .cecs-image-placeholder {
     height: 100%;
     min-height: 100%;
     border-radius: 0;
 }
 
-.ceap-entertainment-card-info {
+.cecs-entertainment-card-info {
     padding: 20px;
     display: flex;
     align-items: center;
     gap: 12px;
-    background: var(--ceap-bg-white);
+    background: var(--cecs-bg-white);
     border-top: 1px solid rgba(39, 68, 114, 0.05);
 }
 
-.ceap-entertainment-card-icon {
+.cecs-entertainment-card-icon {
     width: 36px;
     height: 36px;
     border-radius: 8px;
-    background: var(--ceap-bg-soft);
-    color: var(--ceap-navy);
+    background: var(--cecs-bg-soft);
+    color: var(--cecs-navy);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
 }
 
-.ceap-entertainment-gallery-card:hover .ceap-entertainment-card-icon {
-    background: var(--ceap-navy);
+.cecs-entertainment-gallery-card:hover .cecs-entertainment-card-icon {
+    background: var(--cecs-navy);
     color: #ffffff;
     transition: all 0.3s ease;
 }
 
-.ceap-entertainment-card-label {
+.cecs-entertainment-card-label {
     font-size: 15px;
     font-weight: 700;
-    color: var(--ceap-navy);
+    color: var(--cecs-navy);
 }
 
 @media (max-width: 1024px) {
-    .ceap-entertainment-gallery-grid {
+    .cecs-entertainment-gallery-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 600px) {
-    .ceap-entertainment-gallery-grid {
+    .cecs-entertainment-gallery-grid {
         grid-template-columns: 1fr;
     }
 }
@@ -2313,14 +2276,14 @@
    EXPERT EDITORIAL LAYOUT REDESIGN
    ============================================================ */
 .fcel-page-wrapper .medi-growth-insight-section {
-    background: var(--ceap-bg-white) !important;
+    background: var(--cecs-bg-white) !important;
     border-top: 1px solid rgba(39, 68, 114, 0.08);
     border-bottom: 1px solid rgba(39, 68, 114, 0.08);
     padding: 100px 20px !important;
 }
 
 .fcel-page-wrapper .medi-expert-editorial-card {
-    background: var(--ceap-bg-white) !important;
+    background: var(--cecs-bg-white) !important;
     border: 1px solid rgba(39, 68, 114, 0.08) !important;
     border-radius: 24px !important;
     padding: 50px !important;
@@ -2336,7 +2299,7 @@
 
 .fcel-page-wrapper .medi-expertise-section-box {
     margin-top: 30px !important;
-    background: var(--ceap-bg-soft) !important;
+    background: var(--cecs-bg-soft) !important;
     padding: 24px !important;
     border-radius: 16px !important;
     border: 1px solid rgba(39, 68, 114, 0.06) !important;
@@ -2345,7 +2308,7 @@
 .fcel-page-wrapper .medi-expertise-intro-label {
     font-size: 14px !important;
     font-weight: 700 !important;
-    color: var(--ceap-navy) !important;
+    color: var(--cecs-navy) !important;
     display: block !important;
     margin-bottom: 14px !important;
     text-transform: uppercase !important;
@@ -2383,7 +2346,7 @@
 }
 
 .fcel-page-wrapper .medi-editorial-floating-stat {
-    background: var(--ceap-navy) !important;
+    background: var(--cecs-navy) !important;
     box-shadow: 0 10px 25px rgba(39, 68, 114, 0.2) !important;
 }
 
@@ -2413,7 +2376,53 @@
 .fcel-page-wrapper .medi-editorial-signature {
     font-size: 16px !important;
     line-height: 1.6 !important;
-    color: var(--ceap-navy) !important;
+    color: var(--cecs-navy) !important;
     font-weight: 700 !important;
     margin-top: 16px !important;
+}
+
+/* ============================================================
+   INFINITE VERANDA CALLOUT (NEW)
+   ============================================================ */
+.cecs-veranda-section {
+    padding: 100px 20px;
+    text-align: center;
+    background: var(--cecs-bg-white);
+}
+
+.cecs-veranda-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cecs-veranda-card {
+    background: #faf8f5;
+    border-left: 5px solid var(--cecs-navy);
+    border-radius: 0 20px 20px 0;
+    padding: 40px;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.03);
+    border-top: 1px solid rgba(39, 68, 114, 0.05);
+    border-right: 1px solid rgba(39, 68, 114, 0.05);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.cecs-veranda-card .fcel-lead-paragraph:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .cecs-veranda-section {
+        padding: 60px 18px;
+    }
+
+    .cecs-veranda-card {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cecs-veranda-section {
+        padding: 44px 14px;
+    }
 }

@@ -605,7 +605,7 @@ function CelebrityApexCruiseShipGuide() {
         { title: 'Plan flights and hotels', icon: 'Plane' },
         { title: 'Customize pre- and post-cruise stays', icon: 'Calendar' },
         { title: 'Arrange private transfers', icon: 'Sliders' },
-        { title: 'Provide concierge-level service before, during, and after your vacation', icon: 'HeartHandshake' }
+       
     ]
 
     const ceapRelated = [
@@ -989,7 +989,7 @@ function CelebrityApexCruiseShipGuide() {
                 </section>
 
                 {/* POOLS, SPA & WELLNESS */}
-                <section className="ceap-tag-section ceap-bg-white">
+                <section className="ceap-tag-section ceap-bg-soft">
                     <div className="ceap-tag-container">
                         <div style={{ textAlign: 'center' }}>
                             <span className="fcel-eyebrow-label">RELAX & RECHARGE</span>
@@ -1157,7 +1157,7 @@ function CelebrityApexCruiseShipGuide() {
                 </section>
 
                 {/* IS CELEBRITY APEX WORTH THE MONEY */}
-                <section className="ceap-worth-section ceap-bg-white">
+                <section className="ceap-worth-section ceap-dark-section">
                     <div className="ceap-worth-container">
                         <span className="fcel-eyebrow-label">INVESTMENT & VALUE</span>
                         <h2 className="fcel-section-heading">Is Celebrity Apex Worth the Money?</h2>
@@ -1293,33 +1293,7 @@ function CelebrityApexCruiseShipGuide() {
                     </div>
                 </section>
 
-                {/* RELATED GUIDES / RELATED CONTENT CTA */}
-                <section className="ceap-related-section">
-                    <div className="ceap-related-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <span className="fcel-eyebrow-label">CONTINUE PLANNING</span>
-                            <h2 className="fcel-section-heading">Related Celebrity Cruises Guides</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="ceap-related-grid">
-                            {ceapRelated.map((item, idx) => {
-                                const IconComponent = iconMap[item.icon];
-                                return (
-                                    <Link key={idx} to={item.link} className="ceap-related-card">
-                                        <div className="ceap-related-icon">
-                                            {IconComponent ? <IconComponent size={20} /> : <CeapIconDot size={20} />}
-                                        </div>
-                                        <h4 className="ceap-related-title">{item.title}</h4>
-                                        <p className="ceap-related-desc">{item.desc}</p>
-                                        <span className="ceap-related-link">
-                                            Learn More <CeapIconArrow size={14} />
-                                        </span>
-                                    </Link>
-                                )
-                            })}
-                        </div>
-                    </div>
-                </section>
+            
 
                 {/* FAQ SECTION (MATCHED) */}
                 <section className="fcel-faq-section">

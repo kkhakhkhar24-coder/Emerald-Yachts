@@ -1,0 +1,2106 @@
+/* ============================================================
+   CELEBRITY EDGE SERIES VS SOLSTICE SERIES — PAGE STYLES
+   Reference Colors & Typography preserved from Celebrity Beyond guide.
+   Reused (unchanged) classes: fcel- (hero, intro, section heading, faq, cta),
+   cbcs- (quick answer, inline cta, feature section, tag grid, included,
+   pros/cons board, audience column, why-book, related guides),
+   medi- (expert insight editorial — base classes assumed globally shared,
+   only page-specific overrides included below, same as reference).
+   New unique prefix for content with no match in the reference: evss-
+   ============================================================ */
+
+:root {
+    --cbcs-navy: #274472;
+    --cbcs-navy-light: #274472cc;
+    --cbcs-bg-white: #ffffff;
+    --cbcs-bg-soft: rgb(231, 243, 245);
+    --cbcs-bg-dark: #0f1c2e;
+    --cbcs-bg-dark2: #1c2f4a;
+    --cbcs-green: #10b981;
+    --evss-red: #ef4444;
+    --evss-teal: #0d9488;
+}
+
+/* ============================================================
+   SHARED TYPOGRAPHY & UTILITIES (REUSED FROM REFERENCE)
+   ============================================================ */
+.fcel-page-wrapper {
+    overflow-x: hidden;
+}
+
+.fcel-section-heading {
+    font-size: 48px !important;
+    line-height: 1.2;
+    font-weight: 500 !important;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.01em;
+    color: var(--cbcs-navy);
+}
+
+.fcel-heading-bar {
+    width: 60px;
+    height: 4px;
+    background: var(--cbcs-navy);
+    margin-bottom: 32px;
+}
+
+.fcel-bar-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fcel-page-wrapper .fcel-eyebrow-label {
+    display: inline-block !important;
+    width: fit-content !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.12em !important;
+    text-transform: uppercase !important;
+    color: var(--cbcs-navy) !important;
+    background: var(--cbcs-bg-soft) !important;
+    padding: 8px 16px !important;
+    border-radius: 30px !important;
+    margin-bottom: 18px !important;
+}
+
+.fcel-page-wrapper .cbcs-eyebrow-white {
+    background: var(--cbcs-bg-white) !important;
+    color: var(--cbcs-navy) !important;
+}
+
+.fcel-page-wrapper .cbcs-bg-soft .fcel-eyebrow-label,
+.fcel-page-wrapper .evss-compare-section.cbcs-bg-soft .fcel-eyebrow-label,
+.fcel-page-wrapper .fcel-faq-section .fcel-eyebrow-label {
+    background: var(--cbcs-bg-white) !important;
+}
+
+.fcel-lead-paragraph {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #3d4a5c;
+    margin: 0 0 18px 0;
+}
+
+@media (max-width: 1024px) {
+    .fcel-section-heading {
+        font-size: 34px !important;
+        text-align: center;
+    }
+
+    .fcel-heading-bar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .fcel-section-heading {
+        font-size: 26px !important;
+    }
+
+    .fcel-lead-paragraph {
+        font-size: 16px;
+    }
+}
+
+/* ============================================================
+   IMAGE PLACEHOLDER COMPONENT (REUSED)
+   ============================================================ */
+.cbcs-image-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.04) 0%, rgba(231, 243, 245, 0.7) 100%);
+    border: 2px dashed rgba(39, 68, 114, 0.15);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: var(--cbcs-navy);
+    padding: 24px;
+    text-align: center;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s ease;
+}
+
+.cbcs-image-placeholder span {
+    font-size: 15px;
+    font-weight: 600;
+    color: #475569;
+}
+
+.cbcs-image-placeholder:hover {
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.08) 0%, rgba(231, 243, 245, 0.9) 100%);
+    border-color: rgba(39, 68, 114, 0.3);
+}
+
+/* ============================================================
+   HERO SECTION (REUSED FROM REFERENCE)
+   ============================================================ */
+.fcel-hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.fcel-hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #0f1c2e 0%, #1c2f4a 100%);
+    z-index: 0;
+}
+
+.fcel-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 28, 46, 0.68);
+    z-index: 1;
+}
+
+.fcel-hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fcel-hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #60a5fa;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.fcel-hero-title {
+    font-size: 60px;
+    line-height: 1.1;
+    font-weight: 500;
+    margin: 0 0 24px 0;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    text-align: center;
+    max-width: 900px;
+}
+
+.fcel-hero-subtitle {
+    font-size: 22px;
+    color: #e2e8f0;
+    margin: 0 0 40px 0;
+    max-width: 720px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.fcel-hero-btn-row {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fcel-btn-primary {
+    background: var(--cbcs-navy);
+    color: #ffffff;
+    border: none;
+    padding: 16px 36px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.fcel-btn-primary:hover {
+    background: #1e365a;
+    transform: translateY(-2px);
+}
+
+.fcel-btn-outline {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    padding: 14px 34px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.fcel-btn-outline:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 1024px) {
+    .fcel-hero-title {
+        font-size: 42px;
+    }
+
+    .fcel-hero-subtitle {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .fcel-hero-title {
+        font-size: 32px;
+    }
+
+    .fcel-hero-content {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fcel-hero-title {
+        font-size: 26px;
+    }
+
+    .fcel-hero-subtitle {
+        font-size: 15px;
+        margin-bottom: 28px;
+    }
+
+    .fcel-hero-tag {
+        font-size: 12px;
+    }
+
+    .fcel-btn-primary,
+    .fcel-btn-outline {
+        padding: 12px 22px;
+        font-size: 14px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .fcel-hero-btn-row {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+/* ============================================================
+   INTRO SECTION (REUSED FROM REFERENCE)
+   ============================================================ */
+.fcel-intro-section {
+    background: #faf8f5;
+    padding: 120px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.fcel-intro-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.fcel-intro-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.fcel-intro-copy {
+    position: relative;
+}
+
+.fcel-intro-image-frame {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 35px 70px rgba(15, 28, 46, 0.14);
+}
+
+.fcel-intro-image-frame img,
+.fcel-intro-image-frame .cbcs-image-placeholder {
+    width: 100%;
+    min-height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.fcel-intro-badge-float {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    background: var(--cbcs-navy);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    box-shadow: 0 8px 24px rgba(15, 28, 46, 0.2);
+    z-index: 2;
+}
+
+@media (max-width: 1024px) {
+    .fcel-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .fcel-intro-image-frame {
+        order: -1;
+    }
+
+    .fcel-intro-image-frame img,
+    .fcel-intro-image-frame .cbcs-image-placeholder {
+        min-height: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    .fcel-intro-section {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fcel-intro-section {
+        padding: 44px 14px;
+    }
+
+    .fcel-intro-image-frame img,
+    .fcel-intro-image-frame .cbcs-image-placeholder {
+        min-height: 240px;
+    }
+
+    .fcel-intro-badge-float {
+        bottom: 16px;
+        left: 16px;
+        padding: 8px 14px;
+        font-size: 11px;
+    }
+}
+
+/* ============================================================
+   QUICK ANSWER SECTION (REUSED CARD, NEW LIST VARIANT: evss-)
+   ============================================================ */
+.cbcs-quick-answer-section {
+    background: var(--cbcs-bg-white);
+    padding: 100px 20px;
+}
+
+.cbcs-quick-answer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cbcs-quick-answer-card {
+    background: #faf8f5;
+    border-left: 5px solid var(--cbcs-navy);
+    border-radius: 0 20px 20px 0;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.03);
+    border-top: 1px solid rgba(39, 68, 114, 0.05);
+    border-right: 1px solid rgba(39, 68, 114, 0.05);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.cbcs-quick-answer-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--cbcs-navy);
+    margin: 0 0 20px 0;
+}
+
+/* NEW: quick-answer bullet list (content = 3 short recommendation lines) */
+.evss-quick-answer-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.evss-quick-answer-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #1e293b;
+    font-weight: 500;
+}
+
+.evss-quick-answer-icon {
+    color: var(--cbcs-green);
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+@media (max-width: 768px) {
+    .cbcs-quick-answer-section {
+        padding: 60px 18px;
+    }
+
+    .cbcs-quick-answer-card {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cbcs-quick-answer-section {
+        padding: 44px 14px;
+    }
+
+    .cbcs-quick-answer-title {
+        font-size: 22px;
+    }
+
+    .evss-quick-answer-item {
+        font-size: 15px;
+    }
+}
+
+/* ============================================================
+   INLINE CTA SECTION (REUSED FROM REFERENCE)
+   ============================================================ */
+.cbcs-inline-cta-section {
+    background: linear-gradient(135deg, #faf8f5 0%, #e7f3f5 100%);
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 1px solid rgba(39, 68, 114, 0.08);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.cbcs-inline-cta-section::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: rgba(39, 68, 114, 0.03);
+    pointer-events: none;
+}
+
+.cbcs-inline-cta-section::after {
+    content: '';
+    position: absolute;
+    bottom: -60px;
+    right: -60px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: rgba(39, 68, 114, 0.03);
+    pointer-events: none;
+}
+
+.cbcs-inline-cta-container {
+    max-width: 850px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(39, 68, 114, 0.12);
+    border-radius: 24px;
+    padding: 38px 46px;
+    box-shadow: 0 15px 40px rgba(39, 68, 114, 0.05);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    position: relative;
+    z-index: 1;
+}
+
+.cbcs-inline-cta-tag {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--cbcs-navy);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: var(--cbcs-bg-soft);
+    padding: 6px 14px;
+    border-radius: 30px;
+}
+
+.cbcs-inline-cta-text {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--cbcs-navy);
+    margin: 0;
+    line-height: 1.45;
+    max-width: 650px;
+}
+
+.cbcs-inline-cta-btn-row {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 6px;
+}
+
+.cbcs-btn-primary {
+    background: var(--cbcs-navy);
+    color: #ffffff;
+    border: none;
+    padding: 14px 34px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cbcs-btn-primary:hover {
+    background: #1e365a;
+    transform: translateY(-2px);
+}
+
+.cbcs-btn-outline {
+    background: transparent;
+    color: var(--cbcs-navy);
+    border: 2px solid rgba(39, 68, 114, 0.25);
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cbcs-btn-outline:hover {
+    background: var(--cbcs-bg-soft);
+    border-color: var(--cbcs-navy);
+}
+
+@media (max-width: 768px) {
+    .cbcs-inline-cta-section {
+        padding: 40px 18px;
+    }
+
+    .cbcs-inline-cta-container {
+        padding: 28px 24px;
+    }
+
+    .cbcs-inline-cta-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cbcs-inline-cta-btn-row {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cbcs-inline-cta-btn-row .cbcs-btn-primary,
+    .cbcs-inline-cta-btn-row .cbcs-btn-outline {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* ============================================================
+   GENERIC SECTION / CONTAINER / BG UTILITIES (REUSED)
+   ============================================================ */
+.cbcs-feature-section {
+    padding: 100px 20px;
+}
+
+.cbcs-bg-white {
+    background: var(--cbcs-bg-white) !important;
+}
+
+.cbcs-bg-soft {
+    background: var(--cbcs-bg-soft) !important;
+}
+
+.cbcs-dark-section {
+    background: linear-gradient(135deg, var(--cbcs-bg-dark) 0%, var(--cbcs-bg-dark2) 100%) !important;
+    color: var(--cbcs-bg-white);
+    position: relative;
+    overflow: hidden;
+}
+
+.cbcs-dark-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle at 80% 20%, rgba(39, 68, 114, 0.06) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.cbcs-dark-section .fcel-section-heading {
+    color: #ffffff !important;
+}
+
+.cbcs-dark-section .fcel-lead-paragraph {
+    color: #cbd5e1;
+}
+
+.cbcs-feature-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .cbcs-feature-section {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cbcs-feature-section {
+        padding: 44px 14px;
+    }
+}
+
+/* ============================================================
+   evss-compare-section — SHIP CLASSES AT A GLANCE /
+   SHIP SIZE COMPARISON (3-column rating & spec tables)
+   ============================================================ */
+.evss-compare-container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.evss-compare-table-wrap {
+    margin-top: 40px;
+    background: var(--cbcs-bg-white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(39, 68, 114, 0.06);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.evss-compare-header-row,
+.evss-compare-row {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+}
+
+.evss-compare-header-row {
+    background: var(--cbcs-navy);
+}
+
+.evss-compare-header-cell {
+    padding: 18px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.evss-compare-header-cell:first-child {
+    text-align: left;
+}
+
+.evss-compare-row:nth-child(even) {
+    background: #faf8f5;
+}
+
+.evss-compare-row:not(:last-child) {
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.evss-compare-cell {
+    padding: 16px 20px;
+    font-size: 15px;
+    color: #334155;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.evss-compare-cell-feature {
+    font-weight: 700;
+    color: var(--cbcs-navy);
+    background: var(--cbcs-bg-soft);
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.evss-compare-cell-stars {
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    .evss-compare-header-cell {
+        font-size: 12px;
+        padding: 14px 10px;
+    }
+
+    .evss-compare-cell {
+        font-size: 13px;
+        padding: 12px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .evss-compare-header-row,
+    .evss-compare-row {
+        grid-template-columns: 1.1fr 0.9fr 0.9fr;
+    }
+
+    .evss-compare-cell,
+    .evss-compare-header-cell {
+        font-size: 11px;
+        padding: 10px 6px;
+    }
+}
+
+/* ============================================================
+   evss-winner-banner — used after every head-to-head sub-section
+   ============================================================ */
+.evss-winner-banner {
+    margin-top: 32px;
+    background: var(--cbcs-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    border-radius: 16px;
+    padding: 24px 30px;
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.evss-winner-trophy {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--cbcs-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.evss-winner-content {
+    flex: 1;
+}
+
+.evss-winner-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--cbcs-navy);
+    margin: 0 0 6px 0;
+}
+
+.evss-winner-desc {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #475569;
+    margin: 0;
+}
+
+.evss-winner-desc + .evss-winner-desc {
+    margin-top: 6px;
+}
+
+.cbcs-dark-section .evss-winner-banner {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+.cbcs-dark-section .evss-winner-title {
+    color: #ffffff;
+}
+
+.cbcs-dark-section .evss-winner-desc {
+    color: #cbd5e1;
+}
+
+@media (max-width: 480px) {
+    .evss-winner-banner {
+        padding: 18px 20px;
+        gap: 12px;
+    }
+
+    .evss-winner-title {
+        font-size: 15px;
+    }
+
+    .evss-winner-desc {
+        font-size: 14px;
+    }
+}
+
+/* ============================================================
+   evss-ships-section — SHIPS INCLUDED (two ship lists)
+   ============================================================ */
+.evss-ships-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    margin-top: 40px;
+}
+
+.evss-ships-column {
+    background: var(--cbcs-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.04);
+}
+
+.evss-ships-column-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.evss-ships-column-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--cbcs-bg-soft);
+    color: var(--cbcs-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.evss-ships-column-title {
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--cbcs-navy);
+    margin: 0;
+}
+
+.evss-ships-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.evss-ships-list-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #334155;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.06);
+}
+
+.evss-ships-list-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.evss-ships-list-icon {
+    color: var(--cbcs-navy);
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .evss-ships-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .evss-ships-column {
+        padding: 22px;
+    }
+
+    .evss-ships-list-item {
+        font-size: 14px;
+    }
+}
+
+/* ============================================================
+   evss-versus — HEAD-TO-HEAD CARD GRID
+   (Ship Design, Infinite Verandas, Dining, Entertainment,
+   Pools & Outdoor Spaces)
+   ============================================================ */
+.evss-versus-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    margin-top: 40px;
+}
+
+.evss-versus-card {
+    background: var(--cbcs-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.04);
+    border-top: 4px solid var(--cbcs-navy);
+}
+
+.evss-versus-card.evss-card-solstice {
+    border-top-color: var(--evss-teal);
+}
+
+.evss-versus-card-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--cbcs-navy);
+    margin: 0 0 14px 0;
+}
+
+.evss-versus-lead {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #475569;
+    margin: 0 0 18px 0;
+}
+
+.evss-versus-list {
+    list-style: none;
+    margin: 0 0 18px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.evss-versus-list-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.evss-versus-list-icon {
+    color: var(--cbcs-navy);
+    flex-shrink: 0;
+}
+
+.evss-card-solstice .evss-versus-list-icon {
+    color: var(--evss-teal);
+}
+
+.evss-versus-subheading {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #64748b;
+    margin: 18px 0 10px 0;
+}
+
+.dark-section .evss-versus-card,
+.cbcs-dark-section .evss-versus-card {
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+.cbcs-dark-section .evss-versus-card-title {
+    color: #ffffff;
+}
+
+.cbcs-dark-section .evss-versus-lead,
+.cbcs-dark-section .evss-versus-list-item {
+    color: #cbd5e1;
+}
+
+@media (max-width: 1024px) {
+    .evss-versus-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .evss-versus-card {
+        padding: 22px;
+    }
+
+    .evss-versus-card-title {
+        font-size: 18px;
+    }
+}
+
+/* ============================================================
+   PROS / CONS MINI LIST (reused for Infinite Veranda pros/cons —
+   generic pro/con icon-wrap treatment, matches reference styling)
+   ============================================================ */
+.cbcs-item-icon-wrap {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.cbcs-item-icon-wrap.cbcs-pro-icon {
+    background: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+}
+
+.cbcs-item-icon-wrap.cbcs-con-icon {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+}
+
+/* ============================================================
+   evss-destinations — DESTINATIONS SECTION
+   ============================================================ */
+.evss-destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    margin-top: 40px;
+}
+
+.evss-destinations-card {
+    background: var(--cbcs-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 20px;
+    padding: 32px;
+}
+
+.evss-destinations-card-title {
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--cbcs-navy);
+    margin: 0 0 18px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.evss-destinations-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.evss-destinations-list li {
+    font-size: 15px;
+    color: #334155;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.evss-destinations-note {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 16px;
+    color: #475569;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .evss-destinations-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .evss-destinations-card {
+        padding: 22px;
+    }
+}
+
+/* ============================================================
+   WHAT'S INCLUDED CHECKLIST (REUSED FROM REFERENCE)
+   ============================================================ */
+.cbcs-included-section {
+    background: var(--cbcs-bg-soft);
+    padding: 100px 20px;
+}
+
+.cbcs-included-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cbcs-included-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 40px;
+}
+
+.cbcs-included-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--cbcs-bg-white);
+    padding: 16px 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    font-size: 15px;
+    color: #334155;
+    font-weight: 600;
+}
+
+.cbcs-included-icon {
+    color: #10b981;
+    flex-shrink: 0;
+}
+
+.cbcs-included-note {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 15px;
+    color: #475569;
+    line-height: 1.7;
+}
+
+@media (max-width: 1024px) {
+    .cbcs-included-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .cbcs-included-section {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cbcs-included-section {
+        padding: 44px 14px;
+    }
+
+    .cbcs-included-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cbcs-included-item {
+        font-size: 14px;
+    }
+}
+
+/* ============================================================
+   PROS & CONS BOARD (REUSED FROM REFERENCE) — one board per
+   ship class, stacked. New: evss-board-ship-title / evss-dual-board-stack
+   ============================================================ */
+.cbcs-pros-section {
+    padding: 100px 20px;
+}
+
+.cbcs-pros-cons-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.evss-dual-board-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.evss-board-ship-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--cbcs-navy);
+    margin: 0 0 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.evss-board-ship-tag {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: var(--cbcs-bg-soft);
+    color: var(--cbcs-navy);
+    padding: 6px 14px;
+    border-radius: 30px;
+}
+
+.cbcs-comparison-board {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    background: var(--cbcs-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(39, 68, 114, 0.04);
+    text-align: left;
+}
+
+.cbcs-pros-panel {
+    padding: 40px;
+    background: var(--cbcs-bg-white);
+    border-right: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.cbcs-cons-panel {
+    padding: 40px;
+    background: #fafbfe;
+}
+
+.cbcs-panel-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 28px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cbcs-panel-title.cbcs-pros-title {
+    color: #10b981;
+}
+
+.cbcs-panel-title.cbcs-cons-title {
+    color: #ef4444;
+}
+
+.cbcs-panel-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cbcs-list-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.cbcs-item-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--cbcs-navy);
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    .cbcs-comparison-board {
+        grid-template-columns: 1fr;
+    }
+
+    .cbcs-pros-panel {
+        border-right: none;
+        border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+        padding: 32px 24px;
+    }
+
+    .cbcs-cons-panel {
+        padding: 32px 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cbcs-pros-section {
+        padding: 60px 18px;
+    }
+
+    .evss-dual-board-stack {
+        gap: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cbcs-pros-section {
+        padding: 44px 14px;
+    }
+
+    .cbcs-panel-title {
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+
+    .evss-board-ship-title {
+        font-size: 19px;
+    }
+
+    .cbcs-item-title {
+        font-size: 14px;
+    }
+}
+
+/* ============================================================
+   evss-choose — WHICH SHIP CLASS IS BEST (reuses audience-column
+   card styling from reference, side by side)
+   ============================================================ */
+.cbcs-audience-section {
+    background: var(--cbcs-bg-soft);
+    padding: 100px 20px;
+}
+
+.evss-choose-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.evss-choose-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    margin-top: 20px;
+}
+
+.evss-choose-column-title {
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--cbcs-navy);
+    margin: 0 0 18px 0;
+}
+
+.cbcs-audience-column {
+    background: var(--cbcs-bg-white);
+    border-radius: 20px;
+    padding: 34px;
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.03);
+    border-top: 4px solid var(--cbcs-green);
+}
+
+.evss-choose-grid .cbcs-audience-column.evss-card-solstice {
+    border-top-color: var(--evss-teal);
+}
+
+.cbcs-audience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.cbcs-audience-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    color: #475569;
+    font-weight: 500;
+}
+
+.cbcs-audience-check {
+    color: #10b981;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .cbcs-audience-section {
+        padding: 60px 18px;
+    }
+
+    .evss-choose-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .cbcs-audience-column {
+        padding: 26px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cbcs-audience-section {
+        padding: 44px 14px;
+    }
+
+    .cbcs-audience-item {
+        font-size: 14px;
+    }
+}
+
+/* ============================================================
+   WHY BOOK WITH US (DARK) — REUSED FROM REFERENCE
+   ============================================================ */
+.cbcs-why-book-section {
+    padding: 100px 20px;
+    border-top: 1px solid rgba(39, 68, 114, 0.05);
+    background: var(--cbcs-bg-dark) !important;
+}
+
+.cbcs-why-book-section .fcel-section-heading {
+    color: #ffffff !important;
+}
+
+.cbcs-why-book-section .fcel-heading-bar {
+    background: #60a5fa !important;
+}
+
+.fcel-page-wrapper .cbcs-why-book-section .fcel-eyebrow-label {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: #cbd5e1 !important;
+}
+
+.cbcs-why-book-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.cbcs-why-book-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.cbcs-why-book-card {
+    background: var(--cbcs-bg-white) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+    border-radius: 16px;
+    padding: 32px 24px;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.cbcs-why-book-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--cbcs-navy);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+}
+
+.cbcs-why-book-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(39, 68, 114, 0.08);
+}
+
+.cbcs-why-book-card:hover::before {
+    transform: scaleX(1);
+}
+
+.cbcs-why-book-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: var(--cbcs-bg-soft) !important;
+    color: var(--cbcs-navy) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(39, 68, 114, 0.05);
+}
+
+.cbcs-why-book-card:hover .cbcs-why-book-icon {
+    background: var(--cbcs-navy) !important;
+    color: #ffffff !important;
+}
+
+.cbcs-why-book-title {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--cbcs-navy) !important;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .cbcs-why-book-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .cbcs-why-book-section {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cbcs-why-book-section {
+        padding: 44px 14px;
+    }
+
+    .cbcs-why-book-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cbcs-why-book-card {
+        padding: 24px 20px;
+    }
+}
+
+/* ============================================================
+   EXPERT INSIGHT EYEBROW / EDITORIAL OVERRIDES (REUSED FROM REFERENCE
+   — base .medi- classes are shared globally across the site)
+   ============================================================ */
+.fcel-page-wrapper .medi-editorial-eyebrow-container {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    background: var(--cbcs-bg-soft) !important;
+    padding: 8px 16px !important;
+    border-radius: 30px !important;
+    width: fit-content !important;
+    margin-bottom: 18px !important;
+}
+
+.fcel-page-wrapper .medi-editorial-eyebrow {
+    color: var(--cbcs-navy) !important;
+    font-weight: 700 !important;
+    font-size: 13px !important;
+    letter-spacing: 0.08em !important;
+    opacity: 1 !important;
+}
+
+.fcel-page-wrapper .medi-editorial-icon-badge {
+    color: var(--cbcs-navy) !important;
+    opacity: 1 !important;
+}
+
+.fcel-page-wrapper .medi-growth-insight-section {
+    background: var(--cbcs-bg-white) !important;
+    border-top: 1px solid rgba(39, 68, 114, 0.08);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+    padding: 100px 20px !important;
+}
+
+.fcel-page-wrapper .medi-expert-editorial-card {
+    background: var(--cbcs-bg-white) !important;
+    border: 1px solid rgba(39, 68, 114, 0.08) !important;
+    border-radius: 24px !important;
+    padding: 50px !important;
+    box-shadow: 0 20px 50px rgba(15, 28, 46, 0.04) !important;
+}
+
+.fcel-page-wrapper .medi-editorial-portrait-block {
+    display: flex !important;
+    flex-direction: column !important;
+    align-self: start !important;
+    width: 100% !important;
+}
+
+.fcel-page-wrapper .medi-expertise-section-box {
+    margin-top: 30px !important;
+    background: var(--cbcs-bg-soft) !important;
+    padding: 24px !important;
+    border-radius: 16px !important;
+    border: 1px solid rgba(39, 68, 114, 0.06) !important;
+}
+
+.fcel-page-wrapper .medi-expertise-intro-label {
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    color: var(--cbcs-navy) !important;
+    display: block !important;
+    margin-bottom: 14px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+}
+
+.fcel-page-wrapper .medi-expertise-horizontal-strip {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+}
+
+.fcel-page-wrapper .medi-expertise-pills-row {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    border: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+.fcel-page-wrapper .medi-expertise-pill-text {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: #334155 !important;
+}
+
+.fcel-page-wrapper .medi-editorial-image-frame {
+    aspect-ratio: 4 / 5 !important;
+    border-radius: 20px !important;
+    overflow: hidden !important;
+    box-shadow: 0 15px 35px rgba(39, 68, 114, 0.1) !important;
+}
+
+.fcel-page-wrapper .medi-editorial-floating-stat {
+    background: var(--cbcs-navy) !important;
+    box-shadow: 0 10px 25px rgba(39, 68, 114, 0.2) !important;
+}
+
+.fcel-page-wrapper .medi-editorial-full-width-footer {
+    grid-column: 1 / -1;
+    margin-top: 30px;
+    border-top: 1px solid rgba(39, 68, 114, 0.1);
+    padding-top: 30px;
+}
+
+.fcel-page-wrapper .medi-editorial-signature {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    color: var(--cbcs-navy) !important;
+    font-weight: 700 !important;
+    margin-top: 16px !important;
+}
+
+@media (max-width: 1024px) {
+    .fcel-page-wrapper .medi-expert-editorial-card {
+        grid-template-columns: 1fr !important;
+        padding: 30px !important;
+        gap: 40px !important;
+    }
+
+    .fcel-page-wrapper .medi-editorial-portrait-block {
+        align-self: center !important;
+        max-width: 460px !important;
+    }
+}
+
+/* ============================================================
+   FAQ SECTION (REUSED FROM REFERENCE)
+   ============================================================ */
+.fcel-faq-section {
+    background: var(--cbcs-bg-soft);
+    padding: 100px 20px;
+}
+
+.fcel-faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.fcel-faq-list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.fcel-faq-item {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(15, 28, 46, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.fcel-faq-item:hover {
+    box-shadow: 0 8px 22px rgba(15, 28, 46, 0.1);
+}
+
+.fcel-faq-question-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--cbcs-navy);
+}
+
+.fcel-faq-toggle {
+    font-size: 22px;
+    color: var(--cbcs-navy);
+    flex-shrink: 0;
+}
+
+.fcel-faq-answer {
+    margin: 14px 0 0 0;
+    font-size: 15px;
+    color: #475569;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .fcel-faq-section {
+        padding: 60px 18px;
+    }
+
+    .fcel-faq-question-row {
+        font-size: 15px;
+    }
+
+    .fcel-faq-item {
+        padding: 16px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fcel-faq-question-row {
+        font-size: 14px;
+    }
+
+    .fcel-faq-answer {
+        font-size: 14px;
+    }
+}
+
+/* ============================================================
+   RELATED GUIDES / RELATED CONTENT CTA (REUSED FROM REFERENCE)
+   ============================================================ */
+.cbcs-related-section {
+    background: var(--cbcs-bg-white);
+    padding: 100px 20px;
+}
+
+.cbcs-related-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.cbcs-related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.cbcs-related-card {
+    background: var(--cbcs-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 16px;
+    padding: 28px 24px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(39, 68, 114, 0.01);
+}
+
+.cbcs-related-card:hover {
+    background: var(--cbcs-bg-white);
+    border-color: rgba(39, 68, 114, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(39, 68, 114, 0.08);
+}
+
+.cbcs-related-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: var(--cbcs-bg-white);
+    color: var(--cbcs-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 10px rgba(39, 68, 114, 0.05);
+}
+
+.cbcs-related-card:hover .cbcs-related-icon {
+    background: var(--cbcs-navy);
+    color: #ffffff;
+}
+
+.cbcs-related-title {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--cbcs-navy);
+    margin: 0 0 10px 0;
+}
+
+.cbcs-related-desc {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #475569;
+    margin: 0 0 16px 0;
+    flex-grow: 1;
+}
+
+.cbcs-related-link {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--cbcs-navy);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+    .cbcs-related-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .cbcs-related-section {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cbcs-related-section {
+        padding: 44px 14px;
+    }
+
+    .cbcs-related-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============================================================
+   CTA SECTION (REUSED FROM REFERENCE)
+   ============================================================ */
+.fcel-cta-section {
+    position: relative;
+    background: linear-gradient(135deg, var(--cbcs-bg-dark) 0%, var(--cbcs-navy) 100%);
+    padding: 110px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.fcel-cta-bg-pattern {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle at 20% 20%, rgba(240, 217, 160, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(240, 217, 160, 0.08) 0%, transparent 40%);
+    z-index: 0;
+}
+
+.fcel-cta-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.fcel-cta-heading {
+    font-size: 42px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    line-height: 1.25;
+}
+
+.fcel-cta-separator {
+    width: 60px;
+    height: 4px;
+    background: #60a5fa;
+    margin: 0 auto 28px;
+}
+
+.fcel-cta-text {
+    font-size: 17px;
+    color: #cbd5e1;
+    line-height: 1.8;
+    margin: 0 0 30px 0;
+}
+
+.fcel-cta-btn-row {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+@media (max-width: 1024px) {
+    .fcel-cta-heading {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .fcel-cta-section {
+        padding: 70px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fcel-cta-heading {
+        font-size: 22px;
+    }
+
+    .fcel-cta-text {
+        font-size: 14px;
+    }
+
+    .fcel-cta-btn-row {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .fcel-cta-btn-row .fcel-btn-primary,
+    .fcel-cta-btn-row .fcel-btn-outline {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* ============================================================
+   CUSTOM ADDITIONS FOR IMAGE ALTERNATION & VERSUS CARDS
+   ============================================================ */
+.evss-versus-container {
+    max-width: 1100px !important;
+}
+.evss-suite-grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.evss-suite-image-col {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 35px 70px rgba(15, 28, 46, 0.14);
+}
+
+.evss-suite-image-col .cbcs-image-placeholder {
+    width: 100%;
+    min-height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.evss-suite-copy-col {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+    .evss-suite-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .evss-suite-image-col {
+        order: -1;
+    }
+
+    .evss-suite-image-col .cbcs-image-placeholder {
+        min-height: 320px;
+    }
+}
+
+/* Versus card image style */
+.evss-versus-image {
+    height: 220px !important;
+    min-height: 220px !important;
+    margin-bottom: 24px;
+    border-radius: 12px;
+}
+
+/* Ensure tag grid styles are loaded locally */
+.cbcs-tag-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.cbcs-tag-card {
+    background: var(--cbcs-bg-white) !important;
+    border: 1px solid rgba(39, 68, 114, 0.08) !important;
+    border-radius: 16px !important;
+    padding: 20px 14px !important;
+    text-align: center !important;
+    transition: all 0.3s ease !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 10px !important;
+}
+
+.cbcs-tag-card:hover {
+    background: var(--cbcs-bg-soft) !important;
+    border-color: rgba(39, 68, 114, 0.2) !important;
+    transform: translateY(-4px) !important;
+    box-shadow: 0 12px 24px rgba(39, 68, 114, 0.06) !important;
+}
+
+.cbcs-tag-icon {
+    width: 38px !important;
+    height: 38px !important;
+    border-radius: 50% !important;
+    background: rgba(39, 68, 114, 0.06) !important;
+    color: var(--cbcs-navy) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.3s ease !important;
+}
+
+.cbcs-tag-card:hover .cbcs-tag-icon {
+    background: var(--cbcs-navy) !important;
+    color: #ffffff !important;
+}
+
+.cbcs-tag-label {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: var(--cbcs-navy) !important;
+    line-height: 1.3 !important;
+}
+
+@media (max-width: 1024px) {
+    .cbcs-tag-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .cbcs-tag-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+}
