@@ -169,6 +169,9 @@ import CelebrityCruises from "./pages/CelebrityCruises/CelebrityCruises";
 import WhatsIncludedCelebrityCruise from "./pages/WhatsIncludedCelebrityCruise/WhatsIncludedCelebrityCruise";
 import CelebrityCruiseShipsCompleteFleetGuide from "./pages/CelebrityCruiseShipsCompleteFleetGuide/CelebrityCruiseShipsCompleteFleetGuide";
 import CelebrityStateroomsSuitesGuide from "./pages/CelebrityStateroomsSuitesGuide/CelebrityStateroomsSuitesGuide";
+import CelebrityCruisesTheRetreat from "./pages/CelebrityCruisesTheRetreat/CelebrityCruisesTheRetreat";
+import CelebrityAllIncluded from "./pages/CelebrityAllIncluded/CelebrityAllIncluded";
+import CelebrityDrinkPackages from "./pages/CelebrityDrinkPackages/CelebrityDrinkPackages";
 import Celebritybeyondcruiseshipguide from "./pages/Celebritybeyondcruiseshipguide/Celebritybeyondcruiseshipguide";
 import Celebrityapexcruiseshipguide from "./pages/Celebrityapexcruiseshipguide/Celebrityapexcruiseshipguide";
 import Celebrityedgecruiseshipguide from "./pages/Celebrityedgecruiseshipguide/Celebrityedgecruiseshipguide";
@@ -959,6 +962,21 @@ function App() {
           <Route
             path="/celebrity-cruises/staterooms-suites"
             element={<CelebrityStateroomsSuitesGuide />}
+          />
+
+          <Route
+            path="/celebrity-cruises/the-retreat"
+            element={<CelebrityCruisesTheRetreat />}
+          />
+
+          <Route
+            path="/celebrity-cruises/all-included"
+            element={<CelebrityAllIncluded />}
+          />
+
+          <Route
+            path="/celebrity-cruises/drink-packages"
+            element={<CelebrityDrinkPackages />}
           />
 
           <Route

@@ -1240,6 +1240,30 @@ const Navbar = () => {
               </NavLink>
 
               <NavLink
+                to="/celebrity-cruises/the-retreat"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Celebrity Cruises: The Retreat
+              </NavLink>
+
+              <NavLink
+                to="/celebrity-cruises/all-included"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Celebrity All Included Explained
+              </NavLink>
+
+              {/* <NavLink
+                to="/celebrity-cruises/drink-packages"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Celebrity Cruises Drink Packages
+              </NavLink> */}
+
+              <NavLink
                 to="/celebrity-cruises/ships/celebrity-beyond"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -2480,6 +2504,30 @@ const Navbar = () => {
             >
               Celebrity Staterooms and Suites Guide
             </NavLink>
+
+            <NavLink
+              to="/celebrity-cruises/the-retreat"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Celebrity Cruises: The Retreat
+            </NavLink>
+
+            <NavLink
+              to="/celebrity-cruises/all-included"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Celebrity All Included Explained
+            </NavLink>
+
+            {/* <NavLink
+              to="/celebrity-cruises/drink-packages"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Celebrity Cruises Drink Packages
+            </NavLink> */}
 
             <NavLink
               to="/celebrity-cruises/ships/celebrity-beyond"
