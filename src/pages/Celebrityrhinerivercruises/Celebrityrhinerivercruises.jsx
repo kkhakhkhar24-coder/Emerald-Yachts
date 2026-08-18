@@ -213,7 +213,7 @@ function CelebrityRhineRiverCruises() {
         { label: 'Medieval landscapes', icon: 'Castle' },
         { label: 'Rhine castles', icon: 'Castle' },
         { label: 'French culture', icon: 'Star' },
-        { label: 'Swiss gateway cities', icon: 'Mountain' }
+       
     ]
 
     const rhrcAmsterdamHighlights = [
@@ -758,7 +758,7 @@ function CelebrityRhineRiverCruises() {
                             })}
                         </div>
                         <p className="rhrc-route-combines-title">This route combines:</p>
-                        <div className="cbcs-feature-list" style={{ gridTemplateColumns: 'repeat(3, 1fr)' }}>
+                        <div className="cbcs-feature-list rhrc-combines-list">
                             {rhrcRouteCombines.map((item, idx) => {
                                 const IconComponent = iconMap[item.icon];
                                 return (
@@ -980,7 +980,7 @@ function CelebrityRhineRiverCruises() {
                 </section>
 
                 {/* RHINE CITIES AT A GLANCE (rhrc- 3-col compare table, reused pattern) */}
-                <section className="rhrc-compare-section cbcs-bg-soft">
+                <section className="rhrc-compare-section cbcs-dark-section">
                     <div className="rhrc-compare-container">
                         <div style={{ textAlign: 'center' }}>
                             <span className="fcel-eyebrow-label">CITIES OVERVIEW</span>
@@ -1033,7 +1033,7 @@ function CelebrityRhineRiverCruises() {
                 </section>
 
                 {/* EXCURSIONS (REUSED — cbcs-feature-section pattern) */}
-                <section className="cbcs-feature-section cbcs-bg-soft">
+                <section className="cbcs-feature-section cbcs-dark-section">
                     <div className="cbcs-feature-container">
                         <div className="cbcs-feature-grid cbcs-reverse">
                             <div className="cbcs-feature-copy-col">
@@ -1204,7 +1204,7 @@ function CelebrityRhineRiverCruises() {
                 </section>
 
                 {/* ACCOMMODATIONS INTRO + TYPES (REUSED — cbcs-worth-section + cbcs-tag-section) */}
-                <section className="cbcs-worth-section cbcs-bg-white">
+                <section className="cbcs-worth-section cbcs-bg-white" style={{ paddingBottom: '100px' }}>
                     <div className="cbcs-worth-container">
                         <span className="fcel-eyebrow-label">STATEROOMS & SUITES</span>
                         <h2 className="fcel-section-heading">Celebrity Rhine River Cruise Accommodations</h2>
@@ -1213,10 +1213,7 @@ function CelebrityRhineRiverCruises() {
                             Celebrity's river accommodations are designed around river views and natural light. Options include River View, Infinite Balcony, Vista Balcony Suite and Skylight Infinite Balcony Suite.
                         </p>
                     </div>
-                </section>
-
-                <section className="cbcs-tag-section cbcs-bg-soft">
-                    <div className="cbcs-tag-container">
+                    <div className="cbcs-tag-container" style={{ marginTop: '40px' }}>
                         <div className="cbcs-tag-grid">
                             {rhrcAccommodationTypes.map((item, idx) => {
                                 const IconComponent = iconMap[item.icon];
@@ -1272,36 +1269,36 @@ function CelebrityRhineRiverCruises() {
                 </section>
 
                 {/* BEFORE & AFTER STAYS INTRO (REUSED — cbcs-worth-section) */}
-                <section className="cbcs-worth-section cbcs-bg-soft">
-                    <div className="cbcs-worth-container">
-                        <span className="fcel-eyebrow-label">EXTEND YOUR TRIP</span>
-                        <h2 className="fcel-section-heading">Rhine River Cruise Before & After Stays</h2>
-                        <div className="fcel-heading-bar fcel-bar-center"></div>
-                        <p className="fcel-lead-paragraph">
-                            A Celebrity Rhine River Cruise does not have to begin or end when the ship does. Celebrity offers Before and After Stays that allow travelers to add time in European cities before or after their river sailing. Current options include cities such as {rhrcBeforeAfterCities.join(', ')}.
-                        </p>
-                    </div>
-                </section>
+                <section className="cbcs-worth-section cbcs-bg-white">
+                    <div className="cbcs-feature-container">
+                        <div className="rhrc-before-after-split">
+                            <div className="rhrc-before-after-content">
+                                <span className="fcel-eyebrow-label">EXTEND YOUR TRIP</span>
+                                <h2 className="fcel-section-heading" style={{ textAlign: 'left' }}>Rhine River Cruise Before & After Stays</h2>
+                                <div className="fcel-heading-bar"></div>
+                                <p className="fcel-lead-paragraph">
+                                    A Celebrity Rhine River Cruise does not have to begin or end when the ship does. Celebrity offers Before and After Stays that allow travelers to add time in European cities before or after their river sailing. Current options include cities such as {rhrcBeforeAfterCities.join(', ')}.
+                                </p>
+                            </div>
 
-                <section className="cbcs-tag-section cbcs-bg-white">
-                    <div className="cbcs-tag-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <p className="fcel-lead-paragraph" style={{ maxWidth: '800px', margin: '0 auto' }}>
-                                Celebrity's Before and After packages can include:
-                            </p>
-                        </div>
-                        <div className="cbcs-tag-grid">
-                            {rhrcBeforeAfterIncludes.map((item, idx) => {
-                                const IconComponent = iconMap[item.icon];
-                                return (
-                                    <div key={idx} className="cbcs-tag-card">
-                                        <div className="cbcs-tag-icon">
-                                            {IconComponent ? <IconComponent size={20} /> : <RhrcIconDot size={20} />}
-                                        </div>
-                                        <span className="cbcs-tag-label">{item.label}</span>
-                                    </div>
-                                )
-                            })}
+                            <div className="rhrc-before-after-keypoints">
+                                <p className="fcel-lead-paragraph" style={{ fontWeight: 600, marginBottom: '20px' }}>
+                                    Celebrity's Before and After packages can include:
+                                </p>
+                                <div className="rhrc-before-after-tags-list">
+                                    {rhrcBeforeAfterIncludes.map((item, idx) => {
+                                        const IconComponent = iconMap[item.icon];
+                                        return (
+                                            <div key={idx} className="rhrc-tag-row-card">
+                                                <div className="rhrc-tag-row-icon">
+                                                    {IconComponent ? <IconComponent size={18} /> : <RhrcIconDot size={18} />}
+                                                </div>
+                                                <span className="rhrc-tag-row-label">{item.label}</span>
+                                            </div>
+                                        )
+                                    })}
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -1383,7 +1380,7 @@ function CelebrityRhineRiverCruises() {
                 </section>
 
                 {/* WHAT'S INCLUDED IN BEFORE & AFTER STAYS (REUSED — cbcs-glance-section) */}
-                <section className="cbcs-glance-section">
+                <section className="cbcs-glance-section cbcs-dark-section">
                     <div className="cbcs-glance-container">
                         <div style={{ textAlign: 'center' }}>
                             <span className="fcel-eyebrow-label">STAY INCLUSIONS</span>
@@ -1453,13 +1450,9 @@ function CelebrityRhineRiverCruises() {
                                 </div>
                             ))}
                         </div>
-                    </div>
-                </section>
 
-                {/* CHOOSE RHINE / CHOOSE DANUBE (rhrc- choice board) */}
-                <section className="rhrc-choice-section">
-                    <div className="rhrc-choice-container">
-                        <div className="rhrc-choice-board">
+                        {/* Choice board inside same section */}
+                        <div className="rhrc-choice-board rhrc-choice-board-inline">
                             <div className="rhrc-choice-panel">
                                 <h3 className="rhrc-choice-title">
                                     <RhrcIconCheck size={22} />
@@ -1497,7 +1490,7 @@ function CelebrityRhineRiverCruises() {
                 </section>
 
                 {/* ARE THEY WORTH IT (REUSED — cbcs-tag-section) */}
-                <section className="cbcs-tag-section cbcs-bg-white">
+                <section className="cbcs-tag-section cbcs-dark-section">
                     <div className="cbcs-tag-container">
                         <div style={{ textAlign: 'center' }}>
                             <span className="fcel-eyebrow-label">INVESTMENT & VALUE</span>
@@ -1570,7 +1563,7 @@ function CelebrityRhineRiverCruises() {
                 </section>
 
                 {/* PROS & CONS (REUSED) */}
-                <section className="cbcs-pros-section cbcs-bg-white">
+                <section className="cbcs-pros-section cbcs-dark-section">
                     <div className="cbcs-pros-cons-container">
                         <div style={{ textAlign: 'center', marginBottom: '40px' }}>
                             <span className="fcel-eyebrow-label cbcs-eyebrow-white">PROS & CONS</span>
@@ -1784,33 +1777,7 @@ function CelebrityRhineRiverCruises() {
                     </div>
                 </section>
 
-                {/* RELATED GUIDES (REUSED — 5 related content CTAs) */}
-                <section className="cbcs-related-section">
-                    <div className="cbcs-related-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <span className="fcel-eyebrow-label">KEEP EXPLORING</span>
-                            <h2 className="fcel-section-heading">Related Guides</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="cbcs-related-grid">
-                            {rhrcRelated.map((item, idx) => {
-                                const IconComponent = iconMap[item.icon];
-                                return (
-                                    <Link to={item.link} key={idx} className="cbcs-related-card">
-                                        <div className="cbcs-related-icon">
-                                            {IconComponent ? <IconComponent size={20} /> : <RhrcIconDot size={20} />}
-                                        </div>
-                                        <h4 className="cbcs-related-title">{item.title}</h4>
-                                        <p className="cbcs-related-desc">{item.desc}</p>
-                                        <span className="cbcs-related-link">
-                                            Read the Guide <RhrcIconAward size={12} />
-                                        </span>
-                                    </Link>
-                                )
-                            })}
-                        </div>
-                    </div>
-                </section>
+            
 
                 {/* CTA SECTION (REUSED) */}
                 <section className="fcel-cta-section">

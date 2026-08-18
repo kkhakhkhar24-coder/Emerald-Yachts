@@ -978,6 +978,79 @@
     color: #cbd5e1;
 }
 
+.cbcs-dark-section .fcel-section-heading {
+    color: var(--cbcs-bg-white) !important;
+}
+
+/* Highly specific rule to override eyebrow label background clashes in dark sections */
+.fcel-page-wrapper .cbcs-dark-section .fcel-eyebrow-label,
+.fcel-page-wrapper .cbcs-dark-section .cbcs-eyebrow-white {
+    color: var(--cbcs-bg-white) !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+}
+
+.cbcs-dark-section .cbcs-included-note {
+    color: var(--cbcs-bg-soft) !important;
+}
+
+/* Tag cards in dark sections */
+.cbcs-dark-section .cbcs-tag-card {
+    background: rgba(255, 255, 255, 0.03) !important;
+    border-color: rgba(255, 255, 255, 0.06) !important;
+}
+
+.cbcs-dark-section .cbcs-tag-card:hover {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.cbcs-dark-section .cbcs-tag-label {
+    color: #ffffff !important;
+}
+
+.cbcs-dark-section .cbcs-tag-icon {
+    background: rgba(255, 255, 255, 0.08) !important;
+    color: var(--cbcs-bg-soft) !important;
+}
+
+/* Glance tables in dark sections — resolved text visibility clashing */
+.cbcs-dark-section .cbcs-glance-table {
+    background: rgba(255, 255, 255, 0.03) !important;
+    border-color: rgba(255, 255, 255, 0.06) !important;
+}
+
+.cbcs-dark-section .cbcs-glance-row {
+    background: transparent !important;
+}
+
+.cbcs-dark-section .cbcs-glance-row:nth-child(even) {
+    background: rgba(255, 255, 255, 0.02) !important;
+}
+
+.cbcs-dark-section .cbcs-glance-row:not(:last-child) {
+    border-bottom-color: rgba(255, 255, 255, 0.06) !important;
+}
+
+.cbcs-dark-section .cbcs-glance-row:hover {
+    background: rgba(255, 255, 255, 0.05) !important;
+}
+
+.cbcs-dark-section .cbcs-glance-feature {
+    background: rgba(255, 255, 255, 0.04) !important;
+    color: var(--cbcs-bg-white) !important;
+}
+
+.cbcs-dark-section .cbcs-glance-row:hover .cbcs-glance-feature {
+    background: rgba(255, 255, 255, 0.08) !important;
+}
+
+.cbcs-dark-section .cbcs-glance-detail {
+    background: transparent !important;
+    color: #cbd5e1 !important;
+}
+
+
+
 /* Cabins / Dining card-with-description variant */
 .cbcs-feature-desc-list {
     display: grid;
@@ -1124,21 +1197,82 @@
 }
 
 .cbcs-itinerary-card {
-    background: var(--cbcs-bg-soft);
+    background: var(--cbcs-bg-white);
     border: 1px solid rgba(39, 68, 114, 0.08);
-    border-radius: 20px;
-    padding: 34px;
+    border-radius: 24px;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.04);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.cbcs-itinerary-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(39, 68, 114, 0.08);
+    border-color: rgba(39, 68, 114, 0.15);
+}
+
+/* Unique color bar for each season cards using only root colors */
+.cbcs-itinerary-card:nth-child(1) {
+    border-top: 4px solid var(--cbcs-green);
+}
+.cbcs-itinerary-card:nth-child(2) {
+    border-top: 4px solid var(--cbcs-navy);
+}
+.cbcs-itinerary-card:nth-child(3) {
+    border-top: 4px solid var(--cbcs-green);
+}
+.cbcs-itinerary-card:nth-child(4) {
+    border-top: 4px solid var(--cbcs-navy);
 }
 
 .cbcs-itinerary-region {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     color: var(--cbcs-navy);
-    margin: 0 0 18px 0;
+    margin: 0;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+    padding: 26px 30px 20px 30px;
+    background: rgba(39, 68, 114, 0.02);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.06);
 }
+
+.cbcs-itinerary-region svg {
+    color: var(--cbcs-navy);
+    opacity: 0.8;
+}
+
+/* Redesigned seasonal card inner body styling */
+.cbcs-itinerary-card .fcel-lead-paragraph {
+    padding: 24px 30px;
+    margin: 0;
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: #475569;
+}
+
+.cbcs-itinerary-card .rhrc-step-tags {
+    padding: 0 30px 30px 30px;
+    margin-top: auto;
+}
+
+.cbcs-itinerary-card .rhrc-step-tag {
+    background: rgba(39, 68, 114, 0.04);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    color: var(--cbcs-navy);
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.cbcs-itinerary-card:hover .rhrc-step-tag {
+    background: rgba(39, 68, 114, 0.08);
+    border-color: rgba(39, 68, 114, 0.15);
+}
+
 
 .cbcs-itinerary-list {
     list-style: none;
@@ -1182,7 +1316,19 @@
     }
 
     .cbcs-itinerary-card {
-        padding: 24px;
+        padding: 0;
+    }
+
+    .cbcs-itinerary-region {
+        padding: 20px 20px 16px 20px;
+    }
+
+    .cbcs-itinerary-card .fcel-lead-paragraph {
+        padding: 16px 20px;
+    }
+
+    .cbcs-itinerary-card .rhrc-step-tags {
+        padding: 0 20px 20px 20px;
     }
 }
 
@@ -2372,6 +2518,18 @@
         padding: 60px 18px;
     }
 
+    /* Prevent compare table columns from squishing on tablet & mobile */
+    .rhrc-compare-table-3col {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        border-radius: 16px;
+    }
+
+    .rhrc-compare-row-3col {
+        grid-template-columns: 130px 100px 190px !important;
+        width: 420px;
+    }
+
     .rhrc-compare-cell {
         padding: 12px 14px;
         font-size: 13px;
@@ -2381,10 +2539,6 @@
 @media (max-width: 480px) {
     .rhrc-compare-section {
         padding: 44px 14px;
-    }
-
-    .rhrc-compare-row-3col {
-        grid-template-columns: 0.9fr 0.7fr 0.7fr;
     }
 
     .rhrc-compare-cell {
@@ -2473,6 +2627,10 @@
     box-shadow: 0 10px 40px rgba(39, 68, 114, 0.04);
     margin-top: 40px;
     text-align: left;
+}
+
+.rhrc-choice-board-inline {
+    margin-top: 48px;
 }
 
 .rhrc-choice-panel {
@@ -2684,6 +2842,7 @@
         font-size: 14px;
     }
 }
+
 /* ============================================================
    NEW — RHRC-ROUTE- PREFIXED CLASSES
    (No equivalent layout existed in the reference file: the
@@ -2691,7 +2850,7 @@
    ============================================================ */
 .rhrc-route-section {
     padding: 100px 20px;
-    background: var(--cbcs-bg-white);
+    background: var(--cbcs-bg-soft);
 }
 
 .rhrc-route-container {
@@ -2699,44 +2858,118 @@
     margin: 0 auto;
 }
 
+/* Route timeline track card */
 .rhrc-route-path {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 12px;
     margin: 40px 0 20px 0;
-    padding: 34px 28px;
-    background: var(--cbcs-bg-soft);
-    border: 1px solid rgba(39, 68, 114, 0.08);
-    border-radius: 20px;
-}
-
-.rhrc-route-chip {
+    padding: 44px 36px;
     background: var(--cbcs-bg-white);
-    color: var(--cbcs-navy);
-    font-size: 15px;
-    font-weight: 700;
-    padding: 12px 20px;
-    border-radius: 30px;
-    border: 1px solid rgba(39, 68, 114, 0.12);
-    box-shadow: 0 4px 12px rgba(39, 68, 114, 0.05);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    border-radius: 24px;
+    box-shadow: 0 15px 45px rgba(39, 68, 114, 0.05);
+    position: relative;
 }
 
+/* Station badges along the timeline */
+.rhrc-route-chip {
+    background: var(--cbcs-bg-soft);
+    color: var(--cbcs-navy);
+    font-size: 14.5px;
+    font-weight: 700;
+    padding: 12px 22px;
+    border-radius: 30px;
+    border: 1.5px solid rgba(39, 68, 114, 0.12);
+    box-shadow: 0 4px 12px rgba(39, 68, 114, 0.04);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    cursor: default;
+}
+
+.rhrc-route-chip:hover {
+    background: var(--cbcs-navy);
+    color: var(--cbcs-bg-white);
+    border-color: var(--cbcs-navy);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(39, 68, 114, 0.15);
+}
+
+/* Timeline link arrows */
 .rhrc-route-arrow {
     color: var(--cbcs-navy);
-    opacity: 0.5;
+    opacity: 0.7;
     flex-shrink: 0;
     display: flex;
     align-items: center;
+    transition: transform 0.3s ease;
 }
 
+.rhrc-route-path:hover .rhrc-route-arrow {
+    transform: scale(1.05);
+}
+
+/* Title divider accent for "This route combines:" */
 .rhrc-route-combines-title {
     text-align: center;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--cbcs-navy-light);
+    margin: 50px 0 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.rhrc-route-combines-title::before,
+.rhrc-route-combines-title::after {
+    content: '';
+    height: 1px;
+    background: rgba(39, 68, 114, 0.15);
+    flex-grow: 1;
+    max-width: 120px;
+}
+
+/* Scoped layout card overrides inside route section */
+.rhrc-combines-list {
+    grid-template-columns: repeat(3, 1fr) !important;
+}
+
+.rhrc-route-section .cbcs-feature-item-card {
+    background: var(--cbcs-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-left: 4px solid var(--cbcs-navy);
+    border-radius: 16px;
+    padding: 16px 20px;
+    box-shadow: 0 4px 16px rgba(39, 68, 114, 0.03);
+    transition: all 0.3s ease;
+}
+
+.rhrc-route-section .cbcs-feature-item-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(39, 68, 114, 0.08);
+    border-color: var(--cbcs-navy);
+}
+
+.rhrc-route-section .cbcs-feature-item-icon {
+    background: var(--cbcs-bg-soft);
     color: var(--cbcs-navy);
-    margin: 46px 0 6px 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.rhrc-route-section .cbcs-feature-item-card:hover .cbcs-feature-item-icon {
+    background: var(--cbcs-navy);
+    color: var(--cbcs-bg-white);
 }
 
 @media (max-width: 768px) {
@@ -2745,13 +2978,18 @@
     }
 
     .rhrc-route-path {
-        padding: 24px 18px;
+        padding: 30px 20px;
         gap: 8px;
     }
 
     .rhrc-route-chip {
         font-size: 13px;
-        padding: 10px 14px;
+        padding: 10px 16px;
+    }
+
+    .rhrc-combines-list {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
     }
 }
 
@@ -2761,7 +2999,7 @@
     }
 
     .rhrc-route-path {
-        padding: 18px 12px;
+        padding: 24px 14px;
     }
 
     .rhrc-route-chip {
@@ -2770,7 +3008,106 @@
     }
 
     .rhrc-route-combines-title {
-        font-size: 16px;
-        margin-top: 30px;
+        font-size: 13px;
+        margin-top: 36px;
+    }
+
+    .rhrc-combines-list {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
     }
 }
+
+/* ============================================================
+   BEFORE & AFTER STAYS SIDE-BY-SIDE SPLIT LAYOUT
+   ============================================================ */
+.rhrc-before-after-split {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 60px;
+    align-items: center;
+    text-align: left;
+}
+
+.rhrc-before-after-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.rhrc-before-after-content .fcel-heading-bar {
+    margin: 12px 0 24px 0;
+}
+
+.rhrc-before-after-keypoints {
+    display: flex;
+    flex-direction: column;
+}
+
+.rhrc-before-after-tags-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.rhrc-tag-row-card {
+    background: var(--cbcs-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 18px;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 4px 12px rgba(39, 68, 114, 0.02);
+}
+
+.rhrc-tag-row-card:hover {
+    background: var(--cbcs-bg-white);
+    border-color: rgba(39, 68, 114, 0.18);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(39, 68, 114, 0.06);
+}
+
+.rhrc-tag-row-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(39, 68, 114, 0.08);
+    color: var(--cbcs-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.rhrc-tag-row-card:hover .rhrc-tag-row-icon {
+    background: var(--cbcs-navy);
+    color: var(--cbcs-bg-white);
+}
+
+.rhrc-tag-row-label {
+    font-size: 14.5px;
+    font-weight: 600;
+    color: var(--cbcs-navy);
+    line-height: 1.45;
+}
+
+@media (max-width: 992px) {
+    .rhrc-before-after-split {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rhrc-before-after-tags-list {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .rhrc-tag-row-card {
+        padding: 14px 16px;
+    }
+}
+

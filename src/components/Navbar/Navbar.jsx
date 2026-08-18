@@ -1287,7 +1287,7 @@ const Navbar = () => {
                 Celebrity Edge Cruise Ship Guide
               </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/celebrity-cruises/edge-vs-solstice-series"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -1303,7 +1303,7 @@ const Navbar = () => {
                 Celebrity River Cruises
               </NavLink>
 
-              <NavLink
+              {/* <NavLink
                 to="/celebrity-cruises/river-cruises/rhine"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -2553,7 +2553,7 @@ const Navbar = () => {
               Celebrity Edge Cruise Ship Guide
             </NavLink>
 
-            {/* <NavLink
+            <NavLink
                 to="/celebrity-cruises/edge-vs-solstice-series"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -2569,7 +2569,7 @@ const Navbar = () => {
                 Celebrity River Cruises
               </NavLink>
 
-               <NavLink
+               {/* <NavLink
                 to="/celebrity-cruises/river-cruises/rhine"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}

@@ -28,7 +28,17 @@ import {
     Building2,
     Utensils,
     Theater,
-    Award
+    Award,
+    Anchor,
+    ArrowUpRight,
+    Eclipse,
+    Scale,
+    Sparkles,
+    ChefHat,
+    Wine,
+    Dices,
+    Mic,
+    Map
 } from 'lucide-react'
 
 /* ============================================================
@@ -108,6 +118,103 @@ function EvssPlaceholder({ label, className = '' }) {
     )
 }
 
+const evssEdgeShipIcons = [
+    Anchor,
+    Award,
+    ArrowUpRight,
+    Crown,
+    Sparkles
+]
+
+const evssSolsticeShipIcons = [
+    Sun,
+    Scale,
+    Eclipse,
+    Trees,
+    Waves
+]
+
+const evssDesignIcons = [
+    Layers,
+    Globe,
+    Building2,
+    Palmtree,
+    Sparkles
+]
+
+const evssVerandaProsIcons = [
+    BedDouble,
+    Globe,
+    Sparkles
+]
+
+const evssVerandaConsIcons = [
+    Sliders
+]
+
+const evssDiningIcons = [
+    Utensils,
+    ChefHat,
+    Wine,
+    UtensilsCrossed,
+    Ship
+]
+
+const evssEntertainmentIcons = [
+    Theater,
+    Music,
+    Mic,
+    Dices,
+    Star
+]
+
+const evssRetreatIcons = [
+    Crown,
+    Utensils,
+    Sliders,
+    Sun,
+    HeartHandshake
+]
+
+const evssPoolsIcons = [
+    Palmtree,
+    Trees,
+    Sun,
+    Waves,
+    Compass
+]
+
+const evssDestinationsIcons = [
+    Compass,
+    Globe,
+    Palmtree,
+    Waves,
+    Map
+]
+
+const evssProsIcons = [
+    Ship,
+    Sliders,
+    Award,
+    Layers,
+    Theater,
+    Sparkles
+]
+
+const evssConsIcons = [
+    Sliders,
+    BadgePercent
+]
+
+const evssChooseIcons = [
+    Ship,
+    Sparkles,
+    Sliders,
+    Theater,
+    Award,
+    BedDouble
+]
+
 function CelebrityEdgeVsSolsticeSeries() {
     const [evssActiveFaq, setEvssActiveFaq] = useState(null)
     const evssToggleFaq = (index) => {
@@ -184,23 +291,23 @@ function CelebrityEdgeVsSolsticeSeries() {
     const evssRetreatFeatures = ['Butler service', 'Luminae Restaurant', 'Retreat Lounge', 'Private sundeck', 'Concierge services']
 
     /* ============== POOLS & OUTDOOR SPACES ============== */
-    const evssPoolsEdge = ['Resort Deck', 'Rooftop Garden', 'Solarium', 'Contemporary pool design']
+    const evssPoolsEdge = ['Resort Deck', 'Rooftop Garden', 'Solarium', 'Contemporary pool design', '']
     const evssPoolsSolstice = ['Lawn Club', 'Larger open decks', 'Solarium', 'Sunset Bar', 'Resort-style pool']
 
     /* ============== DESTINATIONS ============== */
-    const evssDestinationsCaribbean = ['Eastern Caribbean', 'Western Caribbean', 'Southern Caribbean']
+    const evssDestinationsCaribbean = ['Eastern Caribbean', 'Western Caribbean', 'Southern Caribbean', '', '']
     const evssDestinationsEurope = ['Mediterranean', 'Greek Isles', 'Italy', 'France', 'Spain']
 
     /* ============== WHAT'S INCLUDED ============== */
     const evssIncluded = [
         'Luxury accommodations', 'Complimentary dining', 'Entertainment', 'Fitness Center',
-        'Pools', 'Youth programs', 'Transportation between ports'
+        'Pools', 'Youth programs'
     ]
 
     /* ============== PROS & CONS (BOTH SERIES) ============== */
     const evssEdgePros = ['Newest ships', 'Innovative design', 'Magic Carpet', 'Infinite Verandas', 'Outstanding entertainment', 'Modern luxury']
     const evssEdgeCons = ["Infinite Verandas aren't for everyone", 'Premium pricing']
-    const evssSolsticePros = ['Traditional balconies', 'Lawn Club', 'Classic cruise layout', 'Spacious outdoor decks', 'Excellent value']
+    const evssSolsticePros = ['Traditional balconies', 'Lawn Club', 'Classic cruise layout', 'Spacious outdoor decks', 'Excellent value', '']
     const evssSolsticeCons = ['Older ships', 'Fewer modern innovations']
 
     /* ============== WHICH SHIP CLASS IS BEST ============== */
@@ -215,7 +322,7 @@ function CelebrityEdgeVsSolsticeSeries() {
         { title: 'Arrange flights and hotels', icon: Plane },
         { title: 'Plan pre- and post-cruise stays', icon: Calendar },
         { title: 'Coordinate private transfers', icon: Sliders },
-        { title: 'Provide concierge-level planning before, during, and after your cruise', icon: HeartHandshake }
+        
     ]
 
     /* ============== FAQ ============== */
@@ -551,12 +658,15 @@ function CelebrityEdgeVsSolsticeSeries() {
                                     <h3 className="evss-ships-column-title">Edge Series</h3>
                                 </div>
                                 <ul className="evss-ships-list">
-                                    {evssEdgeShips.map((ship, idx) => (
-                                        <li key={idx} className="evss-ships-list-item">
-                                            <Compass size={16} className="evss-ships-list-icon" />
-                                            <span>{ship}</span>
-                                        </li>
-                                    ))}
+                                    {evssEdgeShips.map((ship, idx) => {
+                                        const IconComponent = evssEdgeShipIcons[idx] || Compass;
+                                        return (
+                                            <li key={idx} className="evss-ships-list-item">
+                                                <IconComponent size={16} className="evss-ships-list-icon" />
+                                                <span>{ship}</span>
+                                            </li>
+                                        );
+                                    })}
                                 </ul>
                             </div>
                             <div className="evss-ships-column">
@@ -567,12 +677,15 @@ function CelebrityEdgeVsSolsticeSeries() {
                                     <h3 className="evss-ships-column-title">Solstice Series</h3>
                                 </div>
                                 <ul className="evss-ships-list">
-                                    {evssSolsticeShips.map((ship, idx) => (
-                                        <li key={idx} className="evss-ships-list-item">
-                                            <Waves size={16} className="evss-ships-list-icon" />
-                                            <span>{ship}</span>
-                                        </li>
-                                    ))}
+                                    {evssSolsticeShips.map((ship, idx) => {
+                                        const IconComponent = evssSolsticeShipIcons[idx] || Waves;
+                                        return (
+                                            <li key={idx} className="evss-ships-list-item">
+                                                <IconComponent size={16} className="evss-ships-list-icon" />
+                                                <span>{ship}</span>
+                                            </li>
+                                        );
+                                    })}
                                 </ul>
                             </div>
                         </div>
@@ -606,7 +719,7 @@ function CelebrityEdgeVsSolsticeSeries() {
                                 <Trophy size={20} />
                             </div>
                             <div className="evss-winner-content">
-                                <p className="evss-winner-title">🏆 Winner: Edge Series</p>
+                                <p className="evss-winner-title"> Winner: Edge Series</p>
                                 <p className="evss-winner-desc">The newer ships maximize space with contemporary architecture and innovative layouts.</p>
                             </div>
                         </div>
@@ -625,27 +738,33 @@ function CelebrityEdgeVsSolsticeSeries() {
                             <div className="evss-versus-card">
                                 <EvssPlaceholder label="Celebrity Edge Series Ship Design" className="evss-versus-image" />
                                 <h3 className="evss-versus-card-title">Edge Series</h3>
-                                <p className="evss-versus-lead">Celebrity completely reimagined cruise ship design. Highlights include:</p>
+                                <p className="evss-versus-lead evss-design-lead">Celebrity completely reimagined cruise ship design. Highlights include:</p>
                                 <ul className="evss-versus-list">
-                                    {evssDesignEdge.map((item, idx) => (
-                                        <li key={idx} className="evss-versus-list-item">
-                                            <Layers size={16} className="evss-versus-list-icon" />
-                                            <span>{item}</span>
-                                        </li>
-                                    ))}
+                                    {evssDesignEdge.map((item, idx) => {
+                                        const IconComponent = evssDesignIcons[idx] || Layers;
+                                        return (
+                                            <li key={idx} className="evss-versus-list-item">
+                                                <IconComponent size={16} className="evss-versus-list-icon" />
+                                                <span>{item}</span>
+                                            </li>
+                                        );
+                                    })}
                                 </ul>
                             </div>
                             <div className="evss-versus-card evss-card-solstice">
                                 <EvssPlaceholder label="Celebrity Solstice Series Ship Design" className="evss-versus-image" />
                                 <h3 className="evss-versus-card-title">Solstice Series</h3>
-                                <p className="evss-versus-lead">The Solstice ships feature timeless cruise ship design with elegant public rooms and spacious outdoor decks. Highlights include:</p>
+                                <p className="evss-versus-lead evss-design-lead">The Solstice ships feature timeless cruise ship design with elegant public rooms and spacious outdoor decks. Highlights include:</p>
                                 <ul className="evss-versus-list">
-                                    {evssDesignSolstice.map((item, idx) => (
-                                        <li key={idx} className="evss-versus-list-item">
-                                            <Building2 size={16} className="evss-versus-list-icon" />
-                                            <span>{item}</span>
-                                        </li>
-                                    ))}
+                                    {evssDesignSolstice.map((item, idx) => {
+                                        const IconComponent = evssDesignIcons[idx] || Building2;
+                                        return (
+                                            <li key={idx} className="evss-versus-list-item">
+                                                <IconComponent size={16} className="evss-versus-list-icon" />
+                                                <span>{item}</span>
+                                            </li>
+                                        );
+                                    })}
                                 </ul>
                             </div>
                         </div>
@@ -654,7 +773,7 @@ function CelebrityEdgeVsSolsticeSeries() {
                                 <Trophy size={20} />
                             </div>
                             <div className="evss-winner-content">
-                                <p className="evss-winner-title">🏆 Winner: Edge Series</p>
+                                <p className="evss-winner-title"> Winner: Edge Series</p>
                             </div>
                         </div>
                     </div>
@@ -675,55 +794,67 @@ function CelebrityEdgeVsSolsticeSeries() {
                             <div className="evss-versus-card">
                                 <EvssPlaceholder label="Celebrity Edge Series Infinite Veranda" className="evss-versus-image" />
                                 <h3 className="evss-versus-card-title">Edge Series</h3>
-                                <p className="evss-versus-lead">Features Infinite Veranda staterooms where floor-to-ceiling windows transform part of the cabin into an open-air space.</p>
+                                <p className="evss-versus-lead evss-veranda-lead">Features Infinite Veranda staterooms where floor-to-ceiling windows transform part of the cabin into an open-air space.</p>
                                 <p className="evss-versus-subheading">Pros</p>
                                 <div className="cbcs-panel-list">
-                                    {evssVerandaEdgePros.map((item, idx) => (
-                                        <div key={idx} className="cbcs-list-item">
-                                            <div className="cbcs-item-icon-wrap cbcs-pro-icon">
-                                                <EvssIconCheck size={14} />
+                                    {evssVerandaEdgePros.map((item, idx) => {
+                                        const IconComponent = evssVerandaProsIcons[idx] || Star;
+                                        return (
+                                            <div key={idx} className="cbcs-list-item">
+                                                <div className="cbcs-item-icon-wrap cbcs-pro-icon" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                                    <IconComponent size={12} />
+                                                </div>
+                                                <div className="cbcs-item-title">{item}</div>
                                             </div>
-                                            <div className="cbcs-item-title">{item}</div>
-                                        </div>
-                                    ))}
+                                        );
+                                    })}
                                 </div>
                                 <p className="evss-versus-subheading">Cons</p>
                                 <div className="cbcs-panel-list">
-                                    {evssVerandaEdgeCons.map((item, idx) => (
-                                        <div key={idx} className="cbcs-list-item">
-                                            <div className="cbcs-item-icon-wrap cbcs-con-icon">
-                                                <EvssIconX size={14} />
+                                    {evssVerandaEdgeCons.map((item, idx) => {
+                                        const IconComponent = evssVerandaConsIcons[idx] || Sliders;
+                                        return (
+                                            <div key={idx} className="cbcs-list-item">
+                                                <div className="cbcs-item-icon-wrap cbcs-con-icon" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                                    <IconComponent size={12} />
+                                                </div>
+                                                <div className="cbcs-item-title">{item}</div>
                                             </div>
-                                            <div className="cbcs-item-title">{item}</div>
-                                        </div>
-                                    ))}
+                                        );
+                                    })}
                                 </div>
                             </div>
                             <div className="evss-versus-card evss-card-solstice">
                                 <EvssPlaceholder label="Celebrity Solstice Series Traditional Balcony" className="evss-versus-image" />
                                 <h3 className="evss-versus-card-title">Solstice Series</h3>
-                                <p className="evss-versus-lead">Offers traditional step-out balconies with outdoor seating.</p>
+                                <p className="evss-versus-lead evss-veranda-lead">Offers traditional step-out balconies with outdoor seating.</p>
                                 <p className="evss-versus-subheading">Pros</p>
                                 <div className="cbcs-panel-list">
-                                    {evssVerandaSolsticePros.map((item, idx) => (
-                                        <div key={idx} className="cbcs-list-item">
-                                            <div className="cbcs-item-icon-wrap cbcs-pro-icon">
-                                                <EvssIconCheck size={14} />
+                                    {evssVerandaSolsticePros.map((item, idx) => {
+                                        const IconComponent = evssVerandaProsIcons[idx] || Star;
+                                        return (
+                                            <div key={idx} className="cbcs-list-item">
+                                                <div className="cbcs-item-icon-wrap cbcs-pro-icon" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                                    <IconComponent size={12} />
+                                                </div>
+                                                <div className="cbcs-item-title">{item}</div>
                                             </div>
-                                            <div className="cbcs-item-title">{item}</div>
-                                        </div>
-                                    ))}
+                                        );
+                                    })}
                                 </div>
                                 <p className="evss-versus-subheading">Cons</p>
                                 <div className="cbcs-panel-list">
-                                    {evssVerandaSolsticeCons.map((item, idx) => (
-                                        <div key={idx} className="cbcs-list-item">
-                                            <div className="cbcs-item-icon-wrap cbcs-con-icon">
-                                                <EvssIconX size={14} />
+                                    {evssVerandaSolsticeCons.map((item, idx) => {
+                                        const IconComponent = evssVerandaConsIcons[idx] || Sliders;
+                                        return (
+                                            <div key={idx} className="cbcs-list-item">
+                                                <div className="cbcs-item-icon-wrap cbcs-con-icon" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                                    <IconComponent size={12} />
+                                                </div>
+                                                <div className="cbcs-item-title">{item}</div>
                                             </div>
-                                            <div className="cbcs-item-title">{item}</div>
-                                        </div>
-                                    ))}
+                                        );
+                                    })}
                                 </div>
                             </div>
                         </div>
@@ -757,12 +888,15 @@ function CelebrityEdgeVsSolsticeSeries() {
                                 <h3 className="evss-versus-card-title">Edge Series</h3>
                                 <p className="evss-versus-lead">Highlights include:</p>
                                 <ul className="evss-versus-list">
-                                    {evssDiningEdge.map((item, idx) => (
-                                        <li key={idx} className="evss-versus-list-item">
-                                            <Utensils size={16} className="evss-versus-list-icon" />
-                                            <span>{item}</span>
-                                        </li>
-                                    ))}
+                                    {evssDiningEdge.map((item, idx) => {
+                                        const IconComponent = evssDiningIcons[idx] || Utensils;
+                                        return (
+                                            <li key={idx} className="evss-versus-list-item">
+                                                <IconComponent size={16} className="evss-versus-list-icon" />
+                                                <span>{item}</span>
+                                            </li>
+                                        );
+                                    })}
                                 </ul>
                             </div>
                             <div className="evss-versus-card evss-card-solstice">
@@ -770,12 +904,15 @@ function CelebrityEdgeVsSolsticeSeries() {
                                 <h3 className="evss-versus-card-title">Solstice Series</h3>
                                 <p className="evss-versus-lead">Popular venues include:</p>
                                 <ul className="evss-versus-list">
-                                    {evssDiningSolstice.map((item, idx) => (
-                                        <li key={idx} className="evss-versus-list-item">
-                                            <UtensilsCrossed size={16} className="evss-versus-list-icon" />
-                                            <span>{item}</span>
-                                        </li>
-                                    ))}
+                                    {evssDiningSolstice.map((item, idx) => {
+                                        const IconComponent = evssDiningIcons[idx] || UtensilsCrossed;
+                                        return (
+                                            <li key={idx} className="evss-versus-list-item">
+                                                <IconComponent size={16} className="evss-versus-list-icon" />
+                                                <span>{item}</span>
+                                            </li>
+                                        );
+                                    })}
                                 </ul>
                             </div>
                         </div>
@@ -784,7 +921,7 @@ function CelebrityEdgeVsSolsticeSeries() {
                                 <Trophy size={20} />
                             </div>
                             <div className="evss-winner-content">
-                                <p className="evss-winner-title">🏆 Winner: Edge Series</p>
+                                <p className="evss-winner-title"> Winner: Edge Series</p>
                                 <p className="evss-winner-desc">The newer ships offer more immersive dining concepts and contemporary venues.</p>
                             </div>
                         </div>
@@ -805,12 +942,15 @@ function CelebrityEdgeVsSolsticeSeries() {
                                 <h3 className="evss-versus-card-title">Edge Series</h3>
                                 <p className="evss-versus-lead">Entertainment includes:</p>
                                 <ul className="evss-versus-list">
-                                    {evssEntertainmentEdge.map((item, idx) => (
-                                        <li key={idx} className="evss-versus-list-item">
-                                            <Theater size={16} className="evss-versus-list-icon" />
-                                            <span>{item}</span>
-                                        </li>
-                                    ))}
+                                    {evssEntertainmentEdge.map((item, idx) => {
+                                        const IconComponent = evssEntertainmentIcons[idx] || Theater;
+                                        return (
+                                            <li key={idx} className="evss-versus-list-item">
+                                                <IconComponent size={16} className="evss-versus-list-icon" />
+                                                <span>{item}</span>
+                                            </li>
+                                        );
+                                    })}
                                 </ul>
                             </div>
                             <div className="evss-versus-card evss-card-solstice">
@@ -818,12 +958,15 @@ function CelebrityEdgeVsSolsticeSeries() {
                                 <h3 className="evss-versus-card-title">Solstice Series</h3>
                                 <p className="evss-versus-lead">Entertainment features:</p>
                                 <ul className="evss-versus-list">
-                                    {evssEntertainmentSolstice.map((item, idx) => (
-                                        <li key={idx} className="evss-versus-list-item">
-                                            <Music size={16} className="evss-versus-list-icon" />
-                                            <span>{item}</span>
-                                        </li>
-                                    ))}
+                                    {evssEntertainmentSolstice.map((item, idx) => {
+                                        const IconComponent = evssEntertainmentIcons[idx] || Music;
+                                        return (
+                                            <li key={idx} className="evss-versus-list-item">
+                                                <IconComponent size={16} className="evss-versus-list-icon" />
+                                                <span>{item}</span>
+                                            </li>
+                                        );
+                                    })}
                                 </ul>
                             </div>
                         </div>
@@ -832,14 +975,14 @@ function CelebrityEdgeVsSolsticeSeries() {
                                 <Trophy size={20} />
                             </div>
                             <div className="evss-winner-content">
-                                <p className="evss-winner-title">🏆 Winner: Edge Series</p>
+                                <p className="evss-winner-title"> Winner: Edge Series</p>
                             </div>
                         </div>
                     </div>
                 </section>
 
                 {/* SUITE EXPERIENCE (SHARED) */}
-                <section className="cbcs-feature-section cbcs-bg-soft">
+                <section className="cbcs-feature-section cbcs-bg-white">
                     <div className="cbcs-feature-container">
                         <div className="evss-suite-grid">
                             <div className="evss-suite-image-col">
@@ -852,15 +995,18 @@ function CelebrityEdgeVsSolsticeSeries() {
                                 <p className="fcel-lead-paragraph">
                                     Both ship classes offer The Retreat, Celebrity's luxury suite experience. Guests receive:
                                 </p>
-                                <div className="cbcs-tag-grid">
-                                    {evssRetreatFeatures.map((item, idx) => (
-                                        <div key={idx} className="cbcs-tag-card">
-                                            <div className="cbcs-tag-icon">
-                                                <Crown size={20} />
+                                <div className="evss-suite-tag-grid">
+                                    {evssRetreatFeatures.map((item, idx) => {
+                                        const IconComponent = evssRetreatIcons[idx] || Crown;
+                                        return (
+                                            <div key={idx} className="evss-suite-tag-card">
+                                                <div className="evss-suite-tag-icon">
+                                                    <IconComponent size={20} />
+                                                </div>
+                                                <span className="evss-suite-tag-label">{item}</span>
                                             </div>
-                                            <span className="cbcs-tag-label">{item}</span>
-                                        </div>
-                                    ))}
+                                        );
+                                    })}
                                 </div>
                                 <p className="fcel-lead-paragraph" style={{ marginTop: '30px' }}>
                                     The newer Edge ships feature expanded Retreat areas with enhanced amenities.
@@ -870,7 +1016,7 @@ function CelebrityEdgeVsSolsticeSeries() {
                                         <Trophy size={20} />
                                     </div>
                                     <div className="evss-winner-content">
-                                        <p className="evss-winner-title">🏆 Winner: Edge Series</p>
+                                        <p className="evss-winner-title"> Winner: Edge Series</p>
                                     </div>
                                 </div>
                             </div>
@@ -879,7 +1025,7 @@ function CelebrityEdgeVsSolsticeSeries() {
                 </section>
 
                 {/* POOLS & OUTDOOR SPACES */}
-                <section className="cbcs-feature-section cbcs-bg-white">
+                <section className="cbcs-feature-section cbcs-bg-soft">
                     <div className="cbcs-feature-container evss-versus-container">
                         <div style={{ textAlign: 'center' }}>
                             <span className="fcel-eyebrow-label">RELAX & RECHARGE</span>
@@ -891,24 +1037,30 @@ function CelebrityEdgeVsSolsticeSeries() {
                                 <EvssPlaceholder label="Celebrity Edge Series Pools & Decks" className="evss-versus-image" />
                                 <h3 className="evss-versus-card-title">Edge Series</h3>
                                 <ul className="evss-versus-list" style={{ marginBottom: 0 }}>
-                                    {evssPoolsEdge.map((item, idx) => (
-                                        <li key={idx} className="evss-versus-list-item">
-                                            <Sun size={16} className="evss-versus-list-icon" />
-                                            <span>{item}</span>
-                                        </li>
-                                    ))}
+                                    {evssPoolsEdge.map((item, idx) => {
+                                        const IconComponent = evssPoolsIcons[idx] || Sun;
+                                        return (
+                                            <li key={idx} className="evss-versus-list-item" style={{ visibility: item ? 'visible' : 'hidden' }}>
+                                                <IconComponent size={16} className="evss-versus-list-icon" />
+                                                <span>{item || '\u00A0'}</span>
+                                            </li>
+                                        );
+                                    })}
                                 </ul>
                             </div>
                             <div className="evss-versus-card evss-card-solstice">
                                 <EvssPlaceholder label="Celebrity Solstice Series Pools & Decks" className="evss-versus-image" />
                                 <h3 className="evss-versus-card-title">Solstice Series</h3>
                                 <ul className="evss-versus-list" style={{ marginBottom: 0 }}>
-                                    {evssPoolsSolstice.map((item, idx) => (
-                                        <li key={idx} className="evss-versus-list-item">
-                                            <Trees size={16} className="evss-versus-list-icon" />
-                                            <span>{item}</span>
-                                        </li>
-                                    ))}
+                                    {evssPoolsSolstice.map((item, idx) => {
+                                        const IconComponent = evssPoolsIcons[idx] || Trees;
+                                        return (
+                                            <li key={idx} className="evss-versus-list-item">
+                                                <IconComponent size={16} className="evss-versus-list-icon" />
+                                                <span>{item}</span>
+                                            </li>
+                                        );
+                                    })}
                                 </ul>
                             </div>
                         </div>
@@ -917,7 +1069,7 @@ function CelebrityEdgeVsSolsticeSeries() {
                                 <Trophy size={20} />
                             </div>
                             <div className="evss-winner-content">
-                                <p className="evss-winner-title">🏆 Winner: Solstice Series</p>
+                                <p className="evss-winner-title"> Winner: Solstice Series</p>
                                 <p className="evss-winner-desc">Travelers who enjoy outdoor deck space often prefer the Solstice ships.</p>
                             </div>
                         </div>
@@ -925,13 +1077,13 @@ function CelebrityEdgeVsSolsticeSeries() {
                 </section>
 
                 {/* DESTINATIONS (NEW evss-destinations) */}
-                <section className="cbcs-feature-section cbcs-bg-soft">
+                <section className="cbcs-feature-section cbcs-bg-white">
                     <div className="cbcs-feature-container evss-versus-container">
                         <div style={{ textAlign: 'center' }}>
                             <span className="fcel-eyebrow-label">WHERE TO SAIL</span>
                             <h2 className="fcel-section-heading">Destinations</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
-                            <p className="fcel-lead-paragraph" style={{ maxWidth: '800px', margin: '0 auto' }}>
+                            <p className="fcel-lead-paragraph evss-destinations-lead" style={{ maxWidth: '800px', margin: '0 auto' }}>
                                 Both ship classes sail:
                             </p>
                         </div>
@@ -943,9 +1095,15 @@ function CelebrityEdgeVsSolsticeSeries() {
                                     Caribbean
                                 </h3>
                                 <ul className="evss-destinations-list">
-                                    {evssDestinationsCaribbean.map((item, idx) => (
-                                        <li key={idx}><Waves size={16} className="cbcs-included-icon" />{item}</li>
-                                    ))}
+                                    {evssDestinationsCaribbean.map((item, idx) => {
+                                        const IconComponent = evssDestinationsIcons[idx] || Compass;
+                                        return (
+                                            <li key={idx} style={{ visibility: item ? 'visible' : 'hidden' }}>
+                                                <IconComponent size={16} className="cbcs-included-icon" />
+                                                {item || '\u00A0'}
+                                            </li>
+                                        );
+                                    })}
                                 </ul>
                             </div>
                             <div className="evss-destinations-card">
@@ -955,9 +1113,15 @@ function CelebrityEdgeVsSolsticeSeries() {
                                     Europe
                                 </h3>
                                 <ul className="evss-destinations-list">
-                                    {evssDestinationsEurope.map((item, idx) => (
-                                        <li key={idx}><Compass size={16} className="cbcs-included-icon" />{item}</li>
-                                    ))}
+                                    {evssDestinationsEurope.map((item, idx) => {
+                                        const IconComponent = evssDestinationsIcons[idx] || Compass;
+                                        return (
+                                            <li key={idx}>
+                                                <IconComponent size={16} className="cbcs-included-icon" />
+                                                {item}
+                                            </li>
+                                        );
+                                    })}
                                 </ul>
                             </div>
                         </div>
@@ -966,7 +1130,7 @@ function CelebrityEdgeVsSolsticeSeries() {
                 </section>
 
                 {/* WHAT'S INCLUDED (REUSED cbcs-included) */}
-                <section className="cbcs-included-section">
+                <section className="cbcs-included-section cbcs-bg-soft">
                     <div className="cbcs-included-container">
                         <div style={{ textAlign: 'center' }}>
                             <span className="fcel-eyebrow-label">ALL-INCLUSIVE BASICS</span>
@@ -999,85 +1163,72 @@ function CelebrityEdgeVsSolsticeSeries() {
                             <div className="fcel-heading-bar fcel-bar-center"></div>
                         </div>
 
-                        <div className="evss-dual-board-stack">
-                            <div>
-                                <h3 className="evss-board-ship-title">
-                                    <span className="evss-board-ship-tag">Edge Series</span>
-                                </h3>
-                                <div className="cbcs-comparison-board">
-                                    <div className="cbcs-pros-panel">
-                                        <h4 className="cbcs-panel-title cbcs-pros-title">
-                                            <EvssIconCheck size={20} />
-                                            Pros
-                                        </h4>
-                                        <div className="cbcs-panel-list">
-                                            {evssEdgePros.map((pro, idx) => (
-                                                <div key={idx} className="cbcs-list-item">
-                                                    <div className="cbcs-item-icon-wrap cbcs-pro-icon">
-                                                        <EvssIconCheck size={14} />
-                                                    </div>
-                                                    <div className="cbcs-item-title">{pro}</div>
-                                                </div>
-                                            ))}
-                                        </div>
-                                    </div>
-                                    <div className="cbcs-cons-panel">
-                                        <h4 className="cbcs-panel-title cbcs-cons-title">
-                                            <EvssIconX size={20} />
-                                            Cons
-                                        </h4>
-                                        <div className="cbcs-panel-list">
-                                            {evssEdgeCons.map((con, idx) => (
-                                                <div key={idx} className="cbcs-list-item">
-                                                    <div className="cbcs-item-icon-wrap cbcs-con-icon">
-                                                        <EvssIconX size={14} />
-                                                    </div>
-                                                    <div className="cbcs-item-title">{con}</div>
-                                                </div>
-                                            ))}
-                                        </div>
-                                    </div>
-                                </div>
+                        <div className="evss-versus-grid">
+                            <div className="evss-versus-card">
+                                <h3 className="evss-versus-card-title">Edge Series</h3>
+                                <p className="evss-versus-subheading" style={{ color: '#10b981', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                    <EvssIconCheck size={16} />
+                                    Pros
+                                </p>
+                                <ul className="evss-versus-list">
+                                    {evssEdgePros.map((pro, idx) => {
+                                        const IconComponent = evssProsIcons[idx] || EvssIconCheck;
+                                        return (
+                                            <li key={idx} className="evss-versus-list-item">
+                                                <IconComponent size={16} className="evss-versus-list-icon" />
+                                                <span>{pro}</span>
+                                            </li>
+                                        );
+                                    })}
+                                </ul>
+                                <p className="evss-versus-subheading" style={{ color: '#ef4444', display: 'flex', alignItems: 'center', gap: '8px', marginTop: '24px' }}>
+                                    <EvssIconX size={16} />
+                                    Cons
+                                </p>
+                                <ul className="evss-versus-list">
+                                    {evssEdgeCons.map((con, idx) => {
+                                        const IconComponent = evssConsIcons[idx] || EvssIconX;
+                                        return (
+                                            <li key={idx} className="evss-versus-list-item">
+                                                <IconComponent size={16} className="evss-versus-list-icon" style={{ color: '#ef4444' }} />
+                                                <span>{con}</span>
+                                            </li>
+                                        );
+                                    })}
+                                </ul>
                             </div>
-
-                            <div>
-                                <h3 className="evss-board-ship-title">
-                                    <span className="evss-board-ship-tag">Solstice Series</span>
-                                </h3>
-                                <div className="cbcs-comparison-board">
-                                    <div className="cbcs-pros-panel">
-                                        <h4 className="cbcs-panel-title cbcs-pros-title">
-                                            <EvssIconCheck size={20} />
-                                            Pros
-                                        </h4>
-                                        <div className="cbcs-panel-list">
-                                            {evssSolsticePros.map((pro, idx) => (
-                                                <div key={idx} className="cbcs-list-item">
-                                                    <div className="cbcs-item-icon-wrap cbcs-pro-icon">
-                                                        <EvssIconCheck size={14} />
-                                                    </div>
-                                                    <div className="cbcs-item-title">{pro}</div>
-                                                </div>
-                                            ))}
-                                        </div>
-                                    </div>
-                                    <div className="cbcs-cons-panel">
-                                        <h4 className="cbcs-panel-title cbcs-cons-title">
-                                            <EvssIconX size={20} />
-                                            Cons
-                                        </h4>
-                                        <div className="cbcs-panel-list">
-                                            {evssSolsticeCons.map((con, idx) => (
-                                                <div key={idx} className="cbcs-list-item">
-                                                    <div className="cbcs-item-icon-wrap cbcs-con-icon">
-                                                        <EvssIconX size={14} />
-                                                    </div>
-                                                    <div className="cbcs-item-title">{con}</div>
-                                                </div>
-                                            ))}
-                                        </div>
-                                    </div>
-                                </div>
+                            <div className="evss-versus-card evss-card-solstice">
+                                <h3 className="evss-versus-card-title">Solstice Series</h3>
+                                <p className="evss-versus-subheading" style={{ color: '#10b981', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                    <EvssIconCheck size={16} />
+                                    Pros
+                                </p>
+                                <ul className="evss-versus-list">
+                                    {evssSolsticePros.map((pro, idx) => {
+                                        const IconComponent = evssProsIcons[idx] || EvssIconCheck;
+                                        return (
+                                            <li key={idx} className="evss-versus-list-item" style={{ visibility: pro ? 'visible' : 'hidden' }}>
+                                                <IconComponent size={16} className="evss-versus-list-icon" />
+                                                <span>{pro || '\u00A0'}</span>
+                                            </li>
+                                        );
+                                    })}
+                                </ul>
+                                <p className="evss-versus-subheading" style={{ color: '#ef4444', display: 'flex', alignItems: 'center', gap: '8px', marginTop: '24px' }}>
+                                    <EvssIconX size={16} />
+                                    Cons
+                                </p>
+                                <ul className="evss-versus-list">
+                                    {evssSolsticeCons.map((con, idx) => {
+                                        const IconComponent = evssConsIcons[idx] || EvssIconX;
+                                        return (
+                                            <li key={idx} className="evss-versus-list-item">
+                                                <IconComponent size={16} className="evss-versus-list-icon" style={{ color: '#ef4444' }} />
+                                                <span>{con}</span>
+                                            </li>
+                                        );
+                                    })}
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -1096,24 +1247,30 @@ function CelebrityEdgeVsSolsticeSeries() {
                                 <EvssPlaceholder label="Celebrity Edge Series Cruise Ship" className="evss-versus-image" />
                                 <h3 className="evss-choose-column-title">Choose Edge Series If You Want:</h3>
                                 <ul className="cbcs-audience-list">
-                                    {evssChooseEdge.map((item, idx) => (
-                                        <li key={idx} className="cbcs-audience-item">
-                                            <EvssIconCheck size={18} className="cbcs-audience-check" />
-                                            <span>{item}</span>
-                                        </li>
-                                    ))}
+                                    {evssChooseEdge.map((item, idx) => {
+                                        const IconComponent = evssChooseIcons[idx] || EvssIconCheck;
+                                        return (
+                                            <li key={idx} className="cbcs-audience-item">
+                                                <IconComponent size={18} className="cbcs-audience-check" />
+                                                <span>{item}</span>
+                                            </li>
+                                        );
+                                    })}
                                 </ul>
                             </div>
                             <div className="cbcs-audience-column evss-card-solstice">
                                 <EvssPlaceholder label="Celebrity Solstice Series Cruise Ship" className="evss-versus-image" />
                                 <h3 className="evss-choose-column-title">Choose Solstice Series If You Want:</h3>
                                 <ul className="cbcs-audience-list">
-                                    {evssChooseSolstice.map((item, idx) => (
-                                        <li key={idx} className="cbcs-audience-item">
-                                            <EvssIconCheck size={18} className="cbcs-audience-check" />
-                                            <span>{item}</span>
-                                        </li>
-                                    ))}
+                                    {evssChooseSolstice.map((item, idx) => {
+                                        const IconComponent = evssChooseIcons[idx] || EvssIconCheck;
+                                        return (
+                                            <li key={idx} className="cbcs-audience-item">
+                                                <IconComponent size={18} className="cbcs-audience-check" />
+                                                <span>{item}</span>
+                                            </li>
+                                        );
+                                    })}
                                 </ul>
                             </div>
                         </div>
@@ -1223,7 +1380,7 @@ function CelebrityEdgeVsSolsticeSeries() {
                     <div className="cbcs-why-book-container">
                         <div style={{ textAlign: 'center' }}>
                             <span className="fcel-eyebrow-label">PLANNING ADVANTAGE</span>
-                            <h2 className="fcel-section-heading">Why Book with Trips & Ships Luxury Travel?</h2>
+                            <h2 className="fcel-section-heading1">Why Book with Trips & Ships Luxury Travel?</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
                             <p className="fcel-lead-paragraph" style={{ maxWidth: '800px', margin: '0 auto', color: '#cbd5e1' }}>
                                 Our luxury cruise specialists help you:
@@ -1274,33 +1431,7 @@ function CelebrityEdgeVsSolsticeSeries() {
                     </div>
                 </section>
 
-                {/* RELATED GUIDES / RELATED CONTENT CTA (REUSED cbcs-related) */}
-                <section className="cbcs-related-section">
-                    <div className="cbcs-related-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <span className="fcel-eyebrow-label">KEEP EXPLORING</span>
-                            <h2 className="fcel-section-heading">Related Celebrity Cruise Guides</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="cbcs-related-grid">
-                            {evssRelatedGuides.map((guide, idx) => {
-                                const IconComponent = guide.icon
-                                return (
-                                    <Link to={guide.link} key={idx} className="cbcs-related-card">
-                                        <div className="cbcs-related-icon">
-                                            <IconComponent size={20} />
-                                        </div>
-                                        <h4 className="cbcs-related-title">{guide.title}</h4>
-                                        <p className="cbcs-related-desc">{guide.desc}</p>
-                                        <span className="cbcs-related-link">
-                                            Read the Guide
-                                        </span>
-                                    </Link>
-                                )
-                            })}
-                        </div>
-                    </div>
-                </section>
+              
 
                 {/* CTA SECTION (REUSED fcel-cta) */}
                 <section className="fcel-cta-section">

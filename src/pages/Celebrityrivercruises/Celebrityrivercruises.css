@@ -46,6 +46,22 @@
     margin-right: auto;
 }
 
+.fcel-eyebrow-label1{
+    color: var(--cbcs-navy);
+     display: inline-block !important;
+    width: fit-content !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.12em !important;
+    text-transform: uppercase !important;
+    color: var(--cbcs-navy) !important;
+    background: var(--cbcs-bg-soft) !important;
+    padding: 8px 16px !important;
+    border-radius: 30px !important;
+    margin-bottom: 18px !important;
+    
+}
+
 .fcel-page-wrapper .fcel-eyebrow-label {
     display: inline-block !important;
     width: fit-content !important;
@@ -786,6 +802,38 @@
 }
 
 /* ============================================================
+   DINING VENUES INLINE SUB-BLOCK
+   ============================================================ */
+.criv-dining-venues-block {
+    margin-top: 60px;
+}
+
+.criv-dining-venues-divider {
+    height: 1px;
+    background: rgba(39, 68, 114, 0.1);
+    margin-bottom: 40px;
+}
+
+.criv-dining-venues-lead {
+    font-size: 16px;
+    color: #475569;
+    line-height: 1.7;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 8px;
+}
+
+/* Inside feature section, venues cards use soft bg to contrast white section */
+.criv-dining-venues-block .cbcs-tag-card {
+    background: var(--cbcs-bg-soft);
+}
+
+.criv-dining-venues-block .cbcs-tag-card:hover {
+    background: var(--cbcs-bg-white);
+    border-color: rgba(39, 68, 114, 0.2);
+}
+
+/* ============================================================
    ALTERNATING FEATURE SECTIONS (REUSED — Compass, Seeker, Rhine,
    Danube, River View, Infinite Balcony, Skylight Suite, Vista Suite, Dining)
    ============================================================ */
@@ -975,6 +1023,25 @@
     color: #cbd5e1;
 }
 
+.cbcs-dark-section .fcel-section-heading {
+    color: var(--cbcs-bg-white) !important;
+}
+
+.cbcs-dark-section .fcel-eyebrow-label {
+    color: var(--cbcs-bg-soft) !important;
+}
+
+.cbcs-dark-section .cbcs-included-note,
+.cbcs-dark-section .cbcs-itinerary-note,
+.cbcs-dark-section .criv-dining-venues-lead {
+    color: var(--cbcs-bg-soft) !important;
+}
+
+.cbcs-dark-section .criv-dining-venues-divider {
+    background: rgba(255, 255, 255, 0.15) !important;
+}
+
+
 /* Cabins / Dining card-with-description variant */
 .cbcs-feature-desc-list {
     display: grid;
@@ -1118,49 +1185,116 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     margin-top: 40px;
+    align-items: stretch;
 }
 
 .cbcs-itinerary-card {
-    background: var(--cbcs-bg-soft);
-    border: 1px solid rgba(39, 68, 114, 0.08);
+    background: var(--cbcs-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.1);
     border-radius: 20px;
-    padding: 34px;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(39, 68, 114, 0.06);
+    display: flex;
+    flex-direction: column;
 }
 
+/* Colored top accent bar — handled via absolute divs in JSX for perfect border-radius clipping */
+.cbcs-itinerary-card:first-child {
+    border-top: none;
+}
+.cbcs-itinerary-card:last-child {
+    border-top: none;
+}
+
+/* Card header zone */
 .cbcs-itinerary-region {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     color: var(--cbcs-navy);
-    margin: 0 0 18px 0;
+    margin: 0;
     display: flex;
     align-items: center;
     gap: 10px;
+    padding: 28px 30px 22px;
+    background: rgba(39, 68, 114, 0.03);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.07);
+}
+
+.cbcs-itinerary-region svg {
+    flex-shrink: 0;
+    opacity: 0.75;
+}
+
+/* Card body */
+.cbcs-itinerary-card .fcel-lead-paragraph {
+    font-size: 14.5px;
+    color: #5a6a80;
+    line-height: 1.7;
+    padding: 22px 30px 0;
+    margin: 0;
 }
 
 .cbcs-itinerary-list {
     list-style: none;
-    padding: 0;
+    padding: 18px 30px 24px;
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
 }
 
+
+
 .cbcs-itinerary-list li {
-    font-size: 15px;
-    color: #334155;
+    font-size: 14px;
+    color: var(--cbcs-navy);
     font-weight: 500;
     display: flex;
     align-items: center;
     gap: 10px;
+    background: rgba(39, 68, 114, 0.04);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 10px;
+    padding: 10px 14px;
+    transition: background 0.2s;
 }
 
+.cbcs-itinerary-list li:hover {
+    background: rgba(39, 68, 114, 0.08);
+}
+
+.cbcs-itinerary-list li svg,
+.cbcs-itinerary-list li .cbcs-included-icon {
+    color: #2e6da8;
+    flex-shrink: 0;
+}
+
+/* Inline note block at bottom of card */
+.cbcs-itinerary-card .cbcs-itinerary-note {
+    text-align: left;
+    margin: 0 30px 26px;
+    font-size: 13.5px;
+    color: #5a6a80;
+    font-weight: 400;
+    line-height: 1.65;
+    background: rgba(39, 68, 114, 0.03);
+    border-left: 3px solid rgba(39, 68, 114, 0.2);
+    border-radius: 0 8px 8px 0;
+    padding: 12px 14px;
+}
+
+/* Bottom note (outside cards) */
 .cbcs-itinerary-note {
     text-align: center;
     margin-top: 30px;
-    font-size: 16px;
+    font-size: 15px;
     color: #475569;
     font-weight: 500;
+    background: rgba(39, 68, 114, 0.03);
+    border-radius: 12px;
+    padding: 16px 24px;
+    border: 1px solid rgba(39, 68, 114, 0.07);
 }
 
 @media (max-width: 768px) {
@@ -1178,10 +1312,24 @@
         padding: 44px 14px;
     }
 
-    .cbcs-itinerary-card {
-        padding: 24px;
+    .cbcs-itinerary-card .fcel-lead-paragraph {
+        padding: 18px 20px 0;
     }
+
+    .cbcs-itinerary-list {
+        padding: 14px 20px 18px;
+    }
+
+    .cbcs-itinerary-region {
+        padding: 22px 20px 18px;
+    }
+
+    .cbcs-itinerary-card .cbcs-itinerary-note {
+        margin: 0 20px 20px;
+    }
+
 }
+
 
 /* ============================================================
    INCLUDED CHECKLIST (REUSED — Voyage Fare + Suite Inclusions)
@@ -1554,6 +1702,11 @@
     max-width: 1280px;
     margin: 0 auto;
 }
+.cbcs-why-book-container .fcel-section-heading{
+    color: var(--cbcs-navy) !important;
+}
+
+
 
 .cbcs-why-book-grid {
     display: grid;
@@ -2470,6 +2623,10 @@
     box-shadow: 0 10px 40px rgba(39, 68, 114, 0.04);
     margin-top: 40px;
     text-align: left;
+}
+
+.criv-choice-board-inline {
+    margin-top: 48px;
 }
 
 .criv-choice-panel {

@@ -357,7 +357,6 @@ function CelebrityRiverCruises() {
         { label: 'Included daily excursions', icon: 'Compass' },
         { label: 'Included meals and beverages', icon: 'Utensils' },
         { label: 'Wi-Fi', icon: 'Wifi' },
-        { label: 'Destination-focused dining', icon: 'ChefHat' }
     ]
 
     const crivWhoShould = [
@@ -743,7 +742,7 @@ function CelebrityRiverCruises() {
                 </section>
 
                 {/* WHERE DOES IT SAIL — RHINE */}
-                <section className="cbcs-feature-section cbcs-bg-white">
+                <section className="cbcs-feature-section cbcs-dark-section">
                     <div className="cbcs-feature-container">
                         <div className="cbcs-feature-grid">
                             <div className="cbcs-feature-image-col">
@@ -815,7 +814,7 @@ function CelebrityRiverCruises() {
                 </section>
 
                 {/* RHINE VS DANUBE (NEW — criv- 2-col pair table) */}
-                <section className="criv-compare-section cbcs-bg-soft">
+                <section className="criv-compare-section cbcs-dark-section">
                     <div className="criv-compare-container">
                         <div style={{ textAlign: 'center' }}>
                             <span className="fcel-eyebrow-label">RIVER COMPARISON</span>
@@ -834,13 +833,7 @@ function CelebrityRiverCruises() {
                                 </div>
                             ))}
                         </div>
-                    </div>
-                </section>
-
-                {/* CHOOSE RHINE / CHOOSE DANUBE (NEW — criv- choice board) */}
-                <section className="criv-choice-section">
-                    <div className="criv-choice-container">
-                        <div className="criv-choice-board">
+                        <div className="criv-choice-board criv-choice-board-inline">
                             <div className="criv-choice-panel">
                                 <h3 className="criv-choice-title">
                                     <CrivIconCheck size={22} />
@@ -889,7 +882,8 @@ function CelebrityRiverCruises() {
                             </p>
                         </div>
                         <div className="cbcs-itinerary-grid">
-                            <div className="cbcs-itinerary-card">
+                            <div className="cbcs-itinerary-card" style={{ position: 'relative' }}>
+                                <div style={{ height: '4px', background: 'var(--cbcs-green)', width: '100%', position: 'absolute', top: 0, left: 0, borderTopLeftRadius: '20px', borderTopRightRadius: '20px', zIndex: 10 }}></div>
                                 <h3 className="cbcs-itinerary-region">
                                     <Landmark size={20} />
                                     Vienna & Budapest
@@ -897,16 +891,17 @@ function CelebrityRiverCruises() {
                                 <p className="fcel-lead-paragraph" style={{ marginBottom: '18px' }}>
                                     This itinerary is one of the key Danube experiences. The route can include:
                                 </p>
-                                <ul className="cbcs-itinerary-list">
-                                    <li><MapPin size={16} className="cbcs-included-icon" />Vilshofen → Linz → Grein</li>
-                                    <li><Mountain size={16} className="cbcs-included-icon" />Wachau Valley → Dürnstein</li>
-                                    <li><Landmark size={16} className="cbcs-included-icon" />Vienna → Gönyű → Budapest</li>
+                                <ul className="cbcs-itinerary-list" style={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '18px 30px 24px' }}>
+                                    <li style={{ width: 'fit-content', margin: 0 }}><MapPin size={16} className="cbcs-included-icon" />Vilshofen → Linz → Grein</li>
+                                    <li style={{ width: 'fit-content', margin: 0 }}><Mountain size={16} className="cbcs-included-icon" />Wachau Valley → Dürnstein</li>
+                                    <li style={{ width: 'fit-content', margin: 0 }}><Landmark size={16} className="cbcs-included-icon" />Vienna → Gönyű → Budapest</li>
                                 </ul>
                                 <p className="cbcs-itinerary-note" style={{ marginTop: '18px' }}>
                                     The journey combines scenic sailing with destinations known for music, art, architecture and Central European history.
                                 </p>
                             </div>
-                            <div className="cbcs-itinerary-card">
+                            <div className="cbcs-itinerary-card" style={{ position: 'relative' }}>
+                                <div style={{ height: '4px', background: 'var(--cbcs-navy)', width: '100%', position: 'absolute', top: 0, left: 0, borderTopLeftRadius: '20px', borderTopRightRadius: '20px', zIndex: 10 }}></div>
                                 <h3 className="cbcs-itinerary-region">
                                     <Castle size={20} />
                                     Rhine River Itineraries
@@ -914,14 +909,14 @@ function CelebrityRiverCruises() {
                                 <p className="fcel-lead-paragraph" style={{ marginBottom: '18px' }}>
                                     Celebrity's Rhine program connects destinations in Germany, France, Switzerland and the Netherlands depending on the itinerary. Travelers can experience:
                                 </p>
-                                <ul className="cbcs-itinerary-list">
-                                    <li><MapPin size={16} className="cbcs-included-icon" />Basel</li>
-                                    <li><MapPin size={16} className="cbcs-included-icon" />Strasbourg</li>
-                                    <li><MapPin size={16} className="cbcs-included-icon" />Heidelberg region</li>
-                                    <li><MapPin size={16} className="cbcs-included-icon" />Mainz</li>
-                                    <li><MapPin size={16} className="cbcs-included-icon" />Koblenz</li>
-                                    <li><MapPin size={16} className="cbcs-included-icon" />Cologne</li>
-                                    <li><MapPin size={16} className="cbcs-included-icon" />Amsterdam</li>
+                                <ul className="cbcs-itinerary-list" style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '10px', padding: '18px 30px 24px' }}>
+                                    <li style={{ width: 'fit-content', margin: 0 }}><MapPin size={16} className="cbcs-included-icon" />Basel</li>
+                                    <li style={{ width: 'fit-content', margin: 0 }}><MapPin size={16} className="cbcs-included-icon" />Strasbourg</li>
+                                    <li style={{ width: 'fit-content', margin: 0 }}><MapPin size={16} className="cbcs-included-icon" />Heidelberg region</li>
+                                    <li style={{ width: 'fit-content', margin: 0 }}><MapPin size={16} className="cbcs-included-icon" />Mainz</li>
+                                    <li style={{ width: 'fit-content', margin: 0 }}><MapPin size={16} className="cbcs-included-icon" />Koblenz</li>
+                                    <li style={{ width: 'fit-content', margin: 0 }}><MapPin size={16} className="cbcs-included-icon" />Cologne</li>
+                                    <li style={{ width: 'fit-content', margin: 0 }}><MapPin size={16} className="cbcs-included-icon" />Amsterdam</li>
                                 </ul>
                             </div>
                         </div>
@@ -954,8 +949,8 @@ function CelebrityRiverCruises() {
                     </div>
                 </section>
 
-                {/* DINING */}
-                <section className="cbcs-feature-section cbcs-bg-white">
+                {/* DINING + DINING VENUES — merged into one section */}
+                <section className="cbcs-feature-section cbcs-dark-section">
                     <div className="cbcs-feature-container">
                         <div className="cbcs-feature-grid">
                             <div className="cbcs-feature-image-col">
@@ -987,29 +982,26 @@ function CelebrityRiverCruises() {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
 
-                {/* DINING VENUES */}
-                <section className="cbcs-tag-section cbcs-bg-soft">
-                    <div className="cbcs-tag-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <p className="fcel-lead-paragraph" style={{ maxWidth: '800px', margin: '0 auto' }}>
+                        {/* Venues sub-block inside same section */}
+                        <div className="criv-dining-venues-block">
+                            <div className="criv-dining-venues-divider"></div>
+                            <p className="criv-dining-venues-lead">
                                 Celebrity also introduces river versions of recognizable beverage and dining spaces, including:
                             </p>
-                        </div>
-                        <div className="cbcs-tag-grid">
-                            {crivDiningVenues.map((item, idx) => {
-                                const IconComponent = iconMap[item.icon];
-                                return (
-                                    <div key={idx} className="cbcs-tag-card">
-                                        <div className="cbcs-tag-icon">
-                                            {IconComponent ? <IconComponent size={20} /> : <CrivIconDot size={20} />}
+                            <div className="cbcs-tag-grid">
+                                {crivDiningVenues.map((item, idx) => {
+                                    const IconComponent = iconMap[item.icon];
+                                    return (
+                                        <div key={idx} className="cbcs-tag-card">
+                                            <div className="cbcs-tag-icon">
+                                                {IconComponent ? <IconComponent size={20} /> : <CrivIconDot size={20} />}
+                                            </div>
+                                            <span className="cbcs-tag-label">{item.label}</span>
                                         </div>
-                                        <span className="cbcs-tag-label">{item.label}</span>
-                                    </div>
-                                )
-                            })}
+                                    )
+                                })}
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -1170,7 +1162,7 @@ function CelebrityRiverCruises() {
                 </section>
 
                 {/* ACCOMMODATIONS COMPARED (NEW — criv- 3-col compare table) */}
-                <section className="criv-compare-section cbcs-bg-soft">
+                <section className="criv-compare-section cbcs-dark-section">
                     <div className="criv-compare-container">
                         <div style={{ textAlign: 'center' }}>
                             <span className="fcel-eyebrow-label">ACCOMMODATIONS COMPARED</span>
@@ -1220,7 +1212,7 @@ function CelebrityRiverCruises() {
                 </section>
 
                 {/* RIVER VS OCEAN CRUISES (NEW — criv- 2-col pair table) */}
-                <section className="criv-compare-section">
+                <section className="criv-compare-section cbcs-dark-section">
                     <div className="criv-compare-container">
                         <div style={{ textAlign: 'center' }}>
                             <span className="fcel-eyebrow-label">RIVER VS. OCEAN</span>
@@ -1252,7 +1244,7 @@ function CelebrityRiverCruises() {
                 <section className="cbcs-why-book-section cbcs-why-book-light">
                     <div className="cbcs-why-book-container">
                         <div style={{ textAlign: 'center' }}>
-                            <span className="fcel-eyebrow-label">SIX DIFFERENTIATORS</span>
+                            <span className="fcel-eyebrow-label1">SIX DIFFERENTIATORS</span>
                             <h2 className="fcel-section-heading">How Celebrity River Cruises Are Different</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
                         </div>
@@ -1374,7 +1366,7 @@ function CelebrityRiverCruises() {
                 </section>
 
                 {/* PROS & CONS (REUSED) */}
-                <section className="cbcs-pros-section cbcs-bg-white">
+                <section className="cbcs-pros-section cbcs-dark-section">
                     <div className="cbcs-pros-cons-container">
                         <div style={{ textAlign: 'center', marginBottom: '40px' }}>
                             <span className="fcel-eyebrow-label cbcs-eyebrow-white">PROS & CONS</span>
@@ -1585,33 +1577,7 @@ function CelebrityRiverCruises() {
                     </div>
                 </section>
 
-                {/* RELATED GUIDES (REUSED — 5 related content CTAs) */}
-                <section className="cbcs-related-section">
-                    <div className="cbcs-related-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <span className="fcel-eyebrow-label">KEEP EXPLORING</span>
-                            <h2 className="fcel-section-heading">Related Guides</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="cbcs-related-grid">
-                            {crivRelated.map((item, idx) => {
-                                const IconComponent = iconMap[item.icon];
-                                return (
-                                    <Link to={item.link} key={idx} className="cbcs-related-card">
-                                        <div className="cbcs-related-icon">
-                                            {IconComponent ? <IconComponent size={20} /> : <CrivIconDot size={20} />}
-                                        </div>
-                                        <h4 className="cbcs-related-title">{item.title}</h4>
-                                        <p className="cbcs-related-desc">{item.desc}</p>
-                                        <span className="cbcs-related-link">
-                                            Read the Guide <CrivIconAward size={12} />
-                                        </span>
-                                    </Link>
-                                )
-                            })}
-                        </div>
-                    </div>
-                </section>
+              
 
                 {/* CTA SECTION (REUSED) */}
                 <section className="fcel-cta-section">

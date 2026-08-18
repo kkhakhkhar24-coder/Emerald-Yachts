@@ -175,8 +175,8 @@ import CelebrityDrinkPackages from "./pages/CelebrityDrinkPackages/CelebrityDrin
 import Celebritybeyondcruiseshipguide from "./pages/Celebritybeyondcruiseshipguide/Celebritybeyondcruiseshipguide";
 import Celebrityapexcruiseshipguide from "./pages/Celebrityapexcruiseshipguide/Celebrityapexcruiseshipguide";
 import Celebrityedgecruiseshipguide from "./pages/Celebrityedgecruiseshipguide/Celebrityedgecruiseshipguide";
-// import Celebrityedgevssolsticeseries from "./pages/Celebrityedgevssolsticeseries/Celebrityedgevssolsticeseries";
-// import Celebrityrivercruises from "./pages/Celebrityrivercruises/Celebrityrivercruises";
+import Celebrityedgevssolsticeseries from "./pages/Celebrityedgevssolsticeseries/Celebrityedgevssolsticeseries";
+import Celebrityrivercruises from "./pages/Celebrityrivercruises/Celebrityrivercruises";
 // import Celebrityrhinerivercruises  from "./pages/Celebrityrhinerivercruises/Celebrityrhinerivercruises";
 
 function App() {
@@ -994,7 +994,7 @@ function App() {
             element={<Celebrityedgecruiseshipguide />}
           />
 
-          {/* <Route
+          <Route
             path="/celebrity-cruises/edge-vs-solstice-series"
             element={<Celebrityedgevssolsticeseries  />}
           />
@@ -1004,12 +1004,12 @@ function App() {
             element={<Celebrityrivercruises  />}
           />
 
-          <Route
+          {/* <Route
             path="/celebrity-cruises/river-cruises/rhine"
             element={<Celebrityrhinerivercruises   />}
-          />
+          /> */}
 
- */}
+
 
         </Routes>
       </BrowserRouter>
