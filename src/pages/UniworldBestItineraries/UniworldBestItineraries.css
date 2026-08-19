@@ -46,12 +46,12 @@
 }
 
 .uni-section-heading {
-    font-size: 34px;
+    font-size: 48px;
     font-weight: 700;
     color: var(--uni-navy);
     line-height: 1.25;
     margin: 0 0 18px 0;
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: 'Playfair Display', Georgia, serif;
 }
 
 .uni-heading-separator-bar {
@@ -155,10 +155,10 @@
 }
 
 .uni-hero-main-title {
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: 'Playfair Display', Georgia, serif;
     font-size: 60px;
-    font-weight: 500;
-    line-height: 1.1;
+    font-weight: 700;
+    line-height: 1.15;
     margin: 0 0 40px 0;
     letter-spacing: -0.02em;
     color: #ffffff;
@@ -476,7 +476,7 @@
     font-weight: 700;
     color: var(--uni-navy);
     margin: 0 0 12px 0;
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: 'Playfair Display', Georgia, serif;
     text-align: left;
 }
 
@@ -696,7 +696,7 @@
     font-size: 15.5px;
     font-weight: 600;
     margin: 0 0 4px 0;
-    font-family: Georgia, serif;
+    font-family: 'Playfair Display', Georgia, serif;
     text-align: left;
 }
 
@@ -1072,7 +1072,7 @@
     color: #ffffff;
     font-size: 15.5px;
     margin: 0 0 8px 0;
-    font-family: Georgia, serif;
+    font-family: 'Playfair Display', Georgia, serif;
     text-align: left;
 }
 
@@ -1207,9 +1207,10 @@
 }
 
 .uni-expert-stat-box h4 {
-    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
     font-weight: 700;
-    color: var(--uni-navy);
+    color: #3b82f6;
     margin-bottom: 2px;
 }
 
@@ -1444,13 +1445,13 @@
 }
 
 .uni-cta-title {
-    font-size: 52px;
-    line-height: 1.12;
-    font-weight: 500;
+    font-size: 48px;
+    line-height: 1.25;
+    font-weight: 700;
     color: #ffffff;
     margin: 0 0 14px;
     letter-spacing: -0.01em;
-    font-family: Georgia, serif;
+    font-family: 'Playfair Display', Georgia, serif;
 }
 
 .uni-cta-bar {
@@ -1530,7 +1531,19 @@
 
 @media (max-width: 1024px) {
     .uni-hero-main-title {
-        font-size: 42px;
+        font-size: 32px !important;
+    }
+
+    .uni-section-heading {
+        font-size: 28px !important;
+    }
+
+    .uni-cta-title {
+        font-size: 28px !important;
+    }
+
+    .uni-page p {
+        font-size: 17px;
     }
 
     .uni-choose-grid {
@@ -1645,15 +1658,19 @@
     }
 
     .uni-hero-main-title {
-        font-size: 32px;
+        font-size: 26px !important;
     }
 
     .uni-hero-subtitle-text {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .uni-section-heading {
-        font-size: 26px;
+        font-size: 24px !important;
+    }
+
+    .uni-page p {
+        font-size: 16px;
     }
 
     .uni-choose-grid-2col {
@@ -1686,11 +1703,11 @@
     }
 
     .uni-cta-title {
-        font-size: 28px !important;
+        font-size: 24px !important;
     }
 
     .uni-cta-subtitle {
-        font-size: 15px !important;
+        font-size: 16px !important;
     }
 
     .uni-cta-crystal-1,
@@ -1744,4 +1761,47 @@
     .uni-expert-content-panel h2 {
         font-size: 28px !important;
     }
+}
+/* =============================================================
+   UNI PAGE ISOLATION & TYPOGRAPHY OVERRIDES
+   ============================================================= */
+
+.uni-page {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.uni-page h3 {
+    font-family: 'Playfair Display', serif !important;
+}
+
+.uni-page p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.65;
+}
+
+.uni-page .uni-expert-quote {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.uni-page .uni-expert-stat-box p {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.uni-page .uni-length-note {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 13.5px;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.uni-page .uni-region-note-box p {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.65;
 }

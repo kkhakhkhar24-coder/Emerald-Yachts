@@ -1,7 +1,7 @@
 /* =============================================================
    UniworldShipsSuites.css
    Fully self-contained page styles. Includes --uss-* variables
-   and all uni-* classes this page uses, with no dependency on
+   and all uss-* classes this page uses, with no dependency on
    AzamaraMediterraneanCruises.css.
    ============================================================= */
 
@@ -25,15 +25,16 @@
    ============================================================ */
 
 .uss-section-heading {
+    font-family: 'Playfair Display', serif;
     font-size: 48px !important;
-    line-height: 1.2;
-    font-weight: 500 !important;
+    line-height: 1.25;
+    font-weight: 700 !important;
     margin: 0 0 20px 0;
     letter-spacing: -0.01em;
     color: var(--uss-navy);
 }
 
-.luxe-title {
+.uss-title {
     color: white !important;
 }
 
@@ -66,9 +67,10 @@
    ============================================================ */
 
 .uss-hero-main-title {
+    font-family: 'Playfair Display', serif;
     font-size: 60px;
-    line-height: 1.1;
-    font-weight: 500;
+    line-height: 1.15;
+    font-weight: 700;
     margin: 0 0 40px 0;
     letter-spacing: -0.02em;
     color: #ffffff;
@@ -303,6 +305,7 @@
 
 .uss-faq-main-section {
     padding: 80px 20px;
+    background: var(--uss-bg-white);
 }
 
 .uss-faq-container {
@@ -452,7 +455,6 @@
     }
 }
 
-/* ── SHARED UTILITIES ────────────────────────────────────────── */
 
 .uss-eyebrow {
     font-size: 11px;
@@ -565,7 +567,6 @@
     box-shadow: 0 6px 20px rgba(15, 28, 46, 0.3);
 }
 
-/* ── 1. INTRO ───────────────────────────────────────────────── */
 
 .uss-intro-section {
     background: var(--uss-bg-white);
@@ -664,7 +665,6 @@
     background-color: transparent;
 }
 
-/* ── 2. FLEET ───────────────────────────────────────────────── */
 
 .uss-fleet-section {
     background: linear-gradient(160deg, #0f1c2e 0%, #162d50 50%, #0f1c2e 100%);
@@ -885,7 +885,7 @@
 }
 
 .uss-fleet-card-name {
-    font-size: 14px;
+    font-size: 14px !important;
     font-weight: 700;
     color: #ffffff;
     margin: 0;
@@ -973,7 +973,6 @@
     }
 }
 
-/* ── 3. BOUTIQUE DESIGN ─────────────────────────────────────── */
 
 .uss-boutique-section {
     background: var(--uss-bg-white);
@@ -1088,7 +1087,6 @@
     line-height: 1.5;
 }
 
-/* ── 4. STATEROOM CATEGORIES ────────────────────────────────── */
 
 .uss-cabins-section {
     background: var(--uss-bg-soft);
@@ -1146,7 +1144,7 @@
 }
 
 .uss-cabin-card-title {
-    font-size: 18px;
+    font-size: 18px !important;
     font-weight: 700;
     color: #0f1c2e;
     margin: 0 0 10px 0;
@@ -1198,7 +1196,6 @@
     line-height: 1.5;
 }
 
-/* ── 5. LUXURY SUITES ───────────────────────────────────────── */
 
 .uss-suites-section {
     background: var(--uss-bg-white);
@@ -1297,7 +1294,7 @@
 }
 
 .uss-navy-callout h3 {
-    font-size: 20px;
+    font-size: 20px !important;
     font-weight: 700;
     color: #ffffff;
     margin: 0 0 10px 0;
@@ -1310,7 +1307,6 @@
     line-height: 1.7;
 }
 
-/* ── 6. BUTLER SERVICE ──────────────────────────────────────── */
 
 .uss-butler-section {
     background: linear-gradient(160deg, #162d50 0%, #0f1c2e 50%, #162d50 100%);
@@ -1407,7 +1403,6 @@
     max-width: 100%;
 }
 
-/* Service Cards — horizontal rows (icon left, text right) */
 .uss-butler-cards-grid {
     display: flex;
     flex-direction: column;
@@ -1572,7 +1567,6 @@
     }
 }
 
-/* ── 7. ONBOARD AMENITIES ───────────────────────────────────── */
 
 .uss-amenities-section {
     background: var(--uss-bg-white);
@@ -1654,7 +1648,7 @@
 
 .uss-amenity-label {
     font-family: Montserrat, sans-serif;
-    font-size: 14px;
+    font-size: 14px !important;
     font-weight: 700;
     color: var(--uss-navy);
     margin: 0;
@@ -1684,7 +1678,6 @@
     font-style: italic;
 }
 
-/* ── 8. CABIN COMPARISON ────────────────────────────────────── */
 
 .uss-compare-section {
     background: var(--uss-bg-soft);
@@ -1710,7 +1703,6 @@
     overflow-x: auto;
 }
 
-/* ── SHARED TABLE ───────────────────────────────────────────── */
 
 .uss-table {
     width: 100%;
@@ -1789,7 +1781,6 @@
     text-align: left;
 }
 
-/* ── 9. CHOOSING THE BEST CABIN ─────────────────────────────── */
 
 .uss-choose-section {
     background: linear-gradient(160deg, var(--uss-bg-dark) 0%, var(--uss-bg-dark2) 100%);
@@ -1866,7 +1857,7 @@
 }
 
 .uss-choose-title {
-    font-size: 22px;
+    font-size: 22px !important;
     font-weight: 700;
     color: #ffffff;
     margin: 0;
@@ -1928,7 +1919,6 @@
     font-style: italic;
 }
 
-/* ── 10. ACCESSIBILITY ──────────────────────────────────────── */
 
 .uss-access-section {
     background: var(--uss-bg-white);
@@ -2036,7 +2026,7 @@
 }
 
 .uss-access-callout h3 {
-    font-size: 20px;
+    font-size: 20px !important;
     font-weight: 700;
     color: #ffffff;
     margin: 0 0 10px 0;
@@ -2051,7 +2041,6 @@
     line-height: 1.7;
 }
 
-/* ── 11. SHIP AMENITIES ─────────────────────────────────────── */
 
 .uss-shipamen-section {
     background: var(--uss-bg-soft);
@@ -2164,7 +2153,6 @@
     width: fit-content;
 }
 
-/* ── 12. TIPS ───────────────────────────────────────────────── */
 
 .uss-tips-section {
     background: var(--uss-bg-white);
@@ -2280,7 +2268,6 @@
     font-style: italic;
 }
 
-/* ── 13. SEMANTIC KEYWORDS ──────────────────────────────────── */
 
 .uss-keywords-section {
     background: var(--uss-bg-soft);
@@ -2347,7 +2334,7 @@
 }
 
 .uss-eeat-title {
-    font-size: 20px;
+    font-size: 20px !important;
     font-weight: 700;
     color: #0f1c2e;
     margin: 0 0 14px 0;
@@ -2380,7 +2367,6 @@
     margin-top: 3px;
 }
 
-/* ── 14. INTERNAL LINKING ───────────────────────────────────── */
 
 .uss-linking-section {
     background: var(--uss-bg-white);
@@ -2406,7 +2392,6 @@
     overflow-x: auto;
 }
 
-/* ── 15. EXTERNAL REFERENCES ────────────────────────────────── */
 
 .uss-references-section {
     background: var(--uss-bg-soft);
@@ -2469,7 +2454,6 @@
     transition: all 0.3s ease;
 }
 
-/* ── 16. IMAGE RECOMMENDATIONS ──────────────────────────────── */
 
 .uss-imageplan-section {
     background: var(--uss-bg-white);
@@ -2565,21 +2549,9 @@
     color: #4a5568;
 }
 
-/* ── 17. CTA ────────────────────────────────────────────────── */
 
 .uss-cta-main-section {
     padding: 80px 20px;
-}
-
-.uss-cta-eyebrow {
-    display: inline-block;
-    font-size: 11px;
-    font-family: Montserrat, sans-serif;
-    font-weight: 700;
-    letter-spacing: 0.26em;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.6);
-    margin-bottom: 16px;
 }
 
 .uss-cta-main-section .uss-cta-heading-white {
@@ -2591,7 +2563,6 @@
     margin: 0 auto 32px;
 }
 
-/* ── 18. KEY TAKEAWAYS ──────────────────────────────────────── */
 
 .uss-takeaways-section {
     background: var(--uss-bg-white);
@@ -2654,7 +2625,6 @@
     transition: all 0.3s ease;
 }
 
-/* ── 19. FAQ ────────────────────────────────────────────────── */
 
 .uss-faq-section {
     background: var(--uss-bg-soft);
@@ -2680,9 +2650,6 @@
     font-size: 18px;
 }
 
-/* ─────────────────────────────────────────────────────────────
-   RESPONSIVE: TABLET  (max-width: 1024px)
-   ───────────────────────────────────────────────────────────── */
 
 @media (max-width: 1024px) {
 
@@ -2694,7 +2661,6 @@
         font-size: 17px;
     }
 
-    /* 2-col → 1-col sections */
     .uss-intro-grid,
     .uss-boutique-grid,
     .uss-shipamen-grid {
@@ -2759,9 +2725,6 @@
     }
 }
 
-/* ─────────────────────────────────────────────────────────────
-   RESPONSIVE: MOBILE  (max-width: 767px)
-   ───────────────────────────────────────────────────────────── */
 
 @media (max-width: 767px) {
 
@@ -2857,9 +2820,6 @@
     }
 }
 
-/* ─────────────────────────────────────────────────────────────
-   RESPONSIVE: SMALL MOBILE  (max-width: 360px)
-   ───────────────────────────────────────────────────────────── */
 
 @media (max-width: 360px) {
 
@@ -2924,15 +2884,14 @@
     }
 }
 
-/* ── ANGELA HUGHES EXPERT INSIGHT ── */
-.luxe-expert-insight-section {
+.uss-expert-section {
     padding: 88px 20px;
-    background: var(--uss-bg-white);
+    background: var(--uss-bg-dark);
     position: relative;
     overflow: hidden;
 }
 
-.luxe-expert-insight-container {
+.uss-expert-container {
     max-width: 1100px;
     margin: 0 auto;
     position: relative;
@@ -2943,14 +2902,14 @@
     align-items: center;
 }
 
-.luxe-expert-portrait-panel {
+.uss-expert-portrait-panel {
     display: flex;
     flex-direction: column;
     gap: 24px;
     align-items: center;
 }
 
-.luxe-expert-img-container {
+.uss-expert-img-container {
     position: relative;
     overflow: hidden;
     height: 400px;
@@ -2960,130 +2919,134 @@
     align-items: center;
 }
 
-.luxe-expert-img-container img {
+.uss-expert-img-container img {
     max-width: 100%;
     max-height: 100%;
     width: auto;
     height: auto;
     object-fit: contain;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(15, 28, 46, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-.luxe-expert-stats-strip {
+.uss-expert-stats-strip {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
-    border-top: 1px solid #e2e8f0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 24px;
     width: 100%;
 }
 
-.luxe-expert-stat-box h4 {
-    font-size: 28px;
+.uss-expert-stat-box h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
     font-weight: 700;
-    color: var(--uss-navy);
+    color: #ffffff;
     margin-bottom: 2px;
     margin-top: 0;
 }
 
-.luxe-expert-stat-box p {
+.uss-expert-stat-box p {
     font-size: 13px;
     font-weight: 500;
-    color: #64748b;
+    color: rgba(255, 255, 255, 0.65);
     margin: 0;
 }
 
-.luxe-expert-content-panel .luxe-eyebrow {
+.uss-expert-content-panel .uss-expert-eyebrow {
     margin-bottom: 12px;
     color: #3b82f6;
 }
 
-.luxe-expert-quote {
+.uss-expert-quote {
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 18px;
     line-height: 1.6;
-    color: var(--uss-navy);
+    color: #ffffff;
     font-style: italic;
     margin: 22px 0;
     padding-left: 20px;
     border-left: 3px solid #3b82f6;
 }
 
-.luxe-expert-priorities h5 {
+.uss-expert-priorities h5 {
     font-size: 13px;
     font-weight: 700;
-    color: #475569;
+    color: rgba(255, 255, 255, 0.5);
     letter-spacing: 0.04em;
     text-transform: uppercase;
     margin-bottom: 12px;
     margin-top: 0;
 }
 
-.luxe-expert-pills {
+.uss-expert-pills {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 24px;
 }
 
-.luxe-expert-pill {
+.uss-expert-pill {
     display: inline-flex;
     align-items: center;
     gap: 8px;
     padding: 6px 14px;
     border-radius: 20px;
-    background: var(--uss-bg-soft);
-    border: 1px solid rgba(39, 68, 114, 0.08);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 12px;
     font-weight: 600;
-    color: var(--uss-navy);
+    color: #ffffff;
 }
 
-.luxe-expert-pill svg {
+.uss-expert-pill svg {
     color: #3b82f6;
 }
 
-.luxe-expert-bio {
+.uss-expert-bio {
     font-size: 15px;
     line-height: 1.65;
-    color: #475569;
+    color: rgba(255, 255, 255, 0.7);
     margin: 0;
 }
 
+.uss-expert-content-panel .uss-heading-separator-bar {
+    background: #93c5fd;
+}
+
 @media (max-width: 1024px) {
-    .luxe-expert-insight-container {
+    .uss-expert-container {
         grid-template-columns: 1fr;
         gap: 36px;
     }
 
-    .luxe-expert-img-container {
+    .uss-expert-img-container {
         height: 340px;
     }
 }
 
 @media (max-width: 640px) {
-    .luxe-expert-insight-section {
+    .uss-expert-section {
         padding: 56px 16px;
     }
 
-    .luxe-expert-insight-container {
+    .uss-expert-container {
         gap: 24px;
     }
 
-    .luxe-expert-img-container {
+    .uss-expert-img-container {
         height: 280px;
     }
 
-    .luxe-expert-stats-strip {
+    .uss-expert-stats-strip {
         grid-template-columns: 1fr;
         gap: 12px;
         text-align: center;
     }
 }
 
-/* ── PREMIUM CTA SECTION ── */
-.luxe-cta-section {
+.uss-cta-section {
     position: relative;
     padding: 80px 20px;
     background: linear-gradient(160deg, #081422 0%, #0c2340 30%, #162d50 60%, #0f1c2e 100%);
@@ -3092,7 +3055,7 @@
     isolation: isolate;
 }
 
-.luxe-cta-aurora-glow {
+.uss-cta-aurora-glow {
     position: absolute;
     top: -30%;
     left: 50%;
@@ -3102,10 +3065,10 @@
     background: radial-gradient(ellipse at center, rgba(56, 189, 248, 0.12) 0%, rgba(99, 102, 241, 0.06) 40%, transparent 70%);
     filter: blur(60px);
     z-index: 0;
-    animation: luxe-aurora-pulse 8s ease-in-out infinite alternate;
+    animation: uss-aurora-pulse 8s ease-in-out infinite alternate;
 }
 
-@keyframes luxe-aurora-pulse {
+@keyframes uss-aurora-pulse {
     0% {
         opacity: 0.6;
         transform: translateX(-50%) scale(1);
@@ -3117,7 +3080,7 @@
     }
 }
 
-.luxe-cta-crystal {
+.uss-cta-crystal {
     position: absolute;
     border-radius: 4px;
     background: linear-gradient(135deg, rgba(148, 210, 255, 0.15), rgba(255, 255, 255, 0.05));
@@ -3126,34 +3089,34 @@
     backdrop-filter: blur(6px);
 }
 
-.luxe-cta-crystal-1 {
+.uss-cta-crystal-1 {
     width: 80px;
     height: 80px;
     top: 12%;
     left: 8%;
     transform: rotate(45deg);
-    animation: luxe-crystal-float 12s ease-in-out infinite;
+    animation: uss-crystal-float 12s ease-in-out infinite;
 }
 
-.luxe-cta-crystal-2 {
+.uss-cta-crystal-2 {
     width: 50px;
     height: 50px;
     top: 20%;
     right: 12%;
     transform: rotate(25deg);
-    animation: luxe-crystal-float 10s ease-in-out 2s infinite;
+    animation: uss-crystal-float 10s ease-in-out 2s infinite;
 }
 
-.luxe-cta-crystal-3 {
+.uss-cta-crystal-3 {
     width: 35px;
     height: 35px;
     bottom: 18%;
     left: 15%;
     transform: rotate(60deg);
-    animation: luxe-crystal-float 14s ease-in-out 4s infinite;
+    animation: uss-crystal-float 14s ease-in-out 4s infinite;
 }
 
-@keyframes luxe-crystal-float {
+@keyframes uss-crystal-float {
 
     0%,
     100% {
@@ -3167,7 +3130,7 @@
     }
 }
 
-.luxe-cta-grid-lines {
+.uss-cta-grid-lines {
     position: absolute;
     inset: 0;
     background-image:
@@ -3177,7 +3140,7 @@
     z-index: 0;
 }
 
-.luxe-cta-content {
+.uss-cta-content {
     position: relative;
     z-index: 2;
     max-width: 900px;
@@ -3187,7 +3150,7 @@
     align-items: center;
 }
 
-.luxe-cta-compass-ring {
+.uss-cta-compass-ring {
     width: 56px;
     height: 56px;
     border-radius: 50%;
@@ -3197,12 +3160,12 @@
     justify-content: center;
     color: rgba(148, 210, 255, 0.8);
     margin-bottom: 16px;
-    animation: luxe-compass-spin 20s linear infinite;
+    animation: uss-compass-spin 20s linear infinite;
     background: rgba(148, 210, 255, 0.04);
     box-shadow: 0 0 30px rgba(56, 189, 248, 0.08);
 }
 
-@keyframes luxe-compass-spin {
+@keyframes uss-compass-spin {
     from {
         transform: rotate(0deg);
     }
@@ -3212,11 +3175,11 @@
     }
 }
 
-.luxe-cta-compass-ring svg {
-    animation: luxe-compass-counter-spin 20s linear infinite;
+.uss-cta-compass-ring svg {
+    animation: uss-compass-counter-spin 20s linear infinite;
 }
 
-@keyframes luxe-compass-counter-spin {
+@keyframes uss-compass-counter-spin {
     from {
         transform: rotate(0deg);
     }
@@ -3226,7 +3189,7 @@
     }
 }
 
-.luxe-cta-eyebrow {
+.uss-cta-eyebrow {
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 0.3em;
@@ -3236,16 +3199,17 @@
     display: block;
 }
 
-.luxe-cta-title {
-    font-size: 52px;
-    line-height: 1.12;
-    font-weight: 500;
+.uss-cta-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    line-height: 1.25;
+    font-weight: 700;
     color: #ffffff;
     margin: 0 0 14px;
     letter-spacing: -0.01em;
 }
 
-.luxe-cta-bar {
+.uss-cta-bar {
     width: 60px;
     height: 3px;
     background: linear-gradient(90deg, rgba(148, 210, 255, 0.2), rgba(148, 210, 255, 0.8), rgba(148, 210, 255, 0.2));
@@ -3253,7 +3217,7 @@
     margin-bottom: 16px;
 }
 
-.luxe-cta-subtitle {
+.uss-cta-subtitle {
     font-size: 18px;
     line-height: 1.65;
     color: rgba(203, 213, 225, 0.85);
@@ -3261,14 +3225,14 @@
     margin: 0 auto 28px;
 }
 
-.luxe-cta-actions {
+.uss-cta-actions {
     display: flex;
     justify-content: center;
     gap: 18px;
     flex-wrap: wrap;
 }
 
-.luxe-cta-primary-btn {
+.uss-cta-primary-btn {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -3287,7 +3251,7 @@
     overflow: hidden;
 }
 
-.luxe-cta-primary-btn::before {
+.uss-cta-primary-btn::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -3296,68 +3260,125 @@
     transition: opacity 0.35s ease;
 }
 
-.luxe-cta-primary-btn:hover {
+.uss-cta-primary-btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 16px 40px rgba(39, 68, 114, 0.4), 0 0 0 3px rgba(148, 210, 255, 0.12);
     border-color: rgba(148, 210, 255, 0.3);
 }
 
-.luxe-cta-primary-btn:hover::before {
+.uss-cta-primary-btn:hover::before {
     opacity: 1;
 }
 
-.luxe-cta-btn-arrow {
+.uss-cta-btn-arrow {
     transition: transform 0.3s ease;
     opacity: 0.7;
 }
 
-.luxe-cta-primary-btn:hover .luxe-cta-btn-arrow {
+.uss-cta-primary-btn:hover .uss-cta-btn-arrow {
     transform: translateX(4px);
     opacity: 1;
 }
 
 @media (max-width: 1024px) {
-    .luxe-cta-crystal-1 {
+    .uss-cta-crystal-1 {
         width: 54px;
         height: 54px;
     }
 
-    .luxe-cta-crystal-2 {
+    .uss-cta-crystal-2 {
         width: 36px;
         height: 36px;
     }
 
-    .luxe-cta-crystal-3 {
+    .uss-cta-crystal-3 {
         width: 26px;
         height: 26px;
     }
 
-    .luxe-cta-title {
+    .uss-cta-title {
         font-size: 34px;
     }
 }
 
 @media (max-width: 640px) {
-    .luxe-cta-section {
+    .uss-cta-section {
         padding: 56px 16px;
     }
 
-    .luxe-cta-title {
+    .uss-cta-title {
         font-size: 28px;
     }
 
-    .luxe-cta-subtitle {
+    .uss-cta-subtitle {
         font-size: 15px;
     }
 
-    .luxe-cta-crystal-1,
-    .luxe-cta-crystal-2,
-    .luxe-cta-crystal-3 {
+    .uss-cta-crystal-1,
+    .uss-cta-crystal-2,
+    .uss-cta-crystal-3 {
         display: none;
     }
 
-    .luxe-cta-primary-btn {
+    .uss-cta-primary-btn {
         width: 100%;
         justify-content: center;
     }
+}
+
+/* Isolate this page: self-contained typography + protection from
+   global rules defined in other pages' CSS */
+.uss-page {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.uss-page p {
+    font-size: 18px;
+}
+
+.uss-page .uss-expert-stat-box p {
+    font-size: 13px;
+}
+
+.uss-page .uss-statement-bold {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+    .uss-hero-main-title {
+        font-size: 32px !important;
+    }
+
+    .uss-section-heading,
+    .uss-cta-title {
+        font-size: 28px !important;
+    }
+
+    .uss-page p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 767px) {
+    .uss-hero-main-title {
+        font-size: 26px !important;
+    }
+
+    .uss-section-heading,
+    .uss-cta-title {
+        font-size: 24px !important;
+    }
+
+    .uss-page p {
+        font-size: 16px;
+    }
+}
+
+.uss-page h3 {
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 400 !important;
+    line-height: 1.25 !important;
+    text-align: inherit;
 }

@@ -5,23 +5,22 @@
    ============================================================= */
 
 :root {
-    --uni-navy: #274472;
-    --uni-navy-dark: #182c49;
-    --uni-bg-white: #ffffff;
-    --uni-bg-soft: #f6f8fb;
-    --uni-text-body: #4a5568;
-    --uni-text-dark: #2d3748;
-    --uni-border-soft: rgba(39, 68, 114, 0.08);
+    --uwi-navy: #274472;
+    --uwi-navy-dark: #182c49;
+    --uwi-bg-white: #ffffff;
+    --uwi-bg-soft: #f6f8fb;
+    --uwi-text-body: #4a5568;
+    --uwi-text-dark: #2d3748;
+    --uwi-border-soft: rgba(39, 68, 114, 0.08);
 }
 
-/* ── SHARED ───────────────────────────────────────────────── */
 
 .uwi-eyebrow {
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 0.26em;
     text-transform: uppercase;
-    color: var(--uni-navy);
+    color: var(--uwi-navy);
     opacity: 0.7;
     display: block;
     margin-bottom: 14px;
@@ -41,9 +40,10 @@
 }
 
 .uwi-section-heading {
-    font-size: 36px;
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-size: 48px;
     font-weight: 700;
-    color: var(--uni-navy);
+    color: var(--uwi-navy);
     margin: 0 0 18px 0;
     line-height: 1.25;
 }
@@ -51,7 +51,7 @@
 .uwi-heading-separator-bar {
     width: 64px;
     height: 4px;
-    background: var(--uni-navy);
+    background: var(--uwi-navy);
     border-radius: 4px;
     margin-left: auto;
     margin-right: auto;
@@ -121,7 +121,6 @@
     z-index: 1;
 }
 
-/* ── HERO ─────────────────────────────────────────────────── */
 
 .uwi-hero-section {
     position: relative;
@@ -193,7 +192,8 @@
 }
 
 .uwi-hero-main-title {
-    font-size: 54px;
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-size: 60px;
     font-weight: 700;
     line-height: 1.15;
     margin: 0 0 22px 0;
@@ -208,10 +208,9 @@
     margin: 0 auto;
 }
 
-/* ── INTRO ────────────────────────────────────────────────── */
 
 .uwi-intro-section {
-    background: var(--uni-bg-white);
+    background: var(--uwi-bg-white);
     padding: 100px 20px;
     position: relative;
     overflow: hidden;
@@ -236,7 +235,7 @@
 .uwi-intro-lead {
     font-size: 19px;
     line-height: 1.6;
-    color: var(--uni-navy);
+    color: var(--uwi-navy);
     font-weight: 600;
     margin-bottom: 20px;
 }
@@ -244,7 +243,7 @@
 .uwi-intro-body {
     font-size: 16px;
     line-height: 1.75;
-    color: var(--uni-text-body);
+    color: var(--uwi-text-body);
     margin: 0 0 16px;
 }
 
@@ -253,10 +252,9 @@
     width: 100%;
 }
 
-/* ── WHY UNIWORLD COSTS MORE ──────────────────────────────── */
 
 .uwi-premium-section {
-    background: var(--uni-bg-soft);
+    background: var(--uwi-bg-soft);
     padding: 64px 20px;
 }
 
@@ -275,7 +273,7 @@
 .uwi-premium-lead {
     font-size: 17.5px;
     font-weight: 600;
-    color: var(--uni-navy);
+    color: var(--uwi-navy);
     margin-bottom: 12px;
     line-height: 1.55;
 }
@@ -283,7 +281,7 @@
 .uwi-premium-body {
     font-size: 15px;
     line-height: 1.65;
-    color: var(--uni-text-body);
+    color: var(--uwi-text-body);
     margin: 0;
 }
 
@@ -299,12 +297,12 @@
     gap: 14px;
     background: #ffffff;
     border: 1px solid rgba(39, 68, 114, 0.05);
-    border-left: 3px solid var(--uni-navy);
+    border-left: 3px solid var(--uwi-navy);
     border-radius: 12px;
     padding: 14px 16px;
     font-size: 14px;
     font-weight: 600;
-    color: var(--uni-text-dark);
+    color: var(--uwi-text-dark);
     line-height: 1.4;
     box-shadow: 0 4px 16px rgba(39, 68, 114, 0.03);
     transition: all 0.25s ease;
@@ -325,7 +323,7 @@
     width: 36px;
     height: 36px;
     border-radius: 8px;
-    background: linear-gradient(135deg, var(--uni-navy), var(--uni-navy-dark));
+    background: linear-gradient(135deg, var(--uwi-navy), var(--uwi-navy-dark));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -335,10 +333,10 @@
 .uwi-premium-left-callout {
     margin-top: 18px;
     background: linear-gradient(135deg, rgba(39, 68, 114, 0.04), rgba(39, 68, 114, 0.01));
-    border-left: 4px solid var(--uni-navy);
-    border-top: 1px solid var(--uni-border-soft);
-    border-right: 1px solid var(--uni-border-soft);
-    border-bottom: 1px solid var(--uni-border-soft);
+    border-left: 4px solid var(--uwi-navy);
+    border-top: 1px solid var(--uwi-border-soft);
+    border-right: 1px solid var(--uwi-border-soft);
+    border-bottom: 1px solid var(--uwi-border-soft);
     border-radius: 4px 12px 12px 4px;
     padding: 16px 18px;
     display: flex;
@@ -347,7 +345,7 @@
 }
 
 .uwi-callout-icon {
-    color: var(--uni-navy);
+    color: var(--uwi-navy);
     flex-shrink: 0;
     margin-top: 2px;
 }
@@ -355,12 +353,11 @@
 .uwi-callout-text {
     font-size: 14px;
     line-height: 1.55;
-    color: var(--uni-text-dark);
+    color: var(--uwi-text-dark);
     font-weight: 600;
     margin: 0;
 }
 
-/* ── WHAT'S INCLUDED ──────────────────────────────────────── */
 
 .uwi-included-section {
     background: #edf2f8;
@@ -386,7 +383,7 @@
 .uwi-included-intro {
     font-size: 17px;
     line-height: 1.7;
-    color: var(--uni-text-body);
+    color: var(--uwi-text-body);
     max-width: 680px;
     margin: 0 auto;
 }
@@ -399,10 +396,10 @@
 }
 
 .uwi-included-card {
-    background: var(--uni-bg-white);
+    background: var(--uwi-bg-white);
     border-radius: 14px;
     padding: 28px 22px;
-    border: 1px solid var(--uni-border-soft);
+    border: 1px solid var(--uwi-border-soft);
     box-shadow: 0 4px 20px rgba(39, 68, 114, 0.04);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
@@ -421,7 +418,7 @@
     width: 56px;
     height: 56px;
     border-radius: 14px;
-    background: linear-gradient(135deg, var(--uni-navy) 0%, var(--uni-navy-dark) 100%);
+    background: linear-gradient(135deg, var(--uwi-navy) 0%, var(--uwi-navy-dark) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -430,9 +427,10 @@
 }
 
 .uwi-included-card-title {
-    font-size: 15px;
-    font-weight: 700;
-    color: var(--uni-navy);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--uwi-navy);
     margin: 0;
     line-height: 1.3;
 }
@@ -440,12 +438,12 @@
 .uwi-included-card-desc {
     font-size: 13.5px;
     line-height: 1.5;
-    color: var(--uni-text-body);
+    color: var(--uwi-text-body);
     margin: 0;
 }
 
 .uwi-included-footer-card {
-    background: linear-gradient(135deg, var(--uni-navy) 0%, var(--uni-navy-dark) 100%);
+    background: linear-gradient(135deg, var(--uwi-navy) 0%, var(--uwi-navy-dark) 100%);
     border-radius: 14px;
     padding: 22px 32px;
     display: flex;
@@ -457,7 +455,7 @@
 .uwi-included-footer-icon {
     color: #ffffff;
     flex-shrink: 0;
-    animation: uni-sparkle-pulse 2s infinite alternate;
+    animation: uwi-sparkle-pulse 2s infinite alternate;
 }
 
 .uwi-included-footer-text {
@@ -468,7 +466,7 @@
     text-align: center;
 }
 
-@keyframes uni-sparkle-pulse {
+@keyframes uwi-sparkle-pulse {
     0% {
         transform: scale(1);
         opacity: 0.8;
@@ -480,7 +478,6 @@
     }
 }
 
-/* ── LUXURY BEYOND THE CABIN ──────────────────────────────── */
 
 .uwi-cabin-section {
     background: #f0f3f6;
@@ -502,7 +499,7 @@
 .uwi-cabin-lead {
     font-size: 17.5px;
     font-weight: 600;
-    color: var(--uni-navy);
+    color: var(--uwi-navy);
     line-height: 1.6;
     margin-bottom: 16px;
 }
@@ -510,7 +507,7 @@
 .uwi-cabin-body {
     font-size: 15.5px;
     line-height: 1.7;
-    color: var(--uni-text-body);
+    color: var(--uwi-text-body);
     margin-bottom: 20px;
 }
 
@@ -526,7 +523,7 @@
     align-items: center;
     gap: 10px;
     font-size: 14.5px;
-    color: var(--uni-text-dark);
+    color: var(--uwi-text-dark);
 }
 
 .uwi-cabin-feature:last-child:nth-child(odd) {
@@ -535,16 +532,16 @@
 
 .uwi-cabin-feature-icon {
     flex-shrink: 0;
-    color: var(--uni-navy);
+    color: var(--uwi-navy);
 }
 
 .uwi-cabin-conclusion-box {
     margin-top: 24px;
     background: linear-gradient(135deg, rgba(39, 68, 114, 0.06), rgba(39, 68, 114, 0.02));
-    border-left: 4px solid var(--uni-navy);
-    border-top: 1px solid var(--uni-border-soft);
-    border-right: 1px solid var(--uni-border-soft);
-    border-bottom: 1px solid var(--uni-border-soft);
+    border-left: 4px solid var(--uwi-navy);
+    border-top: 1px solid var(--uwi-border-soft);
+    border-right: 1px solid var(--uwi-border-soft);
+    border-bottom: 1px solid var(--uwi-border-soft);
     border-radius: 4px 14px 14px 4px;
     padding: 16px 20px;
     display: flex;
@@ -553,7 +550,7 @@
 }
 
 .uwi-conclusion-icon {
-    color: var(--uni-navy);
+    color: var(--uwi-navy);
     flex-shrink: 0;
     margin-top: 3px;
 }
@@ -561,13 +558,11 @@
 .uwi-conclusion-text {
     font-size: 14.5px;
     line-height: 1.6;
-    color: var(--uni-text-dark);
+    color: var(--uwi-text-dark);
     font-weight: 600;
 }
 
-/* ── DINING ───────────────────────────────────────────────── */
 
-/* ── DINING ─────────────────────────────────────────────── */
 
 .uwi-dining-section {
     background-color: #182c49;
@@ -667,7 +662,6 @@
     line-height: 1.6;
 }
 
-/* ── EXCURSIONS ───────────────────────────────────────────── */
 
 .uwi-excursions-section {
     background-color: #edf5f2 !important;
@@ -689,7 +683,7 @@
     text-align: center !important;
     margin-left: auto;
     margin-right: auto;
-    color: var(--uni-navy) !important;
+    color: var(--uwi-navy) !important;
 }
 
 .uwi-excursions-header .uwi-section-heading {
@@ -697,7 +691,7 @@
 }
 
 .uwi-excursions-header .uwi-heading-separator-bar {
-    background: var(--uni-navy);
+    background: var(--uwi-navy);
 }
 
 .uwi-excursions-intro {
@@ -716,14 +710,14 @@
 }
 
 .uwi-excursion-card {
-    background: var(--uni-bg-white);
-    border: 1px solid var(--uni-border-soft);
+    background: var(--uwi-bg-white);
+    border: 1px solid var(--uwi-border-soft);
     border-radius: 14px;
     padding: 28px 18px;
     text-align: center;
     font-size: 14px;
     font-weight: 600;
-    color: var(--uni-navy);
+    color: var(--uwi-navy);
     line-height: 1.45;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
@@ -741,7 +735,7 @@
     width: 50px;
     height: 50px;
     border-radius: 12px;
-    background: linear-gradient(135deg, var(--uni-navy) 0%, var(--uni-navy-dark) 100%);
+    background: linear-gradient(135deg, var(--uwi-navy) 0%, var(--uwi-navy-dark) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -750,8 +744,8 @@
 }
 
 .uwi-excursions-footer-card {
-    background: var(--uni-bg-white);
-    border: 1px solid var(--uni-border-soft);
+    background: var(--uwi-bg-white);
+    border: 1px solid var(--uwi-border-soft);
     border-radius: 12px;
     padding: 20px 28px;
     display: flex;
@@ -761,19 +755,18 @@
 }
 
 .uwi-excursions-footer-icon {
-    color: var(--uni-navy);
+    color: var(--uwi-navy);
     flex-shrink: 0;
 }
 
 .uwi-excursions-footer-text {
     font-size: 15px;
     font-weight: 600;
-    color: var(--uni-text-dark);
+    color: var(--uwi-text-dark);
     margin: 0;
     text-align: center;
 }
 
-/* ── PERSONALIZED SERVICE ─────────────────────────────────── */
 
 .uwi-service-section {
     background-color: #182c49 !important;
@@ -867,7 +860,6 @@
     font-weight: 600;
 }
 
-/* ── COMPARISON TABLE ─────────────────────────────────────── */
 
 .uwi-stack-section {
     background: #eef1f5;
@@ -892,15 +884,15 @@
 
 .uwi-stack-subheading {
     font-size: 16px;
-    color: var(--uni-text-body);
+    color: var(--uwi-text-body);
     line-height: 1.7;
     max-width: 680px;
     margin: 12px auto 0;
 }
 
 .uwi-stack-table-wrapper {
-    background: var(--uni-bg-white);
-    border: 1px solid var(--uni-border-soft);
+    background: var(--uwi-bg-white);
+    border: 1px solid var(--uwi-border-soft);
     border-radius: 14px;
     overflow: hidden;
     box-shadow: 0 8px 30px rgba(39, 68, 114, 0.06);
@@ -909,7 +901,7 @@
 .uwi-stack-table-header {
     display: grid;
     grid-template-columns: 1.2fr 1fr 1fr;
-    background: linear-gradient(135deg, var(--uni-navy), var(--uni-navy-dark));
+    background: linear-gradient(135deg, var(--uwi-navy), var(--uwi-navy-dark));
     color: #ffffff;
     padding: 16px 24px;
     font-size: 12px;
@@ -929,7 +921,7 @@
     grid-template-columns: 1.2fr 1fr 1fr;
     align-items: center;
     padding: 14px 24px;
-    border-top: 1px solid var(--uni-border-soft);
+    border-top: 1px solid var(--uwi-border-soft);
     transition: all 0.2s ease;
 }
 
@@ -944,7 +936,7 @@
 .uwi-stack-feature-cell {
     font-size: 14.5px;
     font-weight: 600;
-    color: var(--uni-navy-dark);
+    color: var(--uwi-navy-dark);
 }
 
 .uwi-stack-uniworld-cell {
@@ -953,7 +945,7 @@
     gap: 8px;
     font-size: 13.5px;
     font-weight: 700;
-    color: var(--uni-navy);
+    color: var(--uwi-navy);
     background: rgba(39, 68, 114, 0.06);
     border: 1px solid rgba(39, 68, 114, 0.12);
     padding: 5px 14px;
@@ -963,12 +955,12 @@
 
 .uwi-stack-uniworld-cell svg {
     flex-shrink: 0;
-    color: var(--uni-navy);
+    color: var(--uwi-navy);
 }
 
 .uwi-stack-other-cell {
     font-size: 14px;
-    color: var(--uni-text-body);
+    color: var(--uwi-text-body);
     font-weight: 500;
     padding-left: 8px;
 }
@@ -978,8 +970,8 @@
     gap: 20px;
     align-items: center;
     margin-top: 32px;
-    background: var(--uni-bg-white);
-    border: 1px solid var(--uni-border-soft);
+    background: var(--uwi-bg-white);
+    border: 1px solid var(--uwi-border-soft);
     border-radius: 14px;
     padding: 22px 28px;
     box-shadow: 0 4px 16px rgba(39, 68, 114, 0.04);
@@ -992,7 +984,7 @@
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--uni-navy), var(--uni-navy-dark));
+    background: linear-gradient(135deg, var(--uwi-navy), var(--uwi-navy-dark));
     color: #ffffff;
     flex-shrink: 0;
 }
@@ -1006,16 +998,17 @@
 }
 
 .uwi-stack-footer-title {
-    font-size: 15.5px;
-    font-weight: 700;
-    color: var(--uni-navy-dark);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--uwi-navy-dark);
     margin: 0 0 6px 0;
 }
 
 .uwi-stack-footer-text {
     font-size: 14px;
     line-height: 1.6;
-    color: var(--uni-text-body);
+    color: var(--uwi-text-body);
     margin: 0;
 }
 
@@ -1026,13 +1019,13 @@
     margin-top: 32px;
     background: rgba(39, 68, 114, 0.03);
     border: 1px solid rgba(39, 68, 114, 0.1);
-    border-left: 4px solid var(--uni-navy);
+    border-left: 4px solid var(--uwi-navy);
     border-radius: 8px;
     padding: 18px 20px;
 }
 
 .uwi-ideal-alt-icon {
-    color: var(--uni-navy);
+    color: var(--uwi-navy);
     flex-shrink: 0;
     margin-top: 2px;
 }
@@ -1040,7 +1033,7 @@
 .uwi-ideal-alt-text {
     font-size: 14.5px;
     line-height: 1.6;
-    color: var(--uni-text-dark);
+    color: var(--uwi-text-dark);
     margin: 0;
     font-weight: 500;
 }
@@ -1145,10 +1138,9 @@
     font-weight: 500;
 }
 
-/* ── WHEN NOT WORTH IT ────────────────────────────────────── */
 
 .uwi-notworth-section {
-    background: var(--uni-bg-white);
+    background: var(--uwi-bg-white);
     padding: 100px 20px;
 }
 
@@ -1171,7 +1163,7 @@
 .uwi-notworth-intro {
     font-size: 16px;
     line-height: 1.75;
-    color: var(--uni-text-body);
+    color: var(--uwi-text-body);
     max-width: 720px;
     margin: 0 auto 44px;
 }
@@ -1192,7 +1184,7 @@
     padding: 18px 20px;
     font-size: 14.5px;
     font-weight: 600;
-    color: var(--uni-text-dark);
+    color: var(--uwi-text-dark);
     line-height: 1.45;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -1217,25 +1209,24 @@
     max-width: 90%;
     background: rgba(39, 68, 114, 0.03);
     border: 1px solid rgba(39, 68, 114, 0.1);
-    border-left: 4px solid var(--uni-navy);
+    border-left: 4px solid var(--uwi-navy);
     border-radius: 8px;
     padding: 20px 24px;
 }
 
 .uwi-notworth-footer-icon {
-    color: var(--uni-navy);
+    color: var(--uwi-navy);
     flex-shrink: 0;
 }
 
 .uwi-notworth-footer-text {
     font-size: 15.5px;
     line-height: 1.6;
-    color: var(--uni-text-dark);
+    color: var(--uwi-text-dark);
     margin: 0;
     font-weight: 500;
 }
 
-/* ── MAXIMIZE INVESTMENT ──────────────────────────────────── */
 
 .uwi-maximize-section {
     background: linear-gradient(150deg, #162d50 0%, #182c49 50%, #0f1c2e 100%);
@@ -1327,10 +1318,9 @@
     letter-spacing: 0.01em;
 }
 
-/* ── IS THE HIGHER PRICE JUSTIFIED ────────────────────────── */
 
 .uwi-justified-section {
-    background: var(--uni-bg-white);
+    background: var(--uwi-bg-white);
     padding: 100px 20px;
 }
 
@@ -1349,7 +1339,7 @@
 .uwi-justified-lead {
     font-size: 17.5px;
     font-weight: 600;
-    color: var(--uni-navy);
+    color: var(--uwi-navy);
     line-height: 1.6;
     margin-bottom: 16px;
 }
@@ -1357,7 +1347,7 @@
 .uwi-justified-body {
     font-size: 15.5px;
     line-height: 1.7;
-    color: var(--uni-text-body);
+    color: var(--uwi-text-body);
     margin-bottom: 20px;
 }
 
@@ -1371,13 +1361,13 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    background: var(--uni-bg-soft);
-    border: 1px solid var(--uni-border-soft);
+    background: var(--uwi-bg-soft);
+    border: 1px solid var(--uwi-border-soft);
     border-radius: 12px;
     padding: 14px 16px;
     font-size: 14.5px;
     font-weight: 600;
-    color: var(--uni-text-dark);
+    color: var(--uwi-text-dark);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -1388,7 +1378,7 @@
 
 .uwi-justified-item-icon {
     flex-shrink: 0;
-    color: var(--uni-navy);
+    color: var(--uwi-navy);
 }
 
 .uwi-justified-conclusion-card {
@@ -1398,13 +1388,13 @@
     margin-top: 24px;
     background: rgba(39, 68, 114, 0.03);
     border: 1px solid rgba(39, 68, 114, 0.1);
-    border-left: 4px solid var(--uni-navy);
+    border-left: 4px solid var(--uwi-navy);
     border-radius: 8px;
     padding: 20px 24px;
 }
 
 .uwi-justified-conclusion-icon {
-    color: var(--uni-navy);
+    color: var(--uwi-navy);
     flex-shrink: 0;
     margin-top: 2px;
 }
@@ -1418,17 +1408,16 @@
 .uwi-justified-conclusion-text p {
     font-size: 15px;
     line-height: 1.6;
-    color: var(--uni-text-dark);
+    color: var(--uwi-text-dark);
     margin: 0;
     font-weight: 500;
 }
 
-/* ── FINAL THOUGHTS ───────────────────────────────────────── */
 
 .uwi-final-section {
     position: relative;
     padding: 110px 20px;
-    background: var(--uni-bg-soft);
+    background: var(--uwi-bg-soft);
     overflow: hidden;
 }
 
@@ -1454,7 +1443,7 @@
     justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
-    color: var(--uni-navy);
+    color: var(--uwi-navy);
 }
 
 .uwi-final-eyebrow-text {
@@ -1462,29 +1451,30 @@
     font-weight: 700;
     letter-spacing: 0.26em;
     text-transform: uppercase;
-    color: var(--uni-navy);
+    color: var(--uwi-navy);
     opacity: 0.7;
 }
 
 .uwi-final-heading {
-    font-size: 40px;
-    font-weight: 800;
-    color: var(--uni-navy);
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--uwi-navy);
     margin: 0 0 18px;
-    line-height: 1.2;
+    line-height: 1.25;
 }
 
 .uwi-final-separator {
     width: 64px;
     height: 4px;
-    background: var(--uni-navy);
+    background: var(--uwi-navy);
     border-radius: 4px;
     margin: 0 auto 34px;
 }
 
 .uwi-final-card {
-    background: var(--uni-bg-white);
-    border: 1px solid var(--uni-border-soft);
+    background: var(--uwi-bg-white);
+    border: 1px solid var(--uwi-border-soft);
     border-radius: 20px;
     padding: 40px 44px;
     box-shadow: 0 20px 60px rgba(39, 68, 114, 0.1);
@@ -1493,7 +1483,7 @@
 .uwi-final-body {
     font-size: 16px;
     line-height: 1.8;
-    color: var(--uni-text-body);
+    color: var(--uwi-text-body);
     margin: 0 0 16px;
 }
 
@@ -1504,10 +1494,9 @@
 .uwi-final-emphasis {
     font-size: 17.5px;
     font-weight: 600;
-    color: var(--uni-navy);
+    color: var(--uwi-navy);
 }
 
-/* ── KEY TAKEAWAYS ────────────────────────────────────────── */
 
 .uwi-summary-section {
     background: #0d1b2a;
@@ -1575,10 +1564,9 @@
     margin: 0;
 }
 
-/* ── FAQ ──────────────────────────────────────────────────── */
 
 .uwi-faq-section {
-    background: var(--uni-bg-soft);
+    background: var(--uwi-bg-soft);
     padding: 64px 20px;
 }
 
@@ -1624,7 +1612,7 @@
 
 .uwi-faq-item:hover {
     background: linear-gradient(135deg, #ffffff 0%, #e8f0fc 100%);
-    border-color: var(--uni-navy);
+    border-color: var(--uwi-navy);
     box-shadow: 0 8px 25px rgba(39, 68, 114, 0.1);
 }
 
@@ -1638,14 +1626,14 @@
 .uwi-faq-question-row span {
     font-size: 16px;
     font-weight: 500;
-    color: var(--uni-navy);
+    color: var(--uwi-navy);
     line-height: 1.4;
 }
 
 .uwi-faq-toggle-icon {
     font-size: 20px;
     font-weight: 600;
-    color: var(--uni-navy);
+    color: var(--uwi-navy);
     flex-shrink: 0;
 }
 
@@ -1659,7 +1647,6 @@
     margin-bottom: 0;
 }
 
-/* ── EXPLORE MORE RESOURCES ───────────────────────────────── */
 
 .uwi-explore-section {
     background: linear-gradient(180deg, #0d1b2a 0%, #182c49 100%);
@@ -1774,7 +1761,8 @@
 }
 
 .uwi-explore-card-title {
-    font-size: 15px;
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-size: 15px !important;
     font-weight: 600;
     color: #ffffff;
     margin: 0 0 8px 0;
@@ -1796,7 +1784,6 @@
     color: #b8e0ff;
 }
 
-/* ── RESPONSIVE: EXPLORE ────────────────────────────────── */
 
 @media (max-width: 1024px) {
     .uwi-explore-card {
@@ -1836,7 +1823,6 @@
     }
 }
 
-/* ── CTA ──────────────────────────────────────────────────── */
 
 .uwi-cta-section {
     position: relative;
@@ -1857,10 +1843,10 @@
     background: radial-gradient(ellipse at center, rgba(56, 189, 248, 0.12) 0%, rgba(99, 102, 241, 0.06) 40%, transparent 70%);
     filter: blur(60px);
     z-index: 0;
-    animation: uni-aurora-pulse 8s ease-in-out infinite alternate;
+    animation: uwi-aurora-pulse 8s ease-in-out infinite alternate;
 }
 
-@keyframes uni-aurora-pulse {
+@keyframes uwi-aurora-pulse {
     0% { opacity: 0.6; transform: translateX(-50%) scale(1); }
     100% { opacity: 1; transform: translateX(-50%) scale(1.08); }
 }
@@ -1874,11 +1860,11 @@
     backdrop-filter: blur(6px);
 }
 
-.uwi-cta-crystal-1 { width: 80px; height: 80px; top: 12%; left: 8%; transform: rotate(45deg); animation: uni-crystal-float 12s ease-in-out infinite; }
-.uwi-cta-crystal-2 { width: 50px; height: 50px; top: 20%; right: 12%; transform: rotate(25deg); animation: uni-crystal-float 10s ease-in-out 2s infinite; }
-.uwi-cta-crystal-3 { width: 35px; height: 35px; bottom: 18%; left: 15%; transform: rotate(60deg); animation: uni-crystal-float 14s ease-in-out 4s infinite; }
+.uwi-cta-crystal-1 { width: 80px; height: 80px; top: 12%; left: 8%; transform: rotate(45deg); animation: uwi-crystal-float 12s ease-in-out infinite; }
+.uwi-cta-crystal-2 { width: 50px; height: 50px; top: 20%; right: 12%; transform: rotate(25deg); animation: uwi-crystal-float 10s ease-in-out 2s infinite; }
+.uwi-cta-crystal-3 { width: 35px; height: 35px; bottom: 18%; left: 15%; transform: rotate(60deg); animation: uwi-crystal-float 14s ease-in-out 4s infinite; }
 
-@keyframes uni-crystal-float {
+@keyframes uwi-crystal-float {
     0%, 100% { transform: rotate(45deg) translateY(0); opacity: 0.5; }
     50% { transform: rotate(45deg) translateY(-18px); opacity: 0.9; }
 }
@@ -1913,21 +1899,21 @@
     justify-content: center;
     color: rgba(148, 210, 255, 0.8);
     margin-bottom: 16px;
-    animation: uni-compass-spin 20s linear infinite;
+    animation: uwi-compass-spin 20s linear infinite;
     background: rgba(148, 210, 255, 0.04);
     box-shadow: 0 0 30px rgba(56, 189, 248, 0.08);
 }
 
-@keyframes uni-compass-spin {
+@keyframes uwi-compass-spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
 
 .uwi-cta-compass-ring svg {
-    animation: uni-compass-counter-spin 20s linear infinite;
+    animation: uwi-compass-counter-spin 20s linear infinite;
 }
 
-@keyframes uni-compass-counter-spin {
+@keyframes uwi-compass-counter-spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(-360deg); }
 }
@@ -1943,9 +1929,10 @@
 }
 
 .uwi-cta-title {
-    font-size: 52px;
-    line-height: 1.12;
-    font-weight: 500;
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-size: 48px;
+    line-height: 1.25;
+    font-weight: 700;
     color: #ffffff;
     margin: 0 0 14px;
     letter-spacing: -0.01em;
@@ -2243,15 +2230,14 @@
     }
 }
 
-/* ── ANGELA HUGHES EXPERT INSIGHT ── */
-.luxe-expert-insight-section {
+.uwi-expert-section {
     padding: 88px 20px;
     background: #0f1c2e !important;
     position: relative;
     overflow: hidden;
 }
 
-.luxe-expert-insight-container {
+.uwi-expert-container {
     max-width: 1100px;
     margin: 0 auto;
     position: relative;
@@ -2262,14 +2248,14 @@
     align-items: center;
 }
 
-.luxe-expert-portrait-panel {
+.uwi-expert-portrait-panel {
     display: flex;
     flex-direction: column;
     gap: 24px;
     align-items: center;
 }
 
-.luxe-expert-img-container {
+.uwi-expert-img-container {
     position: relative;
     overflow: hidden;
     height: 400px;
@@ -2279,7 +2265,7 @@
     align-items: center;
 }
 
-.luxe-expert-img-container img {
+.uwi-expert-img-container img {
     max-width: 100%;
     max-height: 100%;
     width: auto;
@@ -2289,7 +2275,7 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-.luxe-expert-stats-strip {
+.uwi-expert-stats-strip {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
@@ -2298,27 +2284,28 @@
     width: 100%;
 }
 
-.luxe-expert-stat-box h4 {
-    font-size: 28px;
+.uwi-expert-stat-box h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
     font-weight: 700;
     color: #3b82f6;
     margin-bottom: 2px;
     margin-top: 0;
 }
 
-.luxe-expert-stat-box p {
+.uwi-expert-stat-box p {
     font-size: 13px;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.6);
     margin: 0;
 }
 
-.luxe-expert-content-panel .luxe-eyebrow {
+.uwi-expert-content-panel .uwi-expert-eyebrow {
     margin-bottom: 12px;
     color: #3b82f6;
 }
 
-.luxe-expert-quote {
+.uwi-expert-quote {
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 18px;
     line-height: 1.6;
@@ -2329,7 +2316,7 @@
     border-left: 3px solid #3b82f6;
 }
 
-.luxe-expert-priorities h5 {
+.uwi-expert-priorities h5 {
     font-size: 13px;
     font-weight: 700;
     color: rgba(255, 255, 255, 0.5);
@@ -2339,14 +2326,14 @@
     margin-top: 0;
 }
 
-.luxe-expert-pills {
+.uwi-expert-pills {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 24px;
 }
 
-.luxe-expert-pill {
+.uwi-expert-pill {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -2359,11 +2346,11 @@
     color: #ffffff;
 }
 
-.luxe-expert-pill svg {
+.uwi-expert-pill svg {
     color: #3b82f6;
 }
 
-.luxe-expert-bio {
+.uwi-expert-bio {
     font-size: 15px;
     line-height: 1.65;
     color: rgba(255, 255, 255, 0.7) !important;
@@ -2371,32 +2358,85 @@
 }
 
 @media (max-width: 1024px) {
-    .luxe-expert-insight-container {
+    .uwi-expert-container {
         grid-template-columns: 1fr;
         gap: 36px;
     }
 
-    .luxe-expert-img-container {
+    .uwi-expert-img-container {
         height: 340px;
     }
 }
 
 @media (max-width: 640px) {
-    .luxe-expert-insight-section {
+    .uwi-expert-section {
         padding: 56px 16px;
     }
 
-    .luxe-expert-insight-container {
+    .uwi-expert-container {
         gap: 24px;
     }
 
-    .luxe-expert-img-container {
+    .uwi-expert-img-container {
         height: 280px;
     }
 
-    .luxe-expert-stats-strip {
+    .uwi-expert-stats-strip {
         grid-template-columns: 1fr;
         gap: 12px;
         text-align: center;
     }
+}
+
+/* Isolate this page: self-contained typography + protection from
+   global rules defined in other pages' CSS */
+.uwi-page {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.uwi-page p {
+    font-size: 18px;
+}
+
+.uwi-page .uwi-expert-stat-box p {
+    font-size: 13px;
+}
+
+@media (max-width: 1024px) {
+    .uwi-hero-main-title {
+        font-size: 32px;
+    }
+
+    .uwi-section-heading,
+    .uwi-cta-title,
+    .uwi-final-heading {
+        font-size: 28px;
+    }
+
+    .uwi-page p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 767px) {
+    .uwi-hero-main-title {
+        font-size: 26px;
+    }
+
+    .uwi-section-heading,
+    .uwi-cta-title,
+    .uwi-final-heading {
+        font-size: 24px;
+    }
+
+    .uwi-page p {
+        font-size: 16px;
+    }
+}
+
+.uwi-page h3 {
+    font-family: 'Playfair Display', 'Georgia', serif !important;
+    font-weight: 400 !important;
+    line-height: 1.25 !important;
+    text-align: inherit;
 }

@@ -208,7 +208,7 @@ function FirstTimeUniworldGuide() {
     }
 
     return (
-        <>
+        <div className="ftuwg-page">
             <Helmet>
                 <title>First-Time Uniworld River Cruise Guide</title>
                 <meta name="title" content="First-Time Uniworld River Cruise Guide" />
@@ -219,7 +219,6 @@ function FirstTimeUniworldGuide() {
 
             <Navbar />
 
-            {/* ── HERO ── */}
             <section className="ftuwg-hero-section">
                 <div className="ftuwg-hero-bg"></div>
                 <div className="ftuwg-hero-overlay-layer"></div>
@@ -237,7 +236,6 @@ function FirstTimeUniworldGuide() {
                 </div>
             </section>
 
-            {/* ── INTRO ── */}
             <section className="ftuwg-intro-section">
                 <div className="ftuwg-intro-container">
                     <div className="ftuwg-intro-grid">
@@ -258,7 +256,6 @@ function FirstTimeUniworldGuide() {
                 </div>
             </section>
 
-            {/* ── WHY CHOOSE UNIWORLD ── */}
             <section className="ftuwg-why-section">
                 <div className="ftuwg-why-container">
                     <div className="ftuwg-why-grid">
@@ -282,10 +279,10 @@ function FirstTimeUniworldGuide() {
                                     { Icon: Compass, text: 'Included excursions' },
                                     { Icon: Heart, text: 'Personalized service' },
                                     { Icon: MapPin, text: 'Destination-focused itineraries' }
-                                ].map(({ Icon, text }, idx) => (
+                                ].map((f, idx) => (
                                     <div key={idx} className="ftuwg-highlight-item">
-                                        <div className="ftuwg-highlight-icon"><Icon size={20} /></div>
-                                        <span>{text}</span>
+                                        <div className="ftuwg-highlight-icon"><f.Icon size={20} /></div>
+                                        <span>{f.text}</span>
                                     </div>
                                 ))}
                             </div>
@@ -295,7 +292,6 @@ function FirstTimeUniworldGuide() {
                 </div>
             </section>
 
-            {/* ── CHOOSING THE RIGHT ITINERARY ── */}
             <section className="ftuwg-itinerary-section">
                 <div className="ftuwg-itinerary-container">
                     <div className="ftuwg-itinerary-header">
@@ -324,7 +320,6 @@ function FirstTimeUniworldGuide() {
                 </div>
             </section>
 
-            {/* ── SELECTING THE BEST CABIN ── */}
             <section className="ftuwg-cabin-section">
                 <div className="ftuwg-cabin-container">
                     <div className="ftuwg-cabin-header">
@@ -353,7 +348,6 @@ function FirstTimeUniworldGuide() {
                 </div>
             </section>
 
-            {/* ── WHAT IS INCLUDED ── */}
             <section className="ftuwg-fare-section">
                 <div className="ftuwg-fare-container">
                     <div className="ftuwg-fare-grid">
@@ -365,10 +359,10 @@ function FirstTimeUniworldGuide() {
                             <p className="ftuwg-fare-lead">Most Uniworld cruise fares include:</p>
 
                             <div className="ftuwg-fare-list">
-                                {uniIncluded.map(({ Icon, text }, idx) => (
+                                {uniIncluded.map((f, idx) => (
                                     <div key={idx} className="ftuwg-fare-item">
-                                        <div className="ftuwg-fare-item-icon"><Icon size={18} /></div>
-                                        <span>{text}</span>
+                                        <div className="ftuwg-fare-item-icon"><f.Icon size={18} /></div>
+                                        <span>{f.text}</span>
                                     </div>
                                 ))}
                             </div>
@@ -390,7 +384,6 @@ function FirstTimeUniworldGuide() {
                 </div>
             </section>
 
-            {/* ── WHAT TO PACK ── */}
             <section className="ftuwg-pack-section">
                 <div className="ftuwg-pack-container">
                     <div className="ftuwg-pack-header">
@@ -402,19 +395,18 @@ function FirstTimeUniworldGuide() {
                     <p className="ftuwg-pack-lead">Packing for a river cruise is usually simpler than packing for an ocean voyage.</p>
 
                     <div className="ftuwg-pack-grid">
-                        {ftuwgPackList.map(({ Icon, text }, idx) => (
-                            <div key={idx} className="ftuwg-pack-item">
-                                <div className="ftuwg-pack-item-icon"><Icon size={22} /></div>
-                                <span>{text}</span>
-                            </div>
-                        ))}
+{ftuwgPackList.map((f, idx) => (
+                                    <div key={idx} className="ftuwg-pack-item">
+                                        <div className="ftuwg-pack-item-icon"><f.Icon size={22} /></div>
+                                        <span>{f.text}</span>
+                                    </div>
+                                ))}
                     </div>
 
                     <p className="ftuwg-pack-footnote">Formal attire is generally not required.</p>
                 </div>
             </section>
 
-            {/* ── TYPICAL DAY ── */}
             <section className="ftuwg-day-section">
                 <div className="ftuwg-day-container">
                     <div className="ftuwg-day-header">
@@ -426,12 +418,12 @@ function FirstTimeUniworldGuide() {
                     <p className="ftuwg-day-lead">Every itinerary differs slightly, but a typical day may include:</p>
 
                     <div className="ftuwg-day-grid">
-                        {uniTypicalDay.map(({ label, Icon, items }, idx) => (
+                        {uniTypicalDay.map((d, idx) => (
                             <div key={idx} className="ftuwg-day-card">
-                                <div className="ftuwg-day-card-icon"><Icon size={26} /></div>
-                                <h3 className="ftuwg-day-card-title">{label}</h3>
+                                <div className="ftuwg-day-card-icon"><d.Icon size={26} /></div>
+                                <h3 className="ftuwg-day-card-title">{d.label}</h3>
                                 <ul className="ftuwg-day-card-list">
-                                    {items.map((item, i) => (
+                                    {d.items.map((item, i) => (
                                         <li key={i}>{item}</li>
                                     ))}
                                 </ul>
@@ -443,7 +435,6 @@ function FirstTimeUniworldGuide() {
                 </div>
             </section>
 
-            {/* ── DINING EXPECTATIONS ── */}
             <section className="ftuwg-dining-section">
                 <div className="ftuwg-dining-container">
                     <div className="ftuwg-dining-grid">
@@ -474,7 +465,6 @@ function FirstTimeUniworldGuide() {
                 </div>
             </section>
 
-            {/* ── SHORE EXCURSIONS ── */}
             <section className="ftuwg-excursions-section">
                 <div className="ftuwg-excursions-container">
                     <div className="ftuwg-excursions-grid">
@@ -486,10 +476,10 @@ function FirstTimeUniworldGuide() {
                             <p className="ftuwg-excursions-lead">Most Uniworld cruises include guided shore excursions led by expert local guides.</p>
 
                             <div className="ftuwg-excursions-list">
-                                {uniExcursions.map(({ Icon, text }, idx) => (
+                                {uniExcursions.map((f, idx) => (
                                     <div key={idx} className="ftuwg-excursions-item">
-                                        <div className="ftuwg-excursions-item-icon"><Icon size={18} /></div>
-                                        <span>{text}</span>
+                                        <div className="ftuwg-excursions-item-icon"><f.Icon size={18} /></div>
+                                        <span>{f.text}</span>
                                     </div>
                                 ))}
                             </div>
@@ -510,7 +500,6 @@ function FirstTimeUniworldGuide() {
                 </div>
             </section>
 
-            {/* ── ONBOARD ATMOSPHERE ── */}
             <section className="ftuwg-atmosphere-section">
                 <div className="ftuwg-atmosphere-container">
                     <div className="ftuwg-atmosphere-grid">
@@ -544,7 +533,6 @@ function FirstTimeUniworldGuide() {
                 </div>
             </section>
 
-            {/* ── HELPFUL TIPS & COMMON MISTAKES ── */}
             <section className="ftuwg-tips-section">
                 <div className="ftuwg-tips-container">
                     <div className="ftuwg-tips-header">
@@ -588,7 +576,6 @@ function FirstTimeUniworldGuide() {
                 </div>
             </section>
 
-            {/* ── IS UNIWORLD RIGHT FOR YOU ── */}
             <section className="ftuwg-fit-section">
                 <div className="ftuwg-fit-container">
                     <div className="ftuwg-fit-header">
@@ -611,7 +598,6 @@ function FirstTimeUniworldGuide() {
                 </div>
             </section>
 
-            {/* ── KEY TAKEAWAYS ── */}
             <section className="ftuwg-takeaways-section">
                 <div className="ftuwg-takeaways-container">
                     <div className="ftuwg-takeaways-header">
@@ -631,7 +617,6 @@ function FirstTimeUniworldGuide() {
                 </div>
             </section>
 
-            {/* ── ANGELA HUGHES EXPERT INSIGHT ── */}
             <section className="ftuwg-expert-insight-section">
                 <div className="ftuwg-expert-insight-container">
 
@@ -680,7 +665,6 @@ function FirstTimeUniworldGuide() {
                 </div>
             </section>
 
-            {/* ── FAQ ── */}
             <section className="ftuwg-faqs-section">
                 <div className="ftuwg-faqs-container">
                     <div className="ftuwg-faqs-header">
@@ -708,7 +692,6 @@ function FirstTimeUniworldGuide() {
                 </div>
             </section>
 
-            {/* ── CTA ── */}
             <section className="ftuwg-cta-section">
                 <div className="ftuwg-cta-aurora-glow"></div>
                 <div className="ftuwg-cta-crystal ftuwg-cta-crystal-1"></div>
@@ -736,7 +719,7 @@ function FirstTimeUniworldGuide() {
                 </div>
             </section>
 
-        </>
+        </div>
     )
 }
 

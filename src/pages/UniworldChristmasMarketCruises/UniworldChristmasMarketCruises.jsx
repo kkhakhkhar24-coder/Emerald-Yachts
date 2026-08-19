@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react'
 import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
-    ArrowRight, Compass, Sparkles, Anchor, Calendar, Gem,
+    Compass, Sparkles, Anchor, Calendar, Gem,
     ChevronRight, Crown, Phone, LayoutList, Heart, Utensils,
     Sun, Award, Globe, BookOpen, Smile, Leaf, Eye, Shield,
     Ticket, Music, ShoppingBag, Snowflake, Thermometer,
@@ -120,24 +120,24 @@ export default function UniworldChristmasMarketCruises() {
             <Navbar />
 
             {/* ── HERO ── */}
-            <section className="medi-hero-section">
+            <section className="ucm-hero-section">
                 {ucmHeroImages.map((img, idx) => (
                     <div
                         key={idx}
-                        className={`medi-hero-background ${ucmCurrentHero === idx ? 'medi-active' : ''}`}
+                        className={`ucm-hero-background ${ucmCurrentHero === idx ? 'ucm-active' : ''}`}
                         style={{ backgroundImage: `url(${img})` }}
                     />
                 ))}
-                <div className="medi-hero-overlay-layer"></div>
-                <div className="medi-hero-content-wrapper">
-                    <div className="medi-hero-eyebrow-tag">
+                <div className="ucm-hero-overlay-layer"></div>
+                <div className="ucm-hero-content-wrapper">
+                    <div className="ucm-hero-eyebrow-tag">
                         <Snowflake size={16} />
                         <span>Uniworld River Cruises · Holiday Travel Guide</span>
                     </div>
-                    <h1 className="medi-hero-main-title">
+                    <h1 className="ucm-hero-main-title">
                         Uniworld Christmas Market River Cruises
                     </h1>
-                    <p className="medi-hero-subtitle-text">
+                    <p className="ucm-hero-subtitle-text">
                         Experience Europe's most enchanting holiday traditions aboard a luxury Uniworld river cruise, visiting centuries-old Christmas markets across the Danube, Rhine, and beyond.
                     </p>
                 </div>
@@ -149,8 +149,8 @@ export default function UniworldChristmasMarketCruises() {
                     <div className="ucm-intro-grid">
                         <div className="ucm-intro-text-col">
                             <span className="ucm-eyebrow">FESTIVE RIVER CRUISING</span>
-                            <h2 className="medi-section-heading">A Magical Way to Celebrate the Holidays in Europe</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="ucm-section-heading">A Magical Way to Celebrate the Holidays in Europe</h2>
+                            <div className="ucm-heading-separator-bar"></div>
                             <p className="ucm-intro-lead">Few travel experiences capture the magic of the holiday season quite like a European Christmas Market cruise.</p>
                             <p className="ucm-intro-body">Uniworld Boutique River Cruises offers festive sailings that combine luxury accommodations with visits to centuries-old Christmas markets, beautifully decorated historic cities, and seasonal traditions across Europe.</p>
                             <p className="ucm-intro-body">From sipping mulled wine beneath twinkling lights to browsing handcrafted ornaments in medieval town squares, Uniworld Christmas Market River Cruises offer an immersive way to celebrate the holidays while exploring multiple destinations without changing hotels.</p>
@@ -175,8 +175,8 @@ export default function UniworldChristmasMarketCruises() {
                     <div className="ucm-why-grid">
                         <div className="ucm-why-text-col">
                             <span className="ucm-eyebrow">KEY BENEFITS</span>
-                            <h2 className="medi-section-heading">Why Choose a Christmas Market River Cruise?</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="ucm-section-heading">Why Choose a Christmas Market River Cruise?</h2>
+                            <div className="ucm-heading-separator-bar"></div>
                             <p className="ucm-why-lead">European Christmas markets are renowned for their festive atmosphere, handcrafted gifts, local cuisine, and historic settings.</p>
                             <p className="ucm-why-body">A river cruise allows travelers to visit several markets on one itinerary while enjoying the comfort of a luxury boutique ship.</p>
 
@@ -212,8 +212,8 @@ export default function UniworldChristmasMarketCruises() {
                 <div className="ucm-special-container">
                     <div className="ucm-special-header">
                         <span className="ucm-eyebrow ucm-eyebrow-light">ONBOARD EXPERIENCE</span>
-                        <h2 className="medi-section-heading ucm-white-heading">What Makes Uniworld Christmas Cruises Special?</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered ucm-separator-white"></div>
+                        <h2 className="ucm-section-heading ucm-white-heading">What Makes Uniworld <br /> Christmas Cruises Special?</h2>
+                        <div className="ucm-heading-separator-bar ucm-bar-centered ucm-separator-white"></div>
                         <p className="ucm-special-intro">Uniworld transforms its ships into festive floating boutique hotels during the holiday season.</p>
                         <p className="ucm-special-sub">Guests may enjoy:</p>
                     </div>
@@ -243,8 +243,8 @@ export default function UniworldChristmasMarketCruises() {
                 <div className="ucm-itineraries-container">
                     <div className="ucm-itineraries-header">
                         <span className="ucm-eyebrow">POPULAR ROUTES</span>
-                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Best Christmas Market Itineraries</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <h2 className="ucm-section-heading" style={{ textAlign: 'center' }}>Best Christmas Market Itineraries</h2>
+                        <div className="ucm-heading-separator-bar ucm-bar-centered"></div>
                     </div>
 
                     <div className="ucm-itineraries-grid">
@@ -292,8 +292,8 @@ export default function UniworldChristmasMarketCruises() {
                 <div className="ucm-markets-container">
                     <div className="ucm-markets-header">
                         <span className="ucm-eyebrow">DESTINATIONS</span>
-                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Famous Christmas Markets You May Visit</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <h2 className="ucm-section-heading" style={{ textAlign: 'center' }}>Famous Christmas Markets <br /> You May Visit</h2>
+                        <div className="ucm-heading-separator-bar ucm-bar-centered"></div>
                     </div>
 
                     <div className="ucm-markets-table-wrap">
@@ -325,8 +325,8 @@ export default function UniworldChristmasMarketCruises() {
                     <div className="ucm-food-grid">
                         <div className="ucm-food-text-col">
                             <span className="ucm-eyebrow">FESTIVE FLAVORS</span>
-                            <h2 className="medi-section-heading">Seasonal Food and Drinks</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="ucm-section-heading">Seasonal Food and Drinks</h2>
+                            <div className="ucm-heading-separator-bar"></div>
                             <p className="ucm-food-lead">Holiday cruises feature a variety of festive treats both onboard and ashore.</p>
                             <p className="ucm-food-body">Popular specialties include:</p>
 
@@ -376,8 +376,8 @@ export default function UniworldChristmasMarketCruises() {
                         </div>
                         <div className="ucm-shopping-text-col">
                             <span className="ucm-eyebrow">UNIQUE GIFTS</span>
-                            <h2 className="medi-section-heading">Shopping at Christmas Markets</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="ucm-section-heading">Shopping at Christmas Markets</h2>
+                            <div className="ucm-heading-separator-bar"></div>
                             <p className="ucm-shopping-lead">Markets are ideal for finding unique gifts.</p>
                             <p className="ucm-shopping-body">Popular purchases include:</p>
 
@@ -408,8 +408,8 @@ export default function UniworldChristmasMarketCruises() {
                 <div className="ucm-weather-container">
                     <div className="ucm-weather-header">
                         <span className="ucm-eyebrow ucm-eyebrow-light">TRAVEL PLANNING</span>
-                        <h2 className="medi-section-heading ucm-white-heading">Weather During Christmas Market Cruises</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered ucm-separator-white"></div>
+                        <h2 className="ucm-section-heading ucm-white-heading">Weather During <br /> Christmas Market Cruises</h2>
+                        <div className="ucm-heading-separator-bar ucm-bar-centered ucm-separator-white"></div>
                         <p className="ucm-weather-intro">Late November and December are generally cool throughout Central Europe.</p>
                         <p className="ucm-weather-sub">Typical temperatures range from:</p>
                     </div>
@@ -441,8 +441,8 @@ export default function UniworldChristmasMarketCruises() {
                     <div className="ucm-packing-grid">
                         <div className="ucm-packing-text-col">
                             <span className="ucm-eyebrow">ESSENTIALS</span>
-                            <h2 className="medi-section-heading">What to Pack</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="ucm-section-heading">What to Pack</h2>
+                            <div className="ucm-heading-separator-bar"></div>
                             <p className="ucm-packing-lead">Essential items include:</p>
 
                             <div className="ucm-packing-list">
@@ -484,8 +484,8 @@ export default function UniworldChristmasMarketCruises() {
                 <div className="ucm-included-container">
                     <div className="ucm-included-header">
                         <span className="ucm-eyebrow">WHAT'S INCLUDED</span>
-                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Included Experiences</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <h2 className="ucm-section-heading" style={{ textAlign: 'center' }}>Included Experiences</h2>
+                        <div className="ucm-heading-separator-bar ucm-bar-centered"></div>
                         <p className="ucm-included-intro">Most Uniworld Christmas Market cruises include:</p>
                     </div>
 
@@ -517,8 +517,8 @@ export default function UniworldChristmasMarketCruises() {
                     <div className="ucm-booking-grid">
                         <div className="ucm-booking-text-col">
                             <span className="ucm-eyebrow">PLANNING AHEAD</span>
-                            <h2 className="medi-section-heading">Best Time to Book</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="ucm-section-heading">Best Time to Book</h2>
+                            <div className="ucm-heading-separator-bar"></div>
                             <p className="ucm-booking-lead">Christmas Market cruises are among Uniworld's most popular seasonal departures.</p>
                             <p className="ucm-booking-body">For the best selection:</p>
 
@@ -553,8 +553,8 @@ export default function UniworldChristmasMarketCruises() {
                     <div className="ucm-who-grid">
                         <div className="ucm-who-text-col">
                             <span className="ucm-eyebrow">IDEAL GUESTS</span>
-                            <h2 className="medi-section-heading">Who Should Choose a Christmas Market Cruise?</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="ucm-section-heading">Who Should Choose a Christmas Market Cruise?</h2>
+                            <div className="ucm-heading-separator-bar"></div>
                             <p className="ucm-who-lead">These itineraries are ideal for:</p>
  
                             <div className="ucm-who-list">
@@ -630,31 +630,7 @@ export default function UniworldChristmasMarketCruises() {
                 </div>
             </section>
  
-            {/* ── INTERNAL LINKS ── */}
-            <section className="ucm-links-section">
-                <div className="ucm-links-container">
-                    <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Explore More Uniworld Guides</h2>
-                    <div className="medi-heading-separator-bar medi-bar-centered"></div>
- 
-                    <div className="ucm-links-grid">
-                        {[
-                            { text: 'Best Uniworld River Cruise Itineraries', url: '/uniworld-river-cruises/best-itineraries/' },
-                            { text: 'First-Time Uniworld River Cruise Guide', url: '/uniworld-river-cruises/first-time-guide/' },
-                            { text: 'Uniworld Dress Code and Packing Guide', url: '/uniworld-river-cruises/dress-code-packing/' },
-                            { text: 'What Is Included on a Uniworld River Cruise', url: '/uniworld-river-cruises/whats-included/' },
-                            { text: 'Uniworld Food and Dining', url: '/uniworld-river-cruises/food-dining/' },
-                            { text: 'Uniworld Ships and Suites', url: '/uniworld-river-cruises/ships-suites/' }
-                        ].map(({ text, url }, idx) => (
-                            <Link key={idx} to={url} className="ucm-link-card">
-                                <span>{text}</span>
-                                <ArrowRight size={16} />
-                            </Link>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* ── ANGELA HUGHES EXPERT INSIGHT ── */}
+{/* ── ANGELA HUGHES EXPERT INSIGHT ── */}
             <section className="ucm-expert-insight-section">
                 <div className="ucm-expert-insight-container">
 
@@ -704,25 +680,25 @@ export default function UniworldChristmasMarketCruises() {
             </section>
 
             {/* ── FAQ ── */}
-            <section className="medi-faq-main-section">
-                <div className="medi-faq-container">
+            <section className="ucm-faq-main-section">
+                <div className="ucm-faq-container">
                     <div style={{ textAlign: 'center' }}>
-                        <h2 className="medi-section-heading">Frequently Asked Questions</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <h2 className="ucm-section-heading">Frequently Asked Questions</h2>
+                        <div className="ucm-heading-separator-bar ucm-bar-centered"></div>
                     </div>
-                    <div className="medi-faq-list-wrapper">
+                    <div className="ucm-faq-list-wrapper">
                         {ucmFaqs.map((faq, index) => (
                             <div
                                 key={index}
-                                className="medi-faq-individual-item"
+                                className="ucm-faq-individual-item"
                                 onClick={() => ucmToggleFaq(index)}
                             >
-                                <div className="medi-faq-question-row">
+                                <div className="ucm-faq-question-row">
                                     <span>{faq.question}</span>
-                                    <span className="medi-faq-toggle-icon">{ucmActiveFaq === index ? '−' : '+'}</span>
+                                    <span className="ucm-faq-toggle-icon">{ucmActiveFaq === index ? '−' : '+'}</span>
                                 </div>
                                 {ucmActiveFaq === index && (
-                                    <p className="medi-faq-answer-text">{faq.answer}</p>
+                                    <p className="ucm-faq-answer-text">{faq.answer}</p>
                                 )}
                             </div>
                         ))}
@@ -731,25 +707,25 @@ export default function UniworldChristmasMarketCruises() {
             </section>
 
             {/* ── CTA ── */}
-            <section className="medi-cta-main-section">
-                <div className="medi-cta-bg-pattern-layer"></div>
-                <div className="medi-cta-content-relative">
-                    <div className="medi-cta-inner-wrapper">
-                        <h2 className="medi-cta-heading-white">Experience Europe's Most Enchanting Holiday Traditions</h2>
-                        <div className="medi-cta-separator-white"></div>
-                        <p className="medi-cta-paragraph-white">
+            <section className="ucm-cta-main-section">
+                <div className="ucm-cta-bg-pattern-layer"></div>
+                <div className="ucm-cta-content-relative">
+                    <div className="ucm-cta-inner-wrapper">
+                        <h2 className="ucm-cta-heading-white">Experience Europe's Most Enchanting Holiday Traditions</h2>
+                        <div className="ucm-cta-separator-white"></div>
+                        <p className="ucm-cta-paragraph-white">
                             Experience Europe's most enchanting holiday traditions by booking a Uniworld Christmas Market River Cruise and enjoying festive cities, luxury accommodations, and unforgettable seasonal experiences.
                         </p>
-                        <p className="medi-cta-paragraph-white" style={{ opacity: 0.95, maxWidth: '800px', margin: '0 auto 24px' }}>
+                        <p className="ucm-cta-paragraph-white" style={{ opacity: 0.95, maxWidth: '800px', margin: '0 auto 24px' }}>
                             With over four decades of luxury travel expertise, Angela Hughes and the team at Trips &amp; Ships Luxury Travel help you find the perfect holiday cruise experience.
                         </p>
 
-                        <div className="medi-cta-button-group">
-                            <Link to='/contact' className="medi-primary-cta-button">
+                        <div className="ucm-cta-button-group">
+                            <Link to='/contact' className="ucm-primary-cta-button">
                                 <Phone size={18} />
                                 Schedule a Consultation
                             </Link>
-                            <button className="medi-secondary-outline-button">
+                            <button className="ucm-secondary-outline-button">
                                 <LayoutList size={18} />
                                 Explore Christmas Market Cruises
                             </button>

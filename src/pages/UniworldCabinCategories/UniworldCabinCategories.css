@@ -18,20 +18,18 @@
     --uwc-font-body: "Montserrat", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
-/* ── GLOBAL RESET FOR SECTION ─────────────────────────────────── */
 
-section[class^="uc-"] * {
+section[class^="uwc-"] * {
     box-sizing: border-box;
     font-family: var(--uwc-font-body);
 }
 
-section[class^="uc-"] h1,
-section[class^="uc-"] h2,
-section[class^="uc-"] h3 {
+section[class^="uwc-"] h1,
+section[class^="uwc-"] h2,
+section[class^="uwc-"] h3 {
     font-family: var(--uwc-font-heading);
 }
 
-/* ── SHARED UTILITIES ─────────────────────────────────────────── */
 
 .uwc-eyebrow {
     font-size: 11px;
@@ -56,10 +54,10 @@ section[class^="uc-"] h3 {
 .uwc-section-heading {
     font-family: "Playfair Display", Georgia, serif;
     font-size: 48px;
-    font-weight: 500;
+    font-weight: 700;
     color: #1a2e4a;
     margin: 0 0 18px 0;
-    line-height: 1.2;
+    line-height: 1.25;
     letter-spacing: -0.01em;
 }
 
@@ -84,7 +82,6 @@ section[class^="uc-"] h3 {
     margin-right: auto;
 }
 
-/* ── HERO ──────────────────────────────────────────────────────── */
 
 .uwc-hero-section {
     position: relative;
@@ -144,8 +141,8 @@ section[class^="uc-"] h3 {
 
 .uwc-hero-main-title {
     font-family: "Playfair Display", Georgia, serif;
-    font-size: 56px;
-    font-weight: 400;
+    font-size: 60px;
+    font-weight: 700;
     color: #ffffff;
     line-height: 1.15;
     margin: 0 0 22px 0;
@@ -163,7 +160,6 @@ section[class^="uc-"] h3 {
     font-weight: 400;
 }
 
-/* ── INTRO ─────────────────────────────────────────────────────── */
 
 .uwc-intro-section {
     background: var(--uwc-bg-white);
@@ -284,7 +280,6 @@ section[class^="uc-"] h3 {
     flex-shrink: 0;
 }
 
-/* ── CATEGORY TABS ───────────────────────────────────────────── */
 
 .uwc-categories-section {
     background: var(--uwc-bg-soft);
@@ -304,7 +299,6 @@ section[class^="uc-"] h3 {
     min-height: 500px;
 }
 
-/* ── TAB SIDEBAR ─────────────────────────────────────────────── */
 
 .uwc-tab-sidebar {
     display: flex;
@@ -407,7 +401,6 @@ section[class^="uc-"] h3 {
     transform: translateX(2px);
 }
 
-/* ── TAB CONTENT ─────────────────────────────────────────────── */
 
 .uwc-tab-content {
     padding: 0;
@@ -416,14 +409,14 @@ section[class^="uc-"] h3 {
 
 .uwc-tab-panel {
     display: none;
-    animation: ucFadeIn 0.35s ease;
+    animation: uwcFadeIn 0.35s ease;
 }
 
 .uwc-tab-panel-active {
     display: block;
 }
 
-@keyframes ucFadeIn {
+@keyframes uwcFadeIn {
     from {
         opacity: 0;
         transform: translateY(10px);
@@ -435,7 +428,6 @@ section[class^="uc-"] h3 {
     }
 }
 
-/* ── TAB PANEL BANNER ────────────────────────────────────────── */
 
 .uwc-tab-panel-banner {
     position: relative;
@@ -475,7 +467,6 @@ section[class^="uc-"] h3 {
     line-height: 1.2;
 }
 
-/* ── PLACEHOLDER ─────────────────────────────────────────────── */
 
 .uwc-cabin-placeholder {
     width: 100%;
@@ -495,7 +486,6 @@ section[class^="uc-"] h3 {
     letter-spacing: 0.02em;
 }
 
-/* ── TAB PANEL HEADER ────────────────────────────────────────── */
 
 .uwc-tab-panel-header {
     display: flex;
@@ -633,7 +623,6 @@ section[class^="uc-"] h3 {
     border-color: #274472;
 }
 
-/* ── BUTLER SERVICE ────────────────────────────────────────────── */
 
 .uwc-butler-section {
     position: relative;
@@ -665,7 +654,6 @@ section[class^="uc-"] h3 {
     align-items: start;
 }
 
-/* ── BUTLER LEFT ──────────────────────────────────────────────── */
 
 .uwc-butler-left {
     padding-right: 20px;
@@ -724,7 +712,6 @@ section[class^="uc-"] h3 {
     line-height: 1.65;
 }
 
-/* ── BUTLER RIGHT ─────────────────────────────────────────────── */
 
 .uwc-butler-right {
     position: sticky;
@@ -789,7 +776,6 @@ section[class^="uc-"] h3 {
     line-height: 1.4;
 }
 
-/* ── AMENITIES IN EVERY CABIN ──────────────────────────────────── */
 
 .uwc-amenities-section {
     background: var(--uwc-bg-soft);
@@ -862,7 +848,6 @@ section[class^="uc-"] h3 {
     line-height: 1.6;
 }
 
-/* ── AMENITIES RIGHT (LIST) ───────────────────────────────────── */
 
 .uwc-amenities-right {
     position: sticky;
@@ -907,7 +892,6 @@ section[class^="uc-"] h3 {
     flex-shrink: 0;
 }
 
-/* ── COMPARISON TABLE ──────────────────────────────────────────── */
 
 .uwc-comparison-section {
     background: #0f1c2e;
@@ -1063,7 +1047,6 @@ section[class^="uc-"] h3 {
     padding: 5px 10px;
 }
 
-/* ── HOW TO CHOOSE ─────────────────────────────────────────────── */
 
 .uwc-choose-section {
     background: var(--uwc-bg-white);
@@ -1204,7 +1187,6 @@ section[class^="uc-"] h3 {
 .uwc-choose-card[data-tier="2"] .uwc-choose-dot { background: #3a6a8a; }
 .uwc-choose-card[data-tier="3"] .uwc-choose-dot { background: #5a9aba; }
 
-/* ── UPGRADE WORTH IT ──────────────────────────────────────────── */
 
 .uwc-upgrade-section {
     background: var(--uwc-bg-soft);
@@ -1265,7 +1247,6 @@ section[class^="uc-"] h3 {
     color: #718096;
 }
 
-/* ── TIPS BEFORE BOOKING ───────────────────────────────────────── */
 
 .uwc-tips-section {
     background: linear-gradient(160deg, #1a2e4a 0%, #274472 100%);
@@ -1396,7 +1377,6 @@ section[class^="uc-"] h3 {
     line-height: 1.65;
 }
 
-/* ── KEY TAKEAWAYS ─────────────────────────────────────────────── */
 
 .uwc-takeaways-section {
     background: var(--uwc-bg-white);
@@ -1467,7 +1447,6 @@ section[class^="uc-"] h3 {
     line-height: 1.65;
 }
 
-/* ── FAQ ───────────────────────────────────────────────────────── */
 
 .uwc-faq-section {
     background: var(--uwc-bg-soft);
@@ -1525,7 +1504,6 @@ section[class^="uc-"] h3 {
     line-height: 1.75;
 }
 
-/* ── CTA ───────────────────────────────────────────────────────── */
 
 .uwc-cta-section {
     position: relative;
@@ -1546,10 +1524,28 @@ section[class^="uc-"] h3 {
     background: radial-gradient(ellipse at center, rgba(56, 189, 248, 0.12) 0%, rgba(99, 102, 241, 0.06) 40%, transparent 70%);
     filter: blur(60px);
     z-index: 0;
-    animation: uc-aurora-pulse 8s ease-in-out infinite alternate;
+    animation: uwc-aurora-pulse 8s ease-in-out infinite alternate;
 }
 
-@keyframes uc-aurora-pulse {
+.uwc-cta-grid-lines {
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(148, 210, 255, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(148, 210, 255, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0;
+}
+
+.uwc-cta-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes uwc-aurora-pulse {
     0% { opacity: 0.6; transform: translateX(-50%) scale(1); }
     100% { opacity: 1; transform: translateX(-50%) scale(1.08); }
 }
@@ -1563,25 +1559,25 @@ section[class^="uc-"] h3 {
     backdrop-filter: blur(6px);
 }
 
-.uwc-cta-crystal-1 { width: 80px; height: 80px; top: 12%; left: 8%; transform: rotate(45deg); animation: uc-crystal-float 12s ease-in-out infinite; }
-.uwc-cta-crystal-2 { width: 50px; height: 50px; top: 20%; right: 12%; transform: rotate(25deg); animation: uc-crystal-float 10s ease-in-out 2s infinite; }
-.uwc-cta-crystal-3 { width: 35px; height: 35px; bottom: 18%; left: 15%; transform: rotate(60deg); animation: uc-crystal-float 14s ease-in-out 4s infinite; }
+.uwc-cta-crystal-1 { width: 80px; height: 80px; top: 12%; left: 8%; transform: rotate(45deg); animation: uwc-crystal-float 12s ease-in-out infinite; }
+.uwc-cta-crystal-2 { width: 50px; height: 50px; top: 20%; right: 12%; transform: rotate(25deg); animation: uwc-crystal-float 10s ease-in-out 2s infinite; }
+.uwc-cta-crystal-3 { width: 35px; height: 35px; bottom: 18%; left: 15%; transform: rotate(60deg); animation: uwc-crystal-float 14s ease-in-out 4s infinite; }
 
-@keyframes uc-crystal-float {
+@keyframes uwc-crystal-float {
     0%, 100% { transform: rotate(45deg) translateY(0); opacity: 0.5; }
     50% { transform: rotate(45deg) translateY(-18px); opacity: 0.9; }
 }
 
-@keyframes uc-compass-spin {
+@keyframes uwc-compass-spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
 
 .uwc-cta-compass-ring svg {
-    animation: uc-compass-counter-spin 20s linear infinite;
+    animation: uwc-compass-counter-spin 20s linear infinite;
 }
 
-@keyframes uc-compass-counter-spin {
+@keyframes uwc-compass-counter-spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(-360deg); }
 }
@@ -1598,9 +1594,9 @@ section[class^="uc-"] h3 {
 
 .uwc-cta-title {
     font-family: "Playfair Display", Georgia, serif;
-    font-size: 52px;
-    line-height: 1.12;
-    font-weight: 500;
+    font-size: 48px;
+    line-height: 1.25;
+    font-weight: 700;
     color: #ffffff;
     margin: 0 0 14px;
     letter-spacing: -0.01em;
@@ -1677,7 +1673,6 @@ section[class^="uc-"] h3 {
     opacity: 1;
 }
 
-/* ── ANGELA HUGHES EXPERT INSIGHT ──────────────────────────── */
 
 .uwc-expert-insight-section {
     padding: 88px 0;
@@ -1733,10 +1728,10 @@ section[class^="uc-"] h3 {
 }
 
 .uwc-expert-stat-box h4 {
-    font-family: var(--uwc-font-heading);
-    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
     font-weight: 700;
-    color: var(--uwc-text-heading);
+    color: #3b82f6;
     margin: 0 0 2px 0;
 }
 
@@ -1796,6 +1791,15 @@ section[class^="uc-"] h3 {
     color: var(--uwc-navy, #1a2e4a);
 }
 
+.uwc-expert-priorities h5 {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--uwc-text-body);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
 .uwc-expert-bio {
     font-size: 15px;
     line-height: 1.65;
@@ -1809,11 +1813,19 @@ section[class^="uc-"] h3 {
 
 @media (max-width: 1024px) {
     .uwc-hero-main-title {
-        font-size: 46px;
+        font-size: 32px !important;
     }
 
     .uwc-section-heading {
-        font-size: 34px;
+        font-size: 28px !important;
+    }
+
+    .uwc-cta-title {
+        font-size: 28px !important;
+    }
+
+    .uwc-page p {
+        font-size: 17px;
     }
 
     .uwc-butler-grid {
@@ -1888,12 +1900,24 @@ section[class^="uc-"] h3 {
     }
 
     .uwc-hero-main-title {
-        font-size: 34px;
+        font-size: 26px !important;
         white-space: normal;
     }
 
     .uwc-hero-subtitle-text {
-        font-size: 16.5px;
+        font-size: 16px;
+    }
+
+    .uwc-section-heading {
+        font-size: 24px !important;
+    }
+
+    .uwc-cta-title {
+        font-size: 24px !important;
+    }
+
+    .uwc-page p {
+        font-size: 16px;
     }
     .uwc-intro-section,
     .uwc-categories-section,
@@ -2047,7 +2071,7 @@ section[class^="uc-"] h3 {
     }
 
     .uwc-cta-title {
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .uwc-cta-crystal-1 { width: 54px; height: 54px; }
@@ -2087,7 +2111,7 @@ section[class^="uc-"] h3 {
 
 @media (max-width: 480px) {
     .uwc-hero-main-title {
-        font-size: 27px;
+        font-size: 26px;
     }
 
     .uwc-hero-eyebrow-tag {
@@ -2096,7 +2120,7 @@ section[class^="uc-"] h3 {
     }
 
     .uwc-section-heading {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .uwc-intro-lead {
@@ -2215,7 +2239,7 @@ section[class^="uc-"] h3 {
     }
 
     .uwc-cta-title {
-        font-size: 26px;
+        font-size: 24px;
     }
 
     .uwc-cta-subtitle {
@@ -2265,4 +2289,39 @@ section[class^="uc-"] h3 {
     .uwc-expert-content-panel h2 {
         font-size: 28px !important;
     }
+}
+/* =============================================================
+   UWC PAGE ISOLATION & TYPOGRAPHY OVERRIDES
+   ============================================================= */
+
+.uwc-page {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.uwc-page h3 {
+    font-family: 'Playfair Display', serif !important;
+}
+
+.uwc-page p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.65;
+}
+
+.uwc-page .uwc-expert-quote {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.uwc-page .uwc-expert-stat-box p {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.uwc-page .uwc-hero-subtitle-text {
+    font-size: 19px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.75);
 }

@@ -67,7 +67,7 @@ function UniworldCabinCategories() {
             imageLabel: 'Uniworld Deluxe Stateroom with river view',
             intro: 'Deluxe Staterooms typically offer additional space or a more desirable location on the ship.',
             featuresTitle: 'Benefits Often Include',
-            features: ['Larger floor plan', 'Higher deck location', 'Improved river views', 'Comfortable seating area', 'Enhanced décor'],
+            features: ['Larger floor plan', 'Higher deck location', 'Improved river views', 'Comfortable seating area', 'Enhanced dÃ©cor'],
             note: 'Although amenities remain similar to Classic Staterooms, the extra space can make longer cruises more comfortable.'
         },
         {
@@ -133,8 +133,8 @@ function UniworldCabinCategories() {
     ]
 
     const ucComparisonRows = [
-        { feature: 'Premium Bedding', values: ['✓', '✓', '✓', '✓', '✓'] },
-        { feature: 'Marble Bathroom', values: ['✓', '✓', '✓', '✓', '✓'] },
+        { feature: 'Premium Bedding', values: ['âœ“', 'âœ“', 'âœ“', 'âœ“', 'âœ“'] },
+        { feature: 'Marble Bathroom', values: ['âœ“', 'âœ“', 'âœ“', 'âœ“', 'âœ“'] },
         { feature: 'Sitting Area', values: ['Limited', 'Small', 'Moderate', 'Moderate', 'Large'] },
         { feature: 'River Views', values: ['Standard', 'Better', 'Excellent', 'Premium', 'Premium'] },
         { feature: 'French Balcony', values: ['No', 'No', 'Yes', 'Yes', 'Varies'] },
@@ -162,7 +162,7 @@ function UniworldCabinCategories() {
 
     const ucKeyTakeaways = [
         'Uniworld offers accommodation options ranging from Classic Staterooms to luxury Suites.',
-        'Every cabin includes premium amenities and boutique-style décor.',
+        'Every cabin includes premium amenities and boutique-style dÃ©cor.',
         'French Balcony rooms are popular for panoramic river views.',
         'Suites provide additional space, luxury amenities, and butler service.',
         'Choosing the right cabin depends on budget, itinerary, and onboard preferences.',
@@ -214,7 +214,7 @@ function UniworldCabinCategories() {
     }
 
     return (
-        <>
+        <div className="uwc-page">
             <Helmet>
                 <title>Uniworld Cabin Categories Explained</title>
                 <meta name="title" content="Uniworld Cabin Categories Explained" />
@@ -225,14 +225,13 @@ function UniworldCabinCategories() {
 
             <Navbar />
 
-            {/* ── HERO ── */}
             <section className="uwc-hero-section">
                 <div className="uwc-hero-gradient-bg"></div>
                 <div className="uwc-hero-overlay-layer"></div>
                 <div className="uwc-hero-content-wrapper">
                     <div className="uwc-hero-eyebrow-tag">
                         <Anchor size={16} />
-                        <span>Uniworld River Cruises · Trips &amp; Ships Luxury Travel</span>
+                        <span>Uniworld River Cruises Â· Trips &amp; Ships Luxury Travel</span>
                     </div>
                     <h1 className="uwc-hero-main-title">Uniworld Cabin Categories Explained</h1>
                     <p className="uwc-hero-subtitle-text">
@@ -241,7 +240,6 @@ function UniworldCabinCategories() {
                 </div>
             </section>
 
-            {/* ── INTRO ── */}
             <section className="uwc-intro-section">
                 <div className="uwc-intro-grid">
                     <div className="uwc-intro-left">
@@ -271,7 +269,6 @@ function UniworldCabinCategories() {
                 </div>
             </section>
 
-            {/* ── CABIN CATEGORY TABS ── */}
             <section className="uwc-categories-section">
                 <div className="uwc-categories-container">
                     <div style={{ textAlign: 'center' }}>
@@ -357,7 +354,6 @@ function UniworldCabinCategories() {
                 </div>
             </section>
 
-            {/* ── BUTLER SERVICE ── */}
             <section className="uwc-butler-section">
                 <div className="uwc-butler-bg"></div>
                 <div className="uwc-butler-container">
@@ -393,7 +389,6 @@ function UniworldCabinCategories() {
                 </div>
             </section>
 
-            {/* ── AMENITIES IN EVERY CABIN ── */}
             <section className="uwc-amenities-section">
                 <div className="uwc-amenities-container">
                     <div className="uwc-amenities-grid">
@@ -424,7 +419,6 @@ function UniworldCabinCategories() {
                 </div>
             </section>
 
-            {/* ── COMPARISON TABLE ── */}
             <section className="uwc-comparison-section">
                 <div className="uwc-comparison-container">
                     <div style={{ textAlign: 'center' }}>
@@ -448,7 +442,7 @@ function UniworldCabinCategories() {
                                     <tr key={ri}>
                                         <td className="uwc-compare-td-feature">{row.feature}</td>
                                         {row.values.map((val, vi) => {
-                                            const isCheck = val === '✓';
+                                            const isCheck = val === 'âœ“';
                                             const isNo = val === 'No';
                                             const isYes = val === 'Yes';
                                             return (
@@ -468,7 +462,6 @@ function UniworldCabinCategories() {
                 </div>
             </section>
 
-            {/* ── HOW TO CHOOSE ── */}
             <section className="uwc-choose-section">
                 <div className="uwc-choose-container">
                     <div style={{ textAlign: 'center' }}>
@@ -500,7 +493,6 @@ function UniworldCabinCategories() {
                 </div>
             </section>
 
-            {/* ── IS UPGRADING WORTH IT ── */}
             <section className="uwc-upgrade-section">
                 <div className="uwc-upgrade-container">
                     <div className="uwc-upgrade-grid">
@@ -528,7 +520,6 @@ function UniworldCabinCategories() {
                 </div>
             </section>
 
-            {/* ── TIPS BEFORE BOOKING ── */}
             <section className="uwc-tips-section">
                 <div className="uwc-tips-container">
                     <span className="uwc-eyebrow uwc-eyebrow-light">BEFORE YOU BOOK</span>
@@ -562,7 +553,6 @@ function UniworldCabinCategories() {
                 </div>
             </section>
 
-            {/* ── KEY TAKEAWAYS ── */}
             <section className="uwc-takeaways-section">
                 <div className="uwc-takeaways-container">
                     <div style={{ textAlign: 'center' }}>
@@ -581,7 +571,6 @@ function UniworldCabinCategories() {
                 </div>
             </section>
 
-            {/* ── ANGELA HUGHES EXPERT INSIGHT ── */}
             <section className="uwc-expert-insight-section">
                 <div className="uwc-categories-container">
                     <div className="uwc-expert-insight-grid">
@@ -607,7 +596,7 @@ function UniworldCabinCategories() {
                             <p className="uwc-expert-quote">
                                 "Uniworld stateroom categories are designed to be straightforward. The biggest variance is layout and size, but boutique comfort remains high. Always evaluate how much time you will spend in your room before upgrading."
                             </p>
-                            <div className="cab-expert-priorities">
+                            <div className="uwc-expert-priorities">
                                 <h5>Category Prioritization Matrix:</h5>
                                 <div className="uwc-expert-pills">
                                     {['Classic Comfort', 'Deluxe Floor Plan', 'Balcony Amenities', 'Butler Service Perks', 'Layout Functionality', 'Bespoke Furnishings'].map(pill => (
@@ -626,7 +615,6 @@ function UniworldCabinCategories() {
                 </div>
             </section>
 
-            {/* ── FAQ ── */}
             <section className="uwc-faq-section">
                 <div className="uwc-faq-container">
                     <div style={{ textAlign: 'center' }}>
@@ -642,7 +630,7 @@ function UniworldCabinCategories() {
                             >
                                 <div className="uwc-faq-question-row">
                                     <span>{faq.question}</span>
-                                    <span className="uwc-faq-toggle-icon">{uwcActiveFaq === index ? '−' : '+'}</span>
+                                    <span className="uwc-faq-toggle-icon">{uwcActiveFaq === index ? 'âˆ’' : '+'}</span>
                                 </div>
                                 {uwcActiveFaq === index && (
                                     <p className="uwc-faq-answer-text">{faq.answer}</p>
@@ -653,7 +641,6 @@ function UniworldCabinCategories() {
                 </div>
             </section>
 
-            {/* ── CTA ── */}
             <section className="uwc-cta-section">
                 <div className="uwc-cta-aurora-glow"></div>
                 <div className="uwc-cta-crystal uwc-cta-crystal-1"></div>
@@ -680,7 +667,7 @@ function UniworldCabinCategories() {
                     </div>
                 </div>
             </section>
-        </>
+        </div>
     )
 }
 

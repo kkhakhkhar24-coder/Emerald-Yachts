@@ -267,7 +267,8 @@ function UniworldRiverCruiseCost() {
 
             <Navbar />
 
-            {/* ── HERO SECTION ── */}
+            <div className="ucc-page">
+
             <section className="ucc-hero-section">
                 <div className="ucc-hero-placeholder"></div>
                 <div className="ucc-hero-content-wrapper">
@@ -282,7 +283,6 @@ function UniworldRiverCruiseCost() {
                 </div>
             </section>
 
-            {/* ── INTRO SECTION (GRID) ── */}
             <section className="ucc-intro-section">
                 <div className="ucc-intro-container">
                     <div className="ucc-intro-grid">
@@ -305,11 +305,10 @@ function UniworldRiverCruiseCost() {
                 </div>
             </section>
 
-            {/* ── TYPICAL PRICE RANGE (GRID) ── */}
             <section className="ucc-price-section ucc-bg-blue-tint">
                 <div className="ucc-price-container">
                     <span className="ucc-eyebrow">ESTIMATED FARES</span>
-                    <h2 className="ucc-section-heading" style={{ textAlign: 'center' }}>Typical Uniworld River Cruise Price Range</h2>
+                    <h2 className="ucc-section-heading" style={{ textAlign: 'center' }}>Typical Uniworld River Cruise <br /> Price Range</h2>
                     <div className="ucc-heading-separator-bar ucc-bar-centered"></div>
                     <p className="ucc-price-intro">Cruise fares vary significantly based on itinerary duration, destination, cabin category, and season. Below are average starting prices per person.</p>
 
@@ -337,7 +336,6 @@ function UniworldRiverCruiseCost() {
                 </div>
             </section>
 
-            {/* ── PRICING FACTORS (TABBED) ── */}
             <section className="ucc-factors-section">
                 <div className="ucc-factors-container">
                     <span className="ucc-eyebrow">PRICING FACTORS</span>
@@ -347,7 +345,6 @@ function UniworldRiverCruiseCost() {
 
                     <div className="ucc-factors-dashboard">
 
-                        {/* ── LEFT: Vertical Step Menu ── */}
                         <div className="ucc-factors-tabs">
                             {uccFactors.map((factor, idx) => {
                                 const Icon = factor.icon
@@ -368,7 +365,6 @@ function UniworldRiverCruiseCost() {
                             })}
                         </div>
 
-                        {/* ── RIGHT: Detail Panel ── */}
                         <div className="ucc-factor-panel">
                             <div className="ucc-factor-panel-inner">
 
@@ -382,7 +378,7 @@ function UniworldRiverCruiseCost() {
                                             <p className="ucc-factor-panel-label" style={{ color: 'rgba(255, 255, 255, 0.7)', border: 'none', margin: '0 0 4px', padding: 0 }}>
                                                 FACTOR {String(uccSelectedFactor + 1).padStart(2, '0')} OF {uccFactors.length}
                                             </p>
-                                            <h3 className="ucc-factor-panel-title" style={{ color: '#fff', margin: 0, fontSize: '26px', fontWeight: '800' }}>
+                                            <h3 className="ucc-factor-panel-title" style={{ color: '#fff', margin: 0 }}>
                                                 {uccFactors[uccSelectedFactor].title}
                                             </h3>
                                         </div>
@@ -465,7 +461,6 @@ function UniworldRiverCruiseCost() {
                 </div>
             </section>
 
-            {/* ── WHAT'S INCLUDED IN FARE ── */}
             <section className="ucc-feature-section ucc-bg-azure">
                 <div className="ucc-feature-container">
                     <div className="ucc-feature-grid ucc-reverse">
@@ -496,7 +491,6 @@ function UniworldRiverCruiseCost() {
                 </div>
             </section>
 
-            {/* ── ADDITIONAL COSTS ── */}
             <section className="ucc-costs-section ucc-bg-alabaster">
                 <div className="ucc-costs-container">
                     <span className="ucc-eyebrow">BUDGET PLANNING</span>
@@ -531,7 +525,6 @@ function UniworldRiverCruiseCost() {
                 </div>
             </section>
 
-            {/* ── AVERAGE COST FOR COUPLES ── */}
             <section className="ucc-couples-section">
                 <div className="ucc-couples-container">
                     <span className="ucc-eyebrow">COUPLES PRICING</span>
@@ -542,13 +535,11 @@ function UniworldRiverCruiseCost() {
                     <div className="ucc-couples-grid">
                         {uccCoupleCost.map((row, idx) => (
                             <div key={idx} className="ucc-couple-card">
-                                {/* Card Top — navy header */}
                                 <div className="ucc-couple-card-header">
                                     <div className="ucc-couple-icon"><Clock size={20} /></div>
                                     <span className="ucc-couple-length">{row.length}</span>
                                     <div className="ucc-couple-users"><Users size={13} /><span>Per Couple</span></div>
                                 </div>
-                                {/* Card Bottom — price row */}
                                 <div className="ucc-couple-card-body">
                                     <div className="ucc-couple-price-row">
                                         <span className="ucc-couple-label">Est. Cost</span>
@@ -567,7 +558,6 @@ function UniworldRiverCruiseCost() {
                 </div>
             </section>
 
-            {/* ── WORTH THE PRICE ── */}
             <section className="ucc-value-section">
                 <div className="ucc-value-container">
                     <div className="ucc-value-grid-split">
@@ -607,7 +597,6 @@ function UniworldRiverCruiseCost() {
                 </div>
             </section>
 
-            {/* ── BEST DEALS ── */}
             <section className="ucc-deals-section">
                 <div className="ucc-deals-container">
                     <span className="ucc-eyebrow">SAVING STRATEGIES</span>
@@ -643,11 +632,10 @@ function UniworldRiverCruiseCost() {
                 </div>
             </section>
 
-            {/* ── COMPARISON ── */}
             <section className="ucc-comparison-section ucc-bg-slate">
                 <div className="ucc-comparison-container">
                     <span className="ucc-eyebrow">HOW UNIWORLD COMPARES</span>
-                    <h2 className="ucc-section-heading" style={{ textAlign: 'center' }}>Comparing Uniworld with Other Luxury River Cruise Lines</h2>
+                    <h2 className="ucc-section-heading" style={{ textAlign: 'center' }}>Comparing Uniworld with Other <br /> Luxury River Cruise Lines</h2>
                     <div className="ucc-heading-separator-bar ucc-bar-centered"></div>
                     <p className="ucc-comparison-intro">Comparing included services rather than base fares provides a more accurate measure of overall value.</p>
 
@@ -679,7 +667,6 @@ function UniworldRiverCruiseCost() {
                 </div>
             </section>
 
-            {/* ── CHEAPEST TIME TO BOOK ── */}
             <section className="ucc-timing-section">
                 <div className="ucc-timing-container">
                     <span className="ucc-eyebrow">TIMING YOUR BOOKING</span>
@@ -708,7 +695,6 @@ function UniworldRiverCruiseCost() {
                 </div>
             </section>
 
-            {/* ── BUDGETING TIPS ── */}
             <section className="ucc-feature-section ucc-bg-soft">
                 <div className="ucc-feature-container">
                     <div className="ucc-feature-grid">
@@ -738,7 +724,6 @@ function UniworldRiverCruiseCost() {
                 </div>
             </section>
 
-            {/* ── KEY TAKEAWAYS ── */}
             <section className="ucc-takeaways-section">
                 <div className="ucc-takeaways-container">
                     <h2 className="ucc-section-heading" style={{ textAlign: 'center' }}>Key Takeaways</h2>
@@ -754,50 +739,49 @@ function UniworldRiverCruiseCost() {
                 </div>
             </section>
 
-            {/* ── ANGELA HUGHES EXPERT INSIGHT ── */}
-            <section className="luxe-expert-insight-section">
-                <div className="luxe-expert-insight-container">
+            <section className="ucc-expert-section">
+                <div className="ucc-expert-container">
 
                     {/* Left Column: Portrait & Stats Grid */}
-                    <div className="luxe-expert-portrait-panel">
-                        <div className="luxe-expert-img-frame">
-                            <img src={Profile_Picture_AH} alt="Angela Hughes - Luxury River Cruise Cost Expert" className="luxe-expert-img" />
-                            <div className="luxe-expert-img-overlay"></div>
-                            <span className="luxe-expert-badge">EXPERT ADVISOR</span>
+                    <div className="ucc-expert-portrait-panel">
+                        <div className="ucc-expert-img-frame">
+                            <img src={Profile_Picture_AH} alt="Angela Hughes - Luxury River Cruise Cost Expert" className="ucc-expert-img" />
+                            <div className="ucc-expert-img-overlay"></div>
+                            <span className="ucc-expert-badge">EXPERT ADVISOR</span>
                         </div>
-                        <div className="luxe-expert-stats-strip">
-                            <div className="luxe-expert-stat-box">
-                                <div className="luxe-expert-stat-num">40+</div>
-                                <div className="luxe-expert-stat-lbl">Years Experience</div>
+                        <div className="ucc-expert-stats-strip">
+                            <div className="ucc-expert-stat-box">
+                                <div className="ucc-expert-stat-num">40+</div>
+                                <div className="ucc-expert-stat-lbl">Years Experience</div>
                             </div>
-                            <div className="luxe-expert-stat-box">
-                                <div className="luxe-expert-stat-num">121+</div>
-                                <div className="luxe-expert-stat-lbl">Countries Visited</div>
+                            <div className="ucc-expert-stat-box">
+                                <div className="ucc-expert-stat-num">121+</div>
+                                <div className="ucc-expert-stat-lbl">Countries Visited</div>
                             </div>
                         </div>
                     </div>
 
                     {/* Right Column: Insight Editorial Panel */}
-                    <div className="luxe-expert-content-panel">
-                        <div className="luxe-expert-eyebrow-row">
+                    <div className="ucc-expert-content-panel">
+                        <div className="ucc-expert-eyebrow-row">
                             <Sparkles size={16} />
-                            <span className="luxe-eyebrow">MEET THE CEO</span>
+                            <span className="ucc-expert-eyebrow">MEET THE CEO</span>
                         </div>
-                        <h2 className="medi-section-heading1">Insight from Angela Hughes</h2>
-                        <div className="medi-heading-separator-bar"></div>
+                        <h2 className="ucc-expert-heading">Insight from Angela Hughes</h2>
+                        <div className="ucc-expert-heading-bar"></div>
 
-                        <div className="luxe-expert-quote-card">
-                            <span className="luxe-expert-quote-mark">“</span>
-                            <p className="luxe-expert-quote-text">
+                        <div className="ucc-expert-quote-card">
+                            <span className="ucc-expert-quote-mark">“</span>
+                            <p className="ucc-expert-quote-text">
                                 When my clients compare Uniworld's pricing to a traditional luxury holiday, they quickly realize the math works in their favor. Once you factor in what's included, the per-day value is extraordinary.
                             </p>
                         </div>
 
-                        <div className="luxe-expert-priorities">
-                            <h5 className="luxe-priorities-title">Angela's Value Priorities Matrix:</h5>
-                            <div className="luxe-expert-pills">
+                        <div className="ucc-expert-priorities">
+                            <h5 className="ucc-expert-priorities-title">Angela's Value Priorities Matrix:</h5>
+                            <div className="ucc-expert-pills">
                                 {['All-Inclusive Fares', 'Premium Cabin Selection', 'Early Booking Savings', 'Shoulder Season Value', 'Group Discounts', 'Solo Supplements'].map(pill => (
-                                    <span key={pill} className="luxe-expert-pill">
+                                    <span key={pill} className="ucc-expert-pill">
                                         <CheckCircle size={12} />
                                         <span>{pill}</span>
                                     </span>
@@ -805,8 +789,8 @@ function UniworldRiverCruiseCost() {
                             </div>
                         </div>
 
-                        <div className="luxe-expert-footer-bio">
-                            <p className="luxe-expert-bio">
+                        <div className="ucc-expert-footer-bio">
+                            <p className="ucc-expert-bio">
                                 As founder of Luxury Travel University and CEO of Trips &amp; Ships Luxury Travel, Angela Hughes uses her personal, deep connections in the river cruising world to deliver custom travel planning that regular booking engines simply cannot replicate.
                             </p>
                         </div>
@@ -815,7 +799,6 @@ function UniworldRiverCruiseCost() {
                 </div>
             </section>
 
-            {/* ── FAQ ── */}
             <section className="ucc-faq-section">
                 <div className="ucc-faq-container">
                     <div style={{ textAlign: 'center' }}>
@@ -842,7 +825,6 @@ function UniworldRiverCruiseCost() {
                 </div>
             </section>
 
-            {/* ── CTA ── */}
             <section className="ucc-cta-redesign-section">
                 <div className="ucc-cta-aurora-glow"></div>
                 <div className="ucc-cta-crystal ucc-cta-crystal-1"></div>
@@ -873,6 +855,7 @@ function UniworldRiverCruiseCost() {
                     </div>
                 </div>
             </section>
+            </div>
         </>
     )
 }

@@ -157,15 +157,6 @@ function UniworldSoloTravel() {
         { question: 'Is Uniworld worth the cost for solo travelers?', answer: 'Many solo travelers find the all-inclusive amenities, guided experiences, and luxury service provide excellent overall value despite any applicable single supplement.' }
     ]
 
-    const ustInternalLinks = [
-        { text: 'First-Time Uniworld River Cruise Guide', url: '/uniworld-river-cruises/first-time-guide/' },
-        { text: 'Best Uniworld Cabins', url: '/uniworld-river-cruises/best-cabins/' },
-        { text: 'Uniworld Cabin Categories', url: '/uniworld-river-cruises/cabin-categories/' },
-        { text: 'What Is Included on a Uniworld River Cruise', url: '/uniworld-river-cruises/whats-included/' },
-        { text: 'Uniworld Dress Code and Packing Guide', url: '/uniworld-river-cruises/dress-code-packing/' },
-        { text: 'Best Uniworld River Cruise Itineraries', url: '/uniworld-river-cruises/best-itineraries/' }
-    ]
-
     const ustSchemaData = {
         "@context": "https://schema.org",
         "@graph": [
@@ -223,24 +214,24 @@ function UniworldSoloTravel() {
             <Navbar />
 
             {/* ── HERO ── */}
-            <section className="medi-hero-section">
+            <section className="ust-hero-section">
                 {ustHeroImages.map((img, idx) => (
                     <div
                         key={idx}
-                        className={`medi-hero-background ${ustCurrentHero === idx ? 'medi-active' : ''}`}
+                        className={`ust-hero-background ${ustCurrentHero === idx ? 'ust-active' : ''}`}
                         style={{ backgroundImage: `url(${img})` }}
                     />
                 ))}
-                <div className="medi-hero-overlay-layer"></div>
-                <div className="medi-hero-content-wrapper">
-                    <div className="medi-hero-eyebrow-tag">
+                <div className="ust-hero-overlay-layer"></div>
+                <div className="ust-hero-content-wrapper">
+                    <div className="ust-hero-eyebrow-tag">
                         <Anchor size={16} />
                         <span>Uniworld River Cruises · Trips &amp; Ships Luxury Travel</span>
                     </div>
-                    <h1 className="medi-hero-main-title">
+                    <h1 className="ust-hero-main-title">
                         Uniworld Solo River Cruises and Single Supplement Guide
                     </h1>
-                    <p className="medi-hero-subtitle-text">
+                    <p className="ust-hero-subtitle-text">
                         Your complete guide to solo river cruising with Uniworld — cabins, costs, safety, and expert tips.
                     </p>
                 </div>
@@ -252,7 +243,7 @@ function UniworldSoloTravel() {
                     <div className="ust-intro-top-row">
                         <span className="ust-eyebrow">SOLO TRAVEL GUIDE</span>
                         <h2 className="ust-intro-heading">Is Uniworld a Good Choice for Solo Travelers?</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <div className="ust-heading-separator-bar ust-bar-centered"></div>
                     </div>
                     <div className="ust-intro-grid">
                         <div className="ust-intro-text-col">
@@ -285,7 +276,7 @@ function UniworldSoloTravel() {
                     <div className="ust-benefits-header">
                         <span className="ust-eyebrow">WHY CHOOSE UNIWORLD</span>
                         <h2 className="ust-benefits-heading">Benefits for Solo Travelers</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <div className="ust-heading-separator-bar ust-bar-centered"></div>
                     </div>
                     <div className="ust-benefits-grid">
                         {ustBenefits.map(({ Icon, label, desc }, idx) => (
@@ -316,8 +307,8 @@ function UniworldSoloTravel() {
                     <div className="ust-supplement-grid">
                         <div className="ust-supplement-text-col">
                             <span className="ust-eyebrow">UNDERSTANDING COSTS</span>
-                            <h2 className="medi-section-heading">Understanding the Single Supplement</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="ust-section-heading">Understanding the Single Supplement</h2>
+                            <div className="ust-heading-separator-bar"></div>
                             <p className="ust-supplement-lead">A single supplement is an additional charge applied when one traveler occupies a cabin designed for two guests.</p>
                             <p className="ust-supplement-body">The supplement helps offset the revenue that would normally come from double occupancy. However, the exact supplement varies by itinerary, sailing dates, cabin category, and available promotions.</p>
                             <div className="ust-supplement-factors">
@@ -352,7 +343,7 @@ function UniworldSoloTravel() {
                     <div className="ust-cabins-header">
                         <span className="ust-eyebrow">ACCOMMODATIONS</span>
                         <h2 className="ust-cabins-heading">Choosing the Best Cabin as a Solo Traveler</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <div className="ust-heading-separator-bar ust-bar-centered"></div>
                         <p className="ust-cabins-intro">Solo travelers have several accommodation options depending on budget and preferences.</p>
                     </div>
                     <div className="ust-cabins-grid">
@@ -387,8 +378,8 @@ function UniworldSoloTravel() {
                     <div className="ust-dining-grid">
                         <div className="ust-dining-text-col">
                             <span className="ust-eyebrow">ONBOARD EXPERIENCE</span>
-                            <h2 className="medi-section-heading">Dining as a Solo Guest</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="ust-section-heading">Dining as a Solo Guest</h2>
+                            <div className="ust-heading-separator-bar"></div>
                             <p className="ust-dining-lead">Dining is often one of the easiest ways to meet other guests.</p>
                             <p className="ust-dining-body">Uniworld generally offers a welcoming dining environment where solo guests feel comfortable. Guests who prefer privacy can also enjoy quieter dining experiences.</p>
                             <div className="ust-dining-features">
@@ -420,7 +411,7 @@ function UniworldSoloTravel() {
                     <div className="ust-excursions-header">
                         <span className="ust-eyebrow">EXPLORE ASHORE</span>
                         <h2 className="ust-excursions-heading">Shore Excursions for Solo Travelers</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <div className="ust-heading-separator-bar ust-bar-centered"></div>
                         <p className="ust-excursions-intro">Included excursions make independent travel much easier. Popular activities include:</p>
                     </div>
                     <div className="ust-excursions-grid">
@@ -468,8 +459,8 @@ function UniworldSoloTravel() {
                     <div className="ust-safety-grid">
                         <div className="ust-safety-text-col">
                             <span className="ust-eyebrow">TRAVEL WITH CONFIDENCE</span>
-                            <h2 className="medi-section-heading">Safety While Traveling Alone</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="ust-section-heading">Safety While Traveling Alone</h2>
+                            <div className="ust-heading-separator-bar"></div>
                             <p className="ust-safety-lead">River cruises are widely regarded as one of the safest ways to travel independently.</p>
                             <div className="ust-safety-features">
                                 {ustSafetyFeatures.map((item, idx) => (
@@ -503,8 +494,8 @@ function UniworldSoloTravel() {
                 <div className="ust-social-container">
                     <div className="ust-social-header">
                         <span className="ust-eyebrow ust-eyebrow-light">CONNECT &amp; SOCIALIZE</span>
-                        <h2 className="medi-section-heading ust-white-heading">Meeting Other Travelers</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered ust-separator-white"></div>
+                        <h2 className="ust-section-heading ust-white-heading">Meeting Other Travelers</h2>
+                        <div className="ust-heading-separator-bar ust-bar-centered ust-separator-white"></div>
                         <p className="ust-social-intro">Solo guests often find it easy to socialize because of the intimate size of Uniworld ships. Natural opportunities include:</p>
                     </div>
                     <div className="ust-social-grid">
@@ -530,8 +521,8 @@ function UniworldSoloTravel() {
                     <div className="ust-value-grid">
                         <div className="ust-value-text-col">
                             <span className="ust-eyebrow">ALL-INCLUSIVE VALUE</span>
-                            <h2 className="medi-section-heading">Is Solo Travel More Expensive?</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="ust-section-heading">Is Solo Travel More Expensive?</h2>
+                            <div className="ust-heading-separator-bar"></div>
                             <p className="ust-value-lead">Traveling alone may cost more because of the single supplement. However, value remains strong because the cruise fare typically includes:</p>
                             <div className="ust-value-inclusions">
                                 {ustInclusions.map((item, idx) => (
@@ -573,8 +564,8 @@ function UniworldSoloTravel() {
                         </div>
                         <div className="ust-tips-text-col">
                             <span className="ust-eyebrow">PLAN SMART</span>
-                            <h2 className="medi-section-heading">Tips for Booking a Solo Cruise</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="ust-section-heading">Tips for Booking a Solo Cruise</h2>
+                            <div className="ust-heading-separator-bar"></div>
                             <p className="ust-tips-lead">Before reserving your cruise, consider these expert tips:</p>
                             <div className="ust-tips-list">
                                 {ustBookingTips.map((item, idx) => (
@@ -594,8 +585,8 @@ function UniworldSoloTravel() {
                 <div className="ust-packing-container">
                     <div className="ust-packing-header">
                         <span className="ust-eyebrow">PACKING SMART</span>
-                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Packing Tips for Solo Travelers</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <h2 className="ust-section-heading" style={{ textAlign: 'center' }}>Packing Tips for Solo Travelers</h2>
+                        <div className="ust-heading-separator-bar ust-bar-centered"></div>
                     </div>
                     <div className="ust-packing-grid">
                         {ustPackingList.map((item, idx) => (
@@ -646,23 +637,6 @@ function UniworldSoloTravel() {
                                 <CheckCircle size={18} className="ust-takeaway-icon" />
                                 <p>{item}</p>
                             </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* ── INTERNAL LINKS ── */}
-            <section className="ust-links-section">
-                <div className="ust-links-container">
-                    <span className="ust-eyebrow">CONTINUE PLANNING</span>
-                    <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Explore More Uniworld Guides</h2>
-                    <div className="medi-heading-separator-bar medi-bar-centered"></div>
-                    <div className="ust-links-grid">
-                        {ustInternalLinks.map((link, idx) => (
-                            <Link key={idx} to={link.url} className="ust-link-card">
-                                <span>{link.text}</span>
-                                <ArrowRight size={16} />
-                            </Link>
                         ))}
                     </div>
                 </div>
@@ -723,8 +697,8 @@ function UniworldSoloTravel() {
                 <div className="ust-faq-container">
                     <div style={{ textAlign: 'center' }}>
                         <span className="ust-eyebrow" style={{ display: 'block', textAlign: 'center' }}>QUESTIONS BEFORE YOU GO</span>
-                        <h2 className="medi-section-heading">Frequently Asked Questions</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <h2 className="ust-section-heading">Frequently Asked Questions</h2>
+                        <div className="ust-heading-separator-bar ust-bar-centered"></div>
                     </div>
                     <div className="ust-faq-list-wrapper">
                         {ustFaqs.map((faq, index) => (

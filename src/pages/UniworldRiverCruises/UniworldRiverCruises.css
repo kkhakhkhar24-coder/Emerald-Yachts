@@ -14,6 +14,14 @@
     --uni-border-soft: rgba(39, 68, 114, 0.08);
 }
 
+.urc-page {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.urc-page p {
+    font-size: 18px;
+}
+
 .urc-eyebrow {
     font-size: 11px;
     font-weight: 700;
@@ -50,7 +58,8 @@
 }
 
 .urc-section-heading {
-    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
     font-weight: 700;
     color: var(--uni-navy);
     margin: 0 0 18px 0;
@@ -244,7 +253,8 @@
 }
 
 .urc-hero-main-title {
-    font-size: 54px;
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
     font-weight: 700;
     line-height: 1.15;
     margin: 0 0 22px 0;
@@ -678,8 +688,8 @@
 }
 
 .urc-tab-dest-title {
+    font-family: 'Playfair Display', serif;
     font-size: 28px;
-    font-weight: 700;
     color: #ffffff;
     margin: 0 0 14px 0;
     letter-spacing: 0.01em;
@@ -1176,9 +1186,10 @@
 }
 
 .urc-dining-heading {
-    font-size: 34px;
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.25;
     margin: 0 0 12px 0;
     color: var(--uni-navy);
     text-align: center;
@@ -1930,8 +1941,9 @@
 }
 
 .urc-besttime-card-season {
-    font-size: 16px;
-    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
     color: var(--uni-navy);
 }
 
@@ -2329,8 +2341,9 @@
 }
 
 .urc-expert-stat-box h4 {
-    font-size: 28px;
-    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
     color: var(--uni-navy);
     margin-bottom: 2px;
 }
@@ -2359,7 +2372,7 @@
     margin-right: auto;
 }
 
-.urc-expert-quote {
+.urc-page .urc-expert-quote {
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 18px;
     line-height: 1.6;
@@ -2724,9 +2737,10 @@
 }
 
 .urc-cta-title {
+    font-family: 'Playfair Display', serif;
     font-size: 48px;
-    line-height: 1.12;
-    font-weight: 500;
+    line-height: 1.25;
+    font-weight: 700;
     color: #ffffff;
     margin: 0 0 14px;
     letter-spacing: -0.01em;
@@ -2853,8 +2867,16 @@
 
 @media (max-width: 1024px) {
 
+    .urc-page p {
+        font-size: 17px;
+    }
+
     .urc-hero-main-title {
-        font-size: 42px;
+        font-size: 32px;
+    }
+
+    .urc-section-heading {
+        font-size: 28px;
     }
 
     .urc-hero-subtitle-text {
@@ -3000,11 +3022,11 @@
     }
 
     .urc-dining-heading {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     .urc-cta-title {
-        font-size: 36px;
+        font-size: 28px;
     }
 
     .urc-cta-considerations-list {
@@ -3067,8 +3089,12 @@
         min-height: 480px;
     }
 
+    .urc-page p {
+        font-size: 16px;
+    }
+
     .urc-hero-main-title {
-        font-size: 30px;
+        font-size: 26px;
     }
 
     .urc-hero-subtitle-text {
@@ -3085,7 +3111,7 @@
     }
 
     .urc-section-heading {
-        font-size: 26px;
+        font-size: 24px;
     }
 
     .urc-why-list {
@@ -3152,7 +3178,7 @@
     }
 
     .urc-dining-heading {
-        font-size: 26px;
+        font-size: 24px;
     }
 
     .urc-dining-note {
@@ -3231,7 +3257,7 @@
     }
 
     .urc-cta-title {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .urc-cta-considerations-box {
@@ -3340,7 +3366,7 @@
 @media (max-width: 480px) {
 
     .urc-hero-main-title {
-        font-size: 24px;
+        font-size: 26px;
     }
 
     .urc-hero-subtitle-text {
@@ -3348,7 +3374,7 @@
     }
 
     .urc-section-heading {
-        font-size: 22px !important;
+        font-size: 24px !important;
     }
 
     .urc-expert-section {
@@ -3370,11 +3396,7 @@
     }
 
     .urc-expert-content-panel .urc-section-heading {
-        font-size: 28px !important;
-    }
-
-    .urc-expert-quote {
-        font-size: 16px;
+        font-size: 24px !important;
     }
 
     .urc-expert-container {
@@ -3387,11 +3409,11 @@
     }
 
     .urc-dining-heading {
-        font-size: 22px !important;
+        font-size: 24px !important;
     }
 
     .urc-cta-title {
-        font-size: 22px !important;
+        font-size: 24px !important;
     }
 
     .urc-destinations-grid {

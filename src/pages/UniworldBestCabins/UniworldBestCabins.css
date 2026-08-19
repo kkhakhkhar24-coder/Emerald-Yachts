@@ -3,7 +3,7 @@
    Self-contained styles for the "Best Uniworld Cabins and
    Cabins to Avoid" page. Palette and type mirror the existing
    Trips & Ships Luxury Travel design system (navy / soft blue /
-   charcoal — no gold, no accent yellows).
+   charcoal â€” no gold, no accent yellows).
    ============================================================= */
 
 .cab-page-root,
@@ -35,8 +35,8 @@
     --cab-bg-soft: #f6f8fb;
     --cab-bg-dark: #0f1c2e;
     --cab-bg-dark2: #16263e;
-    --cab-font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    --cab-font-heading: Georgia, 'Times New Roman', serif;
+    --cab-font-body: "Montserrat", sans-serif;
+    --cab-font-heading: "Playfair Display", Georgia, serif;
 
     box-sizing: border-box;
     font-family: var(--cab-font-body);
@@ -61,7 +61,6 @@
     box-sizing: border-box;
 }
 
-/* ── CONTAINERS & SHARED UTILITIES ─────────────────────────── */
 
 .cab-container {
     max-width: 1200px;
@@ -90,11 +89,11 @@
 }
 
 .cab-section-heading {
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 36px;
-    font-weight: 500;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 48px;
+    font-weight: 700;
     color: var(--cab-text-dark);
-    line-height: 1.2;
+    line-height: 1.25;
     margin: 0 0 16px 0;
 }
 
@@ -215,7 +214,6 @@
     font-weight: 500;
 }
 
-/* ── IMAGE PLACEHOLDER FRAME ───────────────────────────────── */
 
 .cab-img-frame {
     position: relative;
@@ -252,7 +250,6 @@
     line-height: 1.4;
 }
 
-/* ── HERO ───────────────────────────────────────────────────── */
 
 .cab-hero-section {
     position: relative;
@@ -311,9 +308,9 @@
 }
 
 .cab-hero-title {
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 52px;
-    font-weight: 500;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 60px;
+    font-weight: 700;
     color: #ffffff;
     margin: 0;
     line-height: 1.15;
@@ -328,7 +325,6 @@
     margin: 0;
 }
 
-/* ── INTRO ──────────────────────────────────────────────────── */
 
 .cab-intro-section {
     background: var(--cab-bg-white);
@@ -377,7 +373,6 @@
     box-shadow: none;
 }
 
-/* ── FACTORS ────────────────────────────────────────────────── */
 
 .cab-factors-section {
     background: var(--cab-bg-soft);
@@ -399,7 +394,6 @@
     align-items: start;
 }
 
-/* LEFT column — image */
 .cab-factors-image-col {
     position: relative;
 }
@@ -411,7 +405,6 @@
     box-shadow: 0 20px 50px rgba(15, 28, 46, 0.14);
 }
 
-/* RIGHT column — text + grid */
 .cab-factors-content-col {
     display: flex;
     flex-direction: column;
@@ -466,7 +459,6 @@
     margin: 40px 0 0 0;
 }
 
-/* ── FACTORS CALLOUT BANNER ─────────────────────────────────── */
 
 .cab-factors-callout {
     display: flex;
@@ -519,9 +511,7 @@
 }
 
 
-/* ── BEST FOR MOST TRAVELERS ───────────────────────────────── */
 
-/* ── BEST CABIN BY TRAVEL STYLE ────────────────────────────── */
 
 .cab-best-section {
     position: relative;
@@ -760,7 +750,6 @@
 }
 
 
-/* ── BEST VALUE ─────────────────────────────────────────────── */
 
 .cab-value-section {
     background: var(--cab-bg-soft);
@@ -887,7 +876,6 @@
     opacity: 0.7;
 }
 
-/* ── AVOID SECTION ──────────────────────────────────────────── */
 
 .cab-avoid-section {
     position: relative;
@@ -959,7 +947,7 @@
 }
 
 .cab-avoid-card-title {
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: var(--cab-font-heading);
     font-size: 17px;
     font-weight: 500;
     color: #ffffff;
@@ -1002,7 +990,6 @@
     border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-/* ── TABLE ──────────────────────────────────────────────────── */
 
 .cab-table-section {
     background: var(--cab-bg-white);
@@ -1058,7 +1045,6 @@
     border-radius: 20px;
 }
 
-/* ── UPGRADE ────────────────────────────────────────────────── */
 
 .cab-upgrade-section {
     position: relative;
@@ -1193,7 +1179,6 @@
     color: rgba(255, 255, 255, 0.75);
 }
 
-/* ── TIPS ───────────────────────────────────────────────────── */
 
 .cab-tips-section {
     background: var(--cab-bg-white);
@@ -1266,7 +1251,6 @@
     text-align: center;
 }
 
-/* ── MISTAKES ───────────────────────────────────────────────── */
 
 .cab-mistakes-section {
     position: relative;
@@ -1377,7 +1361,6 @@
     text-align: center;
 }
 
-/* ── FINAL / ARE THERE CABINS TO AVOID ─────────────────────── */
 
 .cab-final-section {
     position: relative;
@@ -1520,7 +1503,6 @@
     margin: 0;
 }
 
-/* ── ANGELA HUGHES EXPERT INSIGHT ──────────────────────────── */
 
 .cab-expert-insight-section {
     padding: 88px 0;
@@ -1576,10 +1558,10 @@
 }
 
 .cab-expert-stat-box h4 {
-    font-family: var(--cab-font-heading);
-    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
     font-weight: 700;
-    color: var(--cab-text-dark);
+    color: #3b82f6;
     margin: 0 0 2px 0;
 }
 
@@ -1647,7 +1629,6 @@
     margin: 0;
 }
 
-/* ── KEY TAKEAWAYS ──────────────────────────────────────────── */
 
 .cab-takeaways-section {
     background: var(--cab-bg-white);
@@ -1698,7 +1679,6 @@
     align-items: center;
 }
 
-/* ── FAQ ────────────────────────────────────────────────────── */
 
 .cab-faq-section {
     padding: 64px 20px;
@@ -1773,7 +1753,6 @@
     margin-bottom: 0;
 }
 
-/* ── EXPLORE MORE / INTERNAL LINKS ─────────────────────────── */
 
 .cab-related-section {
     background: var(--cab-bg-white);
@@ -1818,7 +1797,6 @@
     flex-shrink: 0;
 }
 
-/* ── RESOURCES / SEMANTIC TOPICS ───────────────────────────── */
 
 .cab-resources-section {
     background: var(--cab-bg-soft);
@@ -1864,7 +1842,6 @@
     flex-shrink: 0;
 }
 
-/* ── CTA ────────────────────────────────────────────────────── */
 
 .cab-cta-section {
     position: relative;
@@ -1973,8 +1950,8 @@
 .cab-cta-title {
     font-family: var(--cab-font-heading);
     font-size: 48px;
-    line-height: 1.12;
-    font-weight: 500;
+    line-height: 1.25;
+    font-weight: 700;
     color: #ffffff;
     margin: 0 0 14px;
     letter-spacing: -0.01em;
@@ -2058,7 +2035,19 @@
 
 @media (max-width: 1024px) {
     .cab-hero-title {
-        font-size: 42px;
+        font-size: 32px !important;
+    }
+
+    .cab-section-heading {
+        font-size: 28px !important;
+    }
+
+    .cab-cta-title {
+        font-size: 28px !important;
+    }
+
+    .cab-page-root p {
+        font-size: 17px;
     }
 
     .cab-best-carousel {
@@ -2144,7 +2133,7 @@
     }
 
     .cab-hero-title {
-        font-size: 32px;
+        font-size: 26px !important;
     }
 
     .cab-hero-subtitle {
@@ -2152,7 +2141,15 @@
     }
 
     .cab-section-heading {
-        font-size: 26px;
+        font-size: 24px !important;
+    }
+
+    .cab-cta-title {
+        font-size: 24px !important;
+    }
+
+    .cab-page-root p {
+        font-size: 16px;
     }
 
     .cab-intro-grid {
@@ -2204,7 +2201,7 @@
     }
 
     .cab-cta-title {
-        font-size: 36px;
+        font-size: 24px;
     }
 
     .cab-cta-crystal-1 { width: 54px; height: 54px; }
@@ -2267,7 +2264,7 @@
     }
 
     .cab-section-heading {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .cab-lead {
@@ -2291,7 +2288,7 @@
     }
 
     .cab-cta-title {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .cab-cta-subtitle {
@@ -2415,4 +2412,33 @@
     .cab-faq-question-row span {
         font-size: 15px;
     }
+}
+/* =============================================================
+   CAB PAGE ISOLATION & TYPOGRAPHY OVERRIDES
+   ============================================================= */
+
+.cab-page-root {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cab-page-root h3 {
+    font-family: 'Playfair Display', serif !important;
+}
+
+.cab-page-root p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.65;
+}
+
+.cab-page-root .cab-expert-quote {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.cab-page-root .cab-expert-stat-box p {
+    font-size: 13px;
+    font-weight: 500;
 }

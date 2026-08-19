@@ -7,7 +7,7 @@ import { Link } from 'react-router'
 import { useState, useEffect } from 'react'
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
-    ArrowRight, Compass, Sparkles, Anchor, Calendar, Gem,
+    Compass, Sparkles, Anchor, Calendar, Gem,
     ChevronRight, Crown, Phone, LayoutList, Heart, Utensils,
     Sun, Award, Moon, Globe, GraduationCap, BookOpen,
     Smile, Leaf, Eye, Shield, Ticket, Briefcase, Music,
@@ -120,24 +120,24 @@ export default function UniworldFamilyCruises() {
             <Navbar />
 
             {/* ── HERO ── */}
-            <section className="medi-hero-section">
+            <section className="ufc-hero-section">
                 {ufcHeroImages.map((img, idx) => (
                     <div
                         key={idx}
-                        className={`medi-hero-background ${ufcCurrentHero === idx ? 'medi-active' : ''}`}
+                        className={`ufc-hero-background ${ufcCurrentHero === idx ? 'ufc-active' : ''}`}
                         style={{ backgroundImage: `url(${img})` }}
                     />
                 ))}
-                <div className="medi-hero-overlay-layer"></div>
-                <div className="medi-hero-content-wrapper">
-                    <div className="medi-hero-eyebrow-tag">
+                <div className="ufc-hero-overlay-layer"></div>
+                <div className="ufc-hero-content-wrapper">
+                    <div className="ufc-hero-eyebrow-tag">
                         <Anchor size={16} />
                         <span>Uniworld River Cruises · Family Travel Guide</span>
                     </div>
-                    <h1 className="medi-hero-main-title">
+                    <h1 className="ufc-hero-main-title">
                         Uniworld Family River Cruises and Generations Collection
                     </h1>
-                    <p className="medi-hero-subtitle-text">
+                    <p className="ufc-hero-subtitle-text">
                         Discover how Uniworld brings families together through luxury river cruising, cultural immersion, and shared experiences across Europe's most beautiful waterways.
                     </p>
                 </div>
@@ -149,8 +149,8 @@ export default function UniworldFamilyCruises() {
                     <div className="ufc-intro-grid">
                         <div className="ufc-intro-text-col">
                             <span className="ufc-eyebrow">FAMILY RIVER CRUISING</span>
-                            <h2 className="medi-section-heading">A New Way for Families to Explore Europe Together</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="ufc-section-heading">A New Way for Families to Explore Europe Together</h2>
+                            <div className="ufc-heading-separator-bar"></div>
                             <p className="ufc-intro-lead">River cruising is no longer just for couples and retirees.</p>
                             <p className="ufc-intro-body">Through its Generations Collection, Uniworld Boutique River Cruises offers selected departures designed specifically for families, bringing together luxury accommodations, immersive cultural experiences, and activities that appeal to travelers of different ages.</p>
                             <p className="ufc-intro-body">Whether you're planning a multigenerational vacation with grandparents, parents, and children or simply looking for a unique family holiday in Europe, this guide explains how Uniworld Family River Cruises work, what to expect onboard, and how to choose the best itinerary.</p>
@@ -174,8 +174,8 @@ export default function UniworldFamilyCruises() {
                 <div className="ufc-generations-container">
                     <div className="ufc-generations-header">
                         <span className="ufc-eyebrow ufc-eyebrow-light">THE GENERATIONS COLLECTION</span>
-                        <h2 className="medi-section-heading ufc-white-heading">What Is the Uniworld Generations Collection?</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered ufc-separator-white"></div>
+                        <h2 className="ufc-section-heading ufc-white-heading">What Is the Uniworld Generations Collection?</h2>
+                        <div className="ufc-heading-separator-bar ufc-bar-centered ufc-separator-white"></div>
                     </div>
                     <p className="ufc-generations-intro">The Generations Collection is a selection of family-focused departures available on certain Uniworld itineraries during school holiday periods.</p>
                     <p className="ufc-generations-sub">These sailings are designed to balance luxury travel with engaging experiences for younger guests while maintaining the high service standards Uniworld is known for.</p>
@@ -206,8 +206,8 @@ export default function UniworldFamilyCruises() {
                     <div className="ufc-bestfor-grid">
                         <div className="ufc-bestfor-text-col">
                             <span className="ufc-eyebrow">IDEAL GUESTS</span>
-                            <h2 className="medi-section-heading">Who Are These Cruises Best For?</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="ufc-section-heading">Who Are These Cruises Best For?</h2>
+                            <div className="ufc-heading-separator-bar"></div>
                             <p className="ufc-bestfor-lead">The Generations Collection is ideal for:</p>
 
                             <div className="ufc-bestfor-list">
@@ -245,8 +245,8 @@ export default function UniworldFamilyCruises() {
                 <div className="ufc-destinations-container">
                     <div className="ufc-destinations-header">
                         <span className="ufc-eyebrow">POPULAR ITINERARIES</span>
-                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Family-Friendly Destinations</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <h2 className="ufc-section-heading" style={{ textAlign: 'center' }}>Family-Friendly Destinations</h2>
+                        <div className="ufc-heading-separator-bar ufc-bar-centered"></div>
                         <p className="ufc-destinations-intro">Several European itineraries are particularly well suited for families.</p>
                     </div>
 
@@ -310,8 +310,8 @@ export default function UniworldFamilyCruises() {
                         </div>
                         <div className="ufc-education-text-col">
                             <span className="ufc-eyebrow">LEARNING THROUGH TRAVEL</span>
-                            <h2 className="medi-section-heading">Educational Experiences</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="ufc-section-heading">Educational Experiences</h2>
+                            <div className="ufc-heading-separator-bar"></div>
                             <p className="ufc-education-lead">One of the biggest advantages of family river cruising is learning through travel.</p>
                             <p className="ufc-education-body">Children can experience:</p>
                             <div className="ufc-education-pillars">
@@ -339,8 +339,8 @@ export default function UniworldFamilyCruises() {
                 <div className="ufc-activities-container">
                     <div className="ufc-activities-header">
                         <span className="ufc-eyebrow ufc-eyebrow-light">YOUNG EXPLORERS</span>
-                        <h2 className="medi-section-heading ufc-white-heading">Activities for Younger Guests</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered ufc-separator-white"></div>
+                        <h2 className="ufc-section-heading ufc-white-heading">Activities for Younger Guests</h2>
+                        <div className="ufc-heading-separator-bar ufc-bar-centered ufc-separator-white"></div>
                         <p className="ufc-activities-intro">Depending on the sailing, children may enjoy:</p>
                     </div>
 
@@ -372,8 +372,8 @@ export default function UniworldFamilyCruises() {
                     <div className="ufc-dining-grid">
                         <div className="ufc-dining-text-col">
                             <span className="ufc-eyebrow">ONBOARD DINING</span>
-                            <h2 className="medi-section-heading">Dining for Families</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="ufc-section-heading">Dining for Families</h2>
+                            <div className="ufc-heading-separator-bar"></div>
                             <p className="ufc-dining-lead">Uniworld's dining experience is designed to accommodate travelers of all ages.</p>
                             <p className="ufc-dining-body">Families can typically expect:</p>
 
@@ -412,8 +412,8 @@ export default function UniworldFamilyCruises() {
                 <div className="ufc-cabins-container">
                     <div className="ufc-cabins-header">
                         <span className="ufc-eyebrow">ACCOMMODATIONS</span>
-                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Cabins for Families</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <h2 className="ufc-section-heading" style={{ textAlign: 'center' }}>Cabins for Families</h2>
+                        <div className="ufc-heading-separator-bar ufc-bar-centered"></div>
                         <p className="ufc-cabins-intro">Accommodation options depend on the ship.</p>
                     </div>
  
@@ -472,8 +472,8 @@ export default function UniworldFamilyCruises() {
                     <div className="ufc-why-grid">
                         <div className="ufc-why-text-col">
                             <span className="ufc-eyebrow">WHY RIVER CRUISING</span>
-                            <h2 className="medi-section-heading">Why Families Choose River Cruises</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="ufc-section-heading">Why Families Choose River Cruises</h2>
+                            <div className="ufc-heading-separator-bar"></div>
                             <p className="ufc-why-lead">Compared with large ocean cruises, river cruising offers:</p>
 
                             <div className="ufc-why-pillars">
@@ -541,8 +541,8 @@ export default function UniworldFamilyCruises() {
                     <div className="ufc-tips-grid">
                         <div className="ufc-tips-text-col">
                             <span className="ufc-eyebrow">PLANNING ADVICE</span>
-                            <h2 className="medi-section-heading">Tips for Planning a Family Cruise</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="ufc-section-heading">Tips for Planning a Family Cruise</h2>
+                            <div className="ufc-heading-separator-bar"></div>
                             <p className="ufc-tips-lead">Before booking:</p>
 
                             <div className="ufc-tips-list">
@@ -585,30 +585,6 @@ export default function UniworldFamilyCruises() {
                         <div className="ufc-worth-separator"></div>
                         <p className="ufc-worth-body">Families seeking educational travel, cultural immersion, and luxury accommodations often find the Generations Collection to be an excellent alternative to traditional resort vacations.</p>
                         <p className="ufc-worth-body">Instead of spending most of the trip onboard, guests enjoy exploring multiple destinations while returning each evening to the comfort of a boutique floating hotel.</p>
-                    </div>
-                </div>
-            </section>
-
-            {/* ── INTERNAL LINKS ── */}
-            <section className="ufc-links-section">
-                <div className="ufc-links-container">
-                    <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Explore More Uniworld Guides</h2>
-                    <div className="medi-heading-separator-bar medi-bar-centered"></div>
-
-                    <div className="ufc-links-grid">
-                        {[
-                            { text: 'First-Time Uniworld River Cruise Guide', url: '/uniworld-river-cruises/first-time-guide/' },
-                            { text: 'Best Uniworld River Cruise Itineraries', url: '/uniworld-river-cruises/best-itineraries/' },
-                            { text: 'What Is Included on a Uniworld River Cruise', url: '/uniworld-river-cruises/whats-included/' },
-                            { text: 'Uniworld Ships and Suites', url: '/uniworld-river-cruises/ships-suites/' },
-                            { text: 'Best Uniworld Cabins', url: '/uniworld-river-cruises/best-cabins/' },
-                            { text: 'Uniworld Food and Dining', url: '/uniworld-river-cruises/food-dining/' }
-                        ].map(({ text, url }, idx) => (
-                            <Link key={idx} to={url} className="ufc-link-card">
-                                <span>{text}</span>
-                                <ArrowRight size={16} />
-                            </Link>
-                        ))}
                     </div>
                 </div>
             </section>
@@ -663,25 +639,25 @@ export default function UniworldFamilyCruises() {
             </section>
 
             {/* ── FAQ ── */}
-            <section className="medi-faq-main-section">
-                <div className="medi-faq-container">
+            <section className="ufc-faq-main-section">
+                <div className="ufc-faq-container">
                     <div style={{ textAlign: 'center' }}>
-                        <h2 className="medi-section-heading">Frequently Asked Questions</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <h2 className="ufc-section-heading">Frequently Asked Questions</h2>
+                        <div className="ufc-heading-separator-bar ufc-bar-centered"></div>
                     </div>
-                    <div className="medi-faq-list-wrapper">
+                    <div className="ufc-faq-list-wrapper">
                         {ufcFaqs.map((faq, index) => (
                             <div
                                 key={index}
-                                className="medi-faq-individual-item"
+                                className="ufc-faq-individual-item"
                                 onClick={() => ufcToggleFaq(index)}
                             >
-                                <div className="medi-faq-question-row">
+                                <div className="ufc-faq-question-row">
                                     <span>{faq.question}</span>
-                                    <span className="medi-faq-toggle-icon">{ufcActiveFaq === index ? '−' : '+'}</span>
+                                    <span className="ufc-faq-toggle-icon">{ufcActiveFaq === index ? '−' : '+'}</span>
                                 </div>
                                 {ufcActiveFaq === index && (
-                                    <p className="medi-faq-answer-text">{faq.answer}</p>
+                                    <p className="ufc-faq-answer-text">{faq.answer}</p>
                                 )}
                             </div>
                         ))}
@@ -690,25 +666,25 @@ export default function UniworldFamilyCruises() {
             </section>
 
             {/* ── CTA ── */}
-            <section className="medi-cta-main-section">
-                <div className="medi-cta-bg-pattern-layer"></div>
-                <div className="medi-cta-content-relative">
-                    <div className="medi-cta-inner-wrapper">
-                        <h2 className="medi-cta-heading-white">Plan Your Family's Next Adventure</h2>
-                        <div className="medi-cta-separator-white"></div>
-                        <p className="medi-cta-paragraph-white">
+            <section className="ufc-cta-main-section">
+                <div className="ufc-cta-bg-pattern-layer"></div>
+                <div className="ufc-cta-content-relative">
+                    <div className="ufc-cta-inner-wrapper">
+                        <h2 className="ufc-cta-heading-white">Plan Your Family's Next Adventure</h2>
+                        <div className="ufc-cta-separator-white"></div>
+                        <p className="ufc-cta-paragraph-white">
                             Plan an unforgettable family vacation with Uniworld's Generations Collection by comparing itineraries, choosing family-friendly accommodations, and booking early for the best availability.
                         </p>
-                        <p className="medi-cta-paragraph-white" style={{ opacity: 0.95, maxWidth: '800px', margin: '0 auto 24px' }}>
+                        <p className="ufc-cta-paragraph-white" style={{ opacity: 0.95, maxWidth: '800px', margin: '0 auto 24px' }}>
                             With over four decades of luxury travel expertise, Angela Hughes and the team at Trips &amp; Ships Luxury Travel help families find the perfect river cruise experience.
                         </p>
 
-                        <div className="medi-cta-button-group">
-                            <Link to='/contact' className="medi-primary-cta-button">
+                        <div className="ufc-cta-button-group">
+                            <Link to='/contact' className="ufc-primary-cta-button">
                                 <Phone size={18} />
                                 Schedule a Consultation
                             </Link>
-                            <button className="medi-secondary-outline-button">
+                            <button className="ufc-secondary-outline-button">
                                 <LayoutList size={18} />
                                 Explore Family Cruises
                             </button>

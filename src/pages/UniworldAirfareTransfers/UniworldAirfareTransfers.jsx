@@ -113,15 +113,6 @@ function UniworldAirfareTransfers() {
         'Forget to notify the cruise line about delayed flights when necessary.'
     ]
 
-    const uafInternalLinks = [
-        { text: 'First-Time Uniworld River Cruise Guide', url: '/uniworld-river-cruises/first-time-guide/' },
-        { text: 'What Is Included on a Uniworld River Cruise', url: '/uniworld-river-cruises/whats-included/' },
-        { text: 'Uniworld Dress Code and Packing Guide', url: '/uniworld-river-cruises/dress-code-packing/' },
-        { text: 'Best Uniworld River Cruise Itineraries', url: '/uniworld-river-cruises/best-itineraries/' },
-        { text: 'Best Uniworld Cabins', url: '/uniworld-river-cruises/best-cabins/' },
-        { text: 'Uniworld Ships and Suites', url: '/uniworld-river-cruises/ships-suites/' }
-    ]
-
     const uafExternalRefs = [
         'Official Uniworld Boutique River Cruises',
         'International Air Transport Association (IATA)',
@@ -658,24 +649,6 @@ function UniworldAirfareTransfers() {
                 </div>
             </section>
 
-            {/* ── INTERNAL LINKS ── */}
-            <section className="uaf-links-section">
-                <div className="uaf-links-container">
-                    <span className="uaf-eyebrow">CONTINUE PLANNING</span>
-                    <h2 className="uaf-section-heading" style={{ textAlign: 'center' }}>Explore More Uniworld Guides</h2>
-                    <div className="uaf-heading-separator-bar uaf-bar-centered"></div>
-
-                    <div className="uaf-links-grid">
-                        {uafInternalLinks.map((link, idx) => (
-                            <Link key={idx} to={link.url} className="uaf-link-card">
-                                <span>{link.text}</span>
-                                <ArrowRight size={16} />
-                            </Link>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
             {/* ── ANGELA HUGHES EXPERT INSIGHT ── */}
             <section className="uaf-expert-insight-section">
                 <div className="uaf-expert-insight-container">
@@ -698,7 +671,7 @@ function UniworldAirfareTransfers() {
 
                     <div className="uaf-expert-content-panel">
                         <span className="uaf-eyebrow">MEET THE CEO</span>
-                        <h2 className="uaf-section-heading">Insight from Angela Hughes</h2>
+                        <h2 className="uaf-section-heading uaf-white-heading">Insight from Angela Hughes</h2>
                         <div className="uaf-heading-separator-bar"></div>
 
                         <p className="uaf-expert-quote">
@@ -753,28 +726,28 @@ function UniworldAirfareTransfers() {
             </section>
 
             {/* ── CTA ── */}
-            <section className="luxe-cta-section">
-                <div className="luxe-cta-aurora-glow"></div>
-                <div className="luxe-cta-crystal luxe-cta-crystal-1"></div>
-                <div className="luxe-cta-crystal luxe-cta-crystal-2"></div>
-                <div className="luxe-cta-crystal luxe-cta-crystal-3"></div>
-                <div className="luxe-cta-grid-lines"></div>
+            <section className="uaf-cta-section">
+                <div className="uaf-cta-aurora-glow"></div>
+                <div className="uaf-cta-crystal uaf-cta-crystal-1"></div>
+                <div className="uaf-cta-crystal uaf-cta-crystal-2"></div>
+                <div className="uaf-cta-crystal uaf-cta-crystal-3"></div>
+                <div className="uaf-cta-grid-lines"></div>
 
-                <div className="luxe-cta-content">
-                    <div className="luxe-cta-compass-ring">
+                <div className="uaf-cta-content">
+                    <div className="uaf-cta-compass-ring">
                         <Compass size={28} />
                     </div>
-                    <span className="luxe-cta-eyebrow">START SOMEWHERE REMARKABLE</span>
-                    <h2 className="luxe-cta-title">Ready to Plan Your Uniworld Journey?</h2>
-                    <div className="luxe-cta-bar"></div>
-                    <p className="luxe-cta-subtitle">
+                    <span className="uaf-cta-eyebrow">START SOMEWHERE REMARKABLE</span>
+                    <h2 className="uaf-cta-title">Ready to Plan Your Uniworld Journey?</h2>
+                    <div className="uaf-cta-bar"></div>
+                    <p className="uaf-cta-subtitle">
                         Plan your journey with confidence by arranging flights, airport transfers, and arrival logistics early so you can begin your Uniworld River Cruise relaxed and ready to explore.
                     </p>
-                    <div className="luxe-cta-actions">
-                        <Link to="/contact" className="luxe-cta-primary-btn">
+                    <div className="uaf-cta-actions">
+                        <Link to="/contact" className="uaf-cta-primary-btn">
                             <Phone size={18} />
                             <span>Schedule a Consultation</span>
-                            <ArrowRight size={16} className="luxe-cta-btn-arrow" />
+                            <ArrowRight size={16} className="uaf-cta-btn-arrow" />
                         </Link>
                     </div>
                 </div>

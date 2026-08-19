@@ -386,6 +386,8 @@ function UniworldRiverCruises() {
 
             <Navbar />
 
+            <div className="urc-page">
+
             {/* ── HERO ── */}
             <section className="urc-hero-section">
                 <UrcPlaceholder className="urc-hero-bg-placeholder" />
@@ -417,10 +419,10 @@ function UniworldRiverCruises() {
                             <p className="urc-why-sub">Key highlights:</p>
 
                             <div className="urc-why-list">
-                                {urcWhyChoose.map(({ Icon, text }, idx) => (
+                                {urcWhyChoose.map((item, idx) => (
                                     <div key={idx} className="urc-why-item">
-                                        <div className="urc-why-icon"><Icon size={17} /></div>
-                                        <span>{text}</span>
+                                        <div className="urc-why-icon"><item.Icon size={17} /></div>
+                                        <span>{item.text}</span>
                                     </div>
                                 ))}
                             </div>
@@ -439,7 +441,7 @@ function UniworldRiverCruises() {
                             <div className="urc-why-statement-box" style={{ marginTop: '24px' }}>
                                 <div className="urc-why-statement-accent"></div>
                                 <div className="urc-why-statement-text">
-                                    <p className="urc-why-statement-primary" style={{ fontSize: '14.5px', color: '#4a5568', lineHeight: 1.6 }}>
+                                    <p className="urc-why-statement-primary">
                                         Unlike large ocean cruises, Uniworld&apos;s intimate ships provide a relaxed atmosphere while docking directly in the heart of historic cities.
                                     </p>
                                 </div>
@@ -454,7 +456,7 @@ function UniworldRiverCruises() {
                 <div className="urc-destinations-container">
                     <div className="urc-destinations-header">
                         <span className="urc-eyebrow uni-eyebrow-light uni-eyebrow-center">WORLDWIDE ITINERARIES</span>
-                        <h2 className="urc-section-heading uni-white-heading" style={{ fontSize: '34px' }}>Destinations Covered by <br /> Uniworld River Cruises</h2>
+                        <h2 className="urc-section-heading uni-white-heading">Destinations Covered by <br /> Uniworld River Cruises</h2>
                         <div className="urc-heading-separator-bar uni-bar-centered uni-separator-white"></div>
                         <p className="urc-destinations-intro">From the heart of Europe to the Nile, the Ganges, and the Amazon, Uniworld&apos;s boutique ships unlock the world&apos;s most iconic waterways.</p>
                     </div>
@@ -570,10 +572,10 @@ function UniworldRiverCruises() {
                     </div>
 
                     <div className="urc-stateroom-row">
-                        {uniStateroomTypes.map(({ Icon, label }, idx) => (
+                        {uniStateroomTypes.map((item, idx) => (
                             <div key={idx} className="urc-stateroom-pill">
-                                <Icon size={16} />
-                                <span>{label}</span>
+                                <item.Icon size={16} />
+                                <span>{item.label}</span>
                             </div>
                         ))}
                     </div>
@@ -588,10 +590,10 @@ function UniworldRiverCruises() {
                         <div className="urc-suites-features-col">
                             <p className="urc-suites-features-label">Features often include:</p>
                             <div className="urc-suites-features-grid">
-                                {uniSuiteFeatures.map(({ Icon, text }, idx) => (
+                                {uniSuiteFeatures.map((item, idx) => (
                                     <div key={idx} className="urc-feature-card">
-                                        <div className="urc-feature-icon"><Icon size={20} /></div>
-                                        <span>{text}</span>
+                                        <div className="urc-feature-icon"><item.Icon size={20} /></div>
+                                        <span>{item.text}</span>
                                     </div>
                                 ))}
                             </div>
@@ -614,10 +616,10 @@ function UniworldRiverCruises() {
                             <p className="urc-dining-note" style={{ textAlign: 'left' }}>Dining emphasizes regional cuisine prepared using fresh ingredients sourced throughout each itinerary.</p>
 
                             <div className="urc-dining-points">
-                                {uniDining.map(({ Icon, text }, idx) => (
+                                {uniDining.map((item, idx) => (
                                     <div key={idx} className="urc-dining-point">
-                                        <div className="urc-dining-point-icon"><Icon size={18} /></div>
-                                        <span>{text}</span>
+                                        <div className="urc-dining-point-icon"><item.Icon size={18} /></div>
+                                        <span>{item.text}</span>
                                     </div>
                                 ))}
                             </div>
@@ -655,12 +657,12 @@ function UniworldRiverCruises() {
                     </div>
 
                     <div className="urc-included-grid">
-                        {uniIncluded.map(({ Icon, label }, idx) => (
+                        {uniIncluded.map((item, idx) => (
                             <div key={idx} className="urc-included-card">
                                 <div className="urc-included-icon-wrap">
-                                    <Icon size={20} />
+                                    <item.Icon size={20} />
                                 </div>
-                                <span className="urc-included-label">{label}</span>
+                                <span className="urc-included-label">{item.label}</span>
                             </div>
                         ))}
                     </div>
@@ -677,7 +679,7 @@ function UniworldRiverCruises() {
                 <div className="urc-excursions-container">
                     <div className="urc-excursions-header">
                         <span className="urc-eyebrow uni-eyebrow-center">GUIDED EXPERIENCES</span>
-                        <h2 className="urc-section-heading" style={{ textAlign: 'center', fontSize: '34px' }}>Shore Excursions</h2>
+                        <h2 className="urc-section-heading" style={{ textAlign: 'center' }}>Shore Excursions</h2>
                         <div className="urc-heading-separator-bar uni-bar-centered"></div>
                         <p className="urc-excursions-lead" style={{ textAlign: 'center' }}>Uniworld focuses on immersive local experiences led by knowledgeable guides.</p>
                     </div>
@@ -761,10 +763,10 @@ function UniworldRiverCruises() {
                             <p className="urc-service-sub">Guests can enjoy:</p>
 
                             <div className="urc-service-pillars">
-                                {uniWellness.map(({ Icon, text }, idx) => (
+                                {uniWellness.map((item, idx) => (
                                     <div key={idx} className="urc-service-pillar">
-                                        <div className="urc-service-pillar-icon"><Icon size={20} /></div>
-                                        <span className="urc-service-pillar-label">{text}</span>
+                                        <div className="urc-service-pillar-icon"><item.Icon size={20} /></div>
+                                        <span className="urc-service-pillar-label">{item.text}</span>
                                     </div>
                                 ))}
                             </div>
@@ -1073,6 +1075,7 @@ function UniworldRiverCruises() {
                 </div>
             </section>
 
+        </div>
         </>
     )
 }

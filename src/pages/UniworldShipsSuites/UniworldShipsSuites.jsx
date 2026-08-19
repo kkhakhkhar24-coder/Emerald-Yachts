@@ -275,12 +275,13 @@ function UniWorldShipsSuites() {
 
             <Navbar />
 
-            {/* ── HERO ── */}
+            <div className="uss-page">
+
             <section className="uss-hero-section">
                 {ussHeroImages.map((num, idx) => (
                     <div
                         key={idx}
-                        className={`uss-hero-background uni-hero-placeholder-bg ${ussCurrentHero === idx ? 'uni-active' : ''}`}
+                        className={`uss-hero-background uss-hero-placeholder-bg ${ussCurrentHero === idx ? 'uss-active' : ''}`}
                     >
                         <div className="uss-hero-placeholder-overlay">
                             <Image size={40} className="uss-placeholder-icon" />
@@ -303,7 +304,6 @@ function UniWorldShipsSuites() {
                 </div>
             </section>
 
-            {/* ── INTRO ── */}
             <section className="uss-intro-section">
                 <div className="uss-intro-container">
                     <div className="uss-intro-grid">
@@ -341,7 +341,6 @@ function UniWorldShipsSuites() {
                 </div>
             </section>
 
-            {/* ── FLEET ── */}
             <section className="uss-fleet-section">
                 <div className="uss-fleet-container">
                     <div className="uss-fleet-header">
@@ -396,7 +395,6 @@ function UniWorldShipsSuites() {
                 </div>
             </section>
 
-            {/* ── BOUTIQUE DESIGN ── */}
             <section className="uss-boutique-section">
                 <div className="uss-boutique-container">
                     <div className="uss-boutique-grid">
@@ -439,7 +437,6 @@ function UniWorldShipsSuites() {
                 </div>
             </section>
 
-            {/* ── STATEROOM CATEGORIES ── */}
             <section className="uss-cabins-section">
                 <div className="uss-cabins-container">
                     <div className="uss-cabins-header">
@@ -449,27 +446,26 @@ function UniWorldShipsSuites() {
                     </div>
 
                     <div className="uss-cabins-grid">
-                        {cabinSections.map(({ id, Icon, title, body, items, note }) => (
-                            <article key={id} className="uss-cabin-card">
-                                <div className="uss-cabin-card-icon"><Icon size={22} /></div>
-                                <h3 className="uss-cabin-card-title">{title}</h3>
-                                <p className="uss-cabin-card-body">{body}</p>
+                        {cabinSections.map((c) => (
+                            <article key={c.id} className="uss-cabin-card">
+                                <div className="uss-cabin-card-icon"><c.Icon size={22} /></div>
+                                <h3 className="uss-cabin-card-title">{c.title}</h3>
+                                <p className="uss-cabin-card-body">{c.body}</p>
                                 <ul className="uss-cabin-card-list">
-                                    {items.map((item, iIdx) => (
+                                    {c.items.map((item, iIdx) => (
                                         <li key={iIdx}>
                                             <ChevronRight size={13} className="uss-cabin-chevron" />
                                             <span>{item}</span>
                                         </li>
                                     ))}
                                 </ul>
-                                {note && <p className="uss-cabin-card-note">{note}</p>}
+                                {c.note && <p className="uss-cabin-card-note">{c.note}</p>}
                             </article>
                         ))}
                     </div>
                 </div>
             </section>
 
-            {/* ── LUXURY SUITES ── */}
             <section className="uss-suites-section">
                 <div className="uss-suites-container">
                     <div className="uss-suites-grid">
@@ -512,7 +508,6 @@ function UniWorldShipsSuites() {
                 </div>
             </section>
 
-            {/* ── BUTLER SERVICE ── */}
             <section className="uss-butler-section">
                 <div className="uss-butler-container">
                     <div className="uss-butler-side-by-side">
@@ -556,7 +551,6 @@ function UniWorldShipsSuites() {
                 </div>
             </section>
 
-            {/* ── ONBOARD AMENITIES ── */}
             <section className="uss-amenities-section">
                 <div className="uss-amenities-container">
                     <div className="uss-amenities-header">
@@ -566,11 +560,11 @@ function UniWorldShipsSuites() {
                     </div>
 
                     <div className="uss-amenities-grid">
-                        {amenityItems.map(({ label, Icon }, idx) => (
-                            <div key={label} className="uss-amenity-card">
-                                <div className="uss-amenity-num">0{idx + 1}</div>
-                                <div className="uss-amenity-icon"><Icon size={22} /></div>
-                                <h3 className="uss-amenity-label">{label}</h3>
+                        {amenityItems.map((a) => (
+                            <div key={a.label} className="uss-amenity-card">
+                                <div className="uss-amenity-num">0{amenityItems.indexOf(a) + 1}</div>
+                                <div className="uss-amenity-icon"><a.Icon size={22} /></div>
+                                <h3 className="uss-amenity-label">{a.label}</h3>
                             </div>
                         ))}
                     </div>
@@ -581,7 +575,6 @@ function UniWorldShipsSuites() {
                 </div>
             </section>
 
-            {/* ── CABIN COMPARISON ── */}
             <section className="uss-compare-section">
                 <div className="uss-compare-container">
                     <div className="uss-compare-header">
@@ -591,7 +584,7 @@ function UniWorldShipsSuites() {
                     </div>
 
                     <div className="uss-compare-table-wrap">
-                        <table className="uss-table uni-comparison-table">
+                        <table className="uss-table">
                             <thead>
                                 <tr>
                                     <th>Feature</th>
@@ -613,7 +606,6 @@ function UniWorldShipsSuites() {
                 </div>
             </section>
 
-            {/* ── CHOOSING THE BEST CABIN ── */}
             <section className="uss-choose-section">
                 <div className="uss-choose-container">
                     <div className="uss-choose-header">
@@ -623,13 +615,13 @@ function UniWorldShipsSuites() {
                     </div>
 
                     <div className="uss-choose-grid">
-                        {chooseBlocks.map(({ Icon, label, title, intro, items }, idx) => (
+                        {chooseBlocks.map((b, idx) => (
                             <article key={idx} className="uss-choose-card">
-                                <div className="uss-choose-label"><Icon size={13} /> <span>{label}</span></div>
-                                <h3 className="uss-choose-title">{title}</h3>
-                                <p className="uss-choose-intro">{intro}</p>
+                                <div className="uss-choose-label"><b.Icon size={13} /> <span>{b.label}</span></div>
+                                <h3 className="uss-choose-title">{b.title}</h3>
+                                <p className="uss-choose-intro">{b.intro}</p>
                                 <ul className="uss-choose-list">
-                                    {items.map((item, iIdx) => (
+                                    {b.items.map((item, iIdx) => (
                                         <li key={iIdx}>
                                             <CheckCircle size={14} />
                                             <span>{item}</span>
@@ -646,7 +638,6 @@ function UniWorldShipsSuites() {
                 </div>
             </section>
 
-            {/* ── ACCESSIBILITY ── */}
             <section className="uss-access-section">
                 <div className="uss-access-container">
                     <div className="uss-access-grid">
@@ -689,7 +680,6 @@ function UniWorldShipsSuites() {
                 </div>
             </section>
 
-            {/* ── SHIP AMENITIES ── */}
             <section className="uss-shipamen-section">
                 <div className="uss-shipamen-container">
                     <div className="uss-shipamen-grid">
@@ -720,7 +710,7 @@ function UniWorldShipsSuites() {
                                     <Image size={32} className="uss-placeholder-icon" />
                                     <span>Onboard Dining &amp; Lounge Scene</span>
                                 </div>
-                                <div className="uss-frame-overlay uni-overlay-soft"></div>
+                                <div className="uss-frame-overlay"></div>
                             </div>
                             <div className="uss-shipamen-stat-badge">
                                 <Star size={15} />
@@ -732,7 +722,6 @@ function UniWorldShipsSuites() {
                 </div>
             </section>
 
-            {/* ── TIPS ── */}
             <section className="uss-tips-section">
                 <div className="uss-tips-container">
                     <div className="uss-tips-grid">
@@ -766,7 +755,6 @@ function UniWorldShipsSuites() {
                 </div>
             </section>
 
-            {/* ── SEMANTIC KEYWORDS ── */}
             <section className="uss-keywords-section">
                 <div className="uss-keywords-container">
                     <div className="uss-keywords-header">
@@ -796,7 +784,6 @@ function UniWorldShipsSuites() {
                 </div>
             </section>
 
-            {/* ── INTERNAL LINKING ── */}
             <section className="uss-linking-section">
                 <div className="uss-linking-container">
                     <div className="uss-linking-header">
@@ -826,7 +813,6 @@ function UniWorldShipsSuites() {
                 </div>
             </section>
 
-            {/* ── EXTERNAL REFERENCES ── */}
             <section className="uss-references-section">
                 <div className="uss-references-container">
                     <div className="uss-references-header">
@@ -846,7 +832,6 @@ function UniWorldShipsSuites() {
                 </div>
             </section>
 
-            {/* ── IMAGE RECOMMENDATIONS ── */}
             <section className="uss-imageplan-section">
                 <div className="uss-imageplan-container">
                     <div className="uss-imageplan-header">
@@ -873,50 +858,48 @@ function UniWorldShipsSuites() {
                 </div>
             </section>
 
-            {/* ── ANGELA HUGHES EXPERT INSIGHT ── */}
-            <section className="luxe-expert-insight-section">
-                <div className="luxe-expert-insight-container">
-                    <div className="luxe-expert-portrait-panel">
-                        <div className="luxe-expert-img-container">
+            <section className="uss-expert-section">
+                <div className="uss-expert-container">
+                    <div className="uss-expert-portrait-panel">
+                        <div className="uss-expert-img-container">
                             <img src={Profile_Picture_AH} alt="Angela Hughes - River Cruise Expert" />
                         </div>
-                        <div className="luxe-expert-stats-strip">
-                            <div className="luxe-expert-stat-box">
-                                <h4 className='luxe-title'>40+</h4>
-                                <p className='luxe-title'>Years Designing Travel</p>
+                        <div className="uss-expert-stats-strip">
+                            <div className="uss-expert-stat-box">
+                                <h4 className='uss-title'>40+</h4>
+                                <p className='uss-title'>Years Designing Travel</p>
                             </div>
-                            <div className="luxe-expert-stat-box">
-                                <h4 className='luxe-title'>121+</h4>
-                                <p className='luxe-title'>Countries Traveled</p>
+                            <div className="uss-expert-stat-box">
+                                <h4 className='uss-title'>121+</h4>
+                                <p className='uss-title'>Countries Traveled</p>
                             </div>
                         </div>
                     </div>
-                    <div className="luxe-expert-content-panel">
-                        <span className="luxe-eyebrow">MEET THE CEO</span>
+                    <div className="uss-expert-content-panel">
+                        <span className="uss-expert-eyebrow">MEET THE CEO</span>
                         <h2 className="uss-section-heading" style={{color: 'white'}}>Insight from Angela Hughes</h2>
                         <div className="uss-heading-separator-bar"></div>
-                        <p className="luxe-expert-quote">
+                        <p className="uss-expert-quote">
                             "A Uniworld river cruise isn't just about traveling from destination to destination—it's about returning to a uniquely curated boutique sanctuary every single evening, experiencing local culture both on and off the ship."
                         </p>
-                        <div className="luxe-expert-priorities">
+                        <div className="uss-expert-priorities">
                             <h5>Travel Prioritization Matrix:</h5>
-                            <div className="luxe-expert-pills">
+                            <div className="uss-expert-pills">
                                 {['Boutique River Ships', 'Personalized Butler Service', 'All-Inclusive Value', 'Regional Shore Excursions', 'Gourmet Dining', 'Intimate Capacity'].map(pill => (
-                                    <span key={pill} className="luxe-expert-pill">
+                                    <span key={pill} className="uss-expert-pill">
                                         <Anchor size={12} />
                                         {pill}
                                     </span>
                                 ))}
                             </div>
                         </div>
-                        <p className="luxe-expert-bio">
+                        <p className="uss-expert-bio">
                             As founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel, Angela Hughes uses her personal, deep connections in the river cruising world to deliver custom travel planning that regular booking engines simply cannot replicate.
                         </p>
                     </div>
                 </div>
             </section>
 
-            {/* ── KEY TAKEAWAYS ── */}
             <section className="uss-takeaways-section">
                 <div className="uss-takeaways-container">
                     <div className="uss-takeaways-header">
@@ -936,8 +919,7 @@ function UniWorldShipsSuites() {
                 </div>
             </section>
 
-            {/* ── FAQ ── */}
-            <section className="uss-faq-main-section uni-faq-section">
+            <section className="uss-faq-main-section">
                 <div className="uss-faq-container">
                     <div style={{ textAlign: 'center' }}>
                         <span className="uss-eyebrow">QUESTIONS TRAVELERS ASK</span>
@@ -973,33 +955,35 @@ function UniWorldShipsSuites() {
                 </div>
             </section>
 
-            {/* ── CTA ── */}
-            <section className="luxe-cta-section">
-                <div className="luxe-cta-aurora-glow"></div>
-                <div className="luxe-cta-crystal luxe-cta-crystal-1"></div>
-                <div className="luxe-cta-crystal luxe-cta-crystal-2"></div>
-                <div className="luxe-cta-crystal luxe-cta-crystal-3"></div>
-                <div className="luxe-cta-grid-lines"></div>
+            <section className="uss-cta-section">
+                <div className="uss-cta-aurora-glow"></div>
+                <div className="uss-cta-crystal uss-cta-crystal-1"></div>
+                <div className="uss-cta-crystal uss-cta-crystal-2"></div>
+                <div className="uss-cta-crystal uss-cta-crystal-3"></div>
+                <div className="uss-cta-grid-lines"></div>
 
-                <div className="luxe-cta-content">
-                    <div className="luxe-cta-compass-ring">
+                <div className="uss-cta-content">
+                    <div className="uss-cta-compass-ring">
                         <Compass size={28} />
                     </div>
-                    <span className="luxe-cta-eyebrow">START SOMEWHERE REMARKABLE</span>
-                    <h2 className="luxe-cta-title">Find Your Perfect <br /> Uniworld Ship &amp; Suite</h2>
-                    <div className="luxe-cta-bar"></div>
-                    <p className="luxe-cta-subtitle">
+                    <span className="uss-cta-eyebrow">START SOMEWHERE REMARKABLE</span>
+                    <h2 className="uss-cta-title">Find Your Perfect <br /> Uniworld Ship &amp; Suite</h2>
+                    <div className="uss-cta-bar"></div>
+                    <p className="uss-cta-subtitle">
                         Let&rsquo;s compare the fleet, seasons, ships, suites, and inclusions that match your luxury river cruising preferences.
                     </p>
-                    <div className="luxe-cta-actions">
-                        <Link to="/contact" className="luxe-cta-primary-btn">
+                    <div className="uss-cta-actions">
+                        <Link to="/contact" className="uss-cta-primary-btn">
                             <Phone size={18} />
                             <span>Speak with a luxury river cruise specialist</span>
-                            <ArrowRight size={16} className="luxe-cta-btn-arrow" />
+                            <ArrowRight size={16} className="uss-cta-btn-arrow" />
                         </Link>
                     </div>
                 </div>
             </section>
+
+            </div>
+
         </>
     )
 }

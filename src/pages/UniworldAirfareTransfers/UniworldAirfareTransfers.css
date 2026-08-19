@@ -17,7 +17,7 @@
     --uaf-text-heading: #2d3748;
     --uaf-text-muted: #64748b;
     --uaf-font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
-    --uaf-font-body: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --uaf-font-body: 'Montserrat', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
 }
 
 /* ── BASE ─────────────────────────────────────────────────────── */
@@ -102,10 +102,10 @@
 .uaf-section-heading {
     font-family: var(--uaf-font-heading);
     font-size: 48px;
-    font-weight: 500;
+    font-weight: 700;
     color: var(--uaf-navy);
     margin: 0 0 16px 0;
-    line-height: 1.2;
+    line-height: 1.25;
     letter-spacing: -0.01em;
 }
 
@@ -123,7 +123,7 @@
 }
 
 .uaf-section-intro {
-    font-size: 17px;
+    font-size: 18px;
     color: var(--uaf-text-body);
     line-height: 1.65;
     max-width: 720px;
@@ -220,7 +220,7 @@
 
 .uaf-hero-main-title {
     font-family: var(--uaf-font-heading);
-    font-size: 54px;
+    font-size: 60px;
     font-weight: 700;
     color: #ffffff;
     line-height: 1.15;
@@ -259,7 +259,7 @@
 }
 
 .uaf-intro-lead {
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 600;
     color: var(--uaf-navy);
     margin: 0 0 16px 0;
@@ -267,7 +267,7 @@
 }
 
 .uaf-intro-body {
-    font-size: 15px;
+    font-size: 18px;
     color: var(--uaf-text-body);
     margin: 0 0 14px 0;
     line-height: 1.65;
@@ -483,9 +483,7 @@
 }
 
 .uaf-booking-card-title {
-    font-family: var(--uaf-font-heading) !important;
-    font-size: 20px;
-    font-weight: 700 !important;
+    font-family: var(--uaf-font-heading);
     color: var(--uaf-navy-deep);
     margin: 0 0 12px 0;
 }
@@ -558,7 +556,7 @@
 }
 
 .uaf-early-body {
-    font-size: 15px;
+    font-size: 18px;
     color: var(--uaf-text-body);
     line-height: 1.7;
     margin: 0;
@@ -752,9 +750,7 @@
 }
 
 .uaf-arrival-card-title {
-    font-family: var(--uaf-font-heading) !important;
-    font-size: 16px;
-    font-weight: 700 !important;
+    font-family: var(--uaf-font-heading);
     color: #ffffff;
     margin: 0 0 8px 0;
     line-height: 1.35;
@@ -908,9 +904,7 @@
 }
 
 .uaf-embark-step-content h3 {
-    font-family: var(--uaf-font-heading) !important;
-    font-size: 17px;
-    font-weight: 700 !important;
+    font-family: var(--uaf-font-heading);
     color: var(--uaf-navy-deep);
     margin: 8px 0 6px 0;
 }
@@ -956,7 +950,7 @@
 }
 
 .uaf-luggage-lead {
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 600;
     color: var(--uaf-navy);
     margin: 0 0 12px 0;
@@ -964,7 +958,7 @@
 }
 
 .uaf-luggage-sub {
-    font-size: 15px;
+    font-size: 18px;
     color: var(--uaf-text-body);
     margin: 0 0 16px 0;
 }
@@ -1192,8 +1186,6 @@
 
 .uaf-timing-card-header h3 {
     font-family: var(--uaf-font-heading);
-    font-size: 19px;
-    font-weight: 700;
     color: var(--uaf-navy-deep);
     margin: 0;
 }
@@ -1256,7 +1248,7 @@
 }
 
 .uaf-docs-lead {
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 600;
     color: #ffffff;
     margin: 0 0 14px 0;
@@ -1546,11 +1538,11 @@
 
 .uaf-takeaways-heading {
     font-family: var(--uaf-font-heading);
-    font-size: 32px;
+    font-size: 48px;
     font-weight: 700;
     color: #ffffff;
     margin: 0 0 16px 0;
-    line-height: 1.3;
+    line-height: 1.25;
 }
 
 .uaf-takeaways-separator {
@@ -1775,7 +1767,7 @@
 
 /* ── CTA ──────────────────────────────────────────────────────── */
 
-.luxe-cta-section {
+.uaf-cta-section {
     position: relative;
     padding: 72px 20px;
     background: linear-gradient(160deg, #081422 0%, #0c2340 30%, #162d50 60%, #0f1c2e 100%);
@@ -1784,7 +1776,7 @@
     isolation: isolate;
 }
 
-.luxe-cta-aurora-glow {
+.uaf-cta-aurora-glow {
     position: absolute;
     top: -30%;
     left: 50%;
@@ -1794,15 +1786,15 @@
     background: radial-gradient(ellipse at center, rgba(56, 189, 248, 0.12) 0%, rgba(99, 102, 241, 0.06) 40%, transparent 70%);
     filter: blur(60px);
     z-index: 0;
-    animation: luxe-aurora-pulse 8s ease-in-out infinite alternate;
+    animation: uaf-aurora-pulse 8s ease-in-out infinite alternate;
 }
 
-@keyframes luxe-aurora-pulse {
+@keyframes uaf-aurora-pulse {
     0% { opacity: 0.6; transform: translateX(-50%) scale(1); }
     100% { opacity: 1; transform: translateX(-50%) scale(1.08); }
 }
 
-.luxe-cta-crystal {
+.uaf-cta-crystal {
     position: absolute;
     border-radius: 4px;
     background: linear-gradient(135deg, rgba(148, 210, 255, 0.15), rgba(255, 255, 255, 0.05));
@@ -1811,16 +1803,16 @@
     backdrop-filter: blur(6px);
 }
 
-.luxe-cta-crystal-1 { width: 80px; height: 80px; top: 12%; left: 8%; transform: rotate(45deg); animation: luxe-crystal-float 12s ease-in-out infinite; }
-.luxe-cta-crystal-2 { width: 50px; height: 50px; top: 20%; right: 12%; transform: rotate(25deg); animation: luxe-crystal-float 10s ease-in-out 2s infinite; }
-.luxe-cta-crystal-3 { width: 35px; height: 35px; bottom: 18%; left: 15%; transform: rotate(60deg); animation: luxe-crystal-float 14s ease-in-out 4s infinite; }
+.uaf-cta-crystal-1 { width: 80px; height: 80px; top: 12%; left: 8%; transform: rotate(45deg); animation: uaf-crystal-float 12s ease-in-out infinite; }
+.uaf-cta-crystal-2 { width: 50px; height: 50px; top: 20%; right: 12%; transform: rotate(25deg); animation: uaf-crystal-float 10s ease-in-out 2s infinite; }
+.uaf-cta-crystal-3 { width: 35px; height: 35px; bottom: 18%; left: 15%; transform: rotate(60deg); animation: uaf-crystal-float 14s ease-in-out 4s infinite; }
 
-@keyframes luxe-crystal-float {
+@keyframes uaf-crystal-float {
     0%, 100% { transform: rotate(45deg) translateY(0); opacity: 0.5; }
     50% { transform: rotate(45deg) translateY(-18px); opacity: 0.9; }
 }
 
-.luxe-cta-grid-lines {
+.uaf-cta-grid-lines {
     position: absolute;
     inset: 0;
     background-image:
@@ -1830,7 +1822,7 @@
     z-index: 0;
 }
 
-.luxe-cta-content {
+.uaf-cta-content {
     position: relative;
     z-index: 2;
     max-width: 900px;
@@ -1840,7 +1832,7 @@
     align-items: center;
 }
 
-.luxe-cta-compass-ring {
+.uaf-cta-compass-ring {
     width: 56px;
     height: 56px;
     border-radius: 50%;
@@ -1850,26 +1842,26 @@
     justify-content: center;
     color: rgba(148, 210, 255, 0.8);
     margin-bottom: 16px;
-    animation: luxe-compass-spin 20s linear infinite;
+    animation: uaf-compass-spin 20s linear infinite;
     background: rgba(148, 210, 255, 0.04);
     box-shadow: 0 0 30px rgba(56, 189, 248, 0.08);
 }
 
-@keyframes luxe-compass-spin {
+@keyframes uaf-compass-spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
 
-.luxe-cta-compass-ring svg {
-    animation: luxe-compass-counter-spin 20s linear infinite;
+.uaf-cta-compass-ring svg {
+    animation: uaf-compass-counter-spin 20s linear infinite;
 }
 
-@keyframes luxe-compass-counter-spin {
+@keyframes uaf-compass-counter-spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(-360deg); }
 }
 
-.luxe-cta-eyebrow {
+.uaf-cta-eyebrow {
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 0.3em;
@@ -1879,16 +1871,17 @@
     display: block;
 }
 
-.luxe-cta-title {
-    font-size: 44px;
-    line-height: 1.2;
-    font-weight: 500;
+.uaf-cta-title {
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    font-size: 48px;
+    line-height: 1.25;
+    font-weight: 700;
     color: #ffffff;
     margin: 0 0 14px;
     letter-spacing: -0.01em;
 }
 
-.luxe-cta-bar {
+.uaf-cta-bar {
     width: 60px;
     height: 3px;
     background: linear-gradient(90deg, rgba(148, 210, 255, 0.2), rgba(148, 210, 255, 0.8), rgba(148, 210, 255, 0.2));
@@ -1896,22 +1889,22 @@
     margin-bottom: 16px;
 }
 
-.luxe-cta-subtitle {
-    font-size: 16px;
+.uaf-cta-subtitle {
+    font-size: 18px;
     line-height: 1.65;
     color: rgba(203, 213, 225, 0.85);
     max-width: 700px;
     margin: 0 auto 28px;
 }
 
-.luxe-cta-actions {
+.uaf-cta-actions {
     display: flex;
     justify-content: center;
     gap: 18px;
     flex-wrap: wrap;
 }
 
-.luxe-cta-primary-btn {
+.uaf-cta-primary-btn {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -1930,7 +1923,7 @@
     overflow: hidden;
 }
 
-.luxe-cta-primary-btn::before {
+.uaf-cta-primary-btn::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -1939,22 +1932,22 @@
     transition: opacity 0.35s ease;
 }
 
-.luxe-cta-primary-btn:hover {
+.uaf-cta-primary-btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 16px 40px rgba(39, 68, 114, 0.4), 0 0 0 3px rgba(148, 210, 255, 0.12);
     border-color: rgba(148, 210, 255, 0.3);
 }
 
-.luxe-cta-primary-btn:hover::before {
+.uaf-cta-primary-btn:hover::before {
     opacity: 1;
 }
 
-.luxe-cta-btn-arrow {
+.uaf-cta-btn-arrow {
     transition: transform 0.3s ease;
     opacity: 0.7;
 }
 
-.luxe-cta-primary-btn:hover .luxe-cta-btn-arrow {
+.uaf-cta-primary-btn:hover .uaf-cta-btn-arrow {
     transform: translateX(4px);
     opacity: 1;
 }
@@ -1964,8 +1957,20 @@
    ============================================================= */
 
 @media (max-width: 1024px) {
-    .uaf-hero-main-title { font-size: 42px; }
-    .uaf-section-heading { font-size: 36px; }
+    .uaf-hero-main-title { font-size: 32px; }
+    .uaf-section-heading,
+    .uaf-takeaways-heading,
+    .uaf-cta-title { font-size: 28px; }
+
+    .uaf-section-intro,
+    .uaf-intro-lead,
+    .uaf-intro-body,
+    .uaf-early-lead,
+    .uaf-early-body,
+    .uaf-luggage-lead,
+    .uaf-luggage-sub,
+    .uaf-docs-lead,
+    .uaf-cta-subtitle { font-size: 17px; }
 
     .uaf-intro-grid {
         gap: 36px;
@@ -2078,12 +2083,25 @@
 
 @media (max-width: 640px) {
     .uaf-hero-section { padding: 120px 18px 72px; min-height: 100vh; }
-    .uaf-hero-main-title { font-size: 30px; }
-    .uaf-hero-subtitle-text { font-size: 15px; }
+    .uaf-hero-main-title { font-size: 26px; }
+    .uaf-hero-subtitle-text { font-size: 16px; }
     .uaf-hero-eyebrow-tag { font-size: 10px; padding: 6px 14px; text-align: center; }
 
-    .uaf-section-heading { font-size: 28px; }
-    .uaf-section-intro { font-size: 15px; margin-bottom: 28px; }
+    .uaf-section-heading,
+    .uaf-takeaways-heading,
+    .uaf-cta-title { font-size: 24px; }
+
+    .uaf-section-intro,
+    .uaf-intro-lead,
+    .uaf-intro-body,
+    .uaf-early-lead,
+    .uaf-early-body,
+    .uaf-luggage-lead,
+    .uaf-luggage-sub,
+    .uaf-docs-lead,
+    .uaf-cta-subtitle { font-size: 16px; }
+
+    .uaf-section-intro { margin-bottom: 28px; }
 
     .uaf-intro-section,
     .uaf-checklist-section,
@@ -2148,10 +2166,8 @@
     .uaf-links-grid { grid-template-columns: 1fr; }
     .uaf-refs-list { grid-template-columns: 1fr; }
 
-    .luxe-cta-title { font-size: 32px; }
-    .luxe-cta-primary-btn { width: 100%; justify-content: center; }
+    .uaf-cta-primary-btn { width: 100%; justify-content: center; }
 
-    .uaf-embark-step-content h3 { font-size: 16px; }
     .uaf-faq-question-row { font-size: 15px; }
 }
 
@@ -2216,8 +2232,9 @@
 }
 
 .uaf-expert-stat-box h4 {
-    font-size: 28px;
-    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
     color: #3b82f6;
     margin-bottom: 2px;
     margin-top: 0;
@@ -2318,6 +2335,6 @@
     }
 
     .uaf-expert-content-panel h2 {
-        font-size: 28px !important;
+        font-size: 24px !important;
     }
 }

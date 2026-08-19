@@ -1,9 +1,17 @@
 /* =============================================================
    UniworldFamilyCruises.css
    Uniworld Family River Cruises & Generations Collection Guide
-   Uses shared medi-* variables from AzamaraMediterraneanCruises.css
+   Self-contained ufc-* variables and styles
    Color palette: navy, responsive, no gold accents
    ============================================================= */
+
+:root {
+    --ufc-navy: #274472;
+    --ufc-bg-white: #ffffff;
+    --ufc-bg-dark: #0f1c2e;
+    --ufc-bg-dark2: #1c2f4a;
+    --ufc-font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
+}
 
 /* ── SHARED UTILITIES ────────────────────────────────────────── */
 
@@ -12,7 +20,7 @@
     font-weight: 700;
     letter-spacing: 0.26em;
     text-transform: uppercase;
-    color: var(--medi-navy);
+    color: var(--ufc-navy);
     opacity: 0.7;
     display: block;
     margin-bottom: 14px;
@@ -29,6 +37,32 @@
 
 .ufc-separator-white {
     background: rgba(255, 255, 255, 0.3) !important;
+}
+
+.ufc-section-heading {
+    font-family: var(--ufc-font-heading);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    margin: 0 0 20px 0;
+    color: var(--ufc-navy) !important;
+}
+
+.ufc-section-heading.ufc-white-heading {
+    color: #ffffff !important;
+}
+
+.ufc-heading-separator-bar {
+    width: 60px;
+    height: 4px;
+    background: var(--ufc-navy);
+    margin-bottom: 32px;
+}
+
+.ufc-bar-centered {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Shared image frame */
@@ -65,7 +99,7 @@
     position: absolute;
     bottom: 22px;
     left: 22px;
-    background: var(--medi-navy);
+    background: var(--ufc-navy);
     color: #ffffff;
     display: flex;
     align-items: center;
@@ -80,10 +114,93 @@
     box-shadow: 0 6px 20px rgba(15, 28, 46, 0.3);
 }
 
+/* ── HERO SECTION ──────────────────────────────────────────── */
+
+.ufc-hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.ufc-hero-background {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.ufc-hero-background.ufc-active {
+    opacity: 1;
+}
+
+.ufc-hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #0f1c2e 0%, #1c2f4a 100%);
+    z-index: 0;
+}
+
+.ufc-hero-overlay-layer {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 28, 46, 0.72);
+    z-index: 1;
+}
+
+.ufc-hero-content-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ufc-hero-eyebrow-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #94a3b8;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.ufc-hero-main-title {
+    font-family: var(--ufc-font-heading);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 0 0 40px 0;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    text-align: center;
+    max-width: 900px;
+}
+
+.ufc-hero-subtitle-text {
+    font-size: 18px;
+    color: #cbd5e1;
+    margin-bottom: 40px;
+    max-width: 700px;
+    text-align: center;
+}
+
 /* ── 1. INTRO / OVERVIEW ─────────────────────────────────────── */
 
 .ufc-intro-section {
-    background: var(--medi-bg-white);
+    background: var(--ufc-bg-white);
     padding: 88px 20px;
 }
 
@@ -100,15 +217,15 @@
 }
 
 .ufc-intro-lead {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
-    color: var(--medi-navy);
+    color: var(--ufc-navy);
     margin-bottom: 16px;
     line-height: 1.5;
 }
 
 .ufc-intro-body {
-    font-size: 16px;
+    font-size: 18px;
     color: #4a5568;
     line-height: 1.75;
     margin-bottom: 16px;
@@ -129,7 +246,7 @@
 
 .ufc-generations-intro,
 .ufc-generations-sub {
-    font-size: 17px;
+    font-size: 18px;
     color: rgba(255, 255, 255, 0.85);
     line-height: 1.7;
     margin-bottom: 16px;
@@ -187,7 +304,7 @@
 /* ── 3. WHO ARE THESE CRUISES BEST FOR ───────────────────────── */
 
 .ufc-bestfor-section {
-    background: var(--medi-bg-white);
+    background: var(--ufc-bg-white);
     padding: 88px 20px;
 }
 
@@ -206,7 +323,7 @@
 .ufc-bestfor-lead {
     font-size: 18px;
     font-weight: 600;
-    color: var(--medi-navy);
+    color: var(--ufc-navy);
     margin-bottom: 20px;
 }
 
@@ -243,7 +360,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--medi-navy);
+    color: var(--ufc-navy);
 }
 
 .ufc-bestfor-note {
@@ -258,11 +375,11 @@
     padding: 16px 20px;
     background: #f7f9fc;
     border-radius: 14px;
-    border-left: 4px solid var(--medi-navy);
+    border-left: 4px solid var(--ufc-navy);
 }
 
 .ufc-bestfor-conclusion p {
-    font-size: 15px;
+    font-size: 18px;
     color: #4a5568;
     line-height: 1.6;
     margin: 0;
@@ -281,7 +398,7 @@
 }
 
 .ufc-destinations-intro {
-    font-size: 17px;
+    font-size: 18px;
     color: #4a5568;
     text-align: center;
     max-width: 680px;
@@ -340,10 +457,8 @@
     position: absolute;
     bottom: 14px;
     left: 14px;
-    font-family: 'Playfair Display', Georgia, serif !important;
-    font-size: 18px !important;
-    font-weight: 700 !important;
-    color: #ffffff !important;
+    font-family: var(--ufc-font-heading);
+    color: #ffffff;
     margin: 0;
     z-index: 2;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -369,7 +484,7 @@
 }
 
 .ufc-destination-chevron {
-    color: var(--medi-navy);
+    color: var(--ufc-navy);
     opacity: 0.6;
     flex-shrink: 0;
 }
@@ -377,7 +492,7 @@
 /* ── 5. EDUCATIONAL EXPERIENCES ──────────────────────────────── */
 
 .ufc-education-section {
-    background: var(--medi-bg-white);
+    background: var(--ufc-bg-white);
     padding: 88px 20px;
 }
 
@@ -396,12 +511,12 @@
 .ufc-education-lead {
     font-size: 18px;
     font-weight: 600;
-    color: var(--medi-navy);
+    color: var(--ufc-navy);
     margin-bottom: 16px;
 }
 
 .ufc-education-body {
-    font-size: 16px;
+    font-size: 18px;
     color: #4a5568;
     margin-bottom: 20px;
 }
@@ -433,7 +548,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--medi-navy);
+    color: var(--ufc-navy);
 }
 
 .ufc-education-conclusion {
@@ -441,11 +556,11 @@
     padding: 16px 20px;
     background: #f7f9fc;
     border-radius: 14px;
-    border-left: 4px solid var(--medi-navy);
+    border-left: 4px solid var(--ufc-navy);
 }
 
 .ufc-education-conclusion p {
-    font-size: 15px;
+    font-size: 18px;
     color: #4a5568;
     line-height: 1.6;
     margin: 0;
@@ -465,7 +580,7 @@
 }
 
 .ufc-activities-intro {
-    font-size: 17px;
+    font-size: 18px;
     color: rgba(255, 255, 255, 0.85);
     max-width: 600px;
     margin: 0 auto 36px;
@@ -511,10 +626,8 @@
 }
 
 .ufc-activity-card-title {
-    font-family: 'Playfair Display', Georgia, serif !important;
-    font-size: 16px !important;
-    font-weight: 700 !important;
-    color: #ffffff !important;
+    font-family: var(--ufc-font-heading);
+    color: #ffffff;
     margin: 0 0 8px;
 }
 
@@ -535,7 +648,7 @@
 /* ── 7. DINING FOR FAMILIES ──────────────────────────────────── */
 
 .ufc-dining-section {
-    background: var(--medi-bg-white);
+    background: var(--ufc-bg-white);
     padding: 88px 20px;
 }
 
@@ -554,12 +667,12 @@
 .ufc-dining-lead {
     font-size: 18px;
     font-weight: 600;
-    color: var(--medi-navy);
+    color: var(--ufc-navy);
     margin-bottom: 16px;
 }
 
 .ufc-dining-body {
-    font-size: 16px;
+    font-size: 18px;
     color: #4a5568;
     margin-bottom: 20px;
 }
@@ -592,7 +705,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--medi-navy);
+    color: var(--ufc-navy);
 }
 
 .ufc-dining-note {
@@ -606,7 +719,7 @@
     margin-top: 20px;
     font-size: 13.5px;
     font-weight: 550;
-    color: var(--medi-navy);
+    color: var(--ufc-navy);
     line-height: 1.5;
     text-align: left;
 }
@@ -633,7 +746,7 @@
 }
 
 .ufc-cabins-intro {
-    font-size: 17px;
+    font-size: 18px;
     color: #4a5568;
     text-align: center;
     max-width: 600px;
@@ -656,7 +769,7 @@
 }
 
 .ufc-cabins-table thead {
-    background: var(--medi-navy);
+    background: var(--ufc-navy);
     color: #ffffff;
 }
 
@@ -676,7 +789,7 @@
 
 .ufc-cabin-label {
     font-weight: 700;
-    color: var(--medi-navy);
+    color: var(--ufc-navy);
     font-size: 14.5px;
 }
 
@@ -710,7 +823,7 @@
     margin: 24px auto 0;
     font-size: 13.5px;
     font-weight: 550;
-    color: var(--medi-navy);
+    color: var(--ufc-navy);
     line-height: 1.5;
     text-align: left;
 }
@@ -723,7 +836,7 @@
 /* ── 9. MINIMUM AGE ──────────────────────────────────────────── */
 
 .ufc-age-section {
-    background: var(--medi-bg-white);
+    background: var(--ufc-bg-white);
     padding: 60px 20px;
 }
 
@@ -754,14 +867,12 @@
 }
 
 .ufc-age-heading {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: 24px;
-    font-weight: 700;
+    font-family: var(--ufc-font-heading);
     margin: 0 0 16px;
 }
 
 .ufc-age-body {
-    font-size: 16px;
+    font-size: 18px;
     color: rgba(255, 255, 255, 0.8);
     line-height: 1.7;
     margin-bottom: 12px;
@@ -777,7 +888,7 @@
 /* ── 10. WHY FAMILIES CHOOSE RIVER CRUISES ───────────────────── */
 
 .ufc-why-section {
-    background: var(--medi-bg-white);
+    background: var(--ufc-bg-white);
     padding: 88px 20px;
 }
 
@@ -796,7 +907,7 @@
 .ufc-why-lead {
     font-size: 18px;
     font-weight: 600;
-    color: var(--medi-navy);
+    color: var(--ufc-navy);
     margin-bottom: 20px;
 }
 
@@ -832,7 +943,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--medi-navy);
+    color: var(--ufc-navy);
 }
 
 .ufc-why-conclusion {
@@ -840,11 +951,11 @@
     padding: 16px 20px;
     background: #f7f9fc;
     border-radius: 14px;
-    border-left: 4px solid var(--medi-navy);
+    border-left: 4px solid var(--ufc-navy);
 }
 
 .ufc-why-conclusion p {
-    font-size: 15px;
+    font-size: 18px;
     color: #4a5568;
     line-height: 1.6;
     margin: 0;
@@ -869,7 +980,7 @@
     justify-content: center;
     gap: 10px;
     margin-bottom: 12px;
-    color: var(--medi-navy);
+    color: var(--ufc-navy);
 }
 
 .ufc-takeaways-eyebrow {
@@ -877,22 +988,23 @@
     font-weight: 700;
     letter-spacing: 0.26em;
     text-transform: uppercase;
-    color: var(--medi-navy);
+    color: var(--ufc-navy);
     opacity: 0.7;
 }
 
 .ufc-takeaways-heading {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: 32px;
+    font-family: var(--ufc-font-heading);
+    font-size: 48px;
     font-weight: 700;
-    color: var(--medi-navy);
+    line-height: 1.25;
+    color: var(--ufc-navy);
     margin: 0 0 12px;
 }
 
 .ufc-takeaways-separator {
     width: 60px;
     height: 3px;
-    background: var(--medi-navy);
+    background: var(--ufc-navy);
     opacity: 0.2;
     margin: 0 auto 32px;
     border-radius: 2px;
@@ -927,7 +1039,7 @@
 /* ── 12. TIPS FOR PLANNING ───────────────────────────────────── */
 
 .ufc-tips-section {
-    background: var(--medi-bg-white);
+    background: var(--ufc-bg-white);
     padding: 88px 20px;
 }
 
@@ -946,7 +1058,7 @@
 .ufc-tips-lead {
     font-size: 18px;
     font-weight: 600;
-    color: var(--medi-navy);
+    color: var(--ufc-navy);
     margin-bottom: 20px;
 }
 
@@ -983,7 +1095,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--medi-navy);
+    color: var(--ufc-navy);
 }
 
 .ufc-tips-note {
@@ -997,7 +1109,7 @@
     margin-top: 20px;
     font-size: 13.5px;
     font-weight: 550;
-    color: var(--medi-navy);
+    color: var(--ufc-navy);
     line-height: 1.5;
     text-align: left;
 }
@@ -1036,28 +1148,29 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto 20px;
-    color: var(--medi-navy);
+    color: var(--ufc-navy);
 }
 
 .ufc-worth-heading {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: 28px;
+    font-family: var(--ufc-font-heading);
+    font-size: 48px;
     font-weight: 700;
-    color: var(--medi-navy);
+    line-height: 1.25;
+    color: var(--ufc-navy);
     margin: 0 0 12px;
 }
 
 .ufc-worth-separator {
     width: 60px;
     height: 3px;
-    background: var(--medi-navy);
+    background: var(--ufc-navy);
     opacity: 0.2;
     margin: 0 auto 24px;
     border-radius: 2px;
 }
 
 .ufc-worth-body {
-    font-size: 16px;
+    font-size: 18px;
     color: #4a5568;
     line-height: 1.75;
     margin-bottom: 12px;
@@ -1066,7 +1179,7 @@
 /* ── 14. INTERNAL LINKS ──────────────────────────────────────── */
 
 .ufc-links-section {
-    background: var(--medi-bg-white);
+    background: var(--ufc-bg-white);
     padding: 72px 20px;
 }
 
@@ -1091,16 +1204,16 @@
     border: 1px solid #eef2f7;
     border-radius: 12px;
     text-decoration: none;
-    color: var(--medi-navy);
+    color: var(--ufc-navy);
     font-size: 15px;
     font-weight: 500;
     transition: all 0.3s ease;
 }
 
 .ufc-link-card:hover {
-    background: var(--medi-navy);
+    background: var(--ufc-navy);
     color: #ffffff;
-    border-color: var(--medi-navy);
+    border-color: var(--ufc-navy);
 }
 
 .ufc-link-card svg {
@@ -1249,12 +1362,8 @@
         padding: 32px 24px;
     }
 
-    .ufc-age-heading {
-        font-size: 22px;
-    }
-
     .ufc-takeaways-heading {
-        font-size: 26px;
+        font-size: 24px;
     }
 
     .ufc-takeaway-item {
@@ -1287,20 +1396,77 @@
         font-size: 14px;
     }
 
-    .ufc-links-section .medi-section-heading {
-        font-size: 26px !important;
+    .ufc-hero-main-title {
+        font-size: 26px;
     }
 
-    .ufc-generations-section .medi-section-heading {
-        font-size: 28px !important;
+    .ufc-section-heading,
+    .ufc-takeaways-heading,
+    .ufc-worth-heading,
+    .ufc-cta-heading-white {
+        font-size: 24px;
     }
 
-    .ufc-activities-section .medi-section-heading {
-        font-size: 28px !important;
+    .ufc-intro-lead,
+    .ufc-intro-body,
+    .ufc-generations-intro,
+    .ufc-generations-sub,
+    .ufc-bestfor-lead,
+    .ufc-bestfor-conclusion p,
+    .ufc-destinations-intro,
+    .ufc-education-lead,
+    .ufc-education-body,
+    .ufc-education-conclusion p,
+    .ufc-activities-intro,
+    .ufc-dining-lead,
+    .ufc-dining-body,
+    .ufc-cabins-intro,
+    .ufc-age-body,
+    .ufc-why-lead,
+    .ufc-why-conclusion p,
+    .ufc-tips-lead,
+    .ufc-worth-body,
+    .ufc-cta-paragraph-white,
+    .ufc-faq-answer-text {
+        font-size: 16px;
     }
 
-    .ufc-destinations-section .medi-section-heading {
-        font-size: 28px !important;
+    .ufc-primary-cta-button,
+    .ufc-secondary-outline-button {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 24px;
+        font-size: 15px;
+    }
+
+    .ufc-cta-main-section {
+        padding: 50px 16px;
+    }
+
+    .ufc-cta-heading-white {
+        margin-bottom: 16px;
+    }
+
+    .ufc-cta-paragraph-white {
+        margin-bottom: 32px;
+    }
+
+    .ufc-cta-button-group {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .ufc-faq-main-section {
+        padding: 60px 16px;
+    }
+
+    .ufc-faq-individual-item {
+        padding: 20px 0;
+    }
+
+    .ufc-faq-answer-text {
+        padding-right: 0;
+        margin-top: 12px;
     }
 }
 
@@ -1335,7 +1501,7 @@
     .ufc-dining-lead,
     .ufc-why-lead,
     .ufc-tips-lead {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .ufc-takeaways-heading {
@@ -1343,15 +1509,11 @@
     }
 
     .ufc-worth-heading {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .ufc-age-card {
         padding: 28px 20px;
-    }
-
-    .ufc-age-heading {
-        font-size: 20px;
     }
 
     .ufc-worth-card {
@@ -1370,6 +1532,164 @@
     .ufc-activity-card {
         flex: 0 1 100%;
     }
+}
+
+/* ── FAQ ────────────────────────────────────────────────────── */
+
+.ufc-faq-main-section {
+    padding: 80px 20px;
+    background: var(--ufc-bg-white);
+}
+
+.ufc-faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ufc-faq-list-wrapper {
+    margin-top: 50px;
+}
+
+.ufc-faq-individual-item {
+    border-bottom: 1px solid #e2e8f0;
+    padding: 28px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ufc-faq-individual-item:hover {
+    background: rgba(39, 68, 114, 0.02);
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+.ufc-faq-question-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--ufc-navy);
+}
+
+.ufc-faq-toggle-icon {
+    font-size: 28px;
+    color: var(--ufc-navy);
+    flex-shrink: 0;
+    font-weight: 300;
+}
+
+.ufc-faq-answer-text {
+    margin-top: 16px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #4a5568;
+    padding-right: 50px;
+}
+
+/* ── CTA ────────────────────────────────────────────────────── */
+
+.ufc-cta-main-section {
+    position: relative;
+    padding: 100px 20px;
+    background: var(--ufc-bg-dark);
+    overflow: hidden;
+}
+
+.ufc-cta-bg-pattern-layer {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 0%, var(--ufc-bg-dark2) 0%, transparent 75%);
+    opacity: 0.8;
+    z-index: 0;
+}
+
+.ufc-cta-content-relative {
+    position: relative;
+    z-index: 2;
+}
+
+.ufc-cta-inner-wrapper {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ufc-cta-heading-white {
+    font-family: var(--ufc-font-heading);
+    font-size: 48px;
+    line-height: 1.25;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+}
+
+.ufc-cta-separator-white {
+    width: 60px;
+    height: 4px;
+    background: #ffffff;
+    margin: 0 auto 20px;
+}
+
+.ufc-cta-paragraph-white {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #e2e8f0;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.ufc-cta-button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.ufc-primary-cta-button {
+    background: var(--ufc-navy);
+    color: #ffffff;
+    border: none;
+    padding: 16px 36px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.ufc-primary-cta-button:hover {
+    background: #1e365a;
+    transform: translateY(-2px);
+}
+
+.ufc-secondary-outline-button {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 14px 34px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.ufc-secondary-outline-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
 }
 
 /* ── ANGELA HUGHES EXPERT INSIGHT ── */
@@ -1428,8 +1748,9 @@
 }
 
 .ufc-expert-stat-box h4 {
-    font-size: 28px;
-    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
     color: #3b82f6;
     margin-bottom: 2px;
     margin-top: 0;
@@ -1520,6 +1841,41 @@
     .ufc-expert-img-container {
         height: 340px;
     }
+
+    .ufc-hero-main-title {
+        font-size: 32px;
+    }
+
+    .ufc-section-heading,
+    .ufc-takeaways-heading,
+    .ufc-worth-heading,
+    .ufc-cta-heading-white {
+        font-size: 28px;
+    }
+
+    .ufc-intro-lead,
+    .ufc-intro-body,
+    .ufc-generations-intro,
+    .ufc-generations-sub,
+    .ufc-bestfor-lead,
+    .ufc-bestfor-conclusion p,
+    .ufc-destinations-intro,
+    .ufc-education-lead,
+    .ufc-education-body,
+    .ufc-education-conclusion p,
+    .ufc-activities-intro,
+    .ufc-dining-lead,
+    .ufc-dining-body,
+    .ufc-cabins-intro,
+    .ufc-age-body,
+    .ufc-why-lead,
+    .ufc-why-conclusion p,
+    .ufc-tips-lead,
+    .ufc-worth-body,
+    .ufc-cta-paragraph-white,
+    .ufc-faq-answer-text {
+        font-size: 17px;
+    }
 }
 
 @media (max-width: 640px) {
@@ -1542,6 +1898,6 @@
     }
 
     .ufc-expert-content-panel h2 {
-        font-size: 28px !important;
+        font-size: 24px !important;
     }
 }

@@ -192,6 +192,8 @@ function UniworldRiverCruiseInclusions() {
 
             <Navbar />
 
+            <div className="wii-page">
+
             {/* ── HERO ── */}
             <section className="wii-hero-section">
                 {/* {uincHeroImages.map((img, idx) => (
@@ -913,6 +915,8 @@ function UniworldRiverCruiseInclusions() {
                     </div>
                 </div>
             </section>
+
+            </div>
         </>
     )
 }

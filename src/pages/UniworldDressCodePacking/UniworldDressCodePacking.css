@@ -1,4 +1,4 @@
-/* =============================================================
+﻿/* =============================================================
    UniworldDressCodePacking.css
    Self-contained styles for the Uniworld Dress Code and
    Packing Guide page. Palette and typography reference the
@@ -16,7 +16,7 @@
     --udc-bg-white: #ffffff;
     --udc-bg-soft: #e7f3f5;
     --udc-font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
-    --udc-font-body: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --udc-font-body: 'Montserrat', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
 }
 
 /* ── GLOBAL / RESET ─────────────────────────────────────────── */
@@ -51,10 +51,10 @@
 .udc-section-heading {
     font-family: var(--udc-font-heading);
     font-size: 48px;
-    font-weight: 500;
+    font-weight: 700;
     color: var(--udc-navy);
     margin: 0 0 18px 0;
-    line-height: 1.2;
+    line-height: 1.25;
     letter-spacing: -0.01em;
 }
 
@@ -79,7 +79,7 @@
 
 .udc-body-text {
     font-family: var(--udc-font-body);
-    font-size: 15px;
+    font-size: 18px;
     color: var(--udc-text-body);
     line-height: 1.65;
     margin: 0 0 16px 0;
@@ -114,7 +114,7 @@
 }
 
 .udc-onboard-caption {
-    font-family: var(--udc-font-heading);
+    font-family: var(--udc-font-body);
     font-size: 15px;
     font-style: italic;
     color: var(--udc-navy);
@@ -139,7 +139,7 @@
 }
 
 .udc-daytime-caption {
-    font-family: var(--udc-font-heading);
+    font-family: var(--udc-font-body);
     font-size: 15px;
     font-style: italic;
     color: var(--udc-navy);
@@ -164,7 +164,7 @@
 }
 
 .udc-shoes-caption {
-    font-family: var(--udc-font-heading);
+    font-family: var(--udc-font-body);
     font-size: 15px;
     font-style: italic;
     color: var(--udc-navy);
@@ -189,7 +189,7 @@
 }
 
 .udc-weather-caption {
-    font-family: var(--udc-font-heading);
+    font-family: var(--udc-font-body);
     font-size: 15px;
     font-style: italic;
     color: var(--udc-navy);
@@ -214,7 +214,7 @@
 }
 
 .udc-luggage-caption {
-    font-family: var(--udc-font-heading);
+    font-family: var(--udc-font-body);
     font-size: 15px;
     font-style: italic;
     color: var(--udc-navy);
@@ -295,7 +295,7 @@
 
 .udc-hero-title {
     font-family: var(--udc-font-heading);
-    font-size: 54px;
+    font-size: 60px;
     font-weight: 700;
     color: #ffffff;
     line-height: 1.15;
@@ -305,7 +305,7 @@
 
 .udc-hero-subtitle {
     font-family: var(--udc-font-body);
-    font-size: 19px;
+    font-size: 18px;
     color: rgba(255, 255, 255, 0.9);
     line-height: 1.6;
     max-width: 700px;
@@ -343,17 +343,17 @@
 
 .udc-intro-heading {
     font-family: var(--udc-font-heading);
-    font-size: 42px;
-    font-weight: 500;
+    font-size: 48px;
+    font-weight: 700;
     color: var(--udc-navy);
     margin: 0 0 18px 0;
-    line-height: 1.2;
+    line-height: 1.25;
     letter-spacing: -0.01em;
 }
 
 .udc-intro-lead {
     font-family: var(--udc-font-body);
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 600;
     color: var(--udc-navy);
     line-height: 1.5;
@@ -576,9 +576,7 @@
 }
 
 .udc-gender-title {
-    font-family: var(--udc-font-heading) !important;
-    font-size: 20px;
-    font-weight: 700 !important;
+    font-family: var(--udc-font-heading);
     color: var(--udc-navy);
     margin: 0 0 18px 0;
     letter-spacing: -0.01em;
@@ -630,9 +628,7 @@
 }
 
 .udc-season-title {
-    font-family: var(--udc-font-heading) !important;
-    font-size: 20px;
-    font-weight: 700 !important;
+    font-family: var(--udc-font-heading);
     color: var(--udc-navy);
     margin: 0 0 6px 0;
 }
@@ -717,9 +713,7 @@
 }
 
 .udc-checklist-title {
-    font-family: var(--udc-font-heading) !important;
-    font-size: 20px;
-    font-weight: 700 !important;
+    font-family: var(--udc-font-heading);
     color: var(--udc-navy);
     margin: 0 0 14px 0;
 }
@@ -820,7 +814,7 @@
 }
 
 .udc-leave-footnote {
-    font-family: var(--udc-font-heading);
+    font-family: var(--udc-font-body);
     font-size: 15px;
     font-style: italic;
     color: var(--udc-navy);
@@ -891,7 +885,7 @@
 }
 
 .udc-tips-footnote {
-    font-family: var(--udc-font-heading);
+    font-family: var(--udc-font-body);
     font-size: 15px;
     font-style: italic;
     color: var(--udc-navy);
@@ -957,11 +951,11 @@
 
 .udc-final-heading {
     font-family: var(--udc-font-heading);
-    font-size: 36px;
-    font-weight: 500;
+    font-size: 48px;
+    font-weight: 700;
     color: #ffffff;
     margin: 0 0 16px 0;
-    line-height: 1.2;
+    line-height: 1.25;
 }
 
 .udc-final-separator {
@@ -1223,8 +1217,8 @@
 .udc-cta-heading {
     font-family: var(--udc-font-heading);
     font-size: 48px;
-    line-height: 1.12;
-    font-weight: 500;
+    line-height: 1.25;
+    font-weight: 700;
     color: #ffffff;
     margin: 0 0 14px;
     letter-spacing: -0.01em;
@@ -1329,7 +1323,20 @@
     }
 
     .udc-hero-title {
-        font-size: 40px;
+        font-size: 32px;
+    }
+
+    .udc-section-heading,
+    .udc-intro-heading,
+    .udc-final-heading,
+    .udc-cta-heading {
+        font-size: 28px;
+    }
+
+    .udc-hero-subtitle,
+    .udc-body-text,
+    .udc-intro-lead {
+        font-size: 17px;
     }
 }
 
@@ -1408,11 +1415,11 @@
     }
 
     .udc-hero-title {
-        font-size: 30px;
+        font-size: 26px;
     }
 
     .udc-hero-subtitle {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .udc-hero-eyebrow {
@@ -1420,8 +1427,16 @@
         padding: 6px 14px;
     }
 
-    .udc-section-heading {
-        font-size: 28px;
+    .udc-section-heading,
+    .udc-intro-heading,
+.udc-final-heading,
+    .udc-cta-heading {
+        font-size: 24px;
+    }
+
+    .udc-body-text,
+    .udc-intro-lead {
+        font-size: 16px;
     }
 
     .udc-shoes-section .udc-eyebrow,
@@ -1539,7 +1554,7 @@
     }
 
     .udc-intro-heading {
-        font-size: 32px;
+        font-size: 24px;
     }
 
     .udc-season-grid,
@@ -1562,7 +1577,7 @@
 
     .udc-final-heading,
     .udc-cta-heading {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .udc-final-card {
@@ -1609,11 +1624,11 @@
     }
 
     .udc-hero-title {
-        font-size: 25px;
+        font-size: 26px;
     }
 
     .udc-hero-subtitle {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .udc-section-heading {
@@ -1621,11 +1636,11 @@
     }
 
     .udc-intro-heading {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .udc-intro-lead {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .udc-layer-row {
@@ -1667,11 +1682,11 @@
 
 @media (max-width: 360px) {
     .udc-hero-title {
-        font-size: 22px;
+        font-size: 26px;
     }
 
     .udc-hero-subtitle {
-        font-size: 13px;
+        font-size: 16px;
     }
 }
 
@@ -1731,8 +1746,9 @@
 }
 
 .udc-expert-stat-box h4 {
-    font-size: 28px;
-    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
     color: #3b82f6;
     margin-bottom: 2px;
     margin-top: 0;

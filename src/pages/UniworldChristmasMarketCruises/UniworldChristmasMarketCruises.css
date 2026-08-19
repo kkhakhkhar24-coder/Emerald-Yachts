@@ -1,9 +1,285 @@
 /* =============================================================
    UniworldChristmasMarketCruises.css
    Uniworld Christmas Market River Cruises Guide
-   Uses shared medi-* variables from AzamaraMediterraneanCruises.css
+   Self-contained styles; uses local ucm-* variables
    Color palette: navy, responsive, no gold accents
    ============================================================= */
+
+:root {
+    --ucm-navy: #274472;
+    --ucm-bg-white: #ffffff;
+    --ucm-bg-dark: #0f1c2e;
+    --ucm-bg-dark2: #1c2f4a;
+    --ucm-font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
+}
+
+/* ── SHARED UTILITIES ────────────────────────────────────────── */
+
+.ucm-section-heading {
+    font-family: var(--ucm-font-heading);
+    font-size: 48px;
+    line-height: 1.25;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.01em;
+    color: var(--ucm-navy) !important;
+}
+
+.ucm-section-heading.ucm-white-heading {
+    color: #ffffff !important;
+}
+
+.ucm-heading-separator-bar {
+    width: 60px;
+    height: 4px;
+    background: var(--ucm-navy);
+    margin-bottom: 32px;
+}
+
+.ucm-bar-centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ── HERO SECTION ────────────────────────────────────────────── */
+
+.ucm-hero-main-title {
+    font-family: var(--ucm-font-heading);
+    font-size: 60px;
+    line-height: 1.15;
+    font-weight: 700;
+    margin: 0 0 40px 0;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    text-align: center;
+}
+
+.ucm-hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.ucm-hero-background {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.ucm-hero-background.ucm-active {
+    opacity: 1;
+}
+
+.ucm-hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #0f1c2e 0%, #1c2f4a 100%);
+    z-index: 0;
+}
+
+.ucm-hero-overlay-layer {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 28, 46, 0.72);
+    z-index: 1;
+}
+
+.ucm-hero-content-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ucm-hero-eyebrow-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #94a3b8;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.ucm-hero-subtitle-text {
+    font-size: 18px;
+    color: #cbd5e1;
+    margin-bottom: 40px;
+    max-width: 700px;
+    text-align: center;
+}
+
+/* ── FAQ ─────────────────────────────────────────────────────── */
+
+.ucm-faq-main-section {
+    padding: 80px 20px;
+}
+
+.ucm-faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ucm-faq-list-wrapper {
+    margin-top: 50px;
+}
+
+.ucm-faq-individual-item {
+    border-bottom: 1px solid #e2e8f0;
+    padding: 28px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ucm-faq-individual-item:hover {
+    background: rgba(39, 68, 114, 0.02);
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+.ucm-faq-question-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--ucm-navy);
+}
+
+.ucm-faq-toggle-icon {
+    font-size: 28px;
+    color: var(--ucm-navy);
+    flex-shrink: 0;
+    font-weight: 300;
+}
+
+.ucm-faq-answer-text {
+    margin-top: 16px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #4a5568;
+    padding-right: 50px;
+}
+
+/* ── CTA ─────────────────────────────────────────────────────── */
+
+.ucm-cta-main-section {
+    background: var(--ucm-bg-dark2);
+    position: relative;
+    overflow: hidden;
+    padding: 60px 20px;
+}
+
+.ucm-cta-bg-pattern-layer {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--ucm-bg-dark) 0%, var(--ucm-bg-dark2) 100%);
+    z-index: 0;
+}
+
+.ucm-cta-content-relative {
+    position: relative;
+    z-index: 2;
+}
+
+.ucm-cta-inner-wrapper {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ucm-cta-heading-white {
+    font-family: var(--ucm-font-heading);
+    font-size: 48px;
+    line-height: 1.25;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+}
+
+.ucm-cta-separator-white {
+    width: 60px;
+    height: 4px;
+    background: #ffffff;
+    margin: 0 auto 20px;
+}
+
+.ucm-cta-paragraph-white {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #e2e8f0;
+    margin: 0 0 16px 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.ucm-cta-button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.ucm-primary-cta-button {
+    background: var(--ucm-navy);
+    color: #ffffff;
+    border: none;
+    padding: 16px 36px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.ucm-primary-cta-button:hover {
+    background: #1e365a;
+    transform: translateY(-2px);
+}
+
+.ucm-secondary-outline-button {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 14px 34px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.ucm-secondary-outline-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+}
 
 /* ── SHARED UTILITIES ────────────────────────────────────────── */
 
@@ -12,7 +288,7 @@
     font-weight: 700;
     letter-spacing: 0.26em;
     text-transform: uppercase;
-    color: var(--medi-navy);
+    color: var(--ucm-navy);
     opacity: 0.7;
     display: block;
     margin-bottom: 14px;
@@ -65,7 +341,7 @@
     position: absolute;
     bottom: 22px;
     left: 22px;
-    background: var(--medi-navy);
+    background: var(--ucm-navy);
     color: #ffffff;
     display: flex;
     align-items: center;
@@ -83,7 +359,7 @@
 /* ── 1. INTRO / OVERVIEW ─────────────────────────────────────── */
 
 .ucm-intro-section {
-    background: var(--medi-bg-white);
+    background: var(--ucm-bg-white);
     padding: 88px 20px;
 }
 
@@ -100,15 +376,15 @@
 }
 
 .ucm-intro-lead {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
-    color: var(--medi-navy);
+    color: var(--ucm-navy);
     margin-bottom: 16px;
     line-height: 1.5;
 }
 
 .ucm-intro-body {
-    font-size: 16px;
+    font-size: 18px;
     color: #4a5568;
     line-height: 1.75;
     margin-bottom: 16px;
@@ -117,7 +393,7 @@
 /* ── 2. WHY CHOOSE ──────────────────────────────────────────── */
 
 .ucm-why-section {
-    background: var(--medi-bg-white);
+    background: var(--ucm-bg-white);
     padding: 88px 20px;
 }
 
@@ -136,12 +412,12 @@
 .ucm-why-lead {
     font-size: 18px;
     font-weight: 600;
-    color: var(--medi-navy);
+    color: var(--ucm-navy);
     margin-bottom: 12px;
 }
 
 .ucm-why-body {
-    font-size: 16px;
+    font-size: 18px;
     color: #4a5568;
     margin-bottom: 20px;
 }
@@ -178,7 +454,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--medi-navy);
+    color: var(--ucm-navy);
 }
 
 /* ── 3. WHAT MAKES UNIWORLD SPECIAL ─────────────────────────── */
@@ -196,7 +472,7 @@
 
 .ucm-special-intro,
 .ucm-special-sub {
-    font-size: 17px;
+    font-size: 18px;
     color: rgba(255, 255, 255, 0.85);
     line-height: 1.7;
     margin-bottom: 16px;
@@ -315,10 +591,8 @@
     position: absolute;
     bottom: 14px;
     left: 14px;
-    font-family: 'Playfair Display', Georgia, serif !important;
-    font-size: 18px !important;
-    font-weight: 700 !important;
-    color: #ffffff !important;
+    font-family: var(--ucm-font-heading);
+    color: #ffffff;
     margin: 0;
     z-index: 2;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -344,7 +618,7 @@
 }
 
 .ucm-itinerary-chevron {
-    color: var(--medi-navy);
+    color: var(--ucm-navy);
     opacity: 0.6;
     flex-shrink: 0;
 }
@@ -352,7 +626,7 @@
 /* ── 5. FAMOUS CHRISTMAS MARKETS TABLE ──────────────────────── */
 
 .ucm-markets-section {
-    background: var(--medi-bg-white);
+    background: var(--ucm-bg-white);
     padding: 88px 20px;
 }
 
@@ -376,7 +650,7 @@
 }
 
 .ucm-markets-table thead {
-    background: var(--medi-navy);
+    background: var(--ucm-navy);
     color: #ffffff;
 }
 
@@ -412,7 +686,7 @@
 /* ── 6. SEASONAL FOOD AND DRINKS ────────────────────────────── */
 
 .ucm-food-section {
-    background: var(--medi-bg-white);
+    background: var(--ucm-bg-white);
     padding: 88px 20px;
 }
 
@@ -431,12 +705,12 @@
 .ucm-food-lead {
     font-size: 18px;
     font-weight: 600;
-    color: var(--medi-navy);
+    color: var(--ucm-navy);
     margin-bottom: 12px;
 }
 
 .ucm-food-body {
-    font-size: 16px;
+    font-size: 18px;
     color: #4a5568;
     margin-bottom: 16px;
 }
@@ -469,7 +743,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--medi-navy);
+    color: var(--ucm-navy);
 }
 
 .ucm-food-note {
@@ -500,12 +774,12 @@
 .ucm-shopping-lead {
     font-size: 18px;
     font-weight: 600;
-    color: var(--medi-navy);
+    color: var(--ucm-navy);
     margin-bottom: 16px;
 }
 
 .ucm-shopping-body {
-    font-size: 16px;
+    font-size: 18px;
     color: #4a5568;
     margin-bottom: 20px;
 }
@@ -538,7 +812,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--medi-navy);
+    color: var(--ucm-navy);
 }
 
 .ucm-shopping-conclusion {
@@ -546,12 +820,12 @@
     padding: 16px 20px;
     background: #ffffff;
     border-radius: 14px;
-    border-left: 4px solid var(--medi-navy);
+    border-left: 4px solid var(--ucm-navy);
     box-shadow: 0 4px 16px rgba(15, 28, 46, 0.05);
 }
 
 .ucm-shopping-conclusion p {
-    font-size: 15px;
+    font-size: 18px;
     color: #4a5568;
     line-height: 1.6;
     margin: 0;
@@ -572,7 +846,7 @@
 
 .ucm-weather-intro,
 .ucm-weather-sub {
-    font-size: 17px;
+    font-size: 18px;
     color: rgba(255, 255, 255, 0.85);
     line-height: 1.7;
     margin-bottom: 16px;
@@ -624,7 +898,7 @@
 /* ── 9. WHAT TO PACK ─────────────────────────────────────────── */
 
 .ucm-packing-section {
-    background: var(--medi-bg-white);
+    background: var(--ucm-bg-white);
     padding: 88px 20px;
 }
 
@@ -643,7 +917,7 @@
 .ucm-packing-lead {
     font-size: 18px;
     font-weight: 600;
-    color: var(--medi-navy);
+    color: var(--ucm-navy);
     margin-bottom: 20px;
 }
 
@@ -680,7 +954,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--medi-navy);
+    color: var(--ucm-navy);
 }
 
 .ucm-packing-note {
@@ -694,7 +968,7 @@
     margin-top: 20px;
     font-size: 13.5px;
     font-weight: 550;
-    color: var(--medi-navy);
+    color: var(--ucm-navy);
     line-height: 1.5;
     text-align: left;
 }
@@ -721,7 +995,7 @@
 }
 
 .ucm-included-intro {
-    font-size: 17px;
+    font-size: 18px;
     color: #4a5568;
     text-align: center;
     max-width: 600px;
@@ -760,14 +1034,12 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto 14px;
-    color: var(--medi-navy);
+    color: var(--ucm-navy);
 }
 
 .ucm-included-card-title {
-    font-family: 'Playfair Display', Georgia, serif !important;
-    font-size: 15px !important;
-    font-weight: 700 !important;
-    color: var(--medi-navy) !important;
+    font-family: var(--ucm-font-heading);
+    color: var(--ucm-navy);
     margin: 0;
 }
 
@@ -782,7 +1054,7 @@
 /* ── 11. BEST TIME TO BOOK ──────────────────────────────────── */
 
 .ucm-booking-section {
-    background: var(--medi-bg-white);
+    background: var(--ucm-bg-white);
     padding: 88px 20px;
 }
 
@@ -801,12 +1073,12 @@
 .ucm-booking-lead {
     font-size: 18px;
     font-weight: 600;
-    color: var(--medi-navy);
+    color: var(--ucm-navy);
     margin-bottom: 12px;
 }
 
 .ucm-booking-body {
-    font-size: 16px;
+    font-size: 18px;
     color: #4a5568;
     margin-bottom: 20px;
 }
@@ -843,7 +1115,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--medi-navy);
+    color: var(--ucm-navy);
 }
 
 /* ── 12. WHO SHOULD CHOOSE ──────────────────────────────────── */
@@ -868,7 +1140,7 @@
 .ucm-who-lead {
     font-size: 18px;
     font-weight: 600;
-    color: var(--medi-navy);
+    color: var(--ucm-navy);
     margin-bottom: 20px;
 }
 
@@ -910,7 +1182,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--medi-navy);
+    color: var(--ucm-navy);
 }
 
 .ucm-who-note {
@@ -924,7 +1196,7 @@
     margin-top: 20px;
     font-size: 13.5px;
     font-weight: 550;
-    color: var(--medi-navy);
+    color: var(--ucm-navy);
     line-height: 1.5;
     text-align: left;
 }
@@ -937,7 +1209,7 @@
 /* ── 13. IS IT WORTH IT ─────────────────────────────────────── */
 
 .ucm-worth-section {
-    background: var(--medi-bg-white);
+    background: var(--ucm-bg-white);
     padding: 72px 20px;
 }
 
@@ -963,28 +1235,29 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto 20px;
-    color: var(--medi-navy);
+    color: var(--ucm-navy);
 }
 
 .ucm-worth-heading {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: 28px;
+    font-family: var(--ucm-font-heading);
+    font-size: 48px;
+    line-height: 1.25;
     font-weight: 700;
-    color: var(--medi-navy);
+    color: var(--ucm-navy);
     margin: 0 0 12px;
 }
 
 .ucm-worth-separator {
     width: 60px;
     height: 3px;
-    background: var(--medi-navy);
+    background: var(--ucm-navy);
     opacity: 0.2;
     margin: 0 auto 24px;
     border-radius: 2px;
 }
 
 .ucm-worth-body {
-    font-size: 16px;
+    font-size: 18px;
     color: #4a5568;
     line-height: 1.75;
     margin-bottom: 12px;
@@ -1009,7 +1282,7 @@
     justify-content: center;
     gap: 10px;
     margin-bottom: 12px;
-    color: var(--medi-navy);
+    color: var(--ucm-navy);
 }
 
 .ucm-takeaways-eyebrow {
@@ -1017,22 +1290,23 @@
     font-weight: 700;
     letter-spacing: 0.26em;
     text-transform: uppercase;
-    color: var(--medi-navy);
+    color: var(--ucm-navy);
     opacity: 0.7;
 }
 
 .ucm-takeaways-heading {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: 32px;
+    font-family: var(--ucm-font-heading);
+    font-size: 48px;
+    line-height: 1.25;
     font-weight: 700;
-    color: var(--medi-navy);
+    color: var(--ucm-navy);
     margin: 0 0 12px;
 }
 
 .ucm-takeaways-separator {
     width: 60px;
     height: 3px;
-    background: var(--medi-navy);
+    background: var(--ucm-navy);
     opacity: 0.2;
     margin: 0 auto 32px;
     border-radius: 2px;
@@ -1067,7 +1341,7 @@
 /* ── 15. INTERNAL LINKS ─────────────────────────────────────── */
 
 .ucm-links-section {
-    background: var(--medi-bg-white);
+    background: var(--ucm-bg-white);
     padding: 72px 20px;
 }
 
@@ -1092,16 +1366,16 @@
     border: 1px solid #eef2f7;
     border-radius: 12px;
     text-decoration: none;
-    color: var(--medi-navy);
+    color: var(--ucm-navy);
     font-size: 15px;
     font-weight: 500;
     transition: all 0.3s ease;
 }
 
 .ucm-link-card:hover {
-    background: var(--medi-navy);
+    background: var(--ucm-navy);
     color: #ffffff;
-    border-color: var(--medi-navy);
+    border-color: var(--ucm-navy);
 }
 
 .ucm-link-card svg {
@@ -1120,6 +1394,41 @@
 /* ── TABLET (max-width: 992px) ───────────────────────────────── */
 
 @media (max-width: 992px) {
+
+    .ucm-hero-main-title {
+        font-size: 32px;
+    }
+
+    .ucm-section-heading,
+    .ucm-takeaways-heading,
+    .ucm-worth-heading,
+    .ucm-cta-heading-white {
+        font-size: 28px;
+    }
+
+    .ucm-intro-lead,
+    .ucm-intro-body,
+    .ucm-why-lead,
+    .ucm-why-body,
+    .ucm-special-intro,
+    .ucm-special-sub,
+    .ucm-food-lead,
+    .ucm-food-body,
+    .ucm-shopping-lead,
+    .ucm-shopping-body,
+    .ucm-shopping-conclusion p,
+    .ucm-weather-intro,
+    .ucm-weather-sub,
+    .ucm-packing-lead,
+    .ucm-included-intro,
+    .ucm-booking-lead,
+    .ucm-booking-body,
+    .ucm-who-lead,
+    .ucm-worth-body,
+    .ucm-cta-paragraph-white,
+    .ucm-faq-answer-text {
+        font-size: 17px;
+    }
 
     .ucm-intro-section,
     .ucm-why-section,
@@ -1184,6 +1493,74 @@
 
 @media (max-width: 768px) {
 
+    .ucm-hero-main-title {
+        font-size: 26px;
+    }
+
+    .ucm-section-heading,
+    .ucm-takeaways-heading,
+    .ucm-worth-heading,
+    .ucm-cta-heading-white {
+        font-size: 24px;
+    }
+
+    .ucm-intro-lead,
+    .ucm-intro-body,
+    .ucm-why-lead,
+    .ucm-why-body,
+    .ucm-special-intro,
+    .ucm-special-sub,
+    .ucm-food-lead,
+    .ucm-food-body,
+    .ucm-shopping-lead,
+    .ucm-shopping-body,
+    .ucm-shopping-conclusion p,
+    .ucm-weather-intro,
+    .ucm-weather-sub,
+    .ucm-packing-lead,
+    .ucm-included-intro,
+    .ucm-booking-lead,
+    .ucm-booking-body,
+    .ucm-who-lead,
+    .ucm-worth-body,
+    .ucm-cta-paragraph-white,
+    .ucm-faq-answer-text {
+        font-size: 16px;
+    }
+
+    .ucm-primary-cta-button,
+    .ucm-secondary-outline-button {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 24px;
+        font-size: 15px;
+    }
+
+    .ucm-cta-main-section {
+        padding: 50px 16px;
+    }
+
+    .ucm-cta-heading-white {
+        margin-bottom: 16px;
+    }
+
+    .ucm-cta-paragraph-white {
+        margin-bottom: 32px;
+    }
+
+    .ucm-cta-button-group {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .ucm-faq-main-section {
+        padding: 60px 16px;
+    }
+
+    .ucm-faq-individual-item {
+        padding: 20px 0;
+    }
+
     .ucm-intro-section,
     .ucm-why-section,
     .ucm-special-section,
@@ -1223,7 +1600,7 @@
         text-align: center;
     }
 
-    .ucm-special-content-col .medi-heading-separator-bar {
+    .ucm-special-content-col .ucm-heading-separator-bar {
         margin-left: auto;
         margin-right: auto;
     }
@@ -1328,18 +1705,6 @@
     .ucm-shopping-pillars {
         grid-template-columns: 1fr;
     }
-
-    .ucm-special-section .medi-section-heading {
-        font-size: 28px !important;
-    }
-
-    .ucm-itineraries-section .medi-section-heading {
-        font-size: 28px !important;
-    }
-
-    .ucm-included-section .medi-section-heading {
-        font-size: 28px !important;
-    }
 }
 
 /* ── SMALL MOBILE (max-width: 480px) ─────────────────────────── */
@@ -1375,7 +1740,7 @@
     .ucm-packing-lead,
     .ucm-booking-lead,
     .ucm-who-lead {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .ucm-takeaways-heading {
@@ -1383,7 +1748,7 @@
     }
 
     .ucm-worth-heading {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .ucm-worth-card {
@@ -1465,8 +1830,8 @@
 }
 
 .ucm-expert-stat-box h4 {
-    font-size: 28px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 500;
     color: #3b82f6;
     margin-bottom: 2px;
     margin-top: 0;
@@ -1579,6 +1944,6 @@
     }
 
     .ucm-expert-content-panel h2 {
-        font-size: 28px !important;
+        font-size: 24px !important;
     }
 }

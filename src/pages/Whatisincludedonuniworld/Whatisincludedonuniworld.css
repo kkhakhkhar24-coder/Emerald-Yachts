@@ -17,7 +17,7 @@
     --uinc-radius-lg: 20px;
     --uinc-radius-md: 12px;
     --uinc-shadow-soft: 0 24px 60px rgba(15, 28, 46, 0.12);
-    --uinc-font: 'Poppins', 'Segoe UI', system-ui, -apple-system, sans-serif;
+    --uinc-font: 'Montserrat', sans-serif;
 }
 
 .wii-hero-section *,
@@ -36,6 +36,14 @@
     font-family: var(--uinc-font);
 }
 
+.wii-page {
+    font-family: var(--uinc-font);
+}
+
+.wii-page p {
+    font-size: 18px;
+}
+
 /* ── SHARED ELEMENTS ─────────────────────────────────────────── */
 
 .wii-eyebrow {
@@ -49,7 +57,8 @@
 }
 
 .wii-section-heading {
-    font-size: clamp(26px, 3.2vw, 36px);
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-size: 48px;
     font-weight: 700;
     color: var(--uinc-navy);
     line-height: 1.25;
@@ -184,9 +193,10 @@
 }
 
 .wii-hero-main-title {
+    font-family: 'Playfair Display', 'Georgia', serif;
     font-size: 60px;
-    line-height: 1.1;
-    font-weight: 500;
+    line-height: 1.15;
+    font-weight: 700;
     margin: 0 0 40px 0;
     letter-spacing: -0.02em;
     color: #ffffff;
@@ -759,8 +769,8 @@
 }
 
 .wii-dining-card-title {
+    font-family: 'Playfair Display', 'Georgia', serif;
     font-size: 17px;
-    font-weight: 700;
     color: var(--uinc-navy);
     margin: 0;
 }
@@ -976,8 +986,8 @@
 }
 
 .wii-wellness-card-title {
+    font-family: 'Playfair Display', 'Georgia', serif;
     font-size: 14px;
-    font-weight: 600;
     color: var(--uinc-navy);
     line-height: 1.4;
     margin: 0;
@@ -1202,8 +1212,8 @@
 }
 
 .wii-triple-title {
+    font-family: 'Playfair Display', 'Georgia', serif;
     font-size: 18px;
-    font-weight: 750;
     color: var(--uinc-navy);
     margin: 0 0 12px 0;
     line-height: 1.4;
@@ -1320,8 +1330,8 @@
 }
 
 .wii-comp-card-title {
+    font-family: 'Playfair Display', 'Georgia', serif;
     font-size: 16.5px;
-    font-weight: 750;
     margin: 0;
     color: #ffffff;
 }
@@ -1535,8 +1545,9 @@
 }
 
 .wii-value-heading {
-    font-size: clamp(28px, 3.5vw, 38px);
-    font-weight: 800;
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-size: 48px;
+    font-weight: 700;
     color: #ffffff;
     margin: 0 0 16px 0;
     line-height: 1.25;
@@ -1603,8 +1614,8 @@
 }
 
 .wii-inclusion-card-title {
+    font-family: 'Playfair Display', 'Georgia', serif;
     font-size: 18px;
-    font-weight: 750;
     color: #ffffff;
     margin: 0 0 8px 0;
 }
@@ -1977,8 +1988,9 @@
 }
 
 .wii-cta-title {
-    font-size: clamp(24px, 3.5vw, 42px);
-    line-height: 1.15;
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-size: 48px;
+    line-height: 1.25;
     font-weight: 700;
     color: #ffffff;
     margin: 0 0 18px;
@@ -2069,11 +2081,22 @@
 
 @media (max-width: 1024px) {
     .wii-hero-main-title {
-        font-size: 42px;
+        font-size: 32px;
     }
 
     .wii-hero-subtitle-text {
         font-size: 17px;
+    }
+
+    .wii-page p {
+        font-size: 17px;
+    }
+
+    .wii-section-heading,
+    .wii-value-heading,
+    .wii-cta-title,
+    .medi-section-heading1 {
+        font-size: 28px;
     }
 
     .wii-feature-grid {
@@ -2091,11 +2114,22 @@
 
 @media (max-width: 860px) {
     .wii-hero-main-title {
-        font-size: 30px;
+        font-size: 26px;
     }
 
     .wii-hero-subtitle-text {
         font-size: 15px;
+    }
+
+    .wii-page p {
+        font-size: 16px;
+    }
+
+    .wii-section-heading,
+    .wii-value-heading,
+    .wii-cta-title,
+    .medi-section-heading1 {
+        font-size: 24px;
     }
 
     .wii-hero-eyebrow-tag {
@@ -2164,7 +2198,7 @@
 
 @media (max-width: 640px) {
     .wii-hero-main-title {
-        font-size: 24px;
+        font-size: 26px;
     }
 
     .wii-hero-subtitle-text {
@@ -2347,7 +2381,8 @@
 }
 
 .medi-section-heading1 {
-    font-size: clamp(26px, 3.2vw, 38px);
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-size: 48px;
     font-weight: 700;
     color: #ffffff !important;
     line-height: 1.25;
@@ -2382,10 +2417,10 @@
 }
 
 .luxe-expert-quote-text {
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', 'Times New Roman', serif;
     font-style: italic;
-    font-size: 16.5px;
-    line-height: 1.65;
+    font-size: 18px;
+    line-height: 1.6;
     color: #ffffff !important;
     margin: 0;
 }

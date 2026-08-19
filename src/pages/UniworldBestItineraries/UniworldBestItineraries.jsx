@@ -3,7 +3,7 @@ import './UniworldBestItineraries.css'
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
     ArrowRight, Compass, Sparkles, Anchor, Calendar, Gem,
-    ChevronRight, Crown, Phone, LayoutList, Heart, Utensils,
+Crown, Phone, LayoutList, Heart, Utensils,
     Sun, Award, Moon, Music, Landmark, GraduationCap,
     Globe, Wine, Camera, TrendingUp, Leaf, BookOpen,
     Castle, Waves, Mountain, Sparkle, ImageIcon
@@ -166,15 +166,6 @@ function UniworldRiverCruiseItineraries() {
         { Icon: LayoutList, text: 'Excursion variety' }
     ]
 
-    const uniInternalLinks = [
-        { text: 'Uniworld River Cruises Guide', url: '/uniworld-river-cruises/' },
-        { text: 'What Is Included on a Uniworld River Cruise', url: '/uniworld-river-cruises/whats-included/' },
-        { text: 'Uniworld Ships and Suites', url: '/uniworld-river-cruises/ships-suites/' },
-        { text: 'Best Uniworld Cabins', url: '/uniworld-river-cruises/best-cabins/' },
-        { text: 'Is Uniworld Worth the Money', url: '/uniworld-river-cruises/is-uniworld-worth-it/' },
-        { text: 'European River Cruises', url: '/european-river-cruises/' }
-    ]
-
     const uniFaqs = [
         { question: 'What is the best Uniworld River Cruise itinerary?', answer: 'The Danube is often recommended for first-time travelers because it combines historic cities, scenic cruising, and cultural attractions.' },
         { question: 'Which Uniworld itinerary is best for first-time cruisers?', answer: 'The Danube and Rhine itineraries are among the most popular choices for beginners.' },
@@ -259,7 +250,7 @@ function UniworldRiverCruiseItineraries() {
     }
 
     return (
-        <>
+        <div className="uni-page">
             <Helmet>
                 <title>Best Uniworld River Cruise Itineraries</title>
                 <meta name="title" content="Best Uniworld River Cruise Itineraries" />
@@ -272,12 +263,12 @@ function UniworldRiverCruiseItineraries() {
 
             {/* ── HERO ── */}
             <section className="uni-hero-section">
-                {uniHeroSlides.map(({ Icon }, idx) => (
+                {uniHeroSlides.map((s, idx) => (
                     <div
                         key={idx}
                         className={`uni-hero-background uni-hero-bg-${idx} ${uniCurrentHero === idx ? 'uni-active' : ''}`}
                     >
-                        <Icon size={340} className="uni-hero-bg-icon" strokeWidth={0.6} />
+                        <s.Icon size={340} className="uni-hero-bg-icon" strokeWidth={0.6} />
                     </div>
                 ))}
                 <div className="uni-hero-overlay-layer"></div>
@@ -357,10 +348,10 @@ function UniworldRiverCruiseItineraries() {
                         {/* RIGHT COLUMN: 8 grid list points in 2-column layout */}
                         <div className="uni-choose-right-col">
                             <div className="uni-choose-grid-2col">
-                                {uniChooseFactors.map(({ Icon, text }, idx) => (
-                                    <div key={idx} className="uni-choose-card">
-                                        <div className="uni-choose-card-icon"><Icon size={20} /></div>
-                                        <span>{text}</span>
+                                {uniChooseFactors.map((f) => (
+                                    <div key={f.text} className="uni-choose-card">
+                                        <div className="uni-choose-card-icon"><f.Icon size={20} /></div>
+                                        <span>{f.text}</span>
                                     </div>
                                 ))}
                             </div>
@@ -604,10 +595,10 @@ function UniworldRiverCruiseItineraries() {
                         <div className="uni-matters-right-col">
                             <p className="uni-matters-sub-heading" style={{ color: '#ffffff' }}>Key factors to keep in mind:</p>
                             <div className="uni-matters-grid-2col">
-                                {uniItineraryMatters.map(({ Icon, text }, idx) => (
-                                    <div key={idx} className="uni-matters-card">
-                                        <div className="uni-matters-card-icon"><Icon size={20} /></div>
-                                        <span>{text}</span>
+                                {uniItineraryMatters.map((m) => (
+                                    <div key={m.text} className="uni-matters-card">
+                                        <div className="uni-matters-card-icon"><m.Icon size={20} /></div>
+                                        <span>{m.text}</span>
                                     </div>
                                 ))}
                             </div>
@@ -650,25 +641,6 @@ function UniworldRiverCruiseItineraries() {
                             </ul>
                         </div>
 
-                    </div>
-                </div>
-            </section>
-
-            {/* ── INTERNAL LINKS ── */}
-            <section className="uni-links-section">
-                <div className="uni-container">
-                    <div className="uni-center-header">
-                        <span className="uni-eyebrow">CONTINUE EXPLORING</span>
-                        <h2 className="uni-section-heading">Related Uniworld Resources</h2>
-                        <div className="uni-heading-separator-bar uni-bar-centered"></div>
-                    </div>
-                    <div className="uni-links-grid">
-                        {uniInternalLinks.map((link, i) => (
-                            <Link key={i} to={link.url} className="uni-link-card">
-                                <span>{link.text}</span>
-                                <ChevronRight size={18} />
-                            </Link>
-                        ))}
                     </div>
                 </div>
             </section>
@@ -836,7 +808,7 @@ function UniworldRiverCruiseItineraries() {
                     </div>
                 </div>
             </section>
-        </>
+        </div>
     )
 }
 

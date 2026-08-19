@@ -17,7 +17,7 @@
     --uic-radius-lg: 20px;
     --uic-radius-md: 12px;
     --uic-shadow-soft: 0 24px 60px rgba(15, 28, 46, 0.12);
-    --uic-font: 'Poppins', 'Segoe UI', system-ui, -apple-system, sans-serif;
+    --uic-font: 'Montserrat', sans-serif;
     --uic-green: #10b981;
     --uic-red: #ef4444;
 }
@@ -39,7 +39,18 @@
     font-family: var(--uic-font);
 }
 
-/* ── SHARED ELEMENTS ─────────────────────────────────────────── */
+.ucc-page {
+    font-family: var(--uic-font);
+}
+
+.ucc-page p {
+    font-size: 18px;
+}
+
+.ucc-page .ucc-factor-panel-label {
+    font-size: 11px;
+}
+
 
 .ucc-eyebrow {
     font-size: 11px;
@@ -52,7 +63,8 @@
 }
 
 .ucc-section-heading {
-    font-size: clamp(26px, 3.2vw, 36px);
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-size: 48px;
     font-weight: 700;
     color: var(--uic-navy);
     line-height: 1.25;
@@ -122,7 +134,6 @@
     box-shadow: 0 6px 20px rgba(15, 28, 46, 0.3);
 }
 
-/* ── HERO ─────────────────────────────────────────────────────── */
 
 .ucc-hero-section {
     position: relative;
@@ -166,7 +177,8 @@
 }
 
 .ucc-hero-main-title {
-    font-size: clamp(28px, 5vw, 52px);
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-size: 60px;
     font-weight: 700;
     line-height: 1.15;
     margin: 0 0 20px 0;
@@ -181,7 +193,6 @@
     margin: 0 auto;
 }
 
-/* ── INTRO ────────────────────────────────────────────────────── */
 
 .ucc-intro-section {
     background: var(--uic-bg-white);
@@ -281,7 +292,6 @@
     box-shadow: 0 6px 20px rgba(15, 28, 46, 0.3);
 }
 
-/* ── TOC ──────────────────────────────────────────────────────── */
 
 .ucc-toc-section {
     background: var(--uic-bg-soft);
@@ -331,7 +341,6 @@
     flex-shrink: 0;
 }
 
-/* ── DIFFERENT / GENERIC CENTERED SECTION ────────────────────── */
 
 .ucc-different-section {
     background: var(--uic-bg-white);
@@ -386,7 +395,6 @@
     margin: 0 auto;
 }
 
-/* ── FEATURE (IMAGE + TEXT) SECTIONS ─────────────────────────── */
 
 .ucc-feature-section {
     padding: 84px 20px;
@@ -546,7 +554,6 @@
     border-radius: 24px;
 }
 
-/* ── SIMPLE (DARK CENTERED) SECTION ──────────────────────────── */
 
 .ucc-simple-section {
     background: var(--uic-navy-dark);
@@ -733,8 +740,8 @@
 }
 
 .ucc-cost-card-title {
-    font-size: 16px;
-    font-weight: 700;
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-size: 16px !important;
     color: #ffffff;
     margin: 0 0 10px 0;
     line-height: 1.3;
@@ -770,7 +777,6 @@
 }
 
 
-/* ── AVERAGE COST FOR COUPLES SECTION ── */
 .ucc-couples-section {
     padding: 92px 24px;
     background: linear-gradient(150deg, #f0f4ff 0%, #e8edf5 50%, #f0f4ff 100%);
@@ -921,7 +927,6 @@
     flex-shrink: 0;
 }
 
-/* ── COMPARISON SECTION ── */
 .ucc-bg-slate {
     background: #f1f5f9;
 }
@@ -1052,7 +1057,6 @@
     flex-shrink: 0;
 }
 
-/* ── TIMING SECTION ── */
 .ucc-timing-section {
     padding: 92px 24px;
     background: var(--uic-navy-dark);
@@ -1146,8 +1150,9 @@
 }
 
 .ucc-timing-card-title {
-    font-size: 14.5px;
-    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
     color: #ffffff;
     margin: 0;
     line-height: 1.4;
@@ -1174,7 +1179,6 @@
     flex-shrink: 0;
 }
 
-/* ── TABLE SECTIONS ───────────────────────────────────────────── */
 
 
 .ucc-table-section {
@@ -1253,8 +1257,8 @@
 }
 
 .ucc-price-card-title {
-    font-size: 17px;
-    font-weight: 700;
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-size: 17px !important;
     color: var(--uic-navy);
     margin: 0;
 }
@@ -1348,9 +1352,7 @@
     border-radius: 12px;
 }
 
-/* ── VALUE SECTION ────────────────────────────────────────────── */
 
-/* ── VALUE SECTION ────────────────────────────────────────────── */
 
 .ucc-value-section {
     background: linear-gradient(135deg, var(--uic-navy-dark) 0%, var(--uic-navy) 100%);
@@ -1406,8 +1408,9 @@
 }
 
 .ucc-value-heading {
-    font-size: clamp(28px, 3vw, 38px);
-    font-weight: 800;
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-size: 48px;
+    font-weight: 700;
     color: #ffffff;
     margin: 0 0 20px 0;
     line-height: 1.25;
@@ -1448,8 +1451,8 @@
 }
 
 .ucc-value-card-title {
-    font-size: 20px;
-    font-weight: 700;
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-size: 20px !important;
     color: #ffffff;
     margin: 0 0 8px 0;
 }
@@ -1500,7 +1503,6 @@
 }
 
 
-/* ── DEALS SECTION ────────────────────────────────────────────── */
 
 .ucc-deals-section {
     background: #ffffff;
@@ -1571,8 +1573,8 @@
 }
 
 .ucc-deal-title {
-    font-size: 17px;
-    font-weight: 700;
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-size: 17px !important;
     color: var(--uic-navy-dark);
     margin: 0 0 10px 0;
 }
@@ -1612,7 +1614,6 @@
 }
 
 
-/* ── KEY TAKEAWAYS ────────────────────────────────────────────── */
 
 .ucc-takeaways-section {
     background: #f8fafc;
@@ -1669,7 +1670,6 @@
 }
 
 
-/* ── FAQ ──────────────────────────────────────────────────────── */
 
 .ucc-faq-section {
     background: linear-gradient(150deg, #f0f4ff 0%, #e8edf5 50%, #f0f4ff 100%);
@@ -1735,7 +1735,6 @@
     margin-bottom: 0;
 }
 
-/* ── CTA REDESIGN ────────────────────────────────────────────── */
 
 .ucc-cta-redesign-section {
     position: relative;
@@ -1877,8 +1876,9 @@
 }
 
 .ucc-cta-title {
-    font-size: clamp(24px, 3.5vw, 42px);
-    line-height: 1.15;
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-size: 48px;
+    line-height: 1.25;
     font-weight: 700;
     color: #ffffff;
     margin: 0 0 18px;
@@ -1968,6 +1968,21 @@
    ============================================================= */
 
 @media (max-width: 1024px) {
+    .ucc-hero-main-title {
+        font-size: 32px;
+    }
+
+    .ucc-section-heading,
+    .ucc-value-heading,
+    .ucc-cta-title,
+    .ucc-expert-heading {
+        font-size: 28px;
+    }
+
+    .ucc-page p {
+        font-size: 17px;
+    }
+
     .ucc-feature-grid {
         gap: 44px;
     }
@@ -1986,6 +2001,21 @@
     }
 }
 @media (max-width: 860px) {
+    .ucc-hero-main-title {
+        font-size: 26px;
+    }
+
+    .ucc-section-heading,
+    .ucc-value-heading,
+    .ucc-cta-title,
+    .ucc-expert-heading {
+        font-size: 24px;
+    }
+
+    .ucc-page p {
+        font-size: 16px;
+    }
+
     .ucc-feature-grid {
         grid-template-columns: 1fr;
     }
@@ -2106,7 +2136,6 @@
     }
 }
 
-/* ── PRICING FACTORS (TABBED LOOK) ────────────────────────── */
 
 .ucc-factors-section {
     padding: 88px 24px;
@@ -2128,7 +2157,6 @@
     text-align: center;
 }
 
-/* ── DASHBOARD LAYOUT ── */
 .ucc-factors-dashboard {
     display: grid;
     grid-template-columns: 300px 1fr;
@@ -2136,7 +2164,6 @@
     align-items: start;
 }
 
-/* ── LEFT: STEP MENU ── */
 .ucc-factors-tabs {
     display: flex;
     flex-direction: column;
@@ -2245,7 +2272,6 @@
     color: rgba(255, 255, 255, 0.7);
 }
 
-/* ── RIGHT: DETAIL PANEL ── */
 .ucc-factor-panel {
     background: #fff;
     border: 1px solid var(--uic-border);
@@ -2337,8 +2363,8 @@
 }
 
 .ucc-factor-panel-title {
-    font-size: 24px;
-    font-weight: 800;
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-size: 24px !important;
     color: var(--uic-navy-dark);
     margin: 0;
 }
@@ -2627,7 +2653,7 @@
     }
 
     .ucc-factor-panel-title {
-        font-size: 19px;
+        font-size: 19px !important;
     }
 
     .ucc-factor-tags,
@@ -2646,16 +2672,15 @@
     }
 }
 
-/* ── ANGELA HUGHES EXPERT INSIGHT (shared) ─────────────────────── */
 
-.luxe-expert-insight-section {
+.ucc-expert-section {
     padding: 88px 24px;
     background: var(--uic-navy-dark) !important;
     position: relative;
     overflow: hidden;
 }
 
-.luxe-expert-insight-container {
+.ucc-expert-container {
     max-width: 1100px;
     margin: 0 auto;
     position: relative;
@@ -2666,14 +2691,14 @@
     align-items: center;
 }
 
-.luxe-expert-portrait-panel {
+.ucc-expert-portrait-panel {
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 100%;
 }
 
-.luxe-expert-img-frame {
+.ucc-expert-img-frame {
     position: relative;
     border-radius: 20px;
     overflow: hidden;
@@ -2682,20 +2707,20 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.luxe-expert-img {
+.ucc-expert-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
 
-.luxe-expert-img-overlay {
+.ucc-expert-img-overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(to top, rgba(15, 28, 46, 0.6) 0%, transparent 60%);
 }
 
-.luxe-expert-badge {
+.ucc-expert-badge {
     position: absolute;
     bottom: 16px;
     left: 16px;
@@ -2709,14 +2734,14 @@
     text-transform: uppercase;
 }
 
-.luxe-expert-stats-strip {
+.ucc-expert-stats-strip {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
     width: 100%;
 }
 
-.luxe-expert-stat-box {
+.ucc-expert-stat-box {
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 14px;
@@ -2725,12 +2750,12 @@
     transition: all 0.25s ease;
 }
 
-.luxe-expert-stat-box:hover {
+.ucc-expert-stat-box:hover {
     background: rgba(255, 255, 255, 0.08);
     border-color: var(--uic-accent-light);
 }
 
-.luxe-expert-stat-num {
+.ucc-expert-stat-num {
     font-size: 26px;
     font-weight: 800;
     color: var(--uic-accent-light);
@@ -2738,13 +2763,13 @@
     margin-bottom: 2px;
 }
 
-.luxe-expert-stat-lbl {
+.ucc-expert-stat-lbl {
     font-size: 11.5px;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.65);
 }
 
-.luxe-expert-eyebrow-row {
+.ucc-expert-eyebrow-row {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -2752,11 +2777,37 @@
     margin-bottom: 12px;
 }
 
-.luxe-expert-eyebrow-row .luxe-eyebrow {
+.ucc-expert-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--uic-accent-light);
+    display: block;
+}
+
+.ucc-expert-eyebrow-row .ucc-expert-eyebrow {
     margin-bottom: 0;
 }
 
-.luxe-expert-quote-card {
+.ucc-expert-heading {
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff !important;
+    line-height: 1.25;
+    margin: 0 0 14px;
+}
+
+.ucc-expert-heading-bar {
+    width: 64px;
+    height: 4px;
+    background: var(--uic-accent-light);
+    border-radius: 4px;
+    margin-bottom: 24px;
+}
+
+.ucc-expert-quote-card {
     position: relative;
     background: rgba(255, 255, 255, 0.03);
     border-left: 4px solid var(--uic-accent-light);
@@ -2765,7 +2816,7 @@
     margin: 28px 0;
 }
 
-.luxe-expert-quote-mark {
+.ucc-expert-quote-mark {
     position: absolute;
     top: 8px;
     left: 10px;
@@ -2775,16 +2826,16 @@
     line-height: 1;
 }
 
-.luxe-expert-quote-text {
-    font-family: 'Georgia', serif;
+.ucc-expert-quote-text {
+    font-family: 'Georgia', 'Times New Roman', serif;
     font-style: italic;
-    font-size: 16.5px;
-    line-height: 1.65;
+    font-size: 18px;
+    line-height: 1.6;
     color: #ffffff !important;
     margin: 0;
 }
 
-.luxe-priorities-title {
+.ucc-expert-priorities-title {
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
@@ -2793,14 +2844,14 @@
     margin-bottom: 14px;
 }
 
-.luxe-expert-pills {
+.ucc-expert-pills {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 28px;
 }
 
-.luxe-expert-pill {
+.ucc-expert-pill {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -2814,22 +2865,22 @@
     transition: all 0.2s ease;
 }
 
-.luxe-expert-pill:hover {
+.ucc-expert-pill:hover {
     background: rgba(255, 255, 255, 0.09);
     border-color: var(--uic-accent-light);
 }
 
-.luxe-expert-pill svg {
+.ucc-expert-pill svg {
     color: var(--uic-accent-light);
 }
 
-.luxe-expert-footer-bio {
+.ucc-expert-footer-bio {
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     padding-top: 24px;
     margin-top: 24px;
 }
 
-.luxe-expert-bio {
+.ucc-expert-bio {
     font-size: 14px;
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.7);
@@ -2837,18 +2888,17 @@
 }
 
 @media (max-width: 900px) {
-    .luxe-expert-insight-container {
+    .ucc-expert-container {
         grid-template-columns: 1fr;
         gap: 48px;
     }
 
-    .luxe-expert-img-frame {
+    .ucc-expert-img-frame {
         height: 320px;
     }
 }
 
 
-/* ── BG MODIFIERS (kept last so they override section defaults) ── */
 
 .ucc-bg-soft {
     background: var(--uic-bg-soft);
@@ -2866,7 +2916,6 @@
     background: #e2e9f4;
 }
 
-/* ── PRICE RANGE RESPONSIVE ────────────────────────────────────── */
 
 @media (max-width: 900px) {
     .ucc-price-section {
@@ -2914,7 +2963,6 @@
     }
 }
 
-/* ── FACTORS SECTION RESPONSIVE REFINEMENT ─────────────────────── */
 
 @media (max-width: 900px) {
     .ucc-factors-section {
@@ -2996,4 +3044,12 @@
         padding: 8px 10px;
         font-size: 12px;
     }
+}
+
+/* Isolate this page from global h3 rules defined in other pages' CSS */
+.ucc-page h3 {
+    font-family: 'Playfair Display', 'Georgia', serif !important;
+    font-weight: 400 !important;
+    line-height: 1.25 !important;
+    text-align: inherit;
 }

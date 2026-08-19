@@ -172,12 +172,15 @@ import CelebrityStateroomsSuitesGuide from "./pages/CelebrityStateroomsSuitesGui
 import CelebrityCruisesTheRetreat from "./pages/CelebrityCruisesTheRetreat/CelebrityCruisesTheRetreat";
 import CelebrityAllIncluded from "./pages/CelebrityAllIncluded/CelebrityAllIncluded";
 import CelebrityDrinkPackages from "./pages/CelebrityDrinkPackages/CelebrityDrinkPackages";
+import CelebrityCruisesDining from "./pages/CelebrityCruisesDining/CelebrityCruisesDining";
+import CelebrityEdgeSeriesShipsGuide from "./pages/CelebrityEdgeSeriesShipsGuide/CelebrityEdgeSeriesShipsGuide";
+import CelebrityCruisesFAQs from "./pages/CelebrityCruisesFAQs/CelebrityCruisesFAQs";
 import Celebritybeyondcruiseshipguide from "./pages/Celebritybeyondcruiseshipguide/Celebritybeyondcruiseshipguide";
 import Celebrityapexcruiseshipguide from "./pages/Celebrityapexcruiseshipguide/Celebrityapexcruiseshipguide";
 import Celebrityedgecruiseshipguide from "./pages/Celebrityedgecruiseshipguide/Celebrityedgecruiseshipguide";
 import Celebrityedgevssolsticeseries from "./pages/Celebrityedgevssolsticeseries/Celebrityedgevssolsticeseries";
 import Celebrityrivercruises from "./pages/Celebrityrivercruises/Celebrityrivercruises";
-import Celebrityrhinerivercruises  from "./pages/Celebrityrhinerivercruises/Celebrityrhinerivercruises";
+import Celebrityrhinerivercruises from "./pages/Celebrityrhinerivercruises/Celebrityrhinerivercruises";
 import Celebritydanuberivercruises from "./pages/Celebritydanuberivercruises/Celebritydanuberivercruises";
 // import Celebritygalapagoscruises from "./pages/Celebritygalapagoscruises/Celebritygalapagoscruises";
 
@@ -982,6 +985,21 @@ function App() {
           />
 
           <Route
+            path="/celebrity-cruises/dining"
+            element={<CelebrityCruisesDining />}
+          />
+
+          <Route
+            path="/celebrity-cruises/edge-series"
+            element={<CelebrityEdgeSeriesShipsGuide />}
+          />
+
+          <Route
+            path="/celebrity-cruises/faqs"
+            element={<CelebrityCruisesFAQs />}
+          />
+
+          <Route
             path="/celebrity-cruises/ships/celebrity-beyond"
             element={<Celebritybeyondcruiseshipguide />}
           />
@@ -998,17 +1016,17 @@ function App() {
 
           <Route
             path="/celebrity-cruises/edge-vs-solstice-series"
-            element={<Celebrityedgevssolsticeseries  />}
+            element={<Celebrityedgevssolsticeseries />}
           />
 
           <Route
             path="/celebrity-cruises/river-cruises"
-            element={<Celebrityrivercruises  />}
+            element={<Celebrityrivercruises />}
           />
 
           <Route
             path="/celebrity-cruises/river-cruises/rhine"
-            element={<Celebrityrhinerivercruises   />}
+            element={<Celebrityrhinerivercruises />}
           />
 
           <Route

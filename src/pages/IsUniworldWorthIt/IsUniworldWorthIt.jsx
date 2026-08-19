@@ -5,7 +5,7 @@ import {
     ArrowRight, Compass, Sparkles, Anchor, Calendar, Gem,
     ChevronRight, Crown, Phone, LayoutList, Heart, Utensils,
     Sun, Award, Wifi, Wine, MapPin, Coffee, Landmark,
-    Sparkle, DollarSign, TrendingUp, Bike, Music, Waves, Info, BookOpen
+    Sparkle, DollarSign, TrendingUp, Bike, Music, Waves, Info
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
@@ -14,7 +14,6 @@ import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile
 
 function IsUniworldWorthTheMoney() {
 
-    /* ── HERO SLIDESHOW (placeholder gradients — swap for real photography) ── */
     const uwiHeroSlides = [
         { label: 'Uniworld ship sailing the Danube River', tone: 'uwi-hero-tone-1' },
         { label: 'Elegant boutique suite aboard Uniworld', tone: 'uwi-hero-tone-2' },
@@ -28,7 +27,6 @@ function IsUniworldWorthTheMoney() {
         return () => clearInterval(uwiTimer)
     }, [uwiHeroSlides.length])
 
-    /* ── FAQ ACCORDION ── */
     const [uwiActiveFaq, setUwiActiveFaq] = useState(null)
     const uwiToggleFaq = i => setUwiActiveFaq(uwiActiveFaq === i ? null : i)
 
@@ -50,7 +48,6 @@ function IsUniworldWorthTheMoney() {
         { question: 'Is Uniworld a good choice for luxury travelers?', answer: 'Yes. Travelers seeking high-end accommodations, exceptional service, and immersive cultural experiences often consider Uniworld one of the leading luxury river cruise brands.' }
     ]
 
-    /* ── WHY COSTS MORE ── */
     const uwiPremiumFactors = [
         { Icon: Ship, text: 'Individually designed ships with handcrafted interiors' },
         { Icon: Users, text: 'Smaller guest capacity' },
@@ -63,7 +60,6 @@ function IsUniworldWorthTheMoney() {
         { Icon: Heart, text: 'Personalized onboard service' }
     ]
 
-    /* ── INCLUDED TABLE ── */
     const uwiIncludedTable = [
         { feature: 'Luxury accommodations', value: 'Boutique hotel experience', Icon: Crown },
         { feature: 'All meals', value: 'Fine dining throughout the cruise', Icon: Utensils },
@@ -75,20 +71,17 @@ function IsUniworldWorthTheMoney() {
         { feature: 'Fitness facilities', value: 'Wellness during the journey', Icon: Award }
     ]
 
-    /* ── LUXURY BEYOND CABIN ── */
     const uwiCabinFeatures = [
         'Elegant furnishings', 'High-quality bedding', 'Marble bathrooms',
         'Luxury toiletries', 'Spacious public lounges', 'Individually decorated interiors',
         'Attention to fine details'
     ]
 
-    /* ── DINING ── */
     const uwiDiningFeatures = [
         'Fresh regional ingredients', 'Locally inspired recipes', 'Multi-course dinners',
         'Complimentary wine pairings', 'Specialty coffees', 'Fresh pastries', 'Afternoon tea'
     ]
 
-    /* ── EXCURSIONS ── */
     const uwiExcursions = [
         { Icon: MapPin, text: 'Walking tours' },
         { Icon: Landmark, text: 'Castle visits' },
@@ -100,13 +93,11 @@ function IsUniworldWorthTheMoney() {
         { Icon: Music, text: 'Local cultural performances' }
     ]
 
-    /* ── SERVICE ── */
     const uniServiceFeatures = [
         'High crew-to-guest ratios', 'Personalized attention', 'Butler service in select suites',
         'Daily housekeeping', 'Concierge-style assistance', 'Friendly, destination-focused staff'
     ]
 
-    /* ── COMPARISON TABLE ── */
     const uniComparisonRows = [
         { feature: 'Boutique interiors', uniworld: 'Yes', other: 'Limited' },
         { feature: 'Premium beverages', uniworld: 'Included', other: 'Often limited' },
@@ -117,19 +108,16 @@ function IsUniworldWorthTheMoney() {
         { feature: 'Guest capacity', uniworld: 'Small', other: 'Small to medium' }
     ]
 
-    /* ── IDEAL TRAVELERS ── */
     const uniIdealTravelers = [
         'Couples', 'Honeymooners', 'Anniversary travelers', 'Luxury vacation seekers',
         'Food and wine enthusiasts', 'Experienced cruisers', 'Cultural travelers', 'Retired travelers'
     ]
 
-    /* ── WHEN NOT WORTH IT ── */
     const uniNotWorthIt = [
         'Prefer budget travel', 'Spend little time onboard', 'Rarely participate in excursions',
         "Don't drink alcohol", 'Want extensive nightlife', 'Prefer very casual vacations'
     ]
 
-    /* ── MAXIMIZE INVESTMENT ── */
     const uniMaximizeTips = [
         'Book early for the best cabin selection.',
         'Travel during shoulder seasons for competitive pricing.',
@@ -139,13 +127,11 @@ function IsUniworldWorthTheMoney() {
         'Compare promotional offers before booking.'
     ]
 
-    /* ── IS PRICE JUSTIFIED ── */
     const uniValueFactors = [
         'Included excursions', 'Premium beverages', 'Gratuities',
         'Gourmet dining', 'Boutique accommodations', 'Personalized service'
     ]
 
-    /* ── KEY TAKEAWAYS ── */
     const uwiKeyTakeaways = [
         'Uniworld focuses on luxury, personalization, and boutique-style cruising.',
         'Cruise fares include many premium amenities that reduce extra spending.',
@@ -155,18 +141,6 @@ function IsUniworldWorthTheMoney() {
         'Comparing total trip costs—not just the base fare—provides a better measure of value.'
     ]
 
-    /* ── INTERNAL LINKS ── */
-    const uniInternalLinks = [
-        { text: 'Uniworld River Cruises Guide', url: '/uniworld-river-cruises/' },
-        { text: 'What Is Included on a Uniworld River Cruise', url: '/uniworld-river-cruises/whats-included/' },
-        { text: 'Uniworld Cruise Costs', url: '/uniworld-river-cruises/cost-deals/' },
-        { text: 'Uniworld Ships', url: '/uniworld-river-cruises/ships/' },
-        { text: 'Luxury River Cruises', url: '/luxury-river-cruises/' },
-        { text: 'River Cruise Packing Guide', url: '/river-cruise-packing-guide/' },
-        { text: 'Best Time for River Cruises', url: '/best-time-for-river-cruises/' }
-    ]
-
-    /* ── SCHEMA ── */
     const uwiSchemaData = {
         "@context": "https://schema.org",
         "@graph": [
@@ -223,12 +197,13 @@ function IsUniworldWorthTheMoney() {
 
             <Navbar />
 
-            {/* ── HERO ── */}
+            <div className="uwi-page">
+
             <section className="uwi-hero-section">
                 {uwiHeroSlides.map((slide, idx) => (
                     <div
                         key={idx}
-                        className={`uwi-hero-background ${slide.tone} ${uwiCurrentHero === idx ? 'uni-active' : ''}`}
+                        className={`uwi-hero-background ${slide.tone} ${uwiCurrentHero === idx ? 'uwi-active' : ''}`}
                     />
                 ))}
                 <div className="uwi-hero-overlay-layer"></div>
@@ -244,7 +219,6 @@ function IsUniworldWorthTheMoney() {
                 </div>
             </section>
 
-            {/* ── INTRO ── */}
             <section className="uwi-intro-section">
                 <div className="uwi-intro-container">
                     <div className="uwi-intro-grid">
@@ -258,7 +232,7 @@ function IsUniworldWorthTheMoney() {
                         </div>
                         <div className="uwi-intro-image-col">
                             <div className="uwi-image-frame">
-                                <div className="uwi-frame-placeholder uni-tone-worth">
+                                <div className="uwi-frame-placeholder uwi-tone-worth">
                                     <Sparkles size={40} />
                                     <span>Is Uniworld Worth the Money?</span>
                                 </div>
@@ -269,7 +243,6 @@ function IsUniworldWorthTheMoney() {
                 </div>
             </section>
 
-            {/* ── WHY COSTS MORE ── */}
             <section className="uwi-premium-section">
                 <div className="uwi-premium-container">
                     <div className="uwi-premium-grid">
@@ -289,10 +262,10 @@ function IsUniworldWorthTheMoney() {
 
                         <div className="uwi-premium-list-col">
                             <div className="uwi-premium-list">
-                                {uwiPremiumFactors.map(({ Icon, text }, idx) => (
+                                {uwiPremiumFactors.map((f, idx) => (
                                     <div key={idx} className="uwi-premium-item">
-                                        <div className="uwi-premium-item-icon"><Icon size={20} /></div>
-                                        <span>{text}</span>
+                                        <div className="uwi-premium-item-icon"><f.Icon size={20} /></div>
+                                        <span>{f.text}</span>
                                     </div>
                                 ))}
                             </div>
@@ -302,7 +275,6 @@ function IsUniworldWorthTheMoney() {
                 </div>
             </section>
 
-            {/* ── WHAT'S INCLUDED ── */}
             <section className="uwi-included-section">
                 <div className="uwi-included-container">
                     <div className="uwi-included-header">
@@ -313,14 +285,14 @@ function IsUniworldWorthTheMoney() {
                     </div>
 
                     <div className="uwi-included-grid">
-                        {uwiIncludedTable.map(({ feature, value, Icon }, idx) => (
+                        {uwiIncludedTable.map((c, idx) => (
                             <div key={idx} className="uwi-included-card">
                                 <div className="uwi-included-card-icon">
-                                    <Icon size={24} />
+                                    <c.Icon size={24} />
                                 </div>
                                 <div className="uwi-included-card-content">
-                                    <h4 className="uwi-included-card-title">{feature}</h4>
-                                    <p className="uwi-included-card-desc">{value}</p>
+                                    <h4 className="uwi-included-card-title">{c.feature}</h4>
+                                    <p className="uwi-included-card-desc">{c.value}</p>
                                 </div>
                             </div>
                         ))}
@@ -333,14 +305,13 @@ function IsUniworldWorthTheMoney() {
                 </div>
             </section>
 
-            {/* ── LUXURY BEYOND THE CABIN ── */}
             <section className="uwi-cabin-section">
                 <div className="uwi-cabin-container">
                     <div className="uwi-cabin-grid">
 
                         <div className="uwi-cabin-image-col">
                             <div className="uwi-image-frame">
-                                <div className="uwi-frame-placeholder uni-tone-suite">
+                                <div className="uwi-frame-placeholder uwi-tone-suite">
                                     <Crown size={40} />
                                     <span>Luxury suite aboard a Uniworld River Cruise ship</span>
                                 </div>
@@ -374,7 +345,6 @@ function IsUniworldWorthTheMoney() {
                 </div>
             </section>
 
-            {/* ── DINING ── */}
             <section className="uwi-dining-section">
                 <div className="uwi-dining-container">
                     <div className="uwi-dining-header">
@@ -398,7 +368,7 @@ function IsUniworldWorthTheMoney() {
 
                         <div className="uwi-dining-image-col">
                             <div className="uwi-image-frame">
-                                <div className="uwi-frame-placeholder uni-tone-dining">
+                                <div className="uwi-frame-placeholder uwi-tone-dining">
                                     <Utensils size={40} />
                                     <span>Fine dining experience on a Uniworld River Cruise</span>
                                 </div>
@@ -414,7 +384,6 @@ function IsUniworldWorthTheMoney() {
                 </div>
             </section>
 
-            {/* ── EXCURSIONS ── */}
             <section className="uwi-excursions-section">
                 <div className="uwi-excursions-container">
                     <div className="uwi-excursions-header">
@@ -425,10 +394,10 @@ function IsUniworldWorthTheMoney() {
                     </div>
 
                     <div className="uwi-excursions-grid">
-                        {uwiExcursions.map(({ Icon, text }, idx) => (
+                        {uwiExcursions.map((e, idx) => (
                             <div key={idx} className="uwi-excursion-card">
-                                <div className="uwi-excursion-icon"><Icon size={22} /></div>
-                                <span>{text}</span>
+                                <div className="uwi-excursion-icon"><e.Icon size={22} /></div>
+                                <span>{e.text}</span>
                             </div>
                         ))}
                     </div>
@@ -440,14 +409,13 @@ function IsUniworldWorthTheMoney() {
                 </div>
             </section>
 
-            {/* ── PERSONALIZED SERVICE ── */}
             <section className="uwi-service-section" style={{ background: '#182c49' }}>
                 <div className="uwi-service-container">
                     <div className="uwi-service-grid">
 
                         <div className="uwi-service-image-col">
                             <div className="uwi-image-frame">
-                                <div className="uwi-frame-placeholder uni-tone-butler">
+                                <div className="uwi-frame-placeholder uwi-tone-butler">
                                     <Users size={40} />
                                     <span>Butler service on a luxury Uniworld River Cruise</span>
                                 </div>
@@ -480,7 +448,6 @@ function IsUniworldWorthTheMoney() {
                 </div>
             </section>
 
-            {/* ── COMPARISON TABLE ── */}
             <section className="uwi-stack-section">
                 <div className="uwi-stack-container">
                     <div className="uwi-stack-header">
@@ -526,7 +493,6 @@ function IsUniworldWorthTheMoney() {
                 </div>
             </section>
 
-            {/* ── WHO GETS BEST VALUE ── */}
             <section className="uwi-ideal-section">
                 <div className="uwi-ideal-container">
                     <div className="uwi-ideal-grid">
@@ -556,7 +522,7 @@ function IsUniworldWorthTheMoney() {
 
                         <div className="uwi-ideal-image-col">
                             <div className="uwi-image-frame">
-                                <div className="uwi-frame-placeholder uni-tone-couple">
+                                <div className="uwi-frame-placeholder uwi-tone-couple">
                                     <Heart size={40} />
                                     <span>Couples enjoying a luxury Uniworld River Cruise</span>
                                 </div>
@@ -568,7 +534,6 @@ function IsUniworldWorthTheMoney() {
                 </div>
             </section>
 
-            {/* ── WHEN NOT WORTH IT ── */}
             <section className="uwi-notworth-section">
                 <div className="uwi-notworth-container">
                     <div className="uwi-notworth-header">
@@ -596,7 +561,6 @@ function IsUniworldWorthTheMoney() {
                 </div>
             </section>
 
-            {/* ── MAXIMIZE INVESTMENT ── */}
             <section className="uwi-maximize-section">
                 <div className="uwi-maximize-container">
                     <span className="uwi-eyebrow uwi-eyebrow-light">SMART PLANNING</span>
@@ -621,7 +585,6 @@ function IsUniworldWorthTheMoney() {
                 </div>
             </section>
 
-            {/* ── IS THE HIGHER PRICE JUSTIFIED ── */}
             <section className="uwi-justified-section">
                 <div className="uwi-justified-container">
                     <div className="uwi-justified-grid">
@@ -645,7 +608,7 @@ function IsUniworldWorthTheMoney() {
 
                         <div className="uwi-justified-image-col">
                             <div className="uwi-image-frame">
-                                <div className="uwi-frame-placeholder uni-tone-river">
+                                <div className="uwi-frame-placeholder uwi-tone-river">
                                     <Waves size={40} />
                                     <span>Boutique luxury river cruise through Europe</span>
                                 </div>
@@ -664,7 +627,6 @@ function IsUniworldWorthTheMoney() {
                 </div>
             </section>
 
-            {/* ── FINAL THOUGHTS ── */}
             <section className="uwi-final-section">
                 <div className="uwi-final-bg"></div>
                 <div className="uwi-final-container">
@@ -680,56 +642,54 @@ function IsUniworldWorthTheMoney() {
                     <div className="uwi-final-card">
                         <p className="uwi-final-body">Whether Uniworld is worth the money depends on your travel priorities.</p>
                         <p className="uwi-final-body">Travelers seeking elegant accommodations, exceptional service, immersive cultural experiences, and predictable vacation costs often find excellent value in its all-inclusive approach.</p>
-                        <p className="uwi-final-body uni-final-emphasis">Those looking for the lowest possible fare may find alternatives better suited to their budget, but travelers who appreciate luxury and convenience frequently consider Uniworld's higher upfront cost a worthwhile investment.</p>
+                        <p className="uwi-final-body uwi-final-emphasis">Those looking for the lowest possible fare may find alternatives better suited to their budget, but travelers who appreciate luxury and convenience frequently consider Uniworld's higher upfront cost a worthwhile investment.</p>
                     </div>
 
                 </div>
             </section>
 
-            {/* ── ANGELA HUGHES EXPERT INSIGHT ── */}
-            <section className="luxe-expert-insight-section">
-                <div className="luxe-expert-insight-container">
-                    <div className="luxe-expert-portrait-panel">
-                        <div className="luxe-expert-img-container">
+            <section className="uwi-expert-section">
+                <div className="uwi-expert-container">
+                    <div className="uwi-expert-portrait-panel">
+                        <div className="uwi-expert-img-container">
                             <img src={Profile_Picture_AH} alt="Angela Hughes - River Cruise Expert" />
                         </div>
-                        <div className="luxe-expert-stats-strip">
-                            <div className="luxe-expert-stat-box">
+                        <div className="uwi-expert-stats-strip">
+                            <div className="uwi-expert-stat-box">
                                 <h4>40+</h4>
                                 <p>Years Designing Travel</p>
                             </div>
-                            <div className="luxe-expert-stat-box">
+                            <div className="uwi-expert-stat-box">
                                 <h4>121+</h4>
                                 <p>Countries Traveled</p>
                             </div>
                         </div>
                     </div>
-                    <div className="luxe-expert-content-panel">
-                        <span className="luxe-eyebrow">MEET THE CEO</span>
+                    <div className="uwi-expert-content-panel">
+                        <span className="uwi-expert-eyebrow">MEET THE CEO</span>
                         <h2 className="uwi-section-heading" style={{color:'white'}}>Insight from Angela Hughes</h2>
                         <div className="uwi-heading-separator-bar"></div>
-                        <p className="luxe-expert-quote">
+                        <p className="uwi-expert-quote">
                             "A Uniworld river cruise isn't just about traveling from destination to destination—it's about returning to a uniquely curated boutique sanctuary every single evening, experiencing local culture both on and off the ship."
                         </p>
-                        <div className="luxe-expert-priorities">
+                        <div className="uwi-expert-priorities">
                             <h5>Travel Prioritization Matrix:</h5>
-                            <div className="luxe-expert-pills">
+                            <div className="uwi-expert-pills">
                                 {['Boutique River Ships', 'Personalized Butler Service', 'All-Inclusive Value', 'Regional Shore Excursions', 'Gourmet Dining', 'Intimate Capacity'].map(pill => (
-                                    <span key={pill} className="luxe-expert-pill">
+                                    <span key={pill} className="uwi-expert-pill">
                                         <Anchor size={12} />
                                         {pill}
                                     </span>
                                 ))}
                             </div>
                         </div>
-                        <p className="luxe-expert-bio">
+                        <p className="uwi-expert-bio">
                             As founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel, Angela Hughes uses her personal, deep connections in the river cruising world to deliver custom travel planning that regular booking engines simply cannot replicate.
                         </p>
                     </div>
                 </div>
             </section>
 
-            {/* ── KEY TAKEAWAYS ── */}
             <section className="uwi-summary-section">
                 <div className="uwi-summary-container">
                     <div className="uwi-summary-header">
@@ -748,7 +708,6 @@ function IsUniworldWorthTheMoney() {
                 </div>
             </section>
 
-            {/* ── FAQ ── */}
             <section className="uwi-faq-section">
                 <div className="uwi-faq-container">
                     <div className="uwi-faq-header">
@@ -776,41 +735,12 @@ function IsUniworldWorthTheMoney() {
                 </div>
             </section>
 
-            {/* ── EXPLORE MORE RESOURCES ── */}
-            <section className="uwi-explore-section">
-                <div className="uwi-explore-container">
-                    <div className="uwi-explore-header">
-                        <span className="uwi-eyebrow">DISCOVER MORE</span>
-                        <h2 className="uwi-section-heading">Explore More Uniworld Resources</h2>
-                        <div className="uwi-heading-separator-bar uwi-bar-centered"></div>
-                        <p className="uwi-explore-subtitle">
-                            Dive deeper into Uniworld's offerings with our expert guides and comparisons.
-                        </p>
-                    </div>
-                    <div className="uwi-explore-grid">
-                        {uniInternalLinks.map((link, idx) => (
-                            <Link key={idx} to={link.url} className="uwi-explore-card">
-                                <div className="uwi-explore-card-icon-wrap">
-                                    <BookOpen size={22} />
-                                </div>
-                                <div className="uwi-explore-card-content">
-                                    <h3 className="uwi-explore-card-title">{link.text}</h3>
-                                    <span className="uwi-explore-card-link">
-                                        Read More <ChevronRight size={14} />
-                                    </span>
-                                </div>
-                            </Link>
-                        ))}
-                    </div>
-                </div>
-            </section>
 
-            {/* ── CTA ── */}
             <section className="uwi-cta-section">
                 <div className="uwi-cta-aurora-glow"></div>
-                <div className="uwi-cta-crystal uni-cta-crystal-1"></div>
-                <div className="uwi-cta-crystal uni-cta-crystal-2"></div>
-                <div className="uwi-cta-crystal uni-cta-crystal-3"></div>
+                <div className="uwi-cta-crystal uwi-cta-crystal-1"></div>
+                <div className="uwi-cta-crystal uwi-cta-crystal-2"></div>
+                <div className="uwi-cta-crystal uwi-cta-crystal-3"></div>
                 <div className="uwi-cta-grid-lines"></div>
 
                 <div className="uwi-cta-content">
@@ -832,6 +762,8 @@ function IsUniworldWorthTheMoney() {
                     </div>
                 </div>
             </section>
+
+            </div>
 
         </>
     )

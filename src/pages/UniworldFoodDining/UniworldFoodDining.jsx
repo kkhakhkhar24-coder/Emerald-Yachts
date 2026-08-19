@@ -3,7 +3,7 @@ import './UniworldFoodDining.css'
 
 import {
     Utensils, Coffee, Wine, Sun, Moon, Sparkles, Leaf, Heart,
-    CheckCircle, Globe, MapPin, Star, Clock, ChevronRight, Phone,
+    CheckCircle, Globe, MapPin, Star, Clock, Phone,
     Anchor, Gem, Award, LayoutList, Croissant, Soup, Salad,
     IceCreamCone, GlassWater, Music, Compass, ArrowRight
 } from 'lucide-react'
@@ -108,7 +108,7 @@ function UniworldFoodDining() {
     }
 
     return (
-        <>
+        <div className="ufd-page">
             <Helmet>
                 <title>Uniworld Food and Dining Guide</title>
                 <meta name="title" content="Uniworld Food and Dining Guide" />
@@ -118,8 +118,6 @@ function UniworldFoodDining() {
             </Helmet>
 
             <Navbar />
-
-            <div className="ufd-page">
 
                 {/* ── HERO ── */}
                 <section className="ufd-hero-section">
@@ -275,12 +273,12 @@ function UniworldFoodDining() {
                                 { Icon: Star, label: 'Farewell dinner' },
                                 { Icon: IceCreamCone, label: 'Specialty desserts' },
                                 { Icon: Coffee, label: 'Complimentary coffee and tea' }
-                            ].map(({ Icon, label }, idx) => (
-                                <div key={idx} className="ufd-mini-card">
-                                    <div className="ufd-mini-card-icon"><Icon size={22} /></div>
-                                    <span className="ufd-mini-card-label">{label}</span>
-                                </div>
-                            ))}
+].map((b, idx) => (
+                        <div key={idx} className="ufd-mini-card">
+                            <div className="ufd-mini-card-icon"><b.Icon size={22} /></div>
+                            <span className="ufd-mini-card-label">{b.label}</span>
+                        </div>
+                    ))}
                         </div>
                         <div className="ufd-beverage-highlight">
                             <Wine size={20} />
@@ -709,33 +707,6 @@ function UniworldFoodDining() {
                     </div>
                 </section>
 
-                {/* ── CONTINUE EXPLORING (INTERNAL LINKS) ── */}
-                <section className="ufd-links-section">
-                    <div className="ufd-container">
-                        <div className="ufd-center-header">
-                            <span className="ufd-eyebrow">KEEP EXPLORING</span>
-                            <h2 className="ufd-section-heading">Continue Exploring Uniworld River Cruises</h2>
-                            <div className="ufd-heading-separator ufd-bar-centered"></div>
-                        </div>
-                        <div className="ufd-links-grid">
-                            {[
-                                { text: 'Uniworld River Cruises Guide', url: '/uniworld-river-cruises/' },
-                                { text: "What Is Included on a Uniworld River Cruise", url: '/uniworld-river-cruises/whats-included/' },
-                                { text: 'Best Uniworld River Cruise Itineraries', url: '/uniworld-river-cruises/best-itineraries/' },
-                                { text: 'Uniworld Ships and Suites', url: '/uniworld-river-cruises/ships-suites/' },
-                                { text: 'First-Time Uniworld River Cruise Guide', url: '/uniworld-river-cruises/first-time-guide/' },
-                                { text: 'Is Uniworld Worth the Money', url: '/uniworld-river-cruises/is-uniworld-worth-it/' },
-                                { text: 'Luxury River Cruises', url: '/luxury-river-cruises/' }
-                            ].map((link, idx) => (
-                                <Link to={link.url} key={idx} className="ufd-link-card">
-                                    <span>{link.text}</span>
-                                    <ChevronRight size={18} />
-                                </Link>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-
                 {/* ── CTA ── */}
                 <section className="ufd-cta-section">
                     <div className="ufd-cta-aurora-glow"></div>
@@ -769,8 +740,7 @@ function UniworldFoodDining() {
                     </div>
                 </section>
 
-            </div>
-        </>
+        </div>
     )
 }
 

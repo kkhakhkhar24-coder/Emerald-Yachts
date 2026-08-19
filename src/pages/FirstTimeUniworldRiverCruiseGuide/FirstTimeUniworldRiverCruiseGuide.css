@@ -52,7 +52,6 @@
     font-family: var(--font-body), sans-serif;
 }
 
-/* ── SHARED UTILITIES ────────────────────────────────────────── */
 
 .ftuwg-eyebrow {
     font-size: 11px;
@@ -80,7 +79,7 @@
 
 .ftuwg-section-heading {
     font-family: var(--font-display), serif;
-    font-size: 34px;
+    font-size: 48px;
     font-weight: 700;
     color: var(--ftuwg-navy);
     margin: 0 0 18px 0;
@@ -156,7 +155,6 @@
     opacity: 0.85;
 }
 
-/* ── HERO ─────────────────────────────────────────────────────── */
 
 .ftuwg-hero-section {
     position: relative;
@@ -206,10 +204,10 @@
 
 .ftuwg-hero-main-title {
     font-family: var(--font-display), serif;
-    font-size: 48px;
+    font-size: 60px;
     font-weight: 700;
     color: #ffffff;
-    line-height: 1.2;
+    line-height: 1.15;
     margin: 0 0 20px 0;
 }
 
@@ -221,7 +219,6 @@
     max-width: 680px;
 }
 
-/* ── INTRO ────────────────────────────────────────────────────── */
 
 .ftuwg-intro-section {
     background: var(--ftuwg-bg-white);
@@ -300,7 +297,6 @@
     opacity: 0.85;
 }
 
-/* ── WHY CHOOSE UNIWORLD ─────────────────────────────────────── */
 
 .ftuwg-why-section {
     background: var(--ftuwg-bg-soft);
@@ -365,7 +361,6 @@
     justify-content: center;
 }
 
-/* ── ITINERARY CARDS ─────────────────────────────────────────── */
 
 .ftuwg-itinerary-section {
     background: linear-gradient(135deg, #f0f4f8 0%, #e8eef5 100%);
@@ -501,11 +496,23 @@
     align-items: center;
 }
 
-/* ── ITINERARY RESPONSIVE ─────────────────────────────────────── */
 
 @media (max-width: 1024px) {
     .ftuwg-itinerary-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ftuwg-hero-main-title {
+        font-size: 32px !important;
+    }
+
+    .ftuwg-section-heading,
+    .ftuwg-cta-title {
+        font-size: 28px !important;
+    }
+
+    .ftuwg-page p {
+        font-size: 17px;
     }
 }
 
@@ -544,6 +551,19 @@
         font-size: 13px;
         padding: 10px 20px;
     }
+
+    .ftuwg-hero-main-title {
+        font-size: 26px !important;
+    }
+
+    .ftuwg-section-heading,
+    .ftuwg-cta-title {
+        font-size: 24px !important;
+    }
+
+    .ftuwg-page p {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 420px) {
@@ -566,7 +586,6 @@
     }
 }
 
-/* ── CABIN SELECTION ──────────────────────────────────────────── */
 
 .ftuwg-cabin-section {
     background: linear-gradient(160deg, var(--ftuwg-navy-deep2) 0%, var(--ftuwg-navy-dark) 100%);
@@ -679,7 +698,6 @@
     opacity: 0.8;
 }
 
-/* ── CABIN RESPONSIVE ─────────────────────────────────────────── */
 
 @media (max-width: 1024px) {
     .ftuwg-cabin-grid {
@@ -718,7 +736,6 @@
     }
 }
 
-/* ── WHAT IS INCLUDED ─────────────────────────────────────────── */
 
 .ftuwg-fare-section {
     background: var(--ftuwg-bg-soft);
@@ -844,7 +861,6 @@
     font-weight: 500;
 }
 
-/* ── INCLUDED RESPONSIVE ──────────────────────────────────────── */
 
 @media (max-width: 1024px) {
     .ftuwg-fare-grid {
@@ -887,7 +903,6 @@
     }
 }
 
-/* ── WHAT TO PACK ─────────────────────────────────────────────── */
 
 .ftuwg-pack-section {
     background: linear-gradient(180deg, #e8edf5 0%, #f5f7fa 100%);
@@ -970,7 +985,6 @@
     margin-right: auto;
 }
 
-/* ── PACK RESPONSIVE ──────────────────────────────────────────── */
 
 @media (max-width: 1024px) {
     .ftuwg-pack-grid {
@@ -1002,7 +1016,6 @@
     }
 }
 
-/* ── TYPICAL DAY ──────────────────────────────────────────────── */
 
 .ftuwg-day-section {
     background: linear-gradient(160deg, var(--ftuwg-navy-deep2) 0%, var(--ftuwg-navy-dark) 100%);
@@ -1113,7 +1126,6 @@
     margin-right: auto;
 }
 
-/* ── TYPICAL DAY RESPONSIVE ───────────────────────────────────── */
 
 @media (max-width: 860px) {
     .ftuwg-day-grid {
@@ -1165,7 +1177,6 @@
     }
 }
 
-/* ── DINING ───────────────────────────────────────────────────── */
 
 .ftuwg-dining-section {
     background: linear-gradient(180deg, #f0f4f8 0%, #e8edf5 100%) !important;
@@ -1282,7 +1293,6 @@
     border-left: 3px solid var(--ftuwg-navy);
 }
 
-/* ── DINING RESPONSIVE ────────────────────────────────────────── */
 
 @media (max-width: 860px) {
     .ftuwg-dining-grid {
@@ -1313,7 +1323,6 @@
     }
 }
 
-/* ── SHORE EXCURSIONS ─────────────────────────────────────────── */
 
 .ftuwg-excursions-section {
     background: linear-gradient(160deg, var(--ftuwg-navy-deep2) 0%, var(--ftuwg-navy-dark) 100%) !important;
@@ -1417,7 +1426,6 @@
     border-left: 3px solid rgba(255, 255, 255, 0.4);
 }
 
-/* ── EXCURSIONS RESPONSIVE ────────────────────────────────────── */
 
 @media (max-width: 860px) {
     .ftuwg-excursions-grid {
@@ -1454,7 +1462,6 @@
     }
 }
 
-/* ── ONBOARD ATMOSPHERE ───────────────────────────────────────── */
 
 .ftuwg-atmosphere-section {
     background: linear-gradient(160deg, #1e3a5f 0%, #2d6a9f 100%) !important;
@@ -1533,7 +1540,6 @@
     margin: 0;
 }
 
-/* ── ATMOSPHERE RESPONSIVE ────────────────────────────────────── */
 
 @media (max-width: 860px) {
     .ftuwg-atmosphere-grid {
@@ -1560,7 +1566,6 @@
     }
 }
 
-/* ── TIPS & MISTAKES ──────────────────────────────────────────── */
 
 .ftuwg-tips-section {
     background: linear-gradient(180deg, #f0f5fa 0%, #e5ecf5 100%);
@@ -1687,7 +1692,6 @@
     border-radius: 8px;
 }
 
-/* ── TIPS RESPONSIVE ──────────────────────────────────────────── */
 
 @media (max-width: 860px) {
     .ftuwg-tips-grid {
@@ -1714,7 +1718,6 @@
     }
 }
 
-/* ── IS UNIWORLD RIGHT FOR YOU ────────────────────────────────── */
 
 .ftuwg-fit-section {
     background: linear-gradient(160deg, var(--ftuwg-navy-deep2) 0%, var(--ftuwg-navy-dark) 100%);
@@ -1788,7 +1791,6 @@
     font-style: italic;
 }
 
-/* ── KEY TAKEAWAYS ────────────────────────────────────────────── */
 
 .ftuwg-takeaways-section {
     background: linear-gradient(160deg, #1e3a5f 0%, #2d6a9f 100%) !important;
@@ -1867,7 +1869,6 @@
     font-weight: 500;
 }
 
-/* ── TAKEAWAYS RESPONSIVE ─────────────────────────────────────── */
 
 @media (max-width: 860px) {
     .ftuwg-takeaways-list {
@@ -1901,7 +1902,6 @@
     }
 }
 
-/* ── FAQ ──────────────────────────────────────────────────────── */
 
 .ftuwg-faqs-section {
     padding: 64px 20px;
@@ -1985,7 +1985,6 @@
     margin-bottom: 0;
 }
 
-/* ── CTA ──────────────────────────────────────────────────────── */
 
 .ftuwg-cta-section {
     position: relative;
@@ -2006,10 +2005,10 @@
     background: radial-gradient(ellipse at center, rgba(56, 189, 248, 0.12) 0%, rgba(99, 102, 241, 0.06) 40%, transparent 70%);
     filter: blur(60px);
     z-index: 0;
-    animation: uni-aurora-pulse 8s ease-in-out infinite alternate;
+    animation: ftuwg-aurora-pulse 8s ease-in-out infinite alternate;
 }
 
-@keyframes uni-aurora-pulse {
+@keyframes ftuwg-aurora-pulse {
     0% { opacity: 0.6; transform: translateX(-50%) scale(1); }
     100% { opacity: 1; transform: translateX(-50%) scale(1.08); }
 }
@@ -2023,11 +2022,11 @@
     backdrop-filter: blur(6px);
 }
 
-.ftuwg-cta-crystal-1 { width: 80px; height: 80px; top: 12%; left: 8%; transform: rotate(45deg); animation: uni-crystal-float 12s ease-in-out infinite; }
-.ftuwg-cta-crystal-2 { width: 50px; height: 50px; top: 20%; right: 12%; transform: rotate(25deg); animation: uni-crystal-float 10s ease-in-out 2s infinite; }
-.ftuwg-cta-crystal-3 { width: 35px; height: 35px; bottom: 18%; left: 15%; transform: rotate(60deg); animation: uni-crystal-float 14s ease-in-out 4s infinite; }
+.ftuwg-cta-crystal-1 { width: 80px; height: 80px; top: 12%; left: 8%; transform: rotate(45deg); animation: ftuwg-crystal-float 12s ease-in-out infinite; }
+.ftuwg-cta-crystal-2 { width: 50px; height: 50px; top: 20%; right: 12%; transform: rotate(25deg); animation: ftuwg-crystal-float 10s ease-in-out 2s infinite; }
+.ftuwg-cta-crystal-3 { width: 35px; height: 35px; bottom: 18%; left: 15%; transform: rotate(60deg); animation: ftuwg-crystal-float 14s ease-in-out 4s infinite; }
 
-@keyframes uni-crystal-float {
+@keyframes ftuwg-crystal-float {
     0%, 100% { transform: rotate(45deg) translateY(0); opacity: 0.5; }
     50% { transform: rotate(45deg) translateY(-18px); opacity: 0.9; }
 }
@@ -2062,21 +2061,21 @@
     justify-content: center;
     color: rgba(148, 210, 255, 0.8);
     margin-bottom: 16px;
-    animation: uni-compass-spin 20s linear infinite;
+    animation: ftuwg-compass-spin 20s linear infinite;
     background: rgba(148, 210, 255, 0.04);
     box-shadow: 0 0 30px rgba(56, 189, 248, 0.08);
 }
 
-@keyframes uni-compass-spin {
+@keyframes ftuwg-compass-spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
 
 .ftuwg-cta-compass-ring svg {
-    animation: uni-compass-counter-spin 20s linear infinite;
+    animation: ftuwg-compass-counter-spin 20s linear infinite;
 }
 
-@keyframes uni-compass-counter-spin {
+@keyframes ftuwg-compass-counter-spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(-360deg); }
 }
@@ -2094,8 +2093,8 @@
 .ftuwg-cta-title {
     font-family: var(--font-display), serif;
     font-size: 48px;
-    line-height: 1.12;
-    font-weight: 600;
+    line-height: 1.25;
+    font-weight: 700;
     color: #ffffff;
     margin: 0 0 14px;
     letter-spacing: -0.01em;
@@ -2310,7 +2309,6 @@
     }
 }
 
-/* ── ANGELA HUGHES EXPERT INSIGHT ── */
 .ftuwg-expert-insight-section {
     padding: 88px 20px;
     background: #0f1c2e !important;
@@ -2366,7 +2364,8 @@
 }
 
 .ftuwg-expert-stat-box h4 {
-    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
     font-weight: 700;
     color: #3b82f6;
     margin-bottom: 2px;
@@ -2479,4 +2478,33 @@
     .ftuwg-expert-content-panel h2 {
         font-size: 28px !important;
     }
+}
+/* =============================================================
+   FTUWG PAGE ISOLATION & TYPOGRAPHY OVERRIDES
+   ============================================================= */
+
+.ftuwg-page {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ftuwg-page h3 {
+    font-family: 'Playfair Display', serif !important;
+}
+
+.ftuwg-page p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.65;
+}
+
+.ftuwg-page .ftuwg-expert-quote {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.ftuwg-page .ftuwg-expert-stat-box p {
+    font-size: 13px;
+    font-weight: 500;
 }

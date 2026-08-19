@@ -8,23 +8,22 @@ import {
     Anchor, Sparkles, Ship, Sun, Crown, Users, Gem, CheckCircle,
     ChevronRight, MapPin, DoorOpen, Volume2, Eye, DollarSign,
     Compass, Calendar, Camera, Waves, ArrowRight, Phone,
-    LayoutList, BookOpen, ExternalLink, Landmark, Globe2,
+    LayoutList, ExternalLink, Landmark, Globe2,
     ShieldCheck, Sparkle, ImageIcon, Info, AlertTriangle
 } from 'lucide-react'
+
+const CabImageEmpty = ({ alt, className = '' }) => (
+    <div className={`cab-img-frame ${className}`} role="img" aria-label={alt}>
+        <div className="cab-img-placeholder">
+            <ImageIcon size={30} />
+        </div>
+    </div>
+)
 
 function BestUniworldCabins() {
 
     const [cabActiveFaq, setCabActiveFaq] = useState(null)
     const cabToggleFaq = i => setCabActiveFaq(cabActiveFaq === i ? null : i)
-
-    /* ── PLACEHOLDER IMAGE (swap src with real photography before publishing) ── */
-    const CabImageEmpty = ({ alt, className = '' }) => (
-        <div className={`cab-img-frame ${className}`} role="img" aria-label={alt}>
-            <div className="cab-img-placeholder">
-                <ImageIcon size={30} />
-            </div>
-        </div>
-    )
 
     const cabBestForMost = [
         {
@@ -150,29 +149,6 @@ function BestUniworldCabins() {
         { question: 'When should I book for the best cabin selection?', answer: 'Booking several months in advance generally offers the greatest choice of cabin categories and locations.' }
     ]
 
-    const cabInternalLinks = [
-        { text: 'Uniworld Cabin Categories', url: '/uniworld-river-cruises/cabin-categories/', icon: '🚢' },
-        { text: 'Uniworld Ships and Suites', url: '/uniworld-river-cruises/ships-suites/', icon: '🛏️' },
-        { text: "What Is Included on a Uniworld River Cruise", url: '/uniworld-river-cruises/whats-included/', icon: '✨' },
-        { text: 'Is Uniworld Worth the Money', url: '/uniworld-river-cruises/is-uniworld-worth-it/', icon: '💎' },
-        { text: 'Uniworld River Cruises Guide', url: '/uniworld-river-cruises/', icon: '🗺️' },
-        { text: 'Luxury River Cruises', url: '/luxury-river-cruises/', icon: '🌊' }
-    ]
-
-    const cabExternalRefs = [
-        { text: 'Official Uniworld Boutique River Cruises', Icon: Ship },
-        { text: 'Cruise Lines International Association (CLIA)', Icon: Anchor },
-        { text: 'European Tourism Boards', Icon: Landmark },
-        { text: 'UNESCO World Heritage Centre', Icon: Globe2 },
-        { text: 'U.S. Department of State Travel Advisories', Icon: ShieldCheck }
-    ]
-
-    const cabSemanticKeywords = [
-        'luxury river cruise cabin guide', 'boutique cruise accommodations', 'best French Balcony cabin',
-        'luxury suite comparison', 'river cruise deck plans', 'premium river cruise rooms',
-        'boutique ship cabins', 'luxury cruise staterooms', 'river cruise room selection', 'Uniworld suite benefits'
-    ]
-
     const cabSchemaData = {
         "@context": "https://schema.org",
         "@graph": [
@@ -221,7 +197,7 @@ function BestUniworldCabins() {
     }
 
     return (
-        <>
+        <div className="cab-page-root">
             <Helmet>
                 <title>Best Uniworld Cabins & Cabins to Avoid</title>
                 <meta name="title" content="Best Uniworld Cabins & Cabins to Avoid" />
@@ -232,7 +208,6 @@ function BestUniworldCabins() {
 
             <Navbar />
 
-            {/* ── HERO ── */}
             <section className="cab-hero-section">
                 <div className="cab-hero-bg"></div>
                 <div className="cab-hero-overlay"></div>
@@ -248,7 +223,6 @@ function BestUniworldCabins() {
                 </div>
             </section>
 
-            {/* ── INTRO ── */}
             <section className="cab-intro-section">
                 <div className="cab-container">
                     <div className="cab-intro-grid">
@@ -275,7 +249,6 @@ function BestUniworldCabins() {
                 </div>
             </section>
 
-            {/* ── HOW LOCATION AFFECTS EXPERIENCE ── */}
             <section className="cab-factors-section">
                 <div className="cab-container">
 
@@ -289,12 +262,10 @@ function BestUniworldCabins() {
                     {/* Side-by-side: image left, content right */}
                     <div className="cab-factors-sidebyside">
 
-                        {/* LEFT — Image */}
                         <div className="cab-factors-image-col">
                             <CabImageEmpty alt="Cabin location guide on a Uniworld river cruise ship" className="cab-factors-img" />
                         </div>
 
-                        {/* RIGHT — Text + factor grid */}
                         <div className="cab-factors-content-col">
                             <p className="cab-body">
                                 Unlike large ocean ships, river cruise vessels are relatively compact, so walking distances are short. However, cabin location can still influence your overall experience.
@@ -310,10 +281,10 @@ function BestUniworldCabins() {
                                     { Icon: Eye, text: 'Scenic views' },
                                     { Icon: DoorOpen, text: 'Cabin size' },
                                     { Icon: Sun, text: 'Balcony preference' }
-                                ].map(({ Icon, text }, idx) => (
+                                ].map((f, idx) => (
                                     <div key={idx} className="cab-factor-item">
-                                        <div className="cab-factor-icon"><Icon size={18} /></div>
-                                        <span>{text}</span>
+                                        <div className="cab-factor-icon"><f.Icon size={18} /></div>
+                                        <span>{f.text}</span>
                                     </div>
                                 ))}
                             </div>
@@ -330,7 +301,6 @@ function BestUniworldCabins() {
                 </div>
             </section>
 
-            {/* ── BEST CABINS FOR MOST TRAVELERS ── */}
             <section className="cab-best-section">
                 <div className="cab-best-bg"></div>
                 <div className="cab-best-grid-lines"></div>
@@ -382,7 +352,6 @@ function BestUniworldCabins() {
             </section>
 
 
-            {/* ── BEST VALUE ── */}
             <section className="cab-value-section">
                 <div className="cab-container">
                     <div className="cab-center-header">
@@ -426,7 +395,6 @@ function BestUniworldCabins() {
                 </div>
             </section>
 
-            {/* ── LOCATIONS TO AVOID ── */}
             <section className="cab-avoid-section">
                 <div className="cab-avoid-bg"></div>
                 <div className="cab-container">
@@ -460,7 +428,6 @@ function BestUniworldCabins() {
                 </div>
             </section>
 
-            {/* ── TRAVEL STYLE TABLE ── */}
             <section className="cab-table-section">
                 <div className="cab-container cab-narrow">
                     <div className="cab-center-header">
@@ -490,7 +457,6 @@ function BestUniworldCabins() {
                 </div>
             </section>
 
-            {/* ── SHOULD YOU UPGRADE ── */}
             <section className="cab-upgrade-section">
                 <div className="cab-upgrade-bg"></div>
                 <div className="cab-container" style={{ position: 'relative', zIndex: 1 }}>
@@ -523,7 +489,6 @@ function BestUniworldCabins() {
                 </div>
             </section>
 
-            {/* ── TIPS ── */}
             <section className="cab-tips-section">
                 <div className="cab-container">
                     <div className="cab-center-header">
@@ -546,7 +511,6 @@ function BestUniworldCabins() {
                 </div>
             </section>
 
-            {/* ── COMMON MISTAKES ── */}
             <section className="cab-mistakes-section">
                 <div className="cab-mistakes-bg"></div>
                 <div className="cab-mistakes-grid-lines"></div>
@@ -572,7 +536,6 @@ function BestUniworldCabins() {
                 </div>
             </section>
 
-            {/* ── ARE THERE REALLY CABINS TO AVOID ── */}
             <section className="cab-final-section">
                 <div className="cab-final-bg-pattern"></div>
                 <div className="cab-container cab-narrow" style={{ position: 'relative', zIndex: 1 }}>
@@ -610,7 +573,6 @@ function BestUniworldCabins() {
                 </div>
             </section>
 
-            {/* ── KEY TAKEAWAYS ── */}
             <section className="cab-takeaways-section">
                 <div className="cab-container cab-narrow">
                     <div className="cab-takeaways-content">
@@ -630,7 +592,6 @@ function BestUniworldCabins() {
                 </div>
             </section>
 
-            {/* ── ANGELA HUGHES EXPERT INSIGHT ── */}
             <section className="cab-expert-insight-section">
                 <div className="cab-container">
                     <div className="cab-expert-insight-grid">
@@ -675,7 +636,6 @@ function BestUniworldCabins() {
                 </div>
             </section>
 
-            {/* ── FAQ ── */}
             <section className="cab-faq-section">
                 <div className="cab-faq-container">
                     <div className="cab-center-header">
@@ -699,27 +659,6 @@ function BestUniworldCabins() {
                 </div>
             </section>
 
-            {/* ── EXPLORE MORE / INTERNAL LINKS ── */}
-            <section className="cab-related-section">
-                <div className="cab-container">
-                    <div className="cab-center-header">
-                        <span className="cab-eyebrow">CONTINUE READING</span>
-                        <h2 className="cab-section-heading">Explore More Uniworld Guides</h2>
-                        <div className="cab-separator cab-separator-center"></div>
-                    </div>
-                    <div className="cab-related-grid">
-                        {cabInternalLinks.map((link, idx) => (
-                            <Link key={idx} to={link.url} className="cab-related-card">
-                                <BookOpen size={18} />
-                                <span>{link.text}</span>
-                                <ArrowRight size={16} className="cab-related-arrow" />
-                            </Link>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* ── CTA ── */}
             <section className="cab-cta-section">
                 <div className="cab-cta-aurora-glow"></div>
                 <div className="cab-cta-crystal cab-cta-crystal-1"></div>
@@ -746,7 +685,7 @@ function BestUniworldCabins() {
                     </div>
                 </div>
             </section>
-        </>
+        </div>
     )
 }
 

@@ -1255,12 +1255,36 @@ const Navbar = () => {
                 Celebrity All Included Explained
               </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/celebrity-cruises/drink-packages"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 Celebrity Cruises Drink Packages
+              </NavLink>
+
+              <NavLink
+                to="/celebrity-cruises/dining"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Celebrity Cruises Dining Guide
+              </NavLink>
+
+              {/* <NavLink
+                to="/celebrity-cruises/edge-series"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Celebrity Edge Series Ships Guide
+              </NavLink> */}
+
+              {/* <NavLink
+                to="/celebrity-cruises/faqs"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Celebrity Cruises Frequently Asked Questions
               </NavLink> */}
 
               <NavLink
@@ -1311,7 +1335,7 @@ const Navbar = () => {
                 Celebrity Rhine River Cruises
               </NavLink>
 
-               <NavLink
+              <NavLink
                 to="/celebrity-cruises/river-cruises/danube"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -2537,12 +2561,36 @@ const Navbar = () => {
               Celebrity All Included Explained
             </NavLink>
 
-            {/* <NavLink
+            <NavLink
               to="/celebrity-cruises/drink-packages"
               className="nav-dropdown-single"
               onClick={toggleMenu}
             >
               Celebrity Cruises Drink Packages
+            </NavLink>
+
+            <NavLink
+              to="/celebrity-cruises/dining"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Celebrity Cruises Dining Guide
+            </NavLink>
+
+            {/* <NavLink
+              to="/celebrity-cruises/edge-series"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Celebrity Edge Series Ships Guide
+            </NavLink> */}
+
+            {/* <NavLink
+              to="/celebrity-cruises/faqs"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Celebrity Cruises Frequently Asked Questions
             </NavLink> */}
 
             <NavLink
@@ -2570,38 +2618,38 @@ const Navbar = () => {
             </NavLink>
 
             <NavLink
-                to="/celebrity-cruises/edge-vs-solstice-series"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Celebrity Edge vs Solstice Series
-              </NavLink>
+              to="/celebrity-cruises/edge-vs-solstice-series"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Celebrity Edge vs Solstice Series
+            </NavLink>
 
-               <NavLink
-                to="/celebrity-cruises/river-cruises"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Celebrity River Cruises
-              </NavLink>
+            <NavLink
+              to="/celebrity-cruises/river-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Celebrity River Cruises
+            </NavLink>
 
-               <NavLink
-                to="/celebrity-cruises/river-cruises/rhine"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Celebrity Rhine River Cruises
-              </NavLink>
+            <NavLink
+              to="/celebrity-cruises/river-cruises/rhine"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Celebrity Rhine River Cruises
+            </NavLink>
 
-              <NavLink
-                to="/celebrity-cruises/river-cruises/danube"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Celebrity Danube River Cruises
-              </NavLink>
+            <NavLink
+              to="/celebrity-cruises/river-cruises/danube"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Celebrity Danube River Cruises
+            </NavLink>
 
-               {/* <NavLink
+            {/* <NavLink
                 to="/celebrity-cruises/galapagos"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
