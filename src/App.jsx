@@ -177,7 +177,9 @@ import Celebrityapexcruiseshipguide from "./pages/Celebrityapexcruiseshipguide/C
 import Celebrityedgecruiseshipguide from "./pages/Celebrityedgecruiseshipguide/Celebrityedgecruiseshipguide";
 import Celebrityedgevssolsticeseries from "./pages/Celebrityedgevssolsticeseries/Celebrityedgevssolsticeseries";
 import Celebrityrivercruises from "./pages/Celebrityrivercruises/Celebrityrivercruises";
-// import Celebrityrhinerivercruises  from "./pages/Celebrityrhinerivercruises/Celebrityrhinerivercruises";
+import Celebrityrhinerivercruises  from "./pages/Celebrityrhinerivercruises/Celebrityrhinerivercruises";
+import Celebritydanuberivercruises from "./pages/Celebritydanuberivercruises/Celebritydanuberivercruises";
+// import Celebritygalapagoscruises from "./pages/Celebritygalapagoscruises/Celebritygalapagoscruises";
 
 function App() {
   return (
@@ -1004,11 +1006,20 @@ function App() {
             element={<Celebrityrivercruises  />}
           />
 
-          {/* <Route
+          <Route
             path="/celebrity-cruises/river-cruises/rhine"
             element={<Celebrityrhinerivercruises   />}
-          /> */}
+          />
 
+          <Route
+            path="/celebrity-cruises/river-cruises/danube"
+            element={<Celebritydanuberivercruises />}
+          />
+
+          {/* <Route
+            path="/celebrity-cruises/galapagos"
+            element={<Celebritygalapagoscruises />}
+          /> */}
 
 
         </Routes>

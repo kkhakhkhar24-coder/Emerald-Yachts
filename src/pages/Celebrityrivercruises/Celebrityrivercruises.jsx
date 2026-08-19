@@ -1215,7 +1215,7 @@ function CelebrityRiverCruises() {
                 <section className="criv-compare-section cbcs-dark-section">
                     <div className="criv-compare-container">
                         <div style={{ textAlign: 'center' }}>
-                            <span className="fcel-eyebrow-label">RIVER VS. OCEAN</span>
+                            <span className="fcel-eyebrow-label">RIVER VS OCEAN</span>
                             <h2 className="fcel-section-heading">Celebrity River Cruises vs. Celebrity Ocean Cruises</h2>
                             <div className="fcel-heading-bar fcel-bar-center"></div>
                             <p className="fcel-lead-paragraph" style={{ maxWidth: '800px', margin: '0 auto' }}>

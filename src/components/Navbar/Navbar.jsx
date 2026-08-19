@@ -1303,12 +1303,28 @@ const Navbar = () => {
                 Celebrity River Cruises
               </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/celebrity-cruises/river-cruises/rhine"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 Celebrity Rhine River Cruises
+              </NavLink>
+
+               <NavLink
+                to="/celebrity-cruises/river-cruises/danube"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Celebrity Danube River Cruises
+              </NavLink>
+
+              {/* <NavLink
+                to="/celebrity-cruises/galapagos"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Celebrity Galapagos Cruises
               </NavLink> */}
 
             </div>
@@ -2569,14 +2585,29 @@ const Navbar = () => {
                 Celebrity River Cruises
               </NavLink>
 
-               {/* <NavLink
+               <NavLink
                 to="/celebrity-cruises/river-cruises/rhine"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 Celebrity Rhine River Cruises
-              </NavLink> */}
+              </NavLink>
 
+              <NavLink
+                to="/celebrity-cruises/river-cruises/danube"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Celebrity Danube River Cruises
+              </NavLink>
+
+               {/* <NavLink
+                to="/celebrity-cruises/galapagos"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Celebrity Galapagos Cruises
+              </NavLink> */}
 
 
 
