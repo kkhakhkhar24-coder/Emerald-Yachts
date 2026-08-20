@@ -182,7 +182,10 @@ import Celebrityedgevssolsticeseries from "./pages/Celebrityedgevssolsticeseries
 import Celebrityrivercruises from "./pages/Celebrityrivercruises/Celebrityrivercruises";
 import Celebrityrhinerivercruises from "./pages/Celebrityrhinerivercruises/Celebrityrhinerivercruises";
 import Celebritydanuberivercruises from "./pages/Celebritydanuberivercruises/Celebritydanuberivercruises";
-// import Celebritygalapagoscruises from "./pages/Celebritygalapagoscruises/Celebritygalapagoscruises";
+import Celebritygalapagoscruises from "./pages/Celebritygalapagoscruises/Celebritygalapagoscruises";
+import Celebrityalaskacruises from "./pages/Celebrityalaskacruises/Celebrityalaskacruises";
+// import Celebritymediterraneancruises from "./pages/Celebritymediterraneancruises/Celebritymediterraneancruises";
+// import Celebritycaribbeancruises from "./pages/Celebritycaribbeancruises/Celebritycaribbeancruises";
 
 function App() {
   return (
@@ -1034,10 +1037,28 @@ function App() {
             element={<Celebritydanuberivercruises />}
           />
 
-          {/* <Route
+          <Route
             path="/celebrity-cruises/galapagos"
             element={<Celebritygalapagoscruises />}
+          />
+
+          <Route
+            path="/celebrity-cruises/alaska"
+            element={<Celebrityalaskacruises />}
+          />
+
+          {/* <Route
+            path="/celebrity-cruises/mediterranean"
+            element={<Celebritymediterraneancruises />}
+          />
+
+          <Route
+            path="/celebrity-cruises/caribbean"
+            element={<Celebritycaribbeancruises />}
           /> */}
+
+
+
 
 
         </Routes>

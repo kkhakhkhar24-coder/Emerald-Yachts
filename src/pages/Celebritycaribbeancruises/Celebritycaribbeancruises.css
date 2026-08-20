@@ -1,0 +1,4133 @@
+/* ============================================================
+   CELEBRITY RIVER CRUISES — PAGE STYLES
+   Colors, typography, spacing matched to Trips & Ships reference system.
+   Reused verbatim (content-matched): ccrb- (hero, intro, faq, cta, headings),
+   ccrb- (quick-answer, inline-cta, glance, tag, feature, itinerary,
+   included, pros/cons, audience, worth, why-book, related), ccrb- (expert insight)
+   New (no reference equivalent): ccrb- (river-cruise specific comparison
+   tables, choice boards, step guide)
+   ============================================================ */
+
+:root {
+    --ccrb-navy: #274472;
+    --ccrb-navy-light: #274472cc;
+    --ccrb-bg-white: #ffffff;
+    --ccrb-bg-soft: rgb(231, 243, 245);
+    --ccrb-bg-dark: #0f1c2e;
+    --ccrb-bg-dark2: #1c2f4a;
+    --ccrb-green: #10b981;
+}
+
+/* ============================================================
+   SHARED TYPOGRAPHY & UTILITIES (REUSED)
+   ============================================================ */
+.ccrb-page-wrapper {
+    overflow-x: hidden;
+}
+
+.ccrb-section-heading {
+    font-size: 48px !important;
+    line-height: 1.2;
+    font-weight: 500 !important;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.01em;
+    color: var(--ccrb-navy);
+}
+
+.ccrb-heading-bar {
+    width: 60px;
+    height: 4px;
+    background: var(--ccrb-navy);
+    margin-bottom: 32px;
+}
+
+.ccrb-bar-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ccrb-eyebrow-label1 {
+    color: var(--ccrb-navy);
+    display: inline-block !important;
+    width: fit-content !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.12em !important;
+    text-transform: uppercase !important;
+    color: var(--ccrb-navy) !important;
+    background: var(--ccrb-bg-soft) !important;
+    padding: 8px 16px !important;
+    border-radius: 30px !important;
+    margin-bottom: 18px !important;
+
+}
+
+.ccrb-page-wrapper .ccrb-eyebrow-label {
+    display: inline-block !important;
+    width: fit-content !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.12em !important;
+    text-transform: uppercase !important;
+    color: var(--ccrb-navy) !important;
+    background: var(--ccrb-bg-soft) !important;
+    padding: 8px 16px !important;
+    border-radius: 30px !important;
+    margin-bottom: 18px !important;
+}
+
+.ccrb-page-wrapper .ccrb-eyebrow-white {
+    background: var(--ccrb-bg-white) !important;
+    color: var(--ccrb-navy) !important;
+}
+
+.ccrb-page-wrapper .ccrb-bg-soft .ccrb-eyebrow-label,
+.ccrb-page-wrapper .ccrb-glance-section .ccrb-eyebrow-label,
+.ccrb-page-wrapper .ccrb-faq-section .ccrb-eyebrow-label {
+    background: var(--ccrb-bg-white) !important;
+}
+
+.ccrb-lead-paragraph {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #3d4a5c;
+    margin: 0 0 18px 0;
+}
+
+@media (max-width: 1024px) {
+    .ccrb-section-heading {
+        font-size: 34px !important;
+        text-align: center;
+    }
+
+    .ccrb-heading-bar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .ccrb-section-heading {
+        font-size: 26px !important;
+    }
+
+    .ccrb-lead-paragraph {
+        font-size: 16px;
+    }
+}
+
+/* ============================================================
+   IMAGE PLACEHOLDER COMPONENT (REUSED)
+   ============================================================ */
+.ccrb-image-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.04) 0%, rgba(231, 243, 245, 0.7) 100%);
+    border: 2px dashed rgba(39, 68, 114, 0.15);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: var(--ccrb-navy);
+    padding: 24px;
+    text-align: center;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s ease;
+}
+
+.ccrb-image-placeholder span {
+    font-size: 15px;
+    font-weight: 600;
+    color: #475569;
+}
+
+.ccrb-image-placeholder:hover {
+    background: linear-gradient(135deg, rgba(39, 68, 114, 0.08) 0%, rgba(231, 243, 245, 0.9) 100%);
+    border-color: rgba(39, 68, 114, 0.3);
+}
+
+/* ============================================================
+   HERO SECTION (REUSED)
+   ============================================================ */
+.ccrb-hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.ccrb-hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #0f1c2e 0%, #1c2f4a 100%);
+    z-index: 0;
+}
+
+.ccrb-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 28, 46, 0.68);
+    z-index: 1;
+}
+
+.ccrb-hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ccrb-hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #60a5fa;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.ccrb-hero-title {
+    font-size: 60px;
+    line-height: 1.1;
+    font-weight: 500;
+    margin: 0 0 24px 0;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    text-align: center;
+    max-width: 900px;
+}
+
+.ccrb-hero-subtitle {
+    font-size: 22px;
+    color: #e2e8f0;
+    margin: 0 0 40px 0;
+    max-width: 720px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.ccrb-hero-btn-row {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ccrb-btn-primary {
+    background: var(--ccrb-navy);
+    color: #ffffff;
+    border: none;
+    padding: 16px 36px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.ccrb-btn-primary:hover {
+    background: #1e365a;
+    transform: translateY(-2px);
+}
+
+.ccrb-btn-outline {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    padding: 14px 34px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.ccrb-btn-outline:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 1024px) {
+    .ccrb-hero-title {
+        font-size: 42px;
+    }
+
+    .ccrb-hero-subtitle {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ccrb-hero-title {
+        font-size: 32px;
+    }
+
+    .ccrb-hero-content {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ccrb-hero-title {
+        font-size: 26px;
+    }
+
+    .ccrb-hero-subtitle {
+        font-size: 15px;
+        margin-bottom: 28px;
+    }
+
+    .ccrb-hero-tag {
+        font-size: 12px;
+    }
+
+    .ccrb-btn-primary,
+    .ccrb-btn-outline {
+        padding: 12px 22px;
+        font-size: 14px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .ccrb-hero-btn-row {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+/* ============================================================
+   INTRO SECTION (REUSED)
+   ============================================================ */
+.ccrb-intro-section {
+    background: #faf8f5;
+    padding: 120px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ccrb-intro-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.ccrb-intro-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.ccrb-intro-copy {
+    position: relative;
+}
+
+.ccrb-intro-image-frame {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 35px 70px rgba(15, 28, 46, 0.14);
+}
+
+.ccrb-intro-image-frame img,
+.ccrb-intro-image-frame .ccrb-image-placeholder {
+    width: 100%;
+    min-height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.ccrb-intro-badge-float {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    background: var(--ccrb-navy);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    box-shadow: 0 8px 24px rgba(15, 28, 46, 0.2);
+    z-index: 2;
+}
+
+@media (max-width: 1024px) {
+    .ccrb-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .ccrb-intro-image-frame {
+        order: -1;
+    }
+
+    .ccrb-intro-image-frame img,
+    .ccrb-intro-image-frame .ccrb-image-placeholder {
+        min-height: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ccrb-intro-section {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ccrb-intro-section {
+        padding: 44px 14px;
+    }
+
+    .ccrb-intro-image-frame img,
+    .ccrb-intro-image-frame .ccrb-image-placeholder {
+        min-height: 240px;
+    }
+
+    .ccrb-intro-badge-float {
+        bottom: 16px;
+        left: 16px;
+        padding: 8px 14px;
+        font-size: 11px;
+    }
+}
+
+/* ============================================================
+   QUICK ANSWER SECTION (REUSED)
+   ============================================================ */
+.ccrb-quick-answer-section {
+    background: var(--ccrb-bg-white);
+    padding: 100px 20px;
+}
+
+.ccrb-quick-answer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.ccrb-quick-answer-card {
+    background: #faf8f5;
+    border-left: 5px solid var(--ccrb-navy);
+    border-radius: 0 20px 20px 0;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.03);
+    border-top: 1px solid rgba(39, 68, 114, 0.05);
+    border-right: 1px solid rgba(39, 68, 114, 0.05);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.ccrb-quick-answer-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--ccrb-navy);
+    margin: 0 0 20px 0;
+}
+
+.ccrb-quick-answer-text {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #1e293b;
+    font-weight: 500;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .ccrb-quick-answer-section {
+        padding: 60px 18px;
+    }
+
+    .ccrb-quick-answer-card {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ccrb-quick-answer-section {
+        padding: 44px 14px;
+    }
+
+    .ccrb-quick-answer-title {
+        font-size: 22px;
+    }
+
+    .ccrb-quick-answer-text {
+        font-size: 15px;
+    }
+}
+
+/* ============================================================
+   INLINE CTA SECTION (REUSED)
+   ============================================================ */
+.ccrb-inline-cta-section {
+    background: linear-gradient(135deg, #faf8f5 0%, #e7f3f5 100%);
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 1px solid rgba(39, 68, 114, 0.08);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.ccrb-inline-cta-section::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: rgba(39, 68, 114, 0.03);
+    pointer-events: none;
+}
+
+.ccrb-inline-cta-section::after {
+    content: '';
+    position: absolute;
+    bottom: -60px;
+    right: -60px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: rgba(39, 68, 114, 0.03);
+    pointer-events: none;
+}
+
+.ccrb-inline-cta-container {
+    max-width: 850px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(39, 68, 114, 0.12);
+    border-radius: 24px;
+    padding: 38px 46px;
+    box-shadow: 0 15px 40px rgba(39, 68, 114, 0.05);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    position: relative;
+    z-index: 1;
+}
+
+.ccrb-inline-cta-tag {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--ccrb-navy);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: var(--ccrb-bg-soft);
+    padding: 6px 14px;
+    border-radius: 30px;
+}
+
+.ccrb-inline-cta-text {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--ccrb-navy);
+    margin: 0;
+    line-height: 1.45;
+    max-width: 650px;
+}
+
+.ccrb-inline-cta-btn-row {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 6px;
+}
+
+.ccrb-btn-primary {
+    background: var(--ccrb-navy);
+    color: #ffffff;
+    border: none;
+    padding: 14px 34px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 4px 15px rgba(39, 68, 114, 0.2);
+}
+
+.ccrb-btn-primary:hover {
+    background: #1e365a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(39, 68, 114, 0.3);
+}
+
+.ccrb-btn-outline {
+    background: transparent;
+    color: var(--ccrb-bg-white);
+    border: 2px solid var(--ccrb-bg-white);
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.ccrb-btn-outline1{
+    background: transparent;
+    color: var(--ccrb-navy);
+    border: 2px solid var(--ccrb-navy);
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.ccrb-btn-outline:hover {
+    background: rgba(39, 68, 114, 0.06);
+    transform: translateY(-2px);
+}
+.ccrb-btn-outline1:hover {
+    background: rgba(39, 68, 114, 0.06);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .ccrb-inline-cta-section {
+        padding: 40px 18px;
+    }
+
+    .ccrb-inline-cta-container {
+        padding: 26px 30px;
+    }
+
+    .ccrb-inline-cta-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ccrb-inline-cta-btn-row {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .ccrb-btn-primary,
+    .ccrb-btn-outline {
+        padding: 12px 22px;
+        font-size: 14px;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* ============================================================
+   AT A GLANCE / LABEL-DETAIL TABLE (REUSED — also used for
+   "Who Should Choose" section)
+   ============================================================ */
+.ccrb-glance-section {
+    background: var(--ccrb-bg-soft);
+    padding: 100px 20px;
+}
+
+.ccrb-glance-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ccrb-glance-table {
+    margin-top: 40px;
+    background: var(--ccrb-bg-white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(39, 68, 114, 0.06);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.ccrb-glance-row {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+}
+
+.ccrb-glance-row:nth-child(even) {
+    background: #faf8f5;
+}
+
+.ccrb-glance-row:not(:last-child) {
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.ccrb-glance-feature {
+    padding: 18px 28px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--ccrb-navy);
+    background: var(--ccrb-bg-soft);
+}
+
+.ccrb-glance-detail {
+    padding: 18px 28px;
+    font-size: 15px;
+    color: #334155;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .ccrb-glance-section {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ccrb-glance-section {
+        padding: 44px 14px;
+    }
+
+    .ccrb-glance-row {
+        grid-template-columns: 1fr;
+    }
+
+    .ccrb-glance-feature {
+        padding: 12px 18px 4px;
+        font-size: 13px;
+    }
+
+    .ccrb-glance-detail {
+        padding: 4px 18px 14px;
+        font-size: 14px;
+    }
+}
+
+/* ============================================================
+   TAG GRID — icon+label cards (REUSED for Rivers, Included
+   Highlights, Worth-It Value list)
+   ============================================================ */
+.ccrb-tag-section {
+    padding: 100px 20px;
+}
+
+.ccrb-tag-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.ccrb-tag-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.ccrb-tag-card {
+    background: var(--ccrb-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 16px;
+    padding: 24px 18px;
+    text-align: center;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.ccrb-tag-card:hover {
+    background: var(--ccrb-bg-white);
+    border-color: rgba(39, 68, 114, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(39, 68, 114, 0.08);
+}
+
+.ccrb-tag-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(39, 68, 114, 0.08);
+    color: var(--ccrb-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.ccrb-tag-card:hover .ccrb-tag-icon {
+    background: var(--ccrb-navy);
+    color: #ffffff;
+}
+
+.ccrb-tag-label {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--ccrb-navy);
+    line-height: 1.4;
+}
+
+@media (max-width: 1024px) {
+    .ccrb-tag-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .ccrb-tag-section {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ccrb-tag-section {
+        padding: 44px 14px;
+    }
+
+    .ccrb-tag-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+}
+
+/* ============================================================
+   DINING VENUES INLINE SUB-BLOCK
+   ============================================================ */
+.ccrb-dining-venues-block {
+    margin-top: 60px;
+}
+
+.ccrb-dining-venues-divider {
+    height: 1px;
+    background: rgba(39, 68, 114, 0.1);
+    margin-bottom: 40px;
+}
+
+.ccrb-dining-venues-lead {
+    font-size: 16px;
+    color: #475569;
+    line-height: 1.7;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 8px;
+}
+
+/* Inside feature section, venues cards use soft bg to contrast white section */
+.ccrb-dining-venues-block .ccrb-tag-card {
+    background: var(--ccrb-bg-soft);
+}
+
+.ccrb-dining-venues-block .ccrb-tag-card:hover {
+    background: var(--ccrb-bg-white);
+    border-color: rgba(39, 68, 114, 0.2);
+}
+
+/* ============================================================
+   ALTERNATING FEATURE SECTIONS (REUSED — Compass, Seeker, Rhine,
+   Danube, River View, Infinite Balcony, Skylight Suite, Vista Suite, Dining)
+   ============================================================ */
+.ccrb-feature-section {
+    padding: 100px 20px;
+}
+
+.ccrb-bg-white {
+    background: var(--ccrb-bg-white) !important;
+}
+
+.ccrb-bg-soft {
+    background: var(--ccrb-bg-soft) !important;
+}
+
+.ccrb-feature-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.ccrb-feature-grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.ccrb-feature-grid.ccrb-reverse {
+    grid-template-columns: 1.15fr 0.85fr;
+}
+
+.ccrb-feature-grid.ccrb-reverse .ccrb-feature-image-col {
+    order: 2;
+}
+
+.ccrb-feature-copy-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.ccrb-feature-title {
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--ccrb-navy);
+    margin: 0 0 16px 0;
+}
+
+.ccrb-feature-image-col {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px rgba(15, 28, 46, 0.08);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    max-height: 380px;
+    width: 100%;
+}
+
+.ccrb-feature-image-col .ccrb-image-placeholder {
+    min-height: 300px;
+    height: 380px;
+    flex-grow: 1;
+}
+
+.ccrb-badge-overlay {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--ccrb-bg-white);
+    color: var(--ccrb-bg-dark);
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+}
+
+.ccrb-feature-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.ccrb-feature-item-card {
+    background: rgba(255, 255, 255, 0.65);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 12px;
+    padding: 10px 14px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ccrb-feature-item-card:hover {
+    background: #ffffff;
+    border-color: var(--ccrb-navy);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(39, 68, 114, 0.08);
+}
+
+.ccrb-feature-item-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--ccrb-bg-soft);
+    color: var(--ccrb-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.ccrb-feature-item-card:hover .ccrb-feature-item-icon {
+    background: var(--ccrb-navy);
+    color: #ffffff;
+}
+
+.ccrb-feature-item-text {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #334155;
+    font-weight: 600;
+}
+
+/* Dark theme variant */
+.ccrb-dark-section {
+    background: linear-gradient(135deg, var(--ccrb-bg-dark) 0%, var(--ccrb-bg-dark2) 100%) !important;
+    color: var(--ccrb-bg-white);
+    position: relative;
+    overflow: hidden;
+}
+
+.ccrb-dark-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle at 80% 20%, rgba(39, 68, 114, 0.06) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.ccrb-dark-section .ccrb-feature-title {
+    color: var(--ccrb-bg-white);
+    font-size: 38px;
+}
+
+.ccrb-dark-section .ccrb-feature-item-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-left: 3px solid var(--ccrb-navy);
+    border-radius: 0 16px 16px 0;
+}
+
+.ccrb-dark-section .ccrb-feature-item-card:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: var(--ccrb-bg-white);
+    border-left-color: var(--ccrb-bg-white);
+    transform: translateX(6px);
+}
+
+.ccrb-dark-section .ccrb-feature-item-icon {
+    background: rgba(39, 68, 114, 0.15);
+    color: var(--ccrb-bg-soft);
+}
+
+.ccrb-dark-section .ccrb-feature-item-card:hover .ccrb-feature-item-icon {
+    background: var(--ccrb-navy);
+    color: var(--ccrb-bg-white);
+}
+
+.ccrb-dark-section .ccrb-feature-item-text {
+    color: var(--ccrb-bg-soft);
+}
+
+.ccrb-dark-section .ccrb-lead-paragraph {
+    color: #cbd5e1;
+}
+
+.ccrb-dark-section .ccrb-section-heading {
+    color: var(--ccrb-bg-white) !important;
+}
+
+.ccrb-dark-section .ccrb-eyebrow-label {
+    color: var(--ccrb-navy) !important;
+}
+
+.ccrb-dark-section .ccrb-included-note,
+.ccrb-dark-section .ccrb-itinerary-note,
+.ccrb-dark-section .ccrb-dining-venues-lead {
+    color: var(--ccrb-bg-soft) !important;
+}
+
+.ccrb-dark-section .ccrb-dining-venues-divider {
+    background: rgba(255, 255, 255, 0.15) !important;
+}
+
+
+/* Cabins / Dining card-with-description variant */
+.ccrb-feature-desc-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.ccrb-feature-desc-card {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-left: 4px solid var(--ccrb-navy);
+    border-radius: 0 12px 12px 0;
+    padding: 16px 20px;
+    transition: all 0.3s ease;
+}
+
+.ccrb-feature-desc-card:hover {
+    background: #ffffff;
+    border-color: var(--ccrb-navy);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(39, 68, 114, 0.06);
+}
+
+.ccrb-feature-card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.ccrb-feature-card-icon-inline {
+    color: var(--ccrb-navy);
+    flex-shrink: 0;
+}
+
+.ccrb-dark-section .ccrb-feature-card-icon-inline {
+    color: var(--ccrb-bg-soft);
+}
+
+.ccrb-feature-desc-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--ccrb-navy);
+    margin: 0 !important;
+}
+
+.ccrb-feature-desc-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #475569;
+    margin: 0;
+}
+
+.ccrb-dark-section .ccrb-feature-desc-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-left: 4px solid var(--ccrb-navy);
+}
+
+.ccrb-dark-section .ccrb-feature-desc-title {
+    color: #ffffff;
+}
+
+.ccrb-dark-section .ccrb-feature-desc-text {
+    color: var(--ccrb-bg-soft);
+}
+
+@media (max-width: 1024px) {
+
+    .ccrb-feature-grid,
+    .ccrb-feature-grid.ccrb-reverse {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .ccrb-feature-list,
+    .ccrb-feature-desc-list {
+        grid-template-columns: 1fr;
+    }
+
+    .ccrb-feature-grid.ccrb-reverse .ccrb-feature-image-col {
+        order: -1;
+    }
+
+    .ccrb-feature-image-col {
+        order: -1;
+    }
+
+    .ccrb-feature-title {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .ccrb-page-wrapper .ccrb-feature-copy-col .ccrb-eyebrow-label {
+        margin: 0 auto 20px !important;
+        display: table !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .ccrb-feature-section {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ccrb-feature-section {
+        padding: 44px 14px;
+    }
+
+    .ccrb-feature-title {
+        font-size: 24px;
+    }
+
+    .ccrb-feature-image-col .ccrb-image-placeholder {
+        min-height: 260px;
+    }
+
+    .ccrb-feature-item-card {
+        padding: 14px 16px;
+        gap: 12px;
+    }
+}
+
+/* ============================================================
+   ITINERARIES (REUSED)
+   ============================================================ */
+.ccrb-itinerary-section {
+    background: var(--ccrb-bg-white);
+    padding: 100px 20px;
+}
+
+.ccrb-itinerary-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.ccrb-itinerary-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+    align-items: stretch;
+}
+
+.ccrb-itinerary-card {
+    background: var(--ccrb-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.1);
+    border-radius: 20px;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(39, 68, 114, 0.06);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Colored top accent bar — handled via absolute divs in JSX for perfect border-radius clipping */
+.ccrb-itinerary-card:first-child {
+    border-top: none;
+}
+
+.ccrb-itinerary-card:last-child {
+    border-top: none;
+}
+
+/* Card header zone */
+.ccrb-itinerary-region {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--ccrb-navy);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 28px 30px 22px;
+    background: rgba(39, 68, 114, 0.03);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.07);
+}
+
+.ccrb-itinerary-region svg {
+    flex-shrink: 0;
+    opacity: 0.75;
+}
+
+/* Card body */
+.ccrb-itinerary-card .ccrb-lead-paragraph {
+    font-size: 14.5px;
+    color: #5a6a80;
+    line-height: 1.7;
+    padding: 22px 30px 0;
+    margin: 0;
+}
+
+.ccrb-itinerary-list {
+    list-style: none;
+    padding: 18px 30px 24px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.ccrb-itinerary-list li {
+    font-size: 14px;
+    color: var(--ccrb-navy);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(39, 68, 114, 0.04);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 10px;
+    padding: 10px 14px;
+    transition: background 0.2s;
+}
+
+.ccrb-itinerary-list li:hover {
+    background: rgba(39, 68, 114, 0.08);
+}
+
+.ccrb-itinerary-list li svg,
+.ccrb-itinerary-list li .ccrb-included-icon {
+    color: #2e6da8;
+    flex-shrink: 0;
+}
+
+/* Inline note block at bottom of card */
+.ccrb-itinerary-card .ccrb-itinerary-note {
+    text-align: left;
+    margin: 0 30px 26px;
+    font-size: 13.5px;
+    color: #5a6a80;
+    font-weight: 400;
+    line-height: 1.65;
+    background: rgba(39, 68, 114, 0.03);
+    border-left: 3px solid rgba(39, 68, 114, 0.2);
+    border-radius: 0 8px 8px 0;
+    padding: 12px 14px;
+}
+
+/* Bottom note (outside cards) */
+.ccrb-itinerary-note {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 15px;
+    color: #475569;
+    font-weight: 500;
+    background: rgba(39, 68, 114, 0.03);
+    border-radius: 12px;
+    padding: 16px 24px;
+    border: 1px solid rgba(39, 68, 114, 0.07);
+}
+
+@media (max-width: 768px) {
+    .ccrb-itinerary-section {
+        padding: 60px 18px;
+    }
+
+    .ccrb-itinerary-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .ccrb-itinerary-section {
+        padding: 44px 14px;
+    }
+
+    .ccrb-itinerary-card .ccrb-lead-paragraph {
+        padding: 18px 20px 0;
+    }
+
+    .ccrb-itinerary-list {
+        padding: 14px 20px 18px;
+    }
+
+    .ccrb-itinerary-region {
+        padding: 22px 20px 18px;
+    }
+
+    .ccrb-itinerary-card .ccrb-itinerary-note {
+        margin: 0 20px 20px;
+    }
+
+}
+
+
+/* ============================================================
+   INCLUDED CHECKLIST (REUSED — Voyage Fare + Suite Inclusions)
+   ============================================================ */
+.ccrb-included-section {
+    background: var(--ccrb-bg-soft);
+    padding: 100px 20px;
+}
+
+.ccrb-included-section.ccrb-bg-white {
+    background: var(--ccrb-bg-white) !important;
+}
+
+.ccrb-included-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.ccrb-included-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 40px;
+}
+
+.ccrb-cruise-inclusions-section .ccrb-included-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.ccrb-included-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--ccrb-bg-white);
+    padding: 16px 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    font-size: 15px;
+    color: #334155;
+    font-weight: 600;
+}
+
+.ccrb-included-section.ccrb-bg-white .ccrb-included-item {
+    background: var(--ccrb-bg-soft);
+}
+
+.ccrb-included-icon {
+    color: #10b981;
+    flex-shrink: 0;
+}
+
+.ccrb-included-note {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 15px;
+    color: #475569;
+    line-height: 1.7;
+}
+
+@media (max-width: 1024px) {
+    .ccrb-included-grid,
+    .ccrb-cruise-inclusions-section .ccrb-included-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .ccrb-included-section {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ccrb-included-section {
+        padding: 44px 14px;
+    }
+
+    .ccrb-included-grid,
+    .ccrb-cruise-inclusions-section .ccrb-included-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ccrb-included-item {
+        font-size: 14px;
+    }
+}
+
+/* ============================================================
+   PROS & CONS — COMPARISON BOARD (REUSED)
+   ============================================================ */
+.ccrb-pros-section {
+    padding: 100px 20px;
+}
+
+.ccrb-pros-cons-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.ccrb-comparison-board {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    background: var(--ccrb-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(39, 68, 114, 0.04);
+    margin-top: 40px;
+    text-align: left;
+}
+
+.ccrb-pros-panel {
+    padding: 50px 40px;
+    background: var(--ccrb-bg-white);
+    border-right: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.ccrb-cons-panel {
+    padding: 50px 40px;
+    background: #fafbfe;
+}
+
+.ccrb-panel-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 35px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ccrb-panel-title.ccrb-pros-title {
+    color: #10b981;
+}
+
+.ccrb-panel-title.ccrb-cons-title {
+    color: #ef4444;
+}
+
+.ccrb-panel-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.ccrb-list-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.ccrb-item-icon-wrap {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.ccrb-item-icon-wrap.ccrb-pro-icon {
+    background: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+}
+
+.ccrb-item-icon-wrap.ccrb-con-icon {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+}
+
+.ccrb-item-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--ccrb-navy);
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    .ccrb-comparison-board {
+        grid-template-columns: 1fr;
+    }
+
+    .ccrb-pros-panel {
+        border-right: none;
+        border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+        padding: 40px 30px;
+    }
+
+    .ccrb-cons-panel {
+        padding: 40px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ccrb-pros-section {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ccrb-pros-section {
+        padding: 44px 14px;
+    }
+
+    .ccrb-pros-panel,
+    .ccrb-cons-panel {
+        padding: 30px 20px;
+    }
+
+    .ccrb-panel-title {
+        font-size: 19px;
+        margin-bottom: 25px;
+    }
+
+    .ccrb-panel-list {
+        gap: 20px;
+    }
+
+    .ccrb-list-item {
+        gap: 12px;
+    }
+
+    .ccrb-item-title {
+        font-size: 15px;
+    }
+}
+
+/* ============================================================
+   WHO SHOULD CHOOSE / AUDIENCE (REUSED — "for" and "not for" lists)
+   ============================================================ */
+.ccrb-audience-section {
+    background: var(--ccrb-bg-soft);
+    padding: 100px 20px;
+}
+
+.ccrb-audience-section.ccrb-bg-white {
+    background: var(--ccrb-bg-white) !important;
+}
+
+.ccrb-audience-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ccrb-audience-column {
+    background: var(--ccrb-bg-white);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.03);
+    border-top: 4px solid var(--ccrb-green);
+    margin-top: 20px;
+}
+
+.ccrb-audience-section.ccrb-bg-white .ccrb-audience-column {
+    background: var(--ccrb-bg-soft);
+}
+
+.ccrb-audience-column.ccrb-audience-negative {
+    border-top: 4px solid #ef4444;
+}
+
+.ccrb-audience-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.ccrb-audience-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    color: #475569;
+    font-weight: 500;
+}
+
+.ccrb-audience-check {
+    color: #10b981;
+    flex-shrink: 0;
+}
+
+.ccrb-audience-check.ccrb-audience-x {
+    color: #ef4444;
+}
+
+@media (max-width: 768px) {
+    .ccrb-audience-section {
+        padding: 60px 18px;
+    }
+
+    .ccrb-audience-column {
+        padding: 24px;
+    }
+
+    .ccrb-audience-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .ccrb-audience-section {
+        padding: 44px 14px;
+    }
+
+    .ccrb-audience-item {
+        font-size: 14px;
+    }
+}
+
+/* ============================================================
+   SINGLE-STATEMENT CENTERED SECTION (REUSED — "When Do They
+   Begin", "Are They Worth It")
+   ============================================================ */
+.ccrb-worth-section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.ccrb-worth-section.ccrb-bg-soft {
+    background: var(--ccrb-bg-soft) !important;
+}
+
+.ccrb-worth-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .ccrb-worth-section {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ccrb-worth-section {
+        padding: 44px 14px;
+    }
+}
+
+/* ============================================================
+   WHY BOOK / PLAN WITH US — icon+title(+desc) CARD GRID (REUSED
+   — used light for "How They're Different", dark for "Why Plan
+   With Trips & Ships")
+   ============================================================ */
+.ccrb-why-book-section {
+    padding: 100px 20px;
+    border-top: 1px solid rgba(39, 68, 114, 0.05);
+}
+
+.ccrb-why-book-section.ccrb-why-book-dark {
+    background: var(--ccrb-bg-dark) !important;
+}
+
+.ccrb-why-book-section.ccrb-why-book-dark .ccrb-section-heading {
+    color: #ffffff !important;
+}
+
+.ccrb-why-book-section.ccrb-why-book-dark .ccrb-heading-bar {
+    background: #60a5fa !important;
+}
+
+.ccrb-page-wrapper .ccrb-why-book-section.ccrb-why-book-dark .ccrb-eyebrow-label {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: #cbd5e1 !important;
+}
+
+.ccrb-why-book-section.ccrb-why-book-light {
+    background: var(--ccrb-bg-white) !important;
+}
+
+.ccrb-why-book-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.ccrb-why-book-container .ccrb-section-heading {
+    color: var(--ccrb-navy) !important;
+}
+
+
+
+.ccrb-why-book-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.ccrb-why-book-card {
+    background: var(--ccrb-bg-white) !important;
+    border: 1px solid rgba(39, 68, 114, 0.08) !important;
+    box-shadow: 0 10px 30px rgba(15, 28, 46, 0.04) !important;
+    border-radius: 16px;
+    padding: 32px 24px;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.ccrb-why-book-section.ccrb-why-book-dark .ccrb-why-book-card {
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+}
+
+.ccrb-why-book-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--ccrb-navy);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+}
+
+.ccrb-why-book-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(39, 68, 114, 0.08);
+}
+
+.ccrb-why-book-card:hover::before {
+    transform: scaleX(1);
+}
+
+.ccrb-why-book-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: var(--ccrb-bg-soft) !important;
+    color: var(--ccrb-navy) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(39, 68, 114, 0.05);
+}
+
+.ccrb-why-book-card:hover .ccrb-why-book-icon {
+    background: var(--ccrb-navy) !important;
+    color: #ffffff !important;
+}
+
+.ccrb-why-book-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--ccrb-navy) !important;
+    margin: 0 0 12px 0;
+}
+
+.ccrb-why-book-desc {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #475569 !important;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .ccrb-why-book-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .ccrb-why-book-section {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ccrb-why-book-section {
+        padding: 44px 14px;
+    }
+
+    .ccrb-why-book-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ccrb-why-book-card {
+        padding: 24px 20px;
+    }
+}
+
+/* ============================================================
+   FAQ SECTION (REUSED)
+   ============================================================ */
+.ccrb-faq-section {
+    background: var(--ccrb-bg-soft);
+    padding: 100px 20px;
+}
+
+.ccrb-faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ccrb-faq-list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.ccrb-faq-item {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(15, 28, 46, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.ccrb-faq-item:hover {
+    box-shadow: 0 8px 22px rgba(15, 28, 46, 0.1);
+}
+
+.ccrb-faq-question-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--ccrb-navy);
+}
+
+.ccrb-faq-toggle {
+    font-size: 22px;
+    color: var(--ccrb-navy);
+    flex-shrink: 0;
+}
+
+.ccrb-faq-answer {
+    margin: 14px 0 0 0;
+    font-size: 15px;
+    color: #475569;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .ccrb-faq-section {
+        padding: 60px 18px;
+    }
+
+    .ccrb-faq-question-row {
+        font-size: 15px;
+    }
+
+    .ccrb-faq-item {
+        padding: 16px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ccrb-faq-question-row {
+        font-size: 14px;
+    }
+
+    .ccrb-faq-answer {
+        font-size: 14px;
+    }
+}
+
+/* ============================================================
+   RELATED GUIDES / RELATED CONTENT CTA (REUSED)
+   ============================================================ */
+.ccrb-related-section {
+    background: var(--ccrb-bg-white);
+    padding: 100px 20px;
+}
+
+.ccrb-related-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.ccrb-related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.ccrb-related-card {
+    background: var(--ccrb-bg-soft);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 16px;
+    padding: 28px 24px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(39, 68, 114, 0.01);
+}
+
+.ccrb-related-card:hover {
+    background: var(--ccrb-bg-white);
+    border-color: rgba(39, 68, 114, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(39, 68, 114, 0.08);
+}
+
+.ccrb-related-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: var(--ccrb-bg-white);
+    color: var(--ccrb-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 10px rgba(39, 68, 114, 0.05);
+}
+
+.ccrb-related-card:hover .ccrb-related-icon {
+    background: var(--ccrb-navy);
+    color: #ffffff;
+}
+
+.ccrb-related-title {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--ccrb-navy);
+    margin: 0 0 10px 0;
+}
+
+.ccrb-related-desc {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #475569;
+    margin: 0 0 16px 0;
+    flex-grow: 1;
+}
+
+.ccrb-related-link {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--ccrb-navy);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+    .ccrb-related-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .ccrb-related-section {
+        padding: 60px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ccrb-related-section {
+        padding: 44px 14px;
+    }
+
+    .ccrb-related-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============================================================
+   CTA SECTION (REUSED)
+   ============================================================ */
+.ccrb-cta-section {
+    position: relative;
+    background: linear-gradient(135deg, var(--ccrb-bg-dark) 0%, var(--ccrb-navy) 100%);
+    padding: 110px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.ccrb-cta-bg-pattern {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle at 20% 20%, rgba(240, 217, 160, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(240, 217, 160, 0.08) 0%, transparent 40%);
+    z-index: 0;
+}
+
+.ccrb-cta-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.ccrb-cta-heading {
+    font-size: 42px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    line-height: 1.25;
+}
+
+.ccrb-cta-separator {
+    width: 60px;
+    height: 4px;
+    background: #60a5fa;
+    margin: 0 auto 28px;
+}
+
+.ccrb-cta-text {
+    font-size: 17px;
+    color: #cbd5e1;
+    line-height: 1.8;
+    margin: 0 0 30px 0;
+}
+
+.ccrb-cta-btn-row {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+@media (max-width: 1024px) {
+    .ccrb-cta-heading {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ccrb-cta-section {
+        padding: 70px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ccrb-cta-heading {
+        font-size: 22px;
+    }
+
+    .ccrb-cta-text {
+        font-size: 14px;
+    }
+
+    .ccrb-cta-btn-row {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .ccrb-cta-btn-row .ccrb-btn-primary,
+    .ccrb-cta-btn-row .ccrb-btn-outline {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* ============================================================
+   GLOBAL TYPOGRAPHY & SECTION PADDING OVERRIDES (REUSED)
+   ============================================================ */
+.ccrb-intro-section,
+.ccrb-quick-answer-section,
+.ccrb-glance-section,
+.ccrb-tag-section,
+.ccrb-feature-section,
+.ccrb-itinerary-section,
+.ccrb-included-section,
+.ccrb-pros-section,
+.ccrb-audience-section,
+.ccrb-worth-section,
+.ccrb-why-book-section,
+.ccrb-related-section,
+.ccrb-faq-section,
+.ccrb-cta-section,
+.ccrb-inline-cta-section,
+.ccrb-compare-section,
+.ccrb-choice-section,
+.ccrb-steps-section {
+    padding: 60px 20px !important;
+}
+
+.ccrb-hero-title,
+.ccrb-page-wrapper h1 {
+    font-size: 60px !important;
+}
+
+.ccrb-section-heading,
+.ccrb-feature-title,
+.ccrb-page-wrapper h2 {
+    font-size: 48px !important;
+}
+
+.ccrb-lead-paragraph,
+.ccrb-page-wrapper p {
+    font-size: 18px !important;
+}
+
+@media (max-width: 1024px) {
+
+    .ccrb-hero-title,
+    .ccrb-page-wrapper h1 {
+        font-size: 32px !important;
+    }
+
+    .ccrb-section-heading,
+    .ccrb-feature-title,
+    .ccrb-page-wrapper h2 {
+        font-size: 28px !important;
+    }
+
+    .ccrb-lead-paragraph,
+    .ccrb-page-wrapper p {
+        font-size: 17px !important;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .ccrb-hero-title,
+    .ccrb-page-wrapper h1 {
+        font-size: 26px !important;
+    }
+
+    .ccrb-section-heading,
+    .ccrb-feature-title,
+    .ccrb-page-wrapper h2 {
+        font-size: 24px !important;
+    }
+
+    .ccrb-lead-paragraph,
+    .ccrb-page-wrapper p {
+        font-size: 16px !important;
+    }
+}
+
+/* ============================================================
+   SKYLIGHT SUITE DARK REDESIGN (REUSED pattern from Retreat)
+   ============================================================ */
+.ccrb-skylight-section {
+    background: radial-gradient(circle at 10% 20%, var(--ccrb-bg-dark) 0%, var(--ccrb-bg-dark2) 100%) !important;
+    position: relative;
+    border-top: 1px solid rgba(39, 68, 114, 0.15);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.15);
+}
+
+.ccrb-skylight-section::after {
+    content: '';
+    position: absolute;
+    bottom: -150px;
+    left: -150px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(231, 243, 245, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.ccrb-skylight-section .ccrb-badge-overlay {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: var(--ccrb-bg-soft) !important;
+}
+
+.ccrb-page-wrapper .ccrb-skylight-eyebrow {
+    color: var(--ccrb-bg-soft) !important;
+    background: rgba(231, 243, 245, 0.1) !important;
+    border: 1px solid rgba(231, 243, 245, 0.2);
+    padding: 6px 16px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    border-radius: 30px;
+    display: inline-block;
+    width: fit-content;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.ccrb-skylight-title {
+    font-size: 44px !important;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+    margin: 0 0 20px 0;
+    background: linear-gradient(135deg, #ffffff 40%, var(--ccrb-bg-soft) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.02em;
+}
+
+.ccrb-skylight-lead {
+    font-size: 18px !important;
+    line-height: 1.7;
+    color: #cbd5e1 !important;
+    margin-bottom: 30px;
+}
+
+.ccrb-skylight-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin: 28px 0;
+    z-index: 2;
+    position: relative;
+}
+
+.ccrb-skylight-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(231, 243, 245, 0.1);
+    border-radius: 16px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    backdrop-filter: blur(8px);
+}
+
+.ccrb-skylight-card:hover {
+    background: rgba(231, 243, 245, 0.06);
+    border-color: var(--ccrb-bg-soft);
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(39, 68, 114, 0.25),
+        inset 0 0 15px rgba(231, 243, 245, 0.05);
+}
+
+.ccrb-skylight-card-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: rgba(231, 243, 245, 0.1);
+    color: var(--ccrb-bg-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(231, 243, 245, 0.15);
+}
+
+.ccrb-skylight-card:hover .ccrb-skylight-card-icon {
+    background: var(--ccrb-bg-soft);
+    color: var(--ccrb-bg-dark);
+    border-color: var(--ccrb-bg-soft);
+    transform: rotate(5deg);
+}
+
+.ccrb-skylight-card-text {
+    font-size: 15px;
+    font-weight: 600;
+    color: #f1f5f9;
+    transition: color 0.3s ease;
+}
+
+.ccrb-skylight-card:hover .ccrb-skylight-card-text {
+    color: #ffffff;
+}
+
+.ccrb-skylight-footer-text {
+    font-size: 16px !important;
+    line-height: 1.7;
+    color: #94a3b8 !important;
+    margin-top: 10px;
+    font-style: italic;
+    border-left: 3px solid var(--ccrb-navy);
+    padding-left: 16px;
+}
+
+.ccrb-skylight-section .ccrb-feature-image-col {
+    max-height: 380px;
+    align-self: center;
+}
+
+.ccrb-skylight-section .ccrb-feature-image-col .ccrb-image-placeholder {
+    min-height: 300px;
+    height: 380px;
+}
+
+@media (max-width: 600px) {
+    .ccrb-skylight-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .ccrb-skylight-title {
+        font-size: 32px !important;
+    }
+}
+
+/* ============================================================
+   EXPERT EDITORIAL LAYOUT (REUSED ccrb- overrides)
+   ============================================================ */
+.ccrb-page-wrapper .ccrb-growth-insight-section {
+    background: var(--ccrb-bg-white) !important;
+    border-top: 1px solid rgba(39, 68, 114, 0.08);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+    padding: 100px 20px !important;
+}
+
+.ccrb-page-wrapper .ccrb-expert-editorial-card {
+    background: var(--ccrb-bg-white) !important;
+    border: 1px solid rgba(39, 68, 114, 0.08) !important;
+    border-radius: 24px !important;
+    padding: 50px !important;
+    box-shadow: 0 20px 50px rgba(15, 28, 46, 0.04) !important;
+}
+
+.ccrb-page-wrapper .ccrb-editorial-portrait-block {
+    display: flex !important;
+    flex-direction: column !important;
+    align-self: start !important;
+    width: 100% !important;
+}
+
+.ccrb-page-wrapper .ccrb-expertise-section-box {
+    margin-top: 30px !important;
+    background: var(--ccrb-bg-soft) !important;
+    padding: 24px !important;
+    border-radius: 16px !important;
+    border: 1px solid rgba(39, 68, 114, 0.06) !important;
+}
+
+.ccrb-page-wrapper .ccrb-expertise-intro-label {
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    color: var(--ccrb-navy) !important;
+    display: block !important;
+    margin-bottom: 14px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+}
+
+.ccrb-page-wrapper .ccrb-expertise-horizontal-strip {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+}
+
+.ccrb-page-wrapper .ccrb-expertise-pills-row {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    border: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+.ccrb-page-wrapper .ccrb-expertise-pill-text {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: #334155 !important;
+}
+
+.ccrb-page-wrapper .ccrb-editorial-image-frame {
+    aspect-ratio: 4 / 5 !important;
+    border-radius: 20px !important;
+    overflow: hidden !important;
+    box-shadow: 0 15px 35px rgba(39, 68, 114, 0.1) !important;
+}
+
+.ccrb-page-wrapper .ccrb-editorial-floating-stat {
+    background: var(--ccrb-navy) !important;
+    box-shadow: 0 10px 25px rgba(39, 68, 114, 0.2) !important;
+}
+
+@media (max-width: 1024px) {
+    .ccrb-page-wrapper .ccrb-expert-editorial-card {
+        grid-template-columns: 1fr !important;
+        padding: 30px !important;
+        gap: 40px !important;
+    }
+
+    .ccrb-page-wrapper .ccrb-editorial-portrait-block {
+        align-self: center !important;
+        max-width: 460px !important;
+    }
+}
+
+.ccrb-page-wrapper .ccrb-editorial-eyebrow-container {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    background: var(--ccrb-bg-soft) !important;
+    padding: 8px 16px !important;
+    border-radius: 30px !important;
+    width: fit-content !important;
+    margin-bottom: 18px !important;
+}
+
+.ccrb-page-wrapper .ccrb-editorial-eyebrow {
+    color: var(--ccrb-navy) !important;
+    font-weight: 700 !important;
+    font-size: 13px !important;
+    letter-spacing: 0.08em !important;
+    opacity: 1 !important;
+}
+
+.ccrb-page-wrapper .ccrb-editorial-icon-badge {
+    color: var(--ccrb-navy) !important;
+    opacity: 1 !important;
+}
+
+.ccrb-page-wrapper .ccrb-editorial-full-width-footer {
+    grid-column: 1 / -1;
+    margin-top: 30px;
+    border-top: 1px solid rgba(39, 68, 114, 0.1);
+    padding-top: 30px;
+}
+
+.ccrb-page-wrapper .ccrb-editorial-signature {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    color: var(--ccrb-navy) !important;
+    font-weight: 700 !important;
+    margin-top: 16px !important;
+}
+
+/* ============================================================
+   NEW — CRIV- PREFIXED CLASSES
+   (No equivalent layout existed in the reference file: 3-column
+   comparison tables, 2-column paired comparison tables, choice
+   boards, and the numbered step-by-step guide)
+   ============================================================ */
+
+/* ---- 3-column comparison table (Compass vs Seeker / Accommodations Compared) ---- */
+.ccrb-compare-section {
+    padding: 100px 20px;
+}
+
+.ccrb-compare-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.ccrb-compare-table-3col {
+    margin-top: 40px;
+    background: var(--ccrb-bg-white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(39, 68, 114, 0.06);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.ccrb-compare-row-3col {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr 1fr;
+}
+
+.ccrb-compare-row-3col.ccrb-compare-header {
+    background: var(--ccrb-navy);
+}
+
+.ccrb-compare-row-3col.ccrb-compare-header .ccrb-compare-cell {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.ccrb-compare-row-3col:not(.ccrb-compare-header):nth-child(even) {
+    background: #faf8f5;
+}
+
+.ccrb-compare-row-3col:not(:last-child) {
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.ccrb-compare-cell {
+    padding: 16px 22px;
+    font-size: 15px;
+    color: #334155;
+    font-weight: 500;
+}
+
+.ccrb-compare-cell.ccrb-compare-label {
+    font-weight: 700;
+    color: var(--ccrb-navy);
+    background: var(--ccrb-bg-soft);
+}
+
+.ccrb-compare-row-3col.ccrb-compare-header .ccrb-compare-cell.ccrb-compare-label {
+    background: transparent;
+}
+
+@media (max-width: 768px) {
+    .ccrb-compare-section {
+        padding: 60px 18px;
+    }
+
+    .ccrb-compare-cell {
+        padding: 12px 14px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ccrb-compare-section {
+        padding: 44px 14px;
+    }
+
+    .ccrb-compare-row-3col {
+        grid-template-columns: 0.9fr 0.7fr 0.7fr;
+    }
+
+    .ccrb-compare-cell {
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+}
+
+/* ---- 2-column paired comparison table (Rhine vs Danube / River vs Ocean) ---- */
+.ccrb-pair-table {
+    margin-top: 40px;
+    background: var(--ccrb-bg-white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(39, 68, 114, 0.06);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.ccrb-pair-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.ccrb-pair-row.ccrb-pair-header {
+    background: var(--ccrb-navy);
+}
+
+.ccrb-pair-row.ccrb-pair-header .ccrb-pair-cell {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+}
+
+.ccrb-pair-row:not(.ccrb-pair-header):nth-child(even) {
+    background: #faf8f5;
+}
+
+.ccrb-pair-row:not(:last-child) {
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.ccrb-pair-cell {
+    padding: 16px 28px;
+    font-size: 15px;
+    color: #334155;
+    font-weight: 500;
+}
+
+.ccrb-pair-cell:first-child {
+    border-right: 1px solid rgba(39, 68, 114, 0.06);
+}
+
+@media (max-width: 768px) {
+    .ccrb-pair-cell {
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ccrb-pair-cell {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+}
+
+/* ---- Choice board (Choose Rhine if / Choose Danube if) ---- */
+.ccrb-choice-section {
+    padding: 100px 20px;
+    background: var(--ccrb-bg-soft);
+}
+
+.ccrb-choice-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.ccrb-choice-board {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--ccrb-bg-white);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(39, 68, 114, 0.04);
+    margin-top: 40px;
+    text-align: left;
+}
+
+.ccrb-choice-board-inline {
+    margin-top: 48px;
+}
+
+.ccrb-choice-panel {
+    padding: 50px 40px;
+    background: var(--ccrb-bg-white);
+}
+
+.ccrb-choice-panel:first-child {
+    border-right: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.ccrb-choice-panel:nth-child(even) {
+    background: #faf8f5;
+}
+
+.ccrb-choice-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+    color: var(--ccrb-navy);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ccrb-choice-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ccrb-choice-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.ccrb-choice-icon-wrap {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background: rgba(39, 68, 114, 0.08);
+    color: var(--ccrb-navy);
+}
+
+.ccrb-choice-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--ccrb-navy);
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    .ccrb-choice-board {
+        grid-template-columns: 1fr;
+    }
+
+    .ccrb-choice-panel:first-child {
+        border-right: none;
+        border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+    }
+}
+
+@media (max-width: 768px) {
+    .ccrb-choice-section {
+        padding: 60px 18px;
+    }
+
+    .ccrb-choice-panel {
+        padding: 40px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ccrb-choice-section {
+        padding: 44px 14px;
+    }
+
+    .ccrb-choice-panel {
+        padding: 30px 20px;
+    }
+
+    .ccrb-choice-title {
+        font-size: 19px;
+        margin-bottom: 22px;
+    }
+
+    .ccrb-choice-text {
+        font-size: 15px;
+    }
+}
+
+/* ---- Numbered step-by-step guide (How to Choose the Best River Cruise) ---- */
+.ccrb-steps-section {
+    padding: 100px 20px;
+    background: var(--ccrb-bg-white);
+}
+
+.ccrb-steps-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ccrb-steps-list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.ccrb-step-item {
+    display: flex;
+    gap: 28px;
+    padding: 30px 0;
+    position: relative;
+}
+
+.ccrb-step-item:not(:last-child) {
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.ccrb-step-number {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--ccrb-navy);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.ccrb-step-body {
+    flex: 1;
+}
+
+.ccrb-step-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--ccrb-navy);
+    margin: 0 0 10px 0;
+}
+
+.ccrb-step-desc {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #475569;
+    margin: 0 0 12px 0;
+}
+
+.ccrb-step-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ccrb-step-tag {
+    background: var(--ccrb-bg-soft);
+    color: var(--ccrb-navy);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 30px;
+}
+
+@media (max-width: 768px) {
+    .ccrb-steps-section {
+        padding: 60px 18px;
+    }
+
+    .ccrb-step-item {
+        gap: 18px;
+    }
+
+    .ccrb-step-number {
+        width: 42px;
+        height: 42px;
+        font-size: 17px;
+    }
+
+    .ccrb-step-title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ccrb-steps-section {
+        padding: 44px 14px;
+    }
+
+    .ccrb-step-item {
+        flex-direction: column;
+        gap: 12px;
+        padding: 22px 0;
+    }
+
+    .ccrb-step-title {
+        font-size: 17px;
+    }
+
+    .ccrb-step-desc {}
+}
+
+/* ============================================================
+   WHY CHOOSE CELEBRITY ALASKA CRUISES — REDESIGNED SPLIT SECTION
+   ============================================================ */
+.ccrb-why-choose-section {
+    background: linear-gradient(180deg, #ffffff 0%, #f3f8fa 100%);
+    padding: 70px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle background glacier graphic or soft gradient glow */
+.ccrb-why-choose-section::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(39, 68, 114, 0.03) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.ccrb-why-choose-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.ccrb-why-choose-split-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Left column: Content */
+.ccrb-why-choose-content-col {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.ccrb-why-choose-content-col .ccrb-eyebrow-label {
+    align-self: flex-start;
+    margin-bottom: 16px;
+}
+
+.ccrb-why-choose-content-col .ccrb-section-heading {
+    margin-bottom: 12px;
+    font-size: 38px !important;
+    line-height: 1.25;
+}
+
+.ccrb-why-choose-content-col .ccrb-heading-bar {
+    width: 60px;
+    height: 4px;
+    background: var(--ccrb-navy);
+    margin-bottom: 20px;
+}
+
+.ccrb-why-choose-content-col .ccrb-lead-paragraph {
+    font-size: 16.5px;
+    line-height: 1.7;
+    color: #475569;
+    margin-bottom: 24px;
+}
+
+.ccrb-why-choose-footer-note {
+    border-left: 4px solid var(--ccrb-navy);
+    background: rgba(39, 68, 114, 0.04);
+    border-radius: 0 12px 12px 0;
+    padding: 16px 20px;
+}
+
+.ccrb-why-choose-note {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #334155;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Right column: Keypoints Grid */
+.ccrb-why-choose-keypoints-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.ccrb-why-choose-keypoints-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+/* Elegant Cards */
+.ccrb-why-choose-card {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 12px;
+    padding: 16px 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    box-shadow: 0 4px 15px rgba(39, 68, 114, 0.01);
+}
+
+.ccrb-why-choose-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(39, 68, 114, 0.18);
+    box-shadow: 0 10px 24px rgba(39, 68, 114, 0.06);
+    background: linear-gradient(135deg, #ffffff 0%, #f4f9fb 100%);
+}
+
+.ccrb-why-choose-icon-wrapper {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: rgba(39, 68, 114, 0.06);
+    color: var(--ccrb-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    flex-shrink: 0;
+}
+
+.ccrb-why-choose-card:hover .ccrb-why-choose-icon-wrapper {
+    background: linear-gradient(135deg, #274472 0%, #4f709c 100%);
+    color: #ffffff;
+    transform: scale(1.05) rotate(3deg);
+}
+
+.ccrb-why-choose-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.ccrb-why-choose-card-text {
+    font-size: 14px;
+    line-height: 1.45;
+    color: #334155;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.ccrb-why-choose-card:hover .ccrb-why-choose-card-text {
+    color: var(--ccrb-navy);
+}
+
+/* ============================================================
+   RESPONSIVE DESIGN (SPLIT SECTION)
+   ============================================================ */
+@media (max-width: 1100px) {
+    .ccrb-why-choose-split-grid {
+        gap: 30px;
+    }
+
+    .ccrb-why-choose-content-col .ccrb-section-heading {
+        font-size: 32px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .ccrb-why-choose-section {
+        padding: 60px 20px;
+    }
+
+    .ccrb-why-choose-split-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .ccrb-why-choose-content-col {
+        text-align: center;
+        align-items: center;
+    }
+
+    .ccrb-why-choose-content-col .ccrb-eyebrow-label {
+        align-self: center;
+    }
+
+    .ccrb-why-choose-content-col .ccrb-heading-bar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ccrb-why-choose-footer-note {
+        border-left: none;
+        border-top: 4px solid var(--ccrb-navy);
+        border-radius: 0 0 12px 12px;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .ccrb-why-choose-keypoints-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .ccrb-why-choose-card {
+        padding: 14px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ccrb-why-choose-section {
+        padding: 40px 14px;
+    }
+
+    .ccrb-why-choose-content-col .ccrb-section-heading {
+        font-size: 26px !important;
+    }
+
+    .ccrb-why-choose-lead-paragraph {
+        font-size: 15px;
+    }
+}
+
+/* ============================================================
+   EXPERT EDITORIAL REDESIGN (Why Choose Celebrity for Alaska)
+   ============================================================ */
+.ccrb-editorial-section {
+    background: #ffffff;
+    padding: 70px 20px;
+    border-top: 1px solid rgba(39, 68, 114, 0.08);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+    position: relative;
+}
+
+.ccrb-editorial-container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.ccrb-editorial-split-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+    gap: 50px;
+    align-items: start;
+}
+
+/* Profile Sidebar */
+.ccrb-editorial-profile-sidebar {
+    background: #fafbfe;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.02);
+}
+
+.ccrb-editorial-avatar-wrap {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #ffffff;
+    box-shadow: 0 8px 24px rgba(39, 68, 114, 0.12);
+    margin-bottom: 20px;
+}
+
+.ccrb-editorial-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ccrb-editorial-bio {
+    margin-bottom: 20px;
+}
+
+.ccrb-editorial-bio-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--ccrb-navy);
+    margin: 0 0 6px 0;
+}
+
+.ccrb-editorial-bio-title {
+    font-size: 13px;
+    line-height: 1.4;
+    color: #475569;
+    margin: 0;
+    font-weight: 500;
+}
+
+.ccrb-editorial-stats-row {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 24px;
+    border-top: 1px solid rgba(39, 68, 114, 0.08);
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+    padding: 16px 0;
+}
+
+.ccrb-editorial-stat-badge {
+    flex: 1;
+    font-size: 11px;
+    color: #475569;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.ccrb-editorial-stat-badge strong {
+    display: block;
+    font-size: 20px;
+    color: var(--ccrb-navy);
+    font-weight: 800;
+    margin-bottom: 2px;
+}
+
+.ccrb-editorial-expertise-box {
+    width: 100%;
+    text-align: left;
+}
+
+.ccrb-editorial-expertise-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--ccrb-navy);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 12px;
+}
+
+.ccrb-editorial-expertise-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ccrb-editorial-expertise-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #334155;
+    line-height: 1.35;
+}
+
+.ccrb-editorial-dot {
+    color: var(--ccrb-navy);
+    margin-top: 4px;
+    flex-shrink: 0;
+}
+
+/* Main Insight Content */
+.ccrb-editorial-main-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.ccrb-editorial-header {
+    margin-bottom: 24px;
+}
+
+.ccrb-editorial-eyebrow-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--ccrb-bg-soft);
+    padding: 6px 14px;
+    border-radius: 30px;
+    margin-bottom: 16px;
+}
+
+.ccrb-editorial-eyebrow {
+    color: var(--ccrb-navy);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.ccrb-editorial-icon-badge {
+    color: var(--ccrb-navy);
+}
+
+.ccrb-editorial-heading {
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--ccrb-navy);
+    margin: 0 0 16px 0;
+    line-height: 1.25;
+}
+
+.ccrb-editorial-heading-line {
+    width: 60px;
+    height: 4px;
+    background: var(--ccrb-navy);
+}
+
+.ccrb-editorial-lead-para {
+    font-size: 20px;
+    line-height: 1.6;
+    color: var(--ccrb-navy);
+    font-weight: 600;
+    margin-bottom: 24px;
+    font-style: italic;
+}
+
+.ccrb-editorial-quote-box {
+    background: #faf8f5;
+    border-left: 4px solid var(--ccrb-navy);
+    border-radius: 0 16px 16px 0;
+    padding: 24px 30px;
+    position: relative;
+}
+
+/* Large quote mark behind text */
+.ccrb-editorial-quote-box::before {
+    content: '“';
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    font-size: 80px;
+    color: rgba(39, 68, 114, 0.05);
+    font-family: serif;
+    line-height: 1;
+}
+
+.ccrb-editorial-quote-text {
+    font-size: 16px;
+    line-height: 1.75;
+    color: #475569;
+    font-weight: 500;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+/* ============================================================
+   RESPONSIVE DESIGN (EDITORIAL REDESIGN)
+   ============================================================ */
+@media (max-width: 992px) {
+    .ccrb-editorial-split-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .ccrb-editorial-profile-sidebar {
+        max-width: 480px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .ccrb-editorial-main-content {
+        text-align: center;
+        align-items: center;
+    }
+
+    .ccrb-editorial-heading-line {
+        margin: 0 auto;
+    }
+
+    .ccrb-editorial-quote-box {
+        text-align: left;
+        border-left: none;
+        border-top: 4px solid var(--ccrb-navy);
+        border-radius: 0 0 16px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ccrb-editorial-section {
+        padding: 40px 14px;
+    }
+
+    .ccrb-editorial-heading {
+        font-size: 28px;
+    }
+
+    .ccrb-editorial-lead-para {
+        font-size: 17px;
+    }
+
+    .ccrb-editorial-quote-box {
+        padding: 20px;
+    }
+}
+
+/* ============================================================
+   WHAT TO PACK — REDESIGNED CHECKLIST BOARD
+   ============================================================ */
+.ccrb-packing-section {
+    background: var(--ccrb-bg-soft);
+    padding: 70px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ccrb-packing-container {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.ccrb-packing-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ccrb-packing-header .ccrb-eyebrow-label {
+    background: #ffffff !important;
+}
+
+.ccrb-packing-header .ccrb-lead-paragraph {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Premium Checklist Board */
+.ccrb-packing-checklist-board {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 15px 35px rgba(39, 68, 114, 0.04);
+}
+
+.ccrb-packing-checklist-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    row-gap: 0;
+}
+
+/* List Item Row styling */
+.ccrb-packing-item-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.06);
+    transition: all 0.3s ease;
+}
+
+.ccrb-packing-item-row:hover {
+    transform: translateX(5px);
+}
+
+.ccrb-packing-icon-box {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(39, 68, 114, 0.05);
+    color: var(--ccrb-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.ccrb-packing-item-row:hover .ccrb-packing-icon-box {
+    background: var(--ccrb-navy);
+    color: #ffffff;
+    transform: scale(1.08);
+}
+
+.ccrb-packing-item-text {
+    font-size: 15px;
+    font-weight: 600;
+    color: #334155;
+    transition: color 0.3s ease;
+}
+
+.ccrb-packing-item-row:hover .ccrb-packing-item-text {
+    color: var(--ccrb-navy);
+}
+
+.ccrb-packing-footer-note {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #475569;
+    font-weight: 500;
+    margin-top: 36px;
+}
+
+/* ============================================================
+   RESPONSIVE DESIGN (PACKING REDESIGN)
+   ============================================================ */
+@media (max-width: 768px) {
+    .ccrb-packing-checklist-board {
+        padding: 30px 20px;
+    }
+
+    .ccrb-packing-checklist-grid {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+    }
+
+    .ccrb-packing-item-row {
+        padding: 14px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .ccrb-packing-section {
+        padding: 40px 14px;
+    }
+
+    .ccrb-packing-checklist-board {
+        padding: 20px 15px;
+    }
+
+    .ccrb-packing-item-text {
+        font-size: 14px;
+    }
+}
+
+/* ============================================================
+   ARE CELEBRITY ALASKA CRUISES WORTH IT — REDESIGNED SPLIT SECTION
+   ============================================================ */
+.ccrb-worth-container-split {
+    max-width: 1240px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.ccrb-worth-split-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* Left column: Content */
+.ccrb-worth-info-col {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.ccrb-worth-info-col .ccrb-eyebrow-label {
+    align-self: flex-start;
+    margin-bottom: 24px;
+}
+
+.ccrb-worth-info-col .ccrb-section-heading {
+    margin-bottom: 20px;
+    font-size: 38px !important;
+    line-height: 1.25;
+}
+
+.ccrb-worth-info-col .ccrb-heading-bar {
+    width: 60px;
+    height: 4px;
+    background: var(--ccrb-navy);
+    margin-bottom: 24px;
+}
+
+.ccrb-worth-info-col .ccrb-lead-paragraph {
+    font-size: 16.5px;
+    line-height: 1.7;
+    color: #475569;
+    margin-bottom: 28px;
+}
+
+.ccrb-worth-footer-note {
+    border-left: 4px solid var(--ccrb-navy);
+    background: rgba(39, 68, 114, 0.04);
+    border-radius: 0 12px 12px 0;
+    padding: 16px 20px;
+}
+
+.ccrb-worth-note {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #334155;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Right column: Advantages list stack */
+.ccrb-worth-advantages-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.ccrb-worth-advantages-list {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 12px 30px rgba(39, 68, 114, 0.03);
+    display: flex;
+    flex-direction: column;
+}
+
+.ccrb-worth-item-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 0;
+    transition: all 0.3s ease;
+}
+
+.ccrb-worth-item-row:not(:last-child) {
+    border-bottom: 1px solid rgba(39, 68, 114, 0.06);
+}
+
+.ccrb-worth-item-row:hover {
+    transform: translateX(6px);
+}
+
+.ccrb-worth-item-icon-box {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: rgba(39, 68, 114, 0.05);
+    color: var(--ccrb-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.ccrb-worth-item-row:hover .ccrb-worth-item-icon-box {
+    background: var(--ccrb-navy);
+    color: #ffffff;
+    transform: scale(1.08);
+}
+
+.ccrb-worth-item-text {
+    font-size: 15px;
+    font-weight: 600;
+    color: #334155;
+    transition: color 0.3s ease;
+}
+
+.ccrb-worth-item-row:hover .ccrb-worth-item-text {
+    color: var(--ccrb-navy);
+}
+
+/* ============================================================
+   RESPONSIVE DESIGN (WORTH REDESIGN)
+   ============================================================ */
+@media (max-width: 992px) {
+    .ccrb-worth-split-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .ccrb-worth-info-col {
+        text-align: center;
+        align-items: center;
+    }
+
+    .ccrb-worth-info-col .ccrb-eyebrow-label {
+        align-self: center;
+    }
+
+    .ccrb-worth-info-col .ccrb-heading-bar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ccrb-worth-footer-note {
+        border-left: none;
+        border-top: 4px solid var(--ccrb-navy);
+        border-radius: 0 0 12px 12px;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .ccrb-worth-advantages-list {
+        max-width: 600px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .ccrb-worth-advantages-list {
+        padding: 20px 15px;
+    }
+
+    .ccrb-worth-item-text {
+        font-size: 14px;
+    }
+}
+
+/* ============================================================
+   STATEROOMS & SUITES TAB SHOWCASE
+   ============================================================ */
+.ccrb-accommodations-section {
+    background: #ffffff;
+    padding: 70px 20px;
+    position: relative;
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.ccrb-accommodations-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.ccrb-accommodations-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ccrb-accommodations-header .ccrb-lead-paragraph {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Tabs Switcher */
+.ccrb-accommodations-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 40px;
+    background: var(--ccrb-bg-soft);
+    padding: 8px;
+    border-radius: 40px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgba(39, 68, 114, 0.06);
+}
+
+.ccrb-accommodation-tab-btn {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #475569;
+    padding: 10px 24px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ccrb-accommodation-tab-btn:hover {
+    color: var(--ccrb-navy);
+}
+
+.ccrb-accommodation-tab-btn.active {
+    background: var(--ccrb-navy);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(39, 68, 114, 0.15);
+}
+
+/* Active panel frame */
+.ccrb-accommodation-panel {
+    background: #ffffff;
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(15, 28, 46, 0.04);
+}
+
+.ccrb-accommodation-panel-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+/* Image column styles */
+.ccrb-accommodation-image-col {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(39, 68, 114, 0.06);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+    height: 340px;
+}
+
+.ccrb-accommodation-image-col .ccrb-image-placeholder {
+    height: 100%;
+}
+
+/* Copy Column Styles */
+.ccrb-accommodation-info-col {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.ccrb-accommodation-info-col .ccrb-eyebrow-label {
+    align-self: flex-start;
+    margin-bottom: 16px;
+}
+
+.ccrb-accommodation-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--ccrb-navy);
+    margin: 0 0 16px 0;
+    line-height: 1.25;
+}
+
+.ccrb-accommodation-title.text-gold {
+    color: #a1783f;
+}
+
+.ccrb-accommodation-description {
+    font-size: 16px;
+    line-height: 1.65;
+    color: #475569;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Veranda Checklist */
+.ccrb-veranda-checklist {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.ccrb-veranda-check-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ccrb-veranda-check-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: rgba(39, 68, 114, 0.05);
+    color: var(--ccrb-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.ccrb-veranda-check-text {
+    font-size: 14.5px;
+    font-weight: 600;
+    color: #334155;
+}
+
+/* Simple fade-in animations */
+.animate-fade-in {
+    animation: fadeIn 0.4s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ============================================================
+   RESPONSIVE DESIGN (ACCOMMODATIONS REDESIGN)
+   ============================================================ */
+@media (max-width: 992px) {
+    .ccrb-accommodation-panel-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .ccrb-accommodation-image-col {
+        height: 280px;
+        order: -1;
+    }
+
+    .ccrb-accommodation-info-col {
+        align-items: center;
+        text-align: center;
+    }
+
+    .ccrb-accommodation-info-col .ccrb-eyebrow-label {
+        align-self: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .ccrb-accommodations-tabs {
+        flex-wrap: wrap;
+        border-radius: 20px;
+        justify-content: center;
+        width: 100%;
+        max-width: 320px;
+        gap: 6px;
+    }
+
+    .ccrb-accommodation-tab-btn {
+        padding: 8px 16px;
+        font-size: 13.5px;
+        width: 45%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .ccrb-accommodations-section {
+        padding: 40px 14px;
+    }
+
+    .ccrb-accommodation-panel {
+        padding: 24px 16px;
+    }
+
+    .ccrb-accommodation-title {
+        font-size: 24px;
+    }
+
+    .ccrb-accommodation-description {
+        font-size: 14px;
+    }
+}
+
+/* ============================================================
+   PORTS SECTON — REDESIGNED CENTERED LAYOUT
+   ============================================================ */
+.ccrb-ports-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.ccrb-ports-grid .ccrb-itinerary-card {
+    flex: 0 1 calc(33.33% - 20px);
+    min-width: 310px;
+    max-width: 360px;
+    min-height: 420px; /* Forces equal height across rows */
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 992px) {
+    .ccrb-ports-grid .ccrb-itinerary-card {
+        flex: 0 1 calc(50% - 15px);
+        max-width: 380px;
+        min-height: 420px;
+    }
+}
+
+@media (max-width: 680px) {
+    .ccrb-ports-grid .ccrb-itinerary-card {
+        flex: 0 1 100%;
+        max-width: 100%;
+        min-height: auto; /* Reset for vertical stack */
+    }
+}
+
+/* ============================================================
+   BEST TIME SECTION — 3-COLUMN FIRST ROW, Centered LAST ROW
+   ============================================================ */
+.ccrb-best-time-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.ccrb-best-time-list .ccrb-feature-desc-card {
+    flex: 0 1 calc(33.33% - 12px);
+    min-width: 290px;
+}
+
+@media (max-width: 992px) {
+    .ccrb-best-time-list .ccrb-feature-desc-card {
+        flex: 0 1 calc(50% - 8px);
+    }
+}
+
+@media (max-width: 600px) {
+    .ccrb-best-time-list .ccrb-feature-desc-card {
+        flex: 0 1 100%;
+    }
+}
+
+/* ============================================================
+   DARK SECTION OVERRIDES — Cruise Inclusions + Balcony Worth It
+   ============================================================ */
+
+/* Included items on dark bg */
+.ccrb-dark-section .ccrb-included-item {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #e2e8f0;
+}
+
+.ccrb-dark-section .ccrb-included-item:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.ccrb-dark-section .ccrb-included-note {
+    color: #94a3b8;
+}
+
+/* Worth / Balcony section on dark bg */
+.ccrb-dark-section .ccrb-worth-section-heading,
+.ccrb-dark-section .ccrb-worth-container .ccrb-section-heading {
+    color: #ffffff;
+}
+
+.ccrb-dark-section .ccrb-worth-container .ccrb-lead-paragraph {
+    color: #cbd5e1;
+}
+
+.ccrb-dark-section .ccrb-worth-advantages-list {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: none;
+}
+
+.ccrb-dark-section .ccrb-worth-item-row:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.ccrb-dark-section .ccrb-worth-item-icon-box {
+    background: rgba(255, 255, 255, 0.1);
+    color: #e2e8f0;
+}
+
+.ccrb-dark-section .ccrb-worth-item-text {
+    color: #e2e8f0;
+}
+
+.ccrb-dark-section .ccrb-worth-item-row:hover .ccrb-worth-item-text {
+    color: #ffffff;
+}
+
+.ccrb-dark-section .ccrb-worth-item-row:hover .ccrb-worth-item-icon-box {
+    background: var(--ccrb-navy);
+    color: #ffffff;
+}
+
+.ccrb-dark-section .ccrb-worth-footer-note {
+    border-left: 4px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.ccrb-dark-section .ccrb-worth-note {
+    color: #cbd5e1;
+}
+
+.ccrb-dark-section .ccrb-worth-info-col .ccrb-lead-paragraph {
+    color: #cbd5e1;
+}
+/* ============================================================
+   NEW — CARIBBEAN 3-REGION EXTENSIONS
+   (Eastern / Western / Southern Caribbean need a 4-column
+   comparison table and a 3-panel choice board; the reference
+   template only defined 3-column and 2-panel variants)
+   ============================================================ */
+.ccrb-compare-table-4col {
+    margin-top: 40px;
+    background: var(--ccrb-bg-white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(39, 68, 114, 0.06);
+    border: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.ccrb-compare-row-4col {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr 1fr 1fr;
+}
+
+.ccrb-compare-row-4col.ccrb-compare-header {
+    background: var(--ccrb-navy);
+}
+
+.ccrb-compare-row-4col.ccrb-compare-header .ccrb-compare-cell {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.ccrb-compare-row-4col:not(.ccrb-compare-header):nth-child(even) {
+    background: #faf8f5;
+}
+
+.ccrb-compare-row-4col:not(:last-child) {
+    border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.ccrb-compare-row-4col .ccrb-compare-cell.ccrb-compare-label {
+    font-weight: 700;
+    color: var(--ccrb-navy);
+    background: var(--ccrb-bg-soft);
+}
+
+.ccrb-compare-row-4col.ccrb-compare-header .ccrb-compare-cell.ccrb-compare-label {
+    background: transparent;
+}
+
+@media (max-width: 768px) {
+    .ccrb-compare-row-4col .ccrb-compare-cell {
+        padding: 12px 14px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ccrb-compare-row-4col {
+        grid-template-columns: 0.9fr 0.7fr 0.7fr 0.7fr;
+    }
+
+    .ccrb-compare-row-4col .ccrb-compare-cell {
+        padding: 8px 8px;
+        font-size: 11px;
+    }
+}
+
+.ccrb-choice-board-triple {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.ccrb-choice-board-triple .ccrb-choice-panel:nth-child(1),
+.ccrb-choice-board-triple .ccrb-choice-panel:nth-child(2) {
+    border-right: 1px solid rgba(39, 68, 114, 0.08);
+}
+
+.ccrb-choice-board-triple .ccrb-choice-panel:nth-child(2) {
+    background: var(--ccrb-bg-white);
+}
+
+.ccrb-choice-board-triple .ccrb-choice-panel:nth-child(3) {
+    background: #faf8f5;
+}
+
+@media (max-width: 1024px) {
+    .ccrb-choice-board-triple {
+        grid-template-columns: 1fr;
+    }
+
+    .ccrb-choice-board-triple .ccrb-choice-panel:nth-child(1),
+    .ccrb-choice-board-triple .ccrb-choice-panel:nth-child(2) {
+        border-right: none;
+        border-bottom: 1px solid rgba(39, 68, 114, 0.08);
+    }
+}

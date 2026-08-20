@@ -209,7 +209,7 @@ function CelebrityGalapagosCruises() {
         { label: 'Included beverages', icon: 'GlassWater' },
         { label: 'Locally sourced cuisine', icon: 'Leaf' },
         { label: 'Suite services', icon: 'ConciergeBell' },
-        { label: 'Expedition-focused public spaces', icon: 'Home' }
+       
     ]
 
     const cgcSuiteFeatures = [
@@ -766,8 +766,8 @@ function CelebrityGalapagosCruises() {
                 </section>
 
                 {/* ITINERARIES INTRO */}
-                <section className="cgc-worth-section cgc-bg-soft">
-                    <div className="cgc-worth-container">
+                <section className="cgc-itinerary-intro-section cgc-bg-soft">
+                    <div className="cgc-itinerary-intro-container">
                         <span className="cgc-eyebrow-label">ROUTES</span>
                         <h2 className="cgc-section-heading">Celebrity Galápagos Itineraries</h2>
                         <div className="cgc-heading-bar cgc-bar-center"></div>
@@ -1391,7 +1391,7 @@ function CelebrityGalapagosCruises() {
                 </section>
 
                 {/* WHO SHOULD CHOOSE */}
-                <section className="cgc-why-book-section cgc-why-book-light">
+                <section className="cgc-why-book-section cgc-why-book-soft">
                     <div className="cgc-why-book-container">
                         <div style={{ textAlign: 'center' }}>
                             <span className="cgc-eyebrow-label-navy">WHO IS IT FOR?</span>
@@ -1416,7 +1416,7 @@ function CelebrityGalapagosCruises() {
                 </section>
 
                 {/* WHO MAY PREFER ANOTHER */}
-                <section className="cgc-audience-section">
+                <section className="cgc-audience-section cgc-bg-white">
                     <div className="cgc-audience-container">
                         <div style={{ textAlign: 'center' }}>
                             <span className="cgc-eyebrow-label">WORTH CONSIDERING</span>
@@ -1628,7 +1628,7 @@ function CelebrityGalapagosCruises() {
                     <div className="cgc-why-book-container">
                         <div style={{ textAlign: 'center' }}>
                             <span className="cgc-eyebrow-label">PLANNING ADVANTAGE</span>
-                            <h2 className="cgc-section-heading">Why Plan Your Celebrity Galápagos Cruise With Trips & Ships Luxury Travel?</h2>
+                            <h2 className="cgc-section-heading">Why Plan Your Celebrity Galápagos Cruise With <br /> Trips & Ships Luxury Travel?</h2>
                             <div className="cgc-heading-bar cgc-bar-center"></div>
                             <p className="cgc-lead-paragraph" style={{ maxWidth: '800px', margin: '0 auto', color: '#cbd5e1' }}>
                                 Planning the Galápagos requires more than selecting a cruise date. Trips & Ships Luxury Travel can help you:

@@ -1343,13 +1343,39 @@ const Navbar = () => {
                 Celebrity Danube River Cruises
               </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/celebrity-cruises/galapagos"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 Celebrity Galapagos Cruises
+              </NavLink>
+
+              <NavLink
+                to="/celebrity-cruises/alaska"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Celebrity Alaska Cruises
+              </NavLink>
+
+              {/* <NavLink
+                to="/celebrity-cruises/mediterranean"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Celebrity Mediterranean Cruises
+              </NavLink>
+
+               <NavLink
+                to="/celebrity-cruises/caribbean"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Celebrity Caribbean Cruises
               </NavLink> */}
+
+
 
             </div>
           </div>
@@ -2649,12 +2675,36 @@ const Navbar = () => {
               Celebrity Danube River Cruises
             </NavLink>
 
-            {/* <NavLink
+            <NavLink
                 to="/celebrity-cruises/galapagos"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 Celebrity Galapagos Cruises
+              </NavLink>
+
+                <NavLink
+                to="/celebrity-cruises/alaska"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Celebrity Alaska Cruises
+              </NavLink>
+
+               {/* <NavLink
+                to="/celebrity-cruises/mediterranean"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Celebrity Mediterranean Cruises
+              </NavLink>
+
+               <NavLink
+                to="/celebrity-cruises/caribbean"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Celebrity Caribbean Cruises
               </NavLink> */}
 
 

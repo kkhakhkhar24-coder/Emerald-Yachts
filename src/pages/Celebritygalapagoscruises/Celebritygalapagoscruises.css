@@ -2802,7 +2802,7 @@
    ============================================================ */
 .flora-showcase-section {
     padding: 100px 20px !important;
-    background: var(--cgc-bg-white);
+    background: var(--cgc-bg-soft);
 }
 
 .flora-showcase-container {
@@ -2871,7 +2871,7 @@
     color: var(--cgc-navy);
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    text-align: center;
+    text-align: left;
     margin: 0;
 }
 
@@ -2884,7 +2884,7 @@
 }
 
 .flora-spec-card {
-    background: rgba(231, 243, 245, 0.4);
+    background: var(--cgc-bg-white);
     border: 1px solid rgba(39, 68, 114, 0.08);
     border-radius: 16px;
     padding: 18px 22px;
@@ -3081,14 +3081,14 @@
     color: var(--cgc-bg-soft);
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    text-align: center;
+    text-align: left;
     margin: 0;
 }
 
 .flora-suites-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 16px;
     width: 100%;
 }
@@ -3368,7 +3368,7 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    text-align: center;
+    text-align: left;
     margin: 0;
 }
 
@@ -3383,7 +3383,7 @@
 .flora-route-best-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 16px;
     width: 100%;
 }
@@ -3730,14 +3730,14 @@
     color: var(--cgc-bg-soft);
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    text-align: center;
+    text-align: left;
     margin: 0;
 }
 
 .flora-diff-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 16px;
     width: 100%;
 }
@@ -3863,14 +3863,14 @@
     color: var(--cgc-navy);
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    text-align: center;
+    text-align: left;
     margin: 0;
 }
 
 .flora-excursions-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 16px;
     width: 100%;
 }
@@ -4039,14 +4039,14 @@
     color: var(--cgc-navy);
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    text-align: center;
+    text-align: left;
     margin: 0;
 }
 
 .flora-naturalists-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 16px;
     width: 100%;
 }
@@ -4683,4 +4683,25 @@
     .cgc-pack-footer-text {
         font-size: 16px !important;
     }
+}
+
+/* ============================================================
+   WHY BOOK / PLAN WITH US — SOFT BACKGROUND MODIFIER
+   ============================================================ */
+.cgc-why-book-section.cgc-why-book-soft {
+    background: var(--cgc-bg-soft) !important;
+}
+
+/* ============================================================
+   GALAPAGOS ITINERARIES INTRO SECTION
+   ============================================================ */
+.cgc-itinerary-intro-section {
+    padding: 60px 20px !important;
+    background: var(--cgc-bg-soft);
+}
+
+.cgc-itinerary-intro-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
 }
