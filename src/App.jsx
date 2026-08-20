@@ -175,6 +175,9 @@ import CelebrityDrinkPackages from "./pages/CelebrityDrinkPackages/CelebrityDrin
 import CelebrityCruisesDining from "./pages/CelebrityCruisesDining/CelebrityCruisesDining";
 import CelebrityEdgeSeriesShipsGuide from "./pages/CelebrityEdgeSeriesShipsGuide/CelebrityEdgeSeriesShipsGuide";
 import CelebrityCruisesFAQs from "./pages/CelebrityCruisesFAQs/CelebrityCruisesFAQs";
+import WhyBookCelebrityWithTripsAndShips from "./pages/WhyBookCelebrityWithTripsAndShips/WhyBookCelebrityWithTripsAndShips";
+import CelebrityCruisesVsRoyalCaribbean from "./pages/CelebrityCruisesVsRoyalCaribbean/CelebrityCruisesVsRoyalCaribbean";
+import CelebrityCruisesVsPrincess from "./pages/CelebrityCruisesVsPrincess/CelebrityCruisesVsPrincess";
 import Celebritybeyondcruiseshipguide from "./pages/Celebritybeyondcruiseshipguide/Celebritybeyondcruiseshipguide";
 import Celebrityapexcruiseshipguide from "./pages/Celebrityapexcruiseshipguide/Celebrityapexcruiseshipguide";
 import Celebrityedgecruiseshipguide from "./pages/Celebrityedgecruiseshipguide/Celebrityedgecruiseshipguide";
@@ -1000,6 +1003,21 @@ function App() {
           <Route
             path="/celebrity-cruises/faqs"
             element={<CelebrityCruisesFAQs />}
+          />
+
+          <Route
+            path="/celebrity-cruises/why-book-with-us"
+            element={<WhyBookCelebrityWithTripsAndShips />}
+          />
+
+          <Route
+            path="/celebrity-cruises/celebrity-vs-royal-caribbean"
+            element={<CelebrityCruisesVsRoyalCaribbean />}
+          />
+
+          <Route
+            path="/celebrity-cruises/celebrity-vs-princess"
+            element={<CelebrityCruisesVsPrincess />}
           />
 
           <Route

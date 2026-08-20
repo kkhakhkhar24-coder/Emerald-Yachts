@@ -1271,20 +1271,44 @@ const Navbar = () => {
                 Celebrity Cruises Dining Guide
               </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/celebrity-cruises/edge-series"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 Celebrity Edge Series Ships Guide
-              </NavLink> */}
+              </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/celebrity-cruises/faqs"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 Celebrity Cruises Frequently Asked Questions
+              </NavLink>
+
+              {/* <NavLink
+                to="/celebrity-cruises/why-book-with-us"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Why Book Celebrity With Trips &amp; Ships?
+              </NavLink> */}
+
+              {/* <NavLink
+                to="/celebrity-cruises/celebrity-vs-royal-caribbean"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Celebrity Cruises vs. Royal Caribbean
+              </NavLink> */}
+
+              {/* <NavLink
+                to="/celebrity-cruises/celebrity-vs-princess"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Celebrity Cruises vs. Princess Cruises
               </NavLink> */}
 
               <NavLink
@@ -2603,20 +2627,44 @@ const Navbar = () => {
               Celebrity Cruises Dining Guide
             </NavLink>
 
-            {/* <NavLink
+            <NavLink
               to="/celebrity-cruises/edge-series"
               className="nav-dropdown-single"
               onClick={toggleMenu}
             >
               Celebrity Edge Series Ships Guide
-            </NavLink> */}
+            </NavLink>
 
-            {/* <NavLink
+            <NavLink
               to="/celebrity-cruises/faqs"
               className="nav-dropdown-single"
               onClick={toggleMenu}
             >
               Celebrity Cruises Frequently Asked Questions
+            </NavLink>
+
+            {/* <NavLink
+              to="/celebrity-cruises/why-book-with-us"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Why Book Celebrity With Trips &amp; Ships?
+            </NavLink> */}
+
+            {/* <NavLink
+              to="/celebrity-cruises/celebrity-vs-royal-caribbean"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Celebrity Cruises vs. Royal Caribbean
+            </NavLink> */}
+
+            {/* <NavLink
+              to="/celebrity-cruises/celebrity-vs-princess"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Celebrity Cruises vs. Princess Cruises
             </NavLink> */}
 
             <NavLink
@@ -2676,22 +2724,22 @@ const Navbar = () => {
             </NavLink>
 
             <NavLink
-                to="/celebrity-cruises/galapagos"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Celebrity Galapagos Cruises
-              </NavLink>
+              to="/celebrity-cruises/galapagos"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Celebrity Galapagos Cruises
+            </NavLink>
 
-                <NavLink
-                to="/celebrity-cruises/alaska"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Celebrity Alaska Cruises
-              </NavLink>
+            <NavLink
+              to="/celebrity-cruises/alaska"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Celebrity Alaska Cruises
+            </NavLink>
 
-               {/* <NavLink
+            {/* <NavLink
                 to="/celebrity-cruises/mediterranean"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
