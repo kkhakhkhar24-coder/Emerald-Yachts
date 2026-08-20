@@ -64,9 +64,7 @@ const iconMap = {
     Fish, Palmtree, Umbrella, ShoppingBag, Footprints, CloudRain
 }
 
-/* ============================================================
-   INLINE SVG ICONS (no lucide-react dependency for these — plain inline)
-   ============================================================ */
+
 function CcrIconImage({ size = 28 }) {
     return (
         <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
