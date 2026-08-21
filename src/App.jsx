@@ -187,8 +187,10 @@ import Celebrityrhinerivercruises from "./pages/Celebrityrhinerivercruises/Celeb
 import Celebritydanuberivercruises from "./pages/Celebritydanuberivercruises/Celebritydanuberivercruises";
 import Celebritygalapagoscruises from "./pages/Celebritygalapagoscruises/Celebritygalapagoscruises";
 import Celebrityalaskacruises from "./pages/Celebrityalaskacruises/Celebrityalaskacruises";
-// import Celebritymediterraneancruises from "./pages/Celebritymediterraneancruises/Celebritymediterraneancruises";
-// import Celebritycaribbeancruises from "./pages/Celebritycaribbeancruises/Celebritycaribbeancruises";
+import Celebritymediterraneancruises from "./pages/Celebritymediterraneancruises/Celebritymediterraneancruises";
+import Celebritycaribbeancruises from "./pages/Celebritycaribbeancruises/Celebritycaribbeancruises";
+// import Celebrityaquaclassvsconciergeclass from "./pages/Celebrityaquaclassvsconciergeclass/Celebrityaquaclassvsconciergeclass";
+// import Celebrityinfiniteveranda from "./pages/Celebrityinfiniteveranda/Celebrityinfiniteveranda";
 
 function App() {
   return (
@@ -1065,7 +1067,7 @@ function App() {
             element={<Celebrityalaskacruises />}
           />
 
-          {/* <Route
+          <Route
             path="/celebrity-cruises/mediterranean"
             element={<Celebritymediterraneancruises />}
           />
@@ -1073,6 +1075,16 @@ function App() {
           <Route
             path="/celebrity-cruises/caribbean"
             element={<Celebritycaribbeancruises />}
+          />
+
+          {/* <Route
+            path="/celebrity-cruises/aquaclass-vs-concierge-class"
+            element={<Celebrityaquaclassvsconciergeclass />}
+          />
+
+          <Route
+            path="/celebrity-cruises/infinite-veranda"
+            element={<Celebrityinfiniteveranda />}
           /> */}
 
 

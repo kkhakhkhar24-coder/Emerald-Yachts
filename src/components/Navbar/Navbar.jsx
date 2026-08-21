@@ -1383,7 +1383,7 @@ const Navbar = () => {
                 Celebrity Alaska Cruises
               </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/celebrity-cruises/mediterranean"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -1397,6 +1397,22 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Celebrity Caribbean Cruises
+              </NavLink>
+
+               {/* <NavLink
+                to="/celebrity-cruises/aquaclass-vs-concierge-class"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Celebrity Aqua Class vs Concierge Class
+              </NavLink>
+
+              <NavLink
+                to="/celebrity-cruises/infinite-veranda"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Celebrity Infinite Veranda
               </NavLink> */}
 
 
@@ -2739,7 +2755,7 @@ const Navbar = () => {
               Celebrity Alaska Cruises
             </NavLink>
 
-            {/* <NavLink
+            <NavLink
                 to="/celebrity-cruises/mediterranean"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -2753,6 +2769,22 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Celebrity Caribbean Cruises
+              </NavLink>
+
+              {/* <NavLink
+                to="/celebrity-cruises/aquaclass-vs-concierge-class"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Celebrity Aqua Class vs Concierge Class
+              </NavLink>
+
+              <NavLink
+                to="/celebrity-cruises/infinite-veranda"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Celebrity Infinite Veranda
               </NavLink> */}
 
 

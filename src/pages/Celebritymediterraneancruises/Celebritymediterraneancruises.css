@@ -302,17 +302,20 @@
         font-size: 12px;
     }
 
-    .cmedc-btn-primary,
-    .cmedc-btn-outline {
-        padding: 12px 22px;
-        font-size: 14px;
-        width: 100%;
-        justify-content: center;
-    }
-
     .cmedc-hero-btn-row {
         width: 100%;
         flex-direction: column;
+        gap: 12px;
+    }
+
+    .cmedc-btn-primary,
+    .cmedc-btn-outline {
+        padding: 12px 18px !important;
+        font-size: 13.5px !important;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        box-sizing: border-box;
     }
 }
 
@@ -623,17 +626,24 @@
 }
 
 @media (max-width: 480px) {
+    .cmeds-inline-cta-container {
+        padding: 24px 16px !important;
+    }
+
     .cmeds-inline-cta-btn-row {
         flex-direction: column;
         width: 100%;
+        gap: 12px;
     }
 
     .cmeds-btn-primary,
     .cmeds-btn-outline {
-        padding: 12px 22px;
-        font-size: 14px;
+        padding: 12px 18px !important;
+        font-size: 13.5px !important;
         width: 100%;
         justify-content: center;
+        text-align: center;
+        box-sizing: border-box;
     }
 }
 
@@ -1241,11 +1251,11 @@
     padding: 18px 30px 24px;
     margin: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
+    flex-grow: 1;
 }
-
-
 
 .cmeds-itinerary-list li {
     font-size: 14px;
@@ -1259,6 +1269,8 @@
     border-radius: 10px;
     padding: 10px 14px;
     transition: background 0.2s;
+    width: fit-content;
+    margin: 0;
 }
 
 .cmeds-itinerary-list li:hover {
@@ -1308,14 +1320,12 @@
     }
 
     .cmeds-itinerary-list {
-        flex-direction: row !important;
-        flex-wrap: wrap !important;
-        padding: 14px 20px 20px !important;
+        padding: 16px 24px 20px;
+        flex-direction: column;
     }
 
     .cmeds-itinerary-list li {
-        width: auto !important;
-        flex: 0 1 auto;
+        width: 100%;
     }
 }
 
@@ -1329,25 +1339,16 @@
     }
 
     .cmeds-itinerary-list {
-        flex-direction: column !important;
-        padding: 14px 16px 18px !important;
-    }
-
-    .cmeds-itinerary-list li {
-        width: 100% !important;
-        font-size: 13px;
+        padding: 14px 20px 18px;
     }
 
     .cmeds-itinerary-region {
         padding: 22px 20px 18px;
-        font-size: 16px;
     }
 
     .cmeds-itinerary-card .cmeds-itinerary-note {
-        margin: 0 16px 18px;
-        font-size: 13px;
+        margin: 0 20px 20px;
     }
-
 }
 
 
@@ -2149,7 +2150,7 @@
     font-size: 18px !important;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
 
     .cmedc-hero-title,
     .cmedc-page-wrapper h1 {
@@ -2610,44 +2611,53 @@
 }
 
 @media (max-width: 768px) {
+    .cmedx-pair-row.cmedx-pair-header {
+        display: none;
+    }
+    
+    .cmedx-pair-row {
+        display: flex;
+        flex-direction: column;
+        padding: 12px 0;
+    }
+    
     .cmedx-pair-cell {
-        padding: 12px 16px;
+        padding: 8px 20px;
         font-size: 14px;
+    }
+    
+    .cmedx-pair-cell:first-child {
+        border-right: none;
+        padding-bottom: 4px;
+    }
+    
+    .cmedx-pair-cell:first-child::before {
+        content: "Celebrity Cruise: ";
+        display: block;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #10b981;
+        font-weight: 700;
+        margin-bottom: 4px;
+    }
+    
+    .cmedx-pair-cell:last-child::before {
+        content: "Land-Based: ";
+        display: block;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #f43f5e;
+        font-weight: 700;
+        margin-bottom: 4px;
     }
 }
 
 @media (max-width: 480px) {
-    .cmedx-pair-row {
-        grid-template-columns: 1fr;
-    }
-
-    .cmedx-pair-row.cmedx-pair-header {
-        display: none;
-    }
-
-    .cmedx-pair-row:not(.cmedx-pair-header) {
-        display: flex;
-        flex-direction: column;
-        border-bottom: 2px solid rgba(39, 68, 114, 0.15);
-    }
-
     .cmedx-pair-cell {
-        padding: 10px 14px;
-        font-size: 13px;
-        border-right: none !important;
-    }
-
-    .cmedx-pair-cell:first-child {
-        background: var(--cmeds-navy);
-        color: #ffffff;
-        font-weight: 700;
-        font-size: 13px;
-        border-radius: 0;
-    }
-
-    .cmedx-pair-cell:last-child {
-        background: #faf8f5;
-        border-top: 1px solid rgba(39, 68, 114, 0.08);
+        padding: 8px 16px;
+        font-size: 13.5px;
     }
 }
 

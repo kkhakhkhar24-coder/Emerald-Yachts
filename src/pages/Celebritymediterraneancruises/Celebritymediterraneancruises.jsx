@@ -226,7 +226,7 @@ function CelebrityMediterraneanCruises() {
     const cmedGreeceList = ['Santorini', 'Mykonos', 'Corfu', 'Rhodes', 'Chania', 'Kefalonia', 'Katakolon', 'Athens', 'Thessaloniki']
     const cmedGreeceBestFor = ['Ancient history', 'Greek mythology', 'Island scenery', 'Beaches', 'Mediterranean cuisine', 'Photography', 'Village experiences']
 
-    const cmedItalyList = ['Rome', 'Florence/Pisa', 'Naples', 'Sicily', 'Cagliari', 'Portofino', 'Amalfi Coast', 'Venice/Ravenna', 'Taranto', 'Other Italian destinations']
+    const cmedItalyList = ['Rome', 'Florence/Pisa', 'Naples', 'Sicily', 'Cagliari', 'Portofino', 'Amalfi Coast', 'Venice/Ravenna', 'Taranto']
     const cmedItalyBestFor = ['Art', 'Architecture', 'Ancient history', 'Italian cuisine', 'Wine', 'Coastal villages', 'Shopping']
 
     const cmedSpainList = ['Barcelona', 'Palma de Mallorca', 'Valencia', 'Alicante', 'Cartagena', 'Malaga', 'Seville/Cadiz', 'Ibiza']
@@ -872,9 +872,6 @@ function CelebrityMediterraneanCruises() {
                                 <p className="cmedc-lead-paragraph" style={{ marginTop: '20px' }}>
                                     Split is among Celebrity's highlighted Mediterranean destinations for 2026 and 2027. Best for: {cmedCroatiaBestFor.join(', ')}.
                                 </p>
-                                <p className="cmedc-lead-paragraph" style={{ marginTop: '20px' }}>
-                                    Selected Celebrity Mediterranean itineraries visit the French Riviera and southern France, including Cannes, Nice/Villefranche, Provence, Marseille, Toulon and Sete. Celebrity's current Mediterranean destination highlights include Provence, while its port network includes Cannes, Nice/Villefranche and several Provence ports. Best for: {cmedFranceBestFor.join(', ')}.
-                                </p>
                             </div>
                             <div className="cmeds-feature-image-col">
                                 <div className="cmeds-badge-overlay">
@@ -882,6 +879,39 @@ function CelebrityMediterraneanCruises() {
                                     <span>Croatia</span>
                                 </div>
                                 <CmedPlaceholder label="Split & Dubrovnik" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* FRANCE */}
+                <section className="cmeds-feature-section cmeds-bg-white cmeds-france-section">
+                    <div className="cmeds-feature-container">
+                        <div className="cmeds-feature-grid">
+                            <div className="cmeds-feature-image-col">
+                                <div className="cmeds-badge-overlay">
+                                    <CmedIconSparkle size={14} />
+                                    <span>France</span>
+                                </div>
+                                <CmedPlaceholder label="French Riviera & Cannes" />
+                            </div>
+                            <div className="cmeds-feature-copy-col">
+                                <span className="cmedc-eyebrow-label">CELEBRITY MEDITERRANEAN COUNTRIES</span>
+                                <h2 className="cmeds-feature-title">Celebrity France Cruises</h2>
+                                <p className="cmedc-lead-paragraph">
+                                    Selected Celebrity Mediterranean itineraries visit the French Riviera and southern France, including Cannes, Nice/Villefranche, Provence, Marseille, Toulon and Sete.
+                                </p>
+                                <div className="cmeds-feature-list">
+                                    {cmedFranceList.map((item, idx) => (
+                                        <div key={idx} className="cmeds-feature-item-card">
+                                            <div className="cmeds-feature-item-icon"><CmedIconCheck size={18} /></div>
+                                            <span className="cmeds-feature-item-text">{item}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                                <p className="cmedc-lead-paragraph" style={{ marginTop: '20px' }}>
+                                    Celebrity's current Mediterranean destination highlights include Provence, while its port network includes Cannes, Nice/Villefranche and several Provence ports. Best for: {cmedFranceBestFor.join(', ')}.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -1300,9 +1330,9 @@ function CelebrityMediterraneanCruises() {
                                 <p className="cmedc-lead-paragraph" style={{ marginBottom: '18px' }}>
                                     Western Mediterranean itineraries commonly focus on destinations in Spain, France, Italy, Malta and Southern Europe. Popular combinations can include:
                                 </p>
-                                <ul className="cmeds-itinerary-list" style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '10px', padding: '18px 30px 24px', flexGrow: 1 }}>
+                                <ul className="cmeds-itinerary-list">
                                     {cmedWesternRoute.map((stop, idx) => (
-                                        <li key={idx} style={{ width: 'fit-content', margin: 0 }}><MapPin size={16} className="cmeds-included-icon" />{stop}</li>
+                                        <li key={idx}><MapPin size={16} className="cmeds-included-icon" />{stop}</li>
                                     ))}
                                 </ul>
                                 <p className="cmeds-itinerary-note">Best for: {cmedWesternBestFor.join(', ')}.</p>
@@ -1316,9 +1346,9 @@ function CelebrityMediterraneanCruises() {
                                 <p className="cmedc-lead-paragraph" style={{ marginBottom: '18px' }}>
                                     Eastern Mediterranean itineraries can focus more heavily on Greece, Greek Islands, Turkey, Croatia, Montenegro and the Eastern Adriatic. Potential destinations include:
                                 </p>
-                                <ul className="cmeds-itinerary-list" style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '10px', padding: '18px 30px 24px', flexGrow: 1 }}>
+                                <ul className="cmeds-itinerary-list">
                                     {cmedEasternDestinations.map((stop, idx) => (
-                                        <li key={idx} style={{ width: 'fit-content', margin: 0 }}><MapPin size={16} className="cmeds-included-icon" />{stop}</li>
+                                        <li key={idx}><MapPin size={16} className="cmeds-included-icon" />{stop}</li>
                                     ))}
                                 </ul>
                                 <p className="cmeds-itinerary-note">Best for: {cmedEasternBestFor.join(', ')}.</p>

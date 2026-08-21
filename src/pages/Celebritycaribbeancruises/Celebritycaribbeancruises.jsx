@@ -922,51 +922,62 @@ function CelebrityCaribbeanCruises() {
                                 There is no single best itinerary for every traveler.
                             </p>
                         </div>
-                        <div className="ccrb-choice-board ccrb-choice-board-inline ccrb-choice-board-triple">
-                            <div className="ccrb-choice-panel">
-                                <h3 className="ccrb-choice-title">
-                                    <CcrIconCheck size={22} />
-                                    Choose Eastern if you want:
-                                </h3>
-                                <div className="ccrb-choice-list">
+                        <div className="ccrb-decision-grid">
+                            {/* Eastern Caribbean Card */}
+                            <div className="ccrb-decision-card">
+                                <div className="ccrb-decision-header">
+                                    <div className="ccrb-decision-icon-wrapper ccrb-eastern">
+                                        <Sun size={24} />
+                                    </div>
+                                    <h3 className="ccrb-decision-title">Choose Eastern if you want:</h3>
+                                </div>
+                                <div className="ccrb-decision-list">
                                     {ccrChooseEastern.map((item, idx) => (
-                                        <div key={idx} className="ccrb-choice-item">
-                                            <div className="ccrb-choice-icon-wrap">
+                                        <div key={idx} className="ccrb-decision-item">
+                                            <div className="ccrb-decision-item-icon">
                                                 <CcrIconCheck size={16} />
                                             </div>
-                                            <div className="ccrb-choice-text">{item}</div>
+                                            <span className="ccrb-decision-text">{item}</span>
                                         </div>
                                     ))}
                                 </div>
                             </div>
-                            <div className="ccrb-choice-panel">
-                                <h3 className="ccrb-choice-title">
-                                    <CcrIconCheck size={22} />
-                                    Choose Western if you want:
-                                </h3>
-                                <div className="ccrb-choice-list">
+
+                            {/* Western Caribbean Card */}
+                            <div className="ccrb-decision-card">
+                                <div className="ccrb-decision-header">
+                                    <div className="ccrb-decision-icon-wrapper ccrb-western">
+                                        <Compass size={24} />
+                                    </div>
+                                    <h3 className="ccrb-decision-title">Choose Western if you want:</h3>
+                                </div>
+                                <div className="ccrb-decision-list">
                                     {ccrChooseWestern.map((item, idx) => (
-                                        <div key={idx} className="ccrb-choice-item">
-                                            <div className="ccrb-choice-icon-wrap">
+                                        <div key={idx} className="ccrb-decision-item">
+                                            <div className="ccrb-decision-item-icon">
                                                 <CcrIconCheck size={16} />
                                             </div>
-                                            <div className="ccrb-choice-text">{item}</div>
+                                            <span className="ccrb-decision-text">{item}</span>
                                         </div>
                                     ))}
                                 </div>
                             </div>
-                            <div className="ccrb-choice-panel">
-                                <h3 className="ccrb-choice-title">
-                                    <CcrIconCheck size={22} />
-                                    Choose Southern if you want:
-                                </h3>
-                                <div className="ccrb-choice-list">
+
+                            {/* Southern Caribbean Card */}
+                            <div className="ccrb-decision-card">
+                                <div className="ccrb-decision-header">
+                                    <div className="ccrb-decision-icon-wrapper ccrb-southern">
+                                        <Waves size={24} />
+                                    </div>
+                                    <h3 className="ccrb-decision-title">Choose Southern if you want:</h3>
+                                </div>
+                                <div className="ccrb-decision-list">
                                     {ccrChooseSouthern.map((item, idx) => (
-                                        <div key={idx} className="ccrb-choice-item">
-                                            <div className="ccrb-choice-icon-wrap">
+                                        <div key={idx} className="ccrb-decision-item">
+                                            <div className="ccrb-decision-item-icon">
                                                 <CcrIconCheck size={16} />
                                             </div>
-                                            <div className="ccrb-choice-text">{item}</div>
+                                            <span className="ccrb-decision-text">{item}</span>
                                         </div>
                                     ))}
                                 </div>
@@ -1100,7 +1111,7 @@ function CelebrityCaribbeanCruises() {
                 </section>
 
                 {/* PRE- AND POST-CRUISE STAYS */}
-                <section className="ccrb-feature-section ccrb-bg-soft">
+                <section className="ccrb-feature-section ccrb-dark-section">
                     <div className="ccrb-feature-container">
                         <div style={{ textAlign: 'center', marginBottom: '10px' }}>
                             <span className="ccrb-eyebrow-label">EXTEND YOUR TRIP</span>
