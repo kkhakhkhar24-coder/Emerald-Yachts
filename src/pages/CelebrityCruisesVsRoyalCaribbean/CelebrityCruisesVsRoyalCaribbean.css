@@ -769,6 +769,19 @@
     font-style: italic;
 }
 
+.cvrc-cabins-types {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.cvrc-cabins-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px 12px;
+}
+
 /* ── RETREAT ── */
 .cvrc-retreat-section {
     background: #0F1C2E;
@@ -1988,6 +2001,13 @@
 
 @media (max-width: 991px) {
 
+    .cvrc-hero-section {
+        height: auto !important;
+        min-height: 100vh;
+        padding: 120px 20px 80px;
+        box-sizing: border-box;
+    }
+
     .cvrc-page h1,
     .cvrc-hero-main-title {
         font-size: 32px;
@@ -2160,7 +2180,9 @@
     }
 
     .cvrc-hero-section {
-        min-height: 520px;
+        height: auto !important;
+        min-height: auto;
+        padding: 100px 16px 60px;
     }
 
     .cvrc-glance-section,
@@ -2194,6 +2216,14 @@
     .cvrc-included-list,
     .cvrc-ship-card-list,
     .cvrc-destinations-list {
+        grid-template-columns: 1fr;
+    }
+
+    .cvrc-cabins-types {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cvrc-cabins-list {
         grid-template-columns: 1fr;
     }
 

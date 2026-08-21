@@ -1287,21 +1287,21 @@ const Navbar = () => {
                 Celebrity Cruises Frequently Asked Questions
               </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/celebrity-cruises/why-book-with-us"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 Why Book Celebrity With Trips &amp; Ships?
-              </NavLink> */}
+              </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/celebrity-cruises/celebrity-vs-royal-caribbean"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 Celebrity Cruises vs. Royal Caribbean
-              </NavLink> */}
+              </NavLink>
 
               {/* <NavLink
                 to="/celebrity-cruises/celebrity-vs-princess"
@@ -1309,6 +1309,22 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Celebrity Cruises vs. Princess Cruises
+              </NavLink> */}
+
+              {/* <NavLink
+                to="/celebrity-cruises/ships/celebrity-xcel"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Celebrity Xcel Cruise Ship Guide
+              </NavLink> */}
+
+              {/* <NavLink
+                to="/celebrity-cruises/ships/celebrity-ascent"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Celebrity Ascent Cruise Ship Guide
               </NavLink> */}
 
               <NavLink
@@ -1391,7 +1407,7 @@ const Navbar = () => {
                 Celebrity Mediterranean Cruises
               </NavLink>
 
-               <NavLink
+              <NavLink
                 to="/celebrity-cruises/caribbean"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -1399,7 +1415,7 @@ const Navbar = () => {
                 Celebrity Caribbean Cruises
               </NavLink>
 
-               {/* <NavLink
+              {/* <NavLink
                 to="/celebrity-cruises/aquaclass-vs-concierge-class"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -2659,21 +2675,21 @@ const Navbar = () => {
               Celebrity Cruises Frequently Asked Questions
             </NavLink>
 
-            {/* <NavLink
+            <NavLink
               to="/celebrity-cruises/why-book-with-us"
               className="nav-dropdown-single"
               onClick={toggleMenu}
             >
               Why Book Celebrity With Trips &amp; Ships?
-            </NavLink> */}
+            </NavLink>
 
-            {/* <NavLink
+            <NavLink
               to="/celebrity-cruises/celebrity-vs-royal-caribbean"
               className="nav-dropdown-single"
               onClick={toggleMenu}
             >
               Celebrity Cruises vs. Royal Caribbean
-            </NavLink> */}
+            </NavLink>
 
             {/* <NavLink
               to="/celebrity-cruises/celebrity-vs-princess"
@@ -2681,6 +2697,22 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Celebrity Cruises vs. Princess Cruises
+            </NavLink> */}
+
+            {/* <NavLink
+              to="/celebrity-cruises/ships/celebrity-xcel"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Celebrity Xcel Cruise Ship Guide
+            </NavLink> */}
+
+            {/* <NavLink
+              to="/celebrity-cruises/ships/celebrity-ascent"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Celebrity Ascent Cruise Ship Guide
             </NavLink> */}
 
             <NavLink
@@ -2756,22 +2788,22 @@ const Navbar = () => {
             </NavLink>
 
             <NavLink
-                to="/celebrity-cruises/mediterranean"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Celebrity Mediterranean Cruises
-              </NavLink>
+              to="/celebrity-cruises/mediterranean"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Celebrity Mediterranean Cruises
+            </NavLink>
 
-               <NavLink
-                to="/celebrity-cruises/caribbean"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Celebrity Caribbean Cruises
-              </NavLink>
+            <NavLink
+              to="/celebrity-cruises/caribbean"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Celebrity Caribbean Cruises
+            </NavLink>
 
-              {/* <NavLink
+            {/* <NavLink
                 to="/celebrity-cruises/aquaclass-vs-concierge-class"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}

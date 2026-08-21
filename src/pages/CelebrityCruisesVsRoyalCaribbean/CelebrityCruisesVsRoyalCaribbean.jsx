@@ -683,7 +683,7 @@ function CelebrityCruisesVsRoyalCaribbean() {
                                 <h2 className="cvrc-section-heading">Cabins and Suites</h2>
                                 <div className="cvrc-heading-separator-bar" style={{ margin: '0 0 20px 0' }}></div>
                                 <p className="cvrc-cabins-intro" style={{ marginBottom: '16px' }}>Both cruise lines offer several accommodation categories, including:</p>
-                                <div className="cvrc-cabins-types" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '8px', marginBottom: '16px' }}>
+                                <div className="cvrc-cabins-types">
                                     {cvrcCabinTypes.map((item, idx) => (
                                         <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'var(--cvrc-bg-soft)', padding: '8px 12px', borderRadius: '8px' }}>
                                             <Bed size={14} style={{ color: 'var(--cvrc-navy)' }} />
@@ -693,7 +693,7 @@ function CelebrityCruisesVsRoyalCaribbean() {
                                 </div>
                                 <p className="cvrc-cabins-sub" style={{ marginBottom: '12px' }}>Celebrity also has The Retreat, its premium suite experience, which adds a more elevated accommodation and service level. Royal Caribbean offers a broad selection of suites, with benefits varying according to the suite category, ship and current program terms.</p>
                                 <p className="cvrc-cabins-sub" style={{ fontWeight: 600, marginTop: '16px', marginBottom: '8px' }}>When comparing cabins, don't look only at the advertised base fare. Consider:</p>
-                                <div className="cvrc-cabins-list" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6px 12px' }}>
+                                <div className="cvrc-cabins-list">
                                     {cvrcCabinCompare.map((item, idx) => (
                                         <div key={idx} className="cvrc-cabins-item" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                                             <CheckCircle size={12} style={{ color: 'var(--cvrc-navy)', flexShrink: 0 }} />
@@ -957,7 +957,7 @@ function CelebrityCruisesVsRoyalCaribbean() {
                     <div className="cvrc-choice-container">
                         <div className="cvrc-choice-header">
                             <span className="cvrc-eyebrow cvrc-eyebrow-center">DECISION GUIDE</span>
-                            <h2 className="cvrc-section-heading" style={{ textAlign: 'center' }}>How to Choose Between Celebrity and Royal Caribbean</h2>
+                            <h2 className="cvrc-section-heading" style={{ textAlign: 'center' }}>How to Choose Between <br /> Celebrity and Royal Caribbean</h2>
                             <div className="cvrc-heading-separator-bar cvrc-bar-centered"></div>
                             <p className="cvrc-choice-intro" style={{ maxWidth: '720px', margin: '0 auto' }}>Use this simple decision guide:</p>
                         </div>
