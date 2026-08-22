@@ -6,6 +6,8 @@
    Fully responsive: desktop / tablet / mobile.
    ============================================================= */
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
     --svp-navy: #274472;
     --svp-navy-dark: #0f1c2e;
@@ -16,6 +18,8 @@
     --svp-text-body: #4a5568;
     --svp-text-dark: #2d3748;
     --svp-border: #e2e8f0;
+    --svp-font-display: "Playfair Display", serif;
+    --svp-font-body: "Montserrat", sans-serif;
 }
 
 /* ── GLOBAL / RESET FOR THIS PAGE ───────────────────────────── */
@@ -63,7 +67,8 @@
 }
 
 .svp-section-heading {
-    font-size: clamp(26px, 3.4vw, 38px);
+    font-family: var(--svp-font-display);
+    font-size: 48px;
     font-weight: 700;
     color: var(--svp-navy);
     margin: 0 0 18px 0;
@@ -82,6 +87,88 @@
 .svp-bar-centered {
     margin-left: auto;
     margin-right: auto;
+}
+
+/* ── TITLE FONT ENFORCEMENT (Playfair Display) — all title-like text ── */
+.svp-hero-main-title,
+.svp-section-heading,
+.svp-final-heading,
+.svp-cta-heading-white,
+.svp-about-card-title,
+.svp-ships-header h3,
+.svp-suites-header h3,
+.svp-dining-header h3,
+.svp-dest-header h3,
+.svp-expedition-header h3,
+.svp-amenities-header h3,
+.svp-wellness-header h3,
+.svp-entertainment-header h3,
+.svp-service-header h3,
+.svp-choose-header h3,
+.svp-pricing-card-title,
+.svp-compare-col-header h3,
+.svp-editorial-title,
+.svp-expert-quote {
+    font-family: var(--svp-font-display);
+}
+
+/* h3 global default (Playfair) — explicit for isolation */
+.svp-about-card-title,
+.svp-ships-header h3,
+.svp-suites-header h3,
+.svp-dining-header h3,
+.svp-dest-header h3,
+.svp-expedition-header h3,
+.svp-amenities-header h3,
+.svp-wellness-header h3,
+.svp-entertainment-header h3,
+.svp-service-header h3,
+.svp-choose-header h3 {
+    font-family: var(--svp-font-display);
+}
+
+/* h4 — Montserrat 20px 500 */
+h4,
+.svp-h4 {
+    font-family: var(--svp-font-body);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* Body text — Montserrat */
+.svp-intro-lead,
+.svp-intro-body,
+.svp-ships-intro,
+.svp-suites-intro,
+.svp-dining-intro,
+.svp-dest-intro,
+.svp-expedition-intro,
+.svp-wellness-intro,
+.svp-entertainment-intro,
+.svp-service-intro,
+.svp-compare-intro,
+.svp-whybook-lead,
+.svp-whybook-sub,
+.svp-final-body,
+.svp-cta-paragraph-white,
+.svp-faq-answer-text,
+.svp-about-card-text,
+.svp-pricing-card-text,
+.svp-pricing-footer,
+.svp-editorial-text {
+    font-family: var(--svp-font-body);
+}
+
+/* expert-quote — Georgia italic */
+.svp-expert-quote,
+.svp-editorial-quote p,
+.svp-final-emphasis {
+    font-family: Georgia, 'Times New Roman', serif !important;
+    font-size: 18px !important;
+    font-style: italic !important;
+    line-height: 1.6 !important;
+    font-weight: 400 !important;
 }
 
 /* ── IMAGE PLACEHOLDER ──────────────────────────────────────── */
@@ -189,15 +276,17 @@
 }
 
 .svp-hero-main-title {
-    font-size: clamp(30px, 5vw, 54px);
+    font-family: var(--svp-font-display);
+    font-size: 60px;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.15;
     margin: 0 0 20px 0;
     letter-spacing: -0.01em;
 }
 
 .svp-hero-subtitle-text {
-    font-size: clamp(15px, 1.6vw, 19px);
+    font-family: var(--svp-font-body);
+    font-size: 18px;
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.9);
     max-width: 700px;
@@ -228,7 +317,8 @@
 }
 
 .svp-intro-lead {
-    font-size: 20px;
+    font-family: var(--svp-font-body);
+    font-size: 18px;
     font-weight: 600;
     color: var(--svp-navy);
     line-height: 1.65;
@@ -236,7 +326,8 @@
 }
 
 .svp-intro-body {
-    font-size: 15.5px;
+    font-family: var(--svp-font-body);
+    font-size: 18px;
     color: var(--svp-text-body);
     line-height: 1.85;
     margin: 0 0 16px;
@@ -416,6 +507,7 @@
 }
 
 .svp-about-card-title {
+    font-family: var(--svp-font-display);
     font-size: 20px;
     font-weight: 700;
     color: var(--svp-navy);
@@ -440,7 +532,8 @@
 }
 
 .svp-about-card-text {
-    font-size: 14px;
+    font-family: var(--svp-font-body);
+    font-size: 18px;
     color: var(--svp-text-body);
     line-height: 1.6;
     margin: 0 0 8px 0;
@@ -470,7 +563,8 @@
 .svp-ships-intro {
     max-width: 720px;
     margin: 0 auto;
-    font-size: 15px;
+    font-family: var(--svp-font-body);
+    font-size: 18px;
     color: var(--svp-text-body);
     line-height: 1.7;
 }
@@ -574,7 +668,8 @@
 .svp-suites-intro {
     max-width: 720px;
     margin: 0 auto;
-    font-size: 15px;
+    font-family: var(--svp-font-body);
+    font-size: 18px;
     color: var(--svp-text-body);
     line-height: 1.7;
 }
@@ -678,7 +773,8 @@
 .svp-dining-intro {
     max-width: 720px;
     margin: 0 auto;
-    font-size: 15px;
+    font-family: var(--svp-font-body);
+    font-size: 18px;
     color: var(--svp-text-body);
     line-height: 1.7;
 }
@@ -782,7 +878,8 @@
 .svp-dest-intro {
     max-width: 720px;
     margin: 0 auto;
-    font-size: 15px;
+    font-family: var(--svp-font-body);
+    font-size: 18px;
     color: var(--svp-text-body);
     line-height: 1.7;
 }
@@ -861,7 +958,8 @@
 .svp-compare-intro {
     max-width: 780px;
     margin: 0 auto 8px;
-    font-size: 15.5px;
+    font-family: var(--svp-font-body);
+    font-size: 18px;
     color: var(--svp-text-body);
     line-height: 1.75;
 }
@@ -1031,7 +1129,8 @@
 .svp-expedition-intro {
     max-width: 720px;
     margin: 0 auto;
-    font-size: 15px;
+    font-family: var(--svp-font-body);
+    font-size: 18px;
     color: rgba(255, 255, 255, 0.85);
     line-height: 1.7;
 }
@@ -1240,7 +1339,8 @@
 .svp-wellness-intro {
     max-width: 720px;
     margin: 0 auto;
-    font-size: 15px;
+    font-family: var(--svp-font-body);
+    font-size: 18px;
     color: var(--svp-text-body);
     line-height: 1.7;
 }
@@ -1344,7 +1444,8 @@
 .svp-entertainment-intro {
     max-width: 720px;
     margin: 0 auto;
-    font-size: 15px;
+    font-family: var(--svp-font-body);
+    font-size: 18px;
     color: var(--svp-text-body);
     line-height: 1.7;
 }
@@ -1448,7 +1549,8 @@
 .svp-service-intro {
     max-width: 720px;
     margin: 0 auto;
-    font-size: 15px;
+    font-family: var(--svp-font-body);
+    font-size: 18px;
     color: var(--svp-text-body);
     line-height: 1.7;
 }
@@ -1607,14 +1709,16 @@
 }
 
 .svp-pricing-card-text {
-    font-size: 14.5px;
+    font-family: var(--svp-font-body);
+    font-size: 18px;
     color: var(--svp-text-body);
     line-height: 1.7;
     margin: 0;
 }
 
 .svp-pricing-footer {
-    font-size: 15.5px;
+    font-family: var(--svp-font-body);
+    font-size: 18px;
     color: var(--svp-text-body);
     line-height: 1.8;
     font-weight: 500;
@@ -1734,14 +1838,16 @@
 }
 
 .svp-whybook-lead {
-    font-size: 15px;
+    font-family: var(--svp-font-body);
+    font-size: 18px;
     color: var(--svp-text-body);
     line-height: 1.7;
     margin: 0 0 12px 0;
 }
 
 .svp-whybook-sub {
-    font-size: 15px;
+    font-family: var(--svp-font-body);
+    font-size: 18px;
     font-weight: 600;
     color: var(--svp-navy);
     margin: 0 0 24px 0;
@@ -1932,7 +2038,8 @@
 }
 
 .svp-editorial-title {
-    font-size: clamp(24px, 3.2vw, 34px);
+    font-family: var(--svp-font-display);
+    font-size: 48px;
     font-weight: 700;
     color: #ffffff;
     margin: 0 0 0 0;
@@ -1949,7 +2056,8 @@
 }
 
 .svp-editorial-text {
-    font-size: 15px;
+    font-family: var(--svp-font-body);
+    font-size: 18px;
     color: rgba(255, 255, 255, 0.8);
     line-height: 1.75;
     margin: 0 0 24px 0;
@@ -2085,6 +2193,242 @@
     }
 }
 
+/* ── EXPERT INSIGHT — Celebrity Cruises: Complete Guide ref, tight ── */
+.svp-expert-insight-section {
+    padding: 48px 20px;
+    background: #0f1c2e;
+    position: relative;
+    overflow: hidden;
+}
+.svp-expert-insight-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 0.78fr 1.22fr;
+    gap: 40px;
+    align-items: center;
+}
+.svp-expert-portrait-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+.svp-expert-img-frame {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 360px;
+    box-shadow: 0 16px 36px rgba(0,0,0,0.32);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+.svp-expert-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.svp-expert-img-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15,28,46,0.55) 0%, transparent 60%);
+}
+.svp-expert-badge {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    background: #93c5fd;
+    color: #0f1c2e;
+    font-family: var(--svp-font-body);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.07em;
+    padding: 5px 10px;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+.svp-expert-stats-strip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    width: 100%;
+}
+.svp-expert-stat-box {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 12px;
+    padding: 12px;
+    text-align: center;
+    transition: border-color 0.2s ease;
+}
+.svp-expert-stat-box:hover { border-color: rgba(147,197,253,0.35); }
+.svp-expert-stat-num {
+    font-family: var(--svp-font-body);
+    font-size: 22px;
+    font-weight: 800;
+    color: #93c5fd;
+    line-height: 1;
+    margin-bottom: 2px;
+}
+.svp-expert-stat-lbl {
+    font-family: var(--svp-font-body);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.62);
+}
+.svp-expert-content-panel { display:flex; flex-direction:column; }
+.svp-expert-eyebrow-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #93c5fd;
+    margin-bottom: 8px;
+}
+.svp-expert-eyebrow-row .svp-eyebrow { margin-bottom:0; font-size:10px; letter-spacing:0.18em; color:#93c5fd; }
+.svp-expert-eyebrow-row svg { width:14px; height:14px; }
+.svp-expert-content-panel .svp-editorial-title {
+    font-family: var(--svp-font-display);
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.25;
+    margin: 0 0 10px;
+}
+.svp-expert-content-panel .svp-heading-separator-bar {
+    width: 48px;
+    height: 3px;
+    background: #93c5fd;
+    border-radius: 4px;
+    margin: 0 0 14px 0;
+}
+.svp-expert-quote-card {
+    position: relative;
+    background: rgba(255,255,255,0.03);
+    border-left: 3px solid #93c5fd;
+    border-radius: 0 12px 12px 0;
+    padding: 14px 16px 14px 20px;
+    margin: 0 0 14px 0;
+}
+.svp-expert-quote-mark {
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    font-size: 36px;
+    color: rgba(147,197,253,0.14);
+    font-family: Georgia, serif;
+    line-height: 1;
+}
+.svp-expert-quote-text {
+    font-family: Georgia,'Times New Roman',serif;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff;
+    margin: 0;
+}
+.svp-editorial-body-para.svp-expert-quote { margin: 0 0 14px 0; color: rgba(255,255,255,0.82); }
+.svp-expert-priorities { margin-bottom: 14px; }
+.svp-priorities-title {
+    font-family: var(--svp-font-body);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: rgba(255,255,255,0.52);
+    margin-bottom: 8px;
+}
+.svp-expert-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.svp-expert-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.09);
+    color: #ffffff;
+    font-family: var(--svp-font-body);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 30px;
+    line-height: 1.2;
+    transition: border-color 0.15s ease;
+}
+.svp-expert-pill:hover { border-color: rgba(147,197,253,0.35); }
+.svp-expert-pill svg { color: #93c5fd; flex-shrink:0; width:12px; height:12px; }
+.svp-expert-footer-bio {
+    border-top: 1px solid rgba(255,255,255,0.07);
+    padding-top: 12px;
+    margin-top: 4px;
+}
+.svp-expert-bio {
+    font-family: var(--svp-font-body);
+    font-size: 13px;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.68);
+    margin: 0;
+}
+/* ── Expert — Responsive (tight, no extra space) ────────────── */
+@media (max-width: 991px){
+  .svp-expert-insight-container{grid-template-columns:1fr; gap:28px; align-items:start;}
+  .svp-expert-insight-section{padding:40px 20px;}
+  .svp-expert-img-frame{height:320px; border-radius:14px;}
+  .svp-expert-content-panel .svp-editorial-title{font-size:28px; line-height:1.25;}
+}
+@media (max-width: 768px){
+  .svp-expert-insight-section{padding:36px 16px;}
+  .svp-expert-insight-container{gap:24px;}
+  .svp-expert-portrait-panel{max-width:520px; margin:0 auto; width:100%;}
+  .svp-expert-img-frame{height:280px;}
+  .svp-expert-stats-strip{gap:10px;}
+  .svp-expert-stat-box{padding:10px; border-radius:11px;}
+  .svp-expert-quote-card{padding:12px 14px 12px 18px;}
+  .svp-expert-quote-mark{font-size:32px; top:5px; left:7px;}
+}
+@media (max-width: 640px){
+  .svp-expert-insight-section{padding:32px 14px;}
+  .svp-expert-insight-container{gap:20px;}
+  .svp-expert-img-frame{height:240px; border-radius:12px;}
+  .svp-expert-badge{font-size:9px; padding:4px 8px; bottom:10px; left:10px;}
+  .svp-expert-stat-num{font-size:19px;}
+  .svp-expert-stat-lbl{font-size:9px;}
+  .svp-expert-content-panel .svp-editorial-title{font-size:24px; line-height:1.25;}
+  .svp-expert-content-panel .svp-heading-separator-bar{margin:0 0 10px 0; width:40px; height:3px;}
+  .svp-expert-quote-text{font-size:16px; line-height:1.5;}
+  .svp-editorial-body-para.svp-expert-quote{font-size:16px;}
+  .svp-priorities-title{font-size:10px; margin-bottom:6px;}
+  .svp-expert-pill{font-size:11px; padding:5px 9px; gap:5px;}
+  .svp-expert-bio{font-size:12px; line-height:1.6;}
+}
+@media (max-width: 480px){
+  .svp-expert-insight-section{padding:28px 12px;}
+  .svp-expert-insight-container{gap:18px;}
+  .svp-expert-img-frame{height:220px; border-radius:12px;}
+  .svp-expert-portrait-panel{gap:10px;}
+  .svp-expert-stats-strip{gap:8px;}
+  .svp-expert-stat-box{padding:8px; border-radius:10px;}
+  .svp-expert-stat-num{font-size:18px;}
+  .svp-expert-stat-lbl{font-size:8.5px; letter-spacing:0.05em;}
+  .svp-expert-quote-card{padding:10px 12px 10px 16px; border-left-width:3px; border-radius:0 10px 10px 0;}
+  .svp-expert-quote-mark{font-size:28px; top:4px; left:6px;}
+  .svp-expert-quote-text{font-size:15px;}
+  .svp-expert-pill{font-size:10.5px; padding:5px 8px;}
+  .svp-expert-footer-bio{padding-top:10px; margin-top:2px;}
+  .svp-expert-eyebrow-row{margin-bottom:6px; gap:5px;}
+}
+@media (max-width: 360px){
+  .svp-expert-img-frame{height:200px;}
+  .svp-expert-stats-strip{grid-template-columns:1fr 1fr; gap:8px;}
+  .svp-expert-pill{font-size:10px; padding:4px 8px;}
+}
+
 /* ── CONCLUSION / FINAL ─────────────────────────────────────── */
 
 .svp-final-section {
@@ -2125,10 +2469,11 @@
 }
 
 .svp-final-heading {
-    font-size: clamp(24px, 3.2vw, 34px);
+    font-family: var(--svp-font-display);
+    font-size: 48px;
     font-weight: 700;
     color: #ffffff;
-    line-height: 1.3;
+    line-height: 1.25;
     margin: 0 0 20px 0;
 }
 
@@ -2148,7 +2493,8 @@
 }
 
 .svp-final-body {
-    font-size: 15.5px;
+    font-family: var(--svp-font-body);
+    font-size: 18px;
     color: rgba(255, 255, 255, 0.85);
     line-height: 1.8;
     margin: 0 0 14px 0;
@@ -2217,7 +2563,8 @@
 
 .svp-faq-answer-text {
     margin: 14px 0 0 0;
-    font-size: 14.5px;
+    font-family: var(--svp-font-body);
+    font-size: 18px;
     color: var(--svp-text-body);
     line-height: 1.7;
 }
@@ -2249,11 +2596,12 @@
 }
 
 .svp-cta-heading-white {
-    font-size: clamp(24px, 3.2vw, 34px);
+    font-family: var(--svp-font-display);
+    font-size: 48px;
     font-weight: 700;
     color: #ffffff;
     margin: 0 0 18px 0;
-    line-height: 1.3;
+    line-height: 1.25;
 }
 
 .svp-cta-separator-white {
@@ -2266,7 +2614,8 @@
 }
 
 .svp-cta-paragraph-white {
-    font-size: 15.5px;
+    font-family: var(--svp-font-body);
+    font-size: 18px;
     color: rgba(255, 255, 255, 0.9);
     line-height: 1.75;
     margin: 0 auto 18px;
@@ -2524,18 +2873,6 @@
         padding-bottom: 56px;
     }
 
-    .svp-section-heading {
-        font-size: 26px;
-    }
-
-    .svp-intro-lead {
-        font-size: 18px;
-    }
-
-    .svp-intro-body {
-        font-size: 15px;
-    }
-
     .svp-intro-image-caption {
         font-size: 11.5px;
     }
@@ -2624,11 +2961,11 @@
     }
 
     .svp-hero-subtitle-text {
-        font-size: 14.5px;
+        font-size: 16px;
     }
 
     .svp-section-heading {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .svp-mid-cta-wrap {
@@ -2640,12 +2977,12 @@
     }
 
     .svp-intro-lead {
-        font-size: 16.5px;
+        font-size: 16px;
         margin-bottom: 14px;
     }
 
     .svp-intro-body {
-        font-size: 14px;
+        font-size: 16px;
         margin-bottom: 12px;
     }
 
@@ -2723,21 +3060,95 @@
     }
 }
 
-/* ── Very small phones (≤ 360px) ─────────────────────────────── */
+/* ── Very small phones (≤ 360px) — keep mobile spec 26/24/16 ─────── */
 @media (max-width: 360px) {
     .svp-hero-main-title {
-        font-size: 23px;
+        font-size: 26px;
     }
 
     .svp-section-heading {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .svp-intro-lead {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .svp-cta-considerations-box {
         padding: 18px 10px;
     }
+}
+
+/* ── Typography — Celebrity reference (991 tablet / 640 mobile) ───────
+   Desktop: h1 60px 700 lh1.15 Playfair, h2 48px 700 lh1.25 Playfair, p 18px Montserrat
+   Tablet:  h1 32px, h2 28px, p 17px
+   Mobile:  h1 26px, h2 24px, p 16px  ·  expert-quote always 18px Georgia italic 1.6
+*/
+@media (max-width: 991px) {
+    .svp-hero-main-title { font-size: 32px; line-height: 1.15; }
+    .svp-section-heading,
+    .svp-final-heading,
+    .svp-cta-heading-white,
+    .svp-editorial-title { font-size: 28px; line-height: 1.25; }
+    .svp-hero-subtitle-text,
+    .svp-intro-lead,
+    .svp-intro-body,
+    .svp-ships-intro,
+    .svp-suites-intro,
+    .svp-dining-intro,
+    .svp-dest-intro,
+    .svp-expedition-intro,
+    .svp-wellness-intro,
+    .svp-entertainment-intro,
+    .svp-service-intro,
+    .svp-compare-intro,
+    .svp-whybook-lead,
+    .svp-whybook-sub,
+    .svp-final-body,
+    .svp-cta-paragraph-white,
+    .svp-faq-answer-text,
+    .svp-about-card-text,
+    .svp-pricing-card-text,
+    .svp-pricing-footer,
+    .svp-editorial-text,
+    .svp-editorial-lead-para,
+    .svp-editorial-body-para { font-size: 17px; }
+    /* expert-quote stays 18px per spec */
+    .svp-expert-quote,
+    .svp-editorial-quote p,
+    .svp-final-emphasis { font-size: 18px !important; }
+}
+
+@media (max-width: 640px) {
+    .svp-hero-main-title { font-size: 26px; line-height: 1.15; }
+    .svp-section-heading,
+    .svp-final-heading,
+    .svp-cta-heading-white,
+    .svp-editorial-title { font-size: 24px; line-height: 1.25; }
+    .svp-hero-subtitle-text,
+    .svp-intro-lead,
+    .svp-intro-body,
+    .svp-ships-intro,
+    .svp-suites-intro,
+    .svp-dining-intro,
+    .svp-dest-intro,
+    .svp-expedition-intro,
+    .svp-wellness-intro,
+    .svp-entertainment-intro,
+    .svp-service-intro,
+    .svp-compare-intro,
+    .svp-whybook-lead,
+    .svp-whybook-sub,
+    .svp-final-body,
+    .svp-cta-paragraph-white,
+    .svp-faq-answer-text,
+    .svp-about-card-text,
+    .svp-pricing-card-text,
+    .svp-pricing-footer,
+    .svp-editorial-text,
+    .svp-editorial-lead-para,
+    .svp-editorial-body-para { font-size: 16px; }
+    .svp-expert-quote,
+    .svp-editorial-quote p,
+    .svp-final-emphasis { font-size: 18px !important; }
 }

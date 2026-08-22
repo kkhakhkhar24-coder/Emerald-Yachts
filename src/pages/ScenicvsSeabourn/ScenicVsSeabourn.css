@@ -6,6 +6,8 @@
    Fully responsive: desktop / tablet / mobile.
    ============================================================= */
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
     --svs-navy: #274472;
     --svs-navy-dark: #0f1c2e;
@@ -16,6 +18,8 @@
     --svs-text-body: #4a5568;
     --svs-text-dark: #2d3748;
     --svs-border: #e2e8f0;
+    --svs-font-display: "Playfair Display", serif;
+    --svs-font-body: "Montserrat", sans-serif;
 }
 
 /* ── GLOBAL / RESET FOR THIS PAGE ───────────────────────────── */
@@ -67,7 +71,8 @@
 }
 
 .svs-section-heading {
-    font-size: clamp(26px, 3.4vw, 38px);
+    font-family: var(--svs-font-display);
+    font-size: 48px;
     font-weight: 700;
     color: var(--svs-navy);
     margin: 0 0 18px 0;
@@ -86,6 +91,81 @@
 .svs-bar-centered {
     margin-left: auto;
     margin-right: auto;
+}
+
+/* ── TITLE FONT ENFORCEMENT (Playfair Display) — all title-like text ── */
+.svs-hero-main-title,
+.svs-section-heading,
+.svs-final-heading,
+.svs-cta-heading-white,
+.svs-about-card-title,
+.svs-ships-header h3,
+.svs-suites-header h3,
+.svs-dining-header h3,
+.svs-dest-header h3,
+.svs-expedition-header h3,
+.svs-amenities-header h3,
+.svs-wellness-header h3,
+.svs-entertainment-header h3,
+.svs-service-header h3,
+.svs-choose-header h3,
+.svs-pricing-card-title,
+.svs-compare-col-header h3,
+.svs-editorial-title,
+.svs-expert-quote {
+    font-family: var(--svs-font-display);
+}
+.svs-about-card-title,
+.svs-ships-header h3,
+.svs-suites-header h3,
+.svs-dining-header h3,
+.svs-dest-header h3,
+.svs-expedition-header h3,
+.svs-amenities-header h3,
+.svs-wellness-header h3,
+.svs-entertainment-header h3,
+.svs-service-header h3,
+.svs-choose-header h3 {
+    font-family: var(--svs-font-display);
+}
+h4,
+.svs-h4 {
+    font-family: var(--svs-font-body);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+.svs-intro-lead,
+.svs-intro-body,
+.svs-ships-intro,
+.svs-suites-intro,
+.svs-dining-intro,
+.svs-dest-intro,
+.svs-expedition-intro,
+.svs-wellness-intro,
+.svs-entertainment-intro,
+.svs-service-intro,
+.svs-compare-intro,
+.svs-whybook-lead,
+.svs-whybook-sub,
+.svs-final-body,
+.svs-cta-paragraph-white,
+.svs-faq-answer-text,
+.svs-about-card-text,
+.svs-pricing-card-text,
+.svs-pricing-footer,
+.svs-editorial-text {
+    font-family: var(--svs-font-body);
+    font-size: 18px;
+}
+.svs-expert-quote,
+.svs-editorial-quote p,
+.svs-final-emphasis {
+    font-family: Georgia, 'Times New Roman', serif !important;
+    font-size: 18px !important;
+    font-style: italic !important;
+    line-height: 1.6 !important;
+    font-weight: 400 !important;
 }
 
 /* ── IMAGE PLACEHOLDER ──────────────────────────────────────── */
@@ -182,15 +262,17 @@
 }
 
 .svs-hero-main-title {
-    font-size: clamp(30px, 5vw, 54px);
+    font-family: var(--svs-font-display);
+    font-size: 60px;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.15;
     margin: 0 0 20px 0;
     letter-spacing: -0.01em;
 }
 
 .svs-hero-subtitle-text {
-    font-size: clamp(15px, 1.6vw, 19px);
+    font-family: var(--svs-font-body);
+    font-size: 18px;
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.9);
     max-width: 700px;
@@ -210,7 +292,8 @@
 }
 
 .svs-intro-lead {
-    font-size: 20px;
+    font-family: var(--svs-font-body);
+    font-size: 18px;
     font-weight: 600;
     color: var(--svs-navy);
     line-height: 1.65;
@@ -218,7 +301,8 @@
 }
 
 .svs-intro-body {
-    font-size: 15.5px;
+    font-family: var(--svs-font-body);
+    font-size: 18px;
     color: var(--svs-text-body);
     line-height: 1.85;
     margin: 0 0 16px 0;
@@ -1843,7 +1927,8 @@
 }
 
 .svs-editorial-title {
-    font-size: clamp(24px, 3.2vw, 34px);
+    font-family: var(--svs-font-display);
+    font-size: 48px;
     font-weight: 700;
     color: #ffffff;
     margin: 0 0 0 0;
@@ -1996,6 +2081,228 @@
     }
 }
 
+/* ── EXPERT INSIGHT — Celebrity Cruises: Complete Guide ref, tight, svs- isolated ── */
+.svs-expert-insight-section {
+    padding: 48px 20px;
+    background: #0f1c2e;
+    position: relative;
+    overflow: hidden;
+}
+.svs-expert-insight-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 0.78fr 1.22fr;
+    gap: 40px;
+    align-items: center;
+}
+.svs-expert-portrait-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+.svs-expert-img-frame {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 360px;
+    box-shadow: 0 16px 36px rgba(0,0,0,0.32);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+.svs-expert-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.svs-expert-img-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15,28,46,0.55) 0%, transparent 60%);
+}
+.svs-expert-badge {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    background: #93c5fd;
+    color: #0f1c2e;
+    font-family: var(--svs-font-body);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.07em;
+    padding: 5px 10px;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+.svs-expert-stats-strip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    width: 100%;
+}
+.svs-expert-stat-box {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 12px;
+    padding: 12px;
+    text-align: center;
+    transition: border-color 0.2s ease;
+}
+.svs-expert-stat-box:hover { border-color: rgba(147,197,253,0.35); }
+.svs-expert-stat-num {
+    font-family: var(--svs-font-body);
+    font-size: 22px;
+    font-weight: 800;
+    color: #93c5fd;
+    line-height: 1;
+    margin-bottom: 2px;
+}
+.svs-expert-stat-lbl {
+    font-family: var(--svs-font-body);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.62);
+}
+.svs-expert-content-panel { display:flex; flex-direction:column; }
+.svs-expert-eyebrow-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #93c5fd;
+    margin-bottom: 8px;
+}
+.svs-expert-eyebrow-row .svs-eyebrow { margin-bottom:0; font-size:10px; letter-spacing:0.18em; color:#93c5fd; }
+.svs-expert-eyebrow-row svg { width:14px; height:14px; }
+.svs-expert-content-panel .svs-editorial-title {
+    font-family: var(--svs-font-display);
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.25;
+    margin: 0 0 10px;
+}
+.svs-expert-content-panel .svs-heading-separator-bar {
+    width: 48px;
+    height: 3px;
+    background: #93c5fd;
+    border-radius: 4px;
+    margin: 0 0 14px 0;
+}
+.svs-expert-quote-card {
+    position: relative;
+    background: rgba(255,255,255,0.03);
+    border-left: 3px solid #93c5fd;
+    border-radius: 0 12px 12px 0;
+    padding: 14px 16px 14px 20px;
+    margin: 0 0 14px 0;
+}
+.svs-expert-quote-mark {
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    font-size: 36px;
+    color: rgba(147,197,253,0.14);
+    font-family: Georgia, serif;
+    line-height: 1;
+}
+.svs-expert-quote-text {
+    font-family: Georgia,'Times New Roman',serif;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff;
+    margin: 0;
+}
+.svs-editorial-body-para.svs-expert-quote { margin: 0 0 14px 0; color: rgba(255,255,255,0.82); }
+.svs-expert-priorities { margin-bottom: 14px; }
+.svs-priorities-title {
+    font-family: var(--svs-font-body);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: rgba(255,255,255,0.52);
+    margin-bottom: 8px;
+}
+.svs-expert-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.svs-expert-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.09);
+    color: #ffffff;
+    font-family: var(--svs-font-body);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 30px;
+    line-height: 1.2;
+    transition: border-color 0.15s ease;
+}
+.svs-expert-pill:hover { border-color: rgba(147,197,253,0.35); }
+.svs-expert-pill svg { color: #93c5fd; flex-shrink:0; width:12px; height:12px; }
+.svs-expert-footer-bio {
+    border-top: 1px solid rgba(255,255,255,0.07);
+    padding-top: 12px;
+    margin-top: 4px;
+}
+.svs-expert-bio {
+    font-family: var(--svs-font-body);
+    font-size: 13px;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.68);
+    margin: 0;
+}
+@media (max-width: 991px){
+  .svs-expert-insight-container{grid-template-columns:1fr; gap:28px;}
+  .svs-expert-insight-section{padding:40px 20px;}
+  .svs-expert-img-frame{height:320px;}
+  .svs-expert-content-panel .svs-editorial-title{font-size:28px;}
+}
+@media (max-width: 768px){
+  .svs-expert-insight-section{padding:36px 16px;}
+  .svs-expert-insight-container{gap:24px;}
+  .svs-expert-portrait-panel{max-width:520px; margin:0 auto; width:100%;}
+  .svs-expert-img-frame{height:280px; border-radius:14px;}
+  .svs-expert-stats-strip{gap:10px;}
+  .svs-expert-stat-box{padding:10px;}
+  .svs-expert-quote-card{padding:12px 14px 12px 18px;}
+  .svs-expert-quote-mark{font-size:32px;}
+}
+@media (max-width: 640px){
+  .svs-expert-insight-section{padding:32px 14px;}
+  .svs-expert-insight-container{gap:20px;}
+  .svs-expert-img-frame{height:240px; border-radius:12px;}
+  .svs-expert-badge{font-size:9px; padding:4px 8px;}
+  .svs-expert-stat-num{font-size:19px;}
+  .svs-expert-content-panel .svs-editorial-title{font-size:24px;}
+  .svs-expert-content-panel .svs-heading-separator-bar{margin:0 0 10px 0; width:40px;}
+  .svs-expert-quote-text{font-size:16px;}
+  .svs-editorial-body-para.svs-expert-quote{font-size:16px;}
+  .svs-expert-pill{font-size:11px; padding:5px 9px;}
+}
+@media (max-width: 480px){
+  .svs-expert-insight-section{padding:28px 12px;}
+  .svs-expert-img-frame{height:220px;}
+  .svs-expert-stats-strip{gap:8px;}
+  .svs-expert-stat-box{padding:8px; border-radius:10px;}
+  .svs-expert-stat-num{font-size:18px;}
+  .svs-expert-pill{font-size:10.5px; padding:5px 8px;}
+  .svs-expert-quote-card{padding:10px 12px 10px 16px;}
+  .svs-expert-quote-mark{font-size:28px;}
+  .svs-expert-bio{font-size:12px;}
+}
+
 /* ── CONCLUSION / FINAL ─────────────────────────────────────── */
 
 .svs-final-section {
@@ -2036,10 +2343,11 @@
 }
 
 .svs-final-heading {
-    font-size: clamp(24px, 3.2vw, 34px);
+    font-family: var(--svs-font-display);
+    font-size: 48px;
     font-weight: 700;
     color: #ffffff;
-    line-height: 1.3;
+    line-height: 1.25;
     margin: 0 0 20px 0;
 }
 
@@ -2217,13 +2525,13 @@
 
 /* ── Heading ── */
 .svs-cta-heading-white {
-    font-size: clamp(24px, 3.5vw, 38px);
+    font-family: var(--svs-font-display);
+    font-size: 48px;
     font-weight: 700;
     color: #ffffff;
     margin: 0 0 0 0;
-    line-height: 1.2;
+    line-height: 1.25;
     letter-spacing: -0.02em;
-    white-space: nowrap;
 }
 
 .svs-cta-heading-line {
@@ -2423,6 +2731,21 @@
     box-shadow: 0 10px 24px rgba(39, 68, 114, 0.3);
 }
 
+/* ── BODY 18px DESKTOP OVERRIDE (ensures p 18 Montserrat, overrides earlier 14/15) ── */
+.svs-about-card-text,
+.svs-compare-intro,
+.svs-service-intro,
+.svs-whybook-lead,
+.svs-whybook-sub,
+.svs-final-body,
+.svs-cta-paragraph-white,
+.svs-editorial-text,
+.svs-pricing-card-text,
+.svs-pricing-footer {
+    font-family: var(--svs-font-body);
+    font-size: 18px;
+}
+
 /* =============================================================
    RESPONSIVE BREAKPOINTS
    ============================================================= */
@@ -2517,15 +2840,15 @@
     }
 
     .svs-section-heading {
-        font-size: 26px;
+        font-size: 28px;
     }
 
     .svs-intro-lead {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .svs-intro-body {
-        font-size: 15px;
+        font-size: 17px;
     }
 
     .svs-intro-image-caption {
@@ -2624,16 +2947,16 @@
     }
 
     .svs-hero-subtitle-text {
-        font-size: 14.5px;
+        font-size: 16px;
     }
 
     .svs-section-heading {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .svs-cta-heading-white {
         white-space: normal;
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .svs-mid-cta-wrap {
@@ -2645,12 +2968,12 @@
     }
 
     .svs-intro-lead {
-        font-size: 16.5px;
+        font-size: 16px;
         margin-bottom: 14px;
     }
 
     .svs-intro-body {
-        font-size: 14px;
+        font-size: 16px;
         margin-bottom: 12px;
     }
 
@@ -2725,18 +3048,75 @@
     }
 }
 
-/* ── Very small phones (≤ 360px) ─────────────────────────────── */
+/* ── Very small phones (≤ 360px) — keep mobile spec 26/24/16 ─────── */
 @media (max-width: 360px) {
     .svs-hero-main-title {
-        font-size: 23px;
+        font-size: 26px;
     }
 
     .svs-section-heading {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .svs-intro-lead {
-        font-size: 15px;
+        font-size: 16px;
     }
+}
 
-    }
+/* ── Typography — 991 tablet / 640 mobile (Playfair/Montserrat spec) ──
+   Desktop: h1 60 700 lh1.15, h2 48 700 lh1.25, p 18
+   Tablet:  h1 32, h2 28, p 17
+   Mobile:  h1 26, h2 24, p 16  · expert-quote always 18 Georgia italic 1.6
+*/
+@media (max-width: 991px) {
+    .svs-hero-main-title { font-size: 32px; line-height: 1.15; }
+    .svs-section-heading,
+    .svs-final-heading,
+    .svs-cta-heading-white,
+    .svs-editorial-title { font-size: 28px; line-height: 1.25; }
+    .svs-hero-subtitle-text,
+    .svs-intro-lead,
+    .svs-intro-body,
+    .svs-compare-intro,
+    .svs-whybook-lead,
+    .svs-whybook-sub,
+    .svs-final-body,
+    .svs-cta-paragraph-white,
+    .svs-faq-answer-text,
+    .svs-about-card-text,
+    .svs-pricing-card-text,
+    .svs-pricing-footer,
+    .svs-editorial-text { font-size: 17px; }
+    .svs-expert-quote,
+    .svs-editorial-quote p,
+    .svs-final-emphasis,
+    .svs-expert-quote-text,
+    .svs-editorial-body-para.svs-expert-quote,
+    .svs-editorial-lead-para.svs-expert-quote { font-size: 18px !important; }
+}
+@media (max-width: 640px) {
+    .svs-hero-main-title { font-size: 26px; line-height: 1.15; }
+    .svs-section-heading,
+    .svs-final-heading,
+    .svs-cta-heading-white,
+    .svs-editorial-title { font-size: 24px; line-height: 1.25; }
+    .svs-hero-subtitle-text,
+    .svs-intro-lead,
+    .svs-intro-body,
+    .svs-compare-intro,
+    .svs-whybook-lead,
+    .svs-whybook-sub,
+    .svs-final-body,
+    .svs-cta-paragraph-white,
+    .svs-faq-answer-text,
+    .svs-about-card-text,
+    .svs-pricing-card-text,
+    .svs-pricing-footer,
+    .svs-editorial-text { font-size: 16px; }
+    .svs-expert-quote,
+    .svs-editorial-quote p,
+    .svs-final-emphasis,
+    .svs-expert-quote-text,
+    .svs-editorial-body-para.svs-expert-quote,
+    .svs-editorial-lead-para.svs-expert-quote { font-size: 18px !important; }
+}

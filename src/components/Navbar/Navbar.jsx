@@ -1303,13 +1303,13 @@ const Navbar = () => {
                 Celebrity Cruises vs. Royal Caribbean
               </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/celebrity-cruises/celebrity-vs-princess"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 Celebrity Cruises vs. Princess Cruises
-              </NavLink> */}
+              </NavLink>
 
               {/* <NavLink
                 to="/celebrity-cruises/ships/celebrity-xcel"
@@ -2691,13 +2691,13 @@ const Navbar = () => {
               Celebrity Cruises vs. Royal Caribbean
             </NavLink>
 
-            {/* <NavLink
+            <NavLink
               to="/celebrity-cruises/celebrity-vs-princess"
               className="nav-dropdown-single"
               onClick={toggleMenu}
             >
               Celebrity Cruises vs. Princess Cruises
-            </NavLink> */}
+            </NavLink>
 
             {/* <NavLink
               to="/celebrity-cruises/ships/celebrity-xcel"
