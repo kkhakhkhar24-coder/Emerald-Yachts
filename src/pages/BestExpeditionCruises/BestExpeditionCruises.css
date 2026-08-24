@@ -1,9 +1,209 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@100..900&display=swap');
+
+:root {
+    --expg-font-display: 'Playfair Display', Georgia, serif;
+    --expg-font-body: 'Montserrat', sans-serif;
+}
+
 /* =============================================================
-   BestExpeditionCruises.css
-   NEW SECTION STYLES ONLY — shared medi-* styles live in
-   AzamaraMediterraneanCruises.css
-   Color palette: strictly uses existing --medi-* variables
+   BestExpeditionCruises.css — expg- isolated
    ============================================================= */
+
+/* ── TITLE ENFORCEMENT ── */
+.expg-hero-main-title,
+.expg-section-heading,
+.expg-value-heading,
+.expg-review-title,
+.expg-cta-title,
+.expg-line-card-title,
+.expg-choose-card-title,
+h1,
+h2,
+h3 {
+    font-family: var(--expg-font-display) !important;
+}
+
+.expg-hero-main-title {
+    font-size: 60px !important;
+    line-height: 1.15 !important;
+    font-weight: 700 !important;
+}
+
+.expg-section-heading {
+    font-size: 48px !important;
+    line-height: 1.25 !important;
+    font-weight: 700 !important;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.01em;
+    color: var(--medi-navy);
+}
+
+h4 {
+    font-family: var(--expg-font-body) !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+}
+
+/* ── BODY TEXT ENFORCEMENT ── */
+body,
+.expg-intro-lead,
+.expg-intro-body,
+.expg-different-lead,
+.expg-different-pivot-text,
+.expg-different-pivot-sub,
+.expg-different-insight-box p,
+.expg-destinations-intro,
+.expg-lines-intro,
+.expg-line-card-desc,
+.expg-lines-footer p,
+.expg-eclipse-body,
+.expg-eclipse-note-box p,
+.expg-eclipse-point p,
+.expg-wildlife-intro,
+.expg-wildlife-sub,
+.expg-wildlife-footer p,
+.expg-activities-intro,
+.expg-activities-sub,
+.expg-activity-desc,
+.expg-activities-conclusion p,
+.expg-onboard-lead,
+.expg-onboard-conclusion p,
+.expg-seasons-intro,
+.expg-choose-intro,
+.expg-choose-sub,
+.expg-choose-card-desc,
+.expg-choose-footer p,
+.expg-value-body,
+.expg-review-text,
+.expg-faq-question-row span,
+.expg-faq-answer-text,
+.expg-cta-subtitle,
+.expg-cta-closing,
+.expg-cta-card span {
+    font-family: var(--expg-font-body) !important;
+}
+
+/* ── HERO SECTION ── */
+.expg-hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.expg-hero-background {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.expg-hero-background.expg-active {
+    opacity: 1;
+}
+
+.expg-hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #0f1c2e 0%, #1c2f4a 100%);
+    z-index: 0;
+}
+
+.expg-hero-overlay-layer {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 28, 46, 0.72);
+    z-index: 1;
+}
+
+.expg-hero-content-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.expg-hero-eyebrow-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #94a3b8;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.expg-hero-subtitle-text {
+    font-size: 20px;
+    color: #cbd5e1;
+    margin-bottom: 40px;
+    max-width: 700px;
+    text-align: center;
+}
+
+/* ── SEPARATORS ── */
+.expg-heading-separator-bar {
+    width: 60px;
+    height: 4px;
+    background: var(--medi-navy);
+    margin-bottom: 32px;
+}
+
+.expg-bar-centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ── EXPERT QUOTE ── */
+.expg-expert-quote,
+.expg-review-text {
+    font-family: Georgia, 'Times New Roman', serif !important;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+/* ── BODY 18px OVERRIDE ── */
+.expg-intro-lead,
+.expg-intro-body,
+.expg-different-lead,
+.expg-different-pivot-text,
+.expg-different-pivot-sub,
+.expg-different-insight-box p,
+.expg-destinations-intro,
+.expg-lines-intro,
+.expg-lines-footer p,
+.expg-eclipse-body,
+.expg-eclipse-note-box p,
+.expg-eclipse-point p,
+.expg-wildlife-intro,
+.expg-wildlife-sub,
+.expg-wildlife-footer p,
+.expg-activities-intro,
+.expg-activities-sub,
+.expg-activities-conclusion p,
+.expg-onboard-lead,
+.expg-onboard-conclusion p,
+.expg-seasons-intro,
+.expg-choose-intro,
+.expg-choose-sub,
+.expg-choose-footer p,
+.expg-value-body,
+.expg-cta-subtitle,
+.expg-cta-closing {
+    font-size: 18px !important;
+}
 
 .expg-eyebrow {
     font-size: 11px;
@@ -176,11 +376,13 @@
 .expg-different-section {
     background: var(--medi-bg-soft);
     padding: 88px 20px;
+    overflow: hidden;
 }
 
 .expg-different-container {
     max-width: 1200px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .expg-different-grid {
@@ -188,12 +390,14 @@
     grid-template-columns: 1fr 1fr;
     gap: 68px;
     align-items: center;
+    min-width: 0;
 }
 
 .expg-different-image-col {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    min-width: 0;
 }
 
 .expg-different-image-col .expg-image-frame {
@@ -214,6 +418,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     margin-bottom: 24px;
+    min-width: 0;
 }
 
 .expg-different-item {
@@ -282,7 +487,9 @@
     line-height: 1.7;
 }
 
-.expg-different-insight-box p:last-child { margin-bottom: 0; }
+.expg-different-insight-box p:last-child {
+    margin-bottom: 0;
+}
 
 /* ── 3. DESTINATIONS ───────────────────────────────────────── */
 
@@ -475,8 +682,8 @@
     width: 52px;
     height: 52px;
     border-radius: 50%;
-    background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.08));
-    border: 2px solid rgba(255,255,255,0.25);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.08));
+    border: 2px solid rgba(255, 255, 255, 0.25);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -912,11 +1119,16 @@
     margin: 0 auto;
 }
 
+.expg-onboard-section {
+    overflow: hidden;
+}
+
 .expg-onboard-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 48px;
     align-items: center;
+    min-width: 0;
 }
 
 .expg-onboard-lead {
@@ -931,6 +1143,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    min-width: 0;
 }
 
 .expg-onboard-amenity {
@@ -976,6 +1189,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    min-width: 0;
 }
 
 .expg-onboard-image-col .expg-image-frame {
@@ -1272,8 +1486,10 @@
 }
 
 .expg-value-heading {
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: var(--expg-font-display);
     font-size: 48px;
+    font-weight: 700;
+    line-height: 1.25;
     font-weight: 400;
     font-style: italic;
     color: #ffffff;
@@ -1307,7 +1523,9 @@
     line-height: 1.7;
 }
 
-.expg-value-body:last-child { margin-bottom: 0; }
+.expg-value-body:last-child {
+    margin-bottom: 0;
+}
 
 .expg-value-emphasis {
     font-family: Georgia, serif;
@@ -1376,9 +1594,10 @@
 }
 
 .expg-review-title {
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 36px;
+    font-family: var(--expg-font-display);
+    font-size: 48px;
     font-weight: 700;
+    line-height: 1.25;
     color: #ffffff;
     margin: 0 0 10px;
     line-height: 1.2;
@@ -1659,8 +1878,15 @@
 }
 
 @keyframes expg-aurora-pulse {
-    0% { opacity: 0.6; transform: translateX(-50%) scale(1); }
-    100% { opacity: 1; transform: translateX(-50%) scale(1.08); }
+    0% {
+        opacity: 0.6;
+        transform: translateX(-50%) scale(1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) scale(1.08);
+    }
 }
 
 .expg-cta-crystal {
@@ -1673,29 +1899,44 @@
 }
 
 .expg-cta-crystal-1 {
-    width: 80px; height: 80px;
-    top: 12%; left: 8%;
+    width: 80px;
+    height: 80px;
+    top: 12%;
+    left: 8%;
     transform: rotate(45deg);
     animation: expg-crystal-float 12s ease-in-out infinite;
 }
 
 .expg-cta-crystal-2 {
-    width: 50px; height: 50px;
-    top: 20%; right: 12%;
+    width: 50px;
+    height: 50px;
+    top: 20%;
+    right: 12%;
     transform: rotate(25deg);
     animation: expg-crystal-float 10s ease-in-out 2s infinite;
 }
 
 .expg-cta-crystal-3 {
-    width: 35px; height: 35px;
-    bottom: 18%; left: 15%;
+    width: 35px;
+    height: 35px;
+    bottom: 18%;
+    left: 15%;
     transform: rotate(60deg);
     animation: expg-crystal-float 14s ease-in-out 4s infinite;
 }
 
 @keyframes expg-crystal-float {
-    0%, 100% { transform: rotate(45deg) translateY(0); opacity: 0.5; }
-    50% { transform: rotate(45deg) translateY(-18px); opacity: 0.9; }
+
+    0%,
+    100% {
+        transform: rotate(45deg) translateY(0);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: rotate(45deg) translateY(-18px);
+        opacity: 0.9;
+    }
 }
 
 .expg-cta-grid-lines {
@@ -1734,8 +1975,13 @@
 }
 
 @keyframes expg-compass-spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .expg-cta-compass-ring svg {
@@ -1743,8 +1989,13 @@
 }
 
 @keyframes expg-compass-counter-spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(-360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
 }
 
 .expg-cta-eyebrow {
@@ -1902,12 +2153,18 @@
    ───────────────────────────────────────────────────────────── */
 
 @media (max-width: 1024px) {
+
     .expg-intro-grid,
     .expg-different-grid,
     .expg-onboard-grid,
     .expg-destinations-grid {
         grid-template-columns: 1fr;
         gap: 40px;
+    }
+
+    .expg-intro-text-col,
+    .expg-different-text-col {
+        order: -1;
     }
 
     .expg-intro-image-col .expg-image-frame,
@@ -1981,6 +2238,7 @@
    ───────────────────────────────────────────────────────────── */
 
 @media (max-width: 767px) {
+
     .expg-intro-section,
     .expg-different-section,
     .expg-destinations-section,
@@ -1998,6 +2256,40 @@
 
     .expg-wildlife-items {
         grid-template-columns: 1fr;
+    }
+
+    .expg-different-items {
+        grid-template-columns: 1fr;
+    }
+
+    .expg-different-item {
+        padding: 10px 14px;
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .expg-different-item-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .expg-onboard-amenities {
+        grid-template-columns: 1fr;
+    }
+
+    .expg-onboard-amenity {
+        padding: 10px 14px;
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .expg-onboard-amenity-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .expg-onboard-image-col .expg-image-frame {
+        height: 280px;
     }
 
     .expg-activities-grid,
@@ -2096,6 +2388,7 @@
    ───────────────────────────────────────────────────────────── */
 
 @media (max-width: 480px) {
+
     .expg-wildlife-grid,
     .expg-activities-grid,
     .expg-eclipse-points,
@@ -2146,5 +2439,109 @@
     .expg-intro-section,
     .expg-different-section {
         padding: 40px 16px;
+    }
+}
+
+/* ── RESPONSIVE — 991px tablet ── */
+@media (max-width: 991px) {
+    .expg-hero-main-title {
+        font-size: 32px !important;
+        line-height: 1.15 !important;
+    }
+
+    .expg-section-heading,
+    .expg-value-heading,
+    .expg-review-title,
+    .expg-cta-title {
+        font-size: 28px !important;
+        line-height: 1.25 !important;
+        text-align: center !important;
+    }
+
+    .expg-heading-separator-bar,
+    .expg-bar-centered {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .expg-hero-subtitle-text,
+    .expg-intro-lead,
+    .expg-intro-body,
+    .expg-different-lead,
+    .expg-different-pivot-text,
+    .expg-different-pivot-sub,
+    .expg-destinations-intro,
+    .expg-lines-intro,
+    .expg-eclipse-body,
+    .expg-wildlife-intro,
+    .expg-activities-intro,
+    .expg-activities-sub,
+    .expg-onboard-lead,
+    .expg-seasons-intro,
+    .expg-choose-intro,
+    .expg-choose-sub,
+    .expg-value-body,
+    .expg-cta-subtitle,
+    .expg-faq-question-row span {
+        font-size: 17px !important;
+    }
+
+    .expg-expert-quote,
+    .expg-review-text,
+    .expg-value-stmt,
+    .expg-intro-statement-bold {
+        font-size: 18px !important;
+    }
+}
+
+/* ── RESPONSIVE — 640px mobile ── */
+@media (max-width: 640px) {
+    .expg-hero-main-title {
+        font-size: 26px !important;
+        line-height: 1.15 !important;
+    }
+
+    .expg-section-heading,
+    .expg-value-heading,
+    .expg-review-title,
+    .expg-cta-title {
+        font-size: 24px !important;
+        line-height: 1.25 !important;
+        text-align: center !important;
+    }
+
+    .expg-heading-separator-bar,
+    .expg-bar-centered {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .expg-hero-subtitle-text,
+    .expg-intro-lead,
+    .expg-intro-body,
+    .expg-different-lead,
+    .expg-different-pivot-text,
+    .expg-different-pivot-sub,
+    .expg-destinations-intro,
+    .expg-lines-intro,
+    .expg-eclipse-body,
+    .expg-wildlife-intro,
+    .expg-activities-intro,
+    .expg-activities-sub,
+    .expg-onboard-lead,
+    .expg-seasons-intro,
+    .expg-choose-intro,
+    .expg-choose-sub,
+    .expg-value-body,
+    .expg-cta-subtitle,
+    .expg-faq-question-row span {
+        font-size: 16px !important;
+    }
+
+    .expg-expert-quote,
+    .expg-review-text,
+    .expg-value-stmt,
+    .expg-intro-statement-bold {
+        font-size: 18px !important;
     }
 }

@@ -1,7 +1,12 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@100..900&display=swap');
+
+:root {
+    --luxe-font-display: 'Playfair Display', Georgia, serif;
+    --luxe-font-body: 'Montserrat', sans-serif;
+}
+
 /* ============================================================
-   BEST LUXURY EXPEDITION CRUISES
-   Shared vars: --medi-navy, --medi-bg-dark, --medi-bg-dark2,
-   --medi-bg-white, --medi-bg-soft (defined in AzamaraMedCruises.css)
+   BEST LUXURY EXPEDITION CRUISES — luxe- isolated
    ============================================================ */
 
 /* ── RESET ──────────────────────────────────────────────────── */
@@ -15,7 +20,7 @@
 }
 
 .luxe-page {
-    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+    font-family: var(--luxe-font-body);
     color: #2d3748;
     overflow-x: hidden;
 }
@@ -25,23 +30,184 @@
     max-width: 100%;
 }
 
+/* ── TITLE ENFORCEMENT ── */
+.luxe-page h1,
+.luxe-page h2,
+.luxe-page h3,
+.luxe-page .luxe-hero-main-title,
+.luxe-page .luxe-section-heading,
+.luxe-page .luxe-cta-title,
+.luxe-page .luxe-editorial-title,
+.luxe-page .luxe-intro-text-col h3,
+.luxe-page .luxe-dest-card-body h3,
+.luxe-page .luxe-line-row-body h3,
+.luxe-page .luxe-lines-info-card h3,
+.luxe-page .luxe-season-card h3 {
+    font-family: var(--luxe-font-display) !important;
+}
+
+.luxe-page h1,
+.luxe-page .luxe-hero-main-title {
+    font-size: 60px !important;
+    line-height: 1.15 !important;
+    font-weight: 700 !important;
+}
+
+.luxe-page h2,
+.luxe-page .luxe-section-heading,
+.luxe-page .luxe-editorial-title {
+    font-size: 48px !important;
+    line-height: 1.25 !important;
+    font-weight: 700 !important;
+}
+
+.luxe-page h4 {
+    font-family: var(--luxe-font-body) !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+}
+
+/* ── BODY TEXT ENFORCEMENT ── */
+.luxe-page p,
+.luxe-page .luxe-intro-text-col p,
+.luxe-page .luxe-different-intro,
+.luxe-page .luxe-destinations-intro,
+.luxe-page .luxe-dest-card-body p,
+.luxe-page .luxe-lines-intro,
+.luxe-page .luxe-line-row-body p,
+.luxe-page .luxe-lines-info-card p,
+.luxe-page .luxe-eclipse-lead,
+.luxe-page .luxe-eclipse-body,
+.luxe-page .luxe-wildlife-intro,
+.luxe-page .luxe-onboard-intro,
+.luxe-page .luxe-seasons-intro,
+.luxe-page .luxe-season-card p,
+.luxe-page .luxe-choose-text-col p,
+.luxe-page .luxe-value-text-col p,
+.luxe-page .luxe-review-text-col p,
+.luxe-page .luxe-review-consider-card p,
+.luxe-page .luxe-planning-text-col p,
+.luxe-page .luxe-faq-question-row span,
+.luxe-page .luxe-faq-answer-text,
+.luxe-page .luxe-cta-subtitle,
+.luxe-page .luxe-expert-bio,
+.luxe-page .luxe-list-row,
+.luxe-page .luxe-expert-lead-para,
+.luxe-page .luxe-expert-body-para,
+.luxe-page .luxe-priorities-intro {
+    font-family: var(--luxe-font-body) !important;
+    font-size: 18px !important;
+}
+
+/* ── EXPERT QUOTE ── */
+.luxe-page .luxe-expert-quote,
+.luxe-page .luxe-editorial-lead-para,
+.luxe-page .luxe-editorial-body-para {
+    font-family: Georgia, 'Times New Roman', serif !important;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+/* ── HERO SECTION ── */
+.luxe-hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.luxe-hero-background {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.luxe-hero-background.luxe-active {
+    opacity: 1;
+}
+
+.luxe-hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #0f1c2e 0%, #1c2f4a 100%);
+    z-index: 0;
+}
+
+.luxe-hero-overlay-layer {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 28, 46, 0.72);
+    z-index: 1;
+}
+
+.luxe-hero-content-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.luxe-hero-eyebrow-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #94a3b8;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.luxe-hero-subtitle-text {
+    font-size: 20px;
+    color: #cbd5e1;
+    margin-bottom: 40px;
+    max-width: 700px;
+    text-align: center;
+}
+
+/* ── SEPARATORS ── */
+.luxe-heading-separator-bar {
+    width: 60px;
+    height: 4px;
+    background: var(--medi-navy);
+    margin-bottom: 32px;
+}
+
+.luxe-bar-centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* ── HERO OVERRIDES ────────────────────────────────────────── */
 
-.luxe-page .medi-hero-content-wrapper {
+.luxe-page .luxe-hero-content-wrapper {
     padding: 100px 24px 80px;
 }
 
-.luxe-page .medi-hero-eyebrow-tag {
+.luxe-page .luxe-hero-eyebrow-tag {
     margin-bottom: 20px;
 }
 
-.luxe-page .medi-hero-main-title {
+.luxe-page .luxe-hero-main-title {
     margin: 0 0 28px 0;
     max-width: 1000px;
     font-size: 52px;
 }
 
-.luxe-page .medi-hero-subtitle-text {
+.luxe-page .luxe-hero-subtitle-text {
     margin-bottom: 24px;
     max-width: 580px;
 }
@@ -174,12 +340,14 @@
     align-items: center;
 }
 
-.luxe-intro-text-col .medi-section-heading {
+.luxe-intro-text-col .luxe-section-heading {
     margin: 0 0 14px 0;
-    font-size: 42px !important;
+    font-size: 48px !important;
+    line-height: 1.25 !important;
+    font-weight: 700 !important;
 }
 
-.luxe-intro-text-col .medi-heading-separator-bar {
+.luxe-intro-text-col .luxe-heading-separator-bar {
     margin-bottom: 22px;
 }
 
@@ -229,11 +397,11 @@
     margin-bottom: 10px;
 }
 
-.luxe-different-text-col .medi-section-heading {
+.luxe-different-text-col .luxe-section-heading {
     margin: 0 0 14px 0;
 }
 
-.luxe-different-text-col .medi-heading-separator-bar {
+.luxe-different-text-col .luxe-heading-separator-bar {
     margin-bottom: 22px;
 }
 
@@ -277,11 +445,11 @@
     margin-bottom: 10px;
 }
 
-.luxe-destinations-header .medi-section-heading {
+.luxe-destinations-header .luxe-section-heading {
     margin: 0 0 14px 0;
 }
 
-.luxe-destinations-header .medi-heading-separator-bar {
+.luxe-destinations-header .luxe-heading-separator-bar {
     margin-bottom: 20px;
 }
 
@@ -627,11 +795,11 @@
     margin-bottom: 10px;
 }
 
-.luxe-eclipse-text-col .medi-section-heading {
+.luxe-eclipse-text-col .luxe-section-heading {
     margin: 0 0 14px 0;
 }
 
-.luxe-eclipse-text-col .medi-heading-separator-bar {
+.luxe-eclipse-text-col .luxe-heading-separator-bar {
     margin-bottom: 22px;
 }
 
@@ -690,11 +858,11 @@
     margin-bottom: 10px;
 }
 
-.luxe-wildlife-text-col .medi-section-heading {
+.luxe-wildlife-text-col .luxe-section-heading {
     margin: 0 0 14px 0;
 }
 
-.luxe-wildlife-text-col .medi-heading-separator-bar {
+.luxe-wildlife-text-col .luxe-heading-separator-bar {
     margin-bottom: 20px;
 }
 
@@ -752,11 +920,11 @@
     margin-bottom: 10px;
 }
 
-.luxe-onboard-text-col .medi-section-heading {
+.luxe-onboard-text-col .luxe-section-heading {
     margin: 0 0 14px 0;
 }
 
-.luxe-onboard-text-col .medi-heading-separator-bar {
+.luxe-onboard-text-col .luxe-heading-separator-bar {
     margin-bottom: 22px;
 }
 
@@ -807,11 +975,11 @@
     margin-bottom: 10px;
 }
 
-.luxe-seasons-header .medi-section-heading {
+.luxe-seasons-header .luxe-section-heading {
     margin: 0 0 14px 0;
 }
 
-.luxe-seasons-header .medi-heading-separator-bar {
+.luxe-seasons-header .luxe-heading-separator-bar {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 18px;
@@ -906,11 +1074,11 @@
     margin-bottom: 10px;
 }
 
-.luxe-choose-text-col .medi-section-heading {
+.luxe-choose-text-col .luxe-section-heading {
     margin: 0 0 14px 0;
 }
 
-.luxe-choose-text-col .medi-heading-separator-bar {
+.luxe-choose-text-col .luxe-heading-separator-bar {
     margin-bottom: 22px;
 }
 
@@ -992,11 +1160,11 @@
     margin-bottom: 10px;
 }
 
-.luxe-value-text-col .medi-section-heading {
+.luxe-value-text-col .luxe-section-heading {
     margin: 0 0 14px 0;
 }
 
-.luxe-value-text-col .medi-heading-separator-bar {
+.luxe-value-text-col .luxe-heading-separator-bar {
     margin-bottom: 22px;
 }
 
@@ -1057,11 +1225,11 @@
     margin-bottom: 10px;
 }
 
-.luxe-review-text-col .medi-section-heading {
+.luxe-review-text-col .luxe-section-heading {
     margin: 0 0 14px 0;
 }
 
-.luxe-review-text-col .medi-heading-separator-bar {
+.luxe-review-text-col .luxe-heading-separator-bar {
     margin-bottom: 22px;
 }
 
@@ -1181,11 +1349,11 @@
     margin-bottom: 10px;
 }
 
-.luxe-planning-text-col .medi-section-heading {
+.luxe-planning-text-col .luxe-section-heading {
     margin: 0 0 14px 0;
 }
 
-.luxe-planning-text-col .medi-heading-separator-bar {
+.luxe-planning-text-col .luxe-heading-separator-bar {
     margin-bottom: 22px;
 }
 
@@ -1245,8 +1413,15 @@
 }
 
 @keyframes luxe-aurora-pulse {
-    0% { opacity: 0.6; transform: translateX(-50%) scale(1); }
-    100% { opacity: 1; transform: translateX(-50%) scale(1.08); }
+    0% {
+        opacity: 0.6;
+        transform: translateX(-50%) scale(1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) scale(1.08);
+    }
 }
 
 .luxe-cta-crystal {
@@ -1258,13 +1433,45 @@
     backdrop-filter: blur(6px);
 }
 
-.luxe-cta-crystal-1 { width: 80px; height: 80px; top: 12%; left: 8%; transform: rotate(45deg); animation: luxe-crystal-float 12s ease-in-out infinite; }
-.luxe-cta-crystal-2 { width: 50px; height: 50px; top: 20%; right: 12%; transform: rotate(25deg); animation: luxe-crystal-float 10s ease-in-out 2s infinite; }
-.luxe-cta-crystal-3 { width: 35px; height: 35px; bottom: 18%; left: 15%; transform: rotate(60deg); animation: luxe-crystal-float 14s ease-in-out 4s infinite; }
+.luxe-cta-crystal-1 {
+    width: 80px;
+    height: 80px;
+    top: 12%;
+    left: 8%;
+    transform: rotate(45deg);
+    animation: luxe-crystal-float 12s ease-in-out infinite;
+}
+
+.luxe-cta-crystal-2 {
+    width: 50px;
+    height: 50px;
+    top: 20%;
+    right: 12%;
+    transform: rotate(25deg);
+    animation: luxe-crystal-float 10s ease-in-out 2s infinite;
+}
+
+.luxe-cta-crystal-3 {
+    width: 35px;
+    height: 35px;
+    bottom: 18%;
+    left: 15%;
+    transform: rotate(60deg);
+    animation: luxe-crystal-float 14s ease-in-out 4s infinite;
+}
 
 @keyframes luxe-crystal-float {
-    0%, 100% { transform: rotate(45deg) translateY(0); opacity: 0.5; }
-    50% { transform: rotate(45deg) translateY(-18px); opacity: 0.9; }
+
+    0%,
+    100% {
+        transform: rotate(45deg) translateY(0);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: rotate(45deg) translateY(-18px);
+        opacity: 0.9;
+    }
 }
 
 .luxe-cta-grid-lines {
@@ -1303,8 +1510,13 @@
 }
 
 @keyframes luxe-compass-spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .luxe-cta-compass-ring svg {
@@ -1312,8 +1524,13 @@
 }
 
 @keyframes luxe-compass-counter-spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(-360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
 }
 
 .luxe-cta-eyebrow {
@@ -1417,11 +1634,11 @@
     margin-bottom: 10px;
 }
 
-.luxe-faq-section .medi-section-heading {
+.luxe-faq-section .luxe-section-heading {
     margin: 0 0 14px 0;
 }
 
-.luxe-faq-section .medi-heading-separator-bar {
+.luxe-faq-section .luxe-heading-separator-bar {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
@@ -1591,9 +1808,27 @@
     color: #3b82f6;
 }
 
-.luxe-expert-content-panel .medi-section-heading {
+.luxe-expert-content-panel .luxe-section-heading {
     margin: 0 0 14px;
     font-size: 38px !important;
+    color: #ffffff !important;
+}
+
+.luxe-expert-content-panel .luxe-editorial-title {
+    font-family: var(--luxe-font-display) !important;
+    font-size: 48px !important;
+    font-weight: 700 !important;
+    line-height: 1.25 !important;
+    color: #ffffff !important;
+    margin: 0 0 6px;
+}
+
+.luxe-expert-content-panel .luxe-heading-separator-bar {
+    width: 48px;
+    height: 3px;
+    background: #93c5fd;
+    border-radius: 4px;
+    margin: 0 0 16px 0;
 }
 
 .luxe-expert-quote {
@@ -1638,6 +1873,106 @@
 
 .luxe-expert-pill svg {
     color: #3b82f6;
+}
+
+.luxe-expert-badge {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    background: #93c5fd;
+    color: #0f1c2e;
+    font-family: var(--luxe-font-body);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.07em;
+    padding: 5px 10px;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+
+.luxe-expert-img-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15, 28, 46, 0.55) 0%, transparent 60%);
+}
+
+.luxe-expert-stat-num {
+    font-family: var(--luxe-font-body);
+    font-size: 22px;
+    font-weight: 800;
+    color: #93c5fd;
+    line-height: 1;
+    margin-bottom: 2px;
+}
+
+.luxe-expert-stat-lbl {
+    font-family: var(--luxe-font-body);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.62);
+}
+
+.luxe-expert-quote-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid #93c5fd;
+    border-radius: 0 12px 12px 0;
+    padding: 10px 12px 10px 16px;
+    margin: 0 0 10px 0;
+}
+
+.luxe-expert-quote-mark {
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    font-size: 36px;
+    color: rgba(147, 197, 253, 0.14);
+    font-family: Georgia, serif;
+    line-height: 1;
+}
+
+.luxe-expert-quote-text {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff;
+    margin: 16px 0;
+    padding-left: 20px;
+    border-left: 3px solid #93c5fd;
+}
+
+.luxe-expert-footer-bio {
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+    padding-top: 12px;
+    margin-top: 16px;
+}
+
+.luxe-priorities-title {
+    font-family: var(--luxe-font-body);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: rgba(255,255,255,0.52);
+    margin: 20px 0 8px;
+}
+
+.luxe-expert-eyebrow-row {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #93c5fd;
+    margin-bottom: 8px;
+}
+
+.luxe-editorial-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff;
+    margin: 0 0 16px 0;
 }
 
 .luxe-expert-bio {
@@ -1710,9 +2045,20 @@
         height: 200px;
     }
 
-    .luxe-cta-crystal-1 { width: 54px; height: 54px; }
-    .luxe-cta-crystal-2 { width: 36px; height: 36px; }
-    .luxe-cta-crystal-3 { width: 26px; height: 26px; }
+    .luxe-cta-crystal-1 {
+        width: 54px;
+        height: 54px;
+    }
+
+    .luxe-cta-crystal-2 {
+        width: 36px;
+        height: 36px;
+    }
+
+    .luxe-cta-crystal-3 {
+        width: 26px;
+        height: 26px;
+    }
 
     .luxe-choose-criteria-col {
         grid-template-columns: 1fr;
@@ -1727,11 +2073,11 @@
         border-left: none;
     }
 
-    .luxe-page .medi-hero-content-wrapper {
+    .luxe-page .luxe-hero-content-wrapper {
         padding: 110px 24px 80px;
     }
 
-    .luxe-page .medi-hero-main-title {
+    .luxe-page .luxe-hero-main-title {
         font-size: 40px;
         max-width: 100%;
     }
@@ -1762,8 +2108,8 @@
         font-size: 34px;
     }
 
-    .luxe-intro-text-col .medi-section-heading,
-    .luxe-expert-content-panel .medi-section-heading {
+    .luxe-intro-text-col .luxe-section-heading,
+    .luxe-expert-content-panel .luxe-section-heading {
         font-size: 34px !important;
     }
 }
@@ -1800,7 +2146,7 @@
         text-align: center;
     }
 
-    .luxe-expert-content-panel .medi-section-heading {
+    .luxe-expert-content-panel .luxe-section-heading {
         font-size: 28px !important;
     }
 
@@ -1874,7 +2220,7 @@
         font-size: 28px;
     }
 
-    .luxe-intro-text-col .medi-section-heading {
+    .luxe-intro-text-col .luxe-section-heading {
         font-size: 28px !important;
     }
 
@@ -1924,18 +2270,129 @@
         gap: 10px;
     }
 
-    .luxe-page .medi-hero-content-wrapper {
+    .luxe-page .luxe-hero-content-wrapper {
         padding: 90px 16px 60px;
     }
 
-    .luxe-page .medi-hero-main-title {
+    .luxe-page .luxe-hero-main-title {
         font-size: 28px;
         margin: 0 0 20px 0;
         max-width: 100%;
     }
 
-    .luxe-page .medi-hero-subtitle-text {
+    .luxe-page .luxe-hero-subtitle-text {
         font-size: 16px;
         margin-bottom: 16px;
+    }
+}
+
+/* ── RESPONSIVE — 991px tablet (Playfair/Montserrat spec) ── */
+@media (max-width: 991px) {
+    .luxe-page .luxe-hero-main-title {
+        font-size: 32px !important;
+        line-height: 1.15 !important;
+    }
+
+    .luxe-page .luxe-section-heading,
+    .luxe-page .luxe-editorial-title,
+    .luxe-page .luxe-cta-title {
+        font-size: 28px !important;
+        line-height: 1.25 !important;
+        text-align: center !important;
+    }
+
+    .luxe-page .luxe-heading-separator-bar,
+    .luxe-bar-centered {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block !important;
+    }
+
+    .luxe-expert-eyebrow-row,
+    .luxe-expert-content-panel .luxe-eyebrow {
+        justify-content: center !important;
+    }
+
+    .luxe-page .luxe-hero-subtitle-text,
+    .luxe-page .luxe-intro-text-col p,
+    .luxe-page .luxe-different-intro,
+    .luxe-page .luxe-destinations-intro,
+    .luxe-page .luxe-lines-intro,
+    .luxe-page .luxe-eclipse-lead,
+    .luxe-page .luxe-eclipse-body,
+    .luxe-page .luxe-wildlife-intro,
+    .luxe-page .luxe-onboard-intro,
+    .luxe-page .luxe-seasons-intro,
+    .luxe-page .luxe-choose-text-col p,
+    .luxe-page .luxe-value-text-col p,
+    .luxe-page .luxe-review-text-col p,
+    .luxe-page .luxe-planning-text-col p,
+    .luxe-page .luxe-cta-subtitle,
+    .luxe-page .luxe-faq-question-row span {
+        font-size: 17px !important;
+    }
+
+    .luxe-page .luxe-expert-quote,
+    .luxe-page .luxe-editorial-lead-para,
+    .luxe-page .luxe-editorial-body-para,
+    .luxe-page .luxe-expert-quote-text {
+        font-size: 18px !important;
+    }
+
+    .luxe-expert-content-panel .luxe-editorial-title {
+        font-size: 28px !important;
+    }
+}
+
+/* ── RESPONSIVE — 640px mobile (Playfair/Montserrat spec) ── */
+@media (max-width: 640px) {
+    .luxe-page .luxe-hero-main-title {
+        font-size: 26px !important;
+        line-height: 1.15 !important;
+    }
+
+    .luxe-page .luxe-section-heading,
+    .luxe-page .luxe-editorial-title,
+    .luxe-page .luxe-cta-title {
+        font-size: 24px !important;
+        line-height: 1.25 !important;
+        text-align: center !important;
+    }
+
+    .luxe-page .luxe-heading-separator-bar,
+    .luxe-bar-centered {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block !important;
+    }
+
+    .luxe-page .luxe-hero-subtitle-text,
+    .luxe-page .luxe-intro-text-col p,
+    .luxe-page .luxe-different-intro,
+    .luxe-page .luxe-destinations-intro,
+    .luxe-page .luxe-lines-intro,
+    .luxe-page .luxe-eclipse-lead,
+    .luxe-page .luxe-eclipse-body,
+    .luxe-page .luxe-wildlife-intro,
+    .luxe-page .luxe-onboard-intro,
+    .luxe-page .luxe-seasons-intro,
+    .luxe-page .luxe-choose-text-col p,
+    .luxe-page .luxe-value-text-col p,
+    .luxe-page .luxe-review-text-col p,
+    .luxe-page .luxe-planning-text-col p,
+    .luxe-page .luxe-cta-subtitle,
+    .luxe-page .luxe-faq-question-row span {
+        font-size: 16px !important;
+    }
+
+    .luxe-page .luxe-expert-quote,
+    .luxe-page .luxe-editorial-lead-para,
+    .luxe-page .luxe-editorial-body-para,
+    .luxe-page .luxe-expert-quote-text {
+        font-size: 18px !important;
+    }
+
+    .luxe-expert-content-panel .luxe-editorial-title {
+        font-size: 24px !important;
     }
 }

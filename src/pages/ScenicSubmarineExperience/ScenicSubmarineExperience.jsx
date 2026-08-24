@@ -1,4 +1,4 @@
-import ProfilePictureAH from "../../assets/Media (2).jpg"
+﻿import ProfilePictureAH from "../../assets/Media (2).jpg"
 import Navbar from '../../components/Navbar/Navbar'
 import './ScenicSubmarineExperience.css'
 import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
@@ -169,24 +169,24 @@ function ScenicSubmarineExperience() {
             <Navbar />
 
             {/* ── HERO ── */}
-            <section className="medi-hero-section">
+            <section className="sub-hero-section">
                 {subHeroImages.map((img, idx) => (
                     <div
                         key={idx}
-                        className={`medi-hero-background ${subCurrentHero === idx ? 'medi-active' : ''}`}
+                        className={`sub-hero-background ${subCurrentHero === idx ? 'sub-active' : ''}`}
                         style={{ backgroundImage: `url(${img})` }}
                     />
                 ))}
-                <div className="medi-hero-overlay-layer"></div>
-                <div className="medi-hero-content-wrapper">
-                    <div className="medi-hero-eyebrow-tag">
+                <div className="sub-hero-overlay-layer"></div>
+                <div className="sub-hero-content-wrapper">
+                    <div className="sub-hero-eyebrow-tag">
                         <Anchor size={16} />
                         <span>Scenic Eclipse · Trips &amp; Ships Luxury Travel</span>
                     </div>
-                    <h1 className="medi-hero-main-title">
+                    <h1 className="sub-hero-main-title">
                         Scenic Submarine Experience
                     </h1>
-                    <p className="medi-hero-subtitle-text">
+                    <p className="sub-hero-subtitle-text">
                         Explore the ocean depths in Scenic Neptune™ &mdash; an exclusive underwater adventure revealing marine worlds few travelers ever witness.
                     </p>
                 </div>
@@ -199,8 +199,8 @@ function ScenicSubmarineExperience() {
 
                         <div className="sub-intro-text-col">
                             <span className="sub-eyebrow">UNDERWATER ADVENTURE</span>
-                            <h2 className="medi-section-heading">Is the Scenic Submarine Experience Worth It?</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="sub-section-heading">Is the Scenic Submarine Experience Worth It?</h2>
+                            <div className="sub-heading-separator-bar"></div>
                             <p className="sub-intro-lead">The Scenic Submarine Experience is one of the most extraordinary adventures available aboard Scenic Eclipse and Scenic Eclipse II.</p>
                             <p className="sub-intro-body">Unlike traditional cruise excursions, this optional Discovery Experience allows guests to explore the underwater world in a state-of-the-art submersible, revealing marine environments few travelers ever have the opportunity to witness.</p>
                             <p className="sub-intro-body">From vibrant coral reefs and underwater volcanic formations to fascinating marine life, Scenic's submarine excursions provide a completely different perspective of the destinations visited.</p>
@@ -246,8 +246,8 @@ function ScenicSubmarineExperience() {
 
                         <div className="sub-neptune-text-col-refined">
                             <span className="sub-eyebrow">Luxury Submersible</span>
-                            <h2 className="medi-section-heading">Meet Scenic Neptune™</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="sub-section-heading">Meet Scenic Neptune™</h2>
+                            <div className="sub-heading-separator-bar"></div>
 
                             <p className="sub-neptune-body">
                                 Designed for both comfort and safety, Scenic Neptune allows guests to experience the underwater world while enjoying the same luxury found throughout the ship. Guests enjoy:
@@ -280,8 +280,8 @@ function ScenicSubmarineExperience() {
                 <div className="sub-views-container">
                     <div className="sub-views-header">
                         <span className="sub-eyebrow sub-eyebrow-light">UNDERWATER WONDERS</span>
-                        <h2 className="medi-section-heading sub-white-heading">What You'll See Beneath the Surface</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered sub-separator-white"></div>
+                        <h2 className="sub-section-heading sub-white-heading">What You'll See Beneath the Surface</h2>
+                        <div className="sub-heading-separator-bar sub-bar-centered sub-separator-white"></div>
                         <p className="sub-views-intro">Every submarine excursion offers the opportunity to observe incredible underwater scenery.</p>
                         <p className="sub-views-sub">Depending on your destination, you may encounter:</p>
                     </div>
@@ -315,8 +315,8 @@ function ScenicSubmarineExperience() {
                 <div className="sub-destinations-container">
                     <div className="sub-destinations-header">
                         <span className="sub-eyebrow">EXPEDITION DESTINATIONS</span>
-                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Best Destinations for Scenic Submarine Adventures</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <h2 className="sub-section-heading" style={{ textAlign: 'center' }}>Best Destinations for Scenic Submarine Adventures</h2>
+                        <div className="sub-heading-separator-bar sub-bar-centered"></div>
                         <p className="sub-destinations-intro">Submarine operations are available on select Scenic Eclipse voyages, depending on destination, weather, and local regulations.</p>
                         <p className="sub-destinations-sub">Top destinations include:</p>
                     </div>
@@ -382,8 +382,8 @@ function ScenicSubmarineExperience() {
 
                         <div className="sub-safety-text-col">
                             <span className="sub-eyebrow">GUEST PROTECTION</span>
-                            <h2 className="medi-section-heading">Safety and Technology</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="sub-section-heading">Safety and Technology</h2>
+                            <div className="sub-heading-separator-bar"></div>
                             <p className="sub-safety-lead">Scenic places the highest priority on guest safety during every submarine excursion.</p>
                             <p className="sub-safety-body">Each dive is carefully planned and conducted only when environmental conditions are suitable. Safety features include:</p>
 
@@ -426,8 +426,8 @@ function ScenicSubmarineExperience() {
                 <div className="sub-love-container">
                     <div className="sub-love-header">
                         <span className="sub-eyebrow">GUEST PERSPECTIVES</span>
-                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Why Travelers Love the Scenic Submarine Experience</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <h2 className="sub-section-heading" style={{ textAlign: 'center' }}>Why Travelers Love the Scenic Submarine Experience</h2>
+                        <div className="sub-heading-separator-bar sub-bar-centered"></div>
                         <p className="sub-love-intro">Guests consistently describe the submarine excursion as one of the highlights of their Scenic expedition.</p>
                     </div>
 
@@ -457,8 +457,8 @@ function ScenicSubmarineExperience() {
                 <div className="sub-compare-container">
                     <div className="sub-compare-header">
                         <span className="sub-eyebrow">VALUE COMPARISON</span>
-                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Scenic Submarine Experience vs <br /> Traditional Snorkeling and Diving</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <h2 className="sub-section-heading" style={{ textAlign: 'center' }}>Scenic Submarine Experience vs <br /> Traditional Snorkeling and Diving</h2>
+                        <div className="sub-heading-separator-bar sub-bar-centered"></div>
                         <p className="sub-compare-intro">While snorkeling and scuba diving allow guests to enter the water, Scenic's submarine experience offers a completely different level of comfort and accessibility.</p>
                     </div>
 
@@ -490,8 +490,8 @@ function ScenicSubmarineExperience() {
                 <div className="sub-review-container">
                     <div className="sub-review-header">
                         <span className="sub-eyebrow sub-eyebrow-light">OUR EXPERT REVIEW</span>
-                        <h2 className="medi-section-heading sub-white-heading">Our Expert Review</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered sub-separator-white"></div>
+                        <h2 className="sub-section-heading sub-white-heading">Our Expert Review</h2>
+                        <div className="sub-heading-separator-bar sub-bar-centered sub-separator-white"></div>
                         <p className="sub-review-intro">After evaluating Scenic's submarine program, we believe it is one of the most unique luxury expedition experiences available anywhere in the cruise industry.</p>
                     </div>
 
@@ -547,101 +547,74 @@ function ScenicSubmarineExperience() {
             </section>
 
             {/* ── WHY TRIPS & SHIPS ── */}
-            
-                {/* EXPERT INSIGHT */}
-                <section id="explora-growth-insight" className="medi-expert-editorial-section medi-growth-insight-section">
-                    <div className="medi-expert-editorial-container">
-                        <div className="medi-expert-editorial-card">
 
-                            {/* Left Side: Portrait and Floating Stat Badge */}
-                            <div className="medi-editorial-portrait-block">
-                                <div className="medi-editorial-image-frame">
-                                    <img src={ProfilePictureAH} alt="Angela Hughes - Luxury Cruise Expert" />
-                                    <div className="medi-editorial-gradient-layer"></div>
-                                </div>
-
-                                <div className="medi-editorial-floating-stat">
-                                    <div className="medi-stat-tile">
-                                        <span className="medi-stat-number">40+</span>
-                                        <span className="medi-stat-label">Years Experience</span>
-                                    </div>
-                                    <div className="medi-stat-divider"></div>
-                                    <div className="medi-stat-tile">
-                                        <span className="medi-stat-number">121+</span>
-                                        <span className="medi-stat-label">Countries Visited</span>
-                                    </div>
-                                </div>
+            {/* EXPERT INSIGHT — sub- isolated, tight, Celebrity ref */}
+            <section id="sub-growth-insight" className="sub-expert-insight-section">
+                <div className="sub-expert-insight-container">
+                    <div className="sub-expert-portrait-panel">
+                        <div className="sub-expert-img-frame">
+                            <img src={ProfilePictureAH} alt="Angela Hughes - Luxury Cruise Expert" className="sub-expert-img" />
+                            <div className="sub-expert-img-overlay"></div>
+                            <span className="sub-expert-badge">EXPERT ADVISOR</span>
+                        </div>
+                        <div className="sub-expert-stats-strip">
+                            <div className="sub-expert-stat-box">
+                                <div className="sub-expert-stat-num">40+</div>
+                                <div className="sub-expert-stat-lbl">Years Experience</div>
                             </div>
-
-                            {/* Right Side: Editorial Text */}
-                            <div className="medi-editorial-content-block">
-                                <div className="medi-editorial-header">
-                                    <div className="medi-editorial-eyebrow-container">
-                                        <Award size={18} className="medi-editorial-icon-badge" />
-                                        <span className="medi-editorial-eyebrow">Expert Insight from Angela Hughes</span>
-                                    </div>
-                                    <h2 className="medi-editorial-title">
-                                        Why Modern Luxury Travelers <br className="medi-growth-title-break" />Are Choosing Scenic
-                                    </h2>
-                                    <div className="medi-editorial-accent-bar"></div>
-                                </div>
-
-                                <p className="medi-editorial-lead-para">
-                                    According to Angela Hughes, many travelers are initially attracted to Scenic because of its ultra-luxury discovery yachts — but ultimately fall in love with the all-inclusive onboard expedition experience.
-                                </p>
-
-                                <div className="medi-priorities-box">
-                                    <p className="medi-priorities-intro">
-                                        After more than four decades in luxury travel and visiting over 121 countries, Angela consistently sees Scenic travelers prioritizing:
-                                    </p>
-                                    <div className="medi-priorities-grid-pills">
-                                        {[
-                                            'Polar discovery yachting',
-                                            'Truly all-inclusive luxury',
-                                            'Butler service for every suite',
-                                            'Helicopter & submarine features',
-                                            'Up to 10 dining experiences',
-                                            'Immersive Zodiac excursions'
-                                        ].map((item, idx) => (
-                                            <div key={idx} className="medi-priority-pill-item">
-                                                <CheckCircle size={15} className="medi-priority-check" />
-                                                <span>{item}</span>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-
-                                <p className="medi-editorial-body-para">
-                                    As founder of Luxury Travel University and a globally recognized luxury travel speaker, Angela Hughes helps travelers compare luxury cruise experiences realistically — based on real-world expertise rather than generic online recommendations.
-                                </p>
-
-                                <div className="medi-expertise-section-box">
-                                    <span className="medi-expertise-intro-label">Her expertise spans:</span>
-                                    <div className="medi-expertise-horizontal-strip">
-                                        {[
-                                            { title: 'Ultra-luxury yachting', icon: Ship },
-                                            { title: 'Polar expeditions', icon: Mountain },
-                                            { title: 'Butler services', icon: Users },
-                                            { title: 'Luxury cruise planning', icon: Compass },
-                                            { title: 'Custom expedition travel', icon: Sparkles }
-                                        ].map((item, idx) => {
-                                            const IconComponent = item.icon
-                                            return (
-                                                <div key={idx} className="medi-expertise-pills-row">
-                                                    <div className="medi-expertise-pill-icon-box">
-                                                        <IconComponent size={14} />
-                                                    </div>
-                                                    <span className="medi-expertise-pill-text">{item.title}</span>
-                                                </div>
-                                            )
-                                        })}
-                                    </div>
-                                </div>
+                            <div className="sub-expert-stat-box">
+                                <div className="sub-expert-stat-num">121+</div>
+                                <div className="sub-expert-stat-lbl">Countries Visited</div>
                             </div>
-
                         </div>
                     </div>
-                </section>
+
+                    <div className="sub-expert-content-panel">
+                        <div className="sub-expert-eyebrow-row">
+                            <Award size={14} />
+                            <span className="sub-eyebrow">Expert Insight from Angela Hughes</span>
+                        </div>
+                        <h2 className="sub-editorial-title">
+                            Why Modern Luxury Travelers Are Choosing Scenic
+                        </h2>
+                        <div className="sub-heading-separator-bar"></div>
+
+                        <div className="sub-expert-quote-card">
+                            <span className="sub-expert-quote-mark">"</span>
+                            <p className="sub-expert-quote-text sub-expert-quote">
+                                According to Angela Hughes, many travelers are initially attracted to Scenic because of its ultra-luxury discovery yachts — but ultimately fall in love with the all-inclusive onboard expedition experience.
+                            </p>
+                        </div>
+
+                        <div className="sub-expert-priorities">
+                            <h5 className="sub-priorities-title">Scenic travelers consistently prioritize:</h5>
+                            <div className="sub-expert-pills">
+                                {[
+                                    'Polar discovery yachting',
+                                    'Truly all-inclusive luxury',
+                                    'Butler service for every suite',
+                                    'Helicopter & submarine features',
+                                    'Up to 10 dining experiences',
+                                    'Immersive Zodiac excursions'
+                                ].map((pill) => (
+                                    <span key={pill} className="sub-expert-pill">
+                                        <CheckCircle size={12} />
+                                        <span>{pill}</span>
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+
+                        <p className="sub-editorial-text sub-expert-quote">
+                            As founder of Luxury Travel University and a globally recognized luxury travel speaker, Angela Hughes helps travelers compare luxury cruise experiences realistically — based on real-world expertise rather than generic online recommendations.
+                        </p>
+
+                        <div className="sub-expert-footer-bio">
+                            <p className="sub-expert-bio">Her expertise spans ultra-luxury yachting, polar expeditions, butler services, luxury cruise planning and custom expedition travel — backed by 40+ years and 121+ countries visited.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 
             {/* ── FINAL THOUGHTS ── */}
@@ -677,8 +650,8 @@ function ScenicSubmarineExperience() {
             <section className="sub-faq-main-section">
                 <div className="sub-faq-container">
                     <div style={{ textAlign: 'center' }}>
-                        <h2 className="medi-section-heading">Frequently Asked Questions</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <h2 className="sub-section-heading">Frequently Asked Questions</h2>
+                        <div className="sub-heading-separator-bar sub-bar-centered"></div>
                     </div>
                     <div className="sub-faq-list-wrapper">
                         {subFaqs.map((faq, index) => (

@@ -1,4 +1,4 @@
-import ProfilePictureAH from "../../assets/Media (2).jpg"
+﻿import ProfilePictureAH from "../../assets/Media (2).jpg"
 import Navbar from '../../components/Navbar/Navbar'
 import './ScenicHelicopterExperience.css'
 
@@ -163,24 +163,24 @@ function ScenicHelicopterExperience() {
             <Navbar />
 
             {/* ── HERO ── */}
-            <section className="medi-hero-section">
+            <section className="hel-hero-section">
                 {helHeroImages.map((img, idx) => (
                     <div
                         key={idx}
-                        className={`medi-hero-background ${helCurrentHero === idx ? 'medi-active' : ''}`}
+                        className={`hel-hero-background ${helCurrentHero === idx ? 'hel-active' : ''}`}
                         style={{ backgroundImage: `url(${img})` }}
                     />
                 ))}
-                <div className="medi-hero-overlay-layer"></div>
-                <div className="medi-hero-content-wrapper">
-                    <div className="medi-hero-eyebrow-tag">
+                <div className="hel-hero-overlay-layer"></div>
+                <div className="hel-hero-content-wrapper">
+                    <div className="hel-hero-eyebrow-tag">
                         <Anchor size={16} />
                         <span>Scenic Eclipse · Trips &amp; Ships Luxury Travel</span>
                     </div>
-                    <h1 className="medi-hero-main-title">
+                    <h1 className="hel-hero-main-title">
                         Scenic Helicopter Experience
                     </h1>
-                    <p className="medi-hero-subtitle-text">
+                    <p className="hel-hero-subtitle-text">
                         Discover the world from above aboard Scenic Eclipse &mdash; breathtaking flightseeing adventures over glaciers, fjords, and remote wilderness.
                     </p>
                 </div>
@@ -193,8 +193,8 @@ function ScenicHelicopterExperience() {
 
                         <div className="hel-intro-text-col">
                             <span className="hel-eyebrow">EXPEDITION ADVANTAGE</span>
-                            <h2 className="medi-section-heading">A Perspective Only Scenic Can Offer</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="hel-section-heading">A Perspective Only Scenic Can Offer</h2>
+                            <div className="hel-heading-separator-bar"></div>
                             <p className="hel-intro-lead">One of the most extraordinary features that sets Scenic Eclipse apart from other luxury expedition ships is the opportunity to explore the world from above.</p>
                             <p className="hel-intro-body">The Scenic Helicopter Experience gives guests an unforgettable perspective of glaciers, fjords, remote islands, waterfalls, deserts, and pristine coastlines that simply cannot be appreciated from sea level.</p>
                             <p className="hel-intro-body">Available on select itineraries and subject to weather and operational conditions, Scenic&apos;s twin-engine helicopters offer breathtaking flightseeing adventures led by experienced pilots.</p>
@@ -243,8 +243,8 @@ function ScenicHelicopterExperience() {
 
                         <div className="hel-aircraft-text-col">
                             <span className="hel-eyebrow">STATE-OF-THE-ART AIRCRAFT</span>
-                            <h2 className="medi-section-heading">Scenic&apos;s State-of-the-Art Helicopters</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="hel-section-heading">Scenic&apos;s State-of-the-Art Helicopters</h2>
+                            <div className="hel-heading-separator-bar"></div>
                             <p className="hel-aircraft-lead">Scenic Eclipse carries specially designed Airbus H130 helicopters (or equivalent, depending on regulations and itinerary) built for sightseeing and expedition travel.</p>
                             <p className="hel-aircraft-body">Guests benefit from:</p>
 
@@ -275,8 +275,8 @@ function ScenicHelicopterExperience() {
                 <div className="hel-views-container">
                     <div className="hel-views-header">
                         <span className="hel-eyebrow hel-eyebrow-light">AERIAL PERSPECTIVES</span>
-                        <h2 className="medi-section-heading hel-white-heading">What You&apos;ll See From the Air</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered hel-separator-white"></div>
+                        <h2 className="hel-section-heading hel-white-heading">What You&apos;ll See From the Air</h2>
+                        <div className="hel-heading-separator-bar hel-bar-centered hel-separator-white"></div>
                         <p className="hel-views-intro">Flying above remote landscapes offers a perspective unavailable to traditional shore excursions.</p>
                         <p className="hel-views-sub">Highlights may include:</p>
                     </div>
@@ -310,8 +310,8 @@ function ScenicHelicopterExperience() {
                 <div className="hel-destinations-container">
                     <div className="hel-destinations-header">
                         <span className="hel-eyebrow">EXPEDITION DESTINATIONS</span>
-                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Best Destinations for Scenic Helicopter Flights</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <h2 className="hel-section-heading" style={{ textAlign: 'center' }}>Best Destinations for Scenic Helicopter Flights</h2>
+                        <div className="hel-heading-separator-bar hel-bar-centered"></div>
                         <p className="hel-destinations-intro">Helicopter operations are available on selected Scenic Eclipse voyages, depending on destination, regulations, and weather.</p>
                         <p className="hel-destinations-sub">Top destinations include:</p>
                     </div>
@@ -377,8 +377,8 @@ function ScenicHelicopterExperience() {
 
                         <div className="hel-safety-text-col">
                             <span className="hel-eyebrow">GUEST PROTECTION</span>
-                            <h2 className="medi-section-heading">Scenic&apos;s Uncompromising Safety Standards</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="hel-section-heading">Scenic&apos;s Uncompromising Safety Standards</h2>
+                            <div className="hel-heading-separator-bar"></div>
                             <p className="hel-safety-lead">Safety remains Scenic&apos;s highest priority for every helicopter operation.</p>
                             <p className="hel-safety-body">Guests can expect:</p>
 
@@ -421,8 +421,8 @@ function ScenicHelicopterExperience() {
                 <div className="hel-review-container">
                     <div className="hel-review-header">
                         <span className="hel-eyebrow hel-eyebrow-light">OUR EXPERT REVIEW</span>
-                        <h2 className="medi-section-heading hel-white-heading">Is the Scenic Helicopter Experience Worth It?</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered hel-separator-white"></div>
+                        <h2 className="hel-section-heading hel-white-heading">Is the Scenic Helicopter Experience Worth It?</h2>
+                        <div className="hel-heading-separator-bar hel-bar-centered hel-separator-white"></div>
                         <p className="hel-review-intro">For many guests, the answer is a definite yes.</p>
                         <p className="hel-review-sub">Here is what we love, and what to consider:</p>
                     </div>
@@ -483,8 +483,8 @@ function ScenicHelicopterExperience() {
                 <div className="hel-compare-container">
                     <div className="hel-compare-header">
                         <span className="hel-eyebrow">VALUE COMPARISON</span>
-                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Scenic Helicopter vs. Traditional Shore Excursions</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <h2 className="hel-section-heading" style={{ textAlign: 'center' }}>Scenic Helicopter vs. Traditional Shore Excursions</h2>
+                        <div className="hel-heading-separator-bar hel-bar-centered"></div>
                         <p className="hel-compare-intro">While traditional shore excursions provide immersive experiences on land, helicopter flights reveal landscapes from an entirely different perspective.</p>
                     </div>
 
@@ -512,101 +512,74 @@ function ScenicHelicopterExperience() {
             </section>
 
             {/* ── WHY TRIPS & SHIPS ── */}
-            
-                {/* EXPERT INSIGHT */}
-                <section id="explora-growth-insight" className="medi-expert-editorial-section medi-growth-insight-section">
-                    <div className="medi-expert-editorial-container">
-                        <div className="medi-expert-editorial-card">
 
-                            {/* Left Side: Portrait and Floating Stat Badge */}
-                            <div className="medi-editorial-portrait-block">
-                                <div className="medi-editorial-image-frame">
-                                    <img src={ProfilePictureAH} alt="Angela Hughes - Luxury Cruise Expert" />
-                                    <div className="medi-editorial-gradient-layer"></div>
-                                </div>
-
-                                <div className="medi-editorial-floating-stat">
-                                    <div className="medi-stat-tile">
-                                        <span className="medi-stat-number">40+</span>
-                                        <span className="medi-stat-label">Years Experience</span>
-                                    </div>
-                                    <div className="medi-stat-divider"></div>
-                                    <div className="medi-stat-tile">
-                                        <span className="medi-stat-number">121+</span>
-                                        <span className="medi-stat-label">Countries Visited</span>
-                                    </div>
-                                </div>
+            {/* EXPERT INSIGHT — hel- isolated, tight, Celebrity ref */}
+            <section id="hel-growth-insight" className="hel-expert-insight-section">
+                <div className="hel-expert-insight-container">
+                    <div className="hel-expert-portrait-panel">
+                        <div className="hel-expert-img-frame">
+                            <img src={ProfilePictureAH} alt="Angela Hughes - Luxury Cruise Expert" className="hel-expert-img" />
+                            <div className="hel-expert-img-overlay"></div>
+                            <span className="hel-expert-badge">EXPERT ADVISOR</span>
+                        </div>
+                        <div className="hel-expert-stats-strip">
+                            <div className="hel-expert-stat-box">
+                                <div className="hel-expert-stat-num">40+</div>
+                                <div className="hel-expert-stat-lbl">Years Experience</div>
                             </div>
-
-                            {/* Right Side: Editorial Text */}
-                            <div className="medi-editorial-content-block">
-                                <div className="medi-editorial-header">
-                                    <div className="medi-editorial-eyebrow-container">
-                                        <Award size={18} className="medi-editorial-icon-badge" />
-                                        <span className="medi-editorial-eyebrow">Expert Insight from Angela Hughes</span>
-                                    </div>
-                                    <h2 className="medi-editorial-title">
-                                        Why Modern Luxury Travelers <br className="medi-growth-title-break" />Are Choosing Scenic
-                                    </h2>
-                                    <div className="medi-editorial-accent-bar"></div>
-                                </div>
-
-                                <p className="medi-editorial-lead-para">
-                                    According to Angela Hughes, many travelers are initially attracted to Scenic because of its ultra-luxury discovery yachts — but ultimately fall in love with the all-inclusive onboard expedition experience.
-                                </p>
-
-                                <div className="medi-priorities-box">
-                                    <p className="medi-priorities-intro">
-                                        After more than four decades in luxury travel and visiting over 121 countries, Angela consistently sees Scenic travelers prioritizing:
-                                    </p>
-                                    <div className="medi-priorities-grid-pills">
-                                        {[
-                                            'Polar discovery yachting',
-                                            'Truly all-inclusive luxury',
-                                            'Butler service for every suite',
-                                            'Helicopter & submarine features',
-                                            'Up to 10 dining experiences',
-                                            'Immersive Zodiac excursions'
-                                        ].map((item, idx) => (
-                                            <div key={idx} className="medi-priority-pill-item">
-                                                <CheckCircle size={15} className="medi-priority-check" />
-                                                <span>{item}</span>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-
-                                <p className="medi-editorial-body-para">
-                                    As founder of Luxury Travel University and a globally recognized luxury travel speaker, Angela Hughes helps travelers compare luxury cruise experiences realistically — based on real-world expertise rather than generic online recommendations.
-                                </p>
-
-                                <div className="medi-expertise-section-box">
-                                    <span className="medi-expertise-intro-label">Her expertise spans:</span>
-                                    <div className="medi-expertise-horizontal-strip">
-                                        {[
-                                            { title: 'Ultra-luxury yachting', icon: Ship },
-                                            { title: 'Polar expeditions', icon: Mountain },
-                                            { title: 'Butler services', icon: Users },
-                                            { title: 'Luxury cruise planning', icon: Compass },
-                                            { title: 'Custom expedition travel', icon: Sparkles }
-                                        ].map((item, idx) => {
-                                            const IconComponent = item.icon
-                                            return (
-                                                <div key={idx} className="medi-expertise-pills-row">
-                                                    <div className="medi-expertise-pill-icon-box">
-                                                        <IconComponent size={14} />
-                                                    </div>
-                                                    <span className="medi-expertise-pill-text">{item.title}</span>
-                                                </div>
-                                            )
-                                        })}
-                                    </div>
-                                </div>
+                            <div className="hel-expert-stat-box">
+                                <div className="hel-expert-stat-num">121+</div>
+                                <div className="hel-expert-stat-lbl">Countries Visited</div>
                             </div>
-
                         </div>
                     </div>
-                </section>
+
+                    <div className="hel-expert-content-panel">
+                        <div className="hel-expert-eyebrow-row">
+                            <Award size={14} />
+                            <span className="hel-eyebrow">Expert Insight from Angela Hughes</span>
+                        </div>
+                        <h2 className="hel-editorial-title">
+                            Why Modern Luxury Travelers Are Choosing Scenic
+                        </h2>
+                        <div className="hel-heading-separator-bar"></div>
+
+                        <div className="hel-expert-quote-card">
+                            <span className="hel-expert-quote-mark">“</span>
+                            <p className="hel-expert-quote-text hel-expert-quote">
+                                According to Angela Hughes, many travelers are initially attracted to Scenic because of its ultra-luxury discovery yachts — but ultimately fall in love with the all-inclusive onboard expedition experience.
+                            </p>
+                        </div>
+
+                        <div className="hel-expert-priorities">
+                            <h5 className="hel-priorities-title">Scenic travelers consistently prioritize:</h5>
+                            <div className="hel-expert-pills">
+                                {[
+                                    'Polar discovery yachting',
+                                    'Truly all-inclusive luxury',
+                                    'Butler service for every suite',
+                                    'Helicopter & submarine features',
+                                    'Up to 10 dining experiences',
+                                    'Immersive Zodiac excursions'
+                                ].map((pill) => (
+                                    <span key={pill} className="hel-expert-pill">
+                                        <CheckCircle size={12} />
+                                        <span>{pill}</span>
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+
+                        <p className="hel-editorial-text hel-expert-quote">
+                            As founder of Luxury Travel University and a globally recognized luxury travel speaker, Angela Hughes helps travelers compare luxury cruise experiences realistically — based on real-world expertise rather than generic online recommendations.
+                        </p>
+
+                        <div className="hel-expert-footer-bio">
+                            <p className="hel-expert-bio">Her expertise spans ultra-luxury yachting, polar expeditions, butler services, luxury cruise planning and custom expedition travel — backed by 40+ years and 121+ countries visited.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 
             {/* ── FINAL THOUGHTS ── */}
@@ -642,8 +615,8 @@ function ScenicHelicopterExperience() {
             <section className="hel-faq-section">
                 <div className="hel-faq-container">
                     <div style={{ textAlign: 'center' }}>
-                        <h2 className="medi-section-heading">Frequently Asked Questions</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <h2 className="hel-section-heading">Frequently Asked Questions</h2>
+                        <div className="hel-heading-separator-bar hel-bar-centered"></div>
                     </div>
                     <div className="hel-faq-list">
                         {helFaqs.map((faq, index) => (

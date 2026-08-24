@@ -1,11 +1,13 @@
-import ProfilePictureAH from "../../assets/Media (2).jpg"
+﻿import ProfilePictureAH from "../../assets/Media (2).jpg"
 import Navbar from '../../components/Navbar/Navbar'
 import './BestLuxuryExpeditionCruises.css'
 import {
-    Helmet } from 'react-helmet-async'
+    Helmet
+} from 'react-helmet-async'
 import { Link } from 'react-router'
 import { useEffect, useState } from 'react'
-import { Anchor, ArrowRight, Binoculars, CalendarDays, Check, Compass, Phone, Sparkles, Award, Globe, CheckCircle, Ship, Mountain, Users
+import {
+    Anchor, ArrowRight, Binoculars, CalendarDays, Check, Compass, Phone, Sparkles, Award, Globe, CheckCircle, Ship, Mountain, Users
 } from 'lucide-react'
 import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
 
@@ -97,28 +99,28 @@ function BestLuxuryExpeditionCruises() {
                 <meta name="title" content="Best Luxury Expedition Cruises | Expert Guide & Reviews" />
                 <meta name="description" content="Explore the best luxury expedition cruises to Antarctica, the Arctic, Galápagos, Alaska, Kimberley, and beyond. Compare the world's top luxury expedition cruise lines, ships, destinations, and experiences." />
                 <meta name="keywords" content="Best Luxury Expedition Cruises, luxury expedition cruises, best luxury expedition cruise lines, ultra luxury expedition cruises, luxury adventure cruises, Scenic Eclipse, Silversea Expeditions, Seabourn Venture, Ponant luxury cruises, expedition yacht cruises" />
-                                <script type="application/ld+json">{JSON.stringify(schema)}</script>
+                <script type="application/ld+json">{JSON.stringify(schema)}</script>
             </Helmet>
 
             <Navbar />
 
             {/* ── HERO ── */}
-            <section className="medi-hero-section">
+            <section className="luxe-hero-section">
                 {heroImages.map((img, idx) => (
                     <div
                         key={idx}
-                        className={`medi-hero-background ${hero === idx ? 'medi-active' : ''}`}
+                        className={`luxe-hero-background ${hero === idx ? 'luxe-active' : ''}`}
                         style={{ backgroundImage: `url(${img})` }}
                     />
                 ))}
-                <div className="medi-hero-overlay-layer"></div>
-                <div className="medi-hero-content-wrapper">
-                    <div className="medi-hero-eyebrow-tag">
+                <div className="luxe-hero-overlay-layer"></div>
+                <div className="luxe-hero-content-wrapper">
+                    <div className="luxe-hero-eyebrow-tag">
                         <Anchor size={16} />
                         <span>Ultra-luxury adventure travel · Trips &amp; Ships Luxury Travel</span>
                     </div>
-                    <h1 className="medi-hero-main-title">Best Luxury Expedition Cruises</h1>
-                    <p className="medi-hero-subtitle-text">
+                    <h1 className="luxe-hero-main-title">Best Luxury Expedition Cruises</h1>
+                    <p className="luxe-hero-subtitle-text">
                         Explore the world&rsquo;s most remote destinations with exceptional accommodations, personalized service, and expert-led discovery.
                     </p>
                 </div>
@@ -130,8 +132,8 @@ function BestLuxuryExpeditionCruises() {
                     <div className="luxe-intro-grid">
                         <div className="luxe-intro-text-col">
                             <span className="luxe-eyebrow">THE COMPLETE GUIDE</span>
-                            <h2 className="medi-section-heading">Which Are the Best Luxury Expedition Cruises?</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="luxe-section-heading">Which Are the Best Luxury Expedition Cruises?</h2>
+                            <div className="luxe-heading-separator-bar"></div>
                             <p>Luxury expedition cruises combine world-class accommodations, personalized service, and fine dining with unforgettable adventures to some of the planet&rsquo;s most remote destinations. Unlike traditional cruises, these voyages focus on exploration, wildlife, and immersive experiences while maintaining the comfort and elegance of a luxury hotel.</p>
                             <p>Today&rsquo;s purpose-built expedition ships feature spacious suites, gourmet restaurants, expert expedition teams, Zodiac landings, wellness facilities, and innovative technology such as helicopters and submarines on select vessels.</p>
                             <p>Whether you&rsquo;re exploring Antarctica&rsquo;s frozen wilderness, the wildlife-rich Gal&aacute;pagos Islands, Greenland&rsquo;s dramatic fjords, or Australia&rsquo;s Kimberley coast, the best luxury expedition cruises deliver extraordinary journeys unlike any other form of travel.</p>
@@ -156,8 +158,8 @@ function BestLuxuryExpeditionCruises() {
                     <div className="luxe-different-grid">
                         <div className="luxe-different-text-col">
                             <span className="luxe-eyebrow luxe-eyebrow-light">ADVENTURE WITHOUT COMPROMISE</span>
-                            <h2 className="medi-section-heading luxe-white-heading">What Is a Luxury Expedition Cruise?</h2>
-                            <div className="medi-heading-separator-bar luxe-separator-white"></div>
+                            <h2 className="luxe-section-heading luxe-white-heading">What Is a Luxury Expedition Cruise?</h2>
+                            <div className="luxe-heading-separator-bar luxe-separator-white"></div>
                             <p className="luxe-different-intro">Luxury expedition cruises are designed for travelers who want to experience remote destinations without sacrificing comfort. Every voyage blends adventure with exceptional hospitality and personalized service.</p>
                         </div>
                         <div className="luxe-different-list-col">
@@ -172,8 +174,8 @@ function BestLuxuryExpeditionCruises() {
                 <div className="luxe-destinations-container">
                     <div className="luxe-destinations-header">
                         <span className="luxe-eyebrow">REMOTE BY DESIGN</span>
-                        <h2 className="medi-section-heading">Best Luxury Expedition Cruise Destinations</h2>
-                        <div className="medi-heading-separator-bar" style={{ margin: '0 auto 20px' }}></div>
+                        <h2 className="luxe-section-heading">Best Luxury Expedition Cruise Destinations</h2>
+                        <div className="luxe-heading-separator-bar" style={{ margin: '0 auto 20px' }}></div>
                         <p className="luxe-destinations-intro">Luxury expedition cruises visit some of the world&rsquo;s most spectacular locations. Each destination offers unique wildlife, breathtaking scenery, and unforgettable exploration opportunities.</p>
                     </div>
                     <div className="luxe-destinations-grid">
@@ -199,8 +201,8 @@ function BestLuxuryExpeditionCruises() {
                 <div className="luxe-lines-container">
                     <div className="luxe-lines-header">
                         <span className="luxe-eyebrow luxe-eyebrow-light">THE SHORTLIST</span>
-                        <h2 className="medi-section-heading luxe-white-heading">Top Luxury Expedition Cruise Lines</h2>
-                        <div className="medi-heading-separator-bar luxe-separator-white" style={{ margin: '0 auto 16px' }}></div>
+                        <h2 className="luxe-section-heading luxe-white-heading">Top Luxury Expedition Cruise Lines</h2>
+                        <div className="luxe-heading-separator-bar luxe-separator-white" style={{ margin: '0 auto 16px' }}></div>
                         <p className="luxe-lines-intro">Several cruise lines are recognized for delivering exceptional luxury expedition experiences.</p>
                     </div>
                     <div className="luxe-lines-body">
@@ -261,8 +263,8 @@ function BestLuxuryExpeditionCruises() {
                         </div>
                         <div className="luxe-eclipse-text-col">
                             <span className="luxe-eyebrow">ULTRA-LUXURY INNOVATION</span>
-                            <h2 className="medi-section-heading">Scenic Eclipse</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="luxe-section-heading">Scenic Eclipse</h2>
+                            <div className="luxe-heading-separator-bar"></div>
                             <p className="luxe-eclipse-lead">Scenic Eclipse is widely regarded as one of the most advanced luxury expedition ships ever built.</p>
                             <p className="luxe-eclipse-body">Its combination of luxury and expedition capabilities places Scenic Eclipse among the world&rsquo;s leading expedition yachts.</p>
                             <div className="luxe-eclipse-features">
@@ -279,8 +281,8 @@ function BestLuxuryExpeditionCruises() {
                     <div className="luxe-wildlife-grid">
                         <div className="luxe-wildlife-text-col">
                             <span className="luxe-eyebrow">INCREDIBLE WILDLIFE EXPERIENCES</span>
-                            <h2 className="medi-section-heading">Observe wildlife in its natural habitat.</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="luxe-section-heading">Observe wildlife in its natural habitat.</h2>
+                            <div className="luxe-heading-separator-bar"></div>
                             <p className="luxe-wildlife-intro">Expert guides help guests better understand local ecosystems and wildlife conservation.</p>
                         </div>
                         <div className="luxe-wildlife-list-col">
@@ -301,8 +303,8 @@ function BestLuxuryExpeditionCruises() {
                     <div className="luxe-onboard-grid">
                         <div className="luxe-onboard-text-col">
                             <span className="luxe-eyebrow luxe-eyebrow-light">FIVE-STAR COMFORT</span>
-                            <h2 className="medi-section-heading luxe-white-heading">Luxury Onboard Experience</h2>
-                            <div className="medi-heading-separator-bar luxe-separator-white"></div>
+                            <h2 className="luxe-section-heading luxe-white-heading">Luxury Onboard Experience</h2>
+                            <div className="luxe-heading-separator-bar luxe-separator-white"></div>
                             <p className="luxe-onboard-intro">Despite visiting remote regions, luxury expedition ships provide exceptional onboard amenities. Every aspect of the journey is designed for maximum comfort and relaxation.</p>
                         </div>
                         <div className="luxe-onboard-list-col">
@@ -317,8 +319,8 @@ function BestLuxuryExpeditionCruises() {
                 <div className="luxe-seasons-container">
                     <div className="luxe-seasons-header">
                         <span className="luxe-eyebrow luxe-eyebrow-light">SEASONAL INTELLIGENCE</span>
-                        <h2 className="medi-section-heading luxe-white-heading">Best Time for a Luxury Expedition Cruise</h2>
-                        <div className="medi-heading-separator-bar luxe-separator-white medi-bar-centered"></div>
+                        <h2 className="luxe-section-heading luxe-white-heading">Best Time for a Luxury Expedition Cruise</h2>
+                        <div className="luxe-heading-separator-bar luxe-separator-white luxe-bar-centered"></div>
                         <p className="luxe-seasons-intro">The ideal travel season depends on your chosen destination. Choosing the right season improves wildlife viewing opportunities and weather conditions.</p>
                     </div>
                     <div className="luxe-seasons-grid">
@@ -341,8 +343,8 @@ function BestLuxuryExpeditionCruises() {
                     <div className="luxe-choose-grid">
                         <div className="luxe-choose-text-col">
                             <span className="luxe-eyebrow">A BETTER MATCH</span>
-                            <h2 className="medi-section-heading">How to Choose the Best Luxury Expedition Cruise</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="luxe-section-heading">How to Choose the Best Luxury Expedition Cruise</h2>
+                            <div className="luxe-heading-separator-bar"></div>
                             <p>When comparing luxury expedition cruises, consider destination, cruise line, ship size, included excursions, luxury level, suite options, expedition activities, wildlife interests, travel season, and budget.</p>
                             <p>An experienced luxury travel advisor can help identify the itinerary that best matches your travel preferences.</p>
                             <Link to="/contact" className="luxe-button">Build my shortlist <ArrowRight size={16} /></Link>
@@ -366,8 +368,8 @@ function BestLuxuryExpeditionCruises() {
                     <div className="luxe-value-grid">
                         <div className="luxe-value-text-col">
                             <span className="luxe-eyebrow luxe-eyebrow-light">VALUE BEYOND THE FARE</span>
-                            <h2 className="medi-section-heading luxe-white-heading">Are Luxury Expedition Cruises Worth It?</h2>
-                            <div className="medi-heading-separator-bar luxe-separator-white"></div>
+                            <h2 className="luxe-section-heading luxe-white-heading">Are Luxury Expedition Cruises Worth It?</h2>
+                            <div className="luxe-heading-separator-bar luxe-separator-white"></div>
                             <p>Luxury expedition cruises provide experiences unavailable on traditional cruises. For travelers seeking meaningful exploration combined with five-star comfort, luxury expedition cruising offers outstanding value.</p>
                         </div>
                         <div className="luxe-value-benefits-col">
@@ -384,8 +386,8 @@ function BestLuxuryExpeditionCruises() {
                     <div className="luxe-review-grid">
                         <div className="luxe-review-text-col">
                             <span className="luxe-eyebrow luxe-eyebrow-light">OUR EXPERT REVIEW</span>
-                            <h2 className="medi-section-heading luxe-white-heading">Adventure travel at its highest standard.</h2>
-                            <div className="medi-heading-separator-bar luxe-separator-white"></div>
+                            <h2 className="luxe-section-heading luxe-white-heading">Adventure travel at its highest standard.</h2>
+                            <div className="luxe-heading-separator-bar luxe-separator-white"></div>
                             <p>After reviewing the world&rsquo;s leading luxury expedition cruise lines, we believe these voyages represent the highest standard of adventure travel.</p>
                             <p>Overall, the <strong>Best Luxury Expedition Cruises</strong> combine exploration, comfort, education, and world-class service to create unforgettable travel experiences.</p>
                             <div className="luxe-review-consider-wrap">
@@ -414,8 +416,8 @@ function BestLuxuryExpeditionCruises() {
                     <div className="luxe-planning-grid">
                         <div className="luxe-planning-text-col">
                             <span className="luxe-eyebrow">PLAN WITH CONFIDENCE</span>
-                            <h2 className="medi-section-heading">Why Book with Trips &amp; Ships Luxury Travel?</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="luxe-section-heading">Why Book with Trips &amp; Ships Luxury Travel?</h2>
+                            <div className="luxe-heading-separator-bar"></div>
                             <p>Our expert guidance ensures every detail of your luxury expedition cruise is tailored to your travel goals.</p>
                         </div>
                         <div className="luxe-planning-steps-col">
@@ -430,101 +432,71 @@ function BestLuxuryExpeditionCruises() {
                 </div>
             </section>
 
-            
-                {/* EXPERT INSIGHT */}
-                <section id="explora-growth-insight" className="medi-expert-editorial-section medi-growth-insight-section">
-                    <div className="medi-expert-editorial-container">
-                        <div className="medi-expert-editorial-card">
 
-                            {/* Left Side: Portrait and Floating Stat Badge */}
-                            <div className="medi-editorial-portrait-block">
-                                <div className="medi-editorial-image-frame">
-                                    <img src={ProfilePictureAH} alt="Angela Hughes - Luxury Cruise Expert" />
-                                    <div className="medi-editorial-gradient-layer"></div>
-                                </div>
-
-                                <div className="medi-editorial-floating-stat">
-                                    <div className="medi-stat-tile">
-                                        <span className="medi-stat-number">40+</span>
-                                        <span className="medi-stat-label">Years Experience</span>
-                                    </div>
-                                    <div className="medi-stat-divider"></div>
-                                    <div className="medi-stat-tile">
-                                        <span className="medi-stat-number">121+</span>
-                                        <span className="medi-stat-label">Countries Visited</span>
-                                    </div>
-                                </div>
+            {/* EXPERT INSIGHT — luxe- isolated, tight, Celebrity ref */}
+            <section id="luxe-growth-insight" className="luxe-expert-insight-section">
+                <div className="luxe-expert-insight-container">
+                    <div className="luxe-expert-portrait-panel">
+                        <div className="luxe-expert-img-container">
+                            <img src={ProfilePictureAH} alt="Angela Hughes - Luxury Cruise Expert" className="luxe-expert-img" />
+                            <div className="luxe-expert-img-overlay"></div>
+                            <span className="luxe-expert-badge">EXPERT ADVISOR</span>
+                        </div>
+                        <div className="luxe-expert-stats-strip">
+                            <div className="luxe-expert-stat-box">
+                                <div className="luxe-expert-stat-num">40+</div>
+                                <div className="luxe-expert-stat-lbl">Years Experience</div>
                             </div>
-
-                            {/* Right Side: Editorial Text */}
-                            <div className="medi-editorial-content-block">
-                                <div className="medi-editorial-header">
-                                    <div className="medi-editorial-eyebrow-container">
-                                        <Award size={18} className="medi-editorial-icon-badge" />
-                                        <span className="medi-editorial-eyebrow">Expert Insight from Angela Hughes</span>
-                                    </div>
-                                    <h2 className="medi-editorial-title">
-                                        Why Modern Luxury Travelers <br className="medi-growth-title-break" />Are Choosing Scenic
-                                    </h2>
-                                    <div className="medi-editorial-accent-bar"></div>
-                                </div>
-
-                                <p className="medi-editorial-lead-para">
-                                    According to Angela Hughes, many travelers are initially attracted to Scenic because of its ultra-luxury discovery yachts — but ultimately fall in love with the all-inclusive onboard expedition experience.
-                                </p>
-
-                                <div className="medi-priorities-box">
-                                    <p className="medi-priorities-intro">
-                                        After more than four decades in luxury travel and visiting over 121 countries, Angela consistently sees Scenic travelers prioritizing:
-                                    </p>
-                                    <div className="medi-priorities-grid-pills">
-                                        {[
-                                            'Polar discovery yachting',
-                                            'Truly all-inclusive luxury',
-                                            'Butler service for every suite',
-                                            'Helicopter & submarine features',
-                                            'Up to 10 dining experiences',
-                                            'Immersive Zodiac excursions'
-                                        ].map((item, idx) => (
-                                            <div key={idx} className="medi-priority-pill-item">
-                                                <CheckCircle size={15} className="medi-priority-check" />
-                                                <span>{item}</span>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-
-                                <p className="medi-editorial-body-para">
-                                    As founder of Luxury Travel University and a globally recognized luxury travel speaker, Angela Hughes helps travelers compare luxury cruise experiences realistically — based on real-world expertise rather than generic online recommendations.
-                                </p>
-
-                                <div className="medi-expertise-section-box">
-                                    <span className="medi-expertise-intro-label">Her expertise spans:</span>
-                                    <div className="medi-expertise-horizontal-strip">
-                                        {[
-                                            { title: 'Ultra-luxury yachting', icon: Ship },
-                                            { title: 'Polar expeditions', icon: Mountain },
-                                            { title: 'Butler services', icon: Users },
-                                            { title: 'Luxury cruise planning', icon: Compass },
-                                            { title: 'Custom expedition travel', icon: Sparkles }
-                                        ].map((item, idx) => {
-                                            const IconComponent = item.icon
-                                            return (
-                                                <div key={idx} className="medi-expertise-pills-row">
-                                                    <div className="medi-expertise-pill-icon-box">
-                                                        <IconComponent size={14} />
-                                                    </div>
-                                                    <span className="medi-expertise-pill-text">{item.title}</span>
-                                                </div>
-                                            )
-                                        })}
-                                    </div>
-                                </div>
+                            <div className="luxe-expert-stat-box">
+                                <div className="luxe-expert-stat-num">121+</div>
+                                <div className="luxe-expert-stat-lbl">Countries Visited</div>
                             </div>
-
                         </div>
                     </div>
-                </section>
+
+                    <div className="luxe-expert-content-panel">
+                        <div className="luxe-expert-eyebrow-row">
+                            <Award size={14} />
+                            <span className="luxe-eyebrow">Expert Insight from Angela Hughes</span>
+                        </div>
+                        <h2 className="luxe-editorial-title">
+                            Why Modern Luxury Travelers Are Choosing Scenic
+                        </h2>
+                        <div className="luxe-heading-separator-bar"></div>
+
+                        <p className="luxe-expert-quote-text luxe-expert-quote">
+                            According to Angela Hughes, many travelers are initially attracted to Scenic because of its ultra-luxury discovery yachts &mdash; but ultimately fall in love with the all-inclusive onboard expedition experience.
+                        </p>
+
+                        <div className="luxe-expert-priorities">
+                            <h5 className="luxe-priorities-title">Scenic travelers consistently prioritize:</h5>
+                            <div className="luxe-expert-pills">
+                                {[
+                                    'Polar discovery yachting',
+                                    'Truly all-inclusive luxury',
+                                    'Butler service for every suite',
+                                    'Helicopter & submarine features',
+                                    'Up to 10 dining experiences',
+                                    'Immersive Zodiac excursions'
+                                ].map((pill) => (
+                                    <span key={pill} className="luxe-expert-pill">
+                                        <CheckCircle size={12} />
+                                        <span>{pill}</span>
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+
+                        <p className="luxe-editorial-text luxe-expert-quote">
+                            As founder of Luxury Travel University and a globally recognized luxury travel speaker, Angela Hughes helps travelers compare luxury cruise experiences realistically &mdash; based on real-world expertise rather than generic online recommendations.
+                        </p>
+
+                        <div className="luxe-expert-footer-bio">
+                            <p className="luxe-expert-bio">Her expertise spans ultra-luxury yachting, polar expeditions, butler services, luxury cruise planning and custom expedition travel &mdash; backed by 40+ years and 121+ countries visited.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 
             {/* ── FAQ ── */}
@@ -532,8 +504,8 @@ function BestLuxuryExpeditionCruises() {
                 <div className="luxe-faq-container">
                     <div style={{ textAlign: 'center' }}>
                         <span className="luxe-eyebrow">QUESTIONS BEFORE YOU GO</span>
-                        <h2 className="medi-section-heading">Frequently Asked Questions</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <h2 className="luxe-section-heading">Frequently Asked Questions</h2>
+                        <div className="luxe-heading-separator-bar luxe-bar-centered"></div>
                     </div>
                     <div className="luxe-faq-list-wrapper">
                         {faqs.map(([question, answer], index) => (

@@ -1,4 +1,4 @@
-import ProfilePictureAH from "../../assets/Media (2).jpg"
+﻿import ProfilePictureAH from "../../assets/Media (2).jpg"
 import Navbar from '../../components/Navbar/Navbar'
 import './BestExpeditionCruises.css'
 import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
@@ -7,15 +7,15 @@ import hero1 from '../../assets/BestLuxuryExpeditionCruises/expedition-antarctic
 import hero2 from '../../assets/BestLuxuryExpeditionCruises/galapagos-expedition.jpg'
 import hero3 from '../../assets/BestLuxuryExpeditionCruises/arctic-expedition.jpg'
 
-import expDifferentImg   from '../../assets/BestLuxuryExpeditionCruises/zodiac-excursion.jpg'
-import expLineScenic     from '../../assets/BestLuxuryExpeditionCruises/scenic-eclipse-ship.jpg'
-import expLineSilversea  from '../../assets/BestLuxuryExpeditionCruises/antarctica-expedition.jpg'
-import expLineSeabourn   from '../../assets/BestLuxuryExpeditionCruises/kimberley-expedition.jpg'
-import expLinePonant     from '../../assets/BestLuxuryExpeditionCruises/expedition-galapagos-adventure.jpg'
-import expEclipseImg     from '../../assets/BestLuxuryExpeditionCruises/scenic-eclipse-ship.jpg'
-import expOnboardImg     from '../../assets/BestLuxuryExpeditionCruises/luxury-suite-view.jpg'
-import expLineLindblad   from '../../assets/BestLuxuryExpeditionCruises/wildlife-expedition.jpg'
-import expLineHX         from '../../assets/BestLuxuryExpeditionCruises/expedition-arctic-polar-wildlife.jpg'
+import expDifferentImg from '../../assets/BestLuxuryExpeditionCruises/zodiac-excursion.jpg'
+import expLineScenic from '../../assets/BestLuxuryExpeditionCruises/scenic-eclipse-ship.jpg'
+import expLineSilversea from '../../assets/BestLuxuryExpeditionCruises/antarctica-expedition.jpg'
+import expLineSeabourn from '../../assets/BestLuxuryExpeditionCruises/kimberley-expedition.jpg'
+import expLinePonant from '../../assets/BestLuxuryExpeditionCruises/expedition-galapagos-adventure.jpg'
+import expEclipseImg from '../../assets/BestLuxuryExpeditionCruises/scenic-eclipse-ship.jpg'
+import expOnboardImg from '../../assets/BestLuxuryExpeditionCruises/luxury-suite-view.jpg'
+import expLineLindblad from '../../assets/BestLuxuryExpeditionCruises/wildlife-expedition.jpg'
+import expLineHX from '../../assets/BestLuxuryExpeditionCruises/expedition-arctic-polar-wildlife.jpg'
 
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle, ArrowRight, Compass, Sparkles, Anchor, Calendar, Gem, ChevronRight, Crown, Phone, LayoutList, Heart, Utensils, Sun, Award, Moon, Globe, MessageSquare, TrendingUp, Eye, Leaf, BookOpen, DollarSign, Camera, Mountain, Wind, Snowflake, Zap, Navigation, Info
@@ -136,24 +136,24 @@ function BestExpeditionCruises() {
             <Navbar />
 
             {/* ── HERO ── */}
-            <section className="medi-hero-section">
+            <section className="expg-hero-section">
                 {expHeroImages.map((img, idx) => (
                     <div
                         key={idx}
-                        className={`medi-hero-background ${expCurrentHero === idx ? 'medi-active' : ''}`}
+                        className={`expg-hero-background ${expCurrentHero === idx ? 'expg-active' : ''}`}
                         style={{ backgroundImage: `url(${img})` }}
                     />
                 ))}
-                <div className="medi-hero-overlay-layer"></div>
-                <div className="medi-hero-content-wrapper">
-                    <div className="medi-hero-eyebrow-tag">
+                <div className="expg-hero-overlay-layer"></div>
+                <div className="expg-hero-content-wrapper">
+                    <div className="expg-hero-eyebrow-tag">
                         <Anchor size={16} />
                         <span>Expedition Cruises · Trips &amp; Ships Luxury Travel</span>
                     </div>
-                    <h1 className="medi-hero-main-title">
+                    <h1 className="expg-hero-main-title">
                         Best Expedition Cruises
                     </h1>
-                    <p className="medi-hero-subtitle-text">
+                    <p className="expg-hero-subtitle-text">
                         Which Are the Best Expedition Cruises? Explore the world's finest expedition cruise lines, remote destinations, and extraordinary wildlife adventures — from Antarctica to the Galápagos and beyond.
                     </p>
                 </div>
@@ -166,8 +166,8 @@ function BestExpeditionCruises() {
 
                         <div className="expg-intro-text-col">
                             <span className="expg-eyebrow">EXPEDITION CRUISING EXPLAINED</span>
-                            <h2 className="medi-section-heading">Which Are the Best Expedition Cruises?</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="expg-section-heading">Which Are the Best Expedition Cruises?</h2>
+                            <div className="expg-heading-separator-bar"></div>
                             <p className="expg-intro-lead">Expedition cruises combine the comfort of luxury cruising with the excitement of exploring some of the world's most remote and breathtaking destinations.</p>
                             <p className="expg-intro-body">Unlike traditional ocean cruises that focus on large ports and entertainment, expedition voyages are designed for discovery, adventure, wildlife encounters, and immersive cultural experiences.</p>
                             <p className="expg-intro-body">Today's luxury expedition ships feature elegant suites, world-class dining, expert expedition teams, Zodiac excursions, and advanced technology that allows guests to access places larger ships simply cannot reach.</p>
@@ -215,8 +215,8 @@ function BestExpeditionCruises() {
 
                         <div className="expg-different-text-col">
                             <span className="expg-eyebrow">WHAT MAKES IT DIFFERENT</span>
-                            <h2 className="medi-section-heading">What Makes an Expedition Cruise Different?</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="expg-section-heading">What Makes an Expedition Cruise Different?</h2>
+                            <div className="expg-heading-separator-bar"></div>
                             <p className="expg-different-lead">Expedition cruises are designed for travelers who want more than a traditional vacation.</p>
 
                             <div className="expg-different-items">
@@ -250,8 +250,8 @@ function BestExpeditionCruises() {
                 <div className="expg-destinations-container">
                     <div className="expg-destinations-header">
                         <span className="expg-eyebrow">TOP DESTINATIONS</span>
-                        <h2 className="medi-section-heading">Top Expedition Cruise Destinations</h2>
-                        <div className="medi-heading-separator-bar"></div>
+                        <h2 className="expg-section-heading">Top Expedition Cruise Destinations</h2>
+                        <div className="expg-heading-separator-bar"></div>
                         <p className="expg-destinations-intro">Some destinations consistently rank among the world's finest expedition experiences. Each destination offers its own unique landscapes, wildlife, and unforgettable adventures.</p>
                     </div>
 
@@ -260,17 +260,17 @@ function BestExpeditionCruises() {
                             <div className="expg-destinations-items">
                                 {[
                                     { Icon: Snowflake, name: 'Antarctica' },
-                                    { Icon: Wind,      name: 'Arctic & Svalbard' },
-                                    { Icon: Mountain,  name: 'Greenland' },
-                                    { Icon: Zap,       name: 'Iceland' },
-                                    { Icon: Sun,       name: 'Galápagos Islands' },
-                                    { Icon: MapPin,    name: 'Alaska' },
-                                    { Icon: Anchor,    name: 'Norwegian Fjords' },
-                                    { Icon: Leaf,      name: 'Kimberley, Australia' },
-                                    { Icon: Star,      name: 'South Pacific' },
-                                    { Icon: Compass,   name: 'Patagonia' },
-                                    { Icon: Globe,     name: 'Amazon River' },
-                                    { Icon: Navigation,name: 'Canadian Arctic' }
+                                    { Icon: Wind, name: 'Arctic & Svalbard' },
+                                    { Icon: Mountain, name: 'Greenland' },
+                                    { Icon: Zap, name: 'Iceland' },
+                                    { Icon: Sun, name: 'Galápagos Islands' },
+                                    { Icon: MapPin, name: 'Alaska' },
+                                    { Icon: Anchor, name: 'Norwegian Fjords' },
+                                    { Icon: Leaf, name: 'Kimberley, Australia' },
+                                    { Icon: Star, name: 'South Pacific' },
+                                    { Icon: Compass, name: 'Patagonia' },
+                                    { Icon: Globe, name: 'Amazon River' },
+                                    { Icon: Navigation, name: 'Canadian Arctic' }
                                 ].map(({ Icon, name }, idx) => (
                                     <div key={idx} className="expg-destinations-item">
                                         <div className="expg-destinations-item-icon"><Icon size={17} /></div>
@@ -303,8 +303,8 @@ function BestExpeditionCruises() {
                 <div className="expg-lines-container">
                     <div className="expg-lines-header">
                         <span className="expg-eyebrow expg-eyebrow-light">LEADING CRUISE LINES</span>
-                        <h2 className="medi-section-heading expg-white-heading" style={{ textAlign: 'center' }}>Best Luxury Expedition Cruise Lines</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered expg-separator-white"></div>
+                        <h2 className="expg-section-heading expg-white-heading" style={{ textAlign: 'center' }}>Best Luxury Expedition Cruise Lines</h2>
+                        <div className="expg-heading-separator-bar expg-bar-centered expg-separator-white"></div>
                         <p className="expg-lines-intro">Several cruise lines are recognized for exceptional expedition experiences around the world.</p>
                     </div>
 
@@ -400,19 +400,19 @@ function BestExpeditionCruises() {
 
                         <div className="expg-eclipse-text-col">
                             <span className="expg-eyebrow">FEATURED EXPEDITION SHIP</span>
-                            <h2 className="medi-section-heading">Scenic Eclipse — One of the World's Best Expedition Ships</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="expg-section-heading">Scenic Eclipse — One of the World's Best Expedition Ships</h2>
+                            <div className="expg-heading-separator-bar"></div>
                             <p className="expg-eclipse-body">For travelers seeking expedition adventure without sacrificing comfort, Scenic Eclipse is among the industry's premier choices — a benchmark of ultra-luxury at sea.</p>
                             <div className="expg-eclipse-points">
                                 {[
-                                    { Icon: Crown,      text: 'Ultra-luxury suites' },
-                                    { Icon: Utensils,   text: 'Multiple fine dining restaurants' },
-                                    { Icon: Crown,      text: 'Personal butler service' },
-                                    { Icon: Zap,        text: 'Helicopter experiences' },
+                                    { Icon: Crown, text: 'Ultra-luxury suites' },
+                                    { Icon: Utensils, text: 'Multiple fine dining restaurants' },
+                                    { Icon: Crown, text: 'Personal butler service' },
+                                    { Icon: Zap, text: 'Helicopter experiences' },
                                     { Icon: Navigation, text: 'Scenic Neptune™ submarine' },
-                                    { Icon: Users,      text: 'Discovery Team experts' },
-                                    { Icon: Compass,    text: 'Zodiac excursions' },
-                                    { Icon: Heart,      text: 'Spa and wellness facilities' }
+                                    { Icon: Users, text: 'Discovery Team experts' },
+                                    { Icon: Compass, text: 'Zodiac excursions' },
+                                    { Icon: Heart, text: 'Spa and wellness facilities' }
                                 ].map(({ Icon, text }, idx) => (
                                     <div key={idx} className="expg-eclipse-point">
                                         <div className="expg-eclipse-point-icon"><Icon size={17} /></div>
@@ -433,23 +433,23 @@ function BestExpeditionCruises() {
 
                         <div className="expg-wildlife-text-col">
                             <span className="expg-eyebrow expg-eyebrow-light">IN THE WILD</span>
-                            <h2 className="medi-section-heading expg-white-heading">Wildlife Encounters</h2>
-                            <div className="medi-heading-separator-bar expg-separator-white"></div>
+                            <h2 className="expg-section-heading expg-white-heading">Wildlife Encounters</h2>
+                            <div className="expg-heading-separator-bar expg-separator-white"></div>
                             <p className="expg-wildlife-intro">One of the greatest attractions of expedition cruising is the opportunity to observe wildlife in its natural habitat.</p>
                             <p className="expg-wildlife-sub">Depending on your destination, you may see:</p>
 
                             <div className="expg-wildlife-items">
                                 {[
                                     { Icon: Snowflake, label: 'Penguins' },
-                                    { Icon: Wind,      label: 'Polar Bears' },
-                                    { Icon: Anchor,    label: 'Whales' },
-                                    { Icon: Navigation,label: 'Dolphins' },
-                                    { Icon: Sun,       label: 'Seals & Sea Lions' },
-                                    { Icon: Mountain,  label: 'Puffins' },
-                                    { Icon: Globe,     label: 'Albatross' },
-                                    { Icon: Leaf,      label: 'Tropical Birds' },
-                                    { Icon: Compass,   label: 'Sea Turtles' },
-                                    { Icon: Eye,       label: 'Unique Reptiles' }
+                                    { Icon: Wind, label: 'Polar Bears' },
+                                    { Icon: Anchor, label: 'Whales' },
+                                    { Icon: Navigation, label: 'Dolphins' },
+                                    { Icon: Sun, label: 'Seals & Sea Lions' },
+                                    { Icon: Mountain, label: 'Puffins' },
+                                    { Icon: Globe, label: 'Albatross' },
+                                    { Icon: Leaf, label: 'Tropical Birds' },
+                                    { Icon: Compass, label: 'Sea Turtles' },
+                                    { Icon: Eye, label: 'Unique Reptiles' }
                                 ].map(({ Icon, label }, idx) => (
                                     <div key={idx} className="expg-wildlife-item">
                                         <div className="expg-wildlife-item-icon"><Icon size={16} /></div>
@@ -482,24 +482,24 @@ function BestExpeditionCruises() {
                 <div className="expg-activities-container">
                     <div className="expg-activities-header">
                         <span className="expg-eyebrow">ONSHORE ADVENTURES</span>
-                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>Adventure Activities</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <h2 className="expg-section-heading" style={{ textAlign: 'center' }}>Adventure Activities</h2>
+                        <div className="expg-heading-separator-bar expg-bar-centered"></div>
                         <p className="expg-activities-intro">Luxury expedition cruises offer a variety of optional activities designed to bring guests closer to nature.</p>
                         <p className="expg-activities-sub">Experiences are led by experienced expedition teams who prioritize safety and environmental responsibility.</p>
                     </div>
 
                     <div className="expg-activities-grid">
                         {[
-                            { Icon: Navigation, label: 'Zodiac Cruising',    desc: 'Get up close to icebergs, glaciers, wildlife, and remote coastlines.' },
-                            { Icon: MapPin,     label: 'Shore Landings',     desc: 'Expert-guided walks on pristine beaches and Antarctic shores.' },
-                            { Icon: Anchor,     label: 'Kayaking',           desc: 'Paddle silently among icebergs for an unforgettable experience.' },
-                            { Icon: Mountain,   label: 'Hiking & Snowshoeing',desc: 'Trek across dramatic wilderness with naturalist guides.' },
-                            { Icon: Camera,     label: 'Photography',        desc: 'Dedicated photo excursions with expert guidance for extraordinary shots.' },
-                            { Icon: Wind,       label: 'Snorkeling',         desc: 'Explore vibrant marine life in clear polar and tropical waters.' },
-                            { Icon: Zap,        label: 'Helicopter Flights', desc: 'Aerial views of glaciers, volcanoes, and remote landscapes.' },
-                            { Icon: Navigation, label: 'Submarine Dives',    desc: 'Descend beneath the surface aboard the Scenic Neptune submarine.' },
-                            { Icon: Snowflake,  label: 'Polar Plunge',       desc: 'The iconic leap into polar waters — a true expedition milestone.' },
-                            { Icon: Star,       label: 'Snowshoeing',        desc: 'Explore untouched Arctic and Antarctic landscapes on foot.' }
+                            { Icon: Navigation, label: 'Zodiac Cruising', desc: 'Get up close to icebergs, glaciers, wildlife, and remote coastlines.' },
+                            { Icon: MapPin, label: 'Shore Landings', desc: 'Expert-guided walks on pristine beaches and Antarctic shores.' },
+                            { Icon: Anchor, label: 'Kayaking', desc: 'Paddle silently among icebergs for an unforgettable experience.' },
+                            { Icon: Mountain, label: 'Hiking & Snowshoeing', desc: 'Trek across dramatic wilderness with naturalist guides.' },
+                            { Icon: Camera, label: 'Photography', desc: 'Dedicated photo excursions with expert guidance for extraordinary shots.' },
+                            { Icon: Wind, label: 'Snorkeling', desc: 'Explore vibrant marine life in clear polar and tropical waters.' },
+                            { Icon: Zap, label: 'Helicopter Flights', desc: 'Aerial views of glaciers, volcanoes, and remote landscapes.' },
+                            { Icon: Navigation, label: 'Submarine Dives', desc: 'Descend beneath the surface aboard the Scenic Neptune submarine.' },
+                            { Icon: Snowflake, label: 'Polar Plunge', desc: 'The iconic leap into polar waters — a true expedition milestone.' },
+                            { Icon: Star, label: 'Snowshoeing', desc: 'Explore untouched Arctic and Antarctic landscapes on foot.' }
                         ].map(({ Icon, label, desc }, idx) => (
                             <div key={idx} className="expg-activity-card">
                                 <div className="expg-activity-num">{String(idx + 1).padStart(2, '0')}</div>
@@ -523,22 +523,22 @@ function BestExpeditionCruises() {
 
                         <div className="expg-onboard-text-col">
                             <span className="expg-eyebrow">ONBOARD EXPERIENCE</span>
-                            <h2 className="medi-section-heading">Luxury Onboard Experience</h2>
-                            <div className="medi-heading-separator-bar"></div>
+                            <h2 className="expg-section-heading">Luxury Onboard Experience</h2>
+                            <div className="expg-heading-separator-bar"></div>
                             <p className="expg-onboard-lead">Modern expedition ships combine adventure with five-star luxury. This balance of comfort and exploration makes luxury expedition cruising increasingly popular.</p>
 
                             <div className="expg-onboard-amenities">
                                 {[
-                                    { Icon: Crown,    text: 'Spacious suites' },
+                                    { Icon: Crown, text: 'Spacious suites' },
                                     { Icon: Utensils, text: 'Fine dining' },
-                                    { Icon: Star,     text: 'Premium beverages' },
-                                    { Icon: Crown,    text: 'Butler service' },
-                                    { Icon: Heart,    text: 'Spa facilities' },
-                                    { Icon: Compass,  text: 'Fitness centers' },
-                                    { Icon: Eye,      text: 'Observation lounges' },
+                                    { Icon: Star, text: 'Premium beverages' },
+                                    { Icon: Crown, text: 'Butler service' },
+                                    { Icon: Heart, text: 'Spa facilities' },
+                                    { Icon: Compass, text: 'Fitness centers' },
+                                    { Icon: Eye, text: 'Observation lounges' },
                                     { Icon: BookOpen, text: 'Educational presentations' },
-                                    { Icon: Users,    text: 'Personalized concierge service' },
-                                    { Icon: Gem,      text: 'Elegant public spaces' }
+                                    { Icon: Users, text: 'Personalized concierge service' },
+                                    { Icon: Gem, text: 'Elegant public spaces' }
                                 ].map(({ Icon, text }, idx) => (
                                     <div key={idx} className="expg-onboard-amenity">
                                         <div className="expg-onboard-amenity-icon"><Icon size={18} /></div>
@@ -575,21 +575,21 @@ function BestExpeditionCruises() {
                 <div className="expg-seasons-container">
                     <div className="expg-seasons-header">
                         <span className="expg-eyebrow expg-eyebrow-light">WHEN TO GO</span>
-                        <h2 className="medi-section-heading expg-white-heading" style={{ textAlign: 'center' }}>Best Time to Take an Expedition Cruise</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered expg-separator-white"></div>
+                        <h2 className="expg-section-heading expg-white-heading" style={{ textAlign: 'center' }}>Best Time to Take an Expedition Cruise</h2>
+                        <div className="expg-heading-separator-bar expg-bar-centered expg-separator-white"></div>
                         <p className="expg-seasons-intro">The ideal travel season depends on your destination. Choosing the right season helps maximize wildlife viewing and favorable weather conditions.</p>
                     </div>
 
                     <div className="expg-seasons-grid">
                         {[
-                            { dest: 'Antarctica',         season: 'November – March', Icon: Snowflake },
-                            { dest: 'Arctic',             season: 'May – September',  Icon: Wind },
-                            { dest: 'Alaska',             season: 'May – September',  Icon: Mountain },
-                            { dest: 'Galápagos',          season: 'Year-Round',       Icon: Sun },
-                            { dest: 'Kimberley',          season: 'May – September',  Icon: Leaf },
-                            { dest: 'Iceland',            season: 'June – August',    Icon: Zap },
-                            { dest: 'Norwegian Fjords',   season: 'May – September',  Icon: Globe },
-                            { dest: 'Patagonia',          season: 'October – March',  Icon: Compass }
+                            { dest: 'Antarctica', season: 'November – March', Icon: Snowflake },
+                            { dest: 'Arctic', season: 'May – September', Icon: Wind },
+                            { dest: 'Alaska', season: 'May – September', Icon: Mountain },
+                            { dest: 'Galápagos', season: 'Year-Round', Icon: Sun },
+                            { dest: 'Kimberley', season: 'May – September', Icon: Leaf },
+                            { dest: 'Iceland', season: 'June – August', Icon: Zap },
+                            { dest: 'Norwegian Fjords', season: 'May – September', Icon: Globe },
+                            { dest: 'Patagonia', season: 'October – March', Icon: Compass }
                         ].map(({ dest, season, Icon }, idx) => (
                             <div key={idx} className="expg-season-card">
                                 <div className="expg-season-card-icon"><Icon size={22} /></div>
@@ -610,26 +610,26 @@ function BestExpeditionCruises() {
                 <div className="expg-choose-container">
                     <div className="expg-choose-header">
                         <span className="expg-eyebrow">PLANNING YOUR VOYAGE</span>
-                        <h2 className="medi-section-heading" style={{ textAlign: 'center' }}>How to Choose the Right Expedition Cruise</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <h2 className="expg-section-heading" style={{ textAlign: 'center' }}>How to Choose the Right Expedition Cruise</h2>
+                        <div className="expg-heading-separator-bar expg-bar-centered"></div>
                         <p className="expg-choose-intro">When selecting an expedition voyage, consider the following factors.</p>
                         <p className="expg-choose-sub">Working with an experienced luxury travel advisor can help you find the itinerary that best matches your travel goals.</p>
                     </div>
 
                     <div className="expg-choose-grid">
                         {[
-                            { Icon: MapPin,     title: 'Destination',     desc: 'Antarctica, Arctic, Galápagos, Alaska, Kimberley, or beyond.' },
-                            { Icon: Ship,       title: 'Ship Size',        desc: 'Small ships provide more intimate and exclusive access to remote areas.' },
-                            { Icon: Crown,      title: 'Luxury Level',     desc: 'Ultra-luxury, premium, and expedition-focused options are available.' },
-                            { Icon: Eye,        title: 'Expedition Activities', desc: 'Zodiac, helicopter, submarine, kayaking, and snowshoeing availability.' },
-                            { Icon: Heart,      title: 'Wildlife Interests',desc: 'Match the destination to the specific wildlife you want to encounter.' },
-                            { Icon: DollarSign, title: 'Budget',           desc: 'All-inclusive pricing varies significantly by cruise line and ship.' },
-                            { Icon: Calendar,   title: 'Cruise Duration',  desc: 'Expedition voyages typically range from 7 to 21 days depending on route.' },
-                            { Icon: Mountain,   title: 'Activity Level',   desc: 'Physical requirements vary from gentle shore walks to more active adventures.' },
-                            { Icon: BookOpen,   title: 'Included Excursions', desc: 'Review what Zodiac landings, shore excursions, and activities are included.' },
-                            { Icon: Sun,        title: 'Seasonal Conditions',desc: 'Polar summers, year-round tropical options, and weather windows.' },
-                            { Icon: Compass,    title: 'Itinerary Style',  desc: 'Choose between wildlife-focused, expedition-heavy, or culturally immersive.' },
-                            { Icon: Star,       title: 'Onboard Experience',desc: 'Consider dining, spa, suites, and service level preferences.' }
+                            { Icon: MapPin, title: 'Destination', desc: 'Antarctica, Arctic, Galápagos, Alaska, Kimberley, or beyond.' },
+                            { Icon: Ship, title: 'Ship Size', desc: 'Small ships provide more intimate and exclusive access to remote areas.' },
+                            { Icon: Crown, title: 'Luxury Level', desc: 'Ultra-luxury, premium, and expedition-focused options are available.' },
+                            { Icon: Eye, title: 'Expedition Activities', desc: 'Zodiac, helicopter, submarine, kayaking, and snowshoeing availability.' },
+                            { Icon: Heart, title: 'Wildlife Interests', desc: 'Match the destination to the specific wildlife you want to encounter.' },
+                            { Icon: DollarSign, title: 'Budget', desc: 'All-inclusive pricing varies significantly by cruise line and ship.' },
+                            { Icon: Calendar, title: 'Cruise Duration', desc: 'Expedition voyages typically range from 7 to 21 days depending on route.' },
+                            { Icon: Mountain, title: 'Activity Level', desc: 'Physical requirements vary from gentle shore walks to more active adventures.' },
+                            { Icon: BookOpen, title: 'Included Excursions', desc: 'Review what Zodiac landings, shore excursions, and activities are included.' },
+                            { Icon: Sun, title: 'Seasonal Conditions', desc: 'Polar summers, year-round tropical options, and weather windows.' },
+                            { Icon: Compass, title: 'Itinerary Style', desc: 'Choose between wildlife-focused, expedition-heavy, or culturally immersive.' },
+                            { Icon: Star, title: 'Onboard Experience', desc: 'Consider dining, spa, suites, and service level preferences.' }
                         ].map(({ Icon, title, desc }, idx) => (
                             <div key={idx} className="expg-choose-card">
                                 <div className="expg-choose-card-icon"><Icon size={22} /></div>
@@ -762,16 +762,16 @@ function BestExpeditionCruises() {
                 </div>
             </section>
 
-            
-               
 
 
-{/* ── FAQ ── */}
+
+
+            {/* ── FAQ ── */}
             <section className="expg-faq-section">
                 <div className="expg-faq-container">
                     <div style={{ textAlign: 'center' }}>
-                        <h2 className="medi-section-heading">Frequently Asked Questions</h2>
-                        <div className="medi-heading-separator-bar medi-bar-centered"></div>
+                        <h2 className="expg-section-heading">Frequently Asked Questions</h2>
+                        <div className="expg-heading-separator-bar expg-bar-centered"></div>
                     </div>
                     <div className="expg-faq-list-wrapper">
                         {expFaqs.map((faq, index) => (
@@ -817,11 +817,11 @@ function BestExpeditionCruises() {
                     <div className="expg-cta-cards-grid">
                         {[
                             { icon: MapPin, text: 'Antarctica expedition cruises' },
-                            { icon: Wind,   text: 'Arctic & Svalbard polar voyages' },
-                            { icon: Sun,    text: 'Galápagos expedition cruises' },
-                            { icon: Ship,   text: 'Kimberley & Australia expeditions' },
+                            { icon: Wind, text: 'Arctic & Svalbard polar voyages' },
+                            { icon: Sun, text: 'Galápagos expedition cruises' },
+                            { icon: Ship, text: 'Kimberley & Australia expeditions' },
                             { icon: Mountain, text: 'Alaska & Norwegian Fjord cruises' },
-                            { icon: Crown,  text: 'Luxury expedition planning' }
+                            { icon: Crown, text: 'Luxury expedition planning' }
                         ].map(({ icon: Icon, text }, i) => (
                             <div key={i} className="expg-cta-card">
                                 <div className="expg-cta-card-icon"><Icon size={20} /></div>

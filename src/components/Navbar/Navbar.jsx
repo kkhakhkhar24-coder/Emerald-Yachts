@@ -1311,21 +1311,21 @@ const Navbar = () => {
                 Celebrity Cruises vs. Princess Cruises
               </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/celebrity-cruises/ships/celebrity-xcel"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 Celebrity Xcel Cruise Ship Guide
-              </NavLink> */}
+              </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/celebrity-cruises/ships/celebrity-ascent"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 Celebrity Ascent Cruise Ship Guide
-              </NavLink> */}
+              </NavLink>
 
               <NavLink
                 to="/celebrity-cruises/ships/celebrity-beyond"
@@ -2707,21 +2707,21 @@ const Navbar = () => {
               Celebrity Cruises vs. Princess Cruises
             </NavLink>
 
-            {/* <NavLink
+            <NavLink
               to="/celebrity-cruises/ships/celebrity-xcel"
               className="nav-dropdown-single"
               onClick={toggleMenu}
             >
               Celebrity Xcel Cruise Ship Guide
-            </NavLink> */}
+            </NavLink>
 
-            {/* <NavLink
+            <NavLink
               to="/celebrity-cruises/ships/celebrity-ascent"
               className="nav-dropdown-single"
               onClick={toggleMenu}
             >
               Celebrity Ascent Cruise Ship Guide
-            </NavLink> */}
+            </NavLink>
 
             <NavLink
               to="/celebrity-cruises/ships/celebrity-beyond"
@@ -2812,22 +2812,22 @@ const Navbar = () => {
             </NavLink>
 
             <NavLink
-                to="/celebrity-cruises/aquaclass-vs-concierge-class"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Celebrity Aqua Class vs Concierge Class
-              </NavLink>
+              to="/celebrity-cruises/aquaclass-vs-concierge-class"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Celebrity Aqua Class vs Concierge Class
+            </NavLink>
 
-              <NavLink
-                to="/celebrity-cruises/infinite-veranda"
-                className="nav-dropdown-single"
-                onClick={toggleMenu}
-              >
-                Celebrity Infinite Veranda
-              </NavLink>
+            <NavLink
+              to="/celebrity-cruises/infinite-veranda"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Celebrity Infinite Veranda
+            </NavLink>
 
-              {/* <NavLink
+            {/* <NavLink
                 to="/celebrity-cruises/offers-loyalty"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}

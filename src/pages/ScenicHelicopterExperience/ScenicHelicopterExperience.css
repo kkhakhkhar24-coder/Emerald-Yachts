@@ -1,11 +1,249 @@
-/* =============================================================
+﻿/* =============================================================
    ScenicHelicopterExperience.css
-   NEW SECTION STYLES ONLY — shared medi-* styles live in
-   AzamaraMediterraneanCruises.css
-   Color palette: strictly uses existing --medi-* variables
+   Isolated hel- â€” Playfair titles / Montserrat body
+   Desktop h1 60 700 lh1.15, h2 48 700 lh1.25, p 18/17/16
    ============================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* ── SHARED UTILITIES ────────────────────────────────────────── */
+:root {
+    --hel-font-display: "Playfair Display", serif;
+    --hel-font-body: "Montserrat", sans-serif;
+}
+
+/* â”€â”€ SHARED UTILITIES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+.hel-hero-section,
+.hel-intro-section,
+.hel-aircraft-section,
+.hel-views-section,
+.hel-destinations-section,
+.hel-discovery-section,
+.hel-safety-section,
+.hel-review-section,
+.hel-compare-section,
+.hel-editorial-section,
+.hel-final-section,
+.hel-faq-section,
+.hel-cta-section {
+    box-sizing: border-box;
+}
+
+/* â”€â”€ TITLE ENFORCEMENT (Playfair) + BODY â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+.hel-hero-main-title,
+.hel-section-heading,
+.hel-discovery-heading,
+.hel-final-heading,
+.hel-cta-title,
+.hel-compare-card-title,
+.hel-view-label,
+.hel-destination-card-title,
+.hel-activity-card h3,
+.hel-editorial-title,
+.hel-expert-quote {
+    font-family: var(--hel-font-display);
+}
+
+h3 {
+    font-family: var(--hel-font-display);
+}
+
+h4,
+.hel-h4 {
+    font-family: var(--hel-font-body);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.hel-hero-subtitle-text,
+.hel-intro-lead,
+.hel-intro-body,
+.hel-aircraft-lead,
+.hel-aircraft-body,
+.hel-views-intro,
+.hel-destinations-intro,
+.hel-discovery-body,
+.hel-safety-lead,
+.hel-safety-body,
+.hel-review-intro,
+.hel-compare-intro,
+.hel-final-body,
+.hel-cta-subtitle,
+.hel-editorial-text,
+.hel-faq-answer {
+    font-family: var(--hel-font-body);
+}
+
+.hel-expert-quote {
+    font-family: Georgia, 'Times New Roman', serif !important;
+    font-size: 18px !important;
+    font-style: italic !important;
+    line-height: 1.6 !important;
+    font-weight: 400 !important;
+    color: rgba(255, 255, 255, 0.92) !important;
+}
+
+.hel-editorial-text.hel-expert-quote {
+    color: rgba(255, 255, 255, 0.88) !important;
+}
+
+/* â”€â”€ HERO â€” isolated hel- (was medi- in Azamara) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+.hel-hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hel-hero-background {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.hel-hero-background.hel-active {
+    opacity: 1;
+}
+
+.hel-hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #0f1c2e 0%, #1c2f4a 100%);
+    z-index: 0;
+}
+
+.hel-hero-overlay-layer {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 28, 46, 0.72);
+    z-index: 1;
+}
+
+.hel-hero-content-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hel-hero-eyebrow-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #94a3b8;
+    font-family: var(--hel-font-body);
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.hel-hero-main-title {
+    font-family: var(--hel-font-display);
+    font-size: 60px;
+    line-height: 1.15;
+    font-weight: 700;
+    margin: 0 0 40px 0;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    text-align: center;
+    max-width: 900px;
+}
+
+.hel-hero-subtitle-text {
+    font-family: var(--hel-font-body);
+    font-size: 18px;
+    line-height: 1.6;
+    color: #cbd5e1;
+    margin-bottom: 40px;
+    max-width: 700px;
+    text-align: center;
+}
+
+.hel-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.hel-heading-separator-bar {
+    width: 60px;
+    height: 4px;
+    background: var(--medi-navy);
+    margin-bottom: 32px;
+    border-radius: 4px;
+}
+
+.hel-bar-centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hel-section-heading {
+    font-family: var(--hel-font-display);
+    font-size: 48px;
+    line-height: 1.25;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.01em;
+    color: var(--medi-navy);
+}
+
+.hel-primary-cta-button {
+    background: linear-gradient(135deg, var(--medi-navy) 0%, #1e365a 100%);
+    color: #ffffff;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(39, 68, 114, 0.3);
+}
+
+.hel-primary-cta-button:hover {
+    background: linear-gradient(135deg, #1e365a 0%, var(--medi-navy) 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 14px 28px rgba(39, 68, 114, 0.4);
+}
+
+.hel-secondary-outline-button {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 18px 38px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.hel-secondary-outline-button:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: #ffffff;
+}
 
 .hel-eyebrow {
     font-size: 11px;
@@ -31,7 +269,624 @@
     background: rgba(255, 255, 255, 0.3) !important;
 }
 
-/* ── FAQ ────────────────────────────────────────────────────────── */
+/* â”€â”€ EXPERT INSIGHT â€” isolated hel- (tight) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+.hel-expert-editorial-section {
+    padding: 48px 20px;
+    background: #0f1c2e;
+    position: relative;
+    overflow: hidden;
+}
+
+.hel-expert-editorial-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 0.78fr 1.22fr;
+    gap: 32px;
+    align-items: center;
+}
+
+.hel-editorial-portrait-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.hel-editorial-image-frame {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 340px;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.32);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hel-editorial-image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hel-editorial-gradient-layer {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15, 28, 46, 0.55) 0%, transparent 60%);
+}
+
+.hel-editorial-floating-stat {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+}
+
+.hel-stat-tile {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+}
+
+.hel-stat-number {
+    font-family: var(--hel-font-body);
+    font-size: 22px;
+    font-weight: 800;
+    color: #93c5fd;
+    line-height: 1;
+    margin-bottom: 2px;
+}
+
+.hel-stat-label {
+    font-family: var(--hel-font-body);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.62);
+}
+
+.hel-stat-divider {
+    display: none;
+}
+
+.hel-editorial-content-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.hel-editorial-header {
+    margin-bottom: 8px;
+}
+
+.hel-editorial-eyebrow-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    padding: 6px 12px;
+    border-radius: 30px;
+    margin-bottom: 8px;
+}
+
+.hel-editorial-icon-badge {
+    color: #93c5fd;
+    width: 14px;
+    height: 14px;
+}
+
+.hel-editorial-eyebrow {
+    font-family: var(--hel-font-body);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #93c5fd;
+    margin-bottom: 0;
+}
+
+.hel-growth-title-break {
+    display: inline;
+}
+
+.hel-editorial-accent-bar {
+    width: 48px;
+    height: 3px;
+    background: #93c5fd;
+    border-radius: 4px;
+    margin: 0 0 10px 0;
+}
+
+.hel-editorial-lead-para {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.6;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+}
+
+.hel-editorial-body-para {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.82);
+    margin: 0 0 10px 0;
+}
+
+.hel-priorities-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 12px;
+    padding: 12px;
+    margin: 0 0 10px 0;
+}
+
+.hel-priorities-intro {
+    font-family: var(--hel-font-body);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: rgba(255, 255, 255, 0.52);
+    margin-bottom: 6px;
+}
+
+.hel-priorities-grid-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.hel-priority-pill-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    color: #fff;
+    font-family: var(--hel-font-body);
+    font-size: 11px;
+    font-weight: 600;
+    padding: 5px 9px;
+    border-radius: 30px;
+    line-height: 1.2;
+}
+
+.hel-priority-check {
+    color: #93c5fd;
+    flex-shrink: 0;
+    width: 12px;
+    height: 12px;
+}
+
+.hel-expertise-section-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.hel-expertise-intro-label {
+    font-family: var(--hel-font-body);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.52);
+    margin-bottom: 6px;
+    display: block;
+}
+
+.hel-expertise-horizontal-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.hel-expertise-pills-row {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    color: #fff;
+    font-family: var(--hel-font-body);
+    font-size: 11px;
+    font-weight: 600;
+    padding: 5px 9px;
+    border-radius: 30px;
+}
+
+.hel-expertise-pill-icon-box {
+    width: 24px;
+    height: 24px;
+    border-radius: 7px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.hel-expertise-pill-text {
+    font-family: var(--hel-font-body);
+    font-size: 11px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.hel-editorial-content-block .hel-editorial-title {
+    font-family: var(--hel-font-display);
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.25;
+    margin: 0 0 8px;
+}
+
+/* ── EXPERT INSIGHT — tight Celebrity ref (new) ── */
+.hel-expert-insight-section {
+    padding: 32px 20px;
+    background: #0f1c2e;
+    position: relative;
+    overflow: hidden;
+}
+
+.hel-expert-insight-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 0.78fr 1.22fr;
+    gap: 24px;
+    align-items: center;
+}
+
+.hel-expert-portrait-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.hel-expert-img-frame {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    height: 320px;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.32);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hel-expert-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hel-expert-img-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15, 28, 46, 0.55) 0%, transparent 60%);
+}
+
+.hel-expert-badge {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    background: #93c5fd;
+    color: #0f1c2e;
+    font-family: var(--hel-font-body);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.07em;
+    padding: 5px 10px;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+
+.hel-expert-stats-strip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    width: 100%;
+}
+
+.hel-expert-stat-box {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 12px;
+    padding: 8px;
+    text-align: center;
+}
+
+.hel-expert-stat-num {
+    font-family: var(--hel-font-body);
+    font-size: 22px;
+    font-weight: 800;
+    color: #93c5fd;
+    line-height: 1;
+    margin-bottom: 2px;
+}
+
+.hel-expert-stat-lbl {
+    font-family: var(--hel-font-body);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.62);
+}
+
+.hel-expert-content-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.hel-expert-eyebrow-row {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #93c5fd;
+    margin-bottom: 4px;
+}
+
+.hel-expert-eyebrow-row .hel-eyebrow {
+    margin-bottom: 0;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    color: #93c5fd;
+}
+
+.hel-expert-eyebrow-row svg {
+    width: 14px;
+    height: 14px;
+}
+
+.hel-expert-content-panel .hel-editorial-title {
+    font-family: var(--hel-font-display);
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.25;
+    margin: 0 0 6px;
+}
+
+.hel-expert-content-panel .hel-heading-separator-bar {
+    width: 48px;
+    height: 3px;
+    background: #93c5fd;
+    border-radius: 4px;
+    margin: 0 0 8px 0;
+}
+
+.hel-expert-quote-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid #93c5fd;
+    border-radius: 0 12px 12px 0;
+    padding: 10px 12px 10px 16px;
+    margin: 0 0 8px 0;
+}
+
+.hel-expert-quote-mark {
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    font-size: 36px;
+    color: rgba(147, 197, 253, 0.14);
+    font-family: Georgia, serif;
+    line-height: 1;
+}
+
+.hel-expert-quote-text {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff;
+    margin: 0;
+}
+
+.hel-expert-priorities {
+    margin-bottom: 8px;
+}
+
+.hel-priorities-title {
+    font-family: var(--hel-font-body);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: rgba(255, 255, 255, 0.52);
+    margin-bottom: 4px;
+}
+
+.hel-expert-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.hel-expert-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    color: #ffffff;
+    font-family: var(--hel-font-body);
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 30px;
+    line-height: 1.2;
+}
+
+.hel-expert-pill svg {
+    color: #93c5fd;
+    flex-shrink: 0;
+    width: 12px;
+    height: 12px;
+}
+
+.hel-expert-footer-bio {
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+    padding-top: 8px;
+    margin-top: 2px;
+}
+
+.hel-expert-bio {
+    font-family: var(--hel-font-body);
+    font-size: 12px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.68);
+    margin: 0;
+}
+
+@media (max-width: 991px) {
+    .hel-expert-insight-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .hel-expert-insight-section {
+        padding: 28px 20px;
+    }
+
+    .hel-expert-img-frame {
+        height: 280px;
+    }
+
+    .hel-expert-content-panel .hel-editorial-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hel-expert-insight-section {
+        padding: 24px 16px;
+    }
+
+    .hel-expert-insight-container {
+        gap: 16px;
+    }
+
+    .hel-expert-portrait-panel {
+        max-width: 520px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .hel-expert-img-frame {
+        height: 240px;
+        border-radius: 12px;
+    }
+
+    .hel-expert-stats-strip {
+        gap: 8px;
+    }
+
+    .hel-expert-stat-box {
+        padding: 8px;
+    }
+
+    .hel-expert-quote-card {
+        padding: 10px 12px 10px 16px;
+    }
+
+    .hel-expert-quote-mark {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 640px) {
+    .hel-expert-insight-section {
+        padding: 20px 14px;
+    }
+
+    .hel-expert-img-frame {
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .hel-expert-badge {
+        font-size: 9px;
+        padding: 4px 8px;
+    }
+
+    .hel-expert-stat-num {
+        font-size: 18px;
+    }
+
+    .hel-expert-content-panel .hel-editorial-title {
+        font-size: 24px;
+    }
+
+    .hel-expert-quote-text {
+        font-size: 16px;
+    }
+
+    .hel-expert-pill {
+        font-size: 10px;
+        padding: 4px 7px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hel-expert-insight-section {
+        padding: 16px 12px;
+    }
+
+    .hel-expert-img-frame {
+        height: 180px;
+        border-radius: 10px;
+    }
+
+    .hel-expert-stats-strip {
+        gap: 6px;
+    }
+
+    .hel-expert-stat-box {
+        padding: 6px;
+        border-radius: 8px;
+    }
+
+    .hel-expert-stat-num {
+        font-size: 16px;
+    }
+
+    .hel-expert-pill {
+        font-size: 10px;
+        padding: 4px 7px;
+    }
+
+    .hel-expert-quote-card {
+        padding: 8px 10px 8px 14px;
+    }
+
+    .hel-expert-quote-mark {
+        font-size: 24px;
+    }
+
+    .hel-expert-bio {
+        font-size: 11px;
+    }
+}
+
+/* â”€â”€ FAQ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .hel-faq-section {
     padding: 80px 20px;
@@ -151,7 +1006,7 @@
     box-shadow: 0 6px 20px rgba(15, 28, 46, 0.3);
 }
 
-/* ── 1. INTRO SECTION ────────────────────────────────────────── */
+/* â”€â”€ 1. INTRO SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .hel-intro-section {
     background: var(--medi-bg-white);
@@ -171,7 +1026,8 @@
 }
 
 .hel-intro-lead {
-    font-size: 19px;
+    font-family: var(--hel-font-body);
+    font-size: 18px;
     font-weight: 600;
     color: var(--medi-navy);
     margin: 0 0 16px 0;
@@ -179,7 +1035,8 @@
 }
 
 .hel-intro-body {
-    font-size: 16px;
+    font-family: var(--hel-font-body);
+    font-size: 18px;
     color: #4a5568;
     margin: 0 0 16px 0;
     line-height: 1.8;
@@ -236,7 +1093,7 @@
     min-height: unset;
 }
 
-/* ── 2. AIRCRAFT SECTION ─────────────────────────────────────── */
+/* â”€â”€ 2. AIRCRAFT SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .hel-aircraft-section {
     background: var(--medi-bg-soft);
@@ -271,7 +1128,8 @@
 }
 
 .hel-aircraft-lead {
-    font-size: 17px;
+    font-family: var(--hel-font-body);
+    font-size: 18px;
     font-weight: 500;
     color: #2d3748;
     margin: 0 0 12px 0;
@@ -279,7 +1137,8 @@
 }
 
 .hel-aircraft-body {
-    font-size: 16px;
+    font-family: var(--hel-font-body);
+    font-size: 18px;
     color: #4a5568;
     margin: 0 0 16px 0;
     line-height: 1.7;
@@ -292,7 +1151,7 @@
     margin-bottom: 24px;
 }
 
-.hel-aircraft-features-grid > :last-child {
+.hel-aircraft-features-grid> :last-child {
     grid-column: span 2;
 }
 
@@ -328,7 +1187,7 @@
     line-height: 1.7;
 }
 
-/* ── 3. WHAT YOU'LL SEE ──────────────────────────────────────── */
+/* â”€â”€ 3. WHAT YOU'LL SEE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .hel-views-section {
     background: linear-gradient(160deg, var(--medi-bg-dark) 0%, var(--medi-bg-dark2) 100%);
@@ -468,7 +1327,7 @@
     color: rgba(255, 255, 255, 0.95);
 }
 
-/* ── 4. DESTINATIONS ─────────────────────────────────────────── */
+/* â”€â”€ 4. DESTINATIONS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .hel-destinations-section {
     background: var(--medi-bg-soft);
@@ -486,7 +1345,8 @@
 }
 
 .hel-destinations-intro {
-    font-size: 16px;
+    font-family: var(--hel-font-body);
+    font-size: 18px;
     font-weight: 500;
     color: #2d3748;
     margin: 0 0 6px 0;
@@ -610,7 +1470,7 @@
     line-height: 1.65;
 }
 
-/* ── 5. DISCOVERY EXCURSIONS (parallax bg) ───────────────────── */
+/* â”€â”€ 5. DISCOVERY EXCURSIONS (parallax bg) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .hel-discovery-section {
     position: relative;
@@ -654,11 +1514,12 @@
 }
 
 .hel-discovery-heading {
-    font-size: 44px;
-    font-weight: 800;
+    font-family: var(--hel-font-display);
+    font-size: 48px;
+    font-weight: 700;
     color: #ffffff;
     margin: 0 0 24px;
-    line-height: 1.15;
+    line-height: 1.25;
     letter-spacing: -0.01em;
 }
 
@@ -679,7 +1540,8 @@
 }
 
 .hel-discovery-body {
-    font-size: 16px;
+    font-family: var(--hel-font-body);
+    font-size: 18px;
     color: rgba(255, 255, 255, 0.75);
     margin: 0 0 36px;
     line-height: 1.75;
@@ -731,7 +1593,7 @@
     line-height: 1.6;
 }
 
-/* ── 6. SAFETY ───────────────────────────────────────────────── */
+/* â”€â”€ 6. SAFETY â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .hel-safety-section {
     background: var(--medi-bg-white);
@@ -751,7 +1613,8 @@
 }
 
 .hel-safety-lead {
-    font-size: 19px;
+    font-family: var(--hel-font-body);
+    font-size: 18px;
     font-weight: 600;
     color: var(--medi-navy);
     margin: 0 0 10px 0;
@@ -759,7 +1622,8 @@
 }
 
 .hel-safety-body {
-    font-size: 16px;
+    font-family: var(--hel-font-body);
+    font-size: 18px;
     color: #4a5568;
     margin: 0 0 20px 0;
     line-height: 1.7;
@@ -850,7 +1714,7 @@
     font-style: italic;
 }
 
-/* ── 7. EXPERT REVIEW ────────────────────────────────────────── */
+/* â”€â”€ 7. EXPERT REVIEW â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .hel-review-section {
     background: linear-gradient(160deg, var(--medi-bg-dark) 0%, var(--medi-bg-dark2) 100%);
@@ -982,7 +1846,7 @@
     font-style: italic;
 }
 
-/* ── 8. COMPARE SECTION ──────────────────────────────────────── */
+/* â”€â”€ 8. COMPARE SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .hel-compare-section {
     background: var(--medi-bg-white);
@@ -1000,7 +1864,8 @@
 }
 
 .hel-compare-intro {
-    font-size: 17px;
+    font-family: var(--hel-font-body);
+    font-size: 18px;
     color: #4a5568;
     margin: 0 auto;
     max-width: 760px;
@@ -1094,7 +1959,7 @@
     font-style: italic;
 }
 
-/* ── 9. EDITORIAL / WHY TRIPS & SHIPS ────────────────────────── */
+/* â”€â”€ 9. EDITORIAL / WHY TRIPS & SHIPS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .hel-editorial-section {
     background: var(--medi-bg-soft);
@@ -1195,11 +2060,12 @@
 }
 
 .hel-editorial-title {
-    font-size: 32px;
-    font-weight: 800;
+    font-family: var(--hel-font-display);
+    font-size: 48px;
+    font-weight: 700;
     color: #0f1c2e;
     margin: 0 0 16px;
-    line-height: 1.2;
+    line-height: 1.25;
     letter-spacing: -0.01em;
 }
 
@@ -1212,7 +2078,8 @@
 }
 
 .hel-editorial-text {
-    font-size: 16px;
+    font-family: var(--hel-font-body);
+    font-size: 18px;
     color: #4a5568;
     line-height: 1.75;
     margin-bottom: 20px;
@@ -1283,7 +2150,7 @@
     font-weight: 600;
 }
 
-/* ── 10. FINAL THOUGHTS ──────────────────────────────────────── */
+/* â”€â”€ 10. FINAL THOUGHTS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 .hel-final-section {
     background: #ffffff;
@@ -1325,11 +2192,12 @@
 }
 
 .hel-final-heading {
-    font-size: 44px;
-    font-weight: 800;
+    font-family: var(--hel-font-display);
+    font-size: 48px;
+    font-weight: 700;
     color: var(--medi-navy);
     margin: 0 0 20px;
-    line-height: 1.15;
+    line-height: 1.25;
     letter-spacing: -0.01em;
 }
 
@@ -1395,45 +2263,90 @@
     max-width: 480px;
 }
 
-/* ─────────────────────────────────────────────────────────────
+/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
    RESPONSIVE: TABLET  (max-width: 1024px)
-   ───────────────────────────────────────────────────────────── */
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 @media (max-width: 1024px) {
 
     /* Hero */
-    .medi-hero-main-title { font-size: 42px; }
-    .medi-hero-subtitle-text { font-size: 17px; }
+    .hel-hero-main-title {
+        font-size: 42px;
+    }
 
-    /* 2-col → 1-col sections */
+    .hel-hero-subtitle-text {
+        font-size: 17px;
+    }
+
+    /* 2-col â†’ 1-col sections */
     .hel-intro-grid,
     .hel-aircraft-grid,
-    .hel-safety-grid { grid-template-columns: 1fr; gap: 40px; }
+    .hel-safety-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
 
-    .hel-intro-image-col { order: -1; }
+    .hel-aircraft-text-col {
+        order: -1;
+    }
 
     .hel-intro-image-col .hel-image-frame,
     .hel-aircraft-image-col .hel-image-frame,
-    .hel-safety-image-col .hel-image-frame { height: 340px; }
+    .hel-safety-image-col .hel-image-frame {
+        height: 340px;
+    }
 
     /* Card grids shrink */
-    .hel-views-cards { grid-template-columns: repeat(3, 1fr); }
-    .hel-destinations-grid { grid-template-columns: repeat(2, 1fr); }
-    .hel-compare-grid { grid-template-columns: repeat(2, 1fr); }
-    .hel-review-two-col { grid-template-columns: 1fr; gap: 16px; }
+    .hel-views-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hel-destinations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hel-compare-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hel-review-two-col {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
 
     /* Discovery */
-    .hel-discovery-points { grid-template-columns: 1fr; }
-    .hel-discovery-heading { font-size: 36px; }
+    .hel-discovery-points {
+        grid-template-columns: 1fr;
+    }
+
+    .hel-discovery-heading {
+        font-size: 36px;
+    }
 
     /* Editorial */
-    .hel-editorial-card { grid-template-columns: 1fr; gap: 36px; padding: 36px; }
-    .hel-editorial-image-side { max-width: 300px; margin: 0 auto; }
-    .hel-editorial-title { font-size: 28px; }
+    .hel-editorial-card {
+        grid-template-columns: 1fr;
+        gap: 36px;
+        padding: 36px;
+    }
+
+    .hel-editorial-image-side {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .hel-editorial-title {
+        font-size: 28px;
+    }
 
     /* Final */
-    .hel-final-heading { font-size: 36px; }
-    .hel-final-card { padding: 32px 36px; }
+    .hel-final-heading {
+        font-size: 36px;
+    }
+
+    .hel-final-card {
+        padding: 32px 36px;
+    }
 
     /* FAQ */
     .hel-faq-section {
@@ -1455,13 +2368,19 @@
     }
 
     /* CTA */
-    .medi-cta-heading-white { font-size: 38px !important; }
-    .medi-cta-considerations-list { grid-template-columns: 1fr; gap: 12px; }
+    .hel-cta-heading-white {
+        font-size: 38px !important;
+    }
+
+    .hel-cta-considerations-list {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
 }
 
-/* ─────────────────────────────────────────────────────────────
+/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
    RESPONSIVE: MOBILE  (max-width: 767px)
-   ───────────────────────────────────────────────────────────── */
+   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 @media (max-width: 767px) {
 
@@ -1471,81 +2390,260 @@
     .hel-safety-section,
     .hel-compare-section,
     .hel-editorial-section,
-    .hel-final-section { padding: 48px 16px; }
+    .hel-final-section {
+        padding: 48px 16px;
+    }
 
     .hel-views-section,
     .hel-destinations-section,
-    .hel-review-section { padding: 48px 16px; }
+    .hel-review-section {
+        padding: 48px 16px;
+    }
 
-    .hel-discovery-section { padding: 48px 16px; min-height: auto; }
+    .hel-discovery-section {
+        padding: 48px 16px;
+        min-height: auto;
+    }
+
+    /* Headings & separators — center on mobile */
+    .hel-section-heading,
+    .hel-discovery-heading,
+    .hel-final-heading,
+    .hel-cta-title,
+    .hel-editorial-title {
+        text-align: center;
+    }
+
+    .hel-heading-separator-bar,
+    .hel-discovery-separator,
+    .hel-final-separator,
+    .hel-cta-bar,
+    .hel-editorial-bar,
+    .hel-bar-centered {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block;
+    }
+
+    .hel-eyebrow,
+    .hel-intro-section .hel-eyebrow,
+    .hel-aircraft-section .hel-eyebrow,
+    .hel-safety-section .hel-eyebrow {
+        justify-content: center;
+        text-align: center;
+    }
 
     /* Hero */
-    .medi-hero-main-title { font-size: 30px; }
-    .medi-hero-subtitle-text { font-size: 15px; }
-    .medi-hero-eyebrow-tag { font-size: 10px; padding: 5px 12px; }
+    .hel-hero-main-title {
+        font-size: 30px;
+    }
+
+    .hel-hero-subtitle-text {
+        font-size: 15px;
+    }
+
+    .hel-hero-eyebrow-tag {
+        font-size: 10px;
+        padding: 5px 12px;
+    }
 
     /* Intro */
-    .hel-intro-image-col .hel-image-frame { height: 260px; }
-    .hel-intro-statement-bold { font-size: 16px; }
+    .hel-intro-image-col .hel-image-frame {
+        height: 260px;
+    }
+
+    .hel-intro-statement-bold {
+        font-size: 16px;
+    }
 
     /* Aircraft */
-    .hel-aircraft-image-col .hel-image-frame { height: 240px; }
-    .hel-aircraft-features { gap: 8px; }
-    .hel-aircraft-feature { padding: 10px 14px; font-size: 14px; }
+    .hel-aircraft-image-col .hel-image-frame {
+        height: 240px;
+    }
+
+    .hel-aircraft-features {
+        gap: 8px;
+    }
+
+    .hel-aircraft-feature {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
 
     /* Views */
-    .hel-views-cards { grid-template-columns: 1fr 1fr; gap: 12px; }
-    .hel-views-cards > *:last-child { grid-column: span 2; }
-    .hel-view-card { padding: 18px 14px; }
-    .hel-views-footer-box { padding: 16px; }
+    .hel-views-cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .hel-views-cards>*:last-child {
+        grid-column: span 2;
+    }
+
+    .hel-view-card {
+        padding: 18px 14px;
+    }
+
+    .hel-views-footer-box {
+        padding: 16px;
+    }
 
     /* Destinations */
-    .hel-destinations-grid { grid-template-columns: 1fr; gap: 16px; }
-    .hel-destination-card-img-wrap { height: 200px; }
-    .hel-destinations-footer { padding: 14px 18px; }
+    .hel-destinations-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .hel-destination-card-img-wrap {
+        height: 200px;
+    }
+
+    .hel-destinations-footer {
+        padding: 14px 18px;
+    }
 
     /* Discovery */
-    .hel-discovery-heading { font-size: 26px; }
-    .hel-discovery-points { grid-template-columns: 1fr; gap: 10px; }
-    .hel-discovery-point { padding: 14px; }
-    .hel-discovery-point-icon { width: 36px; height: 36px; }
+    .hel-discovery-heading {
+        font-size: 26px;
+    }
+
+    .hel-discovery-points {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .hel-discovery-point {
+        padding: 14px;
+    }
+
+    .hel-discovery-point-icon {
+        width: 36px;
+        height: 36px;
+    }
 
     /* Safety */
-    .hel-safety-image-col .hel-image-frame { height: 260px; }
-    .hel-safety-benefits { gap: 8px; }
-    .hel-safety-benefit { padding: 10px 14px; font-size: 14px; }
+    .hel-safety-image-col .hel-image-frame {
+        height: 260px;
+    }
+
+    .hel-safety-benefits {
+        gap: 8px;
+    }
+
+    .hel-safety-benefit {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
 
     /* Review */
-    .hel-review-two-col { grid-template-columns: 1fr; }
-    .hel-review-col { padding: 20px 16px; }
+    .hel-review-two-col {
+        grid-template-columns: 1fr;
+    }
+
+    .hel-review-col {
+        padding: 20px 16px;
+    }
 
     /* Compare */
-    .hel-compare-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
-    .hel-compare-card { padding: 18px 14px; }
-    .hel-compare-footer { padding: 14px 20px; }
+    .hel-compare-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .hel-compare-card {
+        padding: 18px 14px;
+    }
+
+    .hel-compare-footer {
+        padding: 14px 20px;
+    }
 
     /* Editorial */
-    .hel-editorial-card { padding: 24px 20px; gap: 24px; text-align: center; }
-    .hel-editorial-image-side { max-width: 280px; margin: 0 auto; }
-    .hel-editorial-image-frame { aspect-ratio: 3 / 4.5; }
-    .hel-editorial-stats { padding: 12px 20px; gap: 16px; }
-    .hel-editorial-stat-number { font-size: 22px; }
-    .hel-editorial-title { font-size: 24px !important; }
-    .hel-editorial-bar { margin: 0 auto 14px; }
-    .hel-editorial-text { font-size: 15px; margin-bottom: 14px; }
-    .hel-editorial-services { margin-bottom: 14px; }
-    .hel-editorial-services-list { gap: 6px; justify-content: center; }
-    .hel-editorial-pill { font-size: 12px; padding: 5px 12px; }
-    .hel-editorial-expertise-strip { gap: 6px; justify-content: center; }
-    .hel-editorial-expertise-pill { font-size: 11px; padding: 5px 12px; }
-    .hel-editorial-badge { margin-bottom: 10px; }
+    .hel-editorial-card {
+        padding: 24px 20px;
+        gap: 24px;
+        text-align: center;
+    }
+
+    .hel-editorial-image-side {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .hel-editorial-image-frame {
+        aspect-ratio: 3 / 4.5;
+    }
+
+    .hel-editorial-stats {
+        padding: 12px 20px;
+        gap: 16px;
+    }
+
+    .hel-editorial-stat-number {
+        font-size: 22px;
+    }
+
+    .hel-editorial-title {
+        font-size: 24px !important;
+    }
+
+    .hel-editorial-bar {
+        margin: 0 auto 14px;
+    }
+
+    .hel-editorial-text {
+        font-size: 15px;
+        margin-bottom: 14px;
+    }
+
+    .hel-editorial-services {
+        margin-bottom: 14px;
+    }
+
+    .hel-editorial-services-list {
+        gap: 6px;
+        justify-content: center;
+    }
+
+    .hel-editorial-pill {
+        font-size: 12px;
+        padding: 5px 12px;
+    }
+
+    .hel-editorial-expertise-strip {
+        gap: 6px;
+        justify-content: center;
+    }
+
+    .hel-editorial-expertise-pill {
+        font-size: 11px;
+        padding: 5px 12px;
+    }
+
+    .hel-editorial-badge {
+        margin-bottom: 10px;
+    }
 
     /* Final */
-    .hel-final-heading { font-size: 28px; }
-    .hel-final-card { padding: 22px 20px; }
-    .hel-final-body { font-size: 16px; }
-    .hel-final-emphasis { font-size: 22px; }
-    .hel-final-stmt { font-size: 18px; }
+    .hel-final-heading {
+        font-size: 28px;
+    }
+
+    .hel-final-card {
+        padding: 22px 20px;
+    }
+
+    .hel-final-body {
+        font-size: 16px;
+    }
+
+    .hel-final-emphasis {
+        font-size: 22px;
+    }
+
+    .hel-final-stmt {
+        font-size: 18px;
+    }
 
     /* FAQ */
     .hel-faq-section {
@@ -1579,7 +2677,7 @@
     }
 }
 
-/* ── CTA SECTION (Arctic Aurora style like Greenland page) ── */
+/* â”€â”€ CTA SECTION (Arctic Aurora style like Greenland page) â”€â”€ */
 
 .hel-cta-section {
     position: relative;
@@ -1609,6 +2707,7 @@
         opacity: 0.6;
         transform: translateX(-50%) scale(1);
     }
+
     100% {
         opacity: 1;
         transform: translateX(-50%) scale(1.08);
@@ -1653,10 +2752,13 @@
 }
 
 @keyframes hel-crystal-float {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: rotate(45deg) translateY(0);
         opacity: 0.5;
     }
+
     50% {
         transform: rotate(45deg) translateY(-18px);
         opacity: 0.9;
@@ -1702,8 +2804,13 @@
 }
 
 @keyframes hel-compass-spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .hel-cta-compass-ring svg {
@@ -1711,8 +2818,13 @@
 }
 
 @keyframes hel-compass-counter-spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(-360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
 }
 
 /* Eyebrow */
@@ -1728,9 +2840,10 @@
 
 /* Title */
 .hel-cta-title {
-    font-size: 52px;
-    line-height: 1.12;
-    font-weight: 500;
+    font-family: var(--hel-font-display);
+    font-size: 48px;
+    line-height: 1.25;
+    font-weight: 700;
     color: #ffffff;
     margin: 0 0 14px;
     letter-spacing: -0.01em;
@@ -1875,31 +2988,77 @@
 
 /* Responsive Overrides */
 @media (max-width: 1024px) {
-    .hel-cta-title { font-size: 38px; }
+    .hel-cta-title {
+        font-size: 38px;
+    }
 }
 
 @media (max-width: 767px) {
-    .hel-cta-section { padding: 60px 16px; }
-    .hel-cta-title { font-size: 28px; }
-    .hel-cta-subtitle { font-size: 16px; margin-bottom: 32px; }
-    .hel-cta-cards-grid { grid-template-columns: 1fr; gap: 12px; }
-    .hel-cta-card { padding: 14px 16px; }
-    .hel-cta-card-icon { width: 36px; height: 36px; }
-    .hel-cta-actions { flex-direction: column; gap: 12px; }
-    .hel-cta-primary-btn { width: 100%; justify-content: center; }
+    .hel-cta-section {
+        padding: 60px 16px;
+    }
+
+    .hel-cta-title {
+        font-size: 28px;
+    }
+
+    .hel-cta-subtitle {
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+
+    .hel-cta-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .hel-cta-card {
+        padding: 14px 16px;
+    }
+
+    .hel-cta-card-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .hel-cta-actions {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hel-cta-primary-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
     .hel-cta-crystal-1,
     .hel-cta-crystal-2,
-    .hel-cta-crystal-3 { display: none; }
-    .hel-cta-compass-ring { width: 52px; height: 52px; margin-bottom: 22px; }
-    .hel-cta-closing { font-size: 15px; }
+    .hel-cta-crystal-3 {
+        display: none;
+    }
+
+    .hel-cta-compass-ring {
+        width: 52px;
+        height: 52px;
+        margin-bottom: 22px;
+    }
+
+    .hel-cta-closing {
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 360px) {
-    .hel-cta-title { font-size: 22px !important; }
-    .hel-cta-section { padding: 48px 12px; }
+    .hel-cta-title {
+        font-size: 22px !important;
+    }
+
+    .hel-cta-section {
+        padding: 48px 12px;
+    }
 }
 
-/* ── FAQ RESPONSIVE SMALL MOBILE ────────────────────────────── */
+/* â”€â”€ FAQ RESPONSIVE SMALL MOBILE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 
 @media (max-width: 360px) {
     .hel-faq-section {
@@ -1928,4 +3087,117 @@
     .hel-faq-answer {
         font-size: 13px;
     }
-}
+
+}
+
+/* â”€â”€ TYPOGRAPHY â€” 991 tablet / 640 mobile (Playfair/Montserrat) â”€â”€ */
+@media (max-width: 991px) {
+    .hel-hero-main-title {
+        font-size: 32px !important;
+        line-height: 1.15 !important;
+    }
+
+    .hel-section-heading,
+    .hel-discovery-heading,
+    .hel-final-heading,
+    .hel-cta-title,
+    .hel-editorial-title {
+        font-size: 28px !important;
+        line-height: 1.25 !important;
+    }
+
+    .hel-hero-subtitle-text,
+    .hel-intro-lead,
+    .hel-intro-body,
+    .hel-aircraft-lead,
+    .hel-aircraft-body,
+    .hel-views-intro,
+    .hel-destinations-intro,
+    .hel-discovery-body,
+    .hel-safety-lead,
+    .hel-safety-body,
+    .hel-review-intro,
+    .hel-compare-intro,
+    .hel-final-body,
+    .hel-cta-subtitle,
+    .hel-editorial-text,
+    .hel-faq-answer {
+        font-size: 17px !important;
+    }
+
+    .hel-expert-quote {
+        font-size: 18px !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .hel-hero-main-title {
+        font-size: 26px !important;
+        line-height: 1.15 !important;
+    }
+
+    .hel-section-heading,
+    .hel-discovery-heading,
+    .hel-final-heading,
+    .hel-cta-title,
+    .hel-editorial-title {
+        font-size: 24px !important;
+        line-height: 1.25 !important;
+    }
+
+    .hel-hero-subtitle-text,
+    .hel-intro-lead,
+    .hel-intro-body,
+    .hel-aircraft-lead,
+    .hel-aircraft-body,
+    .hel-views-intro,
+    .hel-destinations-intro,
+    .hel-discovery-body,
+    .hel-safety-lead,
+    .hel-safety-body,
+    .hel-review-intro,
+    .hel-compare-intro,
+    .hel-final-body,
+    .hel-cta-subtitle,
+    .hel-editorial-text,
+    .hel-faq-answer {
+        font-size: 16px !important;
+    }
+
+    .hel-expert-quote {
+        font-size: 18px !important;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .hel-section-heading,
+    .hel-discovery-heading,
+    .hel-final-heading,
+    .hel-cta-title,
+    .hel-editorial-title {
+        text-align: center !important;
+    }
+
+    .hel-heading-separator-bar,
+    .hel-discovery-separator,
+    .hel-final-separator,
+    .hel-cta-bar,
+    .hel-editorial-bar,
+    .hel-bar-centered {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block !important;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .hel-section-heading,
+    .hel-discovery-heading,
+    .hel-final-heading,
+    .hel-cta-title,
+    .hel-editorial-title {
+        text-align: center !important;
+    }
+}
