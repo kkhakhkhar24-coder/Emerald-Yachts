@@ -191,8 +191,9 @@ import Celebritygalapagoscruises from "./pages/Celebritygalapagoscruises/Celebri
 import Celebrityalaskacruises from "./pages/Celebrityalaskacruises/Celebrityalaskacruises";
 import Celebritymediterraneancruises from "./pages/Celebritymediterraneancruises/Celebritymediterraneancruises";
 import Celebritycaribbeancruises from "./pages/Celebritycaribbeancruises/Celebritycaribbeancruises";
-// import Celebrityaquaclassvsconciergeclass from "./pages/Celebrityaquaclassvsconciergeclass/Celebrityaquaclassvsconciergeclass";
-// import Celebrityinfiniteveranda from "./pages/Celebrityinfiniteveranda/Celebrityinfiniteveranda";
+import Celebrityaquaclassvsconciergeclass from "./pages/Celebrityaquaclassvsconciergeclass/Celebrityaquaclassvsconciergeclass";
+import Celebrityinfiniteveranda from "./pages/Celebrityinfiniteveranda/Celebrityinfiniteveranda";
+// import Celebrityoffersloyalty from "./pages/Celebrityoffersloyalty/Celebrityoffersloyalty";
 
 function App() {
   return (
@@ -1089,7 +1090,7 @@ function App() {
             element={<Celebritycaribbeancruises />}
           />
 
-          {/* <Route
+          <Route
             path="/celebrity-cruises/aquaclass-vs-concierge-class"
             element={<Celebrityaquaclassvsconciergeclass />}
           />
@@ -1097,10 +1098,12 @@ function App() {
           <Route
             path="/celebrity-cruises/infinite-veranda"
             element={<Celebrityinfiniteveranda />}
+          />
+
+          {/* <Route
+            path="/celebrity-cruises/offers-loyalty"
+            element={<Celebrityoffersloyalty />}
           /> */}
-
-
-
 
 
         </Routes>

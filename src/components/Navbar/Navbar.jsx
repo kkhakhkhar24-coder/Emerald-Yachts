@@ -1415,7 +1415,7 @@ const Navbar = () => {
                 Celebrity Caribbean Cruises
               </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/celebrity-cruises/aquaclass-vs-concierge-class"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -1429,6 +1429,14 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Celebrity Infinite Veranda
+              </NavLink>
+
+              {/* <NavLink
+                to="/celebrity-cruises/offers-loyalty"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Celebrity Offers & Loyalty
               </NavLink> */}
 
 
@@ -2803,7 +2811,7 @@ const Navbar = () => {
               Celebrity Caribbean Cruises
             </NavLink>
 
-            {/* <NavLink
+            <NavLink
                 to="/celebrity-cruises/aquaclass-vs-concierge-class"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -2817,8 +2825,15 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Celebrity Infinite Veranda
-              </NavLink> */}
+              </NavLink>
 
+              {/* <NavLink
+                to="/celebrity-cruises/offers-loyalty"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Celebrity Offers & Loyalty
+              </NavLink> */}
 
 
             <span className="mobile-dropdown-divider"></span>
