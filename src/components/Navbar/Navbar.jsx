@@ -1431,13 +1431,21 @@ const Navbar = () => {
                 Celebrity Infinite Veranda
               </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/celebrity-cruises/offers-loyalty"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 Celebrity Offers & Loyalty
-              </NavLink> */}
+              </NavLink>
+
+              <NavLink
+              to="/celebrity-cruises/request-a-quote"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Celebrity Request a Quote
+            </NavLink>
 
 
 
@@ -2827,13 +2835,21 @@ const Navbar = () => {
               Celebrity Infinite Veranda
             </NavLink>
 
-            {/* <NavLink
+            <NavLink
                 to="/celebrity-cruises/offers-loyalty"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
                 Celebrity Offers & Loyalty
-              </NavLink> */}
+              </NavLink>
+
+            <NavLink
+              to="/celebrity-cruises/request-a-quote"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Celebrity Request a Quote
+            </NavLink>
 
 
             <span className="mobile-dropdown-divider"></span>

@@ -193,7 +193,8 @@ import Celebritymediterraneancruises from "./pages/Celebritymediterraneancruises
 import Celebritycaribbeancruises from "./pages/Celebritycaribbeancruises/Celebritycaribbeancruises";
 import Celebrityaquaclassvsconciergeclass from "./pages/Celebrityaquaclassvsconciergeclass/Celebrityaquaclassvsconciergeclass";
 import Celebrityinfiniteveranda from "./pages/Celebrityinfiniteveranda/Celebrityinfiniteveranda";
-// import Celebrityoffersloyalty from "./pages/Celebrityoffersloyalty/Celebrityoffersloyalty";
+import Celebrityoffersloyalty from "./pages/Celebrityoffersloyalty/Celebrityoffersloyalty";
+import Celebritycruisequote from "./pages/Celebritycruisequote/Celebritycruisequote";
 
 function App() {
   return (
@@ -1100,10 +1101,15 @@ function App() {
             element={<Celebrityinfiniteveranda />}
           />
 
-          {/* <Route
+          <Route
             path="/celebrity-cruises/offers-loyalty"
             element={<Celebrityoffersloyalty />}
-          /> */}
+          />
+
+          <Route
+            path="/celebrity-cruises/request-a-quote"
+            element={<Celebritycruisequote />}
+          />
 
 
         </Routes>
