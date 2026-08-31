@@ -1,6 +1,8 @@
 import ProfilePictureAH from "../../assets/Media (2).jpg"
 import Navbar from '../../components/Navbar/Navbar'
 import './ScenicvsPonant.css'
+import scenicDestImg from "../../assets/ScenicvsPonant/glacier-express-switzerland-scenic-railway-snowy-alps-winter.webp"
+import ponantDestImg from "../../assets/ScenicvsPonant/santorini-greece-oia-blue-domed-churches-whitewashed-village-caldera-sea-view.webp"
 
 import {
     Ship, MapPin, Users, CheckCircle, Compass, Sparkles, Anchor, Gem, ChevronRight, Crown, Phone, LayoutList, Utensils, Sun, Award, Music, GraduationCap, Wifi, Wine, Image as ImageIcon, Waves, DollarSign, ShieldCheck, Leaf, Globe, Mountain
@@ -505,7 +507,7 @@ function ScenicVsPonant() {
                     <div className="svp-dest-grid">
                         <div className="svp-dest-card svp-dest-scenic">
                             <div className="svp-dest-image">
-                                <SvpImagePlaceholder label="Scenic Global Destinations" />
+                                <img src={scenicDestImg} alt="Scenic Global Destinations" className="svp-dest-img" />
                             </div>
                             <div className="svp-dest-body">
                                 <div className="svp-dest-header">
@@ -521,7 +523,7 @@ function ScenicVsPonant() {
                         </div>
                         <div className="svp-dest-card svp-dest-ponant">
                             <div className="svp-dest-image">
-                                <SvpImagePlaceholder label="Ponant Itineraries" />
+                                <img src={ponantDestImg} alt="Ponant Itineraries" className="svp-dest-img" />
                             </div>
                             <div className="svp-dest-body">
                                 <div className="svp-dest-header">

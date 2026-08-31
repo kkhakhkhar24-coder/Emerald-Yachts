@@ -1,6 +1,13 @@
 import ProfilePictureAH from "../../assets/Media (2).jpg"
 import Navbar from '../../components/Navbar/Navbar'
 import './Scenicmediterraneancruises.css'
+import italyImg from "../../assets/Scenicmediterraneancruises/amalfi-coast-italy-scenic-coastal-village-sea-view-travel-vacation.webp"
+import greeceImg from "../../assets/Scenicmediterraneancruises/santorini-greece-oia-blue-domed-churches-whitewashed-village-caldera-sea-view.webp"
+import croatiaImg from "../../assets/Scenicmediterraneancruises/porto-timoni-twin-bays-corfu-greece-turquoise-water-pink-flowers-scenic-coastal-view.webp"
+import franceImg from "../../assets/Scenicmediterraneancruises/colmar-france-petite-venise-colorful-half-timbered-houses-canal-flowers-alsace-travel.webp"
+import spainImg from "../../assets/Scenicmediterraneancruises/positano-amalfi-coast-italy-cliffside-village-sea-view-bougainvillea.webp"
+import portugalImg from "../../assets/Scenicmediterraneancruises/portofino-liguria-italy-colorful-harbor-village-boat-travel-destination.webp"
+import montenegroImg from "../../assets/Scenicmediterraneancruises/zakynthos-greece-navagio-beach-shipwreck-cove-turquoise-water-cliffs.webp"
 import {
     Sparkles, Phone, LayoutList, CheckCircle, Ship, Anchor, Compass, Users, Heart, Wifi, Coffee, Waves, Globe, Award, Crown, MapPin, Sun, Utensils, Image as ImageIcon, Wine, Music, Landmark, ShoppingBag, Camera, Flower2, CloudSun, Umbrella, Grape, Palette, Star, Plane, Bed, Gem, ChefHat, Mountain
 } from 'lucide-react'
@@ -52,15 +59,15 @@ function ScenicMediterraneanCruises() {
         { text: 'Small ship atmosphere', icon: Ship }
     ]
 
-    /* Mediterranean Destinations */
+    /* Mediterranean Destinations — using local assets from src/assets/Scenicmediterraneancruises/ */
     const smcDestinations = [
-        { name: 'Italy', desc: 'Experience Rome, Venice, Florence, Sicily, the Amalfi Coast, Portofino, and charming seaside villages filled with history, art, and exceptional cuisine.' },
-        { name: 'Greece', desc: 'Visit Athens, Santorini, Mykonos, Crete, Rhodes, and smaller Greek islands famous for whitewashed villages and stunning sunsets.' },
-        { name: 'Croatia', desc: "Explore Dubrovnik, Split, Hvar, Korčula, and the breathtaking Dalmatian Coast." },
-        { name: 'France', desc: 'Discover Nice, Cannes, Monaco, Marseille, Corsica, and the glamorous French Riviera.' },
-        { name: 'Spain', desc: 'Sail to Barcelona, Valencia, Málaga, Palma de Mallorca, Ibiza, and historic Mediterranean ports.' },
-        { name: 'Portugal', desc: "Select itineraries include Lisbon and Portugal's scenic Atlantic coastline before entering the Mediterranean." },
-        { name: 'Montenegro', desc: "Cruise into the spectacular Bay of Kotor, one of Europe's most beautiful natural harbors." }
+        { name: 'Italy', desc: 'Experience Rome, Venice, Florence, Sicily, the Amalfi Coast, Portofino, and charming seaside villages filled with history, art, and exceptional cuisine.', img: italyImg },
+        { name: 'Greece', desc: 'Visit Athens, Santorini, Mykonos, Crete, Rhodes, and smaller Greek islands famous for whitewashed villages and stunning sunsets.', img: greeceImg },
+        { name: 'Croatia', desc: "Explore Dubrovnik, Split, Hvar, Korčula, and the breathtaking Dalmatian Coast.", img: croatiaImg },
+        { name: 'France', desc: 'Discover Nice, Cannes, Monaco, Marseille, Corsica, and the glamorous French Riviera.', img: franceImg },
+        { name: 'Spain', desc: 'Sail to Barcelona, Valencia, Málaga, Palma de Mallorca, Ibiza, and historic Mediterranean ports.', img: spainImg },
+        { name: 'Portugal', desc: "Select itineraries include Lisbon and Portugal's scenic Atlantic coastline before entering the Mediterranean.", img: portugalImg },
+        { name: 'Montenegro', desc: "Cruise into the spectacular Bay of Kotor, one of Europe's most beautiful natural harbors.", img: montenegroImg }
     ]
 
     /* Scenic Eclipse Experience */
@@ -375,7 +382,7 @@ function ScenicMediterraneanCruises() {
                                 const isWide = dest.name === 'Montenegro'
                                 return (
                                     <div key={idx} className={`smc-destination-card ${isWide ? 'smc-destinations-wide' : ''}`}>
-                                        <SmcPlaceholder label={dest.name} small />
+                                        <img src={dest.img} alt={dest.name} className="smc-destination-img" />
                                         <div className="smc-destination-card-body">
                                             <h4 className="smc-destination-name">{dest.name}</h4>
                                             <p className="smc-destination-desc">{dest.desc}</p>

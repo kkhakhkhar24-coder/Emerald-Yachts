@@ -1,6 +1,12 @@
 import ProfilePictureAH from "../../assets/Media (2).jpg"
 import Navbar from '../../components/Navbar/Navbar'
 import './Sceniceclipsereviews.css'
+import antarcticaImg from "../../assets/Sceniceclipsereviews/zermatt-switzerland-matterhorn-snowy-alpine-village-winter.webp"
+import arcticImg from "../../assets/Sceniceclipsereviews/glacier-express-switzerland-scenic-railway-snowy-alps-winter.webp"
+import greenlandImg from "../../assets/Sceniceclipsereviews/hallstatt-austria-snowy-lakeside-village-alps-winter-travel-destination.webp"
+import mediterraneanImg from "../../assets/Sceniceclipsereviews/santorini-greece-oia-blue-domed-churches-whitewashed-village-caldera-sea-view.webp"
+import fjordsImg from "../../assets/Sceniceclipsereviews/lauterbrunnen-switzerland-waterfall-valley-alpine-village-summer.webp"
+import southPacificImg from "../../assets/Sceniceclipsereviews/zakynthos-greece-navagio-beach-shipwreck-cove-turquoise-water-cliffs.webp"
 import {
     Sparkles, Phone, LayoutList, Star, CheckCircle, XCircle, Ship, Anchor, Compass, Users, Heart, Wifi, Coffee, Waves, Snowflake, Mountain, Globe, Award, Crown, MapPin, Wind, Plane, ChefHat, Bed, Home, Sun, Utensils
 } from 'lucide-react'
@@ -108,14 +114,14 @@ function ScenicEclipseReviews() {
         'Yoga studio', 'Fitness center', 'Massage treatments', 'Beauty services'
     ]
 
-    /* Destinations */
+    /* Destinations — using local assets from src/assets/Sceniceclipsereviews/ */
     const sceDestinations = [
-        { name: 'Antarctica', desc: "Witness glaciers, penguins, whales, and Zodiac landings in one of the world's most remote destinations.", icon: Snowflake },
-        { name: 'Arctic', desc: 'Explore polar landscapes, remote wilderness, and incredible wildlife.', icon: Mountain },
-        { name: 'Greenland', desc: 'Discover colossal icebergs, spectacular fjords, and remote polar landscapes.', icon: Wind },
-        { name: 'Mediterranean', desc: 'Visit iconic ports alongside smaller coastal towns inaccessible to larger ships.', icon: Anchor },
-        { name: 'Norwegian Fjords', desc: 'Cruise breathtaking fjords surrounded by waterfalls and mountain scenery.', icon: Waves },
-        { name: 'South Pacific', desc: 'Discover remote islands, vibrant marine life, and unique cultural experiences.', icon: Globe }
+        { name: 'Antarctica', desc: "Witness glaciers, penguins, whales, and Zodiac landings in one of the world's most remote destinations.", icon: Snowflake, img: antarcticaImg },
+        { name: 'Arctic', desc: 'Explore polar landscapes, remote wilderness, and incredible wildlife.', icon: Mountain, img: arcticImg },
+        { name: 'Greenland', desc: 'Discover colossal icebergs, spectacular fjords, and remote polar landscapes.', icon: Wind, img: greenlandImg },
+        { name: 'Mediterranean', desc: 'Visit iconic ports alongside smaller coastal towns inaccessible to larger ships.', icon: Anchor, img: mediterraneanImg },
+        { name: 'Norwegian Fjords', desc: 'Cruise breathtaking fjords surrounded by waterfalls and mountain scenery.', icon: Waves, img: fjordsImg },
+        { name: 'South Pacific', desc: 'Discover remote islands, vibrant marine life, and unique cultural experiences.', icon: Globe, img: southPacificImg }
     ]
 
     /* What's Included */
@@ -588,7 +594,7 @@ function ScenicEclipseReviews() {
                                 const DestIcon = dest.icon
                                 return (
                                     <div key={idx} className="sce-destination-card">
-                                        <ScePlaceholder label={dest.name} />
+                                        <img src={dest.img} alt={dest.name} className="sce-destination-img" />
                                         <div className="sce-destination-card-content">
                                             <div className="sce-destination-icon">
                                                 <DestIcon size={22} />

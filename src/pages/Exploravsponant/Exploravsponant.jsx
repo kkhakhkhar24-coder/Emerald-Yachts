@@ -1,3 +1,4 @@
+import Navbar from '../../components/Navbar/Navbar'
 import './Exploravsponant.css'
 import "./../AzamaraMediterraneanCruises/AzamaraMediterraneanCruises.css";
 import "./../EmeraldYachts/EmeraldYachts.css";
@@ -211,7 +212,7 @@ function ExploraVsPonant() {
                 <script type="application/ld+json">{JSON.stringify(mediSchemaData)}</script>
             </Helmet>
 
-
+            <Navbar />
 
             {/* ════════════════════════════════════════════════════
                 HERO  (medi-hero-section – rotating images)

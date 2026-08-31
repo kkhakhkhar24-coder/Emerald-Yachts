@@ -581,6 +581,19 @@
     border-width: 0 0 2px 0;
 }
 
+.smc-destination-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    border-radius: 18px 18px 0 0;
+    transition: transform 0.45s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.smc-destination-card:hover .smc-destination-img {
+    transform: scale(1.04);
+}
+
 .smc-destination-card-body {
     padding: 20px 22px 24px;
 }

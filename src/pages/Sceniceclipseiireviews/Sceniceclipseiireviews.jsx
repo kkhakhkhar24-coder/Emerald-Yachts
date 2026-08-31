@@ -1,6 +1,12 @@
 import ProfilePictureAH from "../../assets/Media (2).jpg"
 import Navbar from '../../components/Navbar/Navbar'
 import './Sceniceclipseiireviews.css'
+import antarcticaImg from "../../assets/Sceniceclipseiireviews/zermatt-switzerland-matterhorn-snowy-alpine-village-winter.webp"
+import arcticImg from "../../assets/Sceniceclipseiireviews/glacier-express-switzerland-scenic-railway-snowy-alps-winter.webp"
+import greenlandImg from "../../assets/Sceniceclipseiireviews/hallstatt-austria-snowy-lakeside-village-alps-winter-travel-destination.webp"
+import mediterraneanImg from "../../assets/Sceniceclipseiireviews/santorini-greece-oia-blue-domed-churches-whitewashed-village-caldera-sea-view.webp"
+import southPacificImg from "../../assets/Sceniceclipseiireviews/zakynthos-greece-navagio-beach-shipwreck-cove-turquoise-water-cliffs.webp"
+import australiaImg from "../../assets/Sceniceclipseiireviews/porto-timoni-twin-bays-corfu-greece-turquoise-water-pink-flowers-scenic-coastal-view.webp"
 import {
     Star, CheckCircle, XCircle, Phone, LayoutList, Award, Users, Ship, Utensils, Sparkles, Compass, Wind, HeartPulse, Plane, Globe, MapPin, Anchor, Crown, ChevronRight, Home, Sun, Waves, Camera, Mountain, Snowflake, Palmtree
 } from 'lucide-react'
@@ -74,14 +80,14 @@ function ScenicEclipseIIReviews() {
         { text: 'Sea days made enjoyable', icon: Anchor }
     ]
 
-    /* Destinations */
+    /* Destinations — using local assets from src/assets/Sceniceclipseiireviews/ */
     const seirDestinations = [
-        { name: 'Antarctica', icon: Snowflake, desc: "Penguins, whales, glaciers, Zodiac landings, and extraordinary expedition experiences." },
-        { name: 'Arctic', icon: Mountain, desc: 'Polar bears, sea ice, Svalbard, remote archipelagos, and tundra wilderness.' },
-        { name: 'Greenland', icon: Wind, desc: 'Towering icebergs, deep fjords, coastal communities, and spectacular Arctic scenery.' },
-        { name: 'Mediterranean', icon: Anchor, desc: 'Historic ports, boutique coastal towns, and luxury yacht cruising.' },
-        { name: 'South Pacific', icon: Palmtree, desc: 'French Polynesia, Fiji, Indonesia, Papua New Guinea, and tropical islands.' },
-        { name: 'Australia & New Zealand', icon: Compass, desc: "The Kimberley, Tasmania, New Zealand, and Australia's remarkable coastline." }
+        { name: 'Antarctica', icon: Snowflake, desc: "Penguins, whales, glaciers, Zodiac landings, and extraordinary expedition experiences.", img: antarcticaImg },
+        { name: 'Arctic', icon: Mountain, desc: 'Polar bears, sea ice, Svalbard, remote archipelagos, and tundra wilderness.', img: arcticImg },
+        { name: 'Greenland', icon: Wind, desc: 'Towering icebergs, deep fjords, coastal communities, and spectacular Arctic scenery.', img: greenlandImg },
+        { name: 'Mediterranean', icon: Anchor, desc: 'Historic ports, boutique coastal towns, and luxury yacht cruising.', img: mediterraneanImg },
+        { name: 'South Pacific', icon: Palmtree, desc: 'French Polynesia, Fiji, Indonesia, Papua New Guinea, and tropical islands.', img: southPacificImg },
+        { name: 'Australia & New Zealand', icon: Compass, desc: "The Kimberley, Tasmania, New Zealand, and Australia's remarkable coastline.", img: australiaImg }
     ]
 
     /* What's included */
@@ -567,6 +573,8 @@ function ScenicEclipseIIReviews() {
                                 const DestIcon = dest.icon
                                 return (
                                     <div key={idx} className="seir-dest-card">
+                                        <img src={dest.img} alt={dest.name} className="seir-dest-img" />
+                                        <div className="seir-dest-overlay"></div>
                                         <div className="seir-dest-card-content">
                                             <div className="seir-dest-icon-wrap">
                                                 <DestIcon size={24} />

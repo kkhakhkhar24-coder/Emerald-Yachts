@@ -1015,12 +1015,11 @@
 }
 
 /* ============================================================
-   DESTINATIONS GRID (reused — matches reference's destination
-   card grid pattern exactly)
+   DESTINATIONS GRID — PREMIUM IMAGE CARDS (fixed)
    ============================================================ */
 .seir-dest-section {
-    background: var(--fcel-bg-white);
-    padding: 60px 20px;
+    background: linear-gradient(180deg, var(--fcel-bg-white) 0%, #f8fafc 100%);
+    padding: 80px 20px;
 }
 
 .seir-dest-container {
@@ -1031,80 +1030,124 @@
 .seir-dest-header {
     text-align: center;
     max-width: 780px;
-    margin: 0 auto 50px;
+    margin: 0 auto 56px;
 }
 
 .seir-dest-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    gap: 28px;
 }
 
 .seir-dest-card {
     position: relative;
-    border-radius: 20px;
+    border-radius: 22px;
     overflow: hidden;
-    min-height: 260px;
+    height: 380px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
     cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-    box-shadow: 0 10px 30px rgba(39, 68, 114, 0.06);
-    background: linear-gradient(150deg, var(--fcel-navy) 0%, var(--fcel-bg-dark) 100%);
+    box-shadow: 0 12px 32px rgba(15, 28, 46, 0.08);
+    transition: all 0.45s cubic-bezier(0.165, 0.84, 0.44, 1);
+    background: #0f1c2e;
+    isolation: isolate;
 }
 
 .seir-dest-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 24px 48px rgba(39, 68, 114, 0.12);
+    transform: translateY(-10px);
+    box-shadow: 0 24px 48px rgba(15, 28, 46, 0.18);
+}
+
+.seir-dest-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1), filter 0.4s ease;
+    z-index: 0;
+}
+
+.seir-dest-card:hover .seir-dest-img {
+    transform: scale(1.08);
+    filter: brightness(1.05);
+}
+
+.seir-dest-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(15,28,46,0.08) 0%, rgba(15,28,46,0.15) 35%, rgba(15,28,46,0.88) 100%);
+    z-index: 1;
+    transition: background 0.4s ease;
+}
+
+.seir-dest-card:hover .seir-dest-overlay {
+    background: linear-gradient(180deg, rgba(15,28,46,0.12) 0%, rgba(15,28,46,0.25) 35%, rgba(15,28,46,0.92) 100%);
 }
 
 .seir-dest-card-content {
     position: relative;
     z-index: 2;
-    text-align: center;
-    padding: 24px;
+    padding: 28px 24px 26px;
+    width: 100%;
+    text-align: left;
 }
 
 .seir-dest-icon-wrap {
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.18);
-    backdrop-filter: blur(4px);
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.22);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 14px;
     color: #ffffff;
-    transition: all 0.35s ease;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 16px;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .seir-dest-card:hover .seir-dest-icon-wrap {
     background: #ffffff;
     color: var(--fcel-navy);
-    transform: rotate(15deg) scale(1.05);
+    transform: rotate(8deg) scale(1.08);
+    border-color: #ffffff;
 }
 
 .seir-dest-card-name {
     color: #ffffff;
-    font-size: 19px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 700;
     margin: 0 0 8px 0;
-    text-shadow: 0 2px 8px rgba(15, 28, 46, 0.3);
+    line-height: 1.25;
+    letter-spacing: -0.015em;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.35);
 }
 
 .seir-dest-card-desc {
-    color: #cbd5e1;
-    font-size: 13px;
+    color: rgba(255,255,255,0.86);
+    font-size: 14px;
+    line-height: 1.6;
     margin: 0;
-    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-shadow: 0 1px 6px rgba(0,0,0,0.25);
 }
 
 @media (max-width: 1024px) {
     .seir-dest-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+    }
+
+    .seir-dest-card {
+        height: 340px;
     }
 
     .seir-dest-section {
@@ -1112,24 +1155,32 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
     .seir-dest-grid {
         grid-template-columns: 1fr;
-        gap: 14px;
+        gap: 18px;
     }
 
     .seir-dest-card {
-        min-height: 220px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .seir-dest-card {
+        height: 280px;
     }
 
-    .seir-dest-icon-wrap {
-        width: 48px;
-        height: 48px;
-        margin-bottom: 10px;
+    .seir-dest-card-content {
+        padding: 22px 20px;
     }
 
     .seir-dest-card-name {
-        font-size: 16px;
+        font-size: 19px;
+    }
+
+    .seir-dest-card-desc {
+        font-size: 13.5px;
     }
 }
 

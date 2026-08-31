@@ -1,6 +1,8 @@
 import ProfilePictureAH from "../../assets/Media (2).jpg"
 import Navbar from '../../components/Navbar/Navbar'
 import './ScenicVsSeabourn.css'
+import scenicDestImg from "../../assets/ScenicVsSeabourn/glacier-express-switzerland-scenic-railway-snowy-alps-winter.webp"
+import seabournDestImg from "../../assets/ScenicVsSeabourn/santorini-greece-oia-blue-domed-churches-whitewashed-village-caldera-sea-view.webp"
 
 import {
     Ship, MapPin, Users, CheckCircle, Compass, Sparkles, Anchor, Gem, Crown, Phone, LayoutList, Utensils, Sun, Award, Music, GraduationCap, Wifi, Wine, Image as ImageIcon, Waves, DollarSign, ShieldCheck, Leaf, Globe, Mountain
@@ -504,7 +506,7 @@ function ScenicVsSeabourn() {
                 <div className="svs-dest-grid">
                   <div className="svs-dest-card svs-dest-scenic">
                     <div className="svs-dest-image">
-                      <SvsImagePlaceholder label="Scenic Global Destinations" />
+                      <img src={scenicDestImg} alt="Scenic Global Destinations" className="svs-dest-img" />
                     </div>
                     <div className="svs-dest-body">
                       <div className="svs-dest-header">
@@ -520,7 +522,7 @@ function ScenicVsSeabourn() {
                   </div>
                   <div className="svs-dest-card svs-dest-seabourn">
                     <div className="svs-dest-image">
-                      <SvsImagePlaceholder label="Seabourn Itineraries" />
+                      <img src={seabournDestImg} alt="Seabourn Itineraries" className="svs-dest-img" />
                     </div>
                     <div className="svs-dest-body">
                       <div className="svs-dest-header">

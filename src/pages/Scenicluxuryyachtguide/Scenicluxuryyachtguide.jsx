@@ -1,6 +1,12 @@
 import Navbar from '../../components/Navbar/Navbar'
 import './Scenicluxuryyachtguide.css'
 import ProfilePictureAH from "../../assets/Media (2).jpg"
+import antarcticaImg from "../../assets/Scenicluxuryyachtguide/zermatt-switzerland-matterhorn-snowy-alpine-village-winter.webp"
+import arcticImg from "../../assets/Scenicluxuryyachtguide/glacier-express-switzerland-scenic-railway-snowy-alps-winter.webp"
+import mediterraneanImg from "../../assets/Scenicluxuryyachtguide/santorini-greece-oia-blue-domed-churches-whitewashed-village-caldera-sea-view.webp"
+import fjordsImg from "../../assets/Scenicluxuryyachtguide/lauterbrunnen-switzerland-waterfall-valley-alpine-village-summer.webp"
+import southPacificImg from "../../assets/Scenicluxuryyachtguide/zakynthos-greece-navagio-beach-shipwreck-cove-turquoise-water-cliffs.webp"
+import australiaImg from "../../assets/Scenicluxuryyachtguide/porto-timoni-twin-bays-corfu-greece-turquoise-water-pink-flowers-scenic-coastal-view.webp"
 import {
     Sparkles, Phone, LayoutList, CheckCircle, Crown, Users, Home,
     UtensilsCrossed, Wine, Gift, Wifi, Compass, Anchor, Plane, Ship,
@@ -78,43 +84,43 @@ function ScenicLuxuryYachtGuide() {
         'Cultural encounters'
     ]
 
-    /* Destinations */
+    /* Destinations — now using local assets from src/assets/Scenicluxuryyachtguide/ */
     const slyDestinations = [
         {
             name: 'Antarctica',
             text: 'Experience towering glaciers, penguin colonies, whales, seals, and Zodiac landings.',
             icon: Snowflake,
-            img: 'https://placehold.co/600x500/0f1c2e/ffffff?text=Antarctica'
+            img: antarcticaImg
         },
         {
             name: 'Arctic & Greenland',
             text: 'Visit Svalbard, Iceland, Greenland, and the Canadian Arctic while searching for polar bears and incredible wildlife.',
             icon: Compass,
-            img: 'https://placehold.co/600x500/274472/ffffff?text=Arctic+%26+Greenland'
+            img: arcticImg
         },
         {
             name: 'Mediterranean',
             text: 'Discover Italy, Greece, Croatia, France, Spain, and hidden coastal villages inaccessible to larger ships.',
             icon: Anchor,
-            img: 'https://placehold.co/600x500/1c2f4a/ffffff?text=Mediterranean'
+            img: mediterraneanImg
         },
         {
             name: 'Norwegian Fjords',
             text: 'Cruise dramatic fjords, charming villages, waterfalls, and spectacular mountain scenery.',
             icon: Mountain,
-            img: 'https://placehold.co/600x500/0f1c2e/ffffff?text=Norwegian+Fjords'
+            img: fjordsImg
         },
         {
             name: 'South Pacific',
             text: 'Explore Fiji, French Polynesia, Papua New Guinea, Indonesia, and remote tropical islands.',
             icon: Palmtree,
-            img: 'https://placehold.co/600x500/274472/ffffff?text=South+Pacific'
+            img: southPacificImg
         },
         {
             name: 'Australia & New Zealand',
             text: "Experience the Kimberley, Tasmania, New Zealand, and Australia's spectacular coastline.",
             icon: Waves,
-            img: 'https://placehold.co/600x500/1c2f4a/ffffff?text=Australia+%26+New+Zealand'
+            img: australiaImg
         }
     ]
 
@@ -473,13 +479,13 @@ function ScenicLuxuryYachtGuide() {
     return (
         <>
             <Helmet>
-                <title>Top 10 Sailing Destinations: Unforgettable Yacht Charters</title>
-                <meta name="title" content="Top 10 Sailing Destinations: Unforgettable Yacht Charters" />
+                <title>Scenic Luxury Yacht Guide | Scenic Eclipse Discovery Yachts Expert Guide</title>
+                <meta name="title" content="Scenic Luxury Yacht Guide | Scenic Eclipse Discovery Yachts Expert Guide" />
                 <meta
                     name="description"
-                    content="Explore the world's top 10 must-visit sailing destinations, from the Caribbean's hidden coves to the Mediterranean's historic shores. Your adventure awaits!"
+                    content="Complete guide to Scenic Luxury Yachts including Scenic Eclipse, Scenic Eclipse II, destinations, suites, dining, expedition experiences, and expert cruise planning."
                 />
-                <meta name="keywords" content="Top 10 Sailing Destinations, Sailing Destinations, Yacht Charters, Caribbean Yacht Charter, Mediterranean Sailing, Luxury Sailing, Best Sailing Destinations, Yacht Charter Guide" />
+                <meta name="keywords" content="Scenic Luxury Yacht Guide, Scenic Eclipse, Scenic Discovery Yachts, Scenic Eclipse II, Luxury Expedition Yachts, Scenic Luxury Cruises" />
                 <script type="application/ld+json">
                     {JSON.stringify(slySchemaData)}
                 </script>

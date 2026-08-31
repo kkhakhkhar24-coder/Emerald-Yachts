@@ -1,6 +1,12 @@
 ﻿import ProfilePictureAH from "../../assets/Media (2).jpg"
 import Navbar from '../../components/Navbar/Navbar'
 import './ScenicGreenlandCruises.css'
+import ilulissatImg from "../../assets/ScenicGreenlandCruises/zermatt-switzerland-matterhorn-snowy-alpine-village-winter.webp"
+import diskoBayImg from "../../assets/ScenicGreenlandCruises/glacier-express-switzerland-scenic-railway-snowy-alps-winter.webp"
+import eastGreenlandImg from "../../assets/ScenicGreenlandCruises/hallstatt-austria-snowy-lakeside-village-alps-winter-travel-destination.webp"
+import narsaqImg from "../../assets/ScenicGreenlandCruises/colmar-france-petite-venise-colorful-half-timbered-houses-canal-flowers-alsace-travel.webp"
+import princeChristianImg from "../../assets/ScenicGreenlandCruises/lauterbrunnen-switzerland-waterfall-valley-alpine-village-summer.webp"
+import qaqortoqImg from "../../assets/ScenicGreenlandCruises/porto-timoni-twin-bays-corfu-greece-turquoise-water-pink-flowers-scenic-coastal-view.webp"
 import {
     Helmet
 } from 'react-helmet-async'
@@ -29,12 +35,12 @@ const faqData = [
 ]
 
 const destinations = [
-    { name: 'Ilulissat', Icon: IceCreamBowl, text: 'One of Greenland\'s most iconic destinations, Ilulissat is famous for the UNESCO-listed Ilulissat Icefjord, where enormous icebergs drift from the Jakobshavn Glacier.', tags: ['Icefjord viewpoints', 'Boat excursions', 'Inuit heritage', 'Arctic scenery'] },
-    { name: 'Disko Bay', Icon: Navigation, text: 'Renowned for spectacular floating icebergs and abundant marine wildlife. Travelers may see humpback whales, fin whales, seals, and seabirds.', tags: ['Whale watching', 'Photography', 'Arctic scenery'] },
-    { name: 'East Greenland', Icon: Mountain, text: 'One of the most remote regions on Earth. Explore massive fjords, Arctic mountains, glaciers, small Inuit settlements, and untouched wilderness.', tags: ['Fjords', 'Glaciers', 'Wilderness', 'Expert insights'] },
-    { name: 'Narsaq', Icon: Compass, text: 'Located in southern Greenland, Narsaq offers colorful homes, dramatic mountain scenery, and fascinating Norse and Inuit history.', tags: ['Guided walks', 'Local culture', 'Mountain scenery'] },
-    { name: 'Prince Christian Sound', Icon: MapPin, text: 'Towering cliffs, waterfalls, glaciers, and drifting icebergs create one of the Arctic\'s most scenic waterways.', tags: ['Waterfalls', 'Glaciers', 'Scenic cruising'] },
-    { name: 'Qaqortoq', Icon: Anchor, text: 'The largest town in southern Greenland, featuring beautiful colonial architecture, stone monuments, and stunning surrounding fjords.', tags: ['Colonial history', 'Fjords', 'Local art', 'Southern Greenland'] }
+    { name: 'Ilulissat', Icon: IceCreamBowl, text: 'One of Greenland\'s most iconic destinations, Ilulissat is famous for the UNESCO-listed Ilulissat Icefjord, where enormous icebergs drift from the Jakobshavn Glacier.', tags: ['Icefjord viewpoints', 'Boat excursions', 'Inuit heritage', 'Arctic scenery'], img: ilulissatImg },
+    { name: 'Disko Bay', Icon: Navigation, text: 'Renowned for spectacular floating icebergs and abundant marine wildlife. Travelers may see humpback whales, fin whales, seals, and seabirds.', tags: ['Whale watching', 'Photography', 'Arctic scenery'], img: diskoBayImg },
+    { name: 'East Greenland', Icon: Mountain, text: 'One of the most remote regions on Earth. Explore massive fjords, Arctic mountains, glaciers, small Inuit settlements, and untouched wilderness.', tags: ['Fjords', 'Glaciers', 'Wilderness', 'Expert insights'], img: eastGreenlandImg },
+    { name: 'Narsaq', Icon: Compass, text: 'Located in southern Greenland, Narsaq offers colorful homes, dramatic mountain scenery, and fascinating Norse and Inuit history.', tags: ['Guided walks', 'Local culture', 'Mountain scenery'], img: narsaqImg },
+    { name: 'Prince Christian Sound', Icon: MapPin, text: 'Towering cliffs, waterfalls, glaciers, and drifting icebergs create one of the Arctic\'s most scenic waterways.', tags: ['Waterfalls', 'Glaciers', 'Scenic cruising'], img: princeChristianImg },
+    { name: 'Qaqortoq', Icon: Anchor, text: 'The largest town in southern Greenland, featuring beautiful colonial architecture, stone monuments, and stunning surrounding fjords.', tags: ['Colonial history', 'Fjords', 'Local art', 'Southern Greenland'], img: qaqortoqImg }
 ]
 
 const benefits = [
@@ -225,9 +231,10 @@ function ScenicGreenlandCruises() {
                 </div>
                 <div className="scng-container">
                     <div className="scng-destination-grid">
-                        {destinations.map(({ name, Icon, text, tags }, i) => (
+                        {destinations.map(({ name, Icon, text, tags, img }, i) => (
                             <div key={i} className="scng-destination-card">
-                                <div className="scng-destination-image scng-placeholder">
+                                <div className="scng-destination-image">
+                                    <img src={img} alt={name} className="scng-destination-img" />
                                     <div className="scng-destination-icon"><Icon size={22} /></div>
                                 </div>
                                 <div className="scng-destination-body">
