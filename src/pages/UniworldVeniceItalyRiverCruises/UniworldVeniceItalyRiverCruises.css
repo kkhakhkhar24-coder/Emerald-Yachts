@@ -912,6 +912,19 @@
     border-radius: 12px;
 }
 
+.uvic-dest-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    transition: transform 0.4s ease;
+}
+
+.uvic-dest-card:hover .uvic-dest-img {
+    transform: scale(1.04);
+}
+
 .uvic-dest-card:hover {
     background: var(--uvic-bg-white);
     border-color: rgba(39, 68, 114, 0.2);

@@ -2,6 +2,10 @@
 import Navbar from '../../components/Navbar/Navbar'
 import './ScenicSubmarineExperience.css'
 import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
+import subGreatBarrier from "../../assets/ScenicSubmarineExperience/zakynthos-greece-navagio-beach-shipwreck-cove-turquoise-water-cliffs.webp"
+import subCaribbean from "../../assets/ScenicSubmarineExperience/porto-timoni-twin-bays-corfu-greece-turquoise-water-pink-flowers-scenic-coastal-view.webp"
+import subMarine from "../../assets/ScenicSubmarineExperience/amalfi-coast-italy-scenic-coastal-village-sea-view-travel-vacation.webp"
+import subKelp from "../../assets/ScenicSubmarineExperience/santorini-greece-oia-blue-domed-churches-whitewashed-village-caldera-sea-view.webp"
 // import hero1 from '../../assets/ScenicSubmarineExperience/scenic-neptune-coral-dive.png'
 // import hero2 from '../../assets/ScenicSubmarineExperience/scenic-submarine-underwater-view.png'
 // import hero3 from '../../assets/ScenicSubmarineExperience/scenic-eclipse-submarine-deck.png'
@@ -27,11 +31,7 @@ function ScenicSubmarineExperience() {
     const hero3 = '';
     const subNeptune = '';
     const subCoral = '';
-    const subGreatBarrier = '';
-    const subCaribbean = '';
-    const subMarine = '';
     const subSafety = '';
-    const subKelp = '';
     const [subCurrentHero, setSubCurrentHero] = useState(0)
     const subHeroImages = [hero1, hero2, hero3]
 
@@ -325,7 +325,7 @@ function ScenicSubmarineExperience() {
                         {subDestinations.map(({ name, img, Icon, items }, idx) => (
                             <div key={idx} className="sub-destination-card">
                                 <div className="sub-destination-card-img-wrap">
-                                    {/* <img src={img} alt={`Scenic submarine ${name}`} className="sub-destination-card-img" /> */}
+                                    <img src={img} alt={`Scenic submarine ${name}`} className="sub-destination-card-img" />
                                 </div>
                                 <div className="sub-destination-card-icon-box"><Icon size={22} /></div>
                                 <h3 className="sub-destination-card-title">{name}</h3>

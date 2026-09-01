@@ -21,6 +21,8 @@ import {
 import { Helmet } from 'react-helmet-async'
 import { useState } from 'react'
 import { Link } from 'react-router'
+import veniceGrandCanalSunset from '../../assets/UniworldVeniceItalyRiverCruises/venice-grand-canal-italy-gondola-sunset-santa-maria-della-salute.webp'
+import veronaAerial from '../../assets/UniworldVeniceItalyRiverCruises/verona-italy-aerial-cityscape-adige-river-sunset-travel-destination.webp'
 
 // Custom Image Placeholder Component
 function UvicPlaceholder({ label, className = '' }) {
@@ -478,15 +480,19 @@ function UniworldVeniceItalyRiverCruises() {
                         </div>
                         <div className="uvic-dest-grid">
                             {[
-                                { name: 'Venice', desc: "Explore St. Mark's Square, the Grand Canal, Doge's Palace, and Venice's world-famous waterways.", icon: <Landmark size={24} /> },
+                                { name: 'Venice', desc: "Explore St. Mark's Square, the Grand Canal, Doge's Palace, and Venice's world-famous waterways.", icon: <Landmark size={24} />, img: veniceGrandCanalSunset, alt: 'Venice Grand Canal gondola sunset Santa Maria della Salute' },
                                 { name: 'Burano', desc: 'A picturesque island known for brightly colored houses and traditional lace-making.', icon: <Palette size={24} /> },
                                 { name: 'Murano', desc: 'Discover the birthplace of Venetian glassmaking and meet local artisans.', icon: <Sparkles size={24} /> },
                                 { name: 'Chioggia', desc: 'A charming fishing town often called "Little Venice."', icon: <Anchor size={24} /> },
                                 { name: 'Padua', desc: "Visit one of Italy's oldest cities, famous for Giotto's frescoes and historic university.", icon: <BookOpen size={24} /> },
-                                { name: 'Verona (Excursion)', desc: 'Explore the romantic city of Romeo and Juliet and its beautifully preserved Roman Arena.', icon: <Castle size={24} /> }
+                                { name: 'Verona (Excursion)', desc: 'Explore the romantic city of Romeo and Juliet and its beautifully preserved Roman Arena.', icon: <Castle size={24} />, img: veronaAerial, alt: 'Verona Italy aerial cityscape Adige River sunset' }
                             ].map((dest, idx) => (
                                 <div key={idx} className="uvic-dest-card">
-                                    <UvicPlaceholder label={dest.name} className="uvic-dest-image-placeholder" />
+                                    {dest.img ? (
+                                        <img src={dest.img} alt={dest.alt} className="uvic-dest-img" />
+                                    ) : (
+                                        <UvicPlaceholder label={dest.name} className="uvic-dest-image-placeholder" />
+                                    )}
                                     <div className="uvic-dest-icon-wrap">
                                         {dest.icon}
                                     </div>

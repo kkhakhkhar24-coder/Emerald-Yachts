@@ -2456,7 +2456,7 @@
 
 
 .uss-imageplan-section {
-    background: var(--uss-bg-white);
+    background: var(--uss-bg-soft);
     padding: 88px 20px;
 }
 
@@ -2479,15 +2479,17 @@
 .uss-imageplan-card {
     margin: 0;
     background: #ffffff;
-    border: 1px solid #e2e8f0;
+    border: 1px solid rgba(39, 68, 114, 0.12);
     border-radius: 14px;
     overflow: hidden;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(39, 68, 114, 0.05);
 }
 
 .uss-imageplan-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 16px 36px rgba(15, 28, 46, 0.10);
+    box-shadow: 0 16px 36px rgba(15, 28, 46, 0.12);
+    border-color: rgba(39, 68, 114, 0.25);
 }
 
 .uss-imageplan-media {
@@ -2515,7 +2517,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background: linear-gradient(150deg, #eef2f7 0%, #e2e8f0 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #f0f6fa 100%);
     color: var(--uss-navy);
 }
 

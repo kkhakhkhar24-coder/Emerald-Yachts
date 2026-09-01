@@ -1,4 +1,4 @@
-﻿import ProfilePictureAH from "../../assets/Media (2).jpg"
+import ProfilePictureAH from "../../assets/Media (2).jpg"
 import Navbar from '../../components/Navbar/Navbar'
 import './BestLuxuryExpeditionCruises.css'
 import {
@@ -10,6 +10,18 @@ import {
     Anchor, ArrowRight, Binoculars, CalendarDays, Check, Compass, Phone, Sparkles, Award, Globe, CheckCircle, Ship, Mountain, Users
 } from 'lucide-react'
 import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
+import antarcticaImg from "../../assets/BestLuxuryExpeditionCruises/zermatt-switzerland-matterhorn-snowy-alpine-village-winter.webp"
+import arcticImg from "../../assets/BestLuxuryExpeditionCruises/glacier-express-switzerland-scenic-railway-snowy-alps-winter.webp"
+import greenlandImg from "../../assets/BestLuxuryExpeditionCruises/hallstatt-austria-snowy-lakeside-village-alps-winter-travel-destination.webp"
+import icelandImg from "../../assets/BestLuxuryExpeditionCruises/lauterbrunnen-switzerland-waterfall-valley-alpine-village-summer.webp"
+import galapagosImg from "../../assets/BestLuxuryExpeditionCruises/zakynthos-greece-navagio-beach-shipwreck-cove-turquoise-water-cliffs.webp"
+import alaskaImg from "../../assets/BestLuxuryExpeditionCruises/porto-timoni-twin-bays-corfu-greece-turquoise-water-pink-flowers-scenic-coastal-view.webp"
+import fjordsImg from "../../assets/BestLuxuryExpeditionCruises/portofino-liguria-italy-colorful-harbor-village-boat-travel-destination.webp"
+import kimberleyImg from "../../assets/BestLuxuryExpeditionCruises/positano-amalfi-coast-italy-cliffside-village-sea-view-bougainvillea.webp"
+import southPacificImg from "../../assets/BestLuxuryExpeditionCruises/amalfi-coast-italy-scenic-coastal-village-sea-view-travel-vacation.webp"
+import patagoniaImg from "../../assets/BestLuxuryExpeditionCruises/santorini-greece-oia-blue-domed-churches-whitewashed-village-caldera-sea-view.webp"
+import amazonImg from "../../assets/BestLuxuryExpeditionCruises/colmar-france-petite-venise-colorful-half-timbered-houses-canal-flowers-alsace-travel.webp"
+import canadaArcticImg from "../../assets/BestLuxuryExpeditionCruises/hallstatt-austria-snowy-lakeside-village-alps-winter-travel-destination.webp"
 
 const heroImages = [
     'https://placehold.co/2200x1200/274472/ffffff?text=Hero+Image+1',
@@ -18,18 +30,18 @@ const heroImages = [
 ]
 const comforts = ['Spacious luxury suites', 'Personalized butler service', 'Gourmet dining', 'Premium beverages', 'Small expedition ships', 'Zodiac excursions', 'Expert naturalists', 'Destination-focused experiences', 'Wellness facilities', 'All-inclusive amenities']
 const destinations = [
-    ['Antarctica', 'Frozen wilderness, towering icebergs, and penguin colonies.', 'https://placehold.co/800x600/274472/ffffff?text=Antarctica'],
-    ['Arctic & Svalbard', 'Polar bears, sea ice, and dramatic Arctic light.', 'https://placehold.co/800x600/274472/ffffff?text=Arctic'],
-    ['Greenland', 'Dramatic fjords, glaciers, and remote coastal villages.', 'https://placehold.co/800x600/274472/ffffff?text=Greenland'],
-    ['Iceland', 'Volcanic coastlines, waterfalls, and northern light.', 'https://placehold.co/800x600/274472/ffffff?text=Iceland'],
-    ["Galápagos Islands", 'Wildlife-rich islands, volcanic landscapes, and endemic species.', 'https://placehold.co/800x600/274472/ffffff?text=Galapagos'],
-    ['Alaska', 'Whales, forests, glaciers, and rugged wilderness.', 'https://placehold.co/800x600/274472/ffffff?text=Alaska'],
-    ['Norwegian Fjords', 'Steep cliffs, quiet villages, and Arctic water.', 'https://placehold.co/800x600/274472/ffffff?text=Norwegian+Fjords'],
-    ['Kimberley (Australia)', 'Remote gorges, tidal rivers, and ancient culture.', 'https://placehold.co/800x600/274472/ffffff?text=Kimberley'],
-    ['South Pacific', 'Blue-water islands, reefs, and living culture.', 'https://placehold.co/800x600/274472/ffffff?text=South+Pacific'],
-    ['Patagonia', 'Glaciers, granite peaks, and southern wilderness.', 'https://placehold.co/800x600/274472/ffffff?text=Patagonia'],
-    ['Amazon River', 'Rainforest biodiversity from a smaller, slower perspective.', 'https://placehold.co/800x600/274472/ffffff?text=Amazon+River'],
-    ["Canada's Arctic", 'Austere coastlines, sea ice, and remarkable wildlife.', 'https://placehold.co/800x600/274472/ffffff?text=Canada+Arctic']
+    ['Antarctica', 'Frozen wilderness, towering icebergs, and penguin colonies.', antarcticaImg],
+    ['Arctic & Svalbard', 'Polar bears, sea ice, and dramatic Arctic light.', arcticImg],
+    ['Greenland', 'Dramatic fjords, glaciers, and remote coastal villages.', greenlandImg],
+    ['Iceland', 'Volcanic coastlines, waterfalls, and northern light.', icelandImg],
+    ["Galápagos Islands", 'Wildlife-rich islands, volcanic landscapes, and endemic species.', galapagosImg],
+    ['Alaska', 'Whales, forests, glaciers, and rugged wilderness.', alaskaImg],
+    ['Norwegian Fjords', 'Steep cliffs, quiet villages, and Arctic water.', fjordsImg],
+    ['Kimberley (Australia)', 'Remote gorges, tidal rivers, and ancient culture.', kimberleyImg],
+    ['South Pacific', 'Blue-water islands, reefs, and living culture.', southPacificImg],
+    ['Patagonia', 'Glaciers, granite peaks, and southern wilderness.', patagoniaImg],
+    ['Amazon River', 'Rainforest biodiversity from a smaller, slower perspective.', amazonImg],
+    ["Canada's Arctic", 'Austere coastlines, sea ice, and remarkable wildlife.', canadaArcticImg]
 ]
 const lines = [
     ['Scenic Cruises', 'Scenic Eclipse and Scenic Eclipse II combine ultra-luxury accommodations with helicopters, the Scenic Neptune™ submersible, Discovery Excursions, butler service, and all-inclusive luxury.', 'https://placehold.co/1200x800/274472/ffffff?text=Scenic+Cruises'],
@@ -179,12 +191,9 @@ function BestLuxuryExpeditionCruises() {
                         <p className="luxe-destinations-intro">Luxury expedition cruises visit some of the world&rsquo;s most spectacular locations. Each destination offers unique wildlife, breathtaking scenery, and unforgettable exploration opportunities.</p>
                     </div>
                     <div className="luxe-destinations-grid">
-                        {destinations.map(([name, copy], index) => (
+                        {destinations.map(([name, copy, img], index) => (
                             <article className="luxe-destination-card" key={name}>
-                                {/* Image placeholder — replace src with real image path when available */}
-                                <div className="luxe-dest-img-placeholder">
-                                    <span className="luxe-dest-img-label">{name}</span>
-                                </div>
+                                <img src={img} alt={name} className="luxe-dest-img" />
                                 <div className="luxe-dest-card-body">
                                     <span className="luxe-destination-card-num">0{index + 1}</span>
                                     <h3>{name}</h3>

@@ -2,6 +2,8 @@ import React from 'react'
 import { Helmet } from 'react-helmet-async'
 import Navbar from '../../components/Navbar/Navbar'
 import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
+import ufcSeineMontSaintMichel from '../../assets/UniworldFamilyCruises/seine-river-mont-saint-michel-normandy.webp'
+import ufcVeniceLagoon from '../../assets/UniworldFamilyCruises/venice-lagoon-gondola-sunset-grand-canal.webp'
 import './UniworldFamilyCruises.css'
 import { Link } from 'react-router'
 import { useState, useEffect } from 'react'
@@ -244,7 +246,7 @@ export default function UniworldFamilyCruises() {
             <section className="ufc-destinations-section">
                 <div className="ufc-destinations-container">
                     <div className="ufc-destinations-header">
-                        <span className="ufc-eyebrow">POPULAR ITINERARIES</span>
+                        <span className="ufc-eyebrow" style={{ display: 'block', textAlign: 'center' }}>POPULAR ITINERARIES</span>
                         <h2 className="ufc-section-heading" style={{ textAlign: 'center' }}>Family-Friendly Destinations</h2>
                         <div className="ufc-heading-separator-bar ufc-bar-centered"></div>
                         <p className="ufc-destinations-intro">Several European itineraries are particularly well suited for families.</p>
@@ -254,28 +256,30 @@ export default function UniworldFamilyCruises() {
                         {[
                             {
                                 river: 'Danube River',
-                                img: 'https://placehold.co/400x260/162d50/ffffff?text=Danube+River',
                                 highlights: ['Vienna', 'Budapest', 'Bratislava', 'Medieval castles', 'Interactive museums', 'Scenic cycling routes']
                             },
                             {
                                 river: 'Rhine River',
-                                img: 'https://placehold.co/400x260/1a3a5c/ffffff?text=Rhine+River',
                                 highlights: ['Fairy-tale castles', 'Rhine Gorge', 'Historic villages', 'Chocolate museums', 'Cable cars', 'Riverfront walks']
                             },
                             {
                                 river: 'Seine River',
-                                img: 'https://placehold.co/400x260/0f1c2e/ffffff?text=Seine+River',
+                                img: ufcSeineMontSaintMichel,
                                 highlights: ['Paris', 'Impressionist art', 'Normandy', 'Gardens', 'French culture', 'History']
                             },
                             {
                                 river: 'Venice Lagoon',
-                                img: 'https://placehold.co/400x260/2a4a6b/ffffff?text=Venice+Lagoon',
+                                img: ufcVeniceLagoon,
                                 highlights: ['Glass-blowing demonstrations', 'Colorful island visits', 'Gondola-filled canals', 'Historic architecture']
                             }
                         ].map(({ river, img, highlights }, idx) => (
                             <div key={idx} className="ufc-destination-card">
                                 <div className="ufc-destination-img-wrap">
-                                    <img src={img} alt={`${river} family cruise`} className="ufc-destination-img" />
+                                    {img ? (
+                                        <img src={img} alt={`${river} family cruise`} className="ufc-destination-img" />
+                                    ) : (
+                                        <img src={`https://placehold.co/400x260/162d50/ffffff?text=${encodeURIComponent(river)}`} alt={`${river} family cruise`} className="ufc-destination-img" />
+                                    )}
                                     <div className="ufc-destination-img-overlay"></div>
                                     <h3 className="ufc-destination-title">{river}</h3>
                                 </div>

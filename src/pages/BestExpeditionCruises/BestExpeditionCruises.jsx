@@ -3,19 +3,19 @@ import Navbar from '../../components/Navbar/Navbar'
 import './BestExpeditionCruises.css'
 import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
 
-import hero1 from '../../assets/BestLuxuryExpeditionCruises/expedition-antarctica-icebergs.jpg'
-import hero2 from '../../assets/BestLuxuryExpeditionCruises/galapagos-expedition.jpg'
-import hero3 from '../../assets/BestLuxuryExpeditionCruises/arctic-expedition.jpg'
-
-import expDifferentImg from '../../assets/BestLuxuryExpeditionCruises/zodiac-excursion.jpg'
-import expLineScenic from '../../assets/BestLuxuryExpeditionCruises/scenic-eclipse-ship.jpg'
-import expLineSilversea from '../../assets/BestLuxuryExpeditionCruises/antarctica-expedition.jpg'
-import expLineSeabourn from '../../assets/BestLuxuryExpeditionCruises/kimberley-expedition.jpg'
-import expLinePonant from '../../assets/BestLuxuryExpeditionCruises/expedition-galapagos-adventure.jpg'
-import expEclipseImg from '../../assets/BestLuxuryExpeditionCruises/scenic-eclipse-ship.jpg'
-import expOnboardImg from '../../assets/BestLuxuryExpeditionCruises/luxury-suite-view.jpg'
-import expLineLindblad from '../../assets/BestLuxuryExpeditionCruises/wildlife-expedition.jpg'
-import expLineHX from '../../assets/BestLuxuryExpeditionCruises/expedition-arctic-polar-wildlife.jpg'
+// Using placehold.co fallbacks to keep build passing — replace with real assets when available
+const hero1 = "https://placehold.co/2200x1200/274472/ffffff?text=Hero+Image+1"
+const hero2 = "https://placehold.co/2200x1200/274472/ffffff?text=Hero+Image+2"
+const hero3 = "https://placehold.co/2200x1200/274472/ffffff?text=Hero+Image+3"
+const expDifferentImg = "https://placehold.co/800x600/274472/ffffff?text=Expedition+Zodiac"
+const expLineScenic = "https://placehold.co/800x600/274472/ffffff?text=Scenic+Eclipse"
+const expLineSilversea = "https://placehold.co/800x600/274472/ffffff?text=Silversea"
+const expLineSeabourn = "https://placehold.co/800x600/274472/ffffff?text=Seabourn"
+const expLinePonant = "https://placehold.co/800x600/274472/ffffff?text=Ponant"
+const expEclipseImg = "https://placehold.co/800x600/274472/ffffff?text=Scenic+Eclipse"
+const expOnboardImg = "https://placehold.co/800x600/274472/ffffff?text=Luxury+Suite"
+const expLineLindblad = "https://placehold.co/800x600/274472/ffffff?text=Lindblad"
+const expLineHX = "https://placehold.co/800x600/274472/ffffff?text=HX+Expeditions"
 
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle, ArrowRight, Compass, Sparkles, Anchor, Calendar, Gem, ChevronRight, Crown, Phone, LayoutList, Heart, Utensils, Sun, Award, Moon, Globe, MessageSquare, TrendingUp, Eye, Leaf, BookOpen, DollarSign, Camera, Mountain, Wind, Snowflake, Zap, Navigation, Info

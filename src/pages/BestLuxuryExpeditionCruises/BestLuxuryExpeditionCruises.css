@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@100..900&display=swap');
 
 :root {
     --luxe-font-display: 'Playfair Display', Georgia, serif;
@@ -497,6 +497,20 @@
     position: relative;
     overflow: hidden;
     transition: background 0.4s ease;
+}
+
+.luxe-dest-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+    flex-shrink: 0;
+    border-radius: 0;
+    transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.luxe-destination-card:hover .luxe-dest-img {
+    transform: scale(1.04);
 }
 
 .luxe-dest-img-placeholder::after {
@@ -1956,7 +1970,7 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.07em;
-    color: rgba(255,255,255,0.52);
+    color: rgba(255, 255, 255, 0.52);
     margin: 20px 0 8px;
 }
 

@@ -10,6 +10,7 @@ import {
     Sparkles as ExpertSparkles
 } from 'lucide-react'
 import './Uniworldseinerivercruises.css'
+import normandyBeachesImg from '../../assets/Uniworldseinerivercruises/mont-saint-michel-france-normandy-dusk-reflection-travel-photography.webp'
 import {
     Ship, Star, Sparkles, Phone, LayoutList, Heart,
     CheckCircle, ChevronRight, Globe, Award, Utensils, Wine,
@@ -495,13 +496,17 @@ function UniworldSeineRiverCruises() {
                                 { name: 'Paris', desc: 'The City of Light with world-famous landmarks.', icon: <Landmark size={24} /> },
                                 { name: 'Rouen', desc: 'Historic medieval city linked to Joan of Arc.', icon: <Castle size={24} /> },
                                 { name: 'Honfleur', desc: 'Picturesque harbor town loved by Impressionist painters.', icon: <Anchor size={24} /> },
-                                { name: 'Normandy Beaches', desc: 'Visit Omaha Beach and other historic D-Day sites.', icon: <ShieldCheck size={24} /> },
+                                { name: 'Normandy Beaches', desc: 'Visit Omaha Beach and other historic D-Day sites.', icon: <ShieldCheck size={24} />, img: normandyBeachesImg },
                                 { name: 'Vernon', desc: "Gateway to Monet's Gardens at Giverny.", icon: <Flower2 size={24} /> },
                                 { name: 'La Roche-Guyon', desc: 'Beautiful riverside village and castle.', icon: <Castle size={24} /> }
                             ].map((dest, idx) => (
                                 <div key={idx} className="usrc-dest-card" style={{ padding: '0', overflow: 'hidden', textAlign: 'left' }}>
-                                    <div style={{ height: '180px', width: '100%', position: 'relative', background: '#e2e8f0' }}>
-                                        <UsrcPlaceholder label={`${dest.name} View`} className="usrc-placeholder-card" />
+                                    <div style={{ height: '180px', width: '100%', position: 'relative', background: '#e2e8f0', overflow: 'hidden' }}>
+                                        {dest.img ? (
+                                            <img src={dest.img} alt={dest.name} className="usrc-dest-img" />
+                                        ) : (
+                                            <UsrcPlaceholder label={`${dest.name} View`} className="usrc-placeholder-card" />
+                                        )}
                                         <div className="usrc-badge-overlay-gold" style={{ top: '15px', right: '15px', fontSize: '11px', padding: '4px 10px' }}>
                                             {dest.icon}
                                             <span style={{ marginLeft: '6px' }}>{dest.name}</span>

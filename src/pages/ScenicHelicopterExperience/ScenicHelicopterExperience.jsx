@@ -8,19 +8,19 @@ import {
 import { Helmet } from 'react-helmet-async'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import helAntarctica from "../../assets/ScenicHelicopterExperience/zermatt-switzerland-matterhorn-snowy-alpine-village-winter.webp"
+import helGreenland from "../../assets/ScenicHelicopterExperience/glacier-express-switzerland-scenic-railway-snowy-alps-winter.webp"
+import helIceland from "../../assets/ScenicHelicopterExperience/lauterbrunnen-switzerland-waterfall-valley-alpine-village-summer.webp"
+import helKimberley from "../../assets/ScenicHelicopterExperience/zakynthos-greece-navagio-beach-shipwreck-cove-turquoise-water-cliffs.webp"
 
 // Dummy variables to prevent ReferenceErrors since images are missing
 const hero1 = null;
 const hero2 = null;
 const hero3 = null;
 const helAirbus = null;
-const helAntarctica = null;
-const helGreenland = null;
-const helIceland = null;
 const helNorway = null;
 const helAerial = null;
 const helSafety = null;
-const helKimberley = null;
 const Profile_Picture_AH = null;
 
 function ScenicHelicopterExperience() {

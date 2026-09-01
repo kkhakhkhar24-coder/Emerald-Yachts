@@ -1,6 +1,7 @@
 import Navbar from '../../components/Navbar/Navbar'
 import './UniworldRiverCruises.css'
 import Profile_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
+import europeDestImg from '../../assets/UniworldRiverCruises/chateau-de-chenonceau-france-castle-over-cher-river-travel-destination.webp'
 import {
     Ship, MapPin, Star, Clock, Users, CheckCircle,
     Compass, Sparkles, Anchor, Gem, ArrowRight,
@@ -66,7 +67,8 @@ function UniworldRiverCruises() {
             tag: 'Most Popular',
             description: 'Explore the heart of Europe along its most iconic waterways, from the Danube to the Douro.',
             rivers: 'Danube, Rhine, Seine, Douro, Po & more',
-            countries: 'France, Germany, Portugal, Italy, Austria'
+            countries: 'France, Germany, Portugal, Italy, Austria',
+            img: europeDestImg
         },
         {
             region: 'Egypt',
@@ -481,7 +483,11 @@ function UniworldRiverCruises() {
                                 <div key={idx} className={`urc-tab-panel ${urcActiveDestTab === idx ? 'active' : ''}`}>
                                     <div className="urc-tab-dest-layout">
                                         <div className="urc-tab-dest-image">
-                                            <UrcPlaceholder label={dest.imageLabel} />
+                                            {dest.img ? (
+                                                <img src={dest.img} alt={dest.region} className="urc-dest-img" />
+                                            ) : (
+                                                <UrcPlaceholder label={dest.imageLabel} />
+                                            )}
                                             <div className="urc-dest-card-overlay"></div>
                                             <div className="urc-dest-card-tag">{dest.tag}</div>
                                         </div>
