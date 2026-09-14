@@ -3,7 +3,7 @@
 ============================================================= */
 
 /* ── TYPOGRAPHY BASE ─────────────────────────────────────── */
-h1 {
+.sakara-page-wrapper h1 {
     color: #fff;
     font-family: 'Playfair Display', serif;
     font-size: 60px;
@@ -11,7 +11,7 @@ h1 {
     line-height: 1.15;
 }
 
-h2 {
+.sakara-page-wrapper h2 {
     color: #274472;
     font-family: 'Playfair Display', serif;
     font-size: 48px;
@@ -19,7 +19,7 @@ h2 {
     line-height: 1.1;
 }
 
-h4 {
+.sakara-page-wrapper h4 {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     color: #1a1a1a;
@@ -27,7 +27,7 @@ h4 {
     line-height: 1.4;
 }
 
-p {
+.sakara-page-wrapper p {
     color: #4a5568;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
@@ -1668,11 +1668,11 @@ p {
         font-size: 60px;
     }
 
-    h2 {
+    .sakara-page-wrapper h2 {
         font-size: 48px;
     }
 
-    p {
+    .sakara-page-wrapper p {
         font-size: 18px;
     }
 
@@ -1706,15 +1706,15 @@ p {
    RESPONSIVE — 768px
 ============================================================= */
 @media (max-width: 768px) {
-    h1 {
+    .sakara-page-wrapper h1 {
         font-size: 32px;
     }
 
-    h2 {
+    .sakara-page-wrapper h2 {
         font-size: 28px;
     }
 
-    p {
+    .sakara-page-wrapper p {
         font-size: 17px;
     }
 
@@ -1802,15 +1802,15 @@ p {
    RESPONSIVE — 480px
 ============================================================= */
 @media (max-width: 480px) {
-    h1 {
+    .sakara-page-wrapper h1 {
         font-size: 26px;
     }
 
-    h2 {
+    .sakara-page-wrapper h2 {
         font-size: 24px;
     }
 
-    p {
+    .sakara-page-wrapper p {
         font-size: 16px;
     }
 

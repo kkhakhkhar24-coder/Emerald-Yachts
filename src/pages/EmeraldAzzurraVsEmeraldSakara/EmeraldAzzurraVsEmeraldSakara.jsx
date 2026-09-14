@@ -443,7 +443,8 @@ const EmeraldAzzurraVsEmeraldSakara = () => {
       </Helmet>
       <Navbar />
 
-      {/* ===== HERO ===== */}
+      <div className="sakara-page-wrapper">
+        {/* ===== HERO ===== */}
       <section className="Sakara_hero_section">
         <div className="Sakara_hero_slider">
           {heroImages.map((img, i) => (
@@ -1092,6 +1093,7 @@ const EmeraldAzzurraVsEmeraldSakara = () => {
           </div>
         </div>
       </section>
+      </div>
     </>
   );
 };

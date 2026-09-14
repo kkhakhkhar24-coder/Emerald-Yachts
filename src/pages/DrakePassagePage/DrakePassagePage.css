@@ -560,7 +560,7 @@ to {
 
 /* ── PARAGRAPHS ── */
 .drake-section-p,
-h3 {
+.drake-page h3 {
   font-size: 18px !important;
   line-height: 1.65 !important;
   font-weight: 600 !important;

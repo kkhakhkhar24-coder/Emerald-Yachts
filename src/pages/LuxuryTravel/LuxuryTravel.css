@@ -417,14 +417,14 @@
     margin-bottom: 40px;
 }
 
-.lux-section-p,
+/* .lux-section-p,
 h3 {
     font-family: 'Montserrat', sans-serif !important;
     font-size: 18px !important;
     line-height: 1.8 !important;
     color: #274472;
     font-weight: 300 !important;
-}
+} */
 
 /* Editorial box in Soft Blue (rgb 231 243 245) */
 .lux-editorial-box-blue {
