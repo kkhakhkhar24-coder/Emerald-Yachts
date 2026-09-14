@@ -195,6 +195,10 @@ import Celebrityaquaclassvsconciergeclass from "./pages/Celebrityaquaclassvsconc
 import Celebrityinfiniteveranda from "./pages/Celebrityinfiniteveranda/Celebrityinfiniteveranda";
 import Celebrityoffersloyalty from "./pages/Celebrityoffersloyalty/Celebrityoffersloyalty";
 import Celebritycruisequote from "./pages/Celebritycruisequote/Celebritycruisequote";
+import AmaWaterwaysUltimateGuide from "./pages/AmaWaterwaysUltimateGuide/AmaWaterwaysUltimateGuide";
+import RitzCarltonYachtCollection from "./pages/RitzCarltonYachtCollection/RitzCarltonYachtCollection";
+import RitzCarltonYachtCollectionCost from "./pages/RitzCarltonYachtCollectionCost/RitzCarltonYachtCollectionCost";
+import RitzCarltonYachtCollectionIncluded from "./pages/RitzCarltonYachtCollectionIncluded/RitzCarltonYachtCollectionIncluded";
 
 function App() {
   return (
@@ -1111,7 +1115,25 @@ function App() {
             element={<Celebritycruisequote />}
           />
 
+          <Route
+            path="/amawaterways-ultimate-guide"
+            element={<AmaWaterwaysUltimateGuide />}
+          />
 
+          <Route
+            path="/ritz-carlton-yacht-collection"    
+            element={<RitzCarltonYachtCollection />}
+          />
+
+          <Route
+            path="/ritz-carlton-yacht-collection-cost"
+            element={<RitzCarltonYachtCollectionCost />}
+          />
+
+          <Route
+            path="/ritz-carlton-yacht-collection-included"
+            element={<RitzCarltonYachtCollectionIncluded />}
+          />
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

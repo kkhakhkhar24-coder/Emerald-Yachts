@@ -1,6 +1,6 @@
 import React from 'react';
 import FadeIn from './FadeIn';
-import angelaImage from '../../assets/avalon-inclusions/Angela.webp';
+import angelaImage from '@/assets/Angela_Hughes.jpg';
 
 const AuthorityBox = ({ 
   title = "Insider Tip", 

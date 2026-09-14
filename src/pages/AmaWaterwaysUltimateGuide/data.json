@@ -1,0 +1,210 @@
+{
+  "seo": {
+    "title": "AmaWaterways River Cruise Guide (2026) | Trips & Ships",
+    "metaDescription": "Discover everything you need to know about AmaWaterways river cruises, including ships, cabins, destinations, pricing, dining, excursions, wellness, and expert planning advice from luxury travel authority Angela Hughes.",
+    "url": "/amawaterways-ultimate-guide"
+  },
+  "hero": {
+    "heroAltText": "Where Adventure Meets Elegance - Luxury River Cruise Experience",
+    "title": "Where Adventure Meets Elegance",
+    "subtitle": "AmaWaterways River Cruises Redefined — From Europe's grandest rivers to exotic African safaris and the Nile, explore the world's most iconic waterways with award-winning dining, active excursions, and five-star boutique luxury.",
+    "ctaLabel": "PLAN MY AMAWATERWAYS CRUISE",
+    "ctaUrl": "/contact"
+  },
+  "videoSection": {
+    "title": "Discover River Cruising Differently",
+    "subtitle": "River cruising isn't about massive ships, crowded ports, or rigid group buses. It's intimate, active, and deeply immersive travel—docked right in the heart of historic cities.",
+    "specialties": [
+      "Boutique luxury vessels accommodating approximately 150 to 196 guests for unmatched personal space",
+      "Signature Twin Balcony staterooms and suites with French and step-out balconies",
+      "Multiple daily included shore excursion choices (gentle walks, standard tours, guided hikes, cycling)",
+      "Award-winning culinary excellence featuring La Chaîne des Rôtisseurs and the exclusive Chef's Table"
+    ],
+    "videoText": "Expect fine dining, onboard wellness studios, heated sun deck pools, and suite-style comfort—without ever losing your connection to historic villages and stunning river landscapes.",
+    "youtubeId": "Df01PeQCufE"
+  },
+  "whyAttention": {
+    "title": "Why Discerning Travelers Choose AmaWaterways",
+    "quote": "One of the reasons I recommend AmaWaterways to my luxury clients is the balance it achieves between elegance and authenticity. You don't simply see destinations from a distance—you become part of them.",
+    "author": "Angela Hughes, CEO of Trips & Ships Luxury Travel",
+    "body": "Rather than transporting thousands of passengers on large ocean liners where the ship is the primary destination, river cruising places you right at the center of culture. Guests wake up to new landscapes every morning, stepping off the ship directly onto cobblestone streets, UNESCO World Heritage Sites, medieval castles, and picturesque vineyards."
+  },
+  "fleetOverview": {
+    "title": "The AmaWaterways Fleet: Designed for Luxury & Intimacy",
+    "subtitle": "Thoughtfully engineered to maximize scenic views while providing spacious accommodations and modern amenities.",
+    "items": [
+      {
+        "title": "Spotlight: The Revolutionary AmaMagna",
+        "description": "Approximately twice the width of traditional European river ships, AmaMagna offers expansive ocean-cruise level suites, four distinct dining venues including Al Fresco and Jimmy's, an expanded Zen Wellness Studio, and a water sports platform on the Danube.",
+        "placeholderLabel": "AMAMAGNA DANUBE FLAGSHIP SHIP"
+      },
+      {
+        "title": "The Signature European Fleet",
+        "description": "Vessels like AmaLea, AmaLucia, AmaMora, AmaSiena, and AmaViola navigate the Rhine, Main, Moselle, and French rivers with panoramic floor-to-ceiling lounges, sun deck pools with swim-up bars, and signature Twin Balcony accommodations.",
+        "placeholderLabel": "SIGNATURE EUROPEAN FLEET"
+      },
+      {
+        "title": "Exotic & Expedition Vessels",
+        "description": "Purpose-built ships including AmaDara on the Mekong, AmaDahlia and AmaLilia on the Nile, the Zambezi Queen on Africa's Chobe River, and the custom-designed AmaMagdalena in Colombia deliver intimate exploration in remote waters.",
+        "placeholderLabel": "EXOTIC EXPEDITION RIVER VESSELS"
+      }
+    ]
+  },
+  "cabinInnovations": {
+    "title": "Staterooms & Suites: The Signature Twin Balcony Concept",
+    "subtitle": "Accommodations engineered specifically for scenic river cruising, emphasizing natural light and fresh river breezes.",
+    "features": [
+      {
+        "title": "The Twin Balcony Advantage",
+        "description": "Rather than choosing between a French balcony (sliding glass doors) or a full step-out balcony with chairs, many AmaWaterways staterooms feature both in one seamless living space."
+      },
+      {
+        "title": "Grand & Luxury Suites",
+        "description": "Offering up to 710 sq. ft. on AmaMagna, suites feature separate sitting areas, walk-in closets, marble bathrooms with double vanities, and enhanced concierge amenities."
+      },
+      {
+        "title": "Categories E, D, CB, BB & BA",
+        "description": "From high-value riverview windows (Categories E & D) to midship Twin Balconies (BA/BB), every stateroom includes luxury bedding, individual climate control, and high-speed Wi-Fi."
+      }
+    ]
+  },
+  "diningAndInclusions": {
+    "title": "Gourmet Dining & All-Inclusive Value",
+    "subtitle": "Meals that celebrate regional specialties alongside classic favorites, backed by an extensive list of included amenities.",
+    "items": [
+      {
+        "title": "The Chef's Table Specialty Restaurant",
+        "description": "Included for every guest with reservations, this intimate venue offers multi-course tasting menus prepared in an open kitchen with expert regional wine pairings.",
+        "category": "Gourmet Dining",
+        "placeholderLabel": "THE CHEFS TABLE SPECIALTY DINING"
+      },
+      {
+        "title": "Complimentary Fine Wines & Craft Beers",
+        "description": "Enjoy unlimited local and regional wines, craft beers, and soft drinks served with lunch and dinner every day, carefully selected by expert sommeliers.",
+        "category": "Included Beverage",
+        "placeholderLabel": "WINE TASTING ON THE RIVER"
+      },
+      {
+        "title": "Multiple Daily Included Excursions",
+        "description": "Choose from gentle walking tours, standard historical landmarks, active hilltop fortress hikes, or guided cycling tours through vineyards—all included in your fare.",
+        "category": "Included Excursions",
+        "placeholderLabel": "GUIDED BIKE EXCURSION"
+      }
+    ]
+  },
+  "competitorComparisons": {
+    "title": "AmaWaterways vs. Leading Luxury River Cruise Lines",
+    "subtitle": "How AmaWaterways compares to Viking, Scenic, Uniworld, and Avalon.",
+    "comparisons": [
+      {
+        "competitor": "Viking River Cruises",
+        "verdict": "Viking offers sleek simplicity with one included tour, while AmaWaterways provides active luxury with multiple excursions, wellness hosts, and Twin Balconies."
+      },
+      {
+        "competitor": "Scenic Luxury Cruises",
+        "verdict": "Scenic is ultra-inclusive at a premium price; AmaWaterways delivers exceptional culinary value with active flexibility."
+      },
+      {
+        "competitor": "Uniworld Boutique River Cruises",
+        "verdict": "Uniworld features lavish palace decor, whereas AmaWaterways appeals to modern travelers who prefer contemporary elegance and outdoor pursuits."
+      },
+      {
+        "competitor": "Avalon Waterways",
+        "verdict": "Avalon features sliding windows, but AmaWaterways offers signature Twin Balconies, higher crew-to-guest ratios, and superior wellness programming."
+      }
+    ]
+  },
+  "pricingEstimates": {
+    "title": "How Much Does an AmaWaterways Cruise Cost?",
+    "subtitle": "Estimated per-person rates based on itinerary duration, season, and accommodation choice.",
+    "tiers": [
+      {
+        "duration": "7-Night Classic European River Cruises",
+        "priceRange": "From $3,500 – $6,500+",
+        "description": "Ideal for first-time cruisers exploring the Danube, Rhine, Rhône, Seine, or Douro valleys."
+      },
+      {
+        "duration": "10 to 14-Night Grand European & Exotic Voyages",
+        "priceRange": "From $5,500 – $12,000+",
+        "description": "Multi-river European journeys, Mekong River expeditions, and Nile River classical explorations."
+      },
+      {
+        "duration": "Luxury Suites & Africa Safari Packages",
+        "priceRange": "From $12,000 – $18,000+",
+        "description": "Expansive suites on the AmaMagna or 14-day Chobe River journeys paired with five-star African safaris."
+      },
+      {
+        "duration": "Wine Cruises & Themed Sailings",
+        "priceRange": "From $4,500 – $7,500+",
+        "description": "Exclusive sailings hosted by renowned wine experts featuring private regional cellar tastings and vineyard tours."
+      }
+    ]
+  },
+  "faqs": {
+    "title": "Frequently Asked Questions About AmaWaterways",
+    "subtitle": "Optimized AEO (Answer Engine) answers for first-time and repeat river cruisers.",
+    "items": [
+      {
+        "question": "What is AmaWaterways?",
+        "answer": "AmaWaterways is an award-winning luxury river cruise line founded in 2002 by Rudi Schreiner, Kristin Karst, and Jimmy Murphy. It operates elegant boutique ships across Europe, Southeast Asia, Africa, Egypt, and Colombia, offering immersive itineraries, gourmet dining, included shore excursions, wellness programs, and highly personalized service."
+      },
+      {
+        "question": "Is AmaWaterways considered a luxury river cruise line?",
+        "answer": "Yes. AmaWaterways is consistently recognized among the world's premier luxury river cruise lines. Its modern fleet, high crew-to-guest ratios, La Chaîne des Rôtisseurs culinary membership, spacious Twin Balcony suites, and comprehensive inclusions place it firmly in the upscale luxury tier."
+      },
+      {
+        "question": "What is included in an AmaWaterways cruise fare?",
+        "answer": "Most AmaWaterways cruises include luxury accommodations, daily gourmet breakfast, lunch, and dinner, unlimited fine wine and beer during lunch and dinner, specialty coffees and snacks, high-speed Wi-Fi, daily choices of guided shore excursions (hiking, cycling, walking), onboard wellness classes, evening cultural entertainment, and all port charges."
+      },
+      {
+        "question": "Which AmaWaterways ship is the best?",
+        "answer": "While every ship maintains high luxury standards, the revolutionary AmaMagna is widely regarded as the most spacious river ship in Europe, featuring twice the width of traditional ships and four dining venues. Newer vessels like AmaLucia, AmaMora, and AmaSiena also feature the latest Twin Balcony designs and sun deck pools."
+      },
+      {
+        "question": "What is the best time of year to take an AmaWaterways cruise?",
+        "answer": "Spring (March–May) is ideal for Tulip Time in the Netherlands and mild weather. Summer (June–August) offers long daylight hours and vibrant outdoor dining. Autumn (September–November) is peak wine harvest season in Bordeaux, the Douro, and Rhine valleys. Late November through December features world-famous Christmas Market sailings."
+      },
+      {
+        "question": "Does AmaWaterways allow children?",
+        "answer": "Yes, but they are not the primary focus. Children 4 and older are permitted, but the experience is geared toward adults. Certain sailings feature Adventures by Disney partnerships which are designed specifically for families."
+      },
+      {
+        "question": "Are gratuities included on AmaWaterways?",
+        "answer": "Gratuities for the Cruise Manager and ship’s crew are generally not included in the standard fare for North American guests and are recommended to be paid at the end of the cruise, unless you book a specific promo or package that includes them."
+      },
+      {
+        "question": "Do AmaWaterways ships have pools?",
+        "answer": "Most AmaWaterways European ships feature a heated sun deck pool, often with a swim-up bar. It's a signature amenity for relaxing while cruising past castles and vineyards."
+      },
+      {
+        "question": "Is there a dress code on AmaWaterways?",
+        "answer": "The dress code is elegant casual. During the day, comfortable resort wear and walking shoes are recommended. For dinner, guests typically wear smart-casual attire (collared shirts for men, dresses or slacks for women); there are no strict formal nights."
+      },
+      {
+        "question": "Are there elevators on AmaWaterways ships?",
+        "answer": "Yes, the majority of the European fleet features an elevator that reaches the main accommodation and dining decks. However, it typically does not reach the Sun Deck."
+      },
+      {
+        "question": "Does AmaWaterways have single supplements?",
+        "answer": "AmaWaterways often runs promotions waiving or reducing the single supplement for solo travelers on select European sailings, making it a very solo-friendly luxury line."
+      },
+      {
+        "question": "Can I bring my own wine onboard?",
+        "answer": "Yes! AmaWaterways allows guests to bring their own bottles of wine purchased ashore to enjoy in their stateroom or in the dining room without a corkage fee."
+      },
+      {
+        "question": "How large are the staterooms?",
+        "answer": "Standard riverview rooms are around 160 sq. ft., while signature Twin Balcony staterooms range from 210 to 235 sq. ft. Suites can reach up to 300 sq. ft., and on the AmaMagna, suites range from 355 to 710 sq. ft."
+      },
+      {
+        "question": "Why book AmaWaterways through Trips & Ships Luxury Travel?",
+        "answer": "Booking with Angela Hughes and Trips & Ships Luxury Travel provides personalized cabin selection, itinerary matching, pre- and post-cruise hotel coordination, private airport transfers, travel protection advice, and access to exclusive promotions and onboard amenities that you cannot get booking alone."
+      }
+    ]
+  },
+  "angelaBio": {
+    "name": "Angela Hughes",
+    "title": "Luxury Travel Authority, River Cruise Specialist & CEO of Trips & Ships Luxury Travel",
+    "bio": "With more than 40 years of travel industry leadership and personal visits to over 121 countries, Angela Hughes brings real-world insight to every river cruise recommendation. Named 2024 Luxury Travel Influencer of the Year by Travel Leaders Network and one of The Most Influential Women in Travel by TravelPulse, Angela ensures every client voyage is thoughtfully curated for maximum comfort and discovery."
+  }
+}

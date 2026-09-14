@@ -1447,6 +1447,38 @@ const Navbar = () => {
               Celebrity Request a Quote
             </NavLink>
 
+              <NavLink
+                to="/amawaterways-ultimate-guide"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                AmaWaterways Ultimate Guide
+              </NavLink>
+
+              <NavLink
+                to="/ritz-carlton-yacht-collection"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                The Ritz-Carlton Yacht Collection
+              </NavLink>
+
+              <NavLink
+                to="/ritz-carlton-yacht-collection-cost"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Ritz-Carlton Yacht Cruise Cost
+              </NavLink>
+
+              <NavLink
+                to="/ritz-carlton-yacht-collection-included"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                What Is Included on Ritz-Carlton Yacht
+              </NavLink>
+
 
 
             </div>
@@ -2849,6 +2881,38 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Celebrity Request a Quote
+            </NavLink>
+
+            <NavLink
+              to="/amawaterways-ultimate-guide"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              AmaWaterways Ultimate Guide
+            </NavLink>
+
+            <NavLink
+              to="/ritz-carlton-yacht-collection"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              The Ritz-Carlton Yacht Collection
+            </NavLink>
+
+            <NavLink
+              to="/ritz-carlton-yacht-collection-cost"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Ritz-Carlton Yacht Cruise Cost
+            </NavLink>
+
+            <NavLink
+              to="/ritz-carlton-yacht-collection-included"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              What Is Included on Ritz-Carlton Yacht
             </NavLink>
 
 
