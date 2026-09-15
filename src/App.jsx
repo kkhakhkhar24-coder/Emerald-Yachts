@@ -103,6 +103,7 @@ import Exploravsscenic from "./pages/Exploravsscenic/Exploravsscenic";
 import Exploravsponant from "./pages/Exploravsponant/Exploravsponant";
 import Exploravscrystal from "./pages/Exploravscrystal/Exploravscrystal";
 import PrivateEquityFamilyTravel from "./pages/PrivateEquityFamilyTravel/PrivateEquityFamilyTravel";
+import RitzCarltonVsSeabourn from "./pages/RitzCarltonVsSeabourn/RitzCarltonVsSeabourn";
 import FamilyLegacyTravel from "./pages/FamilyLegacyTravel/FamilyLegacyTravel";
 import MultigenerationalLuxuryTravel from "./pages/MultigenerationalLuxuryTravel/MultigenerationalLuxuryTravel";
 import Familyofficetravelplanning from "./pages/Familyofficetravelplanning/Familyofficetravelplanning";
@@ -199,6 +200,9 @@ import AmaWaterwaysUltimateGuide from "./pages/AmaWaterwaysUltimateGuide/AmaWate
 import RitzCarltonYachtCollection from "./pages/RitzCarltonYachtCollection/RitzCarltonYachtCollection";
 import RitzCarltonYachtCollectionCost from "./pages/RitzCarltonYachtCollectionCost/RitzCarltonYachtCollectionCost";
 import RitzCarltonYachtCollectionIncluded from "./pages/RitzCarltonYachtCollectionIncluded/RitzCarltonYachtCollectionIncluded";
+import RitzCarltonYachtCollectionReviews from "./pages/RitzCarltonYachtCollectionReviews/RitzCarltonYachtCollectionReviews";
+import RitzCarltonEvrimaVsIlmaVsLuminara from "./pages/RitzCarltonEvrimaVsIlmaVsLuminara/RitzCarltonEvrimaVsIlmaVsLuminara";
+import RitzCarltonVsExploraJourneys from "./pages/RitzCarltonVsExploraJourneys/RitzCarltonVsExploraJourneys";
 
 function App() {
   return (
@@ -1133,6 +1137,26 @@ function App() {
           <Route
             path="/ritz-carlton-yacht-collection-included"
             element={<RitzCarltonYachtCollectionIncluded />}
+          />
+
+          <Route
+            path="/ritz-carlton-yacht-collection-reviews"
+            element={<RitzCarltonYachtCollectionReviews />}
+          />
+
+          <Route
+            path="/ritz-carlton-evrima-vs-ilma-vs-luminara"
+            element={<RitzCarltonEvrimaVsIlmaVsLuminara />}
+          />
+
+          <Route
+            path="/ritz-carlton-yacht-collection-vs-explora-journeys"
+            element={<RitzCarltonVsExploraJourneys />}
+          />
+
+          <Route
+            path="/ritz-carlton-yacht-collection-vs-seabourn"
+            element={<RitzCarltonVsSeabourn />}
           />
         </Routes>
       </BrowserRouter>

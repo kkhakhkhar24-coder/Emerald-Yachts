@@ -54,14 +54,14 @@ const TabbedComparison = ({ title, mainBrand, competitors, hideVs = false, leftL
 
             {/* Comparison Content */}
             <div className="p-8 lg:p-12">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 items-start">
                 {/* Main Brand Strengths */}
                 <div>
                   <div className="flex items-center gap-4 mb-6 pb-4 border-b border-slate-100">
                     <span className="bg-navy-900 text-white font-sans text-xs font-bold px-4 py-1.5 rounded">{mainBrand?.name || mainBrand}</span>
                     <span className="font-sans text-xs font-bold text-slate-400 uppercase tracking-[0.15em]">{leftLabel}</span>
                   </div>
-                  <ul className="space-y-4">
+                  <ul className="space-y-4 max-h-[480px] lg:max-h-[520px] overflow-y-auto pr-2">
                     {(activeCompetitor?.mainBrandStrengths || []).map((strength, idx) => (
                       <li key={idx} className="flex items-start gap-3 bg-ice-50 p-4 rounded-xl border border-slate-100">
                         <Check className="w-5 h-5 text-navy-700 flex-shrink-0 mt-0.5" />
@@ -77,7 +77,7 @@ const TabbedComparison = ({ title, mainBrand, competitors, hideVs = false, leftL
                     <span className="bg-slate-100 text-slate-700 font-sans text-xs font-bold px-4 py-1.5 rounded">{activeCompetitor.name}</span>
                     <span className="font-sans text-xs font-bold text-slate-400 uppercase tracking-[0.15em]">{rightLabel}</span>
                   </div>
-                  <ul className="space-y-4">
+                  <ul className="space-y-4 max-h-[480px] lg:max-h-[520px] overflow-y-auto pr-2">
                     {(activeCompetitor?.competitorStrengths || []).map((strength, idx) => (
                       <li key={idx} className="flex items-start gap-3 bg-slate-50 p-4 rounded-xl border border-slate-100">
                         <Circle className="w-5 h-5 text-slate-400 flex-shrink-0 mt-0.5" />

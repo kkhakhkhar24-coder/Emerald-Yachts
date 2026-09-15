@@ -1479,6 +1479,38 @@ const Navbar = () => {
                 What Is Included on Ritz-Carlton Yacht
               </NavLink>
 
+              <NavLink
+                to="/ritz-carlton-yacht-collection-reviews"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Is Ritz-Carlton Yacht Worth It? Review
+              </NavLink>
+
+              <NavLink
+                to="/ritz-carlton-evrima-vs-ilma-vs-luminara"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Evrima vs Ilma vs Luminara
+              </NavLink>
+
+              <NavLink
+                to="/ritz-carlton-yacht-collection-vs-explora-journeys"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Ritz-Carlton Yacht Collection vs Explora Journeys
+              </NavLink>
+
+              <NavLink
+                to="/ritz-carlton-yacht-collection-vs-seabourn"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Ritz-Carlton Yacht Collection vs Seabourn
+              </NavLink>
+
 
 
             </div>
@@ -2913,6 +2945,38 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               What Is Included on Ritz-Carlton Yacht
+            </NavLink>
+
+            <NavLink
+              to="/ritz-carlton-yacht-collection-reviews"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Is Ritz-Carlton Yacht Worth It? Review
+            </NavLink>
+
+            <NavLink
+              to="/ritz-carlton-evrima-vs-ilma-vs-luminara"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Evrima vs Ilma vs Luminara
+            </NavLink>
+
+            <NavLink
+              to="/ritz-carlton-yacht-collection-vs-explora-journeys"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Ritz-Carlton Yacht Collection vs Explora Journeys
+            </NavLink>
+
+            <NavLink
+              to="/ritz-carlton-yacht-collection-vs-seabourn"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Ritz-Carlton Yacht Collection vs Seabourn
             </NavLink>
 
 

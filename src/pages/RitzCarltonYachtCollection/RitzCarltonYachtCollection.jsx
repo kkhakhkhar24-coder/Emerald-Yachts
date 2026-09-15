@@ -54,7 +54,7 @@ const RitzCarltonYachtCollection = () => {
   const highestPrioritySupportingPages = [
     { title: "How Much Does a Ritz-Carlton Yacht Cruise Cost?", url: "/ritz-carlton-yacht-collection-cost" },
     { title: "What Is Included on a Ritz-Carlton Yacht Cruise?", url: "/ritz-carlton-yacht-collection-included" },
-    { title: "Is The Ritz-Carlton Yacht Collection Worth It? An Honest Review", url: "#" },
+    { title: "Is The Ritz-Carlton Yacht Collection Worth It? An Honest Review", url: "/ritz-carlton-yacht-collection-reviews" },
     { title: "Evrima vs. Ilma vs. Luminara: Which Ritz-Carlton Yacht Is Best?", url: "#" },
     { title: "Ritz-Carlton Yacht Collection vs. Explora Journeys", url: "#" },
     { title: "Ritz-Carlton Yacht Collection vs. Seabourn", url: "#" },
@@ -88,7 +88,7 @@ const RitzCarltonYachtCollection = () => {
       links: [
         { label: "How Much Does a Ritz-Carlton Yacht Cruise Cost?", url: "/ritz-carlton-yacht-collection-cost" },
         { label: "What Is Included on a Ritz-Carlton Yacht Cruise?", url: "/ritz-carlton-yacht-collection-included" },
-        { label: "Is The Ritz-Carlton Yacht Collection Worth It? An Honest Review", url: "#" }
+        { label: "Is The Ritz-Carlton Yacht Collection Worth It? An Honest Review", url: "/ritz-carlton-yacht-collection-reviews" }
       ],
       mainUrl: "#"
     },
