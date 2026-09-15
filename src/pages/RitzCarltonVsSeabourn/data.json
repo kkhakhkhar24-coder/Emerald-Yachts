@@ -31,25 +31,97 @@
   "atAGlanceTable": {
     "title": "Ritz-Carlton vs. Seabourn at a Glance",
     "description": "Quick side-by-side snapshot comparing key operational metrics and brand advantages:",
-    "headers": ["Category", "Winner", "Why"],
+    "headers": [
+      "Category",
+      "Winner",
+      "Why"
+    ],
     "rows": [
-      ["True yacht atmosphere", "Ritz-Carlton", "Dedicated yacht concept and smaller overall fleet"],
-      ["Established luxury-hotel service", "Ritz-Carlton", "Strong Ritz-Carlton hospitality heritage"],
-      ["Traditional luxury cruising", "Seabourn", "Decades of ultra-luxury cruise experience"],
-      ["Small-ship intimacy", "Both", "Both emphasize intimate, low-density ships"],
-      ["Largest overall fleet choice", "Seabourn", "More ships and broader vessel types"],
-      ["Expedition cruising", "Seabourn", "Purpose-built expedition ships"],
-      ["Suite privacy", "Ritz-Carlton", "Every yacht suite has a private terrace"],
-      ["Suite variety", "Seabourn", "Broad accommodation range across its fleet"],
-      ["Dining", "Both", "Strong complimentary dining programs"],
-      ["Premium beverages", "Both", "Included premium beverages"],
-      ["Caviar experience", "Seabourn", "Complimentary caviar is a distinctive brand feature"],
-      ["Watersports/yacht marina", "Ritz-Carlton", "Dedicated Marina experience"],
-      ["Destination immersion", "Seabourn", "Strong expedition and destination focus"],
-      ["Couples", "Both", "Both offer sophisticated intimate environments"],
-      ["Multigenerational travel", "Seabourn", "Broader ship and itinerary selection"],
-      ["Brand familiarity", "Ritz-Carlton", "Major advantage for Ritz-Carlton loyalists"],
-      ["Overall", "Depends on traveler", "Different interpretations of luxury"]
+      [
+        "True yacht atmosphere",
+        "Ritz-Carlton",
+        "Dedicated yacht concept and smaller overall fleet"
+      ],
+      [
+        "Established luxury-hotel service",
+        "Ritz-Carlton",
+        "Strong Ritz-Carlton hospitality heritage"
+      ],
+      [
+        "Traditional luxury cruising",
+        "Seabourn",
+        "Decades of ultra-luxury cruise experience"
+      ],
+      [
+        "Small-ship intimacy",
+        "Both",
+        "Both emphasize intimate, low-density ships"
+      ],
+      [
+        "Largest overall fleet choice",
+        "Seabourn",
+        "More ships and broader vessel types"
+      ],
+      [
+        "Expedition cruising",
+        "Seabourn",
+        "Purpose-built expedition ships"
+      ],
+      [
+        "Suite privacy",
+        "Ritz-Carlton",
+        "Every yacht suite has a private terrace"
+      ],
+      [
+        "Suite variety",
+        "Seabourn",
+        "Broad accommodation range across its fleet"
+      ],
+      [
+        "Dining",
+        "Both",
+        "Strong complimentary dining programs"
+      ],
+      [
+        "Premium beverages",
+        "Both",
+        "Included premium beverages"
+      ],
+      [
+        "Caviar experience",
+        "Seabourn",
+        "Complimentary caviar is a distinctive brand feature"
+      ],
+      [
+        "Watersports/yacht marina",
+        "Ritz-Carlton",
+        "Dedicated Marina experience"
+      ],
+      [
+        "Destination immersion",
+        "Seabourn",
+        "Strong expedition and destination focus"
+      ],
+      [
+        "Couples",
+        "Both",
+        "Both offer sophisticated intimate environments"
+      ],
+      [
+        "Multigenerational travel",
+        "Seabourn",
+        "Broader ship and itinerary selection"
+      ],
+      [
+        "Brand familiarity",
+        "Ritz-Carlton",
+        "Major advantage for Ritz-Carlton loyalists"
+      ],
+      [
+        "Overall",
+        "Depends on traveler",
+        "Different interpretations of luxury"
+      ]
     ]
   },
   "dualPhilosophy": {
@@ -181,23 +253,87 @@
   "inclusionsTable": {
     "title": "Ritz-Carlton vs. Seabourn Inclusions Matrix",
     "description": "Side-by-side breakdown of standard amenities, services, and onboard features:",
-    "headers": ["Inclusion", "Ritz-Carlton", "Seabourn"],
+    "headers": [
+      "Inclusion",
+      "Ritz-Carlton",
+      "Seabourn"
+    ],
     "rows": [
-      ["Luxury suite accommodation", "Yes", "Yes"],
-      ["Ocean view", "Yes", "Yes"],
-      ["Private outdoor space", "100% Private Terraces", "Most suites (Verandas)"],
-      ["Dining venues", "Nearly all included", "100% Complimentary dining"],
-      ["Premium beverages", "Yes (Included)", "Yes (Included)"],
-      ["In-suite dining", "Yes (24/7)", "Yes (24/7 course-by-course)"],
-      ["Wi-Fi", "Yes (Starlink)", "Yes (Starlink)"],
-      ["Gratuities", "Yes (Included)", "Tipping neither required nor expected"],
-      ["Fitness & wellness", "Yes", "Yes"],
-      ["Spa thermal access", "Facility dependent", "Facility dependent"],
-      ["Expedition cruising", "Not core focus", "Yes (Purpose-built ships)"],
-      ["Complimentary Caviar", "Not standard inclusion", "Yes (Signature inclusion)"],
-      ["Watersports Marina", "Yes (Stern Marina)", "Selected vessels / sailings"],
-      ["Shore excursions", "Additional / sailing dependent", "Additional / program dependent"],
-      ["Specialty dining", "S.E.A. / Seta additional", "All venues complimentary"]
+      [
+        "Luxury suite accommodation",
+        "Yes",
+        "Yes"
+      ],
+      [
+        "Ocean view",
+        "Yes",
+        "Yes"
+      ],
+      [
+        "Private outdoor space",
+        "100% Private Terraces",
+        "Most suites (Verandas)"
+      ],
+      [
+        "Dining venues",
+        "Nearly all included",
+        "100% Complimentary dining"
+      ],
+      [
+        "Premium beverages",
+        "Yes (Included)",
+        "Yes (Included)"
+      ],
+      [
+        "In-suite dining",
+        "Yes (24/7)",
+        "Yes (24/7 course-by-course)"
+      ],
+      [
+        "Wi-Fi",
+        "Yes (Starlink)",
+        "Yes (Starlink)"
+      ],
+      [
+        "Gratuities",
+        "Yes (Included)",
+        "Tipping neither required nor expected"
+      ],
+      [
+        "Fitness & wellness",
+        "Yes",
+        "Yes"
+      ],
+      [
+        "Spa thermal access",
+        "Facility dependent",
+        "Facility dependent"
+      ],
+      [
+        "Expedition cruising",
+        "Not core focus",
+        "Yes (Purpose-built ships)"
+      ],
+      [
+        "Complimentary Caviar",
+        "Not standard inclusion",
+        "Yes (Signature inclusion)"
+      ],
+      [
+        "Watersports Marina",
+        "Yes (Stern Marina)",
+        "Selected vessels / sailings"
+      ],
+      [
+        "Shore excursions",
+        "Additional / sailing dependent",
+        "Additional / program dependent"
+      ],
+      [
+        "Specialty dining",
+        "S.E.A. / Seta additional",
+        "All venues complimentary"
+      ]
     ]
   },
   "headToHeadAnswers": [
@@ -259,29 +395,357 @@
   "decisionTable": {
     "title": "Which One Is Right for You? Decision Matrix",
     "description": "Match your personal travel style with the recommended luxury cruise line:",
-    "headers": ["If You Say...", "Best Match"],
+    "headers": [
+      "If You Say...",
+      "Best Match"
+    ],
     "rows": [
-      ["'I want a private-yacht feeling.'", "Ritz-Carlton"],
-      ["'I already love Ritz-Carlton hotels.'", "Ritz-Carlton"],
-      ["'I want every suite to have a private terrace.'", "Ritz-Carlton"],
-      ["'I want contemporary yacht design.'", "Ritz-Carlton"],
-      ["'I want a serious expedition.'", "Seabourn"],
-      ["'I want Antarctica or the Arctic.'", "Seabourn"],
-      ["'I love caviar.'", "Seabourn"],
-      ["'I want expert destination enrichment.'", "Seabourn"],
-      ["'I want broad global itinerary choices.'", "Seabourn"],
-      ["'I want relaxed luxury cruising.'", "Both"],
-      ["'I want exceptional dining.'", "Both"],
-      ["'I want premium beverages included.'", "Both"],
-      ["'I dislike formal cruise nights.'", "Both"],
-      ["'I want the smallest possible yacht environment.'", "Ritz-Carlton"],
-      ["'I want luxury plus exploration.'", "Seabourn"]
+      [
+        "'I want a private-yacht feeling.'",
+        "Ritz-Carlton"
+      ],
+      [
+        "'I already love Ritz-Carlton hotels.'",
+        "Ritz-Carlton"
+      ],
+      [
+        "'I want every suite to have a private terrace.'",
+        "Ritz-Carlton"
+      ],
+      [
+        "'I want contemporary yacht design.'",
+        "Ritz-Carlton"
+      ],
+      [
+        "'I want a serious expedition.'",
+        "Seabourn"
+      ],
+      [
+        "'I want Antarctica or the Arctic.'",
+        "Seabourn"
+      ],
+      [
+        "'I love caviar.'",
+        "Seabourn"
+      ],
+      [
+        "'I want expert destination enrichment.'",
+        "Seabourn"
+      ],
+      [
+        "'I want broad global itinerary choices.'",
+        "Seabourn"
+      ],
+      [
+        "'I want relaxed luxury cruising.'",
+        "Both"
+      ],
+      [
+        "'I want exceptional dining.'",
+        "Both"
+      ],
+      [
+        "'I want premium beverages included.'",
+        "Both"
+      ],
+      [
+        "'I dislike formal cruise nights.'",
+        "Both"
+      ],
+      [
+        "'I want the smallest possible yacht environment.'",
+        "Ritz-Carlton"
+      ],
+      [
+        "'I want luxury plus exploration.'",
+        "Seabourn"
+      ]
     ]
   },
   "angelaPerspective": {
     "title": "Angela Hughes' Expert Perspective",
     "author": "Angela Hughes, CEO of Trips & Ships Luxury Travel",
     "content": "Angela Hughes, CEO of Trips & Ships Luxury Travel and founder of Luxury Travel University, brings more than four decades of travel-industry experience and has traveled to more than 121 countries. Her advice for choosing between Ritz-Carlton and Seabourn is clear: Don't start with the brand name — start with what luxury means to you. For a traveler who values intimate yacht travel, private terraces, and Ritz-Carlton hotel hospitality, Ritz-Carlton Yacht Collection is an exceptional fit. For a traveler who prioritizes destination immersion, culinary depth, enrichment, or polar expedition travel, Seabourn is the more compelling recommendation."
+  },
+  "coreDifferencePillars": {
+    "title": "The Biggest Difference: Yacht-Like vs. Expedition-Minded",
+    "subtitle": "Think of Ritz-Carlton as a private superyacht scaled with hotel-brand hospitality. Think of Seabourn as an intimate luxury cruise specialist with decades of heritage and purpose-built expedition capability.",
+    "pillars": [
+      {
+        "title": "Ritz-Carlton: Intimate Superyacht Scale",
+        "description": "Evrima (298 guests / 149 suites), Ilma (448 guests / 224 suites), Luminara (452 guests / 226 suites). Every suite features a private terrace. Stern watersports Marina. Ritz-Carlton hospitality brand heritage.",
+        "icon": "anchor"
+      },
+      {
+        "title": "Seabourn: Ultra-Luxury & Expedition Heritage",
+        "description": "An established ultra-luxury cruise specialist with dedicated expedition ships. Seabourn Venture and Seabourn Pursuit are PC6 ice-strengthened for Antarctica and Arctic. Complimentary caviar, broad global fleet, 7-continent itineraries.",
+        "icon": "compass"
+      },
+      {
+        "title": "Different Definitions of Luxury",
+        "description": "Ritz-Carlton expresses luxury as contemporary yacht intimacy + hotel service. Seabourn expresses luxury as understated cruising + destination immersion + culinary depth + expedition exploration.",
+        "icon": "star"
+      }
+    ]
+  },
+  "shipSizeComparison": {
+    "title": "Ritz-Carlton vs. Seabourn: Ship Size & Intimacy",
+    "subtitle": "Which Has the Smaller, More Intimate Ships?",
+    "includedTitle": "Ritz-Carlton Yacht Collection Fleet",
+    "extrasTitle": "Seabourn Fleet & Expedition Ships",
+    "included": [
+      {
+        "title": "Evrima: 149 suites / up to 298 guests",
+        "description": "The most intimate vessel in the Ritz-Carlton fleet. Superyacht-scale access to boutique ports with private terraces across every suite and full watersports Marina."
+      },
+      {
+        "title": "Ilma & Luminara: 224–226 suites / under 500 guests",
+        "description": "Next-generation yachts expanding capacity while maintaining the private yacht atmosphere, private terraces, and signature Ritz-Carlton hospitality across all suites."
+      }
+    ],
+    "extras": [
+      {
+        "title": "Seabourn Traditional Fleet: 264–600 guests",
+        "description": "Intimate vessels designed around private-yacht atmosphere and low-density luxury hospitality. Ocean-front suites, most with private verandas. Access to destinations beyond larger ships."
+      },
+      {
+        "title": "Seabourn Venture & Seabourn Pursuit: Purpose-Built Expedition",
+        "description": "PC6 ice-strengthened hulls for Antarctica and Arctic expeditions. Zodiacs, submersibles, expert expedition teams. The most significant capability advantage Seabourn holds over Ritz-Carlton."
+      }
+    ]
+  },
+  "diningAndBeverageComparison": {
+    "title": "Ritz-Carlton vs. Seabourn: Dining & Beverage Comparison",
+    "subtitle": "Comparing culinary philosophy, signature inclusions, and beverage programs:",
+    "includedTitle": "Ritz-Carlton Dining & Drinks",
+    "extrasTitle": "Seabourn Dining & Drinks",
+    "included": [
+      {
+        "title": "Ritz-Carlton Culinary Experience",
+        "description": "Multiple dining venues with a luxury-hotel sensibility. Nearly all dining included in fare. Signature specialty venues S.E.A. and Seta (on Ilma/Luminara) carry an additional charge. 24-hour in-suite dining included."
+      },
+      {
+        "title": "Ritz-Carlton Beverage Inclusion",
+        "description": "Includes fine wines, premium spirits, cocktails, mocktails, specialty coffees and in-suite minibar beverages. Starlink Wi-Fi and gratuities also included."
+      }
+    ],
+    "extras": [
+      {
+        "title": "Seabourn Culinary Program",
+        "description": "100% complimentary dining across all venues: The Restaurant, The Colonnade, Solis (on applicable ships), in-suite dining. Destination-inspired cuisine, chef-led experiences, and culinary enrichment programming."
+      },
+      {
+        "title": "Seabourn Signature: Complimentary Caviar",
+        "description": "One of cruising's most distinctive inclusions. Seabourn includes complimentary caviar anywhere, anytime — including the iconic Caviar in the Surf® destination beach event. Premium spirits, fine wines and welcome champagne also included."
+      }
+    ]
+  },
+  "priceComparisonData": {
+    "title": "Ritz-Carlton vs. Seabourn: Price Comparison",
+    "subtitle": "Is one more expensive? There is no universal answer — compare total trip cost, not just base fares.",
+    "includedTitle": "What to Compare in Ritz-Carlton Pricing",
+    "extrasTitle": "What to Compare in Seabourn Pricing",
+    "included": [
+      {
+        "title": "Ritz-Carlton Fare Inclusions",
+        "description": "Cruise fare, suite category, nearly all dining, premium beverages, Starlink Wi-Fi, gratuities, 24-hour in-suite dining included. Specialty restaurants S.E.A. and Seta carry additional charges."
+      },
+      {
+        "title": "Ritz-Carlton Cost Factors",
+        "description": "Ship (Evrima vs Ilma vs Luminara), suite category, destination, season, sailing length, availability and promotions all significantly affect pricing. Compare equivalent suite categories for a fair analysis."
+      }
+    ],
+    "extras": [
+      {
+        "title": "Seabourn Fare Inclusions",
+        "description": "Cruise fare, suite category, 100% complimentary dining, premium spirits and wines, complimentary caviar, Starlink Wi-Fi, gratuities, in-suite bar. No required tipping onboard."
+      },
+      {
+        "title": "Seabourn Cost Factors",
+        "description": "Traditional fleet vs expedition ships (Venture / Pursuit), suite category, itinerary length, destination and season all affect price. Expedition itineraries — especially Antarctica and Arctic — typically command premium fares."
+      }
+    ]
+  },
+  "travelAdvisorFramework": [
+    {
+      "title": "If the Guest Says: 'I Want a Private Yacht Feeling'",
+      "description": "Start with Ritz-Carlton Yacht Collection. The brand is purpose-built around the superyacht concept with private terraces, Marina access, and Ritz-Carlton hotel hospitality at the smallest guest counts in luxury cruising.",
+      "placeholderLabel": "START WITH RITZ-CARLTON"
+    },
+    {
+      "title": "If the Guest Says: 'I Want Antarctica or the Arctic'",
+      "description": "Start with Seabourn. Seabourn Venture and Seabourn Pursuit are purpose-built PC6 ice-strengthened expedition ships with Zodiacs, submersibles, and expert expedition teams. Ritz-Carlton is not a dedicated expedition operator.",
+      "placeholderLabel": "START WITH SEABOURN EXPEDITION"
+    },
+    {
+      "title": "If the Guest Says: 'I Love the Ritz-Carlton Brand'",
+      "description": "Start with Ritz-Carlton Yacht Collection. The experience directly translates the Ritz-Carlton service philosophy — Suite Ambassador service, anticipatory hospitality, and discreet luxury — into a superyacht environment.",
+      "placeholderLabel": "START WITH RITZ-CARLTON"
+    },
+    {
+      "title": "If the Guest Says: 'I Want the Best Dining & Caviar'",
+      "description": "Lean toward Seabourn. Seabourn's 100% complimentary dining across all venues and signature complimentary caviar — including Caviar in the Surf® — give it a culinary distinction that Ritz-Carlton does not replicate as a standard inclusion.",
+      "placeholderLabel": "LEAN TOWARD SEABOURN"
+    },
+    {
+      "title": "If the Guest Says: 'I Want the Best Possible Itinerary'",
+      "description": "Compare specific sailings. Ritz-Carlton wins for intimate yacht-style port access. Seabourn wins for global breadth across seven continents and expedition destinations. Always compare the specific ship, suite, itinerary and total cost.",
+      "placeholderLabel": "COMPARE SPECIFIC SAILINGS"
+    },
+    {
+      "title": "If the Guest Is Undecided",
+      "description": "Ask seven questions: 1. Ship, 2. Suite, 3. Itinerary, 4. Dining priority, 5. Included amenities, 6. Expedition or shore experiences, 7. Total trip cost. The right luxury cruise is the one that best matches your definition of luxury.",
+      "placeholderLabel": "USE THE 7-QUESTION FRAMEWORK"
+    }
+  ],
+  "familyAndCouplesData": {
+    "title": "Ritz-Carlton vs. Seabourn: Couples, Honeymoons & Families",
+    "prosTitle": "Choose Ritz-Carlton for Couples & Honeymoons If...",
+    "consTitle": "Choose Seabourn for Couples & Families If...",
+    "bestFor": [
+      "You want a romantic superyacht atmosphere with private terraces",
+      "You prefer a more intimate guest count (298–452 guests)",
+      "You value Ritz-Carlton luxury-hotel hospitality and ambassador service",
+      "You want contemporary yacht design and watersports marina access",
+      "You enjoy relaxed 'Yacht Sophisticated' resort-chic atmosphere",
+      "You want a romantic setting with personalized in-suite dining"
+    ],
+    "notBestFor": [
+      "You want culinary experiences and complimentary caviar as a couple",
+      "You want expert destination enrichment and Seabourn Conversations",
+      "You are planning a honeymoon to Antarctica or the Arctic",
+      "Families who want broader ship and itinerary choices",
+      "Multigenerational families who want expedition travel options",
+      "Couples who prioritize destination immersion over the ship itself"
+    ],
+    "bottomNote": "Both brands are outstanding for couples seeking intimate luxury. Ritz-Carlton has the stronger yacht romance identity. Seabourn has the stronger destination and culinary romance identity."
+  },
+  "wellnessShowdownData": {
+    "title": "Wellness Comparison: Which Has Better Wellness?",
+    "brand1": {
+      "name": "Ritz-Carlton Wellness",
+      "style": "The Ritz-Carlton Spa®",
+      "cabin": "Luxury-Resort Spa Identity",
+      "excursions": "Fitness, Yoga & Outdoor Activities",
+      "vibe": "Hotel-Brand Wellness Experience"
+    },
+    "brand2": {
+      "name": "Seabourn Wellness",
+      "style": "Dr. Andrew Weil Partnership",
+      "cabin": "Established Cruise Wellness Program",
+      "excursions": "Spa, Fitness & Destination Wellness",
+      "vibe": "Integrated Luxury-Cruise Wellness"
+    },
+    "verdict": "Both offer luxury spa and wellness facilities. Ritz-Carlton has the stronger luxury-resort spa brand identity with The Ritz-Carlton Spa®. Seabourn offers a well-established wellness program integrated into the luxury-cruise experience, including a wellness partnership with Dr. Andrew Weil on applicable sailings. Overall verdict: close."
+  },
+  "enrichmentData": [
+    {
+      "title": "Ritz-Carlton Entertainment & Activities",
+      "description": "The experience is intentionally understated and curated. Activities include destination-based art workshops, photography, floral design, educational conversations, live music, destination programming, and creative pursuits. Atmosphere prioritizes relaxed elegance over theatrical entertainment.",
+      "placeholderLabel": "UNDERSTATED CURATED EXPERIENCES"
+    },
+    {
+      "title": "Seabourn Conversations & Enrichment",
+      "description": "Seabourn has a particularly strong enrichment culture through its Seabourn Conversations program, which brings experts, scholars, artists, authors and specialists onboard to connect directly with guests. The brand also offers lectures, destination-oriented programming, and culinary enrichment.",
+      "placeholderLabel": "EXPERT ENRICHMENT PROGRAM"
+    },
+    {
+      "title": "Verdict: Entertainment & Enrichment",
+      "description": "Seabourn has a slight edge for destination-focused enrichment and its signature Seabourn Conversations expert-speaker program. Ritz-Carlton is better for travelers who prefer understated, curated onboard experiences over structured programming.",
+      "placeholderLabel": "SLIGHT EDGE: SEABOURN"
+    }
+  ],
+  "quickFactsTable": {
+    "title": "Wi-Fi, Gratuities & Dress Code: Quick Facts",
+    "description": "At-a-glance comparison of practical onboard policies and standards:",
+    "headers": [
+      "Category",
+      "Ritz-Carlton",
+      "Seabourn"
+    ],
+    "rows": [
+      [
+        "Wi-Fi",
+        "Complimentary Starlink Wi-Fi included",
+        "Complimentary unlimited Starlink Wi-Fi"
+      ],
+      [
+        "Gratuities",
+        "Included in fare",
+        "Tipping neither required nor expected"
+      ],
+      [
+        "Evening dress code",
+        "Yacht Sophisticated (resort-chic)",
+        "Elegant casual — relaxed and unpretentious"
+      ],
+      [
+        "Formal nights",
+        "None required",
+        "None required"
+      ],
+      [
+        "Ties & jackets",
+        "Not required",
+        "Not required"
+      ],
+      [
+        "Dress comparison",
+        "Both significantly more relaxed than traditional formal cruising",
+        "Tie — both ideal for travelers who dislike formal nights"
+      ]
+    ]
+  },
+  "firstTimeCruiserData": {
+    "title": "The Luxury Philosophy: Which Is Right for First-Time Luxury Cruisers?",
+    "prosTitle": "Choose Ritz-Carlton If You Already Love...",
+    "consTitle": "Choose Seabourn If You Already Love...",
+    "bestFor": [
+      "Ritz-Carlton hotels and the Marriott Bonvoy luxury brand ecosystem",
+      "Luxury resorts and hotel-brand service standards",
+      "Private yacht travel and intimate guest environments",
+      "Personalized hotel-style ambassador service",
+      "Contemporary residential design and private terraces",
+      "The brand will feel immediately familiar — luxury translated to sea"
+    ],
+    "notBestFor": [
+      "Small luxury cruises and intimate ocean voyages",
+      "Destination-focused travel where the port matters as much as the ship",
+      "Fine dining, culinary enrichment, and complimentary caviar",
+      "Expedition travel — Antarctica, the Arctic, remote destinations",
+      "Expert-led enrichment programs and destination immersion",
+      "Understated luxury — elegant yet unpretentious hospitality"
+    ],
+    "bottomNote": "The most useful question is not 'Which is more luxurious?' but 'What does luxury mean to me?' Ritz-Carlton: personalized hotel service + private yacht atmosphere + contemporary design. Seabourn: intimate cruising + destination immersion + understated hospitality + culinary and expedition experiences."
+  },
+  "relatedGuides": {
+    "brandName": "Ritz-Carlton Yacht Collection",
+    "items": [
+      {
+        "label": "The Ritz-Carlton Yacht Collection: Reviews, Prices and Everything You Need to Know",
+        "href": "/ritz-carlton-yacht-collection"
+      },
+      {
+        "label": "How Much Does a Ritz-Carlton Yacht Cruise Cost?",
+        "href": "/ritz-carlton-yacht-collection-cost"
+      },
+      {
+        "label": "What Is Included on a Ritz-Carlton Yacht Cruise?",
+        "href": "/ritz-carlton-yacht-collection-inclusions"
+      },
+      {
+        "label": "Is The Ritz-Carlton Yacht Collection Worth It? An Honest Review",
+        "href": "/ritz-carlton-yacht-collection-worth-it"
+      },
+      {
+        "label": "Evrima vs. Ilma vs. Luminara: Which Ritz-Carlton Yacht Is Best?",
+        "href": "/ritz-carlton-evrima-vs-ilma-vs-luminara"
+      },
+      {
+        "label": "Ritz-Carlton Yacht Collection vs. Explora Journeys",
+        "href": "/ritz-carlton-yacht-collection-vs-explora-journeys"
+      }
+    ]
   },
   "finalVerdictSections": [
     {

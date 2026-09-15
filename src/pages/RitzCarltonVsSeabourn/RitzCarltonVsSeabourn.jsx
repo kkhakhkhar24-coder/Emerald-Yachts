@@ -10,6 +10,7 @@ const ritzImage = 'https://placehold.co/1200x800/1e293b/d4af37?text=Ritz-Carlton
 const seabournImage = 'https://placehold.co/1200x800/0f172a/d4af37?text=Seabourn+Luxury+Cruises';
 const expeditionImage = 'https://placehold.co/1200x800/1e293b/ffffff?text=Seabourn+Expedition+Vessel';
 const atmosphereImage = 'https://placehold.co/1200x800/0f172a/ffffff?text=Understated+Luxury+Atmosphere';
+const wellnessImage = 'https://placehold.co/1200x800/1e3a5f/ffffff?text=Wellness+%26+Spa+Comparison';
 
 // Shared UI System Components (100% Component-Based Architecture matching EmeraldYachts.tsx)
 import ComparisonHero from '@/components/ui/ComparisonHero';
@@ -17,6 +18,7 @@ import PremiumIntro from '@/components/ui/PremiumIntro';
 import DualPhilosophyShowcase from '@/components/ui/DualPhilosophyShowcase';
 import BudgetBreakdownTable from '@/components/ui/BudgetBreakdownTable';
 import CostValueAnalysisCards from '@/components/ui/CostValueAnalysisCards';
+import BrandPillarsShowcase from '@/components/ui/BrandPillarsShowcase';
 import TabbedComparison from '@/components/ui/TabbedComparison';
 import ThreeColumnGrid from '@/components/ui/ThreeColumnGrid';
 import ProsConsCards from '@/components/ui/ProsConsCards';
@@ -29,6 +31,7 @@ import FAQAccordion from '@/components/ui/FAQAccordion';
 import ConclusionSection from '@/components/ui/ConclusionSection';
 import ExpertCredentials from '@/components/ui/ExpertCredentials';
 import CenterCTA from '@/components/ui/CenterCTA';
+import PillarDirectory from '@/components/ui/PillarDirectory';
 
 const RitzCarltonVsSeabourn = () => {
   // Schema JSON-LD
@@ -131,8 +134,8 @@ const RitzCarltonVsSeabourn = () => {
       />
 
       {/* ─── SECTION 2: PremiumIntro Quick Answer / Verdict ─── */}
-      <PremiumIntro 
-        sections={pageData.quickAnswer} 
+      <PremiumIntro
+        sections={pageData.quickAnswer}
         watermarkText="Verdict"
       />
 
@@ -146,12 +149,27 @@ const RitzCarltonVsSeabourn = () => {
       {/* ─── SECTION 4: BudgetBreakdownTable Quick Verdict at a Glance ─── */}
       <BudgetBreakdownTable data={pageData.atAGlanceTable} />
 
+      {/* ─── SECTION 4A: BrandPillarsShowcase Core Differences ─── */}
+      <BrandPillarsShowcase data={pageData.coreDifferencePillars} />
+
       {/* ─── SECTION 5: HeadToHeadVisualShowdown Ship Size & Intimacy ─── */}
       {pageData.shipSizeShowdownData && (
         <HeadToHeadVisualShowdown
           data={pageData.shipSizeShowdownData}
           image1={ritzImage}
           image2={seabournImage}
+        />
+      )}
+
+      {/* ─── SECTION 5A: CostValueAnalysisCards Ship Size Comparison ─── */}
+      {pageData.shipSizeComparison && (
+        <CostValueAnalysisCards
+          title={pageData.shipSizeComparison.title}
+          subtitle={pageData.shipSizeComparison.subtitle}
+          includedTitle={pageData.shipSizeComparison.includedTitle}
+          extrasTitle={pageData.shipSizeComparison.extrasTitle}
+          included={pageData.shipSizeComparison.included}
+          extras={pageData.shipSizeComparison.extras}
         />
       )}
 
@@ -172,6 +190,18 @@ const RitzCarltonVsSeabourn = () => {
           subtitle={pageData.serviceAndDiningZigZag.subtitle}
           items={pageData.serviceAndDiningZigZag.items}
           images={[ritzImage, seabournImage]}
+        />
+      )}
+
+      {/* ─── SECTION 7A: CostValueAnalysisCards Dining & Beverages ─── */}
+      {pageData.diningAndBeverageComparison && (
+        <CostValueAnalysisCards
+          title={pageData.diningAndBeverageComparison.title}
+          subtitle={pageData.diningAndBeverageComparison.subtitle}
+          includedTitle={pageData.diningAndBeverageComparison.includedTitle}
+          extrasTitle={pageData.diningAndBeverageComparison.extrasTitle}
+          included={pageData.diningAndBeverageComparison.included}
+          extras={pageData.diningAndBeverageComparison.extras}
         />
       )}
 
@@ -199,8 +229,43 @@ const RitzCarltonVsSeabourn = () => {
         />
       )}
 
+      {/* ─── SECTION 9A: HeadToHeadVisualShowdown Wellness Comparison ─── */}
+      {pageData.wellnessShowdownData && (
+        <HeadToHeadVisualShowdown
+          data={pageData.wellnessShowdownData}
+          image1={ritzImage}
+          image2={seabournImage}
+        />
+      )}
+
+      {/* ─── SECTION 9B: ThreeColumnGrid Entertainment & Enrichment ─── */}
+      {pageData.enrichmentData && (
+        <ThreeColumnGrid
+          title="Entertainment & Enrichment: Ritz-Carlton vs. Seabourn"
+          subtitle="Comparing onboard activities, enrichment programs, and guest experience philosophy:"
+          items={pageData.enrichmentData}
+        />
+      )}
+
       {/* ─── SECTION 10: BudgetBreakdownTable Inclusions Matrix ─── */}
       <BudgetBreakdownTable data={pageData.inclusionsTable} />
+
+      {/* ─── SECTION 10B: BudgetBreakdownTable Wi-Fi, Gratuities & Dress Code ─── */}
+      {pageData.quickFactsTable && (
+        <BudgetBreakdownTable data={pageData.quickFactsTable} />
+      )}
+
+      {/* ─── SECTION 10A: CostValueAnalysisCards Price Comparison ─── */}
+      {pageData.priceComparisonData && (
+        <CostValueAnalysisCards
+          title={pageData.priceComparisonData.title}
+          subtitle={pageData.priceComparisonData.subtitle}
+          includedTitle={pageData.priceComparisonData.includedTitle}
+          extrasTitle={pageData.priceComparisonData.extrasTitle}
+          included={pageData.priceComparisonData.included}
+          extras={pageData.priceComparisonData.extras}
+        />
+      )}
 
       {/* ─── SECTION 11: Head-to-Head Answers (Service, Food, Suites, Expedition, Exclusivity) ─── */}
       <ThreeColumnGrid
@@ -219,6 +284,39 @@ const RitzCarltonVsSeabourn = () => {
         bottomNote={pageData.whoShouldBookWhich.bottomNote}
         type="compare"
         bgClass="bg-white"
+      />
+
+      {/* ─── SECTION 12B: ProsConsCards Family & Couples Matchmaker ─── */}
+      <ProsConsCards
+        title={pageData.familyAndCouplesData.title}
+        prosTitle={pageData.familyAndCouplesData.prosTitle}
+        consTitle={pageData.familyAndCouplesData.consTitle}
+        bestFor={pageData.familyAndCouplesData.bestFor}
+        notBestFor={pageData.familyAndCouplesData.notBestFor}
+        bottomNote={pageData.familyAndCouplesData.bottomNote}
+        type="compare"
+        bgClass="bg-ice-50"
+      />
+
+      {/* ─── SECTION 12D: ProsConsCards First-Time Luxury Cruiser / Luxury Philosophy ─── */}
+      {pageData.firstTimeCruiserData && (
+        <ProsConsCards
+          title={pageData.firstTimeCruiserData.title}
+          prosTitle={pageData.firstTimeCruiserData.prosTitle}
+          consTitle={pageData.firstTimeCruiserData.consTitle}
+          bestFor={pageData.firstTimeCruiserData.bestFor}
+          notBestFor={pageData.firstTimeCruiserData.notBestFor}
+          bottomNote={pageData.firstTimeCruiserData.bottomNote}
+          type="compare"
+          bgClass="bg-white"
+        />
+      )}
+
+      {/* ─── SECTION 12C: ThreeColumnGrid Travel Advisor Framework ─── */}
+      <ThreeColumnGrid
+        title="Which Is Better? A Travel Advisor's Framework"
+        subtitle="Angela Hughes' 6-scenario guide for recommending the right luxury cruise line:"
+        items={pageData.travelAdvisorFramework}
       />
 
       {/* ─── SECTION 13: BudgetBreakdownTable Decision Matrix ─── */}
@@ -240,6 +338,14 @@ const RitzCarltonVsSeabourn = () => {
 
       {/* ─── SECTION 17: ExpertCredentials ─── */}
       <ExpertCredentials image={angelaPortrait} />
+
+      {/* ─── SECTION 17A: PillarDirectory Related Ritz-Carlton Guides ─── */}
+      {pageData.relatedGuides && (
+        <PillarDirectory
+          brandName={pageData.relatedGuides.brandName}
+          items={pageData.relatedGuides.items}
+        />
+      )}
 
       {/* ─── SECTION 18: CenterCTA ─── */}
       <CenterCTA
