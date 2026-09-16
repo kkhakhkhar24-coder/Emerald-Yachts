@@ -205,6 +205,8 @@ import RitzCarltonEvrimaVsIlmaVsLuminara from "./pages/RitzCarltonEvrimaVsIlmaVs
 import RitzCarltonVsExploraJourneys from "./pages/RitzCarltonVsExploraJourneys/RitzCarltonVsExploraJourneys";
 import RitzCarltonYachtCollectionDressCode from "./pages/RitzCarltonYachtCollectionDressCode/RitzCarltonYachtCollectionDressCode";
 import RitzCarltonYachtCollectionFamiliesChildren from "./pages/RitzCarltonYachtCollectionFamiliesChildren/RitzCarltonYachtCollectionFamiliesChildren";
+import RitzCarltonMarriottBonvoyPoints from "./pages/RitzCarltonMarriottBonvoyPoints/RitzCarltonMarriottBonvoyPoints";
+import RitzCarltonYachtCollectionSuites from "./pages/RitzCarltonYachtCollectionSuites/RitzCarltonYachtCollectionSuites";
 
 function App() {
   return (
@@ -1169,6 +1171,16 @@ function App() {
           <Route
             path="/ritz-carlton-yacht-collection-families-children"
             element={<RitzCarltonYachtCollectionFamiliesChildren />}
+          />
+
+          <Route
+            path="/ritz-carlton-yacht-collection-marriott-bonvoy-points"
+            element={<RitzCarltonMarriottBonvoyPoints />}
+          />
+
+          <Route
+            path="/ritz-carlton-yacht-collection-suites"
+            element={<RitzCarltonYachtCollectionSuites />}
           />
         </Routes>
       </BrowserRouter>

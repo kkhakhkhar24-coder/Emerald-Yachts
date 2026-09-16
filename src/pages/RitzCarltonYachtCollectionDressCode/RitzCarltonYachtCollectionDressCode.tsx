@@ -8,424 +8,528 @@ import pageData from "./data.json";
 // Shared Components & UI System from /src/components/ui/
 import ComparisonHero from "@/components/ui/ComparisonHero";
 import PremiumIntro from "@/components/ui/PremiumIntro";
-import HighlightsSplit from "@/components/ui/HighlightsSplit";
-// import RitzCasualExplorer from "@/components/ui/RitzCasualExplorer";
+import BudgetBreakdownTable from "@/components/ui/BudgetBreakdownTable";
+import LuxuryCruiseComparisonTable from "@/components/ui/LuxuryCruiseComparisonTable";
 import CostValueAnalysisCards from "@/components/ui/CostValueAnalysisCards";
-import BrandPillarsShowcase from "@/components/ui/BrandPillarsShowcase";
+import GenericChecklistCards from "@/components/ui/GenericChecklistCards";
 import ThreeColumnGrid from "@/components/ui/ThreeColumnGrid";
+import BrandPillarsShowcase from "@/components/ui/BrandPillarsShowcase";
 import InteractivePlanningRoadmap from "@/components/ui/InteractivePlanningRoadmap";
-// import RitzPackingWizard from "@/components/ui/RitzPackingWizard";
-import InteractivePackingChecklist from "@/components/ui/InteractivePackingChecklist";
-import DressShoeGuide from "@/components/ui/DressShoeGuide";
-// import RitzDestinationSpecs from "@/components/ui/RitzDestinationSpecs";
-import PricingTiersCards from "@/components/ui/PricingTiersCards";
-import HierarchicalGrid from "@/components/ui/HierarchicalGrid";
+import MistakesShowcase from "@/components/ui/MistakesShowcase";
+import AuthorityBox from "@/components/ui/AuthorityBox";
 import ExpertCredentials from "@/components/ui/ExpertCredentials";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import InteractivePillarHubGrid from "@/components/ui/InteractivePillarHubGrid";
-import EditorialFeatureShowcase from "@/components/ui/EditorialFeatureShowcase";
 import CenterCTA from "@/components/ui/CenterCTA";
 
+// Images
+import angelaImage from "@/assets/Media (2).jpg";
+// 7-Night Packing List Images (commented out as requested):
+// import womenPackingImg from "@/assets/images/women-packing.jpg";
+// import menPackingImg from "@/assets/images/men-packing.jpg";
+// import whatNotToPackImg from "@/assets/images/what-not-to-pack.jpg";
+
 const RitzCarltonYachtCollectionDressCode = () => {
-  // 1. Map slides for PremiumIntro (Hero & Quick Answer)
+  // 1. Data mapping for PremiumIntro (Section 1: Hero narrative)
   const introSections = [
     {
       heading: "What Should You Wear on a Ritz-Carlton Yacht?",
-      paragraphs: pageData.hero.readMoreParagraphs,
-    },
-    {
-      heading: pageData.quickAnswer.title,
-      paragraphs: [
-        pageData.quickAnswer.description,
-        "You do NOT need: A tuxedo, a formal gown, a tie, a dinner jacket, or traditional formal cruise wear.",
-        "You SHOULD pack: Polished resort wear, linen shirts, lightweight trousers, dresses, skirts, blouses, smart-casual separates, elegant sandals, loafers, comfortable walking shoes, and elevated evening outfits.",
-        "For dinner avoid: Shorts, ball caps, hats, flip-flops, swimwear, and sleeveless T-shirts.",
-      ],
+      paragraphs: pageData.hero.paragraphs,
     },
   ];
 
-  // 2. Map real experience tabs for HighlightsSplit (Yacht Casual vs Yacht Sophisticated)
-  const dressCodeHighlights = [
-    {
-      title: "What Is Yacht Casual? (Daytime Standard)",
-      description:
-        "Daytime dress code. Think of what you would wear at an upscale luxury resort. Comfortable, polished, and resort-appropriate. You do not need to dress formally during the day.",
-      bulletPoints: [
-        "Women: Sundresses, linen dresses, skirts, lightweight trousers, linen pants, blouses, polished shorts, resort sets, polo shirts, stylish sandals, clean sneakers.",
-        "Men: Polo shirts, linen shirts, button-downs, lightweight trousers, chinos, tailored resort shorts, linen pants, loafers, boat shoes, clean sneakers.",
-        "Breakfast & Lunch: Relaxed resort wear. If heading into indoor dining venues, avoid showing up in swimwear.",
-        "Pool & Marina: Swimsuit, cover-up, sandals, sunglasses, sun hat. A cover-up allows comfortable transitions across the yacht.",
-      ],
-      image: null,
-      placeholderLabel: "YACHT CASUAL PLACEHOLDER",
-      icon: "Sun",
-    },
-    {
-      title: "What Is Yacht Sophisticated? (Dinner Standard)",
-      description:
-        "The Ritz-Carlton dinner dress code for indoor restaurants. Best understood as resort chic + elegant casual. Jackets and ties are not required, but collared shirts, slacks, and elegant attire are recommended.",
-      bulletPoints: [
-        "Men: Collared shirts, button-downs, polos with tailored trousers, linen shirts, chinos, dress trousers, loafers, smart leather shoes. Optional lightweight blazer.",
-        "Do Men Need a Jacket or Tie?: No. A jacket is optional for special dining; ties are completely optional.",
-        "Women: Elegant dresses, midi/maxi dresses, jumpsuits, dressy trousers, silk/satin blouses, skirts, elegant sandals, low heels, dress shoes.",
-        "Dinner Prohibitions: Shorts, ball caps, hats, flip-flops, swimwear, and sleeveless T-shirts are not permitted during dinner service.",
-        "Specialty Dining (S.E.A.): A polished dinner outfit is recommended for Chef Sven Elverfeld's specialty restaurant.",
-      ],
-      image: null,
-      placeholderLabel: "YACHT SOPHISTICATED PLACEHOLDER",
-      icon: "Sparkles",
-    },
-  ];
-
-  // 3. Map Suitability to CostValueAnalysisCards format (Permitted vs Restrictions)
-  const permittedMapped = pageData.rulesSuitability.permittedList.map((item) => ({
-    title: item.title,
-    description: item.description,
+  // 2. Data mapping for Quick Answer (Section 2: CostValueAnalysisCards)
+  const quickAnswerShouldPack = pageData.quickAnswer.shouldPack.map((item, idx) => ({
+    title: `Essential ${idx + 1}`,
+    description: item,
   }));
 
-  const restrictionsMapped = pageData.rulesSuitability.notPermittedList.map((item) => ({
-    title: item.title,
-    description: item.description,
-  }));
-
-  // 4. Map Packing Method to BrandPillarsShowcase
-  const considerationsData = {
-    title: pageData.packingMethod.title,
-    subtitle: pageData.packingMethod.subtitle,
-    pillars: pageData.packingMethod.pillars.map((pillar) => ({
-      title: pillar.title,
-      description: pillar.description,
-      icon: pillar.icon.toLowerCase(),
+  const quickAnswerNotNeeded = [
+    ...pageData.quickAnswer.notNeeded.map((item) => ({
+      title: "Not Needed",
+      description: item,
     })),
+    ...pageData.quickAnswer.dinnerAvoid.map((item) => ({
+      title: "Avoid for Dinner",
+      description: item,
+    })),
+  ];
+
+  // 3. Data mapping for Terminology Table (Section 3: BudgetBreakdownTable)
+  const terminologyTableData = {
+    title: pageData.dressCodeTerminologyTable.title,
+    description: pageData.dressCodeTerminologyTable.subtitle,
+    headers: pageData.dressCodeTerminologyTable.headers,
+    rows: pageData.dressCodeTerminologyTable.rows,
   };
 
-  // 5. Map Showcase to ThreeColumnGrid (7-Night Wardrobe & Shoe Strategy)
-  const showcaseItems = pageData.showcase.cards.map((card) => ({
-    title: card.title,
-    description: card.description,
-    image: null,
-    placeholderLabel: card.badge,
-  }));
-
-  // 6. Map planning steps to InteractivePlanningRoadmap (Daily Transition Pathway)
-  const roadmapSteps = pageData.planningRoadmap.steps.map((step, idx) => {
-    const descList = [
-      "Relaxed resort wear such as linen trousers, breezy blouses, polo shirts, or casual resort dresses.",
-      "Swimsuits paired with stylish cover-ups, sunglasses, and UV protection for watersports & pool lounging.",
-      "Supportive walking shoes, breathable cotton/linen separates, and cultural site shoulder cover layers.",
-      "Elevated resort wear on open-air lounge terraces for champagne, ocean breezes, and sunsets.",
-      "Yacht Sophisticated collared shirts, tailored slacks, midi dresses, and smart leather footwear.",
-    ];
-    return {
-      timeframe: `Phase 0${idx + 1}`,
-      title: step.split(":")[0],
-      description: descList[idx] || step,
-      image: null,
-      placeholderLabel: `STAGE 0${idx + 1} PLACEHOLDER`,
-    };
-  });
-
-  // 7. Map Destination Tiers to PricingTiersCards format
-  const destinationItems = pageData.destinationTiers.items.map((item) => ({
-    name: item.label,
-    price: item.price,
-    description: item.description,
-    nights: item.nights,
-  }));
-
-  // 8. Map Gallery to HierarchicalGrid (One Yacht. Many Ways to Dress.)
-  const galleryItems = pageData.gallery.items.map((item) => ({
-    title: item.title,
-    description: item.description,
-    image: null,
-    placeholderLabel: item.badge,
-  }));
-
-  // 9. Map Curated Pillar Hub Guides (All Related Guides)
-  const curatedGuides = [
+  // 4. Data mapping for Daytime Yacht Casual (Section 4: GenericChecklistCards)
+  const daytimeCasualCards = [
     {
-      title: "Ritz-Carlton Yacht Collection Pillar",
-      category: "Main Fleet Guide",
-      description:
-        "The Ritz-Carlton Yacht Collection: Reviews, prices, suite categories, dining, and everything you need to know.",
-      image: null,
-      placeholderLabel: "PILLAR GUIDE",
-      links: [
-        { label: "Ritz-Carlton Yacht Collection Guide", url: "/ritz-carlton-yacht-collection" },
-      ],
-      mainUrl: "/ritz-carlton-yacht-collection",
+      title: pageData.daytimeYachtCasual.women.title,
+      items: pageData.daytimeYachtCasual.women.items,
     },
     {
-      title: "How Much Does a Ritz-Carlton Cruise Cost?",
-      category: "Cost & Inclusions",
-      description:
-        "Understand fares, suite categories, and total vacation investment for a Ritz-Carlton yacht sailing.",
-      image: null,
-      placeholderLabel: "COST GUIDE",
-      links: [
-        { label: "Ritz-Carlton Cruise Cost Guide", url: "/ritz-carlton-yacht-collection-cost" },
-      ],
-      mainUrl: "/ritz-carlton-yacht-collection-cost",
-    },
-    {
-      title: "What Is Included on a Ritz-Carlton Cruise?",
-      category: "Onboard Inclusions",
-      description:
-        "A detailed guide to dining, beverages, Wi-Fi, gratuities, marina sports, and suite inclusions.",
-      image: null,
-      placeholderLabel: "INCLUSIONS GUIDE",
-      links: [
-        { label: "Ritz-Carlton Inclusions Guide", url: "/ritz-carlton-yacht-collection-included" },
-      ],
-      mainUrl: "/ritz-carlton-yacht-collection-included",
-    },
-    {
-      title: "Is Ritz-Carlton Yacht Collection Worth It?",
-      category: "Reviews & Verdict",
-      description:
-        "An honest review exploring the luxury value proposition, guest feedback, and suite experience.",
-      image: null,
-      placeholderLabel: "REVIEWS GUIDE",
-      links: [
-        { label: "Honest Ritz-Carlton Review", url: "/ritz-carlton-yacht-collection-reviews" },
-      ],
-      mainUrl: "/ritz-carlton-yacht-collection-reviews",
-    },
-    {
-      title: "Evrima vs. Ilma vs. Luminara",
-      category: "Fleet Comparison",
-      description:
-        "Compare the three Ritz-Carlton yachts by size, suites, dining venues, atmosphere, and traveler type.",
-      image: null,
-      placeholderLabel: "FLEET COMPARISON",
-      links: [
-        { label: "Evrima vs Ilma vs Luminara", url: "/ritz-carlton-evrima-vs-ilma-vs-luminara" },
-      ],
-      mainUrl: "/ritz-carlton-evrima-vs-ilma-vs-luminara",
-    },
-    {
-      title: "Ritz-Carlton vs. Explora & Seabourn",
-      category: "Brand Comparisons",
-      description:
-        "Compare Ritz-Carlton Yacht Collection with Explora Journeys and Seabourn luxury cruises.",
-      image: null,
-      placeholderLabel: "BRAND FACEOFFS",
-      links: [
-        { label: "Ritz-Carlton vs Explora Journeys", url: "/ritz-carlton-yacht-collection-vs-explora-journeys" },
-        { label: "Ritz-Carlton vs Seabourn", url: "/ritz-carlton-yacht-collection-vs-seabourn" },
-      ],
-      mainUrl: "/ritz-carlton-yacht-collection-vs-explora-journeys",
+      title: pageData.daytimeYachtCasual.men.title,
+      items: pageData.daytimeYachtCasual.men.items,
     },
   ];
 
-  const jsonLdSchema = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Article",
-        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-dress-code#article",
-        "headline": "What Is the Dress Code on Ritz-Carlton Yachts? A Complete Guide to What to Wear",
-        "description":
-          "A complete guide to the Ritz-Carlton Yacht Collection dress code, including Yacht Casual, Yacht Sophisticated, dinner attire, formal nights, shoes and packing tips.",
-        "author": {
-          "@type": "Person",
-          "name": "Angela Hughes",
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Trips & Ships Luxury Travel",
-        },
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-dress-code",
-        },
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-dress-code#breadcrumb",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://www.tripsandships.com/",
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Luxury Cruises",
-            "item": "https://www.tripsandships.com/cruise/",
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Ritz-Carlton Yacht Collection Dress Code",
-            "item": "https://www.tripsandships.com/ritz-carlton-yacht-collection-dress-code",
-          },
-        ],
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-dress-code#faq",
-        "mainEntity": pageData.faqs.questions.slice(0, 14).map((faq) => ({
-          "@type": "Question",
-          "name": faq.question,
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": faq.answer,
-          },
-        })),
-      },
-    ],
+  // 5. Data mapping for Daytime Venues (Section 5: ThreeColumnGrid)
+  const daytimeVenueCards = pageData.daytimeVenues.venues.map((venue) => ({
+    title: venue.name,
+    category: venue.tagline,
+    description: `${venue.description} ${venue.womenOutfit ? `Women: ${venue.womenOutfit}. ` : ""}${venue.menOutfit ? `Men: ${venue.menOutfit}.` : ""}`,
+    image: null,
+  }));
+
+  // 6. Data mapping for Evening Yacht Sophisticated (Section 6: GenericChecklistCards)
+  const eveningSophisticatedCards = [
+    {
+      title: `${pageData.eveningYachtSophisticated.menAttire.title} (${pageData.eveningYachtSophisticated.menAttire.subtitle})`,
+      items: [
+        ...pageData.eveningYachtSophisticated.menAttire.excellentChoices,
+        pageData.eveningYachtSophisticated.menAttire.simpleOutfit,
+        `Jackets: ${pageData.eveningYachtSophisticated.jacketAndTieRules[0].answer}`,
+        `Ties: ${pageData.eveningYachtSophisticated.jacketAndTieRules[1].answer}`,
+      ],
+    },
+    {
+      title: `${pageData.eveningYachtSophisticated.womenAttire.title} (${pageData.eveningYachtSophisticated.womenAttire.subtitle})`,
+      items: [
+        ...pageData.eveningYachtSophisticated.womenAttire.goodChoices,
+        ...pageData.eveningYachtSophisticated.womenAttire.simpleOutfits.map(
+          (outfit) => `Outfit Idea: ${outfit}`
+        ),
+      ],
+    },
+  ];
+
+  // 7. Data mapping for Dinner Rules & Prohibited Items (Section 7: BrandPillarsShowcase)
+  const dinnerRulesPillars = {
+    title: pageData.specificRulesAndClarifications.title,
+    subtitle: pageData.specificRulesAndClarifications.subtitle,
+    pillars: pageData.specificRulesAndClarifications.rules.map((rule, idx) => {
+      const icons = ["shield", "star", "window", "compass", "ship", "heart", "award", "check"];
+      return {
+        icon: icons[idx % icons.length],
+        title: `${rule.topic} (${rule.verdict})`,
+        description: rule.explanation,
+      };
+    }),
   };
+
+  // 8. Data mapping for 7-Night Packing Lists (Section 12: ThreeColumnGrid with Images)
+  const sevenNightPackingItems = [
+    {
+      title: pageData.sevenNightPackingLists.women.title,
+      category: "Women's Capsule Wardrobe",
+      image: null, // womenPackingImg,
+      description: "A smart, versatile daytime-to-evening capsule wardrobe designed for 7 nights onboard.",
+      features: [
+        `Daytime: ${pageData.sevenNightPackingLists.women.daytime?.join(", ") || ""}`,
+        `Evening: ${pageData.sevenNightPackingLists.women.evening?.join(", ") || ""}`,
+        `Shoes: ${pageData.sevenNightPackingLists.women.shoes?.join(", ") || ""}`,
+        `Accessories: ${pageData.sevenNightPackingLists.women.accessories?.join(", ") || ""}`,
+      ],
+      highlight: `Capsule Strategy: ${pageData.sevenNightPackingLists.capsuleDoubleDuty?.womenExample?.day || ""} (Day) → ${pageData.sevenNightPackingLists.capsuleDoubleDuty?.womenExample?.evening || ""} (Evening)`,
+    },
+    {
+      title: pageData.sevenNightPackingLists.men.title,
+      category: "Men's Capsule Wardrobe",
+      image: null, // menPackingImg,
+      description: "Effortless resort casual pieces transitioning seamlessly from deck activities to elegant specialty dining.",
+      features: [
+        `Daytime: ${pageData.sevenNightPackingLists.men.daytime?.join(", ") || ""}`,
+        `Evening: ${pageData.sevenNightPackingLists.men.evening?.join(", ") || ""}`,
+        `Shoes: ${pageData.sevenNightPackingLists.men.shoes?.join(", ") || ""}`,
+        `Accessories: ${pageData.sevenNightPackingLists.men.accessories?.join(", ") || ""}`,
+      ],
+      highlight: `Capsule Strategy: ${pageData.sevenNightPackingLists.capsuleDoubleDuty?.menExample?.day || ""} (Day) → ${pageData.sevenNightPackingLists.capsuleDoubleDuty?.menExample?.evening || ""} (Evening)`,
+    },
+    {
+      title: pageData.sevenNightPackingLists.whatNotToPack.title,
+      category: "Leave Formalwear at Home",
+      image: null, // whatNotToPackImg,
+      description: "Avoid overpacking formalwear and unnecessary heavy attire on your voyage.",
+      features: (pageData.sevenNightPackingLists.whatNotToPack.items || []).map(
+        (item) => `Leave Behind: ${item}`
+      ),
+      highlight: pageData.sevenNightPackingLists.whatNotToPack.takeaway,
+    },
+  ];
+
+  // 9. Data mapping for Shoes Guide (Section 9: ThreeColumnGrid)
+  const shoesCards = pageData.shoesGuide.recommendations.map((shoe) => ({
+    title: `${shoe.number}. ${shoe.type}`,
+    category: "Footwear Requirement",
+    description: shoe.purpose,
+    image: null,
+  }));
+
+  // 10. Data mapping for Shore Excursions & Sea Days (Section 10: ThreeColumnGrid)
+  const shoreAndSeaCards = [
+    ...pageData.shoreExcursionsAndSeaDays.shore.map((sh) => ({
+      title: sh.activity,
+      category: "Shore Excursion Style",
+      description: sh.attire,
+      image: null,
+    })),
+    ...pageData.shoreExcursionsAndSeaDays.seaDays.progression.map((prog) => ({
+      title: `Sea Day: ${prog.time}`,
+      category: "Sea Day Timeline",
+      description: prog.outfit,
+      image: null,
+    })),
+  ];
+
+  // 11. Data mapping for Scenarios (Section 12: CostValueAnalysisCards)
+  const scenariosIncluded = [
+    {
+      title: pageData.dressCodeScenarios.scenarios[0].subtitle,
+      description: pageData.dressCodeScenarios.scenarios[0].description,
+    },
+    {
+      title: pageData.dressCodeScenarios.scenarios[1].subtitle,
+      description: pageData.dressCodeScenarios.scenarios[1].description,
+    },
+  ];
+
+  const scenariosRestrictions = [
+    {
+      title: pageData.dressCodeScenarios.scenarios[2].subtitle,
+      description: pageData.dressCodeScenarios.scenarios[2].description,
+    },
+    {
+      title: "Strictness Policy",
+      description: pageData.expertPackingFramework.strictnessAndFleet.isStrict,
+    },
+  ];
+
+  // 12. Data mapping for Brand Comparisons (Section 13: BrandPillarsShowcase)
+  const brandComparisonPillars = {
+    title: pageData.brandComparisons.title,
+    subtitle: "How Ritz-Carlton's dress code compares against traditional cruise lines and modern luxury competitors.",
+    pillars: pageData.brandComparisons.comparisons.map((comp, idx) => {
+      const icons = ["ship", "star", "compass"];
+      return {
+        icon: icons[idx % icons.length],
+        title: comp.brand,
+        description: comp.comparison,
+      };
+    }),
+  };
+
+  // 13. Data mapping for Destinations (Section 14: ThreeColumnGrid)
+  const destinationCards = pageData.destinationsAndLongVoyages.destinations.map((dest) => ({
+    title: dest.region,
+    category: "Regional Packing Specification",
+    description: dest.details,
+    image: null,
+  }));
+
+  // 14. Data mapping for 5-Category Packing Strategy (Section 15: InteractivePlanningRoadmap)
+  const roadmapSteps = pageData.expertPackingFramework.categories.map((cat) => ({
+    timeframe: `Category 0${cat.number}`,
+    title: cat.title,
+    description: cat.description,
+    image: null,
+  }));
+
+  // 15. Data mapping for 10 Essentials & Mistakes (Section 16: GenericChecklistCards & MistakesShowcase)
+  const tenEssentialsCards = [
+    {
+      title: "The 10 Essentials to Pack",
+      items: pageData.expertPackingFramework.tenEssentials,
+    },
+    {
+      title: "Special Celebrations & Themed Evenings",
+      items: [
+        pageData.expertPackingFramework.strictnessAndFleet.specialCelebrations,
+        pageData.expertPackingFramework.strictnessAndFleet.fleetDifferences,
+        ...pageData.capsuleChecklists.quickChecklist,
+      ],
+    },
+  ];
+
+  const mistakesMapped = pageData.expertPackingFramework.commonMistakes.map((m) => ({
+    title: m.title,
+    description: m.desc,
+  }));
+
+  // 16. Hub Resources
+  const hubItems = [
+    {
+      title: "Best Suites on Ritz-Carlton Yachts",
+      description: "Explore Owner's, Loft, Grand, and View Suites across Evrima, Ilma, and Luminara.",
+      link: "/ritz-carlton-yacht-collection-suites",
+      actionLabel: "EXPLORE SUITES",
+    },
+    {
+      title: "Marriott Bonvoy Points on RCYC",
+      description: "Master how to earn 5x points per $1 and redeem Bonvoy points toward Ritz-Carlton Yacht cruises.",
+      link: "/ritz-carlton-yacht-collection-marriott-bonvoy-points",
+      actionLabel: "VIEW BONVOY GUIDE",
+    },
+    {
+      title: "Ritz-Carlton Yacht Collection Overview",
+      description: "Explore complete fleet schedules, Caribbean & Mediterranean itineraries, and dining venues.",
+      link: "/ritz-carlton-yacht-collection",
+      actionLabel: "EXPLORE FLEET",
+    },
+    {
+      title: "Ritz-Carlton for Families & Kids",
+      description: "Discover Ritz Kids programming, connecting staterooms, and family voyage planning.",
+      link: "/ritz-carlton-yacht-collection-families-children",
+      actionLabel: "FAMILY GUIDE",
+    },
+  ];
 
   return (
-    <>
+    <div className="w-full bg-white text-navy-950 min-h-screen">
+      {/* 1. SEO Metadata */}
       <Helmet>
         <title>{pageData.seo.title}</title>
-        <meta name="title" content={pageData.seo.metaTitle} />
         <meta name="description" content={pageData.seo.metaDescription} />
-        <meta name="keywords" content={pageData.seo.keywords} />
+        <meta
+          name="keywords"
+          content={[
+            ...pageData.seo.primaryKeywords,
+            ...pageData.seo.secondaryKeywords,
+            ...pageData.seo.longTailKeywords,
+          ].join(", ")}
+        />
         <link rel="canonical" href={pageData.seo.canonicalUrl} />
-        <script type="application/ld+json">{JSON.stringify(jsonLdSchema)}</script>
       </Helmet>
 
-      {/* Global Navigation Bar */}
+      {/* 2. Global Navbar */}
       <Navbar />
 
-      {/* ─── SECTION 1: ComparisonHero (Hero Section & H1) ─── */}
+      {/* 3. Hero Section */}
       <ComparisonHero
+        badge={pageData.hero.badge}
         title={pageData.hero.title}
         subtitle={pageData.hero.subtitle}
-        backgroundImage={null}
-        primaryCtaText={pageData.hero.ctaLabel}
-        primaryCtaLink={pageData.hero.ctaUrl}
+        primaryCtaText="Explore What to Pack"
+        primaryCtaLink="#packing-breakdown"
+        secondaryCtaText="Contact a Yacht Specialist"
+        secondaryCtaLink="#advisor-consultation"
       />
 
-      {/* ─── SECTION 2: PremiumIntro (Hero & Quick Answer) ─── */}
-      <PremiumIntro
-        sections={introSections}
-        image1={null}
-        image2={null}
-        watermarkText="Resort Chic"
-      />
-
-      {/* ─── SECTION 3: HighlightsSplit (Yacht Casual vs Yacht Sophisticated Standards) ─── */}
-      <HighlightsSplit
-        title="Yacht Casual vs. Yacht Sophisticated Standards"
-        items={dressCodeHighlights}
-      />
-
-      {/* ─── SECTION 4: Day-to-Night Wardrobe Transition (RitzCasualExplorer) ─── */}
-      {/* <RitzCasualExplorer image={null} /> */}
-
-      {/* ─── SECTION 5: Suitability & Rules: Permitted vs Dinner Restrictions (CostValueAnalysisCards) ─── */}
-      <CostValueAnalysisCards
-        title={pageData.rulesSuitability.title}
-        subtitle="Aligning your onboard wardrobe with Ritz-Carlton yacht venue expectations."
-        includedTitle={pageData.rulesSuitability.permittedTitle}
-        extrasTitle={pageData.rulesSuitability.notPermittedTitle}
-        included={permittedMapped}
-        extras={restrictionsMapped}
-      />
-
-      {/* ─── SECTION 6: Expert Packing Strategy: The 5-Category Method (BrandPillarsShowcase) ─── */}
-      <BrandPillarsShowcase data={considerationsData} />
-
-      {/* ─── SECTION 7: 7-Night Wardrobe Showcase (ThreeColumnGrid) ─── */}
-      <ThreeColumnGrid
-        title={pageData.showcase.title}
-        subtitle="Capsule wardrobe strategy for men, women, and essential footwear."
-        items={showcaseItems}
-      />
-
-      {/* ─── SECTION 8: Footwear Three-Shoe Strategy (DressShoeGuide) ─── */}
-      <DressShoeGuide image={null} />
-
-      {/* ─── SECTION 9: Destination Climate Guidelines (RitzDestinationSpecs) ─── */}
-      {/* <RitzDestinationSpecs image={null} /> */}
-
-      {/* ─── SECTION 10: Daily Transition Pathway (InteractivePlanningRoadmap) ─── */}
-      <InteractivePlanningRoadmap
-        title={pageData.planningRoadmap.title}
-        subtitle="How to effortlessly transition from daytime pool lounging to evening dinner."
-        steps={roadmapSteps}
-      />
-
-      {/* ─── SECTION 11: Destination Climate Tiers (PricingTiersCards) ─── */}
-      <PricingTiersCards
-        title={pageData.destinationTiers.title}
-        subtitle={pageData.destinationTiers.subtitle}
-        items={destinationItems}
-        theme="light"
-      />
-
-      {/* ─── SECTION 12: Interactive Section: Build Your Ritz-Carlton Yacht Packing List (RitzPackingWizard) ─── */}
-      {/* <RitzPackingWizard /> */}
-
-      {/* ─── SECTION 13: Interactive Itemized Packing Checklist (InteractivePackingChecklist) ─── */}
-      <InteractivePackingChecklist
-        title="Interactive Ritz-Carlton Yacht Packing Checklist"
-        subtitle="Select any wardrobe category below to review itemized clothing and accessory recommendations."
-        categories={pageData.interactivePackingCategories}
-        images={[]}
-      />
-
-      {/* ─── SECTION 14: Scrolling Media Showcase: One Yacht. Many Ways to Dress. (HierarchicalGrid) ─── */}
-      <HierarchicalGrid
-        title={pageData.gallery.title}
-        subtitle={pageData.gallery.subtitle}
-        items={galleryItems}
-      />
-
-      {/* ─── SECTION 15: Expert Credentials Plaque (ExpertCredentials) ─── */}
-      <ExpertCredentials
-        name={pageData.expert.name}
-        title={pageData.expert.role}
-        bio={`${pageData.expert.description1} ${pageData.expert.description2}`}
-        image={null}
-        badge="LUXURY YACHT CRUISE SPECIALIST"
-        experienceBadge="40+ YEARS LEGACY EXPERTISE"
-        credentials={[
-          "Named Luxury Travel Influencer of the Year by Travel Leaders Network",
-          "Recognized among Most Influential Women in Travel by TravelPulse",
-          "Over 4 Decades Designing Bespoke Yacht & Luxury Voyages",
-          "Traveled to more than 121 Countries Worldwide",
-          "Founder of Luxury Travel University training top travel advisors",
-        ]}
-      />
-
-      {/* ─── SECTION 16: FAQ Accordion - All 20 Questions (FAQAccordion) ─── */}
-      <FAQAccordion data={pageData.faqs} />
-
-      {/* ─── SECTION 17: Curated Guides Hub (InteractivePillarHubGrid) ─── */}
-      <div className="[&_.grid]:!flex [&_.grid]:flex-wrap [&_.grid]:justify-center [&_.grid>div]:w-full md:[&_.grid>div]:w-[calc(50%-1rem)] lg:[&_.grid>div]:w-[calc(33.333%-1.333rem)]">
-        <InteractivePillarHubGrid
-          title="Related Ritz-Carlton Yacht Collection Guides & Comparisons"
-          subtitle="Explore in-depth articles on cost, inclusions, honest reviews, fleet comparisons, and competitor showdowns."
-          items={curatedGuides}
-          variant="destination"
+      {/* 4. Executive Narrative Intro (PremiumIntro) */}
+      <div id="content">
+        <PremiumIntro
+          badge="EXECUTIVE DRESS CODE PHILOSOPHY"
+          title="Resort Chic Without Formal Rigidity"
+          highlight="NO FORMAL NIGHTS REQUIRED ONBOARD"
+          quote="The Ritz-Carlton Yacht Collection is intentionally more relaxed than a traditional formal cruise. During the day, think Yacht Casual; for dinner in indoor restaurants, think Yacht Sophisticated."
+          sections={introSections}
+          watermarkText="STYLE"
         />
       </div>
 
-      {/* ─── SECTION 18: Editorial Dress Code & Packing Blueprint (EditorialFeatureShowcase) ─── */}
-      <EditorialFeatureShowcase
-        title={pageData.detailedBlueprint.title}
-        subtitle={pageData.detailedBlueprint.subtitle}
-        image={null}
-        features={pageData.detailedBlueprint.features}
-        bgClass="bg-white"
+      {/* 5. Terminology Breakdown Table (BudgetBreakdownTable) */}
+      <div id="terminology-table">
+        <BudgetBreakdownTable data={terminologyTableData} />
+      </div>
+
+      {/* 6. Quick Answer: What to Pack vs What to Avoid (CostValueAnalysisCards) */}
+      <div id="packing-breakdown">
+        <CostValueAnalysisCards
+          title={pageData.quickAnswer.title}
+          subtitle={pageData.quickAnswer.lead}
+          includedTitle="You SHOULD Pack (Recommended Attire)"
+          included={quickAnswerShouldPack}
+          extrasTitle="You Do NOT Need / Avoid for Dinner"
+          extras={quickAnswerNotNeeded}
+        />
+      </div>
+
+      {/* 7. Authority Box #1 - Terminology Core Rule */}
+      <div className="max-w-5xl mx-auto px-6">
+        <AuthorityBox
+          title="KEY TAKEAWAY: DRESS CODE PHILOSOPHY"
+          content={pageData.dressCodeTerminologyTable.takeaway}
+          author="Angela Hughes, Luxury Cruise Specialist & CEO"
+          authorImage={angelaImage}
+        />
+      </div>
+
+      {/* 8. Daytime Yacht Casual: Women vs Men (GenericChecklistCards) */}
+      <GenericChecklistCards
+        title={pageData.daytimeYachtCasual.title}
+        subtitle={pageData.daytimeYachtCasual.subtitle}
+        cards={daytimeCasualCards}
       />
 
-      {/* ─── SECTION 19: Center CTA (Final Consultation CTA) ─── */}
-      <CenterCTA
-        title="Ready to Plan Your Ritz-Carlton Yacht Vacation?"
-        description="Knowing what to wear is one small part of preparing for a luxury yacht voyage. Choosing the right yacht, suite, itinerary and shore experiences is where personalized planning makes all the difference."
-        buttonText="Plan My Ritz-Carlton Yacht Vacation"
-        buttonLink="/contact"
-        image={null}
+      {/* 9. Daytime Venues: Breakfast, Lunch, Pool & Marina (ThreeColumnGrid) */}
+      <ThreeColumnGrid
+        title={pageData.daytimeVenues.title}
+        subtitle={pageData.daytimeVenues.subtitle}
+        items={daytimeVenueCards}
       />
-    </>
+
+      {/* 10. Evening Yacht Sophisticated: Men vs Women (GenericChecklistCards) */}
+      <GenericChecklistCards
+        title={pageData.eveningYachtSophisticated.title}
+        subtitle={pageData.eveningYachtSophisticated.subtitle}
+        cards={eveningSophisticatedCards}
+      />
+
+      {/* 11. Dinner Rules & Restricted Items (BrandPillarsShowcase) */}
+      <BrandPillarsShowcase data={dinnerRulesPillars} />
+
+      {/* 12. 7-Night Packing Lists & Double Duty Capsule (ThreeColumnGrid with Images) */}
+      <ThreeColumnGrid
+        title={pageData.sevenNightPackingLists.title}
+        subtitle={pageData.sevenNightPackingLists.subtitle}
+        items={sevenNightPackingItems}
+      />
+
+      {/* 13. What Shoes Should You Pack? (ThreeColumnGrid) */}
+      <ThreeColumnGrid
+        title={pageData.shoesGuide.title}
+        subtitle={pageData.shoesGuide.subtitle}
+        items={shoesCards}
+      />
+
+      {/* 14. Shore Excursions & Sea Day Style (ThreeColumnGrid) */}
+      <ThreeColumnGrid
+        title={pageData.shoreExcursionsAndSeaDays.title}
+        subtitle={pageData.shoreExcursionsAndSeaDays.subtitle}
+        items={shoreAndSeaCards}
+      />
+
+      {/* 15. Dress Code by Time of Day Matrix */}
+      <div id="time-of-day-matrix">
+        <LuxuryCruiseComparisonTable
+          title={pageData.matrices.timeOfDay.title}
+          headers={pageData.matrices.timeOfDay.headers}
+          rows={pageData.matrices.timeOfDay.rows}
+        />
+      </div>
+
+      {/* 16. Dress Code by Location Across Yacht Matrix */}
+      <div id="location-matrix">
+        <LuxuryCruiseComparisonTable
+          title={pageData.matrices.byLocation.title}
+          headers={pageData.matrices.byLocation.headers}
+          rows={pageData.matrices.byLocation.rows}
+        />
+      </div>
+
+      {/* 17. What to Wear: Men vs. Women Side-by-Side Matrix */}
+      <div id="men-vs-women-matrix">
+        <LuxuryCruiseComparisonTable
+          title={pageData.matrices.menVsWomen.title}
+          headers={pageData.matrices.menVsWomen.headers}
+          rows={pageData.matrices.menVsWomen.rows}
+        />
+      </div>
+
+      {/* 16. Common Scenarios: Dressing Up, Overdressing & Underdressing (CostValueAnalysisCards) */}
+      <CostValueAnalysisCards
+        title={pageData.dressCodeScenarios.title}
+        subtitle="Navigating comfort levels, dinner guidelines, and personal style on the yacht."
+        includedTitle="Effortless Elegance & Dressing Up"
+        included={scenariosIncluded}
+        extrasTitle="What to Avoid at Dinner"
+        extras={scenariosRestrictions}
+      />
+
+      {/* 17. Brand Comparisons: Traditional Cruises, Seabourn & Explora (BrandPillarsShowcase) */}
+      <BrandPillarsShowcase data={brandComparisonPillars} />
+
+          {/* 23. Mid-Page Consultation CTA (CenterCTA) */}
+      <div id="advisor-consultation">
+        <CenterCTA
+          title="Plan Your Ritz-Carlton Yacht Vacation"
+          description="Speak with our certified luxury yacht specialists to get personalized itinerary recommendations, stateroom placement, and packing advice."
+          buttonText="Request Complimentary Consultation"
+          buttonLink="mailto:angela@tripsandships.com?subject=Ritz-Carlton%20Yacht%20Vacation%20Inquiry"
+          theme="dark"
+        />
+      </div>
+
+      {/* 18. Destination-Specific Packing & Long Voyages (ThreeColumnGrid) */}
+      <ThreeColumnGrid
+        title={pageData.destinationsAndLongVoyages.title}
+        subtitle="Tailoring your luggage to Caribbean warmth, Mediterranean coastlines, Alaska wilderness, or multi-week itineraries."
+        items={destinationCards}
+      />
+
+      {/* 19. 5-Category Expert Packing Roadmap (InteractivePlanningRoadmap) */}
+      <InteractivePlanningRoadmap
+        title={pageData.expertPackingFramework.title}
+        subtitle={pageData.expertPackingFramework.subtitle}
+        steps={roadmapSteps}
+      />
+
+      {/* 20. 10 Essentials & Quick Checklist (GenericChecklistCards) */}
+      <GenericChecklistCards
+        title="The 10 Essentials & Quick Packing Checklist"
+        subtitle="EVERYTHING YOU NEED FOR A FLAWLESS YACHT VOYAGE"
+        cards={tenEssentialsCards}
+      />
+
+      {/* 21. Common Dress-Code Mistakes (MistakesShowcase) */}
+      <MistakesShowcase mistakes={mistakesMapped} />
+
+      {/* 22. Authority Box #2 - 60-Second Dress-Code Guide */}
+      <div className="max-w-5xl mx-auto px-6">
+        <AuthorityBox
+          title={pageData.sixtySecondGuide.title}
+          content={pageData.sixtySecondGuide.rules
+            ?.map((r) => `<strong>${r.label}:</strong> ${r.value}`)
+            ?.join(" • ") || ""}
+          author="Angela Hughes, Luxury Travel Advisor"
+          authorImage={angelaImage}
+        />
+      </div>
+
+  
+
+      {/* 24. Angela Hughes Expert Credentials */}
+      <ExpertCredentials
+        name={pageData.angelaPerspective.name}
+        title={pageData.angelaPerspective.title}
+        bio={pageData.angelaPerspective.bio}
+        heading={pageData.angelaPerspective.heading}
+        text={pageData.angelaPerspective.text}
+        image={angelaImage}
+        badge="LUXURY CRUISE EXPERT"
+        experienceBadge="40+ YEARS IN LUXURY TRAVEL"
+        ctaText="Book With Angela Hughes"
+        ctaLink="mailto:angela@tripsandships.com"
+      />
+
+      {/* 25. Complete FAQ Accordion (All 20 FAQs) */}
+      <FAQAccordion
+        data={{
+          title: "Frequently Asked Questions About Ritz-Carlton Yacht Dress Code",
+          subtitle: "Expert answers to the 20 most common questions regarding dinner attire, formal nights, shoes, and packing rules.",
+          faqs: pageData.faqs,
+        }}
+      />
+
+      {/* 26. Interactive Resource Pillar Hub */}
+      <InteractivePillarHubGrid
+        title="Explore More Ritz-Carlton Yacht Resources"
+        subtitle="Deepen your knowledge with complete suite guides, loyalty points optimization, and family cruise planning."
+        items={hubItems}
+      />
+
+      {/* 27. Final Bottom CTA */}
+      <div id="advisor-consultation">
+        <CenterCTA
+          title="Ready to Sail in Relaxed Luxury?"
+          description="Connect with Trips & Ships Luxury Travel to secure locked-in rates, exclusive Virtuoso amenities, and expert planning support."
+          buttonText="Contact a Yacht Specialist"
+          buttonLink="mailto:angela@tripsandships.com?subject=Ritz-Carlton%20Yacht%20Booking"
+          theme="dark"
+        />
+      </div>
+    </div>
   );
 };
 

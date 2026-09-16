@@ -111,6 +111,18 @@ const Navbar = () => {
                 Ritz-Carlton Yachts for Families & Kids
               </NavLink>
               <NavLink
+                to="/ritz-carlton-yacht-collection-marriott-bonvoy-points"
+                className="nav-dropdown-single"
+              >
+                Ritz-Carlton Yacht Marriott Bonvoy Points
+              </NavLink>
+              <NavLink
+                to="/ritz-carlton-yacht-collection-suites"
+                className="nav-dropdown-single"
+              >
+                Best Ritz-Carlton Yacht Suites
+              </NavLink>
+              <NavLink
                 to="/luxury-yacht-cruises"
                 className="nav-dropdown-single"
               >
@@ -1543,6 +1555,22 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Ritz-Carlton Yachts for Families & Kids
+              </NavLink>
+
+              <NavLink
+                to="/ritz-carlton-yacht-collection-marriott-bonvoy-points"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Ritz-Carlton Yacht Marriott Bonvoy Points
+              </NavLink>
+
+              <NavLink
+                to="/ritz-carlton-yacht-collection-suites"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Best Ritz-Carlton Yacht Suites
               </NavLink>
 
 
@@ -3027,6 +3055,22 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Ritz-Carlton Yachts for Families & Kids
+            </NavLink>
+
+            <NavLink
+              to="/ritz-carlton-yacht-collection-marriott-bonvoy-points"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Ritz-Carlton Yacht Marriott Bonvoy Points
+            </NavLink>
+
+            <NavLink
+              to="/ritz-carlton-yacht-collection-suites"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Best Ritz-Carlton Yacht Suites
             </NavLink>
 
 

@@ -1,0 +1,863 @@
+{
+  "meta": {
+    "title": "Best Ritz-Carlton Yacht Suites | 2026 Suite Guide",
+    "seoTitle": "Best Ritz-Carlton Yacht Suites: Complete 2026 Guide",
+    "description": "Compare the best Ritz-Carlton Yacht Collection suites, including Owner's, Residential, Concierge, Loft, Grand, View, Signature and Terrace Suites on Evrima, Ilma and Luminara.",
+    "canonical": "https://www.tripsandships.com/ritz-carlton-yacht-collection-suites",
+    "primaryKeyword": "Ritz-Carlton Yacht Collection suites",
+    "secondaryKeywords": [
+      "best Ritz-Carlton Yacht suites",
+      "Ritz-Carlton Yacht suites",
+      "Ritz-Carlton Yacht Collection suite categories",
+      "Ritz-Carlton Yacht Owner's Suite",
+      "Ritz-Carlton Yacht Grand Suite",
+      "Ritz-Carlton Yacht Loft Suite",
+      "Ritz-Carlton Yacht View Suite",
+      "Ritz-Carlton Yacht Signature Suite",
+      "Ritz-Carlton Yacht Terrace Suite",
+      "Ritz-Carlton Ilma suites",
+      "Ritz-Carlton Luminara suites",
+      "Ritz-Carlton Evrima suites",
+      "Ritz-Carlton Yacht suite comparison",
+      "largest Ritz-Carlton Yacht suite",
+      "Ritz-Carlton Yacht suite with whirlpool",
+      "Ritz-Carlton Yacht suite with private terrace",
+      "Ritz-Carlton Yacht Collection accommodations",
+      "Ritz-Carlton Yacht suite amenities",
+      "Ritz-Carlton Yacht suite prices",
+      "Ritz-Carlton Yacht suite upgrade"
+    ]
+  },
+  "hero": {
+    "badge": "COMPLETE 2026 SUITE GUIDE & COMPARISON",
+    "title": "What Are the Best Suites on Ritz-Carlton Yachts?",
+    "subtitle": "Compare Owner's, Residential, Concierge, Loft, Grand, View, Signature, and Terrace Suites across Evrima, Ilma, and Luminara to find your ideal private retreat at sea.",
+    "ctaText": "Explore Ritz-Carlton Yacht Suites",
+    "secondaryCtaText": "Speak with a Suite Specialist"
+  },
+  "intro": {
+    "heading": "What Are the Best Suites on Ritz-Carlton Yachts?",
+    "paragraphs": [
+      "The best Ritz-Carlton Yacht suite depends on what matters most to you: space, privacy, outdoor living, entertaining, family travel, location or overall suite experience.",
+      "The Ritz-Carlton Yacht Collection offers a range of suites across Evrima, Ilma and Luminara, and the category names are not identical across all three yachts.",
+      "Every suite has a private terrace, while the larger categories add substantially more interior and outdoor space and, in selected categories, enhanced accommodations and personalized service.",
+      "For travelers considering a Ritz-Carlton Yacht cruise, choosing the right suite is about more than simply booking the largest room available.",
+      "A well-chosen suite can change how you experience the yacht."
+    ]
+  },
+  "quickAnswer": {
+    "title": "Quick Answer: Which Ritz-Carlton Yacht Suite Is Best?",
+    "lead": "There is no single best suite for every traveler. Here is the simplest way to narrow down the choices:",
+    "tableHeaders": ["If you want...", "Consider..."],
+    "tableRows": [
+      ["Maximum space and privacy", "Owner's Suite"],
+      ["A large residential-style experience", "Residential Suite on Luminara"],
+      ["Large terrace and elevated amenities", "Owner's Suite"],
+      ["A two-level layout", "Loft Suite on Evrima"],
+      ["More space without going all the way to the top category", "Grand Suite"],
+      ["Large windows and views", "View Suite"],
+      ["A balance of space and value", "Signature Suite"],
+      ["A comfortable private-terrace experience", "Terrace Suite"],
+      ["Central location", "Mid Suite categories on Evrima"],
+      ["Family or multigenerational travel", "Connecting/convertible suite configurations where available"]
+    ],
+    "notes": [
+      "The important point is that \"best\" depends on how you intend to use the suite.",
+      "If you spend very little time in your room, paying for the largest accommodation may not make sense. If your suite is going to function as your private retreat for a longer voyage, however, additional living space and terrace space can become much more valuable."
+    ]
+  },
+  "fleetOverview": {
+    "title": "Ritz-Carlton Yacht Suite Categories at a Glance",
+    "description": "The three yachts don't have identical accommodation plans.",
+    "ships": [
+      {
+        "name": "Evrima",
+        "suitesCount": "149 Suites",
+        "tagline": "Distinctive Bi-Level & Connecting Architecture",
+        "description": "Evrima features 149 suites with exclusive architectural layouts including two-story Loft Suites and flexible connecting arrangements.",
+        "categories": [
+          "Owner's Suites",
+          "View Suites",
+          "Loft Suites",
+          "Grand Suites",
+          "Signature Suites",
+          "Signature Mid Suites",
+          "Terrace Suites",
+          "Terrace Mid Suites",
+          "Accessible Suites",
+          "Connecting Suites",
+          "Convertible Suites"
+        ],
+        "specialNote": "Select Terrace Suites can be configured with adjacent suites to create expanded living arrangements."
+      },
+      {
+        "name": "Ilma",
+        "suitesCount": "224 Suites",
+        "tagline": "Generous Terraces & High Space-to-Guest Ratio",
+        "description": "Ilma offers 224 light-filled suites designed with expansive private terraces and generous living proportions.",
+        "categories": [
+          "Owner's Suite",
+          "Concierge Suite",
+          "Ilma Suite",
+          "View Suite",
+          "Grand Suite",
+          "Signature Suite",
+          "Terrace Suite"
+        ],
+        "specialNote": "Ritz-Carlton's published Ilma suite overview shows Owner's, Concierge, Ilma and View Suites as the larger specialty categories, followed by Grand, Signature and Terrace Suites."
+      },
+      {
+        "name": "Luminara",
+        "suitesCount": "226 Suites",
+        "tagline": "New Residential & Concierge Suite Categories",
+        "description": "Luminara expands the fleet's accommodation mix with 226 suites introducing modern residential apartment-style living.",
+        "categories": [
+          "Owner's Suite",
+          "Residential Suite",
+          "Concierge Suite",
+          "View Suite",
+          "Grand Suite",
+          "Signature Suite",
+          "Terrace Suite"
+        ],
+        "specialNote": "Current Ritz-Carlton Yacht Collection information highlights features such as outdoor showers and private hot tubs in the Concierge Suite, while the Owner's Suite includes a large private terrace and outdoor shower."
+      }
+    ]
+  },
+  "suiteCategoriesDetailed": [
+    {
+      "id": "owners-suite",
+      "number": "1",
+      "name": "Owner's Suite — The Flagship Choice",
+      "shortName": "Owner's Suite",
+      "yacht": "Evrima, Ilma & Luminara",
+      "size": "~1,091 sq ft Interior | ~635 sq ft Terrace (Evrima specs)",
+      "overview": "If your priority is maximum space, privacy and an expansive outdoor living area, the Owner's Suite is the category to investigate first. The Owner's Suite is designed as a residential-style accommodation rather than simply a larger version of a standard cruise cabin. On Evrima, the Owner's Suite is approximately 1,091 square feet of interior space plus a 635-square-foot terrace, according to Ritz-Carlton's published specifications.",
+      "features": [
+        "Large private terrace",
+        "Private whirlpool on applicable Owner's Suite configurations",
+        "Living and dining area",
+        "Enclosed bedroom",
+        "Double-vanity bathroom",
+        "Separate shower",
+        "Second bathroom",
+        "Walk-in wardrobe",
+        "Custom king bed",
+        "In-suite dining",
+        "Suite Ambassador access",
+        "Enhanced Wi-Fi"
+      ],
+      "whyChoose": "The biggest advantage isn't simply the square footage. It's the way the space changes the experience of being onboard. You have room to enjoy breakfast privately, relax outdoors without leaving the suite, entertain guests, spend more time onboard during sea days, separate bedroom and living areas, and enjoy additional privacy.",
+      "bestFor": "Couples celebrating a major occasion, luxury travelers who spend significant time in their suite, longer voyages and travelers who prioritize space above price."
+    },
+    {
+      "id": "residential-suite",
+      "number": "2",
+      "name": "Residential Suite — Luminara's Apartment-Style Option",
+      "shortName": "Residential Suite",
+      "yacht": "Luminara Exclusive",
+      "size": "Spacious Multi-Room Residential Layout",
+      "overview": "Luminara adds a Residential Suite category that is particularly interesting for travelers looking for a more residential feel. This category is worth considering if your priority is space and a home-like environment rather than simply a traditional cruise-suite layout. The current Luminara suite information places Residential Suites alongside the yacht's Owner's and Concierge categories.",
+      "features": [
+        "Residential apartment-style configuration",
+        "Private oceanfront terrace",
+        "Expanded multi-zone living and dining areas",
+        "Dedicated primary bedroom retreat",
+        "High-end residential bathroom fixtures",
+        "Plentiful storage for extended voyages"
+      ],
+      "whyChoose": "A residential-style suite can make a meaningful difference on longer voyages, back-to-back itineraries, extended stays, multigenerational trips, and for travelers who use their suite as a living space rather than simply a place to sleep.",
+      "bestFor": "Travelers who want their yacht accommodation to feel more like a private residence at sea."
+    },
+    {
+      "id": "loft-suite",
+      "number": "3",
+      "name": "Loft Suite — Best for a Two-Level Experience",
+      "shortName": "Loft Suite",
+      "yacht": "Evrima Exclusive",
+      "size": "~611 sq ft Interior | ~81 sq ft Terrace",
+      "overview": "The Loft Suite on Evrima is one of the most distinctive accommodation options because it uses a two-story design. The lower level contains the sleeping area and master bathroom, while the upper level provides the living and dining space and a powder room. Published specifications place the Loft Suite at approximately 611 square feet with an 81-square-foot terrace.",
+      "features": [
+        "Two-story architectural loft design",
+        "Lower level: Master bedroom & full master bath",
+        "Upper level: Living/dining room & guest powder room",
+        "Private upper terrace overlooking the sea",
+        "Dramatic floor-to-ceiling multi-story glass"
+      ],
+      "whyChoose": "The biggest advantage is separation of living and sleeping spaces. Instead of having one large room, the vertical layout creates a more residential feeling.",
+      "bestFor": "Couples who prefer separated spaces, travelers who entertain, longer voyages, guests who enjoy architectural design, and travelers looking for something different from a conventional suite.",
+      "consideration": "A two-level layout isn't automatically better for everyone. Travelers who prefer everything on one level may find a conventional suite layout easier."
+    },
+    {
+      "id": "grand-suite",
+      "number": "4",
+      "name": "Grand Suite — A Strong Balance of Space and Practicality",
+      "shortName": "Grand Suite",
+      "yacht": "Evrima, Ilma & Luminara",
+      "size": "~587 sq ft Interior | up to 118 sq ft Terrace (Evrima specs)",
+      "overview": "The Grand Suite is an attractive option for travelers who want significantly more space without moving all the way to the Owner's Suite. On Evrima, Ritz-Carlton describes the Grand Suite as a residential-style accommodation. The published Evrima specifications show approximately 587 square feet of interior space and up to 118 square feet of terrace, although exact dimensions can vary by configuration.",
+      "features": [
+        "Living and dining area",
+        "Dual walk-in closets",
+        "Dining table for four",
+        "Expanded living and bath areas",
+        "Private terrace overlooking the ocean"
+      ],
+      "whyChoose": "Provides expansive residential space, dedicated dining for four guests, and dual closets without requiring top-tier Owner's Suite investment.",
+      "bestFor": "Travelers who want a genuinely spacious suite without necessarily choosing the yacht's largest accommodation. This can be particularly appealing for couples who spend substantial time onboard."
+    },
+    {
+      "id": "view-suite",
+      "number": "5",
+      "name": "View Suite — Best for Natural Light and Ocean Views",
+      "shortName": "View Suite",
+      "yacht": "Evrima, Ilma & Luminara",
+      "size": "Varies by Vessel | Expansive Glass Facade",
+      "overview": "The View Suite places greater emphasis on the visual connection with the ocean. Ritz-Carlton's published information describes the View Suite as having dramatic floor-to-ceiling glass and a private terrace overlooking the ocean.",
+      "features": [
+        "Dramatic floor-to-ceiling panoramic glass",
+        "Private terrace with prime ocean views",
+        "Light-filled open interior concept",
+        "Luxury bathroom with ocean backdrop",
+        "Custom king bedding and sitting area"
+      ],
+      "whyChoose": "For many travelers, the most memorable part of a yacht suite isn't the number of square feet. It's waking up to the view. The View Suite can therefore be particularly appealing if you value natural light, ocean views, large windows, private outdoor space, and a visually open interior.",
+      "bestFor": "Scenery-focused travelers and guests who prioritize views over having the largest possible living area."
+    },
+    {
+      "id": "concierge-suite",
+      "number": "6",
+      "name": "Concierge Suite — An Elevated Option on Ilma and Luminara",
+      "shortName": "Concierge Suite",
+      "yacht": "Ilma & Luminara",
+      "size": "~689–785 sq ft Interior | ~355–409 sq ft Terrace (Ilma specs)",
+      "overview": "The Concierge Suite appears on the newer yachts and offers a larger accommodation option with additional features. On Ilma, published specifications show Concierge Suites ranging from approximately 689 to 785 square feet, with terraces of approximately 355 to 409 square feet, depending on the suite.",
+      "features": [
+        "Modern living and dining area",
+        "Double-vanity bathroom",
+        "Soaking tub and separate shower",
+        "Private terrace",
+        "Outdoor shower",
+        "Private hot tub",
+        "Second powder room",
+        "Walk-in wardrobe"
+      ],
+      "whyChoose": "Delivers an ultra-premium outdoor terrace lifestyle with hot tubs and outdoor showers on newer vessels without stepping up to Owner's Suite prices.",
+      "bestFor": "Travelers sailing Ilma or Luminara who want a premium suite with substantial indoor and outdoor space without automatically moving into the Owner's category."
+    },
+    {
+      "id": "ilma-suite",
+      "number": "7",
+      "name": "Ilma Suite — A Distinctive Category on Ilma",
+      "shortName": "Ilma Suite",
+      "yacht": "Ilma Exclusive",
+      "size": "~506–657 sq ft Interior | ~291–301 sq ft Terrace",
+      "overview": "The Ilma Suite is unique to Ilma and provides another step above the standard suite categories. Published specifications list the Ilma Suite at approximately 506–657 square feet, with terraces of approximately 291–301 square feet, depending on the suite. The category includes a private terrace overlooking the ocean.",
+      "features": [
+        "Generous 291–301 sq ft private terrace",
+        "Expansive oceanfront living area",
+        "Luxury master bath with soaking tub",
+        "Walk-in wardrobe and dressing space",
+        "Dedicated in-suite dining provisions"
+      ],
+      "whyChoose": "Features an exceptional terrace-to-interior ratio specifically engineered for Mediterranean and Caribbean al fresco lounging.",
+      "bestFor": "Travelers who want a large private outdoor area and are specifically sailing Ilma."
+    },
+    {
+      "id": "signature-suite",
+      "number": "8",
+      "name": "Signature Suite — A Smart Middle Ground",
+      "shortName": "Signature Suite",
+      "yacht": "Evrima, Ilma & Luminara",
+      "size": "~429 sq ft Interior | Private Terrace (Evrima specs)",
+      "overview": "The Signature Suite is where the suite decision becomes more interesting. You don't necessarily need to spend for an Owner's or Grand Suite to enjoy a luxury yacht experience. On Evrima, the Signature Suite provides a private terrace, living and dining area, double-vanity bathroom, soaking tub, and separate shower. Published Evrima specifications place the Signature Suite at approximately 429 square feet, with terrace sizes varying by configuration.",
+      "features": [
+        "Private terrace",
+        "Living and dining area",
+        "Double-vanity bathroom",
+        "Soaking tub",
+        "Separate shower"
+      ],
+      "whyChoose": "Provides full living and dining separation, luxury soaking tub, and double vanity at a highly competitive tier.",
+      "bestFor": "Couples who want more living space than a Terrace Suite without paying for the yacht's largest accommodations."
+    },
+    {
+      "id": "terrace-suite",
+      "number": "9",
+      "name": "Terrace Suite — The Foundation of the Ritz-Carlton Yacht Experience",
+      "shortName": "Terrace Suite",
+      "yacht": "Evrima, Ilma & Luminara",
+      "size": "Entry Luxury Category | Private Ocean Terrace",
+      "overview": "The Terrace Suite is the entry point into the collection's suite categories, but calling it \"basic\" would be misleading. The key feature is something every suite aboard the yachts shares: a private terrace. Current Ritz-Carlton information also notes that select Terrace Suites aboard Evrima can connect with adjacent suites to create expanded accommodations.",
+      "features": [
+        "Guaranteed private oceanfront terrace",
+        "Custom luxury king bed configuration",
+        "Marble bathroom with double vanity or luxury shower",
+        "Espresso machine & complimentary minibar",
+        "24-hour in-suite dining access",
+        "Connecting configurations available on Evrima"
+      ],
+      "whyChoose": "The Terrace Suite gives travelers access to their own outdoor space where they can drink coffee in the morning, read privately, watch the coastline, enjoy room-service meals, relax between excursions, and watch the sunset.",
+      "bestFor": "Travelers who care more about having a private outdoor space than maximizing interior square footage."
+    }
+  ],
+  "comparisonTable": {
+    "title": "Ritz-Carlton Yacht Suite Comparison",
+    "subtitle": "Complete side-by-side comparison across all nine primary suite categories in the fleet.",
+    "headers": ["Suite", "Yacht", "Interior Space", "Outdoor Space", "Best For"],
+    "rows": [
+      ["Owner's Suite", "Evrima", "~1,091 sq ft", "~635 sq ft", "Maximum space"],
+      ["Residential Suite", "Luminara", "Varies", "Private terrace", "Residential feel"],
+      ["Concierge Suite", "Ilma / Luminara", "Larger premium category", "Large terrace", "Premium space"],
+      ["Loft Suite", "Evrima", "~611 sq ft", "~81 sq ft", "Two-level layout"],
+      ["Grand Suite", "Evrima / newer yachts", "~560+ sq ft depending on yacht", "Varies", "Spacious living"],
+      ["Ilma Suite", "Ilma", "~506–657 sq ft", "~291–301 sq ft", "Large terrace"],
+      ["View Suite", "Evrima / Ilma / Luminara", "Varies", "Private terrace", "Views & natural light"],
+      ["Signature Suite", "Multiple yachts", "~400+ sq ft", "Private terrace", "Balance"],
+      ["Terrace Suite", "Multiple yachts", "Varies", "Private terrace", "Private outdoor space"]
+    ],
+    "disclaimer": "Important: Suite dimensions vary by yacht and individual suite. Always check the specific suite number and current deck plan before booking."
+  },
+  "yachtComparisonSection": {
+    "title": "Which Ritz-Carlton Yacht Has the Best Suites?",
+    "lead": "Rather than asking which yacht has the \"best\" suites, compare what each yacht offers.",
+    "yachts": [
+      {
+        "name": "Evrima (149 Suites)",
+        "features": [
+          "Most distinctive suite architecture",
+          "Owner's Suites, Loft Suites, View Suites, Grand Suites",
+          "Signature Suites, Terrace Suites",
+          "Mid-suite configurations, connecting suites, convertible suites",
+          "Its Loft Suite and Owner's Suite are particularly distinctive."
+        ]
+      },
+      {
+        "name": "Ilma (224 Suites)",
+        "features": [
+          "224 light-filled luxury suites",
+          "Categories include Owner's, Concierge, Ilma, View, Grand, Signature, and Terrace Suites",
+          "Suite design emphasizes generous private outdoor space",
+          "Designed with an exceptionally high ratio of space per guest"
+        ]
+      },
+      {
+        "name": "Luminara (226 Suites)",
+        "features": [
+          "226 suites expanding the accommodation mix",
+          "Introduces Residential Suites and Concierge Suites with outdoor showers and hot tubs",
+          "Particularly interesting for travelers comparing the newest suite configurations"
+        ]
+      }
+    ]
+  },
+  "inclusionsSection": {
+    "title": "What Is Included With Ritz-Carlton Yacht Suites?",
+    "description": "The exact benefits can depend on the suite category and yacht, but suite amenities can include features such as:",
+    "amenities": [
+      "Private terrace",
+      "Luxury bedding",
+      "Double-vanity bathroom",
+      "Luxury bath amenities",
+      "Espresso machine",
+      "Complimentary coffee and tea",
+      "Minibar provisions",
+      "In-suite safe",
+      "USB charging",
+      "In-suite dining",
+      "Suite Ambassador service for applicable categories",
+      "Enhanced Wi-Fi for applicable categories"
+    ],
+    "specialNote": "Ritz-Carlton's current Owner's Suite information specifically identifies Suite Ambassador access, 24-hour in-suite dining and enhanced Wi-Fi among the applicable suite benefits."
+  },
+  "benefitsDistinction": {
+    "title": "Does a Larger Ritz-Carlton Yacht Suite Include More Benefits?",
+    "paragraphs": [
+      "Not necessarily in a simple \"more money = everything included\" structure. This is an important distinction.",
+      "A larger suite generally gives you more physical space and, depending on the category, additional suite-level amenities or services.",
+      "But you should compare the exact benefits attached to the specific suite category you're considering.",
+      "For example, an Owner's Suite can provide a significantly larger terrace and additional spaces, while another premium category may offer a different combination of features.",
+      "The right question isn't simply \"What is the biggest suite?\" Ask: Which suite gives me the space, outdoor area and services I will actually use?"
+    ]
+  },
+  "worthUpgrade": {
+    "title": "Are Ritz-Carlton Yacht Suites Worth the Upgrade?",
+    "lead": "That depends heavily on how you travel.",
+    "largerSense": {
+      "title": "A larger suite may make sense if:",
+      "points": [
+        "You spend significant time onboard",
+        "You enjoy private outdoor dining",
+        "You travel on longer itineraries",
+        "You prefer separate living and sleeping areas",
+        "You entertain another couple",
+        "You want additional bathroom space",
+        "You value privacy",
+        "You're celebrating a milestone",
+        "You want a larger terrace",
+        "You plan to spend more time enjoying the yacht than exploring ashore"
+      ]
+    },
+    "smallerSense": {
+      "title": "A smaller suite may make more sense if:",
+      "points": [
+        "You spend most days ashore",
+        "You primarily use your suite for sleeping",
+        "You prefer investing more in excursions",
+        "You want to allocate more of your budget toward the itinerary",
+        "You don't need separate living areas",
+        "A private terrace is your main priority"
+      ]
+    }
+  },
+  "selectionProcess": {
+    "title": "How to Choose the Right Ritz-Carlton Yacht Suite",
+    "subtitle": "Use this proven five-step framework before placing your deposit.",
+    "steps": [
+      {
+        "step": "01",
+        "title": "Start with the itinerary",
+        "description": "If your itinerary contains scenic sailing days, remote destinations or long stretches between ports, you may spend more time in your suite. That makes outdoor space and living space more valuable."
+      },
+      {
+        "step": "02",
+        "title": "Look at the terrace",
+        "description": "Don't only compare interior square footage. Two suites with similar interior dimensions can feel very different if their terraces are significantly different."
+      },
+      {
+        "step": "03",
+        "title": "Check the deck location",
+        "description": "Location can matter as much as category. Consider forward vs. aft, midship location, deck height, proximity to elevators, proximity to public spaces, potential movement at sea, and view orientation."
+      },
+      {
+        "step": "04",
+        "title": "Think about how many people are traveling",
+        "description": "For two adults, a smaller suite can be perfectly comfortable. For three travelers or a multigenerational family, additional living space can become considerably more useful."
+      },
+      {
+        "step": "05",
+        "title": "Compare the actual suite number",
+        "description": "This is one of the most important steps. Don't book based only on the category name. Look at the specific deck plan, terrace dimensions, location and configuration of the suite."
+      }
+    ]
+  },
+  "travelerTypes": {
+    "title": "Best Ritz-Carlton Yacht Suite by Traveler Type",
+    "categories": [
+      {
+        "persona": "For couples",
+        "recommendation": "Look at the Signature, View, Grand or Owner's Suite depending on how much space you want."
+      },
+      {
+        "persona": "For honeymooners",
+        "recommendation": "A larger suite with an expansive private terrace can provide additional privacy and outdoor living."
+      },
+      {
+        "persona": "For milestone celebrations",
+        "recommendation": "Consider the Owner's Suite or another premium suite with a large terrace."
+      },
+      {
+        "persona": "For families",
+        "recommendation": "Look at connecting or convertible configurations, particularly on Evrima where select Terrace Suites can be configured with adjacent accommodations."
+      },
+      {
+        "persona": "For multigenerational travel",
+        "recommendation": "Prioritize connecting accommodations, multiple bathrooms, separate living areas, larger terraces, and suite locations close to elevators."
+      },
+      {
+        "persona": "For longer voyages",
+        "recommendation": "Consider upgrading to a suite with a more substantial living area. The longer you stay onboard, the more useful additional living space can become."
+      },
+      {
+        "persona": "For scenery lovers",
+        "recommendation": "Consider the View Suite or another suite with strong exterior visibility and a private terrace."
+      },
+      {
+        "persona": "For travelers who rarely stay in their room",
+        "recommendation": "A Terrace or Signature Suite may provide the features you actually use without paying for space that sits empty."
+      }
+    ]
+  },
+  "deckLocation": {
+    "title": "Suite Location: Does the Deck Matter?",
+    "lead": "Yes. Suite category gets most of the attention, but location can affect the experience.",
+    "locations": [
+      {
+        "area": "Midship",
+        "detail": "Midship suites can be attractive to travelers who prefer a more central position on the yacht. Evrima's Mid Suite categories are specifically described as centrally located."
+      },
+      {
+        "area": "Higher Decks",
+        "detail": "Higher decks can provide a different visual perspective and potentially stronger views."
+      },
+      {
+        "area": "Lower Decks",
+        "detail": "Lower locations can offer convenient access to certain areas of the yacht and may appeal to guests who prefer less vertical movement."
+      },
+      {
+        "area": "Near Public Areas",
+        "detail": "Being close to a restaurant, lounge or elevator can be convenient. However, travelers who prioritize quiet should review the deck plan carefully rather than assuming proximity is always an advantage."
+      }
+    ]
+  },
+  "largestSuite": {
+    "title": "What Is the Largest Ritz-Carlton Yacht Suite?",
+    "content": [
+      "On Evrima, the Owner's Suite is approximately 1,091 square feet with a 635-square-foot terrace, making it substantially larger than the yacht's other published suite categories.",
+      "However, suite sizes differ between Evrima, Ilma and Luminara.",
+      "For that reason, don't compare only the category name. Compare: Interior space + terrace + layout + location + amenities."
+    ]
+  },
+  "upgradeStrategy": {
+    "title": "Ritz-Carlton Yacht Suite Upgrade Strategy",
+    "lead": "If you're deciding whether to spend more on your suite, use this framework:",
+    "strategies": [
+      {
+        "pillar": "Upgrade for space",
+        "description": "Choose a larger suite if you want more room to live, dine and relax."
+      },
+      {
+        "pillar": "Upgrade for outdoor space",
+        "description": "If you know you'll spend mornings and evenings on your terrace, prioritize terrace size."
+      },
+      {
+        "pillar": "Upgrade for service",
+        "description": "If personalized suite-level service matters to you, compare the benefits attached to the categories you're considering."
+      },
+      {
+        "pillar": "Don't upgrade just for the name",
+        "description": "A higher category isn't automatically the right choice. A traveler who spends most days ashore may get more value from a well-located Terrace or Signature Suite than from paying substantially more for a very large suite."
+      }
+    ]
+  },
+  "angelaPerspective": {
+    "name": "Angela Hughes",
+    "title": "CEO, Trips & Ships Luxury Travel",
+    "bio": "Angela Hughes, CEO of Trips & Ships Luxury Travel, has spent more than four decades in the travel industry and has personally traveled to more than 121 countries.",
+    "heading": "Angela Hughes' Perspective on Choosing a Ritz-Carlton Yacht Suite",
+    "text": "When evaluating luxury yacht accommodations, she looks beyond the suite category itself. The practical questions are: How long is the voyage? How much time will you spend onboard? Are you traveling as a couple, family or group? Do you care more about terrace space or interior space? What is the itinerary? Is the suite location convenient for your travel style? Are there specific services or accessibility requirements? That approach is particularly useful on Ritz-Carlton Yachts because the suite categories vary considerably in layout and outdoor space. The largest suite isn't automatically the right suite. The right suite is the one that matches how you actually travel."
+  },
+  "faqs": [
+    {
+      "question": "Do all Ritz-Carlton Yacht suites have private terraces?",
+      "answer": "Yes. The Ritz-Carlton Yacht Collection describes its yachts as having suites with private terraces."
+    },
+    {
+      "question": "What is the largest Ritz-Carlton Yacht suite?",
+      "answer": "The Owner's Suite is among the largest accommodation categories. On Evrima, it is approximately 1,091 square feet with a 635-square-foot terrace."
+    },
+    {
+      "question": "Which Ritz-Carlton Yacht has Loft Suites?",
+      "answer": "The Loft Suite is a distinctive Evrima category featuring a two-level layout."
+    },
+    {
+      "question": "Which Ritz-Carlton Yacht has Residential Suites?",
+      "answer": "Luminara includes Residential Suites in its current accommodation lineup."
+    },
+    {
+      "question": "Which Ritz-Carlton Yacht has Concierge Suites?",
+      "answer": "Concierge Suites are offered on Ilma and Luminara."
+    },
+    {
+      "question": "What is the difference between a Terrace Suite and a Signature Suite?",
+      "answer": "The primary difference is the amount and configuration of interior living space and the specific amenities associated with each category. Both provide private terrace space."
+    },
+    {
+      "question": "Are Ritz-Carlton Yacht suites good for families?",
+      "answer": "They can be, particularly when travelers choose configurations with sufficient living space or connecting accommodations. Select Evrima Terrace Suites can connect to adjacent suites."
+    },
+    {
+      "question": "Which Ritz-Carlton Yacht suite is best for couples?",
+      "answer": "There is no universal answer. Couples who spend more time onboard may prefer a larger suite, while couples who spend most days ashore may prefer a smaller suite with a private terrace."
+    },
+    {
+      "question": "Which suite is best for a honeymoon?",
+      "answer": "A larger suite with an expansive private terrace can provide additional privacy and outdoor living, but the right choice depends on the itinerary and budget."
+    },
+    {
+      "question": "Do Owner's Suites have private whirlpools?",
+      "answer": "Applicable Owner's Suite configurations include a private whirlpool. Ritz-Carlton's current suite information identifies a large private terrace with whirlpool for the Owner's Suite."
+    },
+    {
+      "question": "Do Ritz-Carlton Yacht suites have bathtubs?",
+      "answer": "Some suite categories include soaking tubs. The exact configuration depends on the yacht and suite category."
+    },
+    {
+      "question": "Do Ritz-Carlton Yacht suites have walk-in wardrobes?",
+      "answer": "Selected premium categories include walk-in wardrobe or walk-in closet space. The Owner's Suite and Grand Suite specifications identify wardrobe/closet space among their features."
+    },
+    {
+      "question": "Can Ritz-Carlton Yacht suites connect?",
+      "answer": "Yes. Evrima includes connecting and convertible suite configurations, with select Terrace Suites capable of connecting to adjacent suites."
+    },
+    {
+      "question": "Should I choose a midship suite?",
+      "answer": "A midship suite may appeal to travelers who prefer a central location on the yacht. Evrima specifically offers Mid Suite categories described as centrally located."
+    },
+    {
+      "question": "Is the most expensive Ritz-Carlton Yacht suite always the best?",
+      "answer": "No. Suite selection should be based on space, terrace size, location, itinerary, service and how much time you expect to spend in the accommodation."
+    },
+    {
+      "question": "Should I book a suite based only on the category name?",
+      "answer": "No. Review the specific suite number, deck plan, terrace dimensions, location and configuration before booking."
+    }
+  ],
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-suites#webpage",
+        "url": "https://www.tripsandships.com/ritz-carlton-yacht-collection-suites",
+        "name": "Best Ritz-Carlton Yacht Suites: Complete 2026 Guide",
+        "description": "Compare the best Ritz-Carlton Yacht Collection suites, including Owner's, Residential, Concierge, Loft, Grand, View, Signature and Terrace Suites on Evrima, Ilma and Luminara.",
+        "isPartOf": {
+          "@id": "https://www.tripsandships.com/#website"
+        },
+        "breadcrumb": {
+          "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-suites#breadcrumb"
+        },
+        "author": {
+          "@id": "https://www.tripsandships.com/about-angela-hughes#person"
+        },
+        "publisher": {
+          "@id": "https://www.tripsandships.com/#organization"
+        },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "Article",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-suites#article",
+        "headline": "What Are the Best Suites on Ritz-Carlton Yachts?",
+        "description": "A detailed guide comparing Ritz-Carlton Yacht Collection suites across Evrima, Ilma and Luminara, including Owner's, Residential, Concierge, Loft, Grand, View, Signature and Terrace Suites.",
+        "url": "https://www.tripsandships.com/ritz-carlton-yacht-collection-suites",
+        "mainEntityOfPage": {
+          "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-suites#webpage"
+        },
+        "author": {
+          "@id": "https://www.tripsandships.com/about-angela-hughes#person"
+        },
+        "publisher": {
+          "@id": "https://www.tripsandships.com/#organization"
+        },
+        "articleSection": "Luxury Cruises",
+        "keywords": [
+          "Ritz-Carlton Yacht Collection suites",
+          "best Ritz-Carlton Yacht suites",
+          "Ritz-Carlton Yacht suites",
+          "Ritz-Carlton Yacht Owner's Suite",
+          "Ritz-Carlton Yacht Grand Suite",
+          "Ritz-Carlton Yacht Loft Suite",
+          "Ritz-Carlton Yacht View Suite",
+          "Ritz-Carlton Yacht Signature Suite",
+          "Ritz-Carlton Yacht Terrace Suite",
+          "Ritz-Carlton Ilma suites",
+          "Ritz-Carlton Luminara suites",
+          "Ritz-Carlton Evrima suites",
+          "Ritz-Carlton Yacht suite comparison"
+        ],
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-suites#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.tripsandships.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Luxury Cruises",
+            "item": "https://www.tripsandships.com/cruise/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Ritz-Carlton Yacht Collection",
+            "item": "https://www.tripsandships.com/ritz-carlton-yacht-collection"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Ritz-Carlton Yacht Collection Suites",
+            "item": "https://www.tripsandships.com/ritz-carlton-yacht-collection-suites"
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.tripsandships.com/#organization",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/",
+        "description": "Luxury travel advisors specializing in luxury cruises, yachts, expeditions, safaris and personalized travel planning."
+      },
+      {
+        "@type": "TravelAgency",
+        "@id": "https://www.tripsandships.com/#travelagency",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/",
+        "parentOrganization": {
+          "@id": "https://www.tripsandships.com/#organization"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.tripsandships.com/about-angela-hughes#person",
+        "name": "Angela Hughes",
+        "url": "https://www.tripsandships.com/about-angela-hughes",
+        "jobTitle": "CEO",
+        "worksFor": {
+          "@id": "https://www.tripsandships.com/#organization"
+        },
+        "knowsAbout": [
+          "Luxury Travel",
+          "Luxury Cruises",
+          "Luxury Yacht Travel",
+          "Ritz-Carlton Yacht Collection",
+          "Luxury Suites",
+          "Expedition Cruises",
+          "Luxury Safaris"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-suites#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do all Ritz-Carlton Yacht suites have private terraces?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The Ritz-Carlton Yacht Collection describes its yachts as having suites with private terraces."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the largest Ritz-Carlton Yacht suite?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Owner's Suite is among the largest accommodation categories. On Evrima, it is approximately 1,091 square feet with a 635-square-foot terrace."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which Ritz-Carlton Yacht has Loft Suites?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Loft Suite is a distinctive Evrima category featuring a two-level layout."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which Ritz-Carlton Yacht has Residential Suites?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Luminara includes Residential Suites in its current accommodation lineup."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which Ritz-Carlton Yacht has Concierge Suites?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Concierge Suites are offered on Ilma and Luminara."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between a Terrace Suite and a Signature Suite?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The primary difference is the amount and configuration of interior living space and the specific amenities associated with each category. Both provide private terrace space."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are Ritz-Carlton Yacht suites good for families?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "They can be, particularly when travelers choose configurations with sufficient living space or connecting accommodations. Select Evrima Terrace Suites can connect to adjacent suites."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which Ritz-Carlton Yacht suite is best for couples?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "There is no universal answer. Couples who spend more time onboard may prefer a larger suite, while couples who spend most days ashore may prefer a smaller suite with a private terrace."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which suite is best for a honeymoon?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A larger suite with an expansive private terrace can provide additional privacy and outdoor living, but the right choice depends on the itinerary and budget."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do Owner's Suites have private whirlpools?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Applicable Owner's Suite configurations include a private whirlpool. Ritz-Carlton's suite information identifies a large private terrace with whirlpool for the Owner's Suite."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do Ritz-Carlton Yacht suites have bathtubs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Some suite categories include soaking tubs. The exact configuration depends on the yacht and suite category."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do Ritz-Carlton Yacht suites have walk-in wardrobes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Selected premium categories include walk-in wardrobe or walk-in closet space. The Owner's Suite and Grand Suite specifications identify wardrobe or closet space among their features."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can Ritz-Carlton Yacht suites connect?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Evrima includes connecting and convertible suite configurations, with select Terrace Suites capable of connecting to adjacent suites."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I choose a midship suite?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A midship suite may appeal to travelers who prefer a central location on the yacht. Evrima offers Mid Suite categories described as centrally located."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the most expensive Ritz-Carlton Yacht suite always the best?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Suite selection should be based on space, terrace size, location, itinerary, service and how much time you expect to spend in the accommodation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I book a suite based only on the category name?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Review the specific suite number, deck plan, terrace dimensions, location and configuration before booking."
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
