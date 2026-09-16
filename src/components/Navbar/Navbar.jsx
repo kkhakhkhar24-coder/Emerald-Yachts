@@ -93,6 +93,24 @@ const Navbar = () => {
                 Emerald Yachts vs Ritz-Carlton Yacht Collection
               </NavLink>
               <NavLink
+                to="/ritz-carlton-yacht-collection"
+                className="nav-dropdown-single"
+              >
+                Ritz-Carlton Yacht Collection
+              </NavLink>
+              <NavLink
+                to="/ritz-carlton-yacht-collection-dress-code"
+                className="nav-dropdown-single"
+              >
+                Ritz-Carlton Yacht Dress Code
+              </NavLink>
+              <NavLink
+                to="/ritz-carlton-yacht-collection-families-children"
+                className="nav-dropdown-single"
+              >
+                Ritz-Carlton Yachts for Families & Kids
+              </NavLink>
+              <NavLink
                 to="/luxury-yacht-cruises"
                 className="nav-dropdown-single"
               >
@@ -1509,6 +1527,22 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Ritz-Carlton Yacht Collection vs Seabourn
+              </NavLink>
+
+              <NavLink
+                to="/ritz-carlton-yacht-collection-dress-code"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Ritz-Carlton Yacht Dress Code
+              </NavLink>
+
+              <NavLink
+                to="/ritz-carlton-yacht-collection-families-children"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Ritz-Carlton Yachts for Families & Kids
               </NavLink>
 
 
@@ -2977,6 +3011,22 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Ritz-Carlton Yacht Collection vs Seabourn
+            </NavLink>
+
+            <NavLink
+              to="/ritz-carlton-yacht-collection-dress-code"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Ritz-Carlton Yacht Dress Code
+            </NavLink>
+
+            <NavLink
+              to="/ritz-carlton-yacht-collection-families-children"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Ritz-Carlton Yachts for Families & Kids
             </NavLink>
 
 

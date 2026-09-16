@@ -203,6 +203,8 @@ import RitzCarltonYachtCollectionIncluded from "./pages/RitzCarltonYachtCollecti
 import RitzCarltonYachtCollectionReviews from "./pages/RitzCarltonYachtCollectionReviews/RitzCarltonYachtCollectionReviews";
 import RitzCarltonEvrimaVsIlmaVsLuminara from "./pages/RitzCarltonEvrimaVsIlmaVsLuminara/RitzCarltonEvrimaVsIlmaVsLuminara";
 import RitzCarltonVsExploraJourneys from "./pages/RitzCarltonVsExploraJourneys/RitzCarltonVsExploraJourneys";
+import RitzCarltonYachtCollectionDressCode from "./pages/RitzCarltonYachtCollectionDressCode/RitzCarltonYachtCollectionDressCode";
+import RitzCarltonYachtCollectionFamiliesChildren from "./pages/RitzCarltonYachtCollectionFamiliesChildren/RitzCarltonYachtCollectionFamiliesChildren";
 
 function App() {
   return (
@@ -1157,6 +1159,16 @@ function App() {
           <Route
             path="/ritz-carlton-yacht-collection-vs-seabourn"
             element={<RitzCarltonVsSeabourn />}
+          />
+
+          <Route
+            path="/ritz-carlton-yacht-collection-dress-code"
+            element={<RitzCarltonYachtCollectionDressCode />}
+          />
+
+          <Route
+            path="/ritz-carlton-yacht-collection-families-children"
+            element={<RitzCarltonYachtCollectionFamiliesChildren />}
           />
         </Routes>
       </BrowserRouter>

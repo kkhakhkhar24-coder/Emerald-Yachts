@@ -306,7 +306,7 @@ const LuxuryPage = () => {
           })}
         </script>
       </Helmet>
-       <Navbar />
+      <Navbar />
 
       {/* ─── SECTION 1: Hero ─── */}
       <ComparisonHero
@@ -361,7 +361,8 @@ const LuxuryPage = () => {
           </p>
         </div>
 
-        <style dangerouslySetInnerHTML={{__html: `
+        <style dangerouslySetInnerHTML={{
+          __html: `
           @keyframes marquee-slider {
             0% { transform: translateX(0%); }
             100% { transform: translateX(-33.33%); }
@@ -505,7 +506,7 @@ const LuxuryPage = () => {
         image={Hero1}
       />
 
-      
+
 
 
     </>
