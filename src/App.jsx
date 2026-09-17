@@ -207,6 +207,10 @@ import RitzCarltonYachtCollectionDressCode from "./pages/RitzCarltonYachtCollect
 import RitzCarltonYachtCollectionFamiliesChildren from "./pages/RitzCarltonYachtCollectionFamiliesChildren/RitzCarltonYachtCollectionFamiliesChildren";
 import RitzCarltonMarriottBonvoyPoints from "./pages/RitzCarltonMarriottBonvoyPoints/RitzCarltonMarriottBonvoyPoints";
 import RitzCarltonYachtCollectionSuites from "./pages/RitzCarltonYachtCollectionSuites/RitzCarltonYachtCollectionSuites";
+import RitzCarltonYachtShoreExcursionsIncluded from "./pages/RitzCarltonYachtShoreExcursionsIncluded/RitzCarltonYachtShoreExcursionsIncluded";
+import RitzCarltonYachtForNonCruisers from "./pages/RitzCarltonYachtForNonCruisers/RitzCarltonYachtForNonCruisers";
+import RitzCarltonYachtCruisesFromMiami from "./pages/RitzCarltonYachtCruisesFromMiami/RitzCarltonYachtCruisesFromMiami";
+import RitzCarltonYachtCaribbeanCruises from "./pages/RitzCarltonYachtCaribbeanCruises/RitzCarltonYachtCaribbeanCruises";
 
 function App() {
   return (
@@ -1181,6 +1185,26 @@ function App() {
           <Route
             path="/ritz-carlton-yacht-collection-suites"
             element={<RitzCarltonYachtCollectionSuites />}
+          />
+
+          <Route
+            path="/ritz-carlton-yacht-shore-excursions-included"
+            element={<RitzCarltonYachtShoreExcursionsIncluded />}
+          />
+
+          <Route
+            path="/ritz-carlton-yacht-collection-for-people-who-dont-like-cruises"
+            element={<RitzCarltonYachtForNonCruisers />}
+          />
+
+          <Route
+            path="/ritz-carlton-yacht-cruises-from-miami"
+            element={<RitzCarltonYachtCruisesFromMiami />}
+          />
+
+          <Route
+            path="/ritz-carlton-yacht-caribbean-cruises"
+            element={<RitzCarltonYachtCaribbeanCruises />}
           />
         </Routes>
       </BrowserRouter>

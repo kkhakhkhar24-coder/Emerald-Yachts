@@ -92,36 +92,10 @@ const Navbar = () => {
               >
                 Emerald Yachts vs Ritz-Carlton Yacht Collection
               </NavLink>
-              <NavLink
-                to="/ritz-carlton-yacht-collection"
-                className="nav-dropdown-single"
-              >
-                Ritz-Carlton Yacht Collection
-              </NavLink>
-              <NavLink
-                to="/ritz-carlton-yacht-collection-dress-code"
-                className="nav-dropdown-single"
-              >
-                Ritz-Carlton Yacht Dress Code
-              </NavLink>
-              <NavLink
-                to="/ritz-carlton-yacht-collection-families-children"
-                className="nav-dropdown-single"
-              >
-                Ritz-Carlton Yachts for Families & Kids
-              </NavLink>
-              <NavLink
-                to="/ritz-carlton-yacht-collection-marriott-bonvoy-points"
-                className="nav-dropdown-single"
-              >
-                Ritz-Carlton Yacht Marriott Bonvoy Points
-              </NavLink>
-              <NavLink
-                to="/ritz-carlton-yacht-collection-suites"
-                className="nav-dropdown-single"
-              >
-                Best Ritz-Carlton Yacht Suites
-              </NavLink>
+       
+      
+    
+             
               <NavLink
                 to="/luxury-yacht-cruises"
                 className="nav-dropdown-single"
@@ -1573,8 +1547,33 @@ const Navbar = () => {
                 Best Ritz-Carlton Yacht Suites
               </NavLink>
 
+               <NavLink
+                to="/ritz-carlton-yacht-shore-excursions-included"
+                className="nav-dropdown-single"
+              >
+                Ritz-Carlton Yacht Shore Excursions
+              </NavLink>
 
+               <NavLink
+                to="/ritz-carlton-yacht-collection-for-people-who-dont-like-cruises"
+                className="nav-dropdown-single"
+              >
+                Ritz-Carlton Yacht for Non-Cruisers
+              </NavLink>
 
+              <NavLink
+                to="/ritz-carlton-yacht-cruises-from-miami"
+                className="nav-dropdown-single"
+              >
+                Ritz-Carlton Yacht Cruises from Miami
+              </NavLink>
+
+              <NavLink
+                to="/ritz-carlton-yacht-caribbean-cruises"
+                className="nav-dropdown-single"
+              >
+                Ritz-Carlton Yacht Caribbean Cruises
+              </NavLink>
             </div>
           </div>
         </div>
@@ -1657,6 +1656,9 @@ const Navbar = () => {
             >
               Emerald Yachts vs Ritz-Carlton Yacht Collection
             </NavLink>
+          
+          
+           
             <NavLink
               to="/luxury-yacht-cruises"
               className="nav-dropdown-single"
@@ -3073,6 +3075,37 @@ const Navbar = () => {
               Best Ritz-Carlton Yacht Suites
             </NavLink>
 
+            <NavLink
+              to="/ritz-carlton-yacht-shore-excursions-included"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Ritz-Carlton Yacht Shore Excursions
+            </NavLink>
+
+            <NavLink
+              to="/ritz-carlton-yacht-collection-for-people-who-dont-like-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Ritz-Carlton Yacht for Non-Cruisers
+            </NavLink>
+
+            <NavLink
+              to="/ritz-carlton-yacht-cruises-from-miami"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Ritz-Carlton Yacht Cruises from Miami
+            </NavLink>
+
+            <NavLink
+              to="/ritz-carlton-yacht-caribbean-cruises"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Ritz-Carlton Yacht Caribbean Cruises
+            </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>
