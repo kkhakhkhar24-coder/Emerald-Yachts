@@ -5,6 +5,8 @@
     "metaDescription": "What should you wear on a Ritz-Carlton Yacht? Learn the Yacht Casual and Yacht Sophisticated dress codes, dinner attire, shoes, packing tips and what not to wear.",
     "h1": "What Is the Dress Code on Ritz-Carlton Yachts? A Complete Guide to What to Wear",
     "canonicalUrl": "https://www.tripsandships.com/ritz-carlton-yacht-collection-dress-code",
+    "ogTitle": "Ritz-Carlton Yacht Dress Code: What to Wear | 2026 Guide",
+    "ogDescription": "What should you wear on a Ritz-Carlton Yacht? Learn the Yacht Casual and Yacht Sophisticated dress codes, dinner attire, shoes, packing tips and what not to wear.",
     "primaryKeywords": [
       "Ritz-Carlton Yacht Collection dress code",
       "Ritz-Carlton yacht dress code",
@@ -703,5 +705,332 @@
       "question": "Is the Ritz-Carlton yacht dress code strict?",
       "answer": "It is relaxed compared with traditional luxury cruising, but dinner venues still have clear expectations. The easiest approach is resort casual during the day and elevated resort-chic attire at night."
     }
-  ]
+  ],
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": [
+          "Organization",
+          "TravelAgency"
+        ],
+        "@id": "https://www.tripsandships.com/#organization",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/logo.png"
+        },
+        "foundingDate": "1995",
+        "founder": {
+          "@id": "https://www.tripsandships.com/#angela-hughes"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "United States"
+        },
+        "knowsAbout": [
+          "Luxury Cruises",
+          "Ritz-Carlton Yacht Collection",
+          "Luxury Yacht Cruises",
+          "Cruise Packing Advice",
+          "Luxury Cruise Dress Codes",
+          "Yacht Casual Attire",
+          "Yacht Sophisticated Evening Wear",
+          "Cruise Travel Planning"
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.tripsandships.com/#angela-hughes",
+        "name": "Angela Hughes",
+        "jobTitle": "CEO and Luxury Travel Expert",
+        "url": "https://www.tripsandships.com/about-angela-hughes",
+        "worksFor": {
+          "@id": "https://www.tripsandships.com/#organization"
+        },
+        "founder": {
+          "@type": "Organization",
+          "name": "Luxury Travel University",
+          "url": "https://luxurytraveluniversity.com/"
+        },
+        "knowsAbout": [
+          "Luxury Cruises",
+          "Ritz-Carlton Yacht Collection",
+          "Luxury Yacht Travel",
+          "Luxury Travel Planning",
+          "Expedition Travel",
+          "River Cruises",
+          "Custom Safaris",
+          "Premium Travel"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.tripsandships.com/#website",
+        "url": "https://www.tripsandships.com/",
+        "name": "Trips & Ships Luxury Travel",
+        "publisher": {
+          "@id": "https://www.tripsandships.com/#organization"
+        },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-dress-code#webpage",
+        "url": "https://www.tripsandships.com/ritz-carlton-yacht-collection-dress-code",
+        "name": "Ritz-Carlton Yacht Dress Code: What to Wear | 2026 Guide",
+        "headline": "What Is the Dress Code on Ritz-Carlton Yachts? A Complete Guide to What to Wear",
+        "description": "What should you wear on a Ritz-Carlton Yacht? Learn the Yacht Casual and Yacht Sophisticated dress codes, dinner attire, shoes, packing tips and what not to wear.",
+        "isPartOf": {
+          "@id": "https://www.tripsandships.com/#website"
+        },
+        "about": {
+          "@type": "Thing",
+          "name": "Ritz-Carlton Yacht Collection Dress Code and Packing Guidelines"
+        },
+        "author": {
+          "@id": "https://www.tripsandships.com/#angela-hughes"
+        },
+        "publisher": {
+          "@id": "https://www.tripsandships.com/#organization"
+        },
+        "mainEntity": {
+          "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-dress-code#article"
+        },
+        "breadcrumb": {
+          "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-dress-code#breadcrumb"
+        },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "Article",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-dress-code#article",
+        "headline": "What Is the Dress Code on Ritz-Carlton Yachts? A Complete Guide to What to Wear",
+        "description": "A comprehensive guide explaining the dress code and packing guidelines for The Ritz-Carlton Yacht Collection, including daytime Yacht Casual, evening Yacht Sophisticated, dinner guidelines, shoes, and destination packing.",
+        "author": {
+          "@id": "https://www.tripsandships.com/#angela-hughes"
+        },
+        "publisher": {
+          "@id": "https://www.tripsandships.com/#organization"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-dress-code#webpage"
+        },
+        "articleSection": [
+          "Ritz-Carlton Yacht Collection",
+          "Cruise Packing Guide",
+          "Luxury Cruise Dress Codes",
+          "Yacht Casual",
+          "Yacht Sophisticated",
+          "Evening Attire"
+        ],
+        "keywords": [
+          "Ritz-Carlton Yacht Collection dress code",
+          "Ritz-Carlton yacht dress code",
+          "Ritz-Carlton yacht what to wear",
+          "Ritz-Carlton yacht attire",
+          "Ritz-Carlton Yacht Collection what to wear",
+          "Ritz-Carlton yacht dinner dress code",
+          "Ritz-Carlton yacht evening attire",
+          "Ritz-Carlton yacht packing list",
+          "Ritz-Carlton cruise dress code",
+          "Ritz-Carlton yacht casual",
+          "Ritz-Carlton yacht sophisticated"
+        ],
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-dress-code#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.tripsandships.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ritz-Carlton Yacht Cruises",
+            "item": "https://www.tripsandships.com/ritz-carlton-yacht-collection"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Dress Code",
+            "item": "https://www.tripsandships.com/ritz-carlton-yacht-collection-dress-code"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-dress-code#faq",
+        "url": "https://www.tripsandships.com/ritz-carlton-yacht-collection-dress-code",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the dress code on Ritz-Carlton yachts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The general dress code is Yacht Casual, meaning resort wear or smart-casual clothing is appropriate. Dinner in the indoor restaurants follows a Yacht Sophisticated dress code, which means elegant-casual or resort-chic attire."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are there formal nights on Ritz-Carlton yachts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Ritz-Carlton does not require traditional formal nights, and jackets and ties are not required."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do men need to wear a jacket on Ritz-Carlton yachts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Jackets are not required. A lightweight blazer can be packed optionally for guests who want to dress up for dinner or special occasions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do men need to wear a tie?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Ties are not required."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should men wear to dinner on a Ritz-Carlton yacht?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Collared shirts, slacks or tailored trousers and elegant shoes are recommended. A blazer is optional."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should women wear to dinner on a Ritz-Carlton yacht?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Elegant casual or resort-chic clothing works well, including dresses, skirts, jumpsuits, elegant trousers and polished tops with appropriate evening footwear."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you wear shorts to dinner?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Shorts are not permitted during dinner service."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you wear flip-flops to dinner?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Flip-flops are not permitted during dinner service."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you wear a baseball cap to dinner?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Ball caps and hats are not permitted during dinner service."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you wear jeans on a Ritz-Carlton yacht?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Polished jeans may be appropriate in some casual daytime settings, but travelers should choose more elevated trousers, dresses or resort wear for dinner."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you wear swimwear around the yacht?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, in appropriate pool, Marina and water-activity areas. A cover-up should be used when moving into other areas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need formalwear for a Ritz-Carlton yacht cruise?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. You do not need a tuxedo, formal gown or traditional cruise formalwear."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does Yacht Sophisticated mean?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yacht Sophisticated is Ritz-Carlton's evening dress standard for indoor dining. It means resort-chic or elegant-casual clothing rather than formalwear."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does Yacht Casual mean?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yacht Casual means polished resort wear or smart-casual clothing. It is appropriate for daytime activities and the general relaxed atmosphere onboard."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What shoes should I bring?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Bring comfortable walking shoes for excursions, casual/resort footwear for daytime, and elegant sandals, flats, loafers or dress shoes for dinner."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I pack a blazer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A blazer is optional. It can be useful for a special dinner, cocktail reception, cooler evening or celebration."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I pack a dress for every night?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. A small capsule wardrobe is usually more practical. Choose versatile dresses and separates that can be styled differently throughout the voyage."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are themed nights formal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not necessarily. Some voyages may feature themed evenings such as En Blanc, Disco Nights or Havana Nights. These are opportunities to participate in the theme rather than traditional formal nights."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does the dress code change between Evrima, Ilma and Luminara?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The overall dress philosophy applies across the Ritz-Carlton yacht fleet, but individual venues and themed events can vary. Check the current information for your specific sailing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the Ritz-Carlton yacht dress code strict?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It is relaxed compared with traditional luxury cruising, but dinner venues still have clear expectations. The easiest approach is resort casual during the day and elevated resort-chic attire at night."
+            }
+          }
+        ]
+      }
+    ]
+  }
 }

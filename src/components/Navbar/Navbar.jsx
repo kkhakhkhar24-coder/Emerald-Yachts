@@ -1574,6 +1574,34 @@ const Navbar = () => {
               >
                 Ritz-Carlton Yacht Caribbean Cruises
               </NavLink>
+
+              <NavLink
+                to="/ritz-carlton-yacht-cruises/travel-advisor"
+                className="nav-dropdown-single"
+              >
+                Ritz-Carlton Yacht Travel Advisor
+              </NavLink>
+
+              <NavLink
+                to="/ritz-carlton-yacht-collection-travel-advisor-florida"
+                className="nav-dropdown-single"
+              >
+                Ritz-Carlton Yacht Advisor Florida
+              </NavLink>
+
+              <NavLink
+                to="/ritz-carlton-yacht-collection-travel-advisor-orlando"
+                className="nav-dropdown-single"
+              >
+                Ritz-Carlton Yacht Advisor Orlando
+              </NavLink>
+
+              <NavLink
+                to="/how-to-choose-right-ritz-carlton-yacht-suite-itinerary"
+                className="nav-dropdown-single"
+              >
+                Choose Yacht, Suite & Itinerary
+              </NavLink>
             </div>
           </div>
         </div>
@@ -3105,6 +3133,30 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Ritz-Carlton Yacht Caribbean Cruises
+            </NavLink>
+
+            <NavLink
+              to="/ritz-carlton-yacht-cruises/travel-advisor"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Ritz-Carlton Yacht Travel Advisor
+            </NavLink>
+
+            <NavLink
+              to="/ritz-carlton-yacht-collection-travel-advisor-florida"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Ritz-Carlton Yacht Advisor Florida
+            </NavLink>
+
+            <NavLink
+              to="/ritz-carlton-yacht-collection-travel-advisor-orlando"
+              className="nav-dropdown-single"
+              onClick={toggleMenu}
+            >
+              Ritz-Carlton Yacht Advisor Orlando
             </NavLink>
 
             <span className="mobile-dropdown-divider"></span>

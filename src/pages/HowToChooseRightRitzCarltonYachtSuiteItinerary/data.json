@@ -1,0 +1,991 @@
+{
+  "seo": {
+    "title": "How to Choose the Right Ritz-Carlton Yacht, Suite & Itinerary",
+    "metaTitle": "Choose the Right Ritz-Carlton Yacht, Suite & Itinerary",
+    "metaDescription": "Learn how to choose the right Ritz-Carlton Yacht, suite and itinerary based on yacht size, suite category, destination, voyage length, season and travel style.",
+    "canonicalUrl": "https://www.tripsandships.com/how-to-choose-right-ritz-carlton-yacht-suite-itinerary/",
+    "ogTitle": "How to Choose the Right Ritz-Carlton Yacht, Suite & Itinerary",
+    "ogDescription": "Learn how to choose the right Ritz-Carlton Yacht, suite and itinerary based on yacht size, suite category, destination, voyage length, season and travel style."
+  },
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["Organization", "TravelAgency"],
+        "@id": "https://www.tripsandships.com/#organization",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/",
+        "logo": "https://www.tripsandships.com/logo.png",
+        "foundingDate": "1995",
+        "founder": {
+          "@id": "https://www.tripsandships.com/#angela-hughes"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "United States"
+        },
+        "knowsAbout": [
+          "Ritz-Carlton Yacht Collection",
+          "Luxury Yacht Cruises",
+          "Luxury Cruises",
+          "Small Ship Cruises",
+          "Expedition Cruises",
+          "Luxury Travel",
+          "Ritz-Carlton Yacht Suites",
+          "Ritz-Carlton Yacht Itineraries",
+          "Mediterranean Cruises",
+          "Caribbean Cruises",
+          "Alaska Cruises",
+          "Asia-Pacific Cruises",
+          "South Pacific Cruises",
+          "Custom Safaris"
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.tripsandships.com/#angela-hughes",
+        "name": "Angela Hughes",
+        "jobTitle": "CEO and Luxury Travel Expert",
+        "url": "https://www.tripsandships.com/about-angela-hughes",
+        "worksFor": {
+          "@id": "https://www.tripsandships.com/#organization"
+        },
+        "founder": {
+          "@type": "Organization",
+          "name": "Luxury Travel University",
+          "url": "https://luxurytraveluniversity.com/"
+        },
+        "knowsAbout": [
+          "Luxury Travel",
+          "Luxury Cruises",
+          "Luxury Yacht Cruises",
+          "Ritz-Carlton Yacht Collection",
+          "Ritz-Carlton Yacht Suites",
+          "Cruise Itinerary Planning",
+          "Small Ship Cruises",
+          "Expedition Cruises",
+          "River Cruises",
+          "Custom Safaris",
+          "Mediterranean Travel",
+          "Caribbean Travel",
+          "Alaska Travel",
+          "Asia-Pacific Travel",
+          "South Pacific Travel"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.tripsandships.com/#website",
+        "url": "https://www.tripsandships.com/",
+        "name": "Trips & Ships Luxury Travel",
+        "publisher": {
+          "@id": "https://www.tripsandships.com/#organization"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.tripsandships.com/how-to-choose-right-ritz-carlton-yacht-suite-itinerary/#webpage",
+        "url": "https://www.tripsandships.com/how-to-choose-right-ritz-carlton-yacht-suite-itinerary/",
+        "name": "How to Choose the Right Ritz-Carlton Yacht, Suite and Itinerary",
+        "headline": "How to Choose the Right Ritz-Carlton Yacht, Suite and Itinerary",
+        "description": "Learn how to choose the right Ritz-Carlton Yacht, suite and itinerary based on yacht size, suite category, destination, voyage length, season and travel style.",
+        "isPartOf": {
+          "@id": "https://www.tripsandships.com/#website"
+        },
+        "about": {
+          "@type": "Thing",
+          "name": "Ritz-Carlton Yacht Collection"
+        },
+        "author": {
+          "@id": "https://www.tripsandships.com/#angela-hughes"
+        },
+        "publisher": {
+          "@id": "https://www.tripsandships.com/#organization"
+        },
+        "mainEntity": {
+          "@id": "https://www.tripsandships.com/how-to-choose-right-ritz-carlton-yacht-suite-itinerary/#article"
+        },
+        "breadcrumb": {
+          "@id": "https://www.tripsandships.com/how-to-choose-right-ritz-carlton-yacht-suite-itinerary/#breadcrumb"
+        }
+      },
+      {
+        "@type": "Article",
+        "@id": "https://www.tripsandships.com/how-to-choose-right-ritz-carlton-yacht-suite-itinerary/#article",
+        "headline": "How to Choose the Right Ritz-Carlton Yacht, Suite and Itinerary",
+        "description": "Learn how to choose the right Ritz-Carlton Yacht, suite and itinerary based on yacht size, suite category, destination, voyage length, season and travel style.",
+        "author": {
+          "@id": "https://www.tripsandships.com/#angela-hughes"
+        },
+        "publisher": {
+          "@id": "https://www.tripsandships.com/#organization"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.tripsandships.com/how-to-choose-right-ritz-carlton-yacht-suite-itinerary/#webpage"
+        },
+        "articleSection": "Ritz-Carlton Yacht Collection",
+        "keywords": [
+          "How to Choose the Right Ritz-Carlton Yacht",
+          "Ritz-Carlton Yacht",
+          "Ritz-Carlton Yacht Collection",
+          "Ritz-Carlton Yacht Suites",
+          "Ritz-Carlton Yacht Itineraries",
+          "Best Ritz-Carlton Yacht",
+          "Ritz-Carlton Yacht Suite",
+          "Luxury Yacht Cruises",
+          "Evrima",
+          "Ilma",
+          "Luminara",
+          "Mediterranean Yacht Cruises",
+          "Caribbean Yacht Cruises",
+          "Alaska Yacht Cruises",
+          "Asia-Pacific Yacht Cruises",
+          "South Pacific Yacht Cruises",
+          "Luxury Travel Advisor"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.tripsandships.com/how-to-choose-right-ritz-carlton-yacht-suite-itinerary/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.tripsandships.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Luxury Cruises",
+            "item": "https://www.tripsandships.com/luxury-cruises/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "How to Choose the Right Ritz-Carlton Yacht, Suite and Itinerary",
+            "item": "https://www.tripsandships.com/how-to-choose-right-ritz-carlton-yacht-suite-itinerary/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.tripsandships.com/how-to-choose-right-ritz-carlton-yacht-suite-itinerary/#faq",
+        "url": "https://www.tripsandships.com/how-to-choose-right-ritz-carlton-yacht-suite-itinerary/",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I choose the right Ritz-Carlton Yacht?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Start by comparing your destination, travel dates, yacht, suite requirements, voyage length, embarkation port and preferred pace of travel. The best choice depends on how those factors fit together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which Ritz-Carlton Yacht is best?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "There is no single yacht that is right for every traveler. Evrima, Ilma and Luminara have different suite inventories and operate different itineraries, so the right option depends on your destination and travel priorities."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between Evrima, Ilma and Luminara?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evrima has 149 suites, Ilma has 224 suites and Luminara has 226 suites. They also operate different seasonal itineraries and have different suite configurations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which Ritz-Carlton Yacht is best for Alaska?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Luminara currently operates Alaska itineraries, including voyages between Vancouver and Whittier and Vancouver round trips in the 2027 program."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which Ritz-Carlton Yacht is best for the Mediterranean?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evrima and Ilma both operate Mediterranean itineraries, with programs covering destinations throughout Greece, Italy, Spain, France, Croatia and other European regions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which Ritz-Carlton Yacht is best for Asia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Luminara is an important option for Asia-Pacific itineraries, with programs covering destinations in Japan, Indonesia, the Philippines and other parts of the region."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the best Ritz-Carlton Yacht suite?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The best suite depends on your preferred amount of space, location, view, occupancy and budget. Higher categories provide additional space, while Terrace and Signature categories can provide the core private-terrace yacht experience."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do Ritz-Carlton Yacht suites have private terraces?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The Ritz-Carlton Yacht Collection describes its suites as having private terraces, providing guests with private outdoor space and ocean views."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which Ritz-Carlton Yacht suite is best for couples?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For couples, a Terrace or Signature Suite can provide a comfortable private retreat, while Grand, Loft or higher-category suites may be appropriate for travelers who want substantially more living space."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which Ritz-Carlton Yacht suite is best for families?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Families should prioritize occupancy, sleeping arrangements and connecting-suite availability. Bed configurations and additional sleeping arrangements vary by yacht and suite category."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long are Ritz-Carlton Yacht voyages?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Voyages vary from short escapes of several nights to longer journeys lasting two weeks or more, depending on the destination and season."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is a round-trip Ritz-Carlton Yacht itinerary better?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A round-trip itinerary can simplify flights and transfers, while a one-way itinerary can allow you to experience a broader geographic route. The right option depends on your overall vacation plans."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I choose an itinerary with an overnight port?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An overnight can provide more time to explore a destination, dine ashore or participate in evening experiences. Travelers who value destination immersion should consider overnight stays when comparing voyages."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I arrive early for my Ritz-Carlton Yacht cruise?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Arriving early can provide additional protection against flight delays and gives you time to settle into the embarkation city before sailing. The appropriate amount of time depends on the port and your flight itinerary."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a travel advisor help me choose a Ritz-Carlton Yacht suite?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. A luxury travel advisor can compare suite categories, locations, occupancy requirements and itinerary options based on your priorities."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a travel advisor compare different Ritz-Carlton Yacht itineraries?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. An advisor can help compare voyage dates, destinations, ports, overnight stays, voyage length, flights, hotels, transfers and excursions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the newest Ritz-Carlton Yacht always the best choice?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not necessarily. The newest yacht may have features or itineraries that appeal to you, but the right choice depends on destination, dates, suite preferences and overall travel plans."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How far in advance should I book a Ritz-Carlton Yacht?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Earlier planning can be useful when you want a specific suite, popular itinerary, connecting accommodations, holiday sailing or complex private travel arrangements."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can Trips & Ships Luxury Travel help me choose a Ritz-Carlton Yacht?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Trips & Ships Luxury Travel can assist with luxury yacht planning, including comparing yachts, suites, itineraries, excursions, flights, hotels and related travel arrangements."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "hero": {
+    "badge": "RITZ-CARLTON YACHT PLANNING GUIDE",
+    "title": "How to Choose the Right Ritz-Carlton Yacht, Suite & Itinerary",
+    "subtitle": "A Comprehensive Framework for Matching Fleet Vessels, Suite Layouts, Destinations, Voyage Lengths & Personal Travel Priorities",
+    "description": "Choosing the right Ritz-Carlton Yacht Collection vacation starts with more than destination. Compare Evrima, Ilma, and Luminara, evaluate terrace suites vs. upper lofts, and align voyage duration with your luxury travel style."
+  },
+  "executiveNarrative": {
+    "title": "How to Choose the Right Ritz-Carlton Yacht, Suite and Itinerary",
+    "lead": "Choosing the right Ritz-Carlton Yacht Collection yacht, suite and itinerary depends on more than destination. Travelers should consider the yacht itself, suite size and location, voyage length, embarkation port, season, destinations, time spent ashore and the type of experience they want onboard.",
+    "paragraphs": [
+      "The Ritz-Carlton Yacht Collection currently operates Evrima, Ilma and Luminara, with each yacht offering all-suite accommodations, private terraces, personalized service, dining, spa experiences and access to the yacht's Marina. Evrima has 149 suites, Ilma has 224, and Luminara has 226.",
+      "The best choice is therefore not necessarily the newest yacht or the largest suite. It is the combination that fits your travel priorities, destination and preferred style of luxury travel."
+    ]
+  },
+  "quickAnswer": {
+    "title": "Quick Answer: How Do I Choose the Right Ritz-Carlton Yacht?",
+    "subtitle": "Start with these fundamental decision pillars to match the ideal sailing with your luxury travel expectations.",
+    "cards": [
+      {
+        "title": "Which yacht?",
+        "subtitle": "Vessel Selection",
+        "description": "Destination, voyage date, yacht design, size and available suite categories."
+      },
+      {
+        "title": "Which suite?",
+        "subtitle": "Space & Layout",
+        "description": "Space, terrace, location, view, sleeping arrangements and budget."
+      },
+      {
+        "title": "Which itinerary?",
+        "subtitle": "Route & Ports",
+        "description": "Destinations, ports, overnights, embarkation port and time ashore."
+      },
+      {
+        "title": "How long?",
+        "subtitle": "Voyage Duration",
+        "description": "Short getaway (3–4 nights), one-week classic voyage, or extended journey (8–14+ nights)."
+      },
+      {
+        "title": "When should I sail?",
+        "subtitle": "Timing & Climate",
+        "description": "Weather, seasonal destinations and personal travel calendar."
+      },
+      {
+        "title": "Who is traveling?",
+        "subtitle": "Party Composition",
+        "description": "Couples, families, multigenerational groups or special milestone occasions."
+      }
+    ],
+    "takeaway": "A luxury travel advisor can also compare the available combinations instead of selecting a yacht or itinerary based only on the advertised fare."
+  },
+  "fleetOverview": {
+    "title": "What Are the Ritz-Carlton Yachts?",
+    "subtitle": "Understanding the design, atmosphere, and distinct characteristics of the fleet.",
+    "paragraphs": [
+      "The Ritz-Carlton Yacht Collection currently includes three yachts: Evrima, Ilma, and Luminara. Each yacht is all-suite and designed around private outdoor space, personalized service and a relaxed yachting atmosphere. The fleet includes two pool decks, a watersports Marina and multiple dining and lounge venues.",
+      "However, the yachts are not identical. Your itinerary may determine which yacht is available, but when there is a choice, comparing the yacht itself can help you decide which sailing best matches your preferences."
+    ]
+  },
+  "vesselComparisonCards": {
+    "title": "Evrima vs. Ilma vs. Luminara",
+    "subtitle": "Detailed comparison of guest capacities, suite inventories, deployment programs, and onboard atmospheres.",
+    "cards": [
+      {
+        "category": "ORIGINAL INTIMATE YACHT",
+        "title": "Evrima",
+        "description": "Evrima is the original Ritz-Carlton Yacht Collection yacht and has 149 suites accommodating up to 298 guests. Its smaller scale can appeal to travelers who prioritize an intimate yacht environment and access to distinctive destinations. Suite categories include Terrace, Signature, Grand, Loft, View and Owner's Suites, along with connecting and accessible options.",
+        "features": [
+          "The original Ritz-Carlton yacht experience",
+          "A smaller guest capacity (149 suites / 298 guests)",
+          "Intimate yacht-style surroundings",
+          "Mediterranean, Caribbean or selected longer-distance itineraries",
+          "A broad range of suite categories & duplex lofts",
+          "A more intimate, boutique yacht atmosphere"
+        ],
+        "highlight": "Choose Evrima if you prioritize smaller guest counts, intimate yacht surroundings, and French Polynesia or boutique Mediterranean sailings."
+      },
+      {
+        "category": "NEXT-GENERATION LUXURY",
+        "title": "Ilma",
+        "description": "Ilma is the second yacht in the collection and features 224 suites accommodating up to 448 guests. It is larger than Evrima while maintaining the all-suite yacht concept. Every suite has a private terrace, and Ilma introduced additional upper suite categories with more than 1,000 square feet of living space.",
+        "features": [
+          "A newer-generation luxury yacht design",
+          "More suite inventory and expanded category selection",
+          "Expanded upper-suite options exceeding 1,000 sq ft",
+          "Mediterranean voyages & Greek Isles routes",
+          "Northern Europe, Baltic & Norwegian Fjords",
+          "Caribbean itineraries with expansive marina watersports"
+        ],
+        "highlight": "Choose Ilma if you want newer-generation yacht architecture, expanded upper suites, and Northern Europe or Mediterranean voyages."
+      },
+      {
+        "category": "GLOBAL EXPLORATION VESSEL",
+        "title": "Luminara",
+        "description": "Luminara is the third yacht in the fleet, with 226 suites. The yacht has been introduced into a broader global itinerary program, including Asia-Pacific and Alaska, while also sailing other destination-focused voyages. Luminara's 2027 program includes Alaska voyages between Vancouver and Whittier as well as Asia itineraries.",
+        "features": [
+          "Dedicated Alaska voyages (Vancouver & Whittier)",
+          "Asia-Pacific exploration programs (Japan, Indonesia, Philippines)",
+          "Longer-distance, remote exploration itineraries",
+          "Newer yacht design with 226 luxury suites",
+          "Destination-focused cultural itineraries",
+          "Less conventional, boutique cruise destinations"
+        ],
+        "highlight": "Choose Luminara if you want Alaska glacier cruising, Asia-Pacific discovery, or longer-distance luxury exploration."
+      }
+    ]
+  },
+  "yachtMatcher": {
+    "title": "Which Ritz-Carlton Yacht Is Best for You?",
+    "subtitle": "Match your personal vacation priorities to the right vessel in the fleet.",
+    "items": [
+      {
+        "title": "For a Smaller Yacht Feel",
+        "description": "Evrima has the smallest suite count of the three yachts, with 149 suites accommodating up to 298 guests for maximum intimacy."
+      },
+      {
+        "title": "For Expanded Upper Suites",
+        "description": "Ilma introduced additional upper suite categories, including expansive suites exceeding 1,000 square feet with panoramic terraces."
+      },
+      {
+        "title": "For Alaska Voyages",
+        "description": "Luminara currently offers a dedicated Alaska program, including Vancouver and Whittier itineraries and scenic glacier cruising."
+      },
+      {
+        "title": "For Asia-Pacific Itineraries",
+        "description": "Luminara is an important choice for Asia-Pacific itineraries, while current and upcoming programs can change by season."
+      },
+      {
+        "title": "For French Polynesia & South Pacific",
+        "description": "Evrima has been scheduled for French Polynesia and South Pacific voyages, including destinations such as Bora Bora, Mo'orea and Huahine."
+      }
+    ]
+  },
+  "suiteSelectionGuide": {
+    "title": "How to Choose the Right Ritz-Carlton Yacht Suite",
+    "subtitle": "Every suite features a private terrace, but layout, interior space, deck position, and entertaining areas vary considerably.",
+    "intro": [
+      "Once you select the itinerary and yacht, the next decision is your suite. Every suite is designed around private outdoor space, but suite categories differ considerably in size, layout, location and amenities.",
+      "The right suite depends on how much time you expect to spend in your accommodation and how important additional space is to you."
+    ],
+    "categories": [
+      {
+        "title": "Terrace Suite",
+        "subtitle": "Signature Yacht Entry Point",
+        "description": "A Terrace Suite can be a practical starting point for travelers who want the signature Ritz-Carlton yacht experience without selecting one of the highest suite categories.",
+        "points": [
+          "A private oceanview terrace",
+          "Comfortable, luxury accommodations",
+          "Direct ocean views",
+          "A lower entry point within the suite range",
+          "A traditional yacht-suite experience"
+        ],
+        "takeaway": "For many travelers, the private terrace is one of the most important features to prioritize."
+      },
+      {
+        "title": "Signature Suite",
+        "subtitle": "Expanded Interior Living Area",
+        "description": "A Signature Suite provides additional space compared with entry-level accommodations, making it ideal for travelers who spend more time relaxing in their suite.",
+        "points": [
+          "Spend significant daytime in their suite",
+          "Want more interior living & sitting space",
+          "Prefer a larger accommodation footprint",
+          "Want to move up from entry-level suite categories",
+          "Enhanced luxury bathroom and closet space"
+        ],
+        "takeaway": "Ideal for couples seeking extra comfort without moving into multi-room suite categories."
+      },
+      {
+        "title": "Grand Suite",
+        "subtitle": "Entertaining & Extended Relaxing",
+        "description": "Grand Suites are designed for travelers who place a higher priority on space and entertaining or relaxing in the suite throughout longer voyages.",
+        "points": [
+          "Longer voyages requiring more living area",
+          "Special milestone celebrations",
+          "Couples wanting substantial additional space",
+          "Travelers who spend substantial time onboard",
+          "Expansive terrace with dual loungers & dining"
+        ],
+        "takeaway": "A superior balance of expansive terrace living and generous interior lounge space."
+      },
+      {
+        "title": "View Suite",
+        "subtitle": "Panoramic Outlooks & Floor-to-Ceiling Glass",
+        "description": "A View Suite can be appealing to travelers who place particular importance on the scenic outlook and expansive vistas from their accommodation.",
+        "points": [
+          "Compare specific view & window alignment",
+          "Evaluate deck location and midship stability",
+          "Review private terrace configuration",
+          "Confirm exact square footage & layout",
+          "Verify king or split bed configurations"
+        ],
+        "takeaway": "Do not choose based on the category name alone—compare deck location and terrace layout with an advisor."
+      },
+      {
+        "title": "Loft, Owner's and Upper Suite Categories",
+        "subtitle": "Duplex Living, Panoramic Terraces & 1,000+ Sq Ft",
+        "description": "The highest suite categories offer significantly more space and distinctive layouts, including two-story loft living on Evrima and 1,000+ sq ft owner suites on Ilma.",
+        "points": [
+          "Maximum interior living & entertaining space",
+          "Two-story loft architecture (Evrima) with private terraces",
+          "Suites exceeding 1,000 sq ft on Ilma & Luminara",
+          "Private whirlpools and expansive aft or forward terraces",
+          "Multigenerational travel and VIP suite amenities",
+          "Dedicated Suite Ambassador personalized attention"
+        ],
+        "takeaway": "The ultimate luxury yachting accommodation for milestone occasions, extended voyages, and family leaders."
+      }
+    ]
+  },
+  "suiteStrategicAdvice": {
+    "title": "Deck Selection, Couples & Family Configurations",
+    "subtitle": "Key considerations for location, elevator proximity, bed splits, and connecting rooms.",
+    "cards": [
+      {
+        "category": "DECK LOCATION STRATEGY",
+        "title": "Should You Choose a Higher Deck?",
+        "description": "A higher deck is not automatically the best location for every traveler. Evaluate ease of access, motion stability, and daily habits.",
+        "features": [
+          "Proximity to restaurants, dining venues & coffee bars",
+          "Convenience to pool decks and outdoor observation areas",
+          "Access to spa, salon, and fitness facilities",
+          "Distance to elevators and stairwells",
+          "Potential movement of the yacht (midship lower decks have least motion)",
+          "Your preference for quiet privacy versus central convenience"
+        ],
+        "highlight": "Some travelers prefer being closer to central amenities; others prioritize quieter decks away from public spaces."
+      },
+      {
+        "category": "COUPLES & HONEYMOONS",
+        "title": "Which Suite Is Best for Couples?",
+        "description": "For couples, the best suite depends on how much time you plan to spend exploring destinations versus relaxing onboard.",
+        "features": [
+          "Terrace or Signature Suite for active port explorers",
+          "Grand, Loft or Owner's Suite for celebration voyages",
+          "Private terrace with room-service sunset dining",
+          "Midship location for maximum sleeping comfort",
+          "Pre- and post-cruise luxury boutique hotel extensions",
+          "Coordinating special anniversary and honeymoon touches"
+        ],
+        "highlight": "An advisor ensures special occasion amenities and romantic terrace dining requests are arranged."
+      },
+      {
+        "category": "FAMILIES & CHILDREN",
+        "title": "Which Suite Is Best for Families?",
+        "description": "Families should evaluate sleeping configurations, convertible sleep sofas, and connecting rooms before booking.",
+        "features": [
+          "Confirm maximum occupancy per suite category",
+          "Convertible sleep sofas available for 3rd/4th guests in select suites",
+          "King beds can be split into two twins in most categories",
+          "Connecting-suite inventory must be requested early",
+          "Crib availability and child safety considerations",
+          "Adequate living space for children and luggage"
+        ],
+        "highlight": "Always confirm convertible sofa availability and connecting-suite blocks before selecting a sailing based on price alone."
+      }
+    ]
+  },
+  "itineraryGuide": {
+    "title": "How to Choose the Right Ritz-Carlton Yacht Itinerary",
+    "subtitle": "Matching geographic regions, scenic highlights, port time, and seasonal weather to your travel style.",
+    "intro": "After choosing the yacht and suite category, evaluate the itinerary itself. The itinerary determines where you go, how long you stay, sea days, round-trip vs. one-way logistics, time for excursions, overnight port stays, and pre/post-yacht extensions.",
+    "regions": [
+      {
+        "title": "Mediterranean Ritz-Carlton Yacht Itineraries",
+        "subtitle": "Greek Isles, French Riviera, Italy, Spain & Croatia",
+        "description": "The Mediterranean is a premier option for travelers seeking historic coastal cities, picturesque islands, world-class dining, and vibrant beach clubs. Current and announced programs cover Greek Isles voyages, Mediterranean routes, and Northern European journeys.",
+        "highlights": [
+          "Greece, Italy, France, Spain, Croatia & Turkey",
+          "French Riviera anchorages (Cannes, St. Tropez, Monaco)",
+          "Historic cities, UNESCO sites & archaeological wonders",
+          "World-class food, wine tastings & vineyard masterclasses",
+          "Boutique beach destinations and secluded Mediterranean coves"
+        ],
+        "bestFor": "First-time Ritz-Carlton yacht travelers, couples, food and wine enthusiasts, history lovers, and travelers combining a cruise with a European land stay."
+      },
+      {
+        "title": "Caribbean Ritz-Carlton Yacht Itineraries",
+        "subtitle": "St. Barths, Jost Van Dyke, Miami & San Juan",
+        "description": "The Caribbean is ideal for travelers seeking warm weather, pristine beaches, shorter voyages, boutique island-hopping, and seamless departures from South Florida or San Juan.",
+        "highlights": [
+          "St. Barths, Jost Van Dyke, Virgin Gorda & Saint Martin",
+          "Direct departures from PortMiami and San Juan",
+          "Marina platform watersports, paddleboarding & seabobs",
+          "Short luxury getaways and warm-weather winter escapes",
+          "Easy pre- or post-voyage stays in Florida or Puerto Rico"
+        ],
+        "bestFor": "Short luxury getaways, honeymoons, anniversaries, couples, first-time yacht travelers, and winter warm-weather escapes."
+      },
+      {
+        "title": "Alaska Ritz-Carlton Yacht Itineraries",
+        "subtitle": "Glaciers, Wildlife, Vancouver & Whittier",
+        "description": "Alaska offers a dramatically different yacht experience focused on glaciers, wildlife viewing, scenic fjords, national parks, and active nature excursions aboard Luminara.",
+        "highlights": [
+          "Dramatic glacial fjords & towering tidewater glaciers",
+          "Whale watching, sea otters, brown bears & bald eagles",
+          "Luminara 2027 routes between Vancouver and Whittier",
+          "Vancouver round-trip scenic wilderness voyages",
+          "Active zodiac exploration, hiking, and floatplane excursions"
+        ],
+        "bestFor": "Dramatic scenery seekers, wildlife photographers, glacier explorers, outdoor adventure enthusiasts, and destination-focused travelers."
+      },
+      {
+        "title": "Asia-Pacific Ritz-Carlton Yacht Itineraries",
+        "subtitle": "Japan, Philippines, Indonesia & Malaysia",
+        "description": "Asia-Pacific voyages aboard Luminara offer profound cultural immersion, exotic island archipelagos, and long-distance exploration requiring detailed flight and pre-cruise planning.",
+        "highlights": [
+          "Japan coastal routes, historic temples & culinary hubs",
+          "Philippines island archipelagos & pristine coral reefs",
+          "Indonesia, Bali, Komodo & remote Malaysian anchorages",
+          "Less conventional, exotic luxury cruise destinations",
+          "Seamless integration with five-star Asian land tours"
+        ],
+        "bestFor": "Experienced international travelers, culinary and culture enthusiasts, remote explorers, and travelers taking extended multi-week vacations."
+      },
+      {
+        "title": "South Pacific & French Polynesia Itineraries",
+        "subtitle": "Bora Bora, Mo'orea & Huahine",
+        "description": "Evrima's winter South Pacific program explores iconic turquoise lagoons, overwater paradise settings, and secluded Polynesian anchorages.",
+        "highlights": [
+          "Bora Bora lagoon anchorages & Mount Otemanu vistas",
+          "Mo'orea, Huahine, Raiatea & Society Islands",
+          "Private beach tenders, coral reef snorkeling & catamaran sails",
+          "Remote, romantic tropical yachting atmosphere",
+          "One-week classic routes and extended multi-island voyages"
+        ],
+        "bestFor": "Honeymoons, milestone anniversaries, couples, beach lovers, and travelers seeking a remote, paradise luxury escape."
+      }
+    ]
+  },
+  "voyageLengthAndLogistics": {
+    "title": "Voyage Length, Round-Trip vs. One-Way & Embarkation Ports",
+    "subtitle": "Optimizing duration, flight logistics, embarkation ease, and overnight port stays.",
+    "lengths": [
+      {
+        "title": "3–4 Nights (Short Escapes)",
+        "description": "Consider a shorter voyage if you are new to yacht travel, have limited vacation time, want a luxury long-weekend escape, or are adding the yacht to a larger land vacation."
+      },
+      {
+        "title": "5–7 Nights (Classic One-Week)",
+        "description": "A week-long voyage provides the ideal balance between multi-destination exploration, onboard relaxation, fine dining, spa wellness, and watersports marina time."
+      },
+      {
+        "title": "8–14+ Nights (Extended Journeys)",
+        "description": "Longer voyages are better suited for remote destinations like Alaska, Asia-Pacific, and French Polynesia, multi-country routes, and travelers who prefer a slower, deeper travel pace."
+      }
+    ],
+    "routingStyles": [
+      {
+        "title": "Round-Trip Itineraries",
+        "description": "Returns to the same embarkation city, simplifying flights, luggage transfers, and parking. Ideal for shorter vacations and travelers with fixed flight schedules."
+      },
+      {
+        "title": "One-Way / Open-Jaw Routing",
+        "description": "Allows you to cover more geographic territory without retracing routes. Requires coordinating multi-city flights, separate arrival/departure hotels, and ground transfers."
+      }
+    ],
+    "embarkationTips": [
+      "Confirm nonstop flight availability from your home airport to the embarkation city",
+      "Always plan an overnight luxury hotel stay before embarkation day to prevent flight delay risks",
+      "Evaluate transfer times between international airports and cruise terminal docks",
+      "Check post-cruise hotel stay opportunities (e.g. Miami, San Juan, Rome, Barcelona, Tokyo)",
+      "Consider alternate departure ports that offer simpler direct flight routes"
+    ],
+    "overnightPortsBenefit": "Overnight stays in ports substantially elevate a voyage, allowing evening dining ashore, local nightlife, cultural performances, and unhurried private evening excursions."
+  },
+  "travelStyleMatcher": {
+    "title": "How to Choose an Itinerary Based on Your Travel Style",
+    "subtitle": "Tailored recommendations for couples, honeymoons, families, multigenerational groups, foodies, and adventure seekers.",
+    "styles": [
+      {
+        "title": "For Couples",
+        "description": "Look for romantic Mediterranean or Caribbean routes, longer port stays, beach destinations, fine dining, private shore excursions, and spacious suite terraces."
+      },
+      {
+        "title": "For Honeymoons",
+        "description": "Consider French Polynesia, South Pacific, or Mediterranean sailings with fewer transfers, private catamaran excursions, and luxury pre/post hotel suites."
+      },
+      {
+        "title": "For Families",
+        "description": "Prioritize suite occupancy limits, split-bed flexibility, connecting suites, voyage lengths of 5–7 nights, family-friendly port schedules, and Ritz Kids spaces."
+      },
+      {
+        "title": "For Multigenerational Travel",
+        "description": "Select itineraries with diverse excursion activity levels, connecting accommodations, smooth embarkation logistics, and a balance of onboard and shoreside activities."
+      },
+      {
+        "title": "For Food & Wine Travelers",
+        "description": "Choose Mediterranean voyages visiting France, Italy, Spain, Portugal, and Bordeaux with culinary-focused shore excursions and extended evening port stays."
+      },
+      {
+        "title": "For Adventure Travelers",
+        "description": "Focus on Alaska, Asia-Pacific, or South Pacific itineraries offering glacier walks, zodiac exploration, scuba diving, wildlife tracking, and active shore experiences."
+      }
+    ]
+  },
+  "comparisonMatrix": {
+    "title": "How to Compare Two Ritz-Carlton Yacht Itineraries",
+    "lead": "If two voyages look similar, use this comprehensive checklist to compare value, logistics, and total vacation investment:",
+    "headers": ["Decision Factor", "What to Evaluate & Compare"],
+    "rows": [
+      ["Yacht", "Evrima (149 suites), Ilma (224 suites), or Luminara (226 suites)"],
+      ["Dates", "Seasonality, weather conditions, holidays, and personal calendar"],
+      ["Nights", "Total voyage length (3–4 nights, 7 nights, or 8–14+ nights)"],
+      ["Ports", "Number of distinct ports, tender vs. dock access, and destinations"],
+      ["Overnight Stays", "Number of evening overnights for nightlife and ashore dining"],
+      ["Embarkation Port", "Ease of flights, nonstop routes, and transfer distance"],
+      ["Disembarkation", "Flight connections, hotel availability, and departure timing"],
+      ["Suite Category", "Square footage, terrace size, deck position, and layout"],
+      ["Shore Excursions", "Select Group availability, private guide options, and costs"],
+      ["Sea Days", "Balance of active port exploration vs. relaxed onboard yacht days"],
+      ["Flights", "Airfare costs, business-class availability, and travel duration"],
+      ["Pre/Post Hotels", "Luxury hotel nights required before embarkation and after disembarkation"],
+      ["Total Budget", "Complete door-to-door trip cost rather than just the base cruise fare"]
+    ],
+    "takeaway": "Should you choose the cheapest suite? Not necessarily. The lowest fare may not provide your preferred deck, view, occupancy, or convenient travel dates. Focus on total trip value and vacation fit."
+  },
+  "cheapestSuiteEvaluation": {
+    "title": "Should You Choose the Cheapest Ritz-Carlton Yacht Suite?",
+    "subtitle": "Evaluating Total Value and Vacation Fit Over Base Fare",
+    "lead": "Not necessarily.",
+    "intro": "The lowest fare may not provide the combination of:",
+    "factors": [
+      "Preferred deck",
+      "Preferred location",
+      "Preferred view",
+      "Desired occupancy",
+      "Connecting-suite configuration",
+      "Convenient travel dates",
+      "Preferred itinerary"
+    ],
+    "takeaway": "Luxury travel planning should consider total value and trip fit, rather than only the initial voyage price."
+  },
+  "howAdvisorHelpsDetailed": {
+    "title": "How a Travel Advisor Can Help Choose Your Yacht, Suite and Itinerary",
+    "lead": "A luxury travel advisor can compare multiple variables at the same time.",
+    "intro": "For a Ritz-Carlton Yacht Collection vacation, that can include:",
+    "variables": [
+      "Yacht selection",
+      "Suite category",
+      "Suite location",
+      "Voyage dates",
+      "Itinerary",
+      "Embarkation port",
+      "Flights",
+      "Hotels",
+      "Transfers",
+      "Shore excursions",
+      "Private experiences",
+      "Travel insurance",
+      "Special occasions",
+      "Family and multigenerational requirements"
+    ],
+    "professionalResources": "The Ritz-Carlton Yacht Collection also provides resources for travel professionals, and travelers can work with an advisor to coordinate the broader trip around the yacht voyage."
+  },
+  "whenToBookTiming": {
+    "title": "When Should You Book a Ritz-Carlton Yacht?",
+    "subtitle": "Timing & Availability Considerations",
+    "lead": "Booking timing depends on destination, travel dates, suite category and availability.",
+    "intro": "Consider planning earlier if you want:",
+    "earlierPlanningReasons": [
+      "A specific suite",
+      "A particular suite location",
+      "Connecting suites",
+      "A specific holiday sailing",
+      "A popular itinerary",
+      "A limited number of travel dates",
+      "A private excursion",
+      "Complex pre- or post-yacht travel"
+    ],
+    "flexibleTravelersNote": "For more flexible travelers, there may be more options closer to departure, but availability can change."
+  },
+  "advisorValueAndInquiry": {
+    "title": "How a Travel Advisor Can Help & Questions to Ask",
+    "subtitle": "Navigating fleet selection, suite inventory, logistics, and inquiry details with an experienced luxury advisor.",
+    "advisorAdvantages": [
+      "Simultaneously compares yacht, suite, and itinerary variables",
+      "Coordinates door-to-door flights, luxury pre-cruise hotels, and private transfers",
+      "Secures applicable preferred partner amenities, credits, and waitlist priority",
+      "Arranges custom private shore excursions and special celebration dining",
+      "Manages flight schedule adjustments, hotel changes, and travel protection"
+    ],
+    "inquiryDetails": [
+      { "title": "Preferred travel dates", "description": "Preferred sailing dates and seasonal calendar flexibility" },
+      { "title": "Number of travelers & ages", "description": "Total party size, room distribution, and ages of children" },
+      { "title": "Preferred destinations", "description": "Mediterranean, Caribbean, Alaska, Asia-Pacific, or French Polynesia" },
+      { "title": "Approximate budget", "description": "Target investment for yacht suite, airfare, hotels, and excursions" },
+      { "title": "Desired voyage length", "description": "Short getaway (3–4 nights), one-week classic, or 8–14+ nights" },
+      { "title": "Suite preferences", "description": "Terrace size, loft duplex, midship deck position, or connecting suites" },
+      { "title": "Special occasions & dining", "description": "Anniversary, honeymoon, milestone birthday, and dietary preferences" },
+      { "title": "Mobility & flight preferences", "description": "Accessibility requirements, departure airports, and airline class" }
+    ],
+    "whenToBook": [
+      "A specific suite category or duplex loft is desired",
+      "Connecting suites for families or multigenerational groups are needed",
+      "Holiday, peak summer Mediterranean, or Alaska sailings are planned",
+      "Popular Caribbean winter getaways with limited inventory are selected",
+      "Private custom shore excursions and boutique luxury hotels require advance lead time"
+    ]
+  },
+  "angelaPerspective": {
+    "name": "Angela Hughes",
+    "title": "CEO, Trips & Ships Luxury Travel | Founder, Luxury Travel University",
+    "heading": "Why Trips & Ships Luxury Travel Can Help",
+    "bio": "Trips & Ships Luxury Travel specializes in luxury cruises, small-ship cruising, expedition voyages, custom safaris, and high-end travel planning. Angela Hughes, CEO of Trips & Ships Luxury Travel and Founder of Luxury Travel University, brings more than four decades of travel-industry experience to luxury trip planning.",
+    "text": "For travelers considering the Ritz-Carlton Yacht Collection, the planning process goes far beyond picking a date on a calendar. The goal is to match the right yacht + the right suite + the right itinerary + the right travel dates + the right pre- and post-yacht experience."
+  },
+  "questionsBeforeBooking": {
+    "title": "Questions to Ask Before Booking a Ritz-Carlton Yacht",
+    "subtitle": "Ensure complete transparency and trip alignment with this essential 18-question checklist.",
+    "questions": [
+      "1. Which Ritz-Carlton yacht is operating this itinerary?",
+      "2. What makes this yacht different from the alternatives?",
+      "3. Which suite category best fits my travel style?",
+      "4. Is my preferred suite location still available?",
+      "5. Does the suite accommodate everyone comfortably?",
+      "6. Can the beds be configured as requested?",
+      "7. Are connecting suites available?",
+      "8. How much time does the yacht spend in each port?",
+      "9. Are there overnight stays?",
+      "10. Is the itinerary round trip or one way?",
+      "11. What flights should I consider?",
+      "12. Should I arrive a day early?",
+      "13. Do I need a pre-yacht hotel?",
+      "14. Which shore excursions fit my interests?",
+      "15. Should I consider a private excursion?",
+      "16. What additional expenses should I budget for?",
+      "17. Are there current promotions or eligible advisor benefits?",
+      "18. What happens if my travel plans change?"
+    ],
+    "takeaway": "Asking these questions ensures your advisor builds an itinerary tailored to your exact preferences."
+  },
+  "faqs": [
+    {
+      "question": "How do I choose the right Ritz-Carlton Yacht?",
+      "answer": "Start by comparing your destination, travel dates, yacht, suite requirements, voyage length, embarkation port and preferred pace of travel. The best choice depends on how those factors fit together."
+    },
+    {
+      "question": "Which Ritz-Carlton Yacht is best?",
+      "answer": "There is no single yacht that is right for every traveler. Evrima, Ilma and Luminara have different suite inventories and operate different itineraries, so the best option depends on your destination and travel priorities."
+    },
+    {
+      "question": "What is the difference between Evrima, Ilma and Luminara?",
+      "answer": "Evrima has 149 suites, Ilma has 224 suites and Luminara has 226 suites. They also operate different seasonal itineraries and have different suite configurations."
+    },
+    {
+      "question": "Which Ritz-Carlton Yacht is best for Alaska?",
+      "answer": "Luminara currently operates Alaska itineraries, including voyages between Vancouver and Whittier and Vancouver round trips in the 2027 program."
+    },
+    {
+      "question": "Which Ritz-Carlton Yacht is best for the Mediterranean?",
+      "answer": "Evrima and Ilma both operate Mediterranean itineraries, with current and announced programs covering destinations throughout Greece, Italy, Spain, France, Croatia and other European regions."
+    },
+    {
+      "question": "Which Ritz-Carlton Yacht is best for Asia?",
+      "answer": "Luminara is an important option for Asia-Pacific itineraries, with programs covering destinations in Japan, Indonesia, the Philippines and other parts of the region."
+    },
+    {
+      "question": "What is the best Ritz-Carlton Yacht suite?",
+      "answer": "The best suite depends on your preferred amount of space, location, view, occupancy and budget. Higher categories provide additional space, while Terrace and Signature categories can provide the core private-terrace yacht experience."
+    },
+    {
+      "question": "Do Ritz-Carlton Yacht suites have private terraces?",
+      "answer": "Yes. The Ritz-Carlton Yacht Collection describes its suites as having private terraces, providing guests with private outdoor space and ocean views."
+    },
+    {
+      "question": "Which Ritz-Carlton Yacht suite is best for couples?",
+      "answer": "For couples, a Terrace or Signature Suite can provide a comfortable private retreat, while Grand, Loft or higher-category suites may be appropriate for travelers who want substantially more living space."
+    },
+    {
+      "question": "Which Ritz-Carlton Yacht suite is best for families?",
+      "answer": "Families should prioritize occupancy, sleeping arrangements and connecting-suite availability. Bed configurations and additional sleeping arrangements vary by yacht and suite category."
+    },
+    {
+      "question": "How long are Ritz-Carlton Yacht voyages?",
+      "answer": "Voyages vary from short escapes of several nights to longer journeys lasting two weeks or more, depending on the destination and season."
+    },
+    {
+      "question": "Is a round-trip Ritz-Carlton Yacht itinerary better?",
+      "answer": "A round-trip itinerary can simplify flights and transfers, while a one-way itinerary can allow you to experience a broader geographic route. The better option depends on your overall vacation plans."
+    },
+    {
+      "question": "Should I choose an itinerary with an overnight port?",
+      "answer": "An overnight can provide more time to explore a destination, dine ashore or participate in evening experiences. Travelers who value destination immersion should consider overnight stays when comparing voyages."
+    },
+    {
+      "question": "Should I arrive early for my Ritz-Carlton Yacht cruise?",
+      "answer": "Arriving early can provide additional protection against flight delays and gives you time to settle into the embarkation city before sailing. The appropriate amount of time depends on the port and your international or domestic flight itinerary."
+    },
+    {
+      "question": "Can a travel advisor help me choose a Ritz-Carlton Yacht suite?",
+      "answer": "Yes. A luxury travel advisor can compare suite categories, locations, occupancy requirements and itinerary options based on your priorities."
+    },
+    {
+      "question": "Can a travel advisor compare different Ritz-Carlton Yacht itineraries?",
+      "answer": "Yes. An advisor can help compare voyage dates, destinations, ports, overnight stays, voyage length, flights, hotels, transfers and excursions."
+    },
+    {
+      "question": "Is the newest Ritz-Carlton Yacht always the best choice?",
+      "answer": "Not necessarily. The newest yacht may have features or itineraries that appeal to you, but the best choice depends on destination, dates, suite preferences and overall travel plans."
+    },
+    {
+      "question": "How far in advance should I book a Ritz-Carlton Yacht?",
+      "answer": "Earlier planning can be useful when you want a specific suite, popular itinerary, connecting accommodations, holiday sailing or complex private travel arrangements."
+    },
+    {
+      "question": "Can Trips & Ships Luxury Travel help me choose a Ritz-Carlton Yacht?",
+      "answer": "Yes. Trips & Ships Luxury Travel can assist with luxury yacht planning, including comparing yachts, suites, itineraries, excursions, flights, hotels and related travel arrangements."
+    }
+  ],
+  "hubResources": [
+    {
+      "title": "Why Book Through a Travel Advisor?",
+      "category": "Expert Guidance",
+      "description": "Understand pricing transparency, partner benefits, and the value of professional luxury cruise coordination.",
+      "link": "/ritz-carlton-yacht-cruises/travel-advisor/"
+    },
+    {
+      "title": "Florida Travel Advisor",
+      "category": "Regional Planning",
+      "description": "Expert yacht guidance for Florida residents with flight coordination, Miami departures, and pre-cruise stays.",
+      "link": "/ritz-carlton-yacht-collection-travel-advisor-florida/"
+    },
+    {
+      "title": "Orlando Travel Advisor",
+      "category": "Central Florida",
+      "description": "Customized yacht planning from Orlando with airport connections, luxury suites, and family arrangements.",
+      "link": "/ritz-carlton-yacht-collection-travel-advisor-orlando/"
+    },
+    {
+      "title": "Miami Yacht Departures",
+      "category": "Port Guide",
+      "description": "Complete terminal, hotel, and embarkation guide for Ritz-Carlton voyages departing from PortMiami.",
+      "link": "/ritz-carlton-yacht-cruises-from-miami/"
+    },
+    {
+      "title": "Caribbean Yacht Itineraries",
+      "category": "Destinations",
+      "description": "Explore St. Barths, Jost Van Dyke, and boutique Caribbean anchorages aboard Evrima and Ilma.",
+      "link": "/ritz-carlton-caribbean-cruise/"
+    },
+    {
+      "title": "Yacht Shore Excursions Guide",
+      "category": "Experiences",
+      "description": "Discover curated Select Group tours, private zodiac excursions, and custom shoreside arrangements.",
+      "link": "/ritz-carlton-yacht-shore-excursions-included/"
+    }
+  ],
+  "finalAnswer": {
+    "title": "Final Takeaway: Choosing the Right Ritz-Carlton Yacht Vacation",
+    "lead": "Choosing the right Ritz-Carlton Yacht Collection vacation starts with more than selecting a destination.",
+    "paragraphs": [
+      "Consider the entire journey:",
+      "• Choose the yacht based on the experience and destination.",
+      "• Choose the suite based on space, location, occupancy and how you use your room.",
+      "• Choose the itinerary based on ports, overnight stays, voyage length and travel logistics.",
+      "• Then build the flights, hotels, excursions and transfers around the yacht.",
+      "For travelers comparing multiple Ritz-Carlton Yacht Collection options, professional guidance can help turn a long list of voyages and suite categories into a trip that fits their specific priorities."
+    ]
+  }
+}

@@ -4,6 +4,8 @@
     "seoTitle": "Best Ritz-Carlton Yacht Suites: Complete 2026 Guide",
     "description": "Compare the best Ritz-Carlton Yacht Collection suites, including Owner's, Residential, Concierge, Loft, Grand, View, Signature and Terrace Suites on Evrima, Ilma and Luminara.",
     "canonical": "https://www.tripsandships.com/ritz-carlton-yacht-collection-suites",
+    "ogTitle": "Best Ritz-Carlton Yacht Suites: Complete 2026 Guide",
+    "ogDescription": "Compare the best Ritz-Carlton Yacht Collection suites, including Owner's, Residential, Concierge, Loft, Grand, View, Signature and Terrace Suites on Evrima, Ilma and Luminara.",
     "primaryKeyword": "Ritz-Carlton Yacht Collection suites",
     "secondaryKeywords": [
       "best Ritz-Carlton Yacht suites",
@@ -673,7 +675,7 @@
             "@type": "ListItem",
             "position": 2,
             "name": "Luxury Cruises",
-            "item": "https://www.tripsandships.com/cruise/"
+             "item": "https://www.tripsandships.com/luxury-cruises"
           },
           {
             "@type": "ListItem",

@@ -52,19 +52,44 @@ const ComparisonHero = ({
             )}
             <div className={`flex flex-col items-center justify-center gap-6 ${!description ? 'mt-12' : ''}`}>
               <div className="flex flex-col sm:flex-row items-center gap-4">
-                <button
-                  onClick={() => document.getElementById('content')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="inline-flex items-center justify-center px-10 py-4 bg-white text-navy-950 font-sans text-sm font-bold tracking-widest uppercase hover:bg-slate-100 transition-all rounded-full shadow-2xl hover:scale-105 cursor-pointer"
-                >
-                  Discover More
-                </button>
-                {secondaryCtaText && (
-                  <Link
-                    to={secondaryCtaLink || "/contact"}
-                    className="inline-flex items-center justify-center px-10 py-4 bg-white/10 text-white border border-white/30 font-sans text-sm font-bold tracking-widest uppercase hover:bg-white/20 transition-all rounded-full shadow-2xl hover:scale-105"
+                {primaryCtaLink && primaryCtaLink.startsWith('#') ? (
+                  <button
+                    onClick={() => {
+                      const el = document.querySelector(primaryCtaLink);
+                      if (el) el.scrollIntoView({ behavior: 'smooth' });
+                    }}
+                    className="inline-flex items-center justify-center px-10 py-4 bg-white text-navy-950 font-sans text-sm font-bold tracking-widest uppercase hover:bg-slate-100 transition-all rounded-full shadow-2xl hover:scale-105 cursor-pointer"
                   >
-                    {secondaryCtaText}
+                    {primaryCtaText || "Discover More"}
+                  </button>
+                ) : (
+                  <Link
+                    to={primaryCtaLink || "/contact"}
+                    className="inline-flex items-center justify-center px-10 py-4 bg-white text-navy-950 font-sans text-sm font-bold tracking-widest uppercase hover:bg-slate-100 transition-all rounded-full shadow-2xl hover:scale-105 cursor-pointer"
+                  >
+                    {primaryCtaText || "Plan Your Journey"}
                   </Link>
+                )}
+
+                {secondaryCtaText && (
+                  secondaryCtaLink && secondaryCtaLink.startsWith('#') ? (
+                    <button
+                      onClick={() => {
+                        const el = document.querySelector(secondaryCtaLink);
+                        if (el) el.scrollIntoView({ behavior: 'smooth' });
+                      }}
+                      className="inline-flex items-center justify-center px-10 py-4 bg-white/10 text-white border border-white/30 font-sans text-sm font-bold tracking-widest uppercase hover:bg-white/20 transition-all rounded-full shadow-2xl hover:scale-105 cursor-pointer"
+                    >
+                      {secondaryCtaText}
+                    </button>
+                  ) : (
+                    <Link
+                      to={secondaryCtaLink || "/contact"}
+                      className="inline-flex items-center justify-center px-10 py-4 bg-white/10 text-white border border-white/30 font-sans text-sm font-bold tracking-widest uppercase hover:bg-white/20 transition-all rounded-full shadow-2xl hover:scale-105 cursor-pointer"
+                    >
+                      {secondaryCtaText}
+                    </Link>
+                  )
                 )}
               </div>
             </div>

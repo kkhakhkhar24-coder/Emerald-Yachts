@@ -211,6 +211,10 @@ import RitzCarltonYachtShoreExcursionsIncluded from "./pages/RitzCarltonYachtSho
 import RitzCarltonYachtForNonCruisers from "./pages/RitzCarltonYachtForNonCruisers/RitzCarltonYachtForNonCruisers";
 import RitzCarltonYachtCruisesFromMiami from "./pages/RitzCarltonYachtCruisesFromMiami/RitzCarltonYachtCruisesFromMiami";
 import RitzCarltonYachtCaribbeanCruises from "./pages/RitzCarltonYachtCaribbeanCruises/RitzCarltonYachtCaribbeanCruises";
+import RitzCarltonYachtTravelAdvisor from "./pages/RitzCarltonYachtTravelAdvisor/RitzCarltonYachtTravelAdvisor";
+import RitzCarltonYachtTravelAdvisorFlorida from "./pages/RitzCarltonYachtTravelAdvisorFlorida/RitzCarltonYachtTravelAdvisorFlorida";
+import RitzCarltonYachtTravelAdvisorOrlando from "./pages/RitzCarltonYachtTravelAdvisorOrlando/RitzCarltonYachtTravelAdvisorOrlando";
+import HowToChooseRightRitzCarltonYachtSuiteItinerary from "./pages/HowToChooseRightRitzCarltonYachtSuiteItinerary/HowToChooseRightRitzCarltonYachtSuiteItinerary";
 
 function App() {
   return (
@@ -1205,6 +1209,42 @@ function App() {
           <Route
             path="/ritz-carlton-yacht-caribbean-cruises"
             element={<RitzCarltonYachtCaribbeanCruises />}
+          />
+
+          <Route
+            path="/ritz-carlton-yacht-cruises/travel-advisor"
+            element={<RitzCarltonYachtTravelAdvisor />}
+          />
+          <Route
+            path="/ritz-carlton-yacht-cruises/travel-advisor/"
+            element={<RitzCarltonYachtTravelAdvisor />}
+          />
+
+          <Route
+            path="/ritz-carlton-yacht-collection-travel-advisor-florida"
+            element={<RitzCarltonYachtTravelAdvisorFlorida />}
+          />
+          <Route
+            path="/ritz-carlton-yacht-collection-travel-advisor-florida/"
+            element={<RitzCarltonYachtTravelAdvisorFlorida />}
+          />
+
+          <Route
+            path="/ritz-carlton-yacht-collection-travel-advisor-orlando"
+            element={<RitzCarltonYachtTravelAdvisorOrlando />}
+          />
+          <Route
+            path="/ritz-carlton-yacht-collection-travel-advisor-orlando/"
+            element={<RitzCarltonYachtTravelAdvisorOrlando />}
+          />
+
+          <Route
+            path="/how-to-choose-right-ritz-carlton-yacht-suite-itinerary"
+            element={<HowToChooseRightRitzCarltonYachtSuiteItinerary />}
+          />
+          <Route
+            path="/how-to-choose-right-ritz-carlton-yacht-suite-itinerary/"
+            element={<HowToChooseRightRitzCarltonYachtSuiteItinerary />}
           />
         </Routes>
       </BrowserRouter>

@@ -287,9 +287,10 @@ const RitzCarltonYachtCollectionDressCode = () => {
 
   return (
     <div className="w-full bg-white text-navy-950 min-h-screen">
-      {/* 1. SEO Metadata */}
+      {/* 1. SEO Metadata & Schema */}
       <Helmet>
         <title>{pageData.seo.title}</title>
+        <meta name="title" content={pageData.seo.metaTitle} />
         <meta name="description" content={pageData.seo.metaDescription} />
         <meta
           name="keywords"
@@ -300,6 +301,12 @@ const RitzCarltonYachtCollectionDressCode = () => {
           ].join(", ")}
         />
         <link rel="canonical" href={pageData.seo.canonicalUrl} />
+        <meta property="og:title" content={pageData.seo.ogTitle || pageData.seo.title} />
+        <meta property="og:description" content={pageData.seo.ogDescription || pageData.seo.metaDescription} />
+        <meta property="og:url" content={pageData.seo.canonicalUrl} />
+        <script type="application/ld+json">
+          {JSON.stringify(pageData.schema)}
+        </script>
       </Helmet>
 
       {/* 2. Global Navbar */}

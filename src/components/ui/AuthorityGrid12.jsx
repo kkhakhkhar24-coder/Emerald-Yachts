@@ -18,7 +18,7 @@ const AuthorityGrid12 = ({ data }) => {
             </div>
             <div className="absolute -bottom-8 -right-8 bg-ice-50 text-navy-950 p-8 rounded-xl max-w-xs shadow-2xl hidden md:block">
               <p className="font-sans text-sm italic mb-4">"{data.quote}"</p>
-              <p className="font-display font-semibold tracking-wider text-xs uppercase">{data.title.split(': ')[1]}</p>
+              <p className="font-display font-semibold tracking-wider text-xs uppercase">{data.author || (data.title.includes(': ') ? data.title.split(': ')[1] : data.title)}</p>
             </div>
           </div>
           <div className="lg:col-span-7">

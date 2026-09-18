@@ -59,10 +59,12 @@ const FadeIn = ({ children, delay = 0, direction = 'up', className = '', hover =
     }
   };
 
+  const normalizedDelay = delay >= 10 ? delay / 1000 : delay;
+
   const style = {
     opacity: isVisible ? 1 : 0,
     transform: getTransform(),
-    transition: `opacity 0.8s cubic-bezier(0.25, 0.25, 0, 1) ${delay}s, transform 0.8s cubic-bezier(0.25, 0.25, 0, 1) ${delay}s`,
+    transition: `opacity 0.8s cubic-bezier(0.25, 0.25, 0, 1) ${normalizedDelay}s, transform 0.8s cubic-bezier(0.25, 0.25, 0, 1) ${normalizedDelay}s`,
     willChange: isVisible ? 'auto' : 'opacity, transform'
   };
 
