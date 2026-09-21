@@ -8,47 +8,86 @@ import Navbar from "@/components/Navbar/Navbar";
 // Angela image
 import angelaImage from '@/assets/Media (2).jpg';
 
+// Ritz-Carlton Yacht Collection Assets (SEO Optimized)
+import heroExteriorImg from '@/assets/RitzCartlonPillarPage/ritz-carlton-yacht-collection-luxury-cruise.jpg';
+import ctaExteriorImg from '@/assets/RitzCartlonPillarPage/ritz-carlton-yacht-collection-travel-advisory.jpeg';
+
+// Interactive Hub Grid Images (SEO Optimized)
+import pricingLifestyleImg from '@/assets/RitzCartlonPillarPage/ritz-carlton-yacht-collection-cost-and-inclusions.jpeg';
+import comparisonVallettaImg from '@/assets/RitzCartlonPillarPage/ritz-carlton-yacht-collection-fleet-comparisons.jpg';
+import lifestyleCabanaImg from '@/assets/RitzCartlonPillarPage/ritz-carlton-yacht-onboard-lifestyle-and-suites.jpg';
+import shoreExcursionImg from '@/assets/RitzCartlonPillarPage/ritz-carlton-yacht-shore-excursions-and-destinations.jpeg';
+import advisorEmbarkationImg from '@/assets/RitzCartlonPillarPage/ritz-carlton-yacht-travel-advisor-commercial-services.jpg';
+
+// Fleet Overview Images (SEO Optimized)
+import evrimaImg from '@/assets/RitzCartlonPillarPage/ritz-carlton-evrima-yacht-fleet-overview.jpeg';
+import ilmaImg from '@/assets/RitzCartlonPillarPage/ritz-carlton-ilma-yacht-fleet-overview.jpeg';
+import luminaraImg from '@/assets/RitzCartlonPillarPage/ritz-carlton-luminara-yacht-fleet-overview.jpeg';
+
+// Cabin Innovations Images (SEO Optimized)
+import terraceSuiteImg from '@/assets/RitzCartlonPillarPage/ritz-carlton-yacht-private-ocean-terraces.jpg';
+import conciergeSuiteImg from '@/assets/RitzCartlonPillarPage/ritz-carlton-yacht-suite-ambassador-service.jpg';
+import grandSuiteImg from '@/assets/RitzCartlonPillarPage/ritz-carlton-yacht-expansive-suite-layouts.jpg';
+
+// Dining & Inclusions Images (SEO Optimized)
+import diningMistralImg from '@/assets/RitzCartlonPillarPage/ritz-carlton-yacht-all-inclusive-dining.jpg';
+import beverageBarImg from '@/assets/RitzCartlonPillarPage/ritz-carlton-yacht-premium-included-beverages.jpg';
+import marinaAmenitiesImg from '@/assets/RitzCartlonPillarPage/ritz-carlton-yacht-marina-and-onboard-amenities.jpg';
+
 // Shared Components & UI System
 import ComparisonHero from '@/components/ui/ComparisonHero';
 import HighlightsSplit from '@/components/ui/HighlightsSplit';
 import ThreeColumnGrid from '@/components/ui/ThreeColumnGrid';
-import GrandBentoFeatures from '@/components/ui/GrandBentoFeatures';
 import FAQAccordion from '@/components/ui/FAQAccordion';
 import ExpertCredentials from '@/components/ui/ExpertCredentials';
 import CenterCTA from '@/components/ui/CenterCTA';
 import InteractivePillarHubGrid from '@/components/ui/InteractivePillarHubGrid';
 
-// Video Placeholder component
-const VideoPlaceholder = ({ title = "The Ritz-Carlton Yacht Collection Experience" }) => (
-  <div className="w-full aspect-video bg-gradient-to-br from-slate-900 to-navy-950 rounded-2xl overflow-hidden shadow-2xl relative border border-slate-700/60 flex flex-col items-center justify-center p-6 text-center group cursor-pointer">
-    <div className="w-20 h-20 bg-blue-600/30 group-hover:bg-blue-600/60 text-blue-400 rounded-full flex items-center justify-center mb-4 backdrop-blur-md border border-blue-400/40 transition-all duration-300 transform group-hover:scale-110 shadow-lg">
-      <Play size={32} className="text-white fill-white ml-1" />
-    </div>
-    <span className="text-xs font-bold uppercase tracking-widest text-amber-400 mb-1">VIDEO PLACEHOLDER</span>
-    <h3 className="text-white text-lg md:text-xl font-display font-medium max-w-lg">{title}</h3>
-    <p className="text-slate-400 text-xs mt-2">Video player placeholder — Ready for media integration</p>
-  </div>
-);
-
 const RitzCarltonYachtCollection = () => {
-  // Map placeholders for images across component sections
-  const fleetOverviewItems = pageData.fleetOverview.items.map((item) => ({
-    ...item,
-    image: null,
-    placeholderLabel: item.title.toUpperCase() + " YACHT PLACEHOLDER"
-  }));
+  // Map images for fleet overview (SEO Optimized labels)
+  const fleetOverviewItems = pageData.fleetOverview.items.map((item, idx) => {
+    const fleetImages = [evrimaImg, ilmaImg, luminaraImg];
+    const seoLabels = [
+      "Ritz-Carlton Evrima Luxury Yacht",
+      "Ritz-Carlton Ilma Luxury Yacht",
+      "Ritz-Carlton Luminara Luxury Yacht"
+    ];
+    return {
+      ...item,
+      image: fleetImages[idx] || null,
+      placeholderLabel: seoLabels[idx] || item.title
+    };
+  });
 
-  const cabinInnovationItems = pageData.cabinInnovations.features.map((item) => ({
-    ...item,
-    image: null,
-    placeholderLabel: item.title.toUpperCase() + " PLACEHOLDER"
-  }));
+  // Map images for cabin innovations (SEO Optimized labels)
+  const cabinInnovationItems = pageData.cabinInnovations.features.map((item, idx) => {
+    const cabinImages = [terraceSuiteImg, conciergeSuiteImg, grandSuiteImg];
+    const seoLabels = [
+      "Ritz-Carlton Yacht Private Ocean Terraces",
+      "Ritz-Carlton Yacht Suite Ambassador Service",
+      "Ritz-Carlton Yacht Expansive Suite Layouts"
+    ];
+    return {
+      ...item,
+      image: cabinImages[idx] || null,
+      placeholderLabel: seoLabels[idx] || item.title
+    };
+  });
 
-  const diningInclusionItems = pageData.diningAndInclusions.items.map((item) => ({
-    ...item,
-    image: null,
-    placeholderLabel: item.title.toUpperCase() + " PLACEHOLDER"
-  }));
+  // Map images for dining & inclusions (SEO Optimized labels)
+  const diningInclusionItems = pageData.diningAndInclusions.items.map((item, idx) => {
+    const diningImages = [diningMistralImg, beverageBarImg, marinaAmenitiesImg];
+    const seoLabels = [
+      "Ritz-Carlton Yacht All-Inclusive Dining",
+      "Ritz-Carlton Yacht Premium Included Beverages",
+      "Ritz-Carlton Yacht Marina & Onboard Amenities"
+    ];
+    return {
+      ...item,
+      image: diningImages[idx] || null,
+      placeholderLabel: seoLabels[idx] || item.title
+    };
+  });
 
   // EXACT Highest-Priority Supporting Pages list
   const highestPrioritySupportingPages = [
@@ -76,14 +115,15 @@ const RitzCarltonYachtCollection = () => {
     { title: "How to Choose the Right Ritz-Carlton Yacht, Suite and Itinerary", url: "#" }
   ];
 
-  // Interactive Hub Cards
+  // Interactive Hub Cards (SEO Optimized)
   const highestPriorityHubItems = [
     {
       title: "Cost & Inclusions Guides",
       category: "Pricing & Inclusions",
       description: "Detailed analyses of fares, inclusions, daily rates, and honest value assessments.",
-      image: null,
-      placeholderLabel: "PRICING PLACEHOLDER",
+      image: pricingLifestyleImg,
+      imagePosition: "object-[center_90%]",
+      placeholderLabel: "Ritz-Carlton Yacht Cost & Inclusions Guide",
       actionLabel: "Explore Cost Guides",
       links: [
         { label: "How Much Does a Ritz-Carlton Yacht Cruise Cost?", url: "/ritz-carlton-yacht-collection-cost" },
@@ -96,8 +136,8 @@ const RitzCarltonYachtCollection = () => {
       title: "Yacht & Brand Comparisons",
       category: "Fleet & Competitor Showdowns",
       description: "Side-by-side comparisons of Evrima, Ilma, Luminara, Explora, and Seabourn.",
-      image: null,
-      placeholderLabel: "COMPARISONS PLACEHOLDER",
+      image: comparisonVallettaImg,
+      placeholderLabel: "Ritz-Carlton Yacht Fleet Comparisons",
       actionLabel: "Explore Comparisons",
       links: [
         { label: "Evrima vs. Ilma vs. Luminara: Which Ritz-Carlton Yacht Is Best?", url: "#" },
@@ -110,8 +150,8 @@ const RitzCarltonYachtCollection = () => {
       title: "Onboard Lifestyle & Suites",
       category: "Suites & Amenities",
       description: "Guides to dress code, family friendliness, Bonvoy points, and suite selection.",
-      image: null,
-      placeholderLabel: "LIFESTYLE PLACEHOLDER",
+      image: lifestyleCabanaImg,
+      placeholderLabel: "Ritz-Carlton Yacht Onboard Lifestyle & Suites",
       actionLabel: "Explore Onboard Guides",
       links: [
         { label: "What Is the Dress Code on Ritz-Carlton Yachts?", url: "#" },
@@ -125,8 +165,8 @@ const RitzCarltonYachtCollection = () => {
       title: "Excursions & Destinations",
       category: "Regions & Non-Cruisers",
       description: "Exploring shore excursions, Caribbean itineraries, Miami sailings, and non-cruiser guides.",
-      image: null,
-      placeholderLabel: "DESTINATIONS PLACEHOLDER",
+      image: shoreExcursionImg,
+      placeholderLabel: "Ritz-Carlton Yacht Shore Excursions & Destinations",
       actionLabel: "Explore Destinations",
       links: [
         { label: "Are Ritz-Carlton Yacht Shore Excursions Included?", url: "#" },
@@ -140,8 +180,8 @@ const RitzCarltonYachtCollection = () => {
       title: "Commercial & Advisor Services",
       category: "Advisor Advisory",
       description: "Why booking through a specialized travel advisor in Florida or Orlando unlocks VIP perks.",
-      image: null,
-      placeholderLabel: "ADVISOR PLACEHOLDER",
+      image: advisorEmbarkationImg,
+      placeholderLabel: "Ritz-Carlton Yacht Travel Advisor Services",
       actionLabel: "Explore Advisory",
       links: [
         { label: "Why Book a Ritz-Carlton Yacht Cruise Through a Travel Advisor?", url: "#" },
@@ -161,6 +201,10 @@ const RitzCarltonYachtCollection = () => {
         "@id": "https://www.tripsandships.com/#organization",
         "name": "Trips & Ships Luxury Travel",
         "url": "https://www.tripsandships.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/logo.png"
+        },
         "description": "Luxury travel planning and advisory services specializing in luxury cruises, safaris, expeditions, river cruising and premium travel experiences.",
         "founder": {
           "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
@@ -181,6 +225,11 @@ const RitzCarltonYachtCollection = () => {
         "name": "Angela Hughes",
         "jobTitle": "CEO of Trips & Ships Luxury Travel",
         "url": "https://www.tripsandships.com/about-angela-hughes",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/assets/Angela_Hughes.jpg",
+          "caption": "Angela Hughes - Luxury Travel Expert"
+        },
         "description": "Angela Hughes is a luxury travel expert, CEO of Trips & Ships Luxury Travel, founder of Luxury Travel University and an experienced luxury travel industry leader.",
         "worksFor": {
           "@id": "https://www.tripsandships.com/#organization"
@@ -206,6 +255,12 @@ const RitzCarltonYachtCollection = () => {
         "name": "The Ritz-Carlton Yacht Collection: Reviews, Prices and Everything You Need to Know",
         "headline": "The Ritz-Carlton Yacht Collection: Reviews, Prices and Everything You Need to Know",
         "description": "Explore Ritz-Carlton Yacht Collection reviews, prices, inclusions, yachts, suites, destinations and expert luxury travel advice.",
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/assets/RitzCartlonPillarPage/ritz-carlton-yacht-collection-luxury-cruise.jpg",
+          "caption": "The Ritz-Carlton Yacht Collection Luxury Cruise"
+        },
+        "image": "https://www.tripsandships.com/assets/RitzCartlonPillarPage/ritz-carlton-yacht-collection-luxury-cruise.jpg",
         "isPartOf": {
           "@id": "https://www.tripsandships.com/#organization"
         },
@@ -236,12 +291,6 @@ const RitzCarltonYachtCollection = () => {
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Luxury Cruises",
-            "item": "https://www.tripsandships.com/cruise"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
             "name": "Ritz-Carlton Yacht Collection",
             "item": "https://www.tripsandships.com/ritz-carlton-yacht-collection"
           }
@@ -273,6 +322,11 @@ const RitzCarltonYachtCollection = () => {
         <meta property="og:title" content={pageData.seo.ogTitle} />
         <meta property="og:description" content={pageData.seo.ogDescription} />
         <meta property="og:url" content={pageData.seo.canonicalUrl} />
+        <meta property="og:image" content="https://www.tripsandships.com/assets/RitzCartlonPillarPage/ritz-carlton-yacht-collection-luxury-cruise.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageData.seo.ogTitle} />
+        <meta name="twitter:description" content={pageData.seo.ogDescription} />
+        <meta name="twitter:image" content="https://www.tripsandships.com/assets/RitzCartlonPillarPage/ritz-carlton-yacht-collection-luxury-cruise.jpg" />
         <link rel="canonical" href={pageData.seo.canonicalUrl} />
 
         <script type="application/ld+json">
@@ -287,7 +341,7 @@ const RitzCarltonYachtCollection = () => {
       <ComparisonHero
         title={pageData.hero.title}
         subtitle={pageData.hero.subtitle}
-        backgroundImage={null}
+        backgroundImage={heroExteriorImg}
         primaryCtaText={pageData.hero.ctaLabel}
         primaryCtaLink={pageData.hero.ctaUrl}
       />
@@ -326,7 +380,15 @@ const RitzCarltonYachtCollection = () => {
             </div>
 
             <div className="w-full">
-              <VideoPlaceholder title="Discover The Ritz-Carlton Yacht Collection" />
+              <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-slate-200 bg-slate-900">
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/YOb5B2OIQx4"
+                  title="The Ritz-Carlton Yacht Difference"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -405,8 +467,8 @@ const RitzCarltonYachtCollection = () => {
         items={cabinInnovationItems}
       />
 
-      {/* ─── SECTION 7: Dining & All-Inclusive Value (GrandBentoFeatures) ─── */}
-      <GrandBentoFeatures
+      {/* ─── SECTION 7: Dining & All-Inclusive Value (ThreeColumnGrid) ─── */}
+      <ThreeColumnGrid
         title={pageData.diningAndInclusions.title}
         subtitle={pageData.diningAndInclusions.subtitle}
         items={diningInclusionItems}
@@ -624,10 +686,10 @@ const RitzCarltonYachtCollection = () => {
         description="Connect with our luxury travel advisors to find the perfect Ritz-Carlton Yacht itinerary for your travel style and budget."
         buttonText="Contact an Advisor"
         buttonLink="/contact"
-        image={null}
+        image={ctaExteriorImg}
       />
 
-      {/* ─── SECTION 10: Video Placeholder Section ─── */}
+      {/* ─── SECTION 10: Video Showcase Section ─── */}
       <section className="py-20 bg-slate-50 border-y border-slate-200">
         <div className="max-w-[1000px] mx-auto px-6">
           <div className="text-center mb-10">
@@ -641,8 +703,14 @@ const RitzCarltonYachtCollection = () => {
               Watch what makes The Ritz-Carlton Yacht Collection an extraordinary way to travel the world.
             </p>
           </div>
-          <div className="rounded-2xl overflow-hidden shadow-2xl border border-slate-100">
-            <VideoPlaceholder title="The Ritz-Carlton Yacht Collection Showcase" />
+          <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-slate-200 bg-slate-900">
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/sQPnGRkiLdg"
+              title="Experience Luxury Yacht Cruising"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       </section>
@@ -666,7 +734,7 @@ const RitzCarltonYachtCollection = () => {
         description="Connect with our luxury yacht cruise experts to reserve your perfect itinerary and unlock exclusive VIP perks."
         buttonText="Contact an Advisor"
         buttonLink="/contact"
-        image={null}
+        image={heroExteriorImg}
       />
     </div>
   );

@@ -2,10 +2,40 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Navbar from "@/components/Navbar/Navbar";
 import pageData from './data.json';
-import { Play, Check, X } from 'lucide-react';
+import { Check, X } from 'lucide-react';
 
 // Angela image
 import angelaImage from '@/assets/Media (2).jpg';
+
+// Ritz-Carlton Yacht Collection Inclusions Assets
+import heroBgImg from '@/assets/RitzCarltonYachtCollectionIncluded/what-is-included-on-a-ritz-carlton-yacht-cruise.jpg';
+import introLifestyleImg from '@/assets/RitzCarltonYachtCollectionIncluded/ritz-carlton-yacht-inclusions-overview.jpg';
+import introDiningImg from '@/assets/RitzCarltonYachtCollectionIncluded/ritz-carlton-yacht-culinary-and-dining-inclusions.jpg';
+
+// 12 Included Highlights Images
+import highlightSuiteTerraceImg from '@/assets/RitzCarltonYachtCollectionIncluded/ritz-carlton-yacht-all-suite-terrace-inclusions.jpg';
+import highlightSuiteAmbassadorImg from '@/assets/RitzCarltonYachtCollectionIncluded/ritz-carlton-yacht-suite-ambassador-service.jpg';
+import highlightMultipleDiningImg from '@/assets/RitzCarltonYachtCollectionIncluded/ritz-carlton-yacht-multiple-dining-venues.jpeg';
+import highlightInSuiteDiningImg from '@/assets/RitzCarltonYachtCollectionIncluded/ritz-carlton-yacht-24-hour-in-suite-dining.jpeg';
+import highlightPremiumBeveragesImg from '@/assets/RitzCarltonYachtCollectionIncluded/ritz-carlton-yacht-premium-beverages-included.jpg';
+import highlightGratuitiesImg from '@/assets/RitzCarltonYachtCollectionIncluded/ritz-carlton-yacht-onboard-gratuities-included.jpeg';
+import highlightStarlinkWifiImg from '@/assets/RitzCarltonYachtCollectionIncluded/ritz-carlton-yacht-complimentary-starlink-wifi.jpg';
+import highlightEntertainmentImg from '@/assets/RitzCarltonYachtCollectionIncluded/ritz-carlton-yacht-entertainment-and-enrichment.jpg';
+import highlightMarinaWatersportsImg from '@/assets/RitzCarltonYachtCollectionIncluded/ritz-carlton-yacht-marina-watersports-included.jpeg';
+import highlightPoolsSpacesImg from '@/assets/RitzCarltonYachtCollectionIncluded/ritz-carlton-yacht-pools-and-public-spaces.jpg';
+import highlightFitnessCenterImg from '@/assets/RitzCarltonYachtCollectionIncluded/ritz-carlton-yacht-fitness-facilities-access.jpg';
+import highlightPortFeesImg from '@/assets/RitzCarltonYachtCollectionIncluded/ritz-carlton-yacht-port-fees-included.jpg';
+
+// Middle CTA Image
+import middleCtaImg from '@/assets/RitzCarltonYachtCollectionIncluded/ritz-carlton-yacht-true-vacation-cost.jpeg';
+
+// Fleet Inclusions Images
+import evrimaInclusionImg from '@/assets/RitzCarltonYachtCollectionIncluded/ritz-carlton-evrima-yacht-inclusions.jpeg';
+import ilmaInclusionImg from '@/assets/RitzCarltonYachtCollectionIncluded/ritz-carlton-ilma-yacht-inclusions.jpeg';
+import luminaraInclusionImg from '@/assets/RitzCarltonYachtCollectionIncluded/ritz-carlton-luminara-yacht-inclusions.jpeg';
+
+// Final CTA Image
+import finalCtaImg from '@/assets/RitzCarltonYachtCollectionIncluded/contact-ritz-carlton-yacht-advisor-inclusions.jpg';
 
 // Shared UI System Components (Exact EmeraldYachts component-based architecture)
 import ComparisonHero from '@/components/ui/ComparisonHero';
@@ -23,17 +53,6 @@ import ExpertCredentials from '@/components/ui/ExpertCredentials';
 import CenterCTA from '@/components/ui/CenterCTA';
 import InteractivePillarHubGrid from '@/components/ui/InteractivePillarHubGrid';
 
-// Video Placeholder component
-const VideoPlaceholder = ({ title = "What Is Included on a Ritz-Carlton Yacht Cruise" }) => (
-  <div className="w-full aspect-video bg-gradient-to-br from-slate-900 to-navy-950 rounded-2xl overflow-hidden shadow-2xl relative border border-slate-700/60 flex flex-col items-center justify-center p-6 text-center group cursor-pointer">
-    <div className="w-20 h-20 bg-blue-600/30 group-hover:bg-blue-600/60 text-blue-400 rounded-full flex items-center justify-center mb-4 backdrop-blur-md border border-blue-400/40 transition-all duration-300 transform group-hover:scale-110 shadow-lg">
-      <Play size={32} className="text-white fill-white ml-1" />
-    </div>
-    <span className="text-xs font-bold uppercase tracking-widest text-amber-400 mb-1">VIDEO PLACEHOLDER</span>
-    <h3 className="text-white text-lg md:text-xl font-display font-medium max-w-lg">{title}</h3>
-    <p className="text-slate-400 text-xs mt-2">Video player placeholder — Ready for media integration</p>
-  </div>
-);
 
 const RitzCarltonYachtCollectionIncluded = () => {
   const [activeTab, setActiveTab] = useState('included');
@@ -53,7 +72,7 @@ const RitzCarltonYachtCollectionIncluded = () => {
 
   // 2. Data mapping for Quick Answer Table (Section 3: BudgetBreakdownTable)
   const quickAnswerTable = {
-    title: "Quick Answer: What Does the Ritz-Carlton Yacht Fare Include?",
+    title: "What Does the Ritz-Carlton Yacht Fare Include?",
     description: "For most guests, the Ritz-Carlton Yacht Collection cruise fare includes standard luxury inclusions while leaving external and personal expenses separate.",
     headers: ["Included Feature", "What's Covered"],
     rows: [
@@ -76,62 +95,74 @@ const RitzCarltonYachtCollectionIncluded = () => {
     {
       title: "1. All-Suite Accommodation & Terrace",
       description: "100% all-suite concept with ocean views, private terraces, luxury bathrooms, 24-hour in-suite dining, and Suite Ambassador service.",
-      placeholderLabel: "ALL-SUITE TERRACE"
+      image: highlightSuiteTerraceImg,
+      placeholderLabel: "Ritz-Carlton Yacht All-Suite Ocean Terrace Accommodation"
     },
     {
       title: "2. Suite Ambassador Service",
       description: "Personalized luxury-hotel style contact helping with dining arrangements, reservations, daily preferences, and onboard requests.",
-      placeholderLabel: "SUITE AMBASSADOR"
+      image: highlightSuiteAmbassadorImg,
+      placeholderLabel: "Ritz-Carlton Yacht Suite Ambassador Personalized Service"
     },
     {
       title: "3. Multiple Dining Experiences",
       description: "Meals across multiple culinary venues including breakfast, lunch, dinner, casual poolside dining, and culinary specialties.",
-      placeholderLabel: "MULTIPLE DINING"
+      image: highlightMultipleDiningImg,
+      placeholderLabel: "Ritz-Carlton Yacht Multiple Dining Venues & Culinary Specialties"
     },
     {
       title: "4. 24-Hour In-Suite Dining",
       description: "Enjoy meals and refreshments in the privacy of your suite anytime — perfect for early departures or quiet breakfasts.",
-      placeholderLabel: "IN-SUITE DINING"
+      image: highlightInSuiteDiningImg,
+      placeholderLabel: "Ritz-Carlton Yacht 24-Hour In-Suite Dining Room Service"
     },
     {
       title: "5. Premium Beverages Included",
       description: "Fine wines, selected spirits, cocktails, mocktails, beer, soft drinks, specialty coffees, and teas included throughout the yacht.",
-      placeholderLabel: "PREMIUM BEVERAGES"
+      image: highlightPremiumBeveragesImg,
+      placeholderLabel: "Ritz-Carlton Yacht Included Selected Premium Wines & Cocktails"
     },
     {
       title: "6. Onboard Gratuities Included",
       description: "Covers service provided by onboard restaurant, bar, and housekeeping team members without daily service add-ons.",
-      placeholderLabel: "GRATUITIES INCLUDED"
+      image: highlightGratuitiesImg,
+      placeholderLabel: "Ritz-Carlton Yacht Included Onboard Gratuities & Service Tips"
     },
     {
       title: "7. Complimentary Starlink Wi-Fi",
       description: "High-speed Starlink Wi-Fi included for email, messaging, social media, work, browsing, and video calls at sea.",
-      placeholderLabel: "STARLINK WI-FI"
+      image: highlightStarlinkWifiImg,
+      placeholderLabel: "Ritz-Carlton Yacht Complimentary Starlink Satellite Wi-Fi"
     },
     {
       title: "8. Entertainment & Enrichment",
       description: "Intimate live musicians, resident performances, cultural programming, and destination-focused social activities.",
-      placeholderLabel: "YACHT ENTERTAINMENT"
+      image: highlightEntertainmentImg,
+      placeholderLabel: "Ritz-Carlton Yacht Live Music & Destination Enrichment"
     },
     {
       title: "9. Marina-Style Watersports",
       description: "Direct water access from the stern marina for paddleboards, kayaks, and snorkeling when sea conditions allow.",
-      placeholderLabel: "MARINA WATERSPORTS"
+      image: highlightMarinaWatersportsImg,
+      placeholderLabel: "Ritz-Carlton Yacht Stern Marina Watersports Platform Access"
     },
     {
       title: "10. Pools & Public Spaces",
       description: "Full access to pools, lounges, outdoor decks, fitness center, wellness spaces, and quiet relaxation areas.",
-      placeholderLabel: "POOLS & LOUNGES"
+      image: highlightPoolsSpacesImg,
+      placeholderLabel: "Ritz-Carlton Yacht Infinity Pools & Outdoor Public Spaces"
     },
     {
       title: "11. Fitness Facilities Access",
       description: "Complimentary access to exercise equipment, fitness centers, and wellness relaxation spaces onboard.",
-      placeholderLabel: "FITNESS CENTER"
+      image: highlightFitnessCenterImg,
+      placeholderLabel: "Ritz-Carlton Yacht Modern Fitness Center & Gym Facilities"
     },
     {
       title: "12. Port Fees Included",
       description: "Applicable itinerary port fees are incorporated into the published cruise fare under standard fare terms.",
-      placeholderLabel: "PORT FEES"
+      image: highlightPortFeesImg,
+      placeholderLabel: "Ritz-Carlton Yacht Itinerary Port Fees & Taxes Included"
     }
   ];
 
@@ -188,17 +219,20 @@ const RitzCarltonYachtCollectionIncluded = () => {
     {
       title: "Evrima (298 Guests)",
       description: "Original yacht featuring all-suite terraces, Suite Ambassador service, multiple restaurants, open bar, Wi-Fi, and marina watersports platform.",
-      placeholderLabel: "EVRIMA INCLUSIONS"
+      image: evrimaInclusionImg,
+      placeholderLabel: "Ritz-Carlton Evrima Luxury Yacht Inclusions & Amenities"
     },
     {
       title: "Ilma (448 Guests)",
       description: "Expanded yacht with Forbes Five-Star rating, featuring core inclusions plus specialty dining at Seta su Ilma (additional cover charge).",
-      placeholderLabel: "ILMA INCLUSIONS"
+      image: ilmaInclusionImg,
+      placeholderLabel: "Ritz-Carlton Ilma Luxury Yacht Inclusions & Amenities"
     },
     {
       title: "Luminara (452 Guests)",
       description: "Newest vessel continuing the all-inclusive model, with expanded suite terrace layouts and specialty dining at Seta su Luminara.",
-      placeholderLabel: "LUMINARA INCLUSIONS"
+      image: luminaraInclusionImg,
+      placeholderLabel: "Ritz-Carlton Luminara Luxury Yacht Inclusions & Amenities"
     }
   ];
 
@@ -248,49 +282,73 @@ const RitzCarltonYachtCollectionIncluded = () => {
     "@graph": [
       {
         "@type": "WebPage",
-        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-included#webpage",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-included/#webpage",
         "url": "https://www.tripsandships.com/ritz-carlton-yacht-collection-included",
         "name": "What Is Included on a Ritz-Carlton Yacht Cruise?",
+        "headline": "What Is Included on a Ritz-Carlton Yacht Cruise?",
         "description": "Learn what is included on a Ritz-Carlton Yacht Collection cruise, including suites, dining, premium beverages, Wi-Fi, gratuities, entertainment and marina watersports, plus what costs extra.",
-        "isPartOf": {
-          "@type": "WebSite",
-          "name": "Trips & Ships Luxury Travel",
-          "url": "https://www.tripsandships.com/"
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/assets/RitzCarltonYachtCollectionIncluded/what-is-included-on-a-ritz-carlton-yacht-cruise.jpg",
+          "caption": "What Is Included on a Ritz-Carlton Yacht Cruise?"
         },
-        "about": {
-          "@type": "Thing",
-          "name": "Ritz-Carlton Yacht Collection"
-        },
+        "image": "https://www.tripsandships.com/assets/RitzCarltonYachtCollectionIncluded/what-is-included-on-a-ritz-carlton-yacht-cruise.jpg",
         "author": {
-          "@type": "Person",
-          "name": "Angela Hughes"
+          "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
         },
         "publisher": {
-          "@type": "TravelAgency",
-          "name": "Trips & Ships Luxury Travel",
-          "url": "https://www.tripsandships.com/"
+          "@id": "https://www.tripsandships.com/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://www.tripsandships.com/#website"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.tripsandships.com/#organization",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/",
+        "founder": {
+          "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
         }
       },
       {
         "@type": "TravelAgency",
-        "@id": "https://www.tripsandships.com/#organization",
+        "@id": "https://www.tripsandships.com/#travelagency",
         "name": "Trips & Ships Luxury Travel",
-        "url": "https://www.tripsandships.com/"
+        "url": "https://www.tripsandships.com/",
+        "parentOrganization": {
+          "@id": "https://www.tripsandships.com/#organization"
+        }
       },
       {
         "@type": "Person",
-        "@id": "https://www.tripsandships.com/about-angela-hughes#person",
+        "@id": "https://www.tripsandships.com/about-angela-hughes/#person",
         "name": "Angela Hughes",
-        "jobTitle": "CEO",
-        "worksFor": {
-          "@type": "TravelAgency",
-          "name": "Trips & Ships Luxury Travel"
+        "jobTitle": "CEO of Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/about-angela-hughes",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/assets/Angela_Hughes.jpg",
+          "caption": "Angela Hughes - Luxury Travel Expert"
         },
-        "description": "Luxury travel advisor and CEO of Trips & Ships Luxury Travel with more than 40 years of travel experience and travel experience spanning more than 121 countries."
+        "description": "Angela Hughes is a luxury travel expert, CEO of Trips & Ships Luxury Travel, founder of Luxury Travel University and an experienced luxury travel industry leader.",
+        "worksFor": {
+          "@id": "https://www.tripsandships.com/#organization"
+        },
+        "knowsAbout": [
+          "Luxury Travel",
+          "Luxury Cruises",
+          "Yacht Cruising",
+          "Luxury Safaris",
+          "Expedition Cruises",
+          "River Cruising",
+          "Premium Travel"
+        ]
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-included#breadcrumb",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-included/#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -307,14 +365,14 @@ const RitzCarltonYachtCollectionIncluded = () => {
           {
             "@type": "ListItem",
             "position": 3,
-            "name": "What's Included",
+            "name": "What Is Included on a Ritz-Carlton Yacht Cruise",
             "item": "https://www.tripsandships.com/ritz-carlton-yacht-collection-included"
           }
         ]
       },
       {
         "@type": "FAQPage",
-        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-included#faq",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-included/#faq",
         "mainEntity": pageData.faqs.map(faq => ({
           "@type": "Question",
           "name": faq.question,
@@ -338,6 +396,12 @@ const RitzCarltonYachtCollectionIncluded = () => {
         <meta property="og:title" content={pageData.seo.ogTitle} />
         <meta property="og:description" content={pageData.seo.ogDescription} />
         <meta property="og:url" content={pageData.seo.canonicalUrl} />
+        <meta property="og:image" content="https://www.tripsandships.com/assets/RitzCarltonYachtCollectionIncluded/what-is-included-on-a-ritz-carlton-yacht-cruise.jpg" />
+        <meta property="og:image:alt" content="What Is Included on a Ritz-Carlton Yacht Cruise?" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageData.seo.ogTitle} />
+        <meta name="twitter:description" content={pageData.seo.ogDescription} />
+        <meta name="twitter:image" content="https://www.tripsandships.com/assets/RitzCarltonYachtCollectionIncluded/what-is-included-on-a-ritz-carlton-yacht-cruise.jpg" />
         <link rel="canonical" href={pageData.seo.canonicalUrl} />
 
         <script type="application/ld+json">
@@ -352,7 +416,7 @@ const RitzCarltonYachtCollectionIncluded = () => {
       <ComparisonHero
         title={pageData.hero.title}
         subtitle={pageData.hero.subtitle}
-        backgroundImage={null}
+        backgroundImage={heroBgImg}
         primaryCtaText={pageData.hero.ctaLabel}
         primaryCtaLink={pageData.hero.ctaUrl}
       />
@@ -360,8 +424,10 @@ const RitzCarltonYachtCollectionIncluded = () => {
       {/* ─── SECTION 2: PremiumIntro Component (Introduction) ─── */}
       <PremiumIntro
         sections={introSections}
-        image1={null}
-        image2={null}
+        image1={introLifestyleImg}
+        image2={introDiningImg}
+        alt1="What Is Included on a Ritz-Carlton Yacht Cruise - Marina Terrace & Luxury Yacht Lifestyle"
+        alt2="Ritz-Carlton Yacht Collection Culinary Inclusions & Fine Dining"
         watermarkText="INCLUSIONS"
       />
 
@@ -392,21 +458,19 @@ const RitzCarltonYachtCollectionIncluded = () => {
             <div className="flex justify-center gap-4 mt-8">
               <button
                 onClick={() => setActiveTab('included')}
-                className={`px-8 py-3 rounded-full text-sm font-bold uppercase tracking-wider transition-all shadow-md ${
-                  activeTab === 'included'
+                className={`px-8 py-3 rounded-full text-sm font-bold uppercase tracking-wider transition-all shadow-md ${activeTab === 'included'
                     ? 'bg-navy-950 text-white shadow-navy-950/20'
                     : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200'
-                }`}
+                  }`}
               >
                 Included in Fare
               </button>
               <button
                 onClick={() => setActiveTab('extra')}
-                className={`px-8 py-3 rounded-full text-sm font-bold uppercase tracking-wider transition-all shadow-md ${
-                  activeTab === 'extra'
+                className={`px-8 py-3 rounded-full text-sm font-bold uppercase tracking-wider transition-all shadow-md ${activeTab === 'extra'
                     ? 'bg-amber-600 text-white shadow-amber-600/20'
                     : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200'
-                }`}
+                  }`}
               >
                 Additional Cost
               </button>
@@ -494,7 +558,8 @@ const RitzCarltonYachtCollectionIncluded = () => {
         description="The advertised cruise fare is only one part of the planning equation. Connect with our luxury advisors to calculate your complete door-to-door journey."
         buttonText="Contact an Advisor"
         buttonLink="/contact"
-        image={null}
+        image={middleCtaImg}
+        imagePosition="object-[center_60%]"
       />
 
       {/* ─── SECTION 7: Fleet Inclusions Breakdown (ThreeColumnGrid Component) ─── */}
@@ -526,8 +591,14 @@ const RitzCarltonYachtCollectionIncluded = () => {
           <p className="text-slate-600 font-light text-lg max-w-2xl mx-auto mb-8">
             Watch what makes The Ritz-Carlton Yacht Collection an extraordinary way to travel the world.
           </p>
-          <div className="rounded-2xl overflow-hidden shadow-2xl border border-slate-100">
-            <VideoPlaceholder title="The Ritz-Carlton Yacht Collection Inclusions Showcase" />
+          <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-slate-200 bg-slate-900">
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/mrdHjSeXwfc"
+              title="The Ritz-Carlton Yacht Collection Inclusions Showcase"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       </section>
@@ -559,10 +630,12 @@ const RitzCarltonYachtCollectionIncluded = () => {
         description="Plan your voyage with an experienced luxury travel advisor and understand exactly what is included before you book."
         buttonText="Contact an Advisor"
         buttonLink="/contact"
-        image={null}
+        image={finalCtaImg}
+        imagePosition="object-[center_55%]"
       />
     </div>
   );
 };
 
 export default RitzCarltonYachtCollectionIncluded;
+

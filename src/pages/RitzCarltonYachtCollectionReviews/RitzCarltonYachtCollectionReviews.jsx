@@ -2,11 +2,46 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import Navbar from "@/components/Navbar/Navbar";
 import pageData from './data.json';
-import { Play, Star, CheckCircle2, XCircle } from 'lucide-react';
 
-// Angela images
+// Angela image
 import angelaImage from '@/assets/Media (2).jpg';
-import profileAH from '@/assets/Profile_AH.jpg';
+
+// Ritz-Carlton Yacht Collection Review Assets
+import heroBgImg from '@/assets/RitzCarltonYachtCollectionReviews/is-the-ritz-carlton-yacht-collection-worth-it-review.jpg';
+import introLifestyleImg from '@/assets/RitzCarltonYachtCollectionReviews/ritz-carlton-yacht-collection-review-verdict.jpg';
+import introDiningImg from '@/assets/RitzCarltonYachtCollectionReviews/ritz-carlton-yacht-culinary-dining-review.jpg';
+
+// What Guests Like Highlights (6 Cards)
+import likeSmallShipImg from '@/assets/RitzCarltonYachtCollectionReviews/ritz-carlton-yacht-small-ship-intimacy-review.jpg';
+import likeSuitesImg from '@/assets/RitzCarltonYachtCollectionReviews/ritz-carlton-yacht-luxury-suites-review.jpeg';
+import likeServiceImg from '@/assets/RitzCarltonYachtCollectionReviews/ritz-carlton-yacht-personalized-crew-service-review.jpeg';
+import likeDiningImg from '@/assets/RitzCarltonYachtCollectionReviews/ritz-carlton-yacht-dining-experience-review.jpeg';
+import likeBeveragesImg from '@/assets/RitzCarltonYachtCollectionReviews/ritz-carlton-yacht-included-beverage-program-review.jpg';
+import likeHotelAtmosphereImg from '@/assets/RitzCarltonYachtCollectionReviews/ritz-carlton-yacht-hotel-at-sea-atmosphere-review.jpeg';
+
+// Yacht Comparisons (Evrima, Ilma, Luminara)
+import evrimaReviewImg from '@/assets/RitzCarltonYachtCollectionReviews/ritz-carlton-evrima-yacht-review.jpeg';
+import ilmaReviewImg from '@/assets/RitzCarltonYachtCollectionReviews/ritz-carlton-ilma-yacht-review.jpeg';
+import luminaraReviewImg from '@/assets/RitzCarltonYachtCollectionReviews/ritz-carlton-luminara-yacht-review.jpeg';
+
+// Competitor Showdowns (Regent, Silversea, Explora, Seabourn)
+import showdownRegentImg from '@/assets/RitzCarltonYachtCollectionReviews/ritz-carlton-vs-regent-seven-seas-showdown.webp';
+import showdownSilverseaImg from '@/assets/RitzCarltonYachtCollectionReviews/ritz-carlton-vs-silversea-showdown.webp';
+import showdownExploraImg from '@/assets/RitzCarltonYachtCollectionReviews/ritz-carlton-vs-explora-journeys-showdown.webp';
+import showdownSeabournImg from '@/assets/RitzCarltonYachtCollectionReviews/ritz-carlton-vs-seabourn-showdown.jpg';
+
+// Middle CTA Image
+import middleCtaImg from '@/assets/RitzCarltonYachtCollectionReviews/is-ritz-carlton-yacht-worth-it-advisor-consultation.jpeg';
+
+// Final CTA Image
+import finalCtaImg from '@/assets/RitzCarltonYachtCollectionReviews/plan-ritz-carlton-yacht-luxury-vacation-review.jpg';
+
+// Interactive Hub Images
+import hubPricingImg from '@/assets/RitzCarltonYachtCollectionReviews/hub-pricing-inclusions-guide.jpg';
+import hubComparisonImg from '@/assets/RitzCarltonYachtCollectionReviews/hub-yacht-fleet-comparisons.jpg';
+import hubLifestyleImg from '@/assets/RitzCarltonYachtCollectionReviews/hub-onboard-lifestyle-suites.jpg';
+import hubExcursionImg from '@/assets/RitzCarltonYachtCollectionReviews/hub-destinations-shore-excursions.jpeg';
+import hubAdvisorImg from '@/assets/RitzCarltonYachtCollectionReviews/hub-luxury-travel-advisor.jpg';
 
 // Shared UI System Components (Exact EmeraldYachts component-based architecture)
 import ComparisonHero from '@/components/ui/ComparisonHero';
@@ -24,18 +59,6 @@ import FAQAccordion from '@/components/ui/FAQAccordion';
 import ExpertCredentials from '@/components/ui/ExpertCredentials';
 import CenterCTA from '@/components/ui/CenterCTA';
 import InteractivePillarHubGrid from '@/components/ui/InteractivePillarHubGrid';
-
-// Video Placeholder component
-const VideoPlaceholder = ({ title = "Is Ritz-Carlton Yacht Collection Worth It? Honest Review" }) => (
-  <div className="w-full aspect-video bg-gradient-to-br from-slate-900 to-navy-950 rounded-2xl overflow-hidden shadow-2xl relative border border-slate-700/60 flex flex-col items-center justify-center p-6 text-center group cursor-pointer">
-    <div className="w-20 h-20 bg-blue-600/30 group-hover:bg-blue-600/60 text-blue-400 rounded-full flex items-center justify-center mb-4 backdrop-blur-md border border-blue-400/40 transition-all duration-300 transform group-hover:scale-110 shadow-lg">
-      <Play size={32} className="text-white fill-white ml-1" />
-    </div>
-    <span className="text-xs font-bold uppercase tracking-widest text-amber-400 mb-1">VIDEO PLACEHOLDER</span>
-    <h3 className="text-white text-lg md:text-xl font-display font-medium max-w-lg">{title}</h3>
-    <p className="text-slate-400 text-xs mt-2">Video player placeholder — Ready for media integration</p>
-  </div>
-);
 
 const RitzCarltonYachtCollectionReviews = () => {
   // 1. Data mapping for PremiumIntro (Section 1: Quick Answer Narrative)
@@ -97,32 +120,38 @@ const RitzCarltonYachtCollectionReviews = () => {
     {
       title: "1. The Smaller Yacht Experience",
       description: "Evrima accommodates 298 guests; Ilma and Luminara carry roughly 448–452 guests. No massive buffet crowds, embarkation lines, or floating resort traffic.",
-      placeholderLabel: "SMALL-SHIP INTIMACY"
+      image: likeSmallShipImg,
+      placeholderLabel: "Ritz-Carlton Yacht Small-Ship Intimacy & Quiet Atmosphere"
     },
     {
       title: "2. The Suites Are a Major Strength",
       description: "Every room is a suite with ocean views, private terrace, high-end furnishings, and 24-hour in-suite dining. You don't pay extra just for outdoor space.",
-      placeholderLabel: "SUITE STRENGTH"
+      image: likeSuitesImg,
+      placeholderLabel: "Ritz-Carlton Yacht Luxury Suites with Private Ocean Terraces"
     },
     {
       title: "3. Service Can Be Exceptional",
       description: "Crew members remember preferences, recognize returning guests, and provide personalized attention. Reviewers frequently praise dedicated staff.",
-      placeholderLabel: "PERSONALIZED SERVICE"
+      image: likeServiceImg,
+      placeholderLabel: "Personalized Ritz-Carlton Yacht Crew Service and Hospitality"
     },
     {
       title: "4. Dining Is Generally a Strength",
       description: "Multiple restaurant environments rather than a single main dining room. Guests enjoy fine dining, casual outdoor grills, and in-suite service.",
-      placeholderLabel: "EXCELLENT DINING"
+      image: likeDiningImg,
+      placeholderLabel: "Ritz-Carlton Yacht Multi-Venue Dining & Gourmet Cuisine"
     },
     {
       title: "5. Premium Beverages Add Real Value",
       description: "Selected wines, spirits, cocktails, beers, coffees, and teas are included throughout the yacht, eliminating separate beverage package costs.",
-      placeholderLabel: "INCLUDED BEVERAGES"
+      image: likeBeveragesImg,
+      placeholderLabel: "Included Premium Beverage Program & Open Bar on Ritz-Carlton Yachts"
     },
     {
       title: "6. Luxury Hotel at Sea Atmosphere",
       description: "Intentionally avoids floating-resort elements like casinos or giant production shows in favor of privacy, relaxation, design, and yachting ports.",
-      placeholderLabel: "HOTEL AT SEA"
+      image: likeHotelAtmosphereImg,
+      placeholderLabel: "Luxury Boutique Hotel Atmosphere at Sea on Ritz-Carlton Yacht"
     }
   ];
 
@@ -173,17 +202,20 @@ const RitzCarltonYachtCollectionReviews = () => {
     {
       title: "Evrima (298 Guests)",
       description: "Best for: Travelers who want the most intimate Ritz-Carlton yacht experience. Smallest fleet vessel with 298 guests, ideal for Caribbean and Mediterranean harbors.",
-      placeholderLabel: "EVRIMA REVIEW"
+      image: evrimaReviewImg,
+      placeholderLabel: "Ritz-Carlton Evrima Yacht Review - Intimate 298-Guest Experience"
     },
     {
       title: "Ilma (448 Guests)",
       description: "Best for: Travelers wanting the newest-generation yacht experience. Recognized with a Forbes Five-Star rating in 2026, offering expanded suites and dining venues.",
-      placeholderLabel: "ILMA FIVE-STAR"
+      image: ilmaReviewImg,
+      placeholderLabel: "Ritz-Carlton Ilma Yacht Review - Forbes Five-Star Luxury Rating"
     },
     {
       title: "Luminara (452 Guests)",
       description: "Best for: Travelers whose itinerary matters as much as the yacht. Features expanded Asia sailings, Grand Suites, and state-of-the-art residential styling.",
-      placeholderLabel: "LUMINARA ASIA"
+      image: luminaraReviewImg,
+      placeholderLabel: "Ritz-Carlton Luminara Yacht Review - Expanded Asia Sailings & Grand Suites"
     }
   ];
 
@@ -192,22 +224,26 @@ const RitzCarltonYachtCollectionReviews = () => {
     {
       title: "Ritz-Carlton vs. Regent Seven Seas",
       description: "Ritz-Carlton wins for yacht atmosphere, contemporary design, and private terraces. Regent wins for comprehensive inclusions (included shore excursions and door-to-door air).",
-      placeholderLabel: "VS. REGENT"
+      image: showdownRegentImg,
+      placeholderLabel: "Ritz-Carlton vs Regent Seven Seas Luxury Cruise Comparison"
     },
     {
       title: "Ritz-Carlton vs. Silversea",
       description: "Ritz-Carlton offers a modern hotel-at-sea vibe with a younger positioning. Silversea excels in expedition depth, traditional ultra-luxury cruising, and polar destinations.",
-      placeholderLabel: "VS. SILVERSEA"
+      image: showdownSilverseaImg,
+      placeholderLabel: "Ritz-Carlton vs Silversea Luxury Cruise Line Showdown"
     },
     {
       title: "Ritz-Carlton vs. Explora Journeys",
       description: "Ritz-Carlton feels like a private luxury yacht. Explora Journeys feels like a contemporary ocean residence. Choose Ritz-Carlton for signature hotel brand hospitality.",
-      placeholderLabel: "VS. EXPLORA"
+      image: showdownExploraImg,
+      placeholderLabel: "Ritz-Carlton vs Explora Journeys Ocean Residence Comparison"
     },
     {
       title: "Ritz-Carlton vs. Seabourn",
       description: "Ritz-Carlton is stronger for modern private terraces and hotel positioning. Seabourn is stronger for long-established ultra-luxury cruise expertise and traditional clientele.",
-      placeholderLabel: "VS. SEABOURN"
+      image: showdownSeabournImg,
+      placeholderLabel: "Ritz-Carlton vs Seabourn Ultra-Luxury Cruise Showdown"
     }
   ];
 
@@ -261,8 +297,8 @@ const RitzCarltonYachtCollectionReviews = () => {
       title: "Cost & Inclusions Guides",
       category: "Pricing & Inclusions",
       description: "Detailed analyses of fares, inclusions, daily rates, and honest value assessments.",
-      image: null,
-      placeholderLabel: "PRICING PLACEHOLDER",
+      image: hubPricingImg,
+      placeholderLabel: "Ritz-Carlton Yacht Cost & Inclusions Comprehensive Guides",
       actionLabel: "Explore Cost Guides",
       links: [
         { label: "How Much Does a Ritz-Carlton Yacht Cruise Cost?", url: "/ritz-carlton-yacht-collection-cost" },
@@ -275,8 +311,8 @@ const RitzCarltonYachtCollectionReviews = () => {
       title: "Yacht & Brand Comparisons",
       category: "Fleet & Competitor Showdowns",
       description: "Side-by-side comparisons of Evrima, Ilma, Luminara, Explora, and Seabourn.",
-      image: null,
-      placeholderLabel: "COMPARISONS PLACEHOLDER",
+      image: hubComparisonImg,
+      placeholderLabel: "Ritz-Carlton Fleet Comparisons - Evrima vs Ilma vs Luminara",
       actionLabel: "Explore Comparisons",
       links: [
         { label: "Evrima vs. Ilma vs. Luminara: Which Ritz-Carlton Yacht Is Best?", url: "#" },
@@ -289,8 +325,8 @@ const RitzCarltonYachtCollectionReviews = () => {
       title: "Onboard Lifestyle & Suites",
       category: "Suites & Amenities",
       description: "Guides to dress code, family friendliness, Bonvoy points, and suite selection.",
-      image: null,
-      placeholderLabel: "LIFESTYLE PLACEHOLDER",
+      image: hubLifestyleImg,
+      placeholderLabel: "Ritz-Carlton Yacht Onboard Lifestyle, Dress Code & Luxury Suites",
       actionLabel: "Explore Onboard Guides",
       links: [
         { label: "What Is the Dress Code on Ritz-Carlton Yachts?", url: "#" },
@@ -304,8 +340,8 @@ const RitzCarltonYachtCollectionReviews = () => {
       title: "Excursions & Destinations",
       category: "Regions & Non-Cruisers",
       description: "Exploring shore excursions, Caribbean itineraries, Miami sailings, and non-cruiser guides.",
-      image: null,
-      placeholderLabel: "DESTINATIONS PLACEHOLDER",
+      image: hubExcursionImg,
+      placeholderLabel: "Ritz-Carlton Yacht Destinations & Shore Excursions",
       actionLabel: "Explore Destinations",
       links: [
         { label: "Are Ritz-Carlton Yacht Shore Excursions Included?", url: "#" },
@@ -319,8 +355,8 @@ const RitzCarltonYachtCollectionReviews = () => {
       title: "Commercial & Advisor Services",
       category: "Advisor Advisory",
       description: "Why booking through a specialized travel advisor in Florida or Orlando unlocks VIP perks.",
-      image: null,
-      placeholderLabel: "ADVISOR PLACEHOLDER",
+      image: hubAdvisorImg,
+      placeholderLabel: "Ritz-Carlton Yacht Collection Travel Advisor Services",
       actionLabel: "Explore Advisory",
       links: [
         { label: "Why Book a Ritz-Carlton Yacht Cruise Through a Travel Advisor?", url: "#" },
@@ -336,73 +372,93 @@ const RitzCarltonYachtCollectionReviews = () => {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Article",
-        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-reviews#article",
-        "headline": "Is The Ritz-Carlton Yacht Collection Worth It? An Honest Review",
-        "description": "An honest review of the Ritz-Carlton Yacht Collection covering suites, service, dining, value, guest reviews, drawbacks, inclusions and whether the experience is worth the price.",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-reviews#webpage"
-        },
-        "author": {
-          "@type": "Person",
-          "name": "Angela Hughes"
-        },
-        "publisher": {
-          "@type": "TravelAgency",
-          "name": "Trips & Ships Luxury Travel",
-          "url": "https://www.tripsandships.com/"
-        },
-        "about": {
-          "@type": "Thing",
-          "name": "Ritz-Carlton Yacht Collection"
-        }
-      },
-      {
         "@type": "WebPage",
-        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-reviews#webpage",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-reviews/#webpage",
         "url": "https://www.tripsandships.com/ritz-carlton-yacht-collection-reviews",
         "name": "Is The Ritz-Carlton Yacht Collection Worth It? An Honest Review",
+        "headline": "Is The Ritz-Carlton Yacht Collection Worth It?",
+        "description": "An honest review of the Ritz-Carlton Yacht Collection covering suites, service, dining, value, guest reviews, drawbacks, inclusions and whether the experience is worth the price.",
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/assets/RitzCarltonYachtCollectionReviews/is-the-ritz-carlton-yacht-collection-worth-it-review.jpg",
+          "caption": "Is The Ritz-Carlton Yacht Collection Worth It? An Honest Review"
+        },
+        "image": "https://www.tripsandships.com/assets/RitzCarltonYachtCollectionReviews/is-the-ritz-carlton-yacht-collection-worth-it-review.jpg",
+        "author": {
+          "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
+        },
+        "publisher": {
+          "@id": "https://www.tripsandships.com/#organization"
+        },
         "isPartOf": {
-          "@type": "WebSite",
-          "name": "Trips & Ships Luxury Travel",
-          "url": "https://www.tripsandships.com/"
+          "@id": "https://www.tripsandships.com/#website"
         }
       },
       {
         "@type": "Review",
-        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-reviews#review",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-reviews/#review",
         "name": "Trips & Ships Editorial Review of Ritz-Carlton Yacht Collection",
         "reviewBody": "Trips & Ships evaluates Ritz-Carlton Yacht Collection based on its yacht atmosphere, suites, service, dining, inclusions, entertainment, destinations and overall value.",
         "author": {
-          "@type": "Organization",
-          "name": "Trips & Ships Luxury Travel"
+          "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
         },
         "itemReviewed": {
           "@type": "Thing",
-          "name": "Ritz-Carlton Yacht Collection"
+          "name": "Ritz-Carlton Yacht Collection",
+          "image": "https://www.tripsandships.com/assets/RitzCarltonYachtCollectionReviews/is-the-ritz-carlton-yacht-collection-worth-it-review.jpg"
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4.3",
+          "bestRating": "5.0"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.tripsandships.com/#organization",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/",
+        "founder": {
+          "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
         }
       },
       {
         "@type": "TravelAgency",
-        "@id": "https://www.tripsandships.com/#organization",
+        "@id": "https://www.tripsandships.com/#travelagency",
         "name": "Trips & Ships Luxury Travel",
-        "url": "https://www.tripsandships.com/"
+        "url": "https://www.tripsandships.com/",
+        "parentOrganization": {
+          "@id": "https://www.tripsandships.com/#organization"
+        }
       },
       {
         "@type": "Person",
-        "@id": "https://www.tripsandships.com/about-angela-hughes#person",
+        "@id": "https://www.tripsandships.com/about-angela-hughes/#person",
         "name": "Angela Hughes",
-        "jobTitle": "CEO",
-        "worksFor": {
-          "@type": "TravelAgency",
-          "name": "Trips & Ships Luxury Travel"
+        "jobTitle": "CEO of Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/about-angela-hughes",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/assets/Angela_Hughes.jpg",
+          "caption": "Angela Hughes - Luxury Travel Expert"
         },
-        "description": "Luxury travel advisor and CEO of Trips & Ships Luxury Travel with more than 40 years of travel experience and travel experience spanning more than 121 countries."
+        "description": "Angela Hughes is a luxury travel expert, CEO of Trips & Ships Luxury Travel, founder of Luxury Travel University and an experienced luxury travel industry leader with over 40 years of experience across 121 countries.",
+        "worksFor": {
+          "@id": "https://www.tripsandships.com/#organization"
+        },
+        "knowsAbout": [
+          "Luxury Travel",
+          "Luxury Cruises",
+          "Yacht Cruising",
+          "Luxury Safaris",
+          "Expedition Cruises",
+          "River Cruising",
+          "Premium Travel"
+        ]
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-reviews#breadcrumb",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-reviews/#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -426,7 +482,7 @@ const RitzCarltonYachtCollectionReviews = () => {
       },
       {
         "@type": "FAQPage",
-        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-reviews#faq",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-reviews/#faq",
         "mainEntity": pageData.faqs.map(faq => ({
           "@type": "Question",
           "name": faq.question,
@@ -450,6 +506,12 @@ const RitzCarltonYachtCollectionReviews = () => {
         <meta property="og:title" content={pageData.seo.ogTitle} />
         <meta property="og:description" content={pageData.seo.ogDescription} />
         <meta property="og:url" content={pageData.seo.canonicalUrl} />
+        <meta property="og:image" content="https://www.tripsandships.com/assets/RitzCarltonYachtCollectionReviews/is-the-ritz-carlton-yacht-collection-worth-it-review.jpg" />
+        <meta property="og:image:alt" content="Is The Ritz-Carlton Yacht Collection Worth It? An Honest Review" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageData.seo.ogTitle} />
+        <meta name="twitter:description" content={pageData.seo.ogDescription} />
+        <meta name="twitter:image" content="https://www.tripsandships.com/assets/RitzCarltonYachtCollectionReviews/is-the-ritz-carlton-yacht-collection-worth-it-review.jpg" />
         <link rel="canonical" href={pageData.seo.canonicalUrl} />
 
         <script type="application/ld+json">
@@ -464,7 +526,7 @@ const RitzCarltonYachtCollectionReviews = () => {
       <ComparisonHero
         title={pageData.hero.title}
         subtitle={pageData.hero.subtitle}
-        backgroundImage={null}
+        backgroundImage={heroBgImg}
         primaryCtaText={pageData.hero.ctaLabel}
         primaryCtaLink={pageData.hero.ctaUrl}
       />
@@ -472,8 +534,10 @@ const RitzCarltonYachtCollectionReviews = () => {
       {/* ─── SECTION 2: PremiumIntro Component (Quick Answer) ─── */}
       <PremiumIntro
         sections={introSections}
-        image1={null}
-        image2={null}
+        image1={introLifestyleImg}
+        image2={introDiningImg}
+        alt1="Is The Ritz-Carlton Yacht Collection Worth It? Comprehensive Review & Luxury Lifestyle"
+        alt2="Ritz-Carlton Yacht Collection Culinary Dining Experience"
         watermarkText="VERDICT"
       />
 
@@ -508,6 +572,7 @@ const RitzCarltonYachtCollectionReviews = () => {
         included={prosListMapped}
         extras={consListMapped}
       />
+
       {/* ─── SECTION 8: Is It Worth the Money? (AuthorityBox Component) ─── */}
       <AuthorityBox
         title="Is Ritz-Carlton Yacht Collection Worth the Money? Our Honest Answer"
@@ -557,7 +622,8 @@ const RitzCarltonYachtCollectionReviews = () => {
         description="Don't guess. Connect with our luxury travel advisors to compare sailings, suite categories, and build the complete trip around your yacht cruise."
         buttonText="Contact an Advisor"
         buttonLink="/contact"
-        image={null}
+        image={middleCtaImg}
+        imagePosition="object-[center_60%]"
       />
 
       {/* ─── SECTION 14: Angela Hughes Expert Perspective & Scorecard ─── */}
@@ -586,13 +652,26 @@ const RitzCarltonYachtCollectionReviews = () => {
           <p className="text-slate-600 font-light text-lg max-w-2xl mx-auto mb-8">
             Watch an in-depth walkthrough of Ritz-Carlton Yacht Collection suites, dining, service, and yacht amenities.
           </p>
-          <div className="rounded-2xl overflow-hidden shadow-2xl border border-slate-100">
-            <VideoPlaceholder title="Ritz-Carlton Yacht Collection Honest Review & Showcase" />
+          <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-slate-200 bg-slate-900">
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/mrdHjSeXwfc"
+              title="Is Ritz-Carlton Yacht Collection Worth It? Honest Review & Showcase"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       </section>
 
-      {/* ─── SECTION 17: Comprehensive 15 FAQs (FAQAccordion Component) ─── */}
+      {/* ─── SECTION 17: Curated Topic Clusters (InteractivePillarHubGrid Component) ─── */}
+      <InteractivePillarHubGrid
+        title="Explore More Ritz-Carlton Yacht Guides & Comparisons"
+        subtitle="Comprehensive resources covering cost, fleet comparisons, suites, and destinations."
+        items={resourceHubItems}
+      />
+
+      {/* ─── SECTION 18: Comprehensive 15 FAQs (FAQAccordion Component) ─── */}
       <FAQAccordion
         data={pageData.faqs}
       />
@@ -603,7 +682,8 @@ const RitzCarltonYachtCollectionReviews = () => {
         description="Plan your luxury voyage with an experienced travel advisor and discover exclusive Virtuoso amenities and custom itinerary planning."
         buttonText="Contact an Advisor"
         buttonLink="/contact"
-        image={null}
+        image={finalCtaImg}
+        imagePosition="object-[center_55%]"
       />
     </div>
   );

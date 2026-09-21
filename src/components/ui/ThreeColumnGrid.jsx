@@ -43,7 +43,7 @@ const ThreeColumnGrid = ({ title, subtitle, items }) => {
                         {item.image ? (
                           <MasterImage 
                             src={item.image} 
-                            alt={item.title}
+                            alt={item.placeholderLabel || item.title}
                             className="w-full h-full object-cover absolute inset-0"
                           />
                         ) : (

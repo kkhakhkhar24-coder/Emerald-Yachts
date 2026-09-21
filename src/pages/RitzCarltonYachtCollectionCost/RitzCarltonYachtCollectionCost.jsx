@@ -7,6 +7,48 @@ import { Play } from 'lucide-react';
 // Angela image
 import angelaImage from '@/assets/Media (2).jpg';
 
+// Ritz-Carlton Yacht Cruise Cost Assets
+import heroBgImg from '@/assets/Ritz-CarltonYachtCruiseCost/how-much-does-a-ritz-carlton-yacht-cruise-cost.jpg';
+import introLifestyleImg from '@/assets/Ritz-CarltonYachtCruiseCost/ritz-carlton-yacht-collection-pricing-guide.jpg';
+import introDiningImg from '@/assets/Ritz-CarltonYachtCruiseCost/ritz-carlton-yacht-collection-dining-experience.jpg';
+
+// Quick Answer / Executive Summary Images
+import quickAnswerFaresImg from '@/assets/Ritz-CarltonYachtCruiseCost/ritz-carlton-yacht-realistic-vacation-fares.jpeg';
+import quickAnswerLuminaraImg from '@/assets/Ritz-CarltonYachtCruiseCost/ritz-carlton-luminara-suite-pricing.jpg';
+import quickAnswerFactorsImg from '@/assets/Ritz-CarltonYachtCruiseCost/ritz-carlton-yacht-core-price-factors.jpg';
+
+// Middle CTA Image
+import middleCtaImg from '@/assets/Ritz-CarltonYachtCruiseCost/find-your-ritz-carlton-yacht-price.jpeg';
+
+// Fleet Breakdown Images
+import evrimaFleetImg from '@/assets/Ritz-CarltonYachtCruiseCost/ritz-carlton-evrima-yacht-cost-breakdown.jpeg';
+import ilmaFleetImg from '@/assets/Ritz-CarltonYachtCruiseCost/ritz-carlton-ilma-yacht-cost-breakdown.jpeg';
+import luminaraFleetImg from '@/assets/Ritz-CarltonYachtCruiseCost/ritz-carlton-luminara-yacht-cost-breakdown.jpeg';
+
+// Suite & Entry Cost Images
+import ownerSuiteImg from '@/assets/Ritz-CarltonYachtCruiseCost/ritz-carlton-owners-suite-cost.jpg';
+import couplesSuiteImg from '@/assets/Ritz-CarltonYachtCruiseCost/ritz-carlton-yacht-cost-for-two-travelers.jpg';
+import entryFareImg from '@/assets/Ritz-CarltonYachtCruiseCost/cheapest-ritz-carlton-yacht-cruise-entry-fares.jpg';
+
+// Interactive Hub Images
+import hubPricingImg from '@/assets/Ritz-CarltonYachtCruiseCost/ritz-carlton-yacht-cost-and-inclusions-guide.jpeg';
+import hubComparisonImg from '@/assets/Ritz-CarltonYachtCruiseCost/ritz-carlton-yacht-fleet-brand-comparisons.jpg';
+import hubLifestyleImg from '@/assets/Ritz-CarltonYachtCruiseCost/ritz-carlton-yacht-onboard-lifestyle-and-suites.jpg';
+import hubExcursionImg from '@/assets/Ritz-CarltonYachtCruiseCost/ritz-carlton-yacht-shore-excursions-and-destinations.jpeg';
+import hubAdvisorImg from '@/assets/Ritz-CarltonYachtCruiseCost/ritz-carlton-yacht-travel-advisor-services.jpg';
+
+// Strategy Roadmap Images
+import strategyDailyRateImg from '@/assets/Ritz-CarltonYachtCruiseCost/ritz-carlton-yacht-value-compare-daily-rate.jpeg';
+import strategyDepartureDatesImg from '@/assets/Ritz-CarltonYachtCruiseCost/ritz-carlton-yacht-value-compare-departure-dates.jpeg';
+import strategySuiteCategoryImg from '@/assets/Ritz-CarltonYachtCruiseCost/ritz-carlton-yacht-value-compare-suite-categories.jpg';
+import strategyItineraryImg from '@/assets/Ritz-CarltonYachtCruiseCost/ritz-carlton-yacht-value-compare-itinerary.jpg';
+import strategyShoulderSeasonImg from '@/assets/Ritz-CarltonYachtCruiseCost/ritz-carlton-yacht-value-shoulder-season.jpg';
+import strategyLongVoyagesImg from '@/assets/Ritz-CarltonYachtCruiseCost/ritz-carlton-yacht-value-longer-voyages.jpg';
+import strategyTotalVacationImg from '@/assets/Ritz-CarltonYachtCruiseCost/ritz-carlton-yacht-value-total-vacation-cost.jpeg';
+
+// Final CTA Image
+import finalCtaImg from '@/assets/Ritz-CarltonYachtCruiseCost/contact-ritz-carlton-yacht-collection-advisor.jpg';
+
 // Shared UI System Components (Exact EmeraldYachts component-based architecture)
 import ComparisonHero from '@/components/ui/ComparisonHero';
 import PremiumIntro from '@/components/ui/PremiumIntro';
@@ -54,17 +96,20 @@ const RitzCarltonYachtCollectionCost = () => {
     {
       title: "Realistic Vacation Fares",
       description: "For 2026, a realistic starting point is several thousand dollars per person for shorter sailings, while longer itineraries reach $10,000–$20,000+ per person before suite upgrades.",
-      placeholderLabel: "$10K - $20K AVERAGE"
+      image: quickAnswerFaresImg,
+      placeholderLabel: "Ritz-Carlton Yacht Realistic Vacation Fares"
     },
     {
       title: "Luminara & Suite Pricing",
       description: "A 2026 report documented a 10-night Luminara Japan sailing at $35,000 per person, with Owner's Suites on Asia voyages reaching $42,300–$136,500 per person.",
-      placeholderLabel: "OWNER'S SUITE FARES"
+      image: quickAnswerLuminaraImg,
+      placeholderLabel: "Ritz-Carlton Luminara & Suite Pricing"
     },
     {
       title: "Core Price Factors",
       description: "Final cost depends on yacht, sailing date, destination, voyage length, suite category, availability, season, flights, hotels, transfers, excursions, and spa services.",
-      placeholderLabel: "PRICING DRIVERS"
+      image: quickAnswerFactorsImg,
+      placeholderLabel: "Ritz-Carlton Yacht Core Price Factors"
     }
   ];
 
@@ -148,17 +193,20 @@ const RitzCarltonYachtCollectionCost = () => {
     {
       title: "Evrima (298 Guests)",
       description: "The original and smallest fleet vessel, focusing on maximum intimacy. Evaluate Evrima prices by itinerary, suite category, and sailing date.",
-      placeholderLabel: "EVRIMA FLEET"
+      image: evrimaFleetImg,
+      placeholderLabel: "Ritz-Carlton Evrima Yacht Cost Breakdown"
     },
     {
       title: "Ilma (448 Guests)",
       description: "Forbes Five-Star cruise ship distinction in 2026. Offers expanded dining, wellness, and generous private terrace suite layouts.",
-      placeholderLabel: "ILMA FLEET"
+      image: ilmaFleetImg,
+      placeholderLabel: "Ritz-Carlton Ilma Yacht Cost Breakdown"
     },
     {
       title: "Luminara (452 Guests)",
       description: "Newest vessel. Southern Japan 10-night sailings documented at $35,000/person; Grand Suites offer ~600 sq ft + 95 sq ft terrace.",
-      placeholderLabel: "LUMINARA FLEET"
+      image: luminaraFleetImg,
+      placeholderLabel: "Ritz-Carlton Luminara Yacht Cost Breakdown"
     }
   ];
 
@@ -167,29 +215,32 @@ const RitzCarltonYachtCollectionCost = () => {
     {
       title: "Ritz-Carlton Owner's Suite Cost",
       description: "Luminara Owner's Suites on winter 2026/27 Asia voyages range from $42,300 to $136,500 per person depending on sailing demand.",
-      placeholderLabel: "OWNER'S SUITE"
+      image: ownerSuiteImg,
+      placeholderLabel: "Ritz-Carlton Owner's Suite Cost"
     },
     {
       title: "Cost for Two Travelers",
       description: "Double per-person fare for total cruise fare ($9,300 × 2 = $18,600; $17,900 × 2 = $35,800), plus flights, hotels & transfers.",
-      placeholderLabel: "COUPLES BUDGET"
+      image: couplesSuiteImg,
+      placeholderLabel: "Ritz-Carlton Yacht Cost for Two Travelers"
     },
     {
       title: "Cheapest Ritz-Carlton Cruise?",
       description: "Shorter 3-night sailings begin around $3,200–$3,400 per person, though shorter sailings carry higher per-night daily rates.",
-      placeholderLabel: "ENTRY FARES"
+      image: entryFareImg,
+      placeholderLabel: "Cheapest Ritz-Carlton Yacht Cruise Entry Fares"
     }
   ];
 
   // 9. Data mapping for 7 Value Strategies (Section 10: InteractivePlanningRoadmap)
   const valueStrategiesSteps = [
-    { timeframe: "Strategy 01", title: "Compare Daily Rate", description: "Calculate Cruise fare ÷ number of nights to determine true daily value.", image: null },
-    { timeframe: "Strategy 02", title: "Compare Departure Dates", description: "Shifting travel dates by a few weeks can change pricing substantially.", image: null },
-    { timeframe: "Strategy 03", title: "Compare Suite Categories", description: "Ask what you actually gain before automatically booking top suite categories.", image: null },
-    { timeframe: "Strategy 04", title: "Compare Complete Itinerary", description: "A $12,000 cruise visiting dream ports beats an $8,000 cruise to repeated ports.", image: null },
-    { timeframe: "Strategy 05", title: "Consider Shoulder-Season", description: "Avoid peak pricing windows for better rate flexibility and suite availability.", image: null },
-    { timeframe: "Strategy 06", title: "Compare Longer Voyages", description: "Effective daily rates often decrease as overall voyage length increases.", image: null },
-    { timeframe: "Strategy 07", title: "Look at Total Vacation", description: "Cheapest cruise fare doesn't mean cheapest complete trip when flights are considered.", image: null }
+    { timeframe: "Strategy 01", title: "Compare Daily Rate", description: "Calculate Cruise fare ÷ number of nights to determine true daily value.", image: strategyDailyRateImg },
+    { timeframe: "Strategy 02", title: "Compare Departure Dates", description: "Shifting travel dates by a few weeks can change pricing substantially.", image: strategyDepartureDatesImg },
+    { timeframe: "Strategy 03", title: "Compare Suite Categories", description: "Ask what you actually gain before automatically booking top suite categories.", image: strategySuiteCategoryImg },
+    { timeframe: "Strategy 04", title: "Compare Complete Itinerary", description: "A $12,000 cruise visiting dream ports beats an $8,000 cruise to repeated ports.", image: strategyItineraryImg },
+    { timeframe: "Strategy 05", title: "Consider Shoulder-Season", description: "Avoid peak pricing windows for better rate flexibility and suite availability.", image: strategyShoulderSeasonImg },
+    { timeframe: "Strategy 06", title: "Compare Longer Voyages", description: "Effective daily rates often decrease as overall voyage length increases.", image: strategyLongVoyagesImg },
+    { timeframe: "Strategy 07", title: "Look at Total Vacation", description: "Cheapest cruise fare doesn't mean cheapest complete trip when flights are considered.", image: strategyTotalVacationImg }
   ];
 
   // 10. Data mapping for 7 Mistakes (Section 11: MistakesShowcase)
@@ -227,8 +278,9 @@ const RitzCarltonYachtCollectionCost = () => {
       title: "Cost & Inclusions Guides",
       category: "Pricing & Inclusions",
       description: "Detailed analyses of fares, inclusions, daily rates, and honest value assessments.",
-      image: null,
-      placeholderLabel: "PRICING PLACEHOLDER",
+      image: hubPricingImg,
+      imagePosition: "object-[center_90%]",
+      placeholderLabel: "Ritz-Carlton Yacht Cost & Inclusions Guide",
       actionLabel: "Explore Cost Guides",
       links: [
         { label: "How Much Does a Ritz-Carlton Yacht Cruise Cost?", url: "/ritz-carlton-yacht-collection-cost" },
@@ -241,8 +293,8 @@ const RitzCarltonYachtCollectionCost = () => {
       title: "Yacht & Brand Comparisons",
       category: "Fleet & Competitor Showdowns",
       description: "Side-by-side comparisons of Evrima, Ilma, Luminara, Explora, and Seabourn.",
-      image: null,
-      placeholderLabel: "COMPARISONS PLACEHOLDER",
+      image: hubComparisonImg,
+      placeholderLabel: "Ritz-Carlton Yacht Fleet Comparisons",
       actionLabel: "Explore Comparisons",
       links: [
         { label: "Evrima vs. Ilma vs. Luminara: Which Ritz-Carlton Yacht Is Best?", url: "#" },
@@ -255,8 +307,8 @@ const RitzCarltonYachtCollectionCost = () => {
       title: "Onboard Lifestyle & Suites",
       category: "Suites & Amenities",
       description: "Guides to dress code, family friendliness, Bonvoy points, and suite selection.",
-      image: null,
-      placeholderLabel: "LIFESTYLE PLACEHOLDER",
+      image: hubLifestyleImg,
+      placeholderLabel: "Ritz-Carlton Yacht Onboard Lifestyle & Suites",
       actionLabel: "Explore Onboard Guides",
       links: [
         { label: "What Is the Dress Code on Ritz-Carlton Yachts?", url: "#" },
@@ -270,8 +322,8 @@ const RitzCarltonYachtCollectionCost = () => {
       title: "Excursions & Destinations",
       category: "Regions & Non-Cruisers",
       description: "Exploring shore excursions, Caribbean itineraries, Miami sailings, and non-cruiser guides.",
-      image: null,
-      placeholderLabel: "DESTINATIONS PLACEHOLDER",
+      image: hubExcursionImg,
+      placeholderLabel: "Ritz-Carlton Yacht Shore Excursions & Destinations",
       actionLabel: "Explore Destinations",
       links: [
         { label: "Are Ritz-Carlton Yacht Shore Excursions Included?", url: "#" },
@@ -285,8 +337,8 @@ const RitzCarltonYachtCollectionCost = () => {
       title: "Commercial & Advisor Services",
       category: "Advisor Advisory",
       description: "Why booking through a specialized travel advisor in Florida or Orlando unlocks VIP perks.",
-      image: null,
-      placeholderLabel: "ADVISOR PLACEHOLDER",
+      image: hubAdvisorImg,
+      placeholderLabel: "Ritz-Carlton Yacht Travel Advisor Services",
       actionLabel: "Explore Advisory",
       links: [
         { label: "Why Book a Ritz-Carlton Yacht Cruise Through a Travel Advisor?", url: "#" },
@@ -308,6 +360,12 @@ const RitzCarltonYachtCollectionCost = () => {
         "name": "How Much Does a Ritz-Carlton Yacht Cruise Cost? 2026 Pricing Guide",
         "headline": "How Much Does a Ritz-Carlton Yacht Cruise Cost?",
         "description": "Explore Ritz-Carlton Yacht Collection costs, current fare examples, price per person, suite pricing, inclusions and the real cost of a luxury yacht vacation.",
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/assets/Ritz-CarltonYachtCruiseCost/how-much-does-a-ritz-carlton-yacht-cruise-cost.jpg",
+          "caption": "How Much Does a Ritz-Carlton Yacht Cruise Cost? 2026 Pricing Guide"
+        },
+        "image": "https://www.tripsandships.com/assets/Ritz-CarltonYachtCruiseCost/how-much-does-a-ritz-carlton-yacht-cruise-cost.jpg",
         "author": {
           "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
         },
@@ -342,6 +400,11 @@ const RitzCarltonYachtCollectionCost = () => {
         "name": "Angela Hughes",
         "jobTitle": "CEO of Trips & Ships Luxury Travel",
         "url": "https://www.tripsandships.com/about-angela-hughes",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/assets/Angela_Hughes.jpg",
+          "caption": "Angela Hughes - Luxury Travel Expert"
+        },
         "description": "Angela Hughes is a luxury travel expert, CEO of Trips & Ships Luxury Travel, founder of Luxury Travel University and an experienced luxury travel industry leader.",
         "worksFor": {
           "@id": "https://www.tripsandships.com/#organization"
@@ -369,8 +432,8 @@ const RitzCarltonYachtCollectionCost = () => {
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Luxury Cruises",
-            "item": "https://www.tripsandships.com/cruise"
+            "name": "Ritz-Carlton Yacht Collection",
+            "item": "https://www.tripsandships.com/ritz-carlton-yacht-collection"
           },
           {
             "@type": "ListItem",
@@ -406,6 +469,11 @@ const RitzCarltonYachtCollectionCost = () => {
         <meta property="og:title" content={pageData.seo.ogTitle} />
         <meta property="og:description" content={pageData.seo.ogDescription} />
         <meta property="og:url" content={pageData.seo.canonicalUrl} />
+        <meta property="og:image" content="https://www.tripsandships.com/assets/Ritz-CarltonYachtCruiseCost/how-much-does-a-ritz-carlton-yacht-cruise-cost.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageData.seo.ogTitle} />
+        <meta name="twitter:description" content={pageData.seo.ogDescription} />
+        <meta name="twitter:image" content="https://www.tripsandships.com/assets/Ritz-CarltonYachtCruiseCost/how-much-does-a-ritz-carlton-yacht-cruise-cost.jpg" />
         <link rel="canonical" href={pageData.seo.canonicalUrl} />
 
         <script type="application/ld+json">
@@ -420,7 +488,7 @@ const RitzCarltonYachtCollectionCost = () => {
       <ComparisonHero
         title={pageData.hero.title}
         subtitle={pageData.hero.subtitle}
-        backgroundImage={null}
+        backgroundImage={heroBgImg}
         primaryCtaText={pageData.hero.ctaLabel}
         primaryCtaLink={pageData.hero.ctaUrl}
       />
@@ -428,14 +496,14 @@ const RitzCarltonYachtCollectionCost = () => {
       {/* ─── SECTION 2: PremiumIntro Component (Narrative Intro) ─── */}
       <PremiumIntro
         sections={introSections}
-        image1={null}
-        image2={null}
+        image1={introLifestyleImg}
+        image2={introDiningImg}
         watermarkText="PRICING"
       />
 
       {/* ─── SECTION 3: Executive Summary (ThreeColumnGrid Component) ─── */}
       <ThreeColumnGrid
-        title="Quick Answer: How Much Does a Ritz-Carlton Yacht Cruise Cost?"
+        title="How Much Does a Ritz-Carlton Yacht Cruise Cost?"
         subtitle="For 2026, a realistic starting point is several thousand dollars per person for shorter sailings, while longer and more desirable itineraries reach $10,000–$20,000+ per person before suite upgrades."
         items={quickAnswerItems}
       />
@@ -474,7 +542,8 @@ const RitzCarltonYachtCollectionCost = () => {
         description="There is no reason to guess. Trips & Ships Luxury Travel can help you compare available sailings, evaluate suite categories and build the complete luxury journey around your yacht cruise."
         buttonText="Contact an Advisor"
         buttonLink="/contact"
-        image={null}
+        image={middleCtaImg}
+        imagePosition="object-[center_60%]"
       />
 
       {/* ─── SECTION 8: Why Expensive & Fleet Breakdown (ThreeColumnGrid Component) ─── */}
@@ -508,7 +577,13 @@ const RitzCarltonYachtCollectionCost = () => {
         data={pricingQuestionsData}
       />
 
-
+      {/* ─── SECTION 13: Curated Topic Clusters (InteractivePillarHubGrid Component) ─── */}
+      <InteractivePillarHubGrid
+        title="Curated Supporting Guides & Topic Clusters"
+        subtitle="Explore in-depth articles on cost, inclusions, honest reviews, competitor comparisons, and suite selection."
+        items={resourceHubItems}
+        variant="destination"
+      />
 
       {/* ─── SECTION 14: Video Section Component ─── */}
       <section className="py-20 bg-slate-50 border-t border-b border-slate-200">
@@ -522,8 +597,14 @@ const RitzCarltonYachtCollectionCost = () => {
           <p className="text-slate-600 font-light text-lg max-w-2xl mx-auto mb-8">
             Watch what makes The Ritz-Carlton Yacht Collection an extraordinary way to travel the world.
           </p>
-          <div className="rounded-2xl overflow-hidden shadow-2xl border border-slate-100">
-            <VideoPlaceholder title="The Ritz-Carlton Yacht Collection Showcase" />
+          <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-slate-200 bg-slate-900">
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/cVKO6onRw-U"
+              title="The Ritz-Carlton Yacht Collection Showcase"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       </section>
@@ -555,7 +636,8 @@ const RitzCarltonYachtCollectionCost = () => {
         description="There is no reason to guess. Trips & Ships Luxury Travel can help you compare available sailings, evaluate suite categories and build the complete luxury journey around your yacht cruise."
         buttonText="Contact an Advisor"
         buttonLink="/contact"
-        image={null}
+        image={finalCtaImg}
+        imagePosition="object-[center_55%]"
       />
     </div>
   );

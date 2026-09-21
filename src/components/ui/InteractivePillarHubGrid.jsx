@@ -46,7 +46,7 @@ const InteractivePillarHubGrid = ({
                   <MasterImage
                     src={item.image}
                     alt={item.title || "Destination photo"}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ${item.imagePosition || item.imageClassName || 'object-center'}`}
                     placeholderLabel={item.placeholderLabel || item.title || "DESTINATION IMAGE"}
                   />
 
