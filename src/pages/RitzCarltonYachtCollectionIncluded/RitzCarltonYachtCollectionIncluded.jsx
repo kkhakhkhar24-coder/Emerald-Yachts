@@ -621,7 +621,7 @@ const RitzCarltonYachtCollectionIncluded = () => {
 
       {/* ─── SECTION 13: FAQ Accordion Component (FAQAccordion Component) ─── */}
       <FAQAccordion
-        data={pageData.faqs}
+        data={{ title: "Frequently Asked Questions", faqs: pageData.faqs }}
       />
 
       {/* ─── FINAL CENTER CTA Component ─── */}

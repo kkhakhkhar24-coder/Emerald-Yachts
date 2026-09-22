@@ -18,12 +18,14 @@ const FAQAccordion = ({ data }) => {
 
   if (!data || !faqList || !Array.isArray(faqList)) return null;
 
+  const title = data.title || "Frequently Asked Questions";
+
   return (
     <section className="w-full py-16 bg-transparent">
       <div className="max-w-[800px] mx-auto px-6">
-        {data.title && (
+        {title && (
           <FadeIn className="text-center mb-8">
-            <h2 className="font-display text-4xl md:text-5xl text-navy-950 mb-4">{data.title}</h2>
+            <h2 className="font-display text-4xl md:text-5xl text-navy-950 mb-4">{title}</h2>
             <div className="w-12 h-0.5 bg-navy-800 mx-auto mb-6"></div>
             {data.subtitle && (
               <p className="font-sans text-slate-500 max-w-2xl mx-auto">{data.subtitle}</p>

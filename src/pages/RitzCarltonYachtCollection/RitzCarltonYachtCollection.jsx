@@ -94,25 +94,25 @@ const RitzCarltonYachtCollection = () => {
     { title: "How Much Does a Ritz-Carlton Yacht Cruise Cost?", url: "/ritz-carlton-yacht-collection-cost" },
     { title: "What Is Included on a Ritz-Carlton Yacht Cruise?", url: "/ritz-carlton-yacht-collection-included" },
     { title: "Is The Ritz-Carlton Yacht Collection Worth It? An Honest Review", url: "/ritz-carlton-yacht-collection-reviews" },
-    { title: "Evrima vs. Ilma vs. Luminara: Which Ritz-Carlton Yacht Is Best?", url: "#" },
-    { title: "Ritz-Carlton Yacht Collection vs. Explora Journeys", url: "#" },
-    { title: "Ritz-Carlton Yacht Collection vs. Seabourn", url: "#" },
-    { title: "What Is the Dress Code on Ritz-Carlton Yachts?", url: "#" },
-    { title: "Are Ritz-Carlton Yacht Cruises Good for Families and Children?", url: "#" },
-    { title: "How Do Marriott Bonvoy Points Work on Ritz-Carlton Yacht Cruises?", url: "#" },
-    { title: "What Are the Best Suites on Ritz-Carlton Yachts?", url: "#" },
-    { title: "Are Ritz-Carlton Yacht Shore Excursions Included?", url: "#" },
-    { title: "Is The Ritz-Carlton Yacht Collection Good for People Who Do Not Like Cruises?", url: "#" },
-    { title: "Ritz-Carlton Yacht Cruises from Miami: What You Need to Know", url: "#" },
-    { title: "Ritz-Carlton Yacht Caribbean Cruises: Best Itineraries and When to Go", url: "#" }
+    { title: "Evrima vs. Ilma vs. Luminara: Which Ritz-Carlton Yacht Is Best?", url: "/ritz-carlton-evrima-vs-ilma-vs-luminara" },
+    { title: "Ritz-Carlton Yacht Collection vs. Explora Journeys", url: "/ritz-carlton-yacht-collection-vs-explora-journeys" },
+    { title: "Ritz-Carlton Yacht Collection vs. Seabourn", url: "/ritz-carlton-yacht-collection-vs-seabourn" },
+    { title: "What Is the Dress Code on Ritz-Carlton Yachts?", url: "/ritz-carlton-yacht-collection-dress-code" },
+    { title: "Are Ritz-Carlton Yacht Cruises Good for Families and Children?", url: "/ritz-carlton-yacht-collection-families-children" },
+    { title: "How Do Marriott Bonvoy Points Work on Ritz-Carlton Yacht Cruises?", url: "/ritz-carlton-yacht-collection-marriott-bonvoy-points" },
+    { title: "What Are the Best Suites on Ritz-Carlton Yachts?", url: "/ritz-carlton-yacht-collection-suites" },
+    { title: "Are Ritz-Carlton Yacht Shore Excursions Included?", url: "/ritz-carlton-yacht-shore-excursions-included" },
+    { title: "Is The Ritz-Carlton Yacht Collection Good for People Who Do Not Like Cruises?", url: "/ritz-carlton-yacht-collection-for-people-who-dont-like-cruises" },
+    { title: "Ritz-Carlton Yacht Cruises from Miami: What You Need to Know", url: "/ritz-carlton-yacht-cruises-from-miami" },
+    { title: "Ritz-Carlton Yacht Caribbean Cruises: Best Itineraries and When to Go", url: "/ritz-carlton-yacht-caribbean-cruises" }
   ];
 
   // EXACT Strong Commercial Pages list
   const strongCommercialPages = [
-    { title: "Why Book a Ritz-Carlton Yacht Cruise Through a Travel Advisor?", url: "#" },
-    { title: "Ritz-Carlton Yacht Collection Travel Advisor in Florida", url: "#" },
-    { title: "Ritz-Carlton Yacht Collection Travel Advisor in Orlando", url: "#" },
-    { title: "How to Choose the Right Ritz-Carlton Yacht, Suite and Itinerary", url: "#" }
+    { title: "Why Book a Ritz-Carlton Yacht Cruise Through a Travel Advisor?", url: "/ritz-carlton-yacht-cruises/travel-advisor" },
+    { title: "Ritz-Carlton Yacht Collection Travel Advisor in Florida", url: "/ritz-carlton-yacht-collection-travel-advisor-florida" },
+    { title: "Ritz-Carlton Yacht Collection Travel Advisor in Orlando", url: "/ritz-carlton-yacht-collection-travel-advisor-orlando" },
+    { title: "How to Choose the Right Ritz-Carlton Yacht, Suite and Itinerary", url: "/how-to-choose-right-ritz-carlton-yacht-suite-itinerary" }
   ];
 
   // Interactive Hub Cards (SEO Optimized)
@@ -128,68 +128,68 @@ const RitzCarltonYachtCollection = () => {
       links: [
         { label: "How Much Does a Ritz-Carlton Yacht Cruise Cost?", url: "/ritz-carlton-yacht-collection-cost" },
         { label: "What Is Included on a Ritz-Carlton Yacht Cruise?", url: "/ritz-carlton-yacht-collection-included" },
-        { label: "Is The Ritz-Carlton Yacht Collection Worth It? An Honest Review", url: "/ritz-carlton-yacht-collection-reviews" }
+        { label: "Is The Ritz-Carlton Yacht Collection Worth It?", url: "/ritz-carlton-yacht-collection-reviews" }
       ],
-      mainUrl: "#"
+      mainUrl: "/ritz-carlton-yacht-collection-cost"
     },
     {
-      title: "Yacht & Brand Comparisons",
-      category: "Fleet & Competitor Showdowns",
-      description: "Side-by-side comparisons of Evrima, Ilma, Luminara, Explora, and Seabourn.",
+      title: "Fleet & Competitor Comparisons",
+      category: "Fleet Comparisons",
+      description: "Direct side-by-side evaluations across Evrima, Ilma, Luminara, and rival ultra-luxury lines.",
       image: comparisonVallettaImg,
       placeholderLabel: "Ritz-Carlton Yacht Fleet Comparisons",
-      actionLabel: "Explore Comparisons",
+      actionLabel: "Compare Fleet & Lines",
       links: [
-        { label: "Evrima vs. Ilma vs. Luminara: Which Ritz-Carlton Yacht Is Best?", url: "#" },
-        { label: "Ritz-Carlton Yacht Collection vs. Explora Journeys", url: "#" },
-        { label: "Ritz-Carlton Yacht Collection vs. Seabourn", url: "#" }
+        { label: "Evrima vs. Ilma vs. Luminara", url: "/ritz-carlton-evrima-vs-ilma-vs-luminara" },
+        { label: "Ritz-Carlton vs. Explora Journeys", url: "/ritz-carlton-yacht-collection-vs-explora-journeys" },
+        { label: "Ritz-Carlton vs. Seabourn", url: "/ritz-carlton-yacht-collection-vs-seabourn" }
       ],
-      mainUrl: "#"
+      mainUrl: "/ritz-carlton-evrima-vs-ilma-vs-luminara"
     },
     {
-      title: "Onboard Lifestyle & Suites",
-      category: "Suites & Amenities",
-      description: "Guides to dress code, family friendliness, Bonvoy points, and suite selection.",
+      title: "Lifestyle & Experience Guides",
+      category: "Onboard Lifestyle",
+      description: "Suites, dress codes, dining philosophies, family suitability, and loyalty benefits.",
       image: lifestyleCabanaImg,
-      placeholderLabel: "Ritz-Carlton Yacht Onboard Lifestyle & Suites",
-      actionLabel: "Explore Onboard Guides",
+      placeholderLabel: "Ritz-Carlton Yacht Lifestyle & Experience",
+      actionLabel: "View Lifestyle Guides",
       links: [
-        { label: "What Is the Dress Code on Ritz-Carlton Yachts?", url: "#" },
-        { label: "Are Ritz-Carlton Yacht Cruises Good for Families and Children?", url: "#" },
-        { label: "How Do Marriott Bonvoy Points Work on Ritz-Carlton Yacht Cruises?", url: "#" },
-        { label: "What Are the Best Suites on Ritz-Carlton Yachts?", url: "#" }
+        { label: "Dress Code & Attire Essentials", url: "/ritz-carlton-yacht-collection-dress-code" },
+        { label: "Family & Children Considerations", url: "/ritz-carlton-yacht-collection-families-children" },
+        { label: "Marriott Bonvoy Points & Redemption", url: "/ritz-carlton-yacht-collection-marriott-bonvoy-points" },
+        { label: "Suites, Layouts & Best Cabins", url: "/ritz-carlton-yacht-collection-suites" }
       ],
-      mainUrl: "#"
+      mainUrl: "/ritz-carlton-yacht-collection-suites"
     },
     {
-      title: "Excursions & Destinations",
-      category: "Regions & Non-Cruisers",
-      description: "Exploring shore excursions, Caribbean itineraries, Miami sailings, and non-cruiser guides.",
+      title: "Destinations & Excursions",
+      category: "Destinations",
+      description: "Shore excursions, port accessibility, Miami departures, and Caribbean sailings.",
       image: shoreExcursionImg,
-      placeholderLabel: "Ritz-Carlton Yacht Shore Excursions & Destinations",
-      actionLabel: "Explore Destinations",
+      placeholderLabel: "Ritz-Carlton Yacht Destinations & Excursions",
+      actionLabel: "Discover Destinations",
       links: [
-        { label: "Are Ritz-Carlton Yacht Shore Excursions Included?", url: "#" },
-        { label: "Is The Ritz-Carlton Yacht Collection Good for People Who Do Not Like Cruises?", url: "#" },
-        { label: "Ritz-Carlton Yacht Cruises from Miami: What You Need to Know", url: "#" },
-        { label: "Ritz-Carlton Yacht Caribbean Cruises: Best Itineraries and When to Go", url: "#" }
+        { label: "Shore Excursion Inclusions & Costs", url: "/ritz-carlton-yacht-shore-excursions-included" },
+        { label: "Guide for Non-Cruisers", url: "/ritz-carlton-yacht-collection-for-people-who-dont-like-cruises" },
+        { label: "Miami Sailings & Ports", url: "/ritz-carlton-yacht-cruises-from-miami" },
+        { label: "Caribbean Voyages & Seasons", url: "/ritz-carlton-yacht-caribbean-cruises" }
       ],
-      mainUrl: "#"
+      mainUrl: "/ritz-carlton-yacht-caribbean-cruises"
     },
     {
-      title: "Commercial & Advisor Services",
-      category: "Advisor Advisory",
-      description: "Why booking through a specialized travel advisor in Florida or Orlando unlocks VIP perks.",
+      title: "Advisory & Planning Services",
+      category: "Advisor Services",
+      description: "Working with certified luxury cruise specialists, advisor benefits, and itinerary selection.",
       image: advisorEmbarkationImg,
       placeholderLabel: "Ritz-Carlton Yacht Travel Advisor Services",
-      actionLabel: "Explore Advisory",
+      actionLabel: "Connect With Advisor",
       links: [
-        { label: "Why Book a Ritz-Carlton Yacht Cruise Through a Travel Advisor?", url: "#" },
-        { label: "Ritz-Carlton Yacht Collection Travel Advisor in Florida", url: "#" },
-        { label: "Ritz-Carlton Yacht Collection Travel Advisor in Orlando", url: "#" },
-        { label: "How to Choose the Right Ritz-Carlton Yacht, Suite and Itinerary", url: "#" }
+        { label: "Why Book Through a Travel Advisor?", url: "/ritz-carlton-yacht-cruises/travel-advisor" },
+        { label: "Advisor Services: Florida", url: "/ritz-carlton-yacht-collection-travel-advisor-florida" },
+        { label: "Advisor Services: Orlando", url: "/ritz-carlton-yacht-collection-travel-advisor-orlando" },
+        { label: "How to Choose Yacht, Suite & Itinerary", url: "/how-to-choose-right-ritz-carlton-yacht-suite-itinerary" }
       ],
-      mainUrl: "#"
+      mainUrl: "/ritz-carlton-yacht-cruises/travel-advisor"
     }
   ];
 
@@ -725,7 +725,7 @@ const RitzCarltonYachtCollection = () => {
 
       {/* ─── SECTION 12: Comprehensive FAQ ─── */}
       <FAQAccordion
-        data={pageData.faqs}
+        data={{ title: "Frequently Asked Questions", faqs: pageData.faqs }}
       />
 
       {/* ─── SECTION 13: Final Center CTA ─── */}

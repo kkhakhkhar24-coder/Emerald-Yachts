@@ -3,14 +3,62 @@ import { Helmet } from 'react-helmet-async';
 import Navbar from "@/components/Navbar/Navbar";
 import pageData from './data.json';
 
-// Image Placeholders & Angela Photo
+// Angela Portrait
 import angelaPortrait from '@/assets/Media (2).jpg';
 
-const ritzImage = 'https://placehold.co/1200x800/1e293b/d4af37?text=Ritz-Carlton+Yacht+Collection';
-const seabournImage = 'https://placehold.co/1200x800/0f172a/d4af37?text=Seabourn+Luxury+Cruises';
-const expeditionImage = 'https://placehold.co/1200x800/1e293b/ffffff?text=Seabourn+Expedition+Vessel';
-const atmosphereImage = 'https://placehold.co/1200x800/0f172a/ffffff?text=Understated+Luxury+Atmosphere';
-const wellnessImage = 'https://placehold.co/1200x800/1e3a5f/ffffff?text=Wellness+%26+Spa+Comparison';
+// SEO Optimized Assets from assets/RitzCarltonVsSeabourn
+import heroBgImg from '@/assets/RitzCarltonVsSeabourn/ritz-carlton-yacht-vs-seabourn-luxury-cruise.jpeg';
+
+// Intro Section Images
+import introLifestyleImg from '@/assets/RitzCarltonVsSeabourn/ritz-carlton-yacht-intimate-ship-size.jpg';
+import introDiningImg from '@/assets/RitzCarltonVsSeabourn/ritz-carlton-yacht-mistral-dining-terrace.jpg';
+
+// Dual Philosophy
+import ritzPhilosophyImg from '@/assets/RitzCarltonVsSeabourn/ritz-carlton-yacht-philosophy-marina.jpg';
+import seabournPhilosophyImg from '@/assets/RitzCarltonVsSeabourn/seabourn-cruises-expedition-philosophy-alaska.jpg';
+
+// Ship Size Showdown
+import ritzShipImg from '@/assets/RitzCarltonVsSeabourn/ritz-carlton-yacht-intimate-ship-size.jpg';
+import seabournShipImg from '@/assets/RitzCarltonVsSeabourn/seabourn-luxury-fleet-kotor-harbor.jpg';
+
+// Suites Tabs
+import ritzSuitesTabImg from '@/assets/RitzCarltonVsSeabourn/ritz-carlton-yacht-grand-suite-private-terrace.jpg';
+import seabournSuitesTabImg from '@/assets/RitzCarltonVsSeabourn/seabourn-ocean-front-veranda-suite.jpg';
+
+// Service & Dining ZigZag
+import ritzServiceImg from '@/assets/RitzCarltonVsSeabourn/ritz-carlton-yacht-mistral-dining-terrace.jpg';
+import seabournDiningImg from '@/assets/RitzCarltonVsSeabourn/seabourn-dining-beach-house-caviar-lunch.jpg';
+
+// Atmosphere & Design
+import atmosphereDesignImg from '@/assets/RitzCarltonVsSeabourn/ritz-carlton-vs-seabourn-atmosphere-design-art-bar.jpg';
+
+// Itineraries & Expedition
+import itineraryExpeditionImg from '@/assets/RitzCarltonVsSeabourn/seabourn-expedition-itineraries-alaska-wildlife.jpg';
+
+// Wellness Showdown
+import ritzSpaImg from '@/assets/RitzCarltonVsSeabourn/ritz-carlton-spa-terrace-wellness.jpg';
+import seabournWellnessImg from '@/assets/RitzCarltonVsSeabourn/seabourn-wellness-deck-whirlpools.jpeg';
+
+// Entertainment & Enrichment
+import enrichmentRitzImg from '@/assets/RitzCarltonVsSeabourn/ritz-carlton-yacht-curated-entertainment-embarkation.jpeg';
+import enrichmentSeabournImg from '@/assets/RitzCarltonVsSeabourn/seabourn-conversations-enrichment-destination-valletta.jpg';
+import enrichmentVerdictImg from '@/assets/RitzCarltonVsSeabourn/ritz-carlton-vs-seabourn-entertainment-pool-bar.jpg';
+
+// Head-to-Head Visual Answers
+import battleServiceImg from '@/assets/RitzCarltonVsSeabourn/ritz-carlton-vs-seabourn-service-culture-afternoon-tea.jpeg';
+import battleFoodImg from '@/assets/RitzCarltonVsSeabourn/ritz-carlton-vs-seabourn-culinary-beverage-showdown.jpg';
+import battleSuitesImg from '@/assets/RitzCarltonVsSeabourn/ritz-carlton-vs-seabourn-suites-comparison.jpg';
+import battleExpeditionImg from '@/assets/RitzCarltonVsSeabourn/seabourn-antarctica-arctic-expedition-cruising.jpg';
+import battleWatersportsImg from '@/assets/RitzCarltonVsSeabourn/ritz-carlton-yacht-watersports-marina-sea-access.jpeg';
+import battleExclusivityImg from '@/assets/RitzCarltonVsSeabourn/ritz-carlton-vs-seabourn-exclusivity-superyacht.jpg';
+
+// Travel Advisor Framework
+import frameworkYachtImg from '@/assets/RitzCarltonVsSeabourn/travel-advisor-framework-private-yacht-feeling.jpg';
+import frameworkExpeditionImg from '@/assets/RitzCarltonVsSeabourn/travel-advisor-framework-antarctica-arctic-expedition.jpg';
+import frameworkBrandImg from '@/assets/RitzCarltonVsSeabourn/travel-advisor-framework-ritz-carlton-brand-loyalty.jpeg';
+import frameworkDiningImg from '@/assets/RitzCarltonVsSeabourn/travel-advisor-framework-dining-caviar-priority.jpg';
+import frameworkItineraryImg from '@/assets/RitzCarltonVsSeabourn/travel-advisor-framework-itinerary-port-access.jpeg';
+import frameworkUndecidedImg from '@/assets/RitzCarltonVsSeabourn/travel-advisor-framework-undecided-traveler-guide.jpg';
 
 // Shared UI System Components (100% Component-Based Architecture matching EmeraldYachts.tsx)
 import ComparisonHero from '@/components/ui/ComparisonHero';
@@ -34,43 +82,120 @@ import CenterCTA from '@/components/ui/CenterCTA';
 import PillarDirectory from '@/components/ui/PillarDirectory';
 
 const RitzCarltonVsSeabourn = () => {
+  // Suite Tabs with Images
+  const suitesTabbedItems = (pageData.suitesTabbedData || []).map((tab, idx) => ({
+    ...tab,
+    image: idx === 0 ? ritzSuitesTabImg : seabournSuitesTabImg
+  }));
+
+  // Entertainment & Enrichment Cards with Images
+  const enrichmentImages = [enrichmentRitzImg, enrichmentSeabournImg, enrichmentVerdictImg];
+  const enrichmentItems = (pageData.enrichmentData || []).map((item, idx) => ({
+    ...item,
+    image: enrichmentImages[idx % enrichmentImages.length]
+  }));
+
+  // Head-to-Head Answer Cards with Images
+  const headToHeadImages = [
+    battleServiceImg,
+    battleFoodImg,
+    battleSuitesImg,
+    battleExpeditionImg,
+    battleWatersportsImg,
+    battleExclusivityImg
+  ];
+  const headToHeadItems = (pageData.headToHeadAnswers || []).map((item, idx) => ({
+    ...item,
+    image: headToHeadImages[idx % headToHeadImages.length]
+  }));
+
+  // Travel Advisor Framework Cards with Images
+  const frameworkImages = [
+    frameworkYachtImg,
+    frameworkExpeditionImg,
+    frameworkBrandImg,
+    frameworkDiningImg,
+    frameworkItineraryImg,
+    frameworkUndecidedImg
+  ];
+  const frameworkItems = (pageData.travelAdvisorFramework || []).map((item, idx) => ({
+    ...item,
+    image: frameworkImages[idx % frameworkImages.length]
+  }));
+
   // Schema JSON-LD
   const jsonLdSchema = {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Article",
-        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-vs-seabourn#article",
-        "headline": "Ritz-Carlton Yacht Collection vs. Seabourn: Which Luxury Cruise Is Right for You?",
+        "@type": "WebPage",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-vs-seabourn/#webpage",
+        "url": "https://www.tripsandships.com/ritz-carlton-yacht-collection-vs-seabourn",
+        "name": "Ritz-Carlton Yacht Collection vs. Seabourn: Which Luxury Cruise Is Right for You?",
+        "headline": "Ritz-Carlton Yacht Collection vs. Seabourn",
         "description": "A detailed comparison of Ritz-Carlton Yacht Collection and Seabourn covering suites, service, dining, inclusions, itineraries, expedition cruising and overall luxury cruise value.",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-vs-seabourn#webpage"
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/assets/RitzCarltonVsSeabourn/ritz-carlton-yacht-vs-seabourn-luxury-cruise.jpeg",
+          "caption": "Ritz-Carlton Yacht Collection vs. Seabourn: Which Luxury Cruise Is Right for You?"
         },
+        "image": "https://www.tripsandships.com/assets/RitzCarltonVsSeabourn/ritz-carlton-yacht-vs-seabourn-luxury-cruise.jpeg",
         "author": {
-          "@type": "Person",
-          "name": "Angela Hughes"
+          "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
         },
         "publisher": {
-          "@type": "TravelAgency",
-          "name": "Trips & Ships Luxury Travel",
-          "url": "https://www.tripsandships.com/"
+          "@id": "https://www.tripsandships.com/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://www.tripsandships.com/#website"
         }
       },
       {
-        "@type": "WebPage",
-        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-vs-seabourn#webpage",
-        "url": "https://www.tripsandships.com/ritz-carlton-yacht-collection-vs-seabourn",
-        "name": "Ritz-Carlton Yacht Collection vs. Seabourn",
-        "isPartOf": {
-          "@type": "WebSite",
-          "name": "Trips & Ships Luxury Travel",
-          "url": "https://www.tripsandships.com/"
+        "@type": "Organization",
+        "@id": "https://www.tripsandships.com/#organization",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/",
+        "founder": {
+          "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
         }
+      },
+      {
+        "@type": "TravelAgency",
+        "@id": "https://www.tripsandships.com/#travelagency",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/",
+        "parentOrganization": {
+          "@id": "https://www.tripsandships.com/#organization"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.tripsandships.com/about-angela-hughes/#person",
+        "name": "Angela Hughes",
+        "jobTitle": "CEO of Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/about-angela-hughes",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/assets/Angela_Hughes.jpg",
+          "caption": "Angela Hughes - Luxury Travel Expert"
+        },
+        "description": "Angela Hughes is a luxury travel expert, CEO of Trips & Ships Luxury Travel, founder of Luxury Travel University and an experienced luxury travel industry leader.",
+        "worksFor": {
+          "@id": "https://www.tripsandships.com/#organization"
+        },
+        "knowsAbout": [
+          "Luxury Travel",
+          "Luxury Cruises",
+          "Yacht Cruising",
+          "Luxury Safaris",
+          "Expedition Cruises",
+          "River Cruising",
+          "Premium Travel"
+        ]
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-vs-seabourn#breadcrumb",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-vs-seabourn/#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -81,8 +206,8 @@ const RitzCarltonVsSeabourn = () => {
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Luxury Cruises",
-            "item": "https://www.tripsandships.com/cruise/"
+            "name": "Ritz-Carlton Yacht Collection",
+            "item": "https://www.tripsandships.com/ritz-carlton-yacht-collection"
           },
           {
             "@type": "ListItem",
@@ -94,7 +219,7 @@ const RitzCarltonVsSeabourn = () => {
       },
       {
         "@type": "FAQPage",
-        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-vs-seabourn#faq",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-vs-seabourn/#faq",
         "mainEntity": pageData.faqs.map(faq => ({
           "@type": "Question",
           "name": faq.question,
@@ -110,14 +235,22 @@ const RitzCarltonVsSeabourn = () => {
   return (
     <div className="min-h-screen bg-white font-sans text-navy-950 antialiased selection:bg-gold-500/30 selection:text-gold-900">
       <Helmet>
-        <title>{pageData.seo.metaTitle}</title>
+        <title>{pageData.seo.title}</title>
+        <meta name="title" content={pageData.seo.metaTitle} />
         <meta name="description" content={pageData.seo.metaDescription} />
-        <link rel="canonical" href={pageData.seo.canonicalUrl} />
         <meta name="keywords" content={pageData.seo.keywords} />
+        <meta property="og:type" content="article" />
         <meta property="og:title" content={pageData.seo.ogTitle} />
         <meta property="og:description" content={pageData.seo.ogDescription} />
         <meta property="og:url" content={pageData.seo.canonicalUrl} />
-        <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://www.tripsandships.com/assets/RitzCarltonVsSeabourn/ritz-carlton-yacht-vs-seabourn-luxury-cruise.jpeg" />
+        <meta property="og:image:alt" content="Ritz-Carlton Yacht Collection vs. Seabourn: Which Luxury Cruise Is Right for You?" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageData.seo.ogTitle} />
+        <meta name="twitter:description" content={pageData.seo.ogDescription} />
+        <meta name="twitter:image" content="https://www.tripsandships.com/assets/RitzCarltonVsSeabourn/ritz-carlton-yacht-vs-seabourn-luxury-cruise.jpeg" />
+        <link rel="canonical" href={pageData.seo.canonicalUrl} />
+
         <script type="application/ld+json">
           {JSON.stringify(jsonLdSchema)}
         </script>
@@ -125,25 +258,30 @@ const RitzCarltonVsSeabourn = () => {
 
       <Navbar />
 
-      {/* ─── SECTION 1: ComparisonHero (100% Component-Based) ─── */}
+      {/* ─── SECTION 1: ComparisonHero (100% Component-Based with SEO-optimized Hero background image) ─── */}
       <ComparisonHero
         title={pageData.hero.title}
         subtitle={pageData.hero.subtitle}
-        ctaLabel={pageData.hero.ctaLabel}
-        ctaUrl={pageData.hero.ctaUrl}
+        primaryCtaText={pageData.hero.ctaLabel}
+        primaryCtaLink={pageData.hero.ctaUrl}
+        backgroundImage={heroBgImg}
       />
 
       {/* ─── SECTION 2: PremiumIntro Quick Answer / Verdict ─── */}
       <PremiumIntro
         sections={pageData.quickAnswer}
+        image1={introLifestyleImg}
+        image2={introDiningImg}
+        alt1="Ritz-Carlton Yacht Collection vs Seabourn Private Yacht Lifestyle and Intimacy"
+        alt2="Ritz-Carlton and Seabourn Luxury Cruise Dining Experience"
         watermarkText="Verdict"
       />
 
       {/* ─── SECTION 3: DualPhilosophyShowcase The Biggest Difference ─── */}
       <DualPhilosophyShowcase
         data={pageData.dualPhilosophy}
-        imageSailing={ritzImage}
-        imageAllSuite={seabournImage}
+        imageSailing={ritzPhilosophyImg}
+        imageAllSuite={seabournPhilosophyImg}
       />
 
       {/* ─── SECTION 4: BudgetBreakdownTable Quick Verdict at a Glance ─── */}
@@ -156,8 +294,8 @@ const RitzCarltonVsSeabourn = () => {
       {pageData.shipSizeShowdownData && (
         <HeadToHeadVisualShowdown
           data={pageData.shipSizeShowdownData}
-          image1={ritzImage}
-          image2={seabournImage}
+          image1={ritzShipImg}
+          image2={seabournShipImg}
         />
       )}
 
@@ -177,7 +315,7 @@ const RitzCarltonVsSeabourn = () => {
       <TabbedComparison
         title="Ritz-Carlton vs. Seabourn Suites"
         mainBrand={{ name: "Luxury Suite Accommodations" }}
-        competitors={pageData.suitesTabbedData}
+        competitors={suitesTabbedItems}
         hideVs={true}
         leftLabel="Suite Features & Amenities"
         rightLabel="Best For & Verdict"
@@ -189,7 +327,7 @@ const RitzCarltonVsSeabourn = () => {
           title={pageData.serviceAndDiningZigZag.title}
           subtitle={pageData.serviceAndDiningZigZag.subtitle}
           items={pageData.serviceAndDiningZigZag.items}
-          images={[ritzImage, seabournImage]}
+          images={[ritzServiceImg, seabournDiningImg]}
         />
       )}
 
@@ -210,7 +348,7 @@ const RitzCarltonVsSeabourn = () => {
         <EditorialFeatureShowcase
           title={pageData.atmosphereEditorial.title}
           subtitle={pageData.atmosphereEditorial.subtitle}
-          image={atmosphereImage}
+          image={atmosphereDesignImg}
           features={pageData.atmosphereEditorial.features}
           bgClass="bg-slate-50"
         />
@@ -225,7 +363,7 @@ const RitzCarltonVsSeabourn = () => {
           bestFor={pageData.itineraryAndExpeditionData.bestFor}
           notBestFor={pageData.itineraryAndExpeditionData.notBestFor}
           bottomNote={pageData.itineraryAndExpeditionData.bottomNote}
-          image={expeditionImage}
+          image={itineraryExpeditionImg}
         />
       )}
 
@@ -233,17 +371,17 @@ const RitzCarltonVsSeabourn = () => {
       {pageData.wellnessShowdownData && (
         <HeadToHeadVisualShowdown
           data={pageData.wellnessShowdownData}
-          image1={ritzImage}
-          image2={seabournImage}
+          image1={ritzSpaImg}
+          image2={seabournWellnessImg}
         />
       )}
 
       {/* ─── SECTION 9B: ThreeColumnGrid Entertainment & Enrichment ─── */}
-      {pageData.enrichmentData && (
+      {enrichmentItems && (
         <ThreeColumnGrid
           title="Entertainment & Enrichment: Ritz-Carlton vs. Seabourn"
           subtitle="Comparing onboard activities, enrichment programs, and guest experience philosophy:"
-          items={pageData.enrichmentData}
+          items={enrichmentItems}
         />
       )}
 
@@ -271,7 +409,7 @@ const RitzCarltonVsSeabourn = () => {
       <ThreeColumnGrid
         title="Head-to-Head Answers: Service, Food, Suites, Expedition & Exclusivity"
         subtitle="Direct analysis answering the top cruiser questions:"
-        items={pageData.headToHeadAnswers}
+        items={headToHeadItems}
       />
 
       {/* ─── SECTION 12: ProsConsCards Who Should Book Which ─── */}
@@ -316,7 +454,7 @@ const RitzCarltonVsSeabourn = () => {
       <ThreeColumnGrid
         title="Which Is Better? A Travel Advisor's Framework"
         subtitle="Angela Hughes' 6-scenario guide for recommending the right luxury cruise line:"
-        items={pageData.travelAdvisorFramework}
+        items={frameworkItems}
       />
 
       {/* ─── SECTION 13: BudgetBreakdownTable Decision Matrix ─── */}

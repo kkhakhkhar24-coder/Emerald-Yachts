@@ -3,14 +3,46 @@ import { Helmet } from 'react-helmet-async';
 import Navbar from "@/components/Navbar/Navbar";
 import pageData from './data.json';
 
-// Image Placeholders & Angela Photo
+// Angela Photo
 import angelaPortrait from '@/assets/Media (2).jpg';
 
-const ritzImage = 'https://placehold.co/1200x800/1e293b/d4af37?text=Ritz-Carlton+Yacht+Collection';
-const exploraImage = 'https://placehold.co/1200x800/0f172a/d4af37?text=Explora+Journeys';
-const stLuciaImage = 'https://placehold.co/1200x800/1e293b/ffffff?text=Itinerary+Destinations+Placeholder';
-const skyBarImage = 'https://placehold.co/1200x800/0f172a/ffffff?text=Atmosphere+%26+Design+Placeholder';
-const cocktailBarImage = 'https://placehold.co/1200x800/1e293b/ffffff?text=Price+Comparison+Placeholder';
+// SEO Optimized Assets from assets/RitzCarltonVsExploraJourneys
+import heroBgImg from '@/assets/RitzCarltonVsExploraJourneys/ritz-carlton-yacht-vs-explora-journeys-luxury-cruise.jpeg';
+import introLifestyleImg from '@/assets/RitzCarltonVsExploraJourneys/ritz-carlton-yacht-marina-lifestyle-terrace.jpeg';
+import introDiningImg from '@/assets/RitzCarltonVsExploraJourneys/ritz-carlton-yacht-dining-mistral-terrace.jpg';
+
+import sailingYachtImg from '@/assets/RitzCarltonVsExploraJourneys/ritz-carlton-yacht-private-marina-experience.jpg';
+import allSuiteResidenceImg from '@/assets/RitzCarltonVsExploraJourneys/explora-journeys-ocean-residence-deck-pool.jpg';
+
+import ritzPhilosophyImg from '@/assets/RitzCarltonVsExploraJourneys/ritz-carlton-yacht-philosophy-small-ship.jpg';
+import exploraPhilosophyImg from '@/assets/RitzCarltonVsExploraJourneys/explora-journeys-residence-philosophy-art-bar.jpg';
+import inclusionsShowcaseImg from '@/assets/RitzCarltonVsExploraJourneys/ritz-carlton-vs-explora-inclusions-beverages.jpg';
+
+import exploraWellnessImg from '@/assets/RitzCarltonVsExploraJourneys/explora-ocean-wellness-spa-thermal-whirlpool.jpeg';
+import ritzSpaImg from '@/assets/RitzCarltonVsExploraJourneys/ritz-carlton-spa-terrace-wellness.jpg';
+
+import ritzServiceImg from '@/assets/RitzCarltonVsExploraJourneys/ritz-carlton-service-culture-afternoon-tea.jpeg';
+import exploraServiceImg from '@/assets/RitzCarltonVsExploraJourneys/explora-intuitive-hospitality-lounge-bar.jpg';
+
+import atmosphereDesignImg from '@/assets/RitzCarltonVsExploraJourneys/ritz-carlton-vs-explora-atmosphere-design-suite.jpg';
+import itineraryDestinationsImg from '@/assets/RitzCarltonVsExploraJourneys/ritz-carlton-vs-explora-itineraries-st-lucia.jpg';
+
+import battleServiceImg from '@/assets/RitzCarltonVsExploraJourneys/ritz-carlton-vs-explora-service-comparison-embarkation.jpeg';
+import battleFoodImg from '@/assets/RitzCarltonVsExploraJourneys/ritz-carlton-vs-explora-dining-beach-house-lunch.jpg';
+import battleSuitesImg from '@/assets/RitzCarltonVsExploraJourneys/ritz-carlton-vs-explora-suites-comparison-grand-suite.jpg';
+import battleWellnessImg from '@/assets/RitzCarltonVsExploraJourneys/ritz-carlton-vs-explora-wellness-spa-fitness.jpeg';
+import battleExclusivityImg from '@/assets/RitzCarltonVsExploraJourneys/ritz-carlton-vs-explora-exclusivity-intimate-yacht.jpg';
+
+import frameworkIntimacyImg from '@/assets/RitzCarltonVsExploraJourneys/travel-advisor-framework-intimacy-vs-space.jpg';
+import frameworkDesignImg from '@/assets/RitzCarltonVsExploraJourneys/travel-advisor-framework-design-style-valletta.jpg';
+import frameworkWellnessImg from '@/assets/RitzCarltonVsExploraJourneys/travel-advisor-framework-wellness-focus-aquabana.jpg';
+import frameworkLoyaltyImg from '@/assets/RitzCarltonVsExploraJourneys/travel-advisor-framework-brand-loyalty-grand-suite.jpg';
+import frameworkItineraryImg from '@/assets/RitzCarltonVsExploraJourneys/travel-advisor-framework-itinerary-caribbean.jpeg';
+
+import ritzSuitesTabImg from '@/assets/RitzCarltonVsExploraJourneys/ritz-carlton-yacht-suites-private-terrace.jpg';
+import exploraSuitesTabImg from '@/assets/RitzCarltonVsExploraJourneys/explora-journeys-ocean-suites-residence.jpg';
+
+import finalCtaBgImg from '@/assets/RitzCarltonVsExploraJourneys/plan-your-ritz-carlton-vs-explora-luxury-voyage.jpeg';
 
 // Shared UI System Components (100% Component-Based Architecture matching EmeraldYachts.tsx)
 import ComparisonHero from '@/components/ui/ComparisonHero';
@@ -33,43 +65,149 @@ import ExpertCredentials from '@/components/ui/ExpertCredentials';
 import CenterCTA from '@/components/ui/CenterCTA';
 
 const RitzCarltonVsExploraJourneys = () => {
-  // Schema JSON-LD
+  // Map images for Suites Tabbed Comparison (2 tabs: Ritz-Carlton vs Explora Suites)
+  const suitesTabbedItems = pageData.suitesTabbedData.map((item, idx) => {
+    const suiteTabImages = [ritzSuitesTabImg, exploraSuitesTabImg];
+    return {
+      ...item,
+      image: suiteTabImages[idx] || null
+    };
+  });
+
+  // Map images for Yacht vs Ocean Residence Duels (3 cards)
+  const yachtDuelsItems = pageData.yachtVersusResidenceDuels.map((item, idx) => {
+    const duelImages = [ritzPhilosophyImg, exploraPhilosophyImg, inclusionsShowcaseImg];
+    const seoLabels = [
+      "Ritz-Carlton Yacht-Like Travel Philosophy",
+      "Explora Contemporary Ocean Residence Philosophy",
+      "Inclusions, High-Speed Wi-Fi & Premium Amenities"
+    ];
+    return {
+      ...item,
+      image: duelImages[idx] || null,
+      placeholderLabel: seoLabels[idx] || item.title
+    };
+  });
+
+  // Map images for Head-to-Head Battle Answers (5 cards)
+  const battleAnswersItems = pageData.headToHeadBattleAnswers.map((item, idx) => {
+    const battleImages = [
+      battleServiceImg,
+      battleFoodImg,
+      battleSuitesImg,
+      battleWellnessImg,
+      battleExclusivityImg
+    ];
+    const seoLabels = [
+      "Ritz-Carlton vs Explora Service Style Comparison",
+      "Ritz-Carlton vs Explora Culinary Experience & Fine Dining",
+      "Ritz-Carlton vs Explora Luxury Ocean Suites & Terraces",
+      "Ritz-Carlton vs Explora Ocean Wellness & Spa Facilities",
+      "Ritz-Carlton vs Explora Yacht Exclusivity & Intimacy"
+    ];
+    return {
+      ...item,
+      image: battleImages[idx] || null,
+      placeholderLabel: seoLabels[idx] || item.title
+    };
+  });
+
+  // Map images for Travel Advisor Framework (5 cards)
+  const advisorFrameworkItems = pageData.travelAdvisorFramework.map((item, idx) => {
+    const frameworkImages = [
+      frameworkIntimacyImg,
+      frameworkDesignImg,
+      frameworkWellnessImg,
+      frameworkLoyaltyImg,
+      frameworkItineraryImg
+    ];
+    const seoLabels = [
+      "Luxury Yacht Intimacy vs Ocean Residence Space",
+      "Classic Yacht Contemporary vs European Design Style",
+      "Integrated Ocean Wellness & Spa Experience",
+      "Ritz-Carlton Brand Loyalty & Marriott Bonvoy Benefits",
+      "Global Itinerary Selection & Port Accessibility"
+    ];
+    return {
+      ...item,
+      image: frameworkImages[idx] || null,
+      placeholderLabel: seoLabels[idx] || item.title
+    };
+  });
+
+  // Schema JSON-LD (Exact matching structure with RitzCarltonYachtCollectionCost.jsx)
   const jsonLdSchema = {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Article",
-        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-vs-explora-journeys#article",
-        "headline": "Ritz-Carlton Yacht Collection vs. Explora Journeys: Which Luxury Cruise Is Right for You?",
+        "@type": "WebPage",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-vs-explora-journeys/#webpage",
+        "url": "https://www.tripsandships.com/ritz-carlton-yacht-collection-vs-explora-journeys",
+        "name": "Ritz-Carlton Yacht Collection vs. Explora Journeys: Which Luxury Cruise Is Right for You?",
+        "headline": "Ritz-Carlton Yacht Collection vs. Explora Journeys",
         "description": "A detailed comparison of Ritz-Carlton Yacht Collection and Explora Journeys covering price, suites, dining, service, inclusions, wellness, ships and itineraries.",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-vs-explora-journeys#webpage"
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/assets/RitzCarltonVsExploraJourneys/ritz-carlton-yacht-vs-explora-journeys-luxury-cruise.jpeg",
+          "caption": "Ritz-Carlton Yacht Collection vs. Explora Journeys: Which Luxury Cruise Is Right for You?"
         },
+        "image": "https://www.tripsandships.com/assets/RitzCarltonVsExploraJourneys/ritz-carlton-yacht-vs-explora-journeys-luxury-cruise.jpeg",
         "author": {
-          "@type": "Person",
-          "name": "Angela Hughes"
+          "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
         },
         "publisher": {
-          "@type": "TravelAgency",
-          "name": "Trips & Ships Luxury Travel",
-          "url": "https://www.tripsandships.com/"
+          "@id": "https://www.tripsandships.com/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://www.tripsandships.com/#website"
         }
       },
       {
-        "@type": "WebPage",
-        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-vs-explora-journeys#webpage",
-        "url": "https://www.tripsandships.com/ritz-carlton-yacht-collection-vs-explora-journeys",
-        "name": "Ritz-Carlton Yacht Collection vs Explora Journeys",
-        "isPartOf": {
-          "@type": "WebSite",
-          "name": "Trips & Ships Luxury Travel",
-          "url": "https://www.tripsandships.com/"
+        "@type": "Organization",
+        "@id": "https://www.tripsandships.com/#organization",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/",
+        "founder": {
+          "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
         }
+      },
+      {
+        "@type": "TravelAgency",
+        "@id": "https://www.tripsandships.com/#travelagency",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/",
+        "parentOrganization": {
+          "@id": "https://www.tripsandships.com/#organization"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.tripsandships.com/about-angela-hughes/#person",
+        "name": "Angela Hughes",
+        "jobTitle": "CEO of Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/about-angela-hughes",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/assets/Angela_Hughes.jpg",
+          "caption": "Angela Hughes - Luxury Travel Expert"
+        },
+        "description": "Angela Hughes is a luxury travel expert, CEO of Trips & Ships Luxury Travel, founder of Luxury Travel University and an experienced luxury travel industry leader.",
+        "worksFor": {
+          "@id": "https://www.tripsandships.com/#organization"
+        },
+        "knowsAbout": [
+          "Luxury Travel",
+          "Luxury Cruises",
+          "Yacht Cruising",
+          "Luxury Safaris",
+          "Expedition Cruises",
+          "River Cruising",
+          "Premium Travel"
+        ]
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-vs-explora-journeys#breadcrumb",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-vs-explora-journeys/#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -80,8 +218,8 @@ const RitzCarltonVsExploraJourneys = () => {
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Luxury Cruises",
-            "item": "https://www.tripsandships.com/cruise/"
+            "name": "Ritz-Carlton Yacht Collection",
+            "item": "https://www.tripsandships.com/ritz-carlton-yacht-collection"
           },
           {
             "@type": "ListItem",
@@ -93,7 +231,7 @@ const RitzCarltonVsExploraJourneys = () => {
       },
       {
         "@type": "FAQPage",
-        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-vs-explora-journeys#faq",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-vs-explora-journeys/#faq",
         "mainEntity": pageData.faqs.map(faq => ({
           "@type": "Question",
           "name": faq.question,
@@ -109,14 +247,22 @@ const RitzCarltonVsExploraJourneys = () => {
   return (
     <div className="min-h-screen bg-white font-sans text-navy-950 antialiased selection:bg-gold-500/30 selection:text-gold-900">
       <Helmet>
-        <title>{pageData.seo.metaTitle}</title>
+        <title>{pageData.seo.title}</title>
+        <meta name="title" content={pageData.seo.metaTitle} />
         <meta name="description" content={pageData.seo.metaDescription} />
-        <link rel="canonical" href={pageData.seo.canonicalUrl} />
         <meta name="keywords" content={pageData.seo.keywords} />
+        <meta property="og:type" content="article" />
         <meta property="og:title" content={pageData.seo.ogTitle} />
         <meta property="og:description" content={pageData.seo.ogDescription} />
         <meta property="og:url" content={pageData.seo.canonicalUrl} />
-        <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://www.tripsandships.com/assets/RitzCarltonVsExploraJourneys/ritz-carlton-yacht-vs-explora-journeys-luxury-cruise.jpeg" />
+        <meta property="og:image:alt" content="Ritz-Carlton Yacht Collection vs. Explora Journeys: Which Luxury Cruise Is Right for You?" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageData.seo.ogTitle} />
+        <meta name="twitter:description" content={pageData.seo.ogDescription} />
+        <meta name="twitter:image" content="https://www.tripsandships.com/assets/RitzCarltonVsExploraJourneys/ritz-carlton-yacht-vs-explora-journeys-luxury-cruise.jpeg" />
+        <link rel="canonical" href={pageData.seo.canonicalUrl} />
+
         <script type="application/ld+json">
           {JSON.stringify(jsonLdSchema)}
         </script>
@@ -124,25 +270,30 @@ const RitzCarltonVsExploraJourneys = () => {
 
       <Navbar />
 
-      {/* ─── SECTION 1: ComparisonHero (100% Component-Based) ─── */}
+      {/* ─── SECTION 1: ComparisonHero (100% Component-Based with SEO-optimized Hero background image) ─── */}
       <ComparisonHero
         title={pageData.hero.title}
         subtitle={pageData.hero.subtitle}
-        ctaLabel={pageData.hero.ctaLabel}
-        ctaUrl={pageData.hero.ctaUrl}
+        backgroundImage={heroBgImg}
+        primaryCtaText={pageData.hero.ctaLabel}
+        primaryCtaLink={pageData.hero.ctaUrl}
       />
 
       {/* ─── SECTION 2: PremiumIntro Quick Answer / Verdict (100% Component-Based) ─── */}
       <PremiumIntro 
         sections={pageData.quickAnswer} 
+        image1={introLifestyleImg}
+        image2={introDiningImg}
+        alt1="Ritz-Carlton Yacht Collection vs Explora Journeys Marina Lifestyle and Private Ocean Terraces"
+        alt2="Ritz-Carlton and Explora Luxury Cruise Culinary and Dining Experience"
         watermarkText="Verdict"
       />
 
       {/* ─── SECTION 3: DualPhilosophyShowcase The Biggest Difference (100% Component-Based) ─── */}
       <DualPhilosophyShowcase
         data={pageData.dualPhilosophy}
-        imageSailing={ritzImage}
-        imageAllSuite={exploraImage}
+        imageSailing={sailingYachtImg}
+        imageAllSuite={allSuiteResidenceImg}
       />
 
       {/* ─── SECTION 4: BudgetBreakdownTable Quick Verdict at a Glance (100% Component-Based) ─── */}
@@ -169,7 +320,7 @@ const RitzCarltonVsExploraJourneys = () => {
       <TabbedComparison
         title="Ritz-Carlton vs. Explora Suites"
         mainBrand={{ name: "Luxury Suite Accommodations" }}
-        competitors={pageData.suitesTabbedData}
+        competitors={suitesTabbedItems}
         hideVs={true}
         leftLabel="Suite Features & Amenities"
         rightLabel="Best For & Verdict"
@@ -189,7 +340,7 @@ const RitzCarltonVsExploraJourneys = () => {
       <ThreeColumnGrid
         title="Yacht vs. Ocean Residence Matchup"
         subtitle="Comparing core travel philosophies and inclusions:"
-        items={pageData.yachtVersusResidenceDuels}
+        items={yachtDuelsItems}
       />
 
       {/* ─── SECTION 10: BudgetBreakdownTable Inclusions Matrix (100% Component-Based) ─── */}
@@ -199,8 +350,8 @@ const RitzCarltonVsExploraJourneys = () => {
       {pageData.wellnessShowdownData && (
         <HeadToHeadVisualShowdown
           data={pageData.wellnessShowdownData}
-          image1={exploraImage}
-          image2={ritzImage}
+          image1={exploraWellnessImg}
+          image2={ritzSpaImg}
         />
       )}
 
@@ -210,7 +361,7 @@ const RitzCarltonVsExploraJourneys = () => {
           title={pageData.serviceComparisonZigZag.title}
           subtitle={pageData.serviceComparisonZigZag.subtitle}
           items={pageData.serviceComparisonZigZag.items}
-          images={[ritzImage, exploraImage]}
+          images={[ritzServiceImg, exploraServiceImg]}
         />
       )}
 
@@ -219,7 +370,7 @@ const RitzCarltonVsExploraJourneys = () => {
         <EditorialFeatureShowcase
           title={pageData.atmosphereAndDesignEditorial.title}
           subtitle={pageData.atmosphereAndDesignEditorial.subtitle}
-          image={exploraImage}
+          image={atmosphereDesignImg}
           features={pageData.atmosphereAndDesignEditorial.features}
           bgClass="bg-slate-50"
         />
@@ -234,7 +385,7 @@ const RitzCarltonVsExploraJourneys = () => {
           bestFor={pageData.itineraryComparisonData.bestFor}
           notBestFor={pageData.itineraryComparisonData.notBestFor}
           bottomNote={pageData.itineraryComparisonData.bottomNote}
-          image={ritzImage}
+          image={itineraryDestinationsImg}
         />
       )}
 
@@ -254,7 +405,7 @@ const RitzCarltonVsExploraJourneys = () => {
       <ThreeColumnGrid
         title="Head-to-Head Answers: Service, Food, Suites, Wellness & Exclusivity"
         subtitle="Direct analysis answering the top cruiser questions:"
-        items={pageData.headToHeadBattleAnswers}
+        items={battleAnswersItems}
       />
 
       {/* ─── SECTION 12: ProsConsCards Who Should Book Which (100% Component-Based) ─── */}
@@ -273,7 +424,7 @@ const RitzCarltonVsExploraJourneys = () => {
       <ThreeColumnGrid
         title="Which Is Better for a Luxury Travel Advisor?"
         subtitle="The 5-question framework to select the right brand for your travel style:"
-        items={pageData.travelAdvisorFramework}
+        items={advisorFrameworkItems}
       />
 
       {/* ─── SECTION 14: ProsConsCards Family & Couples Matchmaker (100% Component-Based) ─── */}
@@ -299,21 +450,22 @@ const RitzCarltonVsExploraJourneys = () => {
         authorImage={angelaPortrait}
       />
 
-      {/* ─── SECTION 14: FAQAccordion (100% Component-Based) ─── */}
+      {/* ─── SECTION 17: FAQAccordion (100% Component-Based) ─── */}
       <FAQAccordion data={{ title: "Frequently Asked Questions", faqs: pageData.faqs }} />
 
-      {/* ─── SECTION 15: ConclusionSection Final Verdict (100% Component-Based) ─── */}
+      {/* ─── SECTION 18: ConclusionSection Final Verdict (100% Component-Based) ─── */}
       <ConclusionSection sections={pageData.finalVerdictSections} />
 
-      {/* ─── SECTION 16: ExpertCredentials (100% Component-Based) ─── */}
+      {/* ─── SECTION 19: ExpertCredentials (100% Component-Based) ─── */}
       <ExpertCredentials image={angelaPortrait} />
 
-      {/* ─── SECTION 17: CenterCTA (100% Component-Based) ─── */}
+      {/* ─── SECTION 20: CenterCTA (100% Component-Based) ─── */}
       <CenterCTA
         title={pageData.centerCTA.title}
-        subtitle={pageData.centerCTA.subtitle}
-        buttonLabel={pageData.centerCTA.buttonLabel}
-        buttonUrl={pageData.centerCTA.buttonUrl}
+        description={pageData.centerCTA.subtitle}
+        buttonText={pageData.centerCTA.buttonLabel}
+        buttonLink={pageData.centerCTA.buttonUrl}
+        image={finalCtaBgImg}
       />
     </div>
   );

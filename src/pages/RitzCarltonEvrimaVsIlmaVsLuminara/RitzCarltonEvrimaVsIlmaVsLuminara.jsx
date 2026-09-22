@@ -6,6 +6,41 @@ import pageData from './data.json';
 // Angela image
 import angelaImage from '@/assets/Media (2).jpg';
 
+// Fleet Comparison Assets
+import heroBgImg from '@/assets/RitzCarltonEvrimaVsIlmaVsLuminara/evrima-vs-ilma-vs-luminara-which-ritz-carlton-yacht-is-best.jpg';
+import introLifestyleImg from '@/assets/RitzCarltonEvrimaVsIlmaVsLuminara/ritz-carlton-yacht-fleet-comparison-verdict.jpg';
+import introDiningImg from '@/assets/RitzCarltonEvrimaVsIlmaVsLuminara/ritz-carlton-yacht-suite-dining-experience.jpg';
+
+// Tabbed Profiles Images
+import tabEvrimaImg from '@/assets/RitzCarltonEvrimaVsIlmaVsLuminara/ritz-carlton-evrima-intimate-luxury-yacht.jpeg';
+import tabIlmaImg from '@/assets/RitzCarltonEvrimaVsIlmaVsLuminara/ritz-carlton-ilma-next-generation-yacht.jpeg';
+import tabLuminaraImg from '@/assets/RitzCarltonEvrimaVsIlmaVsLuminara/ritz-carlton-luminara-spacious-destination-yacht.jpeg';
+
+// Interactive Fleet Selector Images
+import selectorEvrimaImg from '@/assets/RitzCarltonEvrimaVsIlmaVsLuminara/evrima-intimate-marina-terrace.jpeg';
+import selectorIlmaImg from '@/assets/RitzCarltonEvrimaVsIlmaVsLuminara/ilma-sun-soaked-pool-deck.jpg';
+import selectorLuminaraImg from '@/assets/RitzCarltonEvrimaVsIlmaVsLuminara/luminara-enhanced-pool-deck.jpg';
+
+// Yacht Duels Images (3 Cards)
+import duelEvrimaIlmaImg from '@/assets/RitzCarltonEvrimaVsIlmaVsLuminara/evrima-vs-ilma-yacht-duel.jpg';
+import duelIlmaLuminaraImg from '@/assets/RitzCarltonEvrimaVsIlmaVsLuminara/ilma-vs-luminara-yacht-duel.jpg';
+import duelEvrimaLuminaraImg from '@/assets/RitzCarltonEvrimaVsIlmaVsLuminara/evrima-vs-luminara-yacht-duel.jpeg';
+
+// Our Ranking Images (3 Cards)
+import rankIlmaImg from '@/assets/RitzCarltonEvrimaVsIlmaVsLuminara/ilma-best-overall-luxury-yacht.jpg';
+import rankLuminaraImg from '@/assets/RitzCarltonEvrimaVsIlmaVsLuminara/luminara-best-for-space-and-destinations.jpg';
+import rankEvrimaImg from '@/assets/RitzCarltonEvrimaVsIlmaVsLuminara/evrima-best-for-intimacy-yacht.jpg';
+
+// Final CTA Image
+import finalCtaImg from '@/assets/RitzCarltonEvrimaVsIlmaVsLuminara/plan-ritz-carlton-yacht-voyage-advisor.jpg';
+
+// Interactive Hub Images
+import hubPricingImg from '@/assets/RitzCarltonEvrimaVsIlmaVsLuminara/hub-pricing-inclusions-guide.jpg';
+import hubComparisonImg from '@/assets/RitzCarltonEvrimaVsIlmaVsLuminara/hub-yacht-fleet-comparisons.jpg';
+import hubLifestyleImg from '@/assets/RitzCarltonEvrimaVsIlmaVsLuminara/hub-onboard-lifestyle-suites.jpg';
+import hubExcursionImg from '@/assets/RitzCarltonEvrimaVsIlmaVsLuminara/hub-destinations-shore-excursions.jpeg';
+import hubAdvisorImg from '@/assets/RitzCarltonEvrimaVsIlmaVsLuminara/hub-luxury-travel-advisor.jpg';
+
 // Shared UI System Components (100% Component-Based Architecture matching EmeraldYachts.tsx)
 import ComparisonHero from '@/components/ui/ComparisonHero';
 import PremiumIntro from '@/components/ui/PremiumIntro';
@@ -20,84 +55,254 @@ import FAQAccordion from '@/components/ui/FAQAccordion';
 import ConclusionSection from '@/components/ui/ConclusionSection';
 import ExpertCredentials from '@/components/ui/ExpertCredentials';
 import CenterCTA from '@/components/ui/CenterCTA';
+import InteractivePillarHubGrid from '@/components/ui/InteractivePillarHubGrid';
 
 const RitzCarltonEvrimaVsIlmaVsLuminara = () => {
+  // Map images to Tabbed Comparison Profiles
+  const tabbedComparisonData = [
+    {
+      ...pageData.yachtTabbedComparisonData[0],
+      image: tabEvrimaImg
+    },
+    {
+      ...pageData.yachtTabbedComparisonData[1],
+      image: tabIlmaImg
+    },
+    {
+      ...pageData.yachtTabbedComparisonData[2],
+      image: tabLuminaraImg
+    }
+  ];
+
+  // Map images to Interactive Fleet Selector
+  const interactiveYachtShips = [
+    {
+      ...pageData.interactiveYachtShips[0],
+      image: selectorEvrimaImg
+    },
+    {
+      ...pageData.interactiveYachtShips[1],
+      image: selectorIlmaImg
+    },
+    {
+      ...pageData.interactiveYachtShips[2],
+      image: selectorLuminaraImg
+    }
+  ];
+
+  // Map images to Yacht Duels
+  const yachtDuelsItems = [
+    {
+      ...pageData.yachtDuels[0],
+      image: duelEvrimaIlmaImg,
+      placeholderLabel: "Evrima vs Ilma - Head-to-Head Ritz-Carlton Yacht Comparison"
+    },
+    {
+      ...pageData.yachtDuels[1],
+      image: duelIlmaLuminaraImg,
+      placeholderLabel: "Ilma vs Luminara - Next-Generation Ritz-Carlton Yacht Comparison"
+    },
+    {
+      ...pageData.yachtDuels[2],
+      image: duelEvrimaLuminaraImg,
+      placeholderLabel: "Evrima vs Luminara - Intimacy vs Space & Destinations"
+    }
+  ];
+
+  // Map images to Our Ranking
+  const ourRankingItems = [
+    {
+      ...pageData.ourRanking.items[0],
+      image: rankIlmaImg,
+      placeholderLabel: "Ritz-Carlton Ilma - Best Overall Luxury Yacht Rating"
+    },
+    {
+      ...pageData.ourRanking.items[1],
+      image: rankLuminaraImg,
+      placeholderLabel: "Ritz-Carlton Luminara - Best for Space & Destinations"
+    },
+    {
+      ...pageData.ourRanking.items[2],
+      image: rankEvrimaImg,
+      placeholderLabel: "Ritz-Carlton Evrima - Best for Small-Ship Intimacy"
+    }
+  ];
+
+  // Curated Resource Hub Items
+  const resourceHubItems = [
+    {
+      title: "Cost & Inclusions Guides",
+      category: "Pricing & Inclusions",
+      description: "Detailed analyses of fares, inclusions, daily rates, and honest value assessments.",
+      image: hubPricingImg,
+      placeholderLabel: "Ritz-Carlton Yacht Cost & Inclusions Comprehensive Guides",
+      actionLabel: "Explore Cost Guides",
+      links: [
+        { label: "How Much Does a Ritz-Carlton Yacht Cruise Cost?", url: "/ritz-carlton-yacht-collection-cost" },
+        { label: "What Is Included on a Ritz-Carlton Yacht Cruise?", url: "/ritz-carlton-yacht-collection-included" },
+        { label: "Is The Ritz-Carlton Yacht Collection Worth It? An Honest Review", url: "/ritz-carlton-yacht-collection-reviews" }
+      ],
+      mainUrl: "/ritz-carlton-yacht-collection-cost"
+    },
+    {
+      title: "Yacht & Brand Comparisons",
+      category: "Fleet & Competitor Showdowns",
+      description: "Side-by-side comparisons of Evrima, Ilma, Luminara, Explora, and Seabourn.",
+      image: hubComparisonImg,
+      placeholderLabel: "Ritz-Carlton Fleet Comparisons - Evrima vs Ilma vs Luminara",
+      actionLabel: "Explore Comparisons",
+      links: [
+        { label: "Evrima vs. Ilma vs. Luminara: Which Ritz-Carlton Yacht Is Best?", url: "/ritz-carlton-evrima-vs-ilma-vs-luminara" },
+        { label: "Ritz-Carlton Yacht Collection vs. Explora Journeys", url: "/ritz-carlton-yacht-collection-vs-explora-journeys" },
+        { label: "Ritz-Carlton Yacht Collection vs. Seabourn", url: "/ritz-carlton-yacht-collection-vs-seabourn" }
+      ],
+      mainUrl: "/ritz-carlton-evrima-vs-ilma-vs-luminara"
+    },
+    {
+      title: "Onboard Lifestyle & Suites",
+      category: "Suites & Amenities",
+      description: "Guides to dress code, family friendliness, Bonvoy points, and suite selection.",
+      image: hubLifestyleImg,
+      placeholderLabel: "Ritz-Carlton Yacht Onboard Lifestyle, Dress Code & Luxury Suites",
+      actionLabel: "Explore Onboard Guides",
+      links: [
+        { label: "What Is the Dress Code on Ritz-Carlton Yachts?", url: "/ritz-carlton-yacht-collection-dress-code" },
+        { label: "Are Ritz-Carlton Yacht Cruises Good for Families and Children?", url: "/ritz-carlton-yacht-collection-families-children" },
+        { label: "How Do Marriott Bonvoy Points Work on Ritz-Carlton Yacht Cruises?", url: "/ritz-carlton-yacht-collection-marriott-bonvoy-points" },
+        { label: "What Are the Best Suites on Ritz-Carlton Yachts?", url: "/ritz-carlton-yacht-collection-suites" }
+      ],
+      mainUrl: "/ritz-carlton-yacht-collection-suites"
+    },
+    {
+      title: "Excursions & Destinations",
+      category: "Regions & Non-Cruisers",
+      description: "Exploring shore excursions, Caribbean itineraries, Miami sailings, and non-cruiser guides.",
+      image: hubExcursionImg,
+      placeholderLabel: "Ritz-Carlton Yacht Destinations & Shore Excursions",
+      actionLabel: "Explore Destinations",
+      links: [
+        { label: "Are Ritz-Carlton Yacht Shore Excursions Included?", url: "/ritz-carlton-yacht-shore-excursions-included" },
+        { label: "Is The Ritz-Carlton Yacht Collection Good for People Who Do Not Like Cruises?", url: "/ritz-carlton-yacht-collection-for-people-who-dont-like-cruises" },
+        { label: "Ritz-Carlton Yacht Cruises from Miami: What You Need to Know", url: "/ritz-carlton-yacht-cruises-from-miami" },
+        { label: "Ritz-Carlton Yacht Caribbean Cruises: Best Itineraries and When to Go", url: "/ritz-carlton-yacht-caribbean-cruises" }
+      ],
+      mainUrl: "/ritz-carlton-yacht-caribbean-cruises"
+    },
+    {
+      title: "Commercial & Advisor Services",
+      category: "Advisor Advisory",
+      description: "Why booking through a specialized travel advisor in Florida or Orlando unlocks VIP perks.",
+      image: hubAdvisorImg,
+      placeholderLabel: "Ritz-Carlton Yacht Collection Travel Advisor Services",
+      actionLabel: "Explore Advisory",
+      links: [
+        { label: "Why Book a Ritz-Carlton Yacht Cruise Through a Travel Advisor?", url: "/ritz-carlton-yacht-cruises/travel-advisor" },
+        { label: "Ritz-Carlton Yacht Collection Travel Advisor in Florida", url: "/ritz-carlton-yacht-collection-travel-advisor-florida" },
+        { label: "Ritz-Carlton Yacht Collection Travel Advisor in Orlando", url: "/ritz-carlton-yacht-collection-travel-advisor-orlando" },
+        { label: "How to Choose the Right Ritz-Carlton Yacht, Suite and Itinerary", url: "/how-to-choose-right-ritz-carlton-yacht-suite-itinerary" }
+      ],
+      mainUrl: "/ritz-carlton-yacht-cruises/travel-advisor"
+    }
+  ];
+
   // Schema JSON-LD
   const jsonLdSchema = {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Article",
-        "@id": "https://www.tripsandships.com/ritz-carlton-evrima-vs-ilma-vs-luminara#article",
-        "headline": "Evrima vs. Ilma vs. Luminara: Which Ritz-Carlton Yacht Is Best?",
-        "description": "Compare Ritz-Carlton Yacht Collection's Evrima, Ilma and Luminara by size, suites, design, dining, destinations, amenities and atmosphere.",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://www.tripsandships.com/ritz-carlton-evrima-vs-ilma-vs-luminara#webpage"
-        },
-        "author": {
-          "@type": "Person",
-          "name": "Angela Hughes"
-        },
-        "publisher": {
-          "@type": "TravelAgency",
-          "name": "Trips & Ships Luxury Travel",
-          "url": "https://www.tripsandships.com/"
-        }
-      },
-      {
         "@type": "WebPage",
-        "@id": "https://www.tripsandships.com/ritz-carlton-evrima-vs-ilma-vs-luminara#webpage",
+        "@id": "https://www.tripsandships.com/ritz-carlton-evrima-vs-ilma-vs-luminara/#webpage",
         "url": "https://www.tripsandships.com/ritz-carlton-evrima-vs-ilma-vs-luminara",
         "name": "Evrima vs. Ilma vs. Luminara: Which Ritz-Carlton Yacht Is Best?",
+        "headline": "Evrima vs. Ilma vs. Luminara: Which Ritz-Carlton Yacht Is Best?",
+        "description": "Compare Ritz-Carlton Yacht Collection's Evrima, Ilma and Luminara by size, suites, design, dining, destinations, amenities and atmosphere.",
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/assets/RitzCarltonEvrimaVsIlmaVsLuminara/evrima-vs-ilma-vs-luminara-which-ritz-carlton-yacht-is-best.jpg",
+          "caption": "Evrima vs. Ilma vs. Luminara: Which Ritz-Carlton Yacht Is Best?"
+        },
+        "image": "https://www.tripsandships.com/assets/RitzCarltonEvrimaVsIlmaVsLuminara/evrima-vs-ilma-vs-luminara-which-ritz-carlton-yacht-is-best.jpg",
+        "author": {
+          "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
+        },
+        "publisher": {
+          "@id": "https://www.tripsandships.com/#organization"
+        },
         "isPartOf": {
-          "@type": "WebSite",
-          "name": "Trips & Ships Luxury Travel",
-          "url": "https://www.tripsandships.com/"
+          "@id": "https://www.tripsandships.com/#website"
         }
       },
       {
         "@type": "ItemList",
-        "@id": "https://www.tripsandships.com/ritz-carlton-evrima-vs-ilma-vs-luminara#yachts",
+        "@id": "https://www.tripsandships.com/ritz-carlton-evrima-vs-ilma-vs-luminara/#yachts",
         "name": "Ritz-Carlton Yacht Collection Fleet",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
-            "name": "Evrima"
+            "name": "Evrima",
+            "image": "https://www.tripsandships.com/assets/RitzCarltonEvrimaVsIlmaVsLuminara/ritz-carlton-evrima-intimate-luxury-yacht.jpeg"
           },
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Ilma"
+            "name": "Ilma",
+            "image": "https://www.tripsandships.com/assets/RitzCarltonEvrimaVsIlmaVsLuminara/ritz-carlton-ilma-next-generation-yacht.jpeg"
           },
           {
             "@type": "ListItem",
             "position": 3,
-            "name": "Luminara"
+            "name": "Luminara",
+            "image": "https://www.tripsandships.com/assets/RitzCarltonEvrimaVsIlmaVsLuminara/ritz-carlton-luminara-spacious-destination-yacht.jpeg"
           }
         ]
       },
       {
-        "@type": "TravelAgency",
+        "@type": "Organization",
         "@id": "https://www.tripsandships.com/#organization",
         "name": "Trips & Ships Luxury Travel",
-        "url": "https://www.tripsandships.com/"
+        "url": "https://www.tripsandships.com/",
+        "founder": {
+          "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
+        }
+      },
+      {
+        "@type": "TravelAgency",
+        "@id": "https://www.tripsandships.com/#travelagency",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/",
+        "parentOrganization": {
+          "@id": "https://www.tripsandships.com/#organization"
+        }
       },
       {
         "@type": "Person",
-        "@id": "https://www.tripsandships.com/about-angela-hughes#person",
+        "@id": "https://www.tripsandships.com/about-angela-hughes/#person",
         "name": "Angela Hughes",
-        "jobTitle": "CEO",
-        "worksFor": {
-          "@type": "TravelAgency",
-          "name": "Trips & Ships Luxury Travel"
+        "jobTitle": "CEO of Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/about-angela-hughes",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/assets/Angela_Hughes.jpg",
+          "caption": "Angela Hughes - Luxury Travel Expert"
         },
-        "description": "Luxury travel advisor and CEO of Trips & Ships Luxury Travel with more than 40 years of travel experience and travel experience spanning more than 121 countries."
+        "description": "Angela Hughes is a luxury travel expert, CEO of Trips & Ships Luxury Travel, founder of Luxury Travel University and an experienced luxury travel industry leader with over 40 years of experience across 121 countries.",
+        "worksFor": {
+          "@id": "https://www.tripsandships.com/#organization"
+        },
+        "knowsAbout": [
+          "Luxury Travel",
+          "Luxury Cruises",
+          "Yacht Cruising",
+          "Luxury Safaris",
+          "Expedition Cruises",
+          "River Cruising",
+          "Premium Travel"
+        ]
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://www.tripsandships.com/ritz-carlton-evrima-vs-ilma-vs-luminara#breadcrumb",
+        "@id": "https://www.tripsandships.com/ritz-carlton-evrima-vs-ilma-vs-luminara/#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -121,7 +326,7 @@ const RitzCarltonEvrimaVsIlmaVsLuminara = () => {
       },
       {
         "@type": "FAQPage",
-        "@id": "https://www.tripsandships.com/ritz-carlton-evrima-vs-ilma-vs-luminara#faq",
+        "@id": "https://www.tripsandships.com/ritz-carlton-evrima-vs-ilma-vs-luminara/#faq",
         "mainEntity": pageData.faqs.map(faq => ({
           "@type": "Question",
           "name": faq.question,
@@ -145,6 +350,12 @@ const RitzCarltonEvrimaVsIlmaVsLuminara = () => {
         <meta property="og:description" content={pageData.seo.ogDescription} />
         <meta property="og:url" content={pageData.seo.canonicalUrl} />
         <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://www.tripsandships.com/assets/RitzCarltonEvrimaVsIlmaVsLuminara/evrima-vs-ilma-vs-luminara-which-ritz-carlton-yacht-is-best.jpg" />
+        <meta property="og:image:alt" content="Evrima vs. Ilma vs. Luminara: Which Ritz-Carlton Yacht Is Best?" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageData.seo.ogTitle} />
+        <meta name="twitter:description" content={pageData.seo.ogDescription} />
+        <meta name="twitter:image" content="https://www.tripsandships.com/assets/RitzCarltonEvrimaVsIlmaVsLuminara/evrima-vs-ilma-vs-luminara-which-ritz-carlton-yacht-is-best.jpg" />
         <script type="application/ld+json">
           {JSON.stringify(jsonLdSchema)}
         </script>
@@ -156,13 +367,18 @@ const RitzCarltonEvrimaVsIlmaVsLuminara = () => {
       <ComparisonHero
         title={pageData.hero.title}
         subtitle={pageData.hero.subtitle}
-        ctaLabel={pageData.hero.ctaLabel}
-        ctaUrl={pageData.hero.ctaUrl}
+        backgroundImage={heroBgImg}
+        primaryCtaText={pageData.hero.ctaLabel}
+        primaryCtaLink={pageData.hero.ctaUrl}
       />
 
       {/* ─── SECTION 2: PremiumIntro Quick Answer (100% Component-Based from data.json) ─── */}
       <PremiumIntro 
-        sections={pageData.quickAnswer} 
+        sections={pageData.quickAnswer}
+        image1={introLifestyleImg}
+        image2={introDiningImg}
+        alt1="Evrima vs Ilma vs Luminara - Ritz-Carlton Yacht Fleet Overview"
+        alt2="Ritz-Carlton Yacht Collection Suite & Dining Experience"
         watermarkText="Verdict"
       />
 
@@ -171,16 +387,14 @@ const RitzCarltonEvrimaVsIlmaVsLuminara = () => {
 
       {/* ─── SECTION 4: BrandPillarsShowcase Core Differences (100% Component-Based from data.json) ─── */}
       <BrandPillarsShowcase
-        title={pageData.coreDifferencePillars.title}
-        subtitle={pageData.coreDifferencePillars.subtitle}
-        pillars={pageData.coreDifferencePillars.pillars}
+        data={pageData.coreDifferencePillars}
       />
 
       {/* ─── SECTION 5: TabbedComparison Detailed Yacht Profiles (100% Component-Based from data.json) ─── */}
       <TabbedComparison
         title="Detailed Yacht Profiles: Evrima, Ilma & Luminara"
         mainBrand={{ name: "Fleet Comparison" }}
-        competitors={pageData.yachtTabbedComparisonData}
+        competitors={tabbedComparisonData}
         hideVs={true}
         leftLabel="Specifications & Features"
         rightLabel="Who Should Choose & Verdict"
@@ -190,7 +404,7 @@ const RitzCarltonEvrimaVsIlmaVsLuminara = () => {
       <InteractiveFleetComparison
         title="Interactive Ritz-Carlton Yacht Selector"
         subtitle="Click between Evrima, Ilma, and Luminara to compare specifications, guest capacity, and key strengths:"
-        ships={pageData.interactiveYachtShips}
+        ships={interactiveYachtShips}
       />
 
       {/* ─── SECTION 7: BudgetBreakdownTable Detailed Comparison (100% Component-Based from data.json) ─── */}
@@ -210,7 +424,7 @@ const RitzCarltonEvrimaVsIlmaVsLuminara = () => {
       <ThreeColumnGrid
         title="Yacht vs. Yacht Duels"
         subtitle="Direct head-to-head match-ups to help narrow your choice:"
-        items={pageData.yachtDuels}
+        items={yachtDuelsItems}
       />
 
       {/* ─── SECTION 10: Our Ranking (100% Component-Based UI reading from data.json) ─── */}
@@ -218,7 +432,7 @@ const RitzCarltonEvrimaVsIlmaVsLuminara = () => {
         <ThreeColumnGrid
           title={pageData.ourRanking.title}
           subtitle={pageData.ourRanking.subtitle}
-          items={pageData.ourRanking.items}
+          items={ourRankingItems}
         />
 
         {/* Important Disclaimer Notice */}
@@ -270,21 +484,30 @@ const RitzCarltonEvrimaVsIlmaVsLuminara = () => {
         bgClass="bg-white"
       />
 
-      {/* ─── SECTION 14: FAQAccordion (100% Component-Based from data.json) ─── */}
+      {/* ─── SECTION 14: Curated Resource Hub (InteractivePillarHubGrid) ─── */}
+      <InteractivePillarHubGrid
+        title="Explore More Ritz-Carlton Yacht Guides & Comparisons"
+        subtitle="Comprehensive resources covering cost, fleet comparisons, suites, and destinations."
+        items={resourceHubItems}
+      />
+
+      {/* ─── SECTION 15: FAQAccordion (100% Component-Based from data.json) ─── */}
       <FAQAccordion data={{ title: "Frequently Asked Questions", faqs: pageData.faqs }} />
 
-      {/* ─── SECTION 15: ConclusionSection Final Verdict (100% Component-Based from data.json) ─── */}
+      {/* ─── SECTION 16: ConclusionSection Final Verdict (100% Component-Based from data.json) ─── */}
       <ConclusionSection sections={pageData.finalVerdictSections} />
 
-      {/* ─── SECTION 16: ExpertCredentials (100% Component-Based) ─── */}
+      {/* ─── SECTION 17: ExpertCredentials (100% Component-Based) ─── */}
       <ExpertCredentials image={angelaImage} />
 
-      {/* ─── SECTION 17: CenterCTA (100% Component-Based from data.json) ─── */}
+      {/* ─── SECTION 18: CenterCTA (100% Component-Based from data.json) ─── */}
       <CenterCTA
         title={pageData.centerCTA.title}
-        subtitle={pageData.centerCTA.subtitle}
-        buttonLabel={pageData.centerCTA.buttonLabel}
-        buttonUrl={pageData.centerCTA.buttonUrl}
+        description={pageData.centerCTA.subtitle}
+        buttonText={pageData.centerCTA.buttonLabel}
+        buttonLink={pageData.centerCTA.buttonUrl}
+        image={finalCtaImg}
+        imagePosition="object-[center_55%]"
       />
     </div>
   );

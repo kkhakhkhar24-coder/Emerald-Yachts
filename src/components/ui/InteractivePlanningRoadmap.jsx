@@ -38,7 +38,15 @@ const InteractivePlanningRoadmap = ({ title, subtitle, steps }) => {
                         </div>
                       ) : (
                         <div className="h-48 md:h-64 rounded-2xl overflow-hidden shadow-2xl border border-navy-800">
-                          <img src={step.image} alt={step.title} className="w-full h-full object-cover" />
+                          {step.image ? (
+                            <img src={step.image} alt={step.title} className="w-full h-full object-cover" />
+                          ) : (
+                            <div className="w-full h-full flex flex-col items-center justify-center bg-navy-900/90 border border-navy-800 text-center p-6">
+                              <span className="text-ts-gold text-xs font-bold tracking-widest uppercase mb-2">{step.timeframe}</span>
+                              <span className="font-display text-lg text-white font-normal">{step.title}</span>
+                              <span className="text-slate-400 text-xs mt-2 tracking-wider uppercase">Visual Planning Placeholder</span>
+                            </div>
+                          )}
                         </div>
                       )}
                     </FadeIn>
@@ -56,7 +64,15 @@ const InteractivePlanningRoadmap = ({ title, subtitle, steps }) => {
                     <FadeIn direction={isEven ? "left" : "right"} delay={idx * 0.1}>
                       {isEven ? (
                         <div className="h-48 md:h-64 rounded-2xl overflow-hidden shadow-2xl border border-navy-800">
-                          <img src={step.image} alt={step.title} className="w-full h-full object-cover" />
+                          {step.image ? (
+                            <img src={step.image} alt={step.title} className="w-full h-full object-cover" />
+                          ) : (
+                            <div className="w-full h-full flex flex-col items-center justify-center bg-navy-900/90 border border-navy-800 text-center p-6">
+                              <span className="text-ts-gold text-xs font-bold tracking-widest uppercase mb-2">{step.timeframe}</span>
+                              <span className="font-display text-lg text-white font-normal">{step.title}</span>
+                              <span className="text-slate-400 text-xs mt-2 tracking-wider uppercase">Visual Planning Placeholder</span>
+                            </div>
+                          )}
                         </div>
                       ) : (
                         <div className="bg-navy-900/80 backdrop-blur-sm border border-navy-800 p-8 rounded-2xl shadow-xl">
