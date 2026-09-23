@@ -79,7 +79,7 @@ import FAQAccordion from '@/components/ui/FAQAccordion';
 import ConclusionSection from '@/components/ui/ConclusionSection';
 import ExpertCredentials from '@/components/ui/ExpertCredentials';
 import CenterCTA from '@/components/ui/CenterCTA';
-import PillarDirectory from '@/components/ui/PillarDirectory';
+import VideoEmbed from '@/components/ui/VideoEmbed';
 
 const RitzCarltonVsSeabourn = () => {
   // Suite Tabs with Images
@@ -477,13 +477,14 @@ const RitzCarltonVsSeabourn = () => {
       {/* ─── SECTION 17: ExpertCredentials ─── */}
       <ExpertCredentials image={angelaPortrait} />
 
-      {/* ─── SECTION 17A: PillarDirectory Related Ritz-Carlton Guides ─── */}
-      {pageData.relatedGuides && (
-        <PillarDirectory
-          brandName={pageData.relatedGuides.brandName}
-          items={pageData.relatedGuides.items}
-        />
-      )}
+      {/* ─── SECTION 17A: Video Section Component (VideoEmbed Component) ─── */}
+      <VideoEmbed
+        data={{
+          youtubeId: "sQPnGRkiLdg",
+          title: "Ritz-Carlton Yacht Collection vs. Seabourn",
+          description: "Compare the luxury yacht experience of Ritz-Carlton with Seabourn's ultra-luxury cruise hospitality."
+        }}
+      />
 
       {/* ─── SECTION 18: CenterCTA ─── */}
       <CenterCTA

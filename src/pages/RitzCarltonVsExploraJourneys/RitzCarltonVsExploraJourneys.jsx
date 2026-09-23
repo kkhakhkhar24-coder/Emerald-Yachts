@@ -63,6 +63,7 @@ import FAQAccordion from '@/components/ui/FAQAccordion';
 import ConclusionSection from '@/components/ui/ConclusionSection';
 import ExpertCredentials from '@/components/ui/ExpertCredentials';
 import CenterCTA from '@/components/ui/CenterCTA';
+import VideoEmbed from '@/components/ui/VideoEmbed';
 
 const RitzCarltonVsExploraJourneys = () => {
   // Map images for Suites Tabbed Comparison (2 tabs: Ritz-Carlton vs Explora Suites)
@@ -450,7 +451,16 @@ const RitzCarltonVsExploraJourneys = () => {
         authorImage={angelaPortrait}
       />
 
-      {/* ─── SECTION 17: FAQAccordion (100% Component-Based) ─── */}
+      {/* ─── SECTION 17: Video Section Component (VideoEmbed Component) ─── */}
+      <VideoEmbed
+        data={{
+          youtubeId: "sQPnGRkiLdg",
+          title: "Ritz-Carlton Yacht Collection vs. Explora Journeys",
+          description: "Explore the differences in design, suites, dining, and luxury philosophies between Ritz-Carlton and Explora Journeys."
+        }}
+      />
+
+      {/* ─── SECTION 18: FAQAccordion (100% Component-Based) ─── */}
       <FAQAccordion data={{ title: "Frequently Asked Questions", faqs: pageData.faqs }} />
 
       {/* ─── SECTION 18: ConclusionSection Final Verdict (100% Component-Based) ─── */}

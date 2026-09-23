@@ -22,7 +22,7 @@ import MistakesShowcase from "@/components/ui/MistakesShowcase";
 import AuthorityBox from "@/components/ui/AuthorityBox";
 import ExpertCredentials from "@/components/ui/ExpertCredentials";
 import FAQAccordion from "@/components/ui/FAQAccordion";
-import InteractivePillarHubGrid from "@/components/ui/InteractivePillarHubGrid";
+import VideoEmbed from "@/components/ui/VideoEmbed";
 import CenterCTA from "@/components/ui/CenterCTA";
 
 // Author & Profile Images
@@ -294,33 +294,6 @@ const RitzCarltonYachtCollectionDressCode = () => {
     description: m.desc,
   }));
 
-  // 17. Hub Resources
-  const hubItems = [
-    {
-      title: "Best Suites on Ritz-Carlton Yachts",
-      description: "Explore Owner's, Loft, Grand, and View Suites across Evrima, Ilma, and Luminara.",
-      link: "/ritz-carlton-yacht-collection-suites",
-      actionLabel: "EXPLORE SUITES",
-    },
-    {
-      title: "Marriott Bonvoy Points on RCYC",
-      description: "Master how to earn 5x points per $1 and redeem Bonvoy points toward Ritz-Carlton Yacht cruises.",
-      link: "/ritz-carlton-yacht-collection-marriott-bonvoy-points",
-      actionLabel: "VIEW BONVOY GUIDE",
-    },
-    {
-      title: "Ritz-Carlton Yacht Collection Overview",
-      description: "Explore complete fleet schedules, Caribbean & Mediterranean itineraries, and dining venues.",
-      link: "/ritz-carlton-yacht-collection",
-      actionLabel: "EXPLORE FLEET",
-    },
-    {
-      title: "Ritz-Carlton for Families & Kids",
-      description: "Discover Ritz Kids programming, connecting staterooms, and family voyage planning.",
-      link: "/ritz-carlton-yacht-collection-families-children",
-      actionLabel: "FAMILY GUIDE",
-    },
-  ];
 
   return (
     <div className="w-full bg-white text-navy-950 min-h-screen">
@@ -568,11 +541,13 @@ const RitzCarltonYachtCollectionDressCode = () => {
         }}
       />
 
-      {/* 29. Interactive Resource Pillar Hub */}
-      <InteractivePillarHubGrid
-        title="Explore More Ritz-Carlton Yacht Resources"
-        subtitle="Deepen your knowledge with complete suite guides, loyalty points optimization, and family cruise planning."
-        items={hubItems}
+      {/* 29. Video Section Component (VideoEmbed Component) ─── */}
+      <VideoEmbed
+        data={{
+          youtubeId: "sQPnGRkiLdg",
+          title: "Inside the Ritz-Carlton Yacht Lifestyle",
+          description: "Explore the relaxed elegance, Yacht Sophisticated evenings, and casual luxury of The Ritz-Carlton Yacht Collection."
+        }}
       />
 
       {/* 30. Final Bottom CTA */}

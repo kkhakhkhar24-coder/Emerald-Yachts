@@ -34,12 +34,6 @@ import rankEvrimaImg from '@/assets/RitzCarltonEvrimaVsIlmaVsLuminara/evrima-bes
 // Final CTA Image
 import finalCtaImg from '@/assets/RitzCarltonEvrimaVsIlmaVsLuminara/plan-ritz-carlton-yacht-voyage-advisor.jpg';
 
-// Interactive Hub Images
-import hubPricingImg from '@/assets/RitzCarltonEvrimaVsIlmaVsLuminara/hub-pricing-inclusions-guide.jpg';
-import hubComparisonImg from '@/assets/RitzCarltonEvrimaVsIlmaVsLuminara/hub-yacht-fleet-comparisons.jpg';
-import hubLifestyleImg from '@/assets/RitzCarltonEvrimaVsIlmaVsLuminara/hub-onboard-lifestyle-suites.jpg';
-import hubExcursionImg from '@/assets/RitzCarltonEvrimaVsIlmaVsLuminara/hub-destinations-shore-excursions.jpeg';
-import hubAdvisorImg from '@/assets/RitzCarltonEvrimaVsIlmaVsLuminara/hub-luxury-travel-advisor.jpg';
 
 // Shared UI System Components (100% Component-Based Architecture matching EmeraldYachts.tsx)
 import ComparisonHero from '@/components/ui/ComparisonHero';
@@ -55,7 +49,7 @@ import FAQAccordion from '@/components/ui/FAQAccordion';
 import ConclusionSection from '@/components/ui/ConclusionSection';
 import ExpertCredentials from '@/components/ui/ExpertCredentials';
 import CenterCTA from '@/components/ui/CenterCTA';
-import InteractivePillarHubGrid from '@/components/ui/InteractivePillarHubGrid';
+import VideoEmbed from '@/components/ui/VideoEmbed';
 
 const RitzCarltonEvrimaVsIlmaVsLuminara = () => {
   // Map images to Tabbed Comparison Profiles
@@ -128,82 +122,7 @@ const RitzCarltonEvrimaVsIlmaVsLuminara = () => {
     }
   ];
 
-  // Curated Resource Hub Items
-  const resourceHubItems = [
-    {
-      title: "Cost & Inclusions Guides",
-      category: "Pricing & Inclusions",
-      description: "Detailed analyses of fares, inclusions, daily rates, and honest value assessments.",
-      image: hubPricingImg,
-      placeholderLabel: "Ritz-Carlton Yacht Cost & Inclusions Comprehensive Guides",
-      actionLabel: "Explore Cost Guides",
-      links: [
-        { label: "How Much Does a Ritz-Carlton Yacht Cruise Cost?", url: "/ritz-carlton-yacht-collection-cost" },
-        { label: "What Is Included on a Ritz-Carlton Yacht Cruise?", url: "/ritz-carlton-yacht-collection-included" },
-        { label: "Is The Ritz-Carlton Yacht Collection Worth It? An Honest Review", url: "/ritz-carlton-yacht-collection-reviews" }
-      ],
-      mainUrl: "/ritz-carlton-yacht-collection-cost"
-    },
-    {
-      title: "Yacht & Brand Comparisons",
-      category: "Fleet & Competitor Showdowns",
-      description: "Side-by-side comparisons of Evrima, Ilma, Luminara, Explora, and Seabourn.",
-      image: hubComparisonImg,
-      placeholderLabel: "Ritz-Carlton Fleet Comparisons - Evrima vs Ilma vs Luminara",
-      actionLabel: "Explore Comparisons",
-      links: [
-        { label: "Evrima vs. Ilma vs. Luminara: Which Ritz-Carlton Yacht Is Best?", url: "/ritz-carlton-evrima-vs-ilma-vs-luminara" },
-        { label: "Ritz-Carlton Yacht Collection vs. Explora Journeys", url: "/ritz-carlton-yacht-collection-vs-explora-journeys" },
-        { label: "Ritz-Carlton Yacht Collection vs. Seabourn", url: "/ritz-carlton-yacht-collection-vs-seabourn" }
-      ],
-      mainUrl: "/ritz-carlton-evrima-vs-ilma-vs-luminara"
-    },
-    {
-      title: "Onboard Lifestyle & Suites",
-      category: "Suites & Amenities",
-      description: "Guides to dress code, family friendliness, Bonvoy points, and suite selection.",
-      image: hubLifestyleImg,
-      placeholderLabel: "Ritz-Carlton Yacht Onboard Lifestyle, Dress Code & Luxury Suites",
-      actionLabel: "Explore Onboard Guides",
-      links: [
-        { label: "What Is the Dress Code on Ritz-Carlton Yachts?", url: "/ritz-carlton-yacht-collection-dress-code" },
-        { label: "Are Ritz-Carlton Yacht Cruises Good for Families and Children?", url: "/ritz-carlton-yacht-collection-families-children" },
-        { label: "How Do Marriott Bonvoy Points Work on Ritz-Carlton Yacht Cruises?", url: "/ritz-carlton-yacht-collection-marriott-bonvoy-points" },
-        { label: "What Are the Best Suites on Ritz-Carlton Yachts?", url: "/ritz-carlton-yacht-collection-suites" }
-      ],
-      mainUrl: "/ritz-carlton-yacht-collection-suites"
-    },
-    {
-      title: "Excursions & Destinations",
-      category: "Regions & Non-Cruisers",
-      description: "Exploring shore excursions, Caribbean itineraries, Miami sailings, and non-cruiser guides.",
-      image: hubExcursionImg,
-      placeholderLabel: "Ritz-Carlton Yacht Destinations & Shore Excursions",
-      actionLabel: "Explore Destinations",
-      links: [
-        { label: "Are Ritz-Carlton Yacht Shore Excursions Included?", url: "/ritz-carlton-yacht-shore-excursions-included" },
-        { label: "Is The Ritz-Carlton Yacht Collection Good for People Who Do Not Like Cruises?", url: "/ritz-carlton-yacht-collection-for-people-who-dont-like-cruises" },
-        { label: "Ritz-Carlton Yacht Cruises from Miami: What You Need to Know", url: "/ritz-carlton-yacht-cruises-from-miami" },
-        { label: "Ritz-Carlton Yacht Caribbean Cruises: Best Itineraries and When to Go", url: "/ritz-carlton-yacht-caribbean-cruises" }
-      ],
-      mainUrl: "/ritz-carlton-yacht-caribbean-cruises"
-    },
-    {
-      title: "Commercial & Advisor Services",
-      category: "Advisor Advisory",
-      description: "Why booking through a specialized travel advisor in Florida or Orlando unlocks VIP perks.",
-      image: hubAdvisorImg,
-      placeholderLabel: "Ritz-Carlton Yacht Collection Travel Advisor Services",
-      actionLabel: "Explore Advisory",
-      links: [
-        { label: "Why Book a Ritz-Carlton Yacht Cruise Through a Travel Advisor?", url: "/ritz-carlton-yacht-cruises/travel-advisor" },
-        { label: "Ritz-Carlton Yacht Collection Travel Advisor in Florida", url: "/ritz-carlton-yacht-collection-travel-advisor-florida" },
-        { label: "Ritz-Carlton Yacht Collection Travel Advisor in Orlando", url: "/ritz-carlton-yacht-collection-travel-advisor-orlando" },
-        { label: "How to Choose the Right Ritz-Carlton Yacht, Suite and Itinerary", url: "/how-to-choose-right-ritz-carlton-yacht-suite-itinerary" }
-      ],
-      mainUrl: "/ritz-carlton-yacht-cruises/travel-advisor"
-    }
-  ];
+
 
   // Schema JSON-LD
   const jsonLdSchema = {
@@ -484,11 +403,13 @@ const RitzCarltonEvrimaVsIlmaVsLuminara = () => {
         bgClass="bg-white"
       />
 
-      {/* ─── SECTION 14: Curated Resource Hub (InteractivePillarHubGrid) ─── */}
-      <InteractivePillarHubGrid
-        title="Explore More Ritz-Carlton Yacht Guides & Comparisons"
-        subtitle="Comprehensive resources covering cost, fleet comparisons, suites, and destinations."
-        items={resourceHubItems}
+      {/* ─── SECTION 14: Video Section Component (VideoEmbed Component) ─── */}
+      <VideoEmbed
+        data={{
+          youtubeId: "sQPnGRkiLdg",
+          title: "Experience Evrima, Ilma & Luminara",
+          description: "Watch what makes each yacht in The Ritz-Carlton Yacht Collection distinct, intimate, and extraordinary."
+        }}
       />
 
       {/* ─── SECTION 15: FAQAccordion (100% Component-Based from data.json) ─── */}

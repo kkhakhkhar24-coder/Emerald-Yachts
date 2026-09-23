@@ -51,7 +51,7 @@ import AuthorityBox from '@/components/ui/AuthorityBox';
 import FAQAccordion from '@/components/ui/FAQAccordion';
 import ExpertCredentials from '@/components/ui/ExpertCredentials';
 import CenterCTA from '@/components/ui/CenterCTA';
-import InteractivePillarHubGrid from '@/components/ui/InteractivePillarHubGrid';
+import VideoEmbed from '@/components/ui/VideoEmbed';
 
 
 const RitzCarltonYachtCollectionIncluded = () => {
@@ -579,29 +579,14 @@ const RitzCarltonYachtCollectionIncluded = () => {
         data={askingQuestionsData}
       />
 
-      {/* ─── SECTION 10: Video Section Component ─── */}
-      <section className="py-20 bg-slate-50 border-t border-b border-slate-200">
-        <div className="max-w-[1000px] mx-auto px-6 text-center">
-          <span className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-2 block">
-            Inside the Ritz-Carlton Yacht Experience
-          </span>
-          <h2 className="font-display text-3xl md:text-4xl font-light text-navy-950 mb-4">
-            Experience All-Inclusive Yachting
-          </h2>
-          <p className="text-slate-600 font-light text-lg max-w-2xl mx-auto mb-8">
-            Watch what makes The Ritz-Carlton Yacht Collection an extraordinary way to travel the world.
-          </p>
-          <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-slate-200 bg-slate-900">
-            <iframe
-              className="w-full h-full"
-              src="https://www.youtube.com/embed/mrdHjSeXwfc"
-              title="The Ritz-Carlton Yacht Collection Inclusions Showcase"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </div>
-      </section>
+      {/* ─── SECTION 10: Video Section Component (VideoEmbed Component) ─── */}
+      <VideoEmbed
+        data={{
+          youtubeId: "mrdHjSeXwfc",
+          title: "Experience All-Inclusive Yachting",
+          description: "Watch what makes The Ritz-Carlton Yacht Collection an extraordinary way to travel the world."
+        }}
+      />
 
       {/* ─── SECTION 11: Angela Hughes Bio Component (ExpertCredentials Component) ─── */}
       <ExpertCredentials

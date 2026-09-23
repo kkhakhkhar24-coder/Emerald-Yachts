@@ -252,30 +252,27 @@ const RitzCarltonYachtCollection = () => {
         "@type": "WebPage",
         "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection/#webpage",
         "url": "https://www.tripsandships.com/ritz-carlton-yacht-collection",
-        "name": "The Ritz-Carlton Yacht Collection: Reviews, Prices and Everything You Need to Know",
-        "headline": "The Ritz-Carlton Yacht Collection: Reviews, Prices and Everything You Need to Know",
-        "description": "Explore Ritz-Carlton Yacht Collection reviews, prices, inclusions, yachts, suites, destinations and expert luxury travel advice.",
+        "name": pageData.seo.ogTitle || pageData.seo.title,
+        "headline": pageData.hero.title,
+        "description": pageData.seo.metaDescription,
         "primaryImageOfPage": {
           "@type": "ImageObject",
           "url": "https://www.tripsandships.com/assets/RitzCartlonPillarPage/ritz-carlton-yacht-collection-luxury-cruise.jpg",
-          "caption": "The Ritz-Carlton Yacht Collection Luxury Cruise"
+          "caption": pageData.hero.title
         },
         "image": "https://www.tripsandships.com/assets/RitzCartlonPillarPage/ritz-carlton-yacht-collection-luxury-cruise.jpg",
-        "isPartOf": {
-          "@id": "https://www.tripsandships.com/#organization"
-        },
-        "about": {
-          "@type": "Thing",
-          "name": "The Ritz-Carlton Yacht Collection"
-        },
         "author": {
           "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
         },
         "publisher": {
           "@id": "https://www.tripsandships.com/#organization"
         },
-        "breadcrumb": {
-          "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection/#breadcrumb"
+        "isPartOf": {
+          "@id": "https://www.tripsandships.com/#website"
+        },
+        "about": {
+          "@type": "Thing",
+          "name": "The Ritz-Carlton Yacht Collection"
         }
       },
       {
@@ -721,6 +718,22 @@ const RitzCarltonYachtCollection = () => {
         title={pageData.angelaBio.title}
         bio={pageData.angelaBio.bio}
         image={angelaImage}
+        badge="LUXURY YACHT EXPERT"
+        experienceBadge="40+ YEARS IN LUXURY TRAVEL"
+        authorityBoxTitle="ANGELA HUGHES INSIGHTS & LEADERSHIP"
+        authoritySubtitle="Trusted Luxury Yacht & Cruise Authority"
+        credentials={[
+          "Over 4 Decades Designing Luxury Travel Experiences",
+          "Explored 121+ Countries Across Seven Continents",
+          "Certified Luxury Yacht & Small Ship Cruise Specialist",
+          "CEO & Founder of Trips & Ships Luxury Travel",
+          "Travel Leaders Network Luxury Travel Influencer of the Year",
+          "Named Most Influential Women in Travel 2026 by TravelPulse"
+        ]}
+        quote="The right luxury trip is not necessarily the cheapest trip or the most expensive trip. It is the trip that delivers the greatest value for the individual traveler."
+        quoteSubtitle="On Ritz-Carlton Yacht Selection"
+        ctaText="Book With Angela Hughes"
+        ctaLink="/contact"
       />
 
       {/* ─── SECTION 12: Comprehensive FAQ ─── */}

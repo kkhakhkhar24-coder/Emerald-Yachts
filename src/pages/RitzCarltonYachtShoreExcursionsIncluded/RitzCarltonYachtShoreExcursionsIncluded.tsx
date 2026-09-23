@@ -18,32 +18,56 @@ import CardGrid from "@/components/ui/CardGrid";
 import GenericChecklistCards from "@/components/ui/GenericChecklistCards";
 import InteractivePlanningRoadmap from "@/components/ui/InteractivePlanningRoadmap";
 import DualPhilosophyShowcase from "@/components/ui/DualPhilosophyShowcase";
-import CabinComparisonGallery from "@/components/ui/CabinComparisonGallery";
 import ExpertCredentials from "@/components/ui/ExpertCredentials";
 import FAQAccordion from "@/components/ui/FAQAccordion";
-import InteractivePillarHubGrid from "@/components/ui/InteractivePillarHubGrid";
+import VideoEmbed from "@/components/ui/VideoEmbed";
 import CenterCTA from "@/components/ui/CenterCTA";
 
 // Images
 import angelaImage from "@/assets/Media (2).jpg";
-// Shore Excursion Images (commented out as requested):
-// import selectGroupExcursionImg from "@/assets/images/select-group-excursions.jpg";
-// import preDesignedPrivateImg from "@/assets/images/pre-designed-private.jpg";
-// import customPrivateExcursionImg from "@/assets/images/custom-private-excursions.jpg";
-// import couplesExcursionImg from "@/assets/images/couples-excursions.jpg";
-// import familyExcursionImg from "@/assets/images/family-excursions.jpg";
-// import multigenerationalImg from "@/assets/images/multigenerational-excursions.jpg";
-// Budget Planning Images (commented out as requested):
-// import cruiseFareBudgetImg from "@/assets/images/cruise-fare-budget.jpg";
-// import shoreExcursionBudgetImg from "@/assets/images/shore-excursions-budget.jpg";
-// import prePostHotelBudgetImg from "@/assets/images/pre-post-hotel-budget.jpg";
-// import onboardSpaBudgetImg from "@/assets/images/onboard-spa-budget.jpg";
-// Shore Excursion vs Independent Exploration Images (commented out as requested):
-// import shoreExcursionComparisonImg from "@/assets/images/shore-excursion-comparison.jpg";
-// import independentExplorationImg from "@/assets/images/independent-exploration.jpg";
-// What Is Included In Cruise Fare Images (commented out as requested):
-// import inclusionsMainImg from "@/assets/images/ritz-inclusions-main.jpg";
-// import inclusionsDetailImg from "@/assets/images/ritz-inclusions-detail.jpg";
+
+// Hero
+import heroImg from "@/assets/RitzCarltonYachtShoreExcursionsIncluded/ritz-carlton-excursions-hero.jpg";
+
+// Executive Narrative Intro (PremiumIntro)
+import introExcursionsImg from "@/assets/RitzCarltonYachtShoreExcursionsIncluded/intro-excursions-caribbean.jpg";
+import introWatersportsImg from "@/assets/RitzCarltonYachtShoreExcursionsIncluded/intro-watersports-lifestyle.jpg";
+
+// Inclusions Breakdown (AsymmetricStoryIntro)
+import inclusionsDiningImg from "@/assets/RitzCarltonYachtShoreExcursionsIncluded/inclusions-dining-mistral.jpg";
+import inclusionsMarinaImg from "@/assets/RitzCarltonYachtShoreExcursionsIncluded/inclusions-marina-watersports.jpg";
+
+// 3 Shore Excursion Categories (ThreeColumnGrid)
+import cat1GroupImg from "@/assets/RitzCarltonYachtShoreExcursionsIncluded/cat1-small-group-shore-collection.jpg";
+import cat2PrivateImg from "@/assets/RitzCarltonYachtShoreExcursionsIncluded/cat2-pre-designed-private-tours.jpg";
+import cat3CustomImg from "@/assets/RitzCarltonYachtShoreExcursionsIncluded/cat3-custom-concierge-ashore.jpg";
+
+// 5 Roadmap Steps (InteractivePlanningRoadmap)
+import step1ReleaseImg from "@/assets/RitzCarltonYachtShoreExcursionsIncluded/step1-120-days-excursion-release.jpg";
+import step2PrivateImg from "@/assets/RitzCarltonYachtShoreExcursionsIncluded/step2-90-days-private-requests.jpg";
+import step3ScheduleImg from "@/assets/RitzCarltonYachtShoreExcursionsIncluded/step3-30-days-confirm-schedule.jpg";
+import step4DeskImg from "@/assets/RitzCarltonYachtShoreExcursionsIncluded/step4-onboard-concierge-desk.jpg";
+import step5DayImg from "@/assets/RitzCarltonYachtShoreExcursionsIncluded/step5-day-of-excursion-execution.jpg";
+
+// Dual Philosophy Showcase
+import dualGuidedImg from "@/assets/RitzCarltonYachtShoreExcursionsIncluded/dual-guided-shore-excursions.jpg";
+import dualIndependentImg from "@/assets/RitzCarltonYachtShoreExcursionsIncluded/dual-independent-port-exploration.jpg";
+
+// Budget Planning Framework (CabinComparisonGallery)
+import budgetCruiseImg from "@/assets/RitzCarltonYachtShoreExcursionsIncluded/budget-cruise-fare-base.jpg";
+import budgetExcursionImg from "@/assets/RitzCarltonYachtShoreExcursionsIncluded/budget-shore-excursions-planning.jpg";
+import budgetHotelImg from "@/assets/RitzCarltonYachtShoreExcursionsIncluded/budget-pre-post-luxury-hotels.jpg";
+import budgetSpaImg from "@/assets/RitzCarltonYachtShoreExcursionsIncluded/budget-onboard-spa-specialties.jpg";
+
+// Traveler Personas (ThreeColumnGrid)
+import personaCouplesImg from "@/assets/RitzCarltonYachtShoreExcursionsIncluded/persona-couples-romance.jpg";
+import personaFamiliesImg from "@/assets/RitzCarltonYachtShoreExcursionsIncluded/persona-families-children.jpg";
+import personaAdventurersImg from "@/assets/RitzCarltonYachtShoreExcursionsIncluded/persona-active-adventurers.jpg";
+
+// CTAs
+import midCtaBgImg from "@/assets/RitzCarltonYachtShoreExcursionsIncluded/excursions-mid-cta-background.jpg";
+import finalCtaBgImg from "@/assets/RitzCarltonYachtShoreExcursionsIncluded/excursions-final-cta-background.jpg";
+
 
 const RitzCarltonYachtShoreExcursionsIncluded = () => {
   // 1. Data mapping for Executive Narrative Intro (PremiumIntro)
@@ -62,11 +86,12 @@ const RitzCarltonYachtShoreExcursionsIncluded = () => {
   };
 
   // 3. Data mapping for 3 Primary Shore Excursion Categories (ThreeColumnGrid with Images)
+  const categoryImages = [cat1GroupImg, cat2PrivateImg, cat3CustomImg];
   const excursionCategoriesItems = pageData.excursionCategories.categories.map(
-    (cat) => ({
+    (cat, idx) => ({
       title: cat.title,
       category: cat.category,
-      image: null, // cat.number === "01" ? selectGroupExcursionImg : cat.number === "02" ? preDesignedPrivateImg : customPrivateExcursionImg,
+      image: categoryImages[idx % categoryImages.length],
       description: cat.description,
       features: cat.features,
       highlight: cat.highlight,
@@ -90,34 +115,48 @@ const RitzCarltonYachtShoreExcursionsIncluded = () => {
   );
 
   // 6. Data mapping for Booking Timeline (InteractivePlanningRoadmap)
+  const roadmapImages = [
+    step1ReleaseImg,
+    step2PrivateImg,
+    step3ScheduleImg,
+    step4DeskImg,
+    step5DayImg,
+  ];
   const bookingTimelineSteps = pageData.bookingTimelineRoadmap.steps.map(
-    (step) => ({
+    (step, idx) => ({
       timeframe: step.timeframe,
       title: step.title,
       description: step.description,
-      image: null,
+      image: roadmapImages[idx % roadmapImages.length],
     })
   );
 
-  // 7. Data mapping for Budget Planning Gallery (CabinComparisonGallery with Images)
-  const budgetGalleryItems = pageData.completeBudgetFramework.items.map((item) => ({
-    name: item.name,
-    price: item.price,
+  // 7. Data mapping for Budget Planning Framework (ThreeColumnGrid with Images & 100% Content Intact)
+  const budgetImages = [
+    budgetCruiseImg,
+    budgetExcursionImg,
+    budgetHotelImg,
+    budgetSpaImg,
+  ];
+  const budgetCardsItems = pageData.completeBudgetFramework.items.map((item, idx) => ({
+    title: item.name,
+    category: item.price,
     description: item.description,
     features: item.features,
-    image: null, // cruiseFareBudgetImg, shoreExcursionBudgetImg, prePostHotelBudgetImg, onboardSpaBudgetImg,
+    image: budgetImages[idx % budgetImages.length],
+    placeholderLabel: item.name,
   }));
 
-  const budgetExpertRecommendation = {
-    title: pageData.completeBudgetFramework.takeaway.title,
-    content: pageData.completeBudgetFramework.takeaway.content,
-  };
-
   // 8. Data mapping for Traveler Personas (ThreeColumnGrid with Images)
-  const personaItems = pageData.travelerPersonas.cards.map((card) => ({
+  const personaImages = [
+    personaCouplesImg,
+    personaFamiliesImg,
+    personaAdventurersImg,
+  ];
+  const personaItems = pageData.travelerPersonas.cards.map((card, idx) => ({
     title: card.title,
     category: card.category,
-    image: null, // couplesExcursionImg, familyExcursionImg, multigenerationalImg,
+    image: personaImages[idx % personaImages.length],
     description: card.description,
     features: card.features,
     highlight: card.highlight,
@@ -133,45 +172,114 @@ const RitzCarltonYachtShoreExcursionsIncluded = () => {
     pillars: pageData.advisorValue.pillars,
   };
 
-  // 11. Hub Resources for InteractivePillarHubGrid
-  const hubItems = [
-    {
-      title: "Ritz-Carlton Yacht All-Inclusive Guide",
-      description: "Discover what is included in standard cruise fares: dining, open bars, gratuities, Wi-Fi, and marina sports.",
-      link: "/ritz-carlton-yacht-collection-included",
-      actionLabel: "VIEW ALL INCLUSIONS",
-    },
-    {
-      title: "Ritz-Carlton Yacht Collection Dress Code",
-      description: "Learn what to wear for Yacht Casual days and Yacht Sophisticated dinner evenings with zero formal nights.",
-      link: "/ritz-carlton-yacht-collection-dress-code",
-      actionLabel: "EXPLORE DRESS CODE",
-    },
-    {
-      title: "Best Suites on Ritz-Carlton Yachts",
-      description: "Explore the complete suite category breakdown from Terrace Suites to Owner's Suites across Evrima, Ilma, and Luminara.",
-      link: "/ritz-carlton-yacht-collection-suites",
-      actionLabel: "COMPARE SUITES",
-    },
-    {
-      title: "Marriott Bonvoy Points on Ritz-Carlton Yachts",
-      description: "Master earning and redeeming Marriott Bonvoy points, elite night credits, and member savings on your yacht voyage.",
-      link: "/ritz-carlton-yacht-collection-marriott-bonvoy-points",
-      actionLabel: "MAXIMIZE POINTS",
-    },
-    {
-      title: "Ritz-Carlton Yacht Collection Reviews",
-      description: "Read verified guest experiences, culinary ratings, service scores, and detailed yacht feedback.",
-      link: "/ritz-carlton-yacht-collection-reviews",
-      actionLabel: "READ REVIEWS",
-    },
-    {
-      title: "Evrima vs. Ilma vs. Luminara Comparison",
-      description: "Compare ship specifications, suite sizes, dining venues, and deck layouts across the entire fleet.",
-      link: "/ritz-carlton-evrima-vs-ilma-vs-luminara",
-      actionLabel: "COMPARE FLEET",
-    },
-  ];
+  // Complete Schema JSON-LD Graph (1:1 with RitzCarltonYachtCollectionCost schema structure)
+  const jsonLdSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-shore-excursions-included/#webpage",
+        "url": "https://www.tripsandships.com/ritz-carlton-yacht-shore-excursions-included",
+        "name": pageData.seo.ogTitle || pageData.seo.title,
+        "headline": pageData.hero.title,
+        "description": pageData.seo.metaDescription,
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/assets/RitzCarltonYachtShoreExcursionsIncluded/ritz-carlton-excursions-hero.jpg",
+          "caption": pageData.hero.title
+        },
+        "image": "https://www.tripsandships.com/assets/RitzCarltonYachtShoreExcursionsIncluded/ritz-carlton-excursions-hero.jpg",
+        "author": {
+          "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
+        },
+        "publisher": {
+          "@id": "https://www.tripsandships.com/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://www.tripsandships.com/#website"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.tripsandships.com/#organization",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/",
+        "founder": {
+          "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
+        }
+      },
+      {
+        "@type": "TravelAgency",
+        "@id": "https://www.tripsandships.com/#travelagency",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/",
+        "parentOrganization": {
+          "@id": "https://www.tripsandships.com/#organization"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.tripsandships.com/about-angela-hughes/#person",
+        "name": "Angela Hughes",
+        "jobTitle": "CEO of Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/about-angela-hughes",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/assets/Angela_Hughes.jpg",
+          "caption": "Angela Hughes - Luxury Travel Expert"
+        },
+        "description": "Angela Hughes is a luxury travel expert, CEO of Trips & Ships Luxury Travel, founder of Luxury Travel University and an experienced luxury travel industry leader.",
+        "worksFor": {
+          "@id": "https://www.tripsandships.com/#organization"
+        },
+        "knowsAbout": [
+          "Luxury Travel",
+          "Luxury Cruises",
+          "Yacht Cruising",
+          "Luxury Safaris",
+          "Expedition Cruises",
+          "River Cruising",
+          "Premium Travel"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-shore-excursions-included/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.tripsandships.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ritz-Carlton Yacht Collection",
+            "item": "https://www.tripsandships.com/ritz-carlton-yacht-collection"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Ritz-Carlton Yacht Shore Excursions Included",
+            "item": "https://www.tripsandships.com/ritz-carlton-yacht-shore-excursions-included"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-shore-excursions-included/#faq",
+        "mainEntity": pageData.faqs.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+          }
+        }))
+      }
+    ]
+  };
 
   return (
     <div className="w-full bg-white text-navy-950 min-h-screen">
@@ -188,8 +296,17 @@ const RitzCarltonYachtShoreExcursionsIncluded = () => {
           ].join(", ")}
         />
         <link rel="canonical" href={pageData.seo.canonicalUrl} />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={pageData.seo.ogTitle || pageData.seo.title} />
+        <meta property="og:description" content={pageData.seo.metaDescription} />
+        <meta property="og:url" content={pageData.seo.canonicalUrl} />
+        <meta property="og:image" content="https://www.tripsandships.com/assets/RitzCarltonYachtShoreExcursionsIncluded/ritz-carlton-excursions-hero.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageData.seo.ogTitle || pageData.seo.title} />
+        <meta name="twitter:description" content={pageData.seo.metaDescription} />
+        <meta name="twitter:image" content="https://www.tripsandships.com/assets/RitzCarltonYachtShoreExcursionsIncluded/ritz-carlton-excursions-hero.jpg" />
         <script type="application/ld+json">
-          {JSON.stringify(pageData.schema)}
+          {JSON.stringify(jsonLdSchema)}
         </script>
       </Helmet>
 
@@ -204,7 +321,10 @@ const RitzCarltonYachtShoreExcursionsIncluded = () => {
         primaryCtaText={pageData.hero.primaryCtaText}
         primaryCtaLink={pageData.hero.primaryCtaLink}
         secondaryCtaText={pageData.hero.secondaryCtaText}
-        secondaryCtaLink={pageData.hero.secondaryCtaLink}
+        secondaryCtaLink="/contact"
+        backgroundImage={heroImg}
+        bgPosition="bg-center object-cover"
+        overlayClassName="bg-gradient-to-b from-navy-950/55 via-navy-950/15 to-navy-950/70"
       />
 
       {/* 4. Executive Narrative Intro (PremiumIntro) */}
@@ -215,6 +335,10 @@ const RitzCarltonYachtShoreExcursionsIncluded = () => {
           highlight={pageData.executivePhilosophy.highlight}
           quote={pageData.executivePhilosophy.quote}
           sections={introSections}
+          image1={introExcursionsImg}
+          image2={introWatersportsImg}
+          alt1="Ritz-Carlton Yacht Caribbean Shore Excursion"
+          alt2="Ritz-Carlton Yacht Marina Watersports"
           watermarkText="EXCURSIONS"
         />
       </div>
@@ -245,8 +369,8 @@ const RitzCarltonYachtShoreExcursionsIncluded = () => {
           heading={pageData.includedVsExcluded.title}
           paragraphs={pageData.includedVsExcluded.paragraphs}
           highlights={pageData.includedVsExcluded.features}
-          // image1={inclusionsMainImg}
-          // image2={inclusionsDetailImg}
+          image1={inclusionsDiningImg}
+          image2={inclusionsMarinaImg}
         />
       </div>
 
@@ -296,7 +420,8 @@ const RitzCarltonYachtShoreExcursionsIncluded = () => {
           title="Planning a Ritz-Carlton Yacht Vacation?"
           description="Speak with our certified luxury yacht specialists to navigate excursion choices, secure locked-in rates, and receive exclusive Virtuoso amenities."
           buttonText="Request Complimentary Yacht Consultation"
-          buttonLink="mailto:angela@tripsandships.com?subject=Ritz-Carlton%20Yacht%20Shore%20Excursions%20Inquiry"
+          buttonLink="/contact"
+          image={midCtaBgImg}
           theme="dark"
         />
       </div>
@@ -330,21 +455,26 @@ const RitzCarltonYachtShoreExcursionsIncluded = () => {
       <div id="shore-vs-independent">
         <DualPhilosophyShowcase
           data={pageData.shoreVsIndependent}
-          // imageSailing={shoreExcursionComparisonImg}
-          // imageAllSuite={independentExplorationImg}
+          imageSailing={dualGuidedImg}
+          imageAllSuite={dualIndependentImg}
         />
       </div>
 
-
-
-      {/* 16. Total Vacation Budget Framework (CabinComparisonGallery with Images) */}
+      {/* 16. Total Vacation Budget Framework (ThreeColumnGrid with Images & AuthorityBox) */}
       <div id="budget-framework">
-        <CabinComparisonGallery
+        <ThreeColumnGrid
           title={pageData.completeBudgetFramework.title}
           subtitle={pageData.completeBudgetFramework.subtitle}
-          items={budgetGalleryItems}
-          expertRecommendation={budgetExpertRecommendation}
+          items={budgetCardsItems}
         />
+        <div className="max-w-5xl mx-auto px-6 py-6">
+          <AuthorityBox
+            title={pageData.completeBudgetFramework.takeaway.title}
+            content={pageData.completeBudgetFramework.takeaway.content}
+            author="Angela Hughes, Luxury Cruise Specialist & CEO"
+            authorImage={angelaImage}
+          />
+        </div>
       </div>
 
       {/* 17. Luxury Cruise Line Inclusions Comparison: Why Inclusions Matter */}
@@ -396,7 +526,7 @@ const RitzCarltonYachtShoreExcursionsIncluded = () => {
         badge="LUXURY YACHT EXPERT"
         experienceBadge="40+ YEARS IN LUXURY TRAVEL"
         ctaText="Book With Angela Hughes"
-        ctaLink="mailto:angela@tripsandships.com?subject=Ritz-Carlton%20Yacht%20Shore%20Excursions%20Planning"
+        ctaLink="/contact"
       />
 
       {/* 23. Complete 16 FAQs Accordion */}
@@ -410,15 +540,6 @@ const RitzCarltonYachtShoreExcursionsIncluded = () => {
         />
       </div>
 
-
-      {/* 25. Interactive Resource Pillar Hub */}
-      <InteractivePillarHubGrid
-        title="Explore More Ritz-Carlton Yacht Resources"
-        subtitle="Deepen your luxury yacht knowledge with suite guides, dress code recommendations, Marriott Bonvoy points, and fleet comparisons."
-        items={hubItems}
-      />
-
-      
       {/* 24. Final Answer Narrative Summary */}
       <section className="w-full py-16 bg-slate-50 border-t border-slate-200">
         <div className="max-w-4xl mx-auto px-6 text-center">
@@ -437,12 +558,22 @@ const RitzCarltonYachtShoreExcursionsIncluded = () => {
         </div>
       </section>
 
+      {/* 25. Video Section Component (VideoEmbed Component) ─── */}
+      <VideoEmbed
+        data={{
+          youtubeId: "sQPnGRkiLdg",
+          title: "Experience Ritz-Carlton Yacht Shore Excursions",
+          description: "Discover what makes shore excursions, marina water sports, and bespoke private tours extraordinary with The Ritz-Carlton Yacht Collection."
+        }}
+      />
+
       {/* 26. Final Bottom CTA */}
       <CenterCTA
         title="Ready to Plan Your Yacht Vacation?"
         description="Connect with Trips & Ships Luxury Travel to secure locked-in cruise rates, exclusive Virtuoso amenities, and expert shoreside planning support."
         buttonText="Contact a Yacht Specialist"
         buttonLink="/contact"
+        image={finalCtaBgImg}
         theme="dark"
       />
     </div>

@@ -48,7 +48,7 @@
     ]
   },
   "quickAnswer": {
-    "title": "Quick Answer: Which Ritz-Carlton Yacht Suite Is Best?",
+    "title": "Which Ritz-Carlton Yacht Suite Is Best?",
     "lead": "There is no single best suite for every traveler. Here is the simplest way to narrow down the choices:",
     "tableHeaders": ["If you want...", "Consider..."],
     "tableRows": [
@@ -130,7 +130,7 @@
     {
       "id": "owners-suite",
       "number": "1",
-      "name": "Owner's Suite — The Flagship Choice",
+      "name": "Owner's Suite The Flagship Choice",
       "shortName": "Owner's Suite",
       "yacht": "Evrima, Ilma & Luminara",
       "size": "~1,091 sq ft Interior | ~635 sq ft Terrace (Evrima specs)",
@@ -155,7 +155,7 @@
     {
       "id": "residential-suite",
       "number": "2",
-      "name": "Residential Suite — Luminara's Apartment-Style Option",
+      "name": "Residential Suite  Luminara's Apartment-Style Option",
       "shortName": "Residential Suite",
       "yacht": "Luminara Exclusive",
       "size": "Spacious Multi-Room Residential Layout",
@@ -174,7 +174,7 @@
     {
       "id": "loft-suite",
       "number": "3",
-      "name": "Loft Suite — Best for a Two-Level Experience",
+      "name": "Loft Suite  Best for a Two-Level Experience",
       "shortName": "Loft Suite",
       "yacht": "Evrima Exclusive",
       "size": "~611 sq ft Interior | ~81 sq ft Terrace",
@@ -193,7 +193,7 @@
     {
       "id": "grand-suite",
       "number": "4",
-      "name": "Grand Suite — A Strong Balance of Space and Practicality",
+      "name": "Grand Suite  A Strong Balance of Space and Practicality",
       "shortName": "Grand Suite",
       "yacht": "Evrima, Ilma & Luminara",
       "size": "~587 sq ft Interior | up to 118 sq ft Terrace (Evrima specs)",
@@ -211,7 +211,7 @@
     {
       "id": "view-suite",
       "number": "5",
-      "name": "View Suite — Best for Natural Light and Ocean Views",
+      "name": "View Suite  Best for Natural Light and Ocean Views",
       "shortName": "View Suite",
       "yacht": "Evrima, Ilma & Luminara",
       "size": "Varies by Vessel | Expansive Glass Facade",
@@ -229,7 +229,7 @@
     {
       "id": "concierge-suite",
       "number": "6",
-      "name": "Concierge Suite — An Elevated Option on Ilma and Luminara",
+      "name": "Concierge Suite  An Elevated Option on Ilma and Luminara",
       "shortName": "Concierge Suite",
       "yacht": "Ilma & Luminara",
       "size": "~689–785 sq ft Interior | ~355–409 sq ft Terrace (Ilma specs)",
@@ -250,7 +250,7 @@
     {
       "id": "ilma-suite",
       "number": "7",
-      "name": "Ilma Suite — A Distinctive Category on Ilma",
+      "name": "Ilma Suite  A Distinctive Category on Ilma",
       "shortName": "Ilma Suite",
       "yacht": "Ilma Exclusive",
       "size": "~506–657 sq ft Interior | ~291–301 sq ft Terrace",
@@ -268,7 +268,7 @@
     {
       "id": "signature-suite",
       "number": "8",
-      "name": "Signature Suite — A Smart Middle Ground",
+      "name": "Signature Suite  A Smart Middle Ground",
       "shortName": "Signature Suite",
       "yacht": "Evrima, Ilma & Luminara",
       "size": "~429 sq ft Interior | Private Terrace (Evrima specs)",
@@ -286,7 +286,7 @@
     {
       "id": "terrace-suite",
       "number": "9",
-      "name": "Terrace Suite — The Foundation of the Ritz-Carlton Yacht Experience",
+      "name": "Terrace Suite  The Foundation of the Ritz-Carlton Yacht Experience",
       "shortName": "Terrace Suite",
       "yacht": "Evrima, Ilma & Luminara",
       "size": "Entry Luxury Category | Private Ocean Terrace",

@@ -36,12 +36,6 @@ import middleCtaImg from '@/assets/RitzCarltonYachtCollectionReviews/is-ritz-car
 // Final CTA Image
 import finalCtaImg from '@/assets/RitzCarltonYachtCollectionReviews/plan-ritz-carlton-yacht-luxury-vacation-review.jpg';
 
-// Interactive Hub Images
-import hubPricingImg from '@/assets/RitzCarltonYachtCollectionReviews/hub-pricing-inclusions-guide.jpg';
-import hubComparisonImg from '@/assets/RitzCarltonYachtCollectionReviews/hub-yacht-fleet-comparisons.jpg';
-import hubLifestyleImg from '@/assets/RitzCarltonYachtCollectionReviews/hub-onboard-lifestyle-suites.jpg';
-import hubExcursionImg from '@/assets/RitzCarltonYachtCollectionReviews/hub-destinations-shore-excursions.jpeg';
-import hubAdvisorImg from '@/assets/RitzCarltonYachtCollectionReviews/hub-luxury-travel-advisor.jpg';
 
 // Shared UI System Components (Exact EmeraldYachts component-based architecture)
 import ComparisonHero from '@/components/ui/ComparisonHero';
@@ -58,7 +52,7 @@ import AuthorityBox from '@/components/ui/AuthorityBox';
 import FAQAccordion from '@/components/ui/FAQAccordion';
 import ExpertCredentials from '@/components/ui/ExpertCredentials';
 import CenterCTA from '@/components/ui/CenterCTA';
-import InteractivePillarHubGrid from '@/components/ui/InteractivePillarHubGrid';
+import VideoEmbed from '@/components/ui/VideoEmbed';
 
 const RitzCarltonYachtCollectionReviews = () => {
   // 1. Data mapping for PremiumIntro (Section 1: Quick Answer Narrative)
@@ -290,83 +284,6 @@ const RitzCarltonYachtCollectionReviews = () => {
       ["Overall Experience", "4.3 / 5.0"]
     ]
   };
-
-  // 13. Data mapping for Resource Hub (Section 15)
-  const resourceHubItems = [
-    {
-      title: "Cost & Inclusions Guides",
-      category: "Pricing & Inclusions",
-      description: "Detailed analyses of fares, inclusions, daily rates, and honest value assessments.",
-      image: hubPricingImg,
-      placeholderLabel: "Ritz-Carlton Yacht Cost & Inclusions Comprehensive Guides",
-      actionLabel: "Explore Cost Guides",
-      links: [
-        { label: "How Much Does a Ritz-Carlton Yacht Cruise Cost?", url: "/ritz-carlton-yacht-collection-cost" },
-        { label: "What Is Included on a Ritz-Carlton Yacht Cruise?", url: "/ritz-carlton-yacht-collection-included" },
-        { label: "Is The Ritz-Carlton Yacht Collection Worth It? An Honest Review", url: "/ritz-carlton-yacht-collection-reviews" }
-      ],
-      mainUrl: "/ritz-carlton-yacht-collection-reviews"
-    },
-    {
-      title: "Yacht & Brand Comparisons",
-      category: "Fleet & Competitor Showdowns",
-      description: "Side-by-side comparisons of Evrima, Ilma, Luminara, Explora, and Seabourn.",
-      image: hubComparisonImg,
-      placeholderLabel: "Ritz-Carlton Fleet Comparisons - Evrima vs Ilma vs Luminara",
-      actionLabel: "Explore Comparisons",
-      links: [
-        { label: "Evrima vs. Ilma vs. Luminara: Which Ritz-Carlton Yacht Is Best?", url: "/ritz-carlton-evrima-vs-ilma-vs-luminara" },
-        { label: "Ritz-Carlton Yacht Collection vs. Explora Journeys", url: "/ritz-carlton-yacht-collection-vs-explora-journeys" },
-        { label: "Ritz-Carlton Yacht Collection vs. Seabourn", url: "/ritz-carlton-yacht-collection-vs-seabourn" }
-      ],
-      mainUrl: "/ritz-carlton-evrima-vs-ilma-vs-luminara"
-    },
-    {
-      title: "Onboard Lifestyle & Suites",
-      category: "Suites & Amenities",
-      description: "Guides to dress code, family friendliness, Bonvoy points, and suite selection.",
-      image: hubLifestyleImg,
-      placeholderLabel: "Ritz-Carlton Yacht Onboard Lifestyle, Dress Code & Luxury Suites",
-      actionLabel: "Explore Onboard Guides",
-      links: [
-        { label: "What Is the Dress Code on Ritz-Carlton Yachts?", url: "/ritz-carlton-yacht-collection-dress-code" },
-        { label: "Are Ritz-Carlton Yacht Cruises Good for Families and Children?", url: "/ritz-carlton-yacht-collection-families-children" },
-        { label: "How Do Marriott Bonvoy Points Work on Ritz-Carlton Yacht Cruises?", url: "/ritz-carlton-yacht-collection-marriott-bonvoy-points" },
-        { label: "What Are the Best Suites on Ritz-Carlton Yachts?", url: "/ritz-carlton-yacht-collection-suites" }
-      ],
-      mainUrl: "/ritz-carlton-yacht-collection-suites"
-    },
-    {
-      title: "Excursions & Destinations",
-      category: "Regions & Non-Cruisers",
-      description: "Exploring shore excursions, Caribbean itineraries, Miami sailings, and non-cruiser guides.",
-      image: hubExcursionImg,
-      placeholderLabel: "Ritz-Carlton Yacht Destinations & Shore Excursions",
-      actionLabel: "Explore Destinations",
-      links: [
-        { label: "Are Ritz-Carlton Yacht Shore Excursions Included?", url: "/ritz-carlton-yacht-shore-excursions-included" },
-        { label: "Is The Ritz-Carlton Yacht Collection Good for People Who Do Not Like Cruises?", url: "/ritz-carlton-yacht-collection-for-people-who-dont-like-cruises" },
-        { label: "Ritz-Carlton Yacht Cruises from Miami: What You Need to Know", url: "/ritz-carlton-yacht-cruises-from-miami" },
-        { label: "Ritz-Carlton Yacht Caribbean Cruises: Best Itineraries and When to Go", url: "/ritz-carlton-yacht-caribbean-cruises" }
-      ],
-      mainUrl: "/ritz-carlton-yacht-caribbean-cruises"
-    },
-    {
-      title: "Commercial & Advisor Services",
-      category: "Advisor Advisory",
-      description: "Why booking through a specialized travel advisor in Florida or Orlando unlocks VIP perks.",
-      image: hubAdvisorImg,
-      placeholderLabel: "Ritz-Carlton Yacht Collection Travel Advisor Services",
-      actionLabel: "Explore Advisory",
-      links: [
-        { label: "Why Book a Ritz-Carlton Yacht Cruise Through a Travel Advisor?", url: "/ritz-carlton-yacht-cruises/travel-advisor" },
-        { label: "Ritz-Carlton Yacht Collection Travel Advisor in Florida", url: "/ritz-carlton-yacht-collection-travel-advisor-florida" },
-        { label: "Ritz-Carlton Yacht Collection Travel Advisor in Orlando", url: "/ritz-carlton-yacht-collection-travel-advisor-orlando" },
-        { label: "How to Choose the Right Ritz-Carlton Yacht, Suite and Itinerary", url: "/how-to-choose-right-ritz-carlton-yacht-suite-itinerary" }
-      ],
-      mainUrl: "/ritz-carlton-yacht-cruises/travel-advisor"
-    }
-  ];
 
   const jsonLdSchema = {
     "@context": "https://schema.org",
@@ -640,35 +557,13 @@ const RitzCarltonYachtCollectionReviews = () => {
         data={editorialScorecardTable}
       />
 
-      {/* ─── SECTION 16: Video Section Component ─── */}
-      <section className="py-20 bg-slate-50 border-t border-b border-slate-200">
-        <div className="max-w-[1000px] mx-auto px-6 text-center">
-          <span className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-2 block">
-            Ritz-Carlton Yacht Collection Review Showcase
-          </span>
-          <h2 className="font-display text-3xl md:text-4xl font-light text-navy-950 mb-4">
-            See the Ritz-Carlton Yacht Experience
-          </h2>
-          <p className="text-slate-600 font-light text-lg max-w-2xl mx-auto mb-8">
-            Watch an in-depth walkthrough of Ritz-Carlton Yacht Collection suites, dining, service, and yacht amenities.
-          </p>
-          <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-slate-200 bg-slate-900">
-            <iframe
-              className="w-full h-full"
-              src="https://www.youtube.com/embed/mrdHjSeXwfc"
-              title="Is Ritz-Carlton Yacht Collection Worth It? Honest Review & Showcase"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </div>
-      </section>
-
-      {/* ─── SECTION 17: Curated Topic Clusters (InteractivePillarHubGrid Component) ─── */}
-      <InteractivePillarHubGrid
-        title="Explore More Ritz-Carlton Yacht Guides & Comparisons"
-        subtitle="Comprehensive resources covering cost, fleet comparisons, suites, and destinations."
-        items={resourceHubItems}
+      {/* ─── SECTION 16: Video Section Component (VideoEmbed Component) ─── */}
+      <VideoEmbed
+        data={{
+          youtubeId: "mrdHjSeXwfc",
+          title: "See the Ritz-Carlton Yacht Experience",
+          description: "Watch an in-depth walkthrough of Ritz-Carlton Yacht Collection suites, dining, service, and yacht amenities."
+        }}
       />
 
       {/* ─── SECTION 18: Comprehensive 15 FAQs (FAQAccordion Component) ─── */}

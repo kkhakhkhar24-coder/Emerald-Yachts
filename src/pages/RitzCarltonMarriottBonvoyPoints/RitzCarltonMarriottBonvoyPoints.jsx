@@ -5,17 +5,57 @@ import pageData from './data.json';
 
 // Images
 import angelaImage from '@/assets/Media (2).jpg';
-// import yachtHeroImage from '@/assets/EmeraldVSRitzCarltonYacht/Ritzcarton.webp';
-// import yachtImage1 from '@/assets/EmeraldVSRitzCarltonYacht/Evcr1.webp';
-// import yachtImage2 from '@/assets/EmeraldVSRitzCarltonYacht/Evcr2.webp';
-// import yachtImage3 from '@/assets/EmeraldVSRitzCarltonYacht/Evcr3.webp';
-// import yachtExperienceImage from '@/assets/EmeraldVSRitzCarltonYacht/Experice.webp';
 
-const yachtHeroImage = null;
-const yachtImage1 = null;
-const yachtImage2 = null;
-const yachtImage3 = null;
-const yachtExperienceImage = null;
+// Hero
+import bonvoyHeroImg from '@/assets/RitzCarltonMarriottBonvoyPoints/ritz-carlton-marriott-bonvoy-hero.jpg';
+
+// PremiumIntro
+import introPoolDeckImg from '@/assets/RitzCarltonMarriottBonvoyPoints/marriott-bonvoy-earning-pool-deck.jpg';
+import introLoungeDiningImg from '@/assets/RitzCarltonMarriottBonvoyPoints/marriott-bonvoy-lifestyle-lounge-dining.jpg';
+
+// HighlightsSplit (Status Transfer)
+import eliteBenefitsImg from '@/assets/RitzCarltonMarriottBonvoyPoints/marriott-bonvoy-elite-onboard-benefits.jpg';
+import hotelPolicyDiffImg from '@/assets/RitzCarltonMarriottBonvoyPoints/marriott-bonvoy-hotel-policy-differences.jpg';
+
+// Policy Rules Part 1 (6 cards)
+import policyFullPointsImg from '@/assets/RitzCarltonMarriottBonvoyPoints/policy-full-points-booking.jpg';
+import policyTaxesFeesImg from '@/assets/RitzCarltonMarriottBonvoyPoints/policy-taxes-port-expenses.jpg';
+import policyHotelPkgImg from '@/assets/RitzCarltonMarriottBonvoyPoints/policy-hotel-packages-earning.jpg';
+import policyMultiSuitesImg from '@/assets/RitzCarltonMarriottBonvoyPoints/policy-multiple-suites-allowance.jpg';
+import policyTwoMembersSuiteImg from '@/assets/RitzCarltonMarriottBonvoyPoints/policy-two-members-same-suite.jpg';
+import policyTravelAdvisorImg from '@/assets/RitzCarltonMarriottBonvoyPoints/policy-travel-advisor-bonvoy.jpg';
+
+// Policy Rules Part 2 (8 cards)
+import policyAddBonvoyNumberImg from '@/assets/RitzCarltonMarriottBonvoyPoints/policy-add-bonvoy-number.jpg';
+import policy121DeadlineImg from '@/assets/RitzCarltonMarriottBonvoyPoints/policy-121-day-redemption-deadline.jpg';
+import policyRedeemOnlineAdvisorImg from '@/assets/RitzCarltonMarriottBonvoyPoints/policy-redeem-online-advisor.jpg';
+import policyTransferringPointsImg from '@/assets/RitzCarltonMarriottBonvoyPoints/policy-transferring-points.jpg';
+import policyBuyBonvoyPointsImg from '@/assets/RitzCarltonMarriottBonvoyPoints/policy-buy-bonvoy-points.jpg';
+import policyCancellationImg from '@/assets/RitzCarltonMarriottBonvoyPoints/policy-cancellation-points-refund.jpg';
+import policyPostingTimeImg from '@/assets/RitzCarltonMarriottBonvoyPoints/policy-points-posting-timeline.jpg';
+import policyCobrandCardImg from '@/assets/RitzCarltonMarriottBonvoyPoints/policy-credit-card-multipliers.jpg';
+
+// Ambassador & Charters (3 cards)
+import ambassadorPerksImg from '@/assets/RitzCarltonMarriottBonvoyPoints/ambassador-elite-onboard-perks.jpg';
+import ambassadorSpendImg from '@/assets/RitzCarltonMarriottBonvoyPoints/ambassador-qualifying-spend.jpg';
+import fullChartersImg from '@/assets/RitzCarltonMarriottBonvoyPoints/full-yacht-charters-buyouts.jpg';
+
+// Middle CTA
+import midCtaBgImg from '@/assets/RitzCarltonMarriottBonvoyPoints/marriott-bonvoy-mid-cta-background.jpg';
+
+// Strategy Sequence (8 steps)
+import strategyStep1Img from '@/assets/RitzCarltonMarriottBonvoyPoints/strategy-step-1-attach-bonvoy-number.jpg';
+import strategyStep2Img from '@/assets/RitzCarltonMarriottBonvoyPoints/strategy-step-2-evaluate-points-value.jpg';
+import strategyStep3Img from '@/assets/RitzCarltonMarriottBonvoyPoints/strategy-step-3-bundle-hotel-packages.jpg';
+import strategyStep4Img from '@/assets/RitzCarltonMarriottBonvoyPoints/strategy-step-4-cobranded-credit-card.jpg';
+import strategyStep5Img from '@/assets/RitzCarltonMarriottBonvoyPoints/strategy-step-5-elite-status-onboard.jpg';
+import strategyStep6Img from '@/assets/RitzCarltonMarriottBonvoyPoints/strategy-step-6-verify-points-posting.jpg';
+import strategyStep7Img from '@/assets/RitzCarltonMarriottBonvoyPoints/strategy-step-7-elite-night-credits.jpg';
+import strategyStep8Img from '@/assets/RitzCarltonMarriottBonvoyPoints/strategy-step-8-luxury-advisor-strategy.jpg';
+
+
+// Final CTA
+import finalCtaBgImg from '@/assets/RitzCarltonMarriottBonvoyPoints/marriott-bonvoy-final-cta-background.jpg';
 
 // Shared UI System Components
 import ComparisonHero from '@/components/ui/ComparisonHero';
@@ -31,7 +71,7 @@ import AuthorityBox from '@/components/ui/AuthorityBox';
 import FAQAccordion from '@/components/ui/FAQAccordion';
 import ExpertCredentials from '@/components/ui/ExpertCredentials';
 import CenterCTA from '@/components/ui/CenterCTA';
-import InteractivePillarHubGrid from '@/components/ui/InteractivePillarHubGrid';
+import VideoEmbed from '@/components/ui/VideoEmbed';
 import HighlightsSplit from '@/components/ui/HighlightsSplit';
 import GenericChecklistCards from '@/components/ui/GenericChecklistCards';
 
@@ -159,13 +199,15 @@ const RitzCarltonMarriottBonvoyPoints = () => {
     {
       title: "RCYC-Specific Elite Benefits",
       description: "Yes, but the benefits are RCYC-specific. Having Marriott Bonvoy Platinum, Titanium or Ambassador Elite status does not mean that every hotel benefit automatically carries over to the yacht. The Ritz-Carlton Yacht Collection has its own list of Elite onboard benefits.",
-      image: yachtExperienceImage,
+      image: eliteBenefitsImg,
+      placeholderLabel: "ELITE BENEFITS",
       icon: "Compass"
     },
     {
       title: "Hotel Property Guarantees Excluded",
       description: "The current terms specifically state that certain Marriott Bonvoy benefits available at participating hotel properties are not available at RCYC, including the Elite Benefits Guarantee and Ultimate Reservation Guarantee. Your status is recognized, but the yacht applies its own onboard Elite benefits.",
-      image: yachtImage3,
+      image: hotelPolicyDiffImg,
+      placeholderLabel: "HOTEL DIFFERENCES",
       icon: "Star"
     }
   ];
@@ -204,24 +246,40 @@ const RitzCarltonMarriottBonvoyPoints = () => {
   }));
 
   // 11. Data mapping for Policy Rules Grids (Sections 17 & 18: ThreeColumnGrid)
+  const policyGroup1Images = [
+    policyFullPointsImg,
+    policyTaxesFeesImg,
+    policyHotelPkgImg,
+    policyMultiSuitesImg,
+    policyTwoMembersSuiteImg,
+    policyTravelAdvisorImg
+  ];
   const policyItemsGroup1 = pageData.detailedPolicies.slice(0, 6).map((p, idx) => {
-    const images = [yachtHeroImage, yachtImage1, yachtImage2, yachtImage3, yachtExperienceImage, yachtImage1];
     return {
       title: p.title,
       category: p.badge,
       description: p.paragraphs.join(' ') + (p.highlight ? ` [Important: ${p.highlight.intro} ${p.highlight.items.join(', ')}]` : '') + (p.summaryBox ? ` [In Simple Terms: ${p.summaryBox.items.join('; ')}]` : ''),
-      image: images[idx % images.length],
+      image: policyGroup1Images[idx % policyGroup1Images.length],
       placeholderLabel: p.badge.toUpperCase()
     };
   });
 
+  const policyGroup2Images = [
+    policyAddBonvoyNumberImg,
+    policy121DeadlineImg,
+    policyRedeemOnlineAdvisorImg,
+    policyTransferringPointsImg,
+    policyBuyBonvoyPointsImg,
+    policyCancellationImg,
+    policyPostingTimeImg,
+    policyCobrandCardImg
+  ];
   const policyItemsGroup2 = pageData.detailedPolicies.slice(6).map((p, idx) => {
-    const images = [yachtImage2, yachtImage3, yachtExperienceImage, yachtHeroImage, yachtImage1, yachtImage2, yachtImage3, yachtExperienceImage];
     return {
       title: p.title,
       category: p.badge,
       description: p.paragraphs.join(' ') + (p.bestPractice ? ` [Best Practice: ${p.bestPractice.text}]` : '') + (p.ifPointsDoNotAppear ? ` [Note: ${p.ifPointsDoNotAppear.text}]` : ''),
-      image: images[idx % images.length],
+      image: policyGroup2Images[idx % policyGroup2Images.length],
       placeholderLabel: p.badge.toUpperCase()
     };
   });
@@ -243,38 +301,49 @@ const RitzCarltonMarriottBonvoyPoints = () => {
   ];
 
   // 13. Data mapping for Ambassador & Charters (Section 20: ThreeColumnGrid)
+  const ambassadorImages = [ambassadorPerksImg, ambassadorSpendImg, fullChartersImg];
   const ambassadorAndChartersItems = [
     {
       title: "Ambassador Elite Onboard Perks",
       category: "Ambassador Tier",
       description: "Ambassador Elite members receive private Elite reception, in-suite welcome gift, first-evening laundry pressing, priority boarding/departure, early S.E.A. access, and complimentary laundry throughout the cruise.",
-      image: yachtExperienceImage,
+      image: ambassadorImages[0],
       placeholderLabel: "AMBASSADOR PERKS"
     },
     {
       title: "Ambassador Qualifying Spend",
       category: "Status Spend",
       description: "The cash portion paid toward qualifying Cruise Fare and qualifying hotel package rates counts toward the qualified annual spend requirement for Marriott Bonvoy Ambassador Elite status.",
-      image: yachtImage1,
+      image: ambassadorImages[1],
       placeholderLabel: "QUALIFYING SPEND"
     },
     {
       title: "Full-Yacht Buyouts & Charters",
       category: "Charters & Groups",
       description: "Members cannot earn points or benefits on full-yacht buyouts/charters and incentive groups booked through the RCYC Meetings and Incentive department.",
-      image: yachtHeroImage,
+      image: ambassadorImages[2],
       placeholderLabel: "CHARTER RULES"
     }
   ];
 
   // 14. Data mapping for 8-Step Strategy Sequence (Section 22: InteractivePlanningRoadmap)
+  const strategyImages = [
+    strategyStep1Img,
+    strategyStep2Img,
+    strategyStep3Img,
+    strategyStep4Img,
+    strategyStep5Img,
+    strategyStep6Img,
+    strategyStep7Img,
+    strategyStep8Img
+  ];
   const strategyStepsMapped = pageData.strategySection.steps.map((stepItem, idx) => {
-    const images = [yachtHeroImage, yachtImage1, yachtImage2, yachtImage3, yachtExperienceImage, yachtImage1, yachtImage2, yachtHeroImage];
     return {
       timeframe: stepItem.step,
       title: stepItem.step,
       description: stepItem.description,
-      image: images[idx % images.length]
+      image: strategyImages[idx % strategyImages.length],
+      placeholderLabel: `STAGE 0${idx + 1} PLACEHOLDER`
     };
   });
 
@@ -304,102 +373,79 @@ const RitzCarltonMarriottBonvoyPoints = () => {
     })
   };
 
-  // 17. Data mapping for Resource Hub (Section 28: InteractivePillarHubGrid)
-  const resourceHubItems = [
-    {
-      title: "Cost & Inclusions Guides",
-      category: "Pricing & Inclusions",
-      description: "Detailed analyses of fares, inclusions, daily rates, and honest value assessments.",
-      image: yachtHeroImage,
-      placeholderLabel: "PRICING PLACEHOLDER",
-      actionLabel: "Explore Cost Guides",
-      links: [
-        { label: "How Much Does a Ritz-Carlton Yacht Cruise Cost?", url: "/ritz-carlton-yacht-collection-cost" },
-        { label: "What Is Included on a Ritz-Carlton Yacht Cruise?", url: "/ritz-carlton-yacht-collection-included" },
-        { label: "Is The Ritz-Carlton Yacht Collection Worth It? An Honest Review", url: "/ritz-carlton-yacht-collection-reviews" }
-      ],
-      mainUrl: "/ritz-carlton-yacht-collection-cost"
-    },
-    {
-      title: "Yacht & Brand Comparisons",
-      category: "Fleet & Competitor Showdowns",
-      description: "Side-by-side comparisons of Evrima, Ilma, Luminara, Explora, and Seabourn.",
-      image: yachtImage1,
-      placeholderLabel: "COMPARISONS PLACEHOLDER",
-      actionLabel: "Explore Comparisons",
-      links: [
-        { label: "Evrima vs. Ilma vs. Luminara: Which Ritz-Carlton Yacht Is Best?", url: "/ritz-carlton-evrima-vs-ilma-vs-luminara" },
-        { label: "Ritz-Carlton Yacht Collection vs. Explora Journeys", url: "/ritz-carlton-yacht-collection-vs-explora-journeys" },
-        { label: "Ritz-Carlton Yacht Collection vs. Seabourn", url: "/ritz-carlton-yacht-collection-vs-seabourn" }
-      ],
-      mainUrl: "/ritz-carlton-evrima-vs-ilma-vs-luminara"
-    },
-    {
-      title: "Onboard Lifestyle & Suites",
-      category: "Suites & Amenities",
-      description: "Guides to dress code, family friendliness, Bonvoy points, and suite selection.",
-      image: yachtImage2,
-      placeholderLabel: "LIFESTYLE PLACEHOLDER",
-      actionLabel: "Explore Onboard Guides",
-      links: [
-        { label: "How Do Marriott Bonvoy Points Work on Ritz-Carlton Yacht Cruises?", url: "/ritz-carlton-yacht-collection-marriott-bonvoy-points" },
-        { label: "Ritz-Carlton Yacht Collection Fleet & Suites Overview", url: "/ritz-carlton-yacht-collection" },
-        { label: "Emerald Yachts vs. Ritz-Carlton Yacht Collection", url: "/emerald-yachts-vs-ritz-carlton-yacht-collection" }
-      ],
-      mainUrl: "/ritz-carlton-yacht-collection-marriott-bonvoy-points"
-    }
-  ];
-
-  // Complete Schema JSON-LD Graph
+  // Complete Schema JSON-LD Graph (1:1 with RitzCarltonYachtCollectionCost schema structure)
   const jsonLdSchema = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "WebPage",
-        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-marriott-bonvoy-points#webpage",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-marriott-bonvoy-points/#webpage",
         "url": "https://www.tripsandships.com/ritz-carlton-yacht-collection-marriott-bonvoy-points",
-        "name": pageData.seo.title,
-        "description": pageData.seo.metaDescription,
-        "isPartOf": {
-          "@id": "https://www.tripsandships.com/#website"
-        },
-        "about": {
-          "@type": "Thing",
-          "name": "Marriott Bonvoy points on Ritz-Carlton Yacht Collection cruises"
-        },
-        "breadcrumb": {
-          "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-marriott-bonvoy-points#breadcrumb"
-        },
-        "author": {
-          "@id": "https://www.tripsandships.com/about-angela-hughes#person"
-        },
-        "publisher": {
-          "@id": "https://www.tripsandships.com/#organization"
-        },
-        "inLanguage": "en-US"
-      },
-      {
-        "@type": "Article",
-        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-marriott-bonvoy-points#article",
+        "name": pageData.seo.ogTitle || pageData.seo.title,
         "headline": pageData.hero.title,
         "description": pageData.seo.metaDescription,
-        "url": pageData.seo.canonicalUrl,
-        "mainEntityOfPage": {
-          "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-marriott-bonvoy-points#webpage"
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/assets/RitzCarltonMarriottBonvoyPoints/ritz-carlton-marriott-bonvoy-hero.jpg",
+          "caption": pageData.hero.title
         },
+        "image": "https://www.tripsandships.com/assets/RitzCarltonMarriottBonvoyPoints/ritz-carlton-marriott-bonvoy-hero.jpg",
         "author": {
-          "@id": "https://www.tripsandships.com/about-angela-hughes#person"
+          "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
         },
         "publisher": {
           "@id": "https://www.tripsandships.com/#organization"
         },
-        "articleSection": "Luxury Cruises",
-        "keywords": pageData.seo.keywords.split(', '),
-        "inLanguage": "en-US"
+        "isPartOf": {
+          "@id": "https://www.tripsandships.com/#website"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.tripsandships.com/#organization",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/",
+        "founder": {
+          "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
+        }
+      },
+      {
+        "@type": "TravelAgency",
+        "@id": "https://www.tripsandships.com/#travelagency",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/",
+        "parentOrganization": {
+          "@id": "https://www.tripsandships.com/#organization"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.tripsandships.com/about-angela-hughes/#person",
+        "name": "Angela Hughes",
+        "jobTitle": "CEO of Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/about-angela-hughes",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/assets/Angela_Hughes.jpg",
+          "caption": "Angela Hughes - Luxury Travel Expert"
+        },
+        "description": "Angela Hughes is a luxury travel expert, CEO of Trips & Ships Luxury Travel, founder of Luxury Travel University and an experienced luxury travel industry leader.",
+        "worksFor": {
+          "@id": "https://www.tripsandships.com/#organization"
+        },
+        "knowsAbout": [
+          "Luxury Travel",
+          "Luxury Cruises",
+          "Yacht Cruising",
+          "Luxury Safaris",
+          "Expedition Cruises",
+          "River Cruising",
+          "Premium Travel"
+        ]
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-marriott-bonvoy-points#breadcrumb",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-marriott-bonvoy-points/#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -410,72 +456,20 @@ const RitzCarltonMarriottBonvoyPoints = () => {
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Luxury Cruises",
-            "item": "https://www.tripsandships.com/cruise/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
             "name": "Ritz-Carlton Yacht Collection",
             "item": "https://www.tripsandships.com/ritz-carlton-yacht-collection"
           },
           {
             "@type": "ListItem",
-            "position": 4,
+            "position": 3,
             "name": "Marriott Bonvoy Points on Ritz-Carlton Yachts",
-            "item": pageData.seo.canonicalUrl
+            "item": "https://www.tripsandships.com/ritz-carlton-yacht-collection-marriott-bonvoy-points"
           }
         ]
       },
       {
-        "@type": "Organization",
-        "@id": "https://www.tripsandships.com/#organization",
-        "name": "Trips & Ships Luxury Travel",
-        "url": "https://www.tripsandships.com/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.tripsandships.com/path-to-your-approved-logo.webp"
-        },
-        "sameAs": [
-          "https://www.facebook.com/tripsandships",
-          "https://www.instagram.com/tripsandships",
-          "https://www.linkedin.com/company/trips-and-ships"
-        ]
-      },
-      {
-        "@type": "TravelAgency",
-        "@id": "https://www.tripsandships.com/#travelagency",
-        "name": "Trips & Ships Luxury Travel",
-        "url": "https://www.tripsandships.com/",
-        "description": "Luxury travel advisors specializing in luxury cruises, yachts, expeditions, safaris and personalized travel planning.",
-        "parentOrganization": {
-          "@id": "https://www.tripsandships.com/#organization"
-        }
-      },
-      {
-        "@type": "Person",
-        "@id": "https://www.tripsandships.com/about-angela-hughes#person",
-        "name": "Angela Hughes",
-        "url": "https://www.tripsandships.com/about-angela-hughes",
-        "jobTitle": "CEO",
-        "worksFor": {
-          "@id": "https://www.tripsandships.com/#organization"
-        },
-        "description": "Angela Hughes is the CEO of Trips & Ships Luxury Travel and a luxury travel expert specializing in cruises, yachts, expeditions, safaris and high-end travel planning.",
-        "knowsAbout": [
-          "Luxury Cruises",
-          "Luxury Yacht Travel",
-          "Ritz-Carlton Yacht Collection",
-          "Marriott Bonvoy",
-          "Luxury Travel",
-          "Expedition Cruises",
-          "River Cruises",
-          "Luxury Safaris"
-        ]
-      },
-      {
         "@type": "FAQPage",
-        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-marriott-bonvoy-points#faq",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-marriott-bonvoy-points/#faq",
         "mainEntity": pageData.faqs.map(faq => ({
           "@type": "Question",
           "name": faq.question,
@@ -499,6 +493,11 @@ const RitzCarltonMarriottBonvoyPoints = () => {
         <meta property="og:title" content={pageData.seo.ogTitle} />
         <meta property="og:description" content={pageData.seo.ogDescription} />
         <meta property="og:url" content={pageData.seo.canonicalUrl} />
+        <meta property="og:image" content="https://www.tripsandships.com/assets/RitzCarltonMarriottBonvoyPoints/ritz-carlton-marriott-bonvoy-hero.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageData.seo.ogTitle} />
+        <meta name="twitter:description" content={pageData.seo.ogDescription} />
+        <meta name="twitter:image" content="https://www.tripsandships.com/assets/RitzCarltonMarriottBonvoyPoints/ritz-carlton-marriott-bonvoy-hero.jpg" />
         <link rel="canonical" href={pageData.seo.canonicalUrl} />
 
         <script type="application/ld+json">
@@ -513,7 +512,9 @@ const RitzCarltonMarriottBonvoyPoints = () => {
       <ComparisonHero
         title={pageData.hero.title}
         subtitle={pageData.hero.subtitle}
-        backgroundImage={yachtHeroImage}
+        backgroundImage={bonvoyHeroImg}
+        bgPosition="bg-center object-cover"
+        overlayClassName="bg-gradient-to-b from-navy-950/55 via-navy-950/15 to-navy-950/70"
         primaryCtaText={pageData.hero.ctaLabel}
         primaryCtaLink={pageData.hero.ctaUrl}
       />
@@ -521,8 +522,10 @@ const RitzCarltonMarriottBonvoyPoints = () => {
       {/* ─── SECTION 2: Premium Narrative Intro Component ─── */}
       <PremiumIntro
         sections={introSections}
-        image1={yachtImage1}
-        image2={yachtImage2}
+        image1={introPoolDeckImg}
+        image2={introLoungeDiningImg}
+        alt1="Marriott Bonvoy Yacht Cruise Pool Deck"
+        alt2="Marriott Bonvoy Onboard Lifestyle & Dining"
         watermarkText="BONVOY"
       />
 
@@ -677,7 +680,7 @@ const RitzCarltonMarriottBonvoyPoints = () => {
         description="Navigate complex Bonvoy redemptions, suite allocations, and pre-cruise arrangements with expert guidance from certified luxury cruise specialists."
         buttonText="Contact a Travel Advisor"
         buttonLink="/contact"
-        image={yachtExperienceImage}
+        image={midCtaBgImg}
       />
 
       {/* ─── SECTION 22: 8-Step Strategy Sequence (InteractivePlanningRoadmap Component) ─── */}
@@ -716,11 +719,13 @@ const RitzCarltonMarriottBonvoyPoints = () => {
         data={pageData.faqs}
       />
 
-      {/* ─── SECTION 28: Related Resource Guides Hub (InteractivePillarHubGrid Component) ─── */}
-      <InteractivePillarHubGrid
-        title="Explore The Ritz-Carlton Yacht Collection Guides"
-        subtitle="Explore our comprehensive library of pricing, suites, competitor comparisons, and luxury cruise planning guides."
-        items={resourceHubItems}
+      {/* ─── SECTION 28: Video Section Component (VideoEmbed Component) ─── */}
+      <VideoEmbed
+        data={{
+          youtubeId: "sQPnGRkiLdg",
+          title: "Marriott Bonvoy on The Ritz-Carlton Yacht Collection",
+          description: "Watch how Marriott Bonvoy benefits, earning rates, and elite perks enhance your luxury yacht journey."
+        }}
       />
 
       {/* ─── SECTION 29: Final Call to Action (CenterCTA Component) ─── */}
@@ -729,7 +734,7 @@ const RitzCarltonMarriottBonvoyPoints = () => {
         description="Whether you want to earn 5x Bonvoy points on an upcoming voyage or apply hundreds of thousands of points toward cruise fare savings, our certified luxury advisors handle every detail from start to finish."
         buttonText="Request a Luxury Yacht Consultation"
         buttonLink="/contact"
-        image={yachtHeroImage}
+        image={finalCtaBgImg}
       />
     </div>
   );

@@ -19,8 +19,52 @@ import InteractivePackingChecklist from "@/components/ui/InteractivePackingCheck
 import HierarchicalGrid from "@/components/ui/HierarchicalGrid";
 import ExpertCredentials from "@/components/ui/ExpertCredentials";
 import FAQAccordion from "@/components/ui/FAQAccordion";
-import InteractivePillarHubGrid from "@/components/ui/InteractivePillarHubGrid";
+import VideoEmbed from "@/components/ui/VideoEmbed";
 import CenterCTA from "@/components/ui/CenterCTA";
+
+// Author & Profile Image
+import angelaImage from "@/assets/Media (2).jpg";
+
+// SEO Assets from assets/RitzCarltonYachtCollectionFamiliesChildren
+import heroBgImg from "@/assets/RitzCarltonYachtCollectionFamiliesChildren/ritz-carlton-yacht-families-children-hero.jpeg";
+import introPoolImg from "@/assets/RitzCarltonYachtCollectionFamiliesChildren/luxury-family-vacation-pool-deck.jpg";
+import introTeaImg from "@/assets/RitzCarltonYachtCollectionFamiliesChildren/family-afternoon-tea-lifestyle.jpeg";
+
+// HighlightsSplit Images
+import ritzKidsWatersportsImg from "@/assets/RitzCarltonYachtCollectionFamiliesChildren/ritz-kids-enrichment-watersports.jpg";
+import familyMarinaSupervisionImg from "@/assets/RitzCarltonYachtCollectionFamiliesChildren/family-marina-supervision-guidelines.jpg";
+
+// Fleet Comparison Images
+import evrimaFleetImg from "@/assets/RitzCarltonYachtCollectionFamiliesChildren/ritz-carlton-evrima-family-yacht.jpeg";
+import ilmaFleetImg from "@/assets/RitzCarltonYachtCollectionFamiliesChildren/ritz-carlton-ilma-family-yacht.jpg";
+import luminaraFleetImg from "@/assets/RitzCarltonYachtCollectionFamiliesChildren/ritz-carlton-luminara-family-yacht.jpeg";
+
+// Sample Day Timeline Images
+import timelineBreakfastImg from "@/assets/RitzCarltonYachtCollectionFamiliesChildren/sample-day-family-breakfast.jpg";
+import timelineRitzKidsImg from "@/assets/RitzCarltonYachtCollectionFamiliesChildren/sample-day-ritz-kids-session.jpg";
+import timelineParentsQuietImg from "@/assets/RitzCarltonYachtCollectionFamiliesChildren/sample-day-parents-quiet-time.jpg";
+import timelinePoolLunchImg from "@/assets/RitzCarltonYachtCollectionFamiliesChildren/sample-day-poolside-family-lunch.jpg";
+import timelineExcursionImg from "@/assets/RitzCarltonYachtCollectionFamiliesChildren/sample-day-family-shore-excursion.jpeg";
+import timelineWatersportsImg from "@/assets/RitzCarltonYachtCollectionFamiliesChildren/sample-day-marina-watersports-fun.jpeg";
+import timelineSuiteRefreshImg from "@/assets/RitzCarltonYachtCollectionFamiliesChildren/sample-day-suite-evening-refresh.jpg";
+import timelineDinnerImg from "@/assets/RitzCarltonYachtCollectionFamiliesChildren/sample-day-shared-family-dinner.jpg";
+import timelineStarlitWalkImg from "@/assets/RitzCarltonYachtCollectionFamiliesChildren/sample-day-starlit-deck-walk.jpg";
+
+// Family Packing Checklist Images
+import checklistChildrenImg from "@/assets/RitzCarltonYachtCollectionFamiliesChildren/family-checklist-children.jpeg";
+import checklistParentsImg from "@/assets/RitzCarltonYachtCollectionFamiliesChildren/family-checklist-parents.jpeg";
+import checklistBookingImg from "@/assets/RitzCarltonYachtCollectionFamiliesChildren/family-checklist-booking.jpeg";
+import checklistSailingImg from "@/assets/RitzCarltonYachtCollectionFamiliesChildren/family-checklist-sailing.jpeg";
+
+// Gallery / HierarchicalGrid Images
+import galleryExcursionsImg from "@/assets/RitzCarltonYachtCollectionFamiliesChildren/gallery-destination-exploration.jpg";
+import galleryRitzKidsImg from "@/assets/RitzCarltonYachtCollectionFamiliesChildren/gallery-ritz-kids-spaces.jpg";
+import galleryMarinaImg from "@/assets/RitzCarltonYachtCollectionFamiliesChildren/gallery-marina-watersports.jpg";
+import galleryDiningImg from "@/assets/RitzCarltonYachtCollectionFamiliesChildren/gallery-family-dining.jpg";
+
+
+// CTA Background Image
+import ctaBgImg from "@/assets/RitzCarltonYachtCollectionFamiliesChildren/family-vacation-cta-background.jpg";
 
 const RitzCarltonYachtCollectionFamiliesChildren = () => {
   // 1. Map slides for PremiumIntro (Hero & Quick Answer)
@@ -51,7 +95,7 @@ const RitzCarltonYachtCollectionFamiliesChildren = () => {
         "Fleetwide Spaces: Custom children's rooms aboard Evrima, Ilma, and Luminara.",
         "Holiday Enhancements: Expanded session offerings during peak summer and holiday voyages.",
       ],
-      image: null,
+      image: ritzKidsWatersportsImg,
       placeholderLabel: "RITZ KIDS PLACEHOLDER",
       icon: "Sparkles",
     },
@@ -65,7 +109,7 @@ const RitzCarltonYachtCollectionFamiliesChildren = () => {
         "Family Dining: Shared-plate Asian-inspired and al fresco venues offer relaxed, convivial dining without formal nights.",
         "Marina Safety: Kayaking, paddleboarding, and swimming from the Marina platform under adult supervision.",
       ],
-      image: null,
+      image: familyMarinaSupervisionImg,
       placeholderLabel: "FAMILY MARINA PLACEHOLDER",
       icon: "Shield",
     },
@@ -94,19 +138,31 @@ const RitzCarltonYachtCollectionFamiliesChildren = () => {
   };
 
   // 5. Map Fleet Comparison to ThreeColumnGrid
-  const fleetItems = pageData.fleetComparison.cards.map((card) => ({
+  const fleetImages = [evrimaFleetImg, ilmaFleetImg, luminaraFleetImg];
+  const fleetItems = pageData.fleetComparison.cards.map((card, idx) => ({
     title: card.title,
     description: card.description,
-    image: null,
+    image: fleetImages[idx % fleetImages.length],
     placeholderLabel: card.badge,
   }));
 
   // 6. Map Sample Day Timeline to InteractivePlanningRoadmap
+  const timelineImages = [
+    timelineBreakfastImg,
+    timelineRitzKidsImg,
+    timelineParentsQuietImg,
+    timelinePoolLunchImg,
+    timelineExcursionImg,
+    timelineWatersportsImg,
+    timelineSuiteRefreshImg,
+    timelineDinnerImg,
+    timelineStarlitWalkImg,
+  ];
   const timelineSteps = pageData.sampleDay.timeline.map((item, idx) => ({
     timeframe: item.time,
     title: item.label,
     description: item.desc,
-    image: null,
+    image: timelineImages[idx % timelineImages.length],
     placeholderLabel: `STAGE 0${idx + 1} PLACEHOLDER`,
   }));
 
@@ -119,182 +175,95 @@ const RitzCarltonYachtCollectionFamiliesChildren = () => {
   }));
 
   // 8. Map Gallery to HierarchicalGrid
-  const galleryItems = pageData.gallery.items.map((item) => ({
+  const galleryImages = [
+    galleryExcursionsImg,
+    galleryRitzKidsImg,
+    galleryMarinaImg,
+    galleryDiningImg,
+  ];
+  const galleryItems = pageData.gallery.items.map((item, idx) => ({
     title: item.title,
     description: item.description,
-    image: null,
+    image: galleryImages[idx % galleryImages.length],
     placeholderLabel: item.badge,
   }));
 
-  // 9. Map Curated Pillar Hub Guides
-  const curatedGuides = [
-    {
-      title: "Ritz-Carlton Yacht Collection Pillar",
-      category: "Main Fleet Guide",
-      description:
-        "The Ritz-Carlton Yacht Collection: Reviews, prices, suite categories, dining, and everything you need to know.",
-      image: null,
-      placeholderLabel: "PILLAR GUIDE",
-      links: [
-        { label: "Ritz-Carlton Yacht Collection Guide", url: "/ritz-carlton-yacht-collection" },
-      ],
-      mainUrl: "/ritz-carlton-yacht-collection",
-    },
-    {
-      title: "How Much Does a Ritz-Carlton Cruise Cost?",
-      category: "Cost & Inclusions",
-      description:
-        "Understand fares, suite categories, and total vacation investment for a Ritz-Carlton yacht sailing.",
-      image: null,
-      placeholderLabel: "COST GUIDE",
-      links: [
-        { label: "Ritz-Carlton Cruise Cost Guide", url: "/ritz-carlton-yacht-collection-cost" },
-      ],
-      mainUrl: "/ritz-carlton-yacht-collection-cost",
-    },
-    {
-      title: "What Is Included on a Ritz-Carlton Cruise?",
-      category: "Onboard Inclusions",
-      description:
-        "A detailed guide to dining, beverages, Wi-Fi, gratuities, marina sports, and suite inclusions.",
-      image: null,
-      placeholderLabel: "INCLUSIONS GUIDE",
-      links: [
-        { label: "Ritz-Carlton Inclusions Guide", url: "/ritz-carlton-yacht-collection-included" },
-      ],
-      mainUrl: "/ritz-carlton-yacht-collection-included",
-    },
-    {
-      title: "What Is the Dress Code on Ritz-Carlton Yachts?",
-      category: "Style & Packing",
-      description:
-        "Complete guide to Yacht Casual, Yacht Sophisticated dinner attire, shoes, and 7-night capsule packing.",
-      image: null,
-      placeholderLabel: "DRESS CODE GUIDE",
-      links: [
-        { label: "Ritz-Carlton Yacht Dress Code Guide", url: "/ritz-carlton-yacht-collection-dress-code" },
-      ],
-      mainUrl: "/ritz-carlton-yacht-collection-dress-code",
-    },
-    {
-      title: "Evrima vs. Ilma vs. Luminara",
-      category: "Fleet Comparison",
-      description:
-        "Compare the three Ritz-Carlton yachts by size, suites, dining venues, atmosphere, and traveler type.",
-      image: null,
-      placeholderLabel: "FLEET COMPARISON",
-      links: [
-        { label: "Evrima vs Ilma vs Luminara", url: "/ritz-carlton-evrima-vs-ilma-vs-luminara" },
-      ],
-      mainUrl: "/ritz-carlton-evrima-vs-ilma-vs-luminara",
-    },
-    {
-      title: "Ritz-Carlton vs. Explora & Seabourn",
-      category: "Brand Comparisons",
-      description:
-        "Compare Ritz-Carlton Yacht Collection with Explora Journeys and Seabourn luxury cruises.",
-      image: null,
-      placeholderLabel: "BRAND FACEOFFS",
-      links: [
-        { label: "Ritz-Carlton vs Explora Journeys", url: "/ritz-carlton-yacht-collection-vs-explora-journeys" },
-        { label: "Ritz-Carlton vs Seabourn", url: "/ritz-carlton-yacht-collection-vs-seabourn" },
-      ],
-      mainUrl: "/ritz-carlton-yacht-collection-vs-explora-journeys",
-    },
-  ];
+
 
   const jsonLdSchema = {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Article",
-        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-families-children#article",
-        "headline": "Are Ritz-Carlton Yacht Cruises Good for Families and Children?",
-        "description":
-          "Discover whether Ritz-Carlton Yacht Collection is suitable for families and children, including Ritz Kids, age requirements, family accommodations, dining, activities, childcare and tips for planning a luxury family yacht cruise.",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-families-children#webpage",
+        "@type": "WebPage",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-families-children/#webpage",
+        "url": "https://www.tripsandships.com/ritz-carlton-yacht-collection-families-children",
+        "name": pageData.seo.ogTitle || pageData.seo.title,
+        "headline": pageData.hero.title,
+        "description": pageData.seo.metaDescription,
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/assets/RitzCarltonYachtCollectionFamiliesChildren/ritz-carlton-yacht-families-children-hero.jpeg",
+          "caption": pageData.hero.title,
         },
+        "image": "https://www.tripsandships.com/assets/RitzCarltonYachtCollectionFamiliesChildren/ritz-carlton-yacht-families-children-hero.jpeg",
         "author": {
-          "@type": "Person",
-          "@id": "https://www.tripsandships.com/about-angela-hughes#person",
-          "name": "Angela Hughes",
+          "@id": "https://www.tripsandships.com/about-angela-hughes/#person",
         },
         "publisher": {
-          "@type": "TravelAgency",
           "@id": "https://www.tripsandships.com/#organization",
-          "name": "Trips & Ships Luxury Travel",
-          "url": "https://www.tripsandships.com/",
         },
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-families-children#webpage",
-        "url": "https://www.tripsandships.com/ritz-carlton-yacht-collection-families-children",
-        "name": "Are Ritz-Carlton Yacht Cruises Good for Families and Children?",
-        "description":
-          "A family guide to Ritz-Carlton Yacht Collection, including Ritz Kids, age requirements, family accommodations, dining, activities and childcare.",
         "isPartOf": {
-          "@type": "WebSite",
-          "name": "Trips & Ships Luxury Travel",
-          "url": "https://www.tripsandships.com/",
+          "@id": "https://www.tripsandships.com/#website",
         },
       },
       {
-        "@type": "ItemList",
-        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-families-children#family-features",
-        "name": "Ritz-Carlton Yacht Collection Family Features",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Ritz Kids",
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Family-Friendly Dining",
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Family Suite Accommodations",
-          },
-          {
-            "@type": "ListItem",
-            "position": 4,
-            "name": "Pool and Marina Activities",
-          },
-          {
-            "@type": "ListItem",
-            "position": 5,
-            "name": "Family Shore Excursions",
-          },
-        ],
-      },
-      {
-        "@type": "TravelAgency",
+        "@type": "Organization",
         "@id": "https://www.tripsandships.com/#organization",
         "name": "Trips & Ships Luxury Travel",
         "url": "https://www.tripsandships.com/",
+        "founder": {
+          "@id": "https://www.tripsandships.com/about-angela-hughes/#person",
+        },
+      },
+      {
+        "@type": "TravelAgency",
+        "@id": "https://www.tripsandships.com/#travelagency",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/",
+        "parentOrganization": {
+          "@id": "https://www.tripsandships.com/#organization",
+        },
       },
       {
         "@type": "Person",
-        "@id": "https://www.tripsandships.com/about-angela-hughes#person",
+        "@id": "https://www.tripsandships.com/about-angela-hughes/#person",
         "name": "Angela Hughes",
-        "jobTitle": "CEO",
-        "worksFor": {
-          "@type": "TravelAgency",
-          "@id": "https://www.tripsandships.com/#organization",
-          "name": "Trips & Ships Luxury Travel",
+        "jobTitle": "CEO of Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/about-angela-hughes",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/assets/Angela_Hughes.jpg",
+          "caption": "Angela Hughes - Luxury Travel Expert",
         },
         "description":
-          "Luxury travel advisor and CEO of Trips & Ships Luxury Travel with more than 40 years of travel experience and travel experience spanning more than 121 countries.",
+          "Angela Hughes is a luxury travel expert, CEO of Trips & Ships Luxury Travel, founder of Luxury Travel University and an experienced luxury travel industry leader with over 40 years designing multigenerational and family yacht voyages across 121+ countries.",
+        "worksFor": {
+          "@id": "https://www.tripsandships.com/#organization",
+        },
+        "knowsAbout": [
+          "Luxury Travel",
+          "Luxury Cruises",
+          "Yacht Cruising",
+          "Family Luxury Travel",
+          "Multigenerational Cruises",
+          "Ritz-Carlton Yacht Collection",
+          "Ritz Kids Program",
+          "Luxury Family Vacations",
+        ],
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-families-children#breadcrumb",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-families-children/#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -318,8 +287,8 @@ const RitzCarltonYachtCollectionFamiliesChildren = () => {
       },
       {
         "@type": "FAQPage",
-        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-families-children#faq",
-        "mainEntity": pageData.faqs.questions.map((faq) => ({
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-families-children/#faq",
+        "mainEntity": (pageData.faqs?.questions || pageData.faqs || []).map((faq) => ({
           "@type": "Question",
           "name": faq.question,
           "acceptedAnswer": {
@@ -331,6 +300,13 @@ const RitzCarltonYachtCollectionFamiliesChildren = () => {
     ],
   };
 
+  const familyChecklistImages = [
+    checklistChildrenImg,
+    checklistParentsImg,
+    checklistBookingImg,
+    checklistSailingImg,
+  ];
+
   return (
     <>
       <Helmet>
@@ -338,7 +314,23 @@ const RitzCarltonYachtCollectionFamiliesChildren = () => {
         <meta name="title" content={pageData.seo.metaTitle} />
         <meta name="description" content={pageData.seo.metaDescription} />
         <meta name="keywords" content={pageData.seo.keywords} />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={pageData.seo.ogTitle || pageData.seo.title} />
+        <meta property="og:description" content={pageData.seo.ogDescription || pageData.seo.metaDescription} />
+        <meta property="og:url" content={pageData.seo.canonicalUrl} />
+        <meta
+          property="og:image"
+          content="https://www.tripsandships.com/assets/RitzCarltonYachtCollectionFamiliesChildren/ritz-carlton-yacht-families-children-hero.jpeg"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageData.seo.ogTitle || pageData.seo.title} />
+        <meta name="twitter:description" content={pageData.seo.ogDescription || pageData.seo.metaDescription} />
+        <meta
+          name="twitter:image"
+          content="https://www.tripsandships.com/assets/RitzCarltonYachtCollectionFamiliesChildren/ritz-carlton-yacht-families-children-hero.jpeg"
+        />
         <link rel="canonical" href={pageData.seo.canonicalUrl} />
+
         <script type="application/ld+json">{JSON.stringify(jsonLdSchema)}</script>
       </Helmet>
 
@@ -349,7 +341,9 @@ const RitzCarltonYachtCollectionFamiliesChildren = () => {
       <ComparisonHero
         title={pageData.hero.title}
         subtitle={pageData.hero.subtitle}
-        backgroundImage={null}
+        backgroundImage={heroBgImg}
+        bgPosition="bg-center object-cover"
+        overlayClassName="bg-gradient-to-b from-navy-950/55 via-navy-950/15 to-navy-950/70"
         primaryCtaText={pageData.hero.ctaLabel}
         primaryCtaLink={pageData.hero.ctaUrl}
       />
@@ -357,8 +351,10 @@ const RitzCarltonYachtCollectionFamiliesChildren = () => {
       {/* ─── SECTION 2: PremiumIntro (Hero Read-More & Quick Answer) ─── */}
       <PremiumIntro
         sections={introSections}
-        image1={null}
-        image2={null}
+        image1={introPoolImg}
+        image2={introTeaImg}
+        alt1="Ritz-Carlton Yacht Family Pool Deck Experience"
+        alt2="Ritz-Carlton Family Lifestyle & Dining"
         watermarkText="Family Luxury"
       />
 
@@ -411,7 +407,7 @@ const RitzCarltonYachtCollectionFamiliesChildren = () => {
         title={pageData.familyChecklist.title}
         subtitle={pageData.familyChecklist.subtitle}
         categories={pageData.familyChecklist.categories}
-        images={[]}
+        images={familyChecklistImages}
       />
 
       {/* ─── SECTION 11: HierarchicalGrid (Families at Sea Visual Showcase) ─── */}
@@ -426,7 +422,7 @@ const RitzCarltonYachtCollectionFamiliesChildren = () => {
         name={pageData.expert.name}
         title={pageData.expert.role}
         bio={`${pageData.expert.description1} ${pageData.expert.description2}`}
-        image={null}
+        image={angelaImage}
         badge="LUXURY FAMILY VOYAGE SPECIALIST"
         experienceBadge="40+ YEARS LEGACY EXPERTISE"
         credentials={[
@@ -441,15 +437,14 @@ const RitzCarltonYachtCollectionFamiliesChildren = () => {
       {/* ─── SECTION 13: FAQ Accordion (All 20 FAQs) ─── */}
       <FAQAccordion data={pageData.faqs} />
 
-      {/* ─── SECTION 14: Curated Guides Hub (InteractivePillarHubGrid) ─── */}
-      <div className="[&_.grid]:!flex [&_.grid]:flex-wrap [&_.grid]:justify-center [&_.grid>div]:w-full md:[&_.grid>div]:w-[calc(50%-1rem)] lg:[&_.grid>div]:w-[calc(33.333%-1.333rem)]">
-        <InteractivePillarHubGrid
-          title="Related Ritz-Carlton Yacht Collection Guides & Comparisons"
-          subtitle="Continue planning your luxury yacht vacation with in-depth guides on cost, inclusions, dress codes, suite layouts, and fleet showdowns."
-          items={curatedGuides}
-          variant="destination"
-        />
-      </div>
+      {/* ─── SECTION 14: Video Section Component (VideoEmbed Component) ─── */}
+      <VideoEmbed
+        data={{
+          youtubeId: "sQPnGRkiLdg",
+          title: "Ritz-Carlton Yacht Family Experience",
+          description: "Discover what makes a Ritz-Carlton yacht cruise a uniquely intimate and memorable journey for discerning families."
+        }}
+      />
 
       {/* ─── SECTION 15: Center CTA (Final Family Consultation CTA) ─── */}
       <CenterCTA
@@ -457,7 +452,7 @@ const RitzCarltonYachtCollectionFamiliesChildren = () => {
         description="The right family yacht vacation starts with choosing the right itinerary, suite, and shore experiences. Talk with Trips & Ships Luxury Travel about planning a personalized Ritz-Carlton Yacht Collection vacation for your family."
         buttonText="Plan My Family Yacht Cruise"
         buttonLink="/contact"
-        image={null}
+        image={ctaBgImg}
       />
     </>
   );
