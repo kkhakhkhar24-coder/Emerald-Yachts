@@ -1220,17 +1220,9 @@ function App() {
             path="/ritz-carlton-yacht-collection-travel-advisor-florida"
             element={<RitzCarltonYachtTravelAdvisorFlorida />}
           />
-          <Route
-            path="/ritz-carlton-yacht-collection-travel-advisor-florida/"
-            element={<RitzCarltonYachtTravelAdvisorFlorida />}
-          />
 
           <Route
             path="/ritz-carlton-yacht-collection-travel-advisor-orlando"
-            element={<RitzCarltonYachtTravelAdvisorOrlando />}
-          />
-          <Route
-            path="/ritz-carlton-yacht-collection-travel-advisor-orlando/"
             element={<RitzCarltonYachtTravelAdvisorOrlando />}
           />
 
@@ -1238,10 +1230,7 @@ function App() {
             path="/how-to-choose-right-ritz-carlton-yacht-suite-itinerary"
             element={<HowToChooseRightRitzCarltonYachtSuiteItinerary />}
           />
-          <Route
-            path="/how-to-choose-right-ritz-carlton-yacht-suite-itinerary/"
-            element={<HowToChooseRightRitzCarltonYachtSuiteItinerary />}
-          />
+          
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

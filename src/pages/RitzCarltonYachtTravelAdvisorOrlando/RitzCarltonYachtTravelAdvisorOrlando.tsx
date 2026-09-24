@@ -16,17 +16,35 @@ import BrandPillarsShowcase from "@/components/ui/BrandPillarsShowcase";
 import CostValueAnalysisCards from "@/components/ui/CostValueAnalysisCards";
 import GenericChecklistCards from "@/components/ui/GenericChecklistCards";
 import ExpertAuthorityChecklist from "@/components/ui/ExpertAuthorityChecklist";
-import AuthorityGrid12 from "@/components/ui/AuthorityGrid12";
 import BentoQuickFacts from "@/components/ui/BentoQuickFacts";
 import ExpertCredentials from "@/components/ui/ExpertCredentials";
 import FAQAccordion from "@/components/ui/FAQAccordion";
-import InteractivePillarHubGrid from "@/components/ui/InteractivePillarHubGrid";
 import CenterCTA from "@/components/ui/CenterCTA";
+import VideoEmbed from "@/components/ui/VideoEmbed";
 
 // Media Assets
 import angelaImage from "@/assets/Media (2).jpg";
-// Commented-out image imports as per project conventions:
-// import heroOrlandoAdvisorImg from "@/assets/images/ritz-orlando-advisor-hero.jpg";
+
+// Assets strictly from assets/RitzCarltonYachtTravelAdvisorOrlando
+// 1. Hero Background Image (Dedicated luxury superyacht voyage curated by Orlando advisor)
+import heroOrlandoAdvisorImg from "@/assets/RitzCarltonYachtTravelAdvisorOrlando/ritz-carlton-yacht-travel-advisor-orlando-hero.jpg";
+
+// 2. Executive Narrative Intro (PremiumIntro: Orlando & Central Florida Specialists)
+import introArchImg from "@/assets/RitzCarltonYachtTravelAdvisorOrlando/ritz-carlton-yacht-orlando-planning-embarkation.jpg";
+import introInsetImg from "@/assets/RitzCarltonYachtTravelAdvisorOrlando/ritz-carlton-yacht-orlando-concierge-lifestyle.jpg";
+
+// 3. What Does a Ritz-Carlton Yacht Travel Advisor Do? (EditorialFeatureShowcase)
+import advisorConsultationImg from "@/assets/RitzCarltonYachtTravelAdvisorOrlando/ritz-carlton-yacht-orlando-advisor-consultation.jpg";
+
+// 4. Central Florida Advantage Cards (ThreeColumnGrid: Base, Airport/Routing, Post-Cruise Resort Suites)
+import centralFloridaBaseImg from "@/assets/RitzCarltonYachtTravelAdvisorOrlando/orlando-advantage-central-florida-base.jpg";
+import airportRoutingImg from "@/assets/RitzCarltonYachtTravelAdvisorOrlando/orlando-advantage-airport-routing-transfers.jpeg";
+import postCruiseSuitesImg from "@/assets/RitzCarltonYachtTravelAdvisorOrlando/orlando-advantage-postcruise-resort-suites.jpg";
+
+// 5. Tailored Planning: Couples, Families, Milestones (ThreeColumnGrid)
+import couplesHoneymoonImg from "@/assets/RitzCarltonYachtTravelAdvisorOrlando/ritz-carlton-yacht-orlando-couples-honeymoon.jpg";
+import familyTravelImg from "@/assets/RitzCarltonYachtTravelAdvisorOrlando/ritz-carlton-yacht-orlando-family-multigen.jpg";
+import milestoneSuitesImg from "@/assets/RitzCarltonYachtTravelAdvisorOrlando/ritz-carlton-yacht-orlando-milestones-grand-suite.jpg";
 
 const RitzCarltonYachtTravelAdvisorOrlando = () => {
   // 1. Data mapping for Executive Philosophy (PremiumIntro)
@@ -38,20 +56,32 @@ const RitzCarltonYachtTravelAdvisorOrlando = () => {
   ];
 
   // 2. Data mapping for Central Florida Advantage Cards (ThreeColumnGrid)
-  const centralFloridaAdvantageItems = pageData.centralFloridaAdvantage.cards.map((card) => ({
+  const centralFloridaAdvantageImages = [
+    centralFloridaBaseImg,
+    airportRoutingImg,
+    postCruiseSuitesImg,
+  ];
+  const centralFloridaAdvantageItems = pageData.centralFloridaAdvantage.cards.map((card, idx) => ({
     title: card.title,
     category: card.category,
-    image: null,
+    image: centralFloridaAdvantageImages[idx % centralFloridaAdvantageImages.length],
+    placeholderLabel: card.title,
     description: card.description,
     features: card.features,
     highlight: card.highlight,
   }));
 
   // 3. Data mapping for Couples, Families & Occasions (ThreeColumnGrid)
-  const occasionItems = pageData.couplesFamiliesOccasions.cards.map((card) => ({
+  const occasionImages = [
+    couplesHoneymoonImg,
+    familyTravelImg,
+    milestoneSuitesImg,
+  ];
+  const occasionItems = pageData.couplesFamiliesOccasions.cards.map((card, idx) => ({
     title: card.title,
     category: card.category,
-    image: null,
+    image: occasionImages[idx % occasionImages.length],
+    placeholderLabel: card.title,
     description: card.description,
     features: card.features,
     highlight: card.highlight,
@@ -71,13 +101,25 @@ const RitzCarltonYachtTravelAdvisorOrlando = () => {
     takeaway: card.takeaway,
   }));
 
-  // 6. Data mapping for Hub Resources (InteractivePillarHubGrid)
-  const hubItems = pageData.hubResources.map((res) => ({
-    title: res.title,
-    category: res.category,
-    description: res.description,
-    mainUrl: res.link,
-    link: res.link,
+  // 6. Data mapping for Why Trips & Ships Specialties (CardGrid)
+  const whyTripsIcons = [
+    "Anchor",
+    "Ship",
+    "Compass",
+    "Navigation",
+    "Globe",
+    "Compass",
+    "Building2",
+    "MapPin",
+    "Users",
+    "Sparkles",
+    "PlaneTakeoff",
+  ];
+  const whyTripsCards = pageData.whyTripsAndShips.specialties.map((spec, idx) => ({
+    title: spec.title,
+    description: spec.description,
+    badge: spec.stat,
+    icon: whyTripsIcons[idx % whyTripsIcons.length],
   }));
 
   return (
@@ -109,7 +151,7 @@ const RitzCarltonYachtTravelAdvisorOrlando = () => {
         primaryCtaLink="/contact"
         secondaryCtaText="Explore Planning Services"
         secondaryCtaLink="#quick-answer"
-        // bgImage={heroOrlandoAdvisorImg}
+        backgroundImage={heroOrlandoAdvisorImg}
       />
 
       {/* 4. Executive Narrative & Agency Introduction (PremiumIntro) */}
@@ -117,7 +159,12 @@ const RitzCarltonYachtTravelAdvisorOrlando = () => {
         <PremiumIntro
           title="Ritz-Carlton Yacht Collection Travel Advisor in Orlando"
           sections={introSections}
+          image1={introArchImg}
+          image2={introInsetImg}
+          alt1="Ritz-Carlton Yacht Orlando Travel Advisor Planning & Embarkation"
+          alt2="Ritz-Carlton Yacht Luxury Concierge Lounge Experience"
           highlightQuote="For Orlando-area travelers, the goal is to coordinate the entire vacation rather than treating the yacht reservation as an isolated booking."
+          watermarkText="Orlando"
         />
       </div>
 
@@ -132,12 +179,22 @@ const RitzCarltonYachtTravelAdvisorOrlando = () => {
         />
       </div>
 
+      {/* ─── Video Feature Section ─── */}
+      <VideoEmbed
+        data={{
+          youtubeId: "b0FqYRs96R4",
+          title: "Ritz-Carlton Yacht Departures & Orlando Travel Planning",
+          description: "Discover how expert Central Florida luxury travel planning, seamless embarkation logistics, and curated yacht suites create an extraordinary vacation."
+        }}
+      />
+
       {/* 6. What Does a Ritz-Carlton Yacht Travel Advisor Do? (EditorialFeatureShowcase) */}
       <div id="what-advisor-does">
         <EditorialFeatureShowcase
           title={pageData.whatAdvisorDoes.title}
           subtitle={pageData.whatAdvisorDoes.subtitle}
           features={pageData.whatAdvisorDoes.features}
+          image={advisorConsultationImg}
           bgClass="bg-white"
         />
       </div>
@@ -214,21 +271,24 @@ const RitzCarltonYachtTravelAdvisorOrlando = () => {
         />
       </div>
 
-      {/* 15. Why Trips & Ships Luxury Travel? (AuthorityGrid12) */}
+      {/* 15. Why Trips & Ships Luxury Travel? (CardGrid) */}
       <div id="why-trips-and-ships">
-        <AuthorityGrid12
-          data={{
-            title: pageData.whyTripsAndShips.title,
-            subtitle: pageData.whyTripsAndShips.lead,
-            image: angelaImage,
-            quote: pageData.whyTripsAndShips.takeaway,
-            author: "Trips & Ships Luxury Travel",
-            credentials: pageData.whyTripsAndShips.specialties.map((spec) => ({
-              title: spec.title,
-              description: spec.description,
-            })),
-          }}
+        <CardGrid
+          title={pageData.whyTripsAndShips.title}
+          subtitle={pageData.whyTripsAndShips.lead}
+          cards={whyTripsCards}
+          columns={3}
+          stagger={false}
         />
+        {pageData.whyTripsAndShips.takeaway && (
+          <div className="w-full bg-slate-50 pb-16 px-6 text-center">
+            <div className="max-w-4xl mx-auto p-6 rounded-2xl bg-white border border-slate-200/80 shadow-sm text-center">
+              <p className="font-sans text-navy-950 text-base md:text-lg font-medium leading-relaxed">
+                {pageData.whyTripsAndShips.takeaway}
+              </p>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* 16. How to Request Ritz-Carlton Yacht Planning From Orlando (BentoQuickFacts) */}
@@ -276,13 +336,6 @@ const RitzCarltonYachtTravelAdvisorOrlando = () => {
           }}
         />
       </div>
-
-      {/* 19. Interactive Resource Pillar Hub */}
-      <InteractivePillarHubGrid
-        title="Explore More Ritz-Carlton Yacht & Luxury Cruise Guides"
-        subtitle="Deepen your luxury cruise research with detailed guides on Florida advisors, Miami departures, Caribbean itineraries, suites, and inclusions."
-        items={hubItems}
-      />
 
       {/* 20. Final Takeaway Narrative Summary */}
       <section className="w-full py-16 bg-slate-50 border-t border-slate-200">

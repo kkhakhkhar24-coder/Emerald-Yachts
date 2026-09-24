@@ -19,19 +19,43 @@ import BentoQuickFacts from "@/components/ui/BentoQuickFacts";
 import ExpertAuthorityChecklist from "@/components/ui/ExpertAuthorityChecklist";
 import ExpertCredentials from "@/components/ui/ExpertCredentials";
 import FAQAccordion from "@/components/ui/FAQAccordion";
-import InteractivePillarHubGrid from "@/components/ui/InteractivePillarHubGrid";
 import CenterCTA from "@/components/ui/CenterCTA";
 import InclusionsList from "@/components/ui/InclusionsList";
 import DetailedInclusionsList from "@/components/ui/DetailedInclusionsList";
 import GenericChecklistCards from "@/components/ui/GenericChecklistCards";
+import VideoEmbed from "@/components/ui/VideoEmbed";
 
 // Media Assets
 import angelaImage from "@/assets/Media (2).jpg";
-// import medImage from "@/assets/AzamaraMediterraneanCruises/Boutique Mediterranean cruise experience.webp";
-// import caribbeanImage from "@/assets/image.webp";
-// import alaskaImage from "@/assets/AzamaraAlaskaCruises/Hero1.webp";
-// import asiaImage from "@/assets/TripToJapan/Tokyo_Japan.jpg";
-// import southPacificImage from "@/assets/DistinctiveVoyageSailings/sailing1.png";
+
+// Assets strictly from assets/HowToChooseRightRitzCarltonYachtSuiteItinerary
+// 1. Hero Background Image (Fleet selection guide)
+import heroBgImg from "@/assets/HowToChooseRightRitzCarltonYachtSuiteItinerary/how-to-choose-ritz-carlton-yacht-suite-itinerary-hero.jpg";
+
+// 2. Executive Narrative Intro (PremiumIntro)
+import introArchImg from "@/assets/HowToChooseRightRitzCarltonYachtSuiteItinerary/how-to-choose-fleet-vessels-embarkation.jpeg";
+import introInsetImg from "@/assets/HowToChooseRightRitzCarltonYachtSuiteItinerary/how-to-choose-luxury-lifestyle-concierge.jpeg";
+
+// 3. Vessel Comparison Cards (ThreeColumnGrid)
+import evrimaVesselImg from "@/assets/HowToChooseRightRitzCarltonYachtSuiteItinerary/fleet-comparison-evrima-yacht.jpg";
+import ilmaVesselImg from "@/assets/HowToChooseRightRitzCarltonYachtSuiteItinerary/fleet-comparison-ilma-yacht.jpg";
+import luminaraVesselImg from "@/assets/HowToChooseRightRitzCarltonYachtSuiteItinerary/fleet-comparison-luminara-yacht.jpg";
+
+// 4. Suite Strategic Advice Cards (ThreeColumnGrid)
+import deckLocationImg from "@/assets/HowToChooseRightRitzCarltonYachtSuiteItinerary/suite-strategic-deck-location.jpg";
+import couplesHoneymoonImg from "@/assets/HowToChooseRightRitzCarltonYachtSuiteItinerary/suite-strategic-couples-honeymoon.jpg";
+import familySuitesImg from "@/assets/HowToChooseRightRitzCarltonYachtSuiteItinerary/suite-strategic-family-connecting-suites.jpg";
+
+// 5. Regional Itinerary Guide (TravelerProfileTabs)
+import medRegionImg from "@/assets/HowToChooseRightRitzCarltonYachtSuiteItinerary/itinerary-guide-mediterranean.jpeg";
+import caribbeanRegionImg from "@/assets/HowToChooseRightRitzCarltonYachtSuiteItinerary/itinerary-guide-caribbean.jpeg";
+import alaskaRegionImg from "@/assets/HowToChooseRightRitzCarltonYachtSuiteItinerary/itinerary-guide-alaska.jpg";
+import asiaPacificRegionImg from "@/assets/HowToChooseRightRitzCarltonYachtSuiteItinerary/itinerary-guide-asia-pacific.jpg";
+import southPacificRegionImg from "@/assets/HowToChooseRightRitzCarltonYachtSuiteItinerary/itinerary-guide-south-pacific.jpg";
+
+// 6. Cheapest Suite Evaluation & Advisor Detailed Inclusions (InclusionsList & DetailedInclusionsList)
+import cheapestSuiteImg from "@/assets/HowToChooseRightRitzCarltonYachtSuiteItinerary/ritz-carlton-yacht-cheapest-suite-terrace-evaluation.jpg";
+import advisorHelpsImg from "@/assets/HowToChooseRightRitzCarltonYachtSuiteItinerary/how-travel-advisor-helps-yacht-suite-selection.jpg";
 
 const HowToChooseRightRitzCarltonYachtSuiteItinerary = () => {
   // 1. Data mapping for Executive Narrative (PremiumIntro)
@@ -43,10 +67,16 @@ const HowToChooseRightRitzCarltonYachtSuiteItinerary = () => {
   ];
 
   // 2. Data mapping for Vessel Comparison (ThreeColumnGrid)
-  const vesselItems = pageData.vesselComparisonCards.cards.map((card) => ({
+  const vesselComparisonImages = [
+    evrimaVesselImg,
+    ilmaVesselImg,
+    luminaraVesselImg,
+  ];
+  const vesselItems = pageData.vesselComparisonCards.cards.map((card, idx) => ({
     title: card.title,
     category: card.category,
-    image: null,
+    image: vesselComparisonImages[idx % vesselComparisonImages.length],
+    placeholderLabel: card.title,
     description: card.description,
     features: card.features,
     highlight: card.highlight,
@@ -72,21 +102,33 @@ const HowToChooseRightRitzCarltonYachtSuiteItinerary = () => {
   };
 
   // 5. Data mapping for Deck Selection & Special Occasions (ThreeColumnGrid)
-  const suiteStrategicItems = pageData.suiteStrategicAdvice.cards.map((card) => ({
+  const suiteStrategicImages = [
+    deckLocationImg,
+    couplesHoneymoonImg,
+    familySuitesImg,
+  ];
+  const suiteStrategicItems = pageData.suiteStrategicAdvice.cards.map((card, idx) => ({
     title: card.title,
     category: card.category,
-    image: null,
+    image: suiteStrategicImages[idx % suiteStrategicImages.length],
+    placeholderLabel: card.title,
     description: card.description,
     features: card.features,
     highlight: card.highlight,
   }));
 
   // 6. Data mapping for Regional Itineraries (TravelerProfileTabs)
-  // const regionImages = [medImage, caribbeanImage, alaskaImage, asiaImage, southPacificImage];
-  const regionalTabs = pageData.itineraryGuide.regions.map((region) => ({
+  const regionImages = [
+    medRegionImg,
+    caribbeanRegionImg,
+    alaskaRegionImg,
+    asiaPacificRegionImg,
+    southPacificRegionImg,
+  ];
+  const regionalTabs = pageData.itineraryGuide.regions.map((region, idx) => ({
     name: region.title.replace(" Ritz-Carlton Yacht Itineraries", "").replace(" Itineraries", ""),
     tagline: region.subtitle,
-    image: null,
+    image: regionImages[idx % regionImages.length],
     quote: region.description,
     recommendation: `Best For: ${region.bestFor}`,
     reason: `The ${region.title} program connects boutique ports with personalized shore access, curated culinary experiences, and secluded anchorages.`,
@@ -110,15 +152,6 @@ const HowToChooseRightRitzCarltonYachtSuiteItinerary = () => {
     title: style.title,
     description: style.description,
     icon: idx === 0 ? "Heart" : idx === 1 ? "Sparkles" : idx === 2 ? "Users" : idx === 3 ? "Compass" : idx === 4 ? "Wine" : "Anchor",
-  }));
-
-  // 9. Data mapping for Hub Resources (InteractivePillarHubGrid)
-  const hubItems = pageData.hubResources.map((res) => ({
-    title: res.title,
-    category: res.category,
-    description: res.description,
-    mainUrl: res.link,
-    link: res.link,
   }));
 
   return (
@@ -150,6 +183,7 @@ const HowToChooseRightRitzCarltonYachtSuiteItinerary = () => {
         primaryCtaLink="/contact"
         secondaryCtaText="Explore Selection Guide"
         secondaryCtaLink="#quick-answer"
+        backgroundImage={heroBgImg}
       />
 
       {/* 4. Executive Narrative & Agency Introduction (PremiumIntro) */}
@@ -157,7 +191,12 @@ const HowToChooseRightRitzCarltonYachtSuiteItinerary = () => {
         <PremiumIntro
           title={pageData.executiveNarrative.title}
           sections={introSections}
+          image1={introArchImg}
+          image2={introInsetImg}
+          alt1="Ritz-Carlton Yacht Fleet Selection & Embarkation"
+          alt2="Ritz-Carlton Yacht Suite Concierge & Lifestyle"
           highlightQuote="The best choice is not necessarily the newest yacht or the largest suite. It is the combination that fits your travel priorities, destination and preferred style of luxury travel."
+          watermarkText="SELECTION"
         />
       </div>
 
@@ -176,6 +215,15 @@ const HowToChooseRightRitzCarltonYachtSuiteItinerary = () => {
           </p>
         </div>
       </div>
+
+      {/* ─── Video Feature Section ─── */}
+      <VideoEmbed
+        data={{
+          youtubeId: "b0FqYRs96R4",
+          title: "How to Choose the Right Ritz-Carlton Yacht, Suite & Itinerary",
+          description: "Discover expert insights on comparing Evrima, Ilma, and Luminara, selecting the ideal suite layout, and choosing the perfect luxury cruise itinerary."
+        }}
+      />
 
       {/* 6. Evrima vs. Ilma vs. Luminara Vessel Comparison (ThreeColumnGrid) */}
       <div id="fleet-comparison">
@@ -268,6 +316,7 @@ const HowToChooseRightRitzCarltonYachtSuiteItinerary = () => {
           title={pageData.cheapestSuiteEvaluation.title}
           inclusions={pageData.cheapestSuiteEvaluation.factors}
           expertNote={`${pageData.cheapestSuiteEvaluation.lead} ${pageData.cheapestSuiteEvaluation.intro} ${pageData.cheapestSuiteEvaluation.takeaway}`}
+          image={cheapestSuiteImg}
         />
       </div>
 
@@ -282,6 +331,7 @@ const HowToChooseRightRitzCarltonYachtSuiteItinerary = () => {
           items={[
             {
               title: "Comprehensive Yacht & Voyage Coordination",
+              image: advisorHelpsImg,
               lists: [
                 {
                   title: "Key Variables Evaluated Simultaneously",
@@ -364,13 +414,6 @@ const HowToChooseRightRitzCarltonYachtSuiteItinerary = () => {
           }}
         />
       </div>
-
-      {/* 21. Interactive Resource Pillar Hub */}
-      <InteractivePillarHubGrid
-        title="Explore More Ritz-Carlton Yacht & Luxury Cruise Guides"
-        subtitle="Deepen your luxury cruise research with detailed guides on Florida advisors, Orlando planning, Miami departures, Caribbean itineraries, and shore excursions."
-        items={hubItems}
-      />
 
       {/* 22. Final Takeaway Narrative Summary */}
       <section className="w-full py-16 bg-slate-50 border-t border-slate-200">

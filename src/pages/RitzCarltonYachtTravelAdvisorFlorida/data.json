@@ -260,15 +260,47 @@
   "comparisonTable": {
     "title": "Ritz-Carlton Yacht Travel Advisor vs. Booking Direct",
     "lead": "A clear comparison of how planning support differs between booking direct and working with a luxury travel advisor.",
-    "headers": ["Consideration", "Booking Direct", "Using a Travel Advisor"],
+    "headers": [
+      "Consideration",
+      "Booking Direct",
+      "Using a Travel Advisor"
+    ],
     "rows": [
-      ["Itinerary Research", "You research the itinerary independently", "Advisor helps compare and evaluate options"],
-      ["Suite Selection", "You select the suite based on online availability", "Advisor helps evaluate categories, decks & layouts"],
-      ["Travel Logistics", "You coordinate separate travel components", "Advisor coordinates the entire end-to-end journey"],
-      ["Reservation Management", "You manage multiple separate reservations", "Advisor provides one central planning contact"],
-      ["Excursion Planning", "You research and book excursions online", "Advisor helps organize group & private experiences"],
-      ["Change Monitoring", "You monitor schedule changes yourself", "Advisor assists with pre-trip changes & advocacy"],
-      ["Hotels & Transfers", "You research hotels and transfers independently", "Advisor coordinates pre/post hotels & private transfers"]
+      [
+        "Itinerary Research",
+        "You research the itinerary independently",
+        "Advisor helps compare and evaluate options"
+      ],
+      [
+        "Suite Selection",
+        "You select the suite based on online availability",
+        "Advisor helps evaluate categories, decks & layouts"
+      ],
+      [
+        "Travel Logistics",
+        "You coordinate separate travel components",
+        "Advisor coordinates the entire end-to-end journey"
+      ],
+      [
+        "Reservation Management",
+        "You manage multiple separate reservations",
+        "Advisor provides one central planning contact"
+      ],
+      [
+        "Excursion Planning",
+        "You research and book excursions online",
+        "Advisor helps organize group & private experiences"
+      ],
+      [
+        "Change Monitoring",
+        "You monitor schedule changes yourself",
+        "Advisor assists with pre-trip changes & advocacy"
+      ],
+      [
+        "Hotels & Transfers",
+        "You research hotels and transfers independently",
+        "Advisor coordinates pre/post hotels & private transfers"
+      ]
     ],
     "takeaway": "The right choice depends on the complexity of your trip and how much personalized planning support you want."
   },
@@ -434,17 +466,50 @@
     "lead": "Trips & Ships Luxury Travel can help travelers coordinate a complete luxury journey rather than focusing exclusively on the yacht reservation.",
     "subheading": "Travel planning can include:",
     "specialties": [
-      { "title": "Ritz-Carlton Yacht Collection", "description": "Tailored suite selection, itinerary advice, and luxury concierge support." },
-      { "title": "Luxury cruises", "description": "Ultra-luxury ocean voyages curated to your exact personal preferences." },
-      { "title": "Small-ship cruises", "description": "Intimate vessels accessing boutique harbors and secluded anchorages." },
-      { "title": "River cruises", "description": "Scenic waterways, cultural immersion, and historic European routes." },
-      { "title": "Expedition voyages", "description": "Polar explorations, remote archipelagos, and active wildlife adventures." },
-      { "title": "Custom safaris", "description": "Bespoke African safaris, private game reserves, and luxury tented lodges." },
-      { "title": "Luxury hotels", "description": "Preferred partner hotel programs, VIP amenities, and five-star upgrades." },
-      { "title": "Private tours", "description": "Exclusive shore experiences, private guides, and bespoke shoreside excursions." },
-      { "title": "Multigenerational travel", "description": "Seamless family logistics, connecting suites, and all-age itinerary design." },
-      { "title": "Special occasions", "description": "Honeymoons, anniversaries, milestone birthdays, and private celebration events." },
-      { "title": "Pre- and post-cruise travel", "description": "Coordinated land stays, luxury resort extensions, and private transfers." }
+      {
+        "title": "Ritz-Carlton Yacht Collection",
+        "description": "Tailored suite selection, itinerary advice, and luxury concierge support."
+      },
+      {
+        "title": "Luxury cruises",
+        "description": "Ultra-luxury ocean voyages curated to your exact personal preferences."
+      },
+      {
+        "title": "Small-ship cruises",
+        "description": "Intimate vessels accessing boutique harbors and secluded anchorages."
+      },
+      {
+        "title": "River cruises",
+        "description": "Scenic waterways, cultural immersion, and historic European routes."
+      },
+      {
+        "title": "Expedition voyages",
+        "description": "Polar explorations, remote archipelagos, and active wildlife adventures."
+      },
+      {
+        "title": "Custom safaris",
+        "description": "Bespoke African safaris, private game reserves, and luxury tented lodges."
+      },
+      {
+        "title": "Luxury hotels",
+        "description": "Preferred partner hotel programs, VIP amenities, and five-star upgrades."
+      },
+      {
+        "title": "Private tours",
+        "description": "Exclusive shore experiences, private guides, and bespoke shoreside excursions."
+      },
+      {
+        "title": "Multigenerational travel",
+        "description": "Seamless family logistics, connecting suites, and all-age itinerary design."
+      },
+      {
+        "title": "Special occasions",
+        "description": "Honeymoons, anniversaries, milestone birthdays, and private celebration events."
+      },
+      {
+        "title": "Pre- and post-cruise travel",
+        "description": "Coordinated land stays, luxury resort extensions, and private transfers."
+      }
     ],
     "takeaway": "For travelers in Florida, the planning process can be handled around the realities of Florida departure ports, domestic connections, international flights, and extended luxury vacations."
   },
@@ -453,16 +518,46 @@
     "subtitle": "Provide these key details to help your advisor design your bespoke luxury yacht journey.",
     "lead": "When contacting a travel advisor, provide:",
     "items": [
-      { "title": "Preferred travel dates", "description": "Preferred sailing dates and seasonal timing flexibility" },
-      { "title": "Number of travelers", "description": "Total party size and room distribution requirements" },
-      { "title": "Departure city", "description": "Florida departure gateway (Miami, Orlando, Tampa, Fort Lauderdale) or flight origin" },
-      { "title": "Preferred destinations", "description": "Caribbean, Bahamas, Mediterranean, Northern Europe, or Transatlantic" },
-      { "title": "Approximate trip length", "description": "Desired voyage duration plus any pre/post land extension days" },
-      { "title": "Suite preferences", "description": "Preferred suite category, terrace size, loft layout, or midship location" },
-      { "title": "Special occasions", "description": "Anniversary, honeymoon, milestone birthday, or family celebration" },
-      { "title": "Previous luxury cruise experience", "description": "Prior yacht or luxury cruise background to align expectations" },
-      { "title": "Desired pre- or post-cruise travel", "description": "Pre-cruise Miami/Fort Lauderdale hotels, resort stays, or island extensions" },
-      { "title": "Approximate travel budget", "description": "Target investment level for yacht suite, airfare, hotels, and experiences" }
+      {
+        "title": "Preferred travel dates",
+        "description": "Preferred sailing dates and seasonal timing flexibility"
+      },
+      {
+        "title": "Number of travelers",
+        "description": "Total party size and room distribution requirements"
+      },
+      {
+        "title": "Departure city",
+        "description": "Florida departure gateway (Miami, Orlando, Tampa, Fort Lauderdale) or flight origin"
+      },
+      {
+        "title": "Preferred destinations",
+        "description": "Caribbean, Bahamas, Mediterranean, Northern Europe, or Transatlantic"
+      },
+      {
+        "title": "Approximate trip length",
+        "description": "Desired voyage duration plus any pre/post land extension days"
+      },
+      {
+        "title": "Suite preferences",
+        "description": "Preferred suite category, terrace size, loft layout, or midship location"
+      },
+      {
+        "title": "Special occasions",
+        "description": "Anniversary, honeymoon, milestone birthday, or family celebration"
+      },
+      {
+        "title": "Previous luxury cruise experience",
+        "description": "Prior yacht or luxury cruise background to align expectations"
+      },
+      {
+        "title": "Desired pre- or post-cruise travel",
+        "description": "Pre-cruise Miami/Fort Lauderdale hotels, resort stays, or island extensions"
+      },
+      {
+        "title": "Approximate travel budget",
+        "description": "Target investment level for yacht suite, airfare, hotels, and experiences"
+      }
     ],
     "takeaway": "The more information you provide, the easier it is for an advisor to narrow the available options."
   },
@@ -545,68 +640,6 @@
     {
       "question": "Where is Angela Hughes based?",
       "answer": "Angela Hughes is based in Winter Garden, Florida, and is listed publicly as a Florida travel advisor through Travel Leaders."
-    }
-  ],
-  "hubResources": [
-    {
-      "title": "Ritz-Carlton Yacht Collection Overview",
-      "category": "FLEET & EXPERIENCE",
-      "description": "Explore the fleet, onboard atmosphere, Michelin-inspired dining, and brand amenities.",
-      "link": "/ritz-carlton-yacht-collection"
-    },
-    {
-      "title": "Ritz-Carlton Yacht Cruises from Miami",
-      "category": "DEPARTURE HUBS",
-      "description": "Complete guide to Miami departures, round-trip Caribbean voyages, and Florida logistics.",
-      "link": "/ritz-carlton-yacht-cruises-from-miami"
-    },
-    {
-      "title": "Ritz-Carlton Yacht Caribbean Cruises",
-      "category": "DESTINATIONS",
-      "description": "Top Caribbean itineraries, island highlights, seasonal weather, and voyage durations.",
-      "link": "/ritz-carlton-yacht-caribbean-cruises"
-    },
-    {
-      "title": "Why Book Through a Travel Advisor?",
-      "category": "PLANNING GUIDE",
-      "description": "Discover the value of working with a luxury cruise travel advisor for your yacht booking.",
-      "link": "/ritz-carlton-yacht-cruises/travel-advisor"
-    },
-    {
-      "title": "Are Shore Excursions Included?",
-      "category": "INCLUSIONS & REALITY",
-      "description": "Understanding excursion pricing, private arrangements, and booking windows.",
-      "link": "/ritz-carlton-yacht-shore-excursions-included"
-    },
-    {
-      "title": "Is Ritz-Carlton Yacht Good for Non-Cruisers?",
-      "category": "TRAVEL STYLE",
-      "description": "Why boutique luxury yachting appeals to luxury resort lovers and anti-cruise travelers.",
-      "link": "/ritz-carlton-yacht-collection-for-people-who-dont-like-cruises"
-    },
-    {
-      "title": "Luxury Cruises Guide",
-      "category": "CRUISE LINES",
-      "description": "Explore premier luxury and ultra-luxury cruise lines and small-ship voyages.",
-      "link": "/luxury-travel"
-    },
-    {
-      "title": "Small Ship Cruises",
-      "category": "SMALL SHIP YACHTS",
-      "description": "Intimate yachting and boutique small-ship cruises worldwide.",
-      "link": "/emerald-yachts"
-    },
-    {
-      "title": "Luxury Travel to the Caribbean",
-      "category": "CARIBBEAN TRAVEL",
-      "description": "Curated Caribbean luxury vacations, private villas, and bespoke yacht charters.",
-      "link": "/ritz-carlton-yacht-caribbean-cruises"
-    },
-    {
-      "title": "Request a Luxury Cruise Quote",
-      "category": "CONSULTATION",
-      "description": "Connect with Florida luxury cruise specialist Angela Hughes to plan your voyage.",
-      "link": "/contact"
     }
   ],
   "finalAnswer": {

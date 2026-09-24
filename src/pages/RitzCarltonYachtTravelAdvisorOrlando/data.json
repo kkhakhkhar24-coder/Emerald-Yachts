@@ -399,17 +399,61 @@
     "subtitle": "Comprehensive Luxury Travel Planning",
     "lead": "Trips & Ships Luxury Travel specializes in luxury travel planning, including:",
     "specialties": [
-      { "title": "Ritz-Carlton Yacht Collection", "description": "Tailored suite selection, itinerary advice, and luxury concierge support.", "stat": "Yacht" },
-      { "title": "Luxury cruises", "description": "Ultra-luxury ocean voyages curated to your exact personal preferences.", "stat": "Ocean" },
-      { "title": "Small-ship cruises", "description": "Intimate vessels accessing boutique harbors and secluded anchorages.", "stat": "Boutique" },
-      { "title": "River cruises", "description": "Scenic waterways, cultural immersion, and historic European routes.", "stat": "River" },
-      { "title": "Expedition voyages", "description": "Polar explorations, remote archipelagos, and active wildlife adventures.", "stat": "Expedition" },
-      { "title": "Custom safaris", "description": "Bespoke African safaris, private game reserves, and luxury tented lodges.", "stat": "Safari" },
-      { "title": "Luxury hotels", "description": "Preferred partner hotel programs, VIP amenities, and five-star upgrades.", "stat": "Hotels" },
-      { "title": "Private tours", "description": "Exclusive shore experiences, private guides, and bespoke shoreside excursions.", "stat": "Private" },
-      { "title": "Multigenerational travel", "description": "Seamless family logistics, connecting suites, and all-age itinerary design.", "stat": "Multi-Gen" },
-      { "title": "Special occasions", "description": "Honeymoons, anniversaries, milestone birthdays, and private celebration events.", "stat": "Occasions" },
-      { "title": "Pre- and post-cruise travel", "description": "Coordinated land stays, luxury resort extensions, and private transfers.", "stat": "Extensions" }
+      {
+        "title": "Ritz-Carlton Yacht Collection",
+        "description": "Tailored suite selection, itinerary advice, and luxury concierge support.",
+        "stat": "Yacht"
+      },
+      {
+        "title": "Luxury cruises",
+        "description": "Ultra-luxury ocean voyages curated to your exact personal preferences.",
+        "stat": "Ocean"
+      },
+      {
+        "title": "Small-ship cruises",
+        "description": "Intimate vessels accessing boutique harbors and secluded anchorages.",
+        "stat": "Boutique"
+      },
+      {
+        "title": "River cruises",
+        "description": "Scenic waterways, cultural immersion, and historic European routes.",
+        "stat": "River"
+      },
+      {
+        "title": "Expedition voyages",
+        "description": "Polar explorations, remote archipelagos, and active wildlife adventures.",
+        "stat": "Expedition"
+      },
+      {
+        "title": "Custom safaris",
+        "description": "Bespoke African safaris, private game reserves, and luxury tented lodges.",
+        "stat": "Safari"
+      },
+      {
+        "title": "Luxury hotels",
+        "description": "Preferred partner hotel programs, VIP amenities, and five-star upgrades.",
+        "stat": "Hotels"
+      },
+      {
+        "title": "Private tours",
+        "description": "Exclusive shore experiences, private guides, and bespoke shoreside excursions.",
+        "stat": "Private"
+      },
+      {
+        "title": "Multigenerational travel",
+        "description": "Seamless family logistics, connecting suites, and all-age itinerary design.",
+        "stat": "Multi-Gen"
+      },
+      {
+        "title": "Special occasions",
+        "description": "Honeymoons, anniversaries, milestone birthdays, and private celebration events.",
+        "stat": "Occasions"
+      },
+      {
+        "title": "Pre- and post-cruise travel",
+        "description": "Coordinated land stays, luxury resort extensions, and private transfers.",
+        "stat": "Extensions"
+      }
     ],
     "takeaway": "For Orlando-area travelers, the goal is to coordinate the entire vacation rather than treating the yacht reservation as an isolated booking."
   },
@@ -418,16 +462,46 @@
     "subtitle": "Provide these details to help your advisor begin curating your personalized yacht journey.",
     "lead": "When contacting a travel advisor, provide:",
     "items": [
-      { "title": "Preferred travel dates", "description": "Preferred sailing dates and seasonal timing flexibility" },
-      { "title": "Number of travelers", "description": "Total party size and room distribution requirements" },
-      { "title": "Preferred destinations", "description": "Caribbean, Bahamas, Mediterranean, Northern Europe, or Transatlantic" },
-      { "title": "Approximate trip length", "description": "Desired voyage duration plus any pre/post land extension days" },
-      { "title": "Suite preferences", "description": "Preferred suite category, terrace size, loft layout, or midship location" },
-      { "title": "Special occasions", "description": "Anniversary, honeymoon, milestone birthday, or family reunion" },
-      { "title": "Previous cruise experience", "description": "Prior yacht or luxury cruise background to align expectations" },
-      { "title": "Desired pre-cruise plans", "description": "Miami, Fort Lauderdale, or international luxury hotel stays before departure" },
-      { "title": "Desired post-cruise plans", "description": "Post-cruise beach resort extensions, city visits, or return flight timing" },
-      { "title": "Approximate travel budget", "description": "Target investment level for yacht suite, airfare, hotels, and experiences" }
+      {
+        "title": "Preferred travel dates",
+        "description": "Preferred sailing dates and seasonal timing flexibility"
+      },
+      {
+        "title": "Number of travelers",
+        "description": "Total party size and room distribution requirements"
+      },
+      {
+        "title": "Preferred destinations",
+        "description": "Caribbean, Bahamas, Mediterranean, Northern Europe, or Transatlantic"
+      },
+      {
+        "title": "Approximate trip length",
+        "description": "Desired voyage duration plus any pre/post land extension days"
+      },
+      {
+        "title": "Suite preferences",
+        "description": "Preferred suite category, terrace size, loft layout, or midship location"
+      },
+      {
+        "title": "Special occasions",
+        "description": "Anniversary, honeymoon, milestone birthday, or family reunion"
+      },
+      {
+        "title": "Previous cruise experience",
+        "description": "Prior yacht or luxury cruise background to align expectations"
+      },
+      {
+        "title": "Desired pre-cruise plans",
+        "description": "Miami, Fort Lauderdale, or international luxury hotel stays before departure"
+      },
+      {
+        "title": "Desired post-cruise plans",
+        "description": "Post-cruise beach resort extensions, city visits, or return flight timing"
+      },
+      {
+        "title": "Approximate travel budget",
+        "description": "Target investment level for yacht suite, airfare, hotels, and experiences"
+      }
     ],
     "takeaway": "This gives the advisor enough information to begin comparing the appropriate options."
   },
@@ -520,68 +594,6 @@
       "answer": "Angela Hughes is based in Winter Garden, Florida, in the Orlando area, and is publicly listed as a Florida travel advisor through Travel Leaders."
     }
   ],
-  "hubResources": [
-    {
-      "title": "Ritz-Carlton Yacht Collection Overview",
-      "category": "FLEET & EXPERIENCE",
-      "description": "Explore the fleet, onboard atmosphere, Michelin-inspired dining, and brand amenities.",
-      "link": "/ritz-carlton-yacht-collection"
-    },
-    {
-      "title": "Ritz-Carlton Yacht Travel Advisor in Florida",
-      "category": "FLORIDA ADVISOR",
-      "description": "Florida-based luxury cruise advisor for Miami departures, suite guidance, and travel planning.",
-      "link": "/ritz-carlton-yacht-collection-travel-advisor-florida"
-    },
-    {
-      "title": "Why Book Through a Travel Advisor?",
-      "category": "PLANNING GUIDE",
-      "description": "Discover the value of working with a luxury cruise travel advisor for your yacht booking.",
-      "link": "/ritz-carlton-yacht-cruises/travel-advisor"
-    },
-    {
-      "title": "Ritz-Carlton Yacht Cruises from Miami",
-      "category": "DEPARTURE HUBS",
-      "description": "Complete guide to Miami departures, round-trip Caribbean voyages, and Florida logistics.",
-      "link": "/ritz-carlton-yacht-cruises-from-miami"
-    },
-    {
-      "title": "Ritz-Carlton Yacht Caribbean Cruises",
-      "category": "DESTINATIONS",
-      "description": "Top Caribbean itineraries, island highlights, seasonal weather, and voyage durations.",
-      "link": "/ritz-carlton-yacht-caribbean-cruises"
-    },
-    {
-      "title": "Are Shore Excursions Included?",
-      "category": "INCLUSIONS & REALITY",
-      "description": "Understanding excursion pricing, private arrangements, and booking windows.",
-      "link": "/ritz-carlton-yacht-shore-excursions-included"
-    },
-    {
-      "title": "Is Ritz-Carlton Yacht Good for Non-Cruisers?",
-      "category": "TRAVEL STYLE",
-      "description": "Why boutique luxury yachting appeals to luxury resort lovers and anti-cruise travelers.",
-      "link": "/ritz-carlton-yacht-collection-for-people-who-dont-like-cruises"
-    },
-    {
-      "title": "Luxury Cruises Guide",
-      "category": "CRUISE LINES",
-      "description": "Explore premier luxury and ultra-luxury cruise lines and small-ship voyages.",
-      "link": "/luxury-travel"
-    },
-    {
-      "title": "Small Ship Cruises",
-      "category": "SMALL SHIP YACHTS",
-      "description": "Intimate yachting and boutique small-ship cruises worldwide.",
-      "link": "/emerald-yachts"
-    },
-    {
-      "title": "Request a Luxury Cruise Quote",
-      "category": "CONSULTATION",
-      "description": "Connect with Orlando-area luxury travel specialist Angela Hughes to plan your voyage.",
-      "link": "/contact"
-    }
-  ],
   "finalAnswer": {
     "title": "Final Takeaway",
     "lead": "For Orlando travelers, planning a Ritz-Carlton Yacht Collection vacation can involve more than selecting a yacht and sailing date.",
@@ -596,145 +608,69 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": [
-          "Organization",
-          "TravelAgency"
-        ],
-        "@id": "https://www.tripsandships.com/#organization",
-        "name": "Trips & Ships Luxury Travel",
-        "url": "https://www.tripsandships.com/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.tripsandships.com/logo.png"
-        },
-        "foundingDate": "1995",
-        "founder": {
-          "@id": "https://www.tripsandships.com/#angela-hughes"
-        },
-        "areaServed": [
-          {
-            "@type": "Country",
-            "name": "United States"
-          },
-          {
-            "@type": "City",
-            "name": "Orlando"
-          },
-          {
-            "@type": "Place",
-            "name": "Central Florida"
-          }
-        ],
-        "knowsAbout": [
-          "Ritz-Carlton Yacht Collection",
-          "Luxury Yacht Cruises",
-          "Luxury Cruises",
-          "Small Ship Cruises",
-          "Expedition Cruises",
-          "River Cruises",
-          "Luxury Travel",
-          "Florida Travel",
-          "Orlando Travel",
-          "Central Florida Travel",
-          "Caribbean Travel",
-          "Custom Safaris"
-        ]
-      },
-      {
-        "@type": "Person",
-        "@id": "https://www.tripsandships.com/#angela-hughes",
-        "name": "Angela Hughes",
-        "jobTitle": "CEO and Luxury Travel Expert",
-        "url": "https://www.tripsandships.com/about-angela-hughes",
-        "worksFor": {
-          "@id": "https://www.tripsandships.com/#organization"
-        },
-        "founder": {
-          "@type": "Organization",
-          "name": "Luxury Travel University",
-          "url": "https://luxurytraveluniversity.com/"
-        },
-        "knowsAbout": [
-          "Ritz-Carlton Yacht Collection",
-          "Luxury Yacht Travel",
-          "Luxury Cruises",
-          "Small Ship Cruises",
-          "Expedition Cruises",
-          "River Cruises",
-          "Luxury Travel",
-          "Florida Travel",
-          "Orlando Travel",
-          "Caribbean Travel",
-          "Custom Safaris"
-        ]
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://www.tripsandships.com/#website",
-        "url": "https://www.tripsandships.com/",
-        "name": "Trips & Ships Luxury Travel",
-        "publisher": {
-          "@id": "https://www.tripsandships.com/#organization"
-        }
-      },
-      {
         "@type": "WebPage",
         "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-travel-advisor-orlando/#webpage",
-        "url": "https://www.tripsandships.com/ritz-carlton-yacht-collection-travel-advisor-orlando/",
+        "url": "https://www.tripsandships.com/ritz-carlton-yacht-collection-travel-advisor-orlando",
         "name": "Ritz-Carlton Yacht Collection Travel Advisor in Orlando",
         "headline": "Ritz-Carlton Yacht Collection Travel Advisor in Orlando",
         "description": "Looking for a Ritz-Carlton Yacht Collection travel advisor in Orlando? Get expert help with yacht selection, suites, itineraries, excursions, flights, hotels and luxury trip planning.",
-        "isPartOf": {
-          "@id": "https://www.tripsandships.com/#website"
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/assets/RitzCarltonYachtTravelAdvisorOrlando/ritz-carlton-yacht-travel-advisor-orlando-hero.jpg",
+          "caption": "Ritz-Carlton Yacht Collection Travel Advisor in Orlando"
         },
-        "about": {
-          "@type": "Thing",
-          "name": "Ritz-Carlton Yacht Collection Travel Advisor in Orlando"
-        },
+        "image": "https://www.tripsandships.com/assets/RitzCarltonYachtTravelAdvisorOrlando/ritz-carlton-yacht-travel-advisor-orlando-hero.jpg",
         "author": {
-          "@id": "https://www.tripsandships.com/#angela-hughes"
+          "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
         },
         "publisher": {
           "@id": "https://www.tripsandships.com/#organization"
         },
-        "mainEntity": {
-          "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-travel-advisor-orlando/#article"
-        },
-        "breadcrumb": {
-          "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-travel-advisor-orlando/#breadcrumb"
+        "isPartOf": {
+          "@id": "https://www.tripsandships.com/#website"
         }
       },
       {
-        "@type": "Article",
-        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-travel-advisor-orlando/#article",
-        "headline": "Ritz-Carlton Yacht Collection Travel Advisor in Orlando",
-        "description": "Looking for a Ritz-Carlton Yacht Collection travel advisor in Orlando? Get expert help with yacht selection, suites, itineraries, excursions, flights, hotels and luxury trip planning.",
-        "author": {
-          "@id": "https://www.tripsandships.com/#angela-hughes"
+        "@type": "Organization",
+        "@id": "https://www.tripsandships.com/#organization",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/",
+        "founder": {
+          "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
+        }
+      },
+      {
+        "@type": "TravelAgency",
+        "@id": "https://www.tripsandships.com/#travelagency",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/",
+        "parentOrganization": {
+          "@id": "https://www.tripsandships.com/#organization"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.tripsandships.com/about-angela-hughes/#person",
+        "name": "Angela Hughes",
+        "jobTitle": "CEO of Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/about-angela-hughes",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/assets/Angela_Hughes.jpg",
+          "caption": "Angela Hughes - Luxury Travel Expert"
         },
-        "publisher": {
+        "description": "Angela Hughes is a luxury travel expert, CEO of Trips & Ships Luxury Travel, founder of Luxury Travel University and an experienced luxury travel industry leader.",
+        "worksFor": {
           "@id": "https://www.tripsandships.com/#organization"
         },
-        "mainEntityOfPage": {
-          "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-travel-advisor-orlando/#webpage"
-        },
-        "articleSection": "Ritz-Carlton Yacht Collection Travel Advisor",
-        "keywords": [
-          "Ritz-Carlton Yacht Collection Travel Advisor in Orlando",
-          "Ritz-Carlton Yacht travel advisor Orlando",
-          "Ritz-Carlton Yacht travel agent Orlando",
-          "Ritz-Carlton Yacht Collection travel agent Orlando",
-          "Ritz-Carlton Yacht advisor Orlando Florida",
-          "Ritz-Carlton Yacht cruise advisor Orlando",
-          "luxury cruise travel advisor Orlando",
-          "luxury yacht travel advisor Orlando",
-          "Ritz-Carlton yacht booking agent Orlando",
-          "Ritz-Carlton Yacht Collection Orlando",
-          "Ritz-Carlton yacht cruise planning Orlando",
-          "Orlando luxury cruise advisor",
-          "Central Florida luxury travel advisor",
-          "Ritz-Carlton yacht travel professional Orlando",
-          "Ritz-Carlton yacht vacation planner Orlando"
+        "knowsAbout": [
+          "Luxury Travel",
+          "Luxury Cruises",
+          "Yacht Cruising",
+          "Luxury Safaris",
+          "Expedition Cruises",
+          "River Cruising",
+          "Premium Travel"
         ]
       },
       {
@@ -750,21 +686,20 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Luxury Cruises",
-            "item": "https://www.tripsandships.com/luxury-cruises/"
+            "name": "Ritz-Carlton Yacht Collection Travel Advisor",
+            "item": "https://www.tripsandships.com/ritz-carlton-yacht-collection-travel-advisor"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Ritz-Carlton Yacht Collection Travel Advisor in Orlando",
-            "item": "https://www.tripsandships.com/ritz-carlton-yacht-collection-travel-advisor-orlando/"
+            "item": "https://www.tripsandships.com/ritz-carlton-yacht-collection-travel-advisor-orlando"
           }
         ]
       },
       {
         "@type": "FAQPage",
         "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-travel-advisor-orlando/#faq",
-        "url": "https://www.tripsandships.com/ritz-carlton-yacht-collection-travel-advisor-orlando/",
         "mainEntity": [
           {
             "@type": "Question",

@@ -11,137 +11,69 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": ["Organization", "TravelAgency"],
+        "@type": "WebPage",
+        "@id": "https://www.tripsandships.com/how-to-choose-right-ritz-carlton-yacht-suite-itinerary/#webpage",
+        "url": "https://www.tripsandships.com/how-to-choose-right-ritz-carlton-yacht-suite-itinerary",
+        "name": "How to Choose the Right Ritz-Carlton Yacht, Suite & Itinerary",
+        "headline": "How to Choose the Right Ritz-Carlton Yacht, Suite & Itinerary",
+        "description": "Learn how to choose the right Ritz-Carlton Yacht, suite and itinerary based on yacht size, suite category, destination, voyage length, season and travel style.",
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/assets/HowToChooseRightRitzCarltonYachtSuiteItinerary/how-to-choose-ritz-carlton-yacht-suite-itinerary-hero.jpg",
+          "caption": "How to Choose the Right Ritz-Carlton Yacht, Suite & Itinerary"
+        },
+        "image": "https://www.tripsandships.com/assets/HowToChooseRightRitzCarltonYachtSuiteItinerary/how-to-choose-ritz-carlton-yacht-suite-itinerary-hero.jpg",
+        "author": {
+          "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
+        },
+        "publisher": {
+          "@id": "https://www.tripsandships.com/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://www.tripsandships.com/#website"
+        }
+      },
+      {
+        "@type": "Organization",
         "@id": "https://www.tripsandships.com/#organization",
         "name": "Trips & Ships Luxury Travel",
         "url": "https://www.tripsandships.com/",
-        "logo": "https://www.tripsandships.com/logo.png",
-        "foundingDate": "1995",
         "founder": {
-          "@id": "https://www.tripsandships.com/#angela-hughes"
-        },
-        "areaServed": {
-          "@type": "Country",
-          "name": "United States"
-        },
-        "knowsAbout": [
-          "Ritz-Carlton Yacht Collection",
-          "Luxury Yacht Cruises",
-          "Luxury Cruises",
-          "Small Ship Cruises",
-          "Expedition Cruises",
-          "Luxury Travel",
-          "Ritz-Carlton Yacht Suites",
-          "Ritz-Carlton Yacht Itineraries",
-          "Mediterranean Cruises",
-          "Caribbean Cruises",
-          "Alaska Cruises",
-          "Asia-Pacific Cruises",
-          "South Pacific Cruises",
-          "Custom Safaris"
-        ]
+          "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
+        }
+      },
+      {
+        "@type": "TravelAgency",
+        "@id": "https://www.tripsandships.com/#travelagency",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/",
+        "parentOrganization": {
+          "@id": "https://www.tripsandships.com/#organization"
+        }
       },
       {
         "@type": "Person",
-        "@id": "https://www.tripsandships.com/#angela-hughes",
+        "@id": "https://www.tripsandships.com/about-angela-hughes/#person",
         "name": "Angela Hughes",
-        "jobTitle": "CEO and Luxury Travel Expert",
+        "jobTitle": "CEO of Trips & Ships Luxury Travel",
         "url": "https://www.tripsandships.com/about-angela-hughes",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/assets/Angela_Hughes.jpg",
+          "caption": "Angela Hughes - Luxury Travel Expert"
+        },
+        "description": "Angela Hughes is a luxury travel expert, CEO of Trips & Ships Luxury Travel, founder of Luxury Travel University and an experienced luxury travel industry leader.",
         "worksFor": {
           "@id": "https://www.tripsandships.com/#organization"
-        },
-        "founder": {
-          "@type": "Organization",
-          "name": "Luxury Travel University",
-          "url": "https://luxurytraveluniversity.com/"
         },
         "knowsAbout": [
           "Luxury Travel",
           "Luxury Cruises",
-          "Luxury Yacht Cruises",
-          "Ritz-Carlton Yacht Collection",
-          "Ritz-Carlton Yacht Suites",
-          "Cruise Itinerary Planning",
-          "Small Ship Cruises",
+          "Yacht Cruising",
+          "Luxury Safaris",
           "Expedition Cruises",
-          "River Cruises",
-          "Custom Safaris",
-          "Mediterranean Travel",
-          "Caribbean Travel",
-          "Alaska Travel",
-          "Asia-Pacific Travel",
-          "South Pacific Travel"
-        ]
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://www.tripsandships.com/#website",
-        "url": "https://www.tripsandships.com/",
-        "name": "Trips & Ships Luxury Travel",
-        "publisher": {
-          "@id": "https://www.tripsandships.com/#organization"
-        }
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://www.tripsandships.com/how-to-choose-right-ritz-carlton-yacht-suite-itinerary/#webpage",
-        "url": "https://www.tripsandships.com/how-to-choose-right-ritz-carlton-yacht-suite-itinerary/",
-        "name": "How to Choose the Right Ritz-Carlton Yacht, Suite and Itinerary",
-        "headline": "How to Choose the Right Ritz-Carlton Yacht, Suite and Itinerary",
-        "description": "Learn how to choose the right Ritz-Carlton Yacht, suite and itinerary based on yacht size, suite category, destination, voyage length, season and travel style.",
-        "isPartOf": {
-          "@id": "https://www.tripsandships.com/#website"
-        },
-        "about": {
-          "@type": "Thing",
-          "name": "Ritz-Carlton Yacht Collection"
-        },
-        "author": {
-          "@id": "https://www.tripsandships.com/#angela-hughes"
-        },
-        "publisher": {
-          "@id": "https://www.tripsandships.com/#organization"
-        },
-        "mainEntity": {
-          "@id": "https://www.tripsandships.com/how-to-choose-right-ritz-carlton-yacht-suite-itinerary/#article"
-        },
-        "breadcrumb": {
-          "@id": "https://www.tripsandships.com/how-to-choose-right-ritz-carlton-yacht-suite-itinerary/#breadcrumb"
-        }
-      },
-      {
-        "@type": "Article",
-        "@id": "https://www.tripsandships.com/how-to-choose-right-ritz-carlton-yacht-suite-itinerary/#article",
-        "headline": "How to Choose the Right Ritz-Carlton Yacht, Suite and Itinerary",
-        "description": "Learn how to choose the right Ritz-Carlton Yacht, suite and itinerary based on yacht size, suite category, destination, voyage length, season and travel style.",
-        "author": {
-          "@id": "https://www.tripsandships.com/#angela-hughes"
-        },
-        "publisher": {
-          "@id": "https://www.tripsandships.com/#organization"
-        },
-        "mainEntityOfPage": {
-          "@id": "https://www.tripsandships.com/how-to-choose-right-ritz-carlton-yacht-suite-itinerary/#webpage"
-        },
-        "articleSection": "Ritz-Carlton Yacht Collection",
-        "keywords": [
-          "How to Choose the Right Ritz-Carlton Yacht",
-          "Ritz-Carlton Yacht",
-          "Ritz-Carlton Yacht Collection",
-          "Ritz-Carlton Yacht Suites",
-          "Ritz-Carlton Yacht Itineraries",
-          "Best Ritz-Carlton Yacht",
-          "Ritz-Carlton Yacht Suite",
-          "Luxury Yacht Cruises",
-          "Evrima",
-          "Ilma",
-          "Luminara",
-          "Mediterranean Yacht Cruises",
-          "Caribbean Yacht Cruises",
-          "Alaska Yacht Cruises",
-          "Asia-Pacific Yacht Cruises",
-          "South Pacific Yacht Cruises",
-          "Luxury Travel Advisor"
+          "River Cruising",
+          "Premium Travel"
         ]
       },
       {
@@ -157,21 +89,20 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Luxury Cruises",
-            "item": "https://www.tripsandships.com/luxury-cruises/"
+            "name": "Ritz-Carlton Yacht Collection",
+            "item": "https://www.tripsandships.com/ritz-carlton-yacht-collection"
           },
           {
             "@type": "ListItem",
             "position": 3,
-            "name": "How to Choose the Right Ritz-Carlton Yacht, Suite and Itinerary",
-            "item": "https://www.tripsandships.com/how-to-choose-right-ritz-carlton-yacht-suite-itinerary/"
+            "name": "How to Choose the Right Ritz-Carlton Yacht, Suite & Itinerary",
+            "item": "https://www.tripsandships.com/how-to-choose-right-ritz-carlton-yacht-suite-itinerary"
           }
         ]
       },
       {
         "@type": "FAQPage",
         "@id": "https://www.tripsandships.com/how-to-choose-right-ritz-carlton-yacht-suite-itinerary/#faq",
-        "url": "https://www.tripsandships.com/how-to-choose-right-ritz-carlton-yacht-suite-itinerary/",
         "mainEntity": [
           {
             "@type": "Question",
@@ -186,7 +117,7 @@
             "name": "Which Ritz-Carlton Yacht is best?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "There is no single yacht that is right for every traveler. Evrima, Ilma and Luminara have different suite inventories and operate different itineraries, so the right option depends on your destination and travel priorities."
+              "text": "There is no single yacht that is right for every traveler. Evrima, Ilma and Luminara have different suite inventories and operate different itineraries, so the best option depends on your destination and travel priorities."
             }
           },
           {
@@ -210,7 +141,7 @@
             "name": "Which Ritz-Carlton Yacht is best for the Mediterranean?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Evrima and Ilma both operate Mediterranean itineraries, with programs covering destinations throughout Greece, Italy, Spain, France, Croatia and other European regions."
+              "text": "Evrima and Ilma both operate Mediterranean itineraries, with current and announced programs covering destinations throughout Greece, Italy, Spain, France, Croatia and other European regions."
             }
           },
           {
@@ -266,7 +197,7 @@
             "name": "Is a round-trip Ritz-Carlton Yacht itinerary better?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "A round-trip itinerary can simplify flights and transfers, while a one-way itinerary can allow you to experience a broader geographic route. The right option depends on your overall vacation plans."
+              "text": "A round-trip itinerary can simplify flights and transfers, while a one-way itinerary can allow you to experience a broader geographic route. The better option depends on your overall vacation plans."
             }
           },
           {
@@ -282,7 +213,7 @@
             "name": "Should I arrive early for my Ritz-Carlton Yacht cruise?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Arriving early can provide additional protection against flight delays and gives you time to settle into the embarkation city before sailing. The appropriate amount of time depends on the port and your flight itinerary."
+              "text": "Arriving early can provide additional protection against flight delays and gives you time to settle into the embarkation city before sailing. The appropriate amount of time depends on the port and your international or domestic flight itinerary."
             }
           },
           {
@@ -306,7 +237,7 @@
             "name": "Is the newest Ritz-Carlton Yacht always the best choice?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Not necessarily. The newest yacht may have features or itineraries that appeal to you, but the right choice depends on destination, dates, suite preferences and overall travel plans."
+              "text": "Not necessarily. The newest yacht may have features or itineraries that appeal to you, but the best choice depends on destination, dates, suite preferences and overall travel plans."
             }
           },
           {
@@ -727,21 +658,63 @@
   "comparisonMatrix": {
     "title": "How to Compare Two Ritz-Carlton Yacht Itineraries",
     "lead": "If two voyages look similar, use this comprehensive checklist to compare value, logistics, and total vacation investment:",
-    "headers": ["Decision Factor", "What to Evaluate & Compare"],
+    "headers": [
+      "Decision Factor",
+      "What to Evaluate & Compare"
+    ],
     "rows": [
-      ["Yacht", "Evrima (149 suites), Ilma (224 suites), or Luminara (226 suites)"],
-      ["Dates", "Seasonality, weather conditions, holidays, and personal calendar"],
-      ["Nights", "Total voyage length (3–4 nights, 7 nights, or 8–14+ nights)"],
-      ["Ports", "Number of distinct ports, tender vs. dock access, and destinations"],
-      ["Overnight Stays", "Number of evening overnights for nightlife and ashore dining"],
-      ["Embarkation Port", "Ease of flights, nonstop routes, and transfer distance"],
-      ["Disembarkation", "Flight connections, hotel availability, and departure timing"],
-      ["Suite Category", "Square footage, terrace size, deck position, and layout"],
-      ["Shore Excursions", "Select Group availability, private guide options, and costs"],
-      ["Sea Days", "Balance of active port exploration vs. relaxed onboard yacht days"],
-      ["Flights", "Airfare costs, business-class availability, and travel duration"],
-      ["Pre/Post Hotels", "Luxury hotel nights required before embarkation and after disembarkation"],
-      ["Total Budget", "Complete door-to-door trip cost rather than just the base cruise fare"]
+      [
+        "Yacht",
+        "Evrima (149 suites), Ilma (224 suites), or Luminara (226 suites)"
+      ],
+      [
+        "Dates",
+        "Seasonality, weather conditions, holidays, and personal calendar"
+      ],
+      [
+        "Nights",
+        "Total voyage length (3–4 nights, 7 nights, or 8–14+ nights)"
+      ],
+      [
+        "Ports",
+        "Number of distinct ports, tender vs. dock access, and destinations"
+      ],
+      [
+        "Overnight Stays",
+        "Number of evening overnights for nightlife and ashore dining"
+      ],
+      [
+        "Embarkation Port",
+        "Ease of flights, nonstop routes, and transfer distance"
+      ],
+      [
+        "Disembarkation",
+        "Flight connections, hotel availability, and departure timing"
+      ],
+      [
+        "Suite Category",
+        "Square footage, terrace size, deck position, and layout"
+      ],
+      [
+        "Shore Excursions",
+        "Select Group availability, private guide options, and costs"
+      ],
+      [
+        "Sea Days",
+        "Balance of active port exploration vs. relaxed onboard yacht days"
+      ],
+      [
+        "Flights",
+        "Airfare costs, business-class availability, and travel duration"
+      ],
+      [
+        "Pre/Post Hotels",
+        "Luxury hotel nights required before embarkation and after disembarkation"
+      ],
+      [
+        "Total Budget",
+        "Complete door-to-door trip cost rather than just the base cruise fare"
+      ]
     ],
     "takeaway": "Should you choose the cheapest suite? Not necessarily. The lowest fare may not provide your preferred deck, view, occupancy, or convenient travel dates. Focus on total trip value and vacation fit."
   },
@@ -811,14 +784,38 @@
       "Manages flight schedule adjustments, hotel changes, and travel protection"
     ],
     "inquiryDetails": [
-      { "title": "Preferred travel dates", "description": "Preferred sailing dates and seasonal calendar flexibility" },
-      { "title": "Number of travelers & ages", "description": "Total party size, room distribution, and ages of children" },
-      { "title": "Preferred destinations", "description": "Mediterranean, Caribbean, Alaska, Asia-Pacific, or French Polynesia" },
-      { "title": "Approximate budget", "description": "Target investment for yacht suite, airfare, hotels, and excursions" },
-      { "title": "Desired voyage length", "description": "Short getaway (3–4 nights), one-week classic, or 8–14+ nights" },
-      { "title": "Suite preferences", "description": "Terrace size, loft duplex, midship deck position, or connecting suites" },
-      { "title": "Special occasions & dining", "description": "Anniversary, honeymoon, milestone birthday, and dietary preferences" },
-      { "title": "Mobility & flight preferences", "description": "Accessibility requirements, departure airports, and airline class" }
+      {
+        "title": "Preferred travel dates",
+        "description": "Preferred sailing dates and seasonal calendar flexibility"
+      },
+      {
+        "title": "Number of travelers & ages",
+        "description": "Total party size, room distribution, and ages of children"
+      },
+      {
+        "title": "Preferred destinations",
+        "description": "Mediterranean, Caribbean, Alaska, Asia-Pacific, or French Polynesia"
+      },
+      {
+        "title": "Approximate budget",
+        "description": "Target investment for yacht suite, airfare, hotels, and excursions"
+      },
+      {
+        "title": "Desired voyage length",
+        "description": "Short getaway (3–4 nights), one-week classic, or 8–14+ nights"
+      },
+      {
+        "title": "Suite preferences",
+        "description": "Terrace size, loft duplex, midship deck position, or connecting suites"
+      },
+      {
+        "title": "Special occasions & dining",
+        "description": "Anniversary, honeymoon, milestone birthday, and dietary preferences"
+      },
+      {
+        "title": "Mobility & flight preferences",
+        "description": "Accessibility requirements, departure airports, and airline class"
+      }
     ],
     "whenToBook": [
       "A specific suite category or duplex loft is desired",
@@ -936,44 +933,6 @@
     {
       "question": "Can Trips & Ships Luxury Travel help me choose a Ritz-Carlton Yacht?",
       "answer": "Yes. Trips & Ships Luxury Travel can assist with luxury yacht planning, including comparing yachts, suites, itineraries, excursions, flights, hotels and related travel arrangements."
-    }
-  ],
-  "hubResources": [
-    {
-      "title": "Why Book Through a Travel Advisor?",
-      "category": "Expert Guidance",
-      "description": "Understand pricing transparency, partner benefits, and the value of professional luxury cruise coordination.",
-      "link": "/ritz-carlton-yacht-cruises/travel-advisor/"
-    },
-    {
-      "title": "Florida Travel Advisor",
-      "category": "Regional Planning",
-      "description": "Expert yacht guidance for Florida residents with flight coordination, Miami departures, and pre-cruise stays.",
-      "link": "/ritz-carlton-yacht-collection-travel-advisor-florida/"
-    },
-    {
-      "title": "Orlando Travel Advisor",
-      "category": "Central Florida",
-      "description": "Customized yacht planning from Orlando with airport connections, luxury suites, and family arrangements.",
-      "link": "/ritz-carlton-yacht-collection-travel-advisor-orlando/"
-    },
-    {
-      "title": "Miami Yacht Departures",
-      "category": "Port Guide",
-      "description": "Complete terminal, hotel, and embarkation guide for Ritz-Carlton voyages departing from PortMiami.",
-      "link": "/ritz-carlton-yacht-cruises-from-miami/"
-    },
-    {
-      "title": "Caribbean Yacht Itineraries",
-      "category": "Destinations",
-      "description": "Explore St. Barths, Jost Van Dyke, and boutique Caribbean anchorages aboard Evrima and Ilma.",
-      "link": "/ritz-carlton-caribbean-cruise/"
-    },
-    {
-      "title": "Yacht Shore Excursions Guide",
-      "category": "Experiences",
-      "description": "Discover curated Select Group tours, private zodiac excursions, and custom shoreside arrangements.",
-      "link": "/ritz-carlton-yacht-shore-excursions-included/"
     }
   ],
   "finalAnswer": {
