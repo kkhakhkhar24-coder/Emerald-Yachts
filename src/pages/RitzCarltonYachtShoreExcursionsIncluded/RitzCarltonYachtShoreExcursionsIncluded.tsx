@@ -362,6 +362,15 @@ const RitzCarltonYachtShoreExcursionsIncluded = () => {
         />
       </div>
 
+      {/* ─── Video Feature Section ─── */}
+      <VideoEmbed
+        data={{
+          youtubeId: "AEFvZJl9UWI",
+          title: "Experience Ritz-Carlton Yacht Shore Excursions",
+          description: "Discover what makes shore excursions, marina water sports, and bespoke private tours extraordinary with The Ritz-Carlton Yacht Collection."
+        }}
+      />
+
       {/* 7. What Is Included in Cruise Fare (AsymmetricStoryIntro with Image Collage) */}
       <div id="inclusions-breakdown">
         <AsymmetricStoryIntro
@@ -557,15 +566,6 @@ const RitzCarltonYachtShoreExcursionsIncluded = () => {
           </div>
         </div>
       </section>
-
-      {/* 25. Video Section Component (VideoEmbed Component) ─── */}
-      <VideoEmbed
-        data={{
-          youtubeId: "sQPnGRkiLdg",
-          title: "Experience Ritz-Carlton Yacht Shore Excursions",
-          description: "Discover what makes shore excursions, marina water sports, and bespoke private tours extraordinary with The Ritz-Carlton Yacht Collection."
-        }}
-      />
 
       {/* 26. Final Bottom CTA */}
       <CenterCTA

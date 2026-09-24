@@ -65,20 +65,59 @@
   "quickAnswerTable": {
     "title": "Quick Answer: Is Ritz-Carlton Yacht Collection Good for Non-Cruisers?",
     "lead": "The Ritz-Carlton Yacht Collection itself describes the experience as combining the luxury lifestyle of Ritz-Carlton with the casual freedom of yachting. Its current materials emphasize relaxed elegance rather than formal cruise conventions.",
-    "headers": ["If You Dislike...", "Ritz-Carlton Yacht Collection"],
+    "headers": [
+      "If You Dislike...",
+      "Ritz-Carlton Yacht Collection"
+    ],
     "rows": [
-      ["Huge cruise ships", "Potentially a better fit"],
-      ["Large crowds", "Smaller yacht environment"],
-      ["Formal nights", "No formal nights"],
-      ["Traditional cruise atmosphere", "More yacht/resort-oriented experience"],
-      ["Assigned dining", "More flexible dining options"],
-      ["Constant onboard activities", "More relaxed approach"],
-      ["Crowded public spaces", "Designed around a smaller-yacht experience"],
-      ["Cruise entertainment", "More curated, less traditional cruise-style"],
-      ["Being on the ocean", "Still a yacht voyage"],
-      ["Port schedules", "Still follows an itinerary"],
-      ["Shore excursions", "Optional and generally additional"],
-      ["Being around other guests", "Still part of the experience"]
+      [
+        "Huge cruise ships",
+        "Potentially a better fit"
+      ],
+      [
+        "Large crowds",
+        "Smaller yacht environment"
+      ],
+      [
+        "Formal nights",
+        "No formal nights"
+      ],
+      [
+        "Traditional cruise atmosphere",
+        "More yacht/resort-oriented experience"
+      ],
+      [
+        "Assigned dining",
+        "More flexible dining options"
+      ],
+      [
+        "Constant onboard activities",
+        "More relaxed approach"
+      ],
+      [
+        "Crowded public spaces",
+        "Designed around a smaller-yacht experience"
+      ],
+      [
+        "Cruise entertainment",
+        "More curated, less traditional cruise-style"
+      ],
+      [
+        "Being on the ocean",
+        "Still a yacht voyage"
+      ],
+      [
+        "Port schedules",
+        "Still follows an itinerary"
+      ],
+      [
+        "Shore excursions",
+        "Optional and generally additional"
+      ],
+      [
+        "Being around other guests",
+        "Still part of the experience"
+      ]
     ]
   },
   "whyNonCruisersLikeIt": {
@@ -490,41 +529,149 @@
     "title": "Ritz-Carlton Yacht Collection vs. Traditional Large Cruise",
     "lead": "This comparison is not intended to suggest that one format is universally better. The important question is which environment matches the traveler's preferences.",
     "intro": "Feature Comparison:",
-    "headers": ["Feature", "Ritz-Carlton Yacht Collection", "Traditional Large Cruise"],
+    "headers": [
+      "Feature",
+      "Ritz-Carlton Yacht Collection",
+      "Traditional Large Cruise"
+    ],
     "rows": [
-      ["Overall atmosphere", "Luxury yachting", "Cruise-resort"],
-      ["Accommodation", "All-suite", "Varies (inside to suites)"],
-      ["Private terrace", "Standard suite feature (100%)", "Varies (often extra fee)"],
-      ["Scale & Capacity", "Intimate yacht (298–448 guests)", "Large to mega-ship (2,000–6,000+ guests)"],
-      ["Service style", "Personalized Suite Ambassador", "Varies by line & category"],
-      ["Dining structure", "Multiple venues + 24-hr in-suite", "Assigned seatings or mega-buffets"],
-      ["Beverages", "Premium beverages included", "Varies (often extra package)"],
-      ["Formal nights", "No (Yacht Sophisticated)", "Varies (often 1–2 formal nights)"],
-      ["Wi-Fi", "Included (Starlink)", "Varies (typically daily charge)"],
-      ["Gratuities", "Included onboard", "Varies (daily automatic folios)"],
-      ["Watersports", "Marina platform access", "Rarely available"],
-      ["Entertainment", "Curated jazz & enrichment", "Extensive Broadway-style productions"],
-      ["Shore excursions", "Optional / additional", "Varies"],
-      ["Overall pace", "More relaxed & unhurried", "Busy & structured"]
+      [
+        "Overall atmosphere",
+        "Luxury yachting",
+        "Cruise-resort"
+      ],
+      [
+        "Accommodation",
+        "All-suite",
+        "Varies (inside to suites)"
+      ],
+      [
+        "Private terrace",
+        "Standard suite feature (100%)",
+        "Varies (often extra fee)"
+      ],
+      [
+        "Scale & Capacity",
+        "Intimate yacht (298–448 guests)",
+        "Large to mega-ship (2,000–6,000+ guests)"
+      ],
+      [
+        "Service style",
+        "Personalized Suite Ambassador",
+        "Varies by line & category"
+      ],
+      [
+        "Dining structure",
+        "Multiple venues + 24-hr in-suite",
+        "Assigned seatings or mega-buffets"
+      ],
+      [
+        "Beverages",
+        "Premium beverages included",
+        "Varies (often extra package)"
+      ],
+      [
+        "Formal nights",
+        "No (Yacht Sophisticated)",
+        "Varies (often 1–2 formal nights)"
+      ],
+      [
+        "Wi-Fi",
+        "Included (Starlink)",
+        "Varies (typically daily charge)"
+      ],
+      [
+        "Gratuities",
+        "Included onboard",
+        "Varies (daily automatic folios)"
+      ],
+      [
+        "Watersports",
+        "Marina platform access",
+        "Rarely available"
+      ],
+      [
+        "Entertainment",
+        "Curated jazz & enrichment",
+        "Extensive Broadway-style productions"
+      ],
+      [
+        "Shore excursions",
+        "Optional / additional",
+        "Varies"
+      ],
+      [
+        "Overall pace",
+        "More relaxed & unhurried",
+        "Busy & structured"
+      ]
     ]
   },
   "comparisonVsLuxuryResort": {
     "title": "Ritz-Carlton Yacht Collection vs. a Luxury Resort",
     "lead": "For someone who says, 'I don't like cruises,' this may actually be the more useful comparison.\n\nIf the traveler wants one beautiful location with no sailing, a luxury resort may be a better format. If they want multiple destinations without changing hotels, the yacht becomes more compelling.",
     "intro": "Comparison Parameters:",
-    "headers": ["Feature", "Ritz-Carlton Yacht", "Luxury Resort"],
+    "headers": [
+      "Feature",
+      "Ritz-Carlton Yacht",
+      "Luxury Resort"
+    ],
     "rows": [
-      ["Luxury accommodation", "Yes", "Yes"],
-      ["Multiple destinations", "Yes (wake up in new ports)", "Usually no (single location)"],
-      ["Unpack once", "Yes", "Yes"],
-      ["Private terrace", "Standard suite feature", "Varies by room category"],
-      ["Ocean access", "Yes (Marina platform)", "Varies by resort property"],
-      ["Dining variety", "Multiple venues + 24-hr room service", "Multiple venues"],
-      ["Premium beverages", "Included in fare", "Varies (often billed per drink)"],
-      ["Personalized service", "Yes (Suite Ambassador)", "Yes (Concierge / Butler)"],
-      ["Scheduled voyage", "Yes", "No"],
-      ["Port days & all-aboard", "Yes", "No"],
-      ["Motion at sea", "Yes", "No"]
+      [
+        "Luxury accommodation",
+        "Yes",
+        "Yes"
+      ],
+      [
+        "Multiple destinations",
+        "Yes (wake up in new ports)",
+        "Usually no (single location)"
+      ],
+      [
+        "Unpack once",
+        "Yes",
+        "Yes"
+      ],
+      [
+        "Private terrace",
+        "Standard suite feature",
+        "Varies by room category"
+      ],
+      [
+        "Ocean access",
+        "Yes (Marina platform)",
+        "Varies by resort property"
+      ],
+      [
+        "Dining variety",
+        "Multiple venues + 24-hr room service",
+        "Multiple venues"
+      ],
+      [
+        "Premium beverages",
+        "Included in fare",
+        "Varies (often billed per drink)"
+      ],
+      [
+        "Personalized service",
+        "Yes (Suite Ambassador)",
+        "Yes (Concierge / Butler)"
+      ],
+      [
+        "Scheduled voyage",
+        "Yes",
+        "No"
+      ],
+      [
+        "Port days & all-aboard",
+        "Yes",
+        "No"
+      ],
+      [
+        "Motion at sea",
+        "Yes",
+        "No"
+      ]
     ]
   },
   "whatMakesItDifferent": {
@@ -745,55 +892,14 @@
       "That distinction is the key to deciding whether this type of luxury yacht vacation is right for you."
     ]
   },
-  "hubResources": [
-    {
-      "title": "Ritz-Carlton Yacht Suites Guide",
-      "category": "Accommodations",
-      "description": "Comprehensive guide to Owner's, View, Grand, Loft, and Terrace suites across the fleet.",
-      "link": "/ritz-carlton-yacht-collection-suites",
-      "image": null
-    },
-    {
-      "title": "Are Shore Excursions Included?",
-      "category": "Inclusions Guide",
-      "description": "Detailed breakdown of group tours, private vehicle excursions, and shoreside budgets.",
-      "link": "/ritz-carlton-yacht-shore-excursions-included",
-      "image": null
-    },
-    {
-      "title": "Dress Code & Packing Guide",
-      "category": "Preparation",
-      "description": "What to wear for daytime sailing and Yacht Sophisticated evening dining.",
-      "link": "/ritz-carlton-yacht-collection-dress-code",
-      "image": null
-    },
-    {
-      "title": "Families & Children Guide",
-      "category": "Family Travel",
-      "description": "Ritz-Kids program, suite configurations, and family-friendly yachting itineraries.",
-      "link": "/ritz-carlton-yacht-collection-families-children",
-      "image": null
-    },
-    {
-      "title": "Marriott Bonvoy Points Guide",
-      "category": "Loyalty Benefits",
-      "description": "How to earn and redeem Marriott Bonvoy points and Elite Night Credits on yacht voyages.",
-      "link": "/ritz-carlton-yacht-collection-marriott-bonvoy-points",
-      "image": null
-    },
-    {
-      "title": "Evrima vs. Ilma vs. Luminara",
-      "category": "Fleet Comparison",
-      "description": "Compare vessel sizes, dining venues, suite layouts, and amenities across all three yachts.",
-      "link": "/ritz-carlton-evrima-vs-ilma-vs-luminara",
-      "image": null
-    }
-  ],
   "schema": {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": ["Organization", "TravelAgency"],
+        "@type": [
+          "Organization",
+          "TravelAgency"
+        ],
         "@id": "https://www.tripsandships.com/#organization",
         "name": "Trips & Ships Luxury Travel",
         "url": "https://www.tripsandships.com/",

@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import Navbar from "../../components/Navbar/Navbar";
@@ -23,18 +22,79 @@ import InteractivePlanningRoadmap from "@/components/ui/InteractivePlanningRoadm
 import BentoGlassmorphismGrid from "@/components/ui/BentoGlassmorphismGrid";
 import ExpertCredentials from "@/components/ui/ExpertCredentials";
 import FAQAccordion from "@/components/ui/FAQAccordion";
-import InteractivePillarHubGrid from "@/components/ui/InteractivePillarHubGrid";
 import CenterCTA from "@/components/ui/CenterCTA";
+import VideoEmbed from "@/components/ui/VideoEmbed";
 
-// Images
+// Author & Profile Images
 import angelaImage from "@/assets/Media (2).jpg";
-// Commented-out image imports as per project conventions:
-// import heroCaribbeanImg from "@/assets/images/ritz-caribbean-hero.jpg";
-// import biminiBahamasImg from "@/assets/images/ritz-bimini-bahamas.jpg";
-// import stBarthsImg from "@/assets/images/ritz-st-barths-gustavia.jpg";
-// import virginGordaImg from "@/assets/images/ritz-virgin-gorda-baths.jpg";
-// import stLuciaPitonsImg from "@/assets/images/ritz-st-lucia-pitons.jpg";
-// import sanJuanHarborImg from "@/assets/images/ritz-san-juan-harbor.jpg";
+
+// Assets from assets/RitzCarltonYachtCaribbeanCruises (SEO Optimized)
+// 1. Hero Background Image (Superyacht cruising crystal turquoise Caribbean waters)
+import heroBgImg from "@/assets/RitzCarltonYachtCaribbeanCruises/ritz-carlton-yacht-caribbean-cruises-hero.jpeg";
+
+// 2. Executive Narrative Intro (PremiumIntro)
+import introArchImg from "@/assets/RitzCarltonYachtCaribbeanCruises/ritz-carlton-yacht-caribbean-embarkation-luxury.jpeg";
+import introInsetImg from "@/assets/RitzCarltonYachtCaribbeanCruises/ritz-carlton-yacht-caribbean-hospitality-lifestyle.jpeg";
+
+// 3. Best Time Overview (EditorialFeatureShowcase)
+import bestTimeImg from "@/assets/RitzCarltonYachtCaribbeanCruises/ritz-carlton-yacht-caribbean-best-time-weather.jpg";
+
+// 4. Destinations Part 1 (ThreeColumnGrid)
+import destBahamasImg from "@/assets/RitzCarltonYachtCaribbeanCruises/caribbean-destination-bahamas-miami-roundtrips.jpg";
+import destStBarthsImg from "@/assets/RitzCarltonYachtCaribbeanCruises/caribbean-destination-st-barths-gustavia-yacht.jpg";
+import destVirginIslandsImg from "@/assets/RitzCarltonYachtCaribbeanCruises/caribbean-destination-virgin-islands-yacht-havens.jpeg";
+
+// 5. British Virgin Islands Itineraries (DestinationFlipCards)
+import bviJostImg from "@/assets/RitzCarltonYachtCaribbeanCruises/caribbean-bvi-jost-van-dyke-white-bay.jpg";
+import bviVirginGordaImg from "@/assets/RitzCarltonYachtCaribbeanCruises/caribbean-bvi-virgin-gorda-the-baths.jpeg";
+import bviNormanImg from "@/assets/RitzCarltonYachtCaribbeanCruises/caribbean-bvi-norman-island-snorkeling.jpg";
+
+// 6. Scenic Landscapes (ThreeColumnGrid)
+import scenicStLuciaImg from "@/assets/RitzCarltonYachtCaribbeanCruises/caribbean-scenic-st-lucia-pitons-yacht.jpeg";
+import scenicAntiguaImg from "@/assets/RitzCarltonYachtCaribbeanCruises/caribbean-scenic-antigua-harbor-beaches.jpeg";
+import scenicGrenadinesImg from "@/assets/RitzCarltonYachtCaribbeanCruises/caribbean-scenic-grenadines-tobago-cays.jpg";
+
+// 7. Regional Departures (CinematicDestinations)
+import depSanJuanImg from "@/assets/RitzCarltonYachtCaribbeanCruises/caribbean-departure-san-juan-turnaround.jpeg";
+import depBarbadosImg from "@/assets/RitzCarltonYachtCaribbeanCruises/caribbean-departure-barbados-southern-islands.jpeg";
+import depStMaartenImg from "@/assets/RitzCarltonYachtCaribbeanCruises/caribbean-departure-st-maarten-anguilla.jpg";
+
+// 8. Traveler Style Personas (ThreeColumnGrid)
+import personaCouplesImg from "@/assets/RitzCarltonYachtCaribbeanCruises/caribbean-traveler-couples-romance.jpeg";
+import personaHoneymoonImg from "@/assets/RitzCarltonYachtCaribbeanCruises/caribbean-traveler-honeymoon-suite-luxury.jpg";
+import personaFirstTimerImg from "@/assets/RitzCarltonYachtCaribbeanCruises/caribbean-traveler-first-time-yacht-travelers.jpeg";
+import personaBeachImg from "@/assets/RitzCarltonYachtCaribbeanCruises/caribbean-traveler-beach-lovers-coves.jpg";
+import personaNatureActiveImg from "@/assets/RitzCarltonYachtCaribbeanCruises/caribbean-traveler-nature-active-watersports.jpeg";
+import personaFoodCultureImg from "@/assets/RitzCarltonYachtCaribbeanCruises/caribbean-traveler-food-culture-dining.jpg";
+
+// 9. Miami vs San Juan Showdown (ContainedShowdown)
+import showdownMiamiImg from "@/assets/RitzCarltonYachtCaribbeanCruises/showdown-miami-caribbean-departures.jpg";
+import showdownSanJuanImg from "@/assets/RitzCarltonYachtCaribbeanCruises/showdown-san-juan-caribbean-departures.jpg";
+
+// 10. 10-Step How to Choose Roadmap (InteractivePlanningRoadmap)
+import stepVoyageLengthImg from "@/assets/RitzCarltonYachtCaribbeanCruises/roadmap-step-voyage-length.jpg";
+import stepItineraryFormatImg from "@/assets/RitzCarltonYachtCaribbeanCruises/roadmap-step-itinerary-format.jpeg";
+import stepYachtDeploymentImg from "@/assets/RitzCarltonYachtCaribbeanCruises/roadmap-step-yacht-deployment-ilma.jpeg";
+import stepSuiteSelectionImg from "@/assets/RitzCarltonYachtCaribbeanCruises/roadmap-step-suite-selection.jpg";
+import stepVacationBudgetImg from "@/assets/RitzCarltonYachtCaribbeanCruises/roadmap-step-vacation-budget.jpeg";
+import stepShoreExcursionsImg from "@/assets/RitzCarltonYachtCaribbeanCruises/roadmap-step-shore-excursions.jpeg";
+import stepMiamiHotelStayImg from "@/assets/RitzCarltonYachtCaribbeanCruises/roadmap-step-miami-hotel-stay.jpg";
+import stepFlightLogisticsImg from "@/assets/RitzCarltonYachtCaribbeanCruises/roadmap-step-flight-logistics.jpeg";
+import stepDiningSpaImg from "@/assets/RitzCarltonYachtCaribbeanCruises/roadmap-step-dining-spa-reservations.jpg";
+import stepAdvisorConsultationImg from "@/assets/RitzCarltonYachtCaribbeanCruises/roadmap-step-advisor-consultation.jpg";
+
+// 11. Advisor Bento Grid (BentoGlassmorphismGrid)
+import bentoRitzImg from "@/assets/RitzCarltonYachtCaribbeanCruises/bento-ritz-carlton-yacht.jpeg";
+import bentoOtherYachtsImg from "@/assets/RitzCarltonYachtCaribbeanCruises/bento-other-luxury-yachts.jpeg";
+import bentoSmallShipImg from "@/assets/RitzCarltonYachtCaribbeanCruises/bento-luxury-small-ship.jpeg";
+import bentoRiverImg from "@/assets/RitzCarltonYachtCaribbeanCruises/bento-river-cruises.jpg";
+import bentoCharterImg from "@/assets/RitzCarltonYachtCaribbeanCruises/bento-private-yacht-charters.jpeg";
+import bentoResortImg from "@/assets/RitzCarltonYachtCaribbeanCruises/bento-luxury-resorts.jpg";
+import bentoLandImg from "@/assets/RitzCarltonYachtCaribbeanCruises/bento-land-custom-itineraries.jpeg";
+
+
+// 13. Final Bottom CTA Background (CenterCTA)
+import ctaBgImg from "@/assets/RitzCarltonYachtCaribbeanCruises/ritz-carlton-yacht-caribbean-cta-background.jpg";
 
 const RitzCarltonYachtCaribbeanCruises = () => {
   // 1. Data mapping for Executive Narrative Intro (PremiumIntro)
@@ -46,71 +106,217 @@ const RitzCarltonYachtCaribbeanCruises = () => {
   ];
 
   // 2. Data mapping for Part 1 Destinations (ThreeColumnGrid)
-  const destinationsPartOneItems = pageData.destinationsPartOne.cards.map((card) => ({
+  const destPartOneImages = [destBahamasImg, destStBarthsImg, destVirginIslandsImg];
+  const destinationsPartOneItems = pageData.destinationsPartOne.cards.map((card, idx) => ({
     title: card.title,
     category: card.category,
-    image: null,
+    image: destPartOneImages[idx % destPartOneImages.length],
+    placeholderLabel: card.title,
     description: card.description,
     features: card.features,
     highlight: card.highlight,
   }));
 
-  // 3. Data mapping for British Virgin Islands (ThreeColumnGrid)
-  const bviItems = pageData.bviItineraries.cards.map((card) => ({
+  // 3. Data mapping for British Virgin Islands (DestinationFlipCards)
+  const bviImages = [bviJostImg, bviVirginGordaImg, bviNormanImg];
+  const bviItems = pageData.bviItineraries.cards.map((card, idx) => ({
     title: card.title,
     category: card.category,
-    image: null,
+    image: bviImages[idx % bviImages.length],
     description: card.description,
     features: card.features,
     highlight: card.highlight,
   }));
 
   // 4. Data mapping for Scenic Landscapes & Southern Gems (ThreeColumnGrid)
-  const scenicItems = pageData.scenicDestinations.cards.map((card) => ({
+  const scenicImages = [scenicStLuciaImg, scenicAntiguaImg, scenicGrenadinesImg];
+  const scenicItems = pageData.scenicDestinations.cards.map((card, idx) => ({
     title: card.title,
     category: card.category,
-    image: null,
+    image: scenicImages[idx % scenicImages.length],
+    placeholderLabel: card.title,
     description: card.description,
     features: card.features,
     highlight: card.highlight,
   }));
 
-  // 5. Data mapping for Departure Hubs & Open-Jaw Routes (ThreeColumnGrid)
-  const departureItems = pageData.departureRoutes.cards.map((card) => ({
+  // 5. Data mapping for Departure Hubs & Open-Jaw Routes (CinematicDestinations)
+  const departureImages = [depSanJuanImg, depBarbadosImg, depStMaartenImg];
+  const departureItems = pageData.departureRoutes.cards.map((card, idx) => ({
     title: card.title,
     category: card.category,
-    image: null,
+    image: departureImages[idx % departureImages.length],
     description: card.description,
     features: card.features,
     highlight: card.highlight,
   }));
 
   // 6. Data mapping for Traveler Style Personas (ThreeColumnGrid)
-  const personaItems = pageData.travelerPersonas.cards.map((card) => ({
+  const personaImages = [
+    personaCouplesImg,
+    personaHoneymoonImg,
+    personaFirstTimerImg,
+    personaBeachImg,
+    personaNatureActiveImg,
+    personaFoodCultureImg,
+  ];
+  const personaItems = pageData.travelerPersonas.cards.map((card, idx) => ({
     title: card.title,
     category: card.category,
-    image: null,
+    image: personaImages[idx % personaImages.length],
+    placeholderLabel: card.title,
     description: card.description,
     features: card.features,
     highlight: card.highlight,
   }));
 
   // 7. Data mapping for 10-Step Decision Roadmap (InteractivePlanningRoadmap)
-  const roadmapSteps = pageData.howToChooseRoadmap.steps.map((step) => ({
+  const roadmapImages = [
+    stepVoyageLengthImg,
+    stepItineraryFormatImg,
+    stepYachtDeploymentImg,
+    stepSuiteSelectionImg,
+    stepVacationBudgetImg,
+    stepShoreExcursionsImg,
+    stepMiamiHotelStayImg,
+    stepFlightLogisticsImg,
+    stepDiningSpaImg,
+    stepAdvisorConsultationImg,
+  ];
+  const roadmapSteps = pageData.howToChooseRoadmap.steps.map((step, idx) => ({
     timeframe: step.timeframe,
     title: step.title,
     description: step.description,
-    image: null,
+    image: roadmapImages[idx % roadmapImages.length],
   }));
 
-  // 8. Data mapping for Hub Resources (InteractivePillarHubGrid)
-  const hubItems = pageData.hubResources.map((res) => ({
-    title: res.title,
-    category: res.category,
-    description: res.description,
-    mainUrl: res.link,
-    link: res.link,
+  // 8. Data mapping for Advisor Bento Comparison Grid (BentoGlassmorphismGrid)
+  const bentoImages = [
+    bentoRitzImg,
+    bentoOtherYachtsImg,
+    bentoSmallShipImg,
+    bentoRiverImg,
+    bentoCharterImg,
+    bentoResortImg,
+    bentoLandImg,
+  ];
+  const advisorBentoItems = pageData.advisorValue.bentoItems.map((item, idx) => ({
+    ...item,
+    image: bentoImages[idx % bentoImages.length],
   }));
+
+  
+  // 10. Comprehensive JSON-LD Schema (matching RitzCarltonYachtCollectionCost.jsx structure)
+  const jsonLdSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-caribbean-cruises/#webpage",
+        "url": "https://www.tripsandships.com/ritz-carlton-yacht-caribbean-cruises",
+        "name": pageData.seo.title,
+        "headline": pageData.seo.title,
+        "description": pageData.seo.metaDescription,
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/assets/RitzCarltonYachtCaribbeanCruises/ritz-carlton-yacht-caribbean-cruises-hero.jpeg",
+          "caption": pageData.seo.title,
+        },
+        "image": "https://www.tripsandships.com/assets/RitzCarltonYachtCaribbeanCruises/ritz-carlton-yacht-caribbean-cruises-hero.jpeg",
+        "author": {
+          "@id": "https://www.tripsandships.com/about-angela-hughes/#person",
+        },
+        "publisher": {
+          "@id": "https://www.tripsandships.com/#organization",
+        },
+        "isPartOf": {
+          "@id": "https://www.tripsandships.com/#website",
+        },
+        "breadcrumb": {
+          "@id": "https://www.tripsandships.com/ritz-carlton-yacht-caribbean-cruises/#breadcrumb",
+        },
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.tripsandships.com/#organization",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/",
+        "founder": {
+          "@id": "https://www.tripsandships.com/about-angela-hughes/#person",
+        },
+      },
+      {
+        "@type": "TravelAgency",
+        "@id": "https://www.tripsandships.com/#travelagency",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/",
+        "parentOrganization": {
+          "@id": "https://www.tripsandships.com/#organization",
+        },
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.tripsandships.com/about-angela-hughes/#person",
+        "name": "Angela Hughes",
+        "jobTitle": "CEO of Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/about-angela-hughes",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/assets/Angela_Hughes.jpg",
+          "caption": "Angela Hughes - Luxury Travel Expert",
+        },
+        "description": "Angela Hughes is a luxury travel expert, CEO of Trips & Ships Luxury Travel, founder of Luxury Travel University and an experienced luxury travel industry leader.",
+        "worksFor": {
+          "@id": "https://www.tripsandships.com/#organization",
+        },
+        "knowsAbout": [
+          "Luxury Travel",
+          "Luxury Cruises",
+          "Yacht Cruising",
+          "Luxury Safaris",
+          "Expedition Cruises",
+          "River Cruising",
+          "Premium Travel",
+        ],
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-caribbean-cruises/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.tripsandships.com/",
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ritz-Carlton Yacht Collection",
+            "item": "https://www.tripsandships.com/ritz-carlton-yacht-collection",
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Ritz-Carlton Yacht Caribbean Cruises",
+            "item": "https://www.tripsandships.com/ritz-carlton-yacht-caribbean-cruises",
+          },
+        ],
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-caribbean-cruises/#faq",
+        "mainEntity": pageData.faqs.map((faq) => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer,
+          },
+        })),
+      },
+    ],
+  };
 
   return (
     <div className="min-h-screen bg-slate-50 text-navy-950">
@@ -119,16 +325,19 @@ const RitzCarltonYachtCaribbeanCruises = () => {
         <title>{pageData.seo.title}</title>
         <meta name="title" content={pageData.seo.metaTitle} />
         <meta name="description" content={pageData.seo.metaDescription} />
+        <meta name="keywords" content={pageData.seo.secondaryKeywords?.join(", ")} />
         <link rel="canonical" href={pageData.seo.canonicalUrl} />
-        <meta property="og:title" content={pageData.seo.title} />
-        <meta property="og:description" content={pageData.seo.metaDescription} />
-        <meta property="og:url" content={pageData.seo.canonicalUrl} />
         <meta property="og:type" content="article" />
+        <meta property="og:title" content={pageData.seo.ogTitle || pageData.seo.title} />
+        <meta property="og:description" content={pageData.seo.ogDescription || pageData.seo.metaDescription} />
+        <meta property="og:url" content={pageData.seo.canonicalUrl} />
+        <meta property="og:image" content="https://www.tripsandships.com/assets/RitzCarltonYachtCaribbeanCruises/ritz-carlton-yacht-caribbean-cruises-hero.jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={pageData.seo.title} />
-        <meta name="twitter:description" content={pageData.seo.metaDescription} />
+        <meta name="twitter:title" content={pageData.seo.ogTitle || pageData.seo.title} />
+        <meta name="twitter:description" content={pageData.seo.ogDescription || pageData.seo.metaDescription} />
+        <meta name="twitter:image" content="https://www.tripsandships.com/assets/RitzCarltonYachtCaribbeanCruises/ritz-carlton-yacht-caribbean-cruises-hero.jpeg" />
         <script type="application/ld+json">
-          {JSON.stringify(pageData.schema)}
+          {JSON.stringify(jsonLdSchema)}
         </script>
       </Helmet>
 
@@ -145,7 +354,7 @@ const RitzCarltonYachtCaribbeanCruises = () => {
         primaryCtaLink="/contact"
         secondaryCtaText="Explore Itineraries"
         secondaryCtaLink="#quick-answer-table"
-        // bgImage={heroCaribbeanImg}
+        backgroundImage={heroBgImg}
       />
 
       {/* 4. Executive Narrative & Planning Criteria (PremiumIntro) */}
@@ -153,6 +362,8 @@ const RitzCarltonYachtCaribbeanCruises = () => {
         <PremiumIntro
           title="Ritz-Carlton Yacht Caribbean Cruises: Best Itineraries and When to Go"
           sections={introSections}
+          image1={introArchImg}
+          image2={introInsetImg}
           highlightQuote="Choosing the right itinerary is about more than picking the longest cruise or the most famous island—it is about matching the voyage cadence to your travel lifestyle."
         />
       </div>
@@ -168,12 +379,22 @@ const RitzCarltonYachtCaribbeanCruises = () => {
         />
       </div>
 
+      {/* ─── Video Feature Section ─── */}
+      <VideoEmbed
+        data={{
+          youtubeId: "PnttCkVBqbs",
+          title: "Sailing the Caribbean with The Ritz-Carlton Yacht Collection",
+          description: "Watch intimate Caribbean yachting come to life, from secluded BVI coves to iconic St. Barths harbors."
+        }}
+      />
+
       {/* 6. Best Time to Go & Seasonal Overview (EditorialFeatureShowcase) */}
       <div id="when-to-go">
         <EditorialFeatureShowcase
           title={pageData.bestTimeOverview.title}
           subtitle={pageData.bestTimeOverview.subtitle}
           features={pageData.bestTimeOverview.features}
+          image={bestTimeImg}
           bgClass="bg-white"
         />
       </div>
@@ -226,6 +447,7 @@ const RitzCarltonYachtCaribbeanCruises = () => {
       </div>
 
       {/* 12. Which Itinerary Is Right for You by Duration (BrandPillarsShowcase) */}
+      
       <div id="itinerary-duration-guide">
         <BrandPillarsShowcase data={pageData.durationShowcase} />
       </div>
@@ -263,7 +485,7 @@ const RitzCarltonYachtCaribbeanCruises = () => {
         />
       </div>
 
-      {/* 15. Inclusions vs. Shore Excursion Realities (CostValueAnalysisCards) */}
+      {/* 16. Inclusions vs. Shore Excursion Realities (CostValueAnalysisCards) */}
       <div id="inclusions-and-excursions">
         <CostValueAnalysisCards
           title={pageData.inclusionsAndExcursions.title}
@@ -275,7 +497,7 @@ const RitzCarltonYachtCaribbeanCruises = () => {
         />
       </div>
 
-      {/* 16. How Long Should a Ritz-Carlton Caribbean Cruise Be? (GenericChecklistCards) */}
+      {/* 17. How Long Should a Ritz-Carlton Caribbean Cruise Be? (GenericChecklistCards) */}
       <div id="voyage-durations">
         <GenericChecklistCards
           title={pageData.voyageDurationsBreakdown.title}
@@ -284,16 +506,22 @@ const RitzCarltonYachtCaribbeanCruises = () => {
         />
       </div>
 
-      {/* 17. Miami vs. San Juan Departure Showdown (ContainedShowdown) */}
+      {/* 18. Miami vs. San Juan Departure Showdown (ContainedShowdown) */}
       <div id="miami-vs-san-juan">
         <ContainedShowdown
           title={pageData.miamiVsSanJuanShowdown.title}
-          brandA={pageData.miamiVsSanJuanShowdown.brandA}
-          brandB={pageData.miamiVsSanJuanShowdown.brandB}
+          brandA={{
+            ...pageData.miamiVsSanJuanShowdown.brandA,
+            image: showdownMiamiImg,
+          }}
+          brandB={{
+            ...pageData.miamiVsSanJuanShowdown.brandB,
+            image: showdownSanJuanImg,
+          }}
         />
       </div>
 
-      {/* 17. 10-Step How to Choose Roadmap (InteractivePlanningRoadmap) */}
+      {/* 19. 10-Step How to Choose Roadmap (InteractivePlanningRoadmap) */}
       <div id="how-to-choose-roadmap">
         <InteractivePlanningRoadmap
           title={pageData.howToChooseRoadmap.title}
@@ -302,7 +530,7 @@ const RitzCarltonYachtCaribbeanCruises = () => {
         />
       </div>
 
-      {/* 18. Ritz-Carlton Yacht vs. Caribbean Resort (LuxuryCruiseComparisonTable) */}
+      {/* 20. Ritz-Carlton Yacht vs. Caribbean Resort (LuxuryCruiseComparisonTable) */}
       <div id="yacht-vs-resort">
         <LuxuryCruiseComparisonTable
           title={pageData.yachtVsResortTable.title}
@@ -313,12 +541,12 @@ const RitzCarltonYachtCaribbeanCruises = () => {
         />
       </div>
 
-      {/* 19. Why Work With a Luxury Travel Advisor (BentoGlassmorphismGrid) */}
+      {/* 21. Why Work With a Luxury Travel Advisor (BentoGlassmorphismGrid) */}
       <div id="advisor-value" className="relative bg-navy-950">
         <BentoGlassmorphismGrid
           title={pageData.advisorValue.title}
           subtitle={pageData.advisorValue.subtitle}
-          bentoItems={pageData.advisorValue.bentoItems}
+          bentoItems={advisorBentoItems}
         />
         {pageData.advisorValue.takeaway && (
           <div className="max-w-4xl mx-auto px-6 -mt-10 pb-20 relative z-20">
@@ -334,7 +562,7 @@ const RitzCarltonYachtCaribbeanCruises = () => {
         )}
       </div>
 
-      {/* 20. Angela Hughes Credentials & Expertise (ExpertCredentials) */}
+      {/* 22. Angela Hughes Credentials & Expertise (ExpertCredentials) */}
       <ExpertCredentials
         name={pageData.angelaPerspective.name}
         title={pageData.angelaPerspective.title}
@@ -344,7 +572,7 @@ const RitzCarltonYachtCaribbeanCruises = () => {
         text={pageData.angelaPerspective.text}
       />
 
-      {/* 21. Comprehensive 18 FAQs (FAQAccordion) */}
+      {/* 23. Comprehensive 18 FAQs (FAQAccordion) */}
       <div id="faqs">
         <FAQAccordion
           data={{
@@ -355,14 +583,8 @@ const RitzCarltonYachtCaribbeanCruises = () => {
         />
       </div>
 
-      {/* 22. Interactive Resource Pillar Hub */}
-      <InteractivePillarHubGrid
-        title="Explore More Ritz-Carlton Yacht Guides"
-        subtitle="Deepen your luxury yacht knowledge with suite guides, shore excursion pricing, dress codes, and fleet comparisons."
-        items={hubItems}
-      />
-
-      {/* 23. Final Takeaway Narrative Summary */}
+      
+      {/* 25. Final Takeaway Narrative Summary */}
       <section className="w-full py-16 bg-slate-50 border-t border-slate-200">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="font-display text-3xl md:text-4xl text-navy-950 mb-6">
@@ -379,12 +601,13 @@ const RitzCarltonYachtCaribbeanCruises = () => {
         </div>
       </section>
 
-      {/* 24. Final Bottom CTA */}
+      {/* 26. Final Bottom CTA */}
       <CenterCTA
         title="Ready to Plan Your Ritz-Carlton Caribbean Voyage?"
         subtitle="Connect with certified luxury yacht specialist Angela Hughes to secure locked-in rates, exclusive Virtuoso amenities, and personalized Caribbean trip curation."
         buttonText="Speak with a Yacht Specialist"
         buttonLink="/contact"
+        image={ctaBgImg}
         theme="dark"
       />
     </div>

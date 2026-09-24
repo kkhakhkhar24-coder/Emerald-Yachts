@@ -19,32 +19,76 @@ import AuthorityBox from "@/components/ui/AuthorityBox";
 import CulinaryMenuShowcase from "@/components/ui/CulinaryMenuShowcase";
 import CostValueAnalysisCards from "@/components/ui/CostValueAnalysisCards";
 import InteractivePlanningRoadmap from "@/components/ui/InteractivePlanningRoadmap";
-import InteractivePillarHubGrid from "@/components/ui/InteractivePillarHubGrid";
 import BentoGlassmorphismGrid from "@/components/ui/BentoGlassmorphismGrid";
 import ExpertCredentials from "@/components/ui/ExpertCredentials";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import CenterCTA from "@/components/ui/CenterCTA";
+import VideoEmbed from "@/components/ui/VideoEmbed";
 
-// Images
+// Author & Profile Images
 import angelaImage from "@/assets/Media (2).jpg";
-// Commented-out image imports as requested:
-// import heroYachtImg from "@/assets/images/ritz-yacht-lifestyle.jpg";
-// import relaxationLeisureImg from "@/assets/images/ritz-yacht-leisure.jpg";
-// import wellnessPoolImg from "@/assets/images/ritz-yacht-wellness.jpg";
-// import independentPortImg from "@/assets/images/ritz-yacht-port.jpg";
-// import diningRestaurantImg from "@/assets/images/ritz-yacht-dining.jpg";
-// import inSuiteDiningImg from "@/assets/images/ritz-yacht-insuite.jpg";
-// import premiumBeveragesImg from "@/assets/images/ritz-yacht-beverages.jpg";
-// import specialtySeaImg from "@/assets/images/ritz-yacht-sea.jpg";
-// import couplesRomanceImg from "@/assets/images/ritz-yacht-couples.jpg";
-// import honeymoonImg from "@/assets/images/ritz-yacht-honeymoon.jpg";
-// import familyYachtImg from "@/assets/images/ritz-yacht-families.jpg";
-// import soloYachtImg from "@/assets/images/ritz-yacht-solo.jpg";
-// import hotelVsYachtHotelImg from "@/assets/images/ritz-hotel-resort.jpg";
-// import hotelVsYachtSeaImg from "@/assets/images/ritz-yacht-sea.jpg";
-// import decisionRoadmapImg from "@/assets/images/ritz-decision-roadmap.jpg";
-// import crowdsAndScaleImg from "@/assets/images/ritz-yacht-crowds-scale.jpg";
-// import advisorConsultationImg from "@/assets/images/ritz-advisor-consultation.jpg";
+
+// Assets from assets/RitzCarltonYachtForNonCruisers (SEO Optimized)
+// 1. Hero Background Image (intimate superyacht against coastal scenery)
+import heroBgImg from "@/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-non-cruisers-luxury-yachting-hero.jpeg";
+
+// 2. Executive Narrative Intro (PremiumIntro)
+import introArchImg from "@/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-relaxed-embarkation-no-crowds.jpeg";
+import introInsetImg from "@/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-afternoon-tea-lifestyle.jpeg";
+
+// 3. Crowds & Scale Breakdown (EditorialFeatureShowcase)
+import crowdsAndScaleImg from "@/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-uncrowded-pool-deck.jpg";
+
+// 3B. Traditional Cruise Comparison (AsymmetricStoryIntro - Section 5)
+import traditionalComparisonMainImg from "@/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-traditional-cruise-comparison-sorrento.jpeg";
+import traditionalComparisonScaleImg from "@/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-superyacht-vessel-scale.jpeg";
+
+// 4. Hotel vs. Yacht Philosophy (DualPhilosophyShowcase)
+import hotelResortSuiteImg from "@/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-owners-suite-resort-terrace.jpeg";
+import yachtSeaMotionImg from "@/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-sailing-open-ocean-motion.jpeg";
+
+// 5. Relaxation & Activity Freedom (ThreeColumnGrid)
+import relaxationSuiteImg from "@/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-private-suite-terrace-leisure.jpg";
+import relaxationWellnessImg from "@/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-spa-wellness-terrace.jpg";
+import relaxationDestinationImg from "@/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-marina-watersports-destination.jpeg";
+
+// 6. Dining In-Depth (CulinaryMenuShowcase)
+import diningRestaurantsImg from "@/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-mistral-open-seating-dining.jpg";
+import diningInSuiteImg from "@/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-24-hour-in-suite-dining.jpeg";
+import diningBeveragesImg from "@/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-living-room-premium-beverages-bar.jpg";
+import diningSpecialtyImg from "@/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-memori-specialty-fine-dining.jpg";
+
+// 7. Traveler Personas (ThreeColumnGrid)
+import personaCouplesImg from "@/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-couples-romance-caribbean.jpeg";
+import personaHoneymoonImg from "@/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-loft-suite-honeymoon-luxury.jpg";
+import personaFamilyImg from "@/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-family-watersports-platform.jpeg";
+import personaSoloImg from "@/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-observation-terrace-solo-traveler.jpg";
+
+// 8. Decision Framework Roadmap (InteractivePlanningRoadmap)
+import roadmapCrowdsImg from "@/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-pool-house-small-crowds-decision.jpg";
+import roadmapFormalImg from "@/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-relaxed-dress-code-sophisticated.jpeg";
+import roadmapEntertainmentImg from "@/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-living-room-premium-beverages-bar.jpg";
+import roadmapDiningImg from "@/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-mistral-flexible-open-seating.jpg";
+import roadmapOceanImg from "@/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-marina-sea-access-calm-waters.jpg";
+import roadmapDestinationsImg from "@/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-kotor-multiple-destination-ports.jpg";
+import roadmapHotelImg from "@/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-grand-suite-luxury-hotel-comfort.jpg";
+
+// 8B. First Cruise & Brand Distinction (AsymmetricStoryIntro - Section 18)
+import firstCruiseSuiteImg from "@/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-view-suite-first-time-cruiser.jpg";
+import firstCruiseLifestyleImg from "@/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-lifestyle-drone-destination.jpeg";
+
+// 9. Why Work With a Luxury Travel Advisor (BentoGlassmorphismGrid)
+import bentoRitzYachtImg from "@/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-collection-advisor-travel-style.jpeg";
+import bentoMegaShipImg from "@/assets/RitzCarltonYachtForNonCruisers/traditional-mega-cruise-ship-comparison.jpg";
+import bentoSmallShipImg from "@/assets/RitzCarltonYachtForNonCruisers/luxury-small-ship-cruise-comparison.jpg";
+import bentoRiverImg from "@/assets/RitzCarltonYachtForNonCruisers/river-cruise-destination-comparison.jpg";
+import bentoCharterImg from "@/assets/RitzCarltonYachtForNonCruisers/private-yacht-charter-comparison.jpeg";
+import bentoResortImg from "@/assets/RitzCarltonYachtForNonCruisers/luxury-resort-vacation-comparison.jpg";
+import bentoLandImg from "@/assets/RitzCarltonYachtForNonCruisers/land-based-custom-itinerary-comparison.jpeg";
+
+
+// 11. Final CTA Image (CenterCTA)
+import ctaBgImg from "@/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-for-non-cruisers-cta-background.jpg";
 
 const RitzCarltonYachtForNonCruisers = () => {
   // 1. Data mapping for Executive Narrative Intro (PremiumIntro)
@@ -63,34 +107,32 @@ const RitzCarltonYachtForNonCruisers = () => {
   };
 
   // 3. Data mapping for Relaxation & Activity Categories (ThreeColumnGrid with Images)
-  const relaxationItems = pageData.relaxationAndActivities.items.map((item) => ({
+  const relaxationImages = [relaxationSuiteImg, relaxationWellnessImg, relaxationDestinationImg];
+  const relaxationItems = pageData.relaxationAndActivities.items.map((item, idx) => ({
     title: item.title,
     category: item.category,
-    image: null, // item.number === "01" ? relaxationLeisureImg : item.number === "02" ? wellnessPoolImg : independentPortImg,
+    image: relaxationImages[idx % relaxationImages.length],
+    placeholderLabel: item.title,
     description: item.description,
     features: item.features,
     highlight: item.highlight,
   }));
 
-  // 4. Data mapping for Dining Deep Dive (CabinComparisonGallery with Images)
-  const diningGalleryItems = pageData.diningDeepDive.items.map((item) => ({
-    name: item.name,
-    price: item.price,
-    description: item.description,
-    features: item.features,
-    image: null, // item.name.includes("Multiple") ? diningRestaurantImg : item.name.includes("24-Hour") ? inSuiteDiningImg : item.name.includes("Premium") ? premiumBeveragesImg : specialtySeaImg,
-  }));
-
-  const diningExpertRecommendation = {
-    title: pageData.diningDeepDive.takeaway.title,
-    content: pageData.diningDeepDive.takeaway.content,
-  };
+  // 4. Dining Deep Dive Images (CulinaryMenuShowcase)
+  const diningImages = [
+    diningRestaurantsImg,
+    diningInSuiteImg,
+    diningBeveragesImg,
+    diningSpecialtyImg,
+  ];
 
   // 5. Data mapping for Traveler Personas (ThreeColumnGrid with Images)
-  const personaItems = pageData.travelerPersonas.cards.map((card) => ({
+  const personaImages = [personaCouplesImg, personaHoneymoonImg, personaFamilyImg, personaSoloImg];
+  const personaItems = pageData.travelerPersonas.cards.map((card, idx) => ({
     title: card.title,
     category: card.category,
-    image: null, // card.category.includes("Romance") ? couplesRomanceImg : card.category.includes("Honeymoon") ? honeymoonImg : card.category.includes("Family") ? familyYachtImg : soloYachtImg,
+    image: personaImages[idx % personaImages.length],
+    placeholderLabel: card.title,
     description: card.description,
     features: card.features,
     highlight: card.highlight,
@@ -104,11 +146,20 @@ const RitzCarltonYachtForNonCruisers = () => {
   };
 
   // 7. Data mapping for Decision Framework (InteractivePlanningRoadmap)
-  const decisionRoadmapSteps = pageData.decisionFrameworkRoadmap.steps.map((step) => ({
+  const roadmapImages = [
+    roadmapCrowdsImg,
+    roadmapFormalImg,
+    roadmapEntertainmentImg,
+    roadmapDiningImg,
+    roadmapOceanImg,
+    roadmapDestinationsImg,
+    roadmapHotelImg,
+  ];
+  const decisionRoadmapSteps = pageData.decisionFrameworkRoadmap.steps.map((step, idx) => ({
     timeframe: step.timeframe,
     title: step.title,
     description: step.description,
-    image: null, // decisionRoadmapImg,
+    image: roadmapImages[idx % roadmapImages.length],
   }));
 
   // 8. Data mapping for FAQs (FAQAccordion)
@@ -117,14 +168,133 @@ const RitzCarltonYachtForNonCruisers = () => {
     answer: faq.answer,
   }));
 
-  // 10. Data mapping for Hub Resources (InteractivePillarHubGrid)
-  const hubItems = pageData.hubResources.map((res) => ({
-    title: res.title,
-    category: res.category,
-    description: res.description,
-    mainUrl: res.link,
-    link: res.link,
+  // 9. Data mapping for Advisor Value Bento Grid (BentoGlassmorphismGrid)
+  const bentoImages = [
+    bentoRitzYachtImg,
+    bentoMegaShipImg,
+    bentoSmallShipImg,
+    bentoRiverImg,
+    bentoCharterImg,
+    bentoResortImg,
+    bentoLandImg,
+  ];
+  const advisorBentoItems = pageData.advisorValue.bentoItems.map((item, idx) => ({
+    ...item,
+    image: bentoImages[idx % bentoImages.length],
   }));
+
+  
+  // 11. Comprehensive JSON-LD Schema (matching RitzCarltonYachtCollectionCost.jsx structure)
+  const jsonLdSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-for-people-who-dont-like-cruises/#webpage",
+        "url": "https://www.tripsandships.com/ritz-carlton-yacht-collection-for-people-who-dont-like-cruises",
+        "name": pageData.seo.title,
+        "headline": pageData.seo.h1 || pageData.seo.title,
+        "description": pageData.seo.metaDescription,
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-non-cruisers-luxury-yachting-hero.jpeg",
+          "caption": pageData.seo.title
+        },
+        "image": "https://www.tripsandships.com/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-non-cruisers-luxury-yachting-hero.jpeg",
+        "author": {
+          "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
+        },
+        "publisher": {
+          "@id": "https://www.tripsandships.com/#organization"
+        },
+        "isPartOf": {
+          "@id": "https://www.tripsandships.com/#website"
+        },
+        "breadcrumb": {
+          "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-for-people-who-dont-like-cruises/#breadcrumb"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.tripsandships.com/#organization",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/",
+        "founder": {
+          "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
+        }
+      },
+      {
+        "@type": "TravelAgency",
+        "@id": "https://www.tripsandships.com/#travelagency",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/",
+        "parentOrganization": {
+          "@id": "https://www.tripsandships.com/#organization"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.tripsandships.com/about-angela-hughes/#person",
+        "name": "Angela Hughes",
+        "jobTitle": "CEO of Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/about-angela-hughes",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/assets/Angela_Hughes.jpg",
+          "caption": "Angela Hughes - Luxury Travel Expert"
+        },
+        "description": "Angela Hughes is a luxury travel expert, CEO of Trips & Ships Luxury Travel, founder of Luxury Travel University and an experienced luxury travel industry leader.",
+        "worksFor": {
+          "@id": "https://www.tripsandships.com/#organization"
+        },
+        "knowsAbout": [
+          "Luxury Travel",
+          "Luxury Cruises",
+          "Yacht Cruising",
+          "Luxury Safaris",
+          "Expedition Cruises",
+          "River Cruising",
+          "Premium Travel"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-for-people-who-dont-like-cruises/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.tripsandships.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ritz-Carlton Yacht Collection",
+            "item": "https://www.tripsandships.com/ritz-carlton-yacht-collection"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Ritz-Carlton Yacht Collection for Non-Cruisers",
+            "item": "https://www.tripsandships.com/ritz-carlton-yacht-collection-for-people-who-dont-like-cruises"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.tripsandships.com/ritz-carlton-yacht-collection-for-people-who-dont-like-cruises/#faq",
+        "mainEntity": pageData.faqs.map((faq) => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+          }
+        }))
+      }
+    ]
+  };
 
   return (
     <div className="min-h-screen bg-slate-50 text-navy-950">
@@ -132,16 +302,19 @@ const RitzCarltonYachtForNonCruisers = () => {
         <title>{pageData.seo.title}</title>
         <meta name="title" content={pageData.seo.metaTitle} />
         <meta name="description" content={pageData.seo.metaDescription} />
-        <link rel="canonical" href={pageData.seo.canonicalUrl} />
-        <meta property="og:title" content={pageData.seo.title} />
-        <meta property="og:description" content={pageData.seo.metaDescription} />
-        <meta property="og:url" content={pageData.seo.canonicalUrl} />
+        <meta name="keywords" content={pageData.seo.primaryKeywords?.join(", ")} />
         <meta property="og:type" content="article" />
+        <meta property="og:title" content={pageData.seo.ogTitle || pageData.seo.title} />
+        <meta property="og:description" content={pageData.seo.ogDescription || pageData.seo.metaDescription} />
+        <meta property="og:url" content={pageData.seo.canonicalUrl} />
+        <meta property="og:image" content="https://www.tripsandships.com/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-non-cruisers-luxury-yachting-hero.jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={pageData.seo.title} />
-        <meta name="twitter:description" content={pageData.seo.metaDescription} />
+        <meta name="twitter:title" content={pageData.seo.ogTitle || pageData.seo.title} />
+        <meta name="twitter:description" content={pageData.seo.ogDescription || pageData.seo.metaDescription} />
+        <meta name="twitter:image" content="https://www.tripsandships.com/assets/RitzCarltonYachtForNonCruisers/ritz-carlton-yacht-non-cruisers-luxury-yachting-hero.jpeg" />
+        <link rel="canonical" href={pageData.seo.canonicalUrl} />
         <script type="application/ld+json">
-          {JSON.stringify(pageData.schema)}
+          {JSON.stringify(jsonLdSchema)}
         </script>
       </Helmet>
 
@@ -154,6 +327,7 @@ const RitzCarltonYachtForNonCruisers = () => {
         title={pageData.hero.title}
         subtitle={pageData.hero.subtitle}
         description={pageData.hero.description}
+        backgroundImage={heroBgImg}
         primaryCtaText={pageData.hero.primaryCtaText}
         primaryCtaLink={pageData.hero.primaryCtaLink}
         secondaryCtaText={pageData.hero.secondaryCtaText}
@@ -168,6 +342,10 @@ const RitzCarltonYachtForNonCruisers = () => {
           highlight={pageData.executivePhilosophy.highlight}
           quote={pageData.executivePhilosophy.quote}
           sections={introSections}
+          image1={introArchImg}
+          image2={introInsetImg}
+          alt1="Ritz-Carlton Yacht Collection relaxed embarkation"
+          alt2="Luxury yacht lifestyle"
           watermarkText="NON-CRUISER"
         />
       </div>
@@ -186,6 +364,15 @@ const RitzCarltonYachtForNonCruisers = () => {
         <BrandPillarsShowcase data={whyNonCruisersPillars} />
       </div>
 
+      {/* ─── Video Feature Section ─── */}
+      <VideoEmbed
+        data={{
+          youtubeId: "lwQWPPM-hlE",
+          title: "Experience The Ritz-Carlton Yacht Collection",
+          description: "Discover how intimate yacht design, uncrowded open decks, and relaxed luxury redefine cruising for travelers who avoid traditional mega-ships."
+        }}
+      />
+
       {/* 5. Is Ritz-Carlton Yacht Like a Traditional Cruise? (AsymmetricStoryIntro) */}
       <div id="traditional-cruise-distinction">
         <AsymmetricStoryIntro
@@ -193,6 +380,8 @@ const RitzCarltonYachtForNonCruisers = () => {
           heading={pageData.traditionalCruiseComparison.title}
           paragraphs={pageData.traditionalCruiseComparison.paragraphs}
           highlights={pageData.traditionalCruiseComparison.features}
+          image1={traditionalComparisonMainImg}
+          image2={traditionalComparisonScaleImg}
         />
       </div>
 
@@ -202,7 +391,7 @@ const RitzCarltonYachtForNonCruisers = () => {
           title={pageData.crowdsAndScale.title}
           subtitle={pageData.crowdsAndScale.subtitle}
           features={pageData.crowdsAndScale.features}
-          // image={crowdsAndScaleImg}
+          image={crowdsAndScaleImg}
           bgClass="bg-white"
         />
       </div>
@@ -211,8 +400,8 @@ const RitzCarltonYachtForNonCruisers = () => {
       <div id="hotel-vs-yacht">
         <DualPhilosophyShowcase
           data={pageData.hotelVsYachtPhilosophy}
-          // imageSailing={hotelVsYachtHotelImg}
-          // imageAllSuite={hotelVsYachtSeaImg}
+          imageSailing={hotelResortSuiteImg}
+          imageAllSuite={yachtSeaMotionImg}
         />
       </div>
 
@@ -250,7 +439,7 @@ const RitzCarltonYachtForNonCruisers = () => {
           title={pageData.diningDeepDive.title}
           subtitle={pageData.diningDeepDive.subtitle}
           items={pageData.diningDeepDive.items}
-          images={[]}
+          images={diningImages}
         />
       </div>
 
@@ -267,6 +456,8 @@ const RitzCarltonYachtForNonCruisers = () => {
       </div>
 
       {/* 13. Excursions & Schedules (GenericChecklistCards) */}
+      
+      {/* Middle Video Feature Section */}
       <div id="excursions-schedules">
         <GenericChecklistCards
           title={pageData.excursionsAndSchedules.title}
@@ -313,6 +504,8 @@ const RitzCarltonYachtForNonCruisers = () => {
           eyebrow={pageData.whatMakesItDifferent.eyebrow}
           heading={pageData.whatMakesItDifferent.title}
           paragraphs={pageData.whatMakesItDifferent.paragraphs}
+          image1={firstCruiseSuiteImg}
+          image2={firstCruiseLifestyleImg}
         />
       </div>
 
@@ -339,7 +532,7 @@ const RitzCarltonYachtForNonCruisers = () => {
         <BentoGlassmorphismGrid
           title={pageData.advisorValue.title}
           subtitle={pageData.advisorValue.subtitle}
-          bentoItems={pageData.advisorValue.bentoItems}
+          bentoItems={advisorBentoItems}
         />
         {pageData.advisorValue.takeaway && (
           <div className="max-w-4xl mx-auto px-6 -mt-10 pb-20 relative z-20">
@@ -376,13 +569,7 @@ const RitzCarltonYachtForNonCruisers = () => {
         />
       </div>
 
-      {/* 24. Interactive Resource Pillar Hub */}
-      <InteractivePillarHubGrid
-        title="Explore More Ritz-Carlton Yacht Resources"
-        subtitle="Deepen your luxury yacht knowledge with suite guides, shore excursion pricing, dress codes, and fleet comparisons."
-        items={hubItems}
-      />
-
+      
       {/* 25. Final Answer Narrative Summary */}
       <section className="w-full py-16 bg-slate-50 border-t border-slate-200">
         <div className="max-w-4xl mx-auto px-6 text-center">
@@ -406,6 +593,7 @@ const RitzCarltonYachtForNonCruisers = () => {
         subtitle="Connect with certified luxury yacht specialist Angela Hughes to compare itineraries, suite categories, and personalized luxury travel options."
         buttonText="Speak with a Yacht Specialist"
         buttonLink="/contact"
+        image={ctaBgImg}
         theme="dark"
       />
     </div>

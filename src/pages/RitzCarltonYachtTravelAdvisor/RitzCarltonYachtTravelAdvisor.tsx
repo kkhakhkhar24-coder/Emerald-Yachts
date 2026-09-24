@@ -20,15 +20,44 @@ import LuxuryCruiseComparisonTable from "@/components/ui/LuxuryCruiseComparisonT
 import ContainedShowdown from "@/components/ui/ContainedShowdown";
 import ExpertCredentials from "@/components/ui/ExpertCredentials";
 import FAQAccordion from "@/components/ui/FAQAccordion";
-import InteractivePillarHubGrid from "@/components/ui/InteractivePillarHubGrid";
 import CenterCTA from "@/components/ui/CenterCTA";
+import VideoEmbed from "@/components/ui/VideoEmbed";
 
 // Media Assets
 import angelaImage from "@/assets/Media (2).jpg";
-// Commented-out image imports as per project conventions:
-// import heroAdvisorImg from "@/assets/images/ritz-travel-advisor-hero.jpg";
-// import ritzYachtFleetImg from "@/assets/images/ritz-yacht-fleet.jpg";
-// import ritzSuiteImg from "@/assets/images/ritz-suite-balcony.jpg";
+
+// Assets strictly from assets/RitzCarltonYachtTravelAdvisor
+// 1. Hero Background Image (Dedicated superyacht luxury voyage curated by advisor)
+import heroAdvisorImg from "@/assets/RitzCarltonYachtTravelAdvisor/ritz-carlton-yacht-travel-advisor-hero.jpg";
+
+// 2. Executive Narrative Intro (PremiumIntro: The Value of an Integrated Luxury Yacht Planning Partner)
+import introArchImg from "@/assets/RitzCarltonYachtTravelAdvisor/ritz-carlton-yacht-integrated-planning-embarkation.jpg";
+import introInsetImg from "@/assets/RitzCarltonYachtTravelAdvisor/ritz-carlton-yacht-luxury-concierge-lifestyle.jpeg";
+
+// 3. What Does a Ritz-Carlton Yacht Travel Advisor Do? (EditorialFeatureShowcase)
+import advisorConsultationImg from "@/assets/RitzCarltonYachtTravelAdvisor/ritz-carlton-yacht-advisor-consultation-planning.jpg";
+
+// 4. Yacht Selection, Suite Strategy & Itinerary Design (ThreeColumnGrid)
+import yachtFleetImg from "@/assets/RitzCarltonYachtTravelAdvisor/ritz-carlton-yacht-fleet-selection-evrima-ilma-luminara.jpg";
+import suiteSelectionImg from "@/assets/RitzCarltonYachtTravelAdvisor/ritz-carlton-yacht-suite-strategy-grand-suite.jpg";
+import itineraryCompareImg from "@/assets/RitzCarltonYachtTravelAdvisor/ritz-carlton-yacht-itinerary-design-destinations.jpeg";
+
+// 5. Marriott STARS Program, Onboard Credit & Waitlist Priority (ThreeColumnGrid)
+import starsProgramImg from "@/assets/RitzCarltonYachtTravelAdvisor/ritz-carlton-yacht-marriott-stars-program-amenities.jpg";
+import onboardCreditImg from "@/assets/RitzCarltonYachtTravelAdvisor/ritz-carlton-yacht-onboard-credit-spa-dining.jpg";
+import waitlistPriorityImg from "@/assets/RitzCarltonYachtTravelAdvisor/ritz-carlton-yacht-waitlist-priority-owners-suite.jpg";
+
+// 6. When Should You Book Through an Advisor vs. Directly? (ContainedShowdown)
+import showdownAdvisorImg from "@/assets/RitzCarltonYachtTravelAdvisor/ritz-carlton-yacht-advisor-booking-multi-piece.jpeg";
+import showdownDirectImg from "@/assets/RitzCarltonYachtTravelAdvisor/ritz-carlton-yacht-booking-direct-simple-trip.jpeg";
+
+// 7. Trips & Ships Value Bento Grid (BentoGlassmorphismGrid)
+import bentoJourneyImg from "@/assets/RitzCarltonYachtTravelAdvisor/ritz-carlton-yacht-travel-advisor-bow-view.jpg";
+import bentoStarsImg from "@/assets/RitzCarltonYachtTravelAdvisor/ritz-carlton-yacht-travel-advisor-pool-deck.jpg";
+import bentoPrePostImg from "@/assets/RitzCarltonYachtTravelAdvisor/ritz-carlton-yacht-travel-advisor-marina-terrace.jpg";
+
+// 9. Final Bottom Center CTA (CenterCTA)
+import ctaBgImg from "@/assets/RitzCarltonYachtTravelAdvisor/ritz-carlton-yacht-travel-advisor-cta-background.jpg";
 
 const RitzCarltonYachtTravelAdvisor = () => {
   // 1. Data mapping for Executive Philosophy (PremiumIntro)
@@ -40,10 +69,12 @@ const RitzCarltonYachtTravelAdvisor = () => {
   ];
 
   // 2. Data mapping for Fleet, Suite & Itinerary Selection (ThreeColumnGrid)
-  const yachtSuiteItems = pageData.yachtSuiteItinerarySelection.cards.map((card) => ({
+  const yachtSuiteImages = [yachtFleetImg, suiteSelectionImg, itineraryCompareImg];
+  const yachtSuiteItems = pageData.yachtSuiteItinerarySelection.cards.map((card, idx) => ({
     title: card.title,
     category: card.category,
-    image: null,
+    image: yachtSuiteImages[idx % yachtSuiteImages.length],
+    placeholderLabel: card.title,
     description: card.description,
     features: card.features,
     highlight: card.highlight,
@@ -67,10 +98,12 @@ const RitzCarltonYachtTravelAdvisor = () => {
   });
 
   // 4. Data mapping for STARS Program, Onboard Credit & Waitlists (ThreeColumnGrid)
-  const starsItems = pageData.starsAndAmenities.cards.map((card) => ({
+  const starsImages = [starsProgramImg, onboardCreditImg, waitlistPriorityImg];
+  const starsItems = pageData.starsAndAmenities.cards.map((card, idx) => ({
     title: card.title,
     category: card.category,
-    image: null,
+    image: starsImages[idx % starsImages.length],
+    placeholderLabel: card.title,
     description: card.description,
     features: card.features,
     highlight: card.highlight,
@@ -90,14 +123,125 @@ const RitzCarltonYachtTravelAdvisor = () => {
     takeaway: card.takeaway,
   }));
 
-  // 7. Data mapping for Hub Resources (InteractivePillarHubGrid)
-  const hubItems = pageData.hubResources.map((res) => ({
-    title: res.title,
-    category: res.category,
-    description: res.description,
-    mainUrl: res.link,
-    link: res.link,
+  // 7. Data mapping for Trips & Ships Value (BentoGlassmorphismGrid)
+  const bentoImages = [bentoJourneyImg, bentoStarsImg, bentoPrePostImg];
+  const bentoItems = pageData.tripsAndShipsValue.bentoItems.map((item, idx) => ({
+    ...item,
+    image: bentoImages[idx % bentoImages.length],
   }));
+
+  
+  // 9. Comprehensive JSON-LD Schema Graph (matching RitzCarltonYachtCollectionCost.jsx)
+  const jsonLdSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": `${pageData.seo.canonicalUrl}#webpage`,
+        "url": pageData.seo.canonicalUrl,
+        "name": pageData.seo.title,
+        "headline": pageData.seo.title,
+        "description": pageData.seo.metaDescription,
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/assets/RitzCarltonYachtTravelAdvisor/ritz-carlton-yacht-travel-advisor-hero.jpg",
+          "caption": pageData.seo.title,
+        },
+        "image": "https://www.tripsandships.com/assets/RitzCarltonYachtTravelAdvisor/LU_2025_Don Riddle_Sorrento Exterior_002.jpg",
+        "author": {
+          "@id": "https://www.tripsandships.com/about-angela-hughes/#person",
+        },
+        "publisher": {
+          "@id": "https://www.tripsandships.com/#organization",
+        },
+        "isPartOf": {
+          "@id": "https://www.tripsandships.com/#website",
+        },
+        "breadcrumb": {
+          "@id": `${pageData.seo.canonicalUrl}#breadcrumb`,
+        },
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.tripsandships.com/#organization",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/",
+        "founder": {
+          "@id": "https://www.tripsandships.com/about-angela-hughes/#person",
+        },
+      },
+      {
+        "@type": "TravelAgency",
+        "@id": "https://www.tripsandships.com/#travelagency",
+        "name": "Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/",
+        "parentOrganization": {
+          "@id": "https://www.tripsandships.com/#organization",
+        },
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.tripsandships.com/about-angela-hughes/#person",
+        "name": "Angela Hughes",
+        "jobTitle": "CEO of Trips & Ships Luxury Travel",
+        "url": "https://www.tripsandships.com/about-angela-hughes",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://www.tripsandships.com/assets/Angela_Hughes.jpg",
+          "caption": "Angela Hughes - Luxury Travel Expert",
+        },
+        "description": "Angela Hughes is a luxury travel expert, CEO of Trips & Ships Luxury Travel, founder of Luxury Travel University and an experienced luxury travel industry leader.",
+        "worksFor": {
+          "@id": "https://www.tripsandships.com/#organization",
+        },
+        "knowsAbout": [
+          "Luxury Travel",
+          "Luxury Cruises",
+          "Yacht Cruising",
+          "Luxury Safaris",
+          "Expedition Cruises",
+          "River Cruising",
+          "Premium Travel",
+        ],
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${pageData.seo.canonicalUrl}#breadcrumb`,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.tripsandships.com/",
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ritz-Carlton Yacht Collection",
+            "item": "https://www.tripsandships.com/ritz-carlton-yacht-collection",
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Ritz-Carlton Yacht Travel Advisor",
+            "item": pageData.seo.canonicalUrl,
+          },
+        ],
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `${pageData.seo.canonicalUrl}#faq`,
+        "mainEntity": pageData.faqs.map((faq) => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer,
+          },
+        })),
+      },
+    ],
+  };
 
   return (
     <div className="min-h-screen bg-slate-50 text-navy-950">
@@ -115,7 +259,7 @@ const RitzCarltonYachtTravelAdvisor = () => {
         <meta name="twitter:title" content={pageData.seo.title} />
         <meta name="twitter:description" content={pageData.seo.metaDescription} />
         <script type="application/ld+json">
-          {JSON.stringify(pageData.schema)}
+          {JSON.stringify(jsonLdSchema)}
         </script>
       </Helmet>
 
@@ -132,7 +276,7 @@ const RitzCarltonYachtTravelAdvisor = () => {
         primaryCtaLink="/contact"
         secondaryCtaText="Explore Advisor Benefits"
         secondaryCtaLink="#quick-answer"
-        // bgImage={heroAdvisorImg}
+        backgroundImage={heroAdvisorImg}
       />
 
       {/* 4. Executive Narrative & Ecosystem Context (PremiumIntro) */}
@@ -140,6 +284,8 @@ const RitzCarltonYachtTravelAdvisor = () => {
         <PremiumIntro
           title="Why Book a Ritz-Carlton Yacht Cruise Through a Travel Advisor?"
           sections={introSections}
+          image1={introArchImg}
+          image2={introInsetImg}
           highlightQuote="The value is not simply in making the reservation. It is in planning and coordinating the entire journey."
         />
       </div>
@@ -161,15 +307,9 @@ const RitzCarltonYachtTravelAdvisor = () => {
           title={pageData.whatAdvisorDoes.title}
           subtitle={pageData.whatAdvisorDoes.subtitle}
           features={pageData.whatAdvisorDoes.features}
+          image={advisorConsultationImg}
           bgClass="bg-white"
         />
-        {pageData.whatAdvisorDoes.takeaway && (
-          <div className="max-w-3xl mx-auto px-6 pb-16 text-center">
-            <p className="font-display text-lg md:text-xl text-navy-800 italic font-medium">
-              "{pageData.whatAdvisorDoes.takeaway}"
-            </p>
-          </div>
-        )}
       </div>
 
       {/* 7. Sections 1, 2, 3: Yacht, Suite & Itinerary Selection (ThreeColumnGrid) */}
@@ -199,6 +339,16 @@ const RitzCarltonYachtTravelAdvisor = () => {
       </div>
 
       {/* 10. Sections 9, 10, 11: STARS Program, Onboard Credit & Waitlist Priority (ThreeColumnGrid) */}
+      
+      {/* Middle Video Feature Section */}
+      <VideoEmbed
+        data={{
+          youtubeId: "sQPnGRkiLdg",
+          title: "Inside The Ritz-Carlton Yacht Collection Experience",
+          description: "Explore the extraordinary lifestyle, all-suite accommodations, and personalized service of The Ritz-Carlton Yacht Collection."
+        }}
+      />
+
       <div id="stars-program-benefits">
         <ThreeColumnGrid
           title={pageData.starsAndAmenities.title}
@@ -237,12 +387,18 @@ const RitzCarltonYachtTravelAdvisor = () => {
         />
       </div>
 
-      {/* 14. When to Book Advisor vs. Direct (ContainedShowdown) */}
+      {/* 14. When Should You Book Through an Advisor vs. Directly? (ContainedShowdown) */}
       <div id="when-to-book-showdown">
         <ContainedShowdown
           title={pageData.whenToUseShowdown.title}
-          brandA={pageData.whenToUseShowdown.brandA}
-          brandB={pageData.whenToUseShowdown.brandB}
+          brandA={{
+            ...pageData.whenToUseShowdown.brandA,
+            image: showdownAdvisorImg,
+          }}
+          brandB={{
+            ...pageData.whenToUseShowdown.brandB,
+            image: showdownDirectImg,
+          }}
         />
       </div>
 
@@ -260,7 +416,7 @@ const RitzCarltonYachtTravelAdvisor = () => {
         <BentoGlassmorphismGrid
           title={pageData.tripsAndShipsValue.title}
           subtitle={pageData.tripsAndShipsValue.subtitle}
-          bentoItems={pageData.tripsAndShipsValue.bentoItems}
+          bentoItems={bentoItems}
         />
         {pageData.tripsAndShipsValue.takeaway && (
           <div className="max-w-4xl mx-auto px-6 -mt-10 pb-20 relative z-20">
@@ -297,13 +453,7 @@ const RitzCarltonYachtTravelAdvisor = () => {
         />
       </div>
 
-      {/* 19. Interactive Resource Pillar Hub */}
-      <InteractivePillarHubGrid
-        title="Explore More Ritz-Carlton Yacht Guides"
-        subtitle="Deepen your luxury yacht knowledge with comprehensive guides covering suites, excursion pricing, dining, dress codes, and port guides."
-        items={hubItems}
-      />
-
+      
       {/* 20. Final Takeaway Narrative Summary */}
       <section className="w-full py-16 bg-slate-50 border-t border-slate-200">
         <div className="max-w-4xl mx-auto px-6 text-center">
@@ -327,6 +477,7 @@ const RitzCarltonYachtTravelAdvisor = () => {
         subtitle="Connect with certified luxury yacht specialist Angela Hughes to access exclusive Marriott STARS program amenities, locked-in rates, and bespoke travel curation."
         buttonText="Speak with a Yacht Specialist"
         buttonLink="/contact"
+        image={ctaBgImg}
         theme="dark"
       />
     </div>

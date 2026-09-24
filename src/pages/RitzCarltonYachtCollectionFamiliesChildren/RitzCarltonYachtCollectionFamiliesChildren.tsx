@@ -377,6 +377,15 @@ const RitzCarltonYachtCollectionFamiliesChildren = () => {
       {/* ─── SECTION 5: BrandPillarsShowcase (Top 5 Family Activities) ─── */}
       <BrandPillarsShowcase data={activitiesData} />
 
+      {/* ─── Video Feature Section ─── */}
+      <VideoEmbed
+        data={{
+          youtubeId: "Dc4_5xrUzUM",
+          title: "Ritz-Carlton Yacht Family Experience",
+          description: "Discover what makes a Ritz-Carlton yacht cruise a uniquely intimate and memorable journey for discerning families."
+        }}
+      />
+
       {/* ─── SECTION 6: ThreeColumnGrid (Fleet Comparison: Evrima, Ilma, Luminara) ─── */}
       <ThreeColumnGrid
         title={pageData.fleetComparison.title}
@@ -436,15 +445,6 @@ const RitzCarltonYachtCollectionFamiliesChildren = () => {
 
       {/* ─── SECTION 13: FAQ Accordion (All 20 FAQs) ─── */}
       <FAQAccordion data={pageData.faqs} />
-
-      {/* ─── SECTION 14: Video Section Component (VideoEmbed Component) ─── */}
-      <VideoEmbed
-        data={{
-          youtubeId: "sQPnGRkiLdg",
-          title: "Ritz-Carlton Yacht Family Experience",
-          description: "Discover what makes a Ritz-Carlton yacht cruise a uniquely intimate and memorable journey for discerning families."
-        }}
-      />
 
       {/* ─── SECTION 15: Center CTA (Final Family Consultation CTA) ─── */}
       <CenterCTA

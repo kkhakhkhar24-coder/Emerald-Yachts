@@ -468,6 +468,15 @@ const RitzCarltonYachtCollectionReviews = () => {
         data={payingForData}
       />
 
+      {/* ─── Video Feature Section ─── */}
+      <VideoEmbed
+        data={{
+          youtubeId: "9XFbSOesoqo",
+          title: "See the Ritz-Carlton Yacht Experience",
+          description: "Watch an in-depth walkthrough of Ritz-Carlton Yacht Collection suites, dining, service, and yacht amenities."
+        }}
+      />
+
       {/* ─── SECTION 5: What Guests Like - 6 Key Strengths (ThreeColumnGrid Component) ─── */}
       <ThreeColumnGrid
         title="What Guests Like About Ritz-Carlton Yacht Collection"
@@ -555,15 +564,6 @@ const RitzCarltonYachtCollectionReviews = () => {
       {/* ─── SECTION 15: Editorial Scorecard Table (BudgetBreakdownTable Component) ─── */}
       <BudgetBreakdownTable
         data={editorialScorecardTable}
-      />
-
-      {/* ─── SECTION 16: Video Section Component (VideoEmbed Component) ─── */}
-      <VideoEmbed
-        data={{
-          youtubeId: "mrdHjSeXwfc",
-          title: "See the Ritz-Carlton Yacht Experience",
-          description: "Watch an in-depth walkthrough of Ritz-Carlton Yacht Collection suites, dining, service, and yacht amenities."
-        }}
       />
 
       {/* ─── SECTION 18: Comprehensive 15 FAQs (FAQAccordion Component) ─── */}

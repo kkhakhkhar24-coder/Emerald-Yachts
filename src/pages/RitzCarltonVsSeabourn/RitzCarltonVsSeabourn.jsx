@@ -290,6 +290,15 @@ const RitzCarltonVsSeabourn = () => {
       {/* ─── SECTION 4A: BrandPillarsShowcase Core Differences ─── */}
       <BrandPillarsShowcase data={pageData.coreDifferencePillars} />
 
+      {/* ─── Video Feature Section ─── */}
+      <VideoEmbed
+        data={{
+          youtubeId: "YfsfOloEHOo",
+          title: "Ritz-Carlton Yacht Collection vs. Seabourn",
+          description: "Compare the luxury yacht experience of Ritz-Carlton with Seabourn's ultra-luxury cruise hospitality."
+        }}
+      />
+
       {/* ─── SECTION 5: HeadToHeadVisualShowdown Ship Size & Intimacy ─── */}
       {pageData.shipSizeShowdownData && (
         <HeadToHeadVisualShowdown
@@ -476,15 +485,6 @@ const RitzCarltonVsSeabourn = () => {
 
       {/* ─── SECTION 17: ExpertCredentials ─── */}
       <ExpertCredentials image={angelaPortrait} />
-
-      {/* ─── SECTION 17A: Video Section Component (VideoEmbed Component) ─── */}
-      <VideoEmbed
-        data={{
-          youtubeId: "sQPnGRkiLdg",
-          title: "Ritz-Carlton Yacht Collection vs. Seabourn",
-          description: "Compare the luxury yacht experience of Ritz-Carlton with Seabourn's ultra-luxury cruise hospitality."
-        }}
-      />
 
       {/* ─── SECTION 18: CenterCTA ─── */}
       <CenterCTA

@@ -379,6 +379,15 @@ const RitzCarltonYachtCollectionSuites = () => {
         />
       </div>
 
+      {/* ─── Video Feature Section ─── */}
+      <VideoEmbed
+        data={{
+          youtubeId: "YDo1dpH5m7o",
+          title: "Ritz-Carlton Yacht All-Suite Experience",
+          description: "Take a visual tour inside the expansive suites, private ocean-view terraces, and personalized Suite Ambassador service."
+        }}
+      />
+
       {/* 7. Fleet Overview by Vessel (ThreeColumnGrid) */}
       <ThreeColumnGrid
         title={pageData.fleetOverview.title}
@@ -498,15 +507,6 @@ const RitzCarltonYachtCollectionSuites = () => {
           title: "Ritz-Carlton Yacht Suites: Frequently Asked Questions",
           subtitle: "Expert answers to the most common questions regarding suite sizes, terraces, bathtubs, and upgrade strategies.",
           faqs: pageData.faqs
-        }}
-      />
-
-      {/* 21. Video Section Component (VideoEmbed Component) ─── */}
-      <VideoEmbed
-        data={{
-          youtubeId: "sQPnGRkiLdg",
-          title: "Ritz-Carlton Yacht All-Suite Experience",
-          description: "Take a visual tour inside the expansive suites, private ocean-view terraces, and personalized Suite Ambassador service."
         }}
       />
 

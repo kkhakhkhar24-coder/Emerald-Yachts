@@ -362,19 +362,67 @@
   "comparisonTable": {
     "title": "Travel Advisor vs. Booking Direct",
     "lead": "A detailed side-by-side comparison of planning support, personalization, and booking management.",
-    "headers": ["Consideration", "Travel Advisor", "Booking Direct"],
+    "headers": [
+      "Consideration",
+      "Travel Advisor",
+      "Booking Direct"
+    ],
     "rows": [
-      ["Yacht selection", "Personalized guidance based on travel style", "Self-research via website & brochures"],
-      ["Suite selection", "Advisor recommendations on layout & deck location", "Self-selection based on online availability"],
-      ["Itinerary comparison", "Advisor comparison of port dwell times & seasons", "Self-comparison of published schedules"],
-      ["Excursion planning", "Personalized assistance & private tour curation", "Self-management via online portal (~120 days)"],
-      ["Flights", "Can coordinate end-to-end air routing", "Separate planning or direct concierge contact"],
-      ["Hotels", "Can coordinate pre- & post-cruise luxury stays", "Separate planning by traveler"],
-      ["Transfers", "Can coordinate private airport & port transfers", "Separate planning by traveler"],
-      ["Special occasions", "Advisor coordinates across entire itinerary", "Guest manages individual supplier requests"],
-      ["Preferred-program benefits", "May be available if eligible (e.g. STARS amenities)", "Depends strictly on direct public offers"],
-      ["Changes & delays", "One point of contact managing all travel components", "Direct contact with each individual supplier"],
-      ["Complex trips", "Advisor coordinates multi-component logistics", "Guest coordinates all travel components"]
+      [
+        "Yacht selection",
+        "Personalized guidance based on travel style",
+        "Self-research via website & brochures"
+      ],
+      [
+        "Suite selection",
+        "Advisor recommendations on layout & deck location",
+        "Self-selection based on online availability"
+      ],
+      [
+        "Itinerary comparison",
+        "Advisor comparison of port dwell times & seasons",
+        "Self-comparison of published schedules"
+      ],
+      [
+        "Excursion planning",
+        "Personalized assistance & private tour curation",
+        "Self-management via online portal (~120 days)"
+      ],
+      [
+        "Flights",
+        "Can coordinate end-to-end air routing",
+        "Separate planning or direct concierge contact"
+      ],
+      [
+        "Hotels",
+        "Can coordinate pre- & post-cruise luxury stays",
+        "Separate planning by traveler"
+      ],
+      [
+        "Transfers",
+        "Can coordinate private airport & port transfers",
+        "Separate planning by traveler"
+      ],
+      [
+        "Special occasions",
+        "Advisor coordinates across entire itinerary",
+        "Guest manages individual supplier requests"
+      ],
+      [
+        "Preferred-program benefits",
+        "May be available if eligible (e.g. STARS amenities)",
+        "Depends strictly on direct public offers"
+      ],
+      [
+        "Changes & delays",
+        "One point of contact managing all travel components",
+        "Direct contact with each individual supplier"
+      ],
+      [
+        "Complex trips",
+        "Advisor coordinates multi-component logistics",
+        "Guest coordinates all travel components"
+      ]
     ],
     "takeaway": "Booking direct is perfectly reasonable for travelers who prefer to manage every detail themselves. A travel advisor becomes more valuable when the trip is complex, expensive or involves multiple travel components."
   },
@@ -549,74 +597,6 @@
     {
       "question": "Can Trips & Ships Luxury Travel book Ritz-Carlton Yacht Collection?",
       "answer": "Trips & Ships Luxury Travel can assist travelers with luxury cruise planning and Ritz-Carlton Yacht Collection trip planning, including itinerary selection, suite considerations, excursions and related travel arrangements."
-    }
-  ],
-  "hubResources": [
-    {
-      "title": "Ritz-Carlton Yacht Collection Overview",
-      "category": "FLEET & EXPERIENCE",
-      "description": "Comprehensive guide to the yachts, onboard ambiance, dining, and brand philosophy.",
-      "link": "/ritz-carlton-yacht-collection"
-    },
-    {
-      "title": "Ritz-Carlton Yacht Cruises from Miami",
-      "category": "DEPARTURE PORTS",
-      "description": "Everything to know about Miami departures, round-trip itineraries, and Florida port logistics.",
-      "link": "/ritz-carlton-yacht-cruises-from-miami"
-    },
-    {
-      "title": "Ritz-Carlton Yacht Caribbean Cruises",
-      "category": "DESTINATIONS",
-      "description": "Best Caribbean itineraries, island highlights, seasonal weather, and duration options.",
-      "link": "/ritz-carlton-yacht-caribbean-cruises"
-    },
-    {
-      "title": "Are Shore Excursions Included?",
-      "category": "PRICING & REALITY",
-      "description": "Detailed breakdown of excursion pricing, private arrangements, and booking windows.",
-      "link": "/ritz-carlton-yacht-shore-excursions-included"
-    },
-    {
-      "title": "Is Ritz-Carlton Yacht Good for Non-Cruisers?",
-      "category": "TRAVEL STYLE",
-      "description": "Why boutique luxury yachting appeals to resort lovers and anti-cruise travelers.",
-      "link": "/ritz-carlton-yacht-collection-for-people-who-dont-like-cruises"
-    },
-    {
-      "title": "Ritz-Carlton Yacht Cruise Cost",
-      "category": "PRICING GUIDE",
-      "description": "In-depth cost analysis, fare components, gratuities, taxes, and total vacation investment.",
-      "link": "/ritz-carlton-yacht-collection-cost"
-    },
-    {
-      "title": "Ritz-Carlton Yacht Suites Guide",
-      "category": "ACCOMMODATIONS",
-      "description": "Comparing Terrace Suites, Signature Suites, Grand Suites, Lofts, and Owner's Suites.",
-      "link": "/ritz-carlton-yacht-collection-suites"
-    },
-    {
-      "title": "Ritz-Carlton Yacht Dining Guide",
-      "category": "CULINARY",
-      "description": "Onboard restaurant concepts, specialty dining reservations, dress codes, and beverage menus.",
-      "link": "/ritz-carlton-yacht-collection"
-    },
-    {
-      "title": "Ritz-Carlton Yacht Dress Code",
-      "category": "PACKING & STYLE",
-      "description": "Yacht Casual daytime style to Yacht Sophisticated evening guidelines and packing advice.",
-      "link": "/ritz-carlton-yacht-collection-dress-code"
-    },
-    {
-      "title": "Ritz-Carlton Yacht Families & Children",
-      "category": "FAMILY TRAVEL",
-      "description": "Ritz Kids programming, suite configurations for families, and age considerations.",
-      "link": "/ritz-carlton-yacht-collection-families-children"
-    },
-    {
-      "title": "Request a Luxury Cruise Quote",
-      "category": "CONSULTATION",
-      "description": "Connect with certified luxury yacht specialist Angela Hughes to plan your voyage.",
-      "link": "/contact"
     }
   ],
   "finalAnswer": {

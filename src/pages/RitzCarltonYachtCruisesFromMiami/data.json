@@ -73,22 +73,67 @@
   },
   "quickAnswerTable": {
     "title": "Quick Answer: What Are Ritz-Carlton Yacht Cruises from Miami Like?",
-    "headers": ["Feature", "What to Expect"],
+    "headers": [
+      "Feature",
+      "What to Expect"
+    ],
     "rows": [
-      ["Departure", "Miami, Florida"],
-      ["Primary region", "Caribbean and Bahamas"],
-      ["Voyage length", "Short 3–5 night escapes through longer itineraries"],
-      ["Yacht experience", "Intimate, all-suite luxury yachting"],
-      ["Suites", "Ocean-view suites with private terraces"],
-      ["Service", "Dedicated Suite Ambassador"],
-      ["Dining", "Multiple dining venues plus 24-hour in-suite dining"],
-      ["Beverages", "Premium wines, spirits, cocktails and other beverages"],
-      ["Wi-Fi", "Complimentary Starlink Wi-Fi"],
-      ["Gratuities", "Onboard gratuities included"],
-      ["Watersports", "Marina access and selected watersports included"],
-      ["Formal nights", "Formal attire is not required"],
-      ["Shore excursions", "Generally available separately from the standard fare"],
-      ["Best for", "Couples, luxury travelers, first-time yacht travelers and travelers seeking a smaller-scale experience"]
+      [
+        "Departure",
+        "Miami, Florida"
+      ],
+      [
+        "Primary region",
+        "Caribbean and Bahamas"
+      ],
+      [
+        "Voyage length",
+        "Short 3–5 night escapes through longer itineraries"
+      ],
+      [
+        "Yacht experience",
+        "Intimate, all-suite luxury yachting"
+      ],
+      [
+        "Suites",
+        "Ocean-view suites with private terraces"
+      ],
+      [
+        "Service",
+        "Dedicated Suite Ambassador"
+      ],
+      [
+        "Dining",
+        "Multiple dining venues plus 24-hour in-suite dining"
+      ],
+      [
+        "Beverages",
+        "Premium wines, spirits, cocktails and other beverages"
+      ],
+      [
+        "Wi-Fi",
+        "Complimentary Starlink Wi-Fi"
+      ],
+      [
+        "Gratuities",
+        "Onboard gratuities included"
+      ],
+      [
+        "Watersports",
+        "Marina access and selected watersports included"
+      ],
+      [
+        "Formal nights",
+        "Formal attire is not required"
+      ],
+      [
+        "Shore excursions",
+        "Generally available separately from the standard fare"
+      ],
+      [
+        "Best for",
+        "Couples, luxury travelers, first-time yacht travelers and travelers seeking a smaller-scale experience"
+      ]
     ],
     "takeaway": "The Ritz-Carlton Yacht Collection currently describes its voyages as an all-inclusive experience with all-suite accommodations, private terraces, dining, premium beverages, Suite Ambassador service, onboard gratuities, Wi-Fi and Marina access."
   },
@@ -420,14 +465,42 @@
   "miamiRoundTripVsSanJuan": {
     "title": "Miami Round Trip vs. Miami to San Juan",
     "lead": "Your choice of itinerary can affect overall vacation logistics, airfare, and hotel arrangements.",
-    "headers": ["Feature", "Miami Round Trip", "Miami to San Juan"],
+    "headers": [
+      "Feature",
+      "Miami Round Trip",
+      "Miami to San Juan"
+    ],
     "rows": [
-      ["Return to Miami", "Yes", "No"],
-      ["Easier for Miami-based trip", "Yes", "Less direct"],
-      ["Caribbean exploration", "Yes", "Yes"],
-      ["Open-jaw airfare", "Usually unnecessary", "May be useful"],
-      ["Pre/post hotel planning", "Simpler", "More important"],
-      ["Best for", "Simple round trip", "Multi-destination vacation"]
+      [
+        "Return to Miami",
+        "Yes",
+        "No"
+      ],
+      [
+        "Easier for Miami-based trip",
+        "Yes",
+        "Less direct"
+      ],
+      [
+        "Caribbean exploration",
+        "Yes",
+        "Yes"
+      ],
+      [
+        "Open-jaw airfare",
+        "Usually unnecessary",
+        "May be useful"
+      ],
+      [
+        "Pre/post hotel planning",
+        "Simpler",
+        "More important"
+      ],
+      [
+        "Best for",
+        "Simple round trip",
+        "Multi-destination vacation"
+      ]
     ],
     "takeaway": "A Miami round trip simplifies flight logistics with a single airport hub. A Miami-to-San Juan sailing is compelling if you want to visit Puerto Rico or combine the voyage with a broader Caribbean resort stay."
   },
@@ -459,18 +532,62 @@
   "comparisonVsResort": {
     "title": "Ritz-Carlton Yacht Collection from Miami vs. Luxury Caribbean Resort",
     "lead": "Some travelers considering Miami yacht cruises are choosing between a yacht vacation and a Caribbean land resort.",
-    "headers": ["Feature", "Ritz-Carlton Yacht", "Caribbean Resort"],
+    "headers": [
+      "Feature",
+      "Ritz-Carlton Yacht",
+      "Caribbean Resort"
+    ],
     "rows": [
-      ["Accommodation", "Suite at sea", "Hotel/resort room or suite"],
-      ["Destinations", "Multiple ports", "One primary destination"],
-      ["Ocean travel", "Yes", "Usually no"],
-      ["Private terrace", "Yes, depending on suite", "Varies"],
-      ["Dining", "Multiple onboard venues", "Resort restaurants"],
-      ["Service", "Yacht-based personalized service", "Resort service"],
-      ["Itinerary", "Moves between destinations", "Stationary"],
-      ["Excursions", "Port-based", "Destination-based"],
-      ["Watersports", "Marina access on selected occasions", "Resort-dependent"],
-      ["Vacation style", "Exploration + relaxation", "Primarily destination-based"]
+      [
+        "Accommodation",
+        "Suite at sea",
+        "Hotel/resort room or suite"
+      ],
+      [
+        "Destinations",
+        "Multiple ports",
+        "One primary destination"
+      ],
+      [
+        "Ocean travel",
+        "Yes",
+        "Usually no"
+      ],
+      [
+        "Private terrace",
+        "Yes, depending on suite",
+        "Varies"
+      ],
+      [
+        "Dining",
+        "Multiple onboard venues",
+        "Resort restaurants"
+      ],
+      [
+        "Service",
+        "Yacht-based personalized service",
+        "Resort service"
+      ],
+      [
+        "Itinerary",
+        "Moves between destinations",
+        "Stationary"
+      ],
+      [
+        "Excursions",
+        "Port-based",
+        "Destination-based"
+      ],
+      [
+        "Watersports",
+        "Marina access on selected occasions",
+        "Resort-dependent"
+      ],
+      [
+        "Vacation style",
+        "Exploration + relaxation",
+        "Primarily destination-based"
+      ]
     ],
     "takeaway": "If you want to wake up somewhere different throughout the vacation without repacking, a yacht has a major structural advantage. If you prefer one resort, one beach, and complete control over daily schedules, a stationary resort may fit better."
   },
@@ -709,44 +826,6 @@
     {
       "question": "Should I use a travel advisor to book a Ritz-Carlton yacht?",
       "answer": "An experienced luxury travel advisor can help compare sailings, suites, excursions, Miami hotels, transfers and the overall vacation itinerary."
-    }
-  ],
-  "hubResources": [
-    {
-      "title": "Ritz-Carlton Yacht Suites Guide",
-      "category": "Accommodations",
-      "description": "Comprehensive breakdown of Terrace, Signature, Grand, View, and Owner's suites across the fleet.",
-      "link": "/ritz-carlton-yacht-collection-suites"
-    },
-    {
-      "title": "Are Shore Excursions Included?",
-      "category": "Inclusions Guide",
-      "description": "Learn what is covered in the base fare versus private vehicle tours and group excursion pricing.",
-      "link": "/ritz-carlton-yacht-shore-excursions-included"
-    },
-    {
-      "title": "Dress Code & Packing Guide",
-      "category": "Preparation",
-      "description": "What to pack for Yacht Casual days and Yacht Sophisticated dinner evenings without formal nights.",
-      "link": "/ritz-carlton-yacht-collection-dress-code"
-    },
-    {
-      "title": "For People Who Don't Like Cruises",
-      "category": "Traveler Guide",
-      "description": "Why luxury travelers who avoid mega-ships thrive in the intimate, unhurried yacht environment.",
-      "link": "/ritz-carlton-yacht-collection-for-people-who-dont-like-cruises"
-    },
-    {
-      "title": "Marriott Bonvoy Points Guide",
-      "category": "Loyalty Benefits",
-      "description": "How to earn and redeem Marriott Bonvoy points and Elite Night Credits on Caribbean voyages.",
-      "link": "/ritz-carlton-yacht-collection-marriott-bonvoy-points"
-    },
-    {
-      "title": "Evrima vs. Ilma vs. Luminara",
-      "category": "Fleet Comparison",
-      "description": "Compare vessel sizes, dining venues, suite layouts, and amenities across all three yachts.",
-      "link": "/ritz-carlton-evrima-vs-ilma-vs-luminara"
     }
   ],
   "finalAnswer": {

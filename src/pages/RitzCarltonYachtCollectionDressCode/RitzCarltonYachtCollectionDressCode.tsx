@@ -378,6 +378,15 @@ const RitzCarltonYachtCollectionDressCode = () => {
         />
       </div>
 
+      {/* ─── Video Feature Section ─── */}
+      <VideoEmbed
+        data={{
+          youtubeId: "4cD7DYvSGFg",
+          title: "Inside the Ritz-Carlton Yacht Lifestyle",
+          description: "Explore the relaxed elegance, Yacht Sophisticated evenings, and casual luxury of The Ritz-Carlton Yacht Collection."
+        }}
+      />
+
       {/* 8. Daytime Yacht Casual: Women vs Men (GenericChecklistCards) */}
       <GenericChecklistCards
         title={pageData.daytimeYachtCasual.title}
@@ -538,15 +547,6 @@ const RitzCarltonYachtCollectionDressCode = () => {
           title: "Frequently Asked Questions About Ritz-Carlton Yacht Dress Code",
           subtitle: "Expert answers to the 20 most common questions regarding dinner attire, formal nights, shoes, and packing rules.",
           faqs: pageData.faqs,
-        }}
-      />
-
-      {/* 29. Video Section Component (VideoEmbed Component) ─── */}
-      <VideoEmbed
-        data={{
-          youtubeId: "sQPnGRkiLdg",
-          title: "Inside the Ritz-Carlton Yacht Lifestyle",
-          description: "Explore the relaxed elegance, Yacht Sophisticated evenings, and casual luxury of The Ritz-Carlton Yacht Collection."
         }}
       />
 

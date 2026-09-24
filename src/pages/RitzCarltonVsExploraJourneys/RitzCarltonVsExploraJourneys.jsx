@@ -307,6 +307,15 @@ const RitzCarltonVsExploraJourneys = () => {
         pillars={pageData.coreDifferencePillars.pillars}
       />
 
+      {/* ─── Video Feature Section ─── */}
+      <VideoEmbed
+        data={{
+          youtubeId: "bGvlj32SXnQ",
+          title: "Ritz-Carlton Yacht Collection vs. Explora Journeys",
+          description: "Explore the differences in design, suites, dining, and luxury philosophies between Ritz-Carlton and Explora Journeys."
+        }}
+      />
+
       {/* ─── SECTION 6: CostValueAnalysisCards Ship Size Comparison (100% Component-Based) ─── */}
       <CostValueAnalysisCards
         title={pageData.shipSizeComparison.title}
@@ -449,15 +458,6 @@ const RitzCarltonVsExploraJourneys = () => {
         content={pageData.angelaPerspective.content}
         author={pageData.angelaPerspective.author}
         authorImage={angelaPortrait}
-      />
-
-      {/* ─── SECTION 17: Video Section Component (VideoEmbed Component) ─── */}
-      <VideoEmbed
-        data={{
-          youtubeId: "sQPnGRkiLdg",
-          title: "Ritz-Carlton Yacht Collection vs. Explora Journeys",
-          description: "Explore the differences in design, suites, dining, and luxury philosophies between Ritz-Carlton and Explora Journeys."
-        }}
       />
 
       {/* ─── SECTION 18: FAQAccordion (100% Component-Based) ─── */}

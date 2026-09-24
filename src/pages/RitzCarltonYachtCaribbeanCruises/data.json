@@ -49,16 +49,52 @@
   "quickAnswerTable": {
     "title": "Quick Answer: What Are the Best Ritz-Carlton Yacht Caribbean Itineraries?",
     "lead": "There is no single itinerary that fits every traveler. Instead, different Caribbean routes emphasize different experiences.",
-    "headers": ["Itinerary Style", "What It Offers", "Good For"],
+    "headers": [
+      "Itinerary Style",
+      "What It Offers",
+      "Good For"
+    ],
     "rows": [
-      ["Bahamas & Bimini", "Beaches, snorkeling, short escapes", "First-time yacht travelers"],
-      ["Miami Round Trip", "Easy logistics and short Caribbean voyages", "Weekend and short vacations"],
-      ["St. Barths & British Virgin Islands", "Chic harbors, beaches and island scenery", "Couples and luxury travelers"],
-      ["Southern Caribbean", "Grenadines, St. Lucia, Antigua and island culture", "Longer Caribbean vacations"],
-      ["Eastern Caribbean", "St. Thomas, St. John, Virgin Gorda and neighboring islands", "Beaches and nature"],
-      ["Miami to San Juan", "Multiple destinations with an open-jaw itinerary", "Travelers combining land travel"],
-      ["San Juan Round Trip", "Easy access to smaller Caribbean islands", "Island-focused vacations"],
-      ["Longer Caribbean Voyages", "More ports and slower exploration", "Experienced luxury travelers"]
+      [
+        "Bahamas & Bimini",
+        "Beaches, snorkeling, short escapes",
+        "First-time yacht travelers"
+      ],
+      [
+        "Miami Round Trip",
+        "Easy logistics and short Caribbean voyages",
+        "Weekend and short vacations"
+      ],
+      [
+        "St. Barths & British Virgin Islands",
+        "Chic harbors, beaches and island scenery",
+        "Couples and luxury travelers"
+      ],
+      [
+        "Southern Caribbean",
+        "Grenadines, St. Lucia, Antigua and island culture",
+        "Longer Caribbean vacations"
+      ],
+      [
+        "Eastern Caribbean",
+        "St. Thomas, St. John, Virgin Gorda and neighboring islands",
+        "Beaches and nature"
+      ],
+      [
+        "Miami to San Juan",
+        "Multiple destinations with an open-jaw itinerary",
+        "Travelers combining land travel"
+      ],
+      [
+        "San Juan Round Trip",
+        "Easy access to smaller Caribbean islands",
+        "Island-focused vacations"
+      ],
+      [
+        "Longer Caribbean Voyages",
+        "More ports and slower exploration",
+        "Experienced luxury travelers"
+      ]
     ],
     "takeaway": "The Ritz-Carlton Yacht Collection's current and upcoming programs include more than 20 Caribbean voyages for winter 2026–2027 and an expanded 27-port Caribbean program for winter 2027–2028."
   },
@@ -87,16 +123,43 @@
   "seasonsAtAGlance": {
     "title": "Ritz-Carlton Yacht Caribbean Cruise Seasons at a Glance",
     "lead": "Always check the exact year's itinerary collection before assuming a route is offered during a particular month.",
-    "headers": ["Period", "Typical Planning Focus"],
+    "headers": [
+      "Period",
+      "Typical Planning Focus"
+    ],
     "rows": [
-      ["Late Fall", "Beginning of Caribbean season on selected itineraries"],
-      ["December", "Holiday and winter Caribbean travel"],
-      ["January", "Winter sun and island-hopping"],
-      ["February", "Caribbean winter escape"],
-      ["March", "Spring Caribbean cruising"],
-      ["April", "Late-season Caribbean itineraries"],
-      ["May–June", "Selected spring voyages depending on deployment"],
-      ["Summer", "Caribbean availability may be more limited depending on seasonal deployment"]
+      [
+        "Late Fall",
+        "Beginning of Caribbean season on selected itineraries"
+      ],
+      [
+        "December",
+        "Holiday and winter Caribbean travel"
+      ],
+      [
+        "January",
+        "Winter sun and island-hopping"
+      ],
+      [
+        "February",
+        "Caribbean winter escape"
+      ],
+      [
+        "March",
+        "Spring Caribbean cruising"
+      ],
+      [
+        "April",
+        "Late-season Caribbean itineraries"
+      ],
+      [
+        "May–June",
+        "Selected spring voyages depending on deployment"
+      ],
+      [
+        "Summer",
+        "Caribbean availability may be more limited depending on seasonal deployment"
+      ]
     ],
     "takeaway": "Seasonal deployment dictates yacht availability between the Caribbean and Mediterranean."
   },
@@ -379,16 +442,43 @@
   "bestMonthToCruise": {
     "title": "What Is the Best Month for a Ritz-Carlton Caribbean Cruise?",
     "lead": "There isn't one universally best month. Instead, consider your priorities.",
-    "headers": ["Month", "Considerations"],
+    "headers": [
+      "Month",
+      "Considerations"
+    ],
     "rows": [
-      ["November", "Early-season Caribbean options may become available"],
-      ["December", "Holiday travel and winter escape"],
-      ["January", "Winter sun and island-hopping"],
-      ["February", "Caribbean winter escape"],
-      ["March", "Spring travel and Caribbean itineraries"],
-      ["April", "Late-season options on selected voyages"],
-      ["May", "Some spring deployments"],
-      ["June", "Selected itineraries depending on seasonal deployment"]
+      [
+        "November",
+        "Early-season Caribbean options may become available"
+      ],
+      [
+        "December",
+        "Holiday travel and winter escape"
+      ],
+      [
+        "January",
+        "Winter sun and island-hopping"
+      ],
+      [
+        "February",
+        "Caribbean winter escape"
+      ],
+      [
+        "March",
+        "Spring travel and Caribbean itineraries"
+      ],
+      [
+        "April",
+        "Late-season options on selected voyages"
+      ],
+      [
+        "May",
+        "Some spring deployments"
+      ],
+      [
+        "June",
+        "Selected itineraries depending on seasonal deployment"
+      ]
     ],
     "takeaway": "The actual Ritz-Carlton Yacht Collection schedule changes from year to year, so use the current voyage calendar when selecting dates."
   },
@@ -584,18 +674,62 @@
   "yachtVsResortTable": {
     "title": "Ritz-Carlton Caribbean Cruise vs. Caribbean Resort",
     "lead": "A yacht itinerary and a resort vacation provide fundamentally different experiences.",
-    "headers": ["Feature", "Ritz-Carlton Yacht", "Caribbean Resort"],
+    "headers": [
+      "Feature",
+      "Ritz-Carlton Yacht",
+      "Caribbean Resort"
+    ],
     "rows": [
-      ["Destinations", "Multiple", "Usually one"],
-      ["Accommodation", "Yacht suite", "Hotel/resort suite"],
-      ["Ocean travel", "Yes", "No"],
-      ["Island-hopping", "Built into itinerary", "Requires transfers"],
-      ["Private terrace", "Yacht-suite dependent (100%)", "Resort dependent"],
-      ["Dining", "Multiple onboard venues", "Resort restaurants"],
-      ["Shore excursions", "Port-based", "Destination-based"],
-      ["Schedule", "Structured around voyage", "More flexible"],
-      ["Scenery", "Changes throughout trip", "Primarily one destination"],
-      ["Experience", "Yachting + exploration", "Resort + destination"]
+      [
+        "Destinations",
+        "Multiple",
+        "Usually one"
+      ],
+      [
+        "Accommodation",
+        "Yacht suite",
+        "Hotel/resort suite"
+      ],
+      [
+        "Ocean travel",
+        "Yes",
+        "No"
+      ],
+      [
+        "Island-hopping",
+        "Built into itinerary",
+        "Requires transfers"
+      ],
+      [
+        "Private terrace",
+        "Yacht-suite dependent (100%)",
+        "Resort dependent"
+      ],
+      [
+        "Dining",
+        "Multiple onboard venues",
+        "Resort restaurants"
+      ],
+      [
+        "Shore excursions",
+        "Port-based",
+        "Destination-based"
+      ],
+      [
+        "Schedule",
+        "Structured around voyage",
+        "More flexible"
+      ],
+      [
+        "Scenery",
+        "Changes throughout trip",
+        "Primarily one destination"
+      ],
+      [
+        "Experience",
+        "Yachting + exploration",
+        "Resort + destination"
+      ]
     ],
     "takeaway": "Choose based on whether you want to move between islands or settle into one destination."
   },
@@ -720,44 +854,6 @@
     {
       "question": "Is Miami or San Juan better for a Ritz-Carlton Caribbean cruise?",
       "answer": "The answer depends on the itinerary, travel logistics and destinations you want to visit. Miami is particularly useful for Florida and U.S. travelers, while San Juan provides convenient access to many Eastern and Southern Caribbean routes."
-    }
-  ],
-  "hubResources": [
-    {
-      "title": "Miami Yacht Departures Guide",
-      "category": "Departure Port Guide",
-      "description": "Everything to know about sailing from PortMiami: itineraries, hotels, and logistics.",
-      "link": "/ritz-carlton-yacht-cruises-from-miami"
-    },
-    {
-      "title": "Ritz-Carlton Yacht Suites Guide",
-      "category": "Accommodations",
-      "description": "Comprehensive breakdown of Terrace, Signature, Grand, View, and Owner's suites across the fleet.",
-      "link": "/ritz-carlton-yacht-collection-suites"
-    },
-    {
-      "title": "Are Shore Excursions Included?",
-      "category": "Inclusions Guide",
-      "description": "Learn what is covered in the base fare versus private vehicle tours and group excursion pricing.",
-      "link": "/ritz-carlton-yacht-shore-excursions-included"
-    },
-    {
-      "title": "For People Who Don't Like Cruises",
-      "category": "Traveler Guide",
-      "description": "Why luxury travelers who avoid mega-ships thrive in the intimate, unhurried yacht environment.",
-      "link": "/ritz-carlton-yacht-collection-for-people-who-dont-like-cruises"
-    },
-    {
-      "title": "Dress Code & Packing Guide",
-      "category": "Preparation",
-      "description": "What to pack for Yacht Casual days and Yacht Sophisticated dinner evenings without formal nights.",
-      "link": "/ritz-carlton-yacht-collection-dress-code"
-    },
-    {
-      "title": "Evrima vs. Ilma vs. Luminara",
-      "category": "Fleet Comparison",
-      "description": "Compare vessel sizes, dining venues, suite layouts, and amenities across all three yachts.",
-      "link": "/ritz-carlton-evrima-vs-ilma-vs-luminara"
     }
   ],
   "finalAnswer": {

@@ -1215,10 +1215,6 @@ function App() {
             path="/ritz-carlton-yacht-cruises/travel-advisor"
             element={<RitzCarltonYachtTravelAdvisor />}
           />
-          <Route
-            path="/ritz-carlton-yacht-cruises/travel-advisor/"
-            element={<RitzCarltonYachtTravelAdvisor />}
-          />
 
           <Route
             path="/ritz-carlton-yacht-collection-travel-advisor-florida"

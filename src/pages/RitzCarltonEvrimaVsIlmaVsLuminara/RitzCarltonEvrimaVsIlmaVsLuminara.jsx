@@ -309,6 +309,15 @@ const RitzCarltonEvrimaVsIlmaVsLuminara = () => {
         data={pageData.coreDifferencePillars}
       />
 
+      {/* ─── Video Feature Section ─── */}
+      <VideoEmbed
+        data={{
+          youtubeId: "XbzLAssLsAA",
+          title: "Experience Evrima, Ilma & Luminara",
+          description: "Watch what makes each yacht in The Ritz-Carlton Yacht Collection distinct, intimate, and extraordinary."
+        }}
+      />
+
       {/* ─── SECTION 5: TabbedComparison Detailed Yacht Profiles (100% Component-Based from data.json) ─── */}
       <TabbedComparison
         title="Detailed Yacht Profiles: Evrima, Ilma & Luminara"
@@ -401,15 +410,6 @@ const RitzCarltonEvrimaVsIlmaVsLuminara = () => {
         bottomNote={pageData.cruiserMatchmakerData.bottomNote}
         type="compare"
         bgClass="bg-white"
-      />
-
-      {/* ─── SECTION 14: Video Section Component (VideoEmbed Component) ─── */}
-      <VideoEmbed
-        data={{
-          youtubeId: "sQPnGRkiLdg",
-          title: "Experience Evrima, Ilma & Luminara",
-          description: "Watch what makes each yacht in The Ritz-Carlton Yacht Collection distinct, intimate, and extraordinary."
-        }}
       />
 
       {/* ─── SECTION 15: FAQAccordion (100% Component-Based from data.json) ─── */}

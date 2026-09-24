@@ -546,6 +546,15 @@ const RitzCarltonMarriottBonvoyPoints = () => {
         author="Marriott Bonvoy Program Architecture"
       />
 
+      {/* ─── Video Feature Section ─── */}
+      <VideoEmbed
+        data={{
+          youtubeId: "ldKkCg7PL60",
+          title: "Marriott Bonvoy on The Ritz-Carlton Yacht Collection",
+          description: "Watch how Marriott Bonvoy benefits, earning rates, and elite perks enhance your luxury yacht journey."
+        }}
+      />
+
       {/* ─── SECTION 5: How Many Points Do You Earn Table (BudgetBreakdownTable Component) ─── */}
       <BudgetBreakdownTable
         data={{
@@ -717,15 +726,6 @@ const RitzCarltonMarriottBonvoyPoints = () => {
       {/* ─── SECTION 27: FAQ Accordion Component (All 20 FAQs) ─── */}
       <FAQAccordion
         data={pageData.faqs}
-      />
-
-      {/* ─── SECTION 28: Video Section Component (VideoEmbed Component) ─── */}
-      <VideoEmbed
-        data={{
-          youtubeId: "sQPnGRkiLdg",
-          title: "Marriott Bonvoy on The Ritz-Carlton Yacht Collection",
-          description: "Watch how Marriott Bonvoy benefits, earning rates, and elite perks enhance your luxury yacht journey."
-        }}
       />
 
       {/* ─── SECTION 29: Final Call to Action (CenterCTA Component) ─── */}
