@@ -419,7 +419,11 @@ const RitzCarltonEvrimaVsIlmaVsLuminara = () => {
       <ConclusionSection sections={pageData.finalVerdictSections} />
 
       {/* ─── SECTION 17: ExpertCredentials (100% Component-Based) ─── */}
-      <ExpertCredentials image={angelaImage} />
+      <ExpertCredentials
+        image={angelaImage}
+        ctaText="Book With Angela Hughes"
+        ctaLink="/contact"
+      />
 
       {/* ─── SECTION 18: CenterCTA (100% Component-Based from data.json) ─── */}
       <CenterCTA

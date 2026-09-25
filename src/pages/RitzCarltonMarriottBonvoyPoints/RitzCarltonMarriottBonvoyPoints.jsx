@@ -721,6 +721,8 @@ const RitzCarltonMarriottBonvoyPoints = () => {
         bio="Angela Hughes is an acclaimed luxury travel expert, CEO of Trips & Ships Luxury Travel, and founder of Luxury Travel University. With over three decades of luxury travel experience, Angela specializes in curating ultra-luxury yacht voyages, private expeditions, and optimizing loyalty rewards for affluent travelers worldwide."
         image={angelaImage}
         quote="Marriott Bonvoy points add immense value to high-end yacht travel when applied strategically. The key is knowing exactly when to redeem and ensuring your loyalty account is correctly synchronized before the final payment deadline."
+        ctaText="Book With Angela Hughes"
+        ctaLink="/contact"
       />
 
       {/* ─── SECTION 27: FAQ Accordion Component (All 20 FAQs) ─── */}

@@ -441,6 +441,8 @@ const RitzCarltonYachtCollectionFamiliesChildren = () => {
           "Traveled to more than 121 Countries Worldwide with Family",
           "Founder of Luxury Travel University training top luxury cruise advisors",
         ]}
+        ctaText="Book With Angela Hughes"
+        ctaLink="/contact"
       />
 
       {/* ─── SECTION 13: FAQ Accordion (All 20 FAQs) ─── */}

@@ -219,7 +219,7 @@ const HowToChooseRightRitzCarltonYachtSuiteItinerary = () => {
       {/* ─── Video Feature Section ─── */}
       <VideoEmbed
         data={{
-          youtubeId: "b0FqYRs96R4",
+          youtubeId: "9otkymyB0Hg",
           title: "How to Choose the Right Ritz-Carlton Yacht, Suite & Itinerary",
           description: "Discover expert insights on comparing Evrima, Ilma, and Luminara, selecting the ideal suite layout, and choosing the perfect luxury cruise itinerary."
         }}
@@ -402,6 +402,12 @@ const HowToChooseRightRitzCarltonYachtSuiteItinerary = () => {
         bio={pageData.angelaPerspective.bio}
         image={angelaImage}
         text={pageData.angelaPerspective.text}
+        paragraphs={[
+          pageData.angelaPerspective.bio,
+          pageData.angelaPerspective.text
+        ]}
+        ctaText="Book With Angela Hughes"
+        ctaLink="/contact"
       />
 
       {/* 20. Comprehensive 19 FAQs (FAQAccordion) */}

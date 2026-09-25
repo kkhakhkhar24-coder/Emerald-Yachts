@@ -595,6 +595,8 @@ const RitzCarltonYachtCollectionIncluded = () => {
         bio={pageData.angelaBio.bio}
         image={angelaImage}
         quote="Don't evaluate a luxury yacht by its advertised fare alone. Build the entire trip — flights, hotels, transfers, excursions and onboard extras — and then compare the total experience."
+        ctaText="Book With Angela Hughes"
+        ctaLink="/contact"
       />
 
       {/* ─── SECTION 12: Inclusions Summary (AuthorityBox Component) ─── */}

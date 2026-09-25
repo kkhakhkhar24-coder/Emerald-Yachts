@@ -331,7 +331,7 @@ const RitzCarltonYachtCollectionDressCode = () => {
         primaryCtaText="Explore What to Pack"
         primaryCtaLink="#packing-breakdown"
         secondaryCtaText="Contact a Yacht Specialist"
-        secondaryCtaLink="#advisor-consultation"
+        secondaryCtaLink="/contact"
       />
 
       {/* 4. Executive Narrative Intro (PremiumIntro) */}
@@ -486,7 +486,7 @@ const RitzCarltonYachtCollectionDressCode = () => {
           title="Plan Your Ritz-Carlton Yacht Vacation"
           description="Speak with our certified luxury yacht specialists to get personalized itinerary recommendations, stateroom placement, and packing advice."
           buttonText="Request Complimentary Consultation"
-          buttonLink="mailto:angela@tripsandships.com?subject=Ritz-Carlton%20Yacht%20Vacation%20Inquiry"
+          buttonLink="/contact"
           theme="dark"
         />
       </div>
@@ -538,7 +538,7 @@ const RitzCarltonYachtCollectionDressCode = () => {
         badge="LUXURY CRUISE EXPERT"
         experienceBadge="40+ YEARS IN LUXURY TRAVEL"
         ctaText="Book With Angela Hughes"
-        ctaLink="mailto:angela@tripsandships.com"
+        ctaLink="/contact"
       />
 
       {/* 28. Complete FAQ Accordion (All 20 FAQs) */}
@@ -556,7 +556,7 @@ const RitzCarltonYachtCollectionDressCode = () => {
           title="Ready to Sail in Relaxed Luxury?"
           description="Connect with Trips & Ships Luxury Travel to secure locked-in rates, exclusive Virtuoso amenities, and expert planning support."
           buttonText="Contact a Yacht Specialist"
-          buttonLink="mailto:angela@tripsandships.com?subject=Ritz-Carlton%20Yacht%20Booking"
+          buttonLink="/contact"
           theme="dark"
         />
       </div>

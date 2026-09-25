@@ -559,6 +559,8 @@ const RitzCarltonYachtCollectionReviews = () => {
         bio={pageData.angelaBio.bio}
         image={angelaImage}
         quote="Don't book Ritz-Carlton because the name sounds luxurious. Book it because the experience matches how you actually like to travel. That is the difference between buying a luxury brand and choosing the right luxury vacation."
+        ctaText="Book With Angela Hughes"
+        ctaLink="/contact"
       />
 
       {/* ─── SECTION 15: Editorial Scorecard Table (BudgetBreakdownTable Component) ─── */}

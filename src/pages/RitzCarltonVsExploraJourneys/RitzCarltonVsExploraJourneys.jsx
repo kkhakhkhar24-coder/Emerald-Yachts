@@ -467,7 +467,11 @@ const RitzCarltonVsExploraJourneys = () => {
       <ConclusionSection sections={pageData.finalVerdictSections} />
 
       {/* ─── SECTION 19: ExpertCredentials (100% Component-Based) ─── */}
-      <ExpertCredentials image={angelaPortrait} />
+      <ExpertCredentials
+        image={angelaPortrait}
+        ctaText="Book With Angela Hughes"
+        ctaLink="/contact"
+      />
 
       {/* ─── SECTION 20: CenterCTA (100% Component-Based) ─── */}
       <CenterCTA

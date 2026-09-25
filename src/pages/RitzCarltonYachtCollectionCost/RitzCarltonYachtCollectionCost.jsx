@@ -497,6 +497,8 @@ const RitzCarltonYachtCollectionCost = () => {
         bio={pageData.angelaBio.bio}
         image={angelaImage}
         quote="The right luxury trip is not necessarily the cheapest trip or the most expensive trip. It is the trip that delivers the greatest value for the individual traveler."
+        ctaText="Book With Angela Hughes"
+        ctaLink="/contact"
       />
 
       {/* ─── SECTION 16: Pricing Disclosure (AuthorityBox Component) ─── */}

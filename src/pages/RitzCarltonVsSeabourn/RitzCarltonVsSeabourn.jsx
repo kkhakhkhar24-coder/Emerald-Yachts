@@ -484,7 +484,11 @@ const RitzCarltonVsSeabourn = () => {
       <ConclusionSection sections={pageData.finalVerdictSections} />
 
       {/* ─── SECTION 17: ExpertCredentials ─── */}
-      <ExpertCredentials image={angelaPortrait} />
+      <ExpertCredentials
+        image={angelaPortrait}
+        ctaText="Book With Angela Hughes"
+        ctaLink="/contact"
+      />
 
       {/* ─── SECTION 18: CenterCTA ─── */}
       <CenterCTA

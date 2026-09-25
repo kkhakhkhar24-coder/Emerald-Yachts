@@ -458,6 +458,12 @@ const RitzCarltonYachtTravelAdvisorFlorida = () => {
         bio={pageData.angelaPerspective.bio}
         image={angelaImage}
         text={pageData.angelaPerspective.text}
+        paragraphs={[
+          pageData.angelaPerspective.bio,
+          pageData.angelaPerspective.text
+        ]}
+        ctaText="Book With Angela Hughes"
+        ctaLink="/contact"
       />
 
       {/* 19. Comprehensive 18 FAQs (FAQAccordion) */}

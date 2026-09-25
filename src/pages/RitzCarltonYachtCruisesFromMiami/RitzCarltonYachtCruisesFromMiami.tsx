@@ -556,6 +556,12 @@ const RitzCarltonYachtCruisesFromMiami = () => {
         bio={pageData.angelaPerspective.bio}
         image={angelaImage}
         text={pageData.angelaPerspective.text}
+        paragraphs={[
+          pageData.angelaPerspective.bio,
+          pageData.angelaPerspective.text
+        ]}
+        ctaText="Book With Angela Hughes"
+        ctaLink="/contact"
       />
 
       {/* 24. Comprehensive FAQs (FAQAccordion) */}
