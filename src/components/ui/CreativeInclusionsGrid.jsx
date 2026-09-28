@@ -118,64 +118,61 @@ const CreativeInclusionsGrid = ({ title, subtitle, items, images }) => {
                 
                 {/* For Item 8 (Bicycles/Destinations) which is a center-text glassmorphism hero */}
                 {idx === 8 && hasImage && (
-                  <div className="absolute inset-0 bg-navy-900/30 z-0"></div>
+                  <div className="absolute inset-0 flex items-center justify-center p-8 z-10 pointer-events-none">
+                    <div className="bg-navy-950/40 backdrop-blur-md p-6 rounded-2xl border border-white/20 max-w-sm">
+                      <p className="font-display text-2xl text-white italic">
+                        "{item.quote || "Active immersion in every destination."}"
+                      </p>
+                    </div>
+                  </div>
                 )}
 
-                {/* Content Layouts */}
-                <div className={cn(
-                  "relative z-10 w-full h-full flex",
-                  isHero ? "flex-col justify-end" : 
-                  isTall ? "flex-col gap-6" : 
-                  isWide ? "flex-col md:flex-row md:items-center gap-6" :
-                  "flex-col gap-4"
-                )}>
+                {/* Card Content Layout */}
+                <div className="relative z-10 flex flex-col justify-between h-full">
                   
-                  {/* Icon Container */}
-                  <div className={cn(
-                    "flex-shrink-0 flex items-center justify-center rounded-2xl",
-                    isHero ? "mb-6 w-16 h-16 bg-white/20 backdrop-blur-md text-white" :
-                    isTall ? "w-14 h-14 bg-black/5" :
-                    isWide ? "w-14 h-14 bg-black/5" :
-                    "w-12 h-12 bg-black/5"
-                  )}>
-                    <Icon size={isHero ? 28 : 24} className="opacity-90" />
+                  {/* Top Row: Icon + Custom Badge / Pill */}
+                  <div className="flex items-center justify-between mb-4">
+                    <div className={cn(
+                      "w-12 h-12 rounded-2xl flex items-center justify-center transition-transform duration-500 group-hover:scale-110",
+                      style.bg.includes("bg-navy") ? "bg-white/10 text-white backdrop-blur-md" : "bg-navy-900/5 text-navy-900"
+                    )}>
+                      <Icon className="w-6 h-6" />
+                    </div>
+
+                    {item.badge && (
+                      <span className={cn(
+                        "text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full border",
+                        style.bg.includes("bg-navy") ? "border-white/20 text-white/80 bg-white/5" : "border-navy-900/10 text-navy-900/70 bg-navy-900/5"
+                      )}>
+                        {item.badge}
+                      </span>
+                    )}
                   </div>
 
-                  {/* Text Content */}
-                  <div className={cn(
-                    isHero && idx === 8 ? "bg-white/10 backdrop-blur-md p-8 rounded-3xl text-left border border-white/20" : "",
-                    "flex flex-col h-full"
-                  )}>
+                  {/* Bottom / Middle Text Content */}
+                  <div>
                     <h3 className={cn(
-                      "font-display mb-2",
-                      isHero ? "text-3xl md:text-4xl leading-tight" : 
-                      isWide ? "text-xl md:text-2xl" : 
-                      "text-xl"
+                      "font-display mb-2 transition-colors duration-300",
+                      isHero ? "text-3xl md:text-4xl text-white" : "text-xl md:text-2xl",
+                      style.bg.includes("bg-navy") ? "text-white" : "text-navy-950 group-hover:text-gold-700"
                     )}>
                       {item.title}
                     </h3>
+                    
                     <p className={cn(
-                      "font-sans opacity-80 leading-relaxed",
-                      isHero ? "text-base md:text-lg max-w-md" : "text-sm"
+                      "font-sans text-sm leading-relaxed",
+                      style.bg.includes("bg-navy") ? "text-slate-300" : "text-slate-600"
                     )}>
                       {item.description}
                     </p>
 
-                    {/* Structured Highlights */}
-                    {item.highlights && item.highlights.length > 0 && (
-                      <ul className={cn(
-                        "mt-4 space-y-2",
-                        isHero && idx === 8 ? "mt-6" : ""
-                      )}>
-                        {item.highlights.map((highlight, hIdx) => (
-                          <li key={hIdx} className="flex items-start gap-2">
-                            <Check className="w-4 h-4 mt-0.5 opacity-70 shrink-0" />
-                            <span className={cn(
-                              "font-sans opacity-90 leading-snug",
-                              isHero ? "text-sm md:text-base" : "text-xs md:text-sm"
-                            )}>
-                              {highlight}
-                            </span>
+                    {/* Optional bullet points for deep features */}
+                    {item.bullets && item.bullets.length > 0 && (
+                      <ul className="mt-4 space-y-1.5 border-t border-navy-900/10 pt-3">
+                        {item.bullets.map((bullet, bIdx) => (
+                          <li key={bIdx} className="flex items-center gap-2 text-xs font-sans text-slate-600">
+                            <Check className="w-3.5 h-3.5 text-gold-600 flex-shrink-0" />
+                            <span>{bullet}</span>
                           </li>
                         ))}
                       </ul>
@@ -183,10 +180,12 @@ const CreativeInclusionsGrid = ({ title, subtitle, items, images }) => {
                   </div>
 
                 </div>
+
               </FadeIn>
             );
           })}
         </div>
+
       </div>
     </section>
   );

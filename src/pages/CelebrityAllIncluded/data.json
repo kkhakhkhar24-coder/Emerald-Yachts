@@ -1,0 +1,334 @@
+{
+  "meta": {
+    "title": "Celebrity All Included Explained: What's Included?",
+    "description": "Learn what Celebrity Cruises All Included covers, including drinks, Wi-Fi, gratuities, dining, savings, upgrades, exclusions and how it compares with Cruise Only.",
+    "keywords": "Celebrity All Included, Celebrity Cruises All Included, Celebrity All Included package, Celebrity All Included benefits, Celebrity drink package, Celebrity Wi-Fi, Celebrity gratuities, Celebrity Classic Drinks Package, Celebrity Basic Wi-Fi, Celebrity Cruise Only vs All Included, Celebrity cruise fare",
+    "canonical": "https://www.tripsandships.com/celebrity-cruises/all-included/"
+  },
+  "hero": {
+    "eyebrow": "Celebrity Cruises · Trips & Ships Luxury Travel",
+    "title": "Celebrity All Included Explained",
+    "subtitle": "Learn what Celebrity Cruises All Included covers, including drinks, Wi-Fi, gratuities, dining, savings, upgrades, exclusions and how it compares with Cruise Only."
+  },
+  "intro": {
+    "title": "Celebrity All Included Overview",
+    "lead": "Celebrity Cruises' All Included is a cruise-fare option that bundles selected popular extras into the booking price rather than requiring guests to purchase them separately.",
+    "paragraphs": [
+      "For eligible bookings, the current Celebrity Cruises offering combines the cruise fare with a Classic Drinks Package and unlimited Basic Wi-Fi. Celebrity's current U.S. FAQ also states that onboard staff gratuities are charged separately, while beverage-package gratuities are included. The Retreat has a different enhanced package structure, with Premium Drinks and Premium Wi-Fi included.",
+      "The important distinction is that All Included does not mean every expense on a Celebrity cruise is covered. Your accommodation, included dining, entertainment and many onboard activities are part of the cruise fare, while specialty dining, shore excursions, photos, spa services and several other purchases can still cost extra.",
+      "This guide explains exactly how Celebrity All Included works, what you receive, what is excluded, how the drink and Wi-Fi packages work, and what to check before booking."
+    ]
+  },
+  "whatIsAllIncluded": {
+    "eyebrow": "WHAT IS CELEBRITY ALL INCLUDED?",
+    "title": "Celebrity All Included Is a Bundled Cruise-Fare Option",
+    "lead": "Celebrity All Included is a bundled cruise-fare option that adds Classic Drinks and Basic Wi-Fi to the standard cruise experience. Instead of paying a separate price for these packages, eligible guests select the All Included fare when booking.",
+    "body": "Celebrity currently describes All Included as providing:",
+    "includedList": [
+      "Boutique accommodations",
+      "All meals",
+      "Premium wines, beer, cocktails, and spirits",
+      "Daily shore excursions",
+      "Onboard gratuities",
+      "Scheduled airport transfers on eligible itineraries",
+      "Wi-Fi",
+      "Entertainment",
+      "Wellness activities",
+      "Concierge-style service"
+    ],
+    "footerCard": "The package is intended to simplify the cost of a cruise, but it should not be confused with a package where virtually every onboard purchase is free."
+  },
+  "whatIsIncluded": {
+    "eyebrow": "WHAT'S INCLUDED",
+    "title": "What Does Celebrity All Included Include?",
+    "lead": "The easiest way to understand the package is to separate what comes with the normal cruise fare from the extras added by All Included.",
+    "headers": ["Cruise benefit", "Cruise Only", "All Included"],
+    "rows": [
+      { "benefit": "Stateroom", "cruiseOnly": "Included", "allIncluded": "Included" },
+      { "benefit": "Main dining", "cruiseOnly": "Included", "allIncluded": "Included" },
+      { "benefit": "Included casual dining", "cruiseOnly": "Included", "allIncluded": "Included" },
+      { "benefit": "Main onboard entertainment", "cruiseOnly": "Included", "allIncluded": "Included" },
+      { "benefit": "Many onboard activities", "cruiseOnly": "Included", "allIncluded": "Included" },
+      { "benefit": "Pools and fitness center", "cruiseOnly": "Included", "allIncluded": "Included" },
+      { "benefit": "Classic Drinks Package", "cruiseOnly": "Extra", "allIncluded": "Included" },
+      { "benefit": "Basic Wi-Fi", "cruiseOnly": "Extra", "allIncluded": "Included" },
+      { "benefit": "Beverage-package gratuities", "cruiseOnly": "N/A", "allIncluded": "Included" },
+      { "benefit": "Onboard staff gratuities", "cruiseOnly": "Extra", "allIncluded": "Check terms" },
+      { "benefit": "Specialty restaurants", "cruiseOnly": "Extra", "allIncluded": "Extra" },
+      { "benefit": "Shore excursions", "cruiseOnly": "Extra", "allIncluded": "Extra" },
+      { "benefit": "Spa treatments", "cruiseOnly": "Extra", "allIncluded": "Extra" },
+      { "benefit": "Photos", "cruiseOnly": "Extra", "allIncluded": "Extra" },
+      { "benefit": "Casino", "cruiseOnly": "Extra", "allIncluded": "Extra" },
+      { "benefit": "Medical services", "cruiseOnly": "Extra", "allIncluded": "Extra" }
+    ]
+  },
+  "classicDrinks": {
+    "eyebrow": "BEVERAGES",
+    "title": "Celebrity Classic Drinks Package",
+    "lead": "The Classic Drinks Package is the beverage component of All Included. Celebrity says it covers a broad selection of beverages, including alcoholic and non-alcoholic choices.",
+    "body": "Depending on the current onboard menu and package terms, choices can include:",
+    "alcoholicTitle": "Alcoholic Choices",
+    "alcoholicChoices": [
+      "Beers",
+      "Wines by the glass",
+      "Spirits",
+      "Cocktails",
+      "Liqueurs",
+      "Frozen drinks"
+    ],
+    "nonAlcoholicTitle": "Non-Alcoholic Choices",
+    "nonAlcoholicChoices": [
+      "Sodas",
+      "Specialty coffees",
+      "Teas",
+      "Juices",
+      "Bottled water"
+    ],
+    "keyQuestionsTitle": "Key Questions",
+    "questions": [
+      {
+        "question": "Does the Classic Drinks Package include alcohol?",
+        "answers": [
+          "Yes, includes selected alcoholic beverages",
+          "Includes non-alcoholic options too"
+        ]
+      },
+      {
+        "question": "Does it include bottled water?",
+        "answers": [
+          "Yes, subject to package limits"
+        ]
+      },
+      {
+        "question": "Does it include specialty coffee?",
+        "answers": [
+          "Yes, Celebrity lists it among choices"
+        ]
+      }
+    ]
+  },
+  "classicVsPremiumDrinks": {
+    "eyebrow": "COMPARE",
+    "title": "Classic vs Premium Drinks Package",
+    "lead": "One of the most important points is that All Included normally provides the Classic Drinks Package, not the Premium Drinks Package.",
+    "headers": ["Feature", "Classic Drinks", "Premium Drinks"],
+    "rows": [
+      { "feature": "Standard cocktails", "classic": "Yes", "premium": "Yes" },
+      { "feature": "Selected spirits", "classic": "Yes", "premium": "Yes" },
+      { "feature": "Selected wines by the glass", "classic": "Yes", "premium": "Broader" },
+      { "feature": "Beer", "classic": "Yes", "premium": "Broader" },
+      { "feature": "Specialty coffee", "classic": "Yes", "premium": "Yes" },
+      { "feature": "Bottled water", "classic": "Yes", "premium": "Premium" },
+      { "feature": "Premium brands", "classic": "Limited", "premium": "Broader" },
+      { "feature": "Included with standard All Included", "classic": "Yes", "premium": "No" },
+      { "feature": "Upgrade available", "classic": "—", "premium": "Yes" }
+    ],
+    "footnote": "If you regularly prefer premium spirits, higher-priced wines or premium bottled water, calculate the upgrade cost before deciding which fare represents better value."
+  },
+  "basicWifi": {
+    "eyebrow": "CONNECTIVITY",
+    "title": "Celebrity Basic Wi-Fi",
+    "lead": "The second major All Included benefit is unlimited Basic Wi-Fi.",
+    "body": "Basic Wi-Fi is intended for everyday connectivity rather than high-bandwidth use. Celebrity says Basic Wi-Fi supports activities such as:",
+    "uses": [
+      "Check email",
+      "Share travel photos",
+      "Browse the internet",
+      "Use messaging apps",
+      "Stay connected with family"
+    ],
+    "leftFootnote": "Basic Wi-Fi is intended for everyday connectivity rather than high-bandwidth use. It supports web browsing, email, and texting through supported messaging applications.",
+    "alertNote": "Basic Wi-Fi does not cover streaming, video calls, sending large files, or sharing photos/videos on social media — those require Premium Wi-Fi."
+  },
+  "upgrades": {
+    "eyebrow": "UPGRADES",
+    "title": "Can You Upgrade?",
+    "lead": "Yes — both the drinks package and Wi-Fi can be upgraded.",
+    "premiumDrinksLead": "Upgrade to Premium Drinks:",
+    "premiumDrinksDesc": "Guests who book All Included can upgrade from Classic to Premium Drinks, with pre-cruise upgrades generally available through the Cruise Planner.",
+    "premiumWifiLead": "Upgrade to Premium Wi-Fi:",
+    "premiumWifiDesc": "Guests can upgrade from Basic Wi-Fi to Premium Wi-Fi. Celebrity's published FAQ currently identifies a $9.99 per-person-per-day upgrade charge for this option, although prices and offers can change.",
+    "leftFootnote": "Celebrity currently recommends upgrading before the cruise through its Cruise Planner, where the price may be lower than purchasing the upgrade onboard.",
+    "noteBadge": "Premium Wi-Fi is designed for heavier internet use, including video calls, streaming, social media uploads, larger file transfers, streaming entertainment, and more demanding browsing. Celebrity's current Wi-Fi information says Premium Wi-Fi is powered by Starlink."
+  },
+  "gratuities": {
+    "eyebrow": "GRATUITIES",
+    "title": "Are Gratuities Included in Celebrity All Included?",
+    "lead": "This is one of the most confusing parts of Celebrity's All Included terminology because published information can differ by market and fare wording.",
+    "body": "For current U.S. Celebrity Cruises information, onboard staff gratuities are charged separately. Celebrity's current U.S. FAQ specifically states that All Included combines Basic Wi-Fi and Classic Drinks, with beverage-package gratuities included, while onboard staff gratuities are separate.",
+    "cards": [
+      "Beverage-package gratuities are included",
+      "Onboard staff gratuities are separate (U.S. terms)",
+      "Terms can vary by market",
+      "Check fare conditions for your booking"
+    ],
+    "footnote": "Some Celebrity regional FAQ material has described All Included as including three amenities — tips, Basic Wi-Fi and Classic Drinks. Therefore, travelers should check the terms displayed for their country, booking currency and specific sailing."
+  },
+  "whatIsNotIncluded": {
+    "eyebrow": "GOOD TO KNOW",
+    "title": "What Is Not Included in Celebrity All Included?",
+    "lead": "All Included does not cover every purchase on the ship. Common additional expenses include:",
+    "includedVsExtra": [
+      { "included": "Luxury accommodations", "extra": "International airfare" },
+      { "included": "All meals", "extra": "Travel insurance" },
+      { "included": "Premium beverages", "extra": "Optional spa treatments" },
+      { "included": "Daily excursions", "extra": "Personal shopping" },
+      { "included": "Wi-Fi", "extra": "Independent private tours" },
+      { "included": "Gratuities", "extra": "Visa fees (if required)" },
+      { "included": "Entertainment", "extra": "Some premium experiences" },
+      { "included": "Fitness facilities", "extra": "Optional pre/post cruise hotels" }
+    ],
+    "footnote": "Always review your specific itinerary, as inclusions can vary."
+  },
+  "allIncludedVsCruiseOnly": {
+    "eyebrow": "COMPARE",
+    "title": "All Included vs Cruise Only",
+    "headers": ["Compare Features", "Cruise Only", "All Included"],
+    "rows": [
+      { "feature": "Stateroom", "cruiseOnly": "Included", "allIncluded": "Included" },
+      { "feature": "Included dining", "cruiseOnly": "Included", "allIncluded": "Included" },
+      { "feature": "Entertainment", "cruiseOnly": "Included", "allIncluded": "Included" },
+      { "feature": "Many onboard activities", "cruiseOnly": "Included", "allIncluded": "Included" },
+      { "feature": "Classic Drinks", "cruiseOnly": "Extra", "allIncluded": "Included" },
+      { "feature": "Basic Wi-Fi", "cruiseOnly": "Extra", "allIncluded": "Included" },
+      { "feature": "Beverage-package gratuity", "cruiseOnly": "N/A", "allIncluded": "Included" },
+      { "feature": "Staff gratuities", "cruiseOnly": "Check fare terms", "allIncluded": "Current U.S. terms: separate" },
+      { "feature": "Specialty dining", "cruiseOnly": "Extra", "allIncluded": "Extra" },
+      { "feature": "Excursions", "cruiseOnly": "Extra", "allIncluded": "Extra" },
+      { "feature": "Spa", "cruiseOnly": "Extra", "allIncluded": "Extra" },
+      { "feature": "Photos", "cruiseOnly": "Extra", "allIncluded": "Extra" }
+    ],
+    "footnote": "Celebrity describes All Included as a higher-value booking option that adds drinks and Wi-Fi, while Cruise Only is the lower fare with those extras excluded."
+  },
+  "isItWorthIt": {
+    "eyebrow": "IS IT WORTH THE PRICE?",
+    "title": "Is Celebrity All Included Worth It?",
+    "lead": "The answer depends primarily on whether you would otherwise purchase drinks and Wi-Fi.",
+    "body": "All Included can make sense if you drink several beverages each day, want Wi-Fi throughout the cruise, enjoy specialty coffee, bottled water or other package beverages, want a simpler cruise budget, are traveling with other guests who will use the package, and find the fare difference lower than buying the benefits separately.",
+    "calculateCardTitle": "A Simple Way to Calculate the Value",
+    "calculateSubtitle": "Use this basic comparison:",
+    "steps": [
+      {
+        "title": "All Included fare − Cruise Only fare",
+        "desc": "= Additional cost of All Included"
+      },
+      {
+        "title": "Then compare with what you'd spend on:",
+        "desc": "Drink package + Wi-Fi + applicable package charges"
+      },
+      {
+        "title": "Example",
+        "desc": "If All Included costs $400 more and you'd spend $300 on drinks + $150 on Wi-Fi, it's good value."
+      }
+    ],
+    "quote": "The best approach is to compare the actual All Included fare against the actual Cruise Only fare for the same cabin, sailing and number of guests."
+  },
+  "video": {
+    "youtubeId": "placeholder",
+    "title": "Celebrity All Included Experience & Value Guide",
+    "subtitle": "A complete visual breakdown of Celebrity Cruises Classic Drinks, Basic Wi-Fi, and bundled package savings.",
+    "captionTag": "CELEBRITY CRUISES",
+    "captionText": "Explore what is included with Celebrity All Included vs Cruise Only packages."
+  },
+  "keyTakeaways": {
+    "title": "Key Takeaways",
+    "subtitle": "8 Essential Insights on Celebrity Cruises All Included",
+    "items": [
+      "Celebrity All Included is a bundled fare option, not an everything-is-free cruise package.",
+      "Current U.S. Celebrity information identifies Classic Drinks and Basic Wi-Fi as the main All Included additions.",
+      "Beverage-package gratuities are included.",
+      "Current U.S. terms state that onboard staff gratuities are separate, so check your market-specific fare terms.",
+      "Basic Wi-Fi supports browsing, email and messaging but not streaming or video calls.",
+      "The Classic Drinks Package includes alcoholic and non-alcoholic choices.",
+      "Specialty dining, shore excursions, spa services, photos and other premium purchases generally remain extra.",
+      "The Retreat has enhanced inclusions, including Premium Drinks and Premium Wi-Fi."
+    ]
+  },
+  "expertAdvisor": {
+    "name": "Angela Hughes",
+    "role": "CEO, Trips & Ships Luxury Travel · Founder, Luxury Travel University",
+    "badge": "EXPERT ADVISOR",
+    "experienceBadge": "40+ YEARS EXPERTISE",
+    "quote": "Celebrity's All Included model simplifies the cruising experience by bundling the most commonly purchased extras into a single fare. When your drinks and Wi-Fi are already covered, you can focus on enjoying the journey rather than tracking every onboard expense.",
+    "standoutPills": [
+      "Classic Drinks Package",
+      "Basic Wi-Fi",
+      "Beverage Gratuities Included",
+      "Simplified Budgeting",
+      "Upgrade Options",
+      "The Retreat Enhanced Benefits"
+    ],
+    "bio": "As founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel, Angela Hughes uses her personal, deep connections in the cruising world to deliver custom travel planning that regular booking engines simply cannot replicate."
+  },
+  "faqs": [
+    {
+      "question": "What is Celebrity All Included?",
+      "answer": "Celebrity All Included is a bundled cruise-fare option that adds a Classic Drinks Package and unlimited Basic Wi-Fi to the standard cruise experience for eligible bookings."
+    },
+    {
+      "question": "What does Celebrity All Included cover?",
+      "answer": "It covers the standard Celebrity cruise fare plus the Classic Drinks Package and unlimited Basic Wi-Fi. Beverage-package gratuities are included, while current U.S. Celebrity terms state that onboard staff gratuities are separate."
+    },
+    {
+      "question": "Are drinks included with Celebrity All Included?",
+      "answer": "Yes. All Included provides the Classic Drinks Package, which covers selected beers, wines, spirits, cocktails, frozen drinks, sodas, specialty coffees, juices and bottled water, subject to package terms."
+    },
+    {
+      "question": "Is Wi-Fi included with Celebrity All Included?",
+      "answer": "Yes. All Included includes unlimited Basic Wi-Fi. Basic Wi-Fi supports browsing, email and messaging, while streaming and video calls require Premium Wi-Fi."
+    },
+    {
+      "question": "Are gratuities included in Celebrity All Included?",
+      "answer": "Beverage-package gratuities are included. For current U.S. bookings, Celebrity states that onboard staff gratuities are charged separately. Because terms can vary by market, travelers should check the fare conditions for their booking."
+    },
+    {
+      "question": "Does Celebrity All Included include specialty dining?",
+      "answer": "No, not as a standard All Included benefit. Specialty restaurants generally have an additional charge unless a separate dining package or applicable suite benefit is included."
+    },
+    {
+      "question": "Does Celebrity All Included include shore excursions?",
+      "answer": "No. Shore excursions are generally additional purchases and are not part of the standard All Included package."
+    },
+    {
+      "question": "Can I upgrade the Classic Drinks Package to Premium?",
+      "answer": "Yes. Celebrity allows guests who book All Included to upgrade from Classic to Premium Drinks, with pre-cruise upgrades generally available through the Cruise Planner."
+    },
+    {
+      "question": "Can I upgrade Basic Wi-Fi to Premium Wi-Fi?",
+      "answer": "Yes. Guests can upgrade to Premium Wi-Fi, and Celebrity recommends arranging the upgrade before the cruise through the Cruise Planner."
+    },
+    {
+      "question": "Do all guests in the same cabin get All Included?",
+      "answer": "Eligible guests in the same stateroom must generally choose the same fare, and the corresponding drink and Wi-Fi benefits apply to the guests in that stateroom."
+    },
+    {
+      "question": "Can I add All Included after booking?",
+      "answer": "Celebrity's current All Included terms state that the All Included fare is selected at booking and cannot simply be added afterward as the same fare option. Individual Wi-Fi or beverage upgrades may still be available through the Cruise Planner."
+    },
+    {
+      "question": "Does All Included include food on Celebrity Cruises?",
+      "answer": "The standard Celebrity cruise fare already includes substantial dining such as main restaurant meals and complimentary casual venues. All Included primarily adds drinks and Wi-Fi rather than creating a separate unlimited specialty-dining package."
+    },
+    {
+      "question": "Is Premium Wi-Fi included with All Included?",
+      "answer": "No. Standard All Included provides Basic Wi-Fi. Premium Wi-Fi is a separate upgrade, while guests staying in The Retreat receive Premium Wi-Fi as part of the enhanced Retreat experience."
+    },
+    {
+      "question": "Does Celebrity All Included include the Premium Drinks Package?",
+      "answer": "No. Standard All Included provides the Classic Drinks Package. Guests can generally pay to upgrade to Premium Drinks. Retreat guests receive Premium Drinks as part of their enhanced suite experience."
+    },
+    {
+      "question": "Is Celebrity All Included worth it?",
+      "answer": "It can be worthwhile if you expect to use the included drinks and Wi-Fi regularly. The best way to judge the value is to compare the All Included fare with the Cruise Only fare and the separate cost of the benefits you would actually use. Celebrity currently advertises potential savings of up to $800, but actual savings vary by booking."
+    }
+  ],
+  "cta": {
+    "eyebrow": "START SOMEWHERE REMARKABLE",
+    "title": "Ready to Book Your Celebrity Cruise?",
+    "subtitle": "Planning a Celebrity cruise? Compare the Cruise Only and All Included fares for your exact sailing, then calculate the cost of drinks and Wi-Fi you would otherwise purchase. Checking the full fare difference before booking can help you choose the option that best matches your travel style and budget.",
+    "primaryBtnText": "Schedule a Consultation",
+    "primaryBtnUrl": "/contact",
+    "secondaryBtnText": "Explore Celebrity Cruises",
+    "secondaryBtnUrl": "/celebrity-cruises"
+  }
+}

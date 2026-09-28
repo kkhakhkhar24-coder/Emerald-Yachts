@@ -1243,7 +1243,7 @@ const Navbar = () => {
                 Celebrity Staterooms and Suites Guide
               </NavLink>
 
-              <NavLink
+              {/* <NavLink
                 to="/celebrity-cruises/the-retreat"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -1257,7 +1257,7 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Celebrity All Included Explained
-              </NavLink>
+              </NavLink> */}
 
               <NavLink
                 to="/celebrity-cruises/drink-packages"
@@ -2799,7 +2799,7 @@ const Navbar = () => {
               Celebrity Staterooms and Suites Guide
             </NavLink>
 
-            <NavLink
+            {/* <NavLink
               to="/celebrity-cruises/the-retreat"
               className="nav-dropdown-single"
               onClick={toggleMenu}
@@ -2813,7 +2813,7 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Celebrity All Included Explained
-            </NavLink>
+            </NavLink> */}
 
             <NavLink
               to="/celebrity-cruises/drink-packages"

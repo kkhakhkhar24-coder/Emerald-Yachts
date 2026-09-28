@@ -1,0 +1,645 @@
+{
+  "meta": {
+    "title": "Celebrity Cruises The Retreat Guide",
+    "description": "Discover The Retreat on Celebrity Cruises, including suites, Luminae, private lounges, sundecks, butler service, dining and premium benefits.",
+    "keywords": "Celebrity Cruises The Retreat, The Retreat Celebrity Cruises, Celebrity The Retreat suites, Celebrity Retreat benefits, Celebrity Retreat amenities, Luminae, Retreat Lounge, Retreat Sundeck, Celebrity suite benefits, Celebrity butler service, Celebrity Cruises suites, Celebrity Aqua Sky Suite",
+    "canonical": "https://www.tripsandships.com/celebrity-cruises/the-retreat"
+  },
+  "hero": {
+    "eyebrow": "Celebrity Cruises · Trips & Ships Luxury Travel",
+    "title": "Celebrity Cruises The Retreat: Complete Guide",
+    "subtitle": "Discover The Retreat on Celebrity Cruises, including suites, Luminae, private lounges, sundecks, butler service, dining and premium benefits."
+  },
+  "intro": {
+    "title": "What Is The Retreat on Celebrity Cruises?",
+    "lead": "The Retreat is Celebrity Cruises' suite-focused experience, combining premium suite accommodation with dedicated service, exclusive spaces and enhanced dining and onboard amenities. It is more than a larger cabin: guests staying in eligible suites receive access to private areas such as Luminae at The Retreat, The Retreat Lounge and, on applicable ships, The Retreat Sundeck.",
+    "paragraphs": [
+      "Celebrity currently describes The Retreat as including all suites, a dedicated butler and team, Luminae, an exclusive lounge and an exclusive sundeck on Edge Series and revolutionized ships. The Retreat experience also includes Premium Drinks and Premium Wi-Fi under Celebrity's current offering, although specific benefits can vary by suite, fare and sailing. (Celebrity Cruises)",
+      "This guide explains what The Retreat includes, how the suite categories differ, what you can expect from Luminae and the private Retreat spaces, and what to check before booking."
+    ]
+  },
+  "whatIsTheRetreat": {
+    "eyebrow": "THE EXPERIENCE",
+    "title": "What Is The Retreat on Celebrity Cruises?",
+    "lead": "The Retreat is Celebrity's dedicated suite experience.",
+    "body": "Instead of treating a suite simply as a larger stateroom, Celebrity combines the accommodation with access to private venues and additional services.",
+    "footnote": "Celebrity's current Retreat information confirms that all Retreat suites receive access to Luminae and the Retreat Lounge, while the Retreat Sundeck is available on Edge Series and revolutionized ships. (Celebrity Cruises)",
+    "includedHighlights": [
+      "Suite accommodation",
+      "Dedicated butler service",
+      "Butler Chat",
+      "Luminae at The Retreat",
+      "The Retreat Lounge",
+      "The Retreat Sundeck on applicable ships",
+      "Premium Wi-Fi",
+      "Premium Drinks",
+      "Enhanced in-suite amenities",
+      "Priority embarkation and departure benefits",
+      "Dedicated concierge and destination assistance",
+      "Selected wellness benefits",
+      "Additional benefits for higher-level suites"
+    ]
+  },
+  "whatIsIncluded": {
+    "eyebrow": "INCLUDED WITH YOUR SUITE",
+    "title": "What Is Included in The Retreat?",
+    "intro": "The exact inclusions depend on the suite and fare, but the core Retreat experience generally revolves around five areas: your suite, personalized service, private dining, exclusive spaces and premium amenities.",
+    "headers": ["Benefit", "The Retreat"],
+    "rows": [
+      { "benefit": "Suite accommodation", "value": "Yes" },
+      { "benefit": "Dedicated butler", "value": "Yes" },
+      { "benefit": "Luminae", "value": "Yes" },
+      { "benefit": "Retreat Lounge", "value": "Yes" },
+      { "benefit": "Retreat Sundeck", "value": "On applicable ships" },
+      { "benefit": "Premium Wi-Fi", "value": "Included under current Retreat offering" },
+      { "benefit": "Premium Drinks", "value": "Included under current Retreat offering" },
+      { "benefit": "In-suite dining", "value": "Available" },
+      { "benefit": "Premium bath amenities", "value": "Yes" },
+      { "benefit": "Priority embarkation/departure", "value": "Applicable benefits" },
+      { "benefit": "Destination assistance", "value": "Yes" },
+      { "benefit": "Specialty dining", "value": "Depends on suite" },
+      { "benefit": "Laundry/pressing", "value": "Enhanced benefits for qualifying higher suites" }
+    ],
+    "footnote": "Celebrity notes that certain enhanced benefits, including complimentary specialty dining, daily laundry and unlimited pressing, apply specifically to higher-level suites such as Royal Suites and above. (Celebrity Cruises)"
+  },
+  "suiteCategories": {
+    "eyebrow": "FIND YOUR FIT",
+    "title": "Celebrity Retreat Suite Categories",
+    "lead": "The Retreat is not one single cabin type. It includes multiple suite categories, and the inventory differs between Celebrity ships.",
+    "body": "Common and ship-specific categories can include:",
+    "categories": [
+      "Sky Suite",
+      "Aqua Sky Suite",
+      "Celebrity Suite",
+      "Royal Suite",
+      "Signature Suite",
+      "Horizon Suite",
+      "Penthouse Suite",
+      "Edge Villa",
+      "Reflection Suite",
+      "Iconic Suite"
+    ],
+    "footnote": "Not every category is available on every ship. For example, Signature Suites are specific to Celebrity Reflection, while Edge Villas and Iconic Suites are associated with Edge Series ships. (Celebrity Cruises)"
+  },
+  "skySuite": {
+    "eyebrow": "ENTRY POINT",
+    "title": "Sky Suite",
+    "lead": "The Sky Suite is one of the main entry points into The Retreat.",
+    "body": "Celebrity's current Sky Suite information highlights:",
+    "highlights": [
+      "Dedicated butler service",
+      "Butler Chat",
+      "Destination Experience Specialist",
+      "Priority departure and embarkation at applicable destinations",
+      "Reserved theater seating on Evening Chic nights",
+      "Premium bath amenities",
+      "Premium Wi-Fi",
+      "Premium Drinks",
+      "Full in-suite dining",
+      "Access to Luminae",
+      "Access to The Retreat Lounge",
+      "Access to applicable Retreat Sundeck facilities"
+    ],
+    "footnote": "The precise benefits can depend on the fare and sailing. (Celebrity Cruises)",
+    "sideNote": "For travelers who want the Retreat experience without selecting one of the largest suites, a Sky Suite can provide the key private spaces and service associated with the program."
+  },
+  "aquaSkySuite": {
+    "eyebrow": "WELLNESS + SUITE",
+    "title": "Aqua Sky Suite",
+    "lead": "The Aqua Sky Suite combines The Retreat with Celebrity's wellness-focused AquaClass experience.",
+    "body": "On Celebrity Beyond, for example, Celebrity lists the Aqua Sky Suite at 319 square feet of interior space plus a 79-square-foot veranda. Benefits include access to the private suite venues as well as wellness features such as the SEA Thermal Suite, spa concierge services and fitness classes. (Celebrity Cruises)",
+    "benefitsLead": "Aqua Sky Suite benefits can include:",
+    "highlights": [
+      "The Retreat Lounge",
+      "Luminae",
+      "Retreat Sundeck",
+      "Dedicated butler",
+      "SEA Thermal Suite on applicable Edge Series ships",
+      "Spa concierge",
+      "Priority spa reservations",
+      "Fitness classes",
+      "Yoga mats",
+      "In-room fitness amenities",
+      "Wellness-oriented bathroom products",
+      "Daily bottled water"
+    ],
+    "footnote": "Aqua Sky Suite benefits vary according to the ship's facilities."
+  },
+  "celebritySuite": {
+    "eyebrow": "TWO-ROOM SUITES",
+    "title": "Celebrity Suite",
+    "lead": "Celebrity Suites offer more living space than Sky Suites and generally feature separate living and sleeping areas.",
+    "body": "Celebrity describes its Celebrity Suites as two-room suites with large living areas and floor-to-ceiling panoramic windows on applicable ships. (Celebrity Cruises)",
+    "suitabilityLead": "They are particularly suitable for travelers who want:",
+    "highlights": [
+      "Separate living and sleeping space",
+      "A larger suite footprint",
+      "Private outdoor space",
+      "Retreat-level service",
+      "Access to Luminae and other Retreat venues"
+    ],
+    "sideNote": "Celebrity Suites provide a two-room layout, which can be particularly useful when separate living and sleeping areas matter."
+  },
+  "royalSuite": {
+    "eyebrow": "HIGHER-LEVEL SUITE",
+    "title": "Royal Suite",
+    "lead": "The Royal Suite sits higher in the Retreat hierarchy and adds significantly more space and enhanced benefits.",
+    "body": "Celebrity's current Retreat information lists Royal Suites among the higher-level suites that can receive benefits such as complimentary specialty dining, daily laundry and unlimited pressing. (Celebrity Cruises)",
+    "closing": "Royal Suites are designed for travelers who want both substantial living space and a more comprehensive premium-service experience."
+  },
+  "signatureSuite": {
+    "eyebrow": "SHIP-SPECIFIC",
+    "title": "Signature Suite",
+    "lead": "The Signature Suite is a ship-specific category available on Celebrity Reflection.",
+    "body": "Celebrity lists a Signature Suite at approximately 441 square feet of interior space and a 118-square-foot terrace, with features including higher ceilings, floor-to-ceiling glass doors and windows, a spacious veranda and enhanced suite amenities. (Celebrity Cruises)",
+    "footnote": "Because it is ship-specific, travelers should confirm the current configuration when comparing it with other Retreat suites."
+  },
+  "penthouseSuite": {
+    "eyebrow": "LARGEST CATEGORIES",
+    "title": "Penthouse Suite",
+    "lead": "The Penthouse Suite is one of Celebrity's largest suite categories.",
+    "body": "Celebrity's current Retreat information places Penthouse Suites among the higher suite categories eligible for enhanced benefits, including complimentary specialty dining and additional laundry services. (Celebrity Cruises)",
+    "featuresLead": "Features can include:",
+    "highlights": [
+      "Large separate living spaces",
+      "Dining area",
+      "Large private terrace",
+      "Premium suite amenities",
+      "Dedicated butler",
+      "Luminae access",
+      "Retreat Lounge access",
+      "Retreat Sundeck access where applicable",
+      "Higher-level suite benefits"
+    ]
+  },
+  "edgeVilla": {
+    "eyebrow": "TWO-LEVEL LIVING",
+    "title": "Edge Villa",
+    "lead": "The Edge Villa is a distinctive two-level suite found on selected Edge Series ships.",
+    "body": "Celebrity describes Edge Villas as two-story accommodations with indoor and outdoor living space. They include a private terrace and plunge-pool-style outdoor space on applicable ships.",
+    "closing": "Edge Villas also qualify for the enhanced suite benefits associated with higher-level Retreat accommodations. (Celebrity Cruises)"
+  },
+  "iconicSuite": {
+    "eyebrow": "TOP OF THE FLEET",
+    "title": "Iconic Suite",
+    "lead": "The Iconic Suite represents the top end of Celebrity's suite accommodation on selected ships.",
+    "body": "Celebrity describes the Iconic Suite as the largest and most luxurious suite in its fleet. On Celebrity Ascent, it is listed at approximately 1,892 square feet of interior space and a 689-square-foot veranda. (Celebrity Cruises)",
+    "sideNote": "The large outdoor area and position near the ship's bridge make this category particularly distinctive."
+  },
+  "luminae": {
+    "eyebrow": "PRIVATE DINING",
+    "title": "Luminae at The Retreat",
+    "lead": "Luminae at The Retreat is Celebrity's private restaurant for suite guests.",
+    "body": "It is one of the defining parts of The Retreat experience. Celebrity describes Luminae as serving an exclusive menu that is not available elsewhere onboard, alongside complimentary signature dishes from Chef Daniel Boulud, Celebrity's Global Culinary Brand Ambassador. (Celebrity Cruises)",
+    "mealsTitle": "What meals are available at Luminae?",
+    "mealsLead": "Luminae can serve:",
+    "meals": [
+      { "name": "Breakfast", "description": "Exclusive Luminae menu" },
+      { "name": "Lunch", "description": "Exclusive Luminae menu" },
+      { "name": "Dinner", "description": "Exclusive Luminae menu" },
+      { "name": "Signature Dishes", "description": "Chef Daniel Boulud selections" }
+    ],
+    "hoursFootnote": "Opening hours vary by itinerary, so guests should check the onboard daily schedule for current service times. (Celebrity Cruises)",
+    "dailyFaqTitle": "Can Retreat guests dine in Luminae every day?",
+    "dailyFaqBody": "Yes, Luminae is designed as the private restaurant for guests of The Retreat. Reservations may be appropriate for certain dining arrangements, but service details can vary by sailing."
+  },
+  "retreatLounge": {
+    "eyebrow": "EXCLUSIVE LOUNGE",
+    "title": "The Retreat Lounge",
+    "lead": "The Retreat Lounge is a private lounge reserved for Retreat guests.",
+    "body": "On older non-revolutionized ships, the equivalent venue may be called Michael's Club. (Celebrity Cruises)",
+    "subBody": "The lounge provides a quieter place to relax away from the ship's larger public venues.",
+    "amenitiesLead": "Amenities can include:",
+    "amenities": [
+      "Complimentary beverages",
+      "Gourmet bites",
+      "Afternoon tea",
+      "Dedicated concierge services",
+      "Assistance with dining reservations",
+      "Spa appointment assistance",
+      "Shore excursion assistance",
+      "Comfortable seating"
+    ],
+    "footnote": "Celebrity states that the lounge is available 24/7, although staffed service hours vary by itinerary. (Celebrity Cruises)"
+  },
+  "retreatSundeck": {
+    "eyebrow": "PRIVATE OUTDOOR AREA",
+    "title": "The Retreat Sundeck",
+    "lead": "The Retreat Sundeck is an exclusive outdoor area for Retreat guests.",
+    "body": "It is available on Edge Series and revolutionized ships, rather than being a fleet-wide feature on every vessel. (Celebrity Cruises)",
+    "featuresLead": "Depending on the ship, the area can include:",
+    "features": [
+      "Lounge seating",
+      "Shaded loungers",
+      "Pool",
+      "Hot tub",
+      "Bar service",
+      "Towels",
+      "Snacks",
+      "Beverages",
+      "Retreat attendants"
+    ],
+    "footnote": "Celebrity describes the Retreat Sundeck as an outdoor sanctuary designed exclusively for suite guests. (Celebrity Cruises)",
+    "sideNote": "If access to a private outdoor area is important to you, check whether your specific ship has a Retreat Sundeck before booking."
+  },
+  "butlerService": {
+    "eyebrow": "PERSONALIZED SERVICE",
+    "title": "Celebrity Retreat Butler Service",
+    "lead": "Every Retreat suite comes with a dedicated butler.",
+    "body": "The butler can assist with practical arrangements and reservations, allowing guests to spend less time managing logistics during the cruise.",
+    "servicesLead": "Celebrity says Retreat butlers can assist with:",
+    "services": [
+      "Packing and unpacking",
+      "Dining reservations",
+      "Spa appointments",
+      "Shore excursion arrangements",
+      "In-suite service",
+      "Other vacation requests"
+    ],
+    "footnote": "Celebrity also offers Butler Chat, allowing guests to contact their butler using a personal device. (Celebrity Cruises)",
+    "chatTitle": "What is Butler Chat?",
+    "chatParagraphs": [
+      "Butler Chat provides a convenient way to contact your assigned butler without having to visit or call a service desk.",
+      "It can be useful for simple requests while you are elsewhere on the ship."
+    ]
+  },
+  "conciergeDestination": {
+    "eyebrow": "RETREAT CONCIERGE",
+    "title": "Retreat Concierge and Destination Assistance",
+    "lead": "The Retreat experience extends beyond the suite itself.",
+    "body": "Celebrity's current Retreat information includes a Destination Experience Specialist who can help guests make plans ashore, while the Retreat Concierge can assist with reservations and onboard arrangements. (Celebrity Cruises)",
+    "helpLead": "This can be useful when you want help coordinating:",
+    "helpItems": [
+      "Shore excursions",
+      "Dining",
+      "Spa treatments",
+      "Transfers",
+      "Onboard activities",
+      "Special arrangements"
+    ]
+  },
+  "diningBeverageBenefits": {
+    "eyebrow": "FOOD & BEVERAGE",
+    "title": "Retreat Dining and Beverage Benefits",
+    "cards": [
+      {
+        "title": "Premium Drinks",
+        "icon": "Wine",
+        "description": "Celebrity's current FAQ states that Retreat guests receive Premium Drinks as part of the current Retreat offering. (Celebrity Cruises)"
+      },
+      {
+        "title": "Premium Wi-Fi",
+        "icon": "Wifi",
+        "description": "Premium Wi-Fi is also included in the current Retreat offering. Celebrity notes that special fares and certain MoveUp upgrades can have exceptions, so the booking terms should be checked carefully. (Celebrity Cruises)"
+      },
+      {
+        "title": "Specialty Dining",
+        "icon": "Utensils",
+        "description": "Specialty dining is not necessarily identical for every Retreat suite. Celebrity currently lists complimentary specialty dining, including lunch, among the enhanced benefits for Royal Suites and above, while its FAQ specifically identifies Iconic, Edge Villa, Reflection, Penthouse, Royal and Signature Suites for complimentary specialty dining. (Celebrity Cruises) This is an important distinction when comparing a Sky Suite with a higher-level suite."
+      },
+      {
+        "title": "In-Suite Dining",
+        "icon": "Bed",
+        "description": "Retreat guests can order meals to their suite. Celebrity's current Retreat information includes full in-suite breakfast, lunch and dinner service, along with daily delights. (Celebrity Cruises)",
+        "usesLead": "This can be especially useful when:",
+        "uses": [
+          "You want breakfast privately",
+          "You are enjoying a scenic day from your suite",
+          "You prefer a quiet evening",
+          "You want to use your private veranda or terrace"
+        ]
+      }
+    ]
+  },
+  "suiteAmenities": {
+    "eyebrow": "IN-ROOM ELEVATION",
+    "title": "Retreat Suite Amenities",
+    "lead": "Retreat suites receive upgraded in-room amenities compared with standard accommodation.",
+    "amenitiesLead": "Depending on the suite, these can include:",
+    "amenities": [
+      "Welcome bottle of sparkling wine",
+      "Premium Cashmere mattress",
+      "Exclusive Retreat bedding",
+      "Premium bath amenities",
+      "Cotton towels",
+      "Bathrobes",
+      "Pillow menu",
+      "Complimentary minibar benefits",
+      "Premium Wi-Fi",
+      "In-suite dining",
+      "Enhanced bathroom amenities"
+    ],
+    "footnote": "Celebrity notes that Royal Suites and above can receive additional benefits such as personalized minibar options and complimentary sleepwear. (Celebrity Cruises)"
+  },
+  "benefitsBySuite": {
+    "eyebrow": "COMPARE BEFORE BOOKING",
+    "title": "Which Retreat Benefits Depend on Your Suite?",
+    "intro": "One of the most important things to understand is that not every Retreat suite receives exactly the same benefits.",
+    "headers": ["Benefit", "Sky Suite", "Aqua Sky Suite", "Royal Suite & Above"],
+    "rows": [
+      { "benefit": "Retreat Lounge", "sky": "Yes", "aqua": "Yes", "royal": "Yes" },
+      { "benefit": "Luminae", "sky": "Yes", "aqua": "Yes", "royal": "Yes" },
+      { "benefit": "Dedicated butler", "sky": "Yes", "aqua": "Yes", "royal": "Yes" },
+      { "benefit": "Premium Wi-Fi", "sky": "Yes*", "aqua": "Yes*", "royal": "Yes*" },
+      { "benefit": "Premium Drinks", "sky": "Yes", "aqua": "Yes", "royal": "Yes" },
+      { "benefit": "Aqua wellness benefits", "sky": "No", "aqua": "Yes", "royal": "Not automatically" },
+      { "benefit": "Specialty dining", "sky": "Not generally included", "aqua": "Not generally included", "royal": "Enhanced eligibility" },
+      { "benefit": "Daily laundry", "sky": "Not standard", "aqua": "Not standard", "royal": "Yes" },
+      { "benefit": "Unlimited pressing", "sky": "Not standard", "aqua": "Not standard", "royal": "Yes" },
+      { "benefit": "Complimentary sleepwear", "sky": "No", "aqua": "No", "royal": "Yes" },
+      { "benefit": "SEA Thermal Suite/Persian Garden", "sky": "No", "aqua": "Yes, where applicable", "royal": "Yes for qualifying suites" }
+    ],
+    "footnote": "*Certain special fares and MoveUp upgrades can have different terms. Celebrity's current suite information confirms that Royal Suites and above receive additional benefits such as complimentary specialty dining, laundry and pressing, while Aqua Sky Suites receive wellness benefits. (Celebrity Cruises)"
+  },
+  "shipsWithRetreat": {
+    "eyebrow": "FLEET AVAILABILITY",
+    "title": "Which Celebrity Ships Have The Retreat?",
+    "lead": "The Retreat is available across multiple Celebrity ship classes, but the facilities are not identical across the fleet.",
+    "body": "Examples include:",
+    "shipClasses": [
+      { "title": "Edge Series ships", "description": "Available on ships in this class with varying suite categories and exclusive facility designs." },
+      { "title": "Solstice Series ships", "description": "Available on ships in this class with varying suite categories and exclusive facility designs." },
+      { "title": "Millennium Series ships", "description": "Available on ships in this class with varying suite categories and exclusive facility designs." },
+      { "title": "Revolutionized ships with updated Retreat facilities", "description": "Available on ships in this class with varying suite categories and exclusive facility designs." }
+    ],
+    "designNote": "The design can differ substantially. Edge Series ships may feature a Retreat Sundeck with modern outdoor facilities, while older ships can use Michael's Club as the Retreat lounge. (Celebrity Cruises)",
+    "whyMattersTitle": "Why the ship matters",
+    "whyMattersLead": "Before booking, check:",
+    "checks": [
+      "Which Retreat venues are available.",
+      "Whether the ship has a Retreat Sundeck.",
+      "Which suite categories are offered.",
+      "The exact suite size.",
+      "Whether your fare includes all advertised benefits.",
+      "Whether the ship has been revolutionized."
+    ]
+  },
+  "edgeSeries": {
+    "eyebrow": "EDGE SERIES SHIPS",
+    "title": "The Retreat on Edge Series Ships",
+    "lead": "The Retreat experience is particularly prominent on Celebrity's Edge Series.",
+    "body": "On applicable Edge Series ships, guests can have access to:",
+    "highlights": [
+      "Luminae",
+      "Retreat Lounge",
+      "Retreat Sundeck",
+      "Dedicated butler service",
+      "Modern suite accommodations",
+      "Premium dining and beverage benefits",
+      "Premium Wi-Fi",
+      "Edge-specific suite categories"
+    ],
+    "footnote": "Celebrity Ascent's Retreat, for example, includes a private restaurant, exclusive lounge and outdoor sundeck, with dedicated butler service. (Celebrity Cruises)"
+  },
+  "solsticeSeries": {
+    "eyebrow": "SOLSTICE SERIES SHIPS",
+    "title": "The Retreat on Solstice Series Ships",
+    "lead": "Celebrity has also updated Retreat facilities on selected Solstice Series ships.",
+    "body": "Celebrity Solstice's renewed Retreat includes:",
+    "highlights": [
+      "Luminae",
+      "Retreat Lounge",
+      "Retreat Sundeck",
+      "Updated suite accommodations",
+      "Dedicated butler service",
+      "Enhanced suite amenities"
+    ],
+    "footnote": "Celebrity describes its renewed Solstice Retreat as including an updated sundeck, redesigned lounge and Luminae with Daniel Boulud signature dishes. (Celebrity Cruises)"
+  },
+  "retreatVsAquaClass": {
+    "eyebrow": "THE RETREAT VS. AQUACLASS",
+    "title": "The Retreat vs. AquaClass",
+    "intro": "AquaClass and The Retreat can both appeal to travelers looking for a more elevated experience, but their focus is different.",
+    "headers": ["Feature", "AquaClass", "The Retreat"],
+    "rows": [
+      { "feature": "Main focus", "aqua": "Wellness", "retreat": "Suite luxury and service" },
+      { "feature": "Private suite", "aqua": "No", "retreat": "Yes" },
+      { "feature": "Luminae", "aqua": "No", "retreat": "Yes" },
+      { "feature": "Retreat Lounge", "aqua": "No", "retreat": "Yes" },
+      { "feature": "Retreat Sundeck", "aqua": "No", "retreat": "Yes" },
+      { "feature": "Blu restaurant", "aqua": "Yes", "retreat": "Aqua Sky Suites and applicable benefits" },
+      { "feature": "Spa-related benefits", "aqua": "Yes", "retreat": "Varies by suite" },
+      { "feature": "Dedicated butler", "aqua": "No", "retreat": "Yes" },
+      { "feature": "Premium suite services", "aqua": "No", "retreat": "Yes" }
+    ],
+    "tableNote": "AquaClass is primarily a wellness-focused stateroom category, while The Retreat centers on suite accommodation and exclusive service.",
+    "footnote": "Aqua Sky Suites combine the two concepts by bringing AquaClass wellness benefits into a Retreat suite. (Celebrity Cruises)"
+  },
+  "retreatVsConcierge": {
+    "eyebrow": "THE RETREAT VS. CONCIERGE CLASS",
+    "title": "The Retreat vs. Concierge Class",
+    "lead": "Concierge Class and The Retreat are also different levels of accommodation.",
+    "body": "Concierge Class can provide enhanced service and selected additional amenities, but it does not provide the same suite-exclusive access as The Retreat.",
+    "addsLead": "The Retreat adds:",
+    "highlights": [
+      "Suite accommodation",
+      "Luminae",
+      "Retreat Lounge",
+      "Retreat Sundeck on applicable ships",
+      "Butler service",
+      "Suite-specific amenities",
+      "Enhanced benefits"
+    ],
+    "footnote": "If access to private venues is important, Concierge Class should not be considered a substitute for The Retreat."
+  },
+  "isRetreatWorthIt": {
+    "eyebrow": "MAKE THE RIGHT CALL",
+    "title": "Is The Retreat Worth Considering?",
+    "lead": "Whether The Retreat represents good value depends on how much you will use its benefits.",
+    "attractiveTitle": "It May Be Particularly Attractive If You Value:",
+    "attractiveList": [
+      "More personal space",
+      "Private dining",
+      "A quieter lounge",
+      "Dedicated butler assistance",
+      "Premium beverages",
+      "Premium Wi-Fi",
+      "Suite-only outdoor spaces",
+      "Priority services",
+      "In-suite dining",
+      "Higher-end amenities"
+    ],
+    "lessCompellingTitle": "It May Be Less Compelling If:",
+    "lessCompellingList": [
+      "Your priority is simply having a comfortable place to sleep and you expect to spend most of your time ashore."
+    ],
+    "footerText": "The best comparison is not simply suite price vs. standard cabin price. Consider the value of the private dining, drinks, Wi-Fi, service, suite space and exclusive venues included with your specific booking."
+  },
+  "howToChoose": {
+    "eyebrow": "YOUR PRIORITIES",
+    "title": "How to Choose the Right Retreat Suite",
+    "cards": [
+      {
+        "title": "Choose a Sky Suite for the Core Retreat Experience",
+        "icon": "Crown",
+        "description": "A Sky Suite can make sense if your priority is access to The Retreat without paying for the largest accommodation."
+      },
+      {
+        "title": "Choose an Aqua Sky Suite for Wellness",
+        "icon": "Waves",
+        "description": "An Aqua Sky Suite is worth investigating if you want the combination of suite accommodation, butler service, Luminae, Retreat Lounge, Retreat Sundeck and spa and wellness benefits.",
+        "highlights": [
+          "Suite accommodation",
+          "Butler service",
+          "Luminae",
+          "Retreat Lounge",
+          "Retreat Sundeck",
+          "Spa and wellness benefits"
+        ]
+      },
+      {
+        "title": "Choose a Royal Suite or Above for More Included Benefits",
+        "icon": "Gem",
+        "description": "Higher-level suites can add substantial benefits such as specialty dining, laundry, pressing and other premium services. (Celebrity Cruises)"
+      },
+      {
+        "title": "Choose an Edge Villa for a Distinctive Layout",
+        "icon": "Home",
+        "description": "Edge Villas offer a two-level configuration and private outdoor space, making them particularly different from conventional cruise suites."
+      },
+      {
+        "title": "Choose an Iconic Suite for Maximum Space",
+        "icon": "Sparkles",
+        "description": "For travelers prioritizing space and an expansive outdoor area, the Iconic Suite is one of Celebrity's largest suite accommodations. (Celebrity Cruises)"
+      }
+    ]
+  },
+  "whatToCheckBeforeBooking": {
+    "eyebrow": "BEFORE YOU RESERVE",
+    "title": "What to Check Before Booking The Retreat",
+    "lead": "Before selecting a Retreat suite, compare the following:",
+    "checks": [
+      { "title": "Ship", "description": "The facilities differ between ship classes." },
+      { "title": "Suite Category", "description": "A Sky Suite and Penthouse Suite do not have identical benefits." },
+      { "title": "Exact Suite Number", "description": "Look at the deck plan rather than relying solely on the category." },
+      { "title": "Outdoor Space", "description": "Check the size and configuration of the veranda or terrace." },
+      { "title": "Included Dining", "description": "Confirm whether specialty dining is included with your specific suite." },
+      { "title": "Fare Type", "description": "Special fares and MoveUp upgrades can have different inclusion rules." },
+      { "title": "Retreat Sundeck", "description": "Confirm whether your ship offers the dedicated outdoor venue." },
+      { "title": "Accessibility", "description": "If accessibility features are required, verify the exact suite configuration before booking." }
+    ],
+    "footnote": "Celebrity offers accessible Retreat suites with features such as wider doors, roll-in showers and grab bars on selected ships and categories. (Celebrity Cruises)"
+  },
+  "conclusion": {
+    "eyebrow": "THE SHORT VERSION",
+    "title": "A Complete Premium Suite Experience",
+    "paragraphs": [
+      "Celebrity Cruises The Retreat is designed as a complete premium suite experience rather than simply an upgraded stateroom. Guests receive suite accommodation alongside dedicated butler service, private dining at Luminae, access to the Retreat Lounge and, on applicable ships, the Retreat Sundeck. Current Retreat benefits also include Premium Drinks and Premium Wi-Fi, subject to applicable booking terms. (Celebrity Cruises)",
+      "The most important distinction is that Retreat benefits vary by suite category and ship. A Sky Suite delivers the core Retreat experience, Aqua Sky Suites add wellness benefits, while Royal Suites and larger accommodations can provide additional inclusions such as specialty dining, laundry and pressing. (Celebrity Cruises)",
+      "Before booking, compare the exact suite, ship and fare rather than judging The Retreat solely by its headline price. For travelers who value personal space, premium service, private dining and exclusive shipboard areas, understanding those differences can make it much easier to select the right Celebrity Cruises suite."
+    ],
+    "quote": "Private spaces. Personalized service. A suite experience that goes beyond the cabin."
+  },
+  "keyTakeaways": {
+    "title": "Key Takeaways",
+    "items": [
+      "The Retreat is Celebrity Cruises' suite-focused experience, not simply a larger cabin.",
+      "Retreat guests receive access to Luminae, the Retreat Lounge and, on applicable ships, the Retreat Sundeck. (Celebrity Cruises)",
+      "A dedicated butler is included with Retreat suites.",
+      "Current Retreat benefits include Premium Drinks and Premium Wi-Fi, subject to applicable fare terms. (Celebrity Cruises)",
+      "Aqua Sky Suites combine AquaClass wellness benefits with The Retreat experience. (Celebrity Cruises)",
+      "Higher-level suites can receive additional benefits such as specialty dining, laundry and unlimited pressing. (Celebrity Cruises)",
+      "The Retreat Lounge is exclusive to Retreat guests; on some older ships it is called Michael's Club.",
+      "The Retreat Sundeck is available on Edge Series and revolutionized ships.",
+      "Suite categories and benefits vary by ship, so check the exact vessel and suite before booking."
+    ]
+  },
+  "expertAdvisor": {
+    "badge": "EXPERT ADVISOR",
+    "name": "Angela Hughes",
+    "eyebrow": "MEET THE CEO",
+    "title": "Insight from Angela Hughes",
+    "quote": "The Retreat is where Celebrity's suite experience comes to life. When your suite includes a dedicated butler, private dining at Luminae and an exclusive lounge, the entire voyage begins to feel less like a cruise and more like a personal luxury escape.",
+    "standoutTitle": "What Makes The Retreat Stand Out:",
+    "standoutPills": [
+      "Luminae Private Dining",
+      "Dedicated Butler Service",
+      "Retreat Lounge Access",
+      "Premium Drinks & Wi-Fi",
+      "Retreat Sundeck",
+      "Higher-Level Suite Benefits"
+    ],
+    "bio": "As founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel, Angela Hughes uses her personal, deep connections in the cruise world to deliver custom travel planning that regular booking engines simply cannot replicate.",
+    "stats": [
+      { "number": "40+", "label": "Years Experience" },
+      { "number": "121+", "label": "Countries Visited" }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "What is The Retreat on Celebrity Cruises?",
+      "answer": "The Retreat is Celebrity Cruises' suite-focused experience combining premium suite accommodation with dedicated butler service, private dining at Luminae, an exclusive lounge and access to a Retreat Sundeck on applicable ships. (Celebrity Cruises)"
+    },
+    {
+      "question": "What is included with The Retreat on Celebrity Cruises?",
+      "answer": "The Retreat includes suite accommodation, dedicated butler service, Luminae, the Retreat Lounge, the Retreat Sundeck on applicable ships, Premium Drinks and Premium Wi-Fi under Celebrity's current offering. Specific benefits vary by suite and fare. (Celebrity Cruises)"
+    },
+    {
+      "question": "Does The Retreat include a private restaurant?",
+      "answer": "Yes. Retreat guests have access to Luminae at The Retreat, a private restaurant with exclusive menus and signature dishes from Chef Daniel Boulud. (Celebrity Cruises)"
+    },
+    {
+      "question": "Is The Retreat Lounge included with a Celebrity suite?",
+      "answer": "Yes. Guests staying in The Retreat have access to the exclusive Retreat Lounge. On some non-revolutionized ships, the corresponding venue is called Michael's Club. (Celebrity Cruises)"
+    },
+    {
+      "question": "Does The Retreat have a private pool?",
+      "answer": "The Retreat Sundeck on applicable ships can include a pool and hot tub, but the exact facilities vary by ship. The Retreat Sundeck is available on Edge Series and revolutionized ships. (Celebrity Cruises)"
+    },
+    {
+      "question": "Do all Celebrity Retreat suites have a butler?",
+      "answer": "Yes. Celebrity states that all suites within The Retreat come with dedicated butler service. Butler Chat is also available for contacting the butler from a personal device. (Celebrity Cruises)"
+    },
+    {
+      "question": "Is Wi-Fi included with The Retreat?",
+      "answer": "Premium Wi-Fi is included with The Retreat under Celebrity's current offering, although certain special fares and MoveUp upgrades can have different terms. (Celebrity Cruises)"
+    },
+    {
+      "question": "Are drinks included in The Retreat?",
+      "answer": "Yes. Celebrity's current Retreat offering includes Premium Drinks. Booking-specific terms should still be checked, particularly when comparing special fares or upgrades. (Celebrity Cruises)"
+    },
+    {
+      "question": "Is specialty dining included with Celebrity The Retreat?",
+      "answer": "Specialty dining benefits depend on the suite category. Celebrity currently lists complimentary specialty dining among the enhanced benefits for higher-level suites, including Royal Suites and above, while its FAQ identifies several specific premium suite categories. (Celebrity Cruises)"
+    },
+    {
+      "question": "What is the difference between a Sky Suite and Aqua Sky Suite?",
+      "answer": "A Sky Suite provides the core Retreat suite experience, while an Aqua Sky Suite combines Retreat benefits with AquaClass wellness features such as applicable thermal-suite access, spa concierge services and fitness benefits. (Celebrity Cruises)"
+    },
+    {
+      "question": "Which Celebrity suites are part of The Retreat?",
+      "answer": "The Retreat includes multiple suite categories, which vary by ship. They can include Sky Suites, Aqua Sky Suites, Celebrity Suites, Royal Suites, Signature Suites, Penthouse Suites, Edge Villas, Reflection Suites and Iconic Suites. (Celebrity Cruises)"
+    },
+    {
+      "question": "Is The Retreat available on every Celebrity ship?",
+      "answer": "The Retreat is available across multiple Celebrity ships, but the suite categories and exclusive facilities differ. The Retreat Sundeck, for example, is specifically available on Edge Series and revolutionized ships. (Celebrity Cruises)"
+    },
+    {
+      "question": "Do Retreat guests get priority boarding?",
+      "answer": "Retreat suites can receive priority embarkation and departure benefits at applicable destinations. The exact priority services depend on the ship, port and itinerary. (Celebrity Cruises)"
+    },
+    {
+      "question": "Does The Retreat include laundry service?",
+      "answer": "Complimentary laundry and unlimited pressing are among the enhanced benefits available to qualifying higher-level suites, including Royal Suites and above. They are not a standard benefit for every Retreat suite. (Celebrity Cruises)"
+    },
+    {
+      "question": "Is Celebrity The Retreat worth the extra cost?",
+      "answer": "The value depends on how much you will use the additional space, private dining, dedicated service, Premium Drinks, Premium Wi-Fi and exclusive Retreat facilities. Comparing the complete benefits and price difference for your specific suite and sailing is the best way to assess the value. (Celebrity Cruises)"
+    }
+  ],
+  "video": {
+    "title": "Experience The Retreat on Celebrity Cruises",
+    "subtitle": "Discover the exclusive lounges, private sundecks, dedicated butler services, and private dining at Luminae that define The Retreat suite experience.",
+    "captionTag": "The Retreat Experience:",
+    "captionText": "Compare suite categories, private spaces, and inclusions across the Celebrity Cruises fleet."
+  },
+  "cta": {
+    "eyebrow": "PLAN YOUR SUITE VACATION",
+    "title": "Ready to Experience The Retreat on Celebrity Cruises?",
+    "subtitle": "Planning a Celebrity Cruises suite vacation? Compare the Retreat suite categories on your specific ship before booking. Check the suite's size, veranda or terrace, dining benefits, Wi-Fi and beverage inclusions, private Retreat facilities and any higher-level suite perks so you can choose the accommodation that matches your travel priorities.",
+    "primaryBtnText": "Schedule a Consultation",
+    "primaryBtnUrl": "/contact",
+    "secondaryBtnText": "Explore Celebrity Cruises",
+    "secondaryBtnUrl": "/celebrity-cruises"
+  }
+}

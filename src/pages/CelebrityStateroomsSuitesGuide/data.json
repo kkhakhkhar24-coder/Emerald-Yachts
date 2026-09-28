@@ -1,0 +1,654 @@
+{
+  "seo": {
+    "title": "Celebrity Staterooms & Suites Guide",
+    "metaTitle": "Celebrity Staterooms & Suites Guide",
+    "metaDescription": "Explore Celebrity Cruises staterooms and suites, including inside, ocean view, veranda, AquaClass, Concierge Class and The Retreat accommodations.",
+    "keywords": "Celebrity staterooms and suites, Celebrity Cruises cabins, Celebrity cruise rooms, Celebrity suite categories, Celebrity AquaClass, Celebrity Concierge Class, Celebrity Infinite Veranda, Celebrity The Retreat, Celebrity ocean view staterooms, Celebrity inside cabins, Celebrity veranda cabins",
+    "canonical": "https://www.tripsandships.com/celebrity-cruises/staterooms-suites"
+  },
+  "hero": {
+    "eyebrow": "Celebrity Cruises · Trips & Ships Luxury Travel",
+    "title": "Celebrity Staterooms and Suites Guide",
+    "subtitle": "Explore Celebrity Cruises staterooms and suites, including inside, ocean view, veranda, AquaClass, Concierge Class and The Retreat accommodations.",
+    "primaryCtaText": "Explore Staterooms & Suites",
+    "primaryCtaLink": "#categories-glance",
+    "secondaryCtaText": "Plan With Angela Hughes",
+    "secondaryCtaLink": "/contact"
+  },
+  "intro": {
+    "title": "Choosing the Right Celebrity Stateroom",
+    "lead": "Choosing the right accommodation can make a significant difference to your Celebrity Cruises vacation. Celebrity offers a broad range of staterooms and suites, from practical inside cabins and ocean view rooms to private veranda accommodations, wellness-focused AquaClass staterooms and the premium suites within The Retreat.",
+    "paragraphs": [
+      "The exact cabin names, layouts, sizes and amenities vary by ship. Edge Series ships, for example, introduced the Infinite Veranda, while Solstice and Millennium Series ships have different veranda and accommodation configurations. Celebrity also offers dedicated single staterooms on selected ships. (Celebrity Cruises)",
+      "This guide explains the main Celebrity Cruises stateroom categories, what distinguishes them, how they compare, and what to consider before selecting a cabin."
+    ]
+  },
+  "categoriesGlance": {
+    "eyebrow": "OVERVIEW",
+    "title": "Celebrity Cruise Cabin Categories at a Glance",
+    "intro": "Celebrity's accommodations can broadly be divided into standard staterooms, elevated stateroom categories and suites.",
+    "headers": ["Category", "Typical appeal", "Outdoor space", "Best suited to"],
+    "rows": [
+      { "category": "Inside", "appeal": "Lowest-cost accommodation", "outdoor": "No private veranda", "bestFor": "Budget-conscious travelers" },
+      { "category": "Ocean View", "appeal": "Natural light and exterior views", "outdoor": "No traditional private veranda", "bestFor": "Travelers wanting a view" },
+      { "category": "Veranda", "appeal": "Private outdoor space", "outdoor": "Yes", "bestFor": "Couples and scenic itineraries" },
+      { "category": "Infinite Veranda", "appeal": "Indoor/outdoor convertible space on Edge Series", "outdoor": "Yes", "bestFor": "Travelers wanting flexible outdoor access" },
+      { "category": "Concierge Class", "appeal": "Enhanced stateroom experience", "outdoor": "Usually", "bestFor": "Travelers wanting additional service" },
+      { "category": "AquaClass", "appeal": "Wellness-focused accommodation", "outdoor": "Yes on applicable categories", "bestFor": "Spa and wellness travelers" },
+      { "category": "Single Stateroom", "appeal": "Designed for solo travelers", "outdoor": "Some categories", "bestFor": "Solo cruisers" },
+      { "category": "The Retreat suites", "appeal": "Suite accommodation and exclusive benefits", "outdoor": "Yes", "bestFor": "Travelers seeking a premium experience" }
+    ],
+    "footnote": "Availability varies by ship and sailing. Celebrity's accommodation pages show different combinations across Edge, Solstice and Millennium Series vessels. (Celebrity Cruises)"
+  },
+  "insideStaterooms": {
+    "eyebrow": "INSIDE STATEROOMS",
+    "title": "Inside Staterooms: A Practical Choice Without a View",
+    "lead": "Inside staterooms are generally the most straightforward accommodation option for travelers who prioritize itinerary, onboard experiences and price over a private view.",
+    "body": "They do not have an exterior window or private veranda, but Celebrity describes its inside accommodations as having useful living and storage space. On Edge Series ships, Deluxe Inside and Inside Staterooms feature larger bathrooms and additional drawer space. (Celebrity Cruises)",
+    "worksFor": [
+      "Travelers who spend little time in their cabin",
+      "Port-intensive itineraries",
+      "Budget-conscious couples",
+      "Solo travelers seeking value",
+      "Guests who prefer spending their budget on excursions and dining"
+    ],
+    "footnote": "An inside cabin can be particularly practical when the ship and itinerary are more important to you than waking up to an ocean view."
+  },
+  "oceanViewStaterooms": {
+    "eyebrow": "OCEAN VIEW STATEROOMS",
+    "title": "Ocean View Staterooms: Natural Light Without a Balcony",
+    "lead": "Ocean View staterooms provide exterior views through a window rather than a private veranda.",
+    "body": "Celebrity describes these accommodations as offering large windows and cruise views, while the exact configuration varies by ship. (Celebrity Cruises)",
+    "chooseReasons": [
+      "Natural light",
+      "An exterior view",
+      "A more open feeling than an inside cabin",
+      "A lower price than many veranda categories"
+    ],
+    "footnote": "They can be a useful middle ground if a private balcony is not essential."
+  },
+  "verandaStaterooms": {
+    "eyebrow": "VERANDA STATEROOMS",
+    "title": "Veranda Staterooms: Private Outdoor Space",
+    "lead": "A traditional Veranda Stateroom adds private outdoor space where you can sit, enjoy the scenery and get fresh sea air without leaving your accommodation.",
+    "body": "Celebrity highlights veranda staterooms as an option for watching sunsets, enjoying ocean panoramas and spending time outdoors privately. (Celebrity Cruises)",
+    "bestFor": [
+      "Alaska cruises",
+      "Mediterranean itineraries",
+      "Caribbean sailings",
+      "Scenic coastal voyages",
+      "Longer cruises with more sea days"
+    ],
+    "footnote": "The value of a balcony is often greatest when the itinerary itself is highly scenic."
+  },
+  "infiniteVeranda": {
+    "eyebrow": "EDGE SERIES",
+    "title": "What Is a Celebrity Infinite Veranda?",
+    "lead": "The Infinite Veranda is one of Celebrity's distinctive Edge Series accommodation features.",
+    "body": "Instead of having a conventional balcony extending outside the room, the Infinite Veranda uses a folding window and interior design to transform part of the stateroom into an open-air space. Celebrity describes the system as allowing the living space to become the veranda at the touch of a button. Edge Staterooms with Infinite Verandas are listed at approximately 243 square feet of total living space, including a 42-square-foot veranda, while the exact layout can vary. (Celebrity Cruises)",
+    "compareTitle": "Infinite Veranda vs. Traditional Balcony",
+    "headers": ["Feature", "Infinite Veranda", "Traditional Veranda"],
+    "rows": [
+      { "feature": "Outdoor access", "infinite": "Yes", "traditional": "Yes" },
+      { "feature": "Balcony configuration", "infinite": "Integrated into room", "traditional": "Separate exterior balcony" },
+      { "feature": "Indoor/outdoor flexibility", "infinite": "High", "traditional": "More conventional" },
+      { "feature": "Available across fleet", "infinite": "No", "traditional": "Yes" },
+      { "feature": "Especially associated with", "infinite": "Edge Series", "traditional": "Multiple Celebrity ship classes" }
+    ],
+    "footnote": "If you specifically want a traditional outdoor balcony, check the exact stateroom description rather than assuming every Celebrity veranda is the same."
+  },
+  "singleStaterooms": {
+    "eyebrow": "SOLO ACCOMMODATIONS",
+    "title": "Celebrity Single Staterooms",
+    "lead": "Celebrity also offers single staterooms designed specifically for solo travelers.",
+    "body": "The Edge Single Stateroom with Infinite Veranda is listed at approximately 184 square feet with a 42-square-foot veranda and is available on Celebrity Edge, Celebrity Apex, Celebrity Beyond and Celebrity Ascent. (Celebrity Cruises)",
+    "stats": [
+      { "label": "Total Living Space", "value": "184 sq ft" },
+      { "label": "Infinite Veranda", "value": "42 sq ft" }
+    ],
+    "wants": [
+      "A purpose-designed solo cabin",
+      "Private accommodation without booking a standard double cabin alone",
+      "A private outdoor space",
+      "A more efficient room layout"
+    ],
+    "footnote": "Availability is limited, so solo travelers should check the specific sailing before planning around a single stateroom."
+  },
+  "conciergeClass": {
+    "eyebrow": "CONCIERGE CLASS",
+    "title": "Celebrity Concierge Class Explained",
+    "lead": "Concierge Class sits above standard stateroom categories and focuses on additional service and amenities.",
+    "body": "Celebrity describes Concierge Class as providing dedicated service and additional touches such as an exclusive lunch and destination-related programming. (Celebrity Cruises) The exact benefits can vary by ship and current program terms.",
+    "wants": [
+      "Enhanced service",
+      "Additional pre-cruise or embarkation conveniences",
+      "A more elevated stateroom experience",
+      "A veranda without moving into a suite"
+    ],
+    "footnote": "It is important to compare the actual benefits and price difference with a standard veranda on your specific sailing."
+  },
+  "aquaClass": {
+    "eyebrow": "AQUACLASS",
+    "title": "Celebrity AquaClass Staterooms",
+    "intro": "AquaClass is Celebrity's wellness-focused accommodation category. Celebrity says AquaClass guests can receive benefits such as access to a spa-related thermal area, dining at Blu, spa concierge service, fitness-related benefits and enhanced in-room amenities. The exact wellness facility differs between ship series. (Celebrity Cruises)",
+    "series": [
+      {
+        "series": "Edge Series",
+        "specs": "Approximately 243 sq. ft. with a 42 sq. ft. veranda:",
+        "benefits": [
+          "Access to the SEA Thermal Suite",
+          "Blu restaurant dining",
+          "Personal spa concierge",
+          "Complimentary fitness classes",
+          "Cashmere mattress bedding",
+          "Wellness-oriented stateroom amenities"
+        ]
+      },
+      {
+        "series": "Solstice Series",
+        "specs": "Approximately 192 sq. ft. with a 54 sq. ft. veranda:",
+        "benefits": [
+          "Private veranda space",
+          "Enhanced bedding",
+          "Premium bathroom amenities",
+          "Fitness classes",
+          "Persian Garden access",
+          "Blu dining"
+        ]
+      },
+      {
+        "series": "Millennium Series",
+        "specs": "Approximately 209 sq. ft. with a 42 sq. ft. veranda:",
+        "benefits": [
+          "Blu dining",
+          "Persian Garden access",
+          "Spa concierge",
+          "Enhanced bathroom amenities"
+        ]
+      }
+    ],
+    "footnote": "Because AquaClass benefits vary by ship, always check the accommodation page for the specific vessel."
+  },
+  "theRetreat": {
+    "eyebrow": "SUITE-FOCUSED EXPERIENCE",
+    "title": "What Is The Retreat on Celebrity Cruises?",
+    "lead": "The Retreat is Celebrity's suite-focused accommodation experience.",
+    "body": "It combines premium suites with exclusive spaces and enhanced services. Celebrity describes The Retreat as including suite accommodations, a private restaurant, an exclusive lounge and a dedicated sundeck on applicable ships. (Celebrity Cruises) The Retreat is substantially different from simply booking a larger cabin. The experience includes both the accommodation and access to dedicated suite benefits.",
+    "includes": [
+      "Suite accommodation",
+      "Premium dining",
+      "Exclusive lounge access",
+      "Private outdoor spaces",
+      "Enhanced service",
+      "Premium Wi-Fi on applicable fares",
+      "Premium beverage benefits under applicable fare terms",
+      "Suite-specific amenities"
+    ],
+    "footnote": "The exact benefits depend on the suite, ship and fare."
+  },
+  "suiteCategories": {
+    "eyebrow": "SUITE INVENTORY",
+    "title": "Celebrity Suite Categories",
+    "intro": "Celebrity's suite inventory varies by ship, but higher-end accommodation can include categories such as:",
+    "categories": [
+      "Sky Suite",
+      "Aqua Sky Suite",
+      "Celebrity Suite",
+      "Royal Suite",
+      "Penthouse Suite",
+      "Edge Villa",
+      "Iconic Suite",
+      "Reflection Suite on Celebrity Reflection"
+    ],
+    "footerNote": "Not every suite exists on every ship. For example, Celebrity Ascent's current accommodation information lists Iconic Suites, Penthouse Suites, Edge Villas, Royal Suites, Celebrity Suites, Aqua Sky Suites and Sky Suites. (Celebrity Cruises)"
+  },
+  "skySuites": {
+    "eyebrow": "ENTRY SUITES",
+    "title": "Sky Suites",
+    "intro": "Sky Suites are among the entry-level suite accommodations within The Retreat on applicable ships. Celebrity Ascent's Sky Suites are listed at approximately 319 square feet with a 79-square-foot veranda. They feature a private veranda, king-size Cashmere mattress and a split bathroom with a spa tub and shower. (Celebrity Cruises)",
+    "features": [
+      "Private veranda",
+      "King-size Cashmere mattress",
+      "Split bathroom with a spa tub and shower"
+    ],
+    "footnote": "They can be a useful choice for travelers who want the benefits of suite accommodation without moving into the largest suite categories."
+  },
+  "suiteProfiles": {
+    "eyebrow": "SUITE PROFILES",
+    "title": "Aqua Sky, Celebrity, Royal, Penthouse, Edge Villa & Iconic Suites",
+    "suites": [
+      {
+        "title": "Aqua Sky Suites",
+        "text": "Aqua Sky Suites combine elements of AquaClass wellness benefits with access to The Retreat. Celebrity lists Aqua Sky Suites on Celebrity Ascent at approximately 319 square feet with a 79-square-foot veranda. (Celebrity Cruises) They are particularly relevant for travelers who prioritize both wellness and suite-level service."
+      },
+      {
+        "title": "Celebrity Suites",
+        "text": "Celebrity Suites provide a larger two-room layout on applicable ships, with a separate living area and bedroom. Celebrity lists the Celebrity Suite on Edge Series ships with approximately 394–498 square feet of interior space and 51–105 square feet of terrace, depending on the ship and configuration. (Celebrity Cruises)",
+        "features": [
+          "Separate living area",
+          "Private veranda",
+          "King-size bed",
+          "Floor-to-ceiling windows",
+          "Large sitting area",
+          "Additional storage",
+          "Suite-specific amenities"
+        ]
+      },
+      {
+        "title": "Royal Suites",
+        "text": "Royal Suites offer substantially more living space than standard staterooms. On Celebrity Ascent, the Royal Suite is listed at approximately 687 square feet with a 72-square-foot veranda. The configuration includes a living and dining area, primary bedroom, large bathroom and private veranda. (Celebrity Cruises) These suites are better suited to travelers who value space and enhanced suite amenities rather than simply having a place to sleep."
+      },
+      {
+        "title": "Penthouse Suites",
+        "text": "Penthouse Suites are among Celebrity's largest suite categories. Celebrity Ascent's Penthouse Suite is listed at approximately 1,378 square feet with a 197-square-foot veranda and includes separate sleeping, living and dining areas, a guest bedroom and bathroom, terrace and private hot tub. (Celebrity Cruises)"
+      },
+      {
+        "title": "Edge Villas",
+        "text": "The Edge Villa is a distinctive two-story accommodation available on selected Edge Series ships. Celebrity describes these residences as split-level accommodations combining indoor and outdoor living, with a private terrace and plunge pool. Celebrity Ascent's Edge Villas are listed at approximately 739 square feet with a 211-square-foot veranda. (Celebrity Cruises) They are designed for travelers looking for a residential-style suite experience rather than a conventional cruise cabin."
+      },
+      {
+        "title": "Iconic Suites",
+        "text": "Iconic Suites represent the top end of Celebrity's suite accommodation on selected ships. Celebrity Ascent's Iconic Suites are listed at approximately 1,892 square feet with a 689-square-foot veranda, positioned high above the bridge to provide expansive views. (Celebrity Cruises) These are considerably larger than standard staterooms and are designed around space, views and premium suite living."
+      }
+    ]
+  },
+  "stateroomSizes": {
+    "eyebrow": "DIMENSIONS",
+    "title": "Celebrity Stateroom Sizes by Ship Class",
+    "intro": "There is no single standard size for every Celebrity cabin category. The same category name can have different dimensions depending on the ship series.",
+    "headers": ["Ship Series / Vessel", "Accommodation Category", "Published Dimensions"],
+    "rows": [
+      { "ship": "Edge Series", "accommodation": "Edge Infinite Veranda", "size": "243 sq. ft. total / 42 sq. ft. veranda" },
+      { "ship": "Edge Series", "accommodation": "Edge Single Infinite Veranda", "size": "184 sq. ft. / 42 sq. ft. veranda" },
+      { "ship": "Edge Series", "accommodation": "AquaClass", "size": "243 sq. ft. / 42 sq. ft. veranda" },
+      { "ship": "Solstice Series", "accommodation": "AquaClass", "size": "192 sq. ft. / 54 sq. ft. veranda" },
+      { "ship": "Millennium Series", "accommodation": "AquaClass", "size": "209 sq. ft. / 42 sq. ft. veranda" },
+      { "ship": "Celebrity Ascent", "accommodation": "Sky Suite", "size": "319 sq. ft. / 79 sq. ft. veranda" },
+      { "ship": "Celebrity Ascent", "accommodation": "Celebrity Suite", "size": "401 sq. ft. / 100 sq. ft. veranda" },
+      { "ship": "Celebrity Ascent", "accommodation": "Royal Suite", "size": "687 sq. ft. / 72 sq. ft. veranda" },
+      { "ship": "Celebrity Ascent", "accommodation": "Edge Villa", "size": "739 sq. ft. / 211 sq. ft. veranda" },
+      { "ship": "Celebrity Ascent", "accommodation": "Penthouse Suite", "size": "1,378 sq. ft. / 197 sq. ft. veranda" },
+      { "ship": "Celebrity Ascent", "accommodation": "Iconic Suite", "size": "1,892 sq. ft. / 689 sq. ft. veranda" }
+    ],
+    "footnote": "These are representative published dimensions, not fleet-wide standards. Always verify the deck plan and specific cabin listing before booking. (Celebrity Cruises)"
+  },
+  "commonAmenities": {
+    "eyebrow": "IN-ROOM AMENITIES",
+    "title": "What Amenities Are Common in Celebrity Staterooms?",
+    "intro": "Celebrity accommodation amenities vary according to category and ship, but many rooms feature:",
+    "items": [
+      "Celebrity eXhale bedding",
+      "Cashmere mattresses on applicable accommodations",
+      "Television",
+      "Storage",
+      "Bathroom amenities",
+      "Bathrobes and towels",
+      "Climate controls",
+      "Hairdryer",
+      "Safe",
+      "Room service options",
+      "Celebrity Cruises app integration on applicable ships"
+    ],
+    "note": "Celebrity specifically highlights its eXhale bedding and Cashmere mattress across numerous current accommodation categories and ships. (Celebrity Cruises)"
+  },
+  "balconiesOverview": {
+    "eyebrow": "OUTDOOR SPACE",
+    "title": "Which Celebrity Cabins Have Balconies?",
+    "intro": "Several Celebrity accommodation categories can provide private outdoor space, including:",
+    "categories": [
+      "Traditional Veranda Staterooms",
+      "Edge Staterooms with Infinite Veranda",
+      "AquaClass staterooms",
+      "Many suites",
+      "Selected single staterooms"
+    ],
+    "footnote": "The exact balcony or veranda configuration depends on the ship. (Celebrity Cruises)"
+  },
+  "verandaVsInfinite": {
+    "eyebrow": "DECISION GUIDE",
+    "title": "What Is the Difference Between a Veranda and an Infinite Veranda?",
+    "intro": "The biggest difference is how the outdoor space connects to the cabin. A traditional veranda is a separate outdoor balcony accessed through a door. An Infinite Veranda incorporates the balcony into the room. A window lowers to create a more open connection between the interior and exterior. Celebrity says the system allows the living area to become the veranda at the touch of a button. (Celebrity Cruises)",
+    "traditional": {
+      "title": "Traditional Veranda",
+      "subtitle": "Open-Air Balcony",
+      "items": [
+        "You prefer a conventional balcony",
+        "You want a clearly separated outdoor area",
+        "Balcony seating is a priority"
+      ]
+    },
+    "infinite": {
+      "title": "Infinite Veranda",
+      "subtitle": "Bi-Fold Retractable Glass",
+      "items": [
+        "You like flexible indoor/outdoor space",
+        "You prefer a larger-feeling interior",
+        "You are sailing on an Edge Series ship",
+        "You like modern cabin design"
+      ]
+    }
+  },
+  "bestForTravelers": {
+    "eyebrow": "MATCH YOUR TRAVEL STYLE",
+    "title": "Which Celebrity Stateroom Category Is Best for Different Travelers?",
+    "intro": "There is no single best cabin for every passenger. Find the perfect fit for your vacation priority:",
+    "headers": ["Vacation Priority", "Recommended Stateroom Category"],
+    "rows": [
+      { "priority": "Lowest accommodation cost", "category": "Inside" },
+      { "priority": "Natural light", "category": "Ocean View" },
+      { "priority": "Private outdoor space", "category": "Veranda" },
+      { "priority": "Modern indoor/outdoor design", "category": "Infinite Veranda" },
+      { "priority": "Extra service", "category": "Concierge Class" },
+      { "priority": "Wellness", "category": "AquaClass" },
+      { "priority": "Solo travel", "category": "Single Stateroom" },
+      { "priority": "Suite experience", "category": "The Retreat" },
+      { "priority": "Maximum space", "category": "Large suite categories" },
+      { "priority": "Family or connected rooms", "category": "Connecting stateroom options" }
+    ],
+    "footnote": "Celebrity notes that many connecting stateroom configurations are available on Edge Series ships, making them useful for families and groups. (Celebrity Cruises)"
+  },
+  "howToChoose": {
+    "eyebrow": "STEP BY STEP",
+    "title": "How to Choose the Right Celebrity Cabin",
+    "steps": [
+      {
+        "step": "01",
+        "title": "Start With Your Itinerary.",
+        "text": "A balcony can be particularly valuable on scenic routes. For Alaska, Mediterranean and other destination-focused cruises, consider whether you will spend enough time watching the scenery from your cabin to justify the additional cost."
+      },
+      {
+        "step": "02",
+        "title": "Decide Whether Outdoor Space Matters.",
+        "text": "If you expect to sit outside regularly, a veranda may be worth prioritizing. If you mainly use the room for sleeping and changing, an inside cabin can leave more budget for excursions and dining."
+      },
+      {
+        "step": "03",
+        "title": "Compare the Ship, Not Just the Cabin Name.",
+        "text": "A \"Veranda\" on one Celebrity ship may not have exactly the same dimensions or layout as a veranda on another."
+      },
+      {
+        "step": "04",
+        "title": "Check the Deck Plan.",
+        "text": "The deck plan can reveal important information that a category name does not."
+      },
+      {
+        "step": "05",
+        "title": "Consider the View.",
+        "text": "An ocean view is not necessarily the same as an unobstructed panoramic view. Check the specific cabin description and deck plan before paying more for a view."
+      }
+    ],
+    "alwaysCheck": [
+      "Ship",
+      "Deck",
+      "Cabin number",
+      "Square footage",
+      "Veranda size",
+      "Bed configuration",
+      "Bathroom configuration",
+      "Connecting-room availability",
+      "Obstructed-view information"
+    ],
+    "lookForCabins": [
+      "Near elevators",
+      "Beneath public areas",
+      "Above theaters",
+      "Near nightclubs",
+      "Near crew-service areas",
+      "At the front or rear of the ship",
+      "With connecting doors",
+      "With potentially obstructed views"
+    ]
+  },
+  "stateroomsVsSuites": {
+    "eyebrow": "HOW THEY COMPARE",
+    "title": "Celebrity Staterooms vs. Suites",
+    "intro": "The primary difference is not simply room size. Suites can provide an elevated onboard experience through additional services, exclusive spaces and dining options.",
+    "headers": ["Feature", "Standard Stateroom", "AquaClass", "The Retreat Suite"],
+    "rows": [
+      { "feature": "Accommodation", "standard": "Yes", "aqua": "Yes", "retreat": "Yes" },
+      { "feature": "Private outdoor space", "standard": "Category-dependent", "aqua": "Yes on applicable categories", "retreat": "Usually" },
+      { "feature": "Wellness benefits", "standard": "Standard", "aqua": "Enhanced", "retreat": "Depends on suite" },
+      { "feature": "Blu dining", "standard": "No", "aqua": "Yes", "retreat": "Aqua Sky and applicable benefits" },
+      { "feature": "The Retreat access", "standard": "No", "aqua": "No, unless separately qualified", "retreat": "Yes" },
+      { "feature": "Exclusive lounge", "standard": "No", "aqua": "No", "retreat": "Yes" },
+      { "feature": "Suite-level service", "standard": "No", "aqua": "No", "retreat": "Yes" },
+      { "feature": "Premium suite amenities", "standard": "No", "aqua": "Enhanced wellness amenities", "retreat": "Yes" }
+    ],
+    "footnote": "The exact benefits depend on the ship, suite category and fare conditions. (Celebrity Cruises)"
+  },
+  "families": {
+    "eyebrow": "TRAVELING WITH FAMILY",
+    "title": "Celebrity Staterooms for Families",
+    "lead": "Families should consider more than the number of beds. Look for:",
+    "checklist": [
+      "Connecting staterooms",
+      "Appropriate occupancy",
+      "Sofa beds or additional sleeping arrangements",
+      "Bathroom configuration",
+      "Storage",
+      "Cabin location",
+      "Proximity to elevators and family facilities"
+    ],
+    "body": "Celebrity's Edge Series accommodation information highlights numerous connecting-stateroom configurations, including combinations designed to keep families and accompanying travelers close together. (Celebrity Cruises) Always verify the maximum occupancy and exact bedding configuration before booking."
+  },
+  "soloTravelers": {
+    "eyebrow": "TRAVELING SOLO",
+    "title": "Celebrity Staterooms for Solo Travelers",
+    "lead": "Solo travelers should look for dedicated single cabins where available, particularly if avoiding the cost of booking a larger double-occupancy cabin alone is important.",
+    "body": "Celebrity's Edge Single Stateroom with Infinite Veranda is one example of a cabin designed specifically around solo occupancy. (Celebrity Cruises)",
+    "footnote": "Availability can be limited compared with standard staterooms, so booking early can be important on popular sailings."
+  },
+  "accessibility": {
+    "eyebrow": "SPECIAL REQUIREMENTS",
+    "title": "Are Celebrity Staterooms Accessible?",
+    "body": "Celebrity provides accessible accommodation and accessibility features across its fleet, but cabin availability and configurations vary. Travelers requiring an accessible stateroom should identify their needs when booking and verify the exact cabin layout rather than relying solely on the category name. Important considerations can include:",
+    "checklist": [
+      "Door width",
+      "Bathroom configuration",
+      "Shower access",
+      "Turning space",
+      "Bed height",
+      "Location",
+      "Accessible public areas"
+    ],
+    "note": "For specific accessibility requirements, verify details directly with Celebrity before finalizing a reservation."
+  },
+  "suiteExtraBenefits": {
+    "eyebrow": "SUITE INCLUSIONS",
+    "title": "Do Celebrity Suites Include Extra Benefits?",
+    "body": "Yes. Suites within The Retreat can receive benefits beyond the physical accommodation. For example, Celebrity's current information for Celebrity Suites lists benefits such as Premium Wi-Fi, Premium Drinks, suite-specific dining, dedicated services, priority embarkation and other amenities, subject to the applicable fare and ship. (Celebrity Cruises)",
+    "note": "The exact package should be confirmed for the specific booking because some benefits have exceptions for promotional fares or certain upgrade types."
+  },
+  "bookingChecks": {
+    "eyebrow": "DUE DILIGENCE",
+    "title": "What Cabin Features Should You Check Before Booking?",
+    "intro": "Before selecting a Celebrity stateroom, review these critical layout and structural details to avoid surprises.",
+    "items": [
+      {
+        "title": "Location",
+        "body": "Check the cabin's position relative to:",
+        "items": ["Elevators", "Stairs", "Restaurants", "Theaters", "Lounges", "Pools", "Crew areas"]
+      },
+      {
+        "title": "Noise",
+        "body": "Avoid assuming that a higher deck is automatically quieter. A cabin directly beneath a pool deck, theater or nightclub can experience more noise than one surrounded by other staterooms.",
+        "items": []
+      },
+      {
+        "title": "View",
+        "body": "Check whether the view is:",
+        "items": ["Fully open", "Partially obstructed", "Aft-facing", "Forward-facing", "Limited by ship structures"]
+      },
+      {
+        "title": "Layout",
+        "body": "Look at the actual deck plan where possible. Two rooms in the same category can have different layouts.",
+        "items": []
+      },
+      {
+        "title": "Bed Configuration",
+        "body": "If you need separate beds or additional sleeping space, confirm the exact configuration before booking.",
+        "items": []
+      }
+    ]
+  },
+  "locationTips": {
+    "eyebrow": "WHERE TO BOOK",
+    "title": "Celebrity Cabin Location Tips",
+    "items": [
+      {
+        "title": "Best Areas for a Quieter Experience",
+        "text": "Cabins surrounded by other passenger staterooms can often be preferable to rooms directly beside major public venues."
+      },
+      {
+        "title": "Cabins Near Elevators",
+        "text": "These can be convenient for travelers with mobility concerns or those who want quick access to public areas, but they may experience more foot traffic."
+      },
+      {
+        "title": "Forward Cabins",
+        "text": "Forward cabins can provide distinctive views but may experience more motion in rougher seas."
+      },
+      {
+        "title": "Aft Cabins",
+        "text": "Aft cabins can offer attractive wake views and distinctive perspectives, depending on the ship."
+      },
+      {
+        "title": "Lower Decks",
+        "text": "Lower-deck cabins can feel more stable for some travelers who are sensitive to ship movement."
+      }
+    ]
+  },
+  "maximizingValue": {
+    "eyebrow": "MAXIMIZING VALUE",
+    "title": "How to Get Better Value From a Celebrity Stateroom",
+    "lead": "A more expensive cabin is not automatically better value.",
+    "desc": "The right choice depends on how much you will actually use the accommodation.",
+    "quote": "The most important point is that there is no universal 'best' Celebrity cabin — the right choice depends on the ship, itinerary, budget and how much time you expect to spend in your room.",
+    "spendMore": [
+      "You will use the balcony frequently.",
+      "You are sailing a highly scenic route.",
+      "You want AquaClass wellness benefits.",
+      "You value suite-exclusive spaces.",
+      "You want significantly more living space.",
+      "You want enhanced service."
+    ],
+    "spendLess": [
+      "You expect to be ashore most days.",
+      "You mainly use the cabin for sleeping.",
+      "You do not need a balcony.",
+      "You would rather allocate money toward excursions.",
+      "You are traveling on a port-intensive itinerary."
+    ]
+  },
+  "video": {
+    "title": "Explore Celebrity Staterooms & Suites",
+    "subtitle": "Watch a comprehensive walkthrough of Celebrity Cruises staterooms and suites, from inside cabins to AquaClass and The Retreat suite living.",
+    "youtubeId": "0uxC2nq35-4",
+    "captionTag": "Accommodation Guide",
+    "captionText": "Compare cabin sizes, Infinite Veranda layouts, and exclusive suite amenities across the entire Celebrity fleet."
+  },
+  "expertInsight": {
+    "name": "Angela Hughes",
+    "role": "Luxury Cruise Travel Expert & CEO, Trips & Ships Luxury Travel",
+    "badge": "EXPERT ADVISOR",
+    "experience": "40+ Years Experience",
+    "countries": "121+ Countries Visited",
+    "eyebrow": "MEET THE CEO",
+    "heading": "Insight from Angela Hughes",
+    "quote": "Choosing a Celebrity stateroom isn't about picking the biggest cabin you can afford — it's about matching the accommodation to how you'll actually spend your days at sea. A veranda changes everything on a scenic sailing, while a well-placed inside cabin can free up your budget for the experiences that matter most.",
+    "standoutPills": [
+      "Itinerary & Scenery",
+      "Outdoor Space Priorities",
+      "Ship-Specific Layouts",
+      "Wellness & AquaClass",
+      "Suite-Level Service",
+      "Deck Plan Details"
+    ],
+    "bio": "As founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel, Angela Hughes uses her personal, deep connections in the cruising world to deliver custom travel planning that regular booking engines simply cannot replicate."
+  },
+  "keyTakeaways": {
+    "eyebrow": "SUMMARY",
+    "title": "Key Takeaways",
+    "subtitle": "8 Essential Takeaways for Selecting Your Ideal Celebrity Stateroom or Suite",
+    "items": [
+      "Celebrity Cruises offers accommodation ranging from inside and ocean view staterooms to veranda cabins, AquaClass, Concierge Class and suites.",
+      "Edge Series ships are known for their Infinite Veranda design.",
+      "AquaClass focuses on wellness and can include Blu dining, spa-related access and enhanced amenities.",
+      "The Retreat provides suite accommodations plus exclusive spaces and enhanced services.",
+      "Cabin dimensions and amenities vary by ship, even within similar categories.",
+      "Solo travelers can find dedicated single staterooms on selected ships.",
+      "Families should investigate connecting cabins, occupancy limits and exact sleeping arrangements.",
+      "Always check the deck plan and individual cabin details before paying a premium for location or views."
+    ]
+  },
+  "faqs": [
+    {
+      "question": "What types of staterooms does Celebrity Cruises offer?",
+      "answer": "Celebrity Cruises offers inside, ocean view, veranda, Concierge Class, AquaClass, single staterooms and multiple suite categories. The exact selection varies by ship."
+    },
+    {
+      "question": "What is the difference between a Celebrity stateroom and a suite?",
+      "answer": "A suite generally provides substantially more living space and additional benefits, including access to The Retreat on applicable ships. Standard staterooms focus primarily on comfortable accommodation."
+    },
+    {
+      "question": "What is the best Celebrity stateroom category?",
+      "answer": "The best category depends on your priorities. Verandas suit travelers who value outdoor space, AquaClass suits wellness-focused guests, and The Retreat is designed for travelers seeking suite-level accommodation and exclusive benefits."
+    },
+    {
+      "question": "Are Celebrity Infinite Verandas real balconies?",
+      "answer": "Infinite Verandas create an indoor/outdoor experience using a retractable window system rather than a conventional separate balcony. Celebrity says the design allows the living area to become the veranda at the touch of a button."
+    },
+    {
+      "question": "Which Celebrity ships have Infinite Verandas?",
+      "answer": "Infinite Verandas are particularly associated with Celebrity's Edge Series, including Celebrity Edge, Apex, Beyond and Ascent. Specific cabin availability should be checked for each sailing."
+    },
+    {
+      "question": "What is Celebrity AquaClass?",
+      "answer": "AquaClass is Celebrity's wellness-focused stateroom category. Depending on the ship, benefits can include Blu dining, thermal-area access, spa concierge services, fitness benefits and enhanced in-room amenities."
+    },
+    {
+      "question": "Is AquaClass worth the extra cost?",
+      "answer": "AquaClass can be particularly useful for travelers who expect to use its wellness and dining benefits. Compare the price difference with the cost of purchasing similar experiences separately on your specific sailing."
+    },
+    {
+      "question": "What is Concierge Class on Celebrity Cruises?",
+      "answer": "Concierge Class is an elevated stateroom category offering additional service and amenities. Celebrity highlights features such as dedicated service, an exclusive lunch and destination programming, with details varying by ship."
+    },
+    {
+      "question": "Does Celebrity Cruises have single staterooms?",
+      "answer": "Yes. Celebrity offers dedicated single staterooms on selected ships, including Edge Single Staterooms with Infinite Veranda on Edge, Apex, Beyond and Ascent."
+    },
+    {
+      "question": "Which Celebrity cabins have private balconies?",
+      "answer": "Traditional Veranda Staterooms, many AquaClass accommodations, selected single cabins and numerous suites offer private outdoor space. Edge Series ships also feature Infinite Veranda staterooms."
+    },
+    {
+      "question": "What is The Retreat on Celebrity Cruises?",
+      "answer": "The Retreat is Celebrity's suite-focused experience, combining premium suites with exclusive spaces such as a private restaurant, lounge and sundeck on applicable ships, plus enhanced services."
+    },
+    {
+      "question": "What is the largest Celebrity Cruises suite?",
+      "answer": "Suite sizes vary by ship, but Celebrity Ascent's Iconic Suite is listed at approximately 1,892 square feet with a 689-square-foot veranda, making it one of the largest suite accommodations in the fleet."
+    },
+    {
+      "question": "Are Celebrity cruise cabins the same size on every ship?",
+      "answer": "No. Cabin dimensions and layouts vary by ship series and category. For example, Celebrity publishes different AquaClass dimensions for Edge, Solstice and Millennium Series ships."
+    },
+    {
+      "question": "How do I choose the best Celebrity cabin location?",
+      "answer": "Consider noise, motion, view, deck position, proximity to elevators and public areas, and whether the cabin has an obstructed or open view. Checking the specific deck plan and cabin number is important."
+    },
+    {
+      "question": "Are Celebrity cruise staterooms good for families?",
+      "answer": "They can be, particularly when families use connecting staterooms or accommodations with appropriate occupancy. Celebrity offers multiple connecting-stateroom configurations on selected ships, but exact options vary by vessel."
+    }
+  ],
+  "cta": {
+    "eyebrow": "START SOMEWHERE REMARKABLE",
+    "title": "Planning a Celebrity Cruise?",
+    "subtitle": "Compare the exact stateroom categories, deck locations, balcony sizes and suite benefits for your ship before booking. A small difference in cabin category can change the experience significantly, so check the deck plan and individual cabin details rather than choosing solely by price.",
+    "primaryButtonText": "Schedule a Consultation",
+    "primaryButtonLink": "/contact",
+    "secondaryButtonText": "Explore Celebrity Cruises",
+    "secondaryButtonLink": "/celebrity-cruises"
+  }
+}
