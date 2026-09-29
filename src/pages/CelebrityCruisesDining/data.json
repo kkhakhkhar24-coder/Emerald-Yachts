@@ -1,0 +1,376 @@
+{
+  "meta": {
+    "title": "Celebrity Cruises Dining Guide",
+    "description": "Explore Celebrity Cruises dining, from included main restaurants and cafés to specialty dining, AquaClass, The Retreat, room service and tips.",
+    "keywords": "Celebrity Cruises dining, Celebrity Cruises restaurants, Celebrity cruise food, Celebrity main dining room, Celebrity specialty dining, Oceanview Café, Celebrity Luminae, Celebrity Blu restaurant, Celebrity dining packages, Celebrity room service, Celebrity Select Dining",
+    "canonical": "https://www.tripsandships.com/celebrity-cruises/dining"
+  },
+  "hero": {
+    "eyebrow": "Onboard Dining · Trips & Ships Luxury Travel",
+    "title": "Celebrity Cruises Dining Guide",
+    "subtitle": "Celebrity Cruises dining combines complimentary restaurants, specialty venues, casual cafés, destination-inspired menus and exclusive restaurants for certain accommodation categories. Depending on the ship, guests may have access to a main restaurant, Oceanview Café, poolside dining, specialty restaurants and exclusive venues such as Blu for AquaClass guests and Luminae for guests staying in The Retreat."
+  },
+  "intro": {
+    "eyebrow": "GETTING STARTED",
+    "title": "How Dining Works on Celebrity Cruises",
+    "lead": "The exact restaurant lineup varies by ship and class, so a dining venue available on Celebrity Edge may not be available on an older Solstice- or Millennium-Series ship. Celebrity also regularly updates restaurants and dining concepts, making it important to check the individual ship's current dining page before booking.",
+    "paragraphs": [
+      "This guide explains how Celebrity Cruises dining works, what is included, which restaurants cost extra, how specialty dining differs from complimentary dining, and what first-time guests should know.",
+      "Celebrity divides its onboard dining into several broad categories:"
+    ],
+    "diningTypesTable": {
+      "headers": ["Dining Type", "Typical Examples", "Usually Included?"],
+      "rows": [
+        { "type": "Main dining", "examples": "Main Restaurant / ship-specific main dining rooms", "included": "Yes" },
+        { "type": "Casual dining", "examples": "Oceanview Café, Mast Grill", "included": "Yes" },
+        { "type": "Wellness dining", "examples": "Spa Café", "included": "Yes, where available" },
+        { "type": "Exclusive dining", "examples": "Blu, Luminae", "included": "Included for eligible guests" },
+        { "type": "Specialty dining", "examples": "Murano, Tuscan Grille, Sushi on Five, Le Petit Chef and others", "included": "Usually extra" },
+        { "type": "Room service", "examples": "In-stateroom dining", "included": "Some charges may apply" },
+        { "type": "Cafés", "examples": "Café al Bacio and similar venues", "included": "Depends on item" }
+      ]
+    },
+    "statement": "Celebrity says complimentary breakfast, lunch and dinner are available in a variety of restaurants, while specialty dining and 24-hour room service can involve additional charges. The most important point is that you do not need to buy a specialty dining package to have meals on a Celebrity cruise. There are complimentary restaurants available throughout the day."
+  },
+  "includedOptions": {
+    "eyebrow": "ALL-INCLUSIVE VALUE",
+    "title": "Which Celebrity Dining Options Are Included?",
+    "lead": "Celebrity's complimentary dining varies by ship, but commonly includes several of the following. Celebrity's official ship pages identify these venues as complimentary or category-exclusive dining options, with availability depending on the ship.",
+    "venues": [
+      { "name": "Main Restaurant", "icon": "utensils", "desc": "Traditional full-service multi-course dining" },
+      { "name": "Oceanview Café", "icon": "globe", "desc": "Global marketplace-style breakfast, lunch & dinner" },
+      { "name": "Mast Grill", "icon": "sun", "desc": "Relaxed poolside burgers and casual grilled favorites" },
+      { "name": "Spa Café", "icon": "leaf", "desc": "Nourishing, light and wellness-focused selections" },
+      { "name": "Eden Café on Edge Series ships", "icon": "coffee", "desc": "Morning beverages and casual daytime bites with outdoor seating" },
+      { "name": "Luminae for The Retreat guests", "icon": "crown", "desc": "Exclusive elevated dining curated by Daniel Boulud" },
+      { "name": "Blu for AquaClass guests", "icon": "gem", "desc": "Exclusive contemporary clean-cuisine restaurant" }
+    ],
+    "footnote": "Included dining generally means the food itself is covered by the cruise fare. Certain beverages, premium items or specialty experiences can still carry additional charges."
+  },
+  "mainDiningRoom": {
+    "eyebrow": "TRADITIONAL DINING",
+    "title": "Celebrity Main Dining Room",
+    "lead": "The Main Restaurant is the traditional full-service dining option on Celebrity Cruises.",
+    "body": "Celebrity describes its main dining room as offering classic and modern dishes with regional influences. Menus are designed around the destinations visited during the cruise, giving the main dining experience a mixture of familiar favorites and destination-inspired choices. Depending on the ship, the restaurant may have a ship-specific name or be one of several complementary main restaurants.",
+    "subLabel": "What can you expect? A typical main dining experience includes:",
+    "expectList": [
+      "Breakfast on selected schedules",
+      "Lunch on selected schedules",
+      "Dinner",
+      "Multi-course meals",
+      "Appetizers and soups",
+      "Main courses",
+      "Desserts",
+      "Vegetarian and alternative choices",
+      "Destination-inspired dishes"
+    ],
+    "note": "The exact menu and opening hours vary by sailing."
+  },
+  "selectDining": {
+    "eyebrow": "FLEXIBLE SCHEDULING",
+    "title": "Celebrity Select Dining and Dinner Times",
+    "intro": "Celebrity offers different ways of managing dinner reservations depending on the sailing and dining arrangement. Celebrity Select Dining allows guests to choose when they would like to dine rather than being assigned a single fixed dinner time.",
+    "subLabel": "This can be particularly useful for travelers who:",
+    "reasons": [
+      { "text": "Prefer flexible evening schedules", "icon": "clock" },
+      { "text": "Want to attend shows without rushing", "icon": "music" },
+      { "text": "Spend different amounts of time ashore", "icon": "map" },
+      { "text": "Prefer dining at different times each night", "icon": "calendar" }
+    ],
+    "footer": "Availability and dining arrangements can vary by ship and cruise, so check the dining options associated with your booking."
+  },
+  "casualVenues": {
+    "eyebrow": "CASUAL DINING",
+    "title": "Complimentary Casual Dining Venues",
+    "intro": "From marketplace-style buffets to poolside grills, Celebrity's casual venues make it easy to eat well without a formal reservation.",
+    "venues": [
+      {
+        "name": "Oceanview Café",
+        "tag": "Casual · Complimentary",
+        "description": "Celebrity describes it as a marketplace-style restaurant offering food from around the world. Depending on the ship and service period, guests can find choices such as breakfast foods, salads, pasta, pizza, international dishes, appetizers, desserts and made-to-order selections. Celebrity's current ship information describes Oceanview Café as a marketplace-inspired venue with global flavors.",
+        "usefulHeading": "When is Oceanview Café useful?",
+        "useful": ["A quick breakfast", "A casual lunch", "Food between activities", "A relaxed dinner", "More choice without a formal restaurant setting"],
+        "note": "Because menus and operating hours vary, check the daily schedule on your specific sailing."
+      },
+      {
+        "name": "Mast Grill",
+        "tag": "Casual · Poolside · Complimentary",
+        "description": "Mast Grill is Celebrity's relaxed poolside dining option on ships where it is available. Celebrity describes the venue as serving hearty casual food such as burgers, sandwiches, salads and grilled items. It is designed for guests who want something informal without leaving the pool-deck environment.",
+        "usefulHeading": "Why guests choose Mast Grill",
+        "useful": ["Especially convenient on sea days", "Lunch without changing for a restaurant", "Informal, pool-deck atmosphere"],
+        "note": "Mast Grill is especially convenient on sea days when guests want lunch without changing for a restaurant."
+      },
+      {
+        "name": "Spa Café",
+        "tag": "Wellness · Complimentary where available",
+        "description": "The Spa Café provides lighter, wellness-focused food and beverages. Celebrity describes Spa Café as a complimentary venue on applicable ships offering fresh and nourishing choices. Depending on the ship, options can include fresh juices, smoothies, salads, light breakfast items and healthy snacks.",
+        "usefulHeading": "Good to know",
+        "useful": ["Fresh juices", "Smoothies", "Salads", "Light breakfast items", "Healthy snacks"],
+        "note": "Availability varies by ship, so do not assume every Celebrity vessel has exactly the same Spa Café menu."
+      },
+      {
+        "name": "Eden Café",
+        "tag": "Edge Series ships",
+        "description": "Celebrity Edge Series ships have additional dining concepts, including Eden Café. Celebrity describes Eden Café as offering morning beverages and casual culinary bites, with breakfast and lunch choices and outdoor seating on either side of the café.",
+        "usefulHeading": "Why it matters",
+        "useful": ["Morning beverages", "Casual culinary bites", "Breakfast and lunch choices", "Outdoor seating on either side of the café"],
+        "note": "This is one reason why checking your specific ship is important when researching Celebrity Cruises dining."
+      }
+    ]
+  },
+  "specialtyDining": {
+    "eyebrow": "PREMIUM EXPERIENCES",
+    "title": "Celebrity Specialty Dining",
+    "intro": "Specialty restaurants provide more focused culinary experiences and generally involve an additional charge. Depending on the ship, specialty dining can include restaurants such as:",
+    "concepts": [
+      "Murano — French-inspired cuisine",
+      "Tuscan Grille — Italian dining",
+      "Sushi on Five — Japanese cuisine",
+      "Le Petit Chef — interactive dining and entertainment",
+      "Fine Cut Steakhouse — steakhouse dining",
+      "Other ship-specific concepts"
+    ],
+    "note": "Celebrity's restaurant lineup differs considerably between ships.",
+    "whyChooseLabel": "Why choose specialty dining?",
+    "whyChooseReasons": [
+      "Celebrating a birthday or anniversary",
+      "Enjoying a more focused cuisine",
+      "Booking a special evening",
+      "Trying premium steak or seafood",
+      "Experiencing Celebrity's entertainment-focused dining concepts"
+    ],
+    "featuredVenues": [
+      {
+        "name": "Murano",
+        "tag": "French-Inspired",
+        "description": "Murano is a specialty restaurant centered on French-inspired cuisine and an elegant dining atmosphere. It is available on selected Celebrity ships rather than across the entire fleet.",
+        "tip": "If Murano is important to your cruise plans, verify that your particular ship offers it before booking."
+      },
+      {
+        "name": "Tuscan Grille",
+        "tag": "Italian",
+        "description": "Tuscan Grille is Celebrity's Italian specialty restaurant. Celebrity describes it as an Italian ristorante and enoteca with a contemporary interpretation of Italian dining.",
+        "tip": "It can be a good choice when you want a slower, sit-down specialty dinner rather than a casual meal."
+      },
+      {
+        "name": "Sushi on Five",
+        "tag": "Japanese",
+        "description": "Sushi on Five focuses on Japanese cuisine. Celebrity describes the venue as offering sushi and Japanese specialties, with selections that can include sashimi, sushi rolls and desserts.",
+        "tip": "Because Sushi on Five is a specialty venue, pricing and package applicability should be checked for the specific sailing."
+      },
+      {
+        "name": "Le Petit Chef",
+        "tag": "Interactive Entertainment",
+        "description": "Le Petit Chef combines dining with an animated entertainment experience. Celebrity describes it as a dining concept where a small animated chef appears to prepare the meal on the tabletop, creating a visual component alongside the food.",
+        "tip": "This is particularly suited to travelers looking for an experience rather than simply another restaurant."
+      }
+    ]
+  },
+  "shipClasses": {
+    "edgeSeries": {
+      "eyebrow": "SHIP-SPECIFIC DINING",
+      "title": "Celebrity Edge Series Dining",
+      "lead": "Celebrity's Edge Series ships introduced a different approach to complimentary dining. Celebrity Edge, for example, features multiple complimentary restaurants with distinct culinary themes rather than relying solely on one traditional main dining room.",
+      "venues": ["Cosmopolitan", "Cyprus", "Normandie", "Oceanview Café", "Eden Café", "Spa Café", "Mast Grill"],
+      "note": "This means an Edge Series cruise can offer more variety within the complimentary dining program."
+    },
+    "solsticeSeries": {
+      "eyebrow": "CLASSIC FLEET",
+      "title": "Celebrity Dining on Solstice and Millennium Series Ships",
+      "intro": "Solstice- and Millennium-Series ships have their own combinations of dining venues, each offering a distinctive set of complimentary and specialty options.",
+      "venues": ["Main Restaurant", "Oceanview Café", "Mast Grill", "Spa Café", "Specialty restaurants", "Blu", "Luminae"],
+      "footer": "The exact selection varies between ships. For example, Celebrity Infinity lists Luminae, Blu, its Main Restaurant, Oceanview Café, Mast Grill and Spa Café, alongside specialty restaurants including Tuscan Grille, Sushi on Five and Le Petit Chef."
+    }
+  },
+  "exclusiveDining": {
+    "blu": {
+      "eyebrow": "EXCLUSIVE DINING",
+      "title": "Blu: Dining for AquaClass Guests",
+      "lead": "Blu is an exclusive restaurant for AquaClass guests. Celebrity describes Blu as offering fresh, contemporary flavors with a wellness-oriented approach. AquaClass guests can therefore have a dining experience that differs from the standard main restaurant.",
+      "subLabel": "Who can dine at Blu?",
+      "sub": "Access is primarily associated with AquaClass accommodations. Availability and access rules should be confirmed for the specific ship and booking."
+    },
+    "luminae": {
+      "eyebrow": "THE RETREAT",
+      "title": "Luminae: Dining for The Retreat",
+      "lead": "Luminae is Celebrity's exclusive restaurant for guests staying in The Retreat. Celebrity describes Luminae as globally inspired and cutting-edge dining, with signature dishes associated with Global Culinary Ambassador Daniel Boulud.",
+      "sub": "Luminae is therefore not simply another specialty restaurant that any guest can book independently. It is part of the elevated dining experience associated with The Retreat."
+    }
+  },
+  "costAndRoomService": {
+    "cost": {
+      "eyebrow": "VALUE & PRICING",
+      "title": "How Much Does Celebrity Specialty Dining Cost?",
+      "intro": "Specialty dining prices vary by:",
+      "factors": ["Restaurant", "Ship", "Sailing", "Date", "Promotional offer", "Dining package", "Pre-cruise versus onboard purchase"],
+      "packageAdviceTitle": "Should you buy a specialty dining package?",
+      "packageAdviceText": "It can make sense if you expect to eat at several specialty restaurants. Compare individual restaurant prices multiplied by number of meals against the specialty dining package price. Also consider whether you actually want to replace complimentary meals with specialty dining throughout the cruise.",
+      "note": "For that reason, there is no single reliable price that applies to every Celebrity specialty restaurant. Celebrity offers specialty dining packages on applicable sailings, which can make multiple specialty meals more economical than purchasing each experience individually."
+    },
+    "roomService": {
+      "eyebrow": "IN-STATEROOM DINING",
+      "title": "Is Room Service Included on Celebrity Cruises?",
+      "lead": "Room service availability and charges depend on the type of service and order. Celebrity's general \"What's Included\" information identifies 24-hour room service as an extra-cost option, while dining in complimentary restaurants is included.",
+      "sub": "Celebrity's ship dining pages describe room service as an alternative dining option where guests can order breakfast, lunch, dinner or snacks to their stateroom.",
+      "note": "Before ordering, check the current menu and applicable delivery or item charges."
+    }
+  },
+  "dietary": {
+    "eyebrow": "SPECIAL REQUIREMENTS",
+    "title": "Celebrity Dining and Dietary Requirements",
+    "intro": "Celebrity dining can accommodate many dietary preferences, but travelers with allergies or strict dietary requirements should notify the cruise line in advance. When planning your cruise, consider:",
+    "considerations": [
+      { "text": "Food allergies", "icon": "shield" },
+      { "text": "Vegetarian meals", "icon": "leaf" },
+      { "text": "Vegan preferences", "icon": "salad" },
+      { "text": "Gluten-free requirements", "icon": "check" },
+      { "text": "Religious or medical dietary restrictions", "icon": "info" },
+      { "text": "Cross-contamination concerns", "icon": "shield" }
+    ],
+    "footer": "For serious allergies, communicate requirements before sailing and speak with restaurant staff onboard rather than relying solely on menu descriptions.",
+    "vegetarianSection": {
+      "eyebrow": "PLANT-FORWARD DINING",
+      "title": "Celebrity Cruise Food for Vegetarians and Vegans",
+      "text": "Vegetarian choices are available across Celebrity's dining venues, although the selection varies by restaurant and ship. For more restrictive diets, the main dining restaurant can be useful because staff can discuss menu alternatives and dietary requirements. Specialty restaurants may also have suitable choices, but travelers should confirm options before booking."
+    }
+  },
+  "dressCodeAndTimeline": {
+    "dressCode": {
+      "eyebrow": "WHAT TO WEAR",
+      "title": "Celebrity Dining Dress Code",
+      "lead": "Dining dress expectations vary by venue and evening. The main dining experience can feel more formal than casual venues such as Oceanview Café or Mast Grill. Celebrity also schedules designated Evening Chic occasions on applicable cruises. These are intended to provide an opportunity for guests to dress up without requiring traditional formalwear.",
+      "subLabel": "A practical packing approach is to bring:",
+      "packing": ["Smart-casual outfits", "Comfortable daytime clothing", "At least one dressier outfit", "Appropriate shoes for evening dining"],
+      "note": "Check the dress guidance for your exact itinerary before departure."
+    },
+    "timeline": {
+      "eyebrow": "A DAY OF DINING",
+      "title": "Can You Eat at Multiple Restaurants in One Day?",
+      "intro": "Yes. Celebrity's dining structure allows guests to move between different included venues throughout the day. A typical day might look like:",
+      "steps": [
+        { "time": "Breakfast", "choice": "Main Restaurant or Oceanview Café" },
+        { "time": "Mid-morning", "choice": "Café or casual snack" },
+        { "time": "Lunch", "choice": "Oceanview Café or Mast Grill" },
+        { "time": "Afternoon", "choice": "Café or light snack" },
+        { "time": "Dinner", "choice": "Main Restaurant" },
+        { "time": "Later evening", "choice": "Specialty dining, casual food or another onboard option" }
+      ],
+      "note": "Your actual choices depend on restaurant opening hours and the ship."
+    }
+  },
+  "firstTimeTips": {
+    "eyebrow": "EXPERT PLANNING",
+    "title": "Celebrity Dining Tips for First-Time Cruisers",
+    "tips": [
+      "Check your ship before booking — dining differs significantly between ships. Restaurant names, specialty venues and complimentary options are not identical across the fleet.",
+      "Reserve specialty restaurants early — popular specialty restaurants and dining times can fill up, particularly on shorter cruises.",
+      "Compare dining packages — if you want several specialty meals, compare a dining package against individual restaurant pricing.",
+      "Use complimentary venues strategically — you do not need to pay for specialty dining every night. Celebrity provides substantial complimentary dining options.",
+      "Check menus before making reservations — look at the cuisine and menu style before using a specialty dining reservation.",
+      "Plan around shore excursions — on port days, a flexible dining option can be more convenient than booking a fixed dinner time.",
+      "Remember that ships differ — a restaurant available on Celebrity Eclipse may not be available on Celebrity Solstice or Celebrity Infinity."
+    ]
+  },
+  "guestCategoriesAndDecision": {
+    "categories": {
+      "eyebrow": "ACCESS BY CABIN TYPE",
+      "title": "Celebrity Dining by Guest Category",
+      "headers": ["Guest Type", "Dining Benefit"],
+      "rows": [
+        { "guest": "Standard stateroom", "benefit": "Access to complimentary dining venues" },
+        { "guest": "AquaClass", "benefit": "Access to Blu" },
+        { "guest": "The Retreat", "benefit": "Access to Luminae and its associated elevated dining benefits" },
+        { "guest": "Any guest", "benefit": "Specialty dining available where offered, generally for an additional charge" },
+        { "guest": "Any guest", "benefit": "Casual complimentary venues vary by ship" }
+      ],
+      "footer": "Celebrity confirms that Blu is exclusive to AquaClass and Luminae is exclusive to The Retreat."
+    },
+    "decisionGuide": {
+      "eyebrow": "DECISION GUIDE",
+      "title": "Which Celebrity Dining Option Should You Choose?",
+      "intro": "The best choice depends on what you value.",
+      "choices": [
+        { "label": "For everyday meals", "value": "Use the Main Restaurant and Oceanview Café." },
+        { "label": "For casual poolside food", "value": "Try Mast Grill where available." },
+        { "label": "For healthier options", "value": "Look at Spa Café and, where applicable, AquaClass dining at Blu." },
+        { "label": "For a premium occasion", "value": "Consider a specialty restaurant." },
+        { "label": "For an interactive experience", "value": "Le Petit Chef can combine dinner with entertainment." },
+        { "label": "For an elevated suite experience", "value": "The Retreat's Luminae provides an exclusive dining venue." }
+      ]
+    }
+  },
+  "video": {
+    "title": "Celebrity Cruises Culinary & Dining Experience Showcase",
+    "subtitle": "Explore the diverse culinary venues, Michelin-starred chef collaborations, and specialty restaurants across the Celebrity Cruises fleet.",
+    "videoUrl": "https://www.youtube.com/embed/placeholder",
+    "caption": "Celebrity Cruises Dining & Culinary Overview"
+  },
+  "keyTakeawaysAndConclusion": {
+    "takeaways": {
+      "title": "Key Takeaways",
+      "items": [
+        "Celebrity Cruises offers extensive complimentary dining, so specialty restaurants are not required for a satisfying cruise.",
+        "The Main Restaurant provides full-service dining with classic, modern and destination-inspired dishes.",
+        "Oceanview Café is the primary casual marketplace-style dining option on many ships.",
+        "Mast Grill provides relaxed poolside food on applicable vessels.",
+        "Spa Café offers lighter, wellness-focused choices.",
+        "Edge Series ships have multiple complimentary restaurants with different culinary themes.",
+        "Specialty restaurants such as Murano, Tuscan Grille, Sushi on Five and Le Petit Chef generally cost extra.",
+        "Blu is associated with AquaClass.",
+        "Luminae is exclusive to The Retreat.",
+        "Room service can involve additional charges.",
+        "Specialty dining packages may be useful for guests planning several specialty meals.",
+        "Restaurant availability varies by ship, so always check your specific Celebrity vessel."
+      ]
+    },
+    "conclusion": {
+      "title": "Conclusion",
+      "paragraphs": [
+        "Celebrity Cruises dining is designed around variety rather than a single restaurant experience. Guests can use complimentary venues such as the Main Restaurant and Oceanview Café for everyday meals, while specialty restaurants provide additional cuisine and experiences for an extra charge. The exact choices depend heavily on the ship.",
+        "For travelers booking AquaClass, The Retreat, or a particular Celebrity ship, dining access can be an important part of the decision. AquaClass brings access to Blu, while The Retreat includes Luminae, creating dining experiences that differ from standard stateroom bookings.",
+        "Before sailing, check the restaurant lineup for your exact ship, review specialty dining prices and packages, and consider making reservations for popular specialty venues. This approach lets you enjoy Celebrity's included dining while adding premium experiences where they provide the most value."
+      ],
+      "reviewCta": "Planning a Celebrity cruise? Check the dining lineup for your specific ship before booking. Compare complimentary restaurants with specialty dining, review available dining packages, and reserve popular specialty venues early if you want a particular restaurant or dinner time."
+    }
+  },
+  "expertAdvisor": {
+    "name": "Angela Hughes",
+    "role": "CEO & Luxury Travel Designer, Trips and Ships Luxury Travel",
+    "badge": "EXPERT ADVISOR",
+    "experienceBadge": "40+ Years Experience | 121+ Countries Visited",
+    "bio": "As founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel, Angela Hughes uses her personal, deep connections in the cruise industry to deliver custom dining and itinerary planning that regular booking engines simply cannot replicate.",
+    "quote": "Dining is where a cruise stops feeling like transportation and starts feeling like a destination. On Celebrity, the difference between a good trip and an unforgettable one often comes down to knowing which restaurant to book, and when.",
+    "standoutPills": [
+      "Reserve Specialty Early",
+      "Balance Included & Extra",
+      "AquaClass Blu Access",
+      "The Retreat Luminae",
+      "Flexible Select Dining",
+      "Confirm Ship-Specific Menus"
+    ]
+  },
+  "faqs": [
+    { "question": "Is food included on Celebrity Cruises?", "answer": "Yes. Celebrity Cruises includes breakfast, lunch and dinner at several complimentary dining venues. Specialty restaurants and some other dining services can cost extra." },
+    { "question": "What restaurants are included on Celebrity Cruises?", "answer": "Complimentary options vary by ship but can include the Main Restaurant, Oceanview Café, Mast Grill, Spa Café and, on selected ships, Eden Café. Blu and Luminae are complimentary for eligible AquaClass and The Retreat guests respectively." },
+    { "question": "Is the main dining room free on Celebrity Cruises?", "answer": "Yes. The Main Restaurant is a complimentary dining venue included in the cruise fare." },
+    { "question": "Is Oceanview Café included on Celebrity Cruises?", "answer": "Yes. Oceanview Café is a complimentary casual dining venue on applicable Celebrity ships. It offers marketplace-style dining with a variety of international dishes." },
+    { "question": "Are Celebrity Cruises specialty restaurants included?", "answer": "Generally, no. Specialty restaurants such as Tuscan Grille, Murano, Sushi on Five and Le Petit Chef generally require an additional charge, although dining packages and promotional offers may apply." },
+    { "question": "How much does specialty dining cost on Celebrity Cruises?", "answer": "Specialty dining prices vary by restaurant, ship, sailing and promotion. Celebrity also offers specialty dining packages on applicable cruises, so there is no single price that applies across the fleet." },
+    { "question": "Is room service free on Celebrity Cruises?", "answer": "Room service is available, but Celebrity identifies 24-hour room service as an extra-cost option. Check the current menu and applicable charges for your sailing." },
+    { "question": "What is Luminae on Celebrity Cruises?", "answer": "Luminae is an exclusive restaurant for guests staying in The Retreat. Celebrity describes it as globally inspired and cutting-edge dining with signature dishes associated with chef Daniel Boulud." },
+    { "question": "What is Blu on Celebrity Cruises?", "answer": "Blu is a restaurant exclusive to AquaClass guests. It focuses on fresh, contemporary flavors and a wellness-oriented dining experience." },
+    { "question": "Is Sushi on Five included on Celebrity Cruises?", "answer": "Sushi on Five is generally a specialty dining venue rather than a complimentary restaurant. Availability and pricing depend on the specific ship and sailing." },
+    { "question": "Is Tuscan Grille included on Celebrity Cruises?", "answer": "No, Tuscan Grille is generally classified as specialty dining and carries an additional charge unless a relevant package or promotion covers the meal." },
+    { "question": "What is Le Petit Chef on Celebrity Cruises?", "answer": "Le Petit Chef is an interactive specialty dining experience combining a meal with animated tabletop entertainment. Celebrity describes it as a unique dining concept featuring a small animated chef." },
+    { "question": "Does Celebrity Cruises have vegetarian and healthy food options?", "answer": "Yes. Vegetarian choices are available, and venues such as Spa Café focus on fresh and lighter options. Travelers with allergies or strict dietary requirements should communicate their needs before and during the cruise." },
+    { "question": "Do Celebrity Edge ships have different dining options?", "answer": "Yes. Edge Series ships introduced multiple complimentary restaurants with distinct culinary themes. Celebrity Edge, for example, has venues including Cosmopolitan, Cyprus, Normandie and Oceanview Café, along with other complimentary options." },
+    { "question": "Do I need specialty dining on a Celebrity cruise?", "answer": "No. Celebrity provides several complimentary restaurants, so you can complete a cruise without purchasing specialty dining. Specialty restaurants are an optional way to add different cuisines, premium experiences or special-occasion meals." }
+  ],
+  "cta": {
+    "eyebrow": "RESERVE YOUR TABLE",
+    "title": "Ready to Plan Your Celebrity Dining Experience?",
+    "subtitle": "Compare complimentary restaurants, specialty venues, and exclusive dining for AquaClass and The Retreat, then let our specialists help you book the perfect Celebrity cruise.",
+    "primaryBtnText": "Speak with a Celebrity Cruises dining specialist",
+    "primaryBtnUrl": "/contact"
+  }
+}

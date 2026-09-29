@@ -92,10 +92,6 @@ const Navbar = () => {
               >
                 Emerald Yachts vs Ritz-Carlton Yacht Collection
               </NavLink>
-       
-      
-    
-             
               <NavLink
                 to="/luxury-yacht-cruises"
                 className="nav-dropdown-single"
@@ -1227,7 +1223,7 @@ const Navbar = () => {
                 What Is Included on a Celebrity Cruise?
               </NavLink>
 
-              <NavLink
+              {/* <NavLink
                 to="/celebrity-cruises/ships"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -1241,7 +1237,7 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Celebrity Staterooms and Suites Guide
-              </NavLink>
+              </NavLink> */}
 
               {/* <NavLink
                 to="/celebrity-cruises/the-retreat"
@@ -1259,7 +1255,7 @@ const Navbar = () => {
                 Celebrity All Included Explained
               </NavLink> */}
 
-              <NavLink
+              {/* <NavLink
                 to="/celebrity-cruises/drink-packages"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -1281,7 +1277,7 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Celebrity Edge Series Ships Guide
-              </NavLink>
+              </NavLink> */}
 
               <NavLink
                 to="/celebrity-cruises/faqs"
@@ -2783,7 +2779,7 @@ const Navbar = () => {
               What Is Included on a Celebrity Cruise?
             </NavLink>
 
-            <NavLink
+            {/* <NavLink
               to="/celebrity-cruises/ships"
               className="nav-dropdown-single"
               onClick={toggleMenu}
@@ -2797,7 +2793,7 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Celebrity Staterooms and Suites Guide
-            </NavLink>
+            </NavLink> */}
 
             {/* <NavLink
               to="/celebrity-cruises/the-retreat"
@@ -2815,7 +2811,7 @@ const Navbar = () => {
               Celebrity All Included Explained
             </NavLink> */}
 
-            <NavLink
+            {/* <NavLink
               to="/celebrity-cruises/drink-packages"
               className="nav-dropdown-single"
               onClick={toggleMenu}
@@ -2837,7 +2833,7 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Celebrity Edge Series Ships Guide
-            </NavLink>
+            </NavLink> */}
 
             <NavLink
               to="/celebrity-cruises/faqs"

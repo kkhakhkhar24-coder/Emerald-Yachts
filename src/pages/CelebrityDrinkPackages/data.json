@@ -1,0 +1,434 @@
+{
+  "meta": {
+    "title": "Celebrity Cruises Drink Packages Guide",
+    "description": "Compare Celebrity Cruises drink packages, including Classic, Premium and Zero Proof options, prices, inclusions, restrictions, upgrades and booking tips.",
+    "keywords": "Celebrity Cruises drink packages, Celebrity drink package, Celebrity Classic Drink Package, Celebrity Premium Drink Package, Celebrity Zero Proof Package, Celebrity beverage package, Celebrity drink package prices, Celebrity drink package cost, Celebrity drink package upgrade, Celebrity All Included drinks",
+    "canonical": "https://www.tripsandships.com/celebrity-cruises/drink-packages/"
+  },
+  "hero": {
+    "eyebrow": "Celebrity Cruises · Trips & Ships Luxury Travel",
+    "title": "Celebrity Cruises Drink Packages Guide",
+    "subtitle": "Compare Celebrity Cruises drink packages, including Classic, Premium and Zero Proof options, prices, inclusions, restrictions, upgrades and booking tips."
+  },
+  "intro": {
+    "title": "Celebrity Drink Packages Overview",
+    "lead": "Celebrity Cruises offers several beverage packages designed for different drinking habits and budgets. The main options currently include the Classic Drink Package, Premium Drink Package and Zero Proof Drink Package. The Classic and Premium packages cover alcoholic and non-alcoholic beverages, while Zero Proof is designed for guests who do not want an alcoholic package.",
+    "paragraphs": [
+      "The biggest difference between the packages is the range and price level of beverages covered. Celebrity's current FAQ states that the Classic Package covers beverages up to $12 per serving and Premium covers beverages up to $19 per serving on its standard U.S. pricing information. For sailings departing from UK and Australian ports, Celebrity currently lists higher thresholds of $14 and $23, respectively.",
+      "This guide explains how Celebrity drink packages work, what each package includes, what happens when a drink exceeds the package limit, whether packages are worth buying, and how the rules affect couples, families and solo travelers."
+    ],
+    "badge": "Beverage Packages"
+  },
+  "packagesOverview": {
+    "eyebrow": "BEVERAGE PACKAGES",
+    "title": "What Drink Packages Does Celebrity Cruises Offer?",
+    "packages": [
+      {
+        "name": "Classic Drink Package",
+        "description": "Standard alcoholic and non-alcoholic drinks",
+        "limit": "$12 per serving (U.S.)",
+        "features": [
+          "Beers",
+          "Spirits",
+          "Cocktails",
+          "Liqueurs",
+          "Frozen drinks",
+          "Wines by the glass",
+          "Bottled water",
+          "Sodas",
+          "Premium coffees",
+          "Teas"
+        ],
+        "discount": "15% off wine bottles"
+      },
+      {
+        "name": "Premium Drink Package",
+        "description": "Wider selection and higher-priced beverages",
+        "limit": "$19 per serving (U.S.)",
+        "features": [
+          "Classic Package items",
+          "Craft and artisan beers",
+          "Premium spirits",
+          "Premium cocktails",
+          "Frozen drinks",
+          "Coca-Cola products",
+          "Premium bottled water",
+          "Higher-priced wines by the glass",
+          "Additional premium beverage selections"
+        ],
+        "discount": "20% off wine bottles"
+      },
+      {
+        "name": "Zero Proof Drink Package",
+        "description": "Premium non-alcoholic beverages",
+        "limit": "Non-alcoholic package",
+        "features": [
+          "Premium bottled water",
+          "Specialty coffees",
+          "Organic and premium teas",
+          "Red Bull and energy drinks",
+          "Frozen smoothies",
+          "Zero-proof cocktails",
+          "Coca-Cola selections",
+          "Vitamin Water",
+          "Bottled iced teas",
+          "Other non-alcoholic beverages"
+        ],
+        "discount": "—"
+      }
+    ]
+  },
+  "classicPackage": {
+    "eyebrow": "CLASSIC PACKAGE",
+    "title": "Celebrity Classic Drink Package",
+    "lead": "The Classic Drink Package is Celebrity's standard alcoholic beverage package.",
+    "body": "Celebrity currently describes it as covering a selection of:",
+    "inclusions": [
+      "Beers",
+      "Spirits",
+      "Cocktails",
+      "Liqueurs",
+      "Frozen drinks",
+      "Wines by the glass",
+      "Bottled water",
+      "Sodas",
+      "Premium coffees",
+      "Teas"
+    ],
+    "thresholdNote": "The current U.S. Celebrity FAQ places the Classic package limit at $12 per serving, while Celebrity currently lists $14 for sailings from UK and Australian ports.",
+    "bottleDiscountFootnote": "The Classic Package provides a 15% discount on wines purchased by the bottle.",
+    "excessChargeAlert": "If the beverage exceeds the package's applicable price threshold, Celebrity charges the difference plus the applicable gratuity to the guest's account."
+  },
+  "premiumPackage": {
+    "eyebrow": "PREMIUM PACKAGE",
+    "title": "Celebrity Premium Drink Package",
+    "lead": "The Premium Drink Package builds on the Classic Package and expands the selection to higher-priced and premium beverages.",
+    "body": "Celebrity says the Premium Package includes Classic Package items plus options such as:",
+    "inclusions": [
+      "Specialty coffees and teas",
+      "Craft and artisan beers",
+      "Premium spirits",
+      "Premium cocktails",
+      "Frozen drinks",
+      "Coca-Cola products",
+      "Premium bottled water",
+      "Higher-priced wines by the glass",
+      "Additional premium beverage selections"
+    ],
+    "thresholdNote": "Celebrity currently lists the Premium threshold at $19 per serving in its standard U.S. FAQ, with $23 for sailings departing from UK and Australian ports.",
+    "bottleDiscountFootnote": "Premium provides a 20% discount on bottles of wine, compared with 15% with Classic.",
+    "relevanceAlert": "Premium is particularly relevant if you regularly prefer higher-end wines, premium spirits, craft beers, specialty coffees, premium bottled water, or more expensive cocktails."
+  },
+  "zeroProofPackage": {
+    "eyebrow": "ZERO PROOF",
+    "title": "Celebrity Zero Proof Drink Package",
+    "lead": "The Zero Proof Drink Package is Celebrity's non-alcoholic option.",
+    "body": "It is intended for guests who want a broader selection of premium non-alcoholic beverages without purchasing an alcoholic package.",
+    "optionsIntro": "Celebrity's current information describes options including:",
+    "inclusions": [
+      "Premium bottled water",
+      "Specialty coffees",
+      "Organic and premium teas",
+      "Red Bull and other energy drinks",
+      "Frozen smoothies",
+      "Zero-proof cocktails",
+      "Coca-Cola selections",
+      "Vitamin Water",
+      "Bottled iced teas",
+      "Other non-alcoholic beverages"
+    ],
+    "targetAudienceFootnote": "Zero Proof is useful for non-drinkers, designated drivers, guests who prefer specialty coffee and premium water, and travelers who want mocktails and other zero-proof beverages.",
+    "availabilityAlert": "Specific products can vary by ship and availability."
+  },
+  "comparisonTable": {
+    "eyebrow": "COMPARISON",
+    "title": "Celebrity Drink Package Comparison",
+    "headers": ["Feature", "Classic", "Premium", "Zero Proof"],
+    "rows": [
+      { "feature": "Alcoholic drinks", "classic": "Yes", "premium": "Yes", "zero": "No" },
+      { "feature": "Beer", "classic": "Yes", "premium": "Yes", "zero": "No" },
+      { "feature": "Wine by glass", "classic": "Yes", "premium": "Yes, broader selection", "zero": "No" },
+      { "feature": "Spirits", "classic": "Yes", "premium": "Premium selection", "zero": "No" },
+      { "feature": "Cocktails", "classic": "Yes", "premium": "Broader selection", "zero": "Zero-proof cocktails" },
+      { "feature": "Frozen drinks", "classic": "Yes", "premium": "Yes", "zero": "Selected non-alcoholic options" },
+      { "feature": "Specialty coffee", "classic": "Included selections", "premium": "Broader selection", "zero": "Yes" },
+      { "feature": "Premium bottled water", "classic": "Limited/selected", "premium": "Yes", "zero": "Yes" },
+      { "feature": "Energy drinks", "classic": "Package dependent", "premium": "Broader selection", "zero": "Yes" },
+      { "feature": "Bottle-of-wine discount", "classic": "15%", "premium": "20%", "zero": "—" },
+      { "feature": "Current standard U.S. drink-price threshold", "classic": "Up to $12", "premium": "Up to $19", "zero": "Non-alcoholic package" }
+    ],
+    "footnote": "Package contents, price thresholds and beverage availability can change, so the terms shown for your sailing should take priority."
+  },
+  "pricing": {
+    "eyebrow": "PRICING",
+    "title": "How Much Do Celebrity Drink Packages Cost?",
+    "lead": "Celebrity does not use one universal drink-package price for every cruise.",
+    "description": "Pricing can vary according to: sailing, ship, cruise length, departure market, promotions, package type, when the package is purchased, available pre-cruise offers, and more.",
+    "body": "Celebrity's published promotional materials have shown different starting prices at different times, which is why travelers should not assume a fixed daily price from an older article or screenshot.",
+    "gratuityCard": {
+      "title": "Gratuity on Drink Packages",
+      "statValue": "20%",
+      "statLabel": "service charge",
+      "text1": "Celebrity's published package materials state that a 20% service charge is applied to drink-package purchases at checkout in the applicable markets.",
+      "text2": "Because taxes, service charges and regional booking rules can vary, check the final checkout price rather than calculating the package solely from its advertised base price."
+    },
+    "footnote": "The most reliable method is to check the Cruise Planner for your specific reservation and compare the current package price with your expected drink spending."
+  },
+  "purchaseInfo": {
+    "eyebrow": "PURCHASE",
+    "title": "Can You Buy a Celebrity Drink Package Before the Cruise?",
+    "intro": "Yes. Celebrity says guests can purchase drink packages through the Cruise Planner before sailing, subject to the applicable booking deadline. Its current FAQ states that packages can also be purchased onboard on the first day of the cruise.",
+    "options": [
+      {
+        "title": "Buy Before Sailing",
+        "items": [
+          "You can compare packages in advance",
+          "You can monitor promotional pricing",
+          "Avoid having to arrange the package after boarding",
+          "Calculate your expected beverage budget before departure"
+        ],
+        "note": "Celebrity recommends checking the Cruise Planner for the current price and availability for your booking."
+      },
+      {
+        "title": "Buy Onboard",
+        "items": [
+          "Packages can be purchased onboard",
+          "Available on the first day of the cruise",
+          "Guests can ask at a bar for information"
+        ],
+        "note": "If you are comparing prices, check the pre-cruise Cruise Planner first because Celebrity frequently promotes pre-cruise package pricing."
+      }
+    ]
+  },
+  "upgrade": {
+    "eyebrow": "UPGRADE",
+    "title": "Can You Upgrade From Classic to Premium?",
+    "lead": "Yes. Guests with a Classic Drink Package can upgrade to Premium.",
+    "paragraphs": [
+      "Celebrity's current FAQ lists a $20 per person per day Classic-to-Premium upgrade price plus 20% gratuity in the applicable information, although promotional pricing and regional terms can differ.",
+      "The upgrade can be useful if you want premium brands without paying for an entirely separate package."
+    ],
+    "footnote": "Before upgrading, compare: Premium package price − Classic package price against the value of the additional drinks you expect to order."
+  },
+  "exclusions": {
+    "eyebrow": "EXCLUSIONS",
+    "title": "What's Not Included in Celebrity Drink Packages?",
+    "items": [
+      {
+        "title": "Room Service",
+        "description": "Room service beverages are not included. Celebrity's FAQ specifically states that drink packages can be used at restaurants, bars and lounges onboard, but room service beverages are excluded."
+      },
+      {
+        "title": "Minibar Drinks",
+        "description": "Minibar beverages are not included. If you order a beverage from the minibar, expect a separate charge."
+      },
+      {
+        "title": "Wine Bottles",
+        "description": "Bottles of wine are not included as a package beverage, but Classic and Premium package holders can receive discounts on bottles of wine (15% for Classic, 20% for Premium)."
+      },
+      {
+        "title": "Galapagos Cruises",
+        "description": "Celebrity states that drink packages are not available on cruises in the Galapagos."
+      }
+    ]
+  },
+  "sharingPolicy": {
+    "eyebrow": "SHARING POLICY",
+    "title": "Can Celebrity Drink Packages Be Shared?",
+    "lead": "No. Celebrity states that drink packages are for single-guest use and cannot be shared between multiple people.",
+    "body": "For example, one person cannot use their package to order drinks for another guest who does not have a package. This rule is important when calculating whether buying a package for one person will actually work for your travel party.",
+    "footnote": "Celebrity's drink-package policy requires all guests of legal drinking age in the same stateroom to purchase the same drink package, including upgrades."
+  },
+  "stateroomRule": {
+    "eyebrow": "STATEROOM RULE",
+    "title": "Does Everyone in a Stateroom Need the Same Drink Package?",
+    "lead": "Celebrity's drink-package policy requires all guests of legal drinking age in the same stateroom to purchase the same drink package, including upgrades.",
+    "body": "For example, if two adults share a cabin and one wants Premium, the other adult generally must also have Premium. This rule can significantly affect the value calculation for couples.",
+    "footnote": "If someone does not drink alcohol, the available non-alcoholic package options and applicable rules should be confirmed for the booking before purchase."
+  },
+  "allIncluded": {
+    "eyebrow": "ALL INCLUDED",
+    "title": "Celebrity Drink Packages and All Included",
+    "intro": "Celebrity's All Included fare is different from simply purchasing a beverage package. For eligible standard stateroom bookings, Celebrity currently describes All Included as bundling the Classic Drinks Package and Basic Wi-Fi into the cruise fare.",
+    "inclusionsList": [
+      "Classic Drinks Package",
+      "Basic Wi-Fi",
+      "Eligible standard stateroom bookings"
+    ],
+    "cardTitle": "All Included Benefits",
+    "cardText": "Celebrity advertises All Included as a way to save on its popular Classic Drinks and Basic Wi-Fi packages. This means that if you are already considering Classic Drinks and Wi-Fi, it is worth comparing the Cruise Only and All Included fares before purchasing the beverage package separately."
+  },
+  "retreat": {
+    "eyebrow": "THE RETREAT",
+    "title": "Celebrity Drink Packages and The Retreat",
+    "lead": "Guests staying in The Retreat have a different level of included benefits.",
+    "paragraphs": [
+      "Celebrity's current materials state that Retreat guests receive enhanced benefits including Premium Drinks and Premium Wi-Fi.",
+      "That means a Retreat guest should not automatically compare their beverage benefits with a standard Classic-package booking."
+    ]
+  },
+  "valueCalculation": {
+    "eyebrow": "VALUE",
+    "title": "Is a Celebrity Drink Package Worth It?",
+    "makesSenseList": [
+      "Drink several beverages every day",
+      "Like cocktails or wine by the glass",
+      "Regularly drink specialty coffee",
+      "Want bottled water throughout the day",
+      "Prefer predictable beverage spending",
+      "Want to avoid tracking individual drink charges",
+      "Plan to spend significant time onboard"
+    ],
+    "notSenseList": [
+      "Drink very little",
+      "Prefer complimentary water and beverages",
+      "Spend most days ashore",
+      "Do not drink alcohol and rarely buy premium non-alcoholic beverages",
+      "Would not normally spend enough on drinks to recover the package cost"
+    ],
+    "calculationTitle": "How to Calculate Whether a Celebrity Drink Package Is Worth It",
+    "calculationLead": "Use this simple calculation:",
+    "formula": "Daily package cost ÷ expected number of chargeable drinks = break-even cost per drink",
+    "calculationBody": "Then consider: cocktails, wine, beer, coffee, bottled water, soda, mocktails, and other beverages you would otherwise buy. For a multi-day cruise, multiply the realistic daily spend by the number of cruise days.",
+    "exampleTitle": "Example",
+    "exampleText": "Suppose your expected daily beverage spending without a package is: 2 cocktails, 1 glass of wine, 1 specialty coffee, and 2 bottled waters. Estimate what those individual drinks would cost on your sailing. Then compare that total with the actual package price shown in your Cruise Planner.",
+    "exampleNote": "The important number is not how many drinks you could consume. It is how much you would normally spend."
+  },
+  "tips": {
+    "eyebrow": "TIPS",
+    "title": "Celebrity Drink Package Tips for First-Time Cruisers",
+    "items": [
+      {
+        "title": "Check the current package price",
+        "desc": "Do not rely on old blog posts or screenshots. Celebrity changes promotional pricing and package offerings."
+      },
+      {
+        "title": "Check the beverage threshold",
+        "desc": "A drink above your package limit can result in a separate charge for the difference."
+      },
+      {
+        "title": "Compare Classic with Premium",
+        "desc": "If most of your preferred drinks fall within Classic, Premium may not be necessary."
+      },
+      {
+        "title": "Check the same-stateroom rule",
+        "desc": "Adults sharing a stateroom generally need the same package level."
+      },
+      {
+        "title": "Look for All Included pricing",
+        "desc": "If you also want Wi-Fi, compare the All Included fare with purchasing the beverage package separately."
+      },
+      {
+        "title": "Check regional rules",
+        "desc": "Package limits and pricing can differ by departure market."
+      }
+    ]
+  },
+  "video": {
+    "title": "Celebrity Cruises Beverage Experience & Package Guide",
+    "subtitle": "Discover everything you need to know about Celebrity Cruises beverage packages, wine selections, and onboard dining enhancements.",
+    "videoUrl": "https://www.youtube.com/embed/placeholder",
+    "caption": "Official Celebrity Cruises Beverage and Package Insights"
+  },
+  "keyTakeaways": {
+    "title": "Key Takeaways",
+    "subtitle": "Essential facts to remember when evaluating Celebrity drink packages.",
+    "items": [
+      "Celebrity Cruises currently offers Classic, Premium and Zero Proof drink packages.",
+      "Classic covers a broad selection of alcoholic and non-alcoholic beverages.",
+      "Premium provides a wider selection of premium drinks and higher package limits.",
+      "Zero Proof is designed for premium non-alcoholic beverages.",
+      "Celebrity currently lists the standard U.S. Classic limit at $12 per serving and Premium at $19.",
+      "Drinks above the applicable package limit can result in a charge for the difference.",
+      "Wine bottles are not included, but package holders receive a bottle discount.",
+      "Drink packages cannot be shared, and adults in the same stateroom must purchase the same package."
+    ]
+  },
+  "expertAdvisor": {
+    "name": "Angela Hughes",
+    "role": "CEO & Luxury Cruise Specialist, Trips and Ships Luxury Travel",
+    "badge": "EXPERT ADVISOR",
+    "experienceBadge": "40+ Years Experience | 121+ Countries Visited",
+    "bio": "As founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel, Angela Hughes uses her personal, deep connections in the cruising world to deliver custom travel planning that regular booking engines simply cannot replicate.",
+    "quote": "Celebrity's drink packages give travelers flexibility to choose what fits their vacation style. The key is understanding your own drinking habits and comparing that against the package price — not just assuming that 'all-inclusive' automatically means 'better value.'",
+    "standoutPills": [
+      "Classic, Premium & Zero Proof Options",
+      "Clear Price Thresholds",
+      "Convenient Upgrade Path",
+      "All Included Bundling",
+      "The Retreat Benefits",
+      "Perfect Day at CocoCay Compatibility"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "What drink packages does Celebrity Cruises offer?",
+      "answer": "Celebrity currently offers the Classic Drink Package, Premium Drink Package and Zero Proof Drink Package. Classic and Premium include alcoholic beverages, while Zero Proof focuses on premium non-alcoholic drinks."
+    },
+    {
+      "question": "How much is the Celebrity Cruises drink package?",
+      "answer": "Celebrity does not have one fixed price for every sailing. Package prices vary by cruise, market, promotion and package type, so the current Cruise Planner price for your reservation is the best reference."
+    },
+    {
+      "question": "What is included in the Celebrity Classic Drink Package?",
+      "answer": "The Classic Package includes selected beers, spirits, cocktails, liqueurs, frozen drinks, wines by the glass, bottled water, sodas, premium coffees and teas, subject to the package's applicable limits and availability."
+    },
+    {
+      "question": "What is included in the Celebrity Premium Drink Package?",
+      "answer": "Premium includes the Classic selection plus a broader range of premium spirits, craft and artisan beers, specialty coffees and teas, premium bottled water, higher-priced wines by the glass and other premium beverages."
+    },
+    {
+      "question": "What is the Celebrity Zero Proof Drink Package?",
+      "answer": "Zero Proof is Celebrity's non-alcoholic beverage package. It can include premium bottled water, specialty coffees and teas, energy drinks, smoothies, zero-proof cocktails, sodas and other premium non-alcoholic beverages."
+    },
+    {
+      "question": "What is the Celebrity drink price limit for the Classic Package?",
+      "answer": "Celebrity's current standard U.S. FAQ lists the Classic Package limit at $12 per serving. Celebrity currently lists $14 for sailings departing from UK and Australian ports. Regional pricing and package terms can change."
+    },
+    {
+      "question": "What is the Celebrity drink price limit for the Premium Package?",
+      "answer": "Celebrity's current standard U.S. FAQ lists the Premium Package limit at $19 per serving, while UK and Australian departures are currently listed at $23. The applicable limit for your sailing should be checked before purchase."
+    },
+    {
+      "question": "What happens if my Celebrity drink costs more than the package limit?",
+      "answer": "Celebrity charges the difference between the drink's price and the package limit, along with the applicable gratuity."
+    },
+    {
+      "question": "Are wine bottles included in Celebrity drink packages?",
+      "answer": "No. Bottles of wine are not included as package beverages, but Celebrity provides a discount on wine bottles for package holders. Classic currently provides 15% off and Premium 20% off."
+    },
+    {
+      "question": "Can Celebrity drink packages be shared?",
+      "answer": "No. Celebrity says drink packages are for individual guest use and cannot be shared between multiple guests."
+    },
+    {
+      "question": "Does everyone in a Celebrity cabin need the same drink package?",
+      "answer": "Celebrity's drink-package policy requires all guests of legal drinking age in the same stateroom to purchase the same package, including upgrades."
+    },
+    {
+      "question": "Can I upgrade from the Celebrity Classic to Premium Drink Package?",
+      "answer": "Yes. Celebrity allows Classic guests to upgrade to Premium. The current FAQ lists a $20-per-person-per-day upgrade plus 20% gratuity in its applicable pricing information, although promotional and regional terms may vary."
+    },
+    {
+      "question": "Are Celebrity drink packages available on every cruise?",
+      "answer": "No. Celebrity states that drink packages are not available on cruises in the Galapagos. Availability and package terms can also depend on the sailing and departure market."
+    },
+    {
+      "question": "Can I use a Celebrity drink package for room service or minibar drinks?",
+      "answer": "No. Celebrity states that drink packages can be used in restaurants, bars and lounges, but room-service and minibar beverages are excluded."
+    },
+    {
+      "question": "Is a Celebrity Cruises drink package worth it?",
+      "answer": "It can be worthwhile if you regularly purchase cocktails, wine, beer, specialty coffee, bottled water or other covered drinks. Compare the actual package price with your expected daily beverage spending before buying."
+    }
+  ],
+  "cta": {
+    "eyebrow": "START SOMEWHERE REMARKABLE",
+    "title": "Ready to Book Your Celebrity Cruise?",
+    "subtitle": "Planning a Celebrity cruise? Check the current Classic, Premium and Zero Proof prices for your specific sailing, then compare the package cost with what you realistically expect to spend on drinks each day. If you also want Wi-Fi, compare the total with Celebrity's All Included fare before booking.",
+    "primaryBtnText": "Schedule a Consultation",
+    "primaryBtnUrl": "/contact",
+    "secondaryBtnText": "Explore Celebrity Cruises",
+    "secondaryBtnUrl": "/celebrity-cruises"
+  }
+}
