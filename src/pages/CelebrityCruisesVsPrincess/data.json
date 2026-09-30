@@ -1,0 +1,604 @@
+{
+  "meta": {
+    "title": "Celebrity vs Princess Cruises: Key Differences",
+    "description": "Compare Celebrity Cruises vs Princess Cruises on ships, dining, cabins, entertainment, atmosphere, value, itineraries, and which cruise style suits you best.",
+    "keywords": "Celebrity Cruises vs Princess Cruises, Celebrity vs Princess, Celebrity Cruises or Princess Cruises, Celebrity Cruises comparison, Princess Cruises comparison, Celebrity vs Princess for couples, Celebrity vs Princess dining, Celebrity vs Princess ships",
+    "canonical": "https://www.tripsandships.com/celebrity-cruises/celebrity-vs-princess"
+  },
+  "hero": {
+    "eyebrow": "Cruise Line Comparison · Trips & Ships Luxury Travel",
+    "title": "Celebrity Cruises vs. Princess Cruises",
+    "subtitle": "Choosing between Celebrity Cruises and Princess Cruises often comes down to the kind of cruise experience you want rather than simply which cruise line is better. Both offer premium-oriented cruising, international itineraries, multiple accommodation categories, specialty dining, entertainment, shore excursions, and ships designed for a broad range of travelers."
+  },
+  "atAGlance": {
+    "eyebrow": "SIDE BY SIDE",
+    "title": "Celebrity Cruises vs Princess Cruises at a Glance",
+    "lead1": "The biggest distinction is in the overall style. Celebrity Cruises generally emphasizes contemporary design, upscale dining, modern spaces, and a more polished resort-like atmosphere. Princess Cruises combines traditional cruise elements with contemporary amenities, a strong destination focus, varied entertainment, and a broad appeal to couples, families, and multigenerational travelers.",
+    "lead2": "This guide compares Celebrity and Princess across the areas that matter most when choosing a cruise, including ships, cabins, dining, drinks, entertainment, activities, itineraries, service style, and value.",
+    "note": "Exact amenities, venues and services vary by ship, sailing and itinerary.",
+    "table": [
+      {
+        "category": "Overall style",
+        "celebrity": "Contemporary and upscale",
+        "princess": "Classic-modern and destination-focused"
+      },
+      {
+        "category": "Atmosphere",
+        "celebrity": "Polished, relaxed and sophisticated",
+        "princess": "Relaxed, traditional with modern touches"
+      },
+      {
+        "category": "Best suited to",
+        "celebrity": "Couples, adults and travelers seeking a premium feel",
+        "princess": "Couples, families and multigenerational travelers"
+      },
+      {
+        "category": "Ship design",
+        "celebrity": "Modern, design-led spaces",
+        "princess": "Traditional cruise layout combined with modern features"
+      },
+      {
+        "category": "Dining",
+        "celebrity": "Strong emphasis on specialty and contemporary dining",
+        "princess": "Broad selection of complimentary and specialty dining"
+      },
+      {
+        "category": "Entertainment",
+        "celebrity": "Theater productions, live music, lounges and activities",
+        "princess": "Theater shows, live music, movies, activities and destination programming"
+      },
+      {
+        "category": "Family appeal",
+        "celebrity": "Family-friendly, with select youth programming",
+        "princess": "Strong family and multigenerational appeal"
+      },
+      {
+        "category": "Itineraries",
+        "celebrity": "Caribbean, Europe, Alaska, Asia and other global destinations",
+        "princess": "Caribbean, Alaska, Europe, Asia, Australia and other destinations"
+      },
+      {
+        "category": "Private outdoor experience",
+        "celebrity": "Retreat on eligible ships",
+        "princess": "Sanctuary on eligible ships"
+      },
+      {
+        "category": "Signature features",
+        "celebrity": "The Retreat, Infinite Veranda on select ships, contemporary design",
+        "princess": "MedallionClass experience, The Sanctuary, destination-focused cruising"
+      },
+      {
+        "category": "Cruise style",
+        "celebrity": "Premium contemporary",
+        "princess": "Premium mainstream with classic cruising influences"
+      }
+    ]
+  },
+  "mainDifference": {
+    "eyebrow": "THE CORE DISTINCTION",
+    "title": "What Is the Main Difference Between Celebrity and Princess?",
+    "text": "The simplest way to distinguish the two is cruise atmosphere and design philosophy.",
+    "note": "Neither approach is universally better. The right choice depends on whether you prefer a more contemporary premium environment or a classic cruise experience with modern conveniences.",
+    "celebrity": {
+      "title": "Celebrity",
+      "description": "Contemporary architecture, upscale public spaces, sophisticated dining concepts and a modern resort feel. Its Edge Series is particularly notable for design-forward spaces and innovative features."
+    },
+    "princess": {
+      "title": "Princess",
+      "description": "Traditional cruise experience with modern technology and contemporary venues. Particularly associated with destination-focused itineraries, MedallionClass technology and a wide selection of activities."
+    }
+  },
+  "ships": {
+    "eyebrow": "FLEET COMPARISON",
+    "title": "Celebrity vs Princess: Ships and Fleet Style",
+    "intro": "Both cruise lines operate multiple ship classes, so the experience can differ significantly from one vessel to another.",
+    "celebrity": {
+      "title": "Celebrity Cruises Ships",
+      "lead": "Celebrity's fleet includes the recognizable Edge Series — emphasizing:",
+      "features": [
+        "Contemporary architecture",
+        "Large open public spaces",
+        "Modern restaurants and lounges",
+        "The Magic Carpet on applicable ships",
+        "The Retreat suite area",
+        "Innovative cabin designs on select ships",
+        "Resort-style outdoor areas"
+      ],
+      "note": "Other Celebrity ships have their own layouts — compare the specific vessel before booking."
+    },
+    "princess": {
+      "title": "Princess Cruises Ships",
+      "lead": "Princess operates multiple classes including MedallionClass-equipped vessels. Ships commonly feature:",
+      "features": [
+        "Multiple dining venues",
+        "Main theaters",
+        "Pools and outdoor decks",
+        "Lounges and bars",
+        "Specialty restaurants",
+        "Youth and family facilities on applicable ships",
+        "The Sanctuary on eligible ships",
+        "Movies Under the Stars on applicable vessels"
+      ]
+    },
+    "choiceBox": {
+      "title": "Which Has Better Ships?",
+      "intro": "The answer depends on what you want from the ship.",
+      "celebrityPref": "Choose Celebrity if you prioritize: contemporary design, upscale spaces, modern architecture and a refined resort atmosphere.",
+      "princessPref": "Choose Princess if you prioritize: traditional cruise elements, destination programming and broad onboard activities.",
+      "footer": "Always check the individual ship before booking — sister ships can still have meaningful differences."
+    }
+  },
+  "couples": {
+    "eyebrow": "ROMANCE ONBOARD",
+    "title": "Celebrity vs Princess for Couples",
+    "lead": "Both lines can work very well for couples, but the atmosphere differs.",
+    "note": "For a honeymoon, anniversary or couples' getaway, compare the specific ship, cabin category and itinerary rather than choosing solely by cruise line.",
+    "celebrity": {
+      "title": "Celebrity Cruises",
+      "points": [
+        "Sophisticated public spaces",
+        "Contemporary dining",
+        "Relaxed evenings",
+        "Upscale suite accommodations",
+        "Modern ship design",
+        "A less family-centered atmosphere"
+      ]
+    },
+    "princess": {
+      "title": "Princess Cruises",
+      "points": [
+        "Destination-focused cruising",
+        "Traditional cruise experiences",
+        "Live entertainment",
+        "Variety of onboard activities",
+        "Romantic dining experiences",
+        "Longer or more diverse itineraries"
+      ]
+    }
+  },
+  "families": {
+    "eyebrow": "MULTIGENERATIONAL TRAVEL",
+    "title": "Celebrity vs Princess for Families",
+    "lead": "Both cruise lines welcome families, but their family offerings and onboard atmosphere can differ by ship.",
+    "princessDesc": "Princess can be attractive for multigenerational groups because its ships offer a mixture of entertainment, dining, activities and accommodations suitable for different age groups.",
+    "celebrityDesc": "Celebrity also provides family-oriented facilities and youth programming on applicable ships, but its overall brand positioning tends to emphasize a more upscale and contemporary experience.",
+    "checklistTitle": "What Families Should Compare Before Booking",
+    "checklist": [
+      "Youth and teen facilities on the specific ship",
+      "Children’s programming",
+      "Family cabin configurations",
+      "Connecting cabin availability",
+      "Pool facilities",
+      "Dining flexibility",
+      "Port schedules",
+      "Shore excursion suitability",
+      "Sea-day activities"
+    ],
+    "note": "For families, the ship and itinerary can matter more than the brand name."
+  },
+  "dining": {
+    "eyebrow": "ONBOARD DINING",
+    "title": "Celebrity vs Princess for Dining",
+    "intro": "Dining is an important difference to consider because both cruise lines combine complimentary dining with specialty restaurants.",
+    "celebrity": {
+      "title": "Celebrity Dining",
+      "lead": "Celebrity places significant emphasis on contemporary dining and specialty restaurant concepts. Depending on the ship, travelers may find:",
+      "venues": [
+        "Main dining restaurants",
+        "Casual venues",
+        "Specialty restaurants",
+        "Cafés",
+        "Suite-exclusive dining options",
+        "Premium dining experiences"
+      ],
+      "note": "The exact restaurant lineup varies considerably by ship."
+    },
+    "princess": {
+      "title": "Princess Dining",
+      "lead": "Princess offers a broad dining program that can include:",
+      "venues": [
+        "Main dining rooms",
+        "Casual dining",
+        "Specialty restaurants",
+        "International-inspired cuisine",
+        "Cafés and casual food venues",
+        "Room-service options",
+        "Suite-related dining benefits on applicable bookings"
+      ]
+    },
+    "choiceBox": {
+      "title": "Which Is Better for Food?",
+      "celebrityFocus": "Celebrity may appeal more to travelers who prioritize modern restaurant design and an upscale dining atmosphere.",
+      "princessFocus": "Princess may be better suited to travelers who value variety, traditional cruise dining and a broad selection of venues.",
+      "note": "Because restaurant lineups change by ship, compare the actual dining venues on your chosen vessel before booking."
+    }
+  },
+  "drinks": {
+    "eyebrow": "BEVERAGE PROGRAMS",
+    "title": "Celebrity vs Princess Drink Packages",
+    "lead": "Both cruise lines offer beverage packages, but inclusions, pricing and package structures can change. Common considerations include:",
+    "considerations": [
+      "Alcoholic beverages",
+      "Beer and wine",
+      "Cocktails",
+      "Soft drinks",
+      "Specialty coffees",
+      "Bottled or premium water",
+      "Beverage price limits",
+      "Gratuities or service charges",
+      "Package duration",
+      "Restrictions and exclusions"
+    ],
+    "note": "Do not compare package prices alone. Calculate how much you expect to drink each day and check the current package terms for your sailing. A package can be more useful for travelers who regularly purchase premium beverages, while occasional drinkers may find paying individually more economical."
+  },
+  "cabins": {
+    "eyebrow": "ACCOMMODATIONS",
+    "title": "Celebrity vs Princess Cabins",
+    "lead": "Both cruise lines offer a range of accommodation categories.",
+    "table": [
+      {
+        "type": "Interior",
+        "celebrity": "Available",
+        "princess": "Available"
+      },
+      {
+        "type": "Ocean View",
+        "celebrity": "Available",
+        "princess": "Available"
+      },
+      {
+        "type": "Balcony",
+        "celebrity": "Available",
+        "princess": "Available"
+      },
+      {
+        "type": "Suites",
+        "celebrity": "Available",
+        "princess": "Available"
+      },
+      {
+        "type": "Premium / specialty accommodations",
+        "celebrity": "Varies by ship",
+        "princess": "Varies by ship"
+      }
+    ],
+    "sub": "Celebrity's newer ships include innovative cabin designs, while Princess offers several balcony and suite configurations across its fleet.",
+    "choiceBox": {
+      "title": "Which Has Better Cabins?",
+      "celebrityFocus": "Celebrity may appeal to travelers who prioritize modern cabin design and contemporary styling.",
+      "princessFocus": "Princess can be attractive to travelers who want traditional cruise accommodations with a broad selection of cabin categories.",
+      "note": "The best cabin is often determined by location rather than brand. Consider proximity to elevators, restaurants, pools, theaters and other high-traffic areas."
+    }
+  },
+  "entertainment": {
+    "eyebrow": "ONBOARD PROGRAMMING",
+    "title": "Celebrity vs Princess: Entertainment",
+    "intro": "Both cruise lines provide evening entertainment, live music, theater productions and daytime activities.",
+    "celebrity": {
+      "title": "Celebrity Leans Sophisticated",
+      "items": [
+        "Theater productions",
+        "Live music",
+        "Lounges",
+        "Performances",
+        "Enrichment activities",
+        "Pool and deck activities"
+      ]
+    },
+    "princess": {
+      "title": "Princess Offers a Broad Program",
+      "items": [
+        "Theater productions",
+        "Live music",
+        "Movies Under the Stars on applicable ships",
+        "Games and activities",
+        "Destination programming",
+        "Enrichment",
+        "Evening lounges and performances"
+      ]
+    },
+    "footer": "If entertainment is a major booking factor, review the current program for your exact ship and sailing."
+  },
+  "itineraries": {
+    "eyebrow": "WHERE YOU'LL SAIL",
+    "title": "Celebrity vs Princess: Itineraries",
+    "lead": "Both cruise lines sail to numerous regions, including popular destinations in:",
+    "regions": [
+      "Caribbean",
+      "Alaska",
+      "Europe",
+      "Mediterranean",
+      "Northern Europe",
+      "Asia",
+      "Australia and the South Pacific on selected itineraries"
+    ],
+    "mid": "Princess has a particularly strong reputation for destination-focused cruising and Alaska itineraries, while Celebrity offers extensive global itineraries combined with its contemporary onboard experience.",
+    "matterBox": {
+      "title": "What Matters More: Cruise Line or Itinerary?",
+      "intro": "For destination-focused travelers, the itinerary should usually be one of the first factors considered. Compare:",
+      "checklist": [
+        "Ports of call",
+        "Number of sea days",
+        "Time in each port",
+        "Embarkation and disembarkation ports",
+        "Season",
+        "Shore excursion options",
+        "Ship size",
+        "Cabin location",
+        "Total cruise cost"
+      ],
+      "footer": "A great ship cannot compensate for an itinerary that does not match your travel priorities."
+    }
+  },
+  "service": {
+    "eyebrow": "ONBOARD FEEL",
+    "title": "Celebrity vs Princess: Service and Atmosphere",
+    "lead": "Celebrity generally positions itself around a premium, contemporary experience, with an emphasis on polished spaces and hospitality.",
+    "sub": "Princess combines traditional cruise hospitality with modern technology and a broad range of onboard experiences.",
+    "cardLabel": "Your Perception of Service Can Also Depend On",
+    "factors": [
+      "Cabin category",
+      "Ship",
+      "Crew",
+      "Sailing length",
+      "Itinerary",
+      "Dining venue",
+      "Guest volume"
+    ],
+    "footer": "For that reason, it is useful to compare the exact ships rather than treating the two brands as completely uniform."
+  },
+  "technology": {
+    "eyebrow": "DIGITAL EXPERIENCE",
+    "title": "Celebrity vs Princess: Technology",
+    "text1": "One of the clearest technology differences is Princess's MedallionClass ecosystem on applicable ships. It is designed to streamline parts of the cruise experience through wearable or app-based technology.",
+    "text2": "Celebrity also uses digital tools for areas such as reservations, onboard information and cruise management, but its identity is more strongly associated with ship design and hospitality than with a single signature wearable technology platform."
+  },
+  "relaxed": {
+    "eyebrow": "PACE & MOOD",
+    "title": "Celebrity vs Princess: Which Is More Relaxed?",
+    "celebrityText": "Celebrity often suits travelers who want a quieter, contemporary and sophisticated environment.",
+    "princessText": "Princess can also provide a relaxed experience, but its traditional cruise structure and wide activity selection can create a somewhat more varied onboard rhythm.",
+    "subLabel": "If your priority is simply relaxing, consider:",
+    "checklist": [
+      "Ship size",
+      "Number of sea days",
+      "Cabin location",
+      "Adults-only or restricted-access areas where available",
+      "Pool deck design",
+      "Spa facilities",
+      "Suite category",
+      "Itinerary"
+    ]
+  },
+  "alaska": {
+    "eyebrow": "DESTINATION FOCUS",
+    "title": "Celebrity vs Princess for Alaska Cruises",
+    "lead": "Alaska is a destination where itinerary planning matters considerably. When comparing the two, look at:",
+    "checklist": [
+      "Glacier viewing opportunities",
+      "Ports included",
+      "Sailing direction",
+      "Cruisetour options",
+      "Time in port",
+      "Naturalist and destination programming",
+      "Ship size",
+      "Balcony availability"
+    ],
+    "sub": "A balcony can be especially useful on scenic sailings, although the best choice depends on itinerary and budget.",
+    "footer": "Princess has a long-established presence in Alaska, while Celebrity also offers Alaska cruises with its own ship and itinerary mix."
+  },
+  "value": {
+    "eyebrow": "BUDGETING SMART",
+    "title": "Celebrity vs Princess: Value for Money",
+    "intro": "The cheapest headline cruise fare is not necessarily the lowest overall cost. Compare the total trip price, including:",
+    "factors": [
+      "Cruise fare",
+      "Taxes and fees",
+      "Drinks",
+      "Specialty dining",
+      "Wi-Fi",
+      "Shore excursions",
+      "Transfers",
+      "Hotel nights",
+      "Gratuities or service charges",
+      "Airfare"
+    ],
+    "mid": "A higher initial fare can represent better value if it includes benefits you would otherwise purchase separately.",
+    "methodBox": {
+      "title": "A Simple Comparison Method",
+      "intro": "Create a side-by-side budget for the exact same:",
+      "checklist": [
+        "Travel dates",
+        "Number of nights",
+        "Cabin category",
+        "Number of travelers",
+        "Itinerary region",
+        "Beverage needs",
+        "Wi-Fi needs",
+        "Specialty dining plans"
+      ],
+      "footer": "This gives you a much more useful comparison than comparing advertised fares alone."
+    }
+  },
+  "choice": {
+    "eyebrow": "DECISION TIME",
+    "title": "Celebrity vs Princess: Which Cruise Line Should You Choose?",
+    "lead": "Your ideal cruise line depends on what matters most to you onboard. Use the guides below to match your preferences to the right brand.",
+    "celebrity": {
+      "title": "Celebrity May Be a Better Fit If You Want",
+      "items": [
+        "Contemporary ship design",
+        "A premium-oriented atmosphere",
+        "Modern dining concepts",
+        "Sophisticated public spaces",
+        "A couples-friendly environment",
+        "Design-forward ships"
+      ]
+    },
+    "princess": {
+      "title": "Princess May Be a Better Fit If You Want",
+      "items": [
+        "A classic cruise experience with modern features",
+        "Strong destination programming",
+        "Broad entertainment choices",
+        "Multigenerational appeal",
+        "MedallionClass technology on applicable ships",
+        "A wide variety of itineraries"
+      ]
+    }
+  },
+  "unsure": {
+    "eyebrow": "A SIMPLE FRAMEWORK",
+    "title": "If You Are Still Unsure",
+    "text": "Start with the itinerary and ship rather than the cruise brand. A useful decision sequence is:",
+    "sequence": [
+      "Destination",
+      "Dates",
+      "Ship",
+      "Cabin",
+      "Total Cost",
+      "Included Benefits",
+      "Onboard Style"
+    ],
+    "footer": "This approach helps prevent a brand-level comparison from overshadowing the factors that will actually affect your vacation."
+  },
+  "bookingChecklist": {
+    "eyebrow": "FINAL PREP",
+    "title": "How to Compare a Celebrity and Princess Cruise Before Booking",
+    "intro": "Use this checklist:",
+    "checklist": [
+      "Compare the exact ships",
+      "Compare identical or similar itineraries",
+      "Check the number of sea days",
+      "Compare cabin sizes and locations",
+      "Review included dining",
+      "Calculate beverage costs",
+      "Compare Wi-Fi options",
+      "Check entertainment and onboard activities",
+      "Review family facilities if traveling with children",
+      "Compare shore excursions",
+      "Calculate the complete trip cost",
+      "Check cancellation and booking conditions"
+    ],
+    "footer": "This makes the comparison more meaningful than simply asking whether Celebrity or Princess is \"better.\""
+  },
+  "video": {
+    "title": "Celebrity Cruises vs. Princess Cruises Experience",
+    "subtitle": "Explore ship design, dining, entertainment, destination focus, and onboard atmospheres across both iconic fleets.",
+    "caption": "Fleet & Atmosphere Comparison Video"
+  },
+  "expertAdvisor": {
+    "name": "Angela Hughes",
+    "role": "Founder of Luxury Travel University & CEO of Trips & Ships Luxury Travel",
+    "eyebrow": "MEET THE CEO",
+    "heading": "Insight from Angela Hughes",
+    "quote": "Clients rarely need me to tell them Celebrity or Princess is the 'better' line. What they need is help matching the actual ship and itinerary to how they want to feel on vacation, contemporary and polished, or classic and destination-driven.",
+    "matrixTitle": "Comparison Prioritization Matrix:",
+    "pills": [
+      "Match Atmosphere First",
+      "Compare Exact Ships",
+      "Itinerary Over Brand",
+      "Total Trip Cost",
+      "Cabin Location Matters",
+      "Confirm Sailing-Specific Details"
+    ],
+    "bio": "As founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel, Angela Hughes uses her personal, deep connections in the cruise industry to deliver custom itinerary planning that regular booking engines simply cannot replicate.",
+    "experienceBadge": "40+ Years Designing Luxury Travel",
+    "stats": [
+      {
+        "value": "40+",
+        "label": "Years Designing Travel"
+      },
+      {
+        "value": "121+",
+        "label": "Countries Traveled"
+      }
+    ]
+  },
+  "keyTakeaways": {
+    "eyebrow": "SUMMARY",
+    "title": "Key Takeaways",
+    "lead": "Everything you need to know before choosing between Celebrity Cruises and Princess Cruises.",
+    "items": [
+      "Celebrity Cruises and Princess Cruises both offer broad global itineraries and premium-oriented cruise experiences.",
+      "Celebrity generally emphasizes contemporary design, sophisticated spaces and a modern resort atmosphere.",
+      "Princess combines traditional cruising with modern amenities and strong destination-focused experiences.",
+      "Celebrity can be particularly appealing to couples and travelers seeking contemporary ship design.",
+      "Princess can work especially well for couples, families and multigenerational travelers.",
+      "Dining, drinks and cabin options vary by individual ship, so compare the exact vessels.",
+      "Princess’s MedallionClass technology is an important differentiator on applicable ships.",
+      "The best value comparison should include drinks, Wi-Fi, dining, excursions and other extras—not just the advertised fare.",
+      "For Alaska and destination-heavy cruises, itinerary and port time should be major decision factors.",
+      "The best choice depends on your preferred ship, itinerary, cabin, onboard atmosphere and overall budget."
+    ]
+  },
+  "faqs": [
+    {
+      "question": "Is Celebrity Cruises better than Princess Cruises?",
+      "answer": "Neither cruise line is universally better. Celebrity generally emphasizes contemporary design and an upscale atmosphere, while Princess combines traditional cruising with modern amenities and strong destination-focused experiences."
+    },
+    {
+      "question": "What is the main difference between Celebrity and Princess Cruises?",
+      "answer": "Celebrity generally has a more contemporary, design-focused feel, while Princess offers a classic-modern cruise experience with extensive activities, entertainment and destination programming."
+    },
+    {
+      "question": "Is Celebrity or Princess better for couples?",
+      "answer": "Both can be excellent for couples. Celebrity may appeal more to couples seeking a contemporary and sophisticated atmosphere, while Princess offers a broader traditional cruise experience with many entertainment and itinerary choices."
+    },
+    {
+      "question": "Is Celebrity or Princess better for families?",
+      "answer": "Both welcome families, but Princess can be particularly appealing to multigenerational groups. The best option depends on the specific ship’s youth facilities, cabin configuration and onboard activities."
+    },
+    {
+      "question": "Which has better food, Celebrity or Princess?",
+      "answer": "Both offer complimentary and specialty dining. Celebrity emphasizes contemporary dining and upscale restaurant concepts, while Princess provides a broad mix of traditional, casual and specialty venues. Restaurant choices vary by ship."
+    },
+    {
+      "question": "Are Celebrity Cruises more expensive than Princess Cruises?",
+      "answer": "Pricing varies by ship, itinerary, cabin, sailing date and included benefits. Comparing the complete trip cost rather than the initial fare provides a more accurate value comparison."
+    },
+    {
+      "question": "Which has better cruise ships, Celebrity or Princess?",
+      "answer": "Celebrity may appeal to travelers who prefer contemporary architecture and modern design, while Princess can suit travelers who prefer a classic cruise layout combined with modern features. Individual ships should be compared directly."
+    },
+    {
+      "question": "Is Celebrity or Princess better for Alaska cruises?",
+      "answer": "Both offer Alaska cruises. Princess has a strong Alaska presence, while Celebrity offers its own selection of Alaska itineraries. Compare glacier viewing, ports, sailing dates, ship size and balcony options."
+    },
+    {
+      "question": "Does Celebrity or Princess have better entertainment?",
+      "answer": "Both offer theater productions, live music, lounges and daytime activities. Princess often provides a broad traditional cruise entertainment program, while Celebrity tends toward a more contemporary onboard atmosphere."
+    },
+    {
+      "question": "Which cruise line has better cabins, Celebrity or Princess?",
+      "answer": "Both offer interior, ocean-view, balcony and suite accommodations. Celebrity’s newer ships feature contemporary cabin designs, while Princess provides a broad range of traditional cruise accommodation categories."
+    },
+    {
+      "question": "Does Princess have technology that Celebrity Cruises does not?",
+      "answer": "Princess’s MedallionClass technology is a notable feature on applicable ships, providing digital and wearable tools designed to support parts of the onboard experience."
+    },
+    {
+      "question": "Is Celebrity Cruises more upscale than Princess Cruises?",
+      "answer": "Celebrity is positioned around a premium, contemporary experience and often emphasizes modern design and sophisticated spaces. Princess also offers premium experiences but retains more traditional cruise characteristics."
+    },
+    {
+      "question": "Which is better for a first-time cruiser, Celebrity or Princess?",
+      "answer": "Either can work well for a first cruise. Your itinerary, ship size, cabin choice, dining preferences and desired onboard atmosphere are more important than choosing solely by cruise-line name."
+    },
+    {
+      "question": "Should I choose Celebrity or Princess based on the ship or itinerary?",
+      "answer": "For most travelers, both matter, but the itinerary should be a major consideration. Compare the ports, time in destination, sea days and ship before making the final choice."
+    },
+    {
+      "question": "How do I compare the total cost of Celebrity and Princess cruises?",
+      "answer": "Compare the cruise fare plus taxes, drinks, Wi-Fi, specialty dining, excursions, transfers, hotel stays and other expected expenses. Using the same cabin type and similar itinerary makes the comparison more useful."
+    }
+  ],
+  "cta": {
+    "eyebrow": "FIND YOUR PERFECT FIT",
+    "title": "Planning a Celebrity or Princess Cruise?",
+    "subtitle": "Compare the ship, itinerary, cabin category and total trip cost before booking. Explore the Celebrity Cruises guides on Trips & Ships to narrow down your options and choose the sailing that best matches your travel style.",
+    "primaryBtnText": "Speak with a Trips & Ships cruise specialist",
+    "primaryBtnUrl": "/contact"
+  }
+}

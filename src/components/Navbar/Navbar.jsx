@@ -1223,7 +1223,7 @@ const Navbar = () => {
                 What Is Included on a Celebrity Cruise?
               </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/celebrity-cruises/ships"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -1237,7 +1237,7 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Celebrity Staterooms and Suites Guide
-              </NavLink> */}
+              </NavLink>
 
               {/* <NavLink
                 to="/celebrity-cruises/the-retreat"
@@ -1279,7 +1279,7 @@ const Navbar = () => {
                 Celebrity Edge Series Ships Guide
               </NavLink> */}
 
-              <NavLink
+              {/* <NavLink
                 to="/celebrity-cruises/faqs"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -1309,7 +1309,7 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Celebrity Cruises vs. Princess Cruises
-              </NavLink>
+              </NavLink> */}
 
               <NavLink
                 to="/celebrity-cruises/ships/celebrity-xcel"
@@ -2779,7 +2779,7 @@ const Navbar = () => {
               What Is Included on a Celebrity Cruise?
             </NavLink>
 
-            {/* <NavLink
+            <NavLink
               to="/celebrity-cruises/ships"
               className="nav-dropdown-single"
               onClick={toggleMenu}
@@ -2793,7 +2793,7 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Celebrity Staterooms and Suites Guide
-            </NavLink> */}
+            </NavLink>
 
             {/* <NavLink
               to="/celebrity-cruises/the-retreat"
@@ -2835,7 +2835,7 @@ const Navbar = () => {
               Celebrity Edge Series Ships Guide
             </NavLink> */}
 
-            <NavLink
+            {/* <NavLink
               to="/celebrity-cruises/faqs"
               className="nav-dropdown-single"
               onClick={toggleMenu}
@@ -2865,7 +2865,7 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Celebrity Cruises vs. Princess Cruises
-            </NavLink>
+            </NavLink> */}
 
             <NavLink
               to="/celebrity-cruises/ships/celebrity-xcel"

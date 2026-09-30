@@ -1,0 +1,281 @@
+{
+  "meta": {
+    "title": "Celebrity Cruises FAQs: Your Questions Answered",
+    "description": "Find answers to common Celebrity Cruises questions about ships, cabins, dining, drinks, The Retreat, itineraries, inclusions, families and more.",
+    "keywords": "Celebrity Cruises FAQs, Celebrity Cruises frequently asked questions, Celebrity Cruises guide, Celebrity cruise tips, Celebrity Cruises cabins, Celebrity Cruises dining, Celebrity drink packages, Celebrity The Retreat, Celebrity cruise inclusions, Celebrity Cruises ships, Celebrity cruise costs",
+    "canonical": "https://www.tripsandships.com/celebrity-cruises/faqs"
+  },
+  "hero": {
+    "eyebrow": "FAQ · Trips & Ships Luxury Travel",
+    "title": "Celebrity Cruises Frequently Asked Questions",
+    "subtitle": "Planning a Celebrity Cruises vacation often means comparing ships, cabins, dining options, drink packages, fares, itineraries and onboard experiences. This Celebrity Cruises FAQ guide brings the most useful questions together in one place."
+  },
+  "atAGlance": {
+    "eyebrow": "OVERVIEW",
+    "title": "Celebrity Cruises at a Glance",
+    "headers": ["Topic", "What to know"],
+    "rows": [
+      { "topic": "Cruise style", "detail": "Contemporary, premium ocean cruising" },
+      { "topic": "Main destinations", "detail": "Caribbean, Europe, Alaska and other global destinations" },
+      { "topic": "Accommodation", "detail": "Interior, ocean view, balcony, Infinite Veranda, AquaClass and suites" },
+      { "topic": "Premium suite experience", "detail": "The Retreat" },
+      { "topic": "Main dining", "detail": "Multiple complimentary dining venues on many ships" },
+      { "topic": "Specialty dining", "detail": "Available on ships, generally for an additional charge" },
+      { "topic": "Drinks", "detail": "Complimentary selections plus optional beverage packages" },
+      { "topic": "Entertainment", "detail": "Shows, live music, activities and destination-focused experiences" },
+      { "topic": "Families", "detail": "Family-friendly facilities and activities vary by ship" },
+      { "topic": "Best booking approach", "detail": "Compare the exact ship, sailing, fare and cabin together" }
+    ],
+    "note": "Celebrity Cruises is known for its contemporary ships, destination-focused itineraries, premium accommodation options and dining experiences. However, what is included in a cruise fare—and what costs extra—can vary by fare, ship, itinerary, accommodation and current offer."
+  },
+  "shipQuestions": {
+    "eyebrow": "FLEET",
+    "title": "Celebrity Cruises Ship Questions",
+    "lead": "Celebrity's fleet spans several ship series, each with its own personality.",
+    "chips": ["Edge Series", "Solstice Series", "Millennium Series"],
+    "introText": "The newest Edge Series ships focus on innovation and outdoor spaces, while Solstice and Millennium Series vessels offer a more traditional Celebrity layout. Understanding the differences helps you pick the right ship for your sailing.",
+    "questions": [
+      {
+        "q": "How many ships does Celebrity Cruises have?",
+        "a": "Celebrity Cruises operates a fleet spanning several ship series, including the Edge Series, Solstice Series and Millennium Series. The fleet changes over time as new ships enter service and older vessels leave the fleet. For a current booking, always check the ship assigned to your specific sailing rather than relying only on the cruise line's overall fleet size."
+      },
+      {
+        "q": "What are the newest Celebrity Cruises ships?",
+        "a": "The Edge Series contains some of Celebrity's newest ships, including Celebrity Edge, Celebrity Apex, Celebrity Beyond, Celebrity Ascent and Celebrity Xcel. Later ships in the series build on the original Edge design with updated public areas, accommodations, dining and outdoor spaces."
+      },
+      {
+        "q": "What is the difference between Celebrity Edge Series and Solstice Series ships?",
+        "a": "The Edge Series uses a newer design philosophy featuring innovations such as Infinite Veranda staterooms, the Magic Carpet and multiple main dining concepts. Solstice Series ships have a more traditional Celebrity layout while still offering many of the cruise line's signature dining, entertainment and service features."
+      }
+    ]
+  },
+  "cabinQuestions": {
+    "eyebrow": "ACCOMMODATION",
+    "title": "Celebrity Cruises Cabin Questions",
+    "badge": "Four Cabin Styles",
+    "questions": [
+      {
+        "q": "What types of cabins are available on Celebrity Cruises?",
+        "a": "Celebrity Cruises offers several accommodation categories, which can include: Interior staterooms, Ocean View staterooms, Veranda staterooms, Infinite Veranda staterooms on applicable ships, Concierge Class, AquaClass, Suites, and The Retreat accommodations. Exact categories vary by ship."
+      },
+      {
+        "q": "What is an Infinite Veranda?",
+        "a": "An Infinite Veranda is a Celebrity accommodation design in which the balcony area is integrated into the stateroom. Rather than having a completely separate exterior balcony, the design uses an opening window and interior space to create a balcony-style connection with the sea. Travelers who specifically want a traditional outdoor balcony should compare the exact cabin type and deck plan before booking."
+      },
+      {
+        "q": "What is AquaClass on Celebrity Cruises?",
+        "a": "AquaClass is a premium stateroom category designed around wellness-focused amenities and experiences. AquaClass guests have access to Blu, a specialty restaurant associated with the category, along with additional wellness-oriented benefits that can vary by ship and sailing."
+      },
+      {
+        "q": "What is The Retreat on Celebrity Cruises?",
+        "a": "The Retreat is Celebrity Cruises' suite-focused premium experience. Depending on the ship and suite, benefits can include access to: Luminae, Retreat Lounge, Retreat Sundeck, Concierge services, Suite-specific amenities, and Enhanced onboard services. The exact benefits depend on the ship and suite category."
+      }
+    ],
+    "tip": "Not sure which category fits? Angela can compare deck plans and fare inclusions for the ships you are considering."
+  },
+  "diningQuestions": {
+    "eyebrow": "ONBOARD DINING",
+    "title": "Celebrity Cruises Dining Questions",
+    "badge": "Culinary Lineup",
+    "questions": [
+      {
+        "q": "Is food included on Celebrity Cruises?",
+        "a": "Yes. A Celebrity Cruises fare generally includes access to a selection of complimentary dining venues. These can include main dining restaurants, casual dining and other included food venues. The exact selection varies by ship. Specialty restaurants, premium dining experiences and certain food or beverage items may cost extra."
+      },
+      {
+        "q": "How many restaurants does Celebrity Cruises have?",
+        "a": "The number and type of restaurants vary significantly by ship. Celebrity vessels can feature: Multiple main restaurants, Buffet-style dining, Casual restaurants, Specialty restaurants, Cafés, Wellness-oriented dining, and Suite-exclusive dining. Check the dining lineup for the specific ship before booking because restaurant concepts differ across the fleet."
+      },
+      {
+        "q": "Does Celebrity Cruises have specialty restaurants?",
+        "a": "Yes. Celebrity Cruises offers specialty dining on many ships. Examples can include steakhouse, French-inspired, Italian-inspired, seafood and other premium dining concepts. Specialty restaurants generally carry an additional charge unless dining is included through a specific package, fare or suite benefit."
+      }
+    ]
+  },
+  "drinkQuestions": {
+    "eyebrow": "BEVERAGES",
+    "title": "Celebrity Cruises Drink Questions",
+    "badge": "Bar & Café Options",
+    "questions": [
+      {
+        "q": "Are drinks included on Celebrity Cruises?",
+        "a": "Some beverages are included in the standard cruise fare, but the range depends on the fare and package purchased. Guests may have access to selected complimentary beverages, while premium coffees, bottled water, alcoholic beverages and other drinks can require an additional charge."
+      },
+      {
+        "q": "Are Celebrity Cruises drink packages worth it?",
+        "a": "The value of a drink package depends on how much and what type of beverages you expect to consume. Before purchasing one, estimate your typical daily spending on: Cocktails, Wine, Beer, Premium coffee, Bottled water, and Other included or premium beverages. Also compare the package's current price and restrictions with your booking because Celebrity's package options and inclusions can change."
+      },
+      {
+        "q": "Can you bring alcohol on a Celebrity cruise?",
+        "a": "Celebrity Cruises has specific policies governing alcohol brought onboard, including rules that can differ between embarkation and ports of call. Because these policies can change, review Celebrity Cruises' current alcohol policy before traveling rather than relying on an older packing list."
+      }
+    ]
+  },
+  "fareQuestions": {
+    "eyebrow": "PRICING",
+    "title": "Celebrity Cruises Fare and Cost Questions",
+    "questions": [
+      {
+        "q": "What is included in a Celebrity Cruises fare?",
+        "a": "The inclusions depend on the fare and booking. A standard cruise fare can provide access to: Your booked accommodation, Included dining venues, Selected onboard entertainment, Pools and public areas, and Many scheduled activities. Depending on the fare or promotion, additional benefits may be included, such as drinks, Wi-Fi or other extras. Always compare the specific fare type rather than assuming every Celebrity booking includes the same benefits."
+      },
+      {
+        "q": "Is Wi-Fi included on Celebrity Cruises?",
+        "a": "Wi-Fi inclusion depends on the fare, package and booking. Some Celebrity fares or promotions may include internet access, while other bookings may require an internet package. Check your reservation's exact inclusions before purchasing a separate package."
+      },
+      {
+        "q": "Does Celebrity Cruises include gratuities?",
+        "a": "Gratuity treatment can depend on the fare, promotion, booking type and current Celebrity Cruises policies. Some fares or packages may include gratuities, while other reservations may have gratuities charged separately. Review the terms attached to your booking before budgeting for the cruise."
+      }
+    ]
+  },
+  "itineraryQuestions": {
+    "eyebrow": "DESTINATIONS",
+    "title": "Celebrity Cruises Itinerary Questions",
+    "badge": "Regions & Routes",
+    "questions": [
+      {
+        "q": "Where does Celebrity Cruises sail?",
+        "a": "Celebrity Cruises operates itineraries in destinations around the world. Popular regions include: Caribbean, Mediterranean, Northern Europe, Alaska, Canada and New England, Mexico, The Bahamas, and Other seasonal destinations. Itinerary availability changes by ship and season."
+      },
+      {
+        "q": "How long are Celebrity Cruises?",
+        "a": "Celebrity Cruises offers a range of cruise lengths. Depending on the itinerary, travelers can find shorter cruises as well as longer voyages lasting several weeks. Longer itineraries may provide more sea days or allow visits to a greater number of ports."
+      },
+      {
+        "q": "Does Celebrity Cruises visit the Caribbean?",
+        "a": "Yes. The Caribbean is one of Celebrity Cruises' major cruise regions. Itineraries can include destinations in the eastern, western and southern Caribbean, depending on the ship and season."
+      }
+    ]
+  },
+  "familyQuestions": {
+    "eyebrow": "FAMILIES",
+    "title": "Celebrity Cruises Family Questions",
+    "badge": "Family Friendly",
+    "questions": [
+      {
+        "q": "Is Celebrity Cruises good for families?",
+        "a": "Celebrity Cruises can be suitable for families, but the experience varies by ship, itinerary and children's ages. Families should consider: Children's programming, Teen facilities, Connecting cabins, Family accommodation, Pool areas, Dining flexibility, Shore excursions, and Sailing length. Families traveling with children should confirm age requirements and available youth facilities for their specific ship."
+      },
+      {
+        "q": "Does Celebrity Cruises have kids' activities?",
+        "a": "Celebrity Cruises offers youth and family-oriented activities on applicable ships. The availability, age groups and programming can vary by vessel and sailing, so families should check the current information for their specific cruise."
+      }
+    ],
+    "note": "Traveling with kids? Angela confirms youth programming and age requirements on the specific ship and sailing before recommending a family cruise."
+  },
+  "planningQuestions": {
+    "eyebrow": "PLANNING",
+    "title": "Celebrity Cruises Planning Questions",
+    "questions": [
+      {
+        "q": "What should I look for when choosing a Celebrity cruise?",
+        "a": "Start with these factors: Destination — Choose the region and ports that interest you. Ship — Compare the vessel's dining, entertainment and facilities. Cabin — Decide between an interior, ocean view, balcony, AquaClass or suite. Fare — Compare exactly what is included. Sailing date — Consider weather, season and pricing. Cruise length — Match the itinerary to your available vacation time. Dining preferences — Check complimentary and specialty options. Budget — Include taxes, gratuities where applicable, excursions and optional purchases."
+      },
+      {
+        "q": "When should I book a Celebrity cruise?",
+        "a": "The ideal booking time depends on destination, season, cabin category and sailing demand. Popular itineraries and specific cabin categories can become limited well before departure, while other sailings may have different pricing patterns. If you need a particular cabin or sailing date, booking earlier generally gives you more choice."
+      },
+      {
+        "q": "Should I choose the ship or itinerary first?",
+        "a": "For most travelers, it is useful to identify both before booking. If the destination is your priority, start with the itinerary and then compare the ships operating that route. If the ship experience is the priority, select the vessel first and then compare its available sailings."
+      }
+    ],
+    "planningFactors": [
+      { "label": "Destination", "text": "Choose the region and ports that interest you." },
+      { "label": "Ship", "text": "Compare the vessel's dining, entertainment and facilities." },
+      { "label": "Cabin", "text": "Decide between an interior, ocean view, balcony, AquaClass or suite." },
+      { "label": "Fare", "text": "Compare exactly what is included." },
+      { "label": "Sailing date", "text": "Consider weather, season and pricing." },
+      { "label": "Cruise length", "text": "Match the itinerary to your available vacation time." },
+      { "label": "Dining preferences", "text": "Check complimentary and specialty options." },
+      { "label": "Budget", "text": "Include taxes, gratuities where applicable, excursions and optional purchases." }
+    ]
+  },
+  "checklist": {
+    "eyebrow": "BEFORE YOU BOOK",
+    "title": "Celebrity Cruises Booking Checklist",
+    "intro": "Before making a reservation, check:",
+    "items": [
+      "Ship name",
+      "Departure port",
+      "Ports of call",
+      "Cruise duration",
+      "Cabin category",
+      "Exact cabin location",
+      "Fare inclusions",
+      "Drink package requirements",
+      "Wi-Fi inclusion",
+      "Gratuity treatment",
+      "Specialty dining costs",
+      "Excursion costs",
+      "Travel documentation",
+      "Airport and transfer arrangements",
+      "Cancellation and change conditions"
+    ],
+    "note": "This approach helps prevent unexpected costs and makes it easier to compare two apparently similar Celebrity cruises."
+  },
+  "keyTakeaways": {
+    "eyebrow": "SUMMARY",
+    "title": "Key Takeaways",
+    "items": [
+      "Celebrity Cruises offers several ship series, including the Edge, Solstice and Millennium Series.",
+      "The Edge Series includes Edge, Apex, Beyond, Ascent and Xcel.",
+      "Cabin categories range from interior staterooms to premium suites in The Retreat.",
+      "Infinite Verandas are a distinctive accommodation feature on applicable Edge Series ships.",
+      "Some dining and entertainment are included, while specialty experiences may cost extra.",
+      "Beverage and Wi-Fi inclusions depend on the fare or package.",
+      "The Retreat provides a suite-focused premium experience.",
+      "Celebrity operates cruises in destinations including the Caribbean, Mediterranean and Alaska.",
+      "Families should compare youth facilities and cabin configurations for their specific ship.",
+      "Always check the exact fare and sailing terms before assuming that a particular benefit is included."
+    ]
+  },
+  "video": {
+    "title": "Celebrity Cruises FAQs & Fleet Overview Showcase",
+    "subtitle": "Explore essential questions, ship classes, cabin styles, dining options, and cruise planning tips with Celebrity Cruises.",
+    "caption": "Celebrity Cruises FAQ & Overview",
+    "youtubeId": "placeholder"
+  },
+  "expertAdvisor": {
+    "name": "Angela Hughes",
+    "role": "CEO & Luxury Travel Designer, Trips and Ships Luxury Travel",
+    "badge": "MEET THE CEO",
+    "experienceBadge": "40+ Years Experience | 121+ Countries Visited",
+    "bio": "As founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel, Angela Hughes uses her personal, deep connections in the cruise industry to deliver custom planning that regular booking engines simply cannot replicate.",
+    "quote": "The best Celebrity cruise isn't just about the ship or the itinerary—it's about finding the right combination of both. I always tell my clients to start with what they want to see and do, then let the ship enhance that experience, not the other way around.",
+    "priorityTitle": "FAQ Focus Areas:",
+    "standoutPills": [
+      "Ship Selection",
+      "Cabin Choice",
+      "Dining Strategy",
+      "Drink Packages",
+      "Itinerary Planning",
+      "Fare Comparison"
+    ]
+  },
+  "faqs": [
+    { "q": "What is Celebrity Cruises known for?", "a": "Celebrity Cruises is known for contemporary ships, destination-focused itineraries, modern accommodations, dining experiences and premium offerings such as The Retreat." },
+    { "q": "What ships are in Celebrity Cruises' fleet?", "a": "Celebrity Cruises operates ships across multiple series, including the Edge, Solstice and Millennium Series. The fleet changes as new ships enter service and older vessels leave." },
+    { "q": "What is included in a Celebrity Cruises fare?", "a": "A fare generally includes your booked accommodation, access to complimentary dining venues, selected entertainment and many onboard facilities. Exact inclusions depend on the fare and booking." },
+    { "q": "Is food free on Celebrity Cruises?", "a": "Selected dining is included in the cruise fare, including main dining and other complimentary venues. Specialty restaurants and certain premium food experiences generally cost extra." },
+    { "q": "Are drinks included on Celebrity Cruises?", "a": "Some beverages are included, but premium alcoholic drinks, certain coffees, bottled water and other beverages may require an additional charge unless covered by your fare or beverage package." },
+    { "q": "Is Wi-Fi included on Celebrity Cruises?", "a": "Wi-Fi inclusion depends on the fare, package and booking. Some Celebrity bookings include internet access, while others require a separate package." },
+    { "q": "What is The Retreat on Celebrity Cruises?", "a": "The Retreat is Celebrity's suite-focused premium experience. Depending on the ship and suite, it can include Luminae, the Retreat Lounge, Retreat Sundeck and enhanced services." },
+    { "q": "What is AquaClass on Celebrity Cruises?", "a": "AquaClass is a premium stateroom category associated with wellness-focused amenities and access to Blu, a restaurant designed specifically for AquaClass guests." },
+    { "q": "What is an Infinite Veranda on Celebrity Cruises?", "a": "An Infinite Veranda integrates the balcony concept into the stateroom, allowing the cabin's window area to open toward the sea rather than using only a separate exterior balcony." },
+    { "q": "Does Celebrity Cruises have specialty restaurants?", "a": "Yes. Many Celebrity ships offer specialty restaurants with premium dining concepts. These usually have an additional charge unless covered by a relevant package or benefit." },
+    { "q": "Does Celebrity Cruises sail to the Caribbean?", "a": "Yes. Celebrity Cruises operates numerous Caribbean itineraries, including eastern, western and southern Caribbean routes depending on the ship and season." },
+    { "q": "Is Celebrity Cruises good for families?", "a": "Celebrity Cruises can work well for families, with youth activities and family-oriented facilities on applicable ships. Families should compare the specific vessel, cabin and itinerary." },
+    { "q": "How long are Celebrity Cruises?", "a": "Celebrity offers cruises of different lengths, from shorter voyages to extended itineraries. The duration depends on the ship, route and sailing date." },
+    { "q": "How should I choose a Celebrity Cruises cabin?", "a": "Compare cabin category, size, view, balcony configuration, deck location and proximity to potentially noisy public areas. Your budget and preferred onboard experience should also guide the choice." },
+    { "q": "What should I check before booking a Celebrity cruise?", "a": "Check the ship, itinerary, cabin, fare inclusions, drink and Wi-Fi policies, gratuities, specialty dining, excursions, travel documents and cancellation conditions before booking." }
+  ],
+  "cta": {
+    "eyebrow": "PLAN YOUR CRUISE",
+    "title": "Ready to Plan Your Celebrity Cruise?",
+    "subtitle": "Start by comparing the ship, itinerary, cabin category and fare inclusions. Then explore the detailed Celebrity Cruises guides on Trips and Ships to choose a sailing that matches your travel style and budget.",
+    "primaryBtnText": "Speak with a Celebrity Cruises specialist",
+    "primaryBtnUrl": "/contact"
+  }
+}

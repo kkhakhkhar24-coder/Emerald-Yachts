@@ -25,6 +25,15 @@
   --color-gold-400: #d4af37;
   --color-gold-500: #c59b27;
 
+  --color-accent-50: #fdf8ef;
+  --color-accent-100: #f9edd4;
+  --color-accent-200: #f3dcaa;
+  --color-accent-300: #e6c888;
+  --color-accent-400: #d4af37;
+  --color-accent-500: #c5a880;
+  --color-accent-600: #b39265;
+  --color-accent-700: #937449;
+
   --font-display: "Playfair Display", serif;
   --font-sans: "Montserrat", sans-serif;
 }
@@ -49,10 +58,7 @@
   --font-body: "Montserrat", sans-serif;
 }
 
-
-
 body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
-
