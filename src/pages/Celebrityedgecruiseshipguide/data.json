@@ -1,0 +1,632 @@
+{
+  "seo": {
+    "title": "Celebrity Edge Cruise Ship Guide : Cabins, Infinite Verandas & Expert Review",
+    "metaTitle": "Celebrity Edge Cruise Ship Guide | Infinite Verandas & Magic Carpet",
+    "metaDescription": "Discover everything about Celebrity Edge including Infinite Veranda cabins, Magic Carpet, accommodations, dining, entertainment, destinations, deck highlights, and expert cruise planning advice.",
+    "canonicalUrl": "https://www.tripsandships.com/celebrity-cruises/ships/celebrity-edge",
+    "keywords": "Celebrity Edge, Celebrity Cruises, Edge Series, Infinite Veranda, Magic Carpet, The Retreat, Eden, luxury cruises, Mediterranean cruise, Caribbean cruise"
+  },
+  "hero": {
+    "badge": "Celebrity Edge Cruise Ship Guide",
+    "title": "Celebrity Edge Cruise Ship Guide",
+    "subtitle": "Discover the Revolutionary Ship That Changed Modern Cruising",
+    "description": "Your comprehensive guide to Celebrity Edge featuring Infinite Veranda staterooms, the groundbreaking Magic Carpet, world-class dining, and exclusive Retreat suites.",
+    "primaryCtaText": "Schedule a Consultation",
+    "primaryCtaLink": "/contact",
+    "secondaryCtaText": "Request Itinerary Options",
+    "secondaryCtaLink": "/contact"
+  },
+  "editorialIntro": {
+    "eyebrow": "EXPERT CRUISE GUIDE",
+    "heading": "Discover Celebrity Edge",
+    "paragraphs": [
+      "Celebrity Edge introduced an entirely new way to experience cruising. As the first ship in Celebrity Cruises' groundbreaking Edge Series, it redefined ship design with innovative features like the Magic Carpet, Infinite Veranda staterooms, and immersive public spaces that blur the line between indoors and outdoors.",
+      "Whether you're planning a Mediterranean voyage, Caribbean escape, or your very first Celebrity cruise, Celebrity Edge offers a premium vacation with award-winning dining, exceptional service, elegant accommodations, and unforgettable destinations. This guide covers everything you need to know before booking your Celebrity Edge cruise.",
+      "Quick Answer — Is Celebrity Edge Worth It? Absolutely. Celebrity Edge remains one of the world's highest-rated premium cruise ships thanks to its innovative design, spacious accommodations, exceptional restaurants, luxurious Retreat suites, and destination-focused itineraries. It is ideal for couples, luxury travelers, food lovers, and anyone looking for a sophisticated cruise experience."
+    ]
+  },
+  "atAGlance": {
+    "title": "Celebrity Edge at a Glance",
+    "paragraphs": [
+      "Celebrity Edge introduced the Edge Class with revolutionary outward-facing design and groundbreaking architectural innovations."
+    ],
+    "items": [
+      { "title": "Cruise Line", "detail": "Celebrity Cruises" },
+      { "title": "Ship Class", "detail": "Edge Series" },
+      { "title": "Guest Capacity", "detail": "Approx. 2,918" },
+      { "title": "Crew Members", "detail": "Approx. 1,320" },
+      { "title": "Maiden Voyage", "detail": "2018" },
+      { "title": "Best For", "detail": "Couples, Families, Luxury Travelers" },
+      { "title": "Popular Destinations", "detail": "Mediterranean, Caribbean, Europe" }
+    ]
+  },
+  "whySail": {
+    "title": "Why Sail on Celebrity Edge?",
+    "subtitle": "Celebrity Edge transformed modern cruising with features that have since become the standard across the Edge Series. Every space has been thoughtfully designed to maximize natural light, ocean views, and guest comfort.",
+    "cards": [
+      {
+        "title": "Revolutionary Infinite Verandas",
+        "description": "Floor-to-ceiling windows open electronically to transform your entire stateroom into an open-air balcony.",
+        "icon": "DoorOpen",
+        "badge": "Signature Innovation"
+      },
+      {
+        "title": "Magic Carpet Floating Venue",
+        "description": "Cantilevered platform on the starboard side that scales 13 decks, transforming into a bar, restaurant, and tender lounge.",
+        "icon": "Ship",
+        "badge": "Industry First"
+      },
+      {
+        "title": "Award-Winning Dining",
+        "description": "Over 29 distinct restaurants, cafes, bars, and lounges offering world-class menus crafted by Michelin-starred chefs.",
+        "icon": "UtensilsCrossed",
+        "badge": "Culinary Excellence"
+      },
+      {
+        "title": "The Retreat Luxury Suites",
+        "description": "Exclusive resort-within-a-resort with private Luminae dining, Retreat Lounge, sundeck, and dedicated butler service.",
+        "icon": "Crown",
+        "badge": "VIP Experience"
+      },
+      {
+        "title": "Eden Experience",
+        "description": "A three-deck architectural wonder with multi-story glass walls blending culinary arts, cocktails, and interactive performances.",
+        "icon": "Flower2",
+        "badge": "Living Architecture"
+      },
+      {
+        "title": "Rooftop Garden",
+        "description": "Open-air living greenery sanctuary with interactive sculptures, live musical performances, and rooftop grilling.",
+        "icon": "Trees",
+        "badge": "Open-Air Oasis"
+      },
+      {
+        "title": "Resort-Style Pool Deck",
+        "description": "Asymmetrical pool deck flanked by 25-yard lap pool, two-story martini glass hot tubs, and private cabanas.",
+        "icon": "Waves",
+        "badge": "Resort Living"
+      },
+      {
+        "title": "Spacious Public Areas",
+        "description": "Designed by world-renowned architects to maximize natural lighting, sea breezes, and ocean views throughout.",
+        "icon": "Wind",
+        "badge": "Modern Elegance"
+      },
+      {
+        "title": "Contemporary Luxury Design",
+        "description": "Sleek, forward-thinking interiors styled by Kelly Hoppen CBE and Tom Wright of WKK Architects.",
+        "icon": "Gem",
+        "badge": "High Design"
+      },
+      {
+        "title": "Personalized Service",
+        "description": "Nearly 1:2 crew-to-guest ratio delivering attentive, warm, and highly personalized hospitality.",
+        "icon": "HeartHandshake",
+        "badge": "Exceptional Care"
+      }
+    ]
+  },
+  "cabins": {
+    "title": "Celebrity Edge Accommodations",
+    "subtitle": "From innovative Infinite Verandas to lavish two-story Edge Villas, every stateroom is a masterclass in modern comfort and style.",
+    "cards": [
+      {
+        "title": "Inside Staterooms",
+        "category": "Value & Comfort",
+        "description": "Comfortable and affordable accommodations with modern amenities and smart design touches.",
+        "features": [
+          "King-size cashmere mattress",
+          "Modern bathroom with premium finishes",
+          "Interactive flat-screen TV",
+          "Dedicated stateroom attendant"
+        ]
+      },
+      {
+        "title": "Ocean View Staterooms",
+        "category": "Natural Light",
+        "description": "Enjoy natural daylight and expansive picture-window views of the ocean as you sail.",
+        "features": [
+          "Expansive ocean-view window",
+          "Generous living area layout",
+          "Ample closet and storage space",
+          "Contemporary residential styling"
+        ]
+      },
+      {
+        "title": "Infinite Veranda Staterooms",
+        "category": "Signature Edge Series",
+        "description": "Celebrity's revolutionary design transforms the balcony into part of your living space with floor-to-ceiling windows that open at the touch of a button.",
+        "features": [
+          "23% larger living space than Solstice Class",
+          "Electronic push-button window controls",
+          "Bi-fold French doors for flexible privacy",
+          "Uninterrupted panoramic ocean horizons"
+        ]
+      },
+      {
+        "title": "Concierge Class",
+        "category": "Enhanced Service",
+        "description": "Includes additional concierge services and exclusive amenities for an elevated cruise vacation.",
+        "features": [
+          "Dedicated Concierge service",
+          "Exclusive welcome lunch & seminars",
+          "Daily afternoon canapes upon request",
+          "Priority seating at main & specialty restaurants"
+        ]
+      },
+      {
+        "title": "AquaClass Staterooms",
+        "category": "Wellness Sanctuary",
+        "description": "Perfect for wellness-focused travelers with exclusive Blu restaurant access and unlimited spa thermal suite benefits.",
+        "features": [
+          "Unlimited access to SEA Thermal Suite",
+          "Exclusive breakfast & dinner at Blu restaurant",
+          "In-room eco-friendly amenities & yoga mat",
+          "Daily bottled water and wellness teas"
+        ]
+      },
+      {
+        "title": "The Retreat Suites",
+        "category": "Ultimate Luxury",
+        "description": "Luxury accommodations featuring spacious layouts, private sundeck access, Luminae dining, and dedicated butler service.",
+        "features": [
+          "Personalized butler and concierge services",
+          "Exclusive Luminae restaurant access",
+          "Private Retreat Lounge and Sundeck",
+          "Complimentary premium drinks and Wi-Fi"
+        ]
+      }
+    ]
+  },
+  "theRetreat": {
+    "title": "The Retreat: The Ultimate Suite Experience",
+    "lead": "The Retreat offers Celebrity's most luxurious onboard experience.",
+    "description": "The Retreat is not just a suite; it is a private luxury resort within the ship. Suite guests enjoy private dining, dedicated concierge and butler service, private lounges, and serene outdoor sundecks with dedicated attendants.",
+    "footer": "The Retreat creates a private luxury experience within the ship.",
+    "features": [
+      "Private Luminae Restaurant",
+      "Exclusive Retreat Lounge",
+      "Retreat Sundeck",
+      "Butler service",
+      "Concierge assistance",
+      "Priority embarkation",
+      "Premium suite amenities"
+    ]
+  },
+  "dining": {
+    "title": "Restaurants & Dining",
+    "subtitle": "Celebrity Edge features one of the strongest dining programs in premium cruising, spanning 29 food and beverage experiences.",
+    "profiles": [
+      {
+        "name": "Main Dining (4 Venues)",
+        "tagline": "Globally Inspired Complimentary Dining",
+        "description": "Four distinctive complimentary main restaurants — Cosmopolitan (American), Normandie (French), Cyprus (Mediterranean), and Tuscan (Italian) — each featuring unique signature menus alongside a rotating classic menu.",
+        "recommendation": "Main Dining Experience",
+        "reason": "Four unique atmospheric dining rooms let you experience fresh international regional culinary themes every evening of your cruise.",
+        "whyFits": [
+          "Cosmopolitan: Contemporary American with international flair",
+          "Normandie: Elegant Parisian chic with French classics",
+          "Cyprus: Seafood-rich Mediterranean and Greek specialties",
+          "Tuscan: Hearty authentic Italian pasta and aged cuts"
+        ]
+      },
+      {
+        "name": "Fine Cut Steakhouse",
+        "tagline": "Upscale American Steakhouse",
+        "description": "An intimate specialty restaurant serving premium USDA Prime cuts, fresh seafood towers, and an extensive sommelier-curated wine list in a warm, glamorous setting.",
+        "recommendation": "Prime Steaks & Seafood",
+        "reason": "Delivers sizzling dry-aged steaks, Maine lobster, and decadent side dishes paired with world-class cellar selections.",
+        "whyFits": [
+          "Prime cuts of beef cooked to exact perfection",
+          "Chilled seafood towers and fresh oysters",
+          "Warm, sophisticated dining atmosphere",
+          "Comprehensive global wine pairings"
+        ]
+      },
+      {
+        "name": "Eden Restaurant",
+        "tagline": "Immersive Culinary Journey",
+        "description": "A theatrical open kitchen surrounded by three stories of glass and living flora, offering multi-course experiential culinary journeys that awaken all five senses.",
+        "recommendation": "Experiential Fine Dining",
+        "reason": "Combines inventive experimental gastronomy with breathtaking panoramic views and ambient performance art.",
+        "whyFits": [
+          "Sensory multi-course tasting menus",
+          "Open exhibition kitchen showcasing master chefs",
+          "Botanical cocktail pairings tailored to each dish",
+          "Floor-to-ceiling ocean vistas on the ship's aft"
+        ]
+      },
+      {
+        "name": "Raw on 5",
+        "tagline": "Fresh Seafood & Sushi Bar",
+        "description": "Authentic Japanese sushi bar and raw seafood venue serving handcrafted rolls, sashimi, oysters on the half shell, and artisanal sake.",
+        "recommendation": "Fresh Sushi & Raw Bar",
+        "reason": "A casual yet sophisticated hot spot for light lunches, oyster tastings, or elegant evening sushi dinners.",
+        "whyFits": [
+          "Handcrafted specialty sushi rolls and sashimi",
+          "Raw bar oysters, crab legs, and lobster tails",
+          "Curated Japanese whisky and sake flights",
+          "Overlooks the Grand Plaza with energetic ambiance"
+        ]
+      },
+      {
+        "name": "Le Grand Bistro",
+        "tagline": "French Patisserie & Le Petit Chef",
+        "description": "Charming Parisian-style bistro by day serving warm baguettes, macarons, and espresso; by night, it hosts the famous animated 3D dining show Le Petit Chef.",
+        "recommendation": "Parisian Cafe & 3D Dinner Show",
+        "reason": "Transforms seamlessly from a sunlit French sidewalk cafe into an enchanting augmented-reality dining experience for all ages.",
+        "whyFits": [
+          "Freshly baked French pastries, crepes, and quiches",
+          "Artisanal coffees and gourmet cheeses",
+          "Interactive Le Petit Chef 3D table animation show",
+          "Four-course dinner matched to the visual story"
+        ]
+      },
+      {
+        "name": "Rooftop Garden Grill",
+        "tagline": "Al Fresco Oceanfront Barbecue",
+        "description": "Nestled under the stars in the Rooftop Garden, this open-air venue serves gourmet brisket, barbecue ribs, gourmet burgers, and wood-fired flatbreads with sea breezes.",
+        "recommendation": "Al Fresco Dining Under the Stars",
+        "reason": "Provides a relaxed backyard barbecue vibe elevated with premium ingredients, panoramic sunset views, and live music.",
+        "whyFits": [
+          "Smoked briskets, baby back ribs, and artisan burgers",
+          "Outdoor dining surrounded by live greenery",
+          "Casual open-air lunch and evening dinners",
+          "Spectacular ocean breezes and star gazing"
+        ]
+      }
+    ]
+  },
+  "signatureVenues": {
+    "title": "Signature Venues: Magic Carpet & Eden",
+    "subtitle": "Two industry-defining architectural achievements exclusive to the Celebrity Edge Series.",
+    "cards": [
+      {
+        "title": "Magic Carpet",
+        "description": "The world's first cantilevered floating venue at sea, scaling 13 decks on the starboard side of Celebrity Edge. Offering spectacular panoramic ocean views, it creates unique experiences on multiple decks throughout your voyage.",
+        "items": [
+          "Outdoor restaurant for unforgettable dinners on Deck 16",
+          "Chic open-air cocktail lounge with live music on Deck 14",
+          "Specialty dining extension and bar on Deck 5",
+          "Luxury tender embarkation gateway (Destination Gateway) on Deck 2",
+          "Panoramic cantilevered observation deck hanging over the open sea"
+        ]
+      },
+      {
+        "title": "Eden Venue",
+        "description": "Eden is unlike any other venue at sea. A three-story architectural wonder with 7,000 square feet of outward-facing glass, living plant walls, and multi-level spiral pathways. During the day, it provides a peaceful retreat, while evenings feature immersive entertainment and fine dining.",
+        "items": [
+          "Eden Signature fine dining restaurant with experiential tasting menus",
+          "Live interactive performances, acrobatics, and ambient theatrics",
+          "Eden Bar featuring botanical cocktails infused with fresh herbs",
+          "Daytime relaxation space with reading nooks and meditation spots",
+          "Three-story floor-to-ceiling panoramic glass ocean vistas on the aft"
+        ]
+      }
+    ]
+  },
+  "entertainment": {
+    "title": "Nightly Entertainment & Theater",
+    "subtitle": "Celebrity Edge features entertainment throughout the day and evening. Its innovative theater technology creates immersive performances unlike traditional cruise productions.",
+    "items": [
+      {
+        "title": "The Theatre Productions",
+        "description": "Broadway-caliber shows performed on a 360-degree circular stage with rotating spiral staircases, aerial rigging, and projection mapping."
+      },
+      {
+        "title": "Live Music Across Decks",
+        "description": "String quartets, jazz trios, acoustic soloists, and high-energy party bands performing in lounges and open-air spaces daily."
+      },
+      {
+        "title": "Interactive Eden Performances",
+        "description": "Avant-garde performance artists and acrobats engaging guests in whimsical storytelling and visual theater."
+      },
+      {
+        "title": "Guest Entertainers & Comedians",
+        "description": "Headlining magicians, stand-up comedians, guest vocalists, and specialty instrumentalists performing throughout the cruise."
+      },
+      {
+        "title": "Vegas-Style Casino",
+        "description": "Sophisticated gaming salon with blackjack, poker, roulette, craps tables, and the latest digital slot machines."
+      },
+      {
+        "title": "Silent Discos & Nightclubs",
+        "description": "Crowd-favorite multi-channel wireless headphone dance parties and late-night DJ sets under starry skies."
+      },
+      {
+        "title": "The Club & Lounges",
+        "description": "Multi-level venue transforming from daytime trivia and games to an electrifying nighttime dance club."
+      },
+      {
+        "title": "Martini Bar & Grand Plaza",
+        "description": "Flamboyant flair bartenders performing synchronized bottle-throwing shows under the dramatic glowing LED chandelier."
+      }
+    ]
+  },
+  "wellness": {
+    "title": "Pools, Spa & Wellness",
+    "subtitle": "Celebrity Edge offers exceptional wellness facilities designed for both relaxation and rejuvenation.",
+    "items": [
+      {
+        "title": "Resort Pool Deck",
+        "description": "A stunning 25-yard lap pool flanked by unique sculptural art, sunken two-story martini hot tubs, and luxury cabanas.",
+        "icon": "Droplet"
+      },
+      {
+        "title": "Adults-Only Solarium",
+        "description": "Tranquil glass-domed sanctuary featuring a heated pool, whirlpool spa, daybeds, and the complimentary Spa Cafe.",
+        "icon": "Sun"
+      },
+      {
+        "title": "Rooftop Garden",
+        "description": "A lush open-air retreat filled with living plants, comfortable seating pods, giant garden games, and acoustic sessions.",
+        "icon": "TreeDeciduous"
+      },
+      {
+        "title": "SEA Thermal Suite",
+        "description": "Eight distinct therapeutic rooms including the Hammam, Salt Room, Steam Room, Infrared Sauna, and Heated Tile Loungers.",
+        "icon": "Thermometer"
+      },
+      {
+        "title": "The Spa on Edge",
+        "description": "Full-service luxury spa offering ELEMIS biotech facials, deep tissue massage, acupuncture, and medi-spa treatments.",
+        "icon": "Flower"
+      },
+      {
+        "title": "Modern Fitness Center",
+        "description": "State-of-the-art ocean-view gym equipped with Technogym machines, Peloton bikes, F45 training, and yoga classes.",
+        "icon": "Dumbbell"
+      }
+    ]
+  },
+  "itineraries": {
+    "title": "Celebrity Edge Destinations",
+    "subtitle": "Celebrity Edge sails to some of the world's most popular cruise destinations across the Mediterranean and Caribbean.",
+    "cards": [
+      {
+        "title": "Mediterranean & Greek Isles",
+        "description": "Explore ancient history, sun-drenched coastlines, and world-class culinary capitals across Southern Europe.",
+        "bullets": [
+          "Italy: Rome (Civitavecchia), Florence (La Spezia), Amalfi Coast, Sicily",
+          "Greece: Santorini, Mykonos, Athens (Piraeus), Rhodes, Corfu",
+          "France: French Riviera, Cannes, Nice, Marseille, Corsica",
+          "Spain: Barcelona, Palma de Mallorca, Valencia, Ibiza",
+          "Croatia: Dubrovnik, Split, Zadar along the Dalmatian Coast"
+        ]
+      },
+      {
+        "title": "Caribbean & Tropical Escapes",
+        "description": "Sail from Florida to crystal-clear waters, white-sand beaches, and vibrant island cultures.",
+        "bullets": [
+          "Eastern Caribbean: St. Thomas, St. Maarten, Tortola, San Juan",
+          "Western Caribbean: Cozumel, Grand Cayman, Costa Maya, Belize",
+          "Southern Caribbean: Aruba, Bonaire, Curacao, Barbados, St. Lucia",
+          "Perfect Day at CocoCay & Bimini on select seasonal Bahamas routes"
+        ]
+      }
+    ],
+    "note": "Seasonal sailings also visit select European destinations, transatlantic crossings, and special repositioning voyages."
+  },
+  "inclusions": {
+    "title": "What's Included on Celebrity Edge?",
+    "subtitle": "Your Celebrity Edge cruise fare generally includes all core vacation essentials, with convenient packages available for full all-inclusive peace of mind.",
+    "cards": [
+      {
+        "title": "Included in Your Cruise Fare",
+        "description": "Essential amenities and services complimentary for every guest onboard.",
+        "items": [
+          "Luxury accommodations with daily stateroom service",
+          "Complimentary dining at 4 Main Dining rooms, Oceanview Cafe buffet, and Mast Grill",
+          "Broadway-caliber theater shows, comedy, and live musical entertainment",
+          "Full access to Resort Pool, Adults-only Solarium, and Rooftop Garden",
+          "Access to state-of-the-art Fitness Center and sports facilities",
+          "Camp at Sea youth and teen programs with supervised activities",
+          "Port-to-port maritime transportation and ocean transit"
+        ]
+      },
+      {
+        "title": "Optional Upgrades & Add-Ons",
+        "description": "Premium experiences available individually or bundled via 'All Included' packages.",
+        "items": [
+          "Specialty fine dining at Fine Cut, Eden, Raw on 5, and Le Grand Bistro",
+          "Classic & Premium alcoholic beverage packages and specialty coffees",
+          "High-speed Starlink Wi-Fi internet streaming packages",
+          "Curated shore excursions and private destination tours",
+          "Full treatments and thermal suite access at The Spa",
+          "Casino gaming, boutique shopping, and professional portrait photography"
+        ]
+      }
+    ]
+  },
+  "prosCons": {
+    "title": "Celebrity Edge: Pros & Cons",
+    "prosTitle": "What Makes Celebrity Edge Exceptional",
+    "consTitle": "Considerations Before Booking",
+    "pros": [
+      "Revolutionary outward-facing ship design connecting guests to the sea",
+      "Innovative Infinite Veranda staterooms adding 23% interior living space",
+      "Outstanding culinary program with four complimentary main restaurants",
+      "Iconic Magic Carpet floating platform delivering unique deck experiences",
+      "The Retreat suite complex with private Luminae restaurant and lounge",
+      "Spacious public areas with high crew-to-guest ratio and attentive service",
+      "Stunning 3-story Eden venue blending dining, cocktails, and visual art"
+    ],
+    "cons": [
+      "Infinite Verandas have drop-down glass rather than traditional step-out balconies (may not suit all balcony purists)",
+      "Specialty fine dining restaurants require an extra cover charge",
+      "Popular dining venues and peak specialty times require advance reservations"
+    ],
+    "bottomNote": "Celebrity Edge continues to set the standard for premium cruising. Its innovative design, exceptional accommodations, world-class restaurants, and personalized service make it one of the best values in premium cruise travel."
+  },
+  "whoShouldSail": {
+    "title": "Who Should Sail on Celebrity Edge?",
+    "subtitle": "Celebrity Edge is ideally curated for sophisticated travelers who appreciate contemporary design, elevated gastronomy, and relaxed luxury.",
+    "cards": [
+      {
+        "title": "Couples & Honeymooners",
+        "description": "Romantic sunset dinners on the Magic Carpet, peaceful Solarium days, and upscale cocktail lounges.",
+        "icon": "HeartHandshake"
+      },
+      {
+        "title": "Food & Wine Lovers",
+        "description": "Over 29 culinary venues crafted by Michelin-starred chefs, paired with award-winning global wine cellars.",
+        "icon": "UtensilsCrossed"
+      },
+      {
+        "title": "Luxury & Suite Guests",
+        "description": "Discerning travelers wanting the high-end boutique feel of The Retreat with the amenities of a large ship.",
+        "icon": "Crown"
+      },
+      {
+        "title": "Design & Architecture Aficionados",
+        "description": "Appreciate award-winning modern architecture by Kelly Hoppen, Tom Wright, and Jouin Manku.",
+        "icon": "Gem"
+      },
+      {
+        "title": "Families with Older Kids & Teens",
+        "description": "Multi-generational families enjoying high-tech entertainment, Camp at Sea, and spacious suite layouts.",
+        "icon": "Users"
+      },
+      {
+        "title": "First-Time Celebrity Guests",
+        "description": "Travelers looking to step up from mainstream cruise lines to an elevated, contemporary premium experience.",
+        "icon": "Ship"
+      },
+      {
+        "title": "Wellness Enthusiasts",
+        "description": "Guests booking AquaClass for unlimited thermal suite access, dedicated Blu dining, and fitness classes.",
+        "icon": "Droplet"
+      },
+      {
+        "title": "Modern Premium Cruise Seekers",
+        "description": "Cruisers wanting luxury sophistication without the rigid dress codes and formality of traditional luxury lines.",
+        "icon": "Compass"
+      }
+    ]
+  },
+  "whyBook": {
+    "title": "Why Book with Trips & Ships Luxury Travel?",
+    "subtitle": "Our certified luxury cruise specialists ensure you receive maximum value, exclusive perks, and seamless door-to-door planning.",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Compare Edge Series Ships",
+        "description": "Compare Celebrity Edge with other Edge Series ships to pick the perfect ship and sailing date for your travel style.",
+        "desc": "Compare Celebrity Edge with other Edge Series ships to pick the perfect ship and sailing date for your travel style."
+      },
+      {
+        "step": "2",
+        "title": "Select the Best Cabin or Suite",
+        "description": "Navigate deck plans to choose the best Infinite Veranda or Retreat suite location free of obstructions.",
+        "desc": "Navigate deck plans to choose the best Infinite Veranda or Retreat suite location free of obstructions."
+      },
+      {
+        "step": "3",
+        "title": "Find Exclusive Promotions",
+        "description": "Access agency-exclusive cruise promotions, onboard spending credits, and upgraded beverage/Wi-Fi packages.",
+        "desc": "Access agency-exclusive cruise promotions, onboard spending credits, and upgraded beverage/Wi-Fi packages."
+      },
+      {
+        "step": "4",
+        "title": "Arrange Flights & Hotels",
+        "description": "Coordinate premium flights and luxury pre- and post-cruise hotel stays tailored around your sailing itinerary.",
+        "desc": "Coordinate premium flights and luxury pre- and post-cruise hotel stays tailored around your sailing itinerary."
+      },
+      {
+        "step": "5",
+        "title": "Plan Pre- & Post-Cruise Stays",
+        "description": "Design custom multi-day land tours and destination excursions in departure ports like Rome, Barcelona, or Athens.",
+        "desc": "Design custom multi-day land tours and destination excursions in departure ports like Rome, Barcelona, or Athens."
+      },
+      {
+        "step": "6",
+        "title": "Coordinate Private Transfers",
+        "description": "Organize private chauffeured transfers between airports, luxury hotels, and cruise port terminals.",
+        "desc": "Organize private chauffeured transfers between airports, luxury hotels, and cruise port terminals."
+      }
+    ]
+  },
+  "expertCredentials": {
+    "name": "Angela Hughes",
+    "title": "Founder & CEO, Trips & Ships Luxury Travel",
+    "badge": "Expert Insight from Angela Hughes",
+    "experienceBadge": "40+ Years Experience | 120+ Countries Visited",
+    "quote": "With more than four decades of luxury travel experience, I've seen many cruise ships introduce new ideas, but few have transformed the guest experience the way Celebrity Edge has. From the moment you step onboard, you'll notice how every space has been designed to connect you with the ocean while maintaining an atmosphere of relaxed sophistication.",
+    "bio": "I frequently recommend Celebrity Edge to travelers who appreciate exceptional dining, innovative ship design, and personalized service without the formality of traditional luxury cruising. The Infinite Veranda cabins, Magic Carpet, and Eden create experiences you simply won't find on most other ships.\n\nWhether you're planning your first Celebrity cruise or returning to explore another destination, Celebrity Edge consistently delivers an elegant, memorable vacation.",
+    "credentials": [
+      "Premium & luxury cruising",
+      "Edge Series ship design",
+      "Retreat & suite experiences",
+      "Mediterranean & Caribbean itineraries",
+      "Concierge-level cruise planning"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "1. Is Celebrity Edge a luxury cruise ship?",
+      "answer": "Yes. Celebrity Edge is considered one of the world's leading premium cruise ships. It combines contemporary luxury, award-winning dining, innovative ship design, and personalized service to deliver an elevated cruise experience. As the first ship in Celebrity Cruises' Edge Series, it introduced groundbreaking features that have since redefined modern cruising."
+    },
+    {
+      "question": "2. What is included on Celebrity Edge?",
+      "answer": "Your Celebrity Edge cruise fare typically includes luxury accommodations, complimentary main dining restaurants, Oceanview Café buffet, live entertainment and theater productions, Resort Pool and Solarium, Fitness Center, youth programs, and transportation between ports. Specialty dining, alcoholic beverages, Wi-Fi, spa treatments, and shore excursions are available for an additional fee unless included in your cruise package."
+    },
+    {
+      "question": "3. What are Infinite Veranda cabins?",
+      "answer": "Infinite Veranda cabins are Celebrity Edge's signature accommodation innovation. Instead of a traditional balcony, floor-to-ceiling windows open electronically to transform your entire room into an open-air living space. This design provides more interior space while allowing guests to enjoy fresh ocean air and uninterrupted panoramic views. They're one of the ship's most unique and popular features."
+    },
+    {
+      "question": "4. Is The Retreat worth the upgrade?",
+      "answer": "Absolutely. The Retreat is Celebrity Cruises' luxury suite experience and includes spacious suite accommodations, butler service, private Luminae Restaurant, exclusive Retreat Lounge, private sundeck, concierge services, and priority embarkation and disembarkation. For travelers seeking additional privacy, premium amenities, and personalized service, The Retreat offers exceptional value."
+    },
+    {
+      "question": "5. How many restaurants are on Celebrity Edge?",
+      "answer": "Celebrity Edge offers more than 29 restaurants, cafés, bars, and lounges, providing one of the strongest culinary programs in premium cruising. Popular venues include Fine Cut Steakhouse, Eden Restaurant, Raw on 5, Rooftop Garden Grill, Le Grand Bistro, Oceanview Café, and Four Main Dining Restaurants. Guests enjoy a wide variety of international cuisine ranging from casual dining to specialty fine dining experiences."
+    },
+    {
+      "question": "6. What is the Magic Carpet?",
+      "answer": "The Magic Carpet is Celebrity Edge's most iconic innovation. Attached to the side of the ship, this floating platform moves between decks and transforms into an outdoor restaurant, lounge, cocktail bar, tender boarding platform, and observation deck. No other cruise ship offers an experience quite like the Magic Carpet, making it one of Celebrity Edge's signature attractions."
+    },
+    {
+      "question": "7. Does Celebrity Edge have butler service?",
+      "answer": "Yes. Guests staying in The Retreat Suites receive dedicated butler service. Your butler can assist with dining reservations, in-suite dining, unpacking and packing, special requests, and personalized onboard assistance. This service enhances the overall luxury experience and ensures a seamless vacation."
+    },
+    {
+      "question": "8. Is Wi-Fi included?",
+      "answer": "Wi-Fi is available throughout Celebrity Edge. Depending on your fare or promotional offer, internet access may be included or purchased separately before or during your cruise. High-speed internet packages are also available for guests who need enhanced connectivity while at sea."
+    },
+    {
+      "question": "9. Where does Celebrity Edge sail?",
+      "answer": "Celebrity Edge sails to many of the world's most popular cruise destinations, including the Mediterranean, Greek Isles, Italy, France, Spain, Croatia, Eastern Caribbean, Western Caribbean, and Southern Caribbean. Seasonal itineraries may also include additional European sailings."
+    },
+    {
+      "question": "10. Is Celebrity Edge good for families?",
+      "answer": "Yes. Although Celebrity Cruises is especially popular with couples, Celebrity Edge is also an excellent choice for families. Families enjoy the Camp at Sea youth program, family-friendly entertainment, spacious accommodations, multiple pools, interactive activities, and diverse dining options. The ship is particularly well suited for multi-generational vacations."
+    },
+    {
+      "question": "11. What makes Celebrity Edge different from other cruise ships?",
+      "answer": "Celebrity Edge introduced several innovations that changed modern cruise design, including Infinite Veranda staterooms, the Magic Carpet floating platform, Eden entertainment venue, Rooftop Garden, Resort Deck, and contemporary open-air architecture. Its focus on connecting guests with the ocean through innovative design continues to distinguish it from traditional cruise ships."
+    },
+    {
+      "question": "12. Is Celebrity Edge worth the money?",
+      "answer": "Yes. Celebrity Edge offers exceptional value through elegant accommodations, outstanding restaurants, innovative ship design, exceptional entertainment, personalized service, and premium itineraries. For travelers looking for a sophisticated cruise vacation without paying ultra-luxury prices, Celebrity Edge remains one of the best premium cruise options available."
+    },
+    {
+      "question": "13. Which cabin is best on Celebrity Edge?",
+      "answer": "The ideal cabin depends on your travel preferences. Inside Stateroom offers the best value, Ocean View provides great natural light, Infinite Veranda is the most popular choice, Concierge Class adds additional services, AquaClass suits wellness-focused travelers, and The Retreat Suites deliver ultimate luxury with butler service and exclusive amenities. Suite guests receive the highest level of comfort and personalized service onboard."
+    },
+    {
+      "question": "14. Does Celebrity Edge have Eden?",
+      "answer": "Yes. Eden is one of Celebrity Edge's most distinctive venues. During the day, it serves as a peaceful observation lounge with panoramic ocean views. In the evening, Eden transforms into an immersive venue featuring fine dining, live performances, signature cocktails, and interactive entertainment. Its unique atmosphere makes it one of the ship's most memorable spaces."
+    },
+    {
+      "question": "15. Why book Celebrity Edge with Trips & Ships Luxury Travel?",
+      "answer": "Booking through Trips & Ships Luxury Travel provides personalized planning from experienced luxury cruise specialists. Our advisors help you compare Celebrity Edge with other Edge Series ships, select the best stateroom or suite, find exclusive cruise offers, arrange flights and hotels, plan pre- and post-cruise stays, coordinate private transfers, and provide concierge-level service before, during, and after your vacation."
+    }
+  ],
+  "cta": {
+    "title": "Ready to Plan Your Celebrity Edge Cruise?",
+    "description": "Contact our luxury cruise consultants to compare cabins, secure exclusive promotions, and plan pre- and post-cruise stays. We handle every detail so you can enjoy the journey.",
+    "buttonText": "Schedule a Consultation",
+    "buttonLink": "/contact"
+  }
+}

@@ -1255,7 +1255,7 @@ const Navbar = () => {
                 Celebrity All Included Explained
               </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/celebrity-cruises/drink-packages"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -1277,9 +1277,9 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Celebrity Edge Series Ships Guide
-              </NavLink> */}
+              </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/celebrity-cruises/faqs"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -1287,7 +1287,7 @@ const Navbar = () => {
                 Celebrity Cruises Frequently Asked Questions
               </NavLink>
 
-              <NavLink
+              {/* <NavLink
                 to="/celebrity-cruises/why-book-with-us"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -1309,7 +1309,7 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Celebrity Cruises vs. Princess Cruises
-              </NavLink> */}
+              </NavLink>
 
               <NavLink
                 to="/celebrity-cruises/ships/celebrity-xcel"
@@ -1317,9 +1317,9 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Celebrity Xcel Cruise Ship Guide
-              </NavLink>
+              </NavLink> */}
 
-              <NavLink
+              {/* <NavLink
                 to="/celebrity-cruises/ships/celebrity-ascent"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -1349,7 +1349,7 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Celebrity Edge Cruise Ship Guide
-              </NavLink>
+              </NavLink> */}
 
               <NavLink
                 to="/celebrity-cruises/edge-vs-solstice-series"
@@ -2811,7 +2811,7 @@ const Navbar = () => {
               Celebrity All Included Explained
             </NavLink>
 
-            {/* <NavLink
+            <NavLink
               to="/celebrity-cruises/drink-packages"
               className="nav-dropdown-single"
               onClick={toggleMenu}
@@ -2833,9 +2833,9 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Celebrity Edge Series Ships Guide
-            </NavLink> */}
+            </NavLink>
 
-            {/* <NavLink
+            <NavLink
               to="/celebrity-cruises/faqs"
               className="nav-dropdown-single"
               onClick={toggleMenu}
@@ -2843,7 +2843,7 @@ const Navbar = () => {
               Celebrity Cruises Frequently Asked Questions
             </NavLink>
 
-            <NavLink
+            {/* <NavLink
               to="/celebrity-cruises/why-book-with-us"
               className="nav-dropdown-single"
               onClick={toggleMenu}
@@ -2865,7 +2865,7 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Celebrity Cruises vs. Princess Cruises
-            </NavLink> */}
+            </NavLink>
 
             <NavLink
               to="/celebrity-cruises/ships/celebrity-xcel"
@@ -2873,9 +2873,9 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Celebrity Xcel Cruise Ship Guide
-            </NavLink>
+            </NavLink> */}
 
-            <NavLink
+            {/* <NavLink
               to="/celebrity-cruises/ships/celebrity-ascent"
               className="nav-dropdown-single"
               onClick={toggleMenu}
@@ -2905,7 +2905,7 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Celebrity Edge Cruise Ship Guide
-            </NavLink>
+            </NavLink> */}
 
             <NavLink
               to="/celebrity-cruises/edge-vs-solstice-series"

@@ -1,0 +1,688 @@
+{
+  "seo": {
+    "title": "Celebrity Xcel Cruise Ship Guide",
+    "metaTitle": "Celebrity Xcel Cruise Ship Guide",
+    "metaDescription": "Explore Celebrity Xcel with this complete ship guide covering cabins, dining, entertainment, pools, Edge Series features, decks, and itineraries.",
+    "keywords": "Celebrity Xcel cruise ship, Celebrity Xcel ship guide, Celebrity Xcel cabins, Celebrity Xcel deck plans, Celebrity Xcel restaurants, Celebrity Xcel amenities, Celebrity Xcel itinerary, Celebrity Xcel Edge Series",
+    "canonicalUrl": "https://www.tripsandships.com/celebrity-cruises/ships/celebrity-xcel"
+  },
+  "hero": {
+    "badge": "Edge Series · Trips & Ships Luxury Travel",
+    "title": "Celebrity Xcel\nCruise Ship Guide",
+    "subtitle": "Celebrity Xcel is the newest addition to Celebrity Cruises' Edge Series, joining Celebrity Edge, Celebrity Apex, Celebrity Beyond, and Celebrity Ascent.",
+    "description": "The ship combines the design concepts established by the Edge Series with additional dining, entertainment, outdoor, and destination-focused experiences.",
+    "primaryCtaText": "Plan Your Journey",
+    "primaryCtaLink": "/contact"
+  },
+  "atAGlance": {
+    "title": "Celebrity Xcel at a Glance",
+    "paragraphs": [
+      "Celebrity Xcel entered service in November 2025 as the fifth ship in the Edge Series — designed around outward-facing spaces, innovative accommodations, multiple dining venues, and destination-focused experiences.",
+      "Celebrity's current fleet information places Xcel within its Edge Series alongside Edge, Apex, Beyond, and Ascent. Celebrity's official ship information lists Xcel's maiden voyage as November 18, 2025."
+    ],
+    "items": [
+      {
+        "title": "Ship Series",
+        "detail": "Celebrity Edge Series"
+      },
+      {
+        "title": "Maiden Voyage",
+        "detail": "November 18, 2025"
+      },
+      {
+        "title": "Decks",
+        "detail": "17 Decks"
+      },
+      {
+        "title": "Design",
+        "detail": "Edge Series outward-facing design"
+      },
+      {
+        "title": "Accommodation Types",
+        "detail": "Inside, Ocean View, Veranda, Infinite Veranda, Suites"
+      },
+      {
+        "title": "Signature Element",
+        "detail": "Magic Carpet Cantilevered Platform"
+      },
+      {
+        "title": "Key Dining",
+        "detail": "Spice Café, Oceanview Café, Mast Grill, Cyprus Restaurant"
+      },
+      {
+        "title": "Itinerary Focus",
+        "detail": "Caribbean and Europe"
+      },
+      {
+        "title": "Sister Ships",
+        "detail": "Celebrity Edge, Apex, Beyond, Ascent"
+      }
+    ]
+  },
+  "whatMakesDifferent": {
+    "title": "What Makes Celebrity Xcel Different?",
+    "subtitles": [
+      "Celebrity Xcel builds on the design language introduced with the Edge Series rather than simply adding another conventional cruise ship to the fleet.",
+      "Its design emphasizes:"
+    ],
+    "features": [
+      "Open and outward-facing public spaces",
+      "Large areas designed around ocean and destination views",
+      "Innovative Infinite Veranda staterooms",
+      "The Magic Carpet cantilevered platform",
+      "Multiple restaurants, cafés, bars, and lounges",
+      "Destination-inspired food and entertainment",
+      "Dedicated wellness and relaxation spaces",
+      "A mixture of contemporary indoor and outdoor areas"
+    ],
+    "summary": "The result is a ship designed to make the ocean and destinations part of the onboard experience rather than treating them simply as scenery outside the ship. Celebrity describes Xcel as combining the established Edge Series experiences with new spaces and food-and-drink concepts."
+  },
+  "cabinsAndSuites": {
+    "title": "Celebrity Xcel Cabins and Suites",
+    "subtitle": "Celebrity Xcel offers several accommodation categories — from economical inside rooms to ocean-view cabins, private verandas, the innovative Infinite Veranda, and premium suite accommodations through The Retreat.",
+    "cards": [
+      {
+        "title": "Inside Staterooms",
+        "category": "Best Value · 181–202 sq ft",
+        "icon": "Moon",
+        "description": "Enclosed accommodation without a private exterior view. Can accommodate up to four guests in selected configurations.",
+        "features": ["181–202 sq ft", "Sleeps up to 4", "Economical fare option"]
+      },
+      {
+        "title": "Ocean View Staterooms",
+        "category": "Natural Light · 200–242 sq ft",
+        "icon": "Eye",
+        "description": "Replace a traditional balcony with large windows overlooking the sea.",
+        "features": ["200–242 sq ft", "Large picture windows", "Expansive sea views"]
+      },
+      {
+        "title": "Veranda Staterooms",
+        "category": "Private Balcony · 202–228 sq ft",
+        "icon": "Sun",
+        "description": "Provide a private outdoor balcony, with veranda sizes varying by category.",
+        "features": ["202–228 sq ft", "Private open-air balcony", "Fresh ocean breezes"]
+      },
+      {
+        "title": "Infinite Veranda Staterooms",
+        "category": "Most Popular · ~243 sq ft",
+        "icon": "Waves",
+        "description": "Allows the exterior space to become part of the stateroom through a floor-to-ceiling opening.",
+        "features": ["~243 sq ft", "Seamless indoor/outdoor space", "Push-button glass control"]
+      },
+      {
+        "title": "Suites & The Retreat",
+        "category": "Premium · Varies",
+        "icon": "Crown",
+        "description": "Suite accommodations associated with The Retreat, Celebrity's suite experience with dedicated spaces and services.",
+        "features": ["Exclusive Luminae dining", "Private Retreat lounge & sundeck", "Dedicated butler & concierge"]
+      }
+    ],
+    "stateroomFeatures": {
+      "title": "What to Expect in Your Stateroom",
+      "subtitle": "STANDARD STATEROOM INCLUSIONS",
+      "items": [
+        "eXhale bedding and premium mattresses",
+        "Private luxury bathroom with modern fixtures",
+        "Interactive TV system for onboard services and movies",
+        "High-speed Wi-Fi access throughout",
+        "Coffee maker (select stateroom categories)",
+        "Premium amenities & dedicated service (Suites & The Retreat)"
+      ],
+      "tip": "Tip: Compare the benefits included with each suite category rather than choosing solely by cabin size. Suite amenities and access can vary."
+    }
+  },
+  "deckPlans": {
+    "title": "Celebrity Xcel Deck Plans & Navigation",
+    "subtitle": "Celebrity Xcel has 17 decks. Choosing the right stateroom goes beyond the cabin category — your position on the deck plan matters just as much.",
+    "cards": [
+      {
+        "title": "Distance from Elevators",
+        "description": "Convenient for fast access to public venues, but potentially experiences higher foot traffic.",
+        "icon": "Compass",
+        "bullets": ["Quick access across 17 decks", "Consider midship vs end corridors"]
+      },
+      {
+        "title": "Location Below Public Areas",
+        "description": "Important to review if you prefer quiet nights without overhead footstep sound from pool decks or buffets.",
+        "icon": "Moon",
+        "bullets": ["Check deck above your stateroom", "Sandwich cabins offer quietest stays"]
+      },
+      {
+        "title": "Location Above Entertainment Venues",
+        "description": "Check carefully if you are sensitive to sound from late-night lounges, bars, or theater stages.",
+        "icon": "Music",
+        "bullets": ["Inspect theater & nightclub placement", "Choose forward/aft as appropriate"]
+      },
+      {
+        "title": "Proximity to Pools",
+        "description": "Useful for travelers who prioritize outdoor access, sun loungers, and quick morning swim routines.",
+        "icon": "Sun",
+        "bullets": ["Easy upper-deck access", "Great for active sea days"]
+      },
+      {
+        "title": "Forward, Midship, or Aft Position",
+        "description": "Each offers a different onboard experience, with midship staterooms offering the highest vessel stability.",
+        "icon": "Anchor",
+        "bullets": ["Midship: Highest stability", "Aft: Dramatic wake views"]
+      },
+      {
+        "title": "Connecting Rooms",
+        "description": "Useful configurations for families and multi-generational groups traveling together on the same voyage.",
+        "icon": "Users",
+        "bullets": ["Adjoining internal doors", "Flexible family layouts"]
+      },
+      {
+        "title": "Accessible Cabins",
+        "description": "Designed with essential features such as wider doorways, roll-in showers, and grab bars where applicable.",
+        "icon": "UserCheck",
+        "bullets": ["Wider entry doors", "Roll-in showers with grab bars"]
+      }
+    ]
+  },
+  "cabinSelectionGuide": {
+    "title": "Choosing the Best Celebrity Xcel Cabin",
+    "subtitle": "There is no single cabin location ideal for every traveler. Match your primary priority to the right cabin type before booking. Tip: Check what is directly above, below, and beside your room.",
+    "cards": [
+      {
+        "title": "Lowest Accommodation Cost",
+        "description": "Inside Stateroom: Maximizes your travel budget while giving you full access to all ship amenities and public venues.",
+        "icon": "DollarSign",
+        "bullets": ["Best fare value", "Full access to 17 decks"]
+      },
+      {
+        "title": "Natural Light & Scenery",
+        "description": "Ocean View: Large picture window provides constant natural sunlight and stunning ocean vistas.",
+        "icon": "Eye",
+        "bullets": ["Bright interior living", "Seaward horizon views"]
+      },
+      {
+        "title": "Traditional Outdoor Space",
+        "description": "Veranda: A classic private step-out balcony for fresh open sea breezes and morning coffee.",
+        "icon": "Sun",
+        "bullets": ["Private open-air deck", "Classic balcony feel"]
+      },
+      {
+        "title": "Indoor/Outdoor Flexibility",
+        "description": "Infinite Veranda: Blends the exterior space into your stateroom with a single touch of a button.",
+        "icon": "Waves",
+        "bullets": ["23% larger living area", "Floor-to-ceiling glass"]
+      },
+      {
+        "title": "More Space & Premium Benefits",
+        "description": "Suite / The Retreat: VIP perks, private Luminae dining, Retreat Lounge access, and dedicated concierge.",
+        "icon": "Crown",
+        "bullets": ["The Retreat exclusive access", "Butler service included"]
+      },
+      {
+        "title": "Families & Groups",
+        "description": "Connecting or Larger Accommodations: Keeps everyone close together with shared spaces and easy communication.",
+        "icon": "Users",
+        "bullets": ["Adjoining cabin doors", "Multiple bedding options"]
+      },
+      {
+        "title": "Mobility Considerations",
+        "description": "Accessible Stateroom: Specially configured layouts with barrier-free entry, wide doorways, and roll-in showers.",
+        "icon": "UserCheck",
+        "bullets": ["Step-free doorways", "Custom bathroom grab bars"]
+      },
+      {
+        "title": "Quiet Relaxation",
+        "description": "Cabins Away from High-Traffic Areas: Staterooms sandwiched between accommodation decks for total peace.",
+        "icon": "Moon",
+        "bullets": ["Zero overhead noise", "Low-traffic corridor spots"]
+      }
+    ]
+  },
+  "dining": {
+    "title": "Celebrity Xcel Dining Experience",
+    "subtitle": "Dining is a major part of the Xcel experience — from casual poolside bites to destination-inspired restaurants including Spice Café, Oceanview Café, Mast Grill, and Cyprus Restaurant.",
+    "profiles": [
+      {
+        "name": "Spice Café",
+        "tagline": "Destination-Inspired · Included",
+        "quote": "Spice Café is designed around destination-inspired flavors. Menus change with the destinations and festivals featured at The Bazaar, connecting onboard dining directly with the places you visit.",
+        "recommendation": "Spice Café Dining Experience",
+        "reason": "Spice Café is designed around destination-inspired flavors. Celebrity describes its menus as changing with the destinations and festivals featured at The Bazaar. This makes it particularly relevant for travelers who want the food onboard to reflect the places they are visiting.",
+        "whyFits": [
+          "Destination-inspired flavors curated for each sailing",
+          "Changing menus based on regional ports of call",
+          "Direct connection to The Bazaar cultural concept",
+          "Complimentary main dining experience included in fare"
+        ]
+      },
+      {
+        "name": "Oceanview Café",
+        "tagline": "Marketplace Style · Included",
+        "quote": "Oceanview Café provides a marketplace-style dining experience with a broad selection of international flavors and flexible meal options throughout the day.",
+        "recommendation": "Marketplace & Global Cuisine",
+        "reason": "Oceanview Café provides a marketplace-style dining experience with a broad selection of food and international flavors. It is a useful option for flexible meals when guests do not want a formal dining experience.",
+        "whyFits": [
+          "Flexible dining times without set reservations",
+          "Extensive international cuisine and live cooking stations",
+          "Casual indoor and alfresco seating with ocean views",
+          "Complimentary breakfast, lunch, dinner, and snacks"
+        ]
+      },
+      {
+        "name": "Mast Grill",
+        "tagline": "Casual · Poolside · Included",
+        "quote": "Mast Grill offers casual poolside dining, positioned for guests who want to eat fresh grilled favorites without leaving the outdoor pool area.",
+        "recommendation": "Poolside Casual Dining",
+        "reason": "Mast Grill offers casual poolside dining, including burgers and other relaxed fare. It is positioned for guests who want to eat without leaving the outdoor pool area.",
+        "whyFits": [
+          "Convenient poolside dining on sunny sea days",
+          "Freshly prepared burgers, hot dogs, and casual fare",
+          "No need to change out of swimwear or cover-ups",
+          "Complimentary casual dining on the open pool deck"
+        ]
+      },
+      {
+        "name": "Cyprus Restaurant",
+        "tagline": "Mediterranean · Included",
+        "quote": "Cyprus Restaurant focuses on Mediterranean-inspired cuisine, highlighting fresh seafood and clean, simple flavors celebrating coastal culinary traditions.",
+        "recommendation": "Mediterranean Coastal Experience",
+        "reason": "Cyprus Restaurant focuses on Mediterranean-inspired cuisine, with seafood and clean, simple flavors highlighted by Celebrity. It is one of the featured dining venues on Celebrity Xcel.",
+        "whyFits": [
+          "Authentic Mediterranean-inspired recipes",
+          "Fresh seafood selections and regional olive oils",
+          "Clean, simple flavors celebrating coastal traditions",
+          "Included complimentary multi-course dinner service"
+        ]
+      }
+    ],
+    "specialtyDining": {
+      "title": "Specialty & Premium Dining",
+      "subtitle": "ELEVATED CULINARY EXPERIENCES",
+      "description": "Celebrity Xcel also offers specialty and premium culinary experiences. Menus, pricing, and reservation requirements vary by sailing.",
+      "items": [
+        "Premium steak and seafood options",
+        "Interactive dining experiences",
+        "International cuisine specialties",
+        "Wine-pairing dinners curated by sommeliers",
+        "Exclusive Chef's table experiences"
+      ]
+    }
+  },
+  "barsAndLounges": {
+    "title": "Bars, Lounges and Drinks",
+    "subtitle": "Xcel includes a variety of social spaces for coffee, cocktails, casual drinks, and evening entertainment.",
+    "cards": [
+      {
+        "title": "Cocktail & Lounge Bars",
+        "description": "Evening social spaces designed for expertly crafted cocktails, pre-dinner drinks, and engaging conversations.",
+        "icon": "Wine",
+        "bullets": ["Handcrafted signature cocktails", "Intimate ambiance"]
+      },
+      {
+        "title": "Poolside Drinks",
+        "description": "Refreshing tropical cocktails, frozen drinks, and chilled beverages served directly around the pool deck.",
+        "icon": "Sun",
+        "bullets": ["Frozen cocktails & beer", "Open-air sea views"]
+      },
+      {
+        "title": "Coffee & Café Options",
+        "description": "Casual morning and afternoon spots serving specialty espresso, artisan coffees, teas, and fresh light bites.",
+        "icon": "Coffee",
+        "bullets": ["Specialty espresso drinks", "Artisan pastries & snacks"]
+      },
+      {
+        "title": "Destination Beverages",
+        "description": "Curated drink menus inspired by the regional ports, local distilleries, and wine regions on your itinerary.",
+        "icon": "Globe",
+        "bullets": ["Port-inspired cocktails", "Regional wine selections"]
+      },
+      {
+        "title": "Evening Social Spaces",
+        "description": "Vibrant venues designed for after-dinner socializing, lively live music, dancing, and late-night nightlife.",
+        "icon": "Moon",
+        "bullets": ["Late-night entertainment", "Vibrant music & dancing"]
+      },
+      {
+        "title": "Premium Experiences",
+        "description": "Elevated drink selections, rare vintage spirits, sommelier tastings, and private mixology workshops.",
+        "icon": "Gem",
+        "bullets": ["Sommelier tastings", "Rare vintage spirits"]
+      }
+    ],
+    "beverageTip": "If you are considering a beverage package, compare the package inclusions with the drinks you actually expect to order rather than assuming a package automatically provides better value."
+  },
+  "thingsToDo": {
+    "title": "Things to Do on Celebrity Xcel",
+    "subtitle": "Celebrity Xcel is designed with a mixture of entertainment, relaxation, wellness, and destination-focused activities. Take advantage of unique Edge-series features right from the deck plans.",
+    "featuredHighlights": [
+      {
+        "title": "The Magic Carpet",
+        "description": "A signature cantilevered platform that moves along the ship's side, offering changing viewpoints, dining venues, and tender boarding depending on the deck it's positioned on."
+      },
+      {
+        "title": "The Bazaar",
+        "description": "A destination-themed culture hub combining local shopping, artisan foods, live entertainment, and experiences inspired by the specific ports of call."
+      },
+      {
+        "title": "Pools & Open Air",
+        "description": "Expansive outdoor decks designed to bring you closer to the ocean, featuring modern pools, oversized hot tubs, private cabanas, and beautiful vistas."
+      },
+      {
+        "title": "Spa & Wellness",
+        "description": "Dedicated wellness spaces, SEA Thermal Suite, and fitness options designed for active relaxation and recovery. Best booked in advance on sea days."
+      }
+    ],
+    "activityCards": [
+      {
+        "title": "Magic Carpet Experience",
+        "description": "Cantilevered floating platform that ascends from Deck 2 to Deck 16 with panoramic ocean vistas.",
+        "icon": "Anchor"
+      },
+      {
+        "title": "The Bazaar Culture Hub",
+        "description": "Destination-inspired shopping, live music, and interactive regional festivities.",
+        "icon": "Palette"
+      },
+      {
+        "title": "Pools & Outdoor Decks",
+        "description": "Resort-style pool deck with modern loungers, hot tubs, and outward-facing views.",
+        "icon": "Waves"
+      },
+      {
+        "title": "Spa & Thermal Suites",
+        "description": "Comprehensive wellness treatments, therapy rooms, and recovery services.",
+        "icon": "Sparkles"
+      },
+      {
+        "title": "Live Performances",
+        "description": "Cutting-edge theater shows, live musical sets, and acrobatic artistry.",
+        "icon": "Music"
+      },
+      {
+        "title": "Destination Activities",
+        "description": "Curated workshops, culinary demonstrations, and lectures connected to your voyage.",
+        "icon": "Camera"
+      }
+    ]
+  },
+  "entertainment": {
+    "title": "Celebrity Xcel Entertainment",
+    "subtitles": [
+      "Entertainment onboard is designed to extend beyond traditional theater performances, blending music, technology, and interactive events."
+    ],
+    "features": [
+      "Theater Live Performances featuring world-class singers, dancers, and acrobats",
+      "Live Music & Lounges with jazz sets, acoustic guitarists, and DJ sets",
+      "Interactive Shows that immerse guests with 360-degree digital projection",
+      "Destination Programming connecting you with the culture of your ports",
+      "Social Theme Events and evening celebrations",
+      "Pool-Deck Parties under the Caribbean and Mediterranean stars",
+      "Active Nightlife across multiple bars, lounges, and late-night venues"
+    ],
+    "summary": "Programming changes by itinerary and sailing date. Check your daily schedule in the Celebrity mobile app for accurate showtimes and venue locations."
+  },
+  "itineraries": {
+    "title": "Where Does Celebrity Xcel Sail?",
+    "subtitle": "Celebrity currently lists Caribbean and European itineraries for Celebrity Xcel, offering warm island getaways and cultural Mediterranean journeys.",
+    "cards": [
+      {
+        "title": "Caribbean Voyages",
+        "description": "Warm-weather destinations, tropical beaches, island shore excursions, crystal-clear snorkeling waters, and plenty of relaxation outdoors under the sun.",
+        "icon": "Sun",
+        "bullets": ["Eastern & Western Caribbean routes", "Tropical beach getaways", "Island excursions & snorkeling"]
+      },
+      {
+        "title": "European Cruises",
+        "description": "Mediterranean and iconic European cruise regions, exploring historic ports, cultural monuments, world-renowned culinary capitals, and coastal scenery.",
+        "icon": "Globe",
+        "bullets": ["Mediterranean & coastal Europe", "Historic landmarks & cultural hubs", "Destination-rich port days"]
+      }
+    ],
+    "tip": "Tip: Caribbean routes focus on outdoor relaxation and beach stops, whereas European cruises emphasize history and sightseeing. Select based on your personal vacation style."
+  },
+  "whoIsItFor": {
+    "title": "Who Is Celebrity Xcel Best Suited For?",
+    "subtitle": "Celebrity Xcel is an excellent match for travelers who appreciate modern amenities, premium services, and stylish spaces. Note: While families are welcome, travelers looking for large-scale waterparks or rollercoasters might prefer comparing Xcel with mass-market family brands.",
+    "cards": [
+      {
+        "title": "Contemporary Ship Design",
+        "description": "Travelers who love cutting-edge architecture, clean aesthetic lines, and sleek modern cruise interiors.",
+        "icon": "Ship"
+      },
+      {
+        "title": "Premium Cruising Experience",
+        "description": "Guests seeking upscale service, elevated dining, and a refined atmosphere without excessive formality.",
+        "icon": "Award"
+      },
+      {
+        "title": "Modern Accommodations",
+        "description": "Travelers prioritizing innovative staterooms like the Infinite Veranda and luxury suites.",
+        "icon": "Bed"
+      },
+      {
+        "title": "Ocean Views & Open Air",
+        "description": "Cruisers who want outward-facing public spaces that keep them connected to the sea.",
+        "icon": "Sun"
+      },
+      {
+        "title": "Specialty Dining & Varied Food",
+        "description": "Food lovers looking for diverse culinary concepts, chef-driven restaurants, and destination flavors.",
+        "icon": "Utensils"
+      },
+      {
+        "title": "Wellness & Active Recovery",
+        "description": "Guests prioritizing wellness treatments, modern fitness facilities, and tranquil thermal suites.",
+        "icon": "Heart"
+      },
+      {
+        "title": "Destination-Inspired Culture",
+        "description": "Travelers who enjoy having onboard food, music, and activities reflect the places they visit.",
+        "icon": "Globe"
+      },
+      {
+        "title": "Couples & Adult Getaways",
+        "description": "Couples and friends seeking stylish bars, sunset vistas, quiet lounge spaces, and vibrant evenings.",
+        "icon": "Users"
+      },
+      {
+        "title": "Edge Series Enthusiasts",
+        "description": "Cruisers who loved Edge, Apex, Beyond, or Ascent and want to experience the latest evolution.",
+        "icon": "Sparkles"
+      }
+    ]
+  },
+  "fleetComparison": {
+    "title": "Celebrity Xcel vs. Other Edge Series Ships",
+    "description": "Celebrity Xcel belongs to the same Edge Series family as Celebrity Edge, Celebrity Apex, Celebrity Beyond, and Celebrity Ascent. The ships share major design principles, but individual venues, dining concepts, itineraries, and onboard experiences can differ.",
+    "headers": ["Ship", "Position in Edge Series", "Key Consideration"],
+    "rows": [
+      ["Celebrity Edge", "First Edge Series ship", "Introduced the distinctive Edge design"],
+      ["Celebrity Apex", "Second Edge Series ship", "Expanded the Edge concept"],
+      ["Celebrity Beyond", "Third Edge Series ship", "Larger evolution of the design"],
+      ["Celebrity Ascent", "Fourth Edge Series ship", "Adds further dining and outdoor concepts"],
+      ["Celebrity Xcel", "Fifth Edge Series ship", "Builds on the series with newer experiences"]
+    ],
+    "footer": "Celebrity's fleet information identifies Xcel as the newest addition to the five-ship Edge Series currently listed by the cruise line."
+  },
+  "planningFactors": {
+    "title": "Planning a Celebrity Xcel Cruise",
+    "subtitle": "Compare these key factors before finalizing your booking details:",
+    "cards": [
+      {
+        "title": "Choose the Right Itinerary",
+        "description": "Look at ports, sea days, embarkation location, and total cruise length to match your preferred travel pace.",
+        "icon": "Compass",
+        "bullets": ["Balance sea days vs port days", "Check flight & embarkation ports"]
+      },
+      {
+        "title": "Compare Cabin Categories",
+        "description": "A cheaper cabin may provide less space or fewer benefits. An Infinite Veranda or suite may make sense for travelers who value the accommodation itself.",
+        "icon": "Bed",
+        "bullets": ["Evaluate living space needs", "Consider The Retreat perks"]
+      },
+      {
+        "title": "Check Dining Options",
+        "description": "Review included and specialty dining choices before deciding whether additional dining reservations or packages are worthwhile.",
+        "icon": "Utensils",
+        "bullets": ["Explore complimentary venues", "Pre-book popular specialty restaurants"]
+      },
+      {
+        "title": "Review the Deck Plan",
+        "description": "Use the current deck plan to identify potential noise sources, elevator distance, and proximity to preferred public venues.",
+        "icon": "Layers",
+        "bullets": ["Check above & below stateroom", "Locate elevators & public areas"]
+      },
+      {
+        "title": "Check What's Included",
+        "description": "Cruise fare inclusions can differ by fare type, promotion, cabin category, and specific sailing dates.",
+        "icon": "ShieldCheck",
+        "bullets": ["Confirm drink & Wi-Fi inclusions", "Verify suite-level amenities"]
+      }
+    ]
+  },
+  "finalAssessment": {
+    "title": "Is Celebrity Xcel a Good Choice for Your Cruise?",
+    "subtitles": [
+      "Celebrity Xcel is particularly worth considering if your priorities are modern design, premium cruising, innovative accommodations, varied dining, and destination-focused experiences.",
+      "The ship's Edge Series architecture gives it a distinctive identity, while the newer Xcel concepts expand on the features introduced aboard earlier Edge Series ships."
+    ],
+    "features": [
+      "Signature outward-facing Edge Series design",
+      "Innovative Infinite Verandas and luxury Retreat suites",
+      "Diverse dining from Spice Café to premium specialty venues",
+      "The Magic Carpet cantilevered viewpoint and venue",
+      "Exciting itineraries across the Caribbean and Europe"
+    ],
+    "summary": "The best choice ultimately depends on your itinerary, preferred cabin, budget, dining priorities, and the type of onboard atmosphere you want."
+  },
+  "expertCredentials": {
+    "name": "Angela Hughes",
+    "title": "Founder of Luxury Travel University & CEO of Trips & Ships Luxury Travel",
+    "experienceBadge": "40+ YEARS EXPERTISE",
+    "badge": "LUXURY CRUISE AUTHORITY",
+    "quote": "The Edge Series ships, including Xcel, represent a fundamental shift in how Celebrity thinks about the guest experience. It's not just about getting from port to port—it's about creating a destination onboard that competes with the ports themselves. The Magic Carpet, Infinite Verandas, and the dining concepts like Spice Café are not gimmicks; they are intentional design choices that change how you experience the ocean.",
+    "credentials": [
+      "Over 4 Decades Designing Luxury Cruise & Worldwide Travel Experiences",
+      "Explored 121+ Countries Across Seven Continents",
+      "Celebrity Cruises & Edge Series Architecture Specialist",
+      "CEO & Founder of Trips & Ships Luxury Travel",
+      "Expertise in The Retreat Suites, Stateroom Selection & VIP Inclusions",
+      "Personal Relationships with Celebrity Cruises Executives & Onboard Teams"
+    ],
+    "bio": "As founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel, Angela Hughes uses her personal, deep connections in the cruise industry to deliver custom cruise planning that regular booking engines simply cannot replicate."
+  },
+  "keyTakeaways": {
+    "title": "Key Takeaways",
+    "subtitle": "SUMMARY OF CELEBRITY XCEL",
+    "cards": [
+      {
+        "title": "Edge Series Lineage",
+        "description": "Celebrity Xcel is the fifth addition to Celebrity Cruises' acclaimed Edge Series family.",
+        "icon": "Ship"
+      },
+      {
+        "title": "Debut Timeline",
+        "description": "The modern vessel made its maiden voyage on November 18, 2025.",
+        "icon": "Calendar"
+      },
+      {
+        "title": "Decks Layout",
+        "description": "Features a total of 17 passenger-accessible decks to explore onboard.",
+        "icon": "Layers"
+      },
+      {
+        "title": "Staterooms Options",
+        "description": "Offers Inside, Ocean View, Veranda, Infinite Veranda, and premium suite categories.",
+        "icon": "Bed"
+      },
+      {
+        "title": "Magic Carpet",
+        "description": "Showcases the signature cantilevered floating platform as a focal feature.",
+        "icon": "Sparkles"
+      },
+      {
+        "title": "Diverse Dining",
+        "description": "Includes key venues like Spice Café, Oceanview Café, Mast Grill, and Cyprus Restaurant.",
+        "icon": "Utensils"
+      },
+      {
+        "title": "Itinerary Focus",
+        "description": "Routes sail across sunny Caribbean routes and cultural European destinations.",
+        "icon": "Globe"
+      },
+      {
+        "title": "Deck Selection",
+        "description": "Check the deck plan carefully to inspect noise levels and distances before booking.",
+        "icon": "Compass"
+      },
+      {
+        "title": "Ideal Audience",
+        "description": "Perfect for travelers who value modern ship designs, premium dining, and wellness.",
+        "icon": "Award"
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "When did Celebrity Xcel enter service?",
+      "answer": "Celebrity Xcel's maiden voyage was on November 18, 2025, making it the newest ship in Celebrity Cruises' Edge Series."
+    },
+    {
+      "question": "How many decks does Celebrity Xcel have?",
+      "answer": "Celebrity Xcel has 17 decks, according to Celebrity Cruises' current deck-plan information."
+    },
+    {
+      "question": "Is Celebrity Xcel an Edge Series ship?",
+      "answer": "Yes. Celebrity Xcel is the fifth ship in Celebrity Cruises' Edge Series, following Celebrity Edge, Apex, Beyond, and Ascent."
+    },
+    {
+      "question": "What is special about Celebrity Xcel?",
+      "answer": "Celebrity Xcel combines the established Edge Series design with newer dining, entertainment, and destination-focused concepts. Its features include outward-facing spaces, Infinite Verandas, and the Magic Carpet."
+    },
+    {
+      "question": "Does Celebrity Xcel have Infinite Veranda cabins?",
+      "answer": "Yes. Celebrity Xcel offers Infinite Veranda staterooms, which use a floor-to-ceiling opening to create an indoor/outdoor-style connection with the sea."
+    },
+    {
+      "question": "How large are Celebrity Xcel Infinite Veranda rooms?",
+      "answer": "Celebrity lists the referenced Infinite Veranda accommodation at approximately 243 square feet, including the integrated veranda space. Exact dimensions can vary by cabin category."
+    },
+    {
+      "question": "What restaurants are on Celebrity Xcel?",
+      "answer": "Celebrity's current Xcel information highlights dining venues including Spice Café, Oceanview Café, Mast Grill, and Cyprus Restaurant, along with additional dining and specialty options."
+    },
+    {
+      "question": "Does Celebrity Xcel have specialty dining?",
+      "answer": "Yes. Celebrity Xcel offers specialty dining experiences in addition to its included dining venues. Specific restaurants, menus, prices, and reservation requirements can vary by sailing."
+    },
+    {
+      "question": "Where does Celebrity Xcel sail?",
+      "answer": "Celebrity currently lists Celebrity Xcel itineraries in the Caribbean and Europe. Exact ports and cruise lengths depend on the sailing date and itinerary."
+    },
+    {
+      "question": "Does Celebrity Xcel have the Magic Carpet?",
+      "answer": "Yes. The Magic Carpet is one of the signature features associated with Celebrity's Edge Series and is part of the ship's distinctive design."
+    },
+    {
+      "question": "What cabin types are available on Celebrity Xcel?",
+      "answer": "Cabin choices include Inside, Ocean View, Veranda, Infinite Veranda, and suite accommodations, with accessible staterooms also available."
+    },
+    {
+      "question": "Is Celebrity Xcel good for couples?",
+      "answer": "Celebrity Xcel can be a strong option for couples seeking contemporary design, premium dining, ocean views, wellness spaces, and a sophisticated cruise environment."
+    },
+    {
+      "question": "Is Celebrity Xcel family-friendly?",
+      "answer": "Families can sail on Celebrity Xcel, although the ship's overall positioning emphasizes premium design, dining, relaxation, and destination experiences."
+    },
+    {
+      "question": "How should I choose a Celebrity Xcel cabin?",
+      "answer": "Start with your priorities—budget, balcony access, space, views, location, and suite benefits—then use the current deck plan to check nearby venues, elevators, public spaces, and potential sources of noise."
+    },
+    {
+      "question": "Where can I find Celebrity Xcel deck plans?",
+      "answer": "Celebrity Cruises publishes the current Xcel deck plans through its official website. Travelers should use the latest version when choosing a specific stateroom."
+    }
+  ],
+  "cta": {
+    "title": "Ready to Book Celebrity Xcel?",
+    "description": "Compare the ship's cabins, dining options, onboard experiences, deck locations, and current itineraries before choosing your sailing. Let our specialists help you find the perfect Celebrity Xcel cruise.",
+    "buttonText": "Speak with a Celebrity Xcel Specialist",
+    "buttonLink": "/contact"
+  }
+}
