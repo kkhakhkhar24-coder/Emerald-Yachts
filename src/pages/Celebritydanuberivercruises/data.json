@@ -1,0 +1,777 @@
+{
+  "seo": {
+    "title": "Celebrity Danube River Cruises: Routes, Ports & More",
+    "metaTitle": "Celebrity Danube River Cruises: Itineraries, Ports & Guide",
+    "metaDescription": "Explore Celebrity Danube River Cruises for 2027 and 2028, including Upper and Lower Danube itineraries, Budapest, Vienna, Bratislava, Christmas markets, sailing seasons, inclusions and pre- and post-cruise stays.",
+    "canonicalUrl": "https://www.tripsandships.com/celebrity-cruises/river-cruises/danube/"
+  },
+  "hero": {
+    "tag": "Celebrity Danube River Cruises",
+    "title": "Celebrity Danube River Cruises Routes, Ports & More",
+    "subtitle": "Itineraries, Ports & Guide for 2027 & 2028",
+    "primaryBtnText": "Plan My Celebrity Danube River Cruise",
+    "primaryBtnLink": "/contact",
+    "secondaryBtnText": "Speak With a Luxury Cruise Expert",
+    "secondaryBtnLink": "/contact"
+  },
+  "intro": {
+    "eyebrow": "EXPERIENCE THE DANUBE WITH CELEBRITY",
+    "title": "Celebrity Danube River Cruises",
+    "paragraphs": [
+      "The Danube River is one of Europe's most important waterways, connecting imperial cities, historic towns, vineyard-covered landscapes and cultural destinations across Central Europe.",
+      "Celebrity River Cruises brings its new premium river cruise experience to the Danube for 2027 and 2028, with itineraries connecting destinations such as Budapest, Bratislava, Vienna, the Wachau Valley, Melk, Passau, Regensburg and Vilshofen. Celebrity's current Danube program includes 7-night itineraries, with selected journeys featuring overnight stays and opportunities to add Before and After Stays.",
+      "For travelers considering a first European river cruise—or comparing Celebrity with other premium river cruise lines—the Danube offers a strong combination of history, architecture, scenic sailing, food, wine and major Central European cities."
+    ],
+    "badge": "Danube River 2027–2028",
+    "quickAnswer": {
+      "title": "What Are Celebrity Danube River Cruises?",
+      "text": "Celebrity Danube River Cruises are premium European river cruises sailing the Danube, with 2027 and 2028 itineraries visiting destinations including Budapest, Bratislava, Vienna, the Wachau Valley and German river cities. Celebrity's Danube program includes 7-night sailings, one shore excursion per day, meals, beverages and Wi-Fi, with Before and After Stay opportunities available on selected journeys."
+    }
+  },
+  "glance": {
+    "eyebrow": "PROGRAM OVERVIEW",
+    "title": "Celebrity Danube River Cruises at a Glance",
+    "headers": ["Feature", "Program Detail"],
+    "rows": [
+      ["Cruise Line", "Celebrity River Cruises"],
+      ["Sailing Years", "2027 & 2028"],
+      ["Typical Cruise Length", "7 nights"],
+      ["Main Region", "Danube River"],
+      ["Featured Region", "Upper & Lower Danube"],
+      ["Popular Starting City", "Budapest"],
+      ["Featured Cities", "Budapest, Bratislava, Vienna"],
+      ["Scenic Highlights", "Wachau Valley"],
+      ["German Destinations", "Vilshofen, Passau, Regensburg"],
+      ["Shore Excursions", "One included each day"],
+      ["Dining", "Included"],
+      ["Beverages", "Included"],
+      ["Wi-Fi", "Included"],
+      ["Christmas Markets", "Available on selected sailings"],
+      ["Before & After Stays", "Available on selected sailings"],
+      ["Ships", "Celebrity River fleet"],
+      ["Experience", "Premium, intimate & destination-focused"]
+    ],
+    "note": "Celebrity's current Danube offerings include Upper Danube journeys between Budapest and German destinations, as well as Christmas market itineraries and additional Lower Danube experiences."
+  },
+  "whereToSail": {
+    "eyebrow": "DESTINATIONS",
+    "title": "Where Does Celebrity Danube River Cruises Sail?",
+    "subtitle": "Celebrity's Danube itineraries are designed around the river's major capitals, historic towns and scenic stretches. Depending on the itinerary, travelers can experience:",
+    "items": [
+      { "title": "Budapest", "icon": "Building2", "category": "Hungary", "description": "Iconic Danube waterfront, historic Buda Castle, Grand Parliament, and thermal baths." },
+      { "title": "Bratislava", "icon": "Building2", "category": "Slovakia", "description": "Charming medieval Old Town, hilltop castle, cobblestone alleys, and riverside cafes." },
+      { "title": "Vienna", "icon": "Landmark", "category": "Austria", "description": "Imperial palaces, grand opera houses, world-class museums, and classical music legacy." },
+      { "title": "Hainburg", "icon": "MapPin", "category": "Austria", "description": "Historic riverside setting featuring ancient medieval fortifications and lush landscapes." },
+      { "title": "Wachau Valley", "icon": "Mountain", "category": "Austria", "description": "UNESCO World Heritage cultural landscape with terrace vineyards and castle ruins." },
+      { "title": "Melk", "icon": "Landmark", "category": "Austria", "description": "Home to the world-famous Benedictine Melk Abbey overlooking the peaceful Danube." },
+      { "title": "Engelhartszell", "icon": "MapPin", "category": "Austria", "description": "Austria's only Trappist monastery, surrounded by Upper Austrian river forests." },
+      { "title": "Vilshofen", "icon": "MapPin", "category": "Germany", "description": "Historic Bavarian river port and gateway town on the scenic German Danube." },
+      { "title": "Passau", "icon": "MapPin", "category": "Germany", "description": "The City of Three Rivers, known for St. Stephen's Cathedral and baroque beauty." },
+      { "title": "Regensburg", "icon": "Castle", "category": "Germany", "description": "Impeccably preserved UNESCO medieval city center and ancient Stone Bridge." },
+      { "title": "Linz", "icon": "MapPin", "category": "Austria", "description": "Dynamic blend of contemporary media arts, classical history, and Linzer Torte." },
+      { "title": "Dürnstein", "icon": "Castle", "category": "Austria", "description": "Blue baroque church tower and medieval castle where King Richard the Lionheart was held." },
+      { "title": "Krems", "icon": "MapPin", "category": "Austria", "description": "Historic wine-producing town gateway to the breathtaking Lower Danube valley." },
+      { "title": "Additional Danube Ports", "icon": "Compass", "category": "Central Europe", "description": "Diverse seasonal stops, Christmas market towns, and lower river cultural jewels." }
+    ],
+    "footerNote": "The exact ports depend on the sailing and itinerary direction. Celebrity's 7-night Budapest & Vienna itinerary, for example, travels between Budapest and Vilshofen and includes Bratislava, Hainburg, Vienna, the Wachau Valley, Melk and Engelhartszell."
+  },
+  "route": {
+    "eyebrow": "MAP & ROUTE",
+    "title": "Celebrity Danube River Cruise Map & Route",
+    "subtitle": "A typical Upper Danube itinerary can move between Hungary, Slovakia, Austria and Germany, combining major capitals with historic towns and scenic river landscapes.",
+    "exampleRoute": "Budapest → Bratislava → Hainburg → Vienna → Wachau Valley → Melk → Engelhartszell → Vilshofen",
+    "stops": [
+      { "title": "Budapest", "description": "Hungary's grand capital on the Danube waterfront with vibrant nightlife and thermal baths." },
+      { "title": "Bratislava", "description": "Slovakia's charming capital with pedestrianized historic center and hilltop castle." },
+      { "title": "Hainburg", "description": "Quaint Austrian riverside town surrounded by ancient medieval stone gates." },
+      { "title": "Vienna", "description": "Austria's imperial capital known for grand Habsburg palaces, cafes, and classical concerts." },
+      { "title": "Wachau Valley", "description": "Scenic 24-mile stretch of terraced vineyards, cliffside fortresses, and postcard villages." },
+      { "title": "Melk", "description": "Scenic Austrian town renowned for the magnificent baroque Melk Abbey." },
+      { "title": "Engelhartszell", "description": "Serene Austrian port famous for Trappist beer brewing and peaceful river vistas." },
+      { "title": "Vilshofen", "description": "Charming Bavarian destination serving as the scenic gateway to Germany." }
+    ],
+    "note": "This route combines Budapest's Danube waterfront, Bratislava's historic center, Austrian river scenery, Vienna's imperial culture, Wachau Valley vineyards, Melk, Bavarian river destinations and scenic Upper Danube sailing. Celebrity currently offers this 7-night Budapest-to-Vilshofen itinerary on ships including Celebrity Seeker and Celebrity Boundless."
+  },
+  "cityProfiles": {
+    "eyebrow": "CELEBRITY DANUBE RIVER CRUISE CITIES",
+    "title": "Featured Danube River Cruise Cities",
+    "subtitle": "Explore the iconic Central European capitals, vineyard valleys, and historic gems that define Celebrity Danube sailings.",
+    "cities": [
+      {
+        "title": "Budapest",
+        "country": "Hungary",
+        "description": "Budapest is one of the most important gateway cities for Celebrity Danube River Cruises. Celebrity itineraries frequently include overnight stays here.",
+        "highlights": [
+          "Danube waterfront & Parliament views",
+          "Historic Buda Castle & Fisherman's Bastion",
+          "World-famous historic thermal baths",
+          "Architectural bridges & scenic evening sailing",
+          "Renowned museums & Hungarian cuisine tastings"
+        ]
+      },
+      {
+        "title": "Bratislava",
+        "country": "Slovakia",
+        "description": "Bratislava provides a smaller-scale, walkable Central European experience nestled gracefully between Budapest and Vienna.",
+        "highlights": [
+          "Historic pedestrian Old Town & plazas",
+          "Iconic white-walled Bratislava Castle",
+          "Charming cobblestone streets & local cafes",
+          "Gothic St. Martin's Cathedral",
+          "Lively cultural attractions & riverside promenade"
+        ]
+      },
+      {
+        "title": "Vienna",
+        "country": "Austria",
+        "description": "Vienna is one of the signature destinations of the Danube. Selected sailings feature overnight stays to experience the city day and night.",
+        "highlights": [
+          "Imperial Schönbrunn & Hofburg Palaces",
+          "World-class art museums & galleries",
+          "Classical Mozart & Strauss music concerts",
+          "Historic Viennese coffee house traditions",
+          "Grand State Opera House & Ringstrasse architecture"
+        ]
+      },
+      {
+        "title": "Wachau Valley",
+        "country": "Austria",
+        "description": "The Wachau Valley is the scenic jewel of the Austrian Danube, celebrated worldwide for its UNESCO-protected wine-growing hills.",
+        "highlights": [
+          "Centuries-old terraced Riesling vineyards",
+          "Historic picturesque riverside villages",
+          "Romantic medieval castle ruins & legends",
+          "Rich Austrian viticulture and culinary heritage",
+          "Breathtaking open-air scenic daytime cruising"
+        ]
+      },
+      {
+        "title": "Melk",
+        "country": "Austria",
+        "description": "Melk provides access to the rich cultural and spiritual landscape of Lower Austria along the western entrance of the Wachau Valley.",
+        "highlights": [
+          "Magnificent Benedictine Melk Abbey",
+          "Extensive monastic library with rare manuscripts",
+          "Baroque abbey gardens and tranquil courtyards",
+          "Historic town square and boutique shopping",
+          "Gateway to Austrian Danube cultural history"
+        ]
+      },
+      {
+        "title": "Regensburg & Passau",
+        "country": "Germany",
+        "description": "Regensburg and Passau add authentic German medieval history to selected 2028 itineraries, featuring ancient architecture and Bavarian charm.",
+        "highlights": [
+          "Regensburg UNESCO medieval Old Town",
+          "12th-century Stone Bridge over the Danube",
+          "Passau St. Stephen's Cathedral & giant pipe organ",
+          "Meeting point of three rivers: Danube, Inn & Ilz",
+          "Traditional Bavarian beer gardens and local sausages"
+        ]
+      }
+    ]
+  },
+  "citiesGlance": {
+    "eyebrow": "CITIES OVERVIEW",
+    "title": "Danube River Cruise Cities at a Glance",
+    "headers": ["City / Region", "Country", "Best Known For"],
+    "rows": [
+      ["Budapest", "Hungary", "Danube waterfront, history & thermal baths"],
+      ["Bratislava", "Slovakia", "Old Town & castle"],
+      ["Vienna", "Austria", "Imperial culture, music & architecture"],
+      ["Hainburg", "Austria", "Historic riverside setting"],
+      ["Wachau Valley", "Austria", "Vineyards & scenic sailing"],
+      ["Melk", "Austria", "Historic & cultural attractions"],
+      ["Passau", "Germany", "Historic riverside city"],
+      ["Regensburg", "Germany", "Medieval architecture"],
+      ["Vilshofen", "Germany", "Bavarian gateway"]
+    ],
+    "note": "Not every Celebrity Danube sailing visits every destination, so travelers should compare the individual itinerary before booking."
+  },
+  "inclusions": {
+    "eyebrow": "VOYAGE FARE",
+    "title": "What Is Included on Celebrity Danube River Cruises?",
+    "subtitle": "Celebrity's Danube River Cruises include several core elements in the cruise fare to ensure a premium, all-inclusive luxury vacation.",
+    "points": [
+      "Shore Excursions — One included guided shore excursion every day in every port of call",
+      "Fine Dining — Included gourmet meals & destination-inspired regional European menus",
+      "Premium Beverages — Included fine wines, craft beers, spirits & specialty coffees throughout the cruise",
+      "High-Speed Wi-Fi — Complimentary high-speed Wi-Fi throughout the ship",
+      "Onboard Experiences — Intimate spaces, regional musical performances, folkloric storytellers & enrichment talks"
+    ]
+  },
+  "excursions": {
+    "eyebrow": "SHORE EXCURSIONS",
+    "title": "Celebrity Danube River Cruise Excursions",
+    "subtitle": "One of the major advantages of river cruising is the ability to reach European cities and cultural destinations while avoiding repeated hotel changes. Celebrity includes one shore excursion per day.",
+    "focusPoints": [
+      "Historic imperial cities and grand boulevards",
+      "Gothic, Baroque, and Renaissance architecture tours",
+      "Destination-inspired regional culinary and pastry tastings",
+      "Wachau Valley and Austrian wine cellar excursions",
+      "Local cultural encounters and guided neighborhood walks",
+      "World-class European art galleries and museum entries",
+      "Historic castles, fortifications, and landmark tours",
+      "Authentic Central European traditions and folklore",
+      "Local storytellers and expert resident guides",
+      "Destination-focused immersive experiences"
+    ],
+    "note": "Celebrity emphasizes locally connected experiences designed to bring travelers closer to the people, culture and history of each destination."
+  },
+  "seasons": {
+    "eyebrow": "SAILING SEASONS",
+    "title": "Best Time for a Celebrity Danube River Cruise",
+    "subtitle": "There is no single best month for everyone. The ideal season depends on what you want to experience.",
+    "cards": [
+      {
+        "title": "Spring Danube River Cruises",
+        "description": "Spring can be attractive for travelers interested in mild weather, fresh scenery, city sightseeing, scenic river landscapes and European cultural travel.",
+        "icon": "Leaf",
+        "tags": ["Mild weather", "City sightseeing", "Fresh spring blooms", "Comfortable crowds", "Budapest & Vienna"]
+      },
+      {
+        "title": "Summer Danube River Cruises",
+        "description": "Summer provides longer daylight hours and more opportunities for exploring riverside destinations, with long days, outdoor sightseeing, walking tours and scenic sailing.",
+        "icon": "Sun",
+        "tags": ["Long daylight hours", "Outdoor cafes", "Walking tours", "Scenic open-air cruising", "Warm weather"]
+      },
+      {
+        "title": "Fall Danube River Cruises",
+        "description": "Fall can be particularly appealing for travelers interested in vineyards, harvest-season scenery and comfortable sightseeing along the Wachau Valley.",
+        "icon": "Wine",
+        "tags": ["Wachau grape harvest", "Golden vineyards", "Crisp autumn air", "Wine tastings", "Cultural season"]
+      },
+      {
+        "title": "Christmas Danube River Cruises",
+        "description": "Celebrity specifically features Danube Christmas Market Cruises, including itineraries between Budapest and Nuremberg, with holiday atmosphere and seasonal shopping.",
+        "icon": "TreePine",
+        "tags": ["Christmas markets", "Holiday lights", "Mulled wine & gingerbread", "Seasonal crafts", "Winter magic"]
+      }
+    ]
+  },
+  "seasonTable": {
+    "eyebrow": "AT A GLANCE",
+    "title": "Best Time to Take a Celebrity Danube River Cruise",
+    "headers": ["Season / Period", "Key Focus & Highlights"],
+    "rows": [
+      ["Spring", "Mild weather & sightseeing"],
+      ["Summer", "Long days & outdoor exploration"],
+      ["Fall", "Vineyards & autumn scenery"],
+      ["Late November–December", "Christmas markets"]
+    ],
+    "note": "The right season depends more on the experience you want than on a universally 'best' month."
+  },
+  "ships": {
+    "eyebrow": "DANUBE RIVER CRUISE SHIPS",
+    "title": "Celebrity Danube River Fleet: Compass, Seeker & Boundless",
+    "subtitle": "Celebrity's Danube sailings use its new generation of river ships designed specifically for European waterways.",
+    "ships": [
+      {
+        "title": "Celebrity Compass",
+        "category": "Inaugural Danube Flagship",
+        "description": "Celebrity Compass is designed around the river experience, with spacious interiors, open-air spaces and the Skylight Infinite Balcony Suite concept. Debuting August 5, 2027, with an intimate capacity of 172 guests.",
+        "items": [
+          "Inaugural sailing August 5, 2027",
+          "Intimate 172-guest capacity for personalized service",
+          "Revolutionary Skylight Infinite Balcony Suites",
+          "100% river-facing staterooms and modern panoramic suites",
+          "Dedicated butler service for all suite guests",
+          "Open-air observation lounges and sun deck social spaces"
+        ]
+      },
+      {
+        "title": "Celebrity Seeker & Boundless",
+        "category": "Modern River Fleet",
+        "description": "Celebrity Seeker and Celebrity Boundless introduce contemporary approaches to river cruising, sailing Danube itineraries between Budapest and Vilshofen with modern luxury spaces.",
+        "items": [
+          "Sailing Upper Danube routes between Budapest and Germany",
+          "Contemporary residential design inspired by Celebrity ocean ships",
+          "Destination-focused dining venues and panoramic lounges",
+          "Eco-friendly hybrid propulsion and quiet river navigation",
+          "Expanding departure choices across 2027 and 2028 sailing seasons"
+        ]
+      }
+    ],
+    "verdict": "Celebrity's Danube fleet brings contemporary ocean luxury, panoramic river accommodations, and destination-immersive itineraries to Europe's storied Danube river."
+  },
+  "accommodations": {
+    "eyebrow": "STATEROOMS & SUITES",
+    "title": "Celebrity Danube River Cruise Accommodations",
+    "subtitle": "Celebrity's river accommodations are designed around river views, natural light and indoor-outdoor connections.",
+    "cabins": [
+      {
+        "id": "river-view",
+        "title": "River View Staterooms",
+        "deck": "Lower Deck",
+        "size": "Approx. 180 sq. ft.",
+        "description": "Comfortable, contemporary staterooms featuring large picture windows providing water-level views of the Danube's gentle currents and landscapes.",
+        "features": [
+          "King-size bed with custom luxury bedding",
+          "Large picture window with river-level scenery",
+          "Marble-accented en-suite bathroom with glass shower",
+          "Plush bathrobes, slippers, and premium bath amenities",
+          "In-room filtered water and daily housekeeping"
+        ]
+      },
+      {
+        "id": "infinite-balcony",
+        "title": "Infinite Balcony Staterooms",
+        "deck": "Middle & Upper Decks",
+        "size": "Approx. 210 sq. ft.",
+        "description": "Celebrity's signature ocean innovation adapted for rivers. With the touch of a button, the entire glass wall slides down to transform your room into an open-air balcony.",
+        "features": [
+          "Seamless push-button motorized glass window",
+          "Expands usable indoor living area by 23%",
+          "Flexible seating area directly beside the railing",
+          "Panoramic floor-to-ceiling river perspectives",
+          "Climate-controlled indoor/outdoor comfort"
+        ]
+      },
+      {
+        "id": "balcony",
+        "title": "Veranda Balcony Staterooms",
+        "deck": "Upper Deck",
+        "size": "Approx. 225 sq. ft.",
+        "description": "Traditional step-out open-air verandas featuring comfortable patio chairs and table for morning coffee or evening wine as you glide past castles.",
+        "features": [
+          "Private walk-out exterior teak balcony",
+          "Outdoor seating with table and two comfortable chairs",
+          "Floor-to-ceiling sliding glass balcony doors",
+          "King bed configuration with pillow menu",
+          "Complimentary in-room breakfast delivery"
+        ]
+      },
+      {
+        "id": "vista-suite",
+        "title": "Vista Balcony Suites",
+        "deck": "Upper Deck",
+        "size": "Approx. 310 sq. ft.",
+        "description": "Spacious luxury suites offering dedicated sitting areas, expanded bathrooms, and personalized butler service throughout your Danube voyage.",
+        "features": [
+          "Dedicated European-trained butler service",
+          "Separate living area with sofa and coffee table",
+          "Complimentary stocked minibar with premium drinks",
+          "Expansive walk-out veranda with sun loungers",
+          "Priority shore excursion boarding and dining reservations"
+        ]
+      },
+      {
+        "id": "skylight-suite",
+        "title": "Skylight Infinite Balcony Suites",
+        "deck": "Top Deck",
+        "size": "Approx. 390 sq. ft.",
+        "description": "The pinnacle of Celebrity river design. Features ceiling-integrated overhead skylights that flood the suite with natural light and night-sky stargazing views.",
+        "features": [
+          "Innovative ceiling skylight for day and night sky views",
+          "Full Infinite Balcony motorized glass facade",
+          "Master bathroom with double vanity and soaking tub",
+          "Comprehensive butler and concierge service",
+          "Complimentary laundry pressing and in-suite dining"
+        ]
+      }
+    ]
+  },
+  "beforeAfter": {
+    "eyebrow": "EXTEND YOUR JOURNEY",
+    "title": "Danube River Cruise Before & After Stays",
+    "subtitle": "A Celebrity Danube River Cruise does not have to begin or end when the ship does. Celebrity offers Before and After Stays that allow travelers to add time in European cities before or after their river sailing.",
+    "list": [
+      "Premium hotel accommodations",
+      "Daily hotel breakfast included",
+      "Local-led experiences and private tours",
+      "Dedicated Destination Insider experiences",
+      "Seamless airport and ship transfers",
+      "Curated guided sightseeing tours"
+    ],
+    "budapestBefore": {
+      "title": "Budapest Before Your Danube Cruise",
+      "description": "Budapest is one of the most natural places to extend a Danube River cruise. A pre-cruise stay can give you additional time for Danube sightseeing, historic architecture, thermal baths, museums, local dining, historic neighborhoods and Hungarian culture. Rather than arriving immediately before the ship departs, adding extra nights makes your European vacation feel more relaxed.",
+      "highlights": [
+        "Extra nights at a centrally located luxury Budapest hotel",
+        "Private evening Danube riverbank illuminated tours",
+        "Relaxing morning at Széchenyi or Gellért thermal baths",
+        "Guided walking tour of the Castle Hill district",
+        "Seamless transfer directly to the Celebrity river ship"
+      ]
+    },
+    "viennaAfter": {
+      "title": "Vienna After or Before Your Danube Cruise",
+      "description": "Vienna is another strong destination for extending a Danube journey. Additional time allows travelers to explore palaces, museums, classical music, historic cafés, art, architecture and local neighborhoods. Celebrity's Danube itinerary can already include an overnight stay in Vienna on selected sailings, making the city particularly suitable for travelers who want more time ashore.",
+      "highlights": [
+        "Luxury hotel stay in Vienna's historic center",
+        "Exclusive evening classical music concert tickets",
+        "In-depth guided tour of Belvedere & Schönbrunn Palaces",
+        "Leisurely afternoon in historic Viennese coffeehouses",
+        "Hassle-free transfers between hotel, ship, and airport"
+      ]
+    }
+  },
+  "beforeAfterTable": {
+    "eyebrow": "STAY INCLUSIONS",
+    "title": "What's Included in Celebrity Before & After Stays?",
+    "headers": ["Feature / Component", "Program Detail"],
+    "rows": [
+      ["Hotel", "Premium accommodation options"],
+      ["Breakfast", "Daily hotel breakfast"],
+      ["Transportation", "Transfers"],
+      ["Tours", "Curated local experiences"],
+      ["Local Expertise", "Destination Insider"],
+      ["Guided Experiences", "Local Storytellers"],
+      ["Customization", "Options based on selected stay"]
+    ],
+    "note": "Celebrity describes these experiences as a way to extend the river journey while adding locally focused experiences in major European cities."
+  },
+  "riverVsOcean": {
+    "eyebrow": "RIVER VS OCEAN",
+    "title": "Celebrity Danube River Cruises vs. Ocean Cruises",
+    "headers": ["Danube River Cruise", "Celebrity Ocean Cruise"],
+    "rows": [
+      ["Smaller river ship (approx. 172 guests)", "Larger ocean ship (2,000–3,200+ guests)"],
+      ["European river destinations & inland waterways", "Ocean destinations worldwide & island ports"],
+      ["Direct city-center docking & walk-off access", "Traditional deep-water commercial cruise ports"],
+      ["Destination-focused immersive cultural rhythm", "Ship and destination focused with broad resort amenities"],
+      ["One excursion per day included in voyage fare", "Shore excursions booked and priced individually"],
+      ["Ever-changing river scenery on both banks", "Expansive open ocean sea days and horizons"],
+      ["Intimate, quiet, and personalized atmosphere", "Resort-style atmosphere with large theater shows"],
+      ["Multiple European countries on one quiet waterway", "Broader global itinerary choices and island hopping"]
+    ],
+    "note": "Celebrity describes its river program as a more intimate experience, with onboard and onshore experiences centered around Europe's cultural and historic destinations."
+  },
+  "rhineVsDanube": {
+    "eyebrow": "RIVER COMPARISON",
+    "title": "Rhine vs. Danube: Which Celebrity River Cruise Is Better?",
+    "headers": ["Danube River Cruise", "Rhine River Cruise"],
+    "rows": [
+      ["Budapest starting/ending hub", "Amsterdam starting/ending hub"],
+      ["Vienna imperial capital highlights", "Cologne grand cathedral highlights"],
+      ["Bratislava historic old town", "Rüdesheim wine & music village"],
+      ["Wachau Valley scenic vineyards", "Strasbourg Alsatian canal district"],
+      ["Regensburg & Passau Bavarian charm", "Basel Swiss cultural gateway"],
+      ["Imperial cities & Habsburg history", "Vineyards, castles & fairytale gorges"],
+      ["Central European destinations", "Netherlands, Germany, France & Switzerland"]
+    ],
+    "choiceDanube": {
+      "title": "Choose the Danube If You Want:",
+      "items": [
+        "Vienna's grand imperial palaces and classical music concerts",
+        "Budapest's illuminated waterfront and thermal bath traditions",
+        "Bratislava's historic cobblestone Old Town and castle",
+        "Central European and Austro-Hungarian history",
+        "Imperial Habsburg architecture and world-class museums",
+        "Wachau Valley terraced vineyards and Melk Abbey",
+        "Danube Christmas markets in Budapest, Vienna, and Nuremberg"
+      ]
+    },
+    "choiceRhine": {
+      "title": "Choose the Rhine If You Want:",
+      "items": [
+        "Amsterdam's UNESCO canal rings and world-famous museums",
+        "Cologne's iconic twin-spired Gothic cathedral",
+        "Strasbourg's charming French-German Alsatian architecture",
+        "Upper Middle Rhine Valley with 40+ hilltop castles",
+        "Rheingau and Alsatian hillside Riesling vineyards",
+        "Picturesque half-timbered medieval German villages",
+        "Western European multi-country culture across 4 nations"
+      ]
+    },
+    "note": "Both rivers offer distinct European charms—the Danube excels in grand imperial capitals, while the Rhine highlights romantic castles and cliffside vineyards."
+  },
+  "isItWorthIt": {
+    "eyebrow": "INVESTMENT & VALUE",
+    "title": "Are Celebrity Danube River Cruises Worth It?",
+    "subtitle": "Celebrity Danube River Cruises can be particularly attractive to travelers who want modern ship design, intimate cruising, and seamless multi-country European access.",
+    "cards": [
+      {
+        "title": "A New Premium Product",
+        "description": "Fresh, contemporary luxury approach debuting in 2027 and 2028.",
+        "icon": "Sparkles"
+      },
+      {
+        "title": "Modern Ship Design",
+        "description": "Innovative residential aesthetics and Skylight Infinite Balcony suites.",
+        "icon": "Ship"
+      },
+      {
+        "title": "Intimate River Ambiance",
+        "description": "Boutique ship size with approximately 172 guests and high staff ratio.",
+        "icon": "Users"
+      },
+      {
+        "title": "Direct City-Center Access",
+        "description": "Step right off the ship into the heart of Budapest, Bratislava, and Vienna.",
+        "icon": "Landmark"
+      },
+      {
+        "title": "Included Daily Excursions",
+        "description": "One curated guided tour or cultural experience included every single day.",
+        "icon": "Compass"
+      },
+      {
+        "title": "Included Gourmet Dining",
+        "description": "Locally inspired Austrian and Hungarian cuisine with open seating.",
+        "icon": "Utensils"
+      },
+      {
+        "title": "Included Beverages & Wine",
+        "description": "Fine regional wines, beers, cocktails, and specialty coffees covered.",
+        "icon": "Wine"
+      },
+      {
+        "title": "Included High-Speed Wi-Fi",
+        "description": "Seamless internet connectivity included throughout your journey.",
+        "icon": "Wifi"
+      },
+      {
+        "title": "Seasonal Diversity",
+        "description": "From spring blooms and sunny summer days to golden autumn vineyards.",
+        "icon": "Calendar"
+      },
+      {
+        "title": "Christmas Market Sailings",
+        "description": "Magical holiday departures visiting historic Central European markets.",
+        "icon": "TreePine"
+      },
+      {
+        "title": "Before & After Extensions",
+        "description": "Extend your journey with luxury hotel stays in Budapest and Prague.",
+        "icon": "Plane"
+      }
+    ],
+    "footerNote": "The strongest reason to choose the Danube is the combination of major Central European capitals and scenic river landscapes. In one journey, travelers can move between Budapest, Bratislava, Vienna, the Wachau Valley and historic German destinations."
+  },
+  "whoShouldChoose": {
+    "eyebrow": "WHO IS IT FOR?",
+    "title": "Who Should Choose a Celebrity Danube River Cruise?",
+    "headers": ["Traveler Type", "Why the Danube Is a Great Match"],
+    "rows": [
+      [
+        "First-Time River Cruisers",
+        "The Danube offers an accessible introduction to European river cruising because it combines recognizable cities with scenic sailing."
+      ],
+      [
+        "Celebrity Ocean Cruise Guests",
+        "Travelers already familiar with Celebrity may enjoy experiencing the brand in a more intimate river environment."
+      ],
+      [
+        "Couples & Anniversaries",
+        "The relaxed pace, European cities and scenic sailing make the Danube particularly well suited to couples."
+      ],
+      [
+        "History & Culture Travelers",
+        "Vienna, Budapest, Bratislava and the historic Danube towns offer a broad range of European history and culture."
+      ],
+      [
+        "Christmas Market Travelers",
+        "The Danube provides access to major European Christmas market destinations during the holiday season."
+      ],
+      [
+        "Multi-Generational Travelers",
+        "The variety of excursions and relatively relaxed travel format can work well for families traveling across generations."
+      ]
+    ]
+  },
+  "whoMayPreferAnother": {
+    "eyebrow": "WORTH CONSIDERING",
+    "title": "Who May Prefer Another Danube River Cruise?",
+    "subtitle": "Celebrity may not be the ideal match for travelers who have different vacation preferences:",
+    "features": [
+      {
+        "title": "Looking for Budget River Fares",
+        "description": "Travelers seeking the lowest available entry-level river cruise fare rather than an upscale, inclusive product."
+      },
+      {
+        "title": "Prefer Traditional Antique Decor",
+        "description": "Travelers who prefer ornate, heavily traditional European antique decor over sleek, modern contemporary luxury."
+      },
+      {
+        "title": "Desire Mega-Ship Entertainment",
+        "description": "Travelers seeking large-scale Broadway musical productions, casinos, and high-energy nightlife on the water."
+      },
+      {
+        "title": "Prefer 200+ Passenger River Ships",
+        "description": "Travelers who prefer larger river cruise vessels with multiple entertainment lounges and broad passenger pools."
+      },
+      {
+        "title": "Destinations Outside Central Europe",
+        "description": "Travelers looking for itineraries in southern France, Portugal's Douro, or Egypt's Nile at this time."
+      }
+    ]
+  },
+  "prosCons": {
+    "eyebrow": "PROS & CONS",
+    "title": "Celebrity Danube River Cruises Pros & Cons",
+    "prosTitle": "Pros & Advantages",
+    "consTitle": "Considerations & Limitations",
+    "pros": [
+      "New premium river cruise program debuting 2027 and 2028",
+      "Danube itineraries for 2027 and 2028 sailing seasons",
+      "Upper Danube routes between Budapest and Bavarian Germany",
+      "Lower Danube and Christmas market sailing options",
+      "Flagship destinations including Budapest and Vienna",
+      "Charming port calls in Bratislava and Bavarian towns",
+      "Scenic daytime sailing through the Wachau Valley",
+      "Visits to multiple Central European countries without packing unpacked bags",
+      "One shore excursion per day included in voyage fare",
+      "Included fine dining and destination-inspired menus",
+      "High-speed Wi-Fi included throughout the cruise",
+      "Included beverages, fine wines, and specialty coffees",
+      "Modern boutique river ships with only 172 guests",
+      "Innovative Skylight Infinite Balcony Suite designs",
+      "Enchanting holiday Christmas market itineraries",
+      "Seamless Before and After Stay options in Budapest and Prague"
+    ],
+    "cons": [
+      "Newer river product with less operating history compared to legacy river lines",
+      "Current program focuses on selected European rivers (Danube & Rhine)",
+      "Individual itineraries vary considerably by departure date",
+      "Selected ultra-premium shore excursions can cost extra",
+      "Exact inclusions and suite categories should always be confirmed for your specific sailing date"
+    ],
+    "bottomNote": "Weighing these factors helps determine whether Celebrity's inaugural river product aligns with your European travel aspirations."
+  },
+  "stepGuide": {
+    "eyebrow": "PLANNING WALKTHROUGH",
+    "title": "How to Choose the Best Celebrity Danube River Cruise",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Choose Your Direction",
+        "description": "Decide whether you prefer Budapest to Vilshofen, Vilshofen to Budapest, Budapest to Regensburg, or another Danube itinerary available for your travel dates. Celebrity currently offers both Budapest-to-Germany and Germany-to-Budapest itinerary formats.",
+        "tips": "Budapest to Vilshofen | Vilshofen to Budapest | Budapest to Regensburg"
+      },
+      {
+        "number": "02",
+        "title": "Choose Your Season",
+        "description": "Think about what matters most: spring scenery, summer weather, autumn vineyards or Christmas markets. Each period offers distinct daylight hours, scenery, and regional festivities.",
+        "tips": "Spring scenery | Summer weather | Autumn vineyards | Christmas markets"
+      },
+      {
+        "number": "03",
+        "title": "Compare Ports & Overnights",
+        "description": "Do not choose solely based on the number of nights. Look at the cities and experiences that matter most to you, especially overnights in Budapest or Vienna.",
+        "tips": "Overnight stays in Budapest & Vienna provide magical evening exploration."
+      },
+      {
+        "number": "04",
+        "title": "Select Your Accommodation",
+        "description": "Compare River View, Infinite Balcony, Balcony, Vista Balcony Suite and Skylight Infinite Balcony Suite to find your ideal balance of space, light, and butler service.",
+        "tips": "River View | Infinite Balcony | Balcony | Vista Balcony Suite | Skylight Suite"
+      },
+      {
+        "number": "05",
+        "title": "Consider a Before or After Stay",
+        "description": "Adding extra nights in Budapest, Vienna, Prague or another available city can turn a 7-night river cruise into a more complete and unhurried European vacation.",
+        "tips": "Budapest | Vienna | Prague"
+      }
+    ]
+  },
+  "expertCredentials": {
+    "name": "Angela Hughes",
+    "title": "Founder & CEO, Trips & Ships Luxury Travel",
+    "badge": "Celebrity River Cruise Specialist",
+    "experienceBadge": "40+ Years Experience | 120+ Countries",
+    "quote": "The Danube is one of the strongest choices for travelers who want major European cities, cultural variety and a relaxed river-cruise pace.",
+    "credentials": [
+      "Premium & luxury cruising advisor",
+      "European river cruise planning expert",
+      "Danube itinerary specialist",
+      "Suite & stateroom selection authority",
+      "Concierge-level cruise planning"
+    ],
+    "bio": "You can combine Budapest and Vienna with Bratislava, the Wachau Valley and historic German destinations, while the ship moves with you between destinations. For Celebrity guests, the Danube also offers an opportunity to experience the brand in a smaller, more intimate setting than its ocean ships.",
+    "highlights": [
+      "Budapest & Vienna Highlights",
+      "Scenic Wachau Valley Sailing",
+      "Included Daily Shore Excursions",
+      "Intimate Luxury River Ships",
+      "Seamless Multi-Country Access"
+    ]
+  },
+  "whyPlan": {
+    "eyebrow": "PLANNING ADVANTAGE",
+    "title": "Why Plan Your Celebrity Danube River Cruise With Trips & Ships Luxury Travel?",
+    "subtitle": "Choosing the right Danube itinerary involves more than selecting a departure date. Trips & Ships Luxury Travel provides comprehensive expertise to curate your dream voyage.",
+    "pillars": [
+      { "title": "Compare Celebrity Danube Itineraries", "description": "Expert side-by-side analysis of sailing dates, route directions, and ports." },
+      { "title": "Choose the Best Sailing Season", "description": "Align your travel dates with peak wine harvest, mild spring weather, or festive holiday markets." },
+      { "title": "Compare Budapest & German Gateways", "description": "Guidance on departure and arrival city logistics, flight options, and rail connections." },
+      { "title": "Select the Right Stateroom or Suite", "description": "Insight into deck locations, Infinite Balconies, and Skylight Suite privileges." },
+      { "title": "Evaluate Included Excursions", "description": "Guidance on daily included tours and optional premium destination experiences." },
+      { "title": "Arrange Pre-Cruise Budapest Stays", "description": "Luxury hotel bookings, private airport transfers, and customized city tours." },
+      { "title": "Arrange Post-Cruise European Extensions", "description": "Seamless onward itineraries into Prague, Salzburg, Munich, or the Alps." },
+      { "title": "Coordinate International Flights", "description": "Open-jaw and multi-city flight planning optimized for river embarkation and disembarkation." },
+      { "title": "Arrange Private Chauffeur Transfers", "description": "Effortless private door-to-door transportation between airports, hotels, and piers." },
+      { "title": "Compare With Other Luxury River Lines", "description": "Objective comparisons with AmaWaterways, Uniworld, Viking, and Tauck." },
+      { "title": "Build a Customized European Vacation", "description": "Tailored multi-week itineraries centered around your 7-night Danube voyage." }
+    ],
+    "note": "A well-planned Danube River cruise can become much more than a week on the river—it can be the centerpiece of a larger European journey."
+  },
+  "faqs": [
+    {
+      "question": "1. What is a Celebrity Danube River Cruise?",
+      "answer": "A Celebrity Danube River Cruise is a premium European river cruise experience sailing the Danube, with itineraries visiting destinations including Budapest, Bratislava, Vienna, the Wachau Valley and German river cities."
+    },
+    {
+      "question": "2. When do Celebrity Danube River Cruises begin?",
+      "answer": "Celebrity's inaugural river cruises begin in August 2027, with Danube and Rhine itineraries offered for 2027 and 2028."
+    },
+    {
+      "question": "3. How long are Celebrity Danube River Cruises?",
+      "answer": "Celebrity currently offers 7-night Danube itineraries, including Budapest-to-Vilshofen and other Upper Danube routes."
+    },
+    {
+      "question": "4. Which cities does Celebrity visit on the Danube?",
+      "answer": "Celebrity Danube itineraries can include Budapest, Bratislava, Vienna, Hainburg, the Wachau Valley, Melk, Passau, Regensburg, Linz and Vilshofen, although exact ports depend on the itinerary."
+    },
+    {
+      "question": "5. Does Celebrity Danube River Cruises sail from Budapest?",
+      "answer": "Yes. Celebrity offers Danube itineraries beginning in Budapest, including 7-night journeys from Budapest to Vilshofen and Budapest to Regensburg."
+    },
+    {
+      "question": "6. Does Celebrity Danube River Cruises sail to Vienna?",
+      "answer": "Yes. Vienna is one of the featured destinations on Celebrity Danube itineraries, with selected sailings including an overnight stay."
+    },
+    {
+      "question": "7. What is included on Celebrity Danube River Cruises?",
+      "answer": "Celebrity states that river cruise fares include meals, beverages, Wi-Fi, entertainment options and one shore excursion per day."
+    },
+    {
+      "question": "8. Are shore excursions included on Celebrity Danube cruises?",
+      "answer": "Yes. Celebrity includes one shore excursion every day on its river cruises."
+    },
+    {
+      "question": "9. Is Wi-Fi included on Celebrity Danube River Cruises?",
+      "answer": "Yes. Wi-Fi is included as part of the Celebrity River Cruises fare."
+    },
+    {
+      "question": "10. Are drinks included on Celebrity Danube River Cruises?",
+      "answer": "Yes. Celebrity states that beverages, including alcoholic beverages, are included in the river cruise fare."
+    },
+    {
+      "question": "11. What is the best time for a Celebrity Danube River Cruise?",
+      "answer": "The best time depends on your interests. Spring and summer are suited to general sightseeing, fall can appeal to travelers interested in vineyards and seasonal scenery, and late November through December is best for Christmas markets."
+    },
+    {
+      "question": "12. Are Celebrity Danube River Cruises good for Christmas markets?",
+      "answer": "Yes. Celebrity offers dedicated Danube Christmas Market Cruises, including itineraries between Budapest and Nuremberg."
+    },
+    {
+      "question": "13. What ships sail Celebrity Danube River Cruises?",
+      "answer": "Celebrity's Danube fleet includes Celebrity Compass, Celebrity Seeker and Celebrity Boundless, with these ships appearing on current Danube itineraries."
+    },
+    {
+      "question": "14. Does Celebrity River Cruises offer Before and After Stays?",
+      "answer": "Yes. Celebrity offers pre- and post-cruise experiences designed to extend river journeys into iconic European cities, including Budapest and Prague."
+    },
+    {
+      "question": "15. Are Celebrity Danube River Cruises worth it?",
+      "answer": "They can be an excellent choice for travelers seeking a new premium river cruise experience with modern ships, included daily excursions, Central European city access, included beverages and optional pre- and post-cruise extensions."
+    }
+  ],
+  "cta": {
+    "title": "Plan Your Celebrity Danube River Cruise",
+    "description": "Ready to explore the Danube with Celebrity? Trips & Ships Luxury Travel can help you compare Celebrity Danube itineraries, select the right ship and accommodation, choose the best season, and build a seamless European vacation around your river cruise.",
+    "buttonText": "Plan My Celebrity Danube River Cruise",
+    "buttonLink": "/contact"
+  }
+}

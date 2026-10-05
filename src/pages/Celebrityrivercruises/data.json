@@ -1,0 +1,930 @@
+{
+  "seo": {
+    "title": "Celebrity River Cruises 2027 & 2028: Ships, Routes & What's Included",
+    "metaTitle": "Celebrity River Cruises: Ships, Itineraries & Inclusions",
+    "metaDescription": "Explore Celebrity River Cruises, including new ships, Rhine and Danube itineraries, accommodations, dining, inclusions, excursions and how the river experience differs from ocean cruising.",
+    "canonicalUrl": "https://tripsships.com/celebrity-cruises/river-cruises/"
+  },
+  "hero": {
+    "badge": "Celebrity River Cruises",
+    "title": "Celebrity River Cruises: A New Way to Experience Europe by River",
+    "subtitle": "Ships, Itineraries & Inclusions for 2027 & 2028",
+    "description": "Celebrity River Cruises introduces a new premium river cruise experience designed around intimate ships, modern accommodations, destination-focused dining, and immersive European travel starting August 2027.",
+    "primaryCtaText": "Plan My Celebrity River Cruise",
+    "primaryCtaLink": "/contact",
+    "secondaryCtaText": "Speak With a Luxury Cruise Expert",
+    "secondaryCtaLink": "/contact"
+  },
+  "editorialIntro": {
+    "eyebrow": "A NEW WAY TO EXPERIENCE EUROPE BY RIVER",
+    "heading": "Celebrity River Cruises",
+    "paragraphs": [
+      "Celebrity River Cruises introduces a new premium river cruise experience designed around intimate ships, modern accommodations, destination-focused dining, and immersive European travel.",
+      "Celebrity's inaugural river program begins in August 2027, with the Danube and Rhine forming the initial river network for 2027 and 2028. The program is designed to bring the Celebrity approach to smaller European waterways, with more intimate spaces, river-facing accommodations, and experiences centered on the destinations.",
+      "For travelers already familiar with Celebrity's ocean cruises, the river product offers something distinctly different: smaller ships, closer access to European cities, and a journey where the river and destinations are central to the experience."
+    ],
+    "quickAnswer": {
+      "title": "What Are Celebrity River Cruises?",
+      "text": "Celebrity River Cruises is Celebrity's premium river cruise offering in Europe, launching in August 2027. For 2027 and 2028, Celebrity plans to sail the Rhine and Danube Rivers, with new river ships designed for intimate journeys, modern accommodations, destination-focused dining, and included daily shore excursions. The voyage fare includes meals, beverages including alcohol, Wi-Fi, entertainment options, and one shore excursion per day."
+    }
+  },
+  "glanceTable": {
+    "eyebrow": "PROGRAM OVERVIEW",
+    "title": "Celebrity River Cruises at a Glance",
+    "headers": ["Feature", "Details"],
+    "rows": [
+      ["First Sailings", "August 2027"],
+      ["Initial Rivers", "Rhine & Danube"],
+      ["Initial Program", "2027–2028"],
+      ["River Ship Experience", "Premium & intimate"],
+      ["Ship Capacity", "172 guests on current inaugural ships"],
+      ["Daily Excursion", "Included"],
+      ["Meals", "Included"],
+      ["Beverages", "Included, including alcohol"],
+      ["Wi-Fi", "Included"],
+      ["Entertainment", "Included"],
+      ["Dining", "Six dining options"],
+      ["River View Rooms", "Available"],
+      ["Infinite Balcony", "Available"],
+      ["Skylight Infinite Balcony Suite", "Available"],
+      ["Vista Balcony Suite", "Available"],
+      ["Butler Service", "Included in suites"],
+      ["Before & After Stays", "Available on selected itineraries"]
+    ],
+    "note": "Celebrity's current river FAQ confirms the Rhine and Danube for 2027–2028 and lists meals, beverages including alcohol, Wi-Fi, entertainment and one shore excursion per day among the voyage inclusions."
+  },
+  "launchTimeline": {
+    "eyebrow": "LAUNCH TIMELINE",
+    "title": "When Do Celebrity River Cruises Begin?",
+    "description": "Celebrity's inaugural river cruises are scheduled to begin in August 2027. The first generation of Celebrity river ships is designed specifically for Europe's waterways rather than adapting an ocean-going ship to river cruising. Celebrity Compass has an inaugural date of August 5, 2027, while Celebrity Seeker has an inaugural date of October 21, 2027. Both are listed with an occupancy of 172 guests.",
+    "highlights": [
+      "August 5, 2027: Inaugural sailing of Celebrity Compass",
+      "October 21, 2027: Inaugural sailing of Celebrity Seeker",
+      "172 guest capacity per vessel for intimate European river exploration",
+      "Purpose-built river cruise architecture optimized for Rhine and Danube locks and bridges"
+    ]
+  },
+  "fleetShowcase": {
+    "eyebrow": "RIVER FLEET",
+    "title": "The Inaugural Celebrity River Ships",
+    "subtitle": "Purpose-built river vessels designed around connection, flexibility, and closer views of Europe's waterways.",
+    "cards": [
+      {
+        "title": "Celebrity Compass",
+        "category": "Inaugural Sailing: August 5, 2027",
+        "description": "Celebrity Compass is one of the first ships in the Celebrity River Cruises fleet, accommodating approximately 172 guests and designed around connection, flexibility, and closer views of the river.",
+        "bestFor": "Open-air river connection, spacious interiors, Skylight suites, and personalized butler service",
+        "items": [
+          "Open-air lounges & scenic river-view promenades",
+          "Spacious contemporary interior design",
+          "100% river-facing accommodations",
+          "Plush king-size beds in every stateroom",
+          "Skylight Infinite Balcony Suites with ceiling glass",
+          "Dedicated butler service in all suites",
+          "Complimentary stocked in-room minibar",
+          "Continental breakfast delivered to your room",
+          "Daily housekeeping and evening turndown service",
+          "In-room purified filtered water stations"
+        ]
+      },
+      {
+        "title": "Celebrity Seeker",
+        "category": "Inaugural Sailing: October 21, 2027",
+        "description": "Celebrity Seeker brings a next-generation approach to European river cruising with distinctive architectural spaces including Magic Edge cantilevered dining pods and hybrid propulsion.",
+        "bestFor": "Magic Edge dining pods, top-deck bar & grille, hybrid eco-propulsion, and modern luxury suites",
+        "items": [
+          "Approximately 172 guest capacity",
+          "Magic Edge cantilevered dining pods suspended over the river",
+          "Top-deck bar and open-air grille",
+          "Skylight Infinite Balcony Suites",
+          "Expansive open-air sun decks & lounge spaces",
+          "King-size beds & premium European linens",
+          "Butler service included in all suites",
+          "Complimentary in-room minibar",
+          "Continental breakfast in-room service",
+          "Advanced eco-friendly hybrid propulsion systems"
+        ]
+      }
+    ]
+  },
+  "shipComparisonTable": {
+    "eyebrow": "SHIP COMPARISON",
+    "title": "Celebrity Compass vs. Celebrity Seeker",
+    "headers": ["Feature", "Celebrity Compass", "Celebrity Seeker"],
+    "rows": [
+      ["Inaugural Year", "2027 (August 5)", "2027 (October 21)"],
+      ["Occupancy", "172 guests", "172 guests"],
+      ["River Cruising", "Rhine & Danube", "Rhine & Danube"],
+      ["Skylight Infinite Balcony Suites", "Yes", "Yes"],
+      ["Open-Air Spaces", "Yes", "Yes"],
+      ["King-Size Beds", "Yes", "Yes"],
+      ["Butler Service in Suites", "Yes", "Yes"],
+      ["Distinctive Feature", "Modern open-air design", "Magic Edge dining pods"],
+      ["Hybrid Propulsion", "Modern eco-efficient", "Advanced Hybrid propulsion"]
+    ],
+    "note": "The ships share the same overall design philosophy, so itinerary, departure date and preferred accommodation can be more important than choosing one ship purely by name."
+  },
+  "riversShowcase": {
+    "eyebrow": "WHERE TO SAIL",
+    "title": "Rhine vs. Danube: Which Celebrity River Cruise Is Better?",
+    "subtitle": "Compare the character, highlights, and travel styles of Europe's two legendary waterways.",
+    "rivers": [
+      {
+        "name": "Rhine River",
+        "description": "A Rhine itinerary combines major European cities with fairytale castles, steep hillside vineyards, and medieval towns across Germany, France, Switzerland, and the Netherlands.",
+        "bestFor": "Medieval castles, vineyards, historic towns, and scenic river valleys in Germany, France, Switzerland, and the Netherlands.",
+        "highlights": [
+          "Medieval hilltop castles & dramatic fortress ruins",
+          "Sun-drenched Riesling vineyards & historic wine cellars",
+          "Charming historic towns with timbered architecture",
+          "Scenic sailing through the UNESCO Rhine Gorge",
+          "Seamless access to Germany, France, Switzerland & the Netherlands",
+          "Marquee port calls in Amsterdam, Cologne, Strasbourg, and Basel"
+        ]
+      },
+      {
+        "name": "Danube River",
+        "description": "The Danube provides an imperial European river journey through Grand Capitals, baroque abbeys, and lush valleys across Austria, Hungary, Slovakia, and Germany.",
+        "bestFor": "Vienna, Budapest, Bratislava, imperial architecture, classical music, and the UNESCO Wachau Valley.",
+        "highlights": [
+          "Imperial majesty and palaces of Vienna",
+          "Dramatic evening river views of Budapest's Parliament",
+          "Central European history, classical music & royal heritage",
+          "Charming Austrian towns of Linz, Grein, and Dürnstein",
+          "Scenic daylight cruising through the UNESCO Wachau Valley",
+          "Gateway ports in Vilshofen, Gönyű, and Bratislava"
+        ]
+      }
+    ],
+    "choiceRhine": {
+      "title": "Choose the Rhine If You Want:",
+      "items": [
+        "Fairytale castles perched above the riverbanks",
+        "World-renowned hillside vineyards and wine tastings",
+        "Romantic medieval timbered towns and cobblestone alleys",
+        "Diverse culture spanning Germany and France",
+        "Canal city exploration in Amsterdam",
+        "Dramatic, steep scenic European river gorge landscapes"
+      ]
+    },
+    "choiceDanube": {
+      "title": "Choose the Danube If You Want:",
+      "items": [
+        "Imperial grandeur of Vienna and grand concert halls",
+        "Stunning illuminated cityscapes of Budapest",
+        "Deep Central European royal history and baroque abbeys",
+        "Iconic imperial palaces and classical architecture",
+        "Rich musical heritage of Mozart, Beethoven, and Strauss",
+        "Lush rolling hills and apricot orchards of the Wachau Valley"
+      ]
+    },
+    "pairRows": [
+      ["Rhine River: Castles", "Danube River: Imperial cities"],
+      ["Rhine River: Vineyards", "Danube River: Historic capitals"],
+      ["Rhine River: Germany & France", "Danube River: Austria & Hungary"],
+      ["Rhine River: Amsterdam", "Danube River: Budapest"],
+      ["Rhine River: Strasbourg", "Danube River: Vienna"],
+      ["Rhine River: Scenic Rhine Valley", "Danube River: Wachau Valley"]
+    ]
+  },
+  "itineraries": {
+    "eyebrow": "ROUTES",
+    "title": "Celebrity River Cruise Itineraries",
+    "subtitle": "Celebrity's river itineraries are designed around a combination of major European cities, smaller riverside destinations, and scenic daylight sailing.",
+    "cards": [
+      {
+        "title": "Vienna & Budapest (Danube)",
+        "duration": "Danube River Journey",
+        "description": "This itinerary is one of the key Danube experiences, combining scenic sailing with destinations known for music, art, architecture, and Central European history.",
+        "highlights": [
+          "Vilshofen → Linz → Grein (Bavaria & Upper Austria)",
+          "Wachau Valley → Dürnstein (Abbeys & Vineyards)",
+          "Vienna → Gönyű → Budapest (Imperial Capitals)"
+        ]
+      },
+      {
+        "title": "Rhine River Itineraries",
+        "duration": "Rhine River Journey",
+        "description": "Celebrity's Rhine program connects destinations in Germany, France, Switzerland, and the Netherlands, featuring historic cities, wine valleys, and iconic landmarks.",
+        "highlights": [
+          "Basel & Swiss border gateway",
+          "Strasbourg & Alsace wine culture",
+          "Heidelberg region, Mainz, Koblenz & Cologne Cathedral",
+          "Amsterdam canals and cultural hubs"
+        ]
+      }
+    ],
+    "note": "The exact ports and direction vary by sailing, so travelers should compare individual itineraries rather than choosing solely by river name."
+  },
+  "inclusions": {
+    "eyebrow": "VOYAGE FARE",
+    "title": "What Is Included on Celebrity River Cruises?",
+    "subtitle": "Celebrity creates a comprehensive river cruise fare covering core onboard experiences rather than requiring travelers to add basic vacation elements individually.",
+    "points": [
+      "All onboard meals across 6 distinct dining venues and daily rotating menus",
+      "Beverages included throughout the ship, including alcoholic drinks, wine, and beer",
+      "High-speed onboard Wi-Fi internet access for every guest",
+      "Curated onboard entertainment, local cultural performances, and evening music",
+      "One guided shore excursion included per day in every port of call"
+    ],
+    "note": "These inclusions are part of Celebrity's effort to create a more comprehensive river cruise fare rather than requiring travelers to add basic experiences individually."
+  },
+  "dining": {
+    "eyebrow": "CULINARY EXCELLENCE",
+    "title": "Celebrity River Cruise Dining",
+    "subtitle": "Celebrity places significant emphasis on dining aboard its river ships with six dining options and menus designed to evolve with the regional itinerary.",
+    "highlights": [
+      {
+        "title": "Regional Flavors",
+        "description": "Menus designed to evolve dynamically as your ship travels along the river."
+      },
+      {
+        "title": "Destination-Inspired Menus",
+        "description": "Locally influenced cuisine inspired by the specific ports and regions along the route."
+      },
+      {
+        "title": "Local Ingredients",
+        "description": "Dishes handcrafted around farm-fresh, seasonal regional European ingredients."
+      },
+      {
+        "title": "Flexible Dining",
+        "description": "All-day dining options that allow guests to eat on their own schedule."
+      },
+      {
+        "title": "All-Day Options",
+        "description": "Gourmet food and light fare available throughout the day, not just at set hours."
+      },
+      {
+        "title": "Healthy Choices",
+        "description": "Thoughtfully crafted menus including lighter, wellness-focused and vegetarian choices."
+      }
+    ],
+    "venuesTitle": "Signature Beverage & Social Spaces",
+    "venues": [
+      {
+        "title": "Top-Deck Bar & Lounge",
+        "description": "Panoramic open-air cocktail bar with 360-degree river and castle views."
+      },
+      {
+        "title": "Martini Bar",
+        "description": "Celebrity's signature lively social venue with handcrafted cocktails and flair mixology."
+      },
+      {
+        "title": "Café al Bacio",
+        "description": "European-style coffee house serving artisan specialty coffees, teas, and fresh pastries."
+      },
+      {
+        "title": "Sunset Bar",
+        "description": "Relaxed aft-deck bar offering sunset drinks and open-air wake views."
+      }
+    ]
+  },
+  "accommodations": {
+    "eyebrow": "STATEROOMS & SUITES",
+    "title": "Celebrity River Cruise Accommodations",
+    "subtitle": "Celebrity's river ships are designed around natural light and river views, with 100% outside-facing staterooms and no traditional inside cabins.",
+    "categories": [
+      {
+        "title": "River View Stateroom",
+        "description": "Designed for travelers who want a comfortable river-facing room with natural light without moving into a suite category.",
+        "icon": "Home",
+        "features": [
+          "Approximately 157 sq. ft. of efficient living space",
+          "King-size bed with optional twin configuration",
+          "Premium luxury bedding and European linens",
+          "Spacious bathroom with oversized walk-in shower",
+          "Generous natural daylight and river-facing views"
+        ]
+      },
+      {
+        "title": "Infinite Balcony Stateroom",
+        "description": "Features Celebrity's innovative lowering panoramic window that transforms your living room into an open-air river balcony at the touch of a button.",
+        "icon": "DoorOpen",
+        "features": [
+          "Seamless indoor-outdoor river views and fresh European air",
+          "Push-button lowering glass veranda window",
+          "Maximizes indoor living space in all weather conditions",
+          "King-size bed and modern luxury furnishings"
+        ]
+      },
+      {
+        "title": "Skylight Infinite Balcony Suite",
+        "description": "The most distinctive accommodation in Celebrity's river cruise fleet, featuring a dramatic overhead ceiling window and full suite amenities.",
+        "icon": "Sparkles",
+        "features": [
+          "Approximately 233 sq. ft. with separate living and sleeping areas",
+          "Overhead ceiling skylight window filling the suite with natural light",
+          "Floor-to-ceiling panoramic lowering windows",
+          "Dedicated butler service & personalized minibar",
+          "Spa-style luxury bathroom with premium amenities"
+        ]
+      },
+      {
+        "title": "Vista Balcony Suite",
+        "description": "Provides expanded space, premium comfort, and an expansive private step-out veranda overlooking the river scenery.",
+        "icon": "Crown",
+        "features": [
+          "Panoramic river views with expansive private step-out veranda",
+          "Separate living and sleeping quarters",
+          "King-size bed & upgraded luxury bedding",
+          "Dedicated butler service & 24-hour room service",
+          "In-room smart technology & wellness privileges"
+        ]
+      }
+    ],
+    "cabins": [
+      {
+        "title": "River View Stateroom",
+        "deck": "Deck 1",
+        "size": "157 sq. ft.",
+        "description": "Designed for travelers who want a comfortable river-facing room with natural light without moving into a suite category.",
+        "features": [
+          "Approximately 157 sq. ft. of efficient living space",
+          "King-size bed with optional twin configuration",
+          "Premium luxury bedding and European linens",
+          "Spacious bathroom with oversized walk-in shower",
+          "Generous natural daylight and river-facing views"
+        ],
+        "bestFor": "Value-focused travelers who want a comfortable river-facing room with natural light without moving into a suite category."
+      },
+      {
+        "title": "Infinite Balcony Stateroom",
+        "deck": "Decks 2 & 3",
+        "size": "194 sq. ft.",
+        "description": "Features Celebrity's innovative lowering panoramic window that transforms your living room into an open-air river balcony at the touch of a button.",
+        "features": [
+          "Seamless indoor-outdoor river views and fresh European air",
+          "Push-button lowering glass veranda window",
+          "Maximizes indoor living space in all weather conditions",
+          "King-size bed and modern luxury furnishings"
+        ],
+        "bestFor": "Travelers wanting flexible outdoor access and seamless indoor/outdoor living in all weather."
+      },
+      {
+        "title": "Skylight Infinite Balcony Suite",
+        "deck": "Deck 3 Upper",
+        "size": "233 sq. ft.",
+        "description": "The most distinctive accommodation in Celebrity's river cruise fleet, featuring a dramatic overhead ceiling window and full suite amenities.",
+        "features": [
+          "Approximately 233 sq. ft. with separate living and sleeping areas",
+          "Overhead ceiling skylight window filling the suite with natural light",
+          "Floor-to-ceiling panoramic lowering windows",
+          "Dedicated butler service & personalized minibar",
+          "Spa-style luxury bathroom with premium amenities"
+        ],
+        "bestFor": "Luxury travelers seeking iconic design, dramatic overhead ceiling glass, and comprehensive suite perks."
+      },
+      {
+        "title": "Vista Balcony Suite",
+        "deck": "Deck 3 Aft",
+        "size": "280+ sq. ft.",
+        "description": "Provides expanded space, premium comfort, and an expansive private step-out veranda overlooking the river scenery.",
+        "features": [
+          "Panoramic river views with expansive private step-out veranda",
+          "Separate living and sleeping quarters",
+          "King-size bed & upgraded luxury bedding",
+          "Dedicated butler service & 24-hour room service",
+          "In-room smart technology & wellness privileges"
+        ],
+        "bestFor": "Travelers wanting expanded space, premium comfort, and an expansive private step-out veranda."
+      }
+    ]
+  },
+  "accommodationsComparedTable": {
+    "eyebrow": "ACCOMMODATIONS COMPARED",
+    "title": "Celebrity River Cruise Accommodations Compared",
+    "headers": ["Accommodation", "Best For", "Key Feature"],
+    "rows": [
+      ["River View", "Value-focused travelers", "River views & natural light (157 sq. ft.)"],
+      ["Infinite Balcony", "Travelers wanting flexible outdoor access", "Lowering panoramic window & seamless indoor/outdoor living"],
+      ["Vista Balcony Suite", "Travelers wanting more space & private veranda", "Private step-out veranda, separate living area & butler service"],
+      ["Skylight Infinite Balcony Suite", "Luxury travelers seeking iconic design", "Ceiling skylight window, 233 sq. ft., suite amenities & butler service"]
+    ]
+  },
+  "suitePerks": {
+    "eyebrow": "SUITE PERKS",
+    "title": "What Is Included in Celebrity River Cruise Suites?",
+    "subtitle": "Suite guests receive comprehensive luxury amenities, personalized service, and VIP priority access throughout the voyage. Celebrity identifies these suite benefits as included suite perks for all Vista and Skylight Suite guests.",
+    "points": [
+      "Dedicated butler service for in-suite assistance and luggage unpacking",
+      "Personalized, complimentary stocked in-suite minibar",
+      "Complimentary laundry service throughout the cruise",
+      "Exclusive private dining experiences and chef consultations",
+      "24-hour in-suite room service dining",
+      "Upgraded premium beverage package included",
+      "Daily private cocktail hour with top-shelf spirits and wines",
+      "Specialty artisan tea and premium espresso machine in room",
+      "Priority shore excursion booking and disembarkation",
+      "Priority reservations for specialty dining and venues",
+      "Luxury bathrobes, plush slippers, and premium bath amenities"
+    ],
+    "items": [
+      {
+        "title": "Dedicated Butler Service",
+        "description": "Dedicated butler service for in-suite assistance and luggage unpacking"
+      },
+      {
+        "title": "Stocked In-Suite Minibar",
+        "description": "Personalized, complimentary stocked in-suite minibar"
+      },
+      {
+        "title": "Complimentary Laundry",
+        "description": "Complimentary laundry service throughout the cruise"
+      },
+      {
+        "title": "Private Dining Experiences",
+        "description": "Exclusive private dining experiences and chef consultations"
+      },
+      {
+        "title": "24-Hour Room Service",
+        "description": "24-hour in-suite room service dining"
+      },
+      {
+        "title": "Premium Beverage Package",
+        "description": "Upgraded premium beverage package included"
+      },
+      {
+        "title": "Daily Private Cocktail Hour",
+        "description": "Daily private cocktail hour with top-shelf spirits and wines"
+      },
+      {
+        "title": "Artisan Tea & Espresso",
+        "description": "Specialty artisan tea and premium espresso machine in room"
+      },
+      {
+        "title": "Priority Excursions",
+        "description": "Priority shore excursion booking and disembarkation"
+      },
+      {
+        "title": "Priority Venue Reservations",
+        "description": "Priority reservations for specialty dining and venues"
+      },
+      {
+        "title": "Luxury Robes & Amenities",
+        "description": "Luxury bathrobes, plush slippers, and premium bath amenities"
+      }
+    ],
+    "note": "Celebrity identifies these suite benefits as included suite perks for all Vista and Skylight Suite guests."
+  },
+  "riverVsOcean": {
+    "eyebrow": "RIVER VS OCEAN",
+    "title": "Celebrity River Cruises vs. Celebrity Ocean Cruises",
+    "subtitle": "Celebrity River Cruises is not simply a smaller version of Celebrity's ocean cruise experience. The travel style is fundamentally different.",
+    "headers": ["Celebrity River Cruises", "Celebrity Ocean Cruises"],
+    "rows": [
+      ["Smaller, intimate ships (~172 guests)", "Much larger resort-style ships (2,000–3,900+ guests)"],
+      ["European rivers (Rhine & Danube)", "Global ocean routes (Caribbean, Med, Alaska, Asia)"],
+      ["Direct city-center docking & walk-off access", "Industrial ocean ports requiring tender or transfer"],
+      ["Destination-focused immersive cultural journeys", "Ship-centric experience + destination exploration"],
+      ["One guided shore excursion included daily", "Shore excursions booked separately (a la carte)"],
+      ["Intimate onboard environment & relaxed pace", "Large multi-deck resort environment & high-energy nightlife"],
+      ["Continuous scenic river views from every side", "Expansive open ocean sea days"],
+      ["Six intimate dining & beverage options", "Up to 29 restaurants, cafes, and specialty venues"]
+    ],
+    "note": "The river experience is built around being closer to European destinations, while Celebrity's ocean ships provide more extensive onboard entertainment and resort-style amenities."
+  },
+  "howDifferent": {
+    "eyebrow": "SIX DIFFERENTIATORS",
+    "title": "How Celebrity River Cruises Are Different",
+    "subtitle": "Six distinct elements that set Celebrity's river program apart from traditional European river cruising.",
+    "cards": [
+      {
+        "title": "New Purpose-Built River Ships",
+        "description": "Celebrity is entering river cruising with custom-designed ships built specifically for Europe's waterways rather than inheriting aging vessels.",
+        "icon": "Ship"
+      },
+      {
+        "title": "Innovative Staterooms",
+        "description": "The Skylight Infinite Balcony Suite features a ceiling window designed to connect passengers more closely with the sky and river scenery.",
+        "icon": "Sparkles"
+      },
+      {
+        "title": "Intimate 172-Guest Experience",
+        "description": "The inaugural ships accommodate approximately 172 guests, ensuring uncrowded spaces, personalized attention, and relaxed social ambiance.",
+        "icon": "Users"
+      },
+      {
+        "title": "Destination-Focused Dining",
+        "description": "Menus evolve dynamically with the itinerary, incorporating fresh local ingredients and regional wine traditions from each port of call.",
+        "icon": "ChefHat"
+      },
+      {
+        "title": "Included Daily Excursions",
+        "description": "One curated guided shore excursion is included every day of the cruise, making cultural exploration effortless.",
+        "icon": "Compass"
+      },
+      {
+        "title": "Before & After Stays",
+        "description": "Selected Celebrity river itineraries offer luxury hotel stays, daily breakfast, guided city tours, and private transfers before or after the cruise.",
+        "icon": "Calendar"
+      }
+    ]
+  },
+  "comparingRiverLines": {
+    "eyebrow": "SHOPPING AROUND?",
+    "title": "Celebrity River Cruises vs. Other River Cruise Lines",
+    "subtitle": "When comparing Celebrity with other European river cruise companies, look beyond the headline cruise price to evaluate the total value proposition.",
+    "points": [
+      "Ship size and guest capacity (172 guests vs larger vessels)",
+      "Cabin design (innovative Infinite Balconies vs traditional French balconies)",
+      "Suite amenities (dedicated butler service, laundry, espresso machines)",
+      "Dining flexibility (six dining venues vs single dining room)",
+      "Included beverages (wine, beer, spirits included in fare)",
+      "Included shore excursions (one included daily in every port)",
+      "High-speed Wi-Fi included for all staterooms",
+      "Contemporary luxury service standard and hospitality",
+      "Itinerary pacing and city-center docking locations",
+      "Modern, light-filled onboard atmosphere vs heavy traditional decor",
+      "Seamless pre- and post-cruise European hotel extension packages"
+    ],
+    "note": "The best river cruise depends on the traveler's priorities. Celebrity may appeal particularly to travelers who want a newer, contemporary river cruise experience and already appreciate the Celebrity brand."
+  },
+  "isItWorthIt": {
+    "eyebrow": "INVESTMENT & VALUE",
+    "title": "Are Celebrity River Cruises Worth It?",
+    "subtitle": "Celebrity River Cruises represents exceptional vacation value for travelers who prioritize contemporary luxury, inclusions, and intimacy.",
+    "cards": [
+      {
+        "title": "Brand New Modern Ships",
+        "description": "Experience European rivers on newly built 2027 vessels equipped with the latest marine technology.",
+        "icon": "Ship"
+      },
+      {
+        "title": "Contemporary Modern Design",
+        "description": "Light-filled, stylish modern luxury interiors that feel fresh and sophisticated.",
+        "icon": "Sparkles"
+      },
+      {
+        "title": "Intimate Guest Capacity",
+        "description": "Small-ship experience with only 172 guests, eliminating lines and crowding.",
+        "icon": "Users"
+      },
+      {
+        "title": "European Cultural Immersion",
+        "description": "Direct docking in the heart of historic European towns and world-famous capitals.",
+        "icon": "Landmark"
+      },
+      {
+        "title": "Innovative Accommodations",
+        "description": "Push-button Infinite Balconies and Skylight suites featuring overhead ceiling glass.",
+        "icon": "Home"
+      },
+      {
+        "title": "Included Daily Excursions",
+        "description": "Expert-led walking tours, castle visits, and cultural excursions included in every port.",
+        "icon": "Compass"
+      },
+      {
+        "title": "Included Meals & Beverages",
+        "description": "Comprehensive fare covering gourmet meals, beer, wine, and spirits throughout the ship.",
+        "icon": "Utensils"
+      },
+      {
+        "title": "Seamless Wi-Fi Included",
+        "description": "Stay connected with high-speed Wi-Fi internet access included in your voyage fare.",
+        "icon": "Wifi"
+      }
+    ],
+    "footerNote": "Because the river program is new, travelers should also compare Celebrity with established river cruise operators based on itinerary, ship style, service expectations, and overall value."
+  },
+  "whoShouldChoose": {
+    "eyebrow": "WHO IS IT FOR?",
+    "title": "Who Should Choose Celebrity River Cruises?",
+    "headers": ["Traveler Profile", "Why It's a Great Match"],
+    "rows": [
+      ["Celebrity Ocean Cruise Guests", "Travelers who already love Celebrity's modern luxury aesthetic, culinary focus, and service standard and want to experience the brand on European rivers."],
+      ["First-Time River Cruisers", "Travelers seeking a contemporary, design-forward alternative to older traditional European river cruise vessels."],
+      ["Couples & Honeymooners", "Those seeking a romantic, relaxed, and intimate European vacation with scenic balcony views and boutique dining."],
+      ["Luxury Suite Travelers", "Travelers interested in premium suites, dedicated butler service, ceiling skylights, and personalized concierge attention."],
+      ["Food & Wine Aficionados", "Those who enjoy destination-inspired cuisine, local wine tastings, and regional culinary exploration across Europe."],
+      ["Culture & History Buffs", "Travelers who want convenient walk-off access to European capitals, medieval castles, and UNESCO World Heritage sites."]
+    ]
+  },
+  "whoMayPreferAnother": {
+    "eyebrow": "WORTH CONSIDERING",
+    "title": "Who May Prefer Another River Cruise Line?",
+    "subtitle": "Celebrity River Cruises may not be the optimal match for travelers who:",
+    "points": [
+      "Want a very traditional, old-world European river cruise atmosphere and vintage decor",
+      "Prefer an operator with a massive, established fleet of dozens of river ships across every continent",
+      "Want extensive river routes beyond the Rhine and Danube immediately (e.g. Douro, Seine, Mekong, Nile)",
+      "Prefer very large, Broadway-scale theatrical productions and massive casino facilities",
+      "Are primarily focused on finding the lowest budget cruise fare rather than premium value"
+    ],
+    "features": [
+      {
+        "title": "Traditional Old-World Atmosphere",
+        "description": "Want a very traditional, old-world European river cruise atmosphere and vintage decor."
+      },
+      {
+        "title": "Massive Established Global Fleet",
+        "description": "Prefer an operator with a massive, established fleet of dozens of river ships across every continent."
+      },
+      {
+        "title": "Exotic Routes Beyond Rhine & Danube",
+        "description": "Want extensive river routes beyond the Rhine and Danube immediately (e.g. Douro, Seine, Mekong, Nile)."
+      },
+      {
+        "title": "Mega-Ship Theaters & Casinos",
+        "description": "Prefer very large, Broadway-scale theatrical productions and massive casino facilities."
+      },
+      {
+        "title": "Lowest Budget Cruise Fare",
+        "description": "Are primarily focused on finding the lowest budget cruise fare rather than premium value."
+      }
+    ]
+  },
+  "prosCons": {
+    "eyebrow": "PROS & CONS",
+    "title": "Celebrity River Cruises Pros & Cons",
+    "prosTitle": "Celebrity River Cruises Advantages",
+    "consTitle": "Considerations & Limitations",
+    "pros": [
+      "Brand new custom-built river cruise ships launching in 2027",
+      "Contemporary, design-forward modern luxury aesthetic",
+      "Intimate 172-guest capacity with high crew-to-guest ratio",
+      "Marquee European itineraries on the Rhine and Danube rivers",
+      "One guided shore excursion included daily in every port",
+      "All onboard meals across six distinct dining venues included",
+      "Beverages including alcohol, wine, and beer included in voyage fare",
+      "High-speed Wi-Fi internet access included for all guests",
+      "Innovative Infinite Balcony staterooms with lowering glass windows",
+      "Exclusive Skylight Infinite Balcony Suites with overhead ceiling windows",
+      "Dedicated butler service included in all suites",
+      "Pre- and post-cruise Before & After Stay packages available"
+    ],
+    "cons": [
+      "New river cruise product launching in August 2027",
+      "Initial deployment focused exclusively on Rhine and Danube rivers",
+      "Limited operating history in river cruising compared to established river operators",
+      "Optional premium excursions and select spa services carry separate fees"
+    ],
+    "bottomNote": "Celebrity River Cruises offers a fresh modern approach to European river travel, combining comprehensive inclusions with contemporary ship architecture."
+  },
+  "stepGuide": {
+    "eyebrow": "PLANNING WALKTHROUGH",
+    "title": "How to Choose the Best Celebrity River Cruise",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Choose Between the Rhine and Danube",
+        "description": "Start with the destinations you most want to experience: fairytale castles and vineyards on the Rhine vs. imperial capitals and grand architecture on the Danube.",
+        "tags": ["Rhine Castles", "Danube Capitals"]
+      },
+      {
+        "step": "2",
+        "title": "Choose the Ideal Travel Season",
+        "description": "Spring tulip blooms, warm summer festivals, crisp fall wine harvest foliage, and enchanting December Christmas markets offer distinct European experiences.",
+        "tags": ["Spring", "Summer", "Fall Harvest", "Christmas Markets"]
+      },
+      {
+        "step": "3",
+        "title": "Compare Itinerary Details & Pacing",
+        "description": "Look beyond total cruise nights. Evaluate port calls, overnight stays in Vienna or Budapest, scenic daytime sailing hours, included excursions, and arrival/departure airports.",
+        "tags": ["Ports of Call", "Overnights", "Scenic Cruising", "Flight Gateways"]
+      },
+      {
+        "step": "4",
+        "title": "Select Your Stateroom or Suite Category",
+        "description": "Decide whether you prefer a value-focused River View room, an innovative push-button Infinite Balcony, an expansive Vista Balcony Suite, or the signature Skylight Suite with butler service.",
+        "tags": ["River View", "Infinite Balcony", "Vista Suite", "Skylight Suite"]
+      },
+      {
+        "step": "5",
+        "title": "Consider Before & After European Extensions",
+        "description": "Maximize your transatlantic journey by adding luxury pre- or post-cruise hotel stays, private transfers, and guided city tours in Amsterdam, Prague, Budapest, or Zurich.",
+        "tags": ["Pre-Cruise Hotels", "Post-Cruise Extensions", "Private Transfers"]
+      }
+    ]
+  },
+  "expertCredentials": {
+    "name": "Angela Hughes",
+    "title": "Founder & CEO, Trips & Ships Luxury Travel",
+    "badge": "Celebrity River Cruise Specialist",
+    "experienceBadge": "40+ Years Experience | 120+ Countries",
+    "quote": "Celebrity's move into river cruising is particularly exciting because it brings a contemporary design philosophy and culinary sophistication into a traditionally intimate travel category. For travelers who already know Celebrity from ocean cruising, the river product offers an entirely new way to experience Europe by river.",
+    "bio": "Angela Hughes is an internationally recognized luxury travel advisor, cruise specialist, and CEO of Trips & Ships Luxury Travel. With over four decades of European travel planning expertise, Angela helps discerning travelers navigate inaugural river programs, select ideal staterooms, and design seamless European vacations.",
+    "credentials": [
+      "40+ years of luxury travel industry leadership",
+      "Personal visits to over 120 countries and European waterways",
+      "Certified Luxury Cruise & River Cruise Master Specialist",
+      "Top producer and preferred partner with leading global cruise lines",
+      "Specialist in custom European land and river extensions"
+    ]
+  },
+  "whyPlanWithTrips": {
+    "eyebrow": "PLANNING ADVANTAGE",
+    "title": "Why Plan Celebrity River Cruises With Trips & Ships Luxury Travel?",
+    "subtitle": "A river cruise is only one part of a European vacation. The right itinerary, cabin, flights, transfers, hotels, and pre- or post-cruise experiences make all the difference.",
+    "cards": [
+      {
+        "title": "Compare Celebrity River Itineraries",
+        "description": "Side-by-side analysis of sailing dates, route pacing, and seasonal European highlights.",
+        "icon": "FileSearch"
+      },
+      {
+        "title": "Choose Between Rhine and Danube",
+        "description": "Personalized recommendations matching your cultural, wine, and sightseeing preferences.",
+        "icon": "Compass"
+      },
+      {
+        "title": "Compare Compass and Seeker",
+        "description": "Expert vessel guidance including cabin locations and Magic Edge dining features.",
+        "icon": "Ship"
+      },
+      {
+        "title": "Select the Right Stateroom or Suite",
+        "description": "Unbiased advice on Infinite Balconies, Vista Suites, and Skylight accommodations.",
+        "icon": "BedDouble"
+      },
+      {
+        "title": "Evaluate Included Amenities",
+        "description": "Clear breakdown of voyage inclusions, beverage packages, excursions, and suite perks.",
+        "icon": "ShieldCheck"
+      },
+      {
+        "title": "Coordinate Flights & Airline Schedules",
+        "description": "Transatlantic flight planning synchronized perfectly with your river ship embarkation.",
+        "icon": "Plane"
+      },
+      {
+        "title": "Arrange Private Airport & Port Transfers",
+        "description": "Door-to-door private transfers ensuring stress-free arrivals in European cities.",
+        "icon": "MapPin"
+      },
+      {
+        "title": "Add Luxury Pre-Cruise Hotel Stays",
+        "description": "Handpicked 5-star hotels in Amsterdam, Basel, Munich, or Frankfurt before boarding.",
+        "icon": "Calendar"
+      },
+      {
+        "title": "Add Post-Cruise European Extensions",
+        "description": "Extended itineraries into Switzerland, the Black Forest, Vienna, or Prague.",
+        "icon": "Globe"
+      },
+      {
+        "title": "Compare With Other River Cruise Lines",
+        "description": "Objective comparisons against AmaWaterways, Viking, Tauck, and Uniworld.",
+        "icon": "BadgePercent"
+      },
+      {
+        "title": "Create a Personalized European Itinerary",
+        "description": "Complete vacation coordination with one dedicated luxury travel specialist.",
+        "icon": "Sliders"
+      }
+    ],
+    "pillars": [
+      {
+        "title": "Compare Celebrity River Itineraries",
+        "description": "Side-by-side analysis of sailing dates, route pacing, and seasonal European highlights.",
+        "icon": "compass"
+      },
+      {
+        "title": "Choose Between Rhine and Danube",
+        "description": "Personalized recommendations matching your cultural, wine, and sightseeing preferences.",
+        "icon": "compass"
+      },
+      {
+        "title": "Compare Compass and Seeker",
+        "description": "Expert vessel guidance including cabin locations and Magic Edge dining features.",
+        "icon": "ship"
+      },
+      {
+        "title": "Select the Right Stateroom or Suite",
+        "description": "Unbiased advice on Infinite Balconies, Vista Suites, and Skylight accommodations.",
+        "icon": "window"
+      },
+      {
+        "title": "Evaluate Included Amenities",
+        "description": "Clear breakdown of voyage inclusions, beverage packages, excursions, and suite perks.",
+        "icon": "star"
+      },
+      {
+        "title": "Coordinate Flights & Airline Schedules",
+        "description": "Transatlantic flight planning synchronized perfectly with your river ship embarkation.",
+        "icon": "compass"
+      },
+      {
+        "title": "Arrange Private Airport & Port Transfers",
+        "description": "Door-to-door private transfers ensuring stress-free arrivals in European cities.",
+        "icon": "ship"
+      },
+      {
+        "title": "Add Luxury Pre-Cruise Hotel Stays",
+        "description": "Handpicked 5-star hotels in Amsterdam, Basel, Munich, or Frankfurt before boarding.",
+        "icon": "star"
+      },
+      {
+        "title": "Add Post-Cruise European Extensions",
+        "description": "Extended itineraries into Switzerland, the Black Forest, Vienna, or Prague.",
+        "icon": "compass"
+      },
+      {
+        "title": "Compare With Other River Cruise Lines",
+        "description": "Objective comparisons against AmaWaterways, Viking, Tauck, and Uniworld.",
+        "icon": "star"
+      },
+      {
+        "title": "Create a Personalized European Itinerary",
+        "description": "Complete vacation coordination with one dedicated luxury travel specialist.",
+        "icon": "compass"
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "What are Celebrity River Cruises?",
+      "answer": "Celebrity River Cruises is Celebrity's premium river cruise offering designed for intimate European journeys on the Rhine and Danube. The inaugural river program begins in August 2027."
+    },
+    {
+      "question": "When do Celebrity River Cruises begin?",
+      "answer": "Celebrity's inaugural river cruises are scheduled to begin in August 2027."
+    },
+    {
+      "question": "Which rivers does Celebrity River Cruises sail?",
+      "answer": "For 2027 and 2028, Celebrity plans to sail the Rhine and Danube Rivers."
+    },
+    {
+      "question": "What are the Celebrity River Cruise ships?",
+      "answer": "The initial ships include Celebrity Compass and Celebrity Seeker, with additional Celebrity river ships planned as the program expands."
+    },
+    {
+      "question": "How many guests are on Celebrity Compass?",
+      "answer": "Celebrity Compass is listed with an occupancy of 172 guests."
+    },
+    {
+      "question": "How many guests are on Celebrity Seeker?",
+      "answer": "Celebrity Seeker is listed with an occupancy of 172 guests."
+    },
+    {
+      "question": "What is included on Celebrity River Cruises?",
+      "answer": "The voyage fare includes meals, beverages including alcohol, Wi-Fi, entertainment options and one shore excursion per day."
+    },
+    {
+      "question": "Are drinks included on Celebrity River Cruises?",
+      "answer": "Yes. Celebrity states that beverages, including alcohol, are included in the voyage fare."
+    },
+    {
+      "question": "Are shore excursions included?",
+      "answer": "Yes. One shore excursion per day is included in the voyage fare."
+    },
+    {
+      "question": "Is Wi-Fi included?",
+      "answer": "Yes. Wi-Fi is included in the Celebrity River Cruises voyage fare."
+    },
+    {
+      "question": "Does Celebrity River Cruises have balconies?",
+      "answer": "Yes. Celebrity offers Infinite Balcony accommodations, Vista Balcony Suites and Skylight Infinite Balcony Suites."
+    },
+    {
+      "question": "What is a Skylight Infinite Balcony Suite?",
+      "answer": "It is a Celebrity river cruise suite featuring a large ceiling window, floor-to-ceiling windows, separate living and sleeping areas, and additional suite amenities."
+    },
+    {
+      "question": "Does Celebrity River Cruises have inside cabins?",
+      "answer": "Celebrity's river ships do not offer traditional inside cabins; accommodations are designed around natural light and river views."
+    },
+    {
+      "question": "What is the best Celebrity River Cruise cabin?",
+      "answer": "The best cabin depends on your priorities. Travelers wanting the most distinctive accommodation should consider the Skylight Infinite Balcony Suite, while River View rooms can provide a simpler option with river-facing views."
+    },
+    {
+      "question": "Which is better: Celebrity Rhine or Danube?",
+      "answer": "The Rhine is especially appealing for castles, vineyards and destinations in Germany, France and the Netherlands. The Danube is ideal for travelers interested in Vienna, Budapest, Central European history and the Wachau Valley."
+    },
+    {
+      "question": "Does Celebrity River Cruises offer Vienna and Budapest itineraries?",
+      "answer": "Yes. Celebrity offers Danube itineraries connecting destinations including Vilshofen, Linz, Dürnstein, Vienna and Budapest."
+    },
+    {
+      "question": "Does Celebrity River Cruises offer Before & After Stays?",
+      "answer": "Yes. Selected itineraries offer hotel stays, breakfast, guided tours and transfers before or after the river cruise."
+    },
+    {
+      "question": "Is Celebrity River Cruises the same as Celebrity ocean cruising?",
+      "answer": "No. River cruising is a smaller, more destination-focused experience, while Celebrity's ocean ships offer larger resort-style environments and broader onboard entertainment."
+    },
+    {
+      "question": "Are Celebrity River Cruises luxury cruises?",
+      "answer": "Celebrity positions its river program as a premium river cruise offering, with modern accommodations, suite amenities, destination-focused dining and personalized service."
+    },
+    {
+      "question": "Are Celebrity River Cruises worth it?",
+      "answer": "Celebrity River Cruises are worth considering if you value contemporary design, new ships, intimate cruising, included daily excursions and a premium European river experience."
+    },
+    {
+      "question": "Which Celebrity River Cruise ship should I choose?",
+      "answer": "Compare the itinerary and sailing date first. Celebrity Compass and Celebrity Seeker share many core features, while Seeker adds distinctive spaces such as the Magic Edge dining pods."
+    },
+    {
+      "question": "How are Celebrity River Cruises different from other river cruises?",
+      "answer": "Celebrity emphasizes contemporary ship design, innovative accommodations, destination-inspired dining and a premium experience that may feel familiar to travelers who already know the Celebrity brand."
+    }
+  ],
+  "cta": {
+    "title": "Plan Your Celebrity River Cruise",
+    "description": "Ready to experience Europe by river with Celebrity? Trips & Ships Luxury Travel can help you compare Celebrity River Cruises, select the right itinerary and accommodation, and coordinate the rest of your European vacation.",
+    "buttonText": "Plan My Celebrity River Cruise",
+    "buttonLink": "/contact"
+  }
+}

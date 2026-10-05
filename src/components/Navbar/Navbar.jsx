@@ -1287,7 +1287,7 @@ const Navbar = () => {
                 Celebrity Cruises Frequently Asked Questions
               </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/celebrity-cruises/why-book-with-us"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -1317,7 +1317,7 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Celebrity Xcel Cruise Ship Guide
-              </NavLink> */}
+              </NavLink>
 
               {/* <NavLink
                 to="/celebrity-cruises/ships/celebrity-ascent"
@@ -1351,7 +1351,7 @@ const Navbar = () => {
                 Celebrity Edge Cruise Ship Guide
               </NavLink> */}
 
-              <NavLink
+              {/* <NavLink
                 to="/celebrity-cruises/edge-vs-solstice-series"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -1381,7 +1381,7 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Celebrity Danube River Cruises
-              </NavLink>
+              </NavLink> */}
 
               <NavLink
                 to="/celebrity-cruises/galapagos"
@@ -2843,7 +2843,7 @@ const Navbar = () => {
               Celebrity Cruises Frequently Asked Questions
             </NavLink>
 
-            {/* <NavLink
+            <NavLink
               to="/celebrity-cruises/why-book-with-us"
               className="nav-dropdown-single"
               onClick={toggleMenu}
@@ -2873,7 +2873,7 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Celebrity Xcel Cruise Ship Guide
-            </NavLink> */}
+            </NavLink>
 
             {/* <NavLink
               to="/celebrity-cruises/ships/celebrity-ascent"
@@ -2907,7 +2907,7 @@ const Navbar = () => {
               Celebrity Edge Cruise Ship Guide
             </NavLink> */}
 
-            <NavLink
+            {/* <NavLink
               to="/celebrity-cruises/edge-vs-solstice-series"
               className="nav-dropdown-single"
               onClick={toggleMenu}
@@ -2937,7 +2937,7 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Celebrity Danube River Cruises
-            </NavLink>
+            </NavLink> */}
 
             <NavLink
               to="/celebrity-cruises/galapagos"

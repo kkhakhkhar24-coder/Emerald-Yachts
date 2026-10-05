@@ -1,0 +1,676 @@
+{
+  "seo": {
+    "title": "Celebrity Rhine River Cruises: Routes, Ports & More",
+    "metaTitle": "Celebrity Rhine River Cruises: Itineraries, Ports & Guide",
+    "metaDescription": "Explore Celebrity Rhine River Cruises for 2027 and 2028, including itineraries, Amsterdam, Cologne, Strasbourg, Basel, sailing seasons, inclusions and pre- and post-cruise stays.",
+    "canonicalUrl": "https://tripsships.com/celebrity-cruises/river-cruises/rhine/"
+  },
+  "hero": {
+    "tag": "Celebrity Rhine River Cruises",
+    "title": "Celebrity Rhine River Cruises Experience the Rhine With Celebrity",
+    "subtitle": "Itineraries, Ports & Everything Included for 2027 & 2028",
+    "primaryBtnText": "Plan My Celebrity Rhine River Cruise",
+    "primaryBtnLink": "/contact",
+    "secondaryBtnText": "Speak With a Luxury Cruise Expert",
+    "secondaryBtnLink": "/contact"
+  },
+  "intro": {
+    "eyebrow": "EXPERIENCE THE RHINE WITH CELEBRITY",
+    "title": "Celebrity Rhine River Cruises",
+    "paragraphs": [
+      "The Rhine River is one of Europe's most recognizable waterways, connecting historic cities, vineyard-covered hills, medieval towns, castles and major cultural destinations.",
+      "Celebrity River Cruises brings its new premium river cruise experience to the Rhine for 2027 and 2028, with itineraries connecting destinations such as Amsterdam, Cologne, Rüdesheim, Strasbourg, Basel and other Rhine-region ports. Celebrity's current Rhine program includes 7-night itineraries, while selected sailings can be combined with Before and After Stays to create a longer European vacation.",
+      "For travelers considering their first European river cruise—or comparing Celebrity with other premium river cruise lines—the Rhine offers a particularly strong combination of scenery, history, food, wine and accessible European cities."
+    ],
+    "badge": "Rhine River 2027–2028",
+    "quickAnswer": {
+      "title": "What Are Celebrity Rhine River Cruises?",
+      "text": "Celebrity Rhine River Cruises are premium European river cruises sailing the Rhine and connected waterways, with 2027 and 2028 itineraries visiting destinations across the Netherlands, Germany, France and Switzerland. Celebrity's current Rhine program includes 7-night sailings, one shore excursion per day, meals, Wi-Fi and included beverages, with Before and After Stay options available on selected journeys."
+    }
+  },
+  "glance": {
+    "eyebrow": "PROGRAM OVERVIEW",
+    "title": "Celebrity Rhine River Cruises at a Glance",
+    "headers": ["Feature", "Program Detail"],
+    "rows": [
+      ["Cruise Line", "Celebrity River Cruises"],
+      ["Sailing Years", "2027 & 2028"],
+      ["Typical Cruise Length", "7 nights"],
+      ["Main Region", "Rhine River & connected waterways"],
+      ["Countries Featured", "Netherlands, Germany, France & Switzerland"],
+      ["Popular Starting City", "Amsterdam"],
+      ["Popular Ending City", "Basel"],
+      ["Featured Cities", "Amsterdam, Cologne, Rüdesheim, Strasbourg, Basel"],
+      ["Shore Excursions", "One included each day"],
+      ["Dining", "Included"],
+      ["Beverages", "Included selections"],
+      ["Wi-Fi", "Included"],
+      ["Before & After Stays", "Available on selected sailings"],
+      ["Ships", "Celebrity River fleet"],
+      ["Experience", "Premium, intimate & destination-focused"]
+    ],
+    "note": "Celebrity states that its 2027 Rhine itineraries are 7 nights and can visit multiple countries, while its Rhine program highlights Amsterdam, Cologne, Strasbourg and Basel among its featured destinations."
+  },
+  "whereToSail": {
+    "eyebrow": "WHERE TO SAIL",
+    "title": "Where Does Celebrity Rhine River Cruises Sail?",
+    "subtitle": "Celebrity's Rhine itineraries are designed around the river's changing landscapes and the cities and towns along its route.",
+    "footerNote": "The exact ports depend on the sailing and itinerary direction. For example, Celebrity's 2028 Amsterdam to Basel itinerary includes Amsterdam, Rotterdam, Cologne, Rüdesheim, Speyer, Strasbourg, Breisach and Basel.",
+    "items": [
+      { "title": "Amsterdam", "description": "Iconic Dutch starting gateway with historic canals, world-class museums, and vibrant local neighborhoods.", "icon": "MapPin" },
+      { "title": "Rotterdam", "description": "Leading global maritime hub celebrated for bold modern architecture and innovative design.", "icon": "Building2" },
+      { "title": "Cologne", "description": "Historic German metropolis dominated by the twin-spired High Gothic Cathedral along the riverfront.", "icon": "Landmark" },
+      { "title": "Rüdesheim", "description": "Heart of the scenic Rhine Gorge known for steep terraced vineyards and traditional wine taverns.", "icon": "Wine" },
+      { "title": "Speyer", "description": "One of Germany's oldest cities featuring the magnificent Romanesque Speyer Imperial Cathedral.", "icon": "Castle" },
+      { "title": "Strasbourg", "description": "Alsatian capital blending French gastronomy and German timbered architecture along scenic canals.", "icon": "Globe" },
+      { "title": "Breisach", "description": "Picturesque gateway nestled between the Rhine River and Germany's enchanting Black Forest.", "icon": "TreePine" },
+      { "title": "Basel", "description": "Swiss cultural capital offering seamless cruise connections to the Swiss Alps and Lake Geneva.", "icon": "Mountain" },
+      { "title": "Scenic Rhine Sailing", "description": "Cruising through the UNESCO Upper Middle Rhine Valley past dozens of hilltop medieval castles.", "icon": "Waves" },
+      { "title": "Additional Rhine & Main Destinations", "description": "Extended waterways connecting picturesque tributary towns and regional cultural centers.", "icon": "Compass" }
+    ]
+  },
+  "route": {
+    "eyebrow": "ROUTE",
+    "title": "Celebrity Rhine River Cruise Map & Route",
+    "subtitle": "A typical Rhine itinerary can move from the Netherlands toward Switzerland, passing through some of the most recognizable landscapes of western Europe.",
+    "cities": ["Amsterdam", "Rotterdam", "Cologne", "Rüdesheim", "Speyer", "Strasbourg", "Breisach", "Basel"],
+    "combinesTitle": "This route combines:",
+    "combines": [
+      { "title": "Dutch Canals & Architecture", "description": "Gable-fronted canal houses, historic waterways, and vibrant flower markets.", "icon": "Landmark" },
+      { "title": "German River Towns", "description": "Half-timbered medieval villages and historic riverside promenades.", "icon": "Building2" },
+      { "title": "Rhine Valley Vineyards", "description": "Steep terraced Riesling vineyards rising above the riverbanks.", "icon": "Wine" },
+      { "title": "Medieval Landscapes & Rhine Castles", "description": "Dozens of legendary fortress ruins and UNESCO-protected river vistas.", "icon": "Castle" },
+      { "title": "French Culture & Alsatian Charm", "description": "World-renowned French cuisine, Petite France canals, and European institutions.", "icon": "Star" },
+      { "title": "Swiss Gateways & Alpine Connections", "description": "Direct disembarkation access into Switzerland and onward Alpine connections.", "icon": "Mountain" }
+    ],
+    "note": "Celebrity's 2028 itinerary documents this Amsterdam-to-Basel route as an 8-day journey, with the sailing moving through the Scenic Rhine and destinations including Cologne, Rüdesheim and Strasbourg."
+  },
+  "cityProfiles": {
+    "eyebrow": "RHINE CITIES",
+    "title": "Featured Ports & Rhine River Destinations",
+    "subtitle": "Explore the distinct heritage, architectural wonders, and culinary traditions of the Rhine's premier riverside destinations.",
+    "cities": [
+      {
+        "title": "Amsterdam",
+        "country": "Netherlands",
+        "description": "Amsterdam is one of the most popular gateway cities for Rhine River cruises. Before boarding, travelers can explore historic canals, museums, art, Dutch architecture, local neighborhoods, and restaurants and cafés. It is also an excellent city for extending a Rhine vacation with a pre-cruise stay.",
+        "highlights": ["Historic canals", "Museums & Art", "Dutch architecture", "Local neighborhoods", "Restaurants & cafés"],
+        "icon": "Waves"
+      },
+      {
+        "title": "Rotterdam",
+        "country": "Netherlands",
+        "description": "Rotterdam provides a sharp contrast to Amsterdam. Known for its modern architecture and major port, Rotterdam adds a contemporary European perspective to the Rhine journey. Celebrity's 2028 Amsterdam-to-Basel itinerary includes Rotterdam on Day 2.",
+        "highlights": ["Modern architecture", "Major global port", "Contemporary arts", "Innovative cityscapes"],
+        "icon": "Building2"
+      },
+      {
+        "title": "Cologne",
+        "country": "Germany",
+        "description": "Cologne is one of Germany's most recognizable Rhine cities. Highlights include Cologne Cathedral, historic old town, Rhine waterfront, local food, German beer culture, and museums and cultural attractions. The city is included on selected Celebrity Rhine itineraries.",
+        "highlights": ["Cologne Cathedral", "Historic old town", "Rhine waterfront", "Local beer culture", "Museums"],
+        "icon": "Landmark"
+      },
+      {
+        "title": "Rüdesheim",
+        "country": "Germany",
+        "description": "Rüdesheim is particularly appealing to travelers interested in wine and traditional Rhine scenery. The town sits within the Rhine Valley landscape, surrounding vineyards, and historic villages. Celebrity's Rhine itineraries feature Rüdesheim as an important destination, including its Amsterdam-to-Basel 2028 itinerary.",
+        "highlights": ["Rhine Valley landscape", "Surrounding vineyards", "Historic villages", "Wine tastings"],
+        "icon": "Wine"
+      },
+      {
+        "title": "Strasbourg",
+        "country": "France",
+        "description": "Strasbourg sits near the French-German cultural border and offers a distinctive combination of French cuisine, German architectural influences, historic neighborhoods, canals, half-timbered buildings, and European institutions. Celebrity describes Strasbourg as a destination where French and German influences come together.",
+        "highlights": ["French cuisine", "German architecture", "Petite France canals", "Half-timbered buildings", "European institutions"],
+        "icon": "Globe"
+      },
+      {
+        "title": "Basel",
+        "country": "Switzerland",
+        "description": "Basel is an important gateway between the Rhine region and Switzerland. Travelers can use Basel as a cruise embarkation point, disembarkation point, Swiss extension destination, or starting point for additional European travel. Celebrity's current Rhine program highlights Basel as one of its principal Rhine cities.",
+        "highlights": ["Cruise embarkation point", "Disembarkation gateway", "Swiss extension destination", "Swiss Alps connection"],
+        "icon": "Mountain"
+      }
+    ]
+  },
+  "citiesGlance": {
+    "eyebrow": "CITIES OVERVIEW",
+    "title": "Rhine River Cruise Cities at a Glance",
+    "headers": ["City", "Country", "Best Known For"],
+    "rows": [
+      ["Amsterdam", "Netherlands", "Canals, museums & art"],
+      ["Rotterdam", "Netherlands", "Modern architecture & port"],
+      ["Cologne", "Germany", "Cathedral & historic Rhine culture"],
+      ["Rüdesheim", "Germany", "Vineyards & Rhine Valley"],
+      ["Speyer", "Germany", "Historic architecture & Imperial Cathedral"],
+      ["Strasbourg", "France", "French-German culture & canals"],
+      ["Breisach", "Germany", "Rhine & Black Forest region"],
+      ["Basel", "Switzerland", "Art, culture & Swiss connections"]
+    ],
+    "note": "Not every Celebrity Rhine sailing visits every city, so travelers should compare the individual itinerary before booking."
+  },
+  "inclusions": {
+    "eyebrow": "VOYAGE FARE",
+    "title": "What Is Included on Celebrity Rhine River Cruises?",
+    "subtitle": "Celebrity's Rhine River Cruises include several core elements in the cruise fare:",
+    "points": [
+      "Shore Excursions — One included every day in every port of call",
+      "Dining — Included gourmet meals, with multiple choices & a 24-hour option",
+      "Drinks — Selected wine, beer, cocktails, coffee & soft drinks throughout the day",
+      "Wi-Fi — Complimentary high-speed internet throughout the journey",
+      "Onboard Experiences — Access to relaxation, dining, and entertainment spaces"
+    ],
+    "note": "Celebrity's river ships provide multiple spaces for relaxation, dining and entertainment as part of the onboard experience."
+  },
+  "excursions": {
+    "eyebrow": "SHORE EXCURSIONS",
+    "title": "Celebrity Rhine River Cruise Excursions",
+    "subtitle": "One of the major advantages of river cruising is the ability to reach city centers and cultural destinations without repeatedly packing and unpacking. Celebrity includes one shore excursion per day.",
+    "focusPoints": [
+      "Historic cities and medieval town centers",
+      "Gothic, Romanesque, and modern European architecture",
+      "Destination-inspired regional culinary tastings",
+      "Local Rhine and Alsatian wine cellar excursions",
+      "Cultural encounters and neighborhood explorations",
+      "World-class European art galleries and museums",
+      "Historic castles, fortifications, and landmark tours",
+      "Authentic local European traditions and folklore"
+    ],
+    "note": "Travelers can also choose additional experiences where available. Celebrity's Rhine program emphasizes locally connected experiences designed to bring travelers closer to the destinations."
+  },
+  "seasons": {
+    "eyebrow": "SEASONAL GUIDE",
+    "title": "Best Time for a Celebrity Rhine River Cruise",
+    "subtitle": "There is no single best month for everyone. The ideal season depends on what you want to experience.",
+    "cards": [
+      {
+        "title": "Spring Rhine River Cruises",
+        "description": "Spring can be particularly attractive for travelers interested in the Netherlands and seasonal flowers. Celebrity specifically highlights tulip season as one of the reasons to consider a spring Rhine sailing.",
+        "icon": "Leaf",
+        "tags": ["Tulips", "Gardens", "Mild weather", "Fresh spring scenery", "Amsterdam"]
+      },
+      {
+        "title": "Summer Rhine River Cruises",
+        "description": "Summer provides longer daylight hours and comfortable opportunities for exploring riverside towns, walking tours, and open-air scenic sailing.",
+        "icon": "Sun",
+        "tags": ["Longer days", "Outdoor sightseeing", "Walking tours", "Scenic sailing", "European summer travel"]
+      },
+      {
+        "title": "Fall Rhine River Cruises",
+        "description": "Autumn transforms the Rhine Valley with seasonal colors. Celebrity highlights the vineyards turning golden during the fall, ideal for wine-focused travel.",
+        "icon": "TreePine",
+        "tags": ["Vineyards", "Autumn scenery", "Wine-focused travel", "Comfortable sightseeing"]
+      },
+      {
+        "title": "Christmas Market Rhine Cruises",
+        "description": "Late November and December bring a completely different atmosphere. Celebrity highlights the region's world-famous Christmas markets as a major seasonal attraction.",
+        "icon": "Snowflake",
+        "tags": ["Christmas markets", "Holiday atmosphere", "Seasonal shopping", "Winter traditions", "Festive European travel"]
+      }
+    ]
+  },
+  "seasonTable": {
+    "eyebrow": "AT A GLANCE",
+    "title": "Best Time to Take a Celebrity Rhine River Cruise",
+    "headers": ["Season / Period", "Key Focus & Highlights"],
+    "rows": [
+      ["Spring", "Tulips & Dutch floral gardens"],
+      ["Summer", "Long daylight hours & extensive sightseeing"],
+      ["Fall", "Golden vineyards & autumn scenery"],
+      ["Late November–December", "Enchanting Christmas markets & holiday traditions"]
+    ],
+    "note": "The right season depends more on the experience you want than on a universally 'best' month."
+  },
+  "ships": {
+    "eyebrow": "RHINE SHIPS",
+    "title": "Celebrity River Fleet: Compass & Seeker",
+    "subtitle": "Celebrity's inaugural river cruise ships introduce contemporary ocean luxury to European waterways.",
+    "ships": [
+      {
+        "title": "Celebrity Compass",
+        "category": "Rhine & Danube Flagship",
+        "description": "Celebrity Compass is designed specifically around the river experience, with open-air lounges, spacious interiors, and the innovative Skylight Infinite Balcony Suite concept.",
+        "items": [
+          "King-size beds & premium luxury European bedding",
+          "Dedicated butler service in all suites",
+          "Daily housekeeping & evening turndown service",
+          "Complimentary stocked in-suite minibar",
+          "Continental breakfast delivered to your room",
+          "In-room purified and filtered drinking water",
+          "100% river-facing accommodations & scenic views"
+        ],
+        "bestFor": "Intimate, design-forward European river luxury with open-air spaces."
+      },
+      {
+        "title": "Celebrity Seeker",
+        "category": "Inaugural River Fleet",
+        "description": "Celebrity Seeker introduces another contemporary approach to river cruising, featuring state-of-the-art propulsion and iconic modern luxury spaces.",
+        "items": [
+          "Approximately 172 guests for an intimate boutique ambiance",
+          "Signature Skylight Infinite Balcony accommodations",
+          "Magic Edge cantilevered open-air dining pods",
+          "Top-deck scenic observation bar and grill",
+          "King-size luxury staterooms and suites",
+          "Advanced hybrid propulsion and eco-friendly systems"
+        ],
+        "bestFor": "Cutting-edge design, culinary innovation, and relaxed 172-guest capacity."
+      }
+    ]
+  },
+  "accommodations": {
+    "eyebrow": "STATEROOMS & SUITES",
+    "title": "Celebrity Rhine River Cruise Accommodations",
+    "subtitle": "Celebrity's river accommodations are designed around river views and natural light. 100% outside-facing staterooms with zero interior cabins.",
+    "cabins": [
+      {
+        "title": "River View Stateroom",
+        "deck": "Deck 1",
+        "size": "157 sq. ft.",
+        "description": "Designed for travelers who want a comfortable river-facing room with natural light without moving into a suite category.",
+        "features": [
+          "Approximately 157 sq. ft. of efficient living space",
+          "King-size bed with optional twin configuration",
+          "Premium luxury bedding and European linens",
+          "Spacious bathroom with oversized walk-in shower",
+          "Generous natural daylight and river-facing views"
+        ],
+        "bestFor": "Value-focused travelers seeking comfortable river views and premium amenities."
+      },
+      {
+        "title": "Infinite Balcony Stateroom",
+        "deck": "Decks 2 & 3",
+        "size": "194 sq. ft.",
+        "description": "Features Celebrity's innovative lowering panoramic window that transforms your living room into an open-air river balcony at the touch of a button.",
+        "features": [
+          "Seamless indoor-outdoor river views and fresh European air",
+          "Push-button lowering glass veranda window",
+          "Maximizes indoor living space in all weather conditions",
+          "King-size bed and modern luxury furnishings"
+        ],
+        "bestFor": "Travelers wanting flexible outdoor access and seamless indoor/outdoor living in all weather."
+      },
+      {
+        "title": "Skylight Infinite Balcony Suite",
+        "deck": "Deck 3 Upper",
+        "size": "233 sq. ft.",
+        "description": "The most distinctive accommodation in Celebrity's river cruise fleet, featuring a dramatic overhead ceiling window and full suite amenities.",
+        "features": [
+          "Approximately 233 sq. ft. with separate living and sleeping areas",
+          "Overhead ceiling skylight window filling the suite with natural light",
+          "Floor-to-ceiling panoramic lowering windows",
+          "Dedicated butler service & personalized minibar",
+          "Spa-style luxury bathroom with premium amenities"
+        ],
+        "bestFor": "Luxury travelers seeking iconic design, dramatic overhead ceiling glass, and comprehensive suite perks."
+      },
+      {
+        "title": "Vista Balcony Suite",
+        "deck": "Deck 3 Aft",
+        "size": "280+ sq. ft.",
+        "description": "Provides expanded space, premium comfort, and an expansive private step-out veranda overlooking the river scenery.",
+        "features": [
+          "Panoramic river views with expansive private step-out veranda",
+          "Separate living and sleeping quarters",
+          "King-size bed & upgraded luxury bedding",
+          "Dedicated butler service & 24-hour room service",
+          "In-room smart technology & wellness privileges"
+        ],
+        "bestFor": "Travelers wanting expanded space, premium comfort, and an expansive private step-out veranda."
+      }
+    ]
+  },
+  "beforeAfter": {
+    "eyebrow": "EXTEND YOUR TRIP",
+    "title": "Rhine River Cruise Before & After Stays",
+    "subtitle": "A Celebrity Rhine River Cruise does not have to begin or end when the ship does. Celebrity offers Before and After Stays that allow travelers to add time in European cities before or after their river sailing. Current options include Amsterdam, Budapest, Prague, and Lausanne.",
+    "includes": [
+      "Premium or Ultra Premium hotel accommodations",
+      "Daily hotel breakfast included",
+      "Local-led experiences and private transfers",
+      "Destination Insider curated city guidance",
+      "Seamless airport, hotel, and port logistics",
+      "Curated guided cultural tours"
+    ],
+    "amsterdamBefore": {
+      "title": "Amsterdam Before Your Rhine Cruise",
+      "description": "Amsterdam is one of the most natural places to extend a Rhine River cruise. A pre-cruise stay provides extra time for canal exploration, museums, art galleries, local dining, historic neighborhoods, and Dutch culture. Rather than arriving the day the ship departs, adding extra nights can make the European vacation feel more relaxed.",
+      "highlights": ["Canal exploration", "Museums & art", "Local dining", "Historic neighborhoods", "Dutch culture"]
+    },
+    "baselAfter": {
+      "title": "Basel After Your Rhine Cruise",
+      "description": "Basel serves as the premier starting point for additional Switzerland travel. A post-cruise extension can connect the Rhine experience with the Swiss Alps, lake regions, French-speaking Switzerland, and additional European destinations. Celebrity's Before and After Stay program includes Lausanne among its available city experiences.",
+      "highlights": ["Swiss Alps exploration", "Lake Geneva regions", "Lausanne & French Switzerland", "Onward European connections"]
+    }
+  },
+  "beforeAfterTable": {
+    "eyebrow": "STAY INCLUSIONS",
+    "title": "What's Included in Celebrity Before & After Stays?",
+    "headers": ["Service / Feature", "Package Detail"],
+    "rows": [
+      ["Hotel", "Premium or Ultra Premium hotel options"],
+      ["Breakfast", "Daily hotel breakfast included"],
+      ["Transportation", "Seamless airport and ship transfers"],
+      ["Tours", "Curated local cultural experiences"],
+      ["Local Expertise", "Dedicated Destination Insider assistance"],
+      ["Guided Experiences", "Expert local storytellers"],
+      ["Customization", "Flexible options based on stay duration"]
+    ],
+    "note": "Celebrity says these experiences are designed to handle the key logistics between hotel and ship while providing locally focused experiences."
+  },
+  "riverVsOcean": {
+    "eyebrow": "RIVER VS. OCEAN",
+    "title": "Celebrity Rhine River Cruises vs. Ocean Cruises",
+    "subtitle": "A Rhine River cruise is fundamentally different from Celebrity's ocean cruise experience.",
+    "headers": ["Rhine River Cruise", "Celebrity Ocean Cruise"],
+    "rows": [
+      ["Smaller river ship (~172 guests)", "Larger ocean ship (2,000–3,900+ guests)"],
+      ["European river destinations (Rhine & tributaries)", "Ocean destinations worldwide (Caribbean, Med, Alaska)"],
+      ["Direct city-center docking & walk-off access", "Traditional industrial cruise ports requiring tenders/shuttles"],
+      ["Destination-focused immersive cultural rhythm", "Ship-centric entertainment & destination exploration"],
+      ["One shore excursion per day included", "Shore excursions booked separately or as add-ons"],
+      ["Continuous riverside scenery & castle vistas", "Open ocean sea days & vast maritime horizons"],
+      ["Intimate boutique onboard atmosphere", "Resort-style atmosphere with large theater venues"],
+      ["Multiple European ports in close proximity", "Broader global itinerary choices with longer sea transits"]
+    ],
+    "note": "Celebrity describes its river program as more intimate, with experiences both onboard and onshore designed around Europe's cultural and historic cities."
+  },
+  "rhineVsDanube": {
+    "eyebrow": "RIVER COMPARISON",
+    "title": "Rhine vs. Danube: Which Celebrity River Cruise Is Better?",
+    "headers": ["Rhine", "Danube"],
+    "rows": [
+      ["Amsterdam gateway", "Budapest gateway"],
+      ["Cologne & Rhine Cathedral", "Vienna & Imperial Palaces"],
+      ["Rüdesheim & Rhine Gorge", "Wachau Valley & Melk Abbey"],
+      ["Strasbourg & Alsatian culture", "Bratislava & Slovakian heritage"],
+      ["Basel & Swiss connections", "Central & Eastern European gateways"],
+      ["Vineyards & hilltop medieval castles", "Imperial capitals, classical music & grand history"],
+      ["Netherlands, Germany, France & Switzerland", "Germany, Austria, Slovakia & Hungary"]
+    ],
+    "choiceRhine": {
+      "title": "Choose the Rhine if you want:",
+      "items": [
+        "Romantic castles & fortress ruins",
+        "Steep terraced Riesling vineyards",
+        "Amsterdam's historic canals",
+        "Cologne's Gothic Cathedral",
+        "Strasbourg's Alsatian culinary blend",
+        "Rhine Valley UNESCO scenery",
+        "Western European multi-country culture"
+      ]
+    },
+    "choiceDanube": {
+      "title": "Choose the Danube if you want:",
+      "items": [
+        "Vienna's imperial palaces and music",
+        "Budapest's illuminated parliament",
+        "Central European imperial history",
+        "Grand classical architecture",
+        "Wachau Valley wine landscapes",
+        "A distinct Eastern European cultural perspective"
+      ]
+    },
+    "note": "Both rivers deliver extraordinary European exploration with Celebrity's signature modern luxury service and intimate 172-guest capacity."
+  },
+  "isItWorthIt": {
+    "eyebrow": "INVESTMENT & VALUE",
+    "title": "Are Celebrity Rhine River Cruises Worth It?",
+    "subtitle": "Celebrity Rhine River Cruises can be particularly attractive to travelers who want:",
+    "cards": [
+      { "title": "New Premium River Product", "description": "Brand new custom-built vessels designed specifically for modern luxury European river cruising.", "icon": "Ship" },
+      { "title": "Modern Ship Design", "description": "Fresh, light-filled contemporary aesthetics that break away from heavy traditional decor.", "icon": "Sparkles" },
+      { "title": "Intimate Cruising", "description": "Only ~172 guests onboard, eliminating long lines, crowds, and tender transfers.", "icon": "Users" },
+      { "title": "European City Access", "description": "Direct docking in the historic center of world-famous European capitals and medieval towns.", "icon": "Landmark" },
+      { "title": "Included Daily Excursions", "description": "Expert-led shore excursions included in every port of call along the Rhine route.", "icon": "Compass" },
+      { "title": "Included Meals & Beverages", "description": "Comprehensive fare covering gourmet meals, selected beer, wine, cocktails, and coffee.", "icon": "Utensils" },
+      { "title": "Complimentary Wi-Fi", "description": "High-speed internet access included across all staterooms throughout the journey.", "icon": "Wifi" },
+      { "title": "Seasonal Experiences", "description": "Spring tulip sailings, summer festivals, autumn wine harvests, and winter Christmas markets.", "icon": "Calendar" },
+      { "title": "Pre- & Post-Cruise Extensions", "description": "Seamless hotel stays and transfers in Amsterdam, Lausanne, and other European hubs.", "icon": "Plane" },
+      { "title": "Scenic & Cultural Variety", "description": "In a single journey, move between Dutch canals, German cities, Rhine vineyards, and Swiss gateways.", "icon": "Globe" }
+    ],
+    "footerNote": "The strongest reason to choose the Rhine is the combination of scenery and cultural variety. In a single journey, travelers can move between Dutch canals, German historic cities, Rhine Valley vineyards, French culture and Swiss gateways."
+  },
+  "whoShouldChoose": {
+    "eyebrow": "WHO IS IT FOR?",
+    "title": "Who Should Choose a Celebrity Rhine River Cruise?",
+    "headers": ["Traveler Profile", "Why It's a Great Match"],
+    "rows": [
+      ["First-Time River Cruisers", "The Rhine offers an easy introduction to European river cruising because it combines recognizable cities with scenic sailing."],
+      ["Celebrity Ocean Cruise Guests", "Travelers already familiar with Celebrity may enjoy experiencing the brand in a more intimate river environment."],
+      ["Couples", "The relaxed pace, European cities and scenic sailing make the Rhine particularly well suited to couples."],
+      ["Food & Wine Travelers", "The Rhine region offers vineyards, regional cuisine and food-focused experiences."],
+      ["History & Culture Travelers", "The itinerary connects major European cultural centers with historic riverside towns."],
+      ["Multi-Generational Travelers", "The variety of excursions and relatively relaxed travel format can work well for families traveling across generations."]
+    ]
+  },
+  "whoMayPreferAnother": {
+    "eyebrow": "WORTH CONSIDERING",
+    "title": "Who May Prefer Another Rhine River Cruise?",
+    "subtitle": "Celebrity may not be the ideal match for travelers who:",
+    "points": [
+      "Want the largest possible river ship with extensive passenger facilities",
+      "Prefer a highly traditional, old-world antique river cruise aesthetic",
+      "Want the lowest available bare-bones budget cruise fare",
+      "Prefer extensive late-night clubbing, Broadway revues, and large-scale casino gaming",
+      "Want a river itinerary outside Celebrity's current Rhine and Danube network"
+    ],
+    "features": [
+      {
+        "title": "Massive Ship Facilities",
+        "description": "Travelers who want the largest possible river vessel with multiple swimming pools and mega-facilities."
+      },
+      {
+        "title": "Traditional Old-World Decor",
+        "description": "Travelers who prefer a highly traditional, antique European river cruise aesthetic over modern design."
+      },
+      {
+        "title": "Ultra-Low Budget Fares",
+        "description": "Travelers whose primary consideration is finding the lowest bare-bones fare rather than all-inclusive luxury."
+      },
+      {
+        "title": "Mega-Ship Nightlife & Casinos",
+        "description": "Travelers seeking extensive late-night clubbing, Broadway-scale revues, and large-scale casino gaming."
+      },
+      {
+        "title": "Exotic Global River Routes",
+        "description": "Travelers seeking river itineraries outside Celebrity's current Rhine and Danube network (e.g. Nile, Mekong, Douro)."
+      }
+    ]
+  },
+  "prosCons": {
+    "eyebrow": "PROS & CONS",
+    "title": "Celebrity Rhine River Cruises Pros & Cons",
+    "prosTitle": "Pros",
+    "consTitle": "Cons",
+    "pros": [
+      "New premium river cruise program launching in 2027",
+      "Rhine itineraries for 2027 and 2028",
+      "Visits multiple European countries (Netherlands, Germany, France, Switzerland)",
+      "Popular Amsterdam-to-Basel route options",
+      "One shore excursion per day included in fare",
+      "Gourmet dining and 24-hour options included",
+      "Complimentary high-speed Wi-Fi included",
+      "Included beverage selections (wine, beer, cocktails, coffee)",
+      "Brand new custom-built modern river ships",
+      "Innovative accommodations (Infinite Balconies & Skylight Suites)",
+      "Seasonal sailing choices (Tulips, Summer, Fall Harvest, Christmas Markets)",
+      "Dedicated Christmas market holiday itineraries",
+      "Flexible Before and After Stay hotel extension options"
+    ],
+    "cons": [
+      "Newer river product with less operating history than heritage river lines",
+      "Current program focuses on selected European rivers (Rhine and Danube)",
+      "Individual itineraries vary considerably by departure date",
+      "Some specialized premium experiences can cost extra",
+      "Exact inclusions and flight packages should always be confirmed for the selected sailing"
+    ],
+    "bottomNote": "Celebrity Rhine River Cruises delivers a compelling blend of contemporary design, high inclusions, and intimate small-ship service across Europe's most iconic waterway."
+  },
+  "stepGuide": {
+    "eyebrow": "PLANNING WALKTHROUGH",
+    "title": "How to Choose the Best Celebrity Rhine River Cruise",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Choose Your Direction",
+        "description": "Decide whether you prefer an itinerary beginning in Amsterdam, ending in Basel, or another route offered for your travel dates.",
+        "tags": ["Amsterdam to Basel", "Basel to Amsterdam", "Northbound vs Southbound"]
+      },
+      {
+        "step": "2",
+        "title": "Choose Your Season",
+        "description": "Think about what matters most for your European vacation experience.",
+        "tags": ["Tulips", "Summer weather", "Autumn vineyards", "Christmas markets"]
+      },
+      {
+        "step": "3",
+        "title": "Compare Ports",
+        "description": "Do not choose solely based on the number of nights. Look at the cities and experiences that matter most to you.",
+        "tags": ["Amsterdam", "Cologne", "Rüdesheim", "Strasbourg", "Basel"]
+      },
+      {
+        "step": "4",
+        "title": "Select Your Accommodation",
+        "description": "Compare the available stateroom and suite categories based on your space and amenity preferences.",
+        "tags": ["River View", "Infinite Balcony", "Vista Balcony Suite", "Skylight Infinite Balcony Suite"]
+      },
+      {
+        "step": "5",
+        "title": "Consider a Before or After Stay",
+        "description": "Adding extra nights in Amsterdam or another available city can turn a 7-night river cruise into a more complete European vacation. Celebrity's current Before and After Stay program includes hotel accommodations, breakfast, transfers and curated experiences.",
+        "tags": ["Amsterdam Stay", "Switzerland Extension", "Transfers & Hotels"]
+      }
+    ]
+  },
+  "expertCredentials": {
+    "name": "Angela Hughes",
+    "title": "Founder & CEO, Trips & Ships Luxury Travel",
+    "badge": "Celebrity River Cruise Specialist",
+    "experienceBadge": "40+ Years Experience | 120+ Countries",
+    "quote": "The Rhine is one of the strongest choices for travelers who want variety without sacrificing a relaxed pace. You can combine major European cities with vineyard-covered valleys, medieval towns and scenic river sailing, while the ship moves with you between destinations. For Celebrity guests, the Rhine also offers an opportunity to experience the brand in a smaller, more intimate setting than its ocean ships.",
+    "bio": "Angela Hughes is an internationally recognized luxury travel advisor, cruise specialist, and CEO of Trips & Ships Luxury Travel. With over four decades of European travel planning expertise, Angela helps discerning travelers navigate inaugural river programs, select ideal staterooms, and design seamless European vacations.",
+    "credentials": [
+      "40+ years of luxury travel industry leadership",
+      "Personal visits to over 120 countries and European waterways",
+      "Certified Luxury Cruise & River Cruise Master Specialist",
+      "Top producer and preferred partner with leading global cruise lines",
+      "Specialist in custom European land and river extensions"
+    ]
+  },
+  "whyPlan": {
+    "eyebrow": "PLANNING ADVANTAGE",
+    "title": "Why Plan Your Celebrity Rhine River Cruise With Trips & Ships Luxury Travel?",
+    "subtitle": "Choosing the right Rhine itinerary involves more than selecting a departure date. Trips & Ships Luxury Travel can help you build a seamless, personalized European journey.",
+    "pillars": [
+      { "title": "Compare Celebrity Rhine Itineraries", "description": "Side-by-side analysis of sailing dates, route pacing, and seasonal European highlights.", "icon": "compass" },
+      { "title": "Choose the Best Sailing Season", "description": "Expert advice on tulip blooms, summer festivals, wine harvest, and Christmas markets.", "icon": "star" },
+      { "title": "Compare Amsterdam and Basel Options", "description": "Strategic guidance on Northbound vs Southbound route flow and flight gateways.", "icon": "compass" },
+      { "title": "Select the Right Stateroom or Suite", "description": "Unbiased recommendations on Infinite Balconies, Vista Suites, and Skylight accommodations.", "icon": "window" },
+      { "title": "Evaluate Included Excursions", "description": "Detailed breakdown of included daily excursions, culinary tours, and upgrade options.", "icon": "star" },
+      { "title": "Arrange Pre-Cruise Amsterdam Stays", "description": "Handpicked luxury hotel reservations, canal tours, and private city guides.", "icon": "star" },
+      { "title": "Arrange Post-Cruise European Extensions", "description": "Custom extensions into Switzerland, Lake Geneva, the Black Forest, or Paris.", "icon": "compass" },
+      { "title": "Coordinate Transatlantic Flights", "description": "Synchronized flight bookings matching your exact embarkation and disembarkation timing.", "icon": "compass" },
+      { "title": "Arrange Private Transfers", "description": "Stress-free airport, hotel, and dock transfers with dedicated private drivers.", "icon": "ship" },
+      { "title": "Compare With Other Luxury River Lines", "description": "Objective market benchmarking against AmaWaterways, Viking, Tauck, and Uniworld.", "icon": "star" },
+      { "title": "Build a Customized European Vacation", "description": "Complete vacation coordination with one dedicated luxury cruise specialist.", "icon": "compass" }
+    ],
+    "footerNote": "A well-planned Rhine River cruise can become much more than a week on the river—it can be the centerpiece of a larger European journey."
+  },
+  "faqs": [
+    {
+      "question": "1. What is a Celebrity Rhine River Cruise?",
+      "answer": "A Celebrity Rhine River Cruise is a premium European river cruise experience sailing the Rhine and connected waterways, with itineraries visiting destinations across countries including the Netherlands, Germany, France and Switzerland."
+    },
+    {
+      "question": "2. When do Celebrity Rhine River Cruises begin?",
+      "answer": "Celebrity's inaugural river cruises begin in August 2027, with Rhine and Danube itineraries offered for 2027 and 2028."
+    },
+    {
+      "question": "3. How long are Celebrity Rhine River Cruises?",
+      "answer": "Celebrity's current 2027 Rhine itineraries are 7 nights. Individual 2028 itineraries may be presented with different day-count formats depending on the sailing and any included overnight stays."
+    },
+    {
+      "question": "4. Which cities does Celebrity visit on the Rhine?",
+      "answer": "Celebrity Rhine itineraries can include Amsterdam, Rotterdam, Cologne, Rüdesheim, Speyer, Strasbourg, Breisach and Basel, although the exact ports depend on the itinerary."
+    },
+    {
+      "question": "5. Does Celebrity Rhine River Cruises sail from Amsterdam?",
+      "answer": "Yes. Celebrity offers Rhine itineraries beginning in Amsterdam, including an Amsterdam-to-Basel itinerary in its 2028 program."
+    },
+    {
+      "question": "6. Does Celebrity Rhine River Cruises sail to Basel?",
+      "answer": "Yes. Basel is one of the featured Rhine destinations, and Celebrity offers itineraries between Amsterdam and Basel."
+    },
+    {
+      "question": "7. What is included on Celebrity Rhine River Cruises?",
+      "answer": "Celebrity includes one shore excursion per day, meals, Wi-Fi and selected beverages, including wine, beer, cocktails, coffee and soft drinks, with upgrade opportunities available."
+    },
+    {
+      "question": "8. Are shore excursions included on Celebrity Rhine cruises?",
+      "answer": "Yes. Celebrity includes one shore excursion every day on its river cruises."
+    },
+    {
+      "question": "9. Is Wi-Fi included on Celebrity Rhine River Cruises?",
+      "answer": "Yes. Complimentary Wi-Fi is included throughout the journey."
+    },
+    {
+      "question": "10. Are drinks included on Celebrity Rhine River Cruises?",
+      "answer": "Yes. Celebrity includes selected wine, beer, cocktails, coffee and soft drinks throughout the day, with opportunities to upgrade."
+    },
+    {
+      "question": "11. What is the best time for a Celebrity Rhine River Cruise?",
+      "answer": "The best time depends on your interests. Spring is attractive for tulips, summer for longer days, fall for vineyard scenery and late November through December for Christmas markets."
+    },
+    {
+      "question": "12. Are Celebrity Rhine River Cruises good for Christmas markets?",
+      "answer": "Yes. Celebrity specifically highlights late November through December as a prime season for Rhine Christmas market experiences."
+    },
+    {
+      "question": "13. Are Celebrity Rhine River Cruises good in the fall?",
+      "answer": "Yes. Fall can be especially appealing for travelers interested in vineyards and autumn scenery, as Celebrity highlights the Rhine Valley's vineyards turning golden during the season."
+    },
+    {
+      "question": "14. What ships sail Celebrity Rhine River Cruises?",
+      "answer": "Celebrity's river fleet includes ships such as Celebrity Compass and Celebrity Seeker, with additional ships planned as the river program expands."
+    },
+    {
+      "question": "15. Does Celebrity Compass sail the Rhine?",
+      "answer": "Celebrity Compass is part of the new Celebrity River Cruises fleet and is designed for European river itineraries, including the Rhine program. Its features include open-air spaces and Skylight Infinite Balcony Suites."
+    },
+    {
+      "question": "16. Does Celebrity River Cruises offer Before and After Stays?",
+      "answer": "Yes. Celebrity offers pre- and post-cruise experiences in cities including Amsterdam, Budapest, Prague and Lausanne, with hotel accommodations, breakfast, transfers and curated local experiences."
+    },
+    {
+      "question": "17. Can I add an Amsterdam hotel stay before my Rhine cruise?",
+      "answer": "Yes. Amsterdam is one of Celebrity's featured Before and After Stay destinations, allowing travelers to extend their European vacation before sailing."
+    },
+    {
+      "question": "18. What is included in Celebrity Before and After Stays?",
+      "answer": "Packages can include Premium or Ultra Premium hotel accommodations, daily breakfast, transportation, guided experiences and local destination support."
+    },
+    {
+      "question": "19. Is a Celebrity Rhine River Cruise better than a Danube cruise?",
+      "answer": "It depends on the destinations you prefer. The Rhine is especially strong for castles, vineyards, Amsterdam, Cologne and Strasbourg, while the Danube offers destinations such as Vienna and Budapest."
+    },
+    {
+      "question": "20. Are Celebrity Rhine River Cruises worth it?",
+      "answer": "They can be an excellent choice for travelers seeking a new premium river cruise experience with modern ships, included daily excursions, European city access and optional pre- and post-cruise extensions."
+    },
+    {
+      "question": "21. What is the best Celebrity Rhine River Cruise itinerary?",
+      "answer": "There is no single best itinerary. An Amsterdam-to-Basel sailing can be particularly attractive for first-time travelers because it combines the Netherlands, Germany, France and Switzerland in one journey."
+    },
+    {
+      "question": "22. Who should take a Celebrity Rhine River Cruise?",
+      "answer": "Celebrity Rhine River Cruises are particularly well suited to couples, first-time river cruisers, Celebrity ocean cruise guests, food and wine travelers, and travelers interested in European history and culture."
+    }
+  ],
+  "cta": {
+    "title": "Plan Your Celebrity Rhine River Cruise",
+    "description": "Ready to explore the Rhine with Celebrity? Trips & Ships Luxury Travel can help you compare Celebrity Rhine itineraries, select the right ship and accommodation, choose the best season, and build a seamless European vacation around your river cruise.",
+    "buttonText": "Plan My Celebrity Rhine River Cruise",
+    "buttonLink": "/contact"
+  }
+}
