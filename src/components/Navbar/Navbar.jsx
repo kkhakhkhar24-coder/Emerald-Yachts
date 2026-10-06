@@ -1598,6 +1598,31 @@ const Navbar = () => {
               >
                 Choose Yacht, Suite & Itinerary
               </NavLink>
+
+              <NavLink
+                to="/luxury-solo-womens-travel/women-only-tours"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Best Women-Only Luxury Tours
+              </NavLink>
+
+              <NavLink
+                to="/luxury-solo-womens-travel/women-over-50"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Solo Travel for Women Over 50
+              </NavLink>
+
+              <NavLink
+                to="/luxury-solo-womens-travel/best-destinations"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Best Destinations for Solo Women
+              </NavLink>
+
             </div>
           </div>
         </div>
@@ -3154,6 +3179,31 @@ const Navbar = () => {
             >
               Ritz-Carlton Yacht Advisor Orlando
             </NavLink>
+
+            <NavLink
+                to="/luxury-solo-womens-travel/women-only-tours"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Best Women-Only Luxury Tours
+              </NavLink>
+
+              <NavLink
+                to="/luxury-solo-womens-travel/women-over-50"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Solo Travel for Women Over 50
+              </NavLink>
+
+              <NavLink
+                to="/luxury-solo-womens-travel/best-destinations"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Best Destinations for Solo Women
+              </NavLink>
+
 
             <span className="mobile-dropdown-divider"></span>
           </div>

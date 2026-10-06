@@ -77,12 +77,12 @@ import DisneyConciergeBenefitsExplained from "./pages/DisneyConciergeBenefitsExp
 import DisneyCruiseDiningGuide from "./pages/Disneycruisediningguide/Disneycruisediningguide";
 import BestDisneyCruiseCabins from "./pages/BestDisneyCruiseCabins/BestDisneyCruiseCabins";
 import Disneycruisebookingtimeline from "./pages/Disneycruisebookingtimeline/Disneycruisebookingtimeline";
-import Disneycruisepackinglist from "./pages/Disneycruisepackinglist/Disneycruisepackinglist"
+import Disneycruisepackinglist from "./pages/Disneycruisepackinglist/Disneycruisepackinglist";
 import VikingRhineRiverCruises from "./pages/VikingRhineRiverCruises/VikingRhineRiverCruises";
 import VikingChristmasMarketCruises from "./pages/VikingChristmasMarketCruises/VikingChristmasMarketCruises";
-import Vikingmediterraneancruises from "./pages/Vikingmediterraneancruises/Vikingmediterraneancruises"
-import Vikingalaskacruises from "./pages/Vikingalaskacruises/Vikingalaskacruises"
-import VikingIcelandCruises from "./pages/VikingIcelandCruises/VikingIcelandCruises"
+import Vikingmediterraneancruises from "./pages/Vikingmediterraneancruises/Vikingmediterraneancruises";
+import Vikingalaskacruises from "./pages/Vikingalaskacruises/Vikingalaskacruises";
+import VikingIcelandCruises from "./pages/VikingIcelandCruises/VikingIcelandCruises";
 import VikingVsAmaWaterways from "./pages/VikingVsAmaWaterways/VikingVsAmaWaterways";
 import VikingVsTauck from "./pages/VikingVsTauck/VikingVsTauck";
 import Vikingvsscenic from "./pages/Vikingvsscenic/Vikingvsscenic";
@@ -215,6 +215,9 @@ import RitzCarltonYachtTravelAdvisor from "./pages/RitzCarltonYachtTravelAdvisor
 import RitzCarltonYachtTravelAdvisorFlorida from "./pages/RitzCarltonYachtTravelAdvisorFlorida/RitzCarltonYachtTravelAdvisorFlorida";
 import RitzCarltonYachtTravelAdvisorOrlando from "./pages/RitzCarltonYachtTravelAdvisorOrlando/RitzCarltonYachtTravelAdvisorOrlando";
 import HowToChooseRightRitzCarltonYachtSuiteItinerary from "./pages/HowToChooseRightRitzCarltonYachtSuiteItinerary/HowToChooseRightRitzCarltonYachtSuiteItinerary";
+import WomenOnlyTours from "./pages/LuxurySoloWomensTravel/WomenOnlyTours/WomenOnlyTours";
+import WomenOver50 from "./pages/LuxurySoloWomensTravel/WomenOver50/WomenOver50";
+import BestDestinations from "./pages/LuxurySoloWomensTravel/BestDestinations/BestDestinations";
 
 function App() {
   return (
@@ -318,10 +321,7 @@ function App() {
             path="/azamara-cabins-alaska-guide"
             element={<AzamaraCabinsAlaskaGuide />}
           ></Route>
-          <Route
-            path="/world-cruises"
-            element={<WorldCruises />}
-          ></Route>
+          <Route path="/world-cruises" element={<WorldCruises />}></Route>
           <Route
             path="/world-cruise-cost"
             element={<WorldCruiseCost />}
@@ -391,10 +391,7 @@ function App() {
             element={<AzamaraJapanCruises />}
           />
 
-          <Route
-            path="/azamara-worth-it"
-            element={<AzamaraWorthIt />}
-          />
+          <Route path="/azamara-worth-it" element={<AzamaraWorthIt />} />
 
           <Route
             path="/azamara-cabins-guide-2026"
@@ -421,20 +418,14 @@ function App() {
             element={<BookExplora />}
           />
 
-          <Route
-            path="/explora-faq-before-booking"
-            element={<ExploraFAQ />}
-          />
+          <Route path="/explora-faq-before-booking" element={<ExploraFAQ />} />
 
           <Route
             path="/explora-journeys-vs-silversea"
             element={<ExploraJourneysVsSilversea />}
           />
 
-          <Route
-            path="/hx-expeditions"
-            element={<HXExpeditionsCruises />}
-          />
+          <Route path="/hx-expeditions" element={<HXExpeditionsCruises />} />
 
           <Route
             path="/hx-expeditions-antarctica-cruises"
@@ -543,128 +534,95 @@ function App() {
 
           <Route
             path="/disney-cruise-packing-list"
-            element={< Disneycruisepackinglist />}
+            element={<Disneycruisepackinglist />}
           />
 
           <Route
             path="/viking-rhine-river-cruises"
-            element={< VikingRhineRiverCruises />}
+            element={<VikingRhineRiverCruises />}
           />
 
           <Route
             path="/viking-christmas-market-cruises"
-            element={< VikingChristmasMarketCruises />}
+            element={<VikingChristmasMarketCruises />}
           />
 
           <Route
             path="/viking-mediterranean-cruises"
-            element={< Vikingmediterraneancruises />}
+            element={<Vikingmediterraneancruises />}
           />
 
           <Route
             path="/viking-alaska-cruises"
-            element={< Vikingalaskacruises />}
+            element={<Vikingalaskacruises />}
           />
 
           <Route
             path="/viking-iceland-cruises"
-            element={< VikingIcelandCruises />}
+            element={<VikingIcelandCruises />}
           />
 
           <Route
             path="/viking-vs-amawaterways"
-            element={< VikingVsAmaWaterways />}
+            element={<VikingVsAmaWaterways />}
           />
 
-          <Route
-            path="/viking-vs-tauck"
-            element={< VikingVsTauck />}
-          />
+          <Route path="/viking-vs-tauck" element={<VikingVsTauck />} />
 
-          <Route
-            path="/viking-vs-scenic"
-            element={< Vikingvsscenic />}
-          />
+          <Route path="/viking-vs-scenic" element={<Vikingvsscenic />} />
 
-          <Route
-            path="/viking-vs-uniworld"
-            element={< Vikingvsuniworld />}
-          />
+          <Route path="/viking-vs-uniworld" element={<Vikingvsuniworld />} />
 
           <Route
             path="/why-i-resisted-viking-for-years"
-            element={< Whyiresistedviking />}
+            element={<Whyiresistedviking />}
           />
 
           <Route
             path="/viking-cruise-resource-center"
-            element={< VikingCruiseResourceCenter />}
+            element={<VikingCruiseResourceCenter />}
           />
 
-          <Route
-            path="/donor-river-cruises"
-            element={< DonorRiverCruises />}
-          />
+          <Route path="/donor-river-cruises" element={<DonorRiverCruises />} />
 
-          <Route
-            path="/donor-safaris"
-            element={< Donorsafaris />}
-          />
+          <Route path="/donor-safaris" element={<Donorsafaris />} />
 
           <Route
             path="/travel-programs-for-opera-companies"
-            element={< TravelProgramsOperaCompanies />}
+            element={<TravelProgramsOperaCompanies />}
           />
 
           <Route
             path="/travel-programs-for-symphony-orchestras"
-            element={< TravelProgramsSymphonyOrchestras />}
+            element={<TravelProgramsSymphonyOrchestras />}
           />
 
           <Route
             path="/Travel-Programs-for-Theaters&Performing-Arts-Organizations"
-            element={< Performingartstravel />}
+            element={<Performingartstravel />}
           />
 
           <Route
             path="/why-travel-increases-donor-engagement-and-fundraising"
-            element={< Whytraveldonorengagement />}
+            element={<Whytraveldonorengagement />}
           />
 
-          <Route
-            path="/explora-vs-regent"
-            element={< Exploravsregent />}
-          />
+          <Route path="/explora-vs-regent" element={<Exploravsregent />} />
 
           <Route
             path="/explora-vs-ritz-carlton-yacht-collection"
-            element={< Exploravsritzcarlton />}
+            element={<Exploravsritzcarlton />}
           />
 
-          <Route
-            path="/explora-vs-viking"
-            element={< Exploravsviking />}
-          />
+          <Route path="/explora-vs-viking" element={<Exploravsviking />} />
 
-          <Route
-            path="/explora-vs-oceania"
-            element={< Exploravsoceania />}
-          />
+          <Route path="/explora-vs-oceania" element={<Exploravsoceania />} />
 
-          <Route
-            path="/explora-vs-scenic"
-            element={< Exploravsscenic />}
-          />
+          <Route path="/explora-vs-scenic" element={<Exploravsscenic />} />
 
-          <Route
-            path="/explora-vs-ponant"
-            element={< Exploravsponant />}
-          />
+          <Route path="/explora-vs-ponant" element={<Exploravsponant />} />
 
-          <Route
-            path="/explora-vs-crystal"
-            element={< Exploravscrystal />}
-          />
+          <Route path="/explora-vs-crystal" element={<Exploravscrystal />} />
 
           <Route
             path="/private-equity-family-travel"
@@ -756,7 +714,6 @@ function App() {
             element={<Scenicluxuryyachtguide />}
           />
 
-
           <Route
             path="/scenic-eclipse-reviews"
             element={<Sceniceclipsereviews />}
@@ -767,20 +724,11 @@ function App() {
             element={<Sceniceclipseiireviews />}
           />
 
-          <Route
-            path="/scenic-vs-ponant"
-            element={<ScenicvsPonant />}
-          />
+          <Route path="/scenic-vs-ponant" element={<ScenicvsPonant />} />
 
-          <Route
-            path="/scenic-vs-seabourn"
-            element={<ScenicVsSeabourn />}
-          />
+          <Route path="/scenic-vs-seabourn" element={<ScenicVsSeabourn />} />
 
-          <Route
-            path="/is-scenic-worth-it"
-            element={<IsScenicWorthIt />}
-          />
+          <Route path="/is-scenic-worth-it" element={<IsScenicWorthIt />} />
 
           <Route
             path="/what-is-included-on-scenic"
@@ -802,20 +750,11 @@ function App() {
             element={<ScenicGreenlandCruises />}
           />
 
-          <Route
-            path="/scenic-food-review"
-            element={<Scenicfoodreview />}
-          />
+          <Route path="/scenic-food-review" element={<Scenicfoodreview />} />
 
-          <Route
-            path="/scenic-cabins-guide"
-            element={<Sceniccabinsguide />}
-          />
+          <Route path="/scenic-cabins-guide" element={<Sceniccabinsguide />} />
 
-          <Route
-            path="/best-scenic-suites"
-            element={<Bestscenicsuites />}
-          />
+          <Route path="/best-scenic-suites" element={<Bestscenicsuites />} />
 
           <Route
             path="/scenic-helicopter-experience"
@@ -973,7 +912,7 @@ function App() {
 
           <Route
             path="/uniworld-river-cruises/uniworld-vs-scenic"
-            element={< UniworldvsScenicRiverCruises />}
+            element={<UniworldvsScenicRiverCruises />}
           />
 
           <Route
@@ -981,10 +920,7 @@ function App() {
             element={<UniworldvsAmaWaterways />}
           />
 
-          <Route
-            path="/celebrity-cruises"
-            element={<CelebrityCruises />}
-          />
+          <Route path="/celebrity-cruises" element={<CelebrityCruises />} />
 
           <Route
             path="/celebrity-cruises/whats-included"
@@ -1137,7 +1073,7 @@ function App() {
           />
 
           <Route
-            path="/ritz-carlton-yacht-collection"    
+            path="/ritz-carlton-yacht-collection"
             element={<RitzCarltonYachtCollection />}
           />
 
@@ -1230,7 +1166,19 @@ function App() {
             path="/how-to-choose-right-ritz-carlton-yacht-suite-itinerary"
             element={<HowToChooseRightRitzCarltonYachtSuiteItinerary />}
           />
-          
+
+          <Route
+            path="/luxury-solo-womens-travel/women-only-tours"
+            element={<WomenOnlyTours />}
+          />
+          <Route
+            path="/luxury-solo-womens-travel/women-over-50"
+            element={<WomenOver50 />}
+          />
+          <Route
+            path="/luxury-solo-womens-travel/best-destinations"
+            element={<BestDestinations />}
+          />
         </Routes>
       </BrowserRouter>
     </HelmetProvider>
