@@ -23,7 +23,6 @@ import GenericChecklistCards from '@/components/ui/GenericChecklistCards';
 import ExpertRulesGrid from '@/components/ui/ExpertRulesGrid';
 import CenterCTA from '@/components/ui/CenterCTA';
 import FAQAccordion from '@/components/ui/FAQAccordion';
-import InteractivePillarHubGrid from '@/components/ui/InteractivePillarHubGrid';
 import ExpertCredentials from '@/components/ui/ExpertCredentials';
 
 const SoloAfricanSafaris = () => {
@@ -107,17 +106,6 @@ const SoloAfricanSafaris = () => {
       answer: faq.acceptedAnswer.text
     }))
   };
-
-  // 10. Related Hub Guides for InteractivePillarHubGrid
-  const relatedHubGuides = pageData.relatedGuides.guides.map((guide) => ({
-    title: guide.title,
-    category: guide.category,
-    description: guide.description,
-    alt: guide.title,
-    badgeCount: guide.links ? guide.links.length : 1,
-    links: guide.links,
-    mainUrl: guide.mainUrl
-  }));
 
   return (
     <div className="bg-white min-h-screen font-sans text-slate-800 selection:bg-gold-500 selection:text-white">
@@ -366,14 +354,7 @@ const SoloAfricanSafaris = () => {
           data={faqData}
         />
 
-        {/* ─── 17. RELATED LUXURY SOLO TRAVEL GUIDES (InteractivePillarHubGrid Component) ─── */}
-        <InteractivePillarHubGrid
-          title={pageData.relatedGuides.title}
-          subtitle={pageData.relatedGuides.subtitle}
-          items={relatedHubGuides}
-        />
-
-        {/* ─── 18. ABOUT THE AUTHOR & EEAT (ExpertCredentials Component) ─── */}
+        {/* ─── 17. ABOUT THE AUTHOR & EEAT (ExpertCredentials Component) ─── */}
         <div className="relative">
           <ExpertCredentials
             name={pageData.author.name}

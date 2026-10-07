@@ -21,7 +21,6 @@ import ExpertRulesGrid from '@/components/ui/ExpertRulesGrid';
 import ExpertCredentials from '@/components/ui/ExpertCredentials';
 import FAQAccordion from '@/components/ui/FAQAccordion';
 import CenterCTA from '@/components/ui/CenterCTA';
-import InteractivePillarHubGrid from '@/components/ui/InteractivePillarHubGrid';
 
 // Assets (Commented out per project preference)
 // import DestinationHeroImg from "../../../assets/Seabourn/SeabournCruises/seabourn-worldwide-destination-focused-itineraries.jpg";
@@ -48,19 +47,6 @@ const BestDestinations = () => {
       answer: faq.answer
     }))
   };
-
-  // 3. Related Pillar Guides
-  const relatedHubGuides = pageData.relatedGuides.guides.map((guide) => ({
-    title: guide.title,
-    category: guide.category,
-    description: guide.description,
-    placeholderLabel: guide.title.toUpperCase(),
-    // image: null,
-    alt: guide.title,
-    badgeCount: guide.links ? guide.links.length : 1,
-    links: guide.links,
-    mainUrl: guide.mainUrl
-  }));
 
   return (
     <div className="bg-white min-h-screen font-sans text-slate-800">
@@ -270,14 +256,6 @@ const BestDestinations = () => {
 
         {/* ─── 13. FREQUENTLY ASKED QUESTIONS (FAQAccordion Component) ─── */}
         <FAQAccordion data={faqData} />
-
-
-        {/* ─── 15. RELATED LUXURY SOLO TRAVEL GUIDES (InteractivePillarHubGrid Component) ─── */}
-        <InteractivePillarHubGrid
-          title={pageData.relatedGuides.title}
-          subtitle={pageData.relatedGuides.subtitle}
-          items={relatedHubGuides}
-        />
       </div>
 
 

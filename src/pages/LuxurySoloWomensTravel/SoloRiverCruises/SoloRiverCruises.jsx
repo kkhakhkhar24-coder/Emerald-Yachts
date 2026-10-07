@@ -21,7 +21,6 @@ import ExpertRulesGrid from '@/components/ui/ExpertRulesGrid';
 import ExpertCredentials from '@/components/ui/ExpertCredentials';
 import FAQAccordion from '@/components/ui/FAQAccordion';
 import CenterCTA from '@/components/ui/CenterCTA';
-import InteractivePillarHubGrid from '@/components/ui/InteractivePillarHubGrid';
 
 // Assets (Commented out per project preference)
 // import AmaWaterwaysImg from "../../../assets/AmaWaterways.jpg";
@@ -70,18 +69,6 @@ const SoloRiverCruises = () => {
     duration: pageData.bestDestinations.subtitle,
     description: dest.description,
     // image: null
-  }));
-
-  // 5. Related Pillar Guides
-  const relatedHubGuides = pageData.relatedGuides.guides.map((guide) => ({
-    title: guide.title,
-    category: guide.category,
-    description: guide.description,
-    placeholderLabel: guide.title.toUpperCase(),
-    alt: guide.title,
-    badgeCount: guide.links ? guide.links.length : 1,
-    links: guide.links,
-    mainUrl: guide.mainUrl
   }));
 
   return (
@@ -151,7 +138,7 @@ const SoloRiverCruises = () => {
             extras={pageData.soloPricing.comparePricesExtras}
           />
           {/* Single Supplement Interlink Callout */}
-          <div className="max-w-4xl mx-auto px-6 -mt-8 mb-16 text-center">
+          <div className="max-w-4xl mx-auto px-6 mt-6 mb-16 text-center">
             <div className="p-6 bg-stone-50 rounded-2xl border border-stone-200 shadow-sm space-y-3">
               <p className="font-sans text-sm sm:text-base text-slate-700 leading-relaxed italic">
                 {pageData.soloPricing.conclusion}
@@ -192,7 +179,7 @@ const SoloRiverCruises = () => {
         <div className="relative">
           <ComparisonTable data={riverVsOceanTableData} />
           {/* Table Conclusion & Link Callout */}
-          <div className="max-w-4xl mx-auto px-6 -mt-8 mb-16 text-center">
+          <div className="max-w-4xl mx-auto px-6 mt-6 mb-16 text-center">
             <div className="p-6 bg-stone-50 rounded-2xl border border-stone-200 shadow-sm space-y-3">
               <p className="font-sans text-sm sm:text-base text-slate-700 leading-relaxed">
                 {pageData.riverVsOcean.conclusion}
@@ -218,7 +205,7 @@ const SoloRiverCruises = () => {
             features={pageData.whoIsItBestFor.features}
           />
           {/* Best For Counterpoint Callout */}
-          <div className="max-w-4xl mx-auto px-6 -mt-8 mb-16 text-center">
+          <div className="max-w-4xl mx-auto px-6 mt-6 mb-16 text-center">
             <div className="p-6 bg-stone-50 rounded-2xl border border-stone-200 shadow-sm">
               <p className="font-sans text-sm sm:text-base text-slate-700 italic leading-relaxed">
                 {pageData.whoIsItBestFor.counterpoint}
@@ -254,21 +241,22 @@ const SoloRiverCruises = () => {
             ctaLink="/contact"
           />
           {/* Dual Navigation Interlink Box */}
-          <div className="max-w-4xl mx-auto px-6 -mt-8 mb-16">
-            <div className="bg-white p-8 rounded-2xl border border-slate-200 shadow-md flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
-              <p className="font-sans text-sm sm:text-base text-slate-700 leading-relaxed max-w-xl">
-                Explore our dedicated guides for tailored women-only departures and specialized travel for women over 50:
+          <div className="max-w-4xl mx-auto px-6 mt-8 mb-20">
+            <div className="bg-white p-8 md:p-10 rounded-2xl border border-slate-200 shadow-md flex flex-col items-center text-center space-y-6">
+              <p className="font-sans text-base sm:text-lg text-slate-700 leading-relaxed text-center">
+                <span className="block">Explore our dedicated guides for tailored women-only departures</span>
+                <span className="block">and specialized travel for women over 50:</span>
               </p>
-              <div className="flex flex-col sm:flex-row gap-3 shrink-0">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
                 <Link
                   to={pageData.soloWomenAndOver50.womenOnlyLinkUrl}
-                  className="inline-flex items-center justify-center px-6 py-2.5 bg-navy-950 text-white font-sans text-xs font-bold tracking-wider uppercase rounded-full hover:bg-navy-900 transition-all shadow"
+                  className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 bg-navy-950 text-white font-sans text-xs sm:text-sm font-bold tracking-wider uppercase rounded-full hover:bg-navy-900 transition-all shadow text-center"
                 >
                   {pageData.soloWomenAndOver50.womenOnlyLinkText} &rarr;
                 </Link>
                 <Link
                   to={pageData.soloWomenAndOver50.over50LinkUrl}
-                  className="inline-flex items-center justify-center px-6 py-2.5 bg-stone-100 text-navy-950 font-sans text-xs font-bold tracking-wider uppercase rounded-full hover:bg-stone-200 transition-all border border-stone-200"
+                  className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 bg-stone-100 text-navy-950 font-sans text-xs sm:text-sm font-bold tracking-wider uppercase rounded-full hover:bg-stone-200 transition-all border border-stone-200 text-center"
                 >
                   {pageData.soloWomenAndOver50.over50LinkText} &rarr;
                 </Link>
@@ -301,7 +289,7 @@ const SoloRiverCruises = () => {
         />
 
         {/* Last Updated Callout */}
-        <div className="max-w-4xl mx-auto px-6 -mt-8 mb-12 text-center">
+        <div className="max-w-4xl mx-auto px-6 mt-4 mb-12 text-center">
           <span className="text-xs font-mono uppercase tracking-wider text-slate-500">
             {pageData.expert.lastUpdated}
           </span>
@@ -309,13 +297,6 @@ const SoloRiverCruises = () => {
 
         {/* ─── 14. FREQUENTLY ASKED QUESTIONS (FAQAccordion Component) ─── */}
         <FAQAccordion data={faqData} />
-
-        {/* ─── 15. RELATED LUXURY SOLO TRAVEL GUIDES (InteractivePillarHubGrid Component) ─── */}
-        <InteractivePillarHubGrid
-          title={pageData.relatedGuides.title}
-          subtitle={pageData.relatedGuides.subtitle}
-          items={relatedHubGuides}
-        />
       </div>
 
       {/* ─── 16. FINAL CONVERSION BANNER (CenterCTA Component) ─── */}

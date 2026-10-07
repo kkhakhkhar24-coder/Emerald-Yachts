@@ -261,7 +261,7 @@
         "Guided experiences in ports"
       ],
       "conclusion": "Luxury cruise lines can also offer a particularly comfortable environment for women who want independence without managing every logistical detail themselves.",
-      "linkText": "Learn more about the best luxury cruises for solo women",
+      "linkText": "Solo Luxury Cruises Guide",
       "linkUrl": "/luxury-solo-womens-travel/solo-luxury-cruises"
     },
     "river": {
@@ -412,7 +412,7 @@
         "Travel insurance",
         "Additional transportation"
       ],
-      "linkText": "Learn more about cruises without single supplements and how solo pricing can vary",
+      "linkText": "Single Supplement Cruises Guide",
       "linkUrl": "/luxury-solo-womens-travel/single-supplement-cruises"
     }
   },
@@ -542,72 +542,6 @@
       "answer": "A luxury travel advisor evaluates vetted accommodations, reliable private transportation, and appropriate itinerary pacing before departure. They also serve as an experienced advocate who coordinates complex logistics, verifies safety standards, and remains a direct contact point if travel plans need adjustment."
     }
   ],
-  "relatedGuides": {
-    "title": "Related Luxury Solo Travel Guides",
-    "subtitle": "Explore our complete series of curated guides for solo women travelers.",
-    "guides": [
-      {
-        "title": "Luxury Solo Travel for Women",
-        "category": "Pillar Guide",
-        "description": "The definitive overview of luxury travel for women journeying independently.",
-        "mainUrl": "/luxury-solo-womens-travel"
-      },
-      {
-        "title": "Best Luxury Cruises for Solo Women",
-        "category": "Cruising",
-        "description": "Compare top luxury ocean cruise lines, solo amenities, and social experiences.",
-        "mainUrl": "/luxury-solo-womens-travel/solo-luxury-cruises"
-      },
-      {
-        "title": "Women-Only Tours",
-        "category": "Group Travel",
-        "description": "Small-group companionship and curated itineraries designed exclusively for women.",
-        "mainUrl": "/luxury-solo-womens-travel/women-only-tours"
-      },
-      {
-        "title": "Solo Travel for Women Over 50",
-        "category": "Specialized Guide",
-        "description": "Safety, pacing, luxury accommodations, and curated journeys for women over 50.",
-        "mainUrl": "/luxury-solo-womens-travel/women-over-50"
-      },
-      {
-        "title": "Best Destinations for Solo Women",
-        "category": "Destinations",
-        "description": "Discover the most rewarding and welcoming luxury destinations worldwide.",
-        "mainUrl": "/luxury-solo-womens-travel/best-destinations"
-      },
-      {
-        "title": "Cruises Without Single Supplements",
-        "category": "Pricing & Value",
-        "description": "How to navigate solo stateroom supplements and find zero-supplement luxury sailings.",
-        "mainUrl": "/luxury-solo-womens-travel/single-supplement-cruises"
-      },
-      {
-        "title": "Best River Cruises for Solo Travelers",
-        "category": "River Cruising",
-        "description": "Explore Europe's historic waterways with intimate ships and built-in excursions.",
-        "mainUrl": "/luxury-solo-womens-travel/solo-river-cruises"
-      },
-      {
-        "title": "Luxury Solo African Safaris",
-        "category": "Expeditions",
-        "description": "Guided game drives, premier safari lodges, and seamless logistics in Africa.",
-        "mainUrl": "/luxury-solo-womens-travel/solo-african-safaris"
-      },
-      {
-        "title": "Solo vs. Group Travel",
-        "category": "Travel Style",
-        "description": "Compare complete independence with small-group luxury travel.",
-        "mainUrl": "/luxury-solo-womens-travel/solo-vs-group-travel"
-      },
-      {
-        "title": "Luxury Solo Travel Cost",
-        "category": "Planning & Budget",
-        "description": "Understand total journey investment, pricing layers, and luxury value.",
-        "mainUrl": "/luxury-solo-womens-travel/solo-travel-cost"
-      }
-    ]
-  },
   "expert": {
     "name": "Angela Hughes",
     "title": "Luxury Travel Advisor & Founder",
@@ -636,7 +570,6 @@
         "title": "Advocate & Support",
         "description": "Pre-departure coordination and continuous reassurance before and during your luxury journey."
       }
-    ],
-    "lastUpdated": "LAST UPDATED: OCTOBER 2026 • REVIEWED BY ANGELA HUGHES, LUXURY TRAVEL ADVISOR"
+    ]
   }
 }

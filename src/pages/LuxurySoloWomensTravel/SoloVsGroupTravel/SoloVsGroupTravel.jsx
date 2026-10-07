@@ -20,7 +20,6 @@ import TravelerTypeGrid from '@/components/ui/TravelerTypeGrid';
 import ExpertRulesGrid from '@/components/ui/ExpertRulesGrid';
 import CenterCTA from '@/components/ui/CenterCTA';
 import FAQAccordion from '@/components/ui/FAQAccordion';
-import InteractivePillarHubGrid from '@/components/ui/InteractivePillarHubGrid';
 import ExpertCredentials from '@/components/ui/ExpertCredentials';
 import FadeIn from '@/components/ui/FadeIn';
 
@@ -98,17 +97,6 @@ const SoloVsGroupTravel = () => {
       answer: faq.answer
     }))
   };
-
-  // 8. Related Hub Guides for InteractivePillarHubGrid
-  const relatedHubGuides = pageData.relatedGuides.guides.map((guide) => ({
-    title: guide.title,
-    category: guide.category,
-    description: guide.description,
-    alt: guide.title,
-    badgeCount: guide.links ? guide.links.length : 1,
-    links: guide.links,
-    mainUrl: guide.mainUrl
-  }));
 
   return (
     <div className="bg-white min-h-screen font-sans text-slate-800 selection:bg-gold-500 selection:text-white">
@@ -356,14 +344,7 @@ const SoloVsGroupTravel = () => {
           data={faqData}
         />
 
-        {/* ─── 13. RELATED LUXURY SOLO TRAVEL GUIDES (InteractivePillarHubGrid Component) ─── */}
-        <InteractivePillarHubGrid
-          title={pageData.relatedGuides.title}
-          subtitle={pageData.relatedGuides.subtitle}
-          items={relatedHubGuides}
-        />
-
-        {/* ─── 14. ABOUT THE AUTHOR & EEAT (ExpertCredentials Component) ─── */}
+        {/* ─── 13. ABOUT THE AUTHOR & EEAT (ExpertCredentials Component) ─── */}
         <div className="relative">
           <ExpertCredentials
             name={pageData.expert.name}

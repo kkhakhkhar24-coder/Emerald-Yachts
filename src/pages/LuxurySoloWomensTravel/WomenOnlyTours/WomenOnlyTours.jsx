@@ -22,7 +22,6 @@ import ExpertRulesGrid from '@/components/ui/ExpertRulesGrid';
 import ExpertCredentials from '@/components/ui/ExpertCredentials';
 import FAQAccordion from '@/components/ui/FAQAccordion';
 import CenterCTA from '@/components/ui/CenterCTA';
-import InteractivePillarHubGrid from '@/components/ui/InteractivePillarHubGrid';
 
 // Assets (Commented out per project preference)
 // import TourHeroImg from "../../../assets/Seabourn/SeabournCruises/seabourn-luxury-cruise-ship-ocean-hero.jpg";
@@ -95,18 +94,6 @@ const WomenOnlyTours = () => {
       answer: faq.answer
     }))
   };
-
-  // 6. Related Pillar Guides
-  const relatedHubGuides = pageData.relatedGuides.guides.map((guide) => ({
-    title: guide.title,
-    category: guide.category,
-    description: guide.description,
-    // image: null,
-    alt: guide.title,
-    badgeCount: guide.badgeCount,
-    links: guide.links,
-    mainUrl: guide.mainUrl
-  }));
 
   return (
     <div className="bg-white min-h-screen font-sans text-slate-800">
@@ -301,17 +288,7 @@ const WomenOnlyTours = () => {
         {/* ─── 14. FREQUENTLY ASKED QUESTIONS (FAQAccordion Component) ─── */}
         <FAQAccordion data={faqData} />
 
-        {/* ─── 15. RELATED LUXURY SOLO TRAVEL GUIDES (InteractivePillarHubGrid Component) ─── */}
-        <div className="[&_.grid]:!flex [&_.grid]:flex-wrap [&_.grid]:justify-center [&_.grid>div]:w-full md:[&_.grid>div]:w-[calc(50%-1rem)] lg:[&_.grid>div]:w-[calc(33.333%-1.333rem)]">
-          <InteractivePillarHubGrid
-            title={pageData.relatedGuides.title}
-            subtitle={pageData.relatedGuides.subtitle}
-            items={relatedHubGuides}
-            variant="destination"
-          />
-        </div>
-
-        {/* ─── 16. FINAL CONVERSION BANNER (CenterCTA Component) ─── */}
+        {/* ─── 15. FINAL CONVERSION BANNER (CenterCTA Component) ─── */}
         <CenterCTA
           title={pageData.finalConversion.title}
           description={pageData.finalConversion.description}

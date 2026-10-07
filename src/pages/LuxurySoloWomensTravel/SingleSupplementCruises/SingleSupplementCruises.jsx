@@ -22,7 +22,6 @@ import AlternatingRiverShowcase from '@/components/ui/AlternatingRiverShowcase';
 import MistakesShowcase from '@/components/ui/MistakesShowcase';
 import ExpertRulesGrid from '@/components/ui/ExpertRulesGrid';
 import ComparisonTable from '@/components/ui/ComparisonTable';
-import InteractivePillarHubGrid from '@/components/ui/InteractivePillarHubGrid';
 import ExpertCredentials from '@/components/ui/ExpertCredentials';
 import FAQAccordion from '@/components/ui/FAQAccordion';
 import CenterCTA from '@/components/ui/CenterCTA';
@@ -130,17 +129,6 @@ const SingleSupplementCruises = () => {
       answer: faq.answer
     }))
   };
-
-  // 12. Related Hub Guides for InteractivePillarHubGrid
-  const relatedHubGuides = pageData.relatedGuides.guides.map((guide) => ({
-    title: guide.title,
-    category: guide.category,
-    description: guide.description,
-    alt: guide.title,
-    badgeCount: guide.links ? guide.links.length : 1,
-    links: guide.links,
-    mainUrl: guide.mainUrl
-  }));
 
   return (
     <div className="bg-white min-h-screen font-sans text-slate-800 selection:bg-gold-500 selection:text-white">
@@ -384,16 +372,6 @@ const SingleSupplementCruises = () => {
           data={faqData}
         />
 
-
-        {/* ─── 19. RELATED LUXURY SOLO TRAVEL GUIDES (InteractivePillarHubGrid Component) ─── */}
-        <InteractivePillarHubGrid
-          title={pageData.relatedGuides.title}
-          subtitle={pageData.relatedGuides.subtitle}
-          items={relatedHubGuides}
-        />
-
-
-        
         {/* ─── 18. FIND THE RIGHT LUXURY CRUISE FOR YOU (CenterCTA Component) ─── */}
         <CenterCTA
           title={pageData.finalClosing.title}

@@ -18,7 +18,6 @@ import ItineraryCards from '@/components/ui/ItineraryCards';
 import ExpertCredentials from '@/components/ui/ExpertCredentials';
 import FAQAccordion from '@/components/ui/FAQAccordion';
 import CenterCTA from '@/components/ui/CenterCTA';
-import InteractivePillarHubGrid from '@/components/ui/InteractivePillarHubGrid';
 import GenericChecklistCards from '@/components/ui/GenericChecklistCards';
 import ExpertAuthorityChecklist from '@/components/ui/ExpertAuthorityChecklist';
 import AsymmetricStoryIntro from '@/components/ui/AsymmetricStoryIntro';
@@ -142,17 +141,6 @@ const TravelSafety = () => {
       ? `${cred.title}: ${cred.description}`
       : cred.label || cred.title || ''
   );
-
-  // 8. Related Pillar Guides
-  const relatedHubGuides = pageData.relatedGuides.guides.map((guide) => ({
-    title: guide.title,
-    category: guide.category,
-    description: guide.description,
-    placeholderLabel: guide.title.toUpperCase(),
-    alt: guide.title,
-    badgeCount: 1,
-    mainUrl: guide.mainUrl
-  }));
 
   return (
     <div className="bg-white min-h-screen font-sans text-slate-800">
@@ -308,19 +296,17 @@ const TravelSafety = () => {
             cards={advisorAndSupplementsCards}
           />
           {/* Single Supplements Interlink Box */}
-          <div className="max-w-4xl mx-auto px-6 mt-8 mb-20 text-center">
-            <div className="p-6 md:p-8 bg-stone-50 rounded-2xl border border-stone-200 shadow-sm space-y-3">
-              <p className="font-sans text-sm sm:text-base text-slate-700 leading-relaxed">
+          <div className="max-w-4xl mx-auto px-6 mt-8 mb-20">
+            <div className="bg-white p-8 md:p-10 rounded-2xl border border-slate-200 shadow-md flex flex-col items-center text-center space-y-6">
+              <p className="font-sans text-base sm:text-lg text-slate-700 leading-relaxed max-w-2xl">
                 {pageData.advisorAndSupplements.advisor.conclusion}
               </p>
-              <p className="font-sans text-sm sm:text-base text-slate-800">
-                <Link
-                  to={pageData.advisorAndSupplements.supplements.linkUrl}
-                  className="font-bold text-navy-950 underline underline-offset-4 hover:text-navy-800 transition-colors"
-                >
-                  {pageData.advisorAndSupplements.supplements.linkText} &rarr;
-                </Link>
-              </p>
+              <Link
+                to={pageData.advisorAndSupplements.supplements.linkUrl}
+                className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 bg-navy-950 text-white font-sans text-xs sm:text-sm font-bold tracking-wider uppercase rounded-full hover:bg-navy-900 transition-all shadow text-center"
+              >
+                {pageData.advisorAndSupplements.supplements.linkText} &rarr;
+              </Link>
             </div>
           </div>
         </div>
@@ -404,13 +390,6 @@ const TravelSafety = () => {
 
         {/* ─── 12. FREQUENTLY ASKED QUESTIONS (FAQAccordion Component) ─── */}
         <FAQAccordion data={faqData} />
-
-        {/* ─── 13. RELATED LUXURY SOLO TRAVEL GUIDES (InteractivePillarHubGrid Component) ─── */}
-        <InteractivePillarHubGrid
-          title={pageData.relatedGuides.title}
-          subtitle={pageData.relatedGuides.subtitle}
-          items={relatedHubGuides}
-        />
       </div>
 
       {/* ─── 14. FINAL CONVERSION BANNER (CenterCTA Component) ─── */}
