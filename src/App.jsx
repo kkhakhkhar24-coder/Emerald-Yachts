@@ -220,7 +220,9 @@ import WomenOver50 from "./pages/LuxurySoloWomensTravel/WomenOver50/WomenOver50"
 import BestDestinations from "./pages/LuxurySoloWomensTravel/BestDestinations/BestDestinations";
 import SoloRiverCruises from "./pages/LuxurySoloWomensTravel/SoloRiverCruises/SoloRiverCruises";
 import TravelSafety from "./pages/LuxurySoloWomensTravel/TravelSafety/TravelSafety";
-
+import SingleSupplementCruises from "./pages/LuxurySoloWomensTravel/SingleSupplementCruises/SingleSupplementCruises";
+import SoloVsGroupTravel from "./pages/LuxurySoloWomensTravel/SoloVsGroupTravel/SoloVsGroupTravel";
+import SoloAfricanSafaris from "./pages/LuxurySoloWomensTravel/SoloAfricanSafaris/SoloAfricanSafaris";
 function App() {
   return (
     <HelmetProvider>
@@ -1188,6 +1190,18 @@ function App() {
           <Route
             path="/luxury-solo-womens-travel/travel-safety"
             element={<TravelSafety />}
+          />
+          <Route
+            path="/luxury-solo-womens-travel/single-supplement-cruises"
+            element={<SingleSupplementCruises />}
+          />
+          <Route
+            path="/luxury-solo-womens-travel/solo-vs-group-travel"
+            element={<SoloVsGroupTravel />}
+          />
+          <Route
+            path="/luxury-solo-womens-travel/solo-african-safaris"
+            element={<SoloAfricanSafaris />}
           />
         </Routes>
       </BrowserRouter>

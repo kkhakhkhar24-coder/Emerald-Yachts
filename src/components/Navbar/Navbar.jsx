@@ -1639,6 +1639,31 @@ const Navbar = () => {
                 Solo Female Travel Safety
               </NavLink>
 
+               <NavLink
+                to="/luxury-solo-womens-travel/single-supplement-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Cruises Without Single Supplements
+              </NavLink>
+
+               <NavLink
+                to="/luxury-solo-womens-travel/solo-vs-group-travel"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Solo Travel vs. Women-Only Group Travel
+              </NavLink>
+
+              <NavLink
+                to="/luxury-solo-womens-travel/solo-african-safaris"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                African Safaris for Solo Women
+              </NavLink>
+
+
             </div>
           </div>
         </div>
@@ -3234,6 +3259,30 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Solo Female Travel Safety
+              </NavLink>
+
+               <NavLink
+                to="/luxury-solo-womens-travel/single-supplement-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Cruises Without Single Supplements
+              </NavLink>
+
+               <NavLink
+                to="/luxury-solo-womens-travel/solo-vs-group-travel"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Solo Travel vs. Women-Only Group Travel
+              </NavLink>
+
+              <NavLink
+                to="/luxury-solo-womens-travel/solo-african-safaris"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                African Safaris for Solo Women
               </NavLink>
 
             <span className="mobile-dropdown-divider"></span>

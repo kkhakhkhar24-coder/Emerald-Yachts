@@ -1,7 +1,7 @@
 import React from 'react';
 import FadeIn from './FadeIn';
 
-const EditorialIntroSection = ({ heading, description, image, highlights }) => {
+const EditorialIntroSection = ({ heading, description = '', image, highlights }) => {
   return (
     <section className="py-24 bg-white relative overflow-hidden">
       
