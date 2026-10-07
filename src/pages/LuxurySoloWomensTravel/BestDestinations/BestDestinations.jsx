@@ -109,7 +109,7 @@ const BestDestinations = () => {
             badgeTitle="Personalized Destination Matching"
             badgeDescription="Tailored luxury matching your exact independence, comfort, and safety preferences."
             placeholderLabel="WHAT MAKES A DESTINATION GOOD FOR SOLO WOMEN"
-            // image={null}
+          // image={null}
           />
         </div>
 
@@ -211,7 +211,7 @@ const BestDestinations = () => {
             title={pageData.safety.title}
             expertNote={`${pageData.safety.subtitle} ${pageData.safety.lead}`}
             inclusions={pageData.safety.points}
-            // image={null}
+          // image={null}
           />
           {/* Safety Interlink Box */}
           <div className="max-w-3xl mx-auto px-6 mt-6 mb-16 text-center relative z-20">
@@ -280,8 +280,8 @@ const BestDestinations = () => {
         />
       </div>
 
-      
-        {/* ─── 14. FINAL CONVERSION BANNER (CenterCTA Component) ─── */}
+
+      {/* ─── 14. FINAL CONVERSION BANNER (CenterCTA Component) ─── */}
       <CenterCTA
         title={pageData.finalCta.title}
         subtitle={`${pageData.finalCta.subtitle} ${pageData.finalCta.lead}`}

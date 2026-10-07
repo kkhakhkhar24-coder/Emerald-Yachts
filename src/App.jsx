@@ -218,6 +218,8 @@ import HowToChooseRightRitzCarltonYachtSuiteItinerary from "./pages/HowToChooseR
 import WomenOnlyTours from "./pages/LuxurySoloWomensTravel/WomenOnlyTours/WomenOnlyTours";
 import WomenOver50 from "./pages/LuxurySoloWomensTravel/WomenOver50/WomenOver50";
 import BestDestinations from "./pages/LuxurySoloWomensTravel/BestDestinations/BestDestinations";
+import SoloRiverCruises from "./pages/LuxurySoloWomensTravel/SoloRiverCruises/SoloRiverCruises";
+import TravelSafety from "./pages/LuxurySoloWomensTravel/TravelSafety/TravelSafety";
 
 function App() {
   return (
@@ -1178,6 +1180,14 @@ function App() {
           <Route
             path="/luxury-solo-womens-travel/best-destinations"
             element={<BestDestinations />}
+          />
+          <Route
+            path="/luxury-solo-womens-travel/solo-river-cruises"
+            element={<SoloRiverCruises />}
+          />
+          <Route
+            path="/luxury-solo-womens-travel/travel-safety"
+            element={<TravelSafety />}
           />
         </Routes>
       </BrowserRouter>

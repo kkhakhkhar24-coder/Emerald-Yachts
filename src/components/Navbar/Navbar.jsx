@@ -1623,6 +1623,22 @@ const Navbar = () => {
                 Best Destinations for Solo Women
               </NavLink>
 
+              <NavLink
+                to="/luxury-solo-womens-travel/solo-river-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Best River Cruises for Solo Travelers
+              </NavLink>
+
+              <NavLink
+                to="/luxury-solo-womens-travel/travel-safety"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Solo Female Travel Safety
+              </NavLink>
+
             </div>
           </div>
         </div>
@@ -3204,6 +3220,21 @@ const Navbar = () => {
                 Best Destinations for Solo Women
               </NavLink>
 
+              <NavLink
+                to="/luxury-solo-womens-travel/solo-river-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Best River Cruises for Solo Travelers
+              </NavLink>
+
+              <NavLink
+                to="/luxury-solo-womens-travel/travel-safety"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Solo Female Travel Safety
+              </NavLink>
 
             <span className="mobile-dropdown-divider"></span>
           </div>
