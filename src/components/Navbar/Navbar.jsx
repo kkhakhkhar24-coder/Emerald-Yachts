@@ -1319,7 +1319,7 @@ const Navbar = () => {
                 Celebrity Xcel Cruise Ship Guide
               </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/celebrity-cruises/ships/celebrity-ascent"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -1349,9 +1349,9 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Celebrity Edge Cruise Ship Guide
-              </NavLink> */}
+              </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/celebrity-cruises/edge-vs-solstice-series"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -1359,7 +1359,7 @@ const Navbar = () => {
                 Celebrity Edge vs Solstice Series
               </NavLink>
 
-              <NavLink
+              {/* <NavLink
                 to="/celebrity-cruises/river-cruises"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -2941,7 +2941,7 @@ const Navbar = () => {
               Celebrity Xcel Cruise Ship Guide
             </NavLink>
 
-            {/* <NavLink
+            <NavLink
               to="/celebrity-cruises/ships/celebrity-ascent"
               className="nav-dropdown-single"
               onClick={toggleMenu}
@@ -2971,9 +2971,9 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Celebrity Edge Cruise Ship Guide
-            </NavLink> */}
+            </NavLink>
 
-            {/* <NavLink
+            <NavLink
               to="/celebrity-cruises/edge-vs-solstice-series"
               className="nav-dropdown-single"
               onClick={toggleMenu}
@@ -2981,7 +2981,7 @@ const Navbar = () => {
               Celebrity Edge vs Solstice Series
             </NavLink>
 
-            <NavLink
+            {/* <NavLink
               to="/celebrity-cruises/river-cruises"
               className="nav-dropdown-single"
               onClick={toggleMenu}
