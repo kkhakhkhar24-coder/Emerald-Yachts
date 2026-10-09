@@ -1,0 +1,761 @@
+{
+  "seo": {
+    "title": "Celebrity Caribbean Cruises: Complete Guide",
+    "metaTitle": "Celebrity Caribbean Cruises | Ships, Itineraries & Ports",
+    "metaDescription": "Explore Celebrity Caribbean Cruises, including Eastern, Western and Southern Caribbean itineraries, ships, departure ports, islands, excursions, sailing seasons and planning tips.",
+    "keywords": "Celebrity Caribbean cruises, Eastern Caribbean cruises, Western Caribbean cruises, Southern Caribbean cruises, Caribbean cruise ports, Celebrity cruise ships, Caribbean cruise packing, Angela Hughes",
+    "canonicalUrl": "https://www.tripsandships.com/celebrity-cruises/caribbean/",
+    "ogTitle": "Celebrity Caribbean Cruises: Complete Guide",
+    "ogDescription": "Explore Celebrity Caribbean Cruises, including Eastern, Western and Southern Caribbean itineraries, ships, departure ports, islands, excursions, sailing seasons and planning tips."
+  },
+  "hero": {
+    "badge": "Celebrity Caribbean Cruises",
+    "title": "Celebrity Caribbean Cruises Complete Guide",
+    "subtitle": "Ships, Island Itineraries, Departure Ports & Excursions",
+    "ctaLabel": "Plan My Cruise",
+    "ctaUrl": "/contact",
+    "secondaryCtaLabel": "Speak With Expert",
+    "secondaryCtaUrl": "/contact"
+  },
+  "intro": {
+    "heading": "Celebrity Caribbean Cruises",
+    "paragraphs": [
+      "Celebrity Caribbean Cruises combine tropical islands, turquoise waters, beaches, local culture and premium cruising aboard Celebrity's modern fleet.",
+      "Celebrity's Caribbean program includes Eastern, Western and Southern Caribbean itineraries, with routes visiting destinations such as the Bahamas, St. Thomas, St. Maarten, Puerto Rico, Jamaica, Grand Cayman, Aruba, Curaçao and other Caribbean islands depending on the sailing.",
+      "The Caribbean is also one of the most flexible cruise regions. Travelers can choose shorter escapes, weeklong vacations or longer itineraries that combine several islands and countries. For travelers planning a Celebrity Caribbean cruise, the most important decisions are the ship, itinerary region, departure port, cruise length, sailing season, port time, excursions and whether to add pre- or post-cruise stays."
+    ],
+    "quickAnswerHeading": "What Are Celebrity Caribbean Cruises?",
+    "quickAnswer": "Celebrity Caribbean Cruises are premium cruises visiting islands and coastal destinations throughout the Eastern, Western and Southern Caribbean, with itineraries designed around beaches, snorkeling, watersports, culture, nature and island exploration. Popular departure options can include Fort Lauderdale, Miami and San Juan, with departure availability depending on the ship and sailing."
+  },
+  "glance": [
+    { "feature": "Region", "detail": "Caribbean" },
+    { "feature": "Main Itinerary Types", "detail": "Eastern, Western & Southern Caribbean" },
+    { "feature": "Cruise Length", "detail": "Short getaways to longer voyages" },
+    { "feature": "Cruise Style", "detail": "Premium" },
+    { "feature": "Popular Departure Ports", "detail": "Fort Lauderdale, Miami & San Juan" },
+    { "feature": "Eastern Caribbean", "detail": "St. Thomas, St. Maarten, Puerto Rico & Bahamas" },
+    { "feature": "Western Caribbean", "detail": "Jamaica, Grand Cayman, Mexico & Belize" },
+    { "feature": "Southern Caribbean", "detail": "Aruba, Curaçao, Bonaire & other southern islands" },
+    { "feature": "Main Activities", "detail": "Beaches, snorkeling, diving, sightseeing & excursions" },
+    { "feature": "Cruise Season", "detail": "Year-round" },
+    { "feature": "Peak Winter Season", "detail": "December–April" },
+    { "feature": "Summer Season", "detail": "May–August" },
+    { "feature": "Hurricane Season", "detail": "June–November" },
+    { "feature": "Pre-Cruise Stays", "detail": "Available" },
+    { "feature": "Post-Cruise Stays", "detail": "Available" }
+  ],
+  "whyChoose": [
+    { "title": "Tropical Beaches & Coral Reefs", "description": "Relax on world-famous tropical beaches, swim in turquoise waters, and snorkel over vibrant coral reefs." },
+    { "title": "Historic Towns & Local Cuisine", "description": "Explore Spanish colonial forts in San Juan, colorful Dutch waterfronts, and authentic Caribbean island cuisine." },
+    { "title": "Watersports & Island Tours", "description": "Enjoy scuba diving, catamaran sailings, rainforest hikes, scenic overlooks, and duty-free port shopping." },
+    { "title": "Seamless Multi-Island Logistics", "description": "Experience multiple islands and cultures in a single vacation while keeping the same luxurious stateroom throughout." }
+  ],
+  "fleetCards": [
+    {
+      "title": "Celebrity Edge Series Flagships",
+      "description": "Revolutionary outward-facing ships sailing the Caribbean, featuring the Magic Carpet floating platform, 2-story Edge Villas, and Infinite Verandas connecting you directly to the sea.",
+      "tags": ["Magic Carpet", "Infinite Verandas", "The Retreat Sundeck & Lounge", "Rooftop Garden"],
+      "highlight": "Award-winning modern luxury design with outward-facing panoramic spaces"
+    },
+    {
+      "title": "Celebrity Solstice & Millennium Class",
+      "description": "Beloved classic vessels offering intimate Caribbean cruising with real grass Lawn Clubs, exceptional personalized service, world-class dining, and access to boutique island harbors.",
+      "tags": ["Half-Acre Lawn Club", "The Spa & Thermal Suites", "Oceanview Cafe Al Fresco", "Boutique Port Access"],
+      "highlight": "Warm personalized service, expansive pool decks, and classic elegance"
+    },
+    {
+      "title": "Staterooms & The Retreat Suites",
+      "description": "Accommodations ranging from smart interior and ocean view staterooms to expansive suites in The Retreat, featuring private Luminae dining, dedicated concierges, and exclusive sundecks.",
+      "tags": ["Private Verandas", "AquaClass Wellness", "Luminae Exclusive Dining", "Dedicated Butler / Concierge"],
+      "highlight": "All-inclusive suite luxury with private lounge and sun sanctuary"
+    },
+    {
+      "title": "Ship Selection Advice for the Caribbean",
+      "description": "For a Caribbean vacation, the route and islands can be just as important as the ship itself. Consider ship size, stateroom category, dining options, pool spaces, sea days, and port duration.",
+      "tags": ["Ship Size & Amenities", "Departure Port Convenience", "Sea Days vs Port Time", "Excursion Variety"],
+      "highlight": "The route, departure city, and time ashore can be just as important as the ship itself."
+    }
+  ],
+  "regions": {
+    "eastern": {
+      "title": "Celebrity Eastern Caribbean Cruises",
+      "summary": "Eastern Caribbean itineraries generally emphasize destinations in the eastern portion of the region. Depending on the sailing, destinations can include St. Thomas, St. Maarten, Puerto Rico, Bahamas, Tortola, St. Kitts, Antigua, and the Dominican Republic.",
+      "stops": [
+        "St. Thomas (Magen's Bay & Overlooks)",
+        "St. Maarten (Dutch & French heritage)",
+        "San Juan, Puerto Rico (Old Town & Forts)",
+        "Tortola (British Virgin Islands)",
+        "Bahamas, St. Kitts & Antigua"
+      ],
+      "bestFor": "Beautiful beaches, Snorkeling, Shopping, Island sightseeing, Historic towns, Scenic coastal experiences."
+    },
+    "western": {
+      "title": "Celebrity Western Caribbean Cruises",
+      "summary": "Western Caribbean itineraries typically combine destinations around the western Caribbean basin. Depending on the sailing, ports can include Cozumel, Grand Cayman, Jamaica, Belize, Costa Maya, Roatán, and Key West.",
+      "stops": [
+        "Cozumel & Costa Maya (Mayan ruins & reefs)",
+        "Grand Cayman (Seven Mile Beach & Stingray City)",
+        "Jamaica (Ocho Rios, Montego Bay, Dunn's River Falls)",
+        "Belize & Roatán (Barrier reef diving & jungle tours)",
+        "Key West (Historic Old Town & sunset celebrations)"
+      ],
+      "bestFor": "Mayan history, Diving, Snorkeling, Beaches, Cenotes, Adventure excursions, Wildlife, Local culture."
+    },
+    "southern": {
+      "title": "Celebrity Southern Caribbean Cruises",
+      "summary": "Southern Caribbean itineraries generally reach farther south and can include some of the region's most distinctive islands. Popular destinations can include Aruba, Curaçao, Bonaire, Barbados, St. Lucia, Grenada, Martinique, and Antigua.",
+      "stops": [
+        "Aruba (Eagle Beach & desert landscapes)",
+        "Curaçao (Willemstad Dutch architecture & diving)",
+        "Bonaire (Pristine marine park diving)",
+        "Barbados (British heritage & rum distilleries)",
+        "St. Lucia (Iconic volcanic Pitons & lush rainforests)"
+      ],
+      "bestFor": "Longer island itineraries, Distinctive Caribbean cultures, Beaches, Diving, Snorkeling, Scenic landscapes, Less-repeated Caribbean destinations."
+    }
+  },
+  "regionCompareTable": {
+    "title": "Eastern vs. Western vs. Southern Caribbean Comparison",
+    "description": "Compare the primary focus, featured destinations, marine activities, and ideal traveler match across the three major Caribbean cruise regions.",
+    "headers": ["Feature", "Eastern Caribbean", "Western Caribbean", "Southern Caribbean"],
+    "rows": [
+      ["Main Focus", "Beaches & island culture", "Adventure & history", "Islands & scenery"],
+      ["Popular Ports", "St. Thomas, St. Maarten", "Jamaica, Grand Cayman, Cozumel", "Aruba, Curaçao, Barbados"],
+      ["Beaches", "Excellent", "Excellent", "Excellent"],
+      ["Snorkeling", "Excellent", "Excellent", "Excellent"],
+      ["Diving", "Excellent", "Excellent", "Excellent"],
+      ["History", "Strong", "Strong", "Strong"],
+      ["Adventure", "Moderate–High", "High", "Moderate–High"],
+      ["Best For", "First-time visitors", "Adventure travelers", "Repeat Caribbean travelers"]
+    ]
+  },
+  "whichIsBest": {
+    "title": "Which Celebrity Caribbean Cruise Is Best for You?",
+    "subtitle": "There is no single best itinerary for every traveler. Match your Caribbean vacation preferences with the ideal region.",
+    "cards": [
+      {
+        "title": "Choose Eastern Caribbean If You Want:",
+        "category": "Classic Tropical Escapes",
+        "bullets": [
+          "Classic Caribbean islands and postcard views",
+          "World-famous white-sand beaches and turquoise bays",
+          "Duty-free shopping in St. Thomas and St. Maarten",
+          "Easy snorkeling and gentle island sightseeing",
+          "Ideal for first-time Caribbean cruisers"
+        ]
+      },
+      {
+        "title": "Choose Western Caribbean If You Want:",
+        "category": "Adventure & Ancient History",
+        "bullets": [
+          "Mayan ruins, cenotes, and jungle excursions",
+          "World-class barrier reef scuba diving and snorkeling",
+          "Thrilling waterfall climbs in Jamaica",
+          "Stingray City encounters in Grand Cayman",
+          "Rich Mexican and Central American cultural immersion"
+        ]
+      },
+      {
+        "title": "Choose Southern Caribbean If You Want:",
+        "category": "Distinctive & Deep Exploration",
+        "bullets": [
+          "Distinctive ABC islands (Aruba, Curaçao, Bonaire)",
+          "Dramatic volcanic landscapes and St. Lucia's Pitons",
+          "Longer island-focused itineraries with fewer sea days",
+          "Less-repeated and more exotic island ports",
+          "Ideal for seasoned and repeat Caribbean travelers"
+        ]
+      }
+    ]
+  },
+  "islands": [
+    {
+      "title": "St. Thomas",
+      "subtitle": "U.S. Virgin Islands",
+      "description": "Known for world-famous beaches like Magen's Bay, duty-free shopping in Charlotte Amalie, scenic mountain overlooks, snorkeling, and gateway access to St. John.",
+      "bullets": ["Magen's Bay & Sapphire Beach", "Charlotte Amalie shopping", "Drake's Seat mountain overlook", "Gateway to St. John National Park"]
+    },
+    {
+      "title": "St. Maarten / St. Martin",
+      "subtitle": "Dual-Nation Caribbean Gem",
+      "description": "Combines Dutch vibrant commerce with French gourmet dining, spectacular beaches, scenic coastal viewpoints, and lively beachside bistros.",
+      "bullets": ["Philipsburg shopping & boardwalk", "Maho Beach plane landings", "French culinary culture in Marigot", "Orient Bay turquoise waters"]
+    },
+    {
+      "title": "San Juan, Puerto Rico",
+      "subtitle": "Spanish Colonial Heritage",
+      "description": "Offers a rich blend of tropical scenery and 500-year-old Spanish colonial history with historic stone forts, colorful architecture, and vibrant Puerto Rican cuisine.",
+      "bullets": ["El Morro & San Cristóbal Forts", "Cobblestone streets of Old San Juan", "Authentic mofongo & local dining", "Condado & Isla Verde beaches"]
+    },
+    {
+      "title": "St. Lucia",
+      "subtitle": "Dramatic Volcanic Vistas",
+      "description": "World-famous for its dramatic scenery, towering green volcanic Pitons, lush tropical rainforests, botanical gardens, and volcanic mud baths.",
+      "bullets": ["UNESCO World Heritage Pitons", "Sulphur Springs drive-in volcano", "Lush rainforest canopy ziplining", "Secluded catamaran sailing coves"]
+    },
+    {
+      "title": "Barbados",
+      "subtitle": "British-Caribbean Elegance",
+      "description": "Combines pristine pink-tinged beaches, historic British colonial architecture, UNESCO Bridgetown, world-renowned Mount Gay rum distilleries, and sea turtle encounters.",
+      "bullets": ["Carlisle Bay sea turtle snorkeling", "Historic Mount Gay Rum tours", "Harrison's Cave limestone caverns", "Rugged Atlantic Bathsheba coast"]
+    },
+    {
+      "title": "Aruba",
+      "subtitle": "One Happy Island",
+      "description": "Famous for its sunny dry tropical climate outside the hurricane belt, wide white powdery beaches, constant trade winds, and unique desert-like cactus landscapes.",
+      "bullets": ["Eagle Beach & Palm Beach", "Arikok National Park & Natural Pool", "Windsurfing & coastal watersports", "Colorful Oranjestad Dutch architecture"]
+    },
+    {
+      "title": "Curaçao",
+      "subtitle": "Colorful Dutch-Caribbean Port",
+      "description": "Features UNESCO World Heritage Willemstad with pastel waterfront buildings, Queen Emma floating pontoon bridge, secluded coral coves, and world-class diving.",
+      "bullets": ["Handelskade pastel waterfront", "Queen Emma pontoon bridge", "Playa Knip & turquoise coves", "Tugboat shipwreck snorkeling"]
+    },
+    {
+      "title": "Jamaica",
+      "subtitle": "Reggae, Waterfalls & Adventure",
+      "description": "Rich island culture offering lush tropical waterfalls, vibrant reggae music, authentic jerk cuisine, river tubing, and breathtaking mountain landscapes.",
+      "bullets": ["Dunn's River Falls climbing", "Martha Brae bamboo river rafting", "Blue Mountain coffee estates", "Authentic Jamaican jerk cuisine"]
+    }
+  ],
+  "portsTable": {
+    "title": "Celebrity Caribbean Cruise Port Network",
+    "description": "Summary of primary ports and featured island calls across Eastern, Western, Southern, and Central Caribbean sailings.",
+    "headers": ["Caribbean Region", "Featured Ports & Island Destinations"],
+    "rows": [
+      ["Eastern Caribbean", "St. Thomas, St. Maarten, Tortola (BVI), Puerto Rico, Bahamas"],
+      ["Western Caribbean", "Jamaica (Ocho Rios/Falmouth), Grand Cayman, Cozumel, Costa Maya, Belize, Roatán"],
+      ["Southern Caribbean", "Aruba, Curaçao, Bonaire, Barbados, St. Lucia, Grenada, Antigua, Martinique"],
+      ["Central & Bahamas", "Nassau, Bimini, Perfect Day at CocoCay (selected sailings)"],
+      ["Puerto Rico", "San Juan (embarkation and port of call)"],
+      ["Mexico & Central America", "Cozumel, Costa Maya, Belize City, Roatán (Honduras)"],
+      ["Dominican Republic", "Puerto Plata, Samaná (selected itineraries)"],
+      ["British Virgin Islands", "Tortola, Virgin Gorda"]
+    ]
+  },
+  "excursionCategories": [
+    {
+      "title": "Beach Excursions",
+      "subtitle": "Resorts & Private Coves",
+      "description": "Resort day passes, private beach pavilions, catamaran cruises, beach clubs, and serene turquoise swimming bays.",
+      "bullets": [
+        "All-inclusive luxury resort day passes",
+        "Private catamaran charter sailings",
+        "Beach club lounges with tropical lunch",
+        "Protected calm bays for family swimming"
+      ]
+    },
+    {
+      "title": "Snorkeling & Diving",
+      "subtitle": "Reefs & Marine Encounters",
+      "description": "Pristine coral reef snorkeling, guided scuba diving, sea turtle encounters, stingray sandbars, and underwater photography.",
+      "bullets": [
+        "Guided reef snorkeling over vibrant coral",
+        "Grand Cayman Stingray City sandbar tours",
+        "Barbados and St. Thomas sea turtle swims",
+        "PADI certified 2-tank scuba dive excursions"
+      ]
+    },
+    {
+      "title": "Adventure Excursions",
+      "subtitle": "Rainforests & Waterfalls",
+      "description": "Ziplining through rainforest canopies, waterfall climbing, ATV off-roading, jungle river tubing, kayaking, and coastal hiking.",
+      "bullets": [
+        "Jamaica Dunn's River Falls climbing",
+        "Rainforest canopy zipline adventures",
+        "Off-road ATV tours through rugged terrain",
+        "Sea kayaking and coastal paddleboarding"
+      ]
+    },
+    {
+      "title": "Cultural Excursions",
+      "subtitle": "Colonial History & Food",
+      "description": "Historic fortresses, colonial old towns, rum distillery masterclasses, local food tours, spice markets, and indigenous history.",
+      "bullets": [
+        "San Juan El Morro & Spanish fort tours",
+        "Historic rum distillery tastings and blending",
+        "Authentic Caribbean cooking classes",
+        "Mayan ruins in Cozumel, Tulum & Belize"
+      ]
+    }
+  ],
+  "departurePorts": [
+    {
+      "title": "Fort Lauderdale (Port Everglades), Florida",
+      "subtitle": "Premier Celebrity Caribbean Hub",
+      "description": "One of the most convenient and modern gateways for Caribbean cruising. Excellent airport proximity and easy pre-cruise extensions in Fort Lauderdale, Palm Beach, or South Florida beach resorts.",
+      "bullets": [
+        "10 minutes from Fort Lauderdale International Airport (FLL)",
+        "Pre-cruise stays: Las Olas Boulevard, waterways & beaches",
+        "Direct access to Eastern, Western & Southern routes",
+        "Modern terminal facilities with expedited boarding"
+      ]
+    },
+    {
+      "title": "Miami (PortMiami), Florida",
+      "subtitle": "Cruise Capital of the World",
+      "description": "Major Florida gateway offering vibrant pre- or post-cruise stays with South Beach Art Deco architecture, Michelin-starred dining, shopping, and international flight connections.",
+      "bullets": [
+        "Effortless access from Miami International Airport (MIA)",
+        "Pre-cruise stays: South Beach, Brickell & Wynwood Arts",
+        "Vibrant culinary, arts, and nightlife scene",
+        "Broad variety of 4- to 10-night Caribbean itineraries"
+      ]
+    },
+    {
+      "title": "San Juan (Pan American Pier), Puerto Rico",
+      "subtitle": "Deep Southern Caribbean Gateway",
+      "description": "Starting your cruise in San Juan puts your ship immediately in the heart of the Caribbean, allowing 7-night sailings to visit 4–5 deep Southern Caribbean islands without long sea days.",
+      "bullets": [
+        "No U.S. passport required for American citizens",
+        "Pre-cruise stays: Old San Juan, El Yunque rainforest & forts",
+        "Immediate access to Aruba, Curaçao, Barbados & St. Lucia",
+        "More island ports and fewer transit sea days"
+      ]
+    }
+  ],
+  "prePostStays": [
+    {
+      "title": "Celebrity Caribbean Cruise + Pre-Cruise Stay",
+      "subtitle": "Relaxed Arrival & Flight Buffer",
+      "description": "Arriving 1–2 nights early in Miami, Fort Lauderdale, or San Juan eliminates travel day stress, provides a safety buffer against flight delays, and lets you explore vibrant local culture.",
+      "bullets": [
+        "Buffer against airline delays and luggage issues",
+        "Explore South Beach, Fort Lauderdale canals, or Old San Juan",
+        "Board your Celebrity ship refreshed on embarkation day",
+        "Curated luxury pre-cruise hotel recommendations"
+      ]
+    },
+    {
+      "title": "Celebrity Caribbean Cruise + Post-Cruise Extension",
+      "subtitle": "Extended Tropical Vacation",
+      "description": "Extend your vacation after disembarkation rather than rushing immediately to the airport. Enjoy additional resort days in South Florida or explore Puerto Rico's lush rainforests.",
+      "bullets": [
+        "Savor extra nights in Miami or San Juan luxury resorts",
+        "Visit El Yunque Rainforest or Florida Everglades",
+        "Enjoy evening dining and shopping at a relaxed pace",
+        "Flexible return flight scheduling"
+      ]
+    }
+  ],
+  "seasonsTable": {
+    "title": "Celebrity Caribbean Cruise Sailing Calendar",
+    "description": "The Caribbean is warm year-round. Compare temperature, pricing, school holiday periods, and hurricane season factors.",
+    "headers": ["Season Window", "Weather & Sailing Characteristics", "Best Traveler Profile"],
+    "rows": [
+      ["December–April (Peak Winter)", "Warmest, sunniest, driest weather. Escapes cold Northern winter.", "Couples, holiday travelers & winter sun seekers"],
+      ["May–June (Shoulder Season)", "Warm tropical weather, fewer crowds, excellent value pricing.", "Couples, flexible travelers & value-conscious cruisers"],
+      ["July–August (Summer)", "Warm weather, vibrant family atmosphere during school holidays.", "Families with school-age kids & watersports lovers"],
+      ["September–October (Low Season)", "Lowest fares of the year, higher rainfall, Atlantic hurricane window.", "Flexible travelers looking for maximum cruise value"],
+      ["November (Pre-Holiday Transition)", "Pleasant tropical weather, lower crowds before holiday rush.", "Couples, mature travelers & Thanksgiving cruisers"]
+    ]
+  },
+  "bestTime": [
+    {
+      "title": "December–April (Peak Winter Season)",
+      "description": "The most popular period for Caribbean cruising. Escape cold northern winters with consistently sunny, warm beach weather. Excellent for holiday vacations and romantic winter escapes.",
+      "icon": "sun"
+    },
+    {
+      "title": "May–June (Late Spring Shoulder)",
+      "description": "Offers an ideal balance between warm tropical weather and lower-season demand before summer school breaks. Great value and pleasant sea conditions.",
+      "icon": "activity"
+    },
+    {
+      "title": "July–August (Summer Vacation)",
+      "description": "Highly popular for family travel during school breaks. Enjoy warm sea temperatures for swimming, snorkeling, water parks, and vibrant onboard programming.",
+      "icon": "tag"
+    },
+    {
+      "title": "September–October & November",
+      "description": "Attractive transition period offering lower cruise fares and uncrowded ports. November in particular provides fantastic weather just ahead of peak winter demand.",
+      "icon": "clock"
+    }
+  ],
+  "weatherConsiderations": [
+    "Warm tropical temperatures (75°F–88°F / 24°C–31°C year-round)",
+    "Gentle trade winds across Eastern and Southern islands",
+    "Brief tropical afternoon showers typical in summer months",
+    "Atlantic hurricane window (June–November) monitored with flexible routing",
+    "Crystal clear sea visibility ideal for snorkeling and diving"
+  ],
+  "inclusions": [
+    {
+      "title": "Stateroom Accommodations",
+      "description": "Plush bedding, twice-daily stateroom service, flat-screen TV, individual climate control, and dedicated room attendant."
+    },
+    {
+      "title": "Complimentary Dining Venues",
+      "description": "Main dining rooms with rotating multi-course menus, Oceanview Cafe buffet, Mast Grill, and casual pool deck venues."
+    },
+    {
+      "title": "Standard Beverages",
+      "description": "Select non-alcoholic beverages, brewed coffee, hot tea, iced tea, lemonade, and breakfast fruit juices."
+    },
+    {
+      "title": "Evening Theater & Live Entertainment",
+      "description": "Broadway-caliber production shows, comedy headliners, live acoustic musicians, and nightclub deck parties."
+    },
+    {
+      "title": "Pools & Adults-Only Solarium",
+      "description": "Expansive resort pools, whirlpool hot tubs, outdoor sundecks, and the tranquil glass-domed Solarium retreat."
+    },
+    {
+      "title": "Fitness Center & Sports Courts",
+      "description": "State-of-the-art fitness center with panoramic ocean views, running track, and outdoor pickleball/basketball court."
+    },
+    {
+      "title": "Camp at Sea Youth Clubs",
+      "description": "Complimentary youth and teen programming, scavenger hunts, arts and crafts supervised by certified youth staff."
+    },
+    {
+      "title": "Port & Destination Navigation",
+      "description": "Onboard port briefings, daily itinerary planners, destination guides, and 24-hour guest services."
+    }
+  ],
+  "exclusions": [
+    {
+      "title": "Shore Excursions",
+      "description": "Guided island tours, beach resort day passes, scuba diving, private catamaran charters, and rainforest ziplining."
+    },
+    {
+      "title": "Airfare & Ground Transfers",
+      "description": "Domestic or international flights to Florida or San Juan, plus private ground transfers between airport and pier."
+    },
+    {
+      "title": "Pre/Post Luxury Hotels",
+      "description": "Hotel stays in Miami, Fort Lauderdale, or Old San Juan before or after your sailing."
+    },
+    {
+      "title": "Specialty Dining Restaurants",
+      "description": "Fine dining venues such as Le Voyage, Fine Cut Steakhouse, Raw on 5, and Le Petit Chef interactive dining."
+    },
+    {
+      "title": "The Spa & Wellness Treatments",
+      "description": "Massages, salon styling, facial treatments, acupuncture, and SEA Thermal Suite access passes."
+    },
+    {
+      "title": "Premium Alcohol Packages",
+      "description": "Specialty cocktails, premium spirits, craft beer, and reserve wine selections by the glass or bottle."
+    },
+    {
+      "title": "Travel Insurance Protection",
+      "description": "Comprehensive trip cancellation, medical coverage, emergency evacuation, and baggage protection."
+    },
+    {
+      "title": "Personal Onboard Purchases",
+      "description": "Casino gaming, duty-free boutique shopping, professional photography packages, and shipboard laundry."
+    }
+  ],
+  "accommodations": [
+    {
+      "title": "Interior Staterooms",
+      "subtitle": "Smart & Efficient",
+      "description": "A practical choice for travelers who plan to spend most of their vacation exploring Caribbean ports, swimming on deck, and enjoying evening entertainment.",
+      "bullets": [
+        "Plush queen/twin bedding with luxury linens",
+        "Interactive flat-screen TV & individual climate control",
+        "Ample closet storage and private ensuite bathroom",
+        "Most budget-friendly fare entry point"
+      ]
+    },
+    {
+      "title": "Ocean View Staterooms",
+      "subtitle": "Natural Light & Scenery",
+      "description": "These accommodations provide a large picture window for natural Caribbean sunlight, ocean views, and scenic port arrival vistas from your private room.",
+      "bullets": [
+        "Expansive picture window with ocean vistas",
+        "Dedicated sitting area with sofa",
+        "Natural daylight throughout the voyage",
+        "Great value balance between view and budget"
+      ]
+    },
+    {
+      "title": "Veranda & Infinite Veranda",
+      "subtitle": "Most Requested for the Caribbean",
+      "description": "A private veranda allows you to step outside for morning Caribbean sunrise coffee, watch islands appear over the horizon, and relax with evening tropical breezes.",
+      "bullets": [
+        "Private outdoor balcony with patio seating",
+        "Infinite Veranda technology on Edge Series ships",
+        "Private sunrise and sunset ocean views",
+        "Watch ship arrivals and departures from your room"
+      ]
+    },
+    {
+      "title": "The Retreat Luxury Suites",
+      "subtitle": "All-Inclusive Sanctuary",
+      "description": "Expansive suites offering dedicated butler service, exclusive Luminae dining, private sundeck with pool, and access to The Retreat Lounge.",
+      "bullets": [
+        "Dedicated butler and private concierge service",
+        "Exclusive Luminae restaurant designed by Michelin-starred chefs",
+        "Private sundeck, pool, and hot tubs in The Retreat",
+        "Complimentary premium drinks, Wi-Fi, and onboard credits"
+      ]
+    }
+  ],
+  "verandaList": [
+    "Watch Caribbean sunrise over calm turquoise waters",
+    "Enjoy private room-service breakfast on your balcony",
+    "Watch the ship sail into exotic island harbors",
+    "Relax with an evening cocktail under tropical trade winds",
+    "Private sanctuary away from busy pool decks"
+  ],
+  "travelerTypes": [
+    {
+      "name": "Celebrity Caribbean Cruises for Families",
+      "desc": "The Caribbean is one of the most popular cruise destinations for families. A Celebrity Caribbean itinerary provides a balanced mix of beach days, snorkeling, island tours, Camp at Sea youth clubs, and multi-generational relaxation.",
+      "icon": "Users"
+    },
+    {
+      "name": "Celebrity Caribbean Cruises for Couples",
+      "desc": "Combining romantic white-sand beaches, sunset veranda drinks, specialty fine dining, adults-only Solarium lounging, and Southern Caribbean island hops for an unforgettable couples vacation.",
+      "icon": "HeartHandshake"
+    },
+    {
+      "name": "Celebrity Multi-Generational Group Cruises",
+      "desc": "Everyone shares the same luxury ship while choosing different daily activities—grandparents can relax by the Solarium, parents can scuba dive, and kids enjoy beach days and Camp at Sea.",
+      "icon": "Home"
+    }
+  ],
+  "cruiseVsLandTable": {
+    "title": "Celebrity Caribbean Cruise vs. Land-Based Island Resort",
+    "description": "Compare multi-island exploration and effortless logistics against single-island resort vacations.",
+    "headers": ["Vacation Factor", "Celebrity Caribbean Cruise", "Land-Based Island Vacation"],
+    "rows": [
+      ["Destinations Visited", "3–6 Caribbean islands on one sailing", "1 island only (unless booking inter-island flights)"],
+      ["Accommodations", "Unpack once; same luxury stateroom", "Multiple hotel check-ins if island-hopping"],
+      ["Inter-Island Travel", "Included; ships travel while you sleep", "Requires regional flights, ferries, and transfers"],
+      ["Dining & Entertainment", "Multiple dining venues & shows included", "All meals, drinks, and entertainment billed separately"],
+      ["Island Logistics", "Effortless port docking & excursions", "Self-coordinated taxis, car rentals, and tour bookings"],
+      ["Scenic Sailing", "Panoramic coastal vistas & sea breezes", "Fixed resort shoreline view"],
+      ["Vacation Value", "High multi-destination cost efficiency", "Higher per-night resort and dining costs"]
+    ]
+  },
+  "worthWithout": [
+    "Packing and unpacking suitcases repeatedly",
+    "Booking and checking into multiple island hotels",
+    "Arranging expensive inter-island flights and ferries",
+    "Coordinating multiple airport transfers and taxi rides"
+  ],
+  "personas": [
+    {
+      "title": "First-Time Caribbean Travelers",
+      "subtitle": "Effortless Island Sampling",
+      "description": "An easy, premium introduction to multiple Caribbean islands in a single stress-free vacation without complicated logistics."
+    },
+    {
+      "title": "Couples & Honeymooners",
+      "subtitle": "Romantic Tropical Escapes",
+      "description": "White-sand beaches, sunset veranda dinners, adults-only Solarium relaxation, and romantic island excursions."
+    },
+    {
+      "title": "Families & Multi-Gen Groups",
+      "subtitle": "Something for Every Age",
+      "description": "Camp at Sea youth activities, family beach days, snorkeling adventures, and shared evening dinners."
+    },
+    {
+      "title": "Repeat Caribbean Cruisers",
+      "subtitle": "Southern Caribbean Exploration",
+      "description": "Discover exotic deep Southern ports like Aruba, Curaçao, Bonaire, Barbados, and St. Lucia on extended routes."
+    },
+    {
+      "title": "Winter Sun Seekers",
+      "subtitle": "Cold Weather Escape",
+      "description": "Escape freezing northern winter temperatures with guaranteed tropical warmth and sunshine between December and April."
+    }
+  ],
+  "whoPreferLand": [
+    "Want to spend an entire week deeply exploring only one island",
+    "Prefer staying in a secluded remote boutique resort",
+    "Want complete self-directed independent exploration without port schedules",
+    "Prefer not to travel on cruise vessels"
+  ],
+  "pros": [
+    "Eastern, Western and Southern Caribbean route variety",
+    "Multiple convenient Florida and San Juan departure ports",
+    "Year-round tropical warm-weather cruising",
+    "World-famous white-sand beaches and coral reefs",
+    "Extensive selection of snorkeling, diving, and cultural excursions",
+    "Visit 3–6 distinct islands and countries in one vacation",
+    "Premium Celebrity Edge and Solstice Series ships",
+    "Ideal for couples, families, and multi-generational groups",
+    "Seamless pre- and post-cruise hotel extension options",
+    "Diverse staterooms from smart interiors to The Retreat luxury suites",
+    "World-class dining venues curated by Michelin-starred chefs",
+    "Adults-only glass-domed Solarium pool retreat",
+    "Unpack once while waking up in a new island paradise daily",
+    "Exceptional staff-to-guest service ratio"
+  ],
+  "cons": [
+    "Shore excursions and private island tours carry additional costs",
+    "Port visits are daytime-focused rather than multi-day land stays",
+    "Peak winter holiday sailings command higher fare pricing",
+    "Atlantic hurricane season (late summer/fall) may require itinerary adjustments",
+    "Airfare and pre-cruise hotels are not included in base cruise fares",
+    "Some ports require transfers to reach major interior attractions",
+    "Specialty dining and spa treatments require separate budgeting"
+  ],
+  "steps": [
+    {
+      "timeframe": "Step 01",
+      "title": "Choose Eastern, Western, or Southern Caribbean",
+      "description": "Start with the type of vacation you want: classic beaches (Eastern), adventure and Mayan ruins (Western), or deep exotic islands (Southern)."
+    },
+    {
+      "timeframe": "Step 02",
+      "title": "Select Your Departure Port",
+      "description": "Compare Fort Lauderdale or Miami for easy Florida flights, or San Juan, Puerto Rico for immediate deep Caribbean island departures."
+    },
+    {
+      "timeframe": "Step 03",
+      "title": "Decide on Cruise Duration",
+      "description": "Choose between quick 4- to 5-night tropical getaways, standard 7-night weeklong sailings, or immersive 9- to 14-night extended voyages."
+    },
+    {
+      "timeframe": "Step 04",
+      "title": "Compare Island Ports & Port Time",
+      "description": "Prioritize destinations matching your passions—beaches in Aruba and St. Thomas, diving in Bonaire and Cozumel, or history in San Juan."
+    },
+    {
+      "timeframe": "Step 05",
+      "title": "Choose Your Stateroom Category",
+      "description": "Select an Interior for value, Ocean View for natural light, Veranda for private ocean breezes, or The Retreat for all-inclusive suite luxury."
+    },
+    {
+      "timeframe": "Step 06",
+      "title": "Pick the Best Sailing Season",
+      "description": "Compare peak sunny winter (Dec–Apr), high-value shoulder season (May–Jun), lively summer, or budget-friendly autumn sailings."
+    },
+    {
+      "timeframe": "Step 07",
+      "title": "Add a Pre-Cruise Hotel Stay",
+      "description": "Arrive 1–2 days early in Miami, Fort Lauderdale, or San Juan to buffer against flight delays and explore local sights before embarkation."
+    },
+    {
+      "timeframe": "Step 08",
+      "title": "Pre-Book Desired Shore Excursions",
+      "description": "Reserve popular catamaran sailings, scuba diving trips, Stingray City tours, and private cabanas early to secure availability."
+    }
+  ],
+  "packingCards": [
+    {
+      "title": "Daywear & Beach Gear",
+      "category": "Daywear & Beach Gear",
+      "items": [
+        "Lightweight breathable linen & cotton clothing",
+        "2–3 swimsuits / swim trunks",
+        "UV rashguard for reef snorkeling",
+        "Comfortable walking shoes & flip-flops / sandals",
+        "Wide-brim sun hat & polarized sunglasses"
+      ]
+    },
+    {
+      "title": "Sun & Water Protection",
+      "category": "Sun & Water Protection",
+      "items": [
+        "Reef-safe biodegradable sunscreen (SPF 30+)",
+        "Waterproof dry bag for catamaran & boat trips",
+        "Waterproof phone pouch with neck lanyard",
+        "Lip balm with SPF & soothing aloe vera gel",
+        "Lightweight compact rain poncho or windbreaker"
+      ]
+    },
+    {
+      "title": "Evening & Onboard Essentials",
+      "category": "Evening & Onboard Essentials",
+      "items": [
+        "Smart-casual evening attire (sundresses, collared shirts)",
+        "Light sweater or wrap for air-conditioned indoor lounges",
+        "Reusable insulated water bottle",
+        "Multi-port USB charging station & camera",
+        "Required passports, cruise documents & travel insurance"
+      ]
+    }
+  ],
+  "angelaBio": {
+    "name": "Angela Hughes",
+    "title": "Founder & CEO, Trips & Ships Luxury Travel",
+    "badge": "LUXURY CRUISE ADVISOR",
+    "experienceBadge": "40+ Years Luxury Travel Experience • 120+ Countries Visited",
+    "quote": "The Caribbean has hundreds of islands, so choosing the right itinerary matters more than simply choosing a cruise date. For a first Caribbean cruise, I recommend deciding whether your priority is classic Eastern Caribbean beaches, Western Caribbean adventure or the more distinctive islands of the Southern Caribbean. For travelers flying into Florida or Puerto Rico, adding a short pre-cruise stay also makes the overall vacation much more comfortable and reduces flight connection stress.",
+    "quoteSubtitle": "Expert Caribbean Planning Insight",
+    "bio": "Angela Hughes is an internationally recognized luxury travel advisor with over 40 years of expertise in luxury cruising, Caribbean island itineraries, and premium vacation design. As CEO of Trips & Ships Luxury Travel and founder of Luxury Travel University, Angela has visited over 120 countries, helping discerning travelers navigate cruise line fleets, stateroom selections, and custom pre- and post-cruise land extensions.",
+    "credentials": [
+      "40+ years advising luxury cruise travelers worldwide",
+      "Visited 120+ countries across all seven continents",
+      "Top-tier certified luxury cruise specialist",
+      "Founder, Luxury Travel University",
+      "Specialist in Celebrity Edge Series & Caribbean island routing"
+    ]
+  },
+  "whyPlanPillars": [
+    { "title": "Compare Celebrity Caribbean Ships", "description": "Match Edge Series flagships vs Solstice & Millennium Class ships to your preferred onboard vibe." },
+    { "title": "Compare Eastern, Western & Southern Routes", "description": "Select the ideal island blend based on beaches, snorkeling, culture, and excursion styles." },
+    { "title": "Choose the Right Departure Port", "description": "Evaluate Miami, Fort Lauderdale, and San Juan flight connections and embarkation convenience." },
+    { "title": "Select the Perfect Stateroom or Suite", "description": "Navigate Verandas, AquaClass wellness perks, and exclusive all-inclusive Retreat amenities." },
+    { "title": "Review & Secure Shore Excursions", "description": "Curate private catamaran charters, reef diving, and cultural island tours ahead of time." },
+    { "title": "Coordinate Pre- and Post-Cruise Stays", "description": "Arrange luxury hotel stays in South Florida or Old San Juan with private airport transfers." }
+  ],
+  "faqs": [
+    {
+      "question": "What are Celebrity Caribbean Cruises?",
+      "answer": "Celebrity Caribbean Cruises are premium cruises visiting destinations throughout the Eastern, Western and Southern Caribbean, with itineraries focused on beaches, islands, culture, nature and water activities."
+    },
+    {
+      "question": "What are the main types of Celebrity Caribbean Cruises?",
+      "answer": "Celebrity Caribbean itineraries can be broadly divided into Eastern Caribbean, Western Caribbean and Southern Caribbean cruises."
+    },
+    {
+      "question": "What is the difference between Eastern and Western Caribbean cruises?",
+      "answer": "Eastern Caribbean cruises generally focus on islands such as St. Thomas, St. Maarten and Puerto Rico, while Western Caribbean cruises can feature Jamaica, Grand Cayman, Mexico and Belize."
+    },
+    {
+      "question": "What are Southern Caribbean cruises?",
+      "answer": "Southern Caribbean cruises travel farther south and can include destinations such as Aruba, Curaçao, Bonaire, Barbados, St. Lucia and Grenada."
+    },
+    {
+      "question": "Where do Celebrity Caribbean cruises depart from?",
+      "answer": "Depending on the itinerary, Celebrity Caribbean cruises can depart from ports including Fort Lauderdale, Miami and San Juan, along with other departure points on selected sailings."
+    },
+    {
+      "question": "How long are Celebrity Caribbean cruises?",
+      "answer": "Celebrity offers Caribbean cruises ranging from shorter getaways to weeklong and longer itineraries. The exact duration depends on the ship and sailing."
+    },
+    {
+      "question": "What is the best month for a Celebrity Caribbean cruise?",
+      "answer": "December through April is popular for warm-weather Caribbean vacations. May and June can provide a shoulder-season option, while September and October offer lower-season opportunities but fall within hurricane season."
+    },
+    {
+      "question": "Are Celebrity Caribbean shore excursions included?",
+      "answer": "Shore excursions are generally an additional cost and are selected according to the traveler's interests and itinerary."
+    },
+    {
+      "question": "Is a balcony worth it on a Celebrity Caribbean cruise?",
+      "answer": "A veranda can be worthwhile for travelers who enjoy private outdoor space, tropical scenery, sunsets and watching the ship approach Caribbean ports."
+    },
+    {
+      "question": "Does Celebrity offer Caribbean cruises for families?",
+      "answer": "Yes. Caribbean cruises can work well for families because travelers can combine beach visits, excursions, onboard activities and different activity levels within one vacation."
+    },
+    {
+      "question": "Are Celebrity Caribbean cruises good for couples?",
+      "answer": "Yes. Couples can combine tropical beaches, dining, scenic sailing, island excursions and pre- or post-cruise stays for a romantic Caribbean vacation."
+    },
+    {
+      "question": "What wildlife can I see on a Celebrity Caribbean cruise?",
+      "answer": "Depending on the destination and excursion, travelers may encounter tropical birds, sea turtles, dolphins, reef fish and other marine or island wildlife."
+    },
+    {
+      "question": "Can I add a hotel stay before my Celebrity Caribbean cruise?",
+      "answer": "Yes. A pre-cruise hotel stay can be arranged as part of a broader vacation plan and can be particularly useful when flying into Miami, Fort Lauderdale or San Juan."
+    },
+    {
+      "question": "Can I combine a Celebrity Caribbean cruise with a post-cruise stay?",
+      "answer": "Yes. A post-cruise extension can provide additional time in destinations such as Miami, Fort Lauderdale or Puerto Rico, depending on the itinerary."
+    },
+    {
+      "question": "Are Celebrity Caribbean Cruises worth it?",
+      "answer": "They can be an excellent choice for travelers who want to experience multiple Caribbean islands while enjoying the convenience and premium onboard experience of a Celebrity cruise."
+    }
+  ]
+}

@@ -1,0 +1,447 @@
+{
+  "seo": {
+    "title": "Celebrity AquaClass vs. Concierge Class: Complete Guide",
+    "metaTitle": "Celebrity AquaClass vs. Concierge Class | Is It Worth It?",
+    "metaDescription": "Compare Celebrity AquaClass vs. Concierge Class, including Blu dining, spa amenities, cabin locations, stateroom benefits, priority services and whether the AquaClass upgrade is worth it.",
+    "keywords": "Celebrity AquaClass vs Concierge Class, Celebrity Cruises staterooms, Celebrity Blu restaurant, Celebrity AquaClass spa, Celebrity Concierge Class benefits, Celebrity cabin comparison",
+    "canonicalUrl": "https://www.tripsandships.com/celebrity-cruises/aquaclass-vs-concierge-class/",
+    "ogTitle": "Celebrity AquaClass vs. Concierge Class: Complete Guide",
+    "ogDescription": "Compare Celebrity AquaClass vs. Concierge Class, including Blu dining, spa amenities, cabin locations, stateroom benefits, priority services and whether the AquaClass upgrade is worth it."
+  },
+  "hero": {
+    "badge": "Celebrity Stateroom Categories",
+    "title": "Celebrity Aqua Class vs. Concierge Class Complete Guide",
+    "subtitle": "Which Celebrity Stateroom Class Is Better?",
+    "ctaLabel": "Compare AquaClass & Concierge Class",
+    "ctaUrl": "/contact",
+    "secondaryCtaLabel": "Speak With a Celebrity Cruise Expert",
+    "secondaryCtaUrl": "/contact"
+  },
+  "intro": {
+    "eyebrow": "WHICH CELEBRITY STATEROOM CLASS IS BETTER?",
+    "heading": "Aqua Class vs. Concierge Class",
+    "paragraphs": [
+      "Celebrity AquaClass and Concierge Class are both premium stateroom categories designed for travelers who want additional benefits beyond a standard veranda stateroom.",
+      "The biggest difference is what the upgrade is designed around. Concierge Class focuses primarily on enhanced service, stateroom amenities and convenience. AquaClass adds a stronger wellness and spa-oriented experience, along with access to Blu, Celebrity's specialty restaurant dedicated to AquaClass guests.",
+      "For many travelers, the question is not simply which category is \"better,\" but whether the additional AquaClass cost provides benefits they will actually use."
+    ],
+    "quickAnswerHeading": "Is AquaClass Better Than Concierge Class?",
+    "quickAnswer": "AquaClass is generally the better choice for travelers who value Blu dining, wellness-focused amenities and the spa-oriented Celebrity experience. Concierge Class can be the better value for travelers who mainly want enhanced stateroom services and amenities without paying for AquaClass-specific benefits. The right choice depends on: How much you value Blu, How often you use spa and wellness amenities, Cabin location, Price difference, Dining preferences, Whether you spend significant time in your stateroom, and Your cruise itinerary."
+  },
+  "dependsOn": [
+    "How much you value Blu",
+    "How often you use spa and wellness amenities",
+    "Cabin location",
+    "Price difference",
+    "Dining preferences",
+    "Whether you spend significant time in your stateroom",
+    "Your cruise itinerary"
+  ],
+  "glance": [
+    { "feature": "Stateroom", "aquaClass": "Premium category", "conciergeClass": "Premium category" },
+    { "feature": "Veranda", "aquaClass": "Available on applicable staterooms", "conciergeClass": "Available on applicable staterooms" },
+    { "feature": "Blu Restaurant", "aquaClass": "Yes", "conciergeClass": "No" },
+    { "feature": "Wellness Focus", "aquaClass": "Strong", "conciergeClass": "Moderate" },
+    { "feature": "Spa-Oriented Amenities", "aquaClass": "Yes", "conciergeClass": "More limited" },
+    { "feature": "Enhanced Service", "aquaClass": "Yes", "conciergeClass": "Yes" },
+    { "feature": "Premium Location", "aquaClass": "Available", "conciergeClass": "Available" },
+    { "feature": "Special Stateroom Amenities", "aquaClass": "Yes", "conciergeClass": "Yes" },
+    { "feature": "Priority Services", "aquaClass": "Available benefits", "conciergeClass": "Available benefits" },
+    { "feature": "Best For", "aquaClass": "Wellness & Blu dining", "conciergeClass": "Convenience & service" },
+    { "feature": "Upgrade Cost", "aquaClass": "Higher", "conciergeClass": "Lower than AquaClass" },
+    { "feature": "Main Reason to Choose", "aquaClass": "Blu + wellness", "conciergeClass": "Concierge benefits" }
+  ],
+  "whatIsAqua": [
+    { "title": "Access to Blu", "description": "Exclusive dining privileges at Blu, Celebrity's specialty restaurant serving clean, wellness-focused cuisine.", "icon": "UtensilsCrossed" },
+    { "title": "Wellness-Focused Amenities", "description": "Thoughtfully curated wellness touches, aromatherapy elements, and premium eco-friendly personal care items.", "icon": "Leaf" },
+    { "title": "Spa-Oriented Stateroom Features", "description": "Enhanced Hansgrohe massage showerheads, plush Frette bathrobes, slippers, and custom pillow menus.", "icon": "Bath" },
+    { "title": "Enhanced Stateroom Service", "description": "Dedicated stateroom attendants, personalized wellness concierge assistance, and priority arrangements.", "icon": "Bell" },
+    { "title": "Premium Stateroom Positioning", "description": "Prime ship placement with convenient proximity to the SEA Thermal Suite and fitness center.", "icon": "Crown" }
+  ],
+  "whatIsConcierge": [
+    { "title": "Enhanced Dedicated Service", "description": "Personalized service from a dedicated Concierge Team ready to assist with onboard bookings and arrangements.", "icon": "Bell" },
+    { "title": "Concierge Assistance", "description": "Exclusive Concierge Lounge gatherings, priority shore excursion briefings, and personalized dining reservations.", "icon": "ConciergeBell" },
+    { "title": "Premium Stateroom Amenities", "description": "Welcome sparkling wine, daily afternoon canapés upon request, upgraded bath amenities, and pillow choices.", "icon": "Sparkles" },
+    { "title": "Priority-Related Services", "description": "Priority check-in, priority boarding, priority tender service, and dedicated disembarkation lounges.", "icon": "BadgePercent" },
+    { "title": "Additional Convenience", "description": "Complimentary shoe-shining service, personalized stationery, binoculars, and golf umbrellas for use in port.", "icon": "ShieldCheck" }
+  ],
+  "bluAppeal": [
+    { "title": "A Quieter Dining Environment", "description": "An intimate, sophisticated dining venue with tranquil ambiance and unhurried service away from large crowds." },
+    { "title": "Smaller-Scale Dining", "description": "Intimate boutique seating scale ensuring attentive culinary service and personalized chef attention." },
+    { "title": "Wellness-Oriented Cuisine", "description": "Flavorful, lighter, 'clean cuisine' featuring fresh sustainable ingredients, inventive salads, and lighter reductions." },
+    { "title": "Specialty Restaurant Service", "description": "Dedicated culinary staff providing five-star specialty restaurant level attention every evening." },
+    { "title": "A Consistent Dining Experience", "description": "Open seating dining exclusively for AquaClass guests throughout the entire cruise without fixed dining times." }
+  ],
+  "spaFactors": [
+    { "title": "Ship & Class", "description": "Spa amenities and complimentary thermal suite access vary significantly between Edge Series, Solstice Series, and Millennium Class ships." },
+    { "title": "Sailing & Itinerary", "description": "Warm-weather vs. cold-weather routes influence how much time guests spend utilizing onboard spa and wellness facilities." },
+    { "title": "Spa Facilities Onboard", "description": "The SEA Thermal Suite on Edge Series offers eight distinct wellness spaces, whereas Solstice Class ships feature the Persian Garden." },
+    { "title": "Current Celebrity Policies", "description": "Celebrity's inclusion policies for thermal suite passes can differ based on booking package, promotions, and stateroom class." },
+    { "title": "Stateroom Category Level", "description": "AquaClass guests enjoy direct access to wellness programming and priority booking for premium treatments." }
+  ],
+  "aquaAmenities": [
+    { "title": "Enhanced Bathroom Amenities", "description": "Upgraded botanical and luxury organic body washes, shampoos, conditioners, and lotions." },
+    { "title": "Hansgrohe Shower Features", "description": "Multi-function massage showerheads delivering a soothing hydrotherapy shower experience." },
+    { "title": "Wellness-Oriented Bedding", "description": "100% pure Egyptian cotton linens, plush duvet, and an extensive customizable pillow menu." },
+    { "title": "Spa-Related Touches", "description": "Plush Frette bathrobes and slippers, complimentary yoga mat, and in-stateroom fitness amenities." },
+    { "title": "Aromatherapy Amenities", "description": "In-room aromatherapy diffuser and soothing scent selections for tranquil nighttime relaxation." },
+    { "title": "Enhanced Room Service Options", "description": "Healthy breakfast selections and wellness-inspired stateroom dining options delivered on request." }
+  ],
+  "conciergeBenefits": [
+    { "title": "Concierge Assistance", "description": "Dedicated on-ship Concierge staff to organize dining, shore excursions, and port transportation." },
+    { "title": "Enhanced Stateroom Amenities", "description": "Welcome bottle of sparkling wine, plush bathrobes, custom pillow menu, and premium bath products." },
+    { "title": "Priority-Related Services", "description": "Priority check-in, priority boarding times, priority tender tickets in port, and priority disembarkation." },
+    { "title": "Additional Embarkation Convenience", "description": "Exclusive welcome lunch on embarkation day in the Main Restaurant to start your cruise seamlessly." },
+    { "title": "Enhanced Room Service", "description": "Upgraded breakfast menu delivered to your veranda, plus daily afternoon savories upon request." },
+    { "title": "Premium Stateroom Location", "description": "Prime midship and upper deck stateroom positions with expansive panoramic ocean views." }
+  ],
+  "cabinFactors": [
+    { "title": "Deck Level", "description": "Upper decks provide panoramic views and swift pool/buffet access; lower decks offer increased nautical stability.", "icon": "Building2" },
+    { "title": "Forward vs. Midship vs. Aft", "description": "Midship cabins experience the least motion; aft cabins feature expansive wake views; forward cabins provide dramatic bow vistas.", "icon": "Compass" },
+    { "title": "Proximity to Elevators", "description": "Convenient walking access versus potential foot traffic noise from nearby elevator lobbies.", "icon": "ClipboardList" },
+    { "title": "Proximity to Dining", "description": "Fast access to Blu, specialty restaurants, or main dining rooms depending on your daily routine.", "icon": "Utensils" },
+    { "title": "Proximity to the Spa", "description": "AquaClass staterooms are often positioned on higher decks with fast direct access to the SEA Thermal Suite.", "icon": "Bath" },
+    { "title": "Proximity to Pools & Lounges", "description": "Easy access to the Solarium adult retreat and outdoor resort decks.", "icon": "Waves" },
+    { "title": "Potential Noise Sources", "description": "Evaluate staterooms directly below pool decks, fitness centers, or late-night entertainment lounges.", "icon": "Wind" },
+    { "title": "Veranda Configuration", "description": "Compare traditional open-air verandas with Edge Series Infinite Verandas that convert into living space.", "icon": "DoorOpen" },
+    { "title": "View Obstructions", "description": "Ensure stateroom selection avoids lifeboats, structural support pillars, or window washing gear.", "icon": "Camera" }
+  ],
+  "diningCompare": [
+    { "feature": "Main Dining Room", "aqua": "Yes (Included)", "concierge": "Yes (Included)" },
+    { "feature": "Blu Specialty Restaurant", "aqua": "Yes (Included for Breakfast & Dinner)", "concierge": "No (Exclusive to AquaClass & Suite guests upon availability)" },
+    { "feature": "Wellness-Focused Cuisine", "aqua": "Yes (Dedicated clean cuisine menu at Blu)", "concierge": "Not an included category benefit" },
+    { "feature": "Specialty Restaurants", "aqua": "Available separately (à la carte / cover charge)", "concierge": "Available separately (à la carte / cover charge)" },
+    { "feature": "Enhanced Room Service", "aqua": "Available (with healthy wellness breakfast choices)", "concierge": "Available (with expanded veranda breakfast menu)" },
+    { "feature": "Overall Dining Atmosphere", "aqua": "Intimate, quiet, boutique wellness dining", "concierge": "Traditional premium grand cruise dining" }
+  ],
+  "wellnessCompare": [
+    { "feature": "Wellness Focus", "aqua": "High (Core identity of the category)", "concierge": "Moderate (Comfort & convenience focus)" },
+    { "feature": "Spa-Oriented Amenities", "aqua": "Yes (Hansgrohe shower, aromatherapy, yoga mat, plush robes)", "concierge": "Limited (Plush bathrobes and upgraded toiletries)" },
+    { "feature": "Blu Restaurant Access", "aqua": "Yes (Included daily for breakfast and dinner)", "concierge": "No" },
+    { "feature": "Fitness Center Access", "aqua": "Included (Access to onboard gym according to ship)", "concierge": "Included (Access to onboard gym according to ship)" },
+    { "feature": "Spa Services & Treatments", "aqua": "Available separately (with priority reservations)", "concierge": "Available separately" },
+    { "feature": "Thermal Suite / Persian Garden", "aqua": "Ship-dependent (Complimentary access on most sailings/ships)", "concierge": "Requires day pass or cruise pass purchase" }
+  ],
+  "stateroomChecklist": [
+    { "title": "Bedding & Pillow Menu", "description": "Customizable pillow selections and premium plush mattresses for optimal sleep comfort.", "icon": "BedDouble" },
+    { "title": "Bathroom Amenities", "description": "Multi-head massage showers, botanical bath products, and upgraded plush cotton towels.", "icon": "Bath" },
+    { "title": "Enhanced Room Service", "description": "Expanded breakfast ordering and complimentary daily afternoon refreshments.", "icon": "Bell" },
+    { "title": "Welcome Amenities", "description": "Welcome sparkling wine, fresh fruit arrangements, and chilled bottled water.", "icon": "GlassWater" },
+    { "title": "Veranda & Outdoor Space", "description": "Private open-air balcony or Infinite Veranda with premium teak patio furniture.", "icon": "DoorOpen" },
+    { "title": "Stateroom Size & Storage", "description": "Spacious floor plans with expansive wardrobe closet space and under-bed luggage clearance.", "icon": "Sliders" },
+    { "title": "Stateroom Deck Location", "description": "Strategic placement relative to dining venues, spa complexes, quiet zones, and elevators.", "icon": "MapPin" },
+    { "title": "Included Beverage Packages", "description": "Verify whether your promotional booking includes Classic or Premium beverage packages.", "icon": "Wine" },
+    { "title": "Exclusive Category Perks", "description": "Dedicated concierge assistance, priority tenders, and exclusive embarkation lunches.", "icon": "Sparkles" }
+  ],
+  "foodDecision": {
+    "aquaTitle": "Choose AquaClass if you prefer:",
+    "aquaItems": [
+      "Access to Blu restaurant for intimate breakfast and dinner",
+      "A smaller, quieter, more relaxing dining environment",
+      "Wellness-oriented menus with clean, flavorful culinary preparation",
+      "Consistent, open-seating specialty restaurant level service"
+    ],
+    "conciergeTitle": "Choose Concierge Class if:",
+    "conciergeItems": [
+      "You are completely satisfied with the main dining room experience",
+      "You prefer to spend the price difference on specialty dining restaurants (Murano, Tuscan Grille, Fine Cut)",
+      "Blu dining is not an essential priority for your cruise vacation"
+    ]
+  },
+  "priceFactors": [
+    { "title": "Ship & Class", "description": "Edge Series (Edge, Apex, Beyond, Ascent, Xcel) vs. Solstice and Millennium Class ships." },
+    { "title": "Sailing Date & Seasonality", "description": "Peak summer, holiday, and spring break sailings command higher upgrade margins." },
+    { "title": "Destination & Itinerary", "description": "Caribbean getaways vs. port-intensive Mediterranean or Alaska voyages." },
+    { "title": "Supply & Demand", "description": "AquaClass staterooms are limited in number and often sell out quickly on popular routes." },
+    { "title": "Stateroom Deck Location", "description": "Prime midship staterooms on top decks carry higher premiums than forward or aft locations." },
+    { "title": "Length of Voyage", "description": "7-night cruises vs. 10- to 14-night extended regional sailings." },
+    { "title": "Current Promotions", "description": "Celebrity flash promotions, onboard credit incentives, or 'All Included' drink and Wi-Fi bundles." },
+    { "title": "Availability Windows", "description": "Booking early secures standard upgrade rates; last-minute upgrades fluctuate based on remaining inventory." }
+  ],
+  "aquaWorthIf": [
+    { "title": "You Love Intimate Dining", "description": "You value dining at Blu for breakfast and dinner with personalized service and no large crowds." },
+    { "title": "You Prioritize Wellness & Relaxation", "description": "You appreciate spa-like stateroom amenities, aromatherapy, yoga mats, and restorative sleep." },
+    { "title": "You Value Spa Amenities", "description": "You plan to utilize the SEA Thermal Suite or Persian Garden facilities throughout your voyage." },
+    { "title": "You Spend Substantial Time Onboard", "description": "Sea-day intensive itineraries give you ample time to enjoy stateroom and wellness benefits." },
+    { "title": "The Upgrade Premium Is Reasonable", "description": "When the price difference over Concierge Class is modest compared to the value of Blu and spa access." }
+  ],
+  "aquaNotWorthIf": [
+    { "title": "You Rarely Dine in the Main Venue", "description": "You plan to book specialty restaurants (Fine Cut, Le Voyage, Murano) or dine ashore in port every evening." },
+    { "title": "You Spend All Day on Excursions", "description": "On port-heavy itineraries where you only return to your stateroom to sleep and shower." },
+    { "title": "You Don't Care About Blu", "description": "You are completely happy with the variety and energy of the Main Dining Room and Oceanview Café." },
+    { "title": "You Won't Use Spa Facilities", "description": "Thermal suites, aromatherapy, and wellness programming are not part of your vacation routine." },
+    { "title": "The Upgrade Price Is Excessively High", "description": "When the fare jump could be better applied to a larger Sky Suite in The Retreat or luxury shore excursions." }
+  ],
+  "conciergeWorthValues": [
+    "Dedicated Concierge service and assistance",
+    "Enhanced in-cabin amenities and welcome sparkling wine",
+    "Convenient, desirable stateroom locations",
+    "Priority embarkation, tendering, and disembarkation services",
+    "Additional service touches such as daily afternoon canapés and shoe-shining"
+  ],
+  "personas": [
+    {
+      "title": "AquaClass for Couples",
+      "subtitle": "Romance, Tranquility & Wellness",
+      "description": "Ideal for couples seeking a quiet, romantic retreat with intimate open-seating dining at Blu, daily thermal suite relaxation, and elevated stateroom comfort away from bustling crowds."
+    },
+    {
+      "title": "Concierge Class for Couples",
+      "subtitle": "Port Exploration & Service Value",
+      "description": "Perfect for couples who spend their days ashore exploring historic ports, prioritize personalized concierge support for reservations, and prefer spending their budget on luxury land excursions."
+    },
+    {
+      "title": "Families & Multi-Gen Groups",
+      "subtitle": "Balancing Space & Flexibility",
+      "description": "Families often benefit more from Concierge Class or standard verandas, reallocating upgrade funds toward larger adjoining cabins, family shore adventures, and diverse specialty dining venues."
+    },
+    {
+      "title": "Solo Travelers",
+      "subtitle": "Boutique Atmosphere & Wellness",
+      "description": "Solo cruisers who value an intimate, welcoming dining environment love Blu's attentive staff and smaller scale, paired with rejuvenating spa amenities during sea days."
+    }
+  ],
+  "aquaPros": [
+    "Exclusive daily access to Blu restaurant for breakfast and dinner",
+    "Strong wellness-focused experience with aromatherapy and yoga amenities",
+    "Upgraded stateroom bathroom amenities and Hansgrohe massage showerheads",
+    "Access to the SEA Thermal Suite / Persian Garden (ship-dependent)",
+    "Enhanced stateroom service and wellness concierge support",
+    "Attractive option for relaxation-focused and sea-day itineraries",
+    "Top-tier choice for couples seeking romantic, intimate dining",
+    "Excellent value for foodies who prioritize clean gourmet cuisine"
+  ],
+  "aquaCons": [
+    "Higher upgrade price compared to Concierge Class and Veranda cabins",
+    "Thermal Suite access policies can vary across different ship classes",
+    "Wellness perks may go unused by travelers focused on active excursions",
+    "Cabin locations vary and must be selected carefully to avoid noise",
+    "Provides diminished value on port-intensive itineraries with few sea days"
+  ],
+  "conciergePros": [
+    "Dedicated Concierge team assistance for bookings and special requests",
+    "Enhanced stateroom amenities including welcome sparkling wine and pillow menu",
+    "Exclusive embarkation day welcome lunch in the Main Restaurant",
+    "Priority check-in, priority boarding, and priority tender tickets in port",
+    "Consistently lower upgrade cost than AquaClass",
+    "Excellent value for guests who enjoy the Main Dining Room and specialty venues"
+  ],
+  "conciergeCons": [
+    "No access to Blu restaurant (dining takes place in Main Dining Room)",
+    "Less wellness and spa focus compared to AquaClass",
+    "Some priority benefits may not feel significant on certain sailings",
+    "Exact stateroom amenities and perks can vary slightly by ship"
+  ],
+  "decisionGuide": [
+    { "feature": "Blu Restaurant Access", "detail": "AquaClass" },
+    { "feature": "Dedicated Wellness & Spa Focus", "detail": "AquaClass" },
+    { "feature": "Spa-Oriented Stateroom Amenities", "detail": "AquaClass" },
+    { "feature": "Quiet, Intimate Dining Ambiance", "detail": "AquaClass" },
+    { "feature": "Dedicated Concierge Assistance", "detail": "Concierge Class" },
+    { "feature": "Priority Embarkation & Disembarkation", "detail": "Both (Concierge Class & AquaClass)" },
+    { "feature": "Lower Overall Upgrade Cost", "detail": "Concierge Class" },
+    { "feature": "Focus on Shore Excursions over Ship Amenities", "detail": "Concierge Class" },
+    { "feature": "Spending Substantial Time Relaxing Onboard", "detail": "AquaClass" },
+    { "feature": "Simple Premium Balcony Stateroom Upgrade", "detail": "Concierge Class" }
+  ],
+  "cabinChecklist": [
+    "Deck level relative to pools, buffet, and public entertainment venues",
+    "Midship vs. Forward vs. Aft placement for motion stability",
+    "Unobstructed panoramic ocean view vs. lifeboat obstruction",
+    "Traditional open-air veranda vs. Edge Series Infinite Veranda",
+    "Proximity to passenger elevators and stairwells",
+    "Distance from galley areas, pool deck machinery, or late-night lounges",
+    "Proximity to Blu restaurant and the onboard spa complex"
+  ],
+  "steps": [
+    {
+      "timeframe": "Step 1",
+      "title": "Compare the Price Difference",
+      "description": "Start with the actual upgrade cost for your specific sailing date and ship class to calculate the daily per-person difference.",
+      "tags": ["Pricing", "Budgeting"]
+    },
+    {
+      "timeframe": "Step 2",
+      "title": "Ask Whether Blu Matters to You",
+      "description": "If you know you want Blu's intimate dining and healthy gourmet cuisine, AquaClass becomes immediately attractive.",
+      "tags": ["Dining", "Blu"]
+    },
+    {
+      "timeframe": "Step 3",
+      "title": "Consider Your Cruise Itinerary",
+      "description": "A port-intensive itinerary with long days ashore reduces time spent enjoying onboard spa and wellness amenities.",
+      "tags": ["Itinerary", "Sea Days"]
+    },
+    {
+      "timeframe": "Step 4",
+      "title": "Evaluate Your Wellness & Spa Habits",
+      "description": "If you regularly use thermal suites, steam rooms, saunas, and fitness classes, AquaClass delivers substantial value.",
+      "tags": ["Wellness", "Spa"]
+    },
+    {
+      "timeframe": "Step 5",
+      "title": "Compare Individual Cabin Locations",
+      "description": "Never ignore the specific cabin number. A quiet, midship Concierge Class cabin can beat a noisy AquaClass stateroom.",
+      "tags": ["Deck Plans", "Location"]
+    },
+    {
+      "timeframe": "Step 6",
+      "title": "Assess Your Dining Preferences",
+      "description": "Determine whether you prefer Blu's dedicated boutique menu or want the variety of Celebrity's four Main Dining venues.",
+      "tags": ["Culinary", "Restaurants"]
+    },
+    {
+      "timeframe": "Step 7",
+      "title": "Compare Upgrade Cost Against Other Vacation Spending",
+      "description": "Ask whether the extra funds would be better invested in a Suite in The Retreat, private shore excursions, or pre-cruise luxury hotels.",
+      "tags": ["A larger suite in The Retreat", "Better cabin location", "Luxury shore excursions", "Specialty dining packages", "Pre-cruise 5-star hotel", "Post-cruise extended stay"]
+    }
+  ],
+  "scenarios": [
+    {
+      "title": "When AquaClass Is Worth It",
+      "description": "Imagine AquaClass costs only a modest amount more than Concierge Class for a 7-night Caribbean or Transatlantic sailing.",
+      "traits": [
+        "You enjoy gourmet dining and look forward to Blu",
+        "You want an intimate restaurant without set dining times",
+        "You appreciate spa amenities, saunas, and thermal suites",
+        "You spend ample relaxing hours onboard the ship",
+        "You prefer wellness amenities and tranquil relaxation"
+      ],
+      "conclusion": "In this situation, AquaClass provides meaningful additional value and easily justifies the modest upgrade premium."
+    },
+    {
+      "title": "When Concierge Class Is Better",
+      "description": "Now imagine the AquaClass upgrade carries a steep premium and your itinerary has a port stop almost every day in Europe.",
+      "traits": [
+        "You spend most of your waking hours exploring ashore",
+        "You rarely use onboard saunas, thermal suites, or spas",
+        "You don't care about Blu and enjoy trying local port restaurants",
+        "You mainly want a premium balcony stateroom with great service",
+        "You prefer spending your vacation budget on private excursions"
+      ],
+      "conclusion": "In this situation, Concierge Class is the smarter financial choice, delivering premium comfort without paying for unused spa perks."
+    }
+  ],
+  "angelaBio": {
+    "name": "Angela Hughes",
+    "title": "Founder & CEO, Trips & Ships Luxury Travel",
+    "experience": "40+ Years Experience",
+    "countries": "120+ Countries Visited",
+    "expertise": [
+      "Premium & luxury cruising",
+      "Celebrity stateroom category selection",
+      "AquaClass & Concierge Class comparisons",
+      "Cabin location & upgrade pricing",
+      "Personalized luxury cruise planning"
+    ],
+    "quoteHeading": "Is Aqua Class Worth the Upgrade?",
+    "leadParagraph": "AquaClass is not automatically the better cabin—it is the better fit for a particular type of traveler.",
+    "quote": "If Blu and wellness are central to how you want to experience the cruise, the upgrade can make sense. But if your vacation is primarily about exploring ports and returning to the ship to sleep, Concierge Class may offer a better balance between premium service and overall trip cost. The smartest comparison is always based on the actual price difference, cabin location and itinerary, rather than the category name alone."
+  },
+  "whyPlan": [
+    { "title": "Compare AquaClass and Concierge Class", "description": "Get an objective side-by-side analysis tailored to your specific sailing date and ship.", "icon": "Sliders" },
+    { "title": "Review Actual Cabin Locations", "description": "Analyze deck plans to identify quiet staterooms away from noise, elevators, and obstructions.", "icon": "MapPin" },
+    { "title": "Compare Blu Access & Menus", "description": "Understand Blu dining arrangements, menus, and operating hours across different ship classes.", "icon": "UtensilsCrossed" },
+    { "title": "Evaluate Wellness Benefits", "description": "Assess in-cabin wellness amenities, fitness classes, and aromatherapy options.", "icon": "Leaf" },
+    { "title": "Review Spa-Related Amenities", "description": "Verify exact SEA Thermal Suite and Persian Garden access rules for your ship.", "icon": "Bath" },
+    { "title": "Compare Upgrade Pricing", "description": "Analyze real-time upgrade promotions, fare differences, and onboard credit offers.", "icon": "DollarSign" },
+    { "title": "Select the Best Stateroom", "description": "Choose the optimal deck, veranda configuration, and orientation for your comfort.", "icon": "BedDouble" },
+    { "title": "Compare Celebrity Ships", "description": "Discover differences between Edge Series, Solstice Class, and Millennium Class vessels.", "icon": "Ship" },
+    { "title": "Evaluate Cruise Itineraries", "description": "Match cabin category benefits against sea-day vs. port-intensive cruise schedules.", "icon": "Compass" },
+    { "title": "Determine Upgrade Value", "description": "Get unbiased advice on whether AquaClass or Concierge Class provides true ROI.", "icon": "ClipboardList" },
+    { "title": "Coordinate Pre- & Post-Cruise Stays", "description": "Arrange luxury 5-star hotel accommodations, airport transfers, and private tours.", "icon": "Calendar" },
+    { "title": "Build a Complete Luxury Vacation", "description": "Receive seamless end-to-end luxury travel management from certified cruise experts.", "icon": "Globe" }
+  ],
+  "faqs": [
+    {
+      "question": "What is the difference between Celebrity AquaClass and Concierge Class?",
+      "answer": "AquaClass is focused on wellness and includes access to Blu, while Concierge Class focuses more on enhanced service, convenience and premium stateroom amenities."
+    },
+    {
+      "question": "Does AquaClass include Blu?",
+      "answer": "Yes. AquaClass guests have access to Blu, Celebrity's restaurant dedicated to AquaClass guests."
+    },
+    {
+      "question": "Does Concierge Class include Blu?",
+      "answer": "No. Blu access is an AquaClass benefit and is not included simply because a traveler is booked in Concierge Class."
+    },
+    {
+      "question": "Is AquaClass more expensive than Concierge Class?",
+      "answer": "Generally, AquaClass is positioned as a higher premium stateroom category, but the actual price difference varies by ship, sailing, cabin location, season and demand."
+    },
+    {
+      "question": "Does AquaClass include spa access?",
+      "answer": "AquaClass includes wellness-oriented benefits, but access to specific spa facilities such as thermal suites can vary by ship and current Celebrity policies. Travelers should verify the exact inclusions for their sailing."
+    },
+    {
+      "question": "Is AquaClass worth the upgrade?",
+      "answer": "AquaClass can be worth the upgrade if you value Blu, wellness amenities, spa-related experiences and spending more time enjoying the ship."
+    },
+    {
+      "question": "Is Concierge Class worth it?",
+      "answer": "Concierge Class can be worthwhile for travelers who value enhanced service, convenience and premium stateroom benefits without specifically needing Blu or the AquaClass wellness experience."
+    },
+    {
+      "question": "Which is better for couples: AquaClass or Concierge Class?",
+      "answer": "AquaClass can be particularly attractive to couples who value wellness, relaxation and Blu dining. Concierge Class can be better for couples who prioritize cabin value and spend more time exploring ports."
+    },
+    {
+      "question": "Which has better dining, AquaClass or Concierge Class?",
+      "answer": "AquaClass has the advantage because it provides access to Blu. Concierge Class does not include AquaClass access to Blu."
+    },
+    {
+      "question": "Does AquaClass have better cabin locations?",
+      "answer": "Not necessarily. Cabin locations vary by ship. A specific Concierge Class cabin can be preferable to an AquaClass cabin depending on deck, noise, views and proximity to onboard venues."
+    },
+    {
+      "question": "Does AquaClass include better amenities?",
+      "answer": "AquaClass provides additional wellness-focused amenities compared with Concierge Class, while Concierge Class emphasizes service and convenience. Exact amenities can vary by ship."
+    },
+    {
+      "question": "Is Concierge Class better than AquaClass for families?",
+      "answer": "It can be, particularly if family members do not care about Blu or wellness amenities and would rather spend the additional budget on excursions or other vacation experiences."
+    },
+    {
+      "question": "Which Celebrity cabin category is better for a port-intensive itinerary?",
+      "answer": "Concierge Class may provide better value if you expect to spend most of your time ashore and won't use AquaClass's wellness and dining benefits."
+    },
+    {
+      "question": "Can I upgrade from Concierge Class to AquaClass?",
+      "answer": "Availability and upgrade options depend on the sailing. If AquaClass is available, travelers can compare the current price difference against the additional benefits."
+    },
+    {
+      "question": "Should I choose AquaClass or Concierge Class?",
+      "answer": "Choose AquaClass if Blu, wellness and spa-oriented amenities are important to you. Choose Concierge Class if you primarily want enhanced service and a premium stateroom without paying for AquaClass-specific benefits."
+    }
+  ],
+  "finalVerdict": {
+    "heading": "Final Verdict",
+    "subtitle": "The choice between Celebrity AquaClass vs. Concierge Class comes down to what you value most.",
+    "aquaTitle": "Choose AquaClass if you want:",
+    "aquaItems": [
+      "Blu dining privileges for breakfast and dinner",
+      "Wellness-focused stateroom amenities and Hansgrohe massage showers",
+      "Spa-oriented experiences and thermal suite relaxation",
+      "A more relaxation-focused cruise with unhurried sea days",
+      "Enhanced premium stateroom benefits and aromatherapy touches"
+    ],
+    "conciergeTitle": "Choose Concierge Class if you want:",
+    "conciergeItems": [
+      "Concierge-style service, priority arrangements, and embarkation lunch",
+      "Convenience and dedicated assistance throughout your voyage",
+      "Premium stateroom amenities and welcome sparkling wine",
+      "A potentially lower upgrade cost than AquaClass",
+      "A great premium veranda cabin without needing Blu dining"
+    ],
+    "conclusion": "The most important factor is not simply the category—it is the combination of price, cabin location, itinerary and benefits you will actually use. For travelers who will take advantage of Blu and wellness amenities, AquaClass can justify the additional cost. For travelers who mainly want a comfortable premium cabin and spend their days exploring ports, Concierge Class may provide the better overall value."
+  },
+  "cta": {
+    "heading": "Plan Your Celebrity Cruise Upgrade",
+    "text": "Not sure whether AquaClass is worth the upgrade? Trips & Ships Luxury Travel can compare your specific Celebrity sailing, cabin locations, AquaClass and Concierge Class pricing, Blu access and onboard benefits to help determine which option fits your vacation best.",
+    "primaryCtaLabel": "Compare AquaClass & Concierge Class",
+    "primaryCtaUrl": "/contact",
+    "secondaryCtaLabel": "Speak With a Celebrity Cruise Expert",
+    "secondaryCtaUrl": "/contact"
+  }
+}

@@ -1,0 +1,407 @@
+{
+  "seo": {
+    "title": "Celebrity Galápagos Cruises: Complete Guide",
+    "metaTitle": "Celebrity Galápagos Cruises | Celebrity Flora & Itineraries",
+    "metaDescription": "Explore Celebrity Galápagos Cruises aboard Celebrity Flora, including all-inclusive expedition features, wildlife, Inner and Outer Loop itineraries, excursions, suites and planning tips.",
+    "canonicalUrl": "https://www.tripsandships.com/celebrity-cruises/galapagos/",
+    "ogTitle": "Celebrity Galápagos Cruises: Complete Guide",
+    "ogDescription": "Complete guide to Celebrity Galápagos Cruises, including Celebrity Flora, all-inclusive expedition features, Inner and Outer Loop itineraries, wildlife, excursions, suites, Quito extensions and Machu Picchu packages.",
+    "keywords": "Celebrity Galápagos Cruises, Celebrity Flora, Celebrity Galápagos itineraries, Galápagos expedition cruises, Celebrity Flora suites, Galápagos Inner Loop, Galápagos Outer Loop, Celebrity Galápagos cruise cost, Celebrity Galápagos all inclusive, Celebrity Flora cruise, Galápagos luxury cruise, best Galápagos cruise, Celebrity Galápagos Machu Picchu, Celebrity Galápagos Quito package"
+  },
+  "hero": {
+    "title": "Celebrity Galápagos Cruises:\nComplete Guide",
+    "subtitle": "Celebrity Flora itineraries, all-inclusive expedition features, wildlife, and planning tips",
+    "badge": "Celebrity Galápagos Cruises",
+    "ctaLabel": "Plan My Cruise",
+    "ctaUrl": "/contact",
+    "secondaryCtaLabel": "Speak With Expert",
+    "secondaryCtaUrl": "/contact"
+  },
+  "intro": {
+    "heading": "Experience the Galápagos With Celebrity",
+    "paragraphs": [
+      "Celebrity Galápagos Cruises offer an intimate expedition experience in one of the world's most extraordinary wildlife destinations.",
+      "The centerpiece of Celebrity's Galápagos program is Celebrity Flora, a 100-guest, all-suite mega-yacht purpose-built for the Galápagos Islands. The experience combines guided exploration with Galápagos National Park-certified naturalists, small-group excursions, wildlife encounters, snorkeling and comfortable suite accommodations.",
+      "Celebrity's current Galápagos program includes 7-night cruises, along with longer 10-, 11- and 16-night vacation packages that can combine the islands with Quito and, on selected journeys, Peru and Machu Picchu."
+    ],
+    "quickAnswerHeading": "What Are Celebrity Galápagos Cruises?",
+    "quickAnswer": "Celebrity Galápagos Cruises are all-inclusive expedition-style vacations centered on Celebrity Flora, with 7-night Galápagos cruises, twice-daily naturalist-led excursions, wildlife encounters, meals, drinks, Wi-Fi, gratuities, park fees and expedition equipment included. Longer packages can add Quito and South American destinations such as Lima, Cusco and Machu Picchu."
+  },
+  "glance": [
+    { "feature": "Ship", "detail": "Celebrity Flora" },
+    { "feature": "Ship Type", "detail": "All-suite mega-yacht" },
+    { "feature": "Guest Capacity", "detail": "100 guests" },
+    { "feature": "Main Destination", "detail": "Galápagos Islands" },
+    { "feature": "Cruise Length", "detail": "7 nights" },
+    { "feature": "Longer Packages", "detail": "10, 11 & 16 nights" },
+    { "feature": "Cruise Style", "detail": "Luxury expedition" },
+    { "feature": "Excursions", "detail": "Twice daily" },
+    { "feature": "Guides", "detail": "Galápagos National Park-certified naturalists" },
+    { "feature": "Meals", "detail": "Included" },
+    { "feature": "Beverages", "detail": "Included" },
+    { "feature": "Wi-Fi", "detail": "Included" },
+    { "feature": "Gratuities", "detail": "Included" },
+    { "feature": "Park Fees", "detail": "Included" },
+    { "feature": "Tourist Card", "detail": "Included" },
+    { "feature": "Snorkel Equipment", "detail": "Included" },
+    { "feature": "Mini-Wetsuits", "detail": "Included" },
+    { "feature": "Binoculars", "detail": "Included" },
+    { "feature": "Walking Sticks", "detail": "Included" },
+    { "feature": "Baltra Transfers", "detail": "Included" },
+    { "feature": "Quito Extensions", "detail": "Available on longer packages" },
+    { "feature": "Machu Picchu", "detail": "Available on selected longer packages" }
+  ],
+  "whyChoose": [
+    { "title": "Walk on Volcanic Islands", "description": "Experience geological formations and ancient volcanic terrain up close.", "icon": "compass" },
+    { "title": "Explore Beaches & Lava Landscapes", "description": "Walk on pristine white-sand beaches and dramatic black lava fields.", "icon": "sun" },
+    { "title": "Snorkel in Protected Waters", "description": "Immerse yourself in nutrient-rich marine sanctuaries with incredible visibility.", "icon": "waves" },
+    { "title": "Observe Wildlife in Natural Surroundings", "description": "Encounter fearless endemic wildlife in undisturbed natural habitats.", "icon": "star" },
+    { "title": "Learn From Certified Naturalists", "description": "Gain deep insights from Galápagos National Park-certified naturalists.", "icon": "award" },
+    { "title": "Explore in Small Groups", "description": "Enjoy low-impact, intimate zodiac and land excursions with minimal guest footprint.", "icon": "ship" },
+    { "title": "Participate in Twice-Daily Excursions", "description": "Active morning and afternoon expeditions included every single day.", "icon": "compass" },
+    { "title": "Return to an All-Suite Ship", "description": "Retreat to luxurious, air-conditioned suites and world-class dining between expeditions.", "icon": "star" }
+  ],
+  "floraHighlights": [
+    "100-guest capacity",
+    "All-suite accommodations",
+    "Purpose-built for Galápagos cruising",
+    "Naturalist-led expedition experiences",
+    "Complimentary snorkeling equipment",
+    "Mini-wetsuits provided",
+    "Marine-grade binoculars included",
+    "Sturdy walking sticks provided",
+    "Unlimited high-speed Wi-Fi",
+    "Included premium beverages",
+    "Locally sourced Ecuadorian & international cuisine",
+    "Personalized suite services"
+  ],
+  "suiteFeatures": [
+    "Spacious living areas & luxury furnishings",
+    "Private outward-facing veranda",
+    "King-sized bed with premium linens",
+    "Spa-style bathroom with premium amenities",
+    "Complimentary mini-bar & bottled water station",
+    "Marine binoculars for wildlife spotting",
+    "Expedition backpack & rain poncho",
+    "Dedicated Personal Suite Attendant service"
+  ],
+  "innerLoop": {
+    "islands": ["Santiago Island", "Rábida Island", "Isabela Island", "Bartolomé Island", "Santa Cruz Island"],
+    "summary": "The Inner Loop itinerary explores a unique combination of central and western islands. A current 7-night Inner Loop itinerary includes Egas Port, Rábida Island, Elizabeth Bay, Tagus Cove, Sullivan Bay, Bartolomé and Las Bachas.",
+    "bestFor": [
+      "Volcanic landscapes",
+      "Snorkeling & marine life",
+      "Sea turtles & penguins",
+      "Lava formations & geology",
+      "Varied island environments"
+    ]
+  },
+  "outerLoop": {
+    "islands": ["Española", "Floreana", "Isabela", "Fernandina", "Santa Cruz"],
+    "summary": "The Outer Loop offers a distinctive wildlife and landscape combination. Selected visitor sites include Gardner Bay, Punta Suárez, Cormorant Point, Post Office Bay, Moreno Point, Urvina Bay, Espinoza Point and Vicente Roca Point.",
+    "bestFor": [
+      "Española wildlife & colonies",
+      "Sea lions & marine iguanas",
+      "Blue-footed & Nazca boobies",
+      "Remote island experiences",
+      "Active volcanic landscapes"
+    ]
+  },
+  "destinations": [
+    {
+      "title": "Española Island",
+      "description": "Española is particularly known for wildlife encounters and locations such as Gardner Bay and Punta Suárez.",
+      "placeholderLabel": "Española Island Wildlife"
+    },
+    {
+      "title": "Isabela Island",
+      "description": "Isabela provides volcanic scenery and several important visitor sites, including Elizabeth Bay, Tagus Cove, Moreno Point and Urvina Bay on selected itineraries.",
+      "placeholderLabel": "Isabela Island Volcanic Scenery"
+    },
+    {
+      "title": "Fernandina Island",
+      "description": "Fernandina is one of the distinctive destinations of the Galápagos and can be visited at Espinoza Point.",
+      "placeholderLabel": "Fernandina Island Espinoza Point"
+    },
+    {
+      "title": "Floreana Island",
+      "description": "Floreana combines wildlife, history and distinctive visitor sites such as Cormorant Point and Post Office Bay.",
+      "placeholderLabel": "Floreana Island Post Office Bay"
+    },
+    {
+      "title": "Santa Cruz Island",
+      "description": "Santa Cruz is another important island within the Galápagos cruise network and appears on selected Celebrity itineraries.",
+      "placeholderLabel": "Santa Cruz Island"
+    },
+    {
+      "title": "Bartolomé Island",
+      "description": "Bartolomé is featured on selected Inner Loop itineraries and is known for dramatic volcanic scenery and opportunities for wildlife viewing and snorkeling.",
+      "placeholderLabel": "Bartolomé Island Pinnacle Rock"
+    }
+  ],
+  "wildlifePillars": [
+    { "title": "Giant Tortoises & Land Iguanas", "description": "Encounter iconic ancient tortoises roaming freely in island highlands and unique yellow land iguanas.", "icon": "star" },
+    { "title": "Marine Iguanas & Sea Lions", "description": "See the world’s only seafaring lizards basking on black lava rock alongside playful Galápagos sea lion colonies.", "icon": "waves" },
+    { "title": "Blue-Footed Boobies & Penguins", "description": "Observe famous courtship dances of blue-footed boobies and spot rare equatorial Galápagos penguins.", "icon": "award" },
+    { "title": "Sea Turtles, Rays & Marine Life", "description": "Snorkel among green sea turtles, golden rays, tropical reef fish, and vibrant Sally Lightfoot crabs.", "icon": "compass" },
+    { "title": "Frigatebirds & Galápagos Hawks", "description": "Watch magnificent frigatebirds with expanded red throat pouches and endemic Galápagos apex raptors.", "icon": "ship" },
+    { "title": "Responsible Naturalist Education", "description": "Excursions focus on evolution, adaptation, volcanic geology, marine ecosystems, and active conservation.", "icon": "star" }
+  ],
+  "activities": [
+    "Guided nature walks across volcanic terrain",
+    "Wet landings on sandy beaches & dry landings on rocks",
+    "Daily guided snorkeling with marine wildlife",
+    "Zodiac / tender exploration along dramatic coastlines",
+    "Evening naturalist briefings & educational recaps",
+    "Scenic cruising through dramatic channels & calderas"
+  ],
+  "inclusions": [
+    { "title": "All-Suite Accommodation", "description": "Spacious staterooms with private verandas aboard Celebrity Flora." },
+    { "title": "All Onboard Meals & Room Service", "description": "Locally inspired gourmet cuisine served across multiple venues." },
+    { "title": "Complimentary Beverages", "description": "Select wines, sparkling wine, spirits, cocktails, soft drinks, juices, coffee, and tea." },
+    { "title": "Unlimited Wi-Fi Access", "description": "Complimentary high-speed internet throughout the entire vessel." },
+    { "title": "Twice-Daily Guided Excursions", "description": "Small-group excursions led by Galápagos National Park-certified naturalists." },
+    { "title": "Complete Expedition Equipment", "description": "Snorkeling equipment, mini-wetsuits, marine binoculars, and walking sticks." },
+    { "title": "Park Admissions & Tourist Fees", "description": "Galápagos National Park entrance admission and official Galápagos Tourist Card." },
+    { "title": "All Gratuities & Baltra Transfers", "description": "Onboard crew gratuities, naturalist gratuities, and airport/ship transfers." }
+  ],
+  "exclusions": [
+    { "title": "International Air Transportation", "description": "Flights from home cities to Ecuador (unless included in extended packages)." },
+    { "title": "Unspecified Ground Transfers", "description": "Personal or custom transfers outside standard package itineraries." },
+    { "title": "Off-Ship Food & Beverages", "description": "Meals or drinks purchased independently during free mainland time." },
+    { "title": "Onboard Spa Treatments & Purchases", "description": "Spa wellness treatments, boutique merchandise, and premium select reserves." },
+    { "title": "Laundry & Specialized Telecom", "description": "Personal dry cleaning, premium laundry, and satellite phone communications." },
+    { "title": "Comprehensive Travel Insurance", "description": "Medical, trip cancellation, and expedition travel insurance policies." }
+  ],
+  "packages": [
+    {
+      "title": "7-Night Galápagos Cruise",
+      "category": "Core Expedition",
+      "description": "The core 7-night all-inclusive expedition aboard Celebrity Flora exploring the Inner or Outer Loop islands with twice-daily naturalist excursions, all meals, drinks, and equipment.",
+      "placeholderLabel": "7-Night Galápagos Cruise"
+    },
+    {
+      "title": "10- & 11-Night Quito Packages",
+      "category": "Mainland Ecuador Extension",
+      "description": "Combines the 7-night Galápagos cruise with a pre-cruise luxury hotel stay in Quito, airport transfers, guided historic city tour, meals during land portions, and internal flights to Baltra.",
+      "placeholderLabel": "Celebrity Galápagos + Quito Package"
+    },
+    {
+      "title": "16-Night Machu Picchu Journey",
+      "category": "Grand South American Journey",
+      "description": "A comprehensive journey combining Quito, the 7-night Galápagos Inner Loop cruise, and Peru exploration including Lima, Cusco, the Sacred Valley, and iconic Machu Picchu.",
+      "placeholderLabel": "Celebrity Galápagos + Machu Picchu Package"
+    }
+  ],
+  "seasonsTable": {
+    "title": "Celebrity Galápagos Cruise Seasons & Weather Overview",
+    "description": "The Galápagos is a year-round wildlife destination. Conditions, water temperatures, and animal behaviors vary distinctly by season:",
+    "headers": ["Season Period", "Weather Conditions & Travel Highlights"],
+    "rows": [
+      ["December to May (Warm & Calmer)", "Warmer air & water temperatures, calmer seas, lush green island landscapes, excellent swimming & snorkeling visibility."],
+      ["June to November (Cooler & Nutrient-Rich)", "Cooler temperatures, nutrient-rich Humboldt current bringing abundant marine life, active ocean ecosystems, superb wildlife photography."],
+      ["Year-Round Expedition", "Wildlife activity occurs continuously across all months; giant tortoises, sea lions, boobies, and marine iguanas are present throughout the year."]
+    ]
+  },
+  "vsTraditionalTable": {
+    "title": "Celebrity Galápagos vs. Traditional Ocean Cruise",
+    "description": "A Galápagos expedition differs fundamentally from a mass-market resort cruise in focus, pace, and inclusions:",
+    "headers": ["Celebrity Galápagos Expedition", "Traditional Ocean Cruise"],
+    "rows": [
+      ["Expedition-focused & nature-driven", "Resort-focused & entertainment-driven"],
+      ["Wildlife observation & conservation core", "Broadway shows, casinos & leisure"],
+      ["Twice-daily guided excursions included", "Shore excursions carry extra per-port fees"],
+      ["National Park-certified naturalist guides", "Standard destination motorcoach tours"],
+      ["Intimate small groups (approx. 100 guests)", "Large multi-thousand guest ships"],
+      ["100% all-suite mega-yacht (Celebrity Flora)", "Mix of inside, oceanview & balcony cabins"],
+      ["Active hiking, snorkeling & tendering", "Pool decks, waterslides & onboard arcades"],
+      ["Protected Galápagos UNESCO ecosystem", "Multiple standard commercial tourist ports"]
+    ]
+  },
+  "chooseCelebrity": [
+    "All-suite accommodations aboard purpose-built Celebrity Flora",
+    "Premium Celebrity hospitality and elevated culinary service",
+    "All-inclusive beverages, Wi-Fi, and onboard/naturalist gratuities",
+    "Twice-daily guided excursions led by certified naturalists",
+    "Included expedition equipment (snorkels, wetsuits, binoculars, poles)",
+    "Intimate 100-guest yacht experience with low ecological footprint",
+    "Seamless pre- and post-cruise packages adding Quito and Machu Picchu"
+  ],
+  "chooseAnother": [
+    "Desire for smaller 16-to-32 passenger catamaran vessels",
+    "Looking for specialized budget/backpacker expedition options",
+    "Prefer unstructured, non-guided independent island hopping",
+    "Primary focus is mainland South American land touring rather than cruising"
+  ],
+  "pros": [
+    "Celebrity Flora is purpose-built specifically for the Galápagos environment",
+    "Intimate all-suite yacht carrying only ~100 guests",
+    "Twice-daily naturalist-led excursions included every day",
+    "Galápagos National Park-certified naturalist guides on all outings",
+    "All gourmet meals and complimentary room service included",
+    "Premium beverages, select wines, sparkling wine, and spirits included",
+    "Unlimited high-speed Wi-Fi included throughout the ship",
+    "All crew and naturalist gratuities included in the fare",
+    "Galápagos National Park admission fee and Tourist Card included",
+    "Full snorkeling gear, mini-wetsuits, binoculars, and trekking poles provided",
+    "Included Baltra airport-to-ship transfers",
+    "Comprehensive pre/post package extensions to Quito and Machu Picchu available"
+  ],
+  "cons": [
+    "Premium luxury price point compared to mass-market ocean sailings",
+    "International flights to/from Ecuador not included on base 7-night cruise",
+    "Comprehensive travel insurance must be purchased separately",
+    "Expedition activities involve moderate physical activity (wet landings, rocky hikes)",
+    "National Park authorities may adjust landing schedules to protect wildlife sites",
+    "Mainland hotel stays and land extensions cost extra on standalone cruise bookings"
+  ],
+  "steps": [
+    {
+      "timeframe": "Step 01",
+      "title": "Choose Inner Loop or Outer Loop",
+      "description": "Compare the unique visitor sites, volcanic terrain, and wildlife colonies featured on each 7-night itinerary."
+    },
+    {
+      "timeframe": "Step 02",
+      "title": "Decide How Long You Want to Travel",
+      "description": "Choose between the standalone 7-night cruise or extended 10-, 11-, or 16-night South American packages."
+    },
+    {
+      "timeframe": "Step 03",
+      "title": "Decide Whether You Want Quito",
+      "description": "Adding a Quito pre-cruise package provides historic city exploration in UNESCO-listed Quito before flying to Baltra."
+    },
+    {
+      "timeframe": "Step 04",
+      "title": "Consider Adding Machu Picchu",
+      "description": "For a once-in-a-lifetime South American journey, combine the Galápagos Islands with Cusco, the Sacred Valley, and Machu Picchu."
+    },
+    {
+      "timeframe": "Step 05",
+      "title": "Assess Activity Levels",
+      "description": "Galápagos excursions involve walking on uneven lava terrain, wet beach landings, zodiac cruising, and open-water snorkeling."
+    },
+    {
+      "timeframe": "Step 06",
+      "title": "Select Your Suite Category",
+      "description": "Explore Celebrity Flora’s all-suite layout—from Horizon and Veranda Suites up to the expansive Royal and Penthouse Suites."
+    }
+  ],
+  "personas": [
+    {
+      "title": "Wildlife Enthusiasts",
+      "icon": "Camera",
+      "description": "If seeing giant tortoises, marine iguanas, sea lions, penguins, and unusual bird species is your top priority, the Galápagos is unmatched.",
+      "traits": ["Iconic endemic animal encounters", "Naturalist-guided photography", "Pristine untouched ecosystems"],
+      "recommendations": ["Inner or Outer Loop", "Pack high-zoom camera", "Bring underwater housing"]
+    },
+    {
+      "title": "Luxury Expedition Travelers",
+      "icon": "Gem",
+      "description": "Celebrity Flora combines active, authentic expedition exploration with all-suite accommodations and refined service.",
+      "traits": ["All-suite mega-yacht comfort", "Gourmet dining & open bar", "Effortless expedition logistics"],
+      "recommendations": ["Celebrity Flora Royal Suite", "Quito 5-star hotel extension"]
+    },
+    {
+      "title": "First-Time Galápagos Travelers",
+      "icon": "Landmark",
+      "description": "Included transfers, guides, expedition gear, park fees, and seamless transfers take all guesswork out of complex island travel.",
+      "traits": ["All-inclusive peace of mind", "Expert daily briefings", "Pre-arranged flights & park passes"],
+      "recommendations": ["10-Night Quito + Cruise Package"]
+    },
+    {
+      "title": "Couples & Milestone Celebrations",
+      "icon": "Heart",
+      "description": "The romantic combination of dramatic secluded landscapes and an intimate 100-guest yacht creates an unforgettable anniversary or bucket-list trip.",
+      "traits": ["Intimate yacht atmosphere", "Sunset cocktails & stargazing", "Private veranda suites"],
+      "recommendations": ["Penthouse or Royal Suite", "16-Night Machu Picchu Package"]
+    },
+    {
+      "title": "Active & Adventure Travelers",
+      "icon": "Bike",
+      "description": "Twice-daily excursions featuring volcanic ridge hikes, deep-water snorkeling, and zodiac explorations keep active travelers engaged.",
+      "traits": ["Daily snorkeling & kayaking", "Challenging volcanic hikes", "Zodiac coastal expeditions"],
+      "recommendations": ["Bring sturdy water shoes", "December–May for peak water sports"]
+    },
+    {
+      "title": "Multi-Generational Families",
+      "icon": "Wine",
+      "description": "The structured, all-inclusive expedition format works exceptionally well for families traveling together with teens and older relatives.",
+      "traits": ["Educational naturalist talks", "Diverse activity options", "Safe, small-ship environment"],
+      "recommendations": ["10-Night Package", "Book connecting Veranda Suites"]
+    }
+  ],
+  "packingCards": [
+    {
+      "title": "Clothing & Footwear",
+      "items": [
+        "Lightweight, breathable, moisture-wicking clothing",
+        "Comfortable, broken-in walking shoes or hiking boots",
+        "Sandals with secure straps or neoprene water shoes",
+        "Lightweight waterproof rain jacket / windbreaker",
+        "Swimwear (at least two sets for daily snorkeling)"
+      ]
+    },
+    {
+      "title": "Sun Protection & Gear",
+      "items": [
+        "Wide-brimmed sun hat or cap with neck coverage",
+        "UV-blocking polarized sunglasses",
+        "Reef-safe, biodegradable sunscreen and lip balm",
+        "Waterproof dry bag or backpack for Zodiac landings",
+        "Reusable insulated water bottle"
+      ]
+    },
+    {
+      "title": "Electronics & Personal Items",
+      "items": [
+        "Camera with telephoto lens & extra memory cards",
+        "GoPro / waterproof underwater camera with floating handle",
+        "Personal medications and motion sickness remedies",
+        "Universal power adapter and charging cables"
+      ]
+    }
+  ],
+  "angelaBio": {
+    "name": "Angela Hughes",
+    "title": "CEO of Trips & Ships Luxury Travel | Founder of Luxury Travel University",
+    "badge": "GALÁPAGOS EXPEDITION EXPERTISE",
+    "experienceBadge": "40+ YEARS EXPERIENCE",
+    "quote": "The Galápagos is not simply another cruise destination. The real value is in the quality and organization of the expedition experience. Celebrity Flora combines an intimate all-suite environment with twice-daily naturalist-led exploration, while equipment, drinks, Wi-Fi, gratuities, park fees and transfers are already included.",
+    "quoteSubtitle": "On Celebrity Galápagos Value",
+    "bio": "Angela Hughes is a luxury travel expert, CEO of Trips & Ships Luxury Travel, founder of Luxury Travel University and an experienced luxury travel industry leader. She has traveled to more than 120 countries across all 7 continents and specializes in luxury cruises, expeditions, safaris, and premium travel. She has extensive first-hand expertise in Galápagos expedition planning, Celebrity Flora suite selection, and South America itinerary design.",
+    "credentials": [
+      "40+ Years Designing Luxury Expedition & Cruise Travel",
+      "Explored Over 120 Countries Across 7 Continents",
+      "Galápagos & South America Itinerary Specialist",
+      "Celebrity Flora Suites & Loop Routes Expert",
+      "Founder of Luxury Travel University",
+      "CEO & Founder of Trips & Ships Luxury Travel"
+    ]
+  },
+  "whyPlanPillars": [
+    { "title": "Compare Celebrity Flora Itineraries", "description": "Evaluate Inner vs Outer Loop island stops, wildlife seasons, and visitor sites.", "icon": "compass" },
+    { "title": "Select the Perfect Suite", "description": "Choose between Horizon Suites, Veranda Suites, and top-tier Royal or Penthouse Suites.", "icon": "ship" },
+    { "title": "Optimize Departure Timing", "description": "Align travel dates with sea conditions, water temperatures, and specific wildlife behaviors.", "icon": "star" },
+    { "title": "Package Extended Land Tours", "description": "Coordinate 10-, 11-, or 16-night packages incorporating Quito, Lima, Cusco, and Machu Picchu.", "icon": "award" },
+    { "title": "Coordinate International Flights", "description": "Book complex multi-city flights from North America or Europe into Quito and Baltra.", "icon": "compass" },
+    { "title": "Personalized Expedition Consulting", "description": "Receive direct, one-on-one expert guidance on packing, physical readiness, and travel logistics.", "icon": "award" }
+  ],
+  "faqs": [
+    { "question": "1. What are Celebrity Galápagos Cruises?", "answer": "Celebrity Galápagos Cruises are luxury expedition-style cruises centered on Celebrity Flora, an all-suite 100-guest ship designed specifically for the Galápagos." },
+    { "question": "2. What ship does Celebrity use in the Galápagos?", "answer": "Celebrity's flagship Galápagos ship is Celebrity Flora, a purpose-built, all-suite mega-yacht designed for the islands." },
+    { "question": "3. How many guests does Celebrity Flora accommodate?", "answer": "Celebrity Flora accommodates approximately 100 guests." },
+    { "question": "4. How long are Celebrity Galápagos Cruises?", "answer": "The core Galápagos cruise is 7 nights. Celebrity also offers longer 10-, 11- and 16-night vacation packages combining the cruise with mainland Ecuador and, on selected itineraries, Peru." },
+    { "question": "5. What is included on Celebrity Galápagos Cruises?", "answer": "The 7-night cruise includes accommodations, meals, beverages, Wi-Fi, room service, naturalist programs, expedition equipment, gratuities, Galápagos National Park admission, Tourist Card fees and Baltra transfers." },
+    { "question": "6. Are excursions included on Celebrity Galápagos Cruises?", "answer": "Yes. Celebrity includes twice-daily Galápagos National Park-certified naturalist-guided excursions." },
+    { "question": "7. What wildlife can I see on a Celebrity Galápagos Cruise?", "answer": "Depending on the itinerary and conditions, travelers may see giant tortoises, marine iguanas, sea lions, Galápagos penguins, blue-footed boobies, frigatebirds, sea turtles and other endemic wildlife." },
+    { "question": "8. What is the Celebrity Galápagos Inner Loop?", "answer": "The Inner Loop is a Celebrity Flora itinerary visiting a selection of central and western Galápagos destinations. A current itinerary includes Santiago, Rábida, Isabela, Bartolomé and Santa Cruz." },
+    { "question": "9. What is the Celebrity Galápagos Outer Loop?", "answer": "The Outer Loop is an alternative itinerary featuring destinations such as Española, Floreana, Isabela, Fernandina and Santa Cruz." },
+    { "question": "10. Does Celebrity include snorkeling equipment?", "answer": "Yes. Celebrity provides complimentary snorkeling equipment, mini-wetsuits, binoculars and walking sticks for the duration of the cruise." },
+    { "question": "11. Are drinks included on Celebrity Galápagos Cruises?", "answer": "Yes. Celebrity includes beverages onboard, including select wines, sparkling wine, spirits, soft drinks, bottled water, coffee and tea." },
+    { "question": "12. Is Wi-Fi included on Celebrity Flora?", "answer": "Yes. Complimentary internet access is included, and Celebrity promotes unlimited Wi-Fi as part of its Galápagos experience." },
+    { "question": "13. Does Celebrity offer Galápagos and Machu Picchu packages?", "answer": "Yes. Selected 16-night packages combine the Galápagos with Machu Picchu and other South American experiences." },
+    { "question": "14. Does Celebrity include Quito before the Galápagos cruise?", "answer": "Celebrity's 10-, 11- and 16-night packages include a pre-cruise Quito stay, with hotel accommodation, transfers, a guided Quito tour and transportation to Baltra." },
+    { "question": "15. Are Celebrity Galápagos Cruises worth it?", "answer": "They can be an excellent choice for travelers who want an all-inclusive luxury expedition experience, with an all-suite ship, twice-daily naturalist-led excursions, wildlife encounters and many major expedition costs included." }
+  ]
+}

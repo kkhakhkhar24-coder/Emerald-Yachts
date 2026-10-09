@@ -1359,7 +1359,7 @@ const Navbar = () => {
                 Celebrity Edge vs Solstice Series
               </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/celebrity-cruises/river-cruises"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -1381,7 +1381,7 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Celebrity Danube River Cruises
-              </NavLink> */}
+              </NavLink>
 
               <NavLink
                 to="/celebrity-cruises/galapagos"
@@ -1399,7 +1399,7 @@ const Navbar = () => {
                 Celebrity Alaska Cruises
               </NavLink>
 
-              <NavLink
+              {/* <NavLink
                 to="/celebrity-cruises/mediterranean"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -1421,7 +1421,7 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Celebrity Aqua Class vs Concierge Class
-              </NavLink>
+              </NavLink> */}
 
               <NavLink
                 to="/celebrity-cruises/infinite-veranda"
@@ -2981,7 +2981,7 @@ const Navbar = () => {
               Celebrity Edge vs Solstice Series
             </NavLink>
 
-            {/* <NavLink
+            <NavLink
               to="/celebrity-cruises/river-cruises"
               className="nav-dropdown-single"
               onClick={toggleMenu}
@@ -3003,7 +3003,7 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Celebrity Danube River Cruises
-            </NavLink> */}
+            </NavLink>
 
             <NavLink
               to="/celebrity-cruises/galapagos"
@@ -3021,7 +3021,7 @@ const Navbar = () => {
               Celebrity Alaska Cruises
             </NavLink>
 
-            <NavLink
+            {/* <NavLink
               to="/celebrity-cruises/mediterranean"
               className="nav-dropdown-single"
               onClick={toggleMenu}
@@ -3043,7 +3043,7 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Celebrity Aqua Class vs Concierge Class
-            </NavLink>
+            </NavLink> */}
 
             <NavLink
               to="/celebrity-cruises/infinite-veranda"

@@ -1,0 +1,777 @@
+{
+  "seo": {
+    "title": "Celebrity Alaska Cruises: Complete Guide",
+    "metaTitle": "Celebrity Alaska Cruises | Ships, Itineraries & Glaciers",
+    "metaDescription": "Explore Celebrity Alaska Cruises, including ships, glacier itineraries, Inside Passage sailing, Alaska ports, excursions, Cruisetours, sailing seasons and planning tips.",
+    "keywords": "Celebrity Alaska Cruises, Alaska cruise, Hubbard Glacier cruise, Dawes Glacier cruise, Inside Passage cruise, Celebrity Cruisetours, Denali cruise tour",
+    "ogTitle": "Celebrity Alaska Cruises: Complete Guide",
+    "ogDescription": "Explore Celebrity Alaska Cruises, including ships, glacier itineraries, Inside Passage sailing, Alaska ports, excursions, Cruisetours, sailing seasons and planning tips.",
+    "canonicalUrl": "https://www.tripsandships.com/celebrity-cruises/alaska/"
+  },
+  "hero": {
+    "title": "Celebrity Alaska Cruises\nComplete Guide",
+    "subtitle": "Ships, Glacier Itineraries, Alaska Ports & Cruisetours",
+    "badge": "Celebrity Alaska Cruises",
+    "ctaLabel": "Plan My Celebrity Alaska Cruise",
+    "ctaUrl": "/contact",
+    "secondaryCtaLabel": "Speak With a Luxury Alaska Cruise Expert",
+    "secondaryCtaUrl": "/contact"
+  },
+  "intro": {
+    "heading": "Celebrity Alaska Cruises",
+    "paragraphs": [
+      "Celebrity Alaska Cruises combine dramatic glaciers, wildlife, scenic waterways and historic Alaska ports with the elevated onboard experience of Celebrity Cruises.",
+      "Celebrity's Alaska program includes 7-night glacier itineraries, Inside Passage sailings and one-way routes between Vancouver and Seward, along with selected round-trip cruises from Vancouver and Seattle. Current Celebrity itineraries include glacier-focused journeys featuring destinations such as Hubbard Glacier, Dawes Glacier, Juneau, Skagway, Ketchikan, Sitka and Icy Strait Point.",
+      "Celebrity also offers Cruisetours that combine a cruise with multi-night land experiences in Alaska, including destinations such as Denali, Anchorage and Talkeetna. For travelers planning an Alaska cruise, the key decisions are the ship, itinerary, glacier experience, departure port, excursions, sailing season and whether to add a pre- or post-cruise land tour."
+    ],
+    "quickAnswerHeading": "What Are Celebrity Alaska Cruises?",
+    "quickAnswer": "Celebrity Alaska Cruises are seasonal voyages through Alaska and the Inside Passage, combining glacier viewing, wildlife, scenic cruising, Alaska ports and shore excursions with Celebrity's premium onboard experience. Current Celebrity Alaska routes include Northbound Glacier, Southbound Glacier and Dawes or Hubbard Glacier itineraries, with selected sailings operating between Vancouver and Seward or round trip from Vancouver or Seattle."
+  },
+  "glance": [
+    { "feature": "Destination", "detail": "Alaska" },
+    { "feature": "Main Region", "detail": "Southeast Alaska & Inside Passage" },
+    { "feature": "Cruise Season", "detail": "May–September" },
+    { "feature": "Popular Cruise Length", "detail": "7 nights" },
+    { "feature": "Departure Ports", "detail": "Vancouver, Seattle & Seward" },
+    { "feature": "Popular Ports", "detail": "Juneau, Skagway, Ketchikan, Sitka & Icy Strait Point" },
+    { "feature": "Glacier Experiences", "detail": "Hubbard Glacier, Dawes Glacier & other scenic areas on selected itineraries" },
+    { "feature": "Cruise Style", "detail": "Premium" },
+    { "feature": "Cruisetours", "detail": "Available" },
+    { "feature": "Land Destinations", "detail": "Denali, Anchorage, Talkeetna & other Alaska destinations" },
+    { "feature": "Wildlife", "detail": "Whales, eagles, bears, seals & other Alaska wildlife" },
+    { "feature": "Shore Excursions", "detail": "Available in Alaska ports" },
+    { "feature": "Inside Passage", "detail": "Featured on selected itineraries" },
+    { "feature": "One-Way Cruises", "detail": "Available" },
+    { "feature": "Round-Trip Cruises", "detail": "Available on selected itineraries" }
+  ],
+  "whyChoose": [
+    {
+      "title": "Cruise through the Inside Passage",
+      "description": "Sail through calm, sheltered coastal channels surrounded by mountains, rainforests, and marine life."
+    },
+    {
+      "title": "View massive glaciers",
+      "description": "Witness immense tidewater glaciers including Hubbard Glacier and Dawes Glacier up close."
+    },
+    {
+      "title": "Watch for whales and marine wildlife",
+      "description": "Spot humpback whales, orcas, harbor seals, sea otters, and bald eagles in their natural habitats."
+    },
+    {
+      "title": "Explore Alaska ports",
+      "description": "Visit historic Juneau, Skagway, Ketchikan, Sitka, and Icy Strait Point."
+    },
+    {
+      "title": "Visit historic communities",
+      "description": "Immerse in the Gold Rush lore and frontier heritage of Southeast Alaska's historic towns."
+    },
+    {
+      "title": "Experience Alaska Native culture",
+      "description": "Discover authentic Tlingit, Haida, and Tsimshian cultural traditions and world-famous totem poles."
+    },
+    {
+      "title": "Take glacier and wildlife excursions",
+      "description": "Enjoy guided glacier treks, helicopter flightseeing, dog sledding, and marine wildlife safaris."
+    },
+    {
+      "title": "Explore Denali on selected Cruisetours",
+      "description": "Combine coastal cruising with multi-night inland adventures into Denali National Park."
+    },
+    {
+      "title": "Combine cruise with an Alaska land vacation",
+      "description": "Seamlessly link one-way voyages with glass-domed wilderness rail travel and luxury lodges."
+    },
+    {
+      "title": "Relax onboard in premium luxury",
+      "description": "Unwind in stylish staterooms, specialty restaurants, and observation lounges between destinations."
+    }
+  ],
+  "fleetHighlights": [
+    "Ship: Celebrity Solstice, Celebrity Summit, Celebrity Edge",
+    "Departure port: Vancouver, Seattle & Seward",
+    "Cruise length: 7-night sailings & multi-night Cruisetours",
+    "Glacier destinations: Hubbard Glacier & Dawes Glacier",
+    "Alaska ports: Juneau, Skagway, Ketchikan, Sitka & Icy Strait Point",
+    "Scenic cruising: Inside Passage & Endicott Arm",
+    "Stateroom categories: Interior, Ocean View & Veranda",
+    "Suite options: The Retreat with exclusive lounge & sundeck",
+    "Sailing date: Concentrated season from May to September"
+  ],
+  "northboundGlacier": {
+    "title": "Celebrity Alaska Northbound Glacier",
+    "islands": ["Vancouver", "Inside Passage", "Ketchikan", "Sitka", "Icy Strait Point", "Juneau", "Hubbard Glacier", "Seward"],
+    "summary": "A Northbound Glacier itinerary typically travels from Vancouver to Seward. Sailing north through the Inside Passage, this route showcases Alaska's premier southeastern ports before reaching the dramatic face of Hubbard Glacier and concluding in Seward. This type of itinerary works particularly well for travelers who want to continue into an Alaska land vacation after the cruise.",
+    "bestFor": [
+      "Glacier viewing",
+      "Inside Passage scenery",
+      "Southeast Alaska ports",
+      "One-way travel",
+      "Alaska land extensions",
+      "Denali Cruisetours"
+    ]
+  },
+  "southboundGlacier": {
+    "title": "Celebrity Alaska Southbound Glacier",
+    "islands": ["Seward", "Hubbard Glacier", "Juneau", "Skagway", "Icy Strait Point", "Ketchikan", "Inside Passage", "Vancouver"],
+    "summary": "A Southbound Glacier itinerary travels from Seward to Vancouver. Beginning in Seward following an optional land tour, the ship sails past Hubbard Glacier and navigates through the Inside Passage to Vancouver. This route is especially useful when beginning with an Alaska land experience and finishing with a relaxing cruise south.",
+    "bestFor": [
+      "Denali or inland Alaska before cruising",
+      "Hubbard Glacier",
+      "Southeast Alaska",
+      "Vancouver",
+      "Cruise-and-land vacations"
+    ]
+  },
+  "glacierPairTable": {
+    "title": "Northbound vs. Southbound Glacier Itineraries",
+    "description": "Compare ports and scenic waypoints between one-way Northbound and Southbound glacier voyages.",
+    "headers": ["Northbound (Vancouver → Seward)", "Southbound (Seward → Vancouver)"],
+    "rows": [
+      ["Vancouver", "Seward"],
+      ["Inside Passage", "Hubbard Glacier"],
+      ["Ketchikan", "Juneau"],
+      ["Sitka", "Skagway"],
+      ["Icy Strait Point", "Icy Strait Point"],
+      ["Juneau", "Ketchikan"],
+      ["Hubbard Glacier", "Inside Passage"],
+      ["Seward", "Vancouver"]
+    ]
+  },
+  "hubbardGlacier": {
+    "title": "Celebrity Alaska Hubbard Glacier Cruises",
+    "summary": "Hubbard Glacier is one of the signature glacier experiences available on selected Celebrity Alaska itineraries. The glacier is located near Yakutat and is known for its immense scale and dramatic ice formations. On a Hubbard Glacier sailing, travelers can view the glacier from the ship while sailing through the surrounding waters. Celebrity describes Hubbard Glacier as the longest tidewater glacier in the world.",
+    "stops": [
+      "Vancouver (Departure)",
+      "Inside Passage Scenic Cruising",
+      "Icy Strait Point",
+      "Hubbard Glacier (Scenic Cruising)",
+      "Juneau",
+      "Ketchikan",
+      "Inside Passage Scenic Cruising",
+      "Vancouver (Arrival)"
+    ]
+  },
+  "dawesGlacier": {
+    "title": "Celebrity Alaska Dawes Glacier Cruises",
+    "summary": "Dawes Glacier is another glacier experience featured on selected Celebrity Alaska itineraries. Located at the head of Endicott Arm Fjord, Dawes Glacier cruises operate round trip from Vancouver and, on selected routes, from Seattle or between Vancouver and Seattle.",
+    "bestFor": [
+      "Glacier scenery & active calving",
+      "Inside Passage scenic cruising",
+      "Ketchikan & Southeast Alaska ports",
+      "Scenic fjord photography",
+      "Marine wildlife viewing"
+    ]
+  },
+  "insidePassage": {
+    "title": "Celebrity Alaska Inside Passage Cruises",
+    "summary": "The Inside Passage is one of the defining experiences of an Alaska cruise. The route passes through a network of waterways surrounded by forested islands, snow-covered mountains, glaciers, fjords, and waterfalls. Celebrity's Alaska itineraries include Inside Passage scenic cruising on selected routes.",
+    "features": [
+      "Forested islands & temperate rainforest",
+      "Snow-covered coastal mountains",
+      "Tidewater glaciers & fjords",
+      "Dramatic coastal waterfalls",
+      "Rich marine wildlife habitats"
+    ],
+    "wildlife": [
+      "Humpback whales",
+      "Orcas",
+      "Bald eagles",
+      "Harbor seals",
+      "Sea otters",
+      "Other marine wildlife"
+    ]
+  },
+  "ports": [
+    {
+      "title": "Juneau",
+      "subtitle": "Alaska's Capital Port",
+      "description": "Juneau is Alaska's capital and one of the most popular stops on an Alaska cruise. Accessible only by boat or plane, it offers dramatic glaciers, whale watching, hiking trails, scenic tours, and rich gold mining history.",
+      "bullets": [
+        "Mendenhall Glacier tours",
+        "Whale-watching excursions",
+        "Mount Roberts Tramway & hiking",
+        "Scenic flightseeing & helicopters",
+        "Historic downtown & Gold Rush saloons",
+        "Celebrity highlights Juneau for hiking and whale-watching"
+      ]
+    },
+    {
+      "title": "Skagway",
+      "subtitle": "Gateway to the Klondike",
+      "description": "Skagway is closely connected to Alaska's historic 1898 Gold Rush. Travelers can ride the vintage White Pass & Yukon Route Railway, explore Klondike Gold Rush National Historical Park, and venture into rugged mountain trails.",
+      "bullets": [
+        "White Pass & Yukon Route Railway",
+        "Klondike Gold Rush historic district",
+        "Mountain wilderness hiking",
+        "Dog sledding on glaciers",
+        "Chilkoot Trail excursions",
+        "Skagway combines rich frontier history with mountain scenery"
+      ]
+    },
+    {
+      "title": "Ketchikan",
+      "subtitle": "Salmon Capital & Native Heritage",
+      "description": "Ketchikan is known for its connection to Alaska Native heritage, vibrant salmon fishing, and lush Tongass Rainforest scenery. It boasts the world's largest collection of standing Native American totem poles.",
+      "bullets": [
+        "Historic Creek Street boardwalk",
+        "Haida, Tlingit & Tsimshian totem parks",
+        "Tongass National Forest rainforest walks",
+        "Sportfishing & wilderness tours",
+        "Misty Fjords National Monument flights",
+        "Celebrity highlights Ketchikan's authentic Native heritage"
+      ]
+    },
+    {
+      "title": "Sitka",
+      "subtitle": "Russian Heritage & Coastal Islands",
+      "description": "Sitka offers a unique combination of coastal scenery, Alaska Native Tlingit heritage, and Russian-era colonial history, set beneath picturesque Mount Edgecumbe volcano.",
+      "bullets": [
+        "Sitka National Historical Park & totems",
+        "St. Michael's Russian Orthodox Cathedral",
+        "Alaska Raptor Center wildlife visits",
+        "Coastal kayaking & wildlife cruises",
+        "Otter & seal viewing in Silver Bay",
+        "Sitka appears on selected Celebrity Alaska itineraries"
+      ]
+    },
+    {
+      "title": "Icy Strait Point",
+      "subtitle": "Wilderness & Native Tlingit Culture",
+      "description": "Icy Strait Point is a privately-owned Native Alaskan destination in Hoonah. It offers exceptional wilderness encounters, premier whale watching in Point Adolphus, and the world's largest ZipRider.",
+      "bullets": [
+        "Humpback whale & orca viewing",
+        "Coastal brown bear viewing tours",
+        "World-famous ZipRider cable ride",
+        "Native Tlingit cultural performances",
+        "Cannery museum & local seafood",
+        "Icy Strait Point appears on selected glacier itineraries"
+      ]
+    },
+    {
+      "title": "Inside Passage",
+      "subtitle": "Defining Scenic Cruising",
+      "description": "The Inside Passage is one of the defining experiences of an Alaska cruise. The ship navigates tranquil coastal channels protected from open ocean swell, bordered by steep mountains and dense rainforest.",
+      "bullets": [
+        "Protected calm-water navigation",
+        "Pristine temperate rainforest views",
+        "Glacial fjords & cascading waterfalls",
+        "Whale & porpoise viewing from deck",
+        "Snow-capped coastal range panoramas",
+        "Featured on selected Celebrity Alaska routes"
+      ]
+    }
+  ],
+  "wildlifePillars": [
+    {
+      "title": "Humpback Whales & Orcas",
+      "description": "Encounter massive humpback whales bubble-net feeding and resident killer whale pods navigating Inside Passage waters."
+    },
+    {
+      "title": "Bald Eagles & Arctic Birds",
+      "description": "Observe hundreds of bald eagles nesting along coastal treetops, puffins, and diverse arctic seabirds."
+    },
+    {
+      "title": "Alaska Brown & Black Bears",
+      "description": "Take guided wilderness excursions to observe coastal brown bears foraging along salmon streams and tidal flats."
+    },
+    {
+      "title": "Sea Otters, Harbor Seals & Sea Lions",
+      "description": "Watch playful sea otters resting in kelp beds and harbor seals hauled out on floating glacial ice."
+    },
+    {
+      "title": "Mountain Wildlife & Mountain Goats",
+      "description": "Spot agile mountain goats on sheer cliff faces, moose in interior meadows, and coastal Sitka black-tailed deer."
+    },
+    {
+      "title": "Salmon & Marine Ecosystems",
+      "description": "Learn about the vital salmon runs that nourish Alaska's entire temperate rainforest food web."
+    }
+  ],
+  "excursionCategories": [
+    {
+      "title": "Glacier Excursions",
+      "subtitle": "Helicopters & Ice Treks",
+      "description": "Glacier sightseeing, helicopter flightseeing tours, guided glacier walks, and ice climbing excursions.",
+      "bullets": ["Helicopter glacier landings", "Guided glacier walks", "Scenic flightseeing tours", "Dog sledding on high-altitude snow fields"]
+    },
+    {
+      "title": "Wildlife Excursions",
+      "subtitle": "Marine & Forest Safaris",
+      "description": "Whale watching in Juneau & Icy Strait Point, coastal bear viewing expeditions, and eagle sanctuary visits.",
+      "bullets": ["Catamaran whale-watching tours", "Bear viewing fly-in tours", "Marine wildlife safaris", "Raptor and eagle center visits"]
+    },
+    {
+      "title": "Adventure Excursions",
+      "subtitle": "Active Wilderness Thrills",
+      "description": "Sea kayaking through glacier bays, ziplining through old-growth canopy, river rafting, and alpine hiking.",
+      "bullets": ["Sea kayaking near glaciers", "Canopy zipline adventures", "White Pass railway & hiking", "Scenic wilderness rafting"]
+    },
+    {
+      "title": "Cultural Excursions",
+      "subtitle": "Native Heritage & History",
+      "description": "Alaska Native heritage tours, Gold Rush history walks, totem carving demonstrations, and local culinary tours.",
+      "bullets": ["Tlingit & Haida totem parks", "Historic Gold Rush town walks", "Russian colonial landmarks in Sitka", "Salmon bake culinary experiences"]
+    }
+  ],
+  "inclusions": [
+    { "title": "Food and drink", "description": "Core dining across multiple main restaurants, cafes, and oceanview buffets." },
+    { "title": "Accommodations", "description": "Selected stateroom or suite with eXhale bedding and daily housekeeping." },
+    { "title": "Service", "description": "Dedicated stateroom attendant, guest services, and attentive shipboard staff." },
+    { "title": "Live entertainment", "description": "Theater productions, live music, observation deck talks, and daily activities." }
+  ],
+  "exclusions": [
+    { "title": "Shore excursions", "description": "Glacier helicopter tours, whale watching, and port activities booked separately." },
+    { "title": "Airfare", "description": "Flights to and from Vancouver, Seattle, or Anchorage/Seward." },
+    { "title": "Pre-cruise hotels", "description": "Hotel accommodations in embarkation port cities prior to sailing." },
+    { "title": "Post-cruise hotels", "description": "Hotel accommodations following your cruise or land tour." },
+    { "title": "Specialty dining", "description": "Specialty restaurant cover charges and exclusive chef experiences." },
+    { "title": "Spa services", "description": "Full-service treatments at The Spa and wellness salon services." },
+    { "title": "Shopping", "description": "Onboard retail boutiques, art purchases, and personal shopping." },
+    { "title": "Travel insurance", "description": "Trip cancellation, medical coverage, and travel protection policies." },
+    { "title": "Some transportation", "description": "Independent ground transfers between airport, hotel, and terminal." },
+    { "title": "Other personal expenses", "description": "Laundry services, casino gaming, and discretionary gratuities." }
+  ],
+  "cruisetours": {
+    "title": "Celebrity Alaska Cruisetours",
+    "summary": "Celebrity Cruisetours combine a seven-night Alaska cruise with a multi-night land tour. This allows travelers to experience both the southeastern coastline and Alaska's rugged interior. Led by dedicated tour directors, these journeys seamlessly blend premium rail travel, wilderness lodges, and national park exploration.",
+    "destinations": [
+      "Denali National Park & Preserve",
+      "Anchorage (Alaska's Largest City)",
+      "Talkeetna (Historic Mountaineering Town)",
+      "Seward (Coastal Gateway Port)",
+      "Alaska Wildlife Conservation Center",
+      "Fairbanks & Interior Gold Country"
+    ]
+  },
+  "denali": {
+    "title": "Celebrity Alaska + Denali",
+    "summary": "Denali is the most popular addition to a Celebrity Alaska vacation. A Cruisetour combines an Alaska Cruise + Denali National Park + Interior Alaska. Travelers travel aboard the glass-domed Wilderness Express train and stay in mountain lodges near the park entrance.",
+    "highlights": [
+      "Denali National Park Tundra Wilderness Tour",
+      "Glass-domed Wilderness Express luxury rail travel",
+      "Views of Mount Denali (North America's highest peak)",
+      "Grizzly bears, moose, caribou, and Dall sheep viewing",
+      "Overnight stays at premier Denali wilderness lodges",
+      "Dedicated local Alaskan Tour Director throughout land tour"
+    ]
+  },
+  "departurePorts": [
+    {
+      "title": "Celebrity Alaska From Vancouver",
+      "subtitle": "Premier Gateway Port",
+      "description": "Vancouver is Celebrity's primary Alaska departure port. Convenient for Northbound Glacier cruises, Southbound Glacier voyages, round-trip Inside Passage itineraries, and Cruisetours. A pre-cruise stay in Vancouver turns the city into part of the vacation.",
+      "bullets": [
+        "Direct access to sheltered Inside Passage",
+        "Northbound & Southbound glacier routes",
+        "Round-trip 7-night itineraries",
+        "World-class dining and pre-cruise stays"
+      ]
+    },
+    {
+      "title": "Celebrity Alaska From Seattle",
+      "subtitle": "Convenient U.S. Departure",
+      "description": "Selected Celebrity Alaska itineraries depart round-trip from Seattle. Selected Dawes Glacier itineraries operate round-trip from Seattle, making it an ideal choice for U.S. travelers who prefer avoiding international flight transfers.",
+      "bullets": [
+        "Convenient domestic U.S. flights",
+        "Round-trip Dawes Glacier & Endicott Arm sailings",
+        "Stops in Ketchikan, Juneau, Skagway & Victoria",
+        "Easy embarkation from Pier 91 / Pier 66"
+      ]
+    },
+    {
+      "title": "Celebrity Alaska From Seward",
+      "subtitle": "Cruisetour Gateway Port",
+      "description": "Seward is the key northern gateway for one-way Alaska cruises. Northbound voyages finish in Seward, while Southbound sailings embark here. It is the direct rail and coach link to Anchorage and Denali Cruisetours.",
+      "bullets": [
+        "Turnaround port for one-way glacier routes",
+        "Direct connection to scenic Alaska Railroad",
+        "Gateway to Kenai Fjords National Park",
+        "Starting point for inland Cruisetours"
+      ]
+    }
+  ],
+  "seasonsTable": {
+    "title": "Celebrity Alaska Cruise Season Overview",
+    "description": "Celebrity's Alaska cruise season is concentrated between May and September. June, July, and August represent peak summer months, while May and September offer quieter shoulder seasons.",
+    "headers": ["Month", "Weather & Daylight", "Wildlife & Highlights", "Season Character"],
+    "rows": [
+      ["May", "Crisp, mild (50–55°F), lower rainfall", "Snow-capped peaks, migrating whales, spring wildflowers", "Early Season • Fewer Crowds • Value Pricing"],
+      ["June", "Warmer (55–65°F), longest daylight (18+ hrs)", "Peak wildlife activity, active calving glaciers, hiking", "Early Peak • Maximum Daylight • Ideal Sightseeing"],
+      ["July", "Warmest (60–70°F), peak summer warmth", "Salmon runs begin, whales, bears feeding along shores", "Peak Summer • High Demand • Best for Families"],
+      ["August", "Mild (55–65°F), moderate rainfall", "Peak salmon runs, bear viewing safaris, active whales", "Late Peak • Prime Wildlife • Lush Rainforests"],
+      ["September", "Cooler (45–55°F), fall foliage colors", "Fall colors, migrating caribou, possible Northern Lights", "Fall Shoulder • Fewer Crowds • Northern Lights"]
+    ]
+  },
+  "accommodations": [
+    {
+      "title": "Interior Staterooms",
+      "subtitle": "Practical & Comfortable",
+      "description": "A practical choice for travelers who prioritize time ashore, hiking, and enjoying the ship's observation lounges and public decks.",
+      "bullets": [
+        "Celebrity eXhale bedding and premium linens",
+        "Flat-screen TV and interactive stateroom services",
+        "24-hour room service availability",
+        "Budget-friendly option allowing more excursion spend"
+      ]
+    },
+    {
+      "title": "Ocean View Staterooms",
+      "subtitle": "Natural Light & Scenery",
+      "description": "An ocean-view stateroom provides ample natural daylight and a large window to watch Alaska's coastal scenery unfold.",
+      "bullets": [
+        "Expansive picture window with ocean views",
+        "Sitting area with sofa and desk",
+        "Plentiful natural lighting throughout the day",
+        "Great balance of view and value"
+      ]
+    },
+    {
+      "title": "Veranda Staterooms",
+      "subtitle": "Most Requested for Alaska",
+      "description": "A veranda stateroom provides a private outdoor balcony for uninterrupted viewing of tidewater glaciers, fjords, and marine wildlife without leaving your room.",
+      "bullets": [
+        "Private furnished teak balcony overlooking the sea",
+        "Floor-to-ceiling glass sliding doors",
+        "Infinite Veranda options on Edge-series ships",
+        "Unobstructed views of Hubbard & Dawes Glaciers"
+      ]
+    },
+    {
+      "title": "Suites & The Retreat",
+      "subtitle": "Ultimate Luxury in the Wild",
+      "description": "Celebrity's Suites include access to The Retreat, featuring a private restaurant (Luminae), exclusive lounge, dedicated concierge, and butler service.",
+      "bullets": [
+        "Expansive private verandas with whirlpools on top tiers",
+        "Access to Luminae restaurant and The Retreat Lounge",
+        "Dedicated Butler service and concierge planning",
+        "Included premium drinks, Wi-Fi, and shore excursion credits"
+      ]
+    }
+  ],
+  "oneWayVsRoundTrip": {
+    "title": "Celebrity Alaska One-Way vs. Round-Trip Cruises",
+    "description": "Decide between one-way glacier voyages (Vancouver ↔ Seward) or round-trip sailings from Vancouver or Seattle.",
+    "oneWayTitle": "Choose One-Way (Vancouver ↔ Seward) if you want:",
+    "roundTripTitle": "Choose Round-Trip (Vancouver or Seattle) if you want:",
+    "oneWay": [
+      "Combine your cruise with Denali or inland Alaska",
+      "Experience both the Inside Passage and Gulf of Alaska glaciers",
+      "Longer vacations with multi-night land tours",
+      "Deepest exploration of Alaska's diverse regions"
+    ],
+    "roundTrip": [
+      "Simpler round-trip flight bookings from a single city",
+      "Shorter 7-night vacation without land extensions",
+      "First-time Alaska cruisers looking for a straightforward getaway",
+      "Convenient U.S. departure from Seattle without passport requirements for land border"
+    ]
+  },
+  "cruiseVsLandTable": {
+    "title": "Celebrity Alaska Cruise vs. Independent Land Vacation",
+    "description": "Compare the benefits of cruising Alaska's coastline versus an independent land-based vacation.",
+    "headers": ["Celebrity Alaska Cruise", "Alaska Land Vacation"],
+    "rows": [
+      ["Multiple coastal destinations without repacking", "More time in individual land destinations"],
+      ["Unrivaled glacier scenic cruising from the water", "More land-based glacier hiking and road access"],
+      ["Convenient luxury transportation & dining included", "Greater itinerary flexibility with rental cars/trains"],
+      ["Visit isolated coastal ports unreachable by road", "Deeper exploration of interior valleys and parks"],
+      ["Premium ship accommodations and live entertainment", "Local hotels, rustic wilderness lodges, and cabins"],
+      ["Curated shore excursions with vetted operators", "Self-guided touring and independent excursion booking"],
+      ["Cruisetours seamlessly combine both cruise & land", "Requires independent planning for coastal boat tours"]
+    ]
+  },
+  "worthItPillars": [
+    {
+      "title": "Spectacular Glacier Scenery",
+      "description": "Front-row vantage point for massive tidewater glaciers including Hubbard Glacier and Dawes Glacier."
+    },
+    {
+      "title": "Inside Passage Navigation",
+      "description": "Glide through tranquil, sheltered coastal waterways with 360-degree mountain and rainforest views."
+    },
+    {
+      "title": "Multiple Iconic Alaska Ports",
+      "description": "Explore Juneau, Skagway, Ketchikan, Sitka, and Icy Strait Point all on a single 7-night voyage."
+    },
+    {
+      "title": "Abundant Wildlife Sightings",
+      "description": "Observe whales, bald eagles, brown bears, sea otters, and harbor seals in their natural habitats."
+    },
+    {
+      "title": "Premium Onboard Environment",
+      "description": "World-class dining, upscale staterooms, elevated service, and The Retreat luxury experience."
+    },
+    {
+      "title": "Seamless Cruisetour Extensions",
+      "description": "Add Denali National Park, luxury glass-domed trains, and interior Alaska to your coastal cruise."
+    }
+  ],
+  "personas": [
+    {
+      "title": "Wildlife & Nature Enthusiasts",
+      "subtitle": "Whale Watchers & Photographers",
+      "description": "Alaska offers unmatched opportunities to see humpback whales, orcas, bald eagles, grizzly bears, seals, and sea otters in pristine wilderness.",
+      "bullets": ["Point Adolphus whale watching", "Coastal bear viewing excursions", "Scenic glacier photography from private verandas"]
+    },
+    {
+      "title": "Couples & Anniversary Celebrations",
+      "subtitle": "Romantic Wilderness Getaway",
+      "description": "Scenic balcony cruising, fine dining, relaxing spa treatments, and unforgettable glacier helicopter flights make Alaska ideal for couples.",
+      "bullets": ["Private veranda glacier viewing", "Specialty dining at Tuscan Grille & Murano", "The Retreat luxury suite experience"]
+    },
+    {
+      "title": "Multi-Generational Families",
+      "subtitle": "All Ages Adventure",
+      "description": "Alaska combines thrilling Gold Rush history, wildlife safaris, and outdoor adventures that captivate children, parents, and grandparents alike.",
+      "bullets": ["Camp at Sea youth programming", "Historic White Pass train rides", "Accessible port exploration and wildlife viewing"]
+    },
+    {
+      "title": "First-Time Alaska Travelers",
+      "subtitle": "The Effortless Introduction",
+      "description": "A 7-night cruise provides the most comfortable, hassle-free way to experience multiple Southeast Alaska highlights without changing hotels.",
+      "bullets": ["Unpack once while visiting 4–5 ports", "All core dining and entertainment included", "Curated shore excursions with expert local guides"]
+    },
+    {
+      "title": "Luxury Cruise Travelers",
+      "subtitle": "Premium Comfort in the Wild",
+      "description": "Travelers who love upscale cruise amenities find Celebrity's sophisticated design, elevated culinary offerings, and The Retreat the perfect match.",
+      "bullets": ["Suite accommodations with dedicated butler service", "Luminae private dining and sundeck", "Top-tier wines and personalized concierge service"]
+    },
+    {
+      "title": "Travelers Wanting Denali",
+      "subtitle": "Cruise + Land Explorers",
+      "description": "Travelers with 10–14 days who want to see both dramatic coastal glaciers and majestic interior Alaska with Mount Denali.",
+      "bullets": ["Wilderness Express glass-domed rail journey", "Denali Tundra Wilderness Tour included", "Escorted by expert Alaskan Tour Directors"]
+    }
+  ],
+  "whoMayPreferLand": [
+    "Travelers seeking deep, multi-week backcountry wilderness trekking",
+    "Travelers who prefer independent self-drive RV or road trip travel",
+    "Travelers who want to spend multiple days in a single remote interior lodge",
+    "Travelers prone to severe motion sickness who prefer staying strictly on land",
+    "Travelers who want complete day-to-day schedule flexibility without fixed port times"
+  ],
+  "pros": [
+    "Spectacular tidewater glacier viewing (Hubbard Glacier & Dawes Glacier)",
+    "Sheltered scenic cruising through the Inside Passage",
+    "Visit 4 to 5 historic Alaska ports on a single 7-night sailing",
+    "High concentration of whale, eagle, bear, and marine wildlife sightings",
+    "Broad selection of curated shore excursions (helicopter flights, kayaking, dog sledding)",
+    "Convenient departures from Vancouver and Seattle",
+    "One-way (Vancouver ↔ Seward) and round-trip route flexibility",
+    "Award-winning Edge-series and Millennium/Solstice-class ships in Alaska",
+    "Seamless Denali Cruisetour land packages with glass-domed trains",
+    "Premium onboard dining, accommodations, and The Retreat luxury experience",
+    "Unpack once while traveling across thousands of miles of wilderness",
+    "Exceptional multi-generational family and couple appeal"
+  ],
+  "cons": [
+    "Alaska cruise season is seasonal (concentrated May through September only)",
+    "Shore excursions (helicopters, whale watching) add significantly to total vacation cost",
+    "Alaska weather is changeable and frequently cool or rainy (rain layers required)",
+    "Wildlife sightings are in natural habitats and cannot be 100% guaranteed",
+    "Peak July and August sailings experience high demand and higher fares",
+    "One-way itineraries require open-jaw flight bookings and airport transfer logistics",
+    "Inland Cruisetour extensions require additional vacation days and budget"
+  ],
+  "steps": [
+    {
+      "number": "01",
+      "title": "Choose Your Departure Port",
+      "description": "Compare Vancouver (best for Inside Passage & one-way Cruisetours) vs. Seattle (convenient domestic U.S. round trips) vs. Seward (starting point for southbound voyages).",
+      "tags": ["Vancouver", "Seattle", "Seward"]
+    },
+    {
+      "number": "02",
+      "title": "Choose Your Route & Glacier",
+      "description": "Select between Northbound Glacier, Southbound Glacier, Hubbard Glacier round trips, or Dawes Glacier / Endicott Arm round trips.",
+      "tags": ["Northbound Glacier", "Southbound Glacier", "Hubbard Glacier", "Dawes Glacier", "Inside Passage"]
+    },
+    {
+      "number": "03",
+      "title": "Decide on Stateroom vs. Veranda",
+      "description": "Because much of an Alaska cruise involves scenic viewing from the water, evaluate whether a Veranda Stateroom or suite in The Retreat fits your travel style.",
+      "tags": ["Veranda Balcony", "Infinite Veranda", "The Retreat Suites"]
+    },
+    {
+      "number": "04",
+      "title": "Compare Key Ports of Call",
+      "description": "Review itinerary port combinations to ensure your must-see destinations (Juneau, Skagway, Ketchikan, Sitka, Icy Strait Point) are included.",
+      "tags": ["Juneau", "Skagway", "Ketchikan", "Sitka", "Icy Strait Point"]
+    },
+    {
+      "number": "05",
+      "title": "Pre-Book High-Demand Excursions",
+      "description": "Reserve signature Alaska activities early: glacier helicopter flightseeing, whale-watching catamarans, White Pass rail, and bear viewing tours.",
+      "tags": ["Whale Watching", "Glacier Helicopter", "White Pass Rail", "Bear Viewing"]
+    },
+    {
+      "number": "06",
+      "title": "Consider Adding a Denali Cruisetour",
+      "description": "If you have 10–14 days, link your one-way cruise with a 3- to 6-night inland rail tour to Denali National Park and Anchorage.",
+      "tags": ["Denali National Park", "Wilderness Express Rail", "Anchorage", "Talkeetna"]
+    }
+  ],
+  "packingCards": [
+    {
+      "title": "Weatherproof Outer Layers",
+      "subtitle": "Rain & Wind Protection",
+      "items": [
+        "High-quality waterproof rain jacket with hood",
+        "Windproof breathable outer shell",
+        "Water-resistant hiking pants",
+        "Compact travel umbrella for port walks"
+      ]
+    },
+    {
+      "title": "Insulating Mid & Base Layers",
+      "subtitle": "Warmth & Flexibility",
+      "items": [
+        "Fleece jackets and lightweight down vests",
+        "Thermal base layers (merino wool or synthetic)",
+        "Warm knit beanie / toque and touch-screen gloves",
+        "Buff or lightweight neck gaiter for glacier viewing"
+      ]
+    },
+    {
+      "title": "Footwear & Outdoor Gear",
+      "subtitle": "Traction & Comfort",
+      "items": [
+        "Sturdy waterproof walking or hiking shoes",
+        "Moisture-wicking wool socks (Smartwool/Darn Tough)",
+        "Compact marine binoculars (8x42 or 10x42)",
+        "Waterproof daypack with rain cover"
+      ]
+    },
+    {
+      "title": "Optics, Tech & Personal Items",
+      "subtitle": "Memories & Sun Care",
+      "items": [
+        "DSLR/Mirrorless camera with telephoto zoom lens",
+        "Polarized sunglasses (reduces glacier glare)",
+        "Reef-safe sunscreen and lip balm with SPF",
+        "Reusable insulated water bottle"
+      ]
+    }
+  ],
+  "angelaBio": {
+    "name": "Angela Hughes",
+    "title": "CEO & Founder, Trips & Ships Luxury Travel",
+    "badge": "Luxury Alaska Cruise Expert",
+    "experienceBadge": "40+ Years Experience",
+    "quote": "The most important question is not simply which ship you want. It is what you want to see from that ship. For first-time Alaska travelers, I recommend prioritizing the glacier experience, Inside Passage sailing, and ports that match your interests before comparing onboard features. If you have additional vacation time, adding a Celebrity Cruisetour and Denali experience can transform a coastal Alaska cruise into a much more comprehensive journey through the state.",
+    "quoteSubtitle": "Why Choose Celebrity for Alaska?",
+    "bio": "Angela Hughes is the CEO of Trips & Ships Luxury Travel and founder of Luxury Travel University, bringing over 40 years of luxury cruise and expedition planning experience across 120+ countries worldwide.",
+    "credentials": [
+      "40+ Years of Luxury Travel Planning Experience",
+      "Visited 120+ Countries Worldwide",
+      "Celebrity Cruises Top Tier Specialist",
+      "Alaska Glacier & Cruisetour Specialist",
+      "Custom Luxury & Expedition Itinerary Designer"
+    ]
+  },
+  "whyPlanPillars": [
+    {
+      "title": "Compare Celebrity Alaska Ships",
+      "description": "Evaluate Celebrity Edge, Celebrity Solstice, and Celebrity Summit features, deck plans, and itineraries."
+    },
+    {
+      "title": "Compare Northbound and Southbound Routes",
+      "description": "Select the ideal route direction based on your flight origins and pre- or post-cruise land tour plans."
+    },
+    {
+      "title": "Choose Between Vancouver and Seattle",
+      "description": "Match the best departure city to your travel preferences, passport logistics, and flight availability."
+    },
+    {
+      "title": "Compare Hubbard vs. Dawes Glacier",
+      "description": "Understand the differences between Hubbard Glacier's massive scale and Dawes Glacier's fjord scenery."
+    },
+    {
+      "title": "Select the Right Stateroom or Suite",
+      "description": "Secure prime veranda positions (port vs. starboard) and unlock exclusive Retreat suite amenities."
+    },
+    {
+      "title": "Plan Alaska Shore Excursions",
+      "description": "Vetted recommendations for whale watching, helicopter flights, dog sledding, and local guides."
+    },
+    {
+      "title": "Arrange Pre- and Post-Cruise Stays",
+      "description": "Coordinate luxury hotels, transfers, and sightseeing in Vancouver, Seattle, and Anchorage."
+    },
+    {
+      "title": "Add Denali & Cruisetours",
+      "description": "Design seamless multi-night interior Alaska tours featuring Denali National Park and luxury rail."
+    },
+    {
+      "title": "Coordinate Flights and Transfers",
+      "description": "Hassle-free open-jaw flight coordination and port transfers between Anchorage, Seward, and Vancouver."
+    },
+    {
+      "title": "Personalized VIP Service",
+      "description": "Enjoy dedicated one-on-one consultation with Angela Hughes and the Trips & Ships luxury team."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What are Celebrity Alaska Cruises?",
+      "answer": "Celebrity Alaska Cruises are seasonal voyages through Alaska and the Inside Passage featuring glacier viewing, wildlife, Alaska ports, scenic cruising and shore excursions."
+    },
+    {
+      "question": "What ships does Celebrity use for Alaska cruises?",
+      "answer": "Celebrity's Alaska ships vary by sailing and season. Current and recent itineraries include Celebrity Solstice, Celebrity Summit and Celebrity Edge."
+    },
+    {
+      "question": "When is the Celebrity Alaska cruise season?",
+      "answer": "The main Celebrity Alaska cruise season runs from approximately May through September, with June, July and August generally considered the peak months."
+    },
+    {
+      "question": "What is the best month for a Celebrity Alaska cruise?",
+      "answer": "July is one of the most popular months for Alaska cruising. September can appeal to travelers seeking fall scenery, fewer crowds and possible Northern Lights viewing."
+    },
+    {
+      "question": "Which Alaska ports does Celebrity visit?",
+      "answer": "Depending on the itinerary, Celebrity can visit Juneau, Skagway, Ketchikan, Sitka and Icy Strait Point, along with scenic destinations such as Hubbard Glacier and the Inside Passage."
+    },
+    {
+      "question": "Does Celebrity offer Alaska glacier cruises?",
+      "answer": "Yes. Celebrity offers glacier-focused itineraries featuring destinations such as Hubbard Glacier and Dawes Glacier."
+    },
+    {
+      "question": "Does Celebrity cruise the Inside Passage?",
+      "answer": "Yes. Inside Passage scenic cruising is included on selected Celebrity Alaska itineraries."
+    },
+    {
+      "question": "What are the best Celebrity Alaska shore excursions?",
+      "answer": "Popular options include glacier experiences, whale watching, wildlife tours, helicopter excursions, hiking, kayaking, cultural experiences and Gold Rush history tours."
+    },
+    {
+      "question": "Are Celebrity Alaska excursions included?",
+      "answer": "Shore excursions are generally an additional cost on Celebrity Alaska cruises. Travelers can choose excursions based on their sailing and port."
+    },
+    {
+      "question": "Is a balcony worth it on a Celebrity Alaska cruise?",
+      "answer": "For many travelers, yes. A veranda provides private outdoor space for viewing glaciers, mountains, wildlife and scenic waterways."
+    },
+    {
+      "question": "Does Celebrity offer Alaska Cruisetours?",
+      "answer": "Yes. Celebrity Cruisetours combine a seven-night Alaska cruise with a multi-night land tour, with selected itineraries including Denali, Anchorage and Talkeetna."
+    },
+    {
+      "question": "Can I visit Denali on a Celebrity Alaska vacation?",
+      "answer": "Yes. Selected Celebrity Cruisetours combine Alaska cruises with Denali and other inland destinations."
+    },
+    {
+      "question": "Is Vancouver or Seattle better for a Celebrity Alaska cruise?",
+      "answer": "Both can be good options. Vancouver offers a wide range of Alaska itineraries, while selected Celebrity Dawes Glacier cruises operate round trip from Seattle."
+    },
+    {
+      "question": "What wildlife can I see on a Celebrity Alaska cruise?",
+      "answer": "Travelers may encounter humpback whales, orcas, bald eagles, bears, seals, sea otters and other Alaska wildlife depending on the itinerary and excursions."
+    },
+    {
+      "question": "Are Celebrity Alaska Cruises worth it?",
+      "answer": "They can be an excellent choice for travelers who want to combine Alaska's glaciers, wildlife and Inside Passage scenery with a premium cruise experience and the option to add an Alaska land tour."
+    }
+  ]
+}

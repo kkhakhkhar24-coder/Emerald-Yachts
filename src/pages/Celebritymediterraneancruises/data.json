@@ -1,0 +1,764 @@
+{
+  "seo": {
+    "title": "Celebrity Mediterranean Cruises: Complete Guide",
+    "metaTitle": "Celebrity Mediterranean Cruises | Ships, Ports & Itineraries",
+    "metaDescription": "Explore Celebrity Mediterranean Cruises, including ships, Greece, Italy, Spain and Croatia itineraries, ports, sailing seasons, shore excursions and pre- or post-cruise planning.",
+    "keywords": "Celebrity Mediterranean Cruises, Mediterranean cruises, Greek Island cruises, Italy cruises, Spain cruises, Barcelona cruise departure, Rome cruise departure, Celebrity Xcel, Celebrity Ascent",
+    "ogTitle": "Celebrity Mediterranean Cruises: Complete Guide",
+    "ogDescription": "Explore Celebrity Mediterranean Cruises, including ships, Greece, Italy, Spain and Croatia itineraries, ports, sailing seasons, shore excursions and pre- or post-cruise planning.",
+    "canonicalUrl": "https://www.tripsandships.com/celebrity-cruises/mediterranean/"
+  },
+  "hero": {
+    "title": "Celebrity Mediterranean Cruises\nComplete Guide",
+    "subtitle": "Ships, Ports & Itineraries",
+    "badge": "Celebrity Mediterranean Cruises",
+    "ctaLabel": "Plan My Cruise",
+    "ctaUrl": "/contact",
+    "secondaryCtaLabel": "Speak With Expert",
+    "secondaryCtaUrl": "/contact"
+  },
+  "intro": {
+    "heading": "Celebrity Mediterranean Cruises",
+    "paragraphs": [
+      "Celebrity Mediterranean Cruises combine iconic European cities, ancient history, Mediterranean beaches, local cuisine and scenic coastal destinations with the premium cruise experience of Celebrity Cruises.",
+      "Celebrity's Mediterranean program includes itineraries visiting Greece, Italy, Spain, France, Croatia, Malta, Turkey, Montenegro and other Mediterranean destinations, depending on the sailing. Current 2026 and 2027 programs feature destinations such as Santorini, Mykonos, Corfu, Florence, Rome, Portofino, Provence, Palma de Mallorca, Split and Valletta.",
+      "Celebrity's current Mediterranean program includes 7- to 12-night sailings on many itineraries, while other Celebrity Mediterranean voyages can range from approximately six to 12 nights depending on the route and season. For travelers planning a Mediterranean cruise, the key decisions are the ship, departure city, itinerary region, ports, sailing season, excursions and whether to add pre- or post-cruise time in Europe."
+    ],
+    "quickAnswerHeading": "What Are Celebrity Mediterranean Cruises?",
+    "quickAnswer": "Celebrity Mediterranean Cruises are premium European cruises visiting destinations across Greece, Italy, Spain, France, Croatia, Malta and other Mediterranean countries, with itineraries ranging from shorter regional sailings to longer voyages covering multiple countries. Current Celebrity departure ports include Barcelona, Rome, Athens and Ravenna, with additional European departure options appearing on selected itineraries."
+  },
+  "glance": [
+    { "feature": "Region", "detail": "Mediterranean & Southern Europe" },
+    { "feature": "Main Countries", "detail": "Greece, Italy, Spain, France, Croatia, Malta, Turkey & Montenegro" },
+    { "feature": "Popular Cruise Length", "detail": "7–12 nights" },
+    { "feature": "Cruise Season", "detail": "April–November" },
+    { "feature": "Peak Season", "detail": "June–September" },
+    { "feature": "Main Departure Ports", "detail": "Barcelona, Rome, Athens & Ravenna" },
+    { "feature": "Other European Departures", "detail": "Available on selected sailings" },
+    { "feature": "Cruise Style", "detail": "Premium" },
+    { "feature": "Popular Regions", "detail": "Western & Eastern Mediterranean" },
+    { "feature": "Greek Islands", "detail": "Available on selected itineraries" },
+    { "feature": "Shore Excursions", "detail": "Available" },
+    { "feature": "Overnight Stays", "detail": "Available on selected itineraries" },
+    { "feature": "Pre-Cruise Stays", "detail": "Available" },
+    { "feature": "Post-Cruise Stays", "detail": "Available" },
+    { "feature": "Land Extensions", "detail": "Can be arranged separately" }
+  ],
+  "whyChoose": [
+    {
+      "title": "Ancient ruins & UNESCO sites",
+      "description": "Walk among the Colosseum, Parthenon, Ephesus, Pompeii, and timeless Mediterranean landmarks."
+    },
+    {
+      "title": "Historic cities & architecture",
+      "description": "Explore Barcelona, Rome, Florence, Dubrovnik, and Valletta's medieval cobblestone streets."
+    },
+    {
+      "title": "Mediterranean beaches & coves",
+      "description": "Relax along the sun-drenched shores of the Greek Islands, French Riviera, and Balearic coast."
+    },
+    {
+      "title": "Island villages & coastal scenery",
+      "description": "Witness whitewashed cliffside villages in Santorini, Mykonos, Portofino, and Kotor Bay."
+    },
+    {
+      "title": "World-class art & museums",
+      "description": "Immerse in the Uffizi Gallery, Vatican Museums, Picasso Museum, and Renaissance masterpieces."
+    },
+    {
+      "title": "Authentic regional cuisine & wine",
+      "description": "Savor authentic Italian pastas, Spanish tapas, Provençal vintages, and Greek olive oils."
+    },
+    {
+      "title": "Boutique shopping & local markets",
+      "description": "Discover high-fashion boutiques in Cannes and Milan alongside vibrant open-air artisan markets."
+    },
+    {
+      "title": "Multiple countries in one trip",
+      "description": "Experience Greece, Italy, Spain, France, and Croatia without repeatedly packing and unpacking."
+    }
+  ],
+  "fleetCards": [
+    {
+      "category": "Edge Series Flagship",
+      "title": "Celebrity Xcel",
+      "description": "Celebrity Xcel debuted in the Mediterranean and is scheduled to return for the 2027/2028 season, featuring revolutionary outward-facing design and next-generation luxury spaces.",
+      "bullets": [
+        "Magic Carpet cantilevered floating platform",
+        "Infinite Veranda stateroom architecture",
+        "Multi-level Sunset Bar and Rooftop Garden",
+        "Exclusive Retreat sundeck, lounge & Luminae dining"
+      ]
+    },
+    {
+      "category": "Edge Series",
+      "title": "Celebrity Ascent & Apex",
+      "description": "Award-winning Edge-class ships sailing premier Mediterranean routes, featuring 32 distinct food and beverage experiences and world-class entertainment.",
+      "bullets": [
+        "32 restaurants, bars, and specialty lounges",
+        "The Grand Plaza 3-deck bustling social centerpiece",
+        "Resort deck with 25-yard lap pool & hot tubs",
+        "Adults-only glass-domed Solarium retreat"
+      ]
+    },
+    {
+      "category": "Solstice & Millennium Class",
+      "title": "Celebrity Equinox, Constellation & Infinity",
+      "description": "Beloved classic ships offering intimate European cruising with real grass lawns, exceptional personalized service, and access to boutique Mediterranean ports.",
+      "bullets": [
+        "Half-acre real grass Lawn Club on top deck (Equinox)",
+        "Intimate ship profile accessing smaller coastal harbors",
+        "Renowned The Spa wellness and thermal suites",
+        "Oceanview Cafe with al fresco stern terrace dining"
+      ]
+    },
+    {
+      "category": "Ship Selection Advice",
+      "title": "What to Consider When Comparing Ships",
+      "description": "For a Mediterranean vacation, the itinerary and port time can be just as important as the ship. When comparing Celebrity Mediterranean ships, consider:",
+      "bullets": [
+        "Ship size, stateroom categories & Infinite Verandas",
+        "Suite options & exclusive Retreat amenities",
+        "Dining variety & specialty restaurant options",
+        "Overnight port stays, port duration & sea days"
+      ],
+      "highlight": "For a Mediterranean vacation, the itinerary and port time can be just as important as the ship."
+    }
+  ],
+  "mediterraneanCountryCards": [
+    {
+      "category": "Greece & Greek Islands",
+      "title": "Celebrity Greek Islands Cruises",
+      "description": "Greece is one of the most popular regions for a Celebrity Mediterranean cruise. Celebrity's Mediterranean destination program specifically highlights Greek destinations including Santorini, Zakynthos and Mykonos.",
+      "bullets": [
+        "Santorini, Mykonos, Corfu & Rhodes",
+        "Chania (Crete), Kefalonia & Katakolon",
+        "Athens (Piraeus) & Thessaloniki",
+        "Whitewashed villages & Aegean sunsets"
+      ],
+      "highlight": "Best for: Ancient history, Greek mythology, Island scenery, Beaches, Mediterranean cuisine, Photography, Village experiences."
+    },
+    {
+      "category": "Italy & Italian Coastlines",
+      "title": "Celebrity Italy Cruises",
+      "description": "Italy is one of the strongest components of Celebrity's Mediterranean program. Celebrity's Mediterranean port network includes Rome, Florence/Pisa, Naples, Portofino, the Amalfi Coast and several destinations in Sicily and Sardinia.",
+      "bullets": [
+        "Rome (Civitavecchia), Florence/Pisa (Livorno)",
+        "Naples (Capri / Pompeii) & Amalfi Coast",
+        "Portofino, Taranto & Venice/Ravenna",
+        "Sicily (Messina) & Cagliari (Sardinia)"
+      ],
+      "highlight": "Best for: Art, Architecture, Ancient history, Italian cuisine, Wine, Coastal villages, Shopping."
+    },
+    {
+      "category": "Spain & Balearic Islands",
+      "title": "Celebrity Spain Cruises",
+      "description": "Celebrity offers Mediterranean itineraries visiting several Spanish destinations. Celebrity describes Barcelona as an important starting point for Mediterranean cruises and offers itineraries ranging from seven to 12 nights exploring Spanish destinations.",
+      "bullets": [
+        "Barcelona & Palma de Mallorca",
+        "Valencia, Alicante & Cartagena",
+        "Malaga (Granada) & Seville (Cadiz)",
+        "Ibiza & Balearic beach coves"
+      ],
+      "highlight": "Best for: Tapas, Architecture, Beaches, Flamenco, Art, Wine, Mediterranean culture."
+    },
+    {
+      "category": "Croatia & Adriatic Coast",
+      "title": "Celebrity Croatia Cruises",
+      "description": "Croatia provides a different Mediterranean experience, combining Adriatic scenery, historic towns and island landscapes. Split is among Celebrity's highlighted Mediterranean destinations for 2026 and 2027.",
+      "bullets": [
+        "Split & Diocletian's Palace",
+        "Dubrovnik UNESCO walled old town",
+        "Zadar & Rijeka Adriatic harbors",
+        "Kotor (Montenegro) & nearby Adriatic destinations"
+      ],
+      "highlight": "Best for: Adriatic scenery, Historic cities, Coastal landscapes, Architecture, Local cuisine, Island experiences."
+    },
+    {
+      "category": "France & French Riviera",
+      "title": "Celebrity France Cruises",
+      "description": "Selected Celebrity Mediterranean itineraries visit the French Riviera and southern France, including Cannes, Nice/Villefranche, Provence, Marseille, Toulon and Sete. Celebrity's current Mediterranean destination highlights include Provence.",
+      "bullets": [
+        "Cannes & Boulevard de la Croisette",
+        "Nice / Villefranche & glamorous Côte d'Azur",
+        "Provence (Marseille / Toulon) & hilltop towns",
+        "Sete & Ajaccio (Corsica)"
+      ],
+      "highlight": "Best for: French Riviera, Wine, Cuisine, Art, Shopping, Scenic coastal towns."
+    },
+    {
+      "category": "More Mediterranean Destinations",
+      "title": "Malta, Turkey & Montenegro",
+      "description": "Distinctive Mediterranean crossroads featuring historic Valletta fortifications, Istanbul and ancient Ephesus ruins, and the breathtaking fjord-like Bay of Kotor.",
+      "bullets": [
+        "Valletta (Malta) Grand Harbour & Baroque churches",
+        "Istanbul & Ephesus / Kusadasi (Turkey)",
+        "Kotor (Montenegro) medieval walled bay",
+        "Rich cultural crossroads and historic landmarks"
+      ],
+      "highlight": "Best for: Historic fortifications, ancient wonders, cultural crossroads, and scenic fjord-like bays."
+    }
+  ],
+  "itineraryStyles": [
+    {
+      "title": "Greece & Greek Islands",
+      "description": "Sail from Athens or Rome to Santorini, Mykonos, Rhodes, Corfu, and historic Aegean ports."
+    },
+    {
+      "title": "Italy & Italian Riviera",
+      "description": "Explore Rome, Florence/Pisa, Naples, the Amalfi Coast, Portofino, and Sicily."
+    },
+    {
+      "title": "Spain & Balearic Islands",
+      "description": "Discover Barcelona, Palma de Mallorca, Valencia, Malaga, Seville, and Ibiza."
+    },
+    {
+      "title": "France & French Riviera",
+      "description": "Visit Cannes, Nice/Villefranche, Provence, Marseille, and glamorous Côte d'Azur coves."
+    },
+    {
+      "title": "Italy & Croatia / Adriatic",
+      "description": "Glide through the Adriatic Sea connecting Venice/Ravenna with Split, Dubrovnik, and Kotor."
+    },
+    {
+      "title": "Western Mediterranean",
+      "description": "Classic 7- to 10-night grand tours connecting Spain, France, and Italy."
+    },
+    {
+      "title": "Eastern Mediterranean",
+      "description": "Vibrant voyages linking Greece, Turkey, Croatia, Montenegro, and the Holy Land."
+    },
+    {
+      "title": "Multi-Country Grand Voyages",
+      "description": "Extended 10- to 14-night sailings covering 4–6 countries on a single immersive journey."
+    }
+  ],
+  "departurePorts": [
+    {
+      "title": "Barcelona, Spain",
+      "subtitle": "Premier Western Mediterranean Hub",
+      "description": "Barcelona is one of Celebrity's major Mediterranean departure ports. Ideal for voyages exploring Spain, the French Riviera, and Italy, with incredible pre-cruise architecture and dining.",
+      "bullets": [
+        "Direct access to Western Mediterranean routes",
+        "Pre-cruise stays: Sagrada Família & Park Güell",
+        "Gothic Quarter, tapas bars & Las Ramblas",
+        "Convenient international airport connections"
+      ]
+    },
+    {
+      "title": "Rome (Civitavecchia), Italy",
+      "subtitle": "The Eternal City Gateway",
+      "description": "Celebrity uses Rome/Civitavecchia as a central departure port. Ideal for travelers wanting to combine several nights in Rome with Greek Islands or Western Mediterranean sailings.",
+      "bullets": [
+        "Gateway to Central Italy and Greek Island routes",
+        "Pre-cruise stays: Colosseum, Vatican & Forum",
+        "World-renowned Italian cuisine & wine",
+        "High-speed rail links across Italy"
+      ]
+    },
+    {
+      "title": "Athens (Piraeus), Greece",
+      "subtitle": "Cradle of Western Civilization",
+      "description": "Athens/Piraeus is the premier departure point for Greek-focused and Eastern Mediterranean itineraries. Perfect for combining the Acropolis with iconic Aegean islands.",
+      "bullets": [
+        "Direct gateway to Cyclades & Dodecanese islands",
+        "Pre-cruise stays: Acropolis, Parthenon & Plaka",
+        "Eastern Mediterranean & Turkey sailings",
+        "Rich ancient archaeology & Greek tavern dining"
+      ]
+    },
+    {
+      "title": "Ravenna / Venice, Italy",
+      "subtitle": "Adriatic & Northern Italy Gateway",
+      "description": "Ravenna is Celebrity's departure point for selected Mediterranean and Adriatic voyages, providing seamless access to northern Italy, Venice, Croatia, and Montenegro.",
+      "bullets": [
+        "Gateway to Croatia, Kotor & the Adriatic Sea",
+        "Famous Byzantine mosaics of Ravenna",
+        "Easy connections to Venice canals and culture",
+        "Scenic coastal sailing down the Italian coast"
+      ]
+    }
+  ],
+  "portsTable": {
+    "title": "Celebrity Mediterranean Port Network Overview",
+    "description": "Celebrity's Mediterranean port network is extensive, spanning top historical cities, tranquil island harbors, and glamorous coastal resorts.",
+    "headers": ["Country / Region", "Examples of Ports Visited"],
+    "rows": [
+      ["Greece", "Athens (Piraeus), Santorini, Mykonos, Corfu, Rhodes, Chania, Katakolon, Thessaloniki"],
+      ["Italy", "Rome (Civitavecchia), Naples, Florence/Pisa (Livorno), Portofino, Sicily (Messina), Cagliari"],
+      ["Spain", "Barcelona, Palma de Mallorca, Valencia, Malaga, Seville (Cadiz), Alicante, Ibiza"],
+      ["France", "Cannes, Nice / Villefranche, Provence (Marseille / Toulon), Sete, Ajaccio (Corsica)"],
+      ["Croatia", "Split, Dubrovnik, Zadar, Rijeka"],
+      ["Malta", "Valletta (Grand Harbour)"],
+      ["Turkey", "Istanbul, Ephesus (Kusadasi)"],
+      ["Montenegro", "Kotor (Bay of Kotor)"],
+      ["Portugal", "Lisbon, Madeira (on selected extended European itineraries)"],
+      ["Morocco", "Tangier (on selected Western Mediterranean itineraries)"]
+    ]
+  },
+  "excursionCategories": [
+    {
+      "title": "Historical & Archaeological Excursions",
+      "subtitle": "Ancient Ruins & UNESCO Sites",
+      "description": "Guided tours of the Colosseum, Pompeii, the Acropolis of Athens, ancient Ephesus, and medieval fortresses with expert local historians.",
+      "bullets": ["Colosseum & Vatican VIP tours", "Pompeii & Herculaneum archaeological walks", "Acropolis & Parthenon guided visits", "Ephesus ancient ruins & Celsus Library"]
+    },
+    {
+      "title": "Food & Wine Culinary Experiences",
+      "subtitle": "Tasting Regional Traditions",
+      "description": "Immersive cooking classes, Tuscan vineyard tastings, Spanish tapas crawls, olive oil farm tours, and market visits with shipboard chefs.",
+      "bullets": ["Tuscan Chianti wine tastings", "Santorini volcanic wine tours", "Tapas & cava tastings in Barcelona", "Provençal market & cooking classes"]
+    },
+    {
+      "title": "Scenic Coastal & Countryside Tours",
+      "subtitle": "Panoramas & Cliffside Drives",
+      "description": "Panoramic drives along the Amalfi Coast, French Riviera coastal cruises, Kotor Bay scenic boating, and picturesque mountain village walks.",
+      "bullets": ["Amalfi Coast & Positano drives", "Capri island private boat charters", "French Riviera cliffside viewpoints", "Mallorca Serra de Tramuntana tours"]
+    },
+    {
+      "title": "Beach, Island & Water Activities",
+      "subtitle": "Sun-Drenched Coastal Leisure",
+      "description": "Relaxing beach club days in Mykonos, catamaran sailing around Santorini's caldera, snorkeling in Croatia, and Riviera yacht charters.",
+      "bullets": ["Santorini catamaran caldera sailings", "Mykonos beach club private access", "Dalmatian coast sea kayaking", "Balearic crystal-clear cove swims"]
+    },
+    {
+      "title": "Art, Architecture & Cultural Immersion",
+      "subtitle": "Museums & Local Heritage",
+      "description": "Exclusive museum entries, Renaissance art lectures, flamenco performances, and authentic encounters in local fishing villages.",
+      "bullets": ["Uffizi & Accademia Florence visits", "Gaudí architecture & Sagrada Família", "Authentic Andalusian flamenco shows", "Valletta Knights of Malta heritage walks"]
+    }
+  ],
+  "inclusions": [
+    { "title": "Accommodations", "description": "Selected stateroom or suite with Celebrity eXhale bedding and twice-daily service." },
+    { "title": "Meals", "description": "Complimentary dining across multiple main dining restaurants, oceanview cafes, and grills." },
+    { "title": "Select beverages", "description": "Standard non-alcoholic drinks including filtered water, drip coffee, iced tea, and juices." },
+    { "title": "Entertainment", "description": "Broadway-style theater productions, live musical performances, and comedy shows." },
+    { "title": "Service", "description": "Dedicated stateroom attendant, guest relations, and attentive shipboard staff." },
+    { "title": "Shipboard activities", "description": "Access to fitness center, resort sundecks, pools, hot tubs, and daily enrichment." }
+  ],
+  "exclusions": [
+    { "title": "Shore excursions", "description": "Guided port tours, museum admissions, and culinary tastings booked separately." },
+    { "title": "Airfare", "description": "Commercial flights to and from European embarkation and disembarkation cities." },
+    { "title": "Pre-cruise hotels", "description": "Hotel accommodations in departure cities such as Barcelona, Rome, or Athens." },
+    { "title": "Post-cruise hotels", "description": "Hotel accommodations following your Mediterranean voyage." },
+    { "title": "Specialty dining", "description": "Cover charges for specialty venues such as Tuscan Grille, Murano, and Le Voyage." },
+    { "title": "Spa services", "description": "Massages, facials, thermal suite access, and salon treatments at The Spa." },
+    { "title": "Shopping", "description": "Onboard retail boutique purchases, designer goods, and art auctions." },
+    { "title": "Travel insurance", "description": "Comprehensive trip cancellation, baggage, and medical travel protection." },
+    { "title": "Some transportation", "description": "Independent ground transfers between airports, hotels, and cruise terminals." },
+    { "title": "Personal expenses", "description": "Laundry services, casino gaming, and discretionary gratuities." }
+  ],
+  "seasonsTable": {
+    "title": "Celebrity Mediterranean Cruise Season Overview",
+    "description": "Celebrity's Mediterranean cruise season runs from April through November. June through September represent peak summer months, while spring and autumn provide ideal sightseeing conditions.",
+    "headers": ["Season Period", "Weather Conditions", "Crowd Levels", "Best For"],
+    "rows": [
+      ["April–May (Spring)", "Mild, pleasant (60–70°F), blooming flora", "Lower crowds, easy sightseeing", "City walking tours, history, architecture, active sightseeing"],
+      ["June (Early Summer)", "Warm, sunny (75–85°F), long daylight hours", "Moderate to high demand", "Greek Islands, coastal dining, outdoor sightseeing, beach visits"],
+      ["July–August (Peak Summer)", "Hot, sunny (85–95°F), warm sea waters", "Peak summer crowds & families", "Beach vacations, swimming, vibrant island nightlife, family travel"],
+      ["September (Late Summer)", "Warm, sunny (75–82°F), warm swimming seas", "Moderate shoulder season", "Greek Islands, wine harvests, couples, romantic coastal escapes"],
+      ["October–November (Fall)", "Crisp, mild (60–68°F), cooler evenings", "Lowest crowds, value fares", "Museums, cultural sightseeing, food and wine exploration"]
+    ]
+  },
+  "accommodations": [
+    {
+      "title": "Interior Staterooms",
+      "subtitle": "Practical & Value-Focused",
+      "description": "A practical choice for travelers who prioritize time ashore in European cities and enjoying the ship's social lounges and public areas.",
+      "bullets": [
+        "Celebrity eXhale bedding and premium linens",
+        "Interactive flat-screen TV with shipboard services",
+        "24-hour room service availability",
+        "Cost-effective option maximizing excursion budget"
+      ]
+    },
+    {
+      "title": "Ocean View Staterooms",
+      "subtitle": "Natural Daylight & Sea Views",
+      "description": "An ocean-view stateroom provides natural Mediterranean daylight and a large picture window to watch coastal Europe pass by.",
+      "bullets": [
+        "Expansive picture window with ocean views",
+        "Comfortable sitting area with sofa and vanity",
+        "Generous storage space for longer European voyages",
+        "Great value balance between view and budget"
+      ]
+    },
+    {
+      "title": "Veranda Staterooms",
+      "subtitle": "Private Balcony Over the Sea",
+      "description": "A veranda stateroom provides private outdoor space to enjoy Mediterranean sunrises, watch port arrivals in Santorini, and relax after long shore walks.",
+      "bullets": [
+        "Private furnished teak balcony overlooking the sea",
+        "Floor-to-ceiling glass sliding doors",
+        "Infinite Veranda options on Edge-series ships",
+        "Unobstructed views of Mediterranean coastlines & sunsets"
+      ]
+    },
+    {
+      "title": "Suites & The Retreat",
+      "subtitle": "Ultimate Luxury in Europe",
+      "description": "Celebrity's Suites include full access to The Retreat, featuring a private restaurant (Luminae), exclusive lounge, dedicated concierge, and butler service.",
+      "bullets": [
+        "Expansive private verandas with whirlpools on upper tiers",
+        "Access to Luminae restaurant and The Retreat Lounge",
+        "Dedicated Butler service and concierge planning",
+        "Included premium drinks, Wi-Fi, and shore excursion credits"
+      ]
+    }
+  ],
+  "balconyList": [
+    "Watch the Mediterranean coastline glide past from your private sanctuary",
+    "Enjoy private breakfast and coffee with sunrise over the Aegean or Riviera",
+    "Watch the ship sail into iconic ports like Santorini, Venice, or Kotor",
+    "Relax with a glass of local wine after an intensive full-day shore excursion",
+    "Enjoy unobstructed panoramic Mediterranean sunsets each evening"
+  ],
+  "regionsComparison": {
+    "title": "Celebrity Western vs. Eastern Mediterranean Cruises",
+    "description": "Compare classic Western Mediterranean routes with exotic Eastern Mediterranean and Greek Island journeys.",
+    "westernTitle": "Western Mediterranean (Spain, France, Italy):",
+    "easternTitle": "Eastern Mediterranean (Greece, Croatia, Turkey):",
+    "western": [
+      "Visits iconic cultural capitals: Barcelona, Rome, Florence, and Cannes",
+      "Focus on world-famous art museums, Renaissance architecture, and cuisine",
+      "Ideal for first-time visitors to Europe wanting a classic grand tour",
+      "Major embarkation hubs in Barcelona and Rome (Civitavecchia)"
+    ],
+    "eastern": [
+      "Visits iconic whitewashed Greek Islands: Santorini, Mykonos, and Rhodes",
+      "Focus on ancient mythology, crystal-clear beaches, and Adriatic fjords",
+      "Features exotic destinations including Istanbul, Ephesus, and Kotor",
+      "Major embarkation hubs in Athens (Piraeus) and Ravenna / Venice"
+    ]
+  },
+  "cruiseVsLandTable": {
+    "title": "Celebrity Mediterranean Cruise vs. Land-Based European Vacation",
+    "description": "Compare the convenience and value of cruising across the Mediterranean versus an independent land-based trip.",
+    "headers": ["Celebrity Mediterranean Cruise", "Land-Based European Vacation"],
+    "rows": [
+      ["Multiple countries in one seamless trip without repacking", "Deeper stay limited to fewer cities per vacation"],
+      ["Luxury floating resort with all dining and entertainment", "Multiple hotel check-ins, check-outs, and luggage handling"],
+      ["Transportation between countries and ports included", "Requires booking multiple regional flights, trains, and taxis"],
+      ["Wake up in a new port or country almost every morning", "More flexible day-to-day schedule within a single city"],
+      ["Scenic coastal and island navigation from the water", "More opportunities for inland countryside exploration"],
+      ["Curated shore excursions with expert local guides", "Independent sightseeing requiring self-guided logistics"],
+      ["Predictable vacation cost with core cruise inclusions", "Variable dining, transport, and hotel expenses"]
+    ]
+  },
+  "prePostStays": [
+    {
+      "title": "Barcelona Pre/Post Stay",
+      "subtitle": "2 to 3 Nights in Catalonia",
+      "description": "Add two or three nights to explore the Sagrada Família, Gothic Quarter, Park Güell, world-class tapas, and vibrant Catalan culture.",
+      "bullets": ["Gaudí architectural tours", "Gothic Quarter walking tours", "Tapas & wine tasting in El Born", "Beachfront dining along Barceloneta"]
+    },
+    {
+      "title": "Rome Pre/Post Stay",
+      "subtitle": "3 to 4 Nights in the Eternal City",
+      "description": "Add several nights to experience the Colosseum, Vatican City, Roman Forum, Trevi Fountain, and authentic Trastevere dining.",
+      "bullets": ["Vatican & Sistine Chapel early access", "Colosseum & Roman Forum tours", "Trastevere food & wine walking tours", "Piazza Navona & Pantheon visits"]
+    },
+    {
+      "title": "Athens Pre/Post Stay",
+      "subtitle": "2 to 3 Nights in Historic Greece",
+      "description": "Add time for the Acropolis, Parthenon, Plaka neighborhood, Ancient Agora, Acropolis Museum, and rooftop dining.",
+      "bullets": ["Acropolis & Parthenon guided visits", "Plaka historic neighborhood strolls", "Acropolis Museum guided tours", "Authentic Greek tavern dining"]
+    }
+  ],
+  "postCruiseCities": [
+    { "title": "Rome (Civitavecchia)", "description": "Extend with hotel stays near historic piazzas before flying home." },
+    { "title": "Barcelona", "description": "Unwind on Mediterranean beaches and enjoy evening culinary tours." },
+    { "title": "Athens (Piraeus)", "description": "Explore mainland Greece or transfer to additional Greek island stays." },
+    { "title": "Venice / Ravenna", "description": "Experience gondola rides, St. Mark's Square, and Byzantine art." },
+    { "title": "Lisbon", "description": "Explore historic Alfama, Belém pastries, and coastal Cascais." }
+  ],
+  "worthItPillars": [
+    {
+      "title": "Unrivaled Travel Convenience",
+      "description": "Visit multiple European nations without packing suitcases, catching trains, or switching hotels."
+    },
+    {
+      "title": "Spectacular Coastal Scenery",
+      "description": "Sail past the cliffs of Santorini, the French Riviera, Kotor Bay, and the Amalfi Coast."
+    },
+    {
+      "title": "World-Class Dining Onboard",
+      "description": "Enjoy menus crafted by Michelin-starred chefs and regional Mediterranean wine selections."
+    },
+    {
+      "title": "Overnight Port Stays",
+      "description": "Experience European nightlife, evening dining, and illuminated landmarks in selected ports."
+    },
+    {
+      "title": "The Retreat Luxury Suite Experience",
+      "description": "Enjoy private Luminae dining, dedicated Butler service, and exclusive sundeck access."
+    },
+    {
+      "title": "Seamless Pre- & Post-Cruise Extensions",
+      "description": "Combine your cruise with luxury hotel stays in Barcelona, Rome, or Athens for the complete vacation."
+    }
+  ],
+  "personas": [
+    {
+      "title": "First-Time European Travelers",
+      "subtitle": "The Effortless Grand Tour",
+      "description": "A Mediterranean cruise is the easiest way to experience 3 to 5 European countries on a single trip with zero logistics stress.",
+      "bullets": ["Unpack once while visiting Spain, France, and Italy", "Core dining and transport included", "Curated shore excursions with English-speaking guides"]
+    },
+    {
+      "title": "Couples & Honeymooners",
+      "subtitle": "Romantic Mediterranean Escape",
+      "description": "Mediterranean sunsets, private veranda dining, iconic Greek island views, and fine wine create the ultimate romantic vacation.",
+      "bullets": ["Private veranda stateroom cruising", "Specialty dining at Tuscan Grille & Murano", "Overnight stays in romantic ports like Florence & Athens"]
+    },
+    {
+      "title": "Food, Wine & Culinary Travelers",
+      "subtitle": "Epicurean Exploration",
+      "description": "Italy, Spain, France, and Greece offer the world's greatest culinary traditions, from tapas to Chianti and olive oils.",
+      "bullets": ["Tuscan vineyard excursions", "Chef market visits and cooking classes", "Sommelier-curated wine lists onboard"]
+    },
+    {
+      "title": "History & Archaeology Enthusiasts",
+      "subtitle": "Cradle of Civilization",
+      "description": "Connect ancient Rome, classical Athens, Byzantine Ravenna, and Ottoman Istanbul on a single seamless voyage.",
+      "bullets": ["VIP access to the Colosseum & Acropolis", "Visits to ancient Ephesus and Pompeii", "Enrichment lectures by onboard historians"]
+    },
+    {
+      "title": "Beach & Island Lovers",
+      "subtitle": "Sun, Sea & Coves",
+      "description": "Sun-worshippers seeking crystal-clear waters in Santorini, Mykonos, Mallorca, the Côte d'Azur, and the Adriatic coast.",
+      "bullets": ["Private beach club excursions", "Caldera catamaran sailing in Santorini", "Warm Mediterranean swimming from June to September"]
+    },
+    {
+      "title": "Multi-Generational Families",
+      "subtitle": "Something for Every Age",
+      "description": "Grandparents, parents, and children can explore historic cities together while enjoying tailored onboard amenities.",
+      "bullets": ["Camp at Sea youth and teen programs", "Accessible shore excursions for all fitness levels", "Spacious family suite accommodations"]
+    }
+  ],
+  "landBasedPreferences": [
+    "Travelers who want to spend 4–7 nights deeply exploring a single European city",
+    "Travelers who prefer independent self-drive road trips through rural countryside",
+    "Travelers seeking extensive inland exploration far away from coastal waterways",
+    "Travelers who dislike any structured schedules or fixed port departure times"
+  ],
+  "pros": [
+    "Experience multiple European countries in one seamless 7- to 12-night vacation",
+    "Comprehensive itineraries covering Greece, Italy, Spain, France, and Croatia",
+    "Extensive port network visiting over 50 iconic Mediterranean destinations",
+    "Convenient departure ports in Barcelona, Rome, Athens, and Ravenna",
+    "Modern, award-winning Edge-series ships (Celebrity Xcel, Ascent, Apex) in Europe",
+    "Selected overnight stays allowing you to experience European nightlife and dining",
+    "Wide selection of curated shore excursions spanning history, food, and beaches",
+    "Premium onboard dining, accommodations, and The Retreat luxury experience",
+    "Flexible pre- and post-cruise hotel stay planning opportunities",
+    "Unpack once while traveling across thousands of miles of Mediterranean coastline"
+  ],
+  "cons": [
+    "Port visits are daytime-focused and shorter than multi-day land stays in one city",
+    "Shore excursions and museum admissions add to total vacation budget",
+    "Peak July and August sailings experience high summer heat and larger crowds",
+    "Some inland historic destinations (e.g., Florence, Rome) require motorcoach transfers from port",
+    "International transatlantic airfare and pre-cruise hotels are booked separately"
+  ],
+  "steps": [
+    {
+      "number": "01",
+      "title": "Choose Your Mediterranean Region",
+      "description": "Decide between Western Mediterranean (Spain, France, Italy), Eastern Mediterranean (Greece, Greek Islands, Turkey), or the Adriatic (Croatia & Montenegro).",
+      "tags": ["Western Mediterranean", "Eastern Mediterranean", "Greek Islands", "Adriatic"]
+    },
+    {
+      "number": "02",
+      "title": "Select Your Ideal Departure City",
+      "description": "Compare Barcelona, Rome (Civitavecchia), Athens (Piraeus), and Ravenna based on flight convenience and pre-cruise sightseeing goals.",
+      "tags": ["Barcelona", "Rome", "Athens", "Ravenna"]
+    },
+    {
+      "number": "03",
+      "title": "Choose Your Voyage Length",
+      "description": "Select from classic 7-night getaways, popular 9- to 10-night sailings, or comprehensive 11- to 14-night multi-country grand voyages.",
+      "tags": ["7 Nights", "9–10 Nights", "11–14 Nights"]
+    },
+    {
+      "number": "04",
+      "title": "Compare Ships & Stateroom Types",
+      "description": "Choose between revolutionary Edge-series ships (Celebrity Xcel, Ascent) or intimate Solstice/Millennium-class vessels, and decide on a Veranda stateroom or suite in The Retreat.",
+      "tags": ["Celebrity Xcel", "Celebrity Ascent", "Veranda Balcony", "The Retreat"]
+    },
+    {
+      "number": "05",
+      "title": "Review Port Times & Overnight Stays",
+      "description": "Look for itineraries featuring late-night departures or overnight stays in marquee destinations like Florence, Istanbul, Athens, or Ibiza.",
+      "tags": ["Overnight Ports", "Late Departures", "Extended Ashore Time"]
+    },
+    {
+      "number": "06",
+      "title": "Add Pre- or Post-Cruise Land Stays",
+      "description": "Enhance your European holiday by booking 2 to 4 nights in your departure or arrival city to explore landmarks without rush and buffer against flight delays.",
+      "tags": ["Pre-Cruise Barcelona", "Pre-Cruise Rome", "Pre-Cruise Athens"]
+    }
+  ],
+  "packingCards": [
+    {
+      "title": "Daytime Sightseeing & Shore Wear",
+      "subtitle": "Comfort & Modesty",
+      "items": [
+        "Comfortable, broken-in walking shoes or sneakers for cobblestones",
+        "Lightweight, breathable linen shirts, shorts, and sundresses",
+        "Modest attire covering shoulders and knees for churches & cathedrals",
+        "Light scarf or shawl for religious site visits (Vatican, cathedrals)"
+      ]
+    },
+    {
+      "title": "Sun Protection & Beach Essentials",
+      "subtitle": "Summer Warmth",
+      "items": [
+        "UV-protection polarized sunglasses and wide-brim sun hat",
+        "High-SPF reef-safe sunscreen and soothing after-sun lotion",
+        "Swimwear and stylish beach cover-up for island excursions",
+        "Compact waterproof dry bag for catamaran and boat tours"
+      ]
+    },
+    {
+      "title": "Evening Onboard & Smart-Casual Outfits",
+      "subtitle": "Dining & Entertainment",
+      "items": [
+        "Smart-casual evening shirts, dresses, slacks, and blazers",
+        "Light jacket or cardigan for breezy sea evenings on deck",
+        "Comfortable evening footwear for shipboard lounges and theater",
+        "Chic resort wear for specialty dining at Tuscan Grille & Le Voyage"
+      ]
+    },
+    {
+      "title": "Tech, Travel Documents & Optics",
+      "subtitle": "Memories & Power",
+      "items": [
+        "European Type C / E / F plug adapter for pre-cruise hotel stays",
+        "Portable power bank for full-day mobile photography ashore",
+        "DSLR or smartphone with high-capacity memory storage",
+        "Passport, travel insurance documents, and euro currency / credit cards"
+      ]
+    }
+  ],
+  "angelaBio": {
+    "name": "Angela Hughes",
+    "title": "CEO & Founder, Trips & Ships Luxury Travel",
+    "badge": "Luxury Mediterranean Cruise Expert",
+    "experienceBadge": "40+ Years Experience",
+    "quote": "The Mediterranean is one destination where the itinerary should come before the ship. A traveler who dreams of Santorini and Mykonos should not choose a cruise simply because the ship is attractive. Likewise, someone focused on Rome, Florence, and the French Riviera should compare the Western Mediterranean route carefully. I recommend starting with your top three destinations, then comparing the ships, port times, departure city, and available excursions. For a more complete European vacation, adding two or three nights before or after the cruise can turn a cruise into a much more personalized Mediterranean journey.",
+    "quoteSubtitle": "Why Choose Celebrity for the Mediterranean?",
+    "bio": "Angela Hughes is the CEO of Trips & Ships Luxury Travel and founder of Luxury Travel University, bringing over 40 years of luxury cruise and European itinerary planning experience across 120+ countries worldwide.",
+    "credentials": [
+      "40+ Years of Luxury European & Cruise Planning Experience",
+      "Visited 120+ Countries Worldwide",
+      "Celebrity Cruises Top Tier Specialist",
+      "Mediterranean & Greek Island Specialist",
+      "Custom European Pre/Post Itinerary Designer"
+    ]
+  },
+  "whyPlanPillars": [
+    {
+      "title": "Compare Celebrity Mediterranean Ships",
+      "description": "Evaluate Celebrity Xcel, Celebrity Ascent, Celebrity Equinox, and Celebrity Constellation features and deck plans."
+    },
+    {
+      "title": "Compare Eastern vs. Western Routes",
+      "description": "Select between Spain/France/Italy western routes or Greek Islands/Adriatic/Turkey eastern voyages."
+    },
+    {
+      "title": "Choose Greece-Focused Itineraries",
+      "description": "Match the best Greek island routes based on desired port time in Santorini, Mykonos, and Rhodes."
+    },
+    {
+      "title": "Select the Best Departure City",
+      "description": "Evaluate Barcelona, Rome, Athens, or Ravenna based on flight logistics and hotel extensions."
+    },
+    {
+      "title": "Compare Port Times & Overnights",
+      "description": "Identify sailings with extended evening hours in ports and overnight stays in premier cities."
+    },
+    {
+      "title": "Select Prime Staterooms & Suites",
+      "description": "Secure prime Infinite Verandas or unlock exclusive Retreat suite amenities with butler service."
+    },
+    {
+      "title": "Curated Shore Excursions",
+      "description": "Vetted private guide recommendations for the Colosseum, Pompeii, Acropolis, and wine tastings."
+    },
+    {
+      "title": "Coordinate Pre- & Post-Cruise Stays",
+      "description": "Design bespoke luxury hotel stays, private transfers, and sightseeing in Barcelona, Rome, and Athens."
+    },
+    {
+      "title": "Flight & Transfer Coordination",
+      "description": "Hassle-free European open-jaw flight bookings and private port-to-airport transfers."
+    },
+    {
+      "title": "Personalized VIP Service",
+      "description": "Enjoy dedicated one-on-one consultation with Angela Hughes and the Trips & Ships luxury team."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What are Celebrity Mediterranean Cruises?",
+      "answer": "Celebrity Mediterranean Cruises are premium cruises visiting destinations throughout Greece, Italy, Spain, France, Croatia, Malta, Turkey, Montenegro and other Mediterranean regions."
+    },
+    {
+      "question": "How long are Celebrity Mediterranean Cruises?",
+      "answer": "Celebrity offers Mediterranean sailings commonly ranging from 7 to 12 nights, while the broader program includes selected voyages outside that range."
+    },
+    {
+      "question": "What are the main Celebrity Mediterranean departure ports?",
+      "answer": "Current major departure ports include Barcelona, Rome/Civitavecchia, Athens/Piraeus and Ravenna, with other European departure options available on selected itineraries."
+    },
+    {
+      "question": "What countries can I visit on a Celebrity Mediterranean cruise?",
+      "answer": "Depending on the itinerary, you can visit Greece, Italy, Spain, France, Croatia, Malta, Turkey, Montenegro and other Mediterranean destinations."
+    },
+    {
+      "question": "Does Celebrity offer Greek Island cruises?",
+      "answer": "Yes. Selected Celebrity Mediterranean itineraries visit Greek Islands and destinations including Santorini, Mykonos, Corfu, Rhodes and other Greek ports."
+    },
+    {
+      "question": "Does Celebrity offer Italy Mediterranean cruises?",
+      "answer": "Yes. Celebrity's Mediterranean network includes Rome, Florence/Pisa, Naples, Portofino, the Amalfi Coast and destinations in Sicily and Sardinia."
+    },
+    {
+      "question": "Does Celebrity offer Mediterranean cruises from Barcelona?",
+      "answer": "Yes. Barcelona is one of Celebrity's major Mediterranean departure ports, with itineraries covering destinations across Spain, France, Italy and other regions."
+    },
+    {
+      "question": "Does Celebrity offer Mediterranean cruises from Athens?",
+      "answer": "Yes. Athens/Piraeus is a major Celebrity departure port and is particularly useful for Greek Island and Eastern Mediterranean itineraries."
+    },
+    {
+      "question": "What is the best month for a Celebrity Mediterranean cruise?",
+      "answer": "The main Mediterranean cruise season runs from April through November, while June through September are generally the peak months. The best month depends on whether you prioritize warm weather, beaches, sightseeing or fewer crowds."
+    },
+    {
+      "question": "Are Celebrity Mediterranean shore excursions included?",
+      "answer": "Shore excursions are generally an additional cost rather than automatically included in the standard cruise fare."
+    },
+    {
+      "question": "Is a balcony worth it on a Celebrity Mediterranean cruise?",
+      "answer": "For many travelers, yes. A veranda provides private outdoor space for watching Mediterranean coastlines, islands, sunsets and port arrivals."
+    },
+    {
+      "question": "Does Celebrity offer overnight stays in Mediterranean ports?",
+      "answer": "Yes. Selected itineraries include overnight stays, and Celebrity has highlighted expanded overnight opportunities in its current Mediterranean programs."
+    },
+    {
+      "question": "Should I stay in Barcelona, Rome or Athens before my Celebrity cruise?",
+      "answer": "A pre-cruise stay can be worthwhile in any of these cities. The best choice depends on your itinerary, flight plans and the destinations you want to explore before boarding."
+    },
+    {
+      "question": "What is the difference between Western and Eastern Mediterranean cruises?",
+      "answer": "Western Mediterranean cruises generally emphasize Spain, France and Italy, while Eastern Mediterranean itineraries can focus more heavily on Greece, the Greek Islands, Turkey, Croatia and Montenegro."
+    },
+    {
+      "question": "Are Celebrity Mediterranean Cruises worth it?",
+      "answer": "They can be an excellent choice for travelers who want to combine multiple European destinations, cultural experiences, Mediterranean scenery and premium cruising in one vacation."
+    }
+  ]
+}
