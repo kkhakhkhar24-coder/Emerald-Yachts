@@ -195,7 +195,7 @@ import Celebritycaribbeancruises from "./pages/Celebritycaribbeancruises/Celebri
 import Celebrityaquaclassvsconciergeclass from "./pages/Celebrityaquaclassvsconciergeclass/Celebrityaquaclassvsconciergeclass";
 import Celebrityinfiniteveranda from "./pages/Celebrityinfiniteveranda/Celebrityinfiniteveranda";
 import Celebrityoffersloyalty from "./pages/Celebrityoffersloyalty/Celebrityoffersloyalty";
-import Celebritycruisequote from "./pages/Celebritycruisequote/Celebritycruisequote";
+import RequestCelebrityCruiseQuote from "./pages/Requestcelebritycruisequote/Requestcelebritycruisequote";
 import AmaWaterwaysUltimateGuide from "./pages/AmaWaterwaysUltimateGuide/AmaWaterwaysUltimateGuide";
 import RitzCarltonYachtCollection from "./pages/RitzCartlon/RitzCarltonYachtCollection/RitzCarltonYachtCollection";
 import RitzCarltonYachtCollectionCost from "./pages/RitzCartlon/RitzCarltonYachtCollectionCost/RitzCarltonYachtCollectionCost";
@@ -1068,7 +1068,7 @@ function App() {
 
           <Route
             path="/celebrity-cruises/request-a-quote"
-            element={<Celebritycruisequote />}
+            element={<RequestCelebrityCruiseQuote />}
           />
 
           <Route
