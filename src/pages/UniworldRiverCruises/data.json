@@ -1,0 +1,627 @@
+{
+  "seo": {
+    "title": "Uniworld River Cruises: Complete Guide to Luxury River Travel",
+    "metaTitle": "Uniworld River Cruises: Complete Guide to Luxury River Travel",
+    "metaDescription": "Discover everything about Uniworld River Cruises, including destinations, ships, suites, dining, pricing, itineraries, and booking tips.",
+    "keywords": "Uniworld River Cruises, Uniworld Boutique River Cruises, Uniworld cruise ships, luxury river cruises, European river cruises, all-inclusive river cruises, Uniworld itineraries, Uniworld suites, Uniworld destinations, river cruise guide",
+    "canonicalUrl": "https://www.tripsandships.com/uniworld-river-cruises"
+  },
+  "hero": {
+    "badge": "Luxury River Cruising · Trips & Ships Luxury Travel",
+    "title": "Uniworld River Cruises: The Complete Guide",
+    "subtitle": "Transforming river travel into an opulent boutique hotel experience on the world's most legendary waterways.",
+    "description": "Uniworld River Cruises is known for transforming river travel into a luxury boutique hotel experience on water. With individually designed ships, all-inclusive amenities, immersive cultural excursions, and award-winning service, Uniworld appeals to travelers seeking elegance, comfort, and authentic destination experiences.",
+    "primaryCtaText": "Plan My Uniworld River Cruise",
+    "primaryCtaLink": "/contact",
+    "secondaryCtaText": "Speak with a Luxury River Cruise Specialist",
+    "secondaryCtaLink": "/contact"
+  },
+  "theDifference": {
+    "eyebrow": "THE UNIWORLD DIFFERENCE",
+    "heading": "What Makes Uniworld River Cruises Unique?",
+    "paragraphs": [
+      "Uniworld Boutique River Cruises combines luxury hospitality with destination-focused travel. Every ship is individually decorated using handcrafted furnishings, artwork, and locally inspired interiors, creating an experience unlike traditional cruise ships.",
+      "Unlike large ocean cruises, Uniworld's intimate ships provide a relaxed atmosphere while docking directly in the heart of historic cities."
+    ],
+    "highlights": [
+      {
+        "title": "Boutique Luxury Ships",
+        "description": "Individually decorated ships featuring handcrafted furnishings, original artwork, and bespoke European interiors.",
+        "icon": "Ship"
+      },
+      {
+        "title": "All-Inclusive Pricing",
+        "description": "Carefree luxury with accommodations, fine dining, unlimited drinks, guided excursions, Wi-Fi, and gratuities included.",
+        "icon": "CheckCircle"
+      },
+      {
+        "title": "Unlimited Premium Beverages",
+        "description": "Enjoy fine regional wines, craft beers, artisan spirits, specialty coffees, and soft drinks throughout the day.",
+        "icon": "Wine"
+      },
+      {
+        "title": "Gourmet Regional Dining",
+        "description": "Destination-inspired menus prepared using fresh farm-to-table ingredients sourced locally along every waterway.",
+        "icon": "Utensils"
+      },
+      {
+        "title": "Butler Service in Select Suites",
+        "description": "White-glove butler service trained to the highest European aristocratic standards for personalized care.",
+        "icon": "Crown"
+      },
+      {
+        "title": "Carefully Curated Excursions",
+        "description": "Choice of daily guided excursions, private museum admissions, active bike tours, and village encounters.",
+        "icon": "MapPin"
+      },
+      {
+        "title": "Small Passenger Capacity",
+        "description": "Intimate vessels accommodating only 120–160 guests for a peaceful, uncrowded river voyage.",
+        "icon": "Users"
+      },
+      {
+        "title": "Personalized Service",
+        "description": "Unmatched staff-to-guest ratios ensuring warm, anticipatory, and deeply personalized European hospitality.",
+        "icon": "UserCheck"
+      }
+    ],
+    "statement": "Unlike large ocean cruises, Uniworld's intimate ships provide a relaxed atmosphere while docking directly in the heart of historic cities."
+  },
+  "destinations": {
+    "eyebrow": "WORLDWIDE ITINERARIES",
+    "title": "Destinations Covered by Uniworld River Cruises",
+    "subtitle": "From the heart of Europe to the Nile, the Ganges, and the Amazon, Uniworld's boutique ships unlock the world's most iconic waterways.",
+    "items": [
+      {
+        "title": "Europe",
+        "category": "Most Popular",
+        "description": "Explore the heart of Europe along its most iconic waterways, from the Danube to the Douro, docking steps away from historic capitals and fairytale villages.",
+        "features": [
+          "Rivers: Danube, Rhine, Seine, Douro, Po & more",
+          "Countries: France, Germany, Portugal, Italy, Austria",
+          "Highlights: Grand castles, medieval towns, vineyard valleys"
+        ],
+        "highlight": "Flagship European Rivers"
+      },
+      {
+        "title": "Egypt",
+        "category": "Exotic",
+        "description": "Sail the timeless Nile and discover ancient wonders like the Valley of the Kings, Karnak, and Luxor in absolute luxury aboard opulent river vessels.",
+        "features": [
+          "Rivers: Nile River",
+          "Countries: Egypt",
+          "Highlights: Valley of the Kings, private Egyptologist guides"
+        ],
+        "highlight": "Ancient Wonders of the Nile"
+      },
+      {
+        "title": "India",
+        "category": "Immersive",
+        "description": "A soul-stirring journey along the sacred Ganges, exploring vibrant Kolkata, historic temples, and quiet rural craft villages along the riverbanks.",
+        "features": [
+          "Rivers: Ganges River",
+          "Countries: India",
+          "Highlights: Spiritual ceremonies, artisan craft towns, sacred temples"
+        ],
+        "highlight": "Sacred Ganges Journey"
+      },
+      {
+        "title": "Peru",
+        "category": "Adventure",
+        "description": "Venture into the pristine Amazon rainforest or combine your luxury river safari with guided explorations of the Sacred Valley and Machu Picchu.",
+        "features": [
+          "Rivers: Amazon River",
+          "Countries: Peru",
+          "Highlights: Amazon wildlife safaris, Sacred Valley, Machu Picchu"
+        ],
+        "highlight": "Amazon Wildlife & Andes"
+      },
+      {
+        "title": "Vietnam & Cambodia",
+        "category": "Cultural",
+        "description": "Experience the magic of the Mekong, from the ancient stone temples of Angkor Wat to the vibrant floating markets and river life of the delta.",
+        "features": [
+          "Rivers: Mekong River",
+          "Countries: Vietnam, Cambodia",
+          "Highlights: Angkor Wat complex, floating markets, cultural exchanges"
+        ],
+        "highlight": "Mekong Delta Discovery"
+      }
+    ],
+    "statement": "Whether you seek the cultural riches of the Rhine or the natural wonders of the Amazon, Uniworld offers meticulously planned itineraries that bring the best of each destination to life."
+  },
+  "fleet": {
+    "eyebrow": "SHIP DESIGN",
+    "title": "Uniworld Fleet Overview",
+    "subtitle": "Every ship has its own personality rather than following a standardized design.",
+    "headers": ["Ship Name", "Primary Region", "Boutique Design Character"],
+    "rows": [
+      ["S.S. Joie de Vivre", "France", "French Parisian salon elegance & handcrafted salon decor"],
+      ["S.S. Bon Voyage", "France", "Bordeaux wine estate ambiance & French culinary focus"],
+      ["S.S. Beatrice", "Danube", "Yacht-like Austrian aristocratic design with Murano chandeliers"],
+      ["S.S. Maria Theresa", "Central Europe", "Baroque 18th-century Austrian imperial palace aesthetic"],
+      ["S.S. Antoinette", "Rhine", "Versailles-inspired opulent French styling & 1920s cinema"],
+      ["River Queen", "Rhine", "Art deco steamship warmth & panoramic river observation lounges"],
+      ["River Princess", "Europe", "Refined European elegance & tranquil classic river atmosphere"],
+      ["River Duchess", "Europe", "Subtle jewel-toned palette & comfortable boutique suites"],
+      ["S.S. São Gabriel", "Portugal", "Portuguese craftsmanship, handmade tiles & local Douro heritage"],
+      ["S.S. La Venezia", "Italy", "Venetian Fortuny fabrics, Murano glass & Italian lagoon artistry"]
+    ],
+    "bottomNote": "Each vessel typically accommodates between 120 and 160 guests, creating an intimate and uncrowded atmosphere on every sailing."
+  },
+  "accommodations": {
+    "eyebrow": "ACCOMMODATIONS",
+    "title": "Accommodation Options",
+    "subtitle": "Guests can choose from several accommodation categories, each offering comfort and elegance.",
+    "cabins": [
+      {
+        "id": "classic",
+        "title": "Classic Staterooms",
+        "deck": "Lower Deck",
+        "size": "Approx. 162 sq. ft.",
+        "description": "Comfortably appointed staterooms featuring handcrafted Savoir® beds, river-view picture windows, and fine European fabrics.",
+        "features": [
+          "Handcrafted Savoir® of England bed with fine high-thread-count linens",
+          "Marble bathroom with L'Occitane en Provence luxury bath amenities",
+          "Built-in closets, compact writing desk, and personal safe",
+          "Flat-screen TV with infotainment system & complimentary Wi-Fi",
+          "Daily housekeeping and evening turndown service"
+        ]
+      },
+      {
+        "id": "deluxe",
+        "title": "Deluxe Staterooms",
+        "deck": "Middle Deck",
+        "size": "Approx. 194 sq. ft.",
+        "description": "Generously proportioned riverfront accommodations boasting enhanced room amenities, original artwork, and elevated viewpoints.",
+        "features": [
+          "Panoramic river views from generous stateroom picture windows",
+          "Plush bathrobes, slippers, and custom luxury toiletries",
+          "Individual climate control and in-stateroom bottled water replenished daily",
+          "Artistic decor reflecting regional European motifs",
+          "Convenient access to main lounges and dining rooms"
+        ]
+      },
+      {
+        "id": "french-balcony",
+        "title": "French Balcony Rooms",
+        "deck": "Upper & Middle Decks",
+        "size": "Approx. 194 sq. ft.",
+        "description": "Floor-to-ceiling glass doors that open wide to invite fresh river breezes, river sounds, and panoramic countryside vistas inside.",
+        "features": [
+          "Full floor-to-ceiling sliding glass French balcony doors",
+          "Breathtaking open-air views as you sail past castles and historic vineyards",
+          "Savoir® handcrafted bed positioned for optimal river sightseeing",
+          "Marble-clad en-suite bath with glass shower and luxury robes",
+          "In-room breakfast options upon request"
+        ]
+      },
+      {
+        "id": "suites",
+        "title": "Luxury Suites & Royal Suites",
+        "deck": "Upper Deck",
+        "size": "Approx. 214–391 sq. ft.",
+        "description": "The pinnacle of boutique river luxury. Expansive suites offering dedicated living areas, lavish marble bathrooms, and dedicated butler service.",
+        "features": [
+          "Dedicated European-trained white-glove butler service",
+          "Separate spacious seating area with sofa and coffee table",
+          "Complimentary in-suite minibar stocked with premium beverages",
+          "Complimentary daily laundry service and shoe shine",
+          "In-suite dining service and priority excursion reservations"
+        ]
+      }
+    ],
+    "suiteFeaturesTitle": "Suite Perks & Privileges",
+    "suiteFeatures": [
+      { "title": "Premium Bedding", "description": "Handcrafted Savoir® beds of England with 100% Egyptian cotton linens and down duvets.", "icon": "Bed" },
+      { "title": "Marble Bathrooms", "description": "Lavish private bathrooms clad in Italian marble with spacious glass showers.", "icon": "Bath" },
+      { "title": "Flat-Screen TV", "description": "High-definition television with complimentary on-demand movies and satellite news.", "icon": "Tv" },
+      { "title": "Luxury Toiletries", "description": "Hermès or L'Occitane en Provence designer bath amenities, plush robes, and slippers.", "icon": "Sparkles" },
+      { "title": "Complimentary Wi-Fi", "description": "High-speed internet access available throughout your suite and across the ship.", "icon": "Wifi" },
+      { "title": "Dedicated Butler Service", "description": "Trained to the prestigious standards of Buckingham Palace for attentive, bespoke care.", "icon": "Crown" },
+      { "title": "Larger Living Areas", "description": "Separate sitting lounges designed with custom antiques, sofas, and writing desks.", "icon": "Gem" },
+      { "title": "Enhanced Amenities", "description": "Special welcome gift, fresh fruit baskets, daily canapés, and packing services.", "icon": "Award" },
+      { "title": "Premium Furnishings", "description": "Original paintings, Murano glass accents, and heirloom-quality furnishings.", "icon": "ShieldCheck" },
+      { "title": "Concierge Assistance", "description": "Personalized shore reservations, theater bookings, and private tour arrangements.", "icon": "MessageSquare" },
+      { "title": "Panoramic River Views", "description": "Sweeping floor-to-ceiling windows and private balconies directly overlooking waterways.", "icon": "Eye" },
+      { "title": "In-Suite Dining", "description": "Continental breakfast or dinner delivered and served course-by-course in your suite.", "icon": "Utensils" }
+    ],
+    "note": "Higher-category suites may also include butler service and additional exclusive amenities."
+  },
+  "dining": {
+    "eyebrow": "CULINARY EXCELLENCE",
+    "title": "Dining on Uniworld",
+    "subtitle": "Dining emphasizes regional cuisine prepared using fresh ingredients sourced throughout each itinerary.",
+    "items": [
+      {
+        "title": "Multiple-Course Dinners",
+        "description": "Exquisite dinners served course-by-course with sommelier-paired regional wines and artistic presentation.",
+        "icon": "Utensils"
+      },
+      {
+        "title": "Regional Specialties",
+        "description": "Authentic dishes inspired by each port—from Parisian duck confit to Austrian wiener schnitzel.",
+        "icon": "MapPin"
+      },
+      {
+        "title": "Fine Wines & Pairings",
+        "description": "Unlimited pours of acclaimed local vintages carefully chosen to complement every evening's menu.",
+        "icon": "Wine"
+      },
+      {
+        "title": "Farm-to-Table Ingredients",
+        "description": "Chefs visit local markets along the route daily to acquire fresh artisan cheeses, produce, and seafood.",
+        "icon": "Landmark"
+      },
+      {
+        "title": "Relaxed Open Seating",
+        "description": "Dine whenever and with whomever you wish, with unreserved seating in elegant dining venues.",
+        "icon": "Users"
+      },
+      {
+        "title": "Traditional Afternoon Tea",
+        "description": "Classic European tea service accompanied by delicate finger sandwiches, scones, and pastries.",
+        "icon": "Coffee"
+      },
+      {
+        "title": "Specialty Handcrafted Desserts",
+        "description": "Decadent pastries and confections prepared daily onboard by master European pastry chefs.",
+        "icon": "Gift"
+      },
+      {
+        "title": "Seasonally Changing Menus",
+        "description": "Dishes continually evolve to celebrate seasonal culinary harvests and fresh regional discoveries.",
+        "icon": "Sun"
+      }
+    ],
+    "footerNote": "Menus change throughout the voyage to reflect local destinations."
+  },
+  "inclusions": {
+    "eyebrow": "ALL-INCLUSIVE VALUE",
+    "title": "What's Included on Uniworld?",
+    "subtitle": "One reason travelers choose Uniworld is its comprehensive all-inclusive experience.",
+    "inclusions": [
+      "Luxury Accommodations — Individually designed boutique suites and staterooms with Savoir® beds",
+      "Gourmet Meals — All breakfast, lunch, and multiple-course dinner dining venues included",
+      "Unlimited Premium Beverages — Fine wines, craft beers, spirits, cocktails & specialty coffees",
+      "Wine & Spirits — Unlimited pours throughout the day and with all meals",
+      "Daily Shore Excursions — Comprehensive choice of guided walking tours, museum entries & bike outings",
+      "Airport Transfers — Seamless scheduled transfers between the airport and your ship on arrival and departure",
+      "All Gratuities Included — Onboard crew, local tour guides, and motorcoach drivers fully covered",
+      "Complimentary High-Speed Wi-Fi — Internet access throughout the entire vessel",
+      "Onboard Entertainment — Evening cultural performances, local musicians, lectures & cooking demos",
+      "Fitness & Wellness Facilities — Well-equipped gyms, yoga sessions, wellness classes & bicycles"
+    ],
+    "expertNote": "Uniworld's all-inclusive pricing means your vacation is truly carefree. You won't face surprise charges for cocktails, excursions, or gratuities at the end of your cruise. Certain specialty excursions or ultra-exclusive private extensions may involve additional costs.",
+    "note": "Some specialty excursions or extensions may involve additional costs."
+  },
+  "excursions": {
+    "eyebrow": "GUIDED EXPERIENCES",
+    "title": "Uniworld Shore Excursions",
+    "subtitle": "Uniworld focuses on immersive local experiences led by knowledgeable guides.",
+    "items": [
+      {
+        "title": "Guided Walking Tours",
+        "category": "Cultural",
+        "description": "Explore historic city centers, winding cobblestone streets, and local neighborhoods with an expert local guide who brings history, architecture, and folklore to life.",
+        "features": ["Local expert guides", "Whisper audio headsets included", "Small group pacing"],
+        "highlight": "Historic Walking Tours"
+      },
+      {
+        "title": "Museum Visits",
+        "category": "Art & History",
+        "description": "Enjoy skip-the-line access to world-renowned museums and galleries, discovering masterpiece collections with insights from dedicated art historians.",
+        "features": ["Pre-booked tickets", "Expert art commentators", "Iconic collections"],
+        "highlight": "Skip-The-Line Access"
+      },
+      {
+        "title": "Castle Tours",
+        "category": "Architecture",
+        "description": "Step back in time at magnificent cliffside castles, medieval fortresses, and opulent palaces that line the banks of Europe's historic waterways.",
+        "features": ["Panoramic views", "Royal history stories", "Private garden access"],
+        "highlight": "Fairytale Castles"
+      },
+      {
+        "title": "Culinary Experiences",
+        "category": "Local Flavor",
+        "description": "Indulge in authentic regional flavors with hands-on cooking demonstrations, local food tastings, and visits to artisanal producers.",
+        "features": ["Local food markets", "Regional specialties", "Cooking lessons"],
+        "highlight": "Epicurean Tastings"
+      },
+      {
+        "title": "Wine Tastings",
+        "category": "Tastings",
+        "description": "Visit historic family-run vineyards and grand estates to sample award-winning local vintages and learn about traditional winemaking methods.",
+        "features": ["Sommelier-led tours", "Scenic vineyard walks", "Wine & food pairings"],
+        "highlight": "Private Cellar Tastings"
+      },
+      {
+        "title": "Guided Bike Tours",
+        "category": "Active",
+        "description": "Pedal along scenic river paths and through picturesque countryside with guided bicycle excursions, using the ship's high-quality fleet of bikes.",
+        "features": ["Helmets & gear provided", "Guided routes", "Active exploration"],
+        "highlight": "Scenic Cycling Routes"
+      },
+      {
+        "title": "Fairytale Village Visits",
+        "category": "Immersive",
+        "description": "Wander through charming, untouched fairytale villages and small towns, meeting local artisans and experiencing traditional daily life firsthand.",
+        "features": ["Off-the-beaten-path locations", "Local craft interactions", "Authentic hospitality"],
+        "highlight": "Hidden Village Gems"
+      },
+      {
+        "title": "Cultural Performances",
+        "category": "Entertainment",
+        "description": "Experience exclusive musical concerts, traditional dance shows, and theatrical performances at historic, atmospheric venues onshore.",
+        "features": ["Private concerts", "Historic venues", "Local musicians"],
+        "highlight": "Exclusive Evening Concerts"
+      },
+      {
+        "title": "Local Market Tours",
+        "category": "Lifestyle",
+        "description": "Navigate bustling local craft and food markets with guides who point out authentic items, regional treats, and the best local vendors.",
+        "features": ["Street food sampling", "Souvenir tips", "Seasonal market vibes"],
+        "highlight": "Bustling Artisan Markets"
+      }
+    ],
+    "statement": "Many sailings also include exclusive evening events at historic venues, offering a rare look into local culture and heritage."
+  },
+  "wellness": {
+    "eyebrow": "ONBOARD ENRICHMENT",
+    "title": "Wellness and Onboard Activities",
+    "subtitle": "Although river cruises emphasize destinations, Uniworld also provides onboard enrichment.",
+    "lead": "Wellness activities and enrichment programs complement the immersive destination experiences on every voyage.",
+    "items": [
+      { "title": "Fitness Classes", "description": "Cardio machines, resistance equipment, and guided morning stretching on the sun deck.", "icon": "Heart" },
+      { "title": "Yoga Sessions", "description": "Relaxing sunrise and sunset yoga sessions led by experienced onboard wellness instructors.", "icon": "Smile" },
+      { "title": "Enrichment Lectures", "description": "Fascinating guest lectures by historians, naturalists, and local destination experts.", "icon": "MessageSquare" },
+      { "title": "Local Entertainment", "description": "Evenings featuring regional folk troupes, acoustic ensembles, and classical musicians.", "icon": "Music" },
+      { "title": "Cooking Demonstrations", "description": "Interactive culinary masterclasses hosted by Executive Chefs preparing local dishes.", "icon": "Utensils" },
+      { "title": "Wine Tastings", "description": "Onboard masterclasses exploring the terroir, varietals, and vintages of each sailing region.", "icon": "Wine" },
+      { "title": "Serenity Spa Treatments", "description": "Relaxing massages, facials, and beauty treatments (available for an additional charge).", "icon": "Sparkles" },
+      { "title": "Sun Deck Relaxation", "description": "Heated resistance swimming pools, golf putting greens, and loungers with 360° river views.", "icon": "Sun" }
+    ],
+    "conclusion": "Wellness activities and enrichment programs complement the immersive destination experiences on every voyage."
+  },
+  "bestTime": {
+    "eyebrow": "SEASONAL GUIDE",
+    "title": "Best Time to Take a Uniworld River Cruise",
+    "subtitle": "Travel goals often determine the ideal season for your Uniworld river cruise.",
+    "cards": [
+      {
+        "title": "Spring River Cruises",
+        "description": "Spring delivers mild temperatures, blooming Dutch tulips, fresh alpine landscapes, and uncrowded European city centers.",
+        "icon": "Leaf",
+        "bullets": ["Tulips & Keukenhof gardens", "Mild sightseeing weather", "Lush green riverbanks", "Pleasant, uncrowded ports"]
+      },
+      {
+        "title": "Summer River Cruises",
+        "description": "Summer provides long daylight hours, vibrant open-air cafes, sun deck cruising, and festive riverside cultural events.",
+        "icon": "Sun",
+        "bullets": ["Long daylight hours", "Open-air dining & festivals", "Warm sunshine on the deck", "Lively riverside atmospheres"]
+      },
+      {
+        "title": "Autumn River Cruises",
+        "description": "Autumn transforms river valleys with golden vineyard colors, pleasant crisp breezes, and seasonal wine harvest celebrations.",
+        "icon": "Wine",
+        "bullets": ["Wine harvest celebrations", "Golden vineyard foliage", "Crisp, comfortable air", "Culinary truffle & grape festivals"]
+      },
+      {
+        "title": "Winter Christmas Markets",
+        "description": "Late November and December bring magical holiday cheer, illuminated town squares, handcrafted gifts, and warm spiced mulled wine.",
+        "icon": "TreePine",
+        "bullets": ["Magical Christmas markets", "Festive holiday decorations", "Gingerbread & Glühwein", "Storybook winter landscapes"]
+      }
+    ],
+    "table": {
+      "headers": ["Season", "Key Highlights & Experience"],
+      "rows": [
+        ["Spring", "Tulips, gardens, mild weather & fresh countryside blooms"],
+        ["Summer", "Festivals, long daylight hours & outdoor terrace dining"],
+        ["Autumn", "Wine harvests, colorful landscapes & food festivals"],
+        ["Winter", "Christmas Markets, festive holiday atmosphere & seasonal crafts"]
+      ]
+    },
+    "footerNote": "Travel goals often determine the ideal season for your Uniworld river cruise."
+  },
+  "pricing": {
+    "eyebrow": "VALUE & INVESTMENT",
+    "heading": "Understanding Uniworld Pricing",
+    "description": "Pricing depends on destination, cruise length, cabin category, travel season, promotions, and included land programs.\n\nLuxury inclusions often reduce additional onboard expenses compared with lower-priced alternatives, making Uniworld a compelling value for discerning travelers who appreciate all-inclusive elegance.",
+    "highlights": [
+      "All meals & unlimited premium drinks included",
+      "Daily included shore excursions & admissions",
+      "Prepaid gratuities for crew, guides & drivers",
+      "Seamless scheduled airport transfers included"
+    ],
+    "cardText": "Luxury inclusions often reduce additional onboard expenses compared with lower-priced alternatives.",
+    "cardSub": "Making Uniworld a compelling value for discerning travelers who appreciate all-inclusive elegance."
+  },
+  "whoShouldChoose": {
+    "eyebrow": "IDEAL TRAVELERS",
+    "title": "Who Should Choose Uniworld?",
+    "subtitle": "Uniworld appeals to travelers looking for refined, culturally immersive experiences with boutique luxury.",
+    "headers": ["Traveler Profile", "Why Uniworld Is an Ideal Match"],
+    "rows": [
+      ["Couples & Romantic Getaways", "Intimate ship size, romantic river scenery, and candlelit gourmet dining create unforgettable shared moments."],
+      ["Honeymooners", "Opulent suites, butler service, and fairytale European castle backdrops provide the ultimate stress-free honeymoon."],
+      ["Luxury Travelers", "Accustomed to five-star boutique hotels, travelers appreciate handcrafted Savoir® beds, original art, and fine wines."],
+      ["Retirees & Celebratory Journeys", "The gentle, unhurried pace of river travel combined with all-inclusive ease and cultural lectures suits mature explorers."],
+      ["Food & Wine Enthusiasts", "Farm-to-table menus, sommelier-curated regional pairings, and hands-on culinary excursions exceed epicurean standards."],
+      ["Cultural Explorers", "Docking directly in historic city centers allows effortless walking access to museums, cathedrals, and UNESCO landmarks."],
+      ["Multi-Generational Families", "Select summer and holiday departures offer curated family programming suited for grandparents, parents, and older kids."],
+      ["Discerning Ocean Cruisers", "Cruisers seeking an alternative to 3,000-passenger mega-ships appreciate the serenity of a 130-guest boutique river vessel."]
+    ],
+    "footerNote": "Travelers looking for nightlife, casinos, or large-scale Broadway entertainment may prefer ocean cruises instead."
+  },
+  "comparison": {
+    "eyebrow": "COMPETITIVE STANDING",
+    "title": "Uniworld Compared with Other Luxury River Cruise Lines",
+    "subtitle": "How Uniworld Boutique River Cruises compares with typical premium river cruise lines:",
+    "headers": ["Feature", "Uniworld Boutique River Cruises", "Typical Premium River Cruise"],
+    "rows": [
+      ["Ship Design", "Individually designed boutique interiors with original art", "Mostly standardized, uniform fleet interiors"],
+      ["Dining Experience", "Gourmet regional cuisine with fresh farm-to-table produce", "High quality, but often more standardized banquet style"],
+      ["Butler Service", "Trained white-glove butlers in all higher suite categories", "Rarely offered or strictly limited on river vessels"],
+      ["Shore Excursions", "Comprehensive curated daily excursions included", "Mostly basic walking tours included; upgrades cost extra"],
+      ["Beverage Inclusions", "Unlimited premium spirits, fine wines, and craft beers", "Beer and wine usually only included at meal times"],
+      ["Passenger Capacity", "Intimate capacity (typically 120–160 guests)", "Larger capacity (often 180–200+ guests per ship)"],
+      ["Luxury Level", "Five-star boutique hotel luxury with bespoke character", "Standard four-star premium cruise experience"]
+    ],
+    "bottomNote": "Uniworld distinguishes itself through personalized service, all-inclusive luxury, and highly distinctive ship interiors."
+  },
+  "bookingTips": {
+    "eyebrow": "EXPERT PLANNING",
+    "title": "Expert Booking Tips for Uniworld",
+    "subtitle": "Our expert recommendations for planning your Uniworld river cruise:",
+    "steps": [
+      {
+        "title": "Reserve Early for the Best Cabin Selection",
+        "description": "Uniworld ships are intimate with limited suites. Booking 6–12 months in advance secures preferred deck locations and staterooms."
+      },
+      {
+        "title": "Compare Seasonal Promotions",
+        "description": "Take advantage of early booking savings, past guest loyalty benefits, and seasonal promotional fares."
+      },
+      {
+        "title": "Consider Airfare Packages",
+        "description": "Uniworld and luxury travel advisors can bundle international airfare with seamless cruise transfers."
+      },
+      {
+        "title": "Review Included Excursions in Advance",
+        "description": "Examine daily itineraries to choose between gentle walking, active cycling, or specialized culinary tracks."
+      },
+      {
+        "title": "Check Passport Validity Requirements",
+        "description": "Ensure your passport is valid for at least 6 months beyond your travel dates for European and international entry."
+      },
+      {
+        "title": "Purchase Comprehensive Travel Insurance",
+        "description": "Protect your investment with insurance covering unexpected medical events, trip interruptions, and baggage."
+      },
+      {
+        "title": "Book Specialty Suites Well in Advance",
+        "description": "Top-tier Royal and Grand Suites often sell out first due to dedicated butler service and generous square footage."
+      },
+      {
+        "title": "Extend Your Trip Before or After the Cruise",
+        "description": "Add pre- or post-cruise land extensions in gateway cities like Paris, Amsterdam, Vienna, or Cairo for a deeper vacation."
+      }
+    ],
+    "footerNote": "We make booking your Uniworld river cruise simple, seamless, and stress-free."
+  },
+  "keyTakeaways": {
+    "eyebrow": "SUMMARY",
+    "title": "Key Takeaways",
+    "subtitle": "Essential highlights of the Uniworld Boutique River Cruise experience:",
+    "points": [
+      "Boutique Luxury Ships — Every vessel features one-of-a-kind interior design, antique furnishings, and original artwork.",
+      "True All-Inclusive Pricing — Unlimited premium beverages, fine dining, daily excursions, gratuities, Wi-Fi, and transfers covered.",
+      "Global Itinerary Network — Comprehensive voyages across Europe, Egypt, India, Peru, Vietnam, and Cambodia.",
+      "Gourmet Regional Cuisine — Farm-to-table culinary focus with locally sourced ingredients and sommelier-paired regional wines.",
+      "Intimate Ship Capacity — Averaging only 120–160 guests for uncrowded, highly personalized European service.",
+      "Diverse Luxury Accommodations — Multiple categories ranging from Classic Staterooms to butler-serviced Grand Suites.",
+      "Effortless City-Center Access — Dock directly in historic town centers, stepping off the ship right into the destination."
+    ]
+  },
+  "conclusion": {
+    "eyebrow": "FINAL THOUGHTS",
+    "title": "Conclusion",
+    "sections": [
+      {
+        "heading": "The Ultimate Luxury River Experience",
+        "paragraphs": [
+          "Uniworld River Cruises offers an elevated river cruising experience through boutique ships, destination-inspired design, personalized service, and comprehensive all-inclusive amenities.",
+          "Whether exploring the castles of the Rhine, the vineyards of the Douro, or the ancient temples of Egypt, travelers enjoy immersive journeys paired with exceptional hospitality. By understanding the destinations, ships, pricing, and onboard experience, you can confidently determine whether Uniworld is the right choice for your next luxury river cruise."
+        ]
+      }
+    ],
+    "ctaText": "Contact Trips & Ships Luxury Travel for personalized guidance and exclusive Uniworld offers tailored to your travel preferences."
+  },
+  "expertCredentials": {
+    "name": "Angela Hughes",
+    "title": "CEO & Luxury Travel Designer, Trips & Ships Luxury Travel",
+    "badge": "Luxury River Cruise Specialist",
+    "experienceBadge": "40+ Years Experience | 121+ Countries",
+    "quote": "Expedition and boutique river cruising is not just a vacation—it is a transformation. True luxury is having the access to step ashore into fairytale medieval towns and untouched landscapes while returning to an all-suite boutique sanctuary at the end of the day.",
+    "credentials": [
+      "Custom Zodiac & River Outings",
+      "Expert Historian & Naturalist Guides",
+      "Intimate Small-Ship Luxury",
+      "Historic Docking & City-Center Access",
+      "Dedicated Butler Services",
+      "Regional Culinary & Wine Expertise"
+    ],
+    "bio": "As founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel, Angela Hughes uses her personal, deep connections in the luxury and river cruising world to deliver custom travel planning that regular booking engines simply cannot replicate.",
+    "ctaText": "Speak with Angela Hughes",
+    "ctaLink": "/contact"
+  },
+  "faqs": [
+    {
+      "question": "What is Uniworld River Cruises?",
+      "answer": "Uniworld Boutique River Cruises is a luxury river cruise line offering all-inclusive voyages across Europe, Egypt, India, Peru, and Asia. Each ship is individually designed with boutique hotel-style interiors."
+    },
+    {
+      "question": "Is Uniworld all-inclusive?",
+      "answer": "Yes. Most fares include accommodations, gourmet dining, unlimited premium beverages, shore excursions, gratuities, Wi-Fi, and onboard entertainment."
+    },
+    {
+      "question": "Where does Uniworld cruise?",
+      "answer": "Uniworld sails on the Danube, Rhine, Main, Moselle, Seine, Rhône, Douro, Po, Nile, and Ganges rivers, as well as the Peruvian Amazon and Mekong."
+    },
+    {
+      "question": "Are gratuities included?",
+      "answer": "Yes. Gratuities for onboard crew, guides, and drivers are generally included on Uniworld cruises."
+    },
+    {
+      "question": "Does Uniworld offer butler service?",
+      "answer": "Yes. Butler service is available in select suite categories, providing personalized attention throughout your voyage."
+    },
+    {
+      "question": "What is the dress code?",
+      "answer": "The atmosphere is elegant yet relaxed. Smart casual attire is appropriate for most evenings, with some guests choosing to dress up for special dinners."
+    },
+    {
+      "question": "Are shore excursions included?",
+      "answer": "Yes. Daily guided excursions led by knowledgeable local guides are typically included in the cruise fare."
+    },
+    {
+      "question": "Does Uniworld include alcoholic beverages?",
+      "answer": "Yes. Premium wines, beer, spirits, and specialty coffees are generally included throughout your cruise."
+    },
+    {
+      "question": "Is Uniworld suitable for first-time river cruisers?",
+      "answer": "Absolutely. Its all-inclusive experience, personalized service, and intimate ship size make it an excellent choice for first-time luxury river cruisers."
+    },
+    {
+      "question": "How many guests are on a Uniworld ship?",
+      "answer": "Guest capacity varies by ship, but most accommodate approximately 120–160 passengers, creating an intimate and uncrowded atmosphere."
+    },
+    {
+      "question": "Is Uniworld worth the price?",
+      "answer": "Many travelers consider Uniworld worth the investment thanks to its luxury accommodations, all-inclusive pricing, exceptional dining, personalized service, and boutique ship design."
+    },
+    {
+      "question": "Why choose Trips & Ships Luxury Travel?",
+      "answer": "Our experts provide personalized recommendations, exclusive offers, concierge-level planning, and ongoing support to ensure your Uniworld vacation exceeds expectations."
+    },
+    {
+      "question": "What is the best time to take a Uniworld river cruise?",
+      "answer": "Spring offers tulips and mild weather, summer provides festivals and long daylight hours, autumn features wine harvests, and winter showcases magical Christmas Markets."
+    },
+    {
+      "question": "How far in advance should I book a Uniworld cruise?",
+      "answer": "Popular itineraries and suite categories often sell out well in advance. Booking 6–12 months ahead is recommended for the best selection of cabins and dates."
+    },
+    {
+      "question": "Does Uniworld offer family-friendly cruises?",
+      "answer": "While Uniworld primarily caters to adults, select sailings and multi-generational programs are available. Contact our specialists for guidance on family-appropriate itineraries."
+    }
+  ],
+  "cta": {
+    "title": "Ready to Experience Luxury River Cruising?",
+    "description": "Explore available Uniworld itineraries, compare destinations, and start planning your unforgettable boutique river cruise vacation today.",
+    "buttonText": "Speak with a Luxury River Cruise Specialist",
+    "buttonLink": "/contact"
+  }
+}
