@@ -1,863 +1,737 @@
-import Navbar from '../../components/Navbar/Navbar'
-import './UniworldRiverCruiseCost.css'
-import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
-
-// import hero1 from '../../assets/UniworldRiverCruiseCost/uniworld-river-ship-sailing-europe.jpg'
-// import hero2 from '../../assets/UniworldRiverCruiseCost/elegant-suite-interior.jpg'
-// import hero3 from '../../assets/UniworldRiverCruiseCost/danube-castle-scenery.jpg'
-
-// import imgSuite from '../../assets/UniworldRiverCruiseCost/elegant-suite-interior.jpg'
-// import imgDining from '../../assets/UniworldRiverCruiseCost/fine-dining-onboard.jpg'
-// import imgExcursion from '../../assets/UniworldRiverCruiseCost/guided-city-excursion.jpg'
-// import imgValue from '../../assets/UniworldRiverCruiseCost/danube-castle-scenery.jpg'
-// import imgDeals from '../../assets/UniworldRiverCruiseCost/uniworld-river-ship-sailing-europe.jpg'
-
+import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import {
-    Ship, MapPin, Star, Clock, Users, CheckCircle, XCircle,
-    ArrowRight, Compass, Sparkles, Anchor, Calendar, Gem,
-    Crown, Phone, LayoutList, Heart, Utensils,
-    Sun, Award, Moon, Music, TrendingUp, TrendingDown, Wallet,
-    DollarSign, Wifi, Plane, Wine, Bed, Snowflake, Leaf,
-    Tag, PiggyBank, CalendarClock, BadgePercent, AlertCircle, CalendarDays
-} from 'lucide-react'
-import { Helmet } from 'react-helmet-async'
-import { useState } from 'react'
-import { Link } from 'react-router'
+    ChevronRight, MapPin, Ship, Bed, Calendar,
+    TrendingDown, TrendingUp, AlertCircle, Compass,
+    Plane, Award, Sparkles, Tag, Crown, Clock, Users,
+    CheckCircle, CalendarDays, Wallet, BadgePercent,
+    CalendarClock, Leaf, Phone, LayoutList, Gem, Utensils
+} from 'lucide-react';
+import Navbar from '@/components/Navbar/Navbar';
+
+// Page Data JSON
+import pageData from './data.json';
+
+// Shared UI System Components (Component-Based Architecture)
+import ComparisonHero from '@/components/ui/ComparisonHero';
+import EditorialIntroSplit from '@/components/ui/EditorialIntroSplit';
+import LuxuryScorecardVisual from '@/components/ui/LuxuryScorecardVisual';
+import AuthorityBox from '@/components/ui/AuthorityBox';
+import FeatureSplit from '@/components/ui/FeatureSplit';
+import CurvilinearGrid from '@/components/ui/CurvilinearGrid';
+import ThreeColumnGrid from '@/components/ui/ThreeColumnGrid';
+import LuxuryCruiseComparisonTable from '@/components/ui/LuxuryCruiseComparisonTable';
+import ConclusionSection from '@/components/ui/ConclusionSection';
+import ExpertCredentials from '@/components/ui/ExpertCredentials';
+import FAQAccordion from '@/components/ui/FAQAccordion';
+import CenterCTA from '@/components/ui/CenterCTA';
+
+// Media Assets from @/assets and @/assets/Uniworldrivercruisecost
+import ProfilePictureAH from '@/assets/Media (2).jpg';
+import quickAnswerImg from '@/assets/Media (1).jpg';
+import heroBgImg from '@/assets/Uniworldrivercruisecost/uniworld-ss-maria-theresa-sailing-danube-wachau-valley.webp';
+import introPrimaryImg from '@/assets/Uniworldrivercruisecost/uniworld-ss-emilie-deluxe-suite-master-king-bed.webp';
+import introSecondaryImg from '@/assets/Uniworldrivercruisecost/uniworld-ss-emilie-sundeck-shaded-cabana-daybeds.webp';
+import inclusionsDiningImg from '@/assets/Uniworldrivercruisecost/uniworld-ss-emilie-gourmet-culinary-buffet-presentation.webp';
+import budgetingScenicImg from '@/assets/Uniworldrivercruisecost/uniworld-river-queen-cruising-scenic-moselle-river.webp';
+import ctaBgImg from '@/assets/Uniworldrivercruisecost/uniworld-budapest-parliament-building-danube-river-hungary.jpg';
+
+// Styled Inline CTA matching original page banners
+function InlineCTA({ tag, text, btnText, btnLink = "/contact" }) {
+    if (!tag || !text) return null;
+    return (
+        <div className="max-w-[1280px] mx-auto px-6 py-6">
+            <div className="bg-slate-50 border border-slate-200/80 rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 shadow-sm">
+                <div>
+                    <span className="text-[11px] font-bold uppercase tracking-wider text-navy-800 bg-white border border-slate-200 px-3 py-1 rounded-full inline-block mb-2 shadow-2xs">
+                        {tag}
+                    </span>
+                    <p className="font-display text-lg sm:text-xl text-navy-950 font-normal">
+                        {text}
+                    </p>
+                </div>
+                <a
+                    href={btnLink}
+                    className="inline-flex items-center gap-2 bg-navy-900 hover:bg-navy-800 text-white font-sans text-sm font-semibold px-6 py-3 rounded-xl transition-colors whitespace-nowrap shadow-sm shrink-0"
+                >
+                    <span>{btnText}</span>
+                    <ChevronRight size={16} />
+                </a>
+            </div>
+        </div>
+    );
+}
 
 function UniworldRiverCruiseCost() {
-    const [uccActiveFaq, setUccActiveFaq] = useState(null)
-    const uccToggleFaq = i => setUccActiveFaq(uccActiveFaq === i ? null : i)
+    const [selectedFactor, setSelectedFactor] = useState(0);
 
-    const [uccSelectedFactor, setUccSelectedFactor] = useState(0)
+    // Map factors icons
+    const factorIcons = [MapPin, Ship, Bed, Calendar];
 
-    const uccFaqs = [
-        { question: 'How much does a Uniworld River Cruise cost?', answer: 'Most itineraries start around $2,800 per person, with luxury suites and longer cruises costing considerably more.' },
-        { question: 'Are Uniworld cruises all-inclusive?', answer: 'Yes. Most fares include accommodations, meals, beverages, excursions, Wi-Fi, and gratuities.' },
-        { question: 'Why are Uniworld River Cruises expensive?', answer: 'They include many luxury services that are charged separately on other vacations, including premium drinks, excursions, and gratuities.' },
-        { question: 'What is the average price for a 7-night Uniworld cruise?', answer: 'A typical 7-night itinerary ranges from approximately $2,800 to $6,000 or more per person.' },
-        { question: 'Do prices include airfare?', answer: 'Generally, airfare is not included unless part of a special promotion.' },
-        { question: 'When are Uniworld cruises cheapest?', answer: 'Early spring, late autumn, and promotional booking periods often offer the lowest fares.' },
-        { question: 'Do prices include gratuities?', answer: 'Yes. Onboard gratuities are generally included in the cruise fare.' },
-        { question: 'Are shore excursions included?', answer: 'Yes. Most daily guided excursions are included.' },
-        { question: 'Does cabin type affect pricing?', answer: 'Yes. Suites and balcony cabins cost significantly more than entry-level staterooms.' },
-        { question: 'Are drinks included?', answer: 'Yes. Premium wines, cocktails, beer, spirits, coffee, tea, and many soft drinks are typically included.' },
-        { question: 'Are there discounts for early bookings?', answer: 'Uniworld frequently offers early booking promotions, depending on the sailing and availability.' },
-        { question: 'Is travel insurance included?', answer: 'No. Travel insurance is generally purchased separately.' },
-        { question: 'Can solo travelers find deals?', answer: 'Occasionally. Selected departures feature reduced or waived single supplements.' },
-        { question: 'Are Christmas Market cruises more expensive?', answer: 'Yes. These popular seasonal departures often carry premium pricing.' },
-        { question: 'Is a Uniworld River Cruise worth the cost?', answer: 'For travelers seeking an upscale, highly inclusive vacation with exceptional service and immersive excursions, many consider Uniworld to offer strong overall value.' }
-    ]
-
-    const uccPriceRange = [
-        { length: '7 Nights', price: '$2,800–$6,000+' },
-        { length: '8–10 Nights', price: '$3,800–$7,500+' },
-        { length: '11–14 Nights', price: '$5,000–$10,000+' },
-        { length: 'Grand Voyages', price: '$9,000–$18,000+' }
-    ]
-
-    const uccDestinations = [
-        'Danube River', 'Rhine River', 'Seine River', 'Douro River', 'Venice Lagoon',
-        'Burgundy & Provence', 'Egypt (Nile)', 'India (Ganges)', 'Peru (Amazon)'
-    ]
-
-    const uccDuration = [
-        { title: '7-night cruises', desc: 'ideal for first-time travelers.' },
-        { title: '10–14-night itineraries', desc: 'allow deeper destination exploration.' },
-        { title: 'Grand journeys', desc: 'combine multiple cruises for extended vacations.' }
-    ]
-
-    const uccCabinTypes = [
-        { type: 'Classic Stateroom', level: 'Lowest' },
-        { type: 'Deluxe Stateroom', level: 'Moderate' },
-        { type: 'French Balcony', level: 'Mid-High' },
-        { type: 'Balcony Suite', level: 'Premium' },
-        { type: 'Royal Suite', level: 'Luxury' }
-    ]
-
-    const uccSeasons = [
-        { season: 'Early Spring', pricing: 'Lower', low: true },
-        { season: 'Late Spring', pricing: 'High', low: false },
-        { season: 'Summer', pricing: 'High', low: false },
-        { season: 'Autumn', pricing: 'High', low: false },
-        { season: 'Christmas Markets', pricing: 'Peak', low: false },
-        { season: 'Winter (select itineraries)', pricing: 'Lower', low: true }
-    ]
-
-    const uccFactors = [
-        {
-            title: 'Destination',
-            icon: MapPin,
-            text: 'European itineraries generally offer the widest range of pricing, while more specialized destinations often command higher fares.',
-            tags: uccDestinations,
-            note: 'Long-haul and exotic destinations usually cost more due to limited departures and higher operating expenses.',
-            type: 'tags'
-        },
-        {
-            title: 'Cruise Duration',
-            icon: Ship,
-            text: 'Longer itineraries naturally increase the total fare but often provide better value on a per-night basis.',
-            list: uccDuration,
-            type: 'list'
-        },
-        {
-            title: 'Stateroom Category',
-            icon: Bed,
-            text: 'Cabin selection has a significant impact on pricing. From classic staterooms to royal suites:',
-            rows: uccCabinTypes,
-            note: 'Higher-category accommodations typically include additional space, upgraded amenities, and enhanced services such as butler assistance.',
-            type: 'rows'
-        },
-        {
-            title: 'Travel Season',
-            icon: Calendar,
-            text: 'Pricing fluctuates throughout the year. Holiday cruises and Christmas Market sailings are usually among the most expensive.',
-            seasons: uccSeasons,
-            type: 'seasons'
-        }
-    ]
-
-    const uccIncludedFare = [
-        'Luxury accommodations', 'All meals', 'Fine dining experiences', 'Unlimited premium wines and spirits',
-        'Specialty coffee and beverages', 'Daily guided shore excursions', 'Complimentary Wi-Fi',
-        'Onboard gratuities', 'Entertainment', 'Fitness facilities', 'Concierge-level service',
-        'Airport transfers on eligible itineraries'
-    ]
-
-    const uccExtraCosts = [
-        { expense: 'International airfare', always: true, icon: Plane, desc: 'Flights to and from your cruise departure cities.' },
-        { expense: 'Travel insurance', always: true, icon: Award, desc: 'Essential protection for trip cancellation and medical coverage.' },
-        { expense: 'Spa treatments', always: true, icon: Sparkles, desc: 'Onboard massages, facials, and wellness services.' },
-        { expense: 'Personal shopping', always: true, icon: Tag, desc: 'Souvenirs, boutique purchases, and local goods.' },
-        { expense: 'Passport & visa fees', always: true, icon: MapPin, desc: 'Necessary international travel documentation.' },
-        { expense: 'Independent private tours', always: true, icon: Compass, desc: 'Custom shore excursions organized independently.' },
-        { expense: 'Pre/post-cruise hotels', always: false, icon: Bed, desc: 'Hotel stays before embarkation or after disembarkation.' },
-        { expense: 'Optional premium experiences', always: false, icon: Crown, desc: 'Exclusive curated tours or premium tastings.' }
-    ]
-
-    const uccCoupleCost = [
-        { length: '7 Nights', price: '$5,600–$12,000+' },
-        { length: '10 Nights', price: '$7,600–$15,000+' },
-        { length: '14 Nights', price: '$10,000–$20,000+' }
-    ]
-
-    const uccWorthIncluded = [
-        'Unlimited premium drinks', 'Daily guided excursions', 'Fine dining', 'Gratuities',
-        'Luxury accommodations', 'Personalized service', 'Wi-Fi', 'Entertainment'
-    ]
-
-    const uccDealTips = [
-        {
-            Icon: CalendarClock,
-            title: 'Book Early',
-            body: 'Early reservations often provide:',
-            items: ['Best cabin selection', 'Promotional fares', 'Reduced deposits', 'Added onboard benefits']
-        },
-        {
-            Icon: BadgePercent,
-            title: 'Watch for Seasonal Promotions',
-            body: 'Common offers may include:',
-            items: ['Limited-time savings', 'Complimentary airfare promotions', 'Reduced single supplements', 'Suite upgrades', 'Included airfare credits', 'Bonus travel credits']
-        },
-        {
-            Icon: Leaf,
-            title: 'Consider Shoulder Season Travel',
-            body: 'Spring and late autumn departures often offer:',
-            items: ['Lower prices', 'Fewer crowds', 'Comfortable weather', 'Greater cabin availability']
-        },
-        {
-            Icon: Calendar,
-            title: 'Travel with Flexible Dates',
-            body: 'Being flexible by even one or two weeks may reduce pricing considerably, especially outside major holiday periods.',
-            items: []
-        }
-    ]
-
-    const uccComparison = [
-        { feature: 'Premium beverages', uniworld: 'Included', typical: 'Often included' },
-        { feature: 'Shore excursions', uniworld: 'Included', typical: 'Included' },
-        { feature: 'Gratuities', uniworld: 'Included', typical: 'Sometimes extra' },
-        { feature: 'Butler service', uniworld: 'Select suites', typical: 'Limited' },
-        { feature: 'Luxury décor', uniworld: 'Boutique style', typical: 'Varies' },
-        { feature: 'Airport transfers', uniworld: 'Eligible sailings', typical: 'Varies' },
-        { feature: 'Overall inclusiveness', uniworld: 'Excellent', typical: 'Good–Excellent' }
-    ]
-
-    const uccCheapestTimes = [
-        'Early booking promotions', 'Shoulder season departures', 'Selected spring cruises',
-        'Late autumn itineraries', 'Limited-time promotional events'
-    ]
-
-    const uccBudgetItems = [
-        'Flights', 'Travel insurance', 'Hotel nights before embarkation', 'Transfers not included',
-        'Souvenirs', 'Spa services', 'Optional private excursions'
-    ]
-
-    const uccKeyTakeaways = [
-        'Uniworld River Cruise prices vary by destination, season, itinerary, and cabin category.',
-        'Seven-night cruises typically start around $2,800 per person.',
-        'Luxury suites and holiday departures carry premium pricing.',
-        'Most fares include dining, premium beverages, excursions, Wi-Fi, and gratuities.',
-        'Airfare, spa treatments, and travel insurance are generally extra.',
-        'Early booking and shoulder season travel often provide the best value.',
-        'Comparing inclusions—not just base fare—gives a better picture of overall cost.',
-        'Consulting an expert travel advisor helps secure exclusive promotions and benefits.'
-    ]
-
-    const uccSchemaData = {
+    // Structured Data Schema matching RitzCarlton and Uniworld standards
+    const jsonLdSchema = {
         "@context": "https://schema.org",
         "@graph": [
+            {
+                "@type": "WebPage",
+                "@id": `${pageData.seo.canonicalUrl}#webpage`,
+                "url": pageData.seo.canonicalUrl,
+                "name": pageData.seo.ogTitle,
+                "headline": pageData.seo.title,
+                "description": pageData.seo.metaDescription,
+                "primaryImageOfPage": {
+                    "@type": "ImageObject",
+                    "url": "https://www.tripsandships.com/images/uniworld-cruise-cost.jpg",
+                    "caption": "How Much Does a Uniworld River Cruise Cost?"
+                },
+                "image": "https://www.tripsandships.com/images/uniworld-cruise-cost.jpg",
+                "author": {
+                    "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
+                },
+                "publisher": {
+                    "@id": "https://www.tripsandships.com/#organization"
+                },
+                "isPartOf": {
+                    "@id": "https://www.tripsandships.com/#website"
+                }
+            },
             {
                 "@type": "Organization",
                 "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
                 "url": "https://www.tripsandships.com/",
-                "logo": {
-                    "@type": "ImageObject",
-                    "@id": "https://www.tripsandships.com/#logo",
-                    "url": "https://www.tripsandships.com/logo.png",
-                    "caption": "Trips & Ships Luxury Travel"
-                },
-                "image": {
-                    "@id": "https://www.tripsandships.com/#logo"
+                "founder": {
+                    "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
                 }
             },
             {
-                "@type": "WebPage",
-                "@id": "https://www.tripsandships.com/uniworld-river-cruises/cost-deals/",
-                "url": "https://www.tripsandships.com/uniworld-river-cruises/cost-deals/",
-                "name": "How Much Does a Uniworld River Cruise Cost?",
-                "isPartOf": { "@id": "https://www.tripsandships.com/#website" },
-                "about": { "@id": "https://www.tripsandships.com/uniworld-river-cruises/cost-deals/#article" }
+                "@type": "TravelAgency",
+                "@id": "https://www.tripsandships.com/#travelagency",
+                "name": "Trips & Ships Luxury Travel",
+                "url": "https://www.tripsandships.com/",
+                "parentOrganization": {
+                    "@id": "https://www.tripsandships.com/#organization"
+                }
             },
             {
-                "@type": "Article",
-                "@id": "https://www.tripsandships.com/uniworld-river-cruises/cost-deals/#article",
-                "headline": "How Much Does a Uniworld River Cruise Cost?",
-                "description": "Discover Uniworld River Cruise prices, what's included, average costs by itinerary, suite types, seasonal pricing, and tips to find the best deals.",
-                "author": { "@type": "Organization", "name": "Trips & Ships Luxury Travel" },
-                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
-                "mainEntityOfPage": { "@id": "https://www.tripsandships.com/uniworld-river-cruises/cost-deals/" }
+                "@type": "Person",
+                "@id": "https://www.tripsandships.com/about-angela-hughes/#person",
+                "name": "Angela Hughes",
+                "jobTitle": "CEO & Luxury River Cruise Specialist",
+                "worksFor": {
+                    "@id": "https://www.tripsandships.com/#organization"
+                }
             },
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com/" },
-                    { "@type": "ListItem", "position": 2, "name": "Uniworld River Cruises", "item": "https://www.tripsandships.com/uniworld-river-cruises/" },
-                    { "@type": "ListItem", "position": 3, "name": "How Much Does a Uniworld River Cruise Cost?", "item": "https://www.tripsandships.com/uniworld-river-cruises/cost-deals/" }
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.tripsandships.com/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Uniworld River Cruises",
+                        "item": "https://www.tripsandships.com/uniworld-river-cruises"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "How Much Does a Uniworld River Cruise Cost?",
+                        "item": pageData.seo.canonicalUrl
+                    }
                 ]
             },
             {
                 "@type": "FAQPage",
-                "mainEntity": uccFaqs.map(f => ({
+                "mainEntity": pageData.faqs.map(faq => ({
                     "@type": "Question",
-                    "name": f.question,
-                    "acceptedAnswer": { "@type": "Answer", "text": f.answer }
+                    "name": faq.question,
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": faq.answer
+                    }
                 }))
             }
         ]
-    }
+    };
+
+    // Deal tips mapped with icons for CurvilinearGrid
+    const dealIcons = [CalendarClock, BadgePercent, Leaf, Calendar];
+    const dealStrategies = pageData.dealTips.strategies.map((deal, idx) => ({
+        title: deal.title,
+        description: `${deal.body} ${deal.items.join(', ')}`,
+        icon: ['Clock', 'Star', 'Sparkles', 'Calendar'][idx % 4]
+    }));
+
+    // Extra costs icons mapping for cards
+    const extraCostIcons = [Plane, Award, Sparkles, Tag, MapPin, Compass, Bed, Crown];
 
     return (
-        <>
+        <div className="bg-white min-h-screen text-slate-800 selection:bg-gold-500 selection:text-white">
+            {/* ─── SEO HEAD & SCHEMA ─── */}
             <Helmet>
-                <title>How Much Does a Uniworld River Cruise Cost? | Pricing Guide</title>
-                <meta name="description" content="Discover average prices, cabin options, inclusions, and tips for budgeting a Uniworld Boutique River Cruise." />
-                <script type="application/ld+json">{JSON.stringify(uccSchemaData)}</script>
+                <title>{pageData.seo.title}</title>
+                <meta name="title" content={pageData.seo.metaTitle} />
+                <meta name="description" content={pageData.seo.metaDescription} />
+                <meta name="keywords" content={pageData.seo.keywords} />
+                <meta property="og:type" content="article" />
+                <meta property="og:title" content={pageData.seo.ogTitle} />
+                <meta property="og:description" content={pageData.seo.ogDescription} />
+                <meta property="og:url" content={pageData.seo.canonicalUrl} />
+                <meta property="og:image" content="https://www.tripsandships.com/images/uniworld-cruise-cost.jpg" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content={pageData.seo.ogTitle} />
+                <meta name="twitter:description" content={pageData.seo.ogDescription} />
+                <meta name="twitter:image" content="https://www.tripsandships.com/images/uniworld-cruise-cost.jpg" />
+                <link rel="canonical" href={pageData.seo.canonicalUrl} />
+
+                <script type="application/ld+json">
+                    {JSON.stringify(jsonLdSchema)}
+                </script>
             </Helmet>
 
+            {/* Global Navigation */}
             <Navbar />
 
-            <div className="ucc-page">
+            <main>
+                {/* ─── SECTION 1: HERO SECTION ─── */}
+                <ComparisonHero
+                    badge={pageData.hero.badge}
+                    title={pageData.hero.title}
+                    subtitle={pageData.hero.subtitle}
+                    description={pageData.hero.description}
+                    backgroundImage={heroBgImg}
+                    primaryCtaText={pageData.hero.primaryCtaText}
+                    primaryCtaLink={pageData.hero.primaryCtaLink}
+                    secondaryCtaText={pageData.hero.secondaryCtaText}
+                    secondaryCtaLink={pageData.hero.secondaryCtaLink}
+                />
 
-            <section className="ucc-hero-section">
-                <div className="ucc-hero-placeholder"></div>
-                <div className="ucc-hero-content-wrapper">
-                    <div className="ucc-hero-eyebrow-tag">
-                        <Wallet size={16} />
-                        <span>UNIWORLD COST GUIDE</span>
-                    </div>
-                    <h1 className="ucc-hero-main-title">How Much Does a Uniworld River Cruise Cost?</h1>
-                    <p className="ucc-hero-subtitle-text">
-                        An honest breakdown of fares, suites, everyday inclusions, and out-of-pocket costs.
-                    </p>
-                </div>
-            </section>
+                {/* ─── SECTION 2: EDITORIAL INTRO SECTION ─── */}
+                <EditorialIntroSplit
+                    eyebrow={pageData.intro.eyebrow}
+                    heading={pageData.intro.heading}
+                    primaryImage={introPrimaryImg}
+                    secondaryImage={introSecondaryImg}
+                    paragraphs={[
+                        pageData.intro.leadCard
+                    ]}
+                />
 
-            <section className="ucc-intro-section">
-                <div className="ucc-intro-container">
-                    <div className="ucc-intro-grid">
-                        <div className="ucc-intro-text-col">
-                            <span className="ucc-eyebrow">EXCLUSIVE TRAVEL EXPERIENCE</span>
-                            <h2 className="ucc-section-heading">How Much Does a Uniworld River Cruise Cost?</h2>
-                            <div className="ucc-heading-separator-bar"></div>
-                            <p className="ucc-intro-paragraph">
-                                Luxury river cruising is often associated with premium pricing, but understanding what you receive for the fare helps put the cost into perspective. Uniworld Boutique River Cruises is one of the most inclusive luxury river cruise lines, with fares covering accommodations, gourmet dining, premium beverages, daily excursions, gratuities, and many onboard amenities.
+                {/* ─── SECTION 3: TYPICAL PRICE RANGE ─── */}
+                <section className="py-20 bg-slate-50 border-y border-slate-200/80">
+                    <div className="max-w-[1280px] mx-auto px-6">
+                        <div className="text-center max-w-3xl mx-auto mb-14">
+                            <span className="text-xs font-bold uppercase tracking-widest text-gold-600 mb-3 block">
+                                {pageData.priceRange.eyebrow}
+                            </span>
+                            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-navy-950 font-normal tracking-tight mb-4">
+                                {pageData.priceRange.title}
+                            </h2>
+                            <div className="w-16 h-0.5 bg-gold-400 mx-auto mb-6"></div>
+                            <p className="font-sans text-slate-600 text-base sm:text-lg leading-relaxed">
+                                {pageData.priceRange.intro}
                             </p>
                         </div>
-                        <div className="ucc-intro-image-col">
-                            <div className="ucc-image-frame">
-                                {/* <img src={imgSuite} alt="Elegant Suite on a Uniworld Boutique River Cruise" className="ucc-frame-img" /> */}
-                                <div className="ucc-frame-overlay"></div>
-                                <div className="ucc-image-badge"><Crown size={13} /><span>Boutique Luxury</span></div>
-                            </div>
+
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                            {pageData.priceRange.ranges.map((row, idx) => (
+                                <div
+                                    key={idx}
+                                    className="bg-white rounded-2xl p-7 border border-slate-200/90 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between"
+                                >
+                                    <div>
+                                        <div className="w-12 h-12 rounded-xl bg-navy-50 flex items-center justify-center text-navy-900 mb-5">
+                                            <Compass size={24} />
+                                        </div>
+                                        <h3 className="font-display text-xl text-navy-950 font-medium mb-2">
+                                            {row.length}
+                                        </h3>
+                                        <div className="w-8 h-px bg-slate-200 my-4"></div>
+                                        <span className="text-xs uppercase tracking-wider text-slate-500 block mb-1">
+                                            {row.label}
+                                        </span>
+                                        <div className="font-display text-2xl sm:text-3xl font-semibold text-navy-950 mb-1">
+                                            {row.price}
+                                        </div>
+                                    </div>
+                                    <span className="text-xs text-slate-500 mt-4 block">
+                                        {row.note}
+                                    </span>
+                                </div>
+                            ))}
+                        </div>
+
+                        <div className="mt-8 flex items-center justify-center gap-2 text-xs text-slate-600 bg-white/80 border border-slate-200 py-3 px-5 rounded-full max-w-2xl mx-auto text-center shadow-2xs">
+                            <AlertCircle size={15} className="text-gold-600 shrink-0" />
+                            <span>{pageData.priceRange.footnote}</span>
                         </div>
                     </div>
+                </section>
+
+                {/* ─── SECTION 4: QUICK ANSWER / AUTHORITY BOX ─── */}
+                <div className="max-w-4xl mx-auto px-6 py-10">
+                    <AuthorityBox
+                        title="Executive Pricing Overview"
+                        content={pageData.expertInsight.quote}
+                        author="Angela Hughes, Luxury River Cruise Specialist"
+                        authorImage={quickAnswerImg}
+                    />
                 </div>
-            </section>
 
-            <section className="ucc-price-section ucc-bg-blue-tint">
-                <div className="ucc-price-container">
-                    <span className="ucc-eyebrow">ESTIMATED FARES</span>
-                    <h2 className="ucc-section-heading" style={{ textAlign: 'center' }}>Typical Uniworld River Cruise <br /> Price Range</h2>
-                    <div className="ucc-heading-separator-bar ucc-bar-centered"></div>
-                    <p className="ucc-price-intro">Cruise fares vary significantly based on itinerary duration, destination, cabin category, and season. Below are average starting prices per person.</p>
+                {/* ─── SECTION 5: PRICING FACTORS (WHAT AFFECTS THE COST) ─── */}
+                <section className="py-20 bg-white">
+                    <div className="max-w-[1280px] mx-auto px-6">
+                        <div className="text-center max-w-3xl mx-auto mb-14">
+                            <span className="text-xs font-bold uppercase tracking-widest text-gold-600 mb-3 block">
+                                {pageData.pricingFactors.eyebrow}
+                            </span>
+                            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-navy-950 font-normal tracking-tight mb-4">
+                                {pageData.pricingFactors.title}
+                            </h2>
+                            <div className="w-16 h-0.5 bg-gold-400 mx-auto mb-6"></div>
+                            <p className="font-sans text-slate-600 text-base sm:text-lg leading-relaxed">
+                                {pageData.pricingFactors.intro}
+                            </p>
+                        </div>
 
-                    <div className="ucc-price-grid">
-                        {uccPriceRange.map((row, idx) => (
-                            <div key={idx} className="ucc-price-card">
-                                <div className="ucc-price-card-header">
-                                    <div className="ucc-price-card-icon"><Compass size={28} /></div>
-                                    <h3 className="ucc-price-card-title">{row.length}</h3>
-                                </div>
-                                <div className="ucc-price-card-divider"></div>
-                                <div className="ucc-price-card-body">
-                                    <span className="ucc-price-card-label">Avg. Price Range</span>
-                                    <span className="ucc-price-card-value">{row.price}</span>
-                                    <span className="ucc-price-card-note">Per Person / Double Occ.</span>
-                                </div>
+                        {/* Interactive Factor Tabs & Panel */}
+                        <div className="bg-slate-50 border border-slate-200/90 rounded-3xl p-6 sm:p-10 shadow-sm">
+                            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
+                                {pageData.pricingFactors.factors.map((factor, idx) => {
+                                    const IconComponent = factorIcons[idx % factorIcons.length];
+                                    const isActive = selectedFactor === idx;
+                                    return (
+                                        <button
+                                            key={factor.id}
+                                            onClick={() => setSelectedFactor(idx)}
+                                            className={`flex items-center gap-3 p-4 rounded-xl text-left transition-all ${
+                                                isActive
+                                                    ? 'bg-navy-900 text-white shadow-md'
+                                                    : 'bg-white hover:bg-slate-100 text-slate-700 border border-slate-200/80'
+                                            }`}
+                                        >
+                                            <div className={`w-8 h-8 rounded-lg flex items-center justify-center shrink-0 ${
+                                                isActive ? 'bg-gold-500 text-navy-950' : 'bg-navy-50 text-navy-900'
+                                            }`}>
+                                                <IconComponent size={16} />
+                                            </div>
+                                            <span className="font-medium text-sm leading-tight">
+                                                {factor.title}
+                                            </span>
+                                        </button>
+                                    );
+                                })}
                             </div>
-                        ))}
-                    </div>
 
-                    <div className="ucc-price-footnote-badge">
-                        <AlertCircle size={15} />
-                        <span>Luxury suites, holiday sailings, and limited-capacity departures can exceed these ranges.</span>
-                    </div>
-                </div>
-            </section>
-
-            <section className="ucc-factors-section">
-                <div className="ucc-factors-container">
-                    <span className="ucc-eyebrow">PRICING FACTORS</span>
-                    <h2 className="ucc-section-heading" style={{ textAlign: 'center' }}>What Affects the Cost of a Uniworld River Cruise?</h2>
-                    <div className="ucc-heading-separator-bar ucc-bar-centered"></div>
-                    <p className="ucc-factors-intro">Several key factors determine the final fare of your Uniworld River Cruise. Select a factor to explore how it impacts pricing.</p>
-
-                    <div className="ucc-factors-dashboard">
-
-                        <div className="ucc-factors-tabs">
-                            {uccFactors.map((factor, idx) => {
-                                const Icon = factor.icon
-                                const isActive = uccSelectedFactor === idx
+                            {/* Active Factor Details Panel */}
+                            {(() => {
+                                const currentFactor = pageData.pricingFactors.factors[selectedFactor];
                                 return (
-                                    <button
-                                        key={idx}
-                                        className={`ucc-factor-tab-btn ${isActive ? 'active' : ''}`}
-                                        onClick={() => setUccSelectedFactor(idx)}
-                                    >
-                                        <div className="ucc-factor-tab-number">{String(idx + 1).padStart(2, '0')}</div>
-                                        <div className="ucc-factor-tab-info">
-                                            <div className="ucc-factor-tab-icon"><Icon size={16} /></div>
-                                            <span className="ucc-factor-tab-title">{factor.title}</span>
+                                    <div className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200">
+                                        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 mb-6 border-b border-slate-100">
+                                            <div>
+                                                <span className="text-xs uppercase tracking-wider text-gold-600 font-bold block mb-1">
+                                                    Factor {selectedFactor + 1} of {pageData.pricingFactors.factors.length}
+                                                </span>
+                                                <h3 className="font-display text-2xl text-navy-950 font-medium">
+                                                    {currentFactor.title}
+                                                </h3>
+                                            </div>
                                         </div>
-                                    </button>
-                                )
+
+                                        <p className="font-sans text-slate-700 text-base leading-relaxed mb-6">
+                                            {currentFactor.text}
+                                        </p>
+
+                                        {/* TAGS type */}
+                                        {currentFactor.type === 'tags' && currentFactor.tags && (
+                                            <div className="flex flex-wrap gap-2.5 mb-6">
+                                                {currentFactor.tags.map((tag, i) => (
+                                                    <span
+                                                        key={i}
+                                                        className="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-slate-100 border border-slate-200/70 rounded-full text-xs font-medium text-slate-800"
+                                                    >
+                                                        <MapPin size={12} className="text-gold-600" />
+                                                        {tag}
+                                                    </span>
+                                                ))}
+                                            </div>
+                                        )}
+
+                                        {/* LIST type */}
+                                        {currentFactor.type === 'list' && currentFactor.list && (
+                                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                                                {currentFactor.list.map((item, i) => (
+                                                    <div key={i} className="p-4 bg-slate-50 border border-slate-200/70 rounded-xl">
+                                                        <span className="font-display text-xs text-gold-600 font-bold block mb-1">
+                                                            Option {i + 1}
+                                                        </span>
+                                                        <h4 className="font-medium text-navy-950 text-sm mb-1">
+                                                            {item.title}
+                                                        </h4>
+                                                        <p className="text-xs text-slate-600 leading-normal">
+                                                            {item.desc}
+                                                        </p>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        )}
+
+                                        {/* ROWS type */}
+                                        {currentFactor.type === 'rows' && currentFactor.rows && (
+                                            <div className="divide-y divide-slate-100 border border-slate-200 rounded-xl overflow-hidden mb-6">
+                                                {currentFactor.rows.map((row, i) => (
+                                                    <div key={i} className="flex items-center justify-between p-3.5 bg-white hover:bg-slate-50 text-sm">
+                                                        <span className="font-medium text-slate-800">
+                                                            {row.type}
+                                                        </span>
+                                                        <span className="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-navy-50 text-navy-900 border border-navy-100">
+                                                            {row.level}
+                                                        </span>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        )}
+
+                                        {/* SEASONS type */}
+                                        {currentFactor.type === 'seasons' && currentFactor.seasons && (
+                                            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
+                                                {currentFactor.seasons.map((row, i) => (
+                                                    <div key={i} className="p-3.5 bg-slate-50 border border-slate-200/70 rounded-xl flex items-center justify-between">
+                                                        <div className="flex items-center gap-2">
+                                                            {row.low ? (
+                                                                <TrendingDown size={14} className="text-emerald-600" />
+                                                            ) : (
+                                                                <TrendingUp size={14} className="text-amber-600" />
+                                                            )}
+                                                            <span className="text-xs font-medium text-slate-800">
+                                                                {row.season}
+                                                            </span>
+                                                        </div>
+                                                        <span className={`text-[11px] font-bold px-2 py-0.5 rounded ${
+                                                            row.low ? 'bg-emerald-50 text-emerald-700 border border-emerald-200' : 'bg-amber-50 text-amber-700 border border-amber-200'
+                                                        }`}>
+                                                            {row.pricing}
+                                                        </span>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        )}
+
+                                        {/* Optional Note */}
+                                        {currentFactor.note && (
+                                            <div className="flex items-start gap-2.5 bg-gold-50/60 border border-gold-200/80 p-3.5 rounded-xl text-xs text-navy-950">
+                                                <AlertCircle size={15} className="text-gold-700 shrink-0 mt-0.5" />
+                                                <span>{currentFactor.note}</span>
+                                            </div>
+                                        )}
+                                    </div>
+                                );
+                            })()}
+                        </div>
+                    </div>
+                </section>
+
+                {/* ─── INLINE CTA 1 ─── */}
+                <InlineCTA
+                    tag="Transparent Pricing"
+                    text="Want a personalized quote with the exact inclusions calculated for your travel dates?"
+                    btnText="Schedule a Consultation"
+                    btnLink="/contact"
+                />
+
+                {/* ─── SECTION 6: WHAT IS INCLUDED IN THE CRUISE FARE? ─── */}
+                <FeatureSplit
+                    imagePosition="right"
+                    theme="light"
+                    image={inclusionsDiningImg}
+                    title={pageData.inclusions.title}
+                    subtitles={[pageData.inclusions.lead, pageData.inclusions.body]}
+                    features={pageData.inclusions.items}
+                    summary={pageData.inclusions.callout}
+                    ctaText="Schedule a Consultation"
+                    ctaLink="/contact"
+                />
+
+                {/* ─── SECTION 7: ADDITIONAL COSTS TO BUDGET FOR ─── */}
+                <section className="py-20 bg-slate-50 border-y border-slate-200/80">
+                    <div className="max-w-[1280px] mx-auto px-6">
+                        <div className="text-center max-w-3xl mx-auto mb-14">
+                            <span className="text-xs font-bold uppercase tracking-widest text-gold-600 mb-3 block">
+                                {pageData.extraCosts.eyebrow}
+                            </span>
+                            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-navy-950 font-normal tracking-tight mb-4">
+                                {pageData.extraCosts.title}
+                            </h2>
+                            <div className="w-16 h-0.5 bg-gold-400 mx-auto mb-6"></div>
+                            <p className="font-sans text-slate-600 text-base sm:text-lg leading-relaxed">
+                                {pageData.extraCosts.intro}
+                            </p>
+                        </div>
+
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                            {pageData.extraCosts.items.map((row, idx) => {
+                                const IconComponent = extraCostIcons[idx % extraCostIcons.length];
+                                return (
+                                    <div
+                                        key={idx}
+                                        className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between"
+                                    >
+                                        <div>
+                                            <div className="flex items-center justify-between mb-4">
+                                                <div className="w-10 h-10 rounded-xl bg-navy-50 flex items-center justify-center text-navy-900">
+                                                    <IconComponent size={20} />
+                                                </div>
+                                                <span className={`text-[11px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider ${
+                                                    row.always
+                                                        ? 'bg-amber-50 text-amber-800 border border-amber-200'
+                                                        : 'bg-slate-100 text-slate-700 border border-slate-200'
+                                                }`}>
+                                                    {row.always ? 'Always Extra' : 'Sometimes'}
+                                                </span>
+                                            </div>
+                                            <h3 className="font-display text-lg text-navy-950 font-medium mb-2">
+                                                {row.expense}
+                                            </h3>
+                                            <p className="text-xs text-slate-600 leading-relaxed">
+                                                {row.desc}
+                                            </p>
+                                        </div>
+                                    </div>
+                                );
                             })}
                         </div>
 
-                        <div className="ucc-factor-panel">
-                            <div className="ucc-factor-panel-inner">
-
-                                {/* Image Placeholder Column */}
-                                <div className="ucc-factor-panel-image">
-                                    <div className="ucc-factor-panel-image-bg">
-                                        {(() => { const BgIcon = uccFactors[uccSelectedFactor].icon; return <BgIcon size={110} className="ucc-factor-panel-bg-icon" /> })()}
-                                    </div>
-                                    <div className="ucc-factor-panel-image-overlay">
-                                        <div className="ucc-factor-panel-img-details">
-                                            <p className="ucc-factor-panel-label" style={{ color: 'rgba(255, 255, 255, 0.7)', border: 'none', margin: '0 0 4px', padding: 0 }}>
-                                                FACTOR {String(uccSelectedFactor + 1).padStart(2, '0')} OF {uccFactors.length}
-                                            </p>
-                                            <h3 className="ucc-factor-panel-title" style={{ color: '#fff', margin: 0 }}>
-                                                {uccFactors[uccSelectedFactor].title}
-                                            </h3>
-                                        </div>
-                                        <span className="ucc-factor-panel-img-num">{String(uccSelectedFactor + 1).padStart(2, '0')}</span>
-                                    </div>
-                                </div>
-
-                                {/* Content Column */}
-                                <div className="ucc-factor-panel-content">
-                                    <p className="ucc-factor-panel-desc">{uccFactors[uccSelectedFactor].text}</p>
-
-                                    {/* TAGS grid */}
-                                    {uccFactors[uccSelectedFactor].type === 'tags' && (
-                                        <div className="ucc-factor-tags">
-                                            {uccFactors[uccSelectedFactor].tags.map((item, idx) => (
-                                                <span key={idx} className="ucc-factor-tag"><MapPin size={12} />{item}</span>
-                                            ))}
-                                        </div>
-                                    )}
-
-                                    {/* LIST grid */}
-                                    {uccFactors[uccSelectedFactor].type === 'list' && (
-                                        <div className="ucc-factor-list">
-                                            {uccFactors[uccSelectedFactor].list.map((item, idx) => (
-                                                <div key={idx} className="ucc-factor-list-card">
-                                                    <div className="ucc-factor-list-num">{String(idx + 1).padStart(2, '0')}</div>
-                                                    <div>
-                                                        <p className="ucc-factor-list-title">{item.title}</p>
-                                                        <p className="ucc-factor-list-desc">{item.desc}</p>
-                                                    </div>
-                                                </div>
-                                            ))}
-                                        </div>
-                                    )}
-
-                                    {/* ROWS grid */}
-                                    {uccFactors[uccSelectedFactor].type === 'rows' && (
-                                        <div className="ucc-factor-rows">
-                                            {uccFactors[uccSelectedFactor].rows.map((row, idx) => (
-                                                <div key={idx} className="ucc-factor-row">
-                                                    <div className="ucc-factor-row-rank">{idx + 1}</div>
-                                                    <span className="ucc-factor-row-label">{row.type}</span>
-                                                    <span className="ucc-factor-row-value">{row.level}</span>
-                                                </div>
-                                            ))}
-                                        </div>
-                                    )}
-
-                                    {/* SEASONS grid */}
-                                    {uccFactors[uccSelectedFactor].type === 'seasons' && (
-                                        <div className="ucc-factor-seasons">
-                                            {uccFactors[uccSelectedFactor].seasons.map((row, idx) => (
-                                                <div key={idx} className="ucc-factor-season">
-                                                    <span className="ucc-factor-season-icon">
-                                                        {row.low ? <TrendingDown size={14} /> : <TrendingUp size={14} />}
-                                                    </span>
-                                                    <span className="ucc-factor-season-label">{row.season}</span>
-                                                    <span className={`ucc-season-tag ${row.low ? 'ucc-season-low' : 'ucc-season-high'}`}>
-                                                        {row.pricing}
-                                                    </span>
-                                                </div>
-                                            ))}
-                                        </div>
-                                    )}
-
-                                    {/* Note */}
-                                    {uccFactors[uccSelectedFactor].note && (
-                                        <div className="ucc-factor-panel-note">
-                                            <AlertCircle size={15} />
-                                            <span>{uccFactors[uccSelectedFactor].note}</span>
-                                        </div>
-                                    )}
-                                </div>
-
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-            </section>
-
-            <section className="ucc-feature-section ucc-bg-azure">
-                <div className="ucc-feature-container">
-                    <div className="ucc-feature-grid ucc-reverse">
-                        <div className="ucc-feature-text-col">
-                            <span className="ucc-eyebrow">CRUISE FARE INCLUSIONS</span>
-                            <h2 className="ucc-section-heading">What Is Included in the Cruise Fare?</h2>
-                            <div className="ucc-heading-separator-bar"></div>
-                            <p className="ucc-feature-lead">One reason Uniworld commands premium pricing is its extensive list of inclusions.</p>
-                            <p className="ucc-feature-body">Most fares include:</p>
-                            <ul className="ucc-check-list ucc-check-list-2col">
-                                {uccIncludedFare.map((item, idx) => (
-                                    <li key={idx}><CheckCircle size={16} /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="ucc-feature-image-col">
-                            <div className="ucc-image-frame">
-                                {/* <img src={imgDining} alt="Gourmet dining included on a Uniworld River Cruise" className="ucc-frame-img" /> */}
-                                <div className="ucc-frame-overlay"></div>
-                                <div className="ucc-image-badge"><Utensils size={13} /><span>All-Inclusive Fare</span></div>
-                            </div>
-                            <div className="ucc-feature-callout">
-                                <Sparkles size={18} />
-                                <p>Because many additional costs are already covered, travelers often spend less onboard than expected.</p>
-                            </div>
+                        <div className="mt-8 flex items-center justify-center gap-2 text-xs text-slate-600 bg-white border border-slate-200 py-3 px-5 rounded-full max-w-2xl mx-auto text-center shadow-2xs">
+                            <AlertCircle size={15} className="text-gold-600 shrink-0" />
+                            <span>{pageData.extraCosts.footnote}</span>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <section className="ucc-costs-section ucc-bg-alabaster">
-                <div className="ucc-costs-container">
-                    <span className="ucc-eyebrow">BUDGET PLANNING</span>
-                    <h2 className="ucc-section-heading" style={{ textAlign: 'center' }}>Additional Costs to Budget For</h2>
-                    <div className="ucc-heading-separator-bar ucc-bar-centered"></div>
-                    <p className="ucc-costs-intro">Although Uniworld Boutique River Cruises is highly inclusive, certain out-of-pocket expenses may still apply when planning your trip.</p>
-
-                    <div className="ucc-costs-grid">
-                        {uccExtraCosts.map((row, idx) => {
-                            const CostIcon = row.icon
-                            return (
-                                <div key={idx} className="ucc-cost-card">
-                                    <div className="ucc-cost-card-header">
-                                        <div className="ucc-cost-card-icon-wrap">
-                                            <CostIcon size={20} />
-                                        </div>
-                                        <span className={`ucc-cost-badge ${row.always ? 'always' : 'sometimes'}`}>
-                                            {row.always ? 'Always Extra' : 'Sometimes'}
-                                        </span>
-                                    </div>
-                                    <h3 className="ucc-cost-card-title">{row.expense}</h3>
-                                    <p className="ucc-cost-card-desc">{row.desc}</p>
-                                </div>
-                            )
-                        })}
-                    </div>
-
-                    <div className="ucc-costs-footnote">
-                        <AlertCircle size={15} />
-                        <span>Take these additional travel expenses into consideration when drafting your final cruise budget.</span>
-                    </div>
-                </div>
-            </section>
-
-            <section className="ucc-couples-section">
-                <div className="ucc-couples-container">
-                    <span className="ucc-eyebrow">COUPLES PRICING</span>
-                    <h2 className="ucc-section-heading" style={{ textAlign: 'center' }}>Average Cost for Couples</h2>
-                    <div className="ucc-heading-separator-bar ucc-bar-centered"></div>
-                    <p className="ucc-couples-intro">Many travelers book as couples. Typical total cruise fares before airfare may range from:</p>
-
-                    <div className="ucc-couples-grid">
-                        {uccCoupleCost.map((row, idx) => (
-                            <div key={idx} className="ucc-couple-card">
-                                <div className="ucc-couple-card-header">
-                                    <div className="ucc-couple-icon"><Clock size={20} /></div>
-                                    <span className="ucc-couple-length">{row.length}</span>
-                                    <div className="ucc-couple-users"><Users size={13} /><span>Per Couple</span></div>
-                                </div>
-                                <div className="ucc-couple-card-body">
-                                    <div className="ucc-couple-price-row">
-                                        <span className="ucc-couple-label">Est. Cost</span>
-                                        <span className="ucc-couple-price">{row.price}</span>
-                                    </div>
-                                    <span className="ucc-couple-note">Before airfare · Double Occ.</span>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-
-                    <div className="ucc-couples-footnote">
-                        <AlertCircle size={15} />
-                        <span>Prices vary depending on promotions, cabin selection, and departure date.</span>
-                    </div>
-                </div>
-            </section>
-
-            <section className="ucc-value-section">
-                <div className="ucc-value-container">
-                    <div className="ucc-value-grid-split">
-
-                        {/* Left Side: Editorial Argument */}
-                        <div className="ucc-value-editorial-col">
-                            <div className="ucc-value-eyebrow-row">
-                                <Gem size={18} />
-                                <span className="ucc-value-eyebrow-text">IS IT WORTH THE PRICE?</span>
-                            </div>
-                            <h2 className="ucc-value-heading">Are Uniworld River Cruises Worth the Price?</h2>
-                            <p className="ucc-value-body">
-                                Rather than comparing only the initial fare, many travelers evaluate the total vacation value. When all day-to-day luxuries are fully included, Uniworld offers highly competitive value in the luxury market.
+                {/* ─── SECTION 8: AVERAGE COST FOR COUPLES ─── */}
+                <section className="py-20 bg-white">
+                    <div className="max-w-[1280px] mx-auto px-6">
+                        <div className="text-center max-w-3xl mx-auto mb-14">
+                            <span className="text-xs font-bold uppercase tracking-widest text-gold-600 mb-3 block">
+                                {pageData.coupleCost.eyebrow}
+                            </span>
+                            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-navy-950 font-normal tracking-tight mb-4">
+                                {pageData.coupleCost.title}
+                            </h2>
+                            <div className="w-16 h-0.5 bg-gold-400 mx-auto mb-6"></div>
+                            <p className="font-sans text-slate-600 text-base sm:text-lg leading-relaxed">
+                                {pageData.coupleCost.intro}
                             </p>
-                            <div className="ucc-value-quote-box">
-                                <p className="ucc-value-emphasis">
-                                    "When these inclusions are considered together, travelers often spend significantly less out-of-pocket onboard than on mainstream lines."
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                            {pageData.coupleCost.items.map((row, idx) => (
+                                <div
+                                    key={idx}
+                                    className="bg-slate-50 border border-slate-200/90 rounded-2xl p-7 text-center shadow-sm hover:shadow-md transition-shadow"
+                                >
+                                    <div className="w-12 h-12 rounded-xl bg-navy-900 text-white flex items-center justify-center mx-auto mb-4">
+                                        <Users size={22} />
+                                    </div>
+                                    <h3 className="font-display text-xl text-navy-950 font-medium mb-1">
+                                        {row.length}
+                                    </h3>
+                                    <span className="text-xs text-gold-600 font-bold uppercase tracking-wider block mb-4">
+                                        Per Couple
+                                    </span>
+                                    <div className="w-12 h-px bg-slate-200 mx-auto mb-4"></div>
+                                    <div className="font-display text-3xl font-semibold text-navy-950 mb-1">
+                                        {row.price}
+                                    </div>
+                                    <span className="text-xs text-slate-500 block">
+                                        {row.note}
+                                    </span>
+                                </div>
+                            ))}
+                        </div>
+
+                        <div className="mt-8 flex items-center justify-center gap-2 text-xs text-slate-600 bg-slate-50 border border-slate-200 py-3 px-5 rounded-full max-w-xl mx-auto text-center shadow-2xs">
+                            <AlertCircle size={15} className="text-gold-600 shrink-0" />
+                            <span>{pageData.coupleCost.footnote}</span>
+                        </div>
+                    </div>
+                </section>
+
+                {/* ─── SECTION 9: ARE UNIWORLD RIVER CRUISES WORTH THE PRICE? ─── */}
+                <section className="py-20 bg-slate-900 text-white relative overflow-hidden">
+                    <div className="max-w-[1280px] mx-auto px-6 relative z-10">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                            <div>
+                                <span className="text-xs font-bold uppercase tracking-widest text-gold-400 mb-3 block">
+                                    {pageData.valueAnalysis.eyebrow}
+                                </span>
+                                <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-normal tracking-tight mb-6">
+                                    {pageData.valueAnalysis.title}
+                                </h2>
+                                <p className="font-sans text-slate-300 text-base sm:text-lg leading-relaxed mb-6">
+                                    {pageData.valueAnalysis.body}
                                 </p>
-                            </div>
-                        </div>
-
-                        {/* Right Side: The Luxury Inclusion Card */}
-                        <div className="ucc-value-card">
-                            <h3 className="ucc-value-card-title">What's Covered in Your Fare</h3>
-                            <p className="ucc-value-card-subtitle">Included services that would typically cost extra on other cruises:</p>
-                            <div className="ucc-value-chip-row">
-                                {uccWorthIncluded.map((item, idx) => (
-                                    <span key={idx} className="ucc-value-chip">
-                                        <CheckCircle size={13} />
-                                        {item}
-                                    </span>
-                                ))}
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <section className="ucc-deals-section">
-                <div className="ucc-deals-container">
-                    <span className="ucc-eyebrow">SAVING STRATEGIES</span>
-                    <h2 className="ucc-section-heading" style={{ textAlign: 'center' }}>How to Find the Best Uniworld River Cruise Deals</h2>
-                    <div className="ucc-heading-separator-bar ucc-bar-centered"></div>
-                    <p className="ucc-table-intro">Booking strategically can lead to significant savings.</p>
-
-                    <div className="ucc-deals-grid">
-                        {uccDealTips.map((item, idx) => {
-                            const DealIcon = item.Icon
-                            return (
-                                <div key={idx} className="ucc-deal-card">
-                                    <div className="ucc-deal-card-header">
-                                        <div className="ucc-deal-icon"><DealIcon size={20} /></div>
-                                        <span className="ucc-deal-step-num">{String(idx + 1).padStart(2, '0')}</span>
-                                    </div>
-                                    <h3 className="ucc-deal-title">{item.title}</h3>
-                                    <p className="ucc-deal-body">{item.body}</p>
-                                    {item.items.length > 0 && (
-                                        <ul className="ucc-deal-items-list">
-                                            {item.items.map((listItem, i) => (
-                                                <li key={i}>
-                                                    <CheckCircle size={12} />
-                                                    <span>{listItem}</span>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    )}
-                                </div>
-                            )
-                        })}
-                    </div>
-                </div>
-            </section>
-
-            <section className="ucc-comparison-section ucc-bg-slate">
-                <div className="ucc-comparison-container">
-                    <span className="ucc-eyebrow">HOW UNIWORLD COMPARES</span>
-                    <h2 className="ucc-section-heading" style={{ textAlign: 'center' }}>Comparing Uniworld with Other <br /> Luxury River Cruise Lines</h2>
-                    <div className="ucc-heading-separator-bar ucc-bar-centered"></div>
-                    <p className="ucc-comparison-intro">Comparing included services rather than base fares provides a more accurate measure of overall value.</p>
-
-                    <div className="ucc-compare-list">
-                        {uccComparison.map((row, idx) => (
-                            <div key={idx} className="ucc-compare-item">
-                                <div className="ucc-compare-feature-name">
-                                    <div className="ucc-compare-indicator"></div>
-                                    <span>{row.feature}</span>
-                                </div>
-                                <div className="ucc-compare-grid-cols">
-                                    <div className="ucc-compare-brand-col uniworld">
-                                        <span className="ucc-compare-brand-label">Uniworld</span>
-                                        <span className="ucc-compare-value">{row.uniworld}</span>
-                                    </div>
-                                    <div className="ucc-compare-brand-col typical">
-                                        <span className="ucc-compare-brand-label">Competitors</span>
-                                        <span className="ucc-compare-value">{row.typical}</span>
-                                    </div>
+                                <div className="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-6 italic font-display text-lg text-gold-200">
+                                    "{pageData.valueAnalysis.quote}"
                                 </div>
                             </div>
-                        ))}
-                    </div>
 
-                    <div className="ucc-comparison-footnote">
-                        <AlertCircle size={15} />
-                        <span>Uniworld's boutique model ensures a high ratio of all-inclusive features per sailing compared to the industry standard.</span>
-                    </div>
-                </div>
-            </section>
-
-            <section className="ucc-timing-section">
-                <div className="ucc-timing-container">
-                    <span className="ucc-eyebrow">TIMING YOUR BOOKING</span>
-                    <h2 className="ucc-section-heading" style={{ textAlign: 'center' }}>When Is the Cheapest Time to Book?</h2>
-                    <div className="ucc-heading-separator-bar ucc-bar-centered"></div>
-                    <p className="ucc-timing-intro">Understanding seasonal pricing cycles can help you secure the best value.</p>
-
-                    <div className="ucc-timing-grid">
-                        {uccCheapestTimes.map((item, idx) => (
-                            <div key={idx} className="ucc-timing-card">
-                                <div className="ucc-timing-card-icon">
-                                    <CalendarDays size={20} />
-                                </div>
-                                <div className="ucc-timing-card-content">
-                                    <span className="ucc-timing-card-label">Strategy {idx + 1}</span>
-                                    <h4 className="ucc-timing-card-title">{item}</h4>
+                            <div className="bg-white text-slate-800 rounded-3xl p-8 border border-slate-200/80 shadow-2xl">
+                                <h3 className="font-display text-2xl text-navy-950 font-medium mb-2">
+                                    {pageData.valueAnalysis.cardTitle}
+                                </h3>
+                                <p className="text-sm text-slate-600 mb-6">
+                                    {pageData.valueAnalysis.cardSubtitle}
+                                </p>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                    {pageData.valueAnalysis.includedChips.map((chip, idx) => (
+                                        <div
+                                            key={idx}
+                                            className="flex items-center gap-2.5 p-3 rounded-xl bg-slate-50 border border-slate-200/80 text-xs font-medium text-slate-800"
+                                        >
+                                            <CheckCircle size={14} className="text-emerald-600 shrink-0" />
+                                            <span>{chip}</span>
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
-                        ))}
-                    </div>
-
-                    <div className="ucc-timing-footnote">
-                        <AlertCircle size={15} />
-                        <span>Holiday cruises, tulip season, and Christmas Market sailings generally command premium pricing due to strong demand.</span>
-                    </div>
-                </div>
-            </section>
-
-            <section className="ucc-feature-section ucc-bg-soft">
-                <div className="ucc-feature-container">
-                    <div className="ucc-feature-grid">
-                        <div className="ucc-feature-image-col">
-                            <div className="ucc-image-frame">
-                                {/* <img src={imgDeals} alt="Luxury Uniworld River Cruise sailing through Europe" className="ucc-frame-img" /> */}
-                                <div className="ucc-frame-overlay"></div>
-                                <div className="ucc-image-badge"><Tag size={13} /><span>Smart Budgeting</span></div>
-                            </div>
-                        </div>
-                        <div className="ucc-feature-text-col">
-                            <span className="ucc-eyebrow">PLAN AHEAD</span>
-                            <h2 className="ucc-section-heading">Tips for Budgeting Your Cruise</h2>
-                            <div className="ucc-heading-separator-bar"></div>
-                            <p className="ucc-feature-lead">Before booking, consider budgeting for:</p>
-                            <ul className="ucc-check-list ucc-check-list-2col">
-                                {uccBudgetItems.map((item, idx) => (
-                                    <li key={idx}><Compass size={14} /><span>{item}</span></li>
-                                ))}
-                            </ul>
-                            <div className="ucc-budget-callout">
-                                <AlertCircle size={16} />
-                                <span>A complete travel budget helps avoid unexpected expenses.</span>
-                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <section className="ucc-takeaways-section">
-                <div className="ucc-takeaways-container">
-                    <h2 className="ucc-section-heading" style={{ textAlign: 'center' }}>Key Takeaways</h2>
-                    <div className="ucc-heading-separator-bar ucc-bar-centered"></div>
-                    <div className="ucc-takeaways-grid">
-                        {uccKeyTakeaways.map((item, idx) => (
-                            <div key={idx} className="ucc-takeaway-item">
-                                <CheckCircle size={18} />
-                                <span>{item}</span>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                {/* ─── SECTION 10: HOW TO FIND THE BEST UNIWORLD RIVER CRUISE DEALS ─── */}
+                <CurvilinearGrid
+                    title={pageData.dealTips.title}
+                    subtitle={pageData.dealTips.eyebrow}
+                    paragraphs={[pageData.dealTips.intro]}
+                    items={dealStrategies}
+                />
 
-            <section className="ucc-expert-section">
-                <div className="ucc-expert-container">
+                {/* ─── SECTION 11: COMPARING UNIWORLD WITH OTHER LUXURY LINES ─── */}
+                <LuxuryCruiseComparisonTable
+                    title={pageData.comparison.title}
+                    headers={pageData.comparison.headers}
+                    rows={pageData.comparison.rows.map(r => [r.feature, r.uniworld, r.typical])}
+                />
 
-                    {/* Left Column: Portrait & Stats Grid */}
-                    <div className="ucc-expert-portrait-panel">
-                        <div className="ucc-expert-img-frame">
-                            <img src={Profile_Picture_AH} alt="Angela Hughes - Luxury River Cruise Cost Expert" className="ucc-expert-img" />
-                            <div className="ucc-expert-img-overlay"></div>
-                            <span className="ucc-expert-badge">EXPERT ADVISOR</span>
-                        </div>
-                        <div className="ucc-expert-stats-strip">
-                            <div className="ucc-expert-stat-box">
-                                <div className="ucc-expert-stat-num">40+</div>
-                                <div className="ucc-expert-stat-lbl">Years Experience</div>
-                            </div>
-                            <div className="ucc-expert-stat-box">
-                                <div className="ucc-expert-stat-num">121+</div>
-                                <div className="ucc-expert-stat-lbl">Countries Visited</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Right Column: Insight Editorial Panel */}
-                    <div className="ucc-expert-content-panel">
-                        <div className="ucc-expert-eyebrow-row">
-                            <Sparkles size={16} />
-                            <span className="ucc-expert-eyebrow">MEET THE CEO</span>
-                        </div>
-                        <h2 className="ucc-expert-heading">Insight from Angela Hughes</h2>
-                        <div className="ucc-expert-heading-bar"></div>
-
-                        <div className="ucc-expert-quote-card">
-                            <span className="ucc-expert-quote-mark">“</span>
-                            <p className="ucc-expert-quote-text">
-                                When my clients compare Uniworld's pricing to a traditional luxury holiday, they quickly realize the math works in their favor. Once you factor in what's included, the per-day value is extraordinary.
+                {/* ─── SECTION 12: WHEN IS THE CHEAPEST TIME TO BOOK? ─── */}
+                <section className="py-20 bg-slate-50 border-y border-slate-200/80">
+                    <div className="max-w-[1280px] mx-auto px-6">
+                        <div className="text-center max-w-3xl mx-auto mb-14">
+                            <span className="text-xs font-bold uppercase tracking-widest text-gold-600 mb-3 block">
+                                {pageData.timing.eyebrow}
+                            </span>
+                            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-navy-950 font-normal tracking-tight mb-4">
+                                {pageData.timing.title}
+                            </h2>
+                            <div className="w-16 h-0.5 bg-gold-400 mx-auto mb-6"></div>
+                            <p className="font-sans text-slate-600 text-base sm:text-lg leading-relaxed">
+                                {pageData.timing.intro}
                             </p>
                         </div>
 
-                        <div className="ucc-expert-priorities">
-                            <h5 className="ucc-expert-priorities-title">Angela's Value Priorities Matrix:</h5>
-                            <div className="ucc-expert-pills">
-                                {['All-Inclusive Fares', 'Premium Cabin Selection', 'Early Booking Savings', 'Shoulder Season Value', 'Group Discounts', 'Solo Supplements'].map(pill => (
-                                    <span key={pill} className="ucc-expert-pill">
-                                        <CheckCircle size={12} />
-                                        <span>{pill}</span>
-                                    </span>
-                                ))}
-                            </div>
-                        </div>
-
-                        <div className="ucc-expert-footer-bio">
-                            <p className="ucc-expert-bio">
-                                As founder of Luxury Travel University and CEO of Trips &amp; Ships Luxury Travel, Angela Hughes uses her personal, deep connections in the river cruising world to deliver custom travel planning that regular booking engines simply cannot replicate.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <section className="ucc-faq-section">
-                <div className="ucc-faq-container">
-                    <div style={{ textAlign: 'center' }}>
-                        <h2 className="ucc-section-heading">Frequently Asked Questions</h2>
-                        <div className="ucc-heading-separator-bar ucc-bar-centered"></div>
-                    </div>
-                    <div className="ucc-faq-list-wrapper">
-                        {uccFaqs.map((faq, index) => (
-                            <div
-                                key={index}
-                                className="ucc-faq-item"
-                                onClick={() => uccToggleFaq(index)}
-                            >
-                                <div className="ucc-faq-question-row">
-                                    <span>{faq.question}</span>
-                                    <span className="ucc-faq-toggle-icon">{uccActiveFaq === index ? '−' : '+'}</span>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+                            {pageData.timing.items.map((strategy, idx) => (
+                                <div
+                                    key={idx}
+                                    className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between text-center"
+                                >
+                                    <div>
+                                        <div className="w-10 h-10 rounded-xl bg-navy-50 text-navy-900 flex items-center justify-center mx-auto mb-3">
+                                            <CalendarDays size={18} />
+                                        </div>
+                                        <span className="text-[11px] font-bold uppercase tracking-wider text-gold-600 block mb-1">
+                                            Strategy {idx + 1}
+                                        </span>
+                                        <h4 className="font-display text-sm font-medium text-navy-950">
+                                            {strategy}
+                                        </h4>
+                                    </div>
                                 </div>
-                                {uccActiveFaq === index && (
-                                    <p className="ucc-faq-answer-text">{faq.answer}</p>
-                                )}
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+                            ))}
+                        </div>
 
-            <section className="ucc-cta-redesign-section">
-                <div className="ucc-cta-aurora-glow"></div>
-                <div className="ucc-cta-crystal ucc-cta-crystal-1"></div>
-                <div className="ucc-cta-crystal ucc-cta-crystal-2"></div>
-                <div className="ucc-cta-crystal ucc-cta-crystal-3"></div>
-                <div className="ucc-cta-grid-lines"></div>
+                        <div className="mt-8 flex items-center justify-center gap-2 text-xs text-slate-600 bg-white border border-slate-200 py-3 px-5 rounded-full max-w-2xl mx-auto text-center shadow-2xs">
+                            <AlertCircle size={15} className="text-gold-600 shrink-0" />
+                            <span>{pageData.timing.footnote}</span>
+                        </div>
+                    </div>
+                </section>
 
-                <div className="ucc-cta-content">
-                    <div className="ucc-cta-compass-ring">
-                        <Compass size={28} />
-                    </div>
-                    <span className="ucc-cta-eyebrow">START SOMEWHERE REMARKABLE</span>
-                    <h2 className="ucc-cta-title">Ready to Find Your <br /> Perfect Uniworld Sailing?</h2>
-                    <div className="ucc-cta-bar"></div>
-                    <p className="ucc-cta-subtitle">
-                        Compare Uniworld itineraries, review current promotions, and choose the cruise that best fits your destination, travel style, and budget. Booking early can help secure preferred cabins and the most attractive fares.
-                    </p>
-                    <div className="ucc-cta-actions">
-                        <Link to="/contact" className="ucc-cta-primary-btn">
-                            <Phone size={18} />
-                            <span>Schedule a Consultation</span>
-                            <ArrowRight size={16} className="ucc-cta-btn-arrow" />
-                        </Link>
-                        <Link to="/uniworld-river-cruises" className="ucc-cta-secondary-btn">
-                            <LayoutList size={18} />
-                            <span>Explore Uniworld Itineraries</span>
-                        </Link>
-                    </div>
-                </div>
-            </section>
-            </div>
-        </>
-    )
+                {/* ─── SECTION 13: TIPS FOR BUDGETING YOUR CRUISE ─── */}
+                <FeatureSplit
+                    imagePosition="left"
+                    theme="white"
+                    image={budgetingScenicImg}
+                    title={pageData.budgeting.title}
+                    subtitles={[pageData.budgeting.lead]}
+                    features={pageData.budgeting.items}
+                    summary={pageData.budgeting.callout}
+                    ctaText="Plan with an Advisor"
+                    ctaLink="/contact"
+                />
+
+                {/* ─── INLINE CTA 2 ─── */}
+                <InlineCTA
+                    tag="Advisor Advantage"
+                    text="Our advisors have direct relationships with Uniworld to secure exclusive promotions, cabin upgrades, and onboard credits."
+                    btnText="Connect with Angela Hughes"
+                    btnLink="/contact"
+                />
+
+                {/* ─── SECTION 14: KEY TAKEAWAYS ─── */}
+                <ConclusionSection
+                    sections={[
+                        {
+                            heading: pageData.keyTakeaways.title,
+                            paragraphs: pageData.keyTakeaways.items
+                        }
+                    ]}
+                />
+
+                {/* ─── SECTION 15: INSIGHT FROM ANGELA HUGHES ─── */}
+                <ExpertCredentials
+                    name="Angela Hughes"
+                    title="CEO of Trips & Ships Luxury Travel & Founder of Luxury Travel University"
+                    badge={pageData.expertInsight.eyebrow}
+                    image={ProfilePictureAH}
+                    quote={pageData.expertInsight.quote}
+                    quoteSubtitle={pageData.expertInsight.title}
+                    bio={pageData.expertInsight.bio}
+                    credentials={pageData.expertInsight.priorities}
+                    ctaText="Schedule a Consultation"
+                    ctaLink="/contact"
+                />
+
+                {/* ─── SECTION 16: FREQUENTLY ASKED QUESTIONS ─── */}
+                <FAQAccordion
+                    data={{
+                        title: "Frequently Asked Questions",
+                        subtitle: "Everything you need to know about Uniworld River Cruise costs, pricing, and all-inclusive value.",
+                        faqs: pageData.faqs
+                    }}
+                />
+
+                {/* ─── SECTION 17: FINAL CTA ─── */}
+                <CenterCTA
+                    title={pageData.cta.title}
+                    description={pageData.cta.subtitle}
+                    buttonText={pageData.cta.primaryCtaText}
+                    buttonLink={pageData.cta.primaryCtaLink}
+                    image={ctaBgImg}
+                />
+            </main>
+
+            {/* Global Footer Navigation */}
+            <Navbar />
+        </div>
+    );
 }
 
-export default UniworldRiverCruiseCost
+export default UniworldRiverCruiseCost;

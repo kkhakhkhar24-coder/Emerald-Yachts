@@ -1,0 +1,339 @@
+{
+  "seo": {
+    "title": "How Much Does a Uniworld River Cruise Cost? | Pricing Guide",
+    "metaTitle": "How Much Does a Uniworld River Cruise Cost? | Pricing Guide",
+    "metaDescription": "Discover Uniworld River Cruise prices, what's included, average costs by itinerary, suite types, seasonal pricing, and tips to find the best deals.",
+    "canonicalUrl": "https://www.tripsandships.com/uniworld-river-cruises/cost-deals/",
+    "ogTitle": "How Much Does a Uniworld River Cruise Cost? | Pricing Guide",
+    "ogDescription": "Discover average prices, cabin options, inclusions, and tips for budgeting a Uniworld Boutique River Cruise.",
+    "keywords": "Uniworld River Cruise cost, Uniworld prices, all-inclusive river cruise fares, Uniworld deals, luxury river cruise budget, Uniworld pricing guide"
+  },
+  "hero": {
+    "badge": "UNIWORLD COST GUIDE",
+    "title": "How Much Does a Uniworld River Cruise Cost?",
+    "subtitle": "An honest breakdown of fares, suites, everyday inclusions, and out-of-pocket costs.",
+    "description": "Luxury river cruising is often associated with premium pricing, but understanding what you receive for the fare helps put the cost into perspective. Uniworld Boutique River Cruises is one of the most inclusive luxury river cruise lines, with fares covering accommodations, gourmet dining, premium beverages, daily excursions, gratuities, and many onboard amenities.",
+    "primaryCtaText": "Schedule a Consultation",
+    "primaryCtaLink": "/contact",
+    "secondaryCtaText": "Explore Uniworld Itineraries",
+    "secondaryCtaLink": "/uniworld-river-cruises"
+  },
+  "intro": {
+    "eyebrow": "EXCLUSIVE TRAVEL EXPERIENCE",
+    "heading": "How Much Does a Uniworld River Cruise Cost?",
+    "leadCard": "Luxury river cruising is often associated with premium pricing, but understanding what you receive for the fare helps put the cost into perspective. Uniworld Boutique River Cruises is one of the most inclusive luxury river cruise lines, with fares covering accommodations, gourmet dining, premium beverages, daily excursions, gratuities, and many onboard amenities.",
+    "badge": "Boutique Luxury"
+  },
+  "priceRange": {
+    "eyebrow": "ESTIMATED FARES",
+    "title": "Typical Uniworld River Cruise Price Range",
+    "intro": "Cruise fares vary significantly based on itinerary duration, destination, cabin category, and season. Below are average starting prices per person.",
+    "footnote": "Luxury suites, holiday sailings, and limited-capacity departures can exceed these ranges.",
+    "ranges": [
+      { "length": "7 Nights", "price": "$2,800–$6,000+", "label": "Avg. Price Range", "note": "Per Person / Double Occ." },
+      { "length": "8–10 Nights", "price": "$3,800–$7,500+", "label": "Avg. Price Range", "note": "Per Person / Double Occ." },
+      { "length": "11–14 Nights", "price": "$5,000–$10,000+", "label": "Avg. Price Range", "note": "Per Person / Double Occ." },
+      { "length": "Grand Voyages", "price": "$9,000–$18,000+", "label": "Avg. Price Range", "note": "Per Person / Double Occ." }
+    ]
+  },
+  "pricingFactors": {
+    "eyebrow": "PRICING FACTORS",
+    "title": "What Affects the Cost of a Uniworld River Cruise?",
+    "intro": "Several key factors determine the final fare of your Uniworld River Cruise. Select a factor to explore how it impacts pricing.",
+    "factors": [
+      {
+        "id": "destination",
+        "title": "Destination",
+        "text": "European itineraries generally offer the widest range of pricing, while more specialized destinations often command higher fares.",
+        "tags": [
+          "Danube River", "Rhine River", "Seine River", "Douro River", "Venice Lagoon",
+          "Burgundy & Provence", "Egypt (Nile)", "India (Ganges)", "Peru (Amazon)"
+        ],
+        "note": "Long-haul and exotic destinations usually cost more due to limited departures and higher operating expenses.",
+        "type": "tags"
+      },
+      {
+        "id": "duration",
+        "title": "Cruise Duration",
+        "text": "Longer itineraries naturally increase the total fare but often provide better value on a per-night basis.",
+        "list": [
+          { "title": "7-night cruises", "desc": "ideal for first-time travelers." },
+          { "title": "10–14-night itineraries", "desc": "allow deeper destination exploration." },
+          { "title": "Grand journeys", "desc": "combine multiple cruises for extended vacations." }
+        ],
+        "type": "list"
+      },
+      {
+        "id": "cabin",
+        "title": "Stateroom Category",
+        "text": "Cabin selection has a significant impact on pricing. From classic staterooms to royal suites:",
+        "rows": [
+          { "type": "Classic Stateroom", "level": "Lowest" },
+          { "type": "Deluxe Stateroom", "level": "Moderate" },
+          { "type": "French Balcony", "level": "Mid-High" },
+          { "type": "Balcony Suite", "level": "Premium" },
+          { "type": "Royal Suite", "level": "Luxury" }
+        ],
+        "note": "Higher-category accommodations typically include additional space, upgraded amenities, and enhanced services such as butler assistance.",
+        "type": "rows"
+      },
+      {
+        "id": "season",
+        "title": "Travel Season",
+        "text": "Pricing fluctuates throughout the year. Holiday cruises and Christmas Market sailings are usually among the most expensive.",
+        "seasons": [
+          { "season": "Early Spring", "pricing": "Lower", "low": true },
+          { "season": "Late Spring", "pricing": "High", "low": false },
+          { "season": "Summer", "pricing": "High", "low": false },
+          { "season": "Autumn", "pricing": "High", "low": false },
+          { "season": "Christmas Markets", "pricing": "Peak", "low": false },
+          { "season": "Winter (select itineraries)", "pricing": "Lower", "low": true }
+        ],
+        "type": "seasons"
+      }
+    ]
+  },
+  "inclusions": {
+    "eyebrow": "CRUISE FARE INCLUSIONS",
+    "title": "What Is Included in the Cruise Fare?",
+    "lead": "One reason Uniworld commands premium pricing is its extensive list of inclusions.",
+    "body": "Most fares include:",
+    "items": [
+      "Luxury accommodations",
+      "All meals",
+      "Fine dining experiences",
+      "Unlimited premium wines and spirits",
+      "Specialty coffee and beverages",
+      "Daily guided shore excursions",
+      "Complimentary Wi-Fi",
+      "Onboard gratuities",
+      "Entertainment",
+      "Fitness facilities",
+      "Concierge-level service",
+      "Airport transfers on eligible itineraries"
+    ],
+    "badge": "All-Inclusive Fare",
+    "callout": "Because many additional costs are already covered, travelers often spend less onboard than expected."
+  },
+  "extraCosts": {
+    "eyebrow": "BUDGET PLANNING",
+    "title": "Additional Costs to Budget For",
+    "intro": "Although Uniworld Boutique River Cruises is highly inclusive, certain out-of-pocket expenses may still apply when planning your trip.",
+    "items": [
+      { "expense": "International airfare", "always": true, "desc": "Flights to and from your cruise departure cities." },
+      { "expense": "Travel insurance", "always": true, "desc": "Essential protection for trip cancellation and medical coverage." },
+      { "expense": "Spa treatments", "always": true, "desc": "Onboard massages, facials, and wellness services." },
+      { "expense": "Personal shopping", "always": true, "desc": "Souvenirs, boutique purchases, and local goods." },
+      { "expense": "Passport & visa fees", "always": true, "desc": "Necessary international travel documentation." },
+      { "expense": "Independent private tours", "always": true, "desc": "Custom shore excursions organized independently." },
+      { "expense": "Pre/post-cruise hotels", "always": false, "desc": "Hotel stays before embarkation or after disembarkation." },
+      { "expense": "Optional premium experiences", "always": false, "desc": "Exclusive curated tours or premium tastings." }
+    ],
+    "footnote": "Take these additional travel expenses into consideration when drafting your final cruise budget."
+  },
+  "coupleCost": {
+    "eyebrow": "COUPLES PRICING",
+    "title": "Average Cost for Couples",
+    "intro": "Many travelers book as couples. Typical total cruise fares before airfare may range from:",
+    "items": [
+      { "length": "7 Nights", "price": "$5,600–$12,000+", "note": "Before airfare · Double Occ." },
+      { "length": "10 Nights", "price": "$7,600–$15,000+", "note": "Before airfare · Double Occ." },
+      { "length": "14 Nights", "price": "$10,000–$20,000+", "note": "Before airfare · Double Occ." }
+    ],
+    "footnote": "Prices vary depending on promotions, cabin selection, and departure date."
+  },
+  "valueAnalysis": {
+    "eyebrow": "IS IT WORTH THE PRICE?",
+    "title": "Are Uniworld River Cruises Worth the Price?",
+    "body": "Rather than comparing only the initial fare, many travelers evaluate the total vacation value. When all day-to-day luxuries are fully included, Uniworld offers highly competitive value in the luxury market.",
+    "quote": "When these inclusions are considered together, travelers often spend significantly less out-of-pocket onboard than on mainstream lines.",
+    "cardTitle": "What's Covered in Your Fare",
+    "cardSubtitle": "Included services that would typically cost extra on other cruises:",
+    "includedChips": [
+      "Unlimited premium drinks",
+      "Daily guided excursions",
+      "Fine dining",
+      "Gratuities",
+      "Luxury accommodations",
+      "Personalized service",
+      "Wi-Fi",
+      "Entertainment"
+    ]
+  },
+  "dealTips": {
+    "eyebrow": "SAVING STRATEGIES",
+    "title": "How to Find the Best Uniworld River Cruise Deals",
+    "intro": "Booking strategically can lead to significant savings.",
+    "strategies": [
+      {
+        "title": "Book Early",
+        "body": "Early reservations often provide:",
+        "items": ["Best cabin selection", "Promotional fares", "Reduced deposits", "Added onboard benefits"]
+      },
+      {
+        "title": "Watch for Seasonal Promotions",
+        "body": "Common offers may include:",
+        "items": ["Limited-time savings", "Complimentary airfare promotions", "Reduced single supplements", "Suite upgrades", "Included airfare credits", "Bonus travel credits"]
+      },
+      {
+        "title": "Consider Shoulder Season Travel",
+        "body": "Spring and late autumn departures often offer:",
+        "items": ["Lower prices", "Fewer crowds", "Comfortable weather", "Greater cabin availability"]
+      },
+      {
+        "title": "Travel with Flexible Dates",
+        "body": "Being flexible by even one or two weeks may reduce pricing considerably, especially outside major holiday periods.",
+        "items": []
+      }
+    ]
+  },
+  "comparison": {
+    "eyebrow": "HOW UNIWORLD COMPARES",
+    "title": "Comparing Uniworld with Other Luxury River Cruise Lines",
+    "intro": "Comparing included services rather than base fares provides a more accurate measure of overall value.",
+    "headers": ["Feature", "Uniworld", "Competitors"],
+    "rows": [
+      { "feature": "Premium beverages", "uniworld": "Included", "typical": "Often included" },
+      { "feature": "Shore excursions", "uniworld": "Included", "typical": "Included" },
+      { "feature": "Gratuities", "uniworld": "Included", "typical": "Sometimes extra" },
+      { "feature": "Butler service", "uniworld": "Select suites", "typical": "Limited" },
+      { "feature": "Luxury décor", "uniworld": "Boutique style", "typical": "Varies" },
+      { "feature": "Airport transfers", "uniworld": "Eligible sailings", "typical": "Varies" },
+      { "feature": "Overall inclusiveness", "uniworld": "Excellent", "typical": "Good–Excellent" }
+    ],
+    "footnote": "Uniworld's boutique model ensures a high ratio of all-inclusive features per sailing compared to the industry standard."
+  },
+  "timing": {
+    "eyebrow": "TIMING YOUR BOOKING",
+    "title": "When Is the Cheapest Time to Book?",
+    "intro": "Understanding seasonal pricing cycles can help you secure the best value.",
+    "items": [
+      "Early booking promotions",
+      "Shoulder season departures",
+      "Selected spring cruises",
+      "Late autumn itineraries",
+      "Limited-time promotional events"
+    ],
+    "footnote": "Holiday cruises, tulip season, and Christmas Market sailings generally command premium pricing due to strong demand."
+  },
+  "budgeting": {
+    "eyebrow": "PLAN AHEAD",
+    "title": "Tips for Budgeting Your Cruise",
+    "lead": "Before booking, consider budgeting for:",
+    "items": [
+      "Flights",
+      "Travel insurance",
+      "Hotel nights before embarkation",
+      "Transfers not included",
+      "Souvenirs",
+      "Spa services",
+      "Optional private excursions"
+    ],
+    "badge": "Smart Budgeting",
+    "callout": "A complete travel budget helps avoid unexpected expenses."
+  },
+  "keyTakeaways": {
+    "title": "Key Takeaways",
+    "items": [
+      "Uniworld River Cruise prices vary by destination, season, itinerary, and cabin category.",
+      "Seven-night cruises typically start around $2,800 per person.",
+      "Luxury suites and holiday departures carry premium pricing.",
+      "Most fares include dining, premium beverages, excursions, Wi-Fi, and gratuities.",
+      "Airfare, spa treatments, and travel insurance are generally extra.",
+      "Early booking and shoulder season travel often provide the best value.",
+      "Comparing inclusions—not just base fare—gives a better picture of overall cost.",
+      "Consulting an expert travel advisor helps secure exclusive promotions and benefits."
+    ]
+  },
+  "expertInsight": {
+    "eyebrow": "MEET THE CEO",
+    "badge": "EXPERT ADVISOR",
+    "title": "Insight from Angela Hughes",
+    "yearsExperience": "40+",
+    "yearsLabel": "Years Experience",
+    "countriesVisited": "121+",
+    "countriesLabel": "Countries Visited",
+    "quote": "When my clients compare Uniworld's pricing to a traditional luxury holiday, they quickly realize the math works in their favor. Once you factor in what's included, the per-day value is extraordinary.",
+    "prioritiesTitle": "Angela's Value Priorities Matrix:",
+    "priorities": [
+      "All-Inclusive Fares",
+      "Premium Cabin Selection",
+      "Early Booking Savings",
+      "Shoulder Season Value",
+      "Group Discounts",
+      "Solo Supplements"
+    ],
+    "bio": "As founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel, Angela Hughes uses her personal, deep connections in the river cruising world to deliver custom travel planning that regular booking engines simply cannot replicate."
+  },
+  "faqs": [
+    {
+      "question": "How much does a Uniworld River Cruise cost?",
+      "answer": "Most itineraries start around $2,800 per person, with luxury suites and longer cruises costing considerably more."
+    },
+    {
+      "question": "Are Uniworld cruises all-inclusive?",
+      "answer": "Yes. Most fares include accommodations, meals, beverages, excursions, Wi-Fi, and gratuities."
+    },
+    {
+      "question": "Why are Uniworld River Cruises expensive?",
+      "answer": "They include many luxury services that are charged separately on other vacations, including premium drinks, excursions, and gratuities."
+    },
+    {
+      "question": "What is the average price for a 7-night Uniworld cruise?",
+      "answer": "A typical 7-night itinerary ranges from approximately $2,800 to $6,000 or more per person."
+    },
+    {
+      "question": "Do prices include airfare?",
+      "answer": "Generally, airfare is not included unless part of a special promotion."
+    },
+    {
+      "question": "When are Uniworld cruises cheapest?",
+      "answer": "Early spring, late autumn, and promotional booking periods often offer the lowest fares."
+    },
+    {
+      "question": "Do prices include gratuities?",
+      "answer": "Yes. Onboard gratuities are generally included in the cruise fare."
+    },
+    {
+      "question": "Are shore excursions included?",
+      "answer": "Yes. Most daily guided excursions are included."
+    },
+    {
+      "question": "Does cabin type affect pricing?",
+      "answer": "Yes. Suites and balcony cabins cost significantly more than entry-level staterooms."
+    },
+    {
+      "question": "Are drinks included?",
+      "answer": "Yes. Premium wines, cocktails, beer, spirits, coffee, tea, and many soft drinks are typically included."
+    },
+    {
+      "question": "Are there discounts for early bookings?",
+      "answer": "Uniworld frequently offers early booking promotions, depending on the sailing and availability."
+    },
+    {
+      "question": "Is travel insurance included?",
+      "answer": "No. Travel insurance is generally purchased separately."
+    },
+    {
+      "question": "Can solo travelers find deals?",
+      "answer": "Occasionally. Selected departures feature reduced or waived single supplements."
+    },
+    {
+      "question": "Are Christmas Market cruises more expensive?",
+      "answer": "Yes. These popular seasonal departures often carry premium pricing."
+    },
+    {
+      "question": "Is a Uniworld River Cruise worth the cost?",
+      "answer": "For travelers seeking an upscale, highly inclusive vacation with exceptional service and immersive excursions, many consider Uniworld to offer strong overall value."
+    }
+  ],
+  "cta": {
+    "eyebrow": "START SOMEWHERE REMARKABLE",
+    "title": "Ready to Find Your Perfect Uniworld Sailing?",
+    "subtitle": "Compare Uniworld itineraries, review current promotions, and choose the cruise that best fits your destination, travel style, and budget. Booking early can help secure preferred cabins and the most attractive fares.",
+    "primaryCtaText": "Schedule a Consultation",
+    "primaryCtaLink": "/contact",
+    "secondaryCtaText": "Explore Uniworld Itineraries",
+    "secondaryCtaLink": "/uniworld-river-cruises"
+  }
+}
