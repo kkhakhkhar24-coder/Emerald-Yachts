@@ -1,0 +1,476 @@
+{
+  "seo": {
+    "title": "Uniworld Bordeaux River Cruises : Wine Country, Prices & Expert Guide",
+    "metaTitle": "Uniworld Bordeaux River Cruises | Luxury Bordeaux Cruise Guide",
+    "metaDescription": "Thinking about a Uniworld Bordeaux River Cruise? Discover the best wine itineraries, château visits, pricing, what's included, reviews, and whether a luxury Bordeaux cruise is worth it.",
+    "canonicalUrl": "https://www.tripsandships.com/uniworld-river-cruises/bordeaux",
+    "keywords": "Uniworld Bordeaux River Cruises, Bordeaux Wine River Cruise, S.S. Bon Voyage, Luxury French River Cruises, Saint-Émilion Wine Cruise, Médoc River Cruise, France River Cruises"
+  },
+  "hero": {
+    "tag": "Wine Country, Prices & Expert Guide",
+    "title": "Uniworld Bordeaux River Cruises",
+    "subtitle": "Explore France's Legendary Wine Country in Boutique Luxury",
+    "primaryCtaText": "Schedule a Consultation",
+    "primaryCtaLink": "/contact",
+    "secondaryCtaText": "Request Itinerary Options",
+    "secondaryCtaLink": "/contact"
+  },
+  "intro": {
+    "eyebrow": "EXPERT TRAVEL GUIDE",
+    "heading": "Uniworld Bordeaux River Cruises",
+    "leadParagraphs": [
+      "A Uniworld Bordeaux River Cruise is the perfect journey for travelers who appreciate fine wine, gourmet cuisine, beautiful countryside, and authentic French culture. Sailing through the Garonne, Dordogne, and Gironde rivers, you'll visit world-famous vineyards, UNESCO-listed villages, historic fortresses, and elegant French towns while enjoying Uniworld's signature boutique luxury. The popular Brilliant Bordeaux itinerary explores destinations including Bordeaux, Fort Médoc, Cadillac, Blaye, Libourne, and Saint-Émilion, with vineyard visits and wine tastings throughout the journey.",
+      "Whether you're touring prestigious wine estates, strolling through medieval villages, or dining on regional cuisine, every day offers unforgettable experiences."
+    ],
+    "quote": "The popular Brilliant Bordeaux itinerary explores destinations including Bordeaux, Fort Médoc, Cadillac, Blaye, Libourne, and Saint-Émilion, with vineyard visits and wine tastings throughout the journey.",
+    "badge": "Bordeaux Guide Summary"
+  },
+  "ratingSummary": {
+    "eyebrow": "⭐ OUR OVERALL RATING",
+    "title": "Our Overall Rating",
+    "score": "9.9/10",
+    "scoreLabel": "Overall Experience",
+    "ratings": [
+      {
+        "category": "Luxury",
+        "score": "5/5",
+        "rating": 5,
+        "stars": "⭐⭐⭐⭐⭐",
+        "description": "Boutique, museum-quality ships and French-inspired suites."
+      },
+      {
+        "category": "Dining",
+        "score": "5/5",
+        "rating": 5,
+        "stars": "⭐⭐⭐⭐⭐",
+        "description": "Farm-to-table culinary programs and fine regional French wines."
+      },
+      {
+        "category": "Wine Experiences",
+        "score": "5/5",
+        "rating": 5,
+        "stars": "⭐⭐⭐⭐⭐",
+        "description": "Private tastings at world-renowned châteaux and estates."
+      },
+      {
+        "category": "Excursions",
+        "score": "5/5",
+        "rating": 5,
+        "stars": "⭐⭐⭐⭐⭐",
+        "description": "Included guided tours to UNESCO sites and medieval villages."
+      },
+      {
+        "category": "Service",
+        "score": "5/5",
+        "rating": 5,
+        "stars": "⭐⭐⭐⭐⭐",
+        "description": "Intuitive butler service and personalized hospitality."
+      },
+      {
+        "category": "Scenic Beauty",
+        "score": "4/5",
+        "rating": 4,
+        "stars": "⭐⭐⭐⭐☆",
+        "description": "Picturesque vineyard landscapes and historic waterways."
+      },
+      {
+        "category": "Value",
+        "score": "4/5",
+        "rating": 4,
+        "stars": "⭐⭐⭐⭐☆",
+        "description": "All-inclusive luxury covering wine tastings and gratuities."
+      }
+    ]
+  },
+  "quickAnswer": {
+    "eyebrow": "FEATURED SNIPPET",
+    "title": "Is a Uniworld Bordeaux River Cruise Worth It?",
+    "text": "Yes. A Uniworld Bordeaux River Cruise is one of the best luxury vacations for wine lovers and culinary travelers. Nearly everything is included—from boutique accommodations and gourmet dining to premium wines, guided excursions, and exceptional personalized service. The itinerary is especially renowned for its vineyard experiences and Southwest France heritage."
+  },
+  "highlights": {
+    "eyebrow": "TRAVEL HIGHLIGHTS",
+    "heading": "Why Choose a Bordeaux River Cruise?",
+    "items": [
+      {
+        "title": "World-famous Bordeaux wine region",
+        "description": "World-famous Bordeaux wine region featuring legendary Grand Cru estates and centuries of viticulture."
+      },
+      {
+        "title": "Château wine tastings",
+        "description": "Exclusive private château wine tastings guided by knowledgeable regional sommeliers."
+      },
+      {
+        "title": "Saint-Émilion",
+        "description": "Explore the medieval cobblestones, monolithic church, and prestigious vineyards of Saint-Émilion."
+      },
+      {
+        "title": "Medieval villages",
+        "description": "Stroll picturesque fortified bastide towns and storybook stone villages."
+      },
+      {
+        "title": "UNESCO World Heritage Sites",
+        "description": "Marvel at Bordeaux's neoclassical riverfront architecture and Vauban's historic citadel."
+      },
+      {
+        "title": "French cuisine",
+        "description": "Indulge in authentic gourmet French cuisine paired with exquisite local vintages."
+      },
+      {
+        "title": "Historic fortresses",
+        "description": "Discover centuries of maritime and military history along the Gironde Estuary."
+      },
+      {
+        "title": "Boutique luxury cruising",
+        "description": "Experience S.S. Bon Voyage, designed with handcrafted French fabrics and antique art."
+      }
+    ]
+  },
+  "inlineCtas": [
+    {
+      "tag": "Expert Planning",
+      "text": "Ready to explore Bordeaux's vineyards in boutique luxury?",
+      "btnText": "Schedule a Consultation",
+      "btnLink": "/contact"
+    },
+    {
+      "tag": "Wine Country Escapes",
+      "text": "Want help choosing between Bordeaux, Saint-Émilion, and Médoc?",
+      "btnText": "Speak to a Cruise Advisor",
+      "btnLink": "/contact"
+    },
+    {
+      "tag": "Harvest Season",
+      "text": "Curious which season is right for your Bordeaux getaway?",
+      "btnText": "Schedule a Consultation",
+      "btnLink": "/contact"
+    },
+    {
+      "tag": "Book with Confidence",
+      "text": "Let our advisors handle every detail of your Bordeaux wine cruise.",
+      "btnText": "Speak to a Cruise Advisor",
+      "btnLink": "/contact"
+    }
+  ],
+  "included": {
+    "eyebrow": "ALL-INCLUSIVE VALUE",
+    "heading": "What's Included?",
+    "intro": "Most Uniworld Bordeaux River Cruises include:",
+    "items": [
+      "Boutique luxury accommodations",
+      "Gourmet French dining",
+      "Unlimited premium beverages",
+      "Guided excursions",
+      "Wine tastings",
+      "Complimentary Wi-Fi",
+      "Onboard gratuities",
+      "Evening entertainment",
+      "Airport transfers (select sailings)",
+      "Complimentary bicycles"
+    ]
+  },
+  "destinations": {
+    "eyebrow": "SOUTHWEST FRANCE",
+    "heading": "Top Destinations",
+    "items": [
+      {
+        "name": "Bordeaux",
+        "title": "Bordeaux",
+        "category": "UNESCO City of Wine",
+        "desc": "A UNESCO World Heritage city celebrated for elegant architecture, world-class wine, and vibrant riverside culture.",
+        "description": "A UNESCO World Heritage city celebrated for elegant architecture, world-class wine, and vibrant riverside culture."
+      },
+      {
+        "name": "Saint-Émilion",
+        "title": "Saint-Émilion",
+        "category": "Medieval Wine Village",
+        "desc": "One of France's most famous wine villages, known for vineyards, cobblestone streets, and historic wineries.",
+        "description": "One of France's most famous wine villages, known for vineyards, cobblestone streets, and historic wineries."
+      },
+      {
+        "name": "Libourne",
+        "title": "Libourne",
+        "category": "Riverside Bastide Town",
+        "desc": "A charming riverside town and gateway to Bordeaux's celebrated wine country.",
+        "description": "A charming riverside town and gateway to Bordeaux's celebrated wine country."
+      },
+      {
+        "name": "Blaye",
+        "title": "Blaye",
+        "category": "Historic Citadel",
+        "desc": "Home to the impressive UNESCO-listed Blaye Citadel overlooking the Gironde Estuary.",
+        "description": "Home to the impressive UNESCO-listed Blaye Citadel overlooking the Gironde Estuary."
+      },
+      {
+        "name": "Cadillac",
+        "title": "Cadillac",
+        "category": "Château & Countryside",
+        "desc": "Historic town surrounded by vineyards and beautiful countryside.",
+        "description": "Historic town surrounded by vineyards and beautiful countryside."
+      },
+      {
+        "name": "Médoc",
+        "title": "Médoc",
+        "category": "Prestigious Grand Cru",
+        "desc": "One of the world's most prestigious wine-producing regions, famous for exceptional château experiences.",
+        "description": "One of the world's most prestigious wine-producing regions, famous for exceptional château experiences."
+      }
+    ]
+  },
+  "accommodations": {
+    "eyebrow": "ACCOMMODATIONS",
+    "heading": "Luxury Accommodations",
+    "lead": "Every stateroom offers elegant European-inspired décor with premium amenities.",
+    "subheading": "Many suites include:",
+    "items": [
+      "Butler service",
+      "Marble bathrooms",
+      "French balconies",
+      "Luxury bedding",
+      "Spacious living areas"
+    ],
+    "summary": "Every stateroom on S.S. Bon Voyage features handcrafted French furnishings, marble baths, French balconies, and luxury bedding."
+  },
+  "dining": {
+    "eyebrow": "CULINARY EXCELLENCE",
+    "heading": "Dining Onboard",
+    "lead": "Dining showcases the best of Southwest France.",
+    "subheading": "Guests enjoy:",
+    "items": [
+      "Regional French cuisine",
+      "Bordeaux wines",
+      "Gourmet multi-course dinners",
+      "Fresh local ingredients",
+      "Artisan cheeses",
+      "Farm-to-table specialties"
+    ],
+    "summary": "Onboard dining highlights regional French cuisine, local Bordeaux wine pairings, fresh seasonal ingredients, and farm-to-table menus."
+  },
+  "seasons": {
+    "eyebrow": "SEASONAL GUIDE",
+    "heading": "Best Time to Cruise Bordeaux",
+    "cards": [
+      {
+        "title": "Spring",
+        "name": "Spring",
+        "icon": "Leaf",
+        "description": "Beautiful vineyards begin to bloom with mild weather."
+      },
+      {
+        "title": "Summer",
+        "name": "Summer",
+        "icon": "Sun",
+        "description": "Long days perfect for wine tastings and outdoor dining."
+      },
+      {
+        "title": "Fall",
+        "name": "Fall",
+        "icon": "Grape",
+        "description": "Harvest season offers the ultimate Bordeaux wine experience."
+      },
+      {
+        "title": "Winter",
+        "name": "Winter",
+        "icon": "Snowflake",
+        "description": "Quieter travel with festive holiday charm."
+      }
+    ]
+  },
+  "worthIt": {
+    "eyebrow": "VALUE ANALYSIS",
+    "heading": "Is It Worth the Money?",
+    "paragraphs": [
+      "Although Uniworld is positioned as a luxury river cruise line, many travelers find exceptional value in its all-inclusive experience. Gourmet dining, premium wines, guided excursions, gratuities, and personalized service are included, making it one of the most complete ways to explore Bordeaux's wine country."
+    ]
+  },
+  "prosCons": {
+    "heading": "Pros & Cons",
+    "prosTitle": "What We Love (Pros)",
+    "consTitle": "Things to Consider (Cons)",
+    "pros": [
+      "Exceptional wine experiences",
+      "Gourmet French cuisine",
+      "Boutique luxury ships",
+      "Outstanding service",
+      "Beautiful vineyard scenery",
+      "Excellent included excursions"
+    ],
+    "cons": [
+      "Premium pricing",
+      "Popular departures sell out early",
+      "Limited suite availability",
+      "More traditional decor (may not appeal to minimalists)",
+      "Smaller fitness and wellness facilities",
+      "Fewer onboard activities compared to ocean liners"
+    ]
+  },
+  "audience": {
+    "heading": "Who Should Book?",
+    "whoShouldTitle": "Perfect for:",
+    "whoPreferTitle": "May Prefer Alternative Itineraries:",
+    "whoShould": [
+      "Wine enthusiasts",
+      "Food lovers",
+      "Couples",
+      "Luxury travelers",
+      "Anniversary celebrations",
+      "France first-time visitors",
+      "Cultural travelers",
+      "Photography enthusiasts"
+    ],
+    "whoPrefer": [
+      "Travelers seeking high-energy resort-style mega ships",
+      "Ultra-minimalist modern design purists",
+      "Budget travelers seeking unbundled a la carte fares"
+    ]
+  },
+  "planningTips": {
+    "eyebrow": "BEFORE YOU BOOK",
+    "heading": "Planning Tips",
+    "steps": [
+      {
+        "title": "Advance Booking",
+        "description": "Book 9–18 months in advance."
+      },
+      {
+        "title": "Target Harvest Season",
+        "description": "Fall is ideal for vineyard harvest season."
+      },
+      {
+        "title": "Select a Premium Stateroom",
+        "description": "Reserve a French Balcony or Suite."
+      },
+      {
+        "title": "Extend in Bordeaux",
+        "description": "Extend your stay in Bordeaux."
+      },
+      {
+        "title": "Pack for Wineries",
+        "description": "Bring comfortable shoes for winery and village walking tours."
+      }
+    ]
+  },
+  "whyBook": {
+    "eyebrow": "PLANNING ADVANTAGE",
+    "heading": "Why Book with Trips & Ships Luxury Travel?",
+    "lead": "Our luxury travel advisors help you:",
+    "items": [
+      {
+        "title": "Compare Bordeaux Itineraries",
+        "description": "Compare Bordeaux itineraries to match your travel preferences and wine interests.",
+        "icon": "map"
+      },
+      {
+        "title": "Select the Best Suite",
+        "description": "Select the best suite category aboard S.S. Bon Voyage.",
+        "icon": "ship"
+      },
+      {
+        "title": "Arrange Flights and Hotels",
+        "description": "Arrange flights and luxury hotels around your cruise dates.",
+        "icon": "check"
+      },
+      {
+        "title": "Secure Exclusive Promotions",
+        "description": "Secure exclusive promotions unavailable when booking direct.",
+        "icon": "dollar"
+      },
+      {
+        "title": "Customize Pre- & Post-Cruise Stays",
+        "description": "Customize pre- and post-cruise stays in Paris, Bordeaux, or the French countryside.",
+        "icon": "user"
+      },
+      {
+        "title": "Coordinate Transfers",
+        "description": "Coordinate transfers between airports, train stations, and the ship.",
+        "icon": "ship"
+      },
+      {
+        "title": "Concierge-Level Service Throughout Your Journey",
+        "description": "Provide concierge-level service throughout your entire luxury river cruise vacation.",
+        "icon": "check"
+      }
+    ]
+  },
+  "recommendation": {
+    "eyebrow": "OUR RECOMMENDATION",
+    "heading": "Our Recommendation",
+    "stars": "⭐⭐⭐⭐⭐",
+    "paragraphs": [
+      "A Uniworld Bordeaux River Cruise is one of the finest luxury wine vacations in Europe. Combining prestigious vineyards, charming French villages, exceptional cuisine, and boutique river cruising, it delivers an unforgettable journey through one of the world's most celebrated wine regions."
+    ]
+  },
+  "expert": {
+    "eyebrow": "Expert Insight from Angela Hughes",
+    "title": "Why Discerning Travelers Choose Uniworld River Cruises",
+    "lead": "According to Angela Hughes, many travelers are initially drawn to Uniworld for its extraordinary boutique ships — but ultimately stay loyal because of the warmth of service, the depth of cultural immersion, and a level of all-inclusive luxury that few river cruise lines can match.",
+    "bio": "As founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel, Angela Hughes helps travelers navigate the luxury river cruise landscape with honesty and real-world expertise — ensuring every client finds the right ship, the right itinerary, and the right experience for their lifestyle.",
+    "priorities": [
+      "Boutique, museum-quality ships",
+      "Truly all-inclusive luxury",
+      "Butler service in select suites",
+      "Gourmet farm-to-table dining",
+      "Intimate, destination-rich itineraries",
+      "Personalized, warm onboard service"
+    ],
+    "ctaText": "Plan with Angela Hughes",
+    "ctaLink": "/contact"
+  },
+  "faqs": [
+    {
+      "question": "1. Is a Uniworld Bordeaux River Cruise worth the money?",
+      "answer": "Yes. It offers exceptional value through luxury accommodations, gourmet dining, premium wines, guided excursions, gratuities, and personalized service."
+    },
+    {
+      "question": "2. What is included on a Bordeaux River Cruise?",
+      "answer": "Luxury accommodations, gourmet dining, unlimited premium beverages, guided excursions, Wi-Fi, gratuities, entertainment, and wine-focused experiences are generally included."
+    },
+    {
+      "question": "3. Which rivers does the cruise sail?",
+      "answer": "Most Bordeaux itineraries sail the Garonne, Dordogne, and Gironde waterways while exploring Southwest France."
+    },
+    {
+      "question": "4. Is this cruise good for wine lovers?",
+      "answer": "Absolutely. Bordeaux is one of the world's most famous wine destinations, with visits to renowned vineyards and château estates."
+    },
+    {
+      "question": "5. When is the best time to cruise Bordeaux?",
+      "answer": "Spring and fall are excellent, while fall harvest season is especially popular."
+    },
+    {
+      "question": "6. Are wine tastings included?",
+      "answer": "Yes. Many guided excursions include wine tastings at renowned vineyards and château estates."
+    },
+    {
+      "question": "7. Are drinks included?",
+      "answer": "Yes. Premium wines, beer, spirits, specialty coffee, soft drinks, and bottled water are generally included."
+    },
+    {
+      "question": "8. Does Uniworld include gratuities?",
+      "answer": "Yes. Onboard gratuities are included on most Uniworld river cruises."
+    },
+    {
+      "question": "9. Is Wi-Fi included?",
+      "answer": "Yes. Complimentary Wi-Fi is available throughout the ship."
+    },
+    {
+      "question": "10. Which destinations are most popular?",
+      "answer": "Bordeaux, Saint-Émilion, Médoc, Libourne, Blaye, and Cadillac are among the itinerary highlights."
+    },
+    {
+      "question": "11. Who should choose this itinerary?",
+      "answer": "Wine enthusiasts, couples, food lovers, luxury travelers, photographers, and anyone wanting to explore France's most famous wine region."
+    },
+    {
+      "question": "12. Why book with Trips & Ships Luxury Travel?",
+      "answer": "Our advisors provide expert recommendations, exclusive offers, personalized planning, and concierge-level service before, during, and after your luxury river cruise."
+    }
+  ],
+  "cta": {
+    "heading": "Ready to Plan Your Uniworld Bordeaux River Cruise?",
+    "text": "Contact our luxury cruise consultants to lock in extra credits, suite upgrades, and personalized transfers. We plan details so you can enjoy the trip.",
+    "primaryBtn": "Schedule a Consultation",
+    "primaryBtnLink": "/contact",
+    "secondaryBtn": "Request Itinerary Options",
+    "secondaryBtnLink": "/contact"
+  }
+}

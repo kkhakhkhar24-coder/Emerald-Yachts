@@ -24,81 +24,113 @@ import AuthorityGrid from '../../components/ui/AuthorityGrid'
 import ExpertCredentials from '../../components/ui/ExpertCredentials'
 import FAQAccordion from '../../components/ui/FAQAccordion'
 
-// Media Assets
-import ProfilePictureAH from '../../assets/Media (2).jpg'
-// import exteriorShipImg from '../../assets/VikingVsUniworld/Exterior_2026-04-13_19-02-40.jpg'
-// import budapestImg from '../../assets/VikingVsUniworld/Budapest, Hungary_2026-04-13_18-46-22.jpg'
-// import suiteImg1 from '../../assets/VikingVsUniworld/Explorer Suite - Living Room_2026-04-13_18-47-55.jpg'
-// import suiteImg2 from '../../assets/VikingVsUniworld/French Balcony Stateroom_2026-04-13_18-46-43.jpg'
-// import diningImg from '../../assets/VikingVsUniworld/Chef_s Table_2026-04-13_18-47-48.jpg'
-// import amsterdamImg from '../../assets/VikingVsUniworld/Amsterdam, The Netherlands_2026-04-13_18-45-31.jpg'
-// import cochemImg from '../../assets/VikingVsUniworld/Cochem, Germany_2026-04-13_18-46-29.jpg'
+// Media Assets - Profile
+import Profile_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
+
+// Media Assets - UniworldRiverCruisesReview
+import heroBgImg from '../../assets/UniworldRiverCruisesReview/uniworld-ss-elisabeth-luxury-super-ship-rhine-waterway.webp'
+import introPrimaryImg from '../../assets/UniworldRiverCruisesReview/uniworld-ss-maria-theresa-baroque-habsburg-salon-lounge.webp'
+import introSecondaryImg from '../../assets/UniworldRiverCruisesReview/uniworld-ss-emilie-dining-room-banquette-seating.webp'
+
+// Recommended Ships
+import shipJoieDeVivreImg from '../../assets/UniworldRiverCruisesReview/uniworld-ss-joie-de-vivre-exterior-seine-river-france.webp'
+import shipBeatriceImg from '../../assets/UniworldRiverCruisesReview/uniworld-ss-beatrice-sun-deck-lounge-danube-river.webp'
+import shipMariaTheresaImg from '../../assets/UniworldRiverCruisesReview/uniworld-ss-maria-theresa-exterior-danube-river-cruise.webp'
+import shipLaVeneziaImg from '../../assets/UniworldRiverCruisesReview/uniworld-ss-la-venezia-sundeck-panoramic-venice-view.webp'
+import shipRiverDuchessImg from '../../assets/UniworldRiverCruisesReview/uniworld-river-duchess-exterior-docked-hoorn-netherlands.webp'
+
+// Cabins & Suites
+import cabinClassicImg from '../../assets/UniworldRiverCruisesReview/uniworld-classic-river-stateroom-cabin-rendering.jpeg'
+import cabinFrenchBalconyImg from '../../assets/UniworldRiverCruisesReview/uniworld-french-balcony-stateroom-interior-rendering.webp'
+import cabinSuitesImg from '../../assets/UniworldRiverCruisesReview/uniworld-presidential-royal-suite-bedroom-rendering.jpeg'
+
+// Pricing Analysis
+import pricingImg from '../../assets/UniworldRiverCruisesReview/uniworld-luxury-super-ship-fine-dining-restaurant-rendering.jpeg'
+
+// Final CTA
+import ctaBgImg from '../../assets/UniworldRiverCruisesReview/uniworld-river-queen-cruising-scenic-moselle-river.webp'
 
 function UniworldRiverCruisesReview() {
-    // Structured Data Schema
+    // 6-Entity Structured Data Schema matching RitzCarltonYachtCollectionCost benchmark
     const urcrSchemaData = {
         "@context": "https://schema.org",
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsandships.com/uniworld-river-cruises-review",
-                "name": pageData.seo.title,
+                "@id": `${pageData.seo.canonicalUrl}#webpage`,
                 "url": pageData.seo.canonicalUrl,
+                "name": pageData.seo.metaTitle,
+                "headline": pageData.seo.title,
                 "description": pageData.seo.metaDescription,
                 "inLanguage": "en-US",
+                "primaryImageOfPage": {
+                    "@type": "ImageObject",
+                    "url": "https://www.tripsandships.com/images/uniworld-river-cruises-review.jpg",
+                    "caption": "Uniworld River Cruises Review"
+                },
+                "image": "https://www.tripsandships.com/images/uniworld-river-cruises-review.jpg",
+                "author": {
+                    "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
+                },
                 "publisher": {
                     "@id": "https://www.tripsandships.com/#organization"
                 },
-                "mainEntity": {
-                    "@type": "Article",
-                    "@id": "https://www.tripsandships.com/uniworld-river-cruises-review#article"
+                "isPartOf": {
+                    "@id": "https://www.tripsandships.com/#website"
                 }
             },
             {
                 "@type": "Organization",
                 "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsandships.com"
+                "url": "https://www.tripsandships.com/",
+                "founder": {
+                    "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
+                }
             },
             {
                 "@type": "TravelAgency",
                 "@id": "https://www.tripsandships.com/#travelagency",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsandships.com",
-                "description": "Luxury travel agency specializing in luxury cruises, river cruises, expedition cruises, yacht cruises, and personalized travel planning."
+                "url": "https://www.tripsandships.com/",
+                "description": "Luxury travel agency specializing in luxury cruises, river cruises, expedition cruises, yacht cruises, and personalized travel planning.",
+                "parentOrganization": {
+                    "@id": "https://www.tripsandships.com/#organization"
+                }
             },
             {
                 "@type": "Person",
-                "@id": "https://www.tripsandships.com/#angela-hughes",
+                "@id": "https://www.tripsandships.com/about-angela-hughes/#person",
                 "name": "Angela Hughes",
-                "jobTitle": "CEO",
+                "jobTitle": "CEO of Trips & Ships Luxury Travel",
+                "url": "https://www.tripsandships.com/about-angela-hughes",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "https://www.tripsandships.com/assets/Angela_Hughes.jpg",
+                    "caption": "Angela Hughes - Luxury River Cruise Specialist"
+                },
+                "description": "Angela Hughes is a luxury travel expert with over 40 years of experience, having traveled to 121+ countries, specializing in luxury cruises and river cruises.",
                 "worksFor": {
                     "@id": "https://www.tripsandships.com/#organization"
                 },
-                "description": "Angela Hughes is a luxury travel expert with over 40 years of experience, having traveled to 121+ countries, specializing in luxury cruises and river cruises."
-            },
-            {
-                "@type": "Article",
-                "@id": "https://www.tripsandships.com/uniworld-river-cruises-review#article",
-                "headline": pageData.seo.title,
-                "description": pageData.seo.metaDescription,
-                "author": {
-                    "@id": "https://www.tripsandships.com/#angela-hughes"
-                },
-                "publisher": {
-                    "@id": "https://www.tripsandships.com/#organization"
-                },
-                "mainEntityOfPage": pageData.seo.canonicalUrl,
-                "inLanguage": "en-US"
+                "knowsAbout": [
+                    "Luxury Travel",
+                    "Luxury River Cruises",
+                    "European River Cruising",
+                    "Uniworld Boutique River Cruises",
+                    "All-Inclusive Luxury Cruises",
+                    "World River Itineraries"
+                ]
             },
             {
                 "@type": "BreadcrumbList",
+                "@id": `${pageData.seo.canonicalUrl}#breadcrumb`,
                 "itemListElement": [
                     {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://www.tripsandships.com"
+                        "item": "https://www.tripsandships.com/"
                     },
                     {
                         "@type": "ListItem",
@@ -116,6 +148,7 @@ function UniworldRiverCruisesReview() {
             },
             {
                 "@type": "FAQPage",
+                "@id": `${pageData.seo.canonicalUrl}#faq`,
                 "mainEntity": pageData.faqs.map(faq => ({
                     "@type": "Question",
                     "name": faq.question,
@@ -127,6 +160,27 @@ function UniworldRiverCruisesReview() {
             }
         ]
     }
+
+    // Map recommended ships with 100% heading-matched assets
+    const shipImages = [
+        shipJoieDeVivreImg,    // S.S. Joie de Vivre
+        shipBeatriceImg,       // S.S. Beatrice
+        shipMariaTheresaImg,   // S.S. Maria Theresa
+        shipLaVeneziaImg,      // S.S. La Venezia
+        shipRiverDuchessImg    // River Duchess
+    ]
+
+    const recommendedShipItems = pageData.recommendedShips.items.map((item, idx) => ({
+        ...item,
+        image: shipImages[idx]
+    }))
+
+    // Cabin showcase image array
+    const cabinImages = [
+        cabinClassicImg,
+        cabinFrenchBalconyImg,
+        cabinSuitesImg
+    ]
 
     return (
         <div className="bg-white min-h-screen text-slate-800 selection:bg-gold-500 selection:text-white">
@@ -151,7 +205,7 @@ function UniworldRiverCruisesReview() {
                 primaryCtaLink={pageData.hero.primaryCtaLink}
                 secondaryCtaText={pageData.hero.secondaryCtaText}
                 secondaryCtaLink={pageData.hero.secondaryCtaLink}
-                /* backgroundImage={exteriorShipImg} */
+                backgroundImage={heroBgImg}
             />
 
             {/* 2. EDITORIAL INTRO & QUICK ANSWER */}
@@ -159,8 +213,8 @@ function UniworldRiverCruisesReview() {
                 eyebrow={pageData.intro.eyebrow}
                 heading={pageData.intro.heading}
                 paragraphs={pageData.intro.paragraphs}
-                /* primaryImage={budapestImg} */
-                /* secondaryImage={diningImg} */
+                primaryImage={introPrimaryImg}
+                secondaryImage={introSecondaryImg}
             />
 
             {/* 3. REVIEW SNAPSHOT & SUMMARY */}
@@ -197,7 +251,7 @@ function UniworldRiverCruisesReview() {
             <ThreeColumnGrid
                 title={pageData.recommendedShips.title}
                 subtitle={pageData.recommendedShips.subtitle}
-                items={pageData.recommendedShips.items}
+                items={recommendedShipItems}
             />
 
             {/* 8. CABINS & SUITES ACCOMMODATIONS */}
@@ -214,7 +268,7 @@ function UniworldRiverCruisesReview() {
                         bestFor: c.bestFor
                     }))
                 }}
-                /* images={[suiteImg1, suiteImg2, exteriorShipImg]} */
+                images={cabinImages}
             />
 
             {/* 9. DINING REVIEW */}
@@ -245,7 +299,7 @@ function UniworldRiverCruisesReview() {
                 heading={pageData.pricing.heading}
                 description={pageData.pricing.description}
                 highlights={pageData.pricing.highlights}
-                /* image={amsterdamImg} */
+                image={pricingImg}
             />
 
             {/* 13. INLINE CONSULTATION CTA 2 */}
@@ -287,7 +341,7 @@ function UniworldRiverCruisesReview() {
 
             {/* 18. EXPERT CREDENTIALS (ANGELA HUGHES) */}
             <ExpertCredentials
-                image={ProfilePictureAH}
+                image={Profile_AH}
                 name={pageData.expertCredentials.name}
                 title={pageData.expertCredentials.title}
                 badge={pageData.expertCredentials.badge}
@@ -314,7 +368,7 @@ function UniworldRiverCruisesReview() {
                 description={pageData.cta.description}
                 buttonText={pageData.cta.buttonText}
                 buttonLink={pageData.cta.buttonLink}
-                /* image={cochemImg} */
+                image={ctaBgImg}
                 theme="dark"
             />
         </div>

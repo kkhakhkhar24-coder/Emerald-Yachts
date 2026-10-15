@@ -1,914 +1,483 @@
-import Navbar from '../../components/Navbar/Navbar'
-import './UniworldShipsSuites.css'
-import { Helmet } from 'react-helmet-async'
-import { useState, useEffect } from 'react'
-import { Link } from 'react-router'
-import Profile_Picture_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
-import {
-    Ship, MapPin, Star, Clock, Users, CheckCircle,
-    ArrowRight, Compass, Sparkles, Anchor, Gem, Crown,
-    ChevronRight, Phone, Heart, Utensils, Sun, Award,
-    BookOpen, Eye, Globe, Info, BedDouble, Ruler,
-    Coffee, Dumbbell, ShoppingBag, Wifi, Armchair,
-    Accessibility, Search, ConciergeBell, Wallet, DoorOpen, Image
-} from 'lucide-react'
+import React from 'react';
+import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router';
+import { ChevronRight } from 'lucide-react';
+import Navbar from '@/components/Navbar/Navbar';
 
-const fleet = [
-    { ship: 'S.S. Joie de Vivre', region: 'Seine, France' },
-    { ship: 'S.S. Bon Voyage', region: 'Bordeaux' },
-    { ship: 'S.S. Beatrice', region: 'Danube' },
-    { ship: 'S.S. Maria Theresa', region: 'Danube' },
-    { ship: 'S.S. Antoinette', region: 'Rhine' },
-    { ship: 'S.S. São Gabriel', region: 'Douro' },
-    { ship: 'S.S. La Venezia', region: 'Venice Lagoon' },
-    { ship: 'River Queen', region: 'Rhine' },
-    { ship: 'River Princess', region: 'European Rivers' },
-    { ship: 'River Duchess', region: 'Rhine & Danube' }
-]
+// Page Data JSON
+import pageData from './data.json';
 
-const boutiqueItems = [
-    'Handcrafted furniture',
-    'Original artwork',
-    'Antique-inspired décor',
-    'Marble finishes',
-    'Crystal chandeliers',
-    'Designer fabrics',
-    'Destination-inspired public spaces'
-]
+// Shared UI System Components (100% Component-Based Architecture)
+import ComparisonHero from '@/components/ui/ComparisonHero';
+import EditorialIntroSplit from '@/components/ui/EditorialIntroSplit';
+import AuthorityBox from '@/components/ui/AuthorityBox';
+import FeatureSplit from '@/components/ui/FeatureSplit';
+import CardGrid from '@/components/ui/CardGrid';
+import CurvilinearGrid from '@/components/ui/CurvilinearGrid';
+import LuxuryCruiseComparisonTable from '@/components/ui/LuxuryCruiseComparisonTable';
+import StepByStepGuide from '@/components/ui/StepByStepGuide';
+import ThreeColumnGrid from '@/components/ui/ThreeColumnGrid';
+import ConclusionSection from '@/components/ui/ConclusionSection';
+import ExpertCredentials from '@/components/ui/ExpertCredentials';
+import FAQAccordion from '@/components/ui/FAQAccordion';
+import CenterCTA from '@/components/ui/CenterCTA';
 
-const cabinSections = [
-    {
-        id: 'classic',
-        Icon: BedDouble,
-        title: 'Classic Staterooms',
-        body: 'Ideal for travelers seeking luxury without upgrading to premium suites.',
-        items: ['Premium bedding', 'Marble bathroom', 'Flat-screen television', 'Climate control', 'Luxury bath amenities', 'Hair dryer', 'Safe', 'Daily housekeeping']
-    },
-    {
-        id: 'deluxe',
-        Icon: Ruler,
-        title: 'Deluxe Staterooms',
-        body: 'Deluxe rooms typically offer:',
-        items: ['Larger floor plans', 'Better deck locations', 'Enhanced views', 'Additional seating area', 'Upgraded décor']
-    },
-    {
-        id: 'french-balcony',
-        Icon: Sun,
-        title: 'French Balcony Rooms',
-        body: 'Many guests prefer French Balcony accommodations because they provide expansive river views.',
-        items: ['Floor-to-ceiling glass doors', 'Fresh air access', 'Panoramic scenery', 'Bright natural lighting'],
-        note: 'These cabins are especially popular on European itineraries.'
-    }
-]
+// Media Assets from @/assets and isolated @/assets/UniworldShipsSuites
+import ProfilePictureAH from '@/assets/Media (2).jpg';
+import quickAnswerImg from '@/assets/Media (1).jpg';
+import heroBgImg from '@/assets/UniworldShipsSuites/uniworld-river-princess-sailing-scenic-danube-river.webp';
+import introPrimaryImg from '@/assets/UniworldShipsSuites/uniworld-river-duchess-exterior-docked-hoorn-netherlands.webp';
+import introSecondaryImg from '@/assets/UniworldShipsSuites/uniworld-ss-catherine-deluxe-balcony-suite-rhone.webp';
+import designImg from '@/assets/UniworldShipsSuites/uniworld-boutique-ship-restaurant-interior-rendering.webp';
+import suiteImg from '@/assets/UniworldShipsSuites/uniworld-ss-clara-grand-suite-living-room-rendering.webp';
+import butlerImg from '@/assets/UniworldShipsSuites/uniworld-ss-emilie-presidential-suite-sitting-lounge-area.webp';
+import accessImg from '@/assets/UniworldShipsSuites/uniworld-classic-river-stateroom-cabin-rendering.jpeg';
+import shipAmenitiesImg from '@/assets/UniworldShipsSuites/uniworld-ss-sao-gabriel-douro-restaurant-dinner-setting.webp';
+import ctaBgImg from '@/assets/UniworldShipsSuites/uniworld-ss-bon-voyage-twilight-harbor-reflections.webp';
 
-const suiteItems = [
-    'Separate sitting areas',
-    'Larger bathrooms',
-    'Walk-in wardrobes',
-    'Butler service',
-    'Complimentary laundry (select categories)',
-    'Fresh fruit delivery',
-    'Premium minibar',
-    'Priority services',
-    'Enhanced room amenities'
-]
+// Visual Showcase gallery images
+import rec1Img from '@/assets/UniworldShipsSuites/uniworld-ss-beatrice-open-air-sundeck-terrace-seating.webp';
+import rec2Img from '@/assets/UniworldShipsSuites/uniworld-ss-emilie-deluxe-suite-french-balcony-view.webp';
+import rec3Img from '@/assets/UniworldShipsSuites/uniworld-ss-clara-grand-suite-bedroom-rendering.webp';
+import rec4Img from '@/assets/UniworldShipsSuites/uniworld-ss-clara-stateroom-marble-bathroom-rendering.webp';
+import rec5Img from '@/assets/UniworldShipsSuites/uniworld-ss-la-venezia-sun-deck-canopy-loungers.webp';
+import rec6Img from '@/assets/UniworldShipsSuites/uniworld-presidential-observation-lounge-rendering.jpeg';
 
-const butlerItems = [
-    'Unpacking and packing assistance',
-    'Beverage service',
-    'Shoe shining',
-    'Dining reservations',
-    'Laundry coordination',
-    'Personalized requests',
-    'Suite preparation'
-]
+const galleryImages = [rec1Img, rec2Img, rec3Img, rec4Img, rec5Img, rec6Img];
 
-const amenityItems = [
-    { label: 'Main restaurant', Icon: Utensils },
-    { label: 'Lounge and bar', Icon: Coffee },
-    { label: 'Sun deck', Icon: Sun },
-    { label: 'Fitness center', Icon: Dumbbell },
-    { label: 'Library', Icon: BookOpen },
-    { label: 'Boutique shop', Icon: ShoppingBag },
-    { label: 'Complimentary Wi-Fi', Icon: Wifi },
-    { label: 'Reception services', Icon: ConciergeBell },
-    { label: 'Outdoor seating areas', Icon: Armchair }
-]
-
-const cabinComparison = [
-    ['Premium Bedding', '✓', '✓', '✓', '✓'],
-    ['Marble Bathroom', '✓', '✓', '✓', '✓'],
-    ['Scenic Views', 'Good', 'Better', 'Excellent', 'Excellent'],
-    ['Balcony Access', 'No', 'No', 'French Balcony', 'Varies'],
-    ['Butler Service', 'No', 'No', 'No', 'Select Suites'],
-    ['Largest Living Space', 'No', 'No', 'Moderate', 'Yes']
-]
-
-const chooseBlocks = [
-    {
-        Icon: Wallet,
-        label: 'Classic Stateroom',
-        title: 'Best for value',
-        intro: 'Choose a Classic Stateroom if you:',
-        items: ['Spend most of your time exploring destinations.', 'Prefer value over extra space.', 'Want luxury at the lowest available fare.']
-    },
-    {
-        Icon: Eye,
-        label: 'French Balcony Room',
-        title: 'Best for views',
-        intro: 'Choose a French Balcony Room if you:',
-        items: ['Love scenic river views.', 'Enjoy natural light.', 'Spend more time relaxing in your cabin.']
-    },
-    {
-        Icon: Crown,
-        label: 'Suite',
-        title: 'Best for extra service',
-        intro: 'Choose a Suite if you:',
-        items: ['Celebrate a honeymoon or anniversary.', 'Want additional space.', 'Appreciate personalized butler service.', 'Plan to spend significant time onboard.']
-    }
-]
-
-const accessibilityItems = [
-    'Wider doorways',
-    'Accessible bathrooms',
-    'Elevator access',
-    'Assistance from onboard staff'
-]
-
-const shipAmenityItems = [
-    'Gourmet dining',
-    'Premium beverages',
-    'Included excursions',
-    'Destination lectures',
-    'Local entertainment',
-    'Wellness programs',
-    'Cultural experiences',
-    'Concierge assistance'
-]
-
-const tipsItems = [
-    'Destination and itinerary',
-    'Ship size',
-    'Deck location',
-    'Suite availability',
-    'Balcony preference',
-    'Travel season',
-    'Included amenities',
-    'Mobility requirements'
-]
-
-const keywordChips = [
-    'luxury river cruise suites',
-    'boutique cruise accommodations',
-    'premium river cruise cabins',
-    'French balcony staterooms',
-    'luxury river ship interiors',
-    'boutique hotel on water',
-    'luxury cruise rooms',
-    'European river cruise cabins',
-    'butler service suites',
-    'river cruise fleet'
-]
-
-const eeatItems = [
-    'Explains accommodation categories objectively.',
-    'Covers fleet overview and cabin selection guidance.',
-    'Provides practical booking considerations.',
-    'Helps travelers compare room options before booking.'
-]
-
-const internalLinks = [
-    ['Uniworld River Cruises', '/uniworld-river-cruises/'],
-    ['What Is Included on a Uniworld River Cruise', '/uniworld-river-cruises/whats-included/'],
-    ['Is Uniworld Worth the Money', '/uniworld-river-cruises/is-uniworld-worth-it/'],
-    ['Uniworld Cruise Costs', '/uniworld-river-cruises/cost-deals/'],
-    ['European River Cruises', '/european-river-cruises/'],
-    ['Luxury River Cruises', '/luxury-river-cruises/'],
-    ['River Cruise Packing Guide', '/river-cruise-packing-guide/']
-]
-
-const externalRefs = [
-    'Official Uniworld Boutique River Cruises',
-    'Cruise Lines International Association (CLIA)',
-    'UNESCO World Heritage Centre',
-    'European tourism boards',
-    'U.S. Department of State Travel Advisories'
-]
-
-const imageRecs = [
-    { suggestion: 'S.S. Beatrice sailing the Danube', alt: 'Uniworld S.S. Beatrice luxury river cruise ship on the Danube', img: null },
-    { suggestion: 'French Balcony cabin', alt: 'French Balcony stateroom aboard a Uniworld River Cruise', img: null },
-    { suggestion: 'Luxury suite interior', alt: 'Luxury suite with butler service on a Uniworld cruise ship', img: null },
-    { suggestion: 'Marble bathroom', alt: 'Premium marble bathroom in a Uniworld suite', img: null },
-    { suggestion: 'Sun deck', alt: 'Guests relaxing on the sun deck of a Uniworld river ship', img: null },
-    { suggestion: 'Boutique lounge', alt: 'Elegant destination-inspired lounge aboard a Uniworld river ship', img: null }
-]
-
-const takeaways = [
-    'Every Uniworld ship features a unique boutique design.',
-    'Accommodation ranges from Classic Staterooms to luxury suites.',
-    'French Balcony rooms provide exceptional river views.',
-    'Select suites include personalized butler service.',
-    'Small ships create an intimate luxury experience.',
-    'Premium amenities are available throughout the fleet.',
-    'Choosing the right cabin depends on budget, travel style, and itinerary.'
-]
-
-const faqs = [
-    ['How many ships does Uniworld have?', 'Uniworld operates a fleet of boutique river ships across Europe, Egypt, India, and other select destinations.'],
-    ['Are all Uniworld ships the same?', 'No. Each ship features unique destination-inspired interior design.'],
-    ['What is the best suite on a Uniworld ship?', 'Top suites offer the largest accommodations, luxury amenities, and butler service.'],
-    ['What is a French Balcony cabin?', 'It features floor-to-ceiling glass doors that provide panoramic river views.'],
-    ['Does every cabin include luxury amenities?', 'Yes. Premium bedding, marble bathrooms, luxury toiletries, and housekeeping are standard.'],
-    ['Which ships sail the Danube?', 'Ships such as S.S. Beatrice and S.S. Maria Theresa regularly operate Danube itineraries.'],
-    ['Are Uniworld suites worth upgrading?', 'Guests wanting additional space and personalized luxury service often find suites worthwhile.'],
-    ['Do Uniworld suites include butler service?', 'Yes. Butler service is available in qualifying suite categories.'],
-    ['Are cabins spacious?', 'Cabin sizes vary, with suites offering the most spacious accommodations.'],
-    ['Which cabin is best for first-time travelers?', 'French Balcony cabins offer an excellent balance of comfort, views, and value.'],
-    ['Do Uniworld ships have elevators?', 'Many ships include elevators, although access varies by vessel.'],
-    ['Are accessible cabins available?', 'Some ships offer accessible accommodations, subject to availability.'],
-    ['What amenities are included in every room?', 'Guests generally receive premium bedding, climate control, Wi-Fi, toiletries, television, and housekeeping.'],
-    ['How many passengers are onboard?', 'Most Uniworld ships accommodate approximately 120 to 160 guests.'],
-    ['What makes Uniworld ships different from other river cruise lines?', 'Their individually designed boutique interiors, luxury accommodations, and personalized service set them apart.']
-]
-
-const schema = {
-    '@context': 'https://schema.org',
-    '@graph': [
-        { '@type': 'Organization', name: 'Your Company Name', url: 'https://www.example.com', logo: 'https://www.example.com/logo.png' },
-        { '@type': 'WebPage', name: 'Uniworld Ships and Suites: Complete Guide', url: 'https://www.example.com/uniworld-river-cruises/ships-suites/', description: 'Explore Uniworld River Cruise ships, suites, staterooms, cabin categories, onboard amenities, and tips for choosing the best accommodation.', inLanguage: 'en' },
-        { '@type': 'Article', headline: 'Uniworld Ships and Suites: Complete Guide', author: { '@type': 'Organization', name: 'Your Company Name' }, publisher: { '@type': 'Organization', name: 'Your Company Name' }, mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.example.com/uniworld-river-cruises/ships-suites/' }, datePublished: '2026-08-05', dateModified: '2026-08-05' },
-        {
-            '@type': 'BreadcrumbList', itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.example.com/' },
-                { '@type': 'ListItem', position: 2, name: 'Uniworld River Cruises', item: 'https://www.example.com/uniworld-river-cruises/' },
-                { '@type': 'ListItem', position: 3, name: 'Ships & Suites', item: 'https://www.example.com/uniworld-river-cruises/ships-suites/' }
-            ]
-        },
-        { '@type': 'FAQPage', mainEntity: faqs.map(([name, text]) => ({ '@type': 'Question', name, acceptedAnswer: { '@type': 'Answer', text } })) }
-    ]
+// Styled Inline CTA matching design system standards
+function InlineCTA({ tag, text, btnText, btnLink = "/contact" }) {
+    if (!tag || !text) return null;
+    return (
+        <div className="max-w-[1280px] mx-auto px-6 py-6">
+            <div className="bg-slate-50 border border-slate-200/80 rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 shadow-sm">
+                <div>
+                    <span className="text-[11px] font-bold uppercase tracking-wider text-navy-800 bg-white border border-slate-200 px-3 py-1 rounded-full inline-block mb-2 shadow-2xs">
+                        {tag}
+                    </span>
+                    <p className="font-display text-lg sm:text-xl text-navy-950 font-normal">
+                        {text}
+                    </p>
+                </div>
+                <Link
+                    to={btnLink}
+                    className="inline-flex items-center gap-2 bg-navy-900 hover:bg-navy-800 text-white font-sans text-sm font-semibold px-6 py-3 rounded-xl transition-colors whitespace-nowrap shadow-sm shrink-0"
+                >
+                    <span>{btnText}</span>
+                    <ChevronRight size={16} />
+                </Link>
+            </div>
+        </div>
+    );
 }
 
 function UniWorldShipsSuites() {
-    const [ussCurrentHero, setUssCurrentHero] = useState(0)
-    const ussHeroImages = [1, 2, 3]
+    // 6-Entity JSON-LD Schema strictly matching RitzCarltonYachtCollectionCost pattern
+    const jsonLdSchema = {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebPage",
+                "@id": `${pageData.seo.canonicalUrl}#webpage`,
+                "url": pageData.seo.canonicalUrl,
+                "name": pageData.seo.ogTitle,
+                "headline": pageData.seo.title,
+                "description": pageData.seo.metaDescription,
+                "primaryImageOfPage": {
+                    "@type": "ImageObject",
+                    "url": "https://www.tripsandships.com/assets/UniworldShipsSuites/uniworld-river-princess-sailing-scenic-danube-river.webp",
+                    "caption": "Uniworld Ships and Suites: Complete Guide"
+                },
+                "image": "https://www.tripsandships.com/assets/UniworldShipsSuites/uniworld-river-princess-sailing-scenic-danube-river.webp",
+                "author": {
+                    "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
+                },
+                "publisher": {
+                    "@id": "https://www.tripsandships.com/#organization"
+                },
+                "isPartOf": {
+                    "@id": "https://www.tripsandships.com/#website"
+                },
+                "inLanguage": "en"
+            },
+            {
+                "@type": "Organization",
+                "@id": "https://www.tripsandships.com/#organization",
+                "name": "Trips & Ships Luxury Travel",
+                "url": "https://www.tripsandships.com/",
+                "logo": "https://www.tripsandships.com/assets/logo.png",
+                "founder": {
+                    "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
+                }
+            },
+            {
+                "@type": "TravelAgency",
+                "@id": "https://www.tripsandships.com/#travelagency",
+                "name": "Trips & Ships Luxury Travel",
+                "url": "https://www.tripsandships.com/",
+                "parentOrganization": {
+                    "@id": "https://www.tripsandships.com/#organization"
+                }
+            },
+            {
+                "@type": "Person",
+                "@id": "https://www.tripsandships.com/about-angela-hughes/#person",
+                "name": "Angela Hughes",
+                "jobTitle": "CEO of Trips & Ships Luxury Travel",
+                "url": "https://www.tripsandships.com/about-angela-hughes",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "https://www.tripsandships.com/assets/Angela_Hughes.jpg",
+                    "caption": "Angela Hughes - River Cruise Expert"
+                },
+                "description": "Angela Hughes is a luxury travel expert, CEO of Trips & Ships Luxury Travel, founder of Luxury Travel University and an experienced river cruise industry leader.",
+                "worksFor": {
+                    "@id": "https://www.tripsandships.com/#organization"
+                },
+                "knowsAbout": [
+                    "Uniworld Boutique River Cruises",
+                    "Luxury River Ships",
+                    "River Cruise Suites",
+                    "French Balcony Staterooms",
+                    "Butler Service on River Cruises",
+                    "European River Itineraries",
+                    "Luxury Travel Planning"
+                ]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": `${pageData.seo.canonicalUrl}#breadcrumb`,
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.tripsandships.com/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Uniworld River Cruises",
+                        "item": "https://www.tripsandships.com/uniworld-river-cruises/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Ships & Suites",
+                        "item": pageData.seo.canonicalUrl
+                    }
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "@id": `${pageData.seo.canonicalUrl}#faq`,
+                "mainEntity": pageData.faqs.map(faq => ({
+                    "@type": "Question",
+                    "name": faq.question,
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": faq.answer
+                    }
+                }))
+            }
+        ]
+    };
 
-    useEffect(() => {
-        const ussTimer = setInterval(() => {
-            setUssCurrentHero(prev => (prev + 1) % ussHeroImages.length)
-        }, 5000)
-        return () => clearInterval(ussTimer)
-    }, [ussHeroImages.length])
+    // ─── COMPONENT DATA MAPPINGS ───
 
-    const [ussActiveFaq, setUssActiveFaq] = useState(null)
-    const ussToggleFaq = i => setUssActiveFaq(ussActiveFaq === i ? null : i)
+    // Section 4: Fleet cards for CardGrid Component
+    const fleetCards = pageData.fleetSection.ships.map((s) => ({
+        title: s.ship,
+        description: `${s.region} — Signature boutique river vessel accommodating 120–160 guests with personalized luxury service and destination-inspired boutique interiors.`,
+        bullets: [
+            `Region: ${s.region}`,
+            '100% Unique Boutique Design',
+            'Guest Capacity: 120–160 Guests'
+        ],
+        icon: 'Ship'
+    }));
+
+    // Section 6: Stateroom Categories for CardGrid Component
+    const stateroomCards = pageData.cabinCategories.categories.map((c, idx) => ({
+        title: c.title,
+        description: `${c.body} ${c.note || ''}`,
+        bullets: c.items,
+        icon: idx === 0 ? 'BedDouble' : idx === 1 ? 'Ruler' : 'Sun'
+    }));
+
+    // Section 9: Onboard Amenities for CurvilinearGrid Component
+    const amenityIconKeys = ['Utensils', 'Coffee', 'Sun', 'Activity', 'BookOpen', 'ShoppingBag', 'Wifi', 'ConciergeBell', 'Armchair'];
+    const amenitiesCurvilinearItems = pageData.onboardAmenities.items.map((label, idx) => ({
+        title: label,
+        description: 'Included onboard amenity available to every guest throughout the boutique river cruise experience.',
+        icon: amenityIconKeys[idx] || 'CheckCircle'
+    }));
+
+    // Section 11: Choosing Cabin for CardGrid Component
+    const choosingCards = pageData.choosingCabin.blocks.map((b, idx) => ({
+        title: b.title,
+        description: `${b.label} — ${b.intro}`,
+        bullets: b.items,
+        icon: idx === 0 ? 'Wallet' : idx === 1 ? 'Eye' : 'Crown'
+    }));
+
+    // Section 14: Tips for Selecting the Right Ship for StepByStepGuide Component
+    const tipsSteps = pageData.tipsSelectingShip.items.map((item, idx) => ({
+        title: idx === 0 ? `${pageData.tipsSelectingShip.tipIndex.text} (${item})` : item,
+        description: idx === pageData.tipsSelectingShip.items.length - 1
+            ? `${pageData.tipsSelectingShip.lead} Essential criteria to review before booking. ${pageData.tipsSelectingShip.conclusion}`
+            : `${pageData.tipsSelectingShip.lead} Research ${item.toLowerCase()} across candidate vessels to ensure your voyage aligns with your travel style.`
+    }));
+
+    // Section 15: Visual Showcase Gallery for ThreeColumnGrid Component
+    const galleryItems = pageData.imageRecommendations.items.map((item, idx) => ({
+        title: item.suggestion,
+        description: item.alt,
+        image: galleryImages[idx],
+        placeholderLabel: item.alt
+    }));
 
     return (
-        <>
+        <div className="bg-white min-h-screen font-sans text-slate-800">
             <Helmet>
-                <title>Uniworld Ships & Suites: Complete Guide</title>
-                <meta name="title" content="Uniworld Ships & Suites: Complete Guide" />
-                <meta name="description" content="Explore every Uniworld River Cruise ship and suite category, including staterooms, luxury suites, amenities, layouts, and tips for choosing the best cabin." />
-                <meta name="keywords" content="Uniworld Ships and Suites, Uniworld cruise ships, Uniworld suites, Uniworld staterooms, luxury river cruise cabins, Uniworld fleet, Uniworld room categories, boutique river cruise ships" />
-                <script type="application/ld+json">{JSON.stringify(schema)}</script>
+                <title>{pageData.seo.title}</title>
+                <meta name="title" content={pageData.seo.ogTitle} />
+                <meta name="description" content={pageData.seo.metaDescription} />
+                <meta name="keywords" content={pageData.seo.keywords} />
+                <meta property="og:type" content="article" />
+                <meta property="og:title" content={pageData.seo.ogTitle} />
+                <meta property="og:description" content={pageData.seo.metaDescription} />
+                <meta property="og:url" content={pageData.seo.canonicalUrl} />
+                <meta property="og:image" content="https://www.tripsandships.com/assets/UniworldShipsSuites/uniworld-river-princess-sailing-scenic-danube-river.webp" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content={pageData.seo.ogTitle} />
+                <meta name="twitter:description" content={pageData.seo.metaDescription} />
+                <meta name="twitter:image" content="https://www.tripsandships.com/assets/UniworldShipsSuites/uniworld-river-princess-sailing-scenic-danube-river.webp" />
+                <link rel="canonical" href={pageData.seo.canonicalUrl} />
+                <script type="application/ld+json">
+                    {JSON.stringify(jsonLdSchema)}
+                </script>
             </Helmet>
 
             <Navbar />
 
-            <div className="uss-page">
+            {/* ─── SECTION 1: COMPARISON HERO (ComparisonHero Component) ─── */}
+            <ComparisonHero
+                title={pageData.hero.title}
+                subtitle={pageData.hero.subtitle}
+                badge={pageData.hero.eyebrow}
+                backgroundImage={heroBgImg}
+                primaryCtaText="Explore Cabin Categories"
+                secondaryCtaText="Speak with an Advisor"
+                secondaryCtaLink="/contact"
+            />
 
-            <section className="uss-hero-section">
-                {ussHeroImages.map((num, idx) => (
-                    <div
-                        key={idx}
-                        className={`uss-hero-background uss-hero-placeholder-bg ${ussCurrentHero === idx ? 'uss-active' : ''}`}
-                    >
-                        <div className="uss-hero-placeholder-overlay">
-                            <Image size={40} className="uss-placeholder-icon" />
-                            <span>Uniworld River Cruise Scene {num}</span>
-                        </div>
-                    </div>
-                ))}
-                <div className="uss-hero-overlay-layer"></div>
-                <div className="uss-hero-content-wrapper">
-                    <div className="uss-hero-eyebrow-tag">
-                        <Anchor size={16} />
-                        <span>Uniworld Boutique River Cruises · Trips &amp; Ships Luxury Travel</span>
-                    </div>
-                    <h1 className="uss-hero-main-title">
-                        Uniworld Ships &amp; Suites: Complete Guide
-                    </h1>
-                    <p className="uss-hero-subtitle-text">
-                        Explore every Uniworld River Cruise ship and suite category, including staterooms, luxury suites, amenities, layouts, and tips for choosing the best cabin.
-                    </p>
-                </div>
-            </section>
-
-            <section className="uss-intro-section">
-                <div className="uss-intro-container">
-                    <div className="uss-intro-grid">
-
-                        <div className="uss-intro-text-col">
-                            <span className="uss-eyebrow">A BOUTIQUE HOTEL ON THE WATER</span>
-                            <h2 className="uss-section-heading">Uniworld Ships and Suites: Complete Guide</h2>
-                            <div className="uss-heading-separator-bar"></div>
-                            <p className="uss-intro-lead">Uniworld Boutique River Cruises is renowned for combining luxury hospitality with intimate river cruising.</p>
-                            <p className="uss-intro-body">Unlike many cruise lines that use standardized ship designs, each Uniworld vessel features its own distinctive décor, inspired by the destinations it sails. From elegant staterooms to lavish suites with butler service, every accommodation is designed to deliver a boutique hotel experience on the water.</p>
-                            <p className="uss-intro-body">Whether you're deciding which ship to book or choosing between a classic stateroom and a luxury suite, this guide explains everything you need to know about the Uniworld fleet, cabin categories, onboard amenities, and how to select the best accommodation for your travel style.</p>
-                        </div>
-
-                        <div className="uss-intro-image-col">
-                            <div className="uss-image-frame">
-                                <div className="uss-image-placeholder-box">
-                                    <Image size={32} className="uss-placeholder-icon" />
-                                    <span>Uniworld Ship Exterior</span>
-                                </div>
-                                <div className="uss-frame-overlay"></div>
-                                <div className="uss-image-badge">
-                                    <Gem size={13} />
-                                    <span>Boutique River Cruising, Reimagined</span>
-                                </div>
-                            </div>
-                            <div className="uss-statement-box">
-                                <div className="uss-statement-accent"></div>
-                                <div className="uss-statement-text">
-                                    <p className="uss-statement-primary">Design matters on a boutique river ship.</p>
-                                    <p className="uss-statement-bold">No two Uniworld ships are identical.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="uss-fleet-section">
-                <div className="uss-fleet-container">
-                    <div className="uss-fleet-header">
-                        <span className="uss-eyebrow">THE FLEET</span>
-                        <h2 className="uss-section-heading" style={{ textAlign: 'center' }}>Explore the Uniworld Fleet</h2>
-                        <div className="uss-heading-separator-bar uss-bar-centered"></div>
-                        <p className="uss-fleet-intro">Uniworld operates a collection of boutique river ships across Europe, Egypt, India, and select international destinations. Most vessels accommodate between <strong>120 and 160 guests</strong>, creating a relaxed atmosphere with personalized service.</p>
-                    </div>
-                    <div className="uss-fleet-stats-bar">
-                        <div className="uss-fleet-stat">
-                            <span className="uss-fleet-stat-num">10+</span>
-                            <span className="uss-fleet-stat-label">Signature Ships</span>
-                        </div>
-                        <div className="uss-fleet-stat-divider"></div>
-                        <div className="uss-fleet-stat">
-                            <span className="uss-fleet-stat-num">120–160</span>
-                            <span className="uss-fleet-stat-label">Guests Per Ship</span>
-                        </div>
-                        <div className="uss-fleet-stat-divider"></div>
-                        <div className="uss-fleet-stat">
-                            <span className="uss-fleet-stat-num">5+</span>
-                            <span className="uss-fleet-stat-label">Regions Worldwide</span>
-                        </div>
-                        <div className="uss-fleet-stat-divider"></div>
-                        <div className="uss-fleet-stat">
-                            <span className="uss-fleet-stat-num">100%</span>
-                            <span className="uss-fleet-stat-label">Boutique Design</span>
-                        </div>
-                    </div>
-                    <div className="uss-fleet-super-badge">
-                        <Ship size={17} />
-                        <strong>Signature Super Ships</strong>
-                        <span>Several vessels belong to Uniworld&apos;s &ldquo;Super Ship&rdquo; collection, offering upgraded interiors and modern amenities.</span>
-                    </div>
-                    <div className="uss-fleet-cards-grid">
-                        {fleet.map(({ ship, region }, idx) => (
-                            <div key={ship} className="uss-fleet-card">
-                                <div className="uss-fleet-card-index">0{idx + 1}</div>
-                                <div className="uss-fleet-card-icon"><Ship size={20} /></div>
-                                <h3 className="uss-fleet-card-name">{ship}</h3>
-                                <div className="uss-fleet-card-region">
-                                    <MapPin size={12} />
-                                    <span>{region}</span>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                    <div className="uss-fleet-footer-note">
-                        <Compass size={16} />
-                        <span>Each vessel reflects regional architecture, art, and culture — ensuring no two ships feel alike.</span>
-                    </div>
-                </div>
-            </section>
-
-            <section className="uss-boutique-section">
-                <div className="uss-boutique-container">
-                    <div className="uss-boutique-grid">
-
-                        <div className="uss-boutique-text-col">
-                            <span className="uss-eyebrow">SIGNATURE DESIGN</span>
-                            <h2 className="uss-section-heading">Boutique Design Sets Every Ship Apart</h2>
-                            <div className="uss-heading-separator-bar"></div>
-                            <p className="uss-boutique-lead">One of Uniworld's defining features is its commitment to unique interior design.</p>
-
-                            <div className="uss-boutique-pills">
-                                {boutiqueItems.map((item, idx) => (
-                                    <div key={idx} className="uss-boutique-pill">
-                                        <CheckCircle size={16} />
-                                        <span>{item}</span>
-                                    </div>
-                                ))}
-                            </div>
-
-                            <div className="uss-boutique-conclusion-box">
-                                <p>Instead of mass-produced interiors, each ship is curated to create an immersive luxury environment.</p>
-                            </div>
-                        </div>
-
-                        <div className="uss-boutique-image-col">
-                            <div className="uss-image-frame">
-                                <div className="uss-image-placeholder-box">
-                                    <Image size={32} className="uss-placeholder-icon" />
-                                    <span>Boutique Lounge Interior</span>
-                                </div>
-                                <div className="uss-frame-overlay"></div>
-                            </div>
-                            <div className="uss-boutique-icon-box">
-                                <Sparkles size={22} />
-                                <p>Distinctive décor inspired by each destination.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <section className="uss-cabins-section">
-                <div className="uss-cabins-container">
-                    <div className="uss-cabins-header">
-                        <span className="uss-eyebrow">ROOM CATEGORIES</span>
-                        <h2 className="uss-section-heading" style={{ textAlign: 'center' }}>Understanding Stateroom Categories</h2>
-                        <div className="uss-heading-separator-bar uss-bar-centered"></div>
-                    </div>
-
-                    <div className="uss-cabins-grid">
-                        {cabinSections.map((c) => (
-                            <article key={c.id} className="uss-cabin-card">
-                                <div className="uss-cabin-card-icon"><c.Icon size={22} /></div>
-                                <h3 className="uss-cabin-card-title">{c.title}</h3>
-                                <p className="uss-cabin-card-body">{c.body}</p>
-                                <ul className="uss-cabin-card-list">
-                                    {c.items.map((item, iIdx) => (
-                                        <li key={iIdx}>
-                                            <ChevronRight size={13} className="uss-cabin-chevron" />
-                                            <span>{item}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                                {c.note && <p className="uss-cabin-card-note">{c.note}</p>}
-                            </article>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            <section className="uss-suites-section">
-                <div className="uss-suites-container">
-                    <div className="uss-suites-grid">
-
-                        <div className="uss-suites-text-col">
-                            <span className="uss-eyebrow">TOP-TIER ACCOMMODATION</span>
-                            <h2 className="uss-section-heading">Luxury Suites</h2>
-                            <div className="uss-heading-separator-bar"></div>
-                            <p className="uss-suites-lead">Suites represent the highest level of onboard accommodation.</p>
-                            <p className="uss-suites-body">Depending on the ship, guests may enjoy:</p>
-
-                            <ul className="uss-suites-list">
-                                {suiteItems.map((item, idx) => (
-                                    <li key={idx}>
-                                        <CheckCircle size={15} />
-                                        <span>{item}</span>
-                                    </li>
-                                ))}
-                            </ul>
-
-                            <p className="uss-suites-body">Many suites feature elegant furnishings comparable to luxury boutique hotels.</p>
-                        </div>
-
-                        <div className="uss-suites-side-col">
-                            <div className="uss-image-frame">
-                                <div className="uss-image-placeholder-box">
-                                    <Image size={32} className="uss-placeholder-icon" />
-                                    <span>Luxury Suite Layout</span>
-                                </div>
-                                <div className="uss-frame-overlay"></div>
-                            </div>
-                            <div className="uss-navy-callout">
-                                <Crown size={26} />
-                                <h3>Luxury, tailored to you</h3>
-                                <p>Suite categories vary by vessel, so compare the deck plan and included services before upgrading.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <section className="uss-butler-section">
-                <div className="uss-butler-container">
-                    <div className="uss-butler-side-by-side">
-                        <div className="uss-butler-image-col">
-                            <div className="uss-image-frame">
-                                <div className="uss-image-placeholder-box">
-                                    <Image size={32} className="uss-placeholder-icon" />
-                                    <span>Personalized Butler Service</span>
-                                </div>
-                                <div className="uss-frame-overlay"></div>
-                                <div className="uss-butler-img-badge">
-                                    <ConciergeBell size={13} />
-                                    <span>Personalized Suite Service</span>
-                                </div>
-                            </div>
-                            <div className="uss-butler-distinction-strip">
-                                <div className="uss-butler-distinction-icon"><Crown size={22} /></div>
-                                <div className="uss-butler-distinction-text">
-                                    <strong>What sets Uniworld apart</strong>
-                                    <span>Personalized butler service in qualifying suites creates a truly bespoke experience — confirm your suite category and exact service inclusions when booking.</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="uss-butler-content-col">
-                            <span className="uss-eyebrow uss-eyebrow-light">PERSONALIZED SERVICE</span>
-                            <h2 className="uss-section-heading uss-white-heading">Butler Service Explained</h2>
-                            <div className="uss-heading-separator-bar uss-separator-white"></div>
-                            <p className="uss-butler-intro">One of Uniworld&apos;s signature luxury benefits is butler service for qualifying suites. This level of personalized attention distinguishes Uniworld from many premium river cruise lines.</p>
-                            <div className="uss-butler-cards-grid">
-                                {butlerItems.map((item, idx) => (
-                                    <div key={idx} className="uss-butler-card">
-                                        <div className="uss-butler-card-icon">
-                                            <ConciergeBell size={18} />
-                                        </div>
-                                        <p className="uss-butler-card-text">{item}</p>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="uss-amenities-section">
-                <div className="uss-amenities-container">
-                    <div className="uss-amenities-header">
-                        <span className="uss-eyebrow">INCLUDED ON BOARD</span>
-                        <h2 className="uss-section-heading" style={{ textAlign: 'center' }}>Onboard Amenities Available to Every Guest</h2>
-                        <div className="uss-heading-separator-bar uss-bar-centered"></div>
-                    </div>
-
-                    <div className="uss-amenities-grid">
-                        {amenityItems.map((a) => (
-                            <div key={a.label} className="uss-amenity-card">
-                                <div className="uss-amenity-num">0{amenityItems.indexOf(a) + 1}</div>
-                                <div className="uss-amenity-icon"><a.Icon size={22} /></div>
-                                <h3 className="uss-amenity-label">{a.label}</h3>
-                            </div>
-                        ))}
-                    </div>
-
-                    <div className="uss-amenities-footer">
-                        <p>Many ships also feature unique lounges inspired by the destinations they visit.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section className="uss-compare-section">
-                <div className="uss-compare-container">
-                    <div className="uss-compare-header">
-                        <span className="uss-eyebrow">AT A GLANCE</span>
-                        <h2 className="uss-section-heading" style={{ textAlign: 'center' }}>Comparing Cabin Categories</h2>
-                        <div className="uss-heading-separator-bar uss-bar-centered"></div>
-                    </div>
-
-                    <div className="uss-compare-table-wrap">
-                        <table className="uss-table">
-                            <thead>
-                                <tr>
-                                    <th>Feature</th>
-                                    <th>Classic</th>
-                                    <th>Deluxe</th>
-                                    <th>French Balcony</th>
-                                    <th>Suite</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {cabinComparison.map(row => (
-                                    <tr key={row[0]}>
-                                        {row.map((cell, index) => index === 0 ? <th scope="row" key={cell}>{cell}</th> : <td key={`${row[0]}-${index}`}>{cell}</td>)}
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </section>
-
-            <section className="uss-choose-section">
-                <div className="uss-choose-container">
-                    <div className="uss-choose-header">
-                        <span className="uss-eyebrow uss-eyebrow-light">BOOKING GUIDANCE</span>
-                        <h2 className="uss-section-heading uss-white-heading" style={{ textAlign: 'center' }}>Choosing the Best Cabin</h2>
-                        <div className="uss-heading-separator-bar uss-bar-centered uss-separator-white"></div>
-                    </div>
-
-                    <div className="uss-choose-grid">
-                        {chooseBlocks.map((b, idx) => (
-                            <article key={idx} className="uss-choose-card">
-                                <div className="uss-choose-label"><b.Icon size={13} /> <span>{b.label}</span></div>
-                                <h3 className="uss-choose-title">{b.title}</h3>
-                                <p className="uss-choose-intro">{b.intro}</p>
-                                <ul className="uss-choose-list">
-                                    {b.items.map((item, iIdx) => (
-                                        <li key={iIdx}>
-                                            <CheckCircle size={14} />
-                                            <span>{item}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </article>
-                        ))}
-                    </div>
-
-                    <div className="uss-choose-footer">
-                        <p>Selecting the right category comes down to how you prefer to spend your time on board.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section className="uss-access-section">
-                <div className="uss-access-container">
-                    <div className="uss-access-grid">
-
-                        <div className="uss-access-text-col">
-                            <span className="uss-eyebrow">PLAN AHEAD</span>
-                            <h2 className="uss-section-heading">Accessibility Considerations</h2>
-                            <div className="uss-heading-separator-bar"></div>
-                            <p className="uss-access-lead">Some Uniworld ships include accessible accommodations designed for guests with mobility needs.</p>
-                            <p className="uss-access-body">Accessibility features may include:</p>
-
-                            <div className="uss-access-pillars">
-                                {accessibilityItems.map((item, idx) => (
-                                    <div key={idx} className="uss-access-pillar">
-                                        <div className="uss-access-pillar-icon"><CheckCircle size={18} /></div>
-                                        <span>{item}</span>
-                                    </div>
-                                ))}
-                            </div>
-
-                            <p className="uss-access-body">Availability varies by ship and itinerary, so early booking is recommended.</p>
-                        </div>
-
-                        <div className="uss-access-side-col">
-                            <div className="uss-image-frame">
-                                <div className="uss-image-placeholder-box">
-                                    <Image size={32} className="uss-placeholder-icon" />
-                                    <span>Accessible Room Cabin View</span>
-                                </div>
-                                <div className="uss-frame-overlay"></div>
-                            </div>
-                            <div className="uss-access-callout">
-                                <Accessibility size={28} />
-                                <h3>Ask before booking</h3>
-                                <p>Accessibility can vary by vessel, deck, and itinerary. Confirm the details with your travel advisor.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <section className="uss-shipamen-section">
-                <div className="uss-shipamen-container">
-                    <div className="uss-shipamen-grid">
-
-                        <div className="uss-shipamen-text-col">
-                            <span className="uss-eyebrow">BEYOND THE CABIN</span>
-                            <h2 className="uss-section-heading">Ship Amenities That Enhance the Experience</h2>
-                            <div className="uss-heading-separator-bar"></div>
-                            <p className="uss-shipamen-lead">Beyond accommodations, guests benefit from numerous premium services.</p>
-
-                            <div className="uss-shipamen-pillars">
-                                {shipAmenityItems.map((item, idx) => (
-                                    <div key={idx} className="uss-shipamen-pillar">
-                                        <CheckCircle size={16} />
-                                        <span>{item}</span>
-                                    </div>
-                                ))}
-                            </div>
-
-                            <div className="uss-shipamen-conclusion-box">
-                                <p>These amenities contribute to Uniworld's reputation as a luxury all-inclusive river cruise operator.</p>
-                            </div>
-                        </div>
-
-                        <div className="uss-shipamen-image-col">
-                            <div className="uss-image-frame">
-                                <div className="uss-image-placeholder-box">
-                                    <Image size={32} className="uss-placeholder-icon" />
-                                    <span>Onboard Dining &amp; Lounge Scene</span>
-                                </div>
-                                <div className="uss-frame-overlay"></div>
-                            </div>
-                            <div className="uss-shipamen-stat-badge">
-                                <Star size={15} />
-                                <span>A Luxury All-Inclusive Experience</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <section className="uss-tips-section">
-                <div className="uss-tips-container">
-                    <div className="uss-tips-grid">
-
-                        <div className="uss-tip-index">
-                            <span className="uss-tip-num">01</span>
-                            <p>Research the vessel, not just the itinerary.</p>
-                        </div>
-
-                        <div className="uss-tips-content">
-                            <span className="uss-eyebrow">BEFORE YOU BOOK</span>
-                            <h2 className="uss-section-heading">Tips for Selecting the Right Ship</h2>
-                            <div className="uss-heading-separator-bar"></div>
-                            <p className="uss-tips-lead">Before booking, consider:</p>
-
-                            <ul className="uss-tips-list">
-                                {tipsItems.map((item, idx) => (
-                                    <li key={idx}>
-                                        <CheckCircle size={15} />
-                                        <span>{item}</span>
-                                    </li>
-                                ))}
-                            </ul>
-
-                            <div className="uss-tips-conclusion">
-                                <p>Because each vessel has a unique design, researching individual ships helps ensure the best experience.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <section className="uss-imageplan-section">
-                <div className="uss-imageplan-container">
-                    <div className="uss-imageplan-header">
-                        <span className="uss-eyebrow">CONTENT PRODUCTION</span>
-                        <h2 className="uss-section-heading" style={{ textAlign: 'center' }}>Image Recommendations</h2>
-                        <div className="uss-heading-separator-bar uss-bar-centered"></div>
-                    </div>
-
-                    <div className="uss-imageplan-grid">
-                        {imageRecs.map(({ suggestion, alt, img }, idx) => (
-                            <figure key={idx} className="uss-imageplan-card">
-                                <div className="uss-imageplan-media">
-                                    {img
-                                        ? <img src={img} alt={alt} />
-                                        : <div className="uss-imageplan-placeholder"><Eye size={24} /><span>Recommended Image</span></div>}
-                                </div>
-                                <figcaption>
-                                    <strong>{suggestion}</strong>
-                                    <span>{alt}</span>
-                                </figcaption>
-                            </figure>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            <section className="uss-expert-section">
-                <div className="uss-expert-container">
-                    <div className="uss-expert-portrait-panel">
-                        <div className="uss-expert-img-container">
-                            <img src={Profile_Picture_AH} alt="Angela Hughes - River Cruise Expert" />
-                        </div>
-                        <div className="uss-expert-stats-strip">
-                            <div className="uss-expert-stat-box">
-                                <h4 className='uss-title'>40+</h4>
-                                <p className='uss-title'>Years Designing Travel</p>
-                            </div>
-                            <div className="uss-expert-stat-box">
-                                <h4 className='uss-title'>121+</h4>
-                                <p className='uss-title'>Countries Traveled</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="uss-expert-content-panel">
-                        <span className="uss-expert-eyebrow">MEET THE CEO</span>
-                        <h2 className="uss-section-heading" style={{color: 'white'}}>Insight from Angela Hughes</h2>
-                        <div className="uss-heading-separator-bar"></div>
-                        <p className="uss-expert-quote">
-                            "A Uniworld river cruise isn't just about traveling from destination to destination—it's about returning to a uniquely curated boutique sanctuary every single evening, experiencing local culture both on and off the ship."
-                        </p>
-                        <div className="uss-expert-priorities">
-                            <h5>Travel Prioritization Matrix:</h5>
-                            <div className="uss-expert-pills">
-                                {['Boutique River Ships', 'Personalized Butler Service', 'All-Inclusive Value', 'Regional Shore Excursions', 'Gourmet Dining', 'Intimate Capacity'].map(pill => (
-                                    <span key={pill} className="uss-expert-pill">
-                                        <Anchor size={12} />
-                                        {pill}
-                                    </span>
-                                ))}
-                            </div>
-                        </div>
-                        <p className="uss-expert-bio">
-                            As founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel, Angela Hughes uses her personal, deep connections in the river cruising world to deliver custom travel planning that regular booking engines simply cannot replicate.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <section className="uss-takeaways-section">
-                <div className="uss-takeaways-container">
-                    <div className="uss-takeaways-header">
-                        <span className="uss-eyebrow">THE ESSENTIALS</span>
-                        <h2 className="uss-section-heading" style={{ textAlign: 'center' }}>Key Takeaways</h2>
-                        <div className="uss-heading-separator-bar uss-bar-centered"></div>
-                    </div>
-
-                    <div className="uss-takeaways-list">
-                        {takeaways.map((item, idx) => (
-                            <div key={idx} className="uss-takeaway-item">
-                                <div className="uss-takeaway-icon"><CheckCircle size={18} /></div>
-                                <span>{item}</span>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            <section className="uss-faq-main-section">
-                <div className="uss-faq-container">
-                    <div style={{ textAlign: 'center' }}>
-                        <span className="uss-eyebrow">QUESTIONS TRAVELERS ASK</span>
-                        <h2 className="uss-section-heading">Frequently Asked Questions</h2>
-                        <div className="uss-heading-separator-bar uss-bar-centered"></div>
-                    </div>
-                    <div className="uss-faq-list-wrapper">
-                        {faqs.map(([question, answer], index) => (
-                            <div
-                                key={question}
-                                className="uss-faq-individual-item"
-                                onClick={() => ussToggleFaq(index)}
-                                role="button"
-                                tabIndex={0}
-                                onKeyDown={e => {
-                                    if (e.key === 'Enter' || e.key === ' ') {
-                                        e.preventDefault()
-                                        ussToggleFaq(index)
-                                    }
-                                }}
-                                aria-expanded={ussActiveFaq === index}
-                            >
-                                <div className="uss-faq-question-row">
-                                    <span>{question}</span>
-                                    <span className="uss-faq-toggle-icon">{ussActiveFaq === index ? '−' : '+'}</span>
-                                </div>
-                                {ussActiveFaq === index && (
-                                    <p className="uss-faq-answer-text">{answer}</p>
-                                )}
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            <section className="uss-cta-section">
-                <div className="uss-cta-aurora-glow"></div>
-                <div className="uss-cta-crystal uss-cta-crystal-1"></div>
-                <div className="uss-cta-crystal uss-cta-crystal-2"></div>
-                <div className="uss-cta-crystal uss-cta-crystal-3"></div>
-                <div className="uss-cta-grid-lines"></div>
-
-                <div className="uss-cta-content">
-                    <div className="uss-cta-compass-ring">
-                        <Compass size={28} />
-                    </div>
-                    <span className="uss-cta-eyebrow">START SOMEWHERE REMARKABLE</span>
-                    <h2 className="uss-cta-title">Find Your Perfect <br /> Uniworld Ship &amp; Suite</h2>
-                    <div className="uss-cta-bar"></div>
-                    <p className="uss-cta-subtitle">
-                        Let&rsquo;s compare the fleet, seasons, ships, suites, and inclusions that match your luxury river cruising preferences.
-                    </p>
-                    <div className="uss-cta-actions">
-                        <Link to="/contact" className="uss-cta-primary-btn">
-                            <Phone size={18} />
-                            <span>Speak with a luxury river cruise specialist</span>
-                            <ArrowRight size={16} className="uss-cta-btn-arrow" />
-                        </Link>
-                    </div>
-                </div>
-            </section>
-
+            {/* ─── SECTION 2: ANGELA HUGHES AUTHORITY CALLOUT (AuthorityBox Component) ─── */}
+            <div className="max-w-4xl mx-auto px-6 py-6">
+                <AuthorityBox
+                    title="EXPERT CRUISE PERSPECTIVE"
+                    content={pageData.expertQuote.quote}
+                    author="Angela Hughes, CEO & Luxury River Cruise Specialist"
+                    authorImage={quickAnswerImg}
+                />
             </div>
 
-        </>
-    )
+            {/* ─── SECTION 3: EDITORIAL INTRO SPLIT (EditorialIntroSplit Component) ─── */}
+            <EditorialIntroSplit
+                eyebrow={pageData.intro.eyebrow}
+                heading={pageData.intro.heading}
+                paragraphs={[
+                    pageData.intro.lead,
+                    pageData.intro.paragraphs[0],
+                    pageData.intro.paragraphs[1],
+                    `${pageData.intro.statement.primary} ${pageData.intro.statement.bold} (${pageData.intro.statement.badge})`
+                ]}
+                primaryImage={introPrimaryImg}
+                secondaryImage={introSecondaryImg}
+            />
+
+            {/* ─── SECTION 4: THE FLEET SECTION (CardGrid Component) ─── */}
+            <CardGrid
+                title={pageData.fleetSection.heading}
+                subtitle={`${pageData.fleetSection.intro} ${pageData.fleetSection.superBadge.title}: ${pageData.fleetSection.superBadge.text}. ${pageData.fleetSection.footerNote}`}
+                cards={fleetCards}
+                columns={4}
+            />
+
+            {/* ─── SECTION 5: SIGNATURE BOUTIQUE DESIGN (FeatureSplit Component) ─── */}
+            <FeatureSplit
+                title={pageData.boutiqueDesign.heading}
+                subtitles={[pageData.boutiqueDesign.eyebrow, pageData.boutiqueDesign.lead]}
+                features={pageData.boutiqueDesign.items}
+                summary={`${pageData.boutiqueDesign.conclusionBox} ${pageData.boutiqueDesign.callout}`}
+                image={designImg}
+                imagePosition="right"
+                theme="white"
+            />
+
+            {/* ─── SECTION 6: STATEROOM CATEGORIES (CardGrid Component) ─── */}
+            <div id="content" className="scroll-mt-24">
+                <div id="stateroom-categories">
+                    <CardGrid
+                        title={pageData.cabinCategories.heading}
+                        subtitle={pageData.cabinCategories.eyebrow}
+                        cards={stateroomCards}
+                        columns={3}
+                    />
+                </div>
+            </div>
+
+            {/* ─── INLINE CTA 1 (InlineCTA Component) ─── */}
+            <InlineCTA
+                tag="CABIN & SUITE ADVISORY"
+                text="Not sure whether a Classic Stateroom or French Balcony best suits your European itinerary?"
+                btnText="Request Stateroom Consultation"
+                btnLink="/contact"
+            />
+
+            {/* ─── SECTION 7: LUXURY SUITES (FeatureSplit Component) ─── */}
+            <FeatureSplit
+                title={pageData.luxurySuites.heading}
+                subtitles={[pageData.luxurySuites.eyebrow, pageData.luxurySuites.lead, pageData.luxurySuites.intro]}
+                features={pageData.luxurySuites.items}
+                summary={`${pageData.luxurySuites.body} ${pageData.luxurySuites.callout.title}: ${pageData.luxurySuites.callout.text}`}
+                image={suiteImg}
+                imagePosition="left"
+                theme="light"
+            />
+
+            {/* ─── SECTION 8: BUTLER SERVICE EXPLAINED (FeatureSplit Component) ─── */}
+            <FeatureSplit
+                imagePosition="right"
+                theme="white"
+                image={butlerImg}
+                title={pageData.butlerService.heading}
+                subtitles={[
+                    pageData.butlerService.eyebrow,
+                    pageData.butlerService.intro
+                ]}
+                features={pageData.butlerService.items}
+                summary={`${pageData.butlerService.distinction.title}: ${pageData.butlerService.distinction.text}`}
+                ctaText="Inquire About Butler Service"
+                ctaLink="/contact"
+            />
+
+            {/* ─── SECTION 9: ONBOARD AMENITIES (CurvilinearGrid Component) ─── */}
+            <CurvilinearGrid
+                title={pageData.onboardAmenities.heading}
+                subtitle={pageData.onboardAmenities.eyebrow}
+                paragraphs={[pageData.onboardAmenities.footer]}
+                items={amenitiesCurvilinearItems}
+            />
+
+            {/* ─── SECTION 10: CABIN COMPARISON TABLE (LuxuryCruiseComparisonTable Component) ─── */}
+            <LuxuryCruiseComparisonTable
+                title={pageData.cabinComparison.heading}
+                headers={pageData.cabinComparison.headers}
+                rows={pageData.cabinComparison.rows}
+            />
+
+            {/* ─── SECTION 11: CHOOSING THE BEST CABIN (CardGrid Component) ─── */}
+            <CardGrid
+                title={pageData.choosingCabin.heading}
+                subtitle={`${pageData.choosingCabin.eyebrow}. ${pageData.choosingCabin.footer}`}
+                cards={choosingCards}
+                columns={3}
+            />
+
+            {/* ─── INLINE CTA 2 (InlineCTA Component) ─── */}
+            <InlineCTA
+                tag="LIVE DECK ALLOCATION"
+                text="Want to secure premier mid-ship placement or high-deck suite allocations before sailing sellouts?"
+                btnText="Check Live Suite Availability"
+                btnLink="/contact"
+            />
+
+            {/* ─── SECTION 12: ACCESSIBILITY CONSIDERATIONS (FeatureSplit Component) ─── */}
+            <FeatureSplit
+                title={pageData.accessibility.heading}
+                subtitles={[pageData.accessibility.eyebrow, pageData.accessibility.lead, pageData.accessibility.bodyIntro]}
+                features={pageData.accessibility.items}
+                summary={`${pageData.accessibility.bodyOutro} ${pageData.accessibility.callout.title}: ${pageData.accessibility.callout.text}`}
+                image={accessImg}
+                imagePosition="right"
+                theme="light"
+            />
+
+            {/* ─── SECTION 13: SHIP AMENITIES (FeatureSplit Component) ─── */}
+            <FeatureSplit
+                title={pageData.shipAmenities.heading}
+                subtitles={[pageData.shipAmenities.eyebrow, pageData.shipAmenities.lead]}
+                features={pageData.shipAmenities.items}
+                summary={`${pageData.shipAmenities.conclusionBox} (${pageData.shipAmenities.badge})`}
+                image={shipAmenitiesImg}
+                imagePosition="left"
+                theme="white"
+            />
+
+            {/* ─── SECTION 14: TIPS FOR SELECTING THE RIGHT SHIP (StepByStepGuide Component) ─── */}
+            <StepByStepGuide
+                title={pageData.tipsSelectingShip.heading}
+                subtitle={`${pageData.tipsSelectingShip.eyebrow} — 01: ${pageData.tipsSelectingShip.tipIndex.text}`}
+                steps={tipsSteps}
+            />
+
+            {/* ─── SECTION 15: VISUAL SHOWCASE GALLERY (ThreeColumnGrid Component) ─── */}
+            <ThreeColumnGrid
+                title={pageData.imageRecommendations.heading}
+                subtitle={pageData.imageRecommendations.eyebrow}
+                items={galleryItems}
+            />
+
+            {/* ─── SECTION 16: EXPERT CREDENTIALS (ExpertCredentials Component) ─── */}
+            <ExpertCredentials
+                name="Angela Hughes"
+                title="Insight from Angela Hughes · CEO, Trips & Ships Luxury Travel"
+                image={ProfilePictureAH}
+                badge="LUXURY TRAVEL EXPERTISE"
+                quote={pageData.expertQuote.quote}
+                quoteSubtitle="Travel Prioritization Matrix: Boutique River Ships, Personalized Butler Service, All-Inclusive Value, Regional Shore Excursions, Gourmet Dining, Intimate Capacity"
+                bio={pageData.expertQuote.bio}
+                credentials={[
+                    "40+ Years Designing Luxury Travel Experiences",
+                    "121+ Countries Traveled Across Seven Continents",
+                    "Recognized Industry Leader & River Cruise Specialist",
+                    "Boutique River Ships & Suite Layout Specialist",
+                    "Founder of Luxury Travel University & CEO of Trips & Ships",
+                    "Direct Relationships with Uniworld Captains & Executives"
+                ]}
+                ctaText={pageData.expertQuote.ctaText}
+                ctaLink={pageData.expertQuote.ctaLink}
+            />
+
+            {/* ─── SECTION 17: KEY TAKEAWAYS (ConclusionSection Component) ─── */}
+            <ConclusionSection
+                sections={[{
+                    heading: pageData.takeaways.heading,
+                    paragraphs: pageData.takeaways.items
+                }]}
+            />
+
+            {/* ─── SECTION 18: FREQUENTLY ASKED QUESTIONS (FAQAccordion Component) ─── */}
+            <FAQAccordion
+                data={{
+                    title: "Frequently Asked Questions",
+                    subtitle: "Everything you need to know about Uniworld ships, cabin categories, suites, and onboard services.",
+                    faqs: pageData.faqs
+                }}
+            />
+
+            {/* ─── SECTION 19: CENTER CTA (CenterCTA Component) ─── */}
+            <CenterCTA
+                title={pageData.cta.title}
+                description={pageData.cta.subtitle}
+                buttonText={pageData.cta.buttonText}
+                buttonLink={pageData.cta.buttonLink}
+                image={ctaBgImg}
+                theme="dark"
+            />
+        </div>
+    );
 }
 
-export default UniWorldShipsSuites
+export default UniWorldShipsSuites;

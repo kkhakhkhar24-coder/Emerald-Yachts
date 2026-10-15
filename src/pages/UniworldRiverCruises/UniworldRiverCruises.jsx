@@ -26,80 +26,188 @@ import CenterCTA from '../../components/ui/CenterCTA'
 
 // Media Assets
 import Profile_AH from '../../assets/AzamaraMediterraneanCruises/Profile_Picture_AH.jpg'
-// import europeDestImg from '../../assets/UniworldRiverCruises/chateau-de-chenonceau-france-castle-over-cher-river-travel-destination.webp'
+
+// Media Assets - UniworldRiverCruises
+import heroBgImg from '../../assets/UniworldRiverCruises/uniworld-river-queen-scenic-rhine-river-valley-cruise.webp'
+import introPrimaryImg from '../../assets/UniworldRiverCruises/uniworld-ss-emilie-luxury-salon-lounge.webp'
+import introSecondaryImg from '../../assets/UniworldRiverCruises/uniworld-ss-catherine-deluxe-balcony-suite-rhone.webp'
+
+// Destinations
+import destEuropeImg from '../../assets/UniworldRiverCruises/uniworld-ss-maria-theresa-sailing-past-budapest-parliament.webp'
+import destEgyptImg from '../../assets/UniworldRiverCruises/uniworld-river-tosca-nile-cruise-sundeck-observation-terrace.webp'
+import destPeruImg from '../../assets/UniworldRiverCruises/uniworld-aria-amazon-peruvian-jungle-scenic-navigation.webp'
+import destMekongImg from '../../assets/UniworldRiverCruises/uniworld-mekong-jewel-top-sun-deck-mekong-river.webp'
+
+// Cabins & Suites
+import cabinClassicImg from '../../assets/UniworldRiverCruises/uniworld-classic-river-stateroom-cabin-rendering.jpeg'
+import cabinDeluxeImg from '../../assets/UniworldRiverCruises/uniworld-river-princess-classic-stateroom-interior.webp'
+import cabinFrenchBalconyImg from '../../assets/UniworldRiverCruises/uniworld-french-balcony-stateroom-interior-rendering.webp'
+import cabinSuitesImg from '../../assets/UniworldRiverCruises/uniworld-presidential-royal-suite-bedroom-rendering.jpeg'
+
+// Inclusions & Dining
+import inclusionsDiningImg from '../../assets/UniworldRiverCruises/uniworld-super-ship-gourmet-restaurant-rendering.jpeg'
+
+// Shore Excursions (100% verified matches according to headings)
+import excursionWalkingImg from '../../assets/UniworldRiverCruises/uniworld-rothenburg-ob-der-tauber-medieval-village-germany.jpg'
+import excursionMuseumImg from '../../assets/UniworldRiverCruises/uniworld-wurzburg-residence-baroque-architecture-germany.jpg'
+import excursionCastleImg from '../../assets/UniworldRiverCruises/uniworld-burg-rheinstein-rhine-river-valley-germany.jpg'
+import excursionCulinaryImg from '../../assets/UniworldRiverCruises/uniworld-european-vineyard-culinary-tasting-experience.webp'
+import excursionVillageImg from '../../assets/UniworldRiverCruises/uniworld-miltenberg-historic-timber-framed-village-germany.jpg'
+import excursionMarketImg from '../../assets/UniworldRiverCruises/uniworld-nuremberg-christmas-market-christkindlesmarkt-germany.jpg'
+
+// Pricing & Value
+import pricingImg from '../../assets/UniworldRiverCruises/uniworld-ss-emilie-restaurant-table-setting-decor.webp'
+
+// Final CTA
+import ctaBgImg from '../../assets/UniworldRiverCruises/uniworld-ss-maria-theresa-sailing-danube-wachau-valley.webp'
 
 function UniworldRiverCruises() {
-    // Structured Data Schema
-    const urcSchemaData = {
+    // 6-Entity Structured Data Schema matching RitzCarltonYachtCollectionCost pattern
+    const jsonLdSchema = {
         "@context": "https://schema.org",
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsandships.com/uniworld-river-cruises",
-                "name": pageData.seo.title,
+                "@id": `${pageData.seo.canonicalUrl}#webpage`,
                 "url": pageData.seo.canonicalUrl,
+                "name": pageData.seo.metaTitle,
+                "headline": pageData.seo.title,
                 "description": pageData.seo.metaDescription,
-                "inLanguage": "en-US"
+                "primaryImageOfPage": {
+                    "@type": "ImageObject",
+                    "url": "https://www.tripsandships.com/images/uniworld-river-cruises.jpg",
+                    "caption": "Uniworld River Cruises: The Complete Guide"
+                },
+                "image": "https://www.tripsandships.com/images/uniworld-river-cruises.jpg",
+                "author": {
+                    "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
+                },
+                "publisher": {
+                    "@id": "https://www.tripsandships.com/#organization"
+                },
+                "isPartOf": {
+                    "@id": "https://www.tripsandships.com/#website"
+                }
             },
             {
                 "@type": "Organization",
                 "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsandships.com"
+                "url": "https://www.tripsandships.com/",
+                "founder": {
+                    "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
+                }
             },
             {
                 "@type": "TravelAgency",
                 "@id": "https://www.tripsandships.com/#travelagency",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsandships.com"
+                "url": "https://www.tripsandships.com/",
+                "parentOrganization": {
+                    "@id": "https://www.tripsandships.com/#organization"
+                }
             },
             {
                 "@type": "Person",
-                "@id": "https://www.tripsandships.com/#angela-hughes",
+                "@id": "https://www.tripsandships.com/about-angela-hughes/#person",
                 "name": "Angela Hughes",
-                "jobTitle": "CEO"
-            },
-            {
-                "@type": "Article",
-                "@id": "https://www.tripsandships.com/uniworld-river-cruises#article",
-                "headline": "Uniworld River Cruises: The Complete Guide",
-                "url": pageData.seo.canonicalUrl,
-                "description": pageData.seo.metaDescription,
-                "image": "https://www.tripsandships.com/images/uniworld-river-cruises.jpg",
-                "author": { "@id": "https://www.tripsandships.com/#angela-hughes" },
-                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
-                "mainEntityOfPage": { "@id": "https://www.tripsandships.com/uniworld-river-cruises" }
-            },
-            {
-                "@type": "Service",
-                "name": "Uniworld River Cruise Planning",
-                "provider": { "@id": "https://www.tripsandships.com/#travelagency" },
-                "serviceType": "Luxury River Cruise Consulting",
-                "description": "Expert planning and personalized advice for Uniworld River Cruises."
+                "jobTitle": "CEO of Trips & Ships Luxury Travel",
+                "url": "https://www.tripsandships.com/about-angela-hughes",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "https://www.tripsandships.com/assets/Angela_Hughes.jpg",
+                    "caption": "Angela Hughes - Luxury River Cruise Specialist"
+                },
+                "description": "Angela Hughes is a luxury travel expert, CEO of Trips & Ships Luxury Travel, founder of Luxury Travel University and an experienced luxury river cruise authority.",
+                "worksFor": {
+                    "@id": "https://www.tripsandships.com/#organization"
+                },
+                "knowsAbout": [
+                    "Luxury Travel",
+                    "Luxury River Cruises",
+                    "European River Cruising",
+                    "Uniworld Boutique River Cruises",
+                    "All-Inclusive Luxury Cruises",
+                    "World River Itineraries"
+                ]
             },
             {
                 "@type": "BreadcrumbList",
+                "@id": `${pageData.seo.canonicalUrl}#breadcrumb`,
                 "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com" },
-                    { "@type": "ListItem", "position": 2, "name": "River Cruises", "item": "https://www.tripsandships.com/river-cruises" },
-                    { "@type": "ListItem", "position": 3, "name": "Uniworld River Cruises", "item": pageData.seo.canonicalUrl }
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.tripsandships.com/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "River Cruises",
+                        "item": "https://www.tripsandships.com/river-cruises"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Uniworld River Cruises",
+                        "item": pageData.seo.canonicalUrl
+                    }
                 ]
             },
             {
                 "@type": "FAQPage",
-                "mainEntity": pageData.faqs.map(f => ({
+                "@id": `${pageData.seo.canonicalUrl}#faq`,
+                "mainEntity": pageData.faqs.map(faq => ({
                     "@type": "Question",
-                    "name": f.question,
-                    "acceptedAnswer": { "@type": "Answer", "text": f.answer }
+                    "name": faq.question,
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": faq.answer
+                    }
                 }))
             }
         ]
     }
 
-    // Destination items (image commented out)
+    // Destination items mapped with authentic destination assets & clean placeholders
+    const destinationImages = [
+        destEuropeImg, // 0. Europe
+        destEgyptImg,  // 1. Egypt
+        null,          // 2. India (Placeholder - per user request image did not match)
+        destPeruImg,   // 3. Peru
+        destMekongImg  // 4. Vietnam & Cambodia
+    ]
+
     const destinationItems = pageData.destinations.items.map((item, idx) => ({
         ...item,
-        // image: idx === 0 ? europeDestImg : undefined
+        image: destinationImages[idx]
+    }))
+
+    // Cabin showcase image array
+    const cabinImages = [
+        cabinClassicImg,
+        cabinDeluxeImg,
+        cabinFrenchBalconyImg,
+        cabinSuitesImg
+    ]
+
+    // Shore excursion items mapped with 100% heading-matched assets & clean placeholders
+    const excursionImages = [
+        excursionWalkingImg,   // 0. Guided Walking Tours (Rothenburg ob der Tauber walking tour)
+        excursionMuseumImg,    // 1. Museum Visits (Würzburg Residence baroque art gallery tour)
+        excursionCastleImg,    // 2. Castle Tours (Burg Rheinstein medieval cliffside castle)
+        excursionCulinaryImg,  // 3. Culinary Experiences (European vineyard regional food & wine tasting)
+        null,                  // 4. Wine Tastings (Placeholder - per user request image did not match)
+        null,                  // 5. Guided Bike Tours (Placeholder - no authentic cycling asset exists)
+        excursionVillageImg,   // 6. Fairytale Village Visits (Miltenberg historic timber-framed village)
+        null,                  // 7. Cultural Performances (Placeholder - no authentic concert asset exists)
+        excursionMarketImg     // 8. Local Market Tours (Nuremberg Christkindlesmarkt artisan market)
+    ]
+
+    const excursionItems = pageData.excursions.items.map((item, idx) => ({
+        ...item,
+        image: excursionImages[idx]
     }))
 
     return (
@@ -111,7 +219,7 @@ function UniworldRiverCruises() {
                 <meta name="keywords" content={pageData.seo.keywords} />
                 <link rel="canonical" href={pageData.seo.canonicalUrl} />
                 <script type="application/ld+json">
-                    {JSON.stringify(urcSchemaData)}
+                    {JSON.stringify(jsonLdSchema)}
                 </script>
             </Helmet>
 
@@ -127,6 +235,7 @@ function UniworldRiverCruises() {
                 primaryCtaLink={pageData.hero.primaryCtaLink}
                 secondaryCtaText={pageData.hero.secondaryCtaText}
                 secondaryCtaLink={pageData.hero.secondaryCtaLink}
+                backgroundImage={heroBgImg}
             />
 
             {/* 2. THE UNIWORLD DIFFERENCE */}
@@ -134,6 +243,8 @@ function UniworldRiverCruises() {
                 eyebrow={pageData.theDifference.eyebrow}
                 heading={pageData.theDifference.heading}
                 paragraphs={pageData.theDifference.paragraphs}
+                primaryImage={introPrimaryImg}
+                secondaryImage={introSecondaryImg}
             />
 
             {/* 3. KEY PILLARS OF THE UNIWORLD DIFFERENCE */}
@@ -166,6 +277,7 @@ function UniworldRiverCruises() {
                     description: `${pageData.accommodations.subtitle} ${pageData.accommodations.note}`,
                     cabins: pageData.accommodations.cabins
                 }}
+                images={cabinImages}
             />
 
             {/* 7. SUITE PERKS & PRIVILEGES */}
@@ -189,13 +301,14 @@ function UniworldRiverCruises() {
                 title={pageData.inclusions.title}
                 inclusions={pageData.inclusions.inclusions}
                 expertNote={pageData.inclusions.expertNote}
+                image={inclusionsDiningImg}
             />
 
             {/* 10. SHORE EXCURSIONS */}
             <ThreeColumnGrid
                 title={pageData.excursions.title}
                 subtitle={`${pageData.excursions.subtitle} ${pageData.excursions.statement}`}
-                items={pageData.excursions.items}
+                items={excursionItems}
             />
 
             {/* 11. WELLNESS AND ONBOARD ACTIVITIES */}
@@ -225,6 +338,7 @@ function UniworldRiverCruises() {
             <EditorialIntroSection
                 heading={pageData.pricing.heading}
                 description={pageData.pricing.description}
+                image={pricingImg}
                 highlights={pageData.pricing.highlights}
             />
 
@@ -292,6 +406,7 @@ function UniworldRiverCruises() {
                 description={pageData.cta.description}
                 buttonText={pageData.cta.buttonText}
                 buttonLink={pageData.cta.buttonLink}
+                image={ctaBgImg}
             />
         </div>
     )

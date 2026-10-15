@@ -1,0 +1,487 @@
+{
+  "seo": {
+    "title": "Uniworld Rhône & Saône River Cruises: Burgundy, Provence, Prices & Expert Guide",
+    "metaTitle": "Uniworld Rhône & Saône River Cruises | Burgundy & Provence Luxury Guide",
+    "metaDescription": "Thinking about a Uniworld Rhône & Saône River Cruise? Discover Burgundy and Provence itineraries, pricing, wine regions, what's included, reviews, and whether it's worth booking.",
+    "canonicalUrl": "https://www.tripsandships.com/uniworld-river-cruises/rhone-saone",
+    "keywords": "Uniworld Rhône Saône River Cruises, Burgundy River Cruise, Provence River Cruise, Luxury France River Cruises, S.S. Catherine, Lyon River Cruise, French Wine River Cruises"
+  },
+  "hero": {
+    "tag": "Uniworld Rhône & Saône River Cruises",
+    "title": "Uniworld Rhône & Saône River Cruises",
+    "subtitle": "Discover Burgundy & Provence in Boutique Luxury",
+    "primaryCtaText": "Schedule a Consultation",
+    "primaryCtaLink": "/contact",
+    "secondaryCtaText": "Request Itinerary Options",
+    "secondaryCtaLink": "/contact"
+  },
+  "intro": {
+    "eyebrow": "EXPERT CRUISE GUIDE",
+    "heading": "Discover Burgundy & Provence",
+    "leadParagraphs": [
+      "A Uniworld Rhône & Saône River Cruise offers one of the most immersive ways to experience southern France. Sailing through the famous wine regions of Burgundy and Provence, you'll discover charming medieval villages, world-renowned vineyards, Roman ruins, lavender fields, gourmet cuisine, and vibrant French culture—all while enjoying Uniworld's signature boutique luxury.",
+      "Whether you're sampling fine wines in Burgundy, strolling through Avignon's historic streets, or exploring the colorful markets of Provence, every day delivers unforgettable experiences."
+    ],
+    "quote": "You'll discover charming medieval villages, world-renowned vineyards, Roman ruins, lavender fields, gourmet cuisine, and vibrant French culture.",
+    "badge": "Rhône & Saône Review Summary"
+  },
+  "ratingSummary": {
+    "eyebrow": "⭐ OVERALL RATING",
+    "title": "Expert Review Summary",
+    "score": "9.9/10",
+    "scoreLabel": "Overall Rating",
+    "ratings": [
+      {
+        "category": "Luxury",
+        "score": "5/5",
+        "rating": 5,
+        "stars": "⭐⭐⭐⭐⭐",
+        "description": "Boutique ship design and museum-grade finishes."
+      },
+      {
+        "category": "Dining",
+        "score": "5/5",
+        "rating": 5,
+        "stars": "⭐⭐⭐⭐⭐",
+        "description": "Farm-to-table French culinary programs and local wine pairings."
+      },
+      {
+        "category": "Service",
+        "score": "5/5",
+        "rating": 5,
+        "stars": "⭐⭐⭐⭐⭐",
+        "description": "Attentive, personalized crew-to-guest ratios and warm hospitality."
+      },
+      {
+        "category": "Excursions",
+        "score": "5/5",
+        "rating": 5,
+        "stars": "⭐⭐⭐⭐⭐",
+        "description": "Included daily guided immersion with regional experts."
+      },
+      {
+        "category": "Scenic Beauty",
+        "score": "5/5",
+        "rating": 5,
+        "stars": "⭐⭐⭐⭐⭐",
+        "description": "World-class Rhône & Saône riverway vistas, vineyards, and lavender."
+      },
+      {
+        "category": "Value",
+        "score": "4/5",
+        "rating": 4,
+        "stars": "⭐⭐⭐⭐☆",
+        "description": "All-inclusive luxury covering fine dining, drinks, and excursions."
+      }
+    ]
+  },
+  "quickAnswer": {
+    "eyebrow": "FEATURED SNIPPET",
+    "title": "Is a Uniworld Rhône & Saône River Cruise Worth It?",
+    "text": "Yes. A Uniworld Rhône & Saône River Cruise is ideal for travelers who love French cuisine, wine, history, art, and luxury. Nearly everything is included—from gourmet dining and premium beverages to guided excursions and exceptional personalized service."
+  },
+  "inlineCtas": [
+    {
+      "tag": "Expert Planning",
+      "text": "Ready to sail through Burgundy and Provence in boutique luxury?",
+      "btnText": "Schedule a Consultation",
+      "btnLink": "/contact"
+    },
+    {
+      "tag": "Itinerary Planning",
+      "text": "Want help choosing between Burgundy and Provence sailing dates?",
+      "btnText": "Speak to a Cruise Advisor",
+      "btnLink": "/contact"
+    },
+    {
+      "tag": "Suite Selection",
+      "text": "Interested in French Balconies or Butler Suites on S.S. Catherine?",
+      "btnText": "Schedule a Consultation",
+      "btnLink": "/contact"
+    }
+  ],
+  "whyChoose": {
+    "eyebrow": "HIGHLIGHTS",
+    "heading": "Why Choose a Rhône & Saône River Cruise?",
+    "items": [
+      {
+        "title": "Burgundy wine region",
+        "description": "World-renowned wine region featuring prestigious Grand Cru vineyards and centuries of winemaking heritage."
+      },
+      {
+        "title": "Provence villages",
+        "description": "Charming hilltop hamlets, sun-drenched town squares, and colorful open-air markets."
+      },
+      {
+        "title": "Roman history",
+        "description": "Remarkably preserved ancient Roman amphitheatres, temples, and aqueducts throughout southern France."
+      },
+      {
+        "title": "Lavender fields",
+        "description": "Vibrant purple lavender blooms coating the Provençal countryside in early summer."
+      },
+      {
+        "title": "Gourmet French cuisine",
+        "description": "Culinary mastery celebrating regional Provençal and Burgundian recipes made with fresh local ingredients."
+      },
+      {
+        "title": "Wine tastings",
+        "description": "Private tastings of world-class Châteauneuf-du-Pape, Beaujolais, and Burgundy vintages."
+      },
+      {
+        "title": "UNESCO World Heritage Sites",
+        "description": "Iconic cultural treasures including Avignon's Palace of the Popes and Pont d'Avignon."
+      },
+      {
+        "title": "Boutique luxury ships",
+        "description": "Uniquely decorated, museum-quality super ships with handcrafted fabrics and antique artistry."
+      }
+    ]
+  },
+  "included": {
+    "eyebrow": "ALL-INCLUSIVE",
+    "heading": "What's Included",
+    "items": [
+      "Boutique luxury accommodations",
+      "Gourmet French-inspired dining",
+      "Unlimited premium beverages",
+      "Guided excursions",
+      "Complimentary Wi-Fi",
+      "Onboard gratuities",
+      "Evening entertainment",
+      "Airport transfers (select sailings)",
+      "Complimentary bicycles"
+    ]
+  },
+  "destinations": {
+    "eyebrow": "WORLD CLASS RIVERWAYS",
+    "heading": "Top Destinations",
+    "items": [
+      {
+        "name": "Lyon",
+        "title": "Lyon",
+        "category": "Culinary Capital",
+        "desc": "France's culinary capital with exceptional food, history, and architecture.",
+        "description": "France's culinary capital with exceptional food, history, and architecture."
+      },
+      {
+        "name": "Avignon",
+        "title": "Avignon",
+        "category": "Papal City",
+        "desc": "Home to the magnificent Palace of the Popes and medieval streets.",
+        "description": "Home to the magnificent Palace of the Popes and medieval streets."
+      },
+      {
+        "name": "Arles",
+        "title": "Arles",
+        "category": "Art & Antiquity",
+        "desc": "Famous for Roman ruins and Vincent van Gogh's artistic inspiration.",
+        "description": "Famous for Roman ruins and Vincent van Gogh's artistic inspiration."
+      },
+      {
+        "name": "Viviers",
+        "title": "Viviers",
+        "category": "Medieval Charm",
+        "desc": "A charming medieval village with cobblestone streets.",
+        "description": "A charming medieval village with cobblestone streets."
+      },
+      {
+        "name": "Tournon",
+        "title": "Tournon",
+        "category": "Rhône Vineyards",
+        "desc": "Known for vineyards and Rhône Valley wines.",
+        "description": "Known for vineyards and Rhône Valley wines."
+      },
+      {
+        "name": "Beaune (Excursion)",
+        "title": "Beaune (Excursion)",
+        "category": "Burgundy Wine Capital",
+        "desc": "One of Burgundy's most famous wine towns.",
+        "description": "One of Burgundy's most famous wine towns."
+      }
+    ]
+  },
+  "dining": {
+    "eyebrow": "CULINARY EXCELLENCE",
+    "heading": "Dining Onboard",
+    "subheading": "Enjoy authentic French cuisine featuring:",
+    "items": [
+      "Regional specialties",
+      "Local Burgundy wines",
+      "Rhône Valley wines",
+      "Gourmet multi-course dinners",
+      "Fresh seasonal ingredients",
+      "Farm-to-table menus"
+    ],
+    "summary": "Every meal onboard is an event, celebrating regional French culinary traditions with farm-to-table ingredients, freshly baked breads, and curated sommelier wine pairings."
+  },
+  "accommodations": {
+    "eyebrow": "ACCOMMODATIONS",
+    "heading": "Luxury Accommodations",
+    "subheading": "Guests enjoy:",
+    "items": [
+      "Elegant boutique staterooms",
+      "Butler service (select suites)",
+      "Marble bathrooms",
+      "Luxury bedding",
+      "French balconies",
+      "Personalized service"
+    ],
+    "summary": "Uniworld staterooms and suites on the Rhône are custom-crafted with Savoir of England beds, plush marble baths, handcrafted fabrics, and open-air French balconies."
+  },
+  "seasons": {
+    "eyebrow": "SEASONAL GUIDE",
+    "heading": "Best Time to Cruise",
+    "cards": [
+      {
+        "title": "Spring",
+        "name": "Spring",
+        "icon": "Flower2",
+        "description": "Blooming vineyards and pleasant temperatures."
+      },
+      {
+        "title": "Summer",
+        "name": "Summer",
+        "icon": "Sun",
+        "description": "Lavender season and lively festivals."
+      },
+      {
+        "title": "Fall",
+        "name": "Fall",
+        "icon": "Leaf",
+        "description": "Wine harvest season with beautiful vineyard colors."
+      },
+      {
+        "title": "Christmas",
+        "name": "Christmas",
+        "icon": "Gift",
+        "description": "Limited festive sailings with seasonal charm."
+      }
+    ]
+  },
+  "worthIt": {
+    "eyebrow": "INVESTMENT & VALUE",
+    "heading": "Is It Worth the Money?",
+    "paragraphs": [
+      "Although Uniworld is positioned as a luxury river cruise line, many travelers believe the inclusive experience provides outstanding value. Fine dining, premium beverages, guided excursions, gratuities, and exceptional service are all included, helping simplify your vacation budget."
+    ]
+  },
+  "prosCons": {
+    "heading": "Pros & Cons",
+    "prosTitle": "What We Love (Pros)",
+    "consTitle": "Things to Consider (Cons)",
+    "pros": [
+      "Exceptional French Cuisine",
+      "Outstanding Wine Experiences",
+      "Boutique Luxury Ships",
+      "Beautiful Provençal Scenery",
+      "Award-Winning Service",
+      "Rich Cultural Experiences"
+    ],
+    "cons": [
+      "Premium Pricing",
+      "Popular Sailings Sell Out Early",
+      "Smaller Ships Mean Limited Availability",
+      "More traditional decor (may not appeal to minimalists)",
+      "Smaller fitness and wellness facilities",
+      "Fewer onboard activities compared to ocean liners"
+    ]
+  },
+  "audience": {
+    "heading": "Who Should Book?",
+    "whoShouldTitle": "Perfect For",
+    "whoPreferTitle": "May Prefer Alternative Options",
+    "whoShould": [
+      "Wine lovers",
+      "Food enthusiasts",
+      "Couples",
+      "Luxury travelers",
+      "Art lovers",
+      "History enthusiasts",
+      "Anniversary celebrations",
+      "First-time France visitors"
+    ],
+    "whoPrefer": [
+      "Travelers seeking high-energy resort-style mega ships",
+      "Ultra-minimalist modern design purists",
+      "Budget travelers seeking unbundled a la carte fares"
+    ]
+  },
+  "planningTips": {
+    "eyebrow": "TRAVEL SMART",
+    "heading": "Planning Tips",
+    "steps": [
+      {
+        "title": "Reserve 9–18 Months in Advance",
+        "description": "Reserve your cruise 9–18 months in advance."
+      },
+      {
+        "title": "Choose Optimal Seasonality",
+        "description": "Visit during spring or fall for ideal weather."
+      },
+      {
+        "title": "Select a Premium Balcony or Suite",
+        "description": "Choose a French Balcony or Suite."
+      },
+      {
+        "title": "Extend Your Journey",
+        "description": "Extend your stay in Lyon or Paris."
+      },
+      {
+        "title": "Pack for Historic Explorations",
+        "description": "Pack comfortable walking shoes for historic towns."
+      }
+    ]
+  },
+  "whyBook": {
+    "eyebrow": "PLANNING ADVANTAGE",
+    "heading": "Why Book with Trips & Ships Luxury Travel?",
+    "items": [
+      {
+        "title": "Compare Itineraries",
+        "description": "Compare Burgundy & Provence itineraries to find your ideal sailing.",
+        "icon": "map"
+      },
+      {
+        "title": "Select the Best Stateroom",
+        "description": "Select the best stateroom for your travel style and budget.",
+        "icon": "ship"
+      },
+      {
+        "title": "Arrange Airfare & Hotels",
+        "description": "Arrange airfare and hotels around your cruise dates.",
+        "icon": "check"
+      },
+      {
+        "title": "Secure Exclusive Promotions",
+        "description": "Secure exclusive promotions unavailable when booking direct.",
+        "icon": "dollar"
+      },
+      {
+        "title": "Plan Pre- & Post-Cruise Stays",
+        "description": "Plan pre- and post-cruise stays in Lyon, Paris, or Provence.",
+        "icon": "user"
+      },
+      {
+        "title": "Coordinate Transfers",
+        "description": "Coordinate transfers between airports, hotels, and the ship.",
+        "icon": "ship"
+      }
+    ]
+  },
+  "recommendation": {
+    "eyebrow": "OUR RECOMMENDATION",
+    "heading": "Is Uniworld Rhône & Saône Worth Booking?",
+    "stars": "⭐⭐⭐⭐⭐",
+    "paragraphs": [
+      "A Uniworld Rhône & Saône River Cruise is one of the finest ways to experience southern France.",
+      "From world-famous vineyards and gourmet cuisine to historic cities and picturesque villages, it offers an unforgettable luxury vacation filled with culture, history, and exceptional hospitality."
+    ]
+  },
+  "expert": {
+    "eyebrow": "Expert Insight from Angela Hughes",
+    "title": "Why Discerning Travelers Choose Uniworld River Cruises",
+    "lead": "According to Angela Hughes, many travelers are initially drawn to Uniworld for its extraordinary boutique ships — but ultimately stay loyal because of the warmth of service, the depth of cultural immersion, and a level of all-inclusive luxury that few river cruise lines can match.",
+    "bio": "As founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel, Angela Hughes helps travelers navigate the luxury river cruise landscape with honesty and real-world expertise — ensuring every client finds the right ship, the right itinerary, and the right experience for their lifestyle.",
+    "priorities": [
+      "Boutique, museum-quality ships",
+      "Truly all-inclusive luxury",
+      "Butler service in select suites",
+      "Gourmet farm-to-table dining",
+      "Intimate, destination-rich itineraries",
+      "Personalized, warm onboard service"
+    ],
+    "ctaText": "Plan with Angela Hughes",
+    "ctaLink": "/contact"
+  },
+  "faqs": [
+    {
+      "question": "1. Is a Uniworld Rhône & Saône River Cruise worth the money?",
+      "answer": "Yes. It offers exceptional value through luxury accommodations, gourmet dining, premium beverages, guided excursions, and personalized service."
+    },
+    {
+      "question": "2. What is included on a Rhône & Saône River Cruise?",
+      "answer": "Luxury accommodations, gourmet dining, unlimited premium beverages, Wi-Fi, guided excursions, gratuities, and entertainment are generally included."
+    },
+    {
+      "question": "3. Which regions does the cruise visit?",
+      "answer": "Most itineraries visit Burgundy and Provence, along with cities such as Lyon, Avignon, Arles, Viviers, and Tournon."
+    },
+    {
+      "question": "4. Is this cruise good for wine lovers?",
+      "answer": "Absolutely. Burgundy and the Rhône Valley are among France's most famous wine-producing regions."
+    },
+    {
+      "question": "5. When is the best time to cruise?",
+      "answer": "Spring and fall are excellent, while summer is ideal for lavender season."
+    },
+    {
+      "question": "6. Are shore excursions included?",
+      "answer": "Yes. Most guided excursions are included in your cruise fare."
+    },
+    {
+      "question": "7. Are drinks included?",
+      "answer": "Yes. Premium wines, spirits, beer, specialty coffee, and soft drinks are generally included."
+    },
+    {
+      "question": "8. Does Uniworld include gratuities?",
+      "answer": "Yes. Onboard gratuities are included on most Uniworld cruises."
+    },
+    {
+      "question": "9. Is Wi-Fi included?",
+      "answer": "Yes. Complimentary Wi-Fi is available throughout the ship."
+    },
+    {
+      "question": "10. Who should choose this itinerary?",
+      "answer": "Wine enthusiasts, food lovers, couples, luxury travelers, photographers, and history lovers."
+    },
+    {
+      "question": "11. Is Provence worth visiting on a river cruise?",
+      "answer": "Yes. Provence offers charming villages, Roman history, lavender fields, vibrant markets, and outstanding cuisine."
+    },
+    {
+      "question": "12. Why book with Trips & Ships Luxury Travel?",
+      "answer": "Our advisors provide expert itinerary recommendations, exclusive offers, personalized planning, and concierge-level service before, during, and after your luxury river cruise."
+    }
+  ],
+  "relatedGuides": [
+    {
+      "title": "Uniworld River Cruises Review",
+      "description": "Our full expert review of Uniworld's boutique river cruise fleet.",
+      "link": "/uniworld-river-cruises/review",
+      "icon": "Ship"
+    },
+    {
+      "title": "Scenic Mediterranean Cruises",
+      "description": "Explore another luxury way to sail southern Europe's coastlines.",
+      "link": "/scenic-mediterranean-cruises",
+      "icon": "Globe"
+    },
+    {
+      "title": "Why I Resisted Viking",
+      "description": "An honest editorial comparing Uniworld's boutique feel to Viking.",
+      "link": "/why-i-resisted-viking",
+      "icon": "Compass"
+    },
+    {
+      "title": "Scenic Cabins Guide",
+      "description": "Compare suite categories across leading luxury river cruise lines.",
+      "link": "/scenic-cabins-guide",
+      "icon": "Bed"
+    },
+    {
+      "title": "Private Villas & Exclusive Resorts",
+      "description": "Extend your Provence journey with a private villa escape.",
+      "link": "/private-villas-exclusive-resorts",
+      "icon": "Landmark"
+    }
+  ],
+  "cta": {
+    "title": "Ready to Plan Your Rhône & Saône River Cruise?",
+    "description": "Contact our luxury cruise consultants to compare itineraries, secure exclusive promotions, and plan pre- and post-cruise stays. We handle every detail so you can enjoy the journey.",
+    "primaryBtn": "Schedule a Consultation",
+    "primaryBtnLink": "/contact",
+    "secondaryBtn": "Request Itinerary Options",
+    "secondaryBtnLink": "/contact"
+  }
+}

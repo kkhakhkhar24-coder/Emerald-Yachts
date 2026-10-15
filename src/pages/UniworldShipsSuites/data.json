@@ -1,0 +1,451 @@
+{
+  "seo": {
+    "title": "Uniworld Ships & Suites: Complete Guide",
+    "ogTitle": "Uniworld Ships & Suites: Complete Guide",
+    "metaDescription": "Explore every Uniworld River Cruise ship and suite category, including staterooms, luxury suites, amenities, layouts, and tips for choosing the best cabin.",
+    "canonicalUrl": "https://www.tripsandships.com/uniworld-river-cruises/ships-suites/",
+    "keywords": "Uniworld Ships and Suites, Uniworld cruise ships, Uniworld suites, Uniworld staterooms, luxury river cruise cabins, Uniworld fleet, Uniworld room categories, boutique river cruise ships"
+  },
+  "hero": {
+    "eyebrow": "Uniworld Boutique River Cruises · Trips & Ships Luxury Travel",
+    "title": "Uniworld Ships & Suites: Complete Guide",
+    "subtitle": "Explore every Uniworld River Cruise ship and suite category, including staterooms, luxury suites, amenities, layouts, and tips for choosing the best cabin.",
+    "quickStats": [
+      { "value": "10+", "label": "Signature Ships" },
+      { "value": "120–160", "label": "Guests Per Ship" },
+      { "value": "100%", "label": "Boutique Design" },
+      { "value": "Select Suites", "label": "Butler Service" }
+    ]
+  },
+  "intro": {
+    "eyebrow": "A BOUTIQUE HOTEL ON THE WATER",
+    "heading": "Uniworld Ships and Suites: Complete Guide",
+    "lead": "Uniworld Boutique River Cruises is renowned for combining luxury hospitality with intimate river cruising.",
+    "paragraphs": [
+      "Unlike many cruise lines that use standardized ship designs, each Uniworld vessel features its own distinctive décor, inspired by the destinations it sails. From elegant staterooms to lavish suites with butler service, every accommodation is designed to deliver a boutique hotel experience on the water.",
+      "Whether you're deciding which ship to book or choosing between a classic stateroom and a luxury suite, this guide explains everything you need to know about the Uniworld fleet, cabin categories, onboard amenities, and how to select the best accommodation for your travel style."
+    ],
+    "statement": {
+      "primary": "Design matters on a boutique river ship.",
+      "bold": "No two Uniworld ships are identical.",
+      "badge": "Boutique River Cruising, Reimagined"
+    }
+  },
+  "fleetSection": {
+    "eyebrow": "THE FLEET",
+    "heading": "Explore the Uniworld Fleet",
+    "intro": "Uniworld operates a collection of boutique river ships across Europe, Egypt, India, and select international destinations. Most vessels accommodate between 120 and 160 guests, creating a relaxed atmosphere with personalized service.",
+    "stats": [
+      { "num": "10+", "label": "Signature Ships" },
+      { "num": "120–160", "label": "Guests Per Ship" },
+      { "num": "5+", "label": "Regions Worldwide" },
+      { "num": "100%", "label": "Boutique Design" }
+    ],
+    "superBadge": {
+      "title": "Signature Super Ships",
+      "text": "Several vessels belong to Uniworld's “Super Ship” collection, offering upgraded interiors and modern amenities."
+    },
+    "ships": [
+      { "ship": "S.S. Joie de Vivre", "region": "Seine, France" },
+      { "ship": "S.S. Bon Voyage", "region": "Bordeaux" },
+      { "ship": "S.S. Beatrice", "region": "Danube" },
+      { "ship": "S.S. Maria Theresa", "region": "Danube" },
+      { "ship": "S.S. Antoinette", "region": "Rhine" },
+      { "ship": "S.S. São Gabriel", "region": "Douro" },
+      { "ship": "S.S. La Venezia", "region": "Venice Lagoon" },
+      { "ship": "River Queen", "region": "Rhine" },
+      { "ship": "River Princess", "region": "European Rivers" },
+      { "ship": "River Duchess", "region": "Rhine & Danube" }
+    ],
+    "footerNote": "Each vessel reflects regional architecture, art, and culture — ensuring no two ships feel alike."
+  },
+  "boutiqueDesign": {
+    "eyebrow": "SIGNATURE DESIGN",
+    "heading": "Boutique Design Sets Every Ship Apart",
+    "lead": "One of Uniworld's defining features is its commitment to unique interior design.",
+    "items": [
+      "Handcrafted furniture",
+      "Original artwork",
+      "Antique-inspired décor",
+      "Marble finishes",
+      "Crystal chandeliers",
+      "Designer fabrics",
+      "Destination-inspired public spaces"
+    ],
+    "conclusionBox": "Instead of mass-produced interiors, each ship is curated to create an immersive luxury environment.",
+    "callout": "Distinctive décor inspired by each destination."
+  },
+  "cabinCategories": {
+    "eyebrow": "ROOM CATEGORIES",
+    "heading": "Understanding Stateroom Categories",
+    "categories": [
+      {
+        "id": "classic",
+        "title": "Classic Staterooms",
+        "body": "Ideal for travelers seeking luxury without upgrading to premium suites.",
+        "items": [
+          "Premium bedding",
+          "Marble bathroom",
+          "Flat-screen television",
+          "Climate control",
+          "Luxury bath amenities",
+          "Hair dryer",
+          "Safe",
+          "Daily housekeeping"
+        ]
+      },
+      {
+        "id": "deluxe",
+        "title": "Deluxe Staterooms",
+        "body": "Deluxe rooms typically offer:",
+        "items": [
+          "Larger floor plans",
+          "Better deck locations",
+          "Enhanced views",
+          "Additional seating area",
+          "Upgraded décor"
+        ]
+      },
+      {
+        "id": "french-balcony",
+        "title": "French Balcony Rooms",
+        "body": "Many guests prefer French Balcony accommodations because they provide expansive river views.",
+        "items": [
+          "Floor-to-ceiling glass doors",
+          "Fresh air access",
+          "Panoramic scenery",
+          "Bright natural lighting"
+        ],
+        "note": "These cabins are especially popular on European itineraries."
+      }
+    ]
+  },
+  "luxurySuites": {
+    "eyebrow": "TOP-TIER ACCOMMODATION",
+    "heading": "Luxury Suites",
+    "lead": "Suites represent the highest level of onboard accommodation.",
+    "intro": "Depending on the ship, guests may enjoy:",
+    "items": [
+      "Separate sitting areas",
+      "Larger bathrooms",
+      "Walk-in wardrobes",
+      "Butler service",
+      "Complimentary laundry (select categories)",
+      "Fresh fruit delivery",
+      "Premium minibar",
+      "Priority services",
+      "Enhanced room amenities"
+    ],
+    "body": "Many suites feature elegant furnishings comparable to luxury boutique hotels.",
+    "callout": {
+      "title": "Luxury, tailored to you",
+      "text": "Suite categories vary by vessel, so compare the deck plan and included services before upgrading."
+    }
+  },
+  "butlerService": {
+    "eyebrow": "PERSONALIZED SERVICE",
+    "heading": "Butler Service Explained",
+    "intro": "One of Uniworld's signature luxury benefits is butler service for qualifying suites. This level of personalized attention distinguishes Uniworld from many premium river cruise lines.",
+    "items": [
+      "Unpacking and packing assistance",
+      "Beverage service",
+      "Shoe shining",
+      "Dining reservations",
+      "Laundry coordination",
+      "Personalized requests",
+      "Suite preparation"
+    ],
+    "distinction": {
+      "title": "What sets Uniworld apart",
+      "text": "Personalized butler service in qualifying suites creates a truly bespoke experience — confirm your suite category and exact service inclusions when booking."
+    }
+  },
+  "onboardAmenities": {
+    "eyebrow": "INCLUDED ON BOARD",
+    "heading": "Onboard Amenities Available to Every Guest",
+    "items": [
+      "Main restaurant",
+      "Lounge and bar",
+      "Sun deck",
+      "Fitness center",
+      "Library",
+      "Boutique shop",
+      "Complimentary Wi-Fi",
+      "Reception services",
+      "Outdoor seating areas"
+    ],
+    "footer": "Many ships also feature unique lounges inspired by the destinations they visit."
+  },
+  "cabinComparison": {
+    "eyebrow": "AT A GLANCE",
+    "heading": "Comparing Cabin Categories",
+    "headers": ["Feature", "Classic", "Deluxe", "French Balcony", "Suite"],
+    "rows": [
+      ["Premium Bedding", "✓", "✓", "✓", "✓"],
+      ["Marble Bathroom", "✓", "✓", "✓", "✓"],
+      ["Scenic Views", "Good", "Better", "Excellent", "Excellent"],
+      ["Balcony Access", "No", "No", "French Balcony", "Varies"],
+      ["Butler Service", "No", "No", "No", "Select Suites"],
+      ["Largest Living Space", "No", "No", "Moderate", "Yes"]
+    ]
+  },
+  "choosingCabin": {
+    "eyebrow": "BOOKING GUIDANCE",
+    "heading": "Choosing the Best Cabin",
+    "blocks": [
+      {
+        "label": "Classic Stateroom",
+        "title": "Best for value",
+        "intro": "Choose a Classic Stateroom if you:",
+        "items": [
+          "Spend most of your time exploring destinations.",
+          "Prefer value over extra space.",
+          "Want luxury at the lowest available fare."
+        ]
+      },
+      {
+        "label": "French Balcony Room",
+        "title": "Best for views",
+        "intro": "Choose a French Balcony Room if you:",
+        "items": [
+          "Love scenic river views.",
+          "Enjoy natural light.",
+          "Spend more time relaxing in your cabin."
+        ]
+      },
+      {
+        "label": "Suite",
+        "title": "Best for extra service",
+        "intro": "Choose a Suite if you:",
+        "items": [
+          "Celebrate a honeymoon or anniversary.",
+          "Want additional space.",
+          "Appreciate personalized butler service.",
+          "Plan to spend significant time onboard."
+        ]
+      }
+    ],
+    "footer": "Selecting the right category comes down to how you prefer to spend your time on board."
+  },
+  "accessibility": {
+    "eyebrow": "PLAN AHEAD",
+    "heading": "Accessibility Considerations",
+    "lead": "Some Uniworld ships include accessible accommodations designed for guests with mobility needs.",
+    "bodyIntro": "Accessibility features may include:",
+    "items": [
+      "Wider doorways",
+      "Accessible bathrooms",
+      "Elevator access",
+      "Assistance from onboard staff"
+    ],
+    "bodyOutro": "Availability varies by ship and itinerary, so early booking is recommended.",
+    "callout": {
+      "title": "Ask before booking",
+      "text": "Accessibility can vary by vessel, deck, and itinerary. Confirm the details with your travel advisor."
+    }
+  },
+  "shipAmenities": {
+    "eyebrow": "BEYOND THE CABIN",
+    "heading": "Ship Amenities That Enhance the Experience",
+    "lead": "Beyond accommodations, guests benefit from numerous premium services.",
+    "items": [
+      "Gourmet dining",
+      "Premium beverages",
+      "Included excursions",
+      "Destination lectures",
+      "Local entertainment",
+      "Wellness programs",
+      "Cultural experiences",
+      "Concierge assistance"
+    ],
+    "conclusionBox": "These amenities contribute to Uniworld's reputation as a luxury all-inclusive river cruise operator.",
+    "badge": "A Luxury All-Inclusive Experience"
+  },
+  "tipsSelectingShip": {
+    "eyebrow": "BEFORE YOU BOOK",
+    "heading": "Tips for Selecting the Right Ship",
+    "tipIndex": {
+      "num": "01",
+      "text": "Research the vessel, not just the itinerary."
+    },
+    "lead": "Before booking, consider:",
+    "items": [
+      "Destination and itinerary",
+      "Ship size",
+      "Deck location",
+      "Suite availability",
+      "Balcony preference",
+      "Travel season",
+      "Included amenities",
+      "Mobility requirements"
+    ],
+    "conclusion": "Because each vessel has a unique design, researching individual ships helps ensure the best experience."
+  },
+  "imageRecommendations": {
+    "eyebrow": "CONTENT PRODUCTION",
+    "heading": "Image Recommendations",
+    "items": [
+      {
+        "suggestion": "S.S. Beatrice sailing the Danube",
+        "alt": "Uniworld S.S. Beatrice luxury river cruise ship on the Danube"
+      },
+      {
+        "suggestion": "French Balcony cabin",
+        "alt": "French Balcony stateroom aboard a Uniworld River Cruise"
+      },
+      {
+        "suggestion": "Luxury suite interior",
+        "alt": "Luxury suite with butler service on a Uniworld cruise ship"
+      },
+      {
+        "suggestion": "Marble bathroom",
+        "alt": "Premium marble bathroom in a Uniworld suite"
+      },
+      {
+        "suggestion": "Sun deck",
+        "alt": "Guests relaxing on the sun deck of a Uniworld river ship"
+      },
+      {
+        "suggestion": "Boutique lounge",
+        "alt": "Elegant destination-inspired lounge aboard a Uniworld river ship"
+      }
+    ]
+  },
+  "expertQuote": {
+    "eyebrow": "MEET THE CEO",
+    "heading": "Insight from Angela Hughes",
+    "quote": "A Uniworld river cruise isn't just about traveling from destination to destination—it's about returning to a uniquely curated boutique sanctuary every single evening, experiencing local culture both on and off the ship.",
+    "prioritiesTitle": "Travel Prioritization Matrix:",
+    "priorities": [
+      "Boutique River Ships",
+      "Personalized Butler Service",
+      "All-Inclusive Value",
+      "Regional Shore Excursions",
+      "Gourmet Dining",
+      "Intimate Capacity"
+    ],
+    "bio": "As founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel, Angela Hughes uses her personal, deep connections in the river cruising world to deliver custom travel planning that regular booking engines simply cannot replicate.",
+    "stats": [
+      { "num": "40+", "label": "Years Designing Travel" },
+      { "num": "121+", "label": "Countries Traveled" }
+    ],
+    "ctaText": "Plan with Angela Hughes",
+    "ctaLink": "/contact"
+  },
+  "takeaways": {
+    "eyebrow": "THE ESSENTIALS",
+    "heading": "Key Takeaways",
+    "items": [
+      "Every Uniworld ship features a unique boutique design.",
+      "Accommodation ranges from Classic Staterooms to luxury suites.",
+      "French Balcony rooms provide exceptional river views.",
+      "Select suites include personalized butler service.",
+      "Small ships create an intimate luxury experience.",
+      "Premium amenities are available throughout the fleet.",
+      "Choosing the right cabin depends on budget, travel style, and itinerary."
+    ]
+  },
+  "faqs": [
+    {
+      "question": "How many ships does Uniworld have?",
+      "answer": "Uniworld operates a fleet of boutique river ships across Europe, Egypt, India, and other select destinations."
+    },
+    {
+      "question": "Are all Uniworld ships the same?",
+      "answer": "No. Each ship features unique destination-inspired interior design."
+    },
+    {
+      "question": "What is the best suite on a Uniworld ship?",
+      "answer": "Top suites offer the largest accommodations, luxury amenities, and butler service."
+    },
+    {
+      "question": "What is a French Balcony cabin?",
+      "answer": "It features floor-to-ceiling glass doors that provide panoramic river views."
+    },
+    {
+      "question": "Does every cabin include luxury amenities?",
+      "answer": "Yes. Premium bedding, marble bathrooms, luxury toiletries, and housekeeping are standard."
+    },
+    {
+      "question": "Which ships sail the Danube?",
+      "answer": "Ships such as S.S. Beatrice and S.S. Maria Theresa regularly operate Danube itineraries."
+    },
+    {
+      "question": "Are Uniworld suites worth upgrading?",
+      "answer": "Guests wanting additional space and personalized luxury service often find suites worthwhile."
+    },
+    {
+      "question": "Do Uniworld suites include butler service?",
+      "answer": "Yes. Butler service is available in qualifying suite categories."
+    },
+    {
+      "question": "Are cabins spacious?",
+      "answer": "Cabin sizes vary, with suites offering the most spacious accommodations."
+    },
+    {
+      "question": "Which cabin is best for first-time travelers?",
+      "answer": "French Balcony cabins offer an excellent balance of comfort, views, and value."
+    },
+    {
+      "question": "Do Uniworld ships have elevators?",
+      "answer": "Many ships include elevators, although access varies by vessel."
+    },
+    {
+      "question": "Are accessible cabins available?",
+      "answer": "Some ships offer accessible accommodations, subject to availability."
+    },
+    {
+      "question": "What amenities are included in every room?",
+      "answer": "Guests generally receive premium bedding, climate control, Wi-Fi, toiletries, television, and housekeeping."
+    },
+    {
+      "question": "How many passengers are onboard?",
+      "answer": "Most Uniworld ships accommodate approximately 120 to 160 guests."
+    },
+    {
+      "question": "What makes Uniworld ships different from other river cruise lines?",
+      "answer": "Their individually designed boutique interiors, luxury accommodations, and personalized service set them apart."
+    }
+  ],
+  "cta": {
+    "eyebrow": "START SOMEWHERE REMARKABLE",
+    "title": "Find Your Perfect Uniworld Ship & Suite",
+    "subtitle": "Let's compare the fleet, seasons, ships, suites, and inclusions that match your luxury river cruising preferences.",
+    "buttonText": "Speak with a luxury river cruise specialist",
+    "buttonLink": "/contact"
+  },
+  "internalLinks": [
+    { "label": "Uniworld River Cruises", "url": "/uniworld-river-cruises/" },
+    { "label": "What Is Included on a Uniworld River Cruise", "url": "/uniworld-river-cruises/whats-included/" },
+    { "label": "Is Uniworld Worth the Money", "url": "/uniworld-river-cruises/is-uniworld-worth-it/" },
+    { "label": "Uniworld Cruise Costs", "url": "/uniworld-river-cruises/cost-deals/" },
+    { "label": "European River Cruises", "url": "/european-river-cruises/" },
+    { "label": "Luxury River Cruises", "url": "/luxury-river-cruises/" },
+    { "label": "River Cruise Packing Guide", "url": "/river-cruise-packing-guide/" }
+  ],
+  "externalRefs": [
+    "Official Uniworld Boutique River Cruises",
+    "Cruise Lines International Association (CLIA)",
+    "UNESCO World Heritage Centre",
+    "European tourism boards",
+    "U.S. Department of State Travel Advisories"
+  ],
+  "keywordChips": [
+    "luxury river cruise suites",
+    "boutique cruise accommodations",
+    "premium river cruise cabins",
+    "French balcony staterooms",
+    "luxury river ship interiors",
+    "boutique hotel on water",
+    "luxury cruise rooms",
+    "European river cruise cabins",
+    "butler service suites",
+    "river cruise fleet"
+  ],
+  "eeatItems": [
+    "Explains accommodation categories objectively.",
+    "Covers fleet overview and cabin selection guidance.",
+    "Provides practical booking considerations.",
+    "Helps travelers compare room options before booking."
+  ]
+}

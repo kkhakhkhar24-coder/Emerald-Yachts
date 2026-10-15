@@ -1,268 +1,151 @@
-import Navbar from '../../components/Navbar/Navbar'
-import ProfilePictureAH from "../../assets/Media (2).jpg"
-import {
-    Users as ExpertUsers,
-    Award as ExpertAward,
-    CheckCircle as ExpertCheckCircle,
-    Ship as ExpertShip,
-    Globe as ExpertGlobe,
-    Compass as ExpertCompass,
-    Sparkles as ExpertSparkles
-} from 'lucide-react'
-import './Uniworldbordeauxrivercruises.css'
-import {
-    Ship, Sparkles, Phone, LayoutList, CheckCircle, Globe, Award,
-    Utensils, Wine, Bed, Compass, Gift, AlertTriangle, XCircle,
-    Image as ImageIcon, MapPin, Sun, Landmark, Bath, Home,
-    CalendarDays, Snowflake, Leaf, Grape, ShieldCheck
-} from 'lucide-react'
-import { Helmet } from 'react-helmet-async'
-import { useState } from 'react'
-import { Link } from 'react-router'
+import React from 'react';
+import { Helmet } from 'react-helmet-async';
+import { ChevronRight } from 'lucide-react';
+import Navbar from '@/components/Navbar/Navbar';
 
-// Custom Image Placeholder Component (unique to this page)
-function BwrcPlaceholder({ label, className = '' }) {
+// Page Data JSON
+import pageData from './data.json';
+
+// Shared UI System Components (100% Existing Shared Components)
+import ComparisonHero from '@/components/ui/ComparisonHero';
+import EditorialIntroSplit from '@/components/ui/EditorialIntroSplit';
+import LuxuryScorecardVisual from '@/components/ui/LuxuryScorecardVisual';
+import AuthorityBox from '@/components/ui/AuthorityBox';
+import AuthorityGrid from '@/components/ui/AuthorityGrid';
+import InclusionsList from '@/components/ui/InclusionsList';
+import ThreeColumnGrid from '@/components/ui/ThreeColumnGrid';
+import FeatureSplit from '@/components/ui/FeatureSplit';
+import CardGrid from '@/components/ui/CardGrid';
+import ConclusionSection from '@/components/ui/ConclusionSection';
+import ProsConsCards from '@/components/ui/ProsConsCards';
+import StepByStepGuide from '@/components/ui/StepByStepGuide';
+import LuxuryGrid from '@/components/ui/LuxuryGrid';
+import ExpertCredentials from '@/components/ui/ExpertCredentials';
+import FAQAccordion from '@/components/ui/FAQAccordion';
+import CenterCTA from '@/components/ui/CenterCTA';
+
+// Media Assets from @/assets/Uniworldbordeauxrivercruises
+import ProfilePictureAH from '@/assets/Media (2).jpg';
+import quickAnswerImg from '@/assets/Media (1).jpg';
+import heroBgImg from '@/assets/Uniworldbordeauxrivercruises/uniworld-ss-bon-voyage-exterior-bordeaux-to-libourne.webp';
+import introPrimaryImg from '@/assets/Uniworldbordeauxrivercruises/uniworld-ss-bon-voyage-morning-riverfront-view-france.webp';
+import introSecondaryImg from '@/assets/Uniworldbordeauxrivercruises/uniworld-bordeaux-cathedrale-saint-andre-france.jpg';
+import scorecardImg from '@/assets/Uniworldbordeauxrivercruises/uniworld-ss-bon-voyage-soleil-deck-infinity-pool-sunset.webp';
+import inclusionsDiningImg from '@/assets/Uniworldbordeauxrivercruises/uniworld-ss-bon-voyage-le-grand-fromage-dining-room.webp';
+import diningImg from '@/assets/Uniworldbordeauxrivercruises/uniworld-european-vineyard-culinary-tasting-experience.webp';
+import cabinImg from '@/assets/Uniworldbordeauxrivercruises/uniworld-french-balcony-stateroom-interior-rendering.webp';
+import ctaBgImg from '@/assets/Uniworldbordeauxrivercruises/uniworld-ss-bon-voyage-sunset-golden-hour-libourne.webp';
+
+// Destination Images (Matched authentic images; unmatched use null for built-in placeholder)
+import bordeauxImg from '@/assets/Uniworldbordeauxrivercruises/uniworld-bordeaux-cathedrale-saint-andre-france.jpg';
+import libourneImg from '@/assets/Uniworldbordeauxrivercruises/uniworld-ss-bon-voyage-docked-libourne-quay-evening.webp';
+
+// Styled Inline CTA matching site pattern
+function InlineCTA({ tag, text, btnText, btnLink = "/contact" }) {
+    if (!tag || !text) return null;
     return (
-        <div className={`bwrc-image-placeholder ${className}`} role="img" aria-label={`Image placeholder: ${label}`}>
-            <ImageIcon size={28} />
-            <span>{label}</span>
+        <div className="max-w-[1280px] mx-auto px-6 py-6">
+            <div className="bg-slate-50 border border-slate-200/80 rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 shadow-sm">
+                <div>
+                    <span className="text-[11px] font-bold uppercase tracking-wider text-navy-800 bg-white border border-slate-200 px-3 py-1 rounded-full inline-block mb-2 shadow-2xs">
+                        {tag}
+                    </span>
+                    <p className="font-display text-lg sm:text-xl text-navy-950 font-normal">
+                        {text}
+                    </p>
+                </div>
+                <a
+                    href={btnLink}
+                    className="inline-flex items-center gap-2 bg-navy-900 hover:bg-navy-800 text-white font-sans text-sm font-semibold px-6 py-3 rounded-xl transition-colors whitespace-nowrap shadow-sm shrink-0"
+                >
+                    <span>{btnText}</span>
+                    <ChevronRight size={16} />
+                </a>
+            </div>
         </div>
-    )
+    );
 }
 
 function UniworldBordeauxRiverCruises() {
-    const [bwrcActiveFaq, setBwrcActiveFaq] = useState(null)
-    const bwrcToggleFaq = (index) => {
-        setBwrcActiveFaq(bwrcActiveFaq === index ? null : index)
-    }
-
-    const bwrcHighlights = [
-        { text: "World-famous Bordeaux wine region", icon: <Grape size={20} /> },
-        { text: "Château wine tastings", icon: <Wine size={20} /> },
-        { text: "Saint-Émilion", icon: <MapPin size={20} /> },
-        { text: "Medieval villages", icon: <Landmark size={20} /> },
-        { text: "UNESCO World Heritage Sites", icon: <Award size={20} /> },
-        { text: "French cuisine", icon: <Utensils size={20} /> },
-        { text: "Historic fortresses", icon: <ShieldCheck size={20} /> },
-        { text: "Boutique luxury cruising", icon: <Ship size={20} /> },
-    ]
-
-    const bwrcIncluded = [
-        "Boutique luxury accommodations",
-        "Gourmet French dining",
-        "Unlimited premium beverages",
-        "Guided excursions",
-        "Wine tastings",
-        "Complimentary Wi-Fi",
-        "Onboard gratuities",
-        "Evening entertainment",
-        "Airport transfers (select sailings)",
-        "Complimentary bicycles",
-    ]
-
-    const bwrcDestinations = [
-        { name: "Bordeaux", desc: "A UNESCO World Heritage city celebrated for elegant architecture, world-class wine, and vibrant riverside culture.", icon: <Landmark size={24} /> },
-        { name: "Saint-Émilion", desc: "One of France's most famous wine villages, known for vineyards, cobblestone streets, and historic wineries.", icon: <Grape size={24} /> },
-        { name: "Libourne", desc: "A charming riverside town and gateway to Bordeaux's celebrated wine country.", icon: <MapPin size={24} /> },
-        { name: "Blaye", desc: "Home to the impressive UNESCO-listed Blaye Citadel overlooking the Gironde Estuary.", icon: <ShieldCheck size={24} /> },
-        { name: "Cadillac", desc: "Historic town surrounded by vineyards and beautiful countryside.", icon: <Home size={24} /> },
-        { name: "Médoc", desc: "One of the world's most prestigious wine-producing regions, famous for exceptional château experiences.", icon: <Wine size={24} /> },
-    ]
-
-    const bwrcDiningItems = [
-        { text: "Regional French cuisine", icon: <Utensils size={20} /> },
-        { text: "Bordeaux wines", icon: <Wine size={20} /> },
-        { text: "Gourmet multi-course dinners", icon: <Utensils size={20} /> },
-        { text: "Fresh local ingredients", icon: <Leaf size={20} /> },
-        { text: "Artisan cheeses", icon: <Gift size={20} /> },
-        { text: "Farm-to-table specialties", icon: <Globe size={20} /> },
-    ]
-
-    const bwrcAccommodationItems = [
-        { text: "Butler service", icon: <Bed size={20} /> },
-        { text: "Marble bathrooms", icon: <Bath size={20} /> },
-        { text: "French balconies", icon: <Home size={20} /> },
-        { text: "Luxury bedding", icon: <Bed size={20} /> },
-        { text: "Spacious living areas", icon: <Ship size={20} /> },
-    ]
-
-    const bwrcSeasons = [
-        { name: "Spring", desc: "Beautiful vineyards begin to bloom with mild weather.", icon: <Leaf size={22} /> },
-        { name: "Summer", desc: "Long days perfect for wine tastings and outdoor dining.", icon: <Sun size={22} /> },
-        { name: "Fall", desc: "Harvest season offers the ultimate Bordeaux wine experience.", icon: <Grape size={22} /> },
-        { name: "Winter", desc: "Quieter travel with festive holiday charm.", icon: <Snowflake size={22} /> },
-    ]
-
-    const bwrcPros = [
-        { text: "Exceptional wine experiences", icon: <Wine size={20} /> },
-        { text: "Gourmet French cuisine", icon: <Utensils size={20} /> },
-        { text: "Boutique luxury ships", icon: <Ship size={20} /> },
-        { text: "Outstanding service", icon: <Award size={20} /> },
-        { text: "Beautiful vineyard scenery", icon: <Grape size={20} /> },
-        { text: "Excellent included excursions", icon: <Compass size={20} /> },
-    ]
-
-    const bwrcCons = [
-        "Premium pricing",
-        "Popular departures sell out early",
-        "Limited suite availability",
-    ]
-
-    const bwrcAudience = [
-        "Wine enthusiasts",
-        "Food lovers",
-        "Couples",
-        "Luxury travelers",
-        "Anniversary celebrations",
-        "France first-time visitors",
-        "Cultural travelers",
-        "Photography enthusiasts",
-    ]
-
-    const bwrcPlanningTips = [
-        "Book 9–18 months in advance.",
-        "Fall is ideal for vineyard harvest season.",
-        "Reserve a French Balcony or Suite.",
-        "Extend your stay in Bordeaux.",
-        "Bring comfortable shoes for winery and village walking tours.",
-    ]
-
-    const bwrcWhyBook = [
-        { title: "Compare Bordeaux Itineraries", icon: <Compass size={20} /> },
-        { title: "Select the Best Suite", icon: <Bed size={20} /> },
-        { title: "Arrange Flights and Hotels", icon: <Globe size={20} /> },
-        { title: "Secure Exclusive Promotions", icon: <Award size={20} /> },
-        { title: "Customize Pre- & Post-Cruise Stays", icon: <CalendarDays size={20} /> },
-        { title: "Coordinate Transfers", icon: <Ship size={20} /> },
-        { title: "Concierge-Level Service Throughout Your Journey", icon: <CheckCircle size={20} /> },
-    ]
-
-    const bwrcFaqs = [
-        {
-            question: "1. Is a Uniworld Bordeaux River Cruise worth the money?",
-            answer: "Yes. It offers exceptional value through luxury accommodations, gourmet dining, premium wines, guided excursions, gratuities, and personalized service."
-        },
-        {
-            question: "2. What is included on a Bordeaux River Cruise?",
-            answer: "Luxury accommodations, gourmet dining, unlimited premium beverages, guided excursions, Wi-Fi, gratuities, entertainment, and wine-focused experiences are generally included."
-        },
-        {
-            question: "3. Which rivers does the cruise sail?",
-            answer: "Most Bordeaux itineraries sail the Garonne, Dordogne, and Gironde waterways while exploring Southwest France."
-        },
-        {
-            question: "4. Is this cruise good for wine lovers?",
-            answer: "Absolutely. Bordeaux is one of the world's most famous wine destinations, with visits to renowned vineyards and château estates."
-        },
-        {
-            question: "5. When is the best time to cruise Bordeaux?",
-            answer: "Spring and fall are excellent, while fall harvest season is especially popular."
-        },
-        {
-            question: "6. Are wine tastings included?",
-            answer: "Yes. Many guided excursions include wine tastings at renowned vineyards and château estates."
-        },
-        {
-            question: "7. Are drinks included?",
-            answer: "Yes. Premium wines, beer, spirits, specialty coffee, soft drinks, and bottled water are generally included."
-        },
-        {
-            question: "8. Does Uniworld include gratuities?",
-            answer: "Yes. Onboard gratuities are included on most Uniworld river cruises."
-        },
-        {
-            question: "9. Is Wi-Fi included?",
-            answer: "Yes. Complimentary Wi-Fi is available throughout the ship."
-        },
-        {
-            question: "10. Which destinations are most popular?",
-            answer: "Bordeaux, Saint-Émilion, Médoc, Libourne, Blaye, and Cadillac are among the itinerary highlights."
-        },
-        {
-            question: "11. Who should choose this itinerary?",
-            answer: "Wine enthusiasts, couples, food lovers, luxury travelers, photographers, and anyone wanting to explore France's most famous wine region."
-        },
-        {
-            question: "12. Why book with Trips & Ships Luxury Travel?",
-            answer: "Our advisors provide expert recommendations, exclusive offers, personalized planning, and concierge-level service before, during, and after your luxury river cruise."
-        },
-    ]
-
-    const bwrcSchemaData = {
+    // 6-Entity Structured Data Schema matching RitzCarltonYachtCollectionCost pattern
+    const jsonLdSchema = {
         "@context": "https://schema.org",
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsandships.com/uniworld-river-cruises/bordeaux",
-                "name": "Uniworld Bordeaux River Cruises",
-                "url": "https://www.tripsandships.com/uniworld-river-cruises/bordeaux",
-                "description": "Discover Uniworld Bordeaux River Cruises featuring luxury boutique ships, world-famous vineyards, gourmet dining, château wine tastings, and all-inclusive river cruise experiences.",
-                "inLanguage": "en-US",
+                "@id": `${pageData.seo.canonicalUrl}#webpage`,
+                "url": pageData.seo.canonicalUrl,
+                "name": pageData.seo.metaTitle,
+                "headline": pageData.seo.title,
+                "description": pageData.seo.metaDescription,
+                "primaryImageOfPage": {
+                    "@type": "ImageObject",
+                    "url": "https://www.tripsandships.com/images/uniworld-bordeaux-river-cruises.jpg",
+                    "caption": "Uniworld Bordeaux River Cruises"
+                },
+                "image": "https://www.tripsandships.com/images/uniworld-bordeaux-river-cruises.jpg",
+                "author": {
+                    "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
+                },
                 "publisher": {
                     "@id": "https://www.tripsandships.com/#organization"
                 },
-                "mainEntity": {
-                    "@type": "Article",
-                    "@id": "https://www.tripsandships.com/uniworld-river-cruises/bordeaux#article"
+                "isPartOf": {
+                    "@id": "https://www.tripsandships.com/#website"
                 }
             },
             {
                 "@type": "Organization",
                 "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsandships.com"
+                "url": "https://www.tripsandships.com/",
+                "founder": {
+                    "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
+                }
             },
             {
                 "@type": "TravelAgency",
                 "@id": "https://www.tripsandships.com/#travelagency",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsandships.com",
-                "description": "Luxury travel agency specializing in luxury river cruises, ocean cruises, expedition cruises, and personalized travel planning."
-            },
-            {
-                "@type": "Person",
-                "@id": "https://www.tripsandships.com/#angela-hughes",
-                "name": "Angela Hughes",
-                "jobTitle": "CEO",
-                "worksFor": {
-                    "@id": "https://www.tripsandships.com/#travelagency"
-                },
-                "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
-            },
-            {
-                "@type": "Article",
-                "@id": "https://www.tripsandships.com/uniworld-river-cruises/bordeaux#article",
-                "headline": "Uniworld Bordeaux River Cruises",
-                "url": "https://www.tripsandships.com/uniworld-river-cruises/bordeaux",
-                "description": "Expert guide to Uniworld Bordeaux River Cruises including wine regions, château visits, pricing, excursions, dining, and luxury travel planning.",
-                "image": "https://www.tripsandships.com/images/uniworld-bordeaux-river-cruises.jpg",
-                "author": {
-                    "@id": "https://www.tripsandships.com/#angela-hughes"
-                },
-                "publisher": {
+                "url": "https://www.tripsandships.com/",
+                "parentOrganization": {
                     "@id": "https://www.tripsandships.com/#organization"
-                },
-                "mainEntityOfPage": {
-                    "@id": "https://www.tripsandships.com/uniworld-river-cruises/bordeaux"
                 }
             },
             {
-                "@type": "Service",
-                "name": "Luxury Bordeaux River Cruise Planning",
-                "provider": {
-                    "@id": "https://www.tripsandships.com/#travelagency"
+                "@type": "Person",
+                "@id": "https://www.tripsandships.com/about-angela-hughes/#person",
+                "name": "Angela Hughes",
+                "jobTitle": "CEO of Trips & Ships Luxury Travel",
+                "url": "https://www.tripsandships.com/about-angela-hughes",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "https://www.tripsandships.com/assets/Angela_Hughes.jpg",
+                    "caption": "Angela Hughes - Luxury River Cruise Specialist"
                 },
-                "serviceType": "Luxury River Cruise Consulting",
-                "description": "Expert planning services for luxury Bordeaux river cruises, helping travelers choose the best wine country itinerary."
+                "description": "Angela Hughes is a luxury travel expert, CEO of Trips & Ships Luxury Travel, founder of Luxury Travel University and an experienced luxury river cruise authority.",
+                "worksFor": {
+                    "@id": "https://www.tripsandships.com/#organization"
+                },
+                "knowsAbout": [
+                    "Luxury Travel",
+                    "Luxury River Cruises",
+                    "Bordeaux Wine Cruises",
+                    "S.S. Bon Voyage",
+                    "Garonne & Dordogne River Cruising",
+                    "Boutique River Ships",
+                    "French Wine Travel"
+                ]
             },
             {
                 "@type": "BreadcrumbList",
+                "@id": `${pageData.seo.canonicalUrl}#breadcrumb`,
                 "itemListElement": [
                     {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://www.tripsandships.com"
+                        "item": "https://www.tripsandships.com/"
                     },
                     {
                         "@type": "ListItem",
@@ -274,782 +157,298 @@ function UniworldBordeauxRiverCruises() {
                         "@type": "ListItem",
                         "position": 3,
                         "name": "Uniworld Bordeaux River Cruises",
-                        "item": "https://www.tripsandships.com/uniworld-river-cruises/bordeaux"
+                        "item": pageData.seo.canonicalUrl
                     }
                 ]
             },
             {
                 "@type": "FAQPage",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "Is a Uniworld Bordeaux River Cruise worth the money?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes. It offers luxury accommodations, gourmet dining, premium wines, guided excursions, gratuities, and personalized service in one nearly all-inclusive vacation."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "What is included on a Bordeaux River Cruise?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Luxury accommodations, gourmet dining, unlimited premium beverages, guided excursions, Wi-Fi, gratuities, entertainment, and wine experiences are generally included."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Which rivers does the cruise sail?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Most Bordeaux itineraries sail the Garonne, Dordogne, and Gironde rivers while exploring Southwest France."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Is this cruise good for wine lovers?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes. Bordeaux is one of the world's premier wine destinations, with visits to prestigious vineyards and château estates."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "When is the best time to cruise Bordeaux?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Spring and fall are ideal, while fall harvest season is especially popular for wine enthusiasts."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Are wine tastings included?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes. Many guided excursions include wine tastings at renowned vineyards and château estates."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Are drinks included?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes. Premium wines, spirits, beer, soft drinks, and specialty coffee are generally included."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Does Uniworld include gratuities?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes. Onboard gratuities are included on most Uniworld river cruises."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Is Wi-Fi included?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes. Complimentary Wi-Fi is available throughout the ship."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Which destinations are most popular?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Bordeaux, Saint-Émilion, Médoc, Libourne, Blaye, and Cadillac are among the itinerary highlights."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Who should choose this itinerary?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Wine enthusiasts, food lovers, couples, luxury travelers, photographers, and cultural explorers will especially enjoy this itinerary."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Why book with Trips & Ships Luxury Travel?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Trips & Ships Luxury Travel provides expert itinerary planning, exclusive offers, personalized recommendations, and concierge-level service before, during, and after your luxury river cruise."
-                        }
+                "@id": `${pageData.seo.canonicalUrl}#faq`,
+                "mainEntity": pageData.faqs.map(faq => ({
+                    "@type": "Question",
+                    "name": faq.question,
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": faq.answer
                     }
-                ]
+                }))
             }
         ]
-    }
+    };
+
+    // Destinations mapping (Matched authentic images; unmatched use null for clean built-in placeholder)
+    const destinationImages = [
+        bordeauxImg, // Bordeaux
+        null,        // Saint-Émilion (clean placeholder)
+        libourneImg, // Libourne
+        null,        // Blaye (clean placeholder)
+        null,        // Cadillac (clean placeholder)
+        null         // Médoc (clean placeholder)
+    ];
+
+    const destinationItems = pageData.destinations.items.map((dest, idx) => ({
+        title: dest.name,
+        category: dest.category,
+        description: dest.desc,
+        image: destinationImages[idx],
+        placeholderLabel: `${dest.name} View`
+    }));
+
+    // Seasons mapped for CardGrid
+    const seasonCards = pageData.seasons.cards.map((season) => ({
+        title: season.name,
+        description: season.description,
+        icon: season.icon
+    }));
 
     return (
-        <>
+        <div className="bg-white min-h-screen text-slate-800 selection:bg-gold-500 selection:text-white">
+            {/* ─── SEO HEAD & SCHEMA ─── */}
             <Helmet>
-                <title>Uniworld Bordeaux River Cruises : Wine Country, Prices & Expert Guide</title>
-                <meta name="title" content="Uniworld Bordeaux River Cruises | Luxury Bordeaux Cruise Guide" />
-                <meta
-                    name="description"
-                    content="Thinking about a Uniworld Bordeaux River Cruise? Discover the best wine itineraries, château visits, pricing, what's included, reviews, and whether a luxury Bordeaux cruise is worth it."
-                />
+                <title>{pageData.seo.title}</title>
+                <meta name="title" content={pageData.seo.metaTitle} />
+                <meta name="description" content={pageData.seo.metaDescription} />
+                <meta name="keywords" content={pageData.seo.keywords} />
+                <meta property="og:type" content="article" />
+                <meta property="og:title" content={pageData.seo.title} />
+                <meta property="og:description" content={pageData.seo.metaDescription} />
+                <meta property="og:url" content={pageData.seo.canonicalUrl} />
+                <meta property="og:image" content="https://www.tripsandships.com/images/uniworld-bordeaux-river-cruises.jpg" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content={pageData.seo.title} />
+                <meta name="twitter:description" content={pageData.seo.metaDescription} />
+                <meta name="twitter:image" content="https://www.tripsandships.com/images/uniworld-bordeaux-river-cruises.jpg" />
+                <link rel="canonical" href={pageData.seo.canonicalUrl} />
+
                 <script type="application/ld+json">
-                    {JSON.stringify(bwrcSchemaData)}
+                    {JSON.stringify(jsonLdSchema)}
                 </script>
             </Helmet>
 
+            {/* Global Navigation */}
             <Navbar />
 
-            <div className="fcel-page-wrapper">
+            <main className="w-full">
+                {/* ─── SECTION 1: HERO ─── */}
+                <ComparisonHero
+                    badge={pageData.hero.tag}
+                    title={pageData.hero.title}
+                    subtitle={pageData.hero.subtitle}
+                    backgroundImage={heroBgImg}
+                    primaryCtaText={pageData.hero.primaryCtaText}
+                    primaryCtaLink={pageData.hero.primaryCtaLink}
+                    secondaryCtaText={pageData.hero.secondaryCtaText}
+                    secondaryCtaLink={pageData.hero.secondaryCtaLink}
+                />
 
-                {/* HERO SECTION (MATCHED) */}
-                <section className="fcel-hero-section">
-                    <div className="fcel-hero-overlay"></div>
-                    <div className="fcel-hero-content">
-                        <div className="fcel-hero-tag">
-                            <Sparkles size={16} />
-                            <span>Wine Country, Prices & Expert Guide</span>
-                        </div>
-                        <h1 className="fcel-hero-title">Uniworld Bordeaux River Cruises</h1>
-                        <p className="fcel-hero-subtitle">
-                            Explore France's Legendary Wine Country in Boutique Luxury
-                        </p>
-                        <div className="fcel-hero-btn-row">
-                            <Link to='/contact' className="fcel-btn-primary">
-                                <Phone size={18} />
-                                Schedule a Consultation
-                            </Link>
-                            <button className="fcel-btn-outline">
-                                <LayoutList size={18} />
-                                Request Itinerary Options
-                            </button>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 2: EDITORIAL INTRO ─── */}
+                <EditorialIntroSplit
+                    eyebrow={pageData.intro.eyebrow}
+                    heading={pageData.intro.heading}
+                    primaryImage={introPrimaryImg}
+                    secondaryImage={introSecondaryImg}
+                    paragraphs={[...pageData.intro.leadParagraphs, pageData.intro.quote]}
+                />
 
-                {/* INTRO SECTION (MATCHED) */}
-                <section className="fcel-intro-section">
-                    <div className="fcel-intro-container">
-                        <div className="fcel-intro-grid">
-                            <div className="fcel-intro-copy">
-                                <span className="fcel-eyebrow-label">EXPERT TRAVEL GUIDE</span>
-                                <h2 className="fcel-section-heading">Uniworld Bordeaux River Cruises</h2>
-                                <div className="fcel-heading-bar"></div>
-                                <p className="fcel-lead-paragraph">
-                                    A Uniworld Bordeaux River Cruise is the perfect journey for travelers who appreciate fine wine, gourmet cuisine, beautiful countryside, and authentic French culture. Sailing through the Garonne, Dordogne, and Gironde rivers, you'll visit world-famous vineyards, UNESCO-listed villages, historic fortresses, and elegant French towns while enjoying Uniworld's signature boutique luxury. The popular Brilliant Bordeaux itinerary explores destinations including Bordeaux, Fort Médoc, Cadillac, Blaye, Libourne, and Saint-Émilion, with vineyard visits and wine tastings throughout the journey.
-                                </p>
-                                <p className="fcel-lead-paragraph">
-                                    Whether you're touring prestigious wine estates, strolling through medieval villages, or dining on regional cuisine, every day offers unforgettable experiences.
-                                </p>
-                            </div>
-                            <div className="fcel-intro-image-frame">
-                                <BwrcPlaceholder label="Uniworld Bordeaux Boutique River Cruise Ship" />
-                                <div className="fcel-intro-badge-float">
-                                    <Award size={15} style={{ marginRight: '6px' }} />
-                                    <span>Bordeaux Guide Summary</span>
-                                </div>
-                            </div>
-                            <div className="fcel-intro-highlight-box">
-                                <span className="fcel-intro-quote-icon">"</span>
-                                <div className="fcel-intro-quote-content">
-                                    The popular Brilliant Bordeaux itinerary explores destinations including Bordeaux, Fort Médoc, Cadillac, Blaye, Libourne, and Saint-Émilion, with vineyard visits and wine tastings throughout the journey.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 3: RATING SCORECARD ─── */}
+                <LuxuryScorecardVisual
+                    title={pageData.ratingSummary.title}
+                    subtitle={`${pageData.ratingSummary.scoreLabel}: ${pageData.ratingSummary.score} — ${pageData.ratingSummary.eyebrow}`}
+                    items={pageData.ratingSummary.ratings}
+                    image={scorecardImg}
+                />
 
-                {/* RATING SUMMARY SECTION */}
-                <section className="bwrc-rating-section">
-                    <div className="bwrc-rating-container">
-                        <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-                            <span className="fcel-eyebrow-label bwrc-eyebrow-rating">⭐ OUR OVERALL RATING</span>
-                            <h2 className="fcel-section-heading">Our Overall Rating</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="bwrc-rating-card">
-                            <div className="bwrc-rating-grid">
-                                <div className="bwrc-rating-item">
-                                    <span className="bwrc-rating-label">Luxury</span>
-                                    <span className="bwrc-rating-stars">⭐⭐⭐⭐⭐</span>
-                                </div>
-                                <div className="bwrc-rating-item">
-                                    <span className="bwrc-rating-label">Dining</span>
-                                    <span className="bwrc-rating-stars">⭐⭐⭐⭐⭐</span>
-                                </div>
-                                <div className="bwrc-rating-item">
-                                    <span className="bwrc-rating-label">Wine Experiences</span>
-                                    <span className="bwrc-rating-stars">⭐⭐⭐⭐⭐</span>
-                                </div>
-                                <div className="bwrc-rating-item">
-                                    <span className="bwrc-rating-label">Excursions</span>
-                                    <span className="bwrc-rating-stars">⭐⭐⭐⭐⭐</span>
-                                </div>
-                                <div className="bwrc-rating-item">
-                                    <span className="bwrc-rating-label">Service</span>
-                                    <span className="bwrc-rating-stars">⭐⭐⭐⭐⭐</span>
-                                </div>
-                                <div className="bwrc-rating-item">
-                                    <span className="bwrc-rating-label">Scenic Beauty</span>
-                                    <span className="bwrc-rating-stars">⭐⭐⭐⭐☆</span>
-                                </div>
-                                <div className="bwrc-rating-item">
-                                    <span className="bwrc-rating-label">Value</span>
-                                    <span className="bwrc-rating-stars">⭐⭐⭐⭐☆</span>
-                                </div>
-                            </div>
-                            <div className="bwrc-rating-score-box">
-                                <div className="bwrc-rating-score">9.9/10</div>
-                                <div className="bwrc-rating-score-label">Overall Experience</div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 4: QUICK ANSWER ─── */}
+                <AuthorityBox
+                    title={pageData.quickAnswer.title}
+                    content={pageData.quickAnswer.text}
+                    author="Angela Hughes, Luxury River Cruise Specialist"
+                    authorImage={quickAnswerImg}
+                />
 
-                {/* QUICK ANSWER SECTION */}
-                <section className="bwrc-quick-answer-section">
-                    <div className="bwrc-quick-answer-container">
-                        <div className="bwrc-quick-answer-card">
-                            <h3 className="bwrc-quick-answer-title">Is a Uniworld Bordeaux River Cruise Worth It?</h3>
-                            <p className="bwrc-quick-answer-text">
-                                Yes. A Uniworld Bordeaux River Cruise is one of the best luxury vacations for wine lovers and culinary travelers. Nearly everything is included—from boutique accommodations and gourmet dining to premium wines, guided excursions, and exceptional personalized service. The itinerary is especially renowned for its vineyard experiences and Southwest France heritage.
-                            </p>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 5: WHY CHOOSE A BORDEAUX RIVER CRUISE (AuthorityGrid) ─── */}
+                <AuthorityGrid
+                    title={pageData.highlights.heading}
+                    subtitle={pageData.highlights.eyebrow}
+                    items={pageData.highlights.items}
+                />
 
-                {/* HIGHLIGHTS SECTION — WHY CHOOSE A BORDEAUX RIVER CRUISE? */}
-                <section className="bwrc-highlights-section">
-                    <div className="bwrc-highlights-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <span className="fcel-eyebrow-label">TRAVEL HIGHLIGHTS</span>
-                            <h2 className="fcel-section-heading">Why Choose a Bordeaux River Cruise?</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="bwrc-highlights-grid">
-                            {bwrcHighlights.map((item, idx) => (
-                                <div key={idx} className="bwrc-highlight-card">
-                                    <div className="bwrc-highlight-icon-wrap">
-                                        {item.icon}
-                                    </div>
-                                    <h4 className="bwrc-highlight-text">{item.text}</h4>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
+                {/* ─── INLINE CTA 1 ─── */}
+                {pageData.inlineCtas[0] && (
+                    <InlineCTA
+                        tag={pageData.inlineCtas[0].tag}
+                        text={pageData.inlineCtas[0].text}
+                        btnText={pageData.inlineCtas[0].btnText}
+                        btnLink={pageData.inlineCtas[0].btnLink}
+                    />
+                )}
 
-                {/* CTA 1 (INLINE CTA) */}
-                <section className="bwrc-inline-cta-section">
-                    <div className="bwrc-inline-cta-container">
-                        <span className="bwrc-inline-cta-tag">Expert Planning</span>
-                        <p className="bwrc-inline-cta-text">Ready to explore Bordeaux's vineyards in boutique luxury?</p>
-                        <div className="bwrc-inline-cta-btn-row">
-                            <Link to="/contact" className="bwrc-btn-primary">
-                                <Phone size={18} />
-                                Schedule a Consultation
-                            </Link>
-                            <Link to="/contact" className="bwrc-btn-outline">
-                                <LayoutList size={18} />
-                                Request Itinerary Options
-                            </Link>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 6: WHAT'S INCLUDED (InclusionsList) ─── */}
+                <InclusionsList
+                    title={pageData.included.heading}
+                    inclusions={pageData.included.items.map(item => ({
+                        title: item,
+                        description: "Included in standard luxury cruise fare"
+                    }))}
+                    expertNote="All-Inclusive Luxury in Bordeaux. Fine dining, premium wines and spirits, guided château excursions, airport transfers on select sailings, and gratuities are all covered seamlessly in your fare."
+                    image={inclusionsDiningImg}
+                />
 
-                {/* WHAT'S INCLUDED SECTION */}
-                <section className="bwrc-included-section">
-                    <div className="bwrc-included-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <span className="fcel-eyebrow-label bwrc-eyebrow-included">ALL-INCLUSIVE VALUE</span>
-                            <h2 className="fcel-section-heading">What's Included?</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="bwrc-included-card">
-                            <p className="bwrc-included-intro">Most Uniworld Bordeaux River Cruises include:</p>
-                            <ul className="bwrc-included-list">
-                                {bwrcIncluded.map((item, idx) => (
-                                    <li key={idx} className="bwrc-included-item">
-                                        <CheckCircle size={18} className="bwrc-included-icon" />
-                                        <span>{item}</span>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 7: TOP DESTINATIONS (ThreeColumnGrid) ─── */}
+                <ThreeColumnGrid
+                    title={pageData.destinations.heading}
+                    subtitle={`${pageData.destinations.eyebrow}: Discover Southwest France along the Garonne, Dordogne, and Gironde`}
+                    items={destinationItems}
+                />
 
-                {/* TOP DESTINATIONS */}
-                <section className="bwrc-dest-section">
-                    <div className="bwrc-dest-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <span className="fcel-eyebrow-label">SOUTHWEST FRANCE</span>
-                            <h2 className="fcel-section-heading">Top Destinations</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="bwrc-dest-grid">
-                            {bwrcDestinations.map((dest, idx) => (
-                                <div key={idx} className="bwrc-dest-card" style={{ padding: '0', overflow: 'hidden', textAlign: 'left' }}>
-                                    <div style={{ height: '180px', width: '100%', position: 'relative', background: '#e2e8f0' }}>
-                                        <BwrcPlaceholder label={`${dest.name} View`} className="bwrc-placeholder-card" />
-                                        <div className="bwrc-badge-overlay-gold" style={{ top: '15px', right: '15px', fontSize: '11px', padding: '4px 10px', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                                            {dest.icon}
-                                            <span>{dest.name}</span>
-                                        </div>
-                                    </div>
-                                    <div style={{ padding: '24px' }}>
-                                        <h4 className="bwrc-dest-name" style={{ margin: '0 0 10px 0' }}>{dest.name}</h4>
-                                        <p className="bwrc-dest-desc">{dest.desc}</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
+                {/* ─── INLINE CTA 2 ─── */}
+                {pageData.inlineCtas[1] && (
+                    <InlineCTA
+                        tag={pageData.inlineCtas[1].tag}
+                        text={pageData.inlineCtas[1].text}
+                        btnText={pageData.inlineCtas[1].btnText}
+                        btnLink={pageData.inlineCtas[1].btnLink}
+                    />
+                )}
 
-                {/* CTA 2 (INLINE CTA) */}
-                <section className="bwrc-inline-cta-section">
-                    <div className="bwrc-inline-cta-container">
-                        <span className="bwrc-inline-cta-tag">Wine Country Escapes</span>
-                        <p className="bwrc-inline-cta-text">Want help choosing between Bordeaux, Saint-Émilion, and Médoc?</p>
-                        <div className="bwrc-inline-cta-btn-row">
-                            <Link to="/contact" className="bwrc-btn-primary">
-                                <Phone size={18} />
-                                Speak to a Cruise Advisor
-                            </Link>
-                            <Link to="/contact" className="bwrc-btn-outline">
-                                <LayoutList size={18} />
-                                Compare Itineraries
-                            </Link>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 8: LUXURY ACCOMMODATIONS (FeatureSplit) ─── */}
+                <FeatureSplit
+                    imagePosition="left"
+                    theme="light"
+                    image={cabinImg}
+                    title={pageData.accommodations.heading}
+                    subtitles={[pageData.accommodations.eyebrow, pageData.accommodations.lead, pageData.accommodations.subheading]}
+                    features={pageData.accommodations.items}
+                    summary={pageData.accommodations.summary}
+                    ctaText="Explore Suite Options"
+                    ctaLink="/contact"
+                />
 
-                {/* LUXURY ACCOMMODATIONS */}
-                <section className="bwrc-review-section bwrc-bg-soft">
-                    <div className="bwrc-review-container">
-                        <div className="bwrc-cabins-container">
-                            <div className="bwrc-review-copy-col">
-                                <span className="fcel-eyebrow-label bwrc-eyebrow-accommodations">ACCOMMODATIONS</span>
-                                <h2 className="bwrc-review-title" style={{ textAlign: "left" }}>Luxury Accommodations</h2>
+                {/* ─── SECTION 9: DINING ONBOARD (FeatureSplit) ─── */}
+                <FeatureSplit
+                    imagePosition="right"
+                    theme="white"
+                    image={diningImg}
+                    title={pageData.dining.heading}
+                    subtitles={[pageData.dining.eyebrow, pageData.dining.lead, pageData.dining.subheading]}
+                    features={pageData.dining.items}
+                    summary={pageData.dining.summary}
+                    ctaText="Speak to a Dining Specialist"
+                    ctaLink="/contact"
+                />
 
-                                <p className="fcel-lead-paragraph">
-                                    Every stateroom offers elegant European-inspired décor with premium amenities.
-                                </p>
-                                <p className="fcel-lead-paragraph" style={{ fontWeight: 600, color: 'var(--urcr-navy)' }}>
-                                    Many suites include:
-                                </p>
-                                <div className="bwrc-cabin-feature-grid">
-                                    {bwrcAccommodationItems.map((item, idx) => (
-                                        <div key={idx} className="bwrc-cabin-feature-card">
-                                            <div className="bwrc-cabin-card-icon">
-                                                {item.icon}
-                                            </div>
-                                            <span className="bwrc-cabin-card-text">{item.text}</span>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                            <div className="bwrc-image-wrapper-premium">
-                                <div className="bwrc-badge-overlay-gold">
-                                    <Sparkles size={14} />
-                                    <span>Boutique Comfort</span>
-                                </div>
-                                <BwrcPlaceholder label="Uniworld Luxury Cabin / Suite Interior" />
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 10: BEST TIME TO CRUISE BORDEAUX (CardGrid) ─── */}
+                <CardGrid
+                    title={pageData.seasons.heading}
+                    subtitle={pageData.seasons.eyebrow}
+                    cards={seasonCards}
+                    columns={4}
+                />
 
-                {/* DINING ONBOARD */}
-                <section className="bwrc-review-section bwrc-dining-dark-section">
-                    <div className="bwrc-review-container">
-                        <div className="bwrc-dining-container">
-                            <div className="bwrc-image-wrapper-premium">
-                                <div className="bwrc-badge-overlay-gold">
-                                    <Utensils size={14} />
-                                    <span>Southwest France</span>
-                                </div>
-                                <BwrcPlaceholder label="Uniworld Bordeaux Fine Dining Experience" />
-                            </div>
-                            <div className="bwrc-review-copy-col">
-                                <span className="fcel-eyebrow-label" style={{ width: "230px" }}>CULINARY EXCELLENCE</span>
-                                <h2 className="bwrc-review-title">Dining Onboard</h2>
+                {/* ─── INLINE CTA 3 ─── */}
+                {pageData.inlineCtas[2] && (
+                    <InlineCTA
+                        tag={pageData.inlineCtas[2].tag}
+                        text={pageData.inlineCtas[2].text}
+                        btnText={pageData.inlineCtas[2].btnText}
+                        btnLink={pageData.inlineCtas[2].btnLink}
+                    />
+                )}
 
-                                <p className="fcel-lead-paragraph" style={{ color: "white" }}>
-                                    Dining showcases the best of Southwest France.
-                                </p>
-                                <p className="bwrc-dining-intro-line">Guests enjoy:</p>
-                                <div className="bwrc-dining-menu-list">
-                                    {bwrcDiningItems.map((item, idx) => (
-                                        <div key={idx} className="bwrc-dining-course-card">
-                                            <div className="bwrc-dining-course-icon">
-                                                {item.icon}
-                                            </div>
-                                            <span className="bwrc-dining-course-text">{item.text}</span>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 11: IS IT WORTH THE MONEY & RECOMMENDATION (ConclusionSection) ─── */}
+                <ConclusionSection
+                    sections={[
+                        {
+                            heading: pageData.worthIt.heading,
+                            paragraphs: pageData.worthIt.paragraphs
+                        },
+                        {
+                            heading: `${pageData.recommendation.heading} (${pageData.recommendation.stars})`,
+                            paragraphs: pageData.recommendation.paragraphs
+                        }
+                    ]}
+                />
 
-                {/* BEST TIME TO CRUISE BORDEAUX */}
-                <section className="bwrc-season-section">
-                    <div className="bwrc-season-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <span className="fcel-eyebrow-label bwrc-eyebrow-season">SEASONAL GUIDE</span>
-                            <h2 className="fcel-section-heading">Best Time to Cruise Bordeaux</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="bwrc-season-grid">
-                            {bwrcSeasons.map((season, idx) => (
-                                <div key={idx} className="bwrc-season-card">
-                                    <div className="bwrc-season-icon-wrap">
-                                        {season.icon}
-                                    </div>
-                                    <h4 className="bwrc-season-title">{season.name}</h4>
-                                    <p className="bwrc-season-desc">{season.desc}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 12: PROS & CONS (ProsConsCards) ─── */}
+                <ProsConsCards
+                    title={pageData.prosCons.heading}
+                    prosTitle={pageData.prosCons.prosTitle}
+                    consTitle={pageData.prosCons.consTitle}
+                    bestFor={pageData.prosCons.pros}
+                    notBestFor={pageData.prosCons.cons}
+                />
 
-                {/* CTA 3 (INLINE CTA) */}
-                <section className="bwrc-inline-cta-section">
-                    <div className="bwrc-inline-cta-container">
-                        <span className="bwrc-inline-cta-tag">Harvest Season</span>
-                        <p className="bwrc-inline-cta-text">Curious which season is right for your Bordeaux getaway?</p>
-                        <div className="bwrc-inline-cta-btn-row">
-                            <Link to="/contact" className="bwrc-btn-primary">
-                                <Phone size={18} />
-                                Schedule a Consultation
-                            </Link>
-                            <Link to="/contact" className="bwrc-btn-outline">
-                                <LayoutList size={18} />
-                                Request Itinerary Options
-                            </Link>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 13: WHO SHOULD BOOK (ProsConsCards) ─── */}
+                <ProsConsCards
+                    title={pageData.audience.heading}
+                    prosTitle={pageData.audience.whoShouldTitle}
+                    consTitle={pageData.audience.whoPreferTitle}
+                    bestFor={pageData.audience.whoShould}
+                    notBestFor={pageData.audience.whoPrefer}
+                    bgClass="bg-slate-50"
+                />
 
-                {/* IS IT WORTH THE MONEY */}
-                <section className="bwrc-review-section bwrc-bg-soft">
-                    <div className="bwrc-review-container" style={{ maxWidth: '800px', textAlign: 'center' }}>
-                        <span className="fcel-eyebrow-label bwrc-eyebrow-worth">VALUE ANALYSIS</span>
-                        <h2 className="fcel-section-heading">Is It Worth the Money?</h2>
-                        <div className="fcel-heading-bar fcel-bar-center"></div>
-                        <p className="fcel-lead-paragraph">
-                            Although Uniworld is positioned as a luxury river cruise line, many travelers find exceptional value in its all-inclusive experience. Gourmet dining, premium wines, guided excursions, gratuities, and personalized service are included, making it one of the most complete ways to explore Bordeaux's wine country.
-                        </p>
-                    </div>
-                </section>
+                {/* ─── SECTION 14: PLANNING TIPS (StepByStepGuide) ─── */}
+                <StepByStepGuide
+                    title={pageData.planningTips.heading}
+                    subtitle={pageData.planningTips.eyebrow}
+                    steps={pageData.planningTips.steps}
+                />
 
-                {/* PROS & CONS */}
-                <section className="bwrc-pros-section bwrc-bg-white">
-                    <div className="bwrc-pros-cons-container">
-                        <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-                            <span className="fcel-eyebrow-label" style={{ background: '#ffffff', color: 'var(--urcr-navy)' }}>PROS & CONS</span>
-                            <h2 className="fcel-section-heading">Pros & Cons</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
+                {/* ─── INLINE CTA 4 ─── */}
+                {pageData.inlineCtas[3] && (
+                    <InlineCTA
+                        tag={pageData.inlineCtas[3].tag}
+                        text={pageData.inlineCtas[3].text}
+                        btnText={pageData.inlineCtas[3].btnText}
+                        btnLink={pageData.inlineCtas[3].btnLink}
+                    />
+                )}
 
-                        <div className="bwrc-comparison-board">
-                            {/* Pros Panel */}
-                            <div className="bwrc-pros-panel">
-                                <h3 className="bwrc-panel-title pros-title">
-                                    <CheckCircle size={22} />
-                                    What We Love (Pros)
-                                </h3>
-                                <div className="bwrc-panel-list">
-                                    {bwrcPros.map((pro, idx) => (
-                                        <div key={idx} className="bwrc-list-item">
-                                            <div className="bwrc-item-icon-wrap pro-icon">
-                                                {pro.icon}
-                                            </div>
-                                            <div className="bwrc-item-content">
-                                                <h4 className="bwrc-item-title">{pro.text}</h4>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
+                {/* ─── SECTION 15: WHY BOOK WITH TRIPS & SHIPS (LuxuryGrid) ─── */}
+                <LuxuryGrid
+                    title={pageData.whyBook.heading}
+                    subtitle={`${pageData.whyBook.eyebrow}: ${pageData.whyBook.lead}`}
+                    items={pageData.whyBook.items}
+                />
 
-                            {/* Cons Panel */}
-                            <div className="bwrc-cons-panel">
-                                <h3 className="bwrc-panel-title cons-title">
-                                    <AlertTriangle size={22} />
-                                    Things to Consider (Cons)
-                                </h3>
-                                <div className="bwrc-panel-list">
-                                    {[
-                                        ...bwrcCons,
-                                        'More traditional decor (may not appeal to minimalists)',
-                                        'Smaller fitness and wellness facilities',
-                                        'Fewer onboard activities compared to ocean liners'
-                                    ].map((con, idx) => (
-                                        <div key={idx} className="bwrc-list-item">
-                                            <div className="bwrc-item-icon-wrap con-icon">
-                                                <XCircle size={18} />
-                                            </div>
-                                            <div className="bwrc-item-content">
-                                                <h4 className="bwrc-item-title">{con}</h4>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 16: EXPERT INSIGHT FROM ANGELA HUGHES (ExpertCredentials) ─── */}
+                <ExpertCredentials
+                    name="Angela Hughes"
+                    title={pageData.expert.title}
+                    image={ProfilePictureAH}
+                    badge={pageData.expert.eyebrow}
+                    quote={pageData.expert.lead}
+                    quoteSubtitle="Travel Prioritization Matrix: Boutique, museum-quality ships, Truly all-inclusive luxury, Butler service in select suites, Gourmet farm-to-table dining"
+                    bio={pageData.expert.bio}
+                    credentials={pageData.expert.priorities}
+                    ctaText={pageData.expert.ctaText}
+                    ctaLink={pageData.expert.ctaLink}
+                />
 
-                {/* WHO SHOULD BOOK */}
-                <section className="bwrc-audience-section">
-                    <div className="bwrc-audience-container">
-                        <div style={{ textAlign: 'center', marginBottom: '20px' }}>
-                            <span className="fcel-eyebrow-label bwrc-eyebrow-audience">IS IT RIGHT FOR YOU?</span>
-                            <h2 className="fcel-section-heading">Who Should Book?</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="bwrc-audience-card">
-                            <h4 className="bwrc-audience-title">Perfect for:</h4>
-                            <ul className="bwrc-audience-list">
-                                {bwrcAudience.map((item, idx) => (
-                                    <li key={idx} className="bwrc-audience-item">
-                                        <CheckCircle size={18} className="bwrc-audience-check" />
-                                        <span>{item}</span>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 17: FREQUENTLY ASKED QUESTIONS (FAQAccordion) ─── */}
+                <FAQAccordion
+                    data={{
+                        title: "Frequently Asked Questions",
+                        subtitle: "Everything you need to know about planning a Uniworld Bordeaux River Cruise.",
+                        faqs: pageData.faqs
+                    }}
+                />
 
-                {/* PLANNING TIPS */}
-                <section className="bwrc-tips-section">
-                    <div className="bwrc-tips-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <span className="fcel-eyebrow-label">BEFORE YOU BOOK</span>
-                            <h2 className="fcel-section-heading">Planning Tips</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="bwrc-tips-list">
-                            {bwrcPlanningTips.map((tip, idx) => (
-                                <div key={idx} className="bwrc-tip-item">
-                                    <div className="bwrc-tip-number">{idx + 1}</div>
-                                    <p className="bwrc-tip-text">{tip}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 18: FINAL CTA (CenterCTA) ─── */}
+                <CenterCTA
+                    title={pageData.cta.heading}
+                    description={pageData.cta.text}
+                    buttonText={pageData.cta.primaryBtn}
+                    buttonLink={pageData.cta.primaryBtnLink}
+                    image={ctaBgImg}
+                />
+            </main>
 
-                {/* CTA 4 (INLINE CTA) */}
-                <section className="bwrc-inline-cta-section">
-                    <div className="bwrc-inline-cta-container">
-                        <span className="bwrc-inline-cta-tag">Book with Confidence</span>
-                        <p className="bwrc-inline-cta-text">Let our advisors handle every detail of your Bordeaux wine cruise.</p>
-                        <div className="bwrc-inline-cta-btn-row">
-                            <Link to="/contact" className="bwrc-btn-primary">
-                                <Phone size={18} />
-                                Speak to a Cruise Advisor
-                            </Link>
-                            <Link to="/contact" className="bwrc-btn-outline">
-                                <LayoutList size={18} />
-                                Request Itinerary Options
-                            </Link>
-                        </div>
-                    </div>
-                </section>
-
-                {/* WHY BOOK WITH TRIPS & SHIPS LUXURY TRAVEL */}
-                <section className="bwrc-why-book-section bwrc-why-book-dark-section">
-                    <div className="bwrc-why-book-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <span className="fcel-eyebrow-label">PLANNING ADVANTAGE</span>
-                            <h2 className="fcel-section-heading">Why Book with Trips & Ships Luxury Travel?</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                            <p className="fcel-lead-paragraph" style={{ maxWidth: '800px', margin: '0 auto', color: 'white' }}>
-                                Our luxury travel advisors help you:
-                            </p>
-                        </div>
-                        <div className="bwrc-why-book-grid">
-                            {bwrcWhyBook.map((item, idx) => (
-                                <div key={idx} className="bwrc-why-book-card">
-                                    <div className="bwrc-why-book-icon">
-                                        {item.icon}
-                                    </div>
-                                    <h4 className="bwrc-why-book-title">{item.title}</h4>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-
-                {/* OUR RECOMMENDATION */}
-                <section className="bwrc-review-section bwrc-bg-white">
-                    <div className="bwrc-review-container" style={{ maxWidth: '800px', textAlign: 'center' }}>
-                        <span className="fcel-eyebrow-label bwrc-eyebrow-verdict">OUR RECOMMENDATION</span>
-                        <h2 className="fcel-section-heading">Our Recommendation</h2>
-                        <div className="fcel-heading-bar fcel-bar-center"></div>
-                        <div className="bwrc-verdict-stars">⭐⭐⭐⭐⭐</div>
-                        <p className="fcel-lead-paragraph bwrc-verdict-text">
-                            A Uniworld Bordeaux River Cruise is one of the finest luxury wine vacations in Europe. Combining prestigious vineyards, charming French villages, exceptional cuisine, and boutique river cruising, it delivers an unforgettable journey through one of the world's most celebrated wine regions.
-                        </p>
-                    </div>
-                </section>
-
-                 {/* EXPERT INSIGHT */}
-                <section id="uniworld-growth-insight" className="medi-expert-editorial-section medi-growth-insight-section">
-                    <div className="medi-expert-editorial-container">
-                        <div className="medi-expert-editorial-card">
-
-                            {/* Left Side: Portrait and Floating Stat Badge */}
-                            <div className="medi-editorial-portrait-block">
-                                <div className="medi-editorial-image-frame">
-                                    <img src={ProfilePictureAH} alt="Angela Hughes - Luxury River Cruise Expert" />
-                                    <div className="medi-editorial-gradient-layer"></div>
-                                </div>
-
-                                <div className="medi-editorial-floating-stat">
-                                    <div className="medi-stat-tile">
-                                        <span className="medi-stat-number">40+</span>
-                                        <span className="medi-stat-label">Years Experience</span>
-                                    </div>
-                                    <div className="medi-stat-divider"></div>
-                                    <div className="medi-stat-tile">
-                                        <span className="medi-stat-number">121+</span>
-                                        <span className="medi-stat-label">Countries Visited</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Right Side: Editorial Text */}
-                            <div className="medi-editorial-content-block">
-                                <div className="medi-editorial-header">
-                                    <div className="medi-editorial-eyebrow-container">
-                                        <ExpertAward size={18} className="medi-editorial-icon-badge" />
-                                        <span className="medi-editorial-eyebrow">Expert Insight from Angela Hughes</span>
-                                    </div>
-                                    <h2 className="medi-editorial-title">
-                                        Why Discerning Travelers <br className="medi-growth-title-break" />Choose Uniworld River Cruises
-                                    </h2>
-                                    <div className="medi-editorial-accent-bar"></div>
-                                </div>
-
-                                <p className="medi-editorial-lead-para">
-                                    According to Angela Hughes, many travelers are initially drawn to Uniworld for its extraordinary boutique ships — but ultimately stay loyal because of the warmth of service, the depth of cultural immersion, and a level of all-inclusive luxury that few river cruise lines can match.
-                                </p>
-
-                                <div className="medi-priorities-box">
-                                    <p className="medi-priorities-intro">
-                                        After more than four decades in luxury travel and visiting over 121 countries, Angela consistently sees Uniworld travelers prioritizing:
-                                    </p>
-                                    <div className="medi-priorities-grid-pills">
-                                        {[
-                                            'Boutique, museum-quality ships',
-                                            'Truly all-inclusive luxury',
-                                            'Butler service in select suites',
-                                            'Gourmet farm-to-table dining',
-                                            'Intimate, destination-rich itineraries',
-                                            'Personalized, warm onboard service'
-                                        ].map((item, idx) => (
-                                            <div key={idx} className="medi-priority-pill-item">
-                                                <ExpertCheckCircle size={15} className="medi-priority-check" />
-                                                <span>{item}</span>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-
-                                <p className="medi-editorial-body-para">
-                                    As founder of Luxury Travel University and CEO of Trips &amp; Ships Luxury Travel, Angela Hughes helps travelers navigate the luxury river cruise landscape with honesty and real-world expertise — ensuring every client finds the right ship, the right itinerary, and the right experience for their lifestyle.
-                                </p>
-
-                                <div className="medi-expertise-section-box">
-                                    <span className="medi-expertise-intro-label">Her expertise spans:</span>
-                                    <div className="medi-expertise-horizontal-strip">
-                                        {[
-                                            { title: 'Luxury river cruising', icon: ExpertShip },
-                                            { title: 'European river itineraries', icon: ExpertGlobe },
-                                            { title: 'Butler & suite services', icon: ExpertUsers },
-                                            { title: 'All-inclusive cruise planning', icon: ExpertCompass },
-                                            { title: 'Gourmet & cultural travel', icon: ExpertSparkles }
-                                        ].map((item, idx) => {
-                                            const IconComponent = item.icon
-                                            return (
-                                                <div key={idx} className="medi-expertise-pills-row">
-                                                    <div className="medi-expertise-pill-icon-box">
-                                                        <IconComponent size={14} />
-                                                    </div>
-                                                    <span className="medi-expertise-pill-text">{item.title}</span>
-                                                </div>
-                                            )
-                                        })}
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-
-                {/* FAQ SECTION (MATCHED) */}
-                <section className="fcel-faq-section">
-                    <div className="fcel-faq-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <h2 className="fcel-section-heading">Frequently Asked Questions</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="fcel-faq-list">
-                            {bwrcFaqs.map((faq, index) => (
-                                <div
-                                    key={index}
-                                    className="fcel-faq-item"
-                                    onClick={() => bwrcToggleFaq(index)}
-                                >
-                                    <div className="fcel-faq-question-row">
-                                        <span>{faq.question}</span>
-                                        <span className="fcel-faq-toggle">
-                                            {bwrcActiveFaq === index ? "−" : "+"}
-                                        </span>
-                                    </div>
-                                    {bwrcActiveFaq === index && (
-                                        <p className="fcel-faq-answer">{faq.answer}</p>
-                                    )}
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-
-                {/* CTA SECTION (MATCHED) */}
-                <section className="fcel-cta-section">
-                    <div className="fcel-cta-bg-pattern"></div>
-                    <div className="fcel-cta-inner">
-                        <h2 className="fcel-cta-heading">Ready to Plan Your Uniworld Bordeaux River Cruise?</h2>
-                        <div className="fcel-cta-separator"></div>
-                        <p className="fcel-cta-text">
-                            Contact our luxury cruise consultants to lock in extra credits, suite upgrades, and personalized transfers. We plan details so you can enjoy the trip.
-                        </p>
-                        <div className="fcel-cta-btn-row">
-                            <Link to="/contact" className="fcel-btn-primary">
-                                <Phone size={18} />
-                                Schedule a Consultation
-                            </Link>
-                            <button className="fcel-btn-outline">
-                                <LayoutList size={18} />
-                                Request Itinerary Options
-                            </button>
-                        </div>
-                    </div>
-                </section>
-
-            </div>
-
+            {/* Global Footer Navigation */}
             <Navbar />
-        </>
-    )
+        </div>
+    );
 }
 
-export default UniworldBordeauxRiverCruises
+export default UniworldBordeauxRiverCruises;

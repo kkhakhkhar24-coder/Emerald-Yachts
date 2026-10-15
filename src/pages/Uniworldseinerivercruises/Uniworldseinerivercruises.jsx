@@ -1,169 +1,152 @@
-import Navbar from '../../components/Navbar/Navbar'
-import ProfilePictureAH from "../../assets/Media (2).jpg"
-import {
-    Users as ExpertUsers,
-    Award as ExpertAward,
-    CheckCircle as ExpertCheckCircle,
-    Ship as ExpertShip,
-    Globe as ExpertGlobe,
-    Compass as ExpertCompass,
-    Sparkles as ExpertSparkles
-} from 'lucide-react'
-import './Uniworldseinerivercruises.css'
-import normandyBeachesImg from '../../assets/Uniworldseinerivercruises/mont-saint-michel-france-normandy-dusk-reflection-travel-photography.webp'
-import {
-    Ship, Star, Sparkles, Phone, LayoutList, Heart,
-    CheckCircle, ChevronRight, Globe, Award, Utensils, Wine,
-    Bed, Compass, Gift, Smile, ShieldCheck, XCircle, AlertTriangle,
-    Image as ImageIcon, Map, Sun, Trees, Bath, Bell, Coffee, Activity, Coins,
-    Landmark, Castle, Flower2, Anchor, Snowflake, Clock, Calendar, MapPin
-} from 'lucide-react'
-import { Helmet } from 'react-helmet-async'
-import { useState } from 'react'
-import { Link } from 'react-router'
+import React from 'react';
+import { Helmet } from 'react-helmet-async';
+import { ChevronRight } from 'lucide-react';
+import Navbar from '@/components/Navbar/Navbar';
 
-// Custom Image Placeholder Component
-function UsrcPlaceholder({ label, className = '' }) {
+// Page Data JSON
+import pageData from './data.json';
+
+// Shared UI System Components (100% Component-Based Architecture)
+import ComparisonHero from '@/components/ui/ComparisonHero';
+import EditorialIntroSplit from '@/components/ui/EditorialIntroSplit';
+import LuxuryScorecardVisual from '@/components/ui/LuxuryScorecardVisual';
+import AuthorityBox from '@/components/ui/AuthorityBox';
+import AuthorityGrid from '@/components/ui/AuthorityGrid';
+import InclusionsList from '@/components/ui/InclusionsList';
+import FeatureSplit from '@/components/ui/FeatureSplit';
+import ThreeColumnGrid from '@/components/ui/ThreeColumnGrid';
+import CardGrid from '@/components/ui/CardGrid';
+import ConclusionSection from '@/components/ui/ConclusionSection';
+import ProsConsCards from '@/components/ui/ProsConsCards';
+import StepByStepGuide from '@/components/ui/StepByStepGuide';
+import LuxuryGrid from '@/components/ui/LuxuryGrid';
+import ExpertCredentials from '@/components/ui/ExpertCredentials';
+import FAQAccordion from '@/components/ui/FAQAccordion';
+import CenterCTA from '@/components/ui/CenterCTA';
+
+// Media Assets from @/assets/Uniworldseinerivercruises (100% unique across site, 0 repeats from previous pages)
+import ProfilePictureAH from '@/assets/Media (2).jpg';
+import quickAnswerImg from '@/assets/Media (1).jpg';
+import heroBgImg from '@/assets/Uniworldseinerivercruises/uniworld-ss-joie-de-vivre-exterior-seine-river-france.webp';
+import introPrimaryImg from '@/assets/Uniworldseinerivercruises/uniworld-ss-bon-voyage-morning-riverfront-view-france.webp';
+import introSecondaryImg from '@/assets/Uniworldseinerivercruises/uniworld-ss-bon-voyage-twilight-harbor-reflections.webp';
+import scorecardImg from '@/assets/Uniworldseinerivercruises/uniworld-ss-emilie-sundeck-open-air-observation-deck.webp';
+import inclusionsDiningImg from '@/assets/Uniworldseinerivercruises/uniworld-ss-emilie-gourmet-culinary-buffet-presentation.webp';
+import diningImg from '@/assets/Uniworldseinerivercruises/uniworld-ss-bon-voyage-le-grand-fromage-dining-room.webp';
+import cabinImg from '@/assets/Uniworldseinerivercruises/uniworld-ss-catherine-deluxe-balcony-suite-rhone.webp';
+import ctaBgImg from '@/assets/Uniworldseinerivercruises/uniworld-ss-bon-voyage-sunset-golden-hour-libourne.webp';
+
+// Destination Images (Matched images used; unmatched use clean placeholders per instruction)
+import parisImg from '@/assets/Uniworldseinerivercruises/seine-river-luxury-cruise-paris.jpg';
+import normandyBeachesImg from '@/assets/Uniworldseinerivercruises/mont-saint-michel-france-normandy-dusk-reflection-travel-photography.webp';
+import vernonGivernyImg from '@/assets/Uniworldseinerivercruises/uniworld-giverny-monets-garden-normandy-france.jpg';
+
+// Styled Inline CTA matching site pattern
+function InlineCTA({ tag, text, btnText, btnLink = "/contact" }) {
+    if (!tag || !text) return null;
     return (
-        <div className={`usrc-image-placeholder ${className}`} role="img" aria-label={`Image placeholder: ${label}`}>
-            <ImageIcon size={28} />
-            <span>{label}</span>
+        <div className="max-w-[1280px] mx-auto px-6 py-6">
+            <div className="bg-slate-50 border border-slate-200/80 rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 shadow-sm">
+                <div>
+                    <span className="text-[11px] font-bold uppercase tracking-wider text-navy-800 bg-white border border-slate-200 px-3 py-1 rounded-full inline-block mb-2 shadow-2xs">
+                        {tag}
+                    </span>
+                    <p className="font-display text-lg sm:text-xl text-navy-950 font-normal">
+                        {text}
+                    </p>
+                </div>
+                <a
+                    href={btnLink}
+                    className="inline-flex items-center gap-2 bg-navy-900 hover:bg-navy-800 text-white font-sans text-sm font-semibold px-6 py-3 rounded-xl transition-colors whitespace-nowrap shadow-sm shrink-0"
+                >
+                    <span>{btnText}</span>
+                    <ChevronRight size={16} />
+                </a>
+            </div>
         </div>
-    )
+    );
 }
 
 function UniworldSeineRiverCruises() {
-    const [usrcActiveFaq, setUsrcActiveFaq] = useState(null)
-    const usrcToggleFaq = (index) => {
-        setUsrcActiveFaq(usrcActiveFaq === index ? null : index)
-    }
-
-    const usrcFaqs = [
-        {
-            question: "1. Is a Uniworld Seine River Cruise worth the money?",
-            answer: "Yes. It offers luxury accommodations, gourmet dining, premium beverages, excursions, and personalized service in one all-inclusive vacation."
-        },
-        {
-            question: "2. What is included on a Seine River Cruise?",
-            answer: "Accommodations, dining, drinks, Wi-Fi, excursions, gratuities, and entertainment."
-        },
-        {
-            question: "3. Does the cruise visit Paris?",
-            answer: "Yes. Most itineraries begin or end in Paris."
-        },
-        {
-            question: "4. Can I visit the Normandy Beaches?",
-            answer: "Yes. Guided excursions to the historic D-Day beaches are available on many itineraries."
-        },
-        {
-            question: "5. Does the cruise visit Monet's Garden?",
-            answer: "Yes. Many itineraries include Giverny and Monet's famous gardens."
-        },
-        {
-            question: "6. Are drinks included?",
-            answer: "Yes. Premium beverages are included."
-        },
-        {
-            question: "7. Does Uniworld include gratuities?",
-            answer: "Yes."
-        },
-        {
-            question: "8. Is Wi-Fi included?",
-            answer: "Yes."
-        },
-        {
-            question: "9. When is the best time to cruise the Seine?",
-            answer: "Spring and fall offer ideal weather and fewer crowds."
-        },
-        {
-            question: "10. Who should choose this itinerary?",
-            answer: "Couples, luxury travelers, history enthusiasts, and food lovers."
-        },
-        {
-            question: "11. Is the Seine River Cruise good for first-time visitors to France?",
-            answer: "Absolutely. It combines Paris, Normandy, and charming French villages in one itinerary."
-        },
-        {
-            question: "12. Why book with Trips & Ships Luxury Travel?",
-            answer: "Our advisors provide expert recommendations, exclusive offers, personalized planning, and concierge-level service."
-        }
-    ]
-
-    const usrcSchemaData = {
+    // 6-Entity JSON-LD Schema matching RitzCarltonYachtCollectionCost pattern
+    const jsonLdSchema = {
         "@context": "https://schema.org",
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsandships.com/uniworld-river-cruises/seine",
-                "name": "Uniworld Seine River Cruises: Paris and Normandy",
-                "url": "https://www.tripsandships.com/uniworld-river-cruises/seine",
-                "description": "Discover Uniworld Seine River Cruises featuring Paris, Normandy, luxury boutique ships, gourmet French cuisine, iconic excursions, and all-inclusive river cruise experiences.",
-                "inLanguage": "en-US",
+                "@id": `${pageData.seo.canonicalUrl}#webpage`,
+                "url": pageData.seo.canonicalUrl,
+                "name": pageData.seo.metaTitle,
+                "headline": pageData.seo.title,
+                "description": pageData.seo.metaDescription,
+                "primaryImageOfPage": {
+                    "@type": "ImageObject",
+                    "url": "https://www.tripsandships.com/images/uniworld-seine-river-cruises.jpg",
+                    "caption": "Uniworld Seine River Cruises: Paris and Normandy"
+                },
+                "image": "https://www.tripsandships.com/images/uniworld-seine-river-cruises.jpg",
+                "author": {
+                    "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
+                },
                 "publisher": {
                     "@id": "https://www.tripsandships.com/#organization"
                 },
-                "mainEntity": {
-                    "@type": "Article",
-                    "@id": "https://www.tripsandships.com/uniworld-river-cruises/seine#article"
+                "isPartOf": {
+                    "@id": "https://www.tripsandships.com/#website"
                 }
             },
             {
                 "@type": "Organization",
                 "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsandships.com"
+                "url": "https://www.tripsandships.com/",
+                "founder": {
+                    "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
+                }
             },
             {
                 "@type": "TravelAgency",
                 "@id": "https://www.tripsandships.com/#travelagency",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsandships.com",
-                "description": "Luxury travel agency specializing in luxury river cruises, ocean cruises, expedition cruises, and personalized travel planning."
-            },
-            {
-                "@type": "Person",
-                "@id": "https://www.tripsandships.com/#angela-hughes",
-                "name": "Angela Hughes",
-                "jobTitle": "CEO",
-                "worksFor": {
-                    "@id": "https://www.tripsandships.com/#travelagency"
-                },
-                "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
-            },
-            {
-                "@type": "Article",
-                "@id": "https://www.tripsandships.com/uniworld-river-cruises/seine#article",
-                "headline": "Uniworld Seine River Cruises: Paris and Normandy",
-                "url": "https://www.tripsandships.com/uniworld-river-cruises/seine",
-                "description": "Expert guide to Uniworld Seine River Cruises featuring Paris, Normandy, itineraries, pricing, dining, excursions, and luxury travel planning.",
-                "image": "https://www.tripsandships.com/images/uniworld-seine-river-cruises.jpg",
-                "author": {
-                    "@id": "https://www.tripsandships.com/#angela-hughes"
-                },
-                "publisher": {
+                "url": "https://www.tripsandships.com/",
+                "parentOrganization": {
                     "@id": "https://www.tripsandships.com/#organization"
-                },
-                "mainEntityOfPage": {
-                    "@id": "https://www.tripsandships.com/uniworld-river-cruises/seine"
                 }
             },
             {
-                "@type": "Service",
-                "name": "Luxury Seine River Cruise Planning",
-                "provider": {
-                    "@id": "https://www.tripsandships.com/#travelagency"
+                "@type": "Person",
+                "@id": "https://www.tripsandships.com/about-angela-hughes/#person",
+                "name": "Angela Hughes",
+                "jobTitle": "CEO of Trips & Ships Luxury Travel",
+                "url": "https://www.tripsandships.com/about-angela-hughes",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "https://www.tripsandships.com/assets/Angela_Hughes.jpg",
+                    "caption": "Angela Hughes - Luxury Travel Expert"
                 },
-                "serviceType": "Luxury River Cruise Consulting",
-                "description": "Expert planning services for luxury Seine River cruises, helping travelers choose the best Paris and Normandy itinerary."
+                "description": "Angela Hughes is a luxury travel expert, CEO of Trips & Ships Luxury Travel, founder of Luxury Travel University and an experienced luxury river cruise industry leader.",
+                "worksFor": {
+                    "@id": "https://www.tripsandships.com/#organization"
+                },
+                "knowsAbout": [
+                    "Luxury River Cruising",
+                    "Seine River Cruises",
+                    "Paris and Normandy Itineraries",
+                    "French Boutique River Ships",
+                    "Gourmet French Cuisine",
+                    "Butler & Suite Services",
+                    "All-Inclusive Cruise Planning"
+                ]
             },
             {
                 "@type": "BreadcrumbList",
+                "@id": `${pageData.seo.canonicalUrl}#breadcrumb`,
                 "itemListElement": [
                     {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://www.tripsandships.com"
+                        "item": "https://www.tripsandships.com/"
                     },
                     {
                         "@type": "ListItem",
@@ -175,828 +158,333 @@ function UniworldSeineRiverCruises() {
                         "@type": "ListItem",
                         "position": 3,
                         "name": "Uniworld Seine River Cruises",
-                        "item": "https://www.tripsandships.com/uniworld-river-cruises/seine"
+                        "item": pageData.seo.canonicalUrl
                     }
                 ]
             },
             {
                 "@type": "FAQPage",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "Is a Uniworld Seine River Cruise worth the money?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes. It combines luxury accommodations, gourmet dining, premium beverages, guided excursions, and personalized service into an all-inclusive vacation."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "What is included on a Uniworld Seine River Cruise?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Luxury accommodations, gourmet dining, unlimited premium beverages, Wi-Fi, excursions, gratuities, and entertainment are included."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Does the cruise visit Paris?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes. Most itineraries begin or end in Paris."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Can I visit the Normandy Beaches?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes. Many itineraries include guided excursions to the historic D-Day landing beaches."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Does the cruise visit Monet's Garden?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes. Many itineraries include an excursion to Giverny and Monet's Gardens."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Are drinks included?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes. Premium wines, spirits, beer, soft drinks, and specialty coffee are generally included."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Does Uniworld include gratuities?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes. Onboard gratuities are included on most Uniworld river cruises."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Is Wi-Fi included?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes. Complimentary Wi-Fi is available throughout the ship."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "When is the best time to cruise the Seine?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Spring and fall are ideal for pleasant weather, gardens, and fewer crowds."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Who should choose a Seine River Cruise?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Couples, luxury travelers, history enthusiasts, art lovers, and food lovers will especially enjoy this itinerary."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Is this itinerary good for first-time visitors to France?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes. It combines Paris, Normandy, charming villages, and iconic French cultural experiences in one itinerary."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Why book with Trips & Ships Luxury Travel?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Trips & Ships Luxury Travel provides expert itinerary planning, exclusive offers, personalized recommendations, and concierge-level service before, during, and after your cruise."
-                        }
+                "@id": `${pageData.seo.canonicalUrl}#faq`,
+                "mainEntity": pageData.faqs.map(faq => ({
+                    "@type": "Question",
+                    "name": faq.question,
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": faq.answer
                     }
-                ]
+                }))
             }
         ]
-    }
+    };
+
+    // Destinations mapping (Matched images where available; null defaults to elegant placeholder per instructions)
+    const destinationImages = [
+        parisImg,           // Paris
+        null,               // Rouen (clean placeholder)
+        null,               // Honfleur (clean placeholder)
+        normandyBeachesImg, // Normandy Beaches
+        vernonGivernyImg,   // Vernon / Monet's Gardens
+        null                // La Roche-Guyon (clean placeholder)
+    ];
+
+    const destinationItems = pageData.destinations.items.map((dest, idx) => ({
+        title: dest.name,
+        description: dest.desc,
+        image: destinationImages[idx],
+        placeholderLabel: `${dest.name} View`
+    }));
+
+    // Why Choose items mapped for AuthorityGrid
+    const whyChooseItems = pageData.whyChoose.items.map((item) => ({
+        title: item,
+        description: `Experience the finest ${item.toLowerCase()} aboard Uniworld's boutique French river voyages.`
+    }));
+
+    // Seasons mapped for CardGrid
+    const seasonCards = pageData.seasons.items.map((season) => {
+        const iconName = season.name === "Spring" ? "Flower2"
+                       : season.name === "Summer" ? "Sun"
+                       : season.name === "Fall" ? "Trees"
+                       : "Snowflake";
+        return {
+            title: season.name,
+            description: season.desc,
+            icon: iconName
+        };
+    });
+
+    // Planning Tips mapped for StepByStepGuide
+    const planningSteps = [
+        { title: "Advance Booking", description: pageData.planningTips.tips[0] },
+        { title: "Seasonal Timing", description: pageData.planningTips.tips[1] },
+        { title: "Cabin Choice", description: pageData.planningTips.tips[2] },
+        { title: "Paris Extension", description: pageData.planningTips.tips[3] }
+    ];
 
     return (
-        <>
+        <div className="bg-white min-h-screen text-slate-800 selection:bg-gold-500 selection:text-white">
+            {/* ─── SEO HEAD & SCHEMA ─── */}
             <Helmet>
-                <title>Uniworld Seine River Cruises: Paris & Normandy  | Prices, Itineraries & Expert Guide</title>
-                <meta name="title" content="Uniworld Seine River Cruises | Paris & Normandy Luxury Cruise Guide" />
-                <meta
-                    name="description"
-                    content="Thinking about a Uniworld Seine River Cruise? Discover Paris and Normandy itineraries, pricing, what's included, top excursions, reviews, and whether it's worth booking."
-                />
+                <title>{pageData.seo.title}</title>
+                <meta name="title" content={pageData.seo.metaTitle} />
+                <meta name="description" content={pageData.seo.metaDescription} />
+                <meta name="keywords" content={pageData.seo.keywords} />
+                <meta property="og:type" content="article" />
+                <meta property="og:title" content={pageData.seo.title} />
+                <meta property="og:description" content={pageData.seo.metaDescription} />
+                <meta property="og:url" content={pageData.seo.canonicalUrl} />
+                <meta property="og:image" content="https://www.tripsandships.com/images/uniworld-seine-river-cruises.jpg" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content={pageData.seo.title} />
+                <meta name="twitter:description" content={pageData.seo.metaDescription} />
+                <meta name="twitter:image" content="https://www.tripsandships.com/images/uniworld-seine-river-cruises.jpg" />
+                <link rel="canonical" href={pageData.seo.canonicalUrl} />
+
                 <script type="application/ld+json">
-                    {JSON.stringify(usrcSchemaData)}
+                    {JSON.stringify(jsonLdSchema)}
                 </script>
             </Helmet>
 
+            {/* Global Navigation */}
             <Navbar />
 
-            <div className="fcel-page-wrapper">
+            <main>
+                {/* ─── SECTION 1: HERO SECTION (ComparisonHero) ─── */}
+                <ComparisonHero
+                    badge={pageData.hero.tag}
+                    title={pageData.hero.title}
+                    subtitle={pageData.hero.subtitle}
+                    backgroundImage={heroBgImg}
+                    primaryCtaText={pageData.hero.primaryCtaText}
+                    primaryCtaLink={pageData.hero.primaryCtaLink}
+                    secondaryCtaText={pageData.hero.secondaryCtaText}
+                    secondaryCtaLink={pageData.hero.secondaryCtaLink}
+                />
 
-                {/* HERO SECTION (MATCHED) */}
-                <section className="fcel-hero-section">
-                    <div className="fcel-hero-overlay"></div>
-                    <div className="fcel-hero-content">
-                        <div className="fcel-hero-tag">
-                            <Sparkles size={16} />
-                            <span>Uniworld Seine River Cruises</span>
-                        </div>
-                        <h1 className="fcel-hero-title">Uniworld Seine River Cruises: Paris & Normandy</h1>
-                        <p className="fcel-hero-subtitle">
-                            Luxury boutique river cruising through France's most iconic destinations.
-                        </p>
-                        <div className="fcel-hero-btn-row">
-                            <Link to='/contact' className="fcel-btn-primary">
-                                <Phone size={18} />
-                                Schedule a Consultation
-                            </Link>
-                            <button className="fcel-btn-outline">
-                                <LayoutList size={18} />
-                                Request Itinerary Options
-                            </button>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 2: INTRO SECTION (EditorialIntroSplit) ─── */}
+                <EditorialIntroSplit
+                    eyebrow={pageData.intro.eyebrow}
+                    heading={pageData.intro.heading}
+                    primaryImage={introPrimaryImg}
+                    secondaryImage={introSecondaryImg}
+                    paragraphs={[
+                        pageData.intro.leadParagraphs[0],
+                        pageData.intro.leadParagraphs[1],
+                        pageData.intro.leadParagraphs[2],
+                        pageData.intro.quote
+                    ]}
+                />
 
-                {/* INTRO SECTION (MATCHED) */}
-                <section className="fcel-intro-section">
-                    <div className="fcel-intro-container">
-                        <div className="fcel-intro-grid">
-                            <div className="fcel-intro-copy">
-                                <span className="fcel-eyebrow-label">SEINE RIVER CRUISE GUIDE</span>
-                                <h2 className="fcel-section-heading">Uniworld Seine River Cruises: Paris & Normandy</h2>
-                                <div className="fcel-heading-bar"></div>
-                                <p className="fcel-lead-paragraph">
-                                    The Seine River flows through the historic heart of northern France, offering a magical journey through art, culture, and history. A Uniworld Seine River Cruise provides a premier way to experience the romance of Paris and the storied shores of Normandy in unparalleled boutique luxury.
-                                </p>
-                                <p className="fcel-lead-paragraph">
-                                    From the iconic monuments of the City of Light to the beautiful gardens of Giverny that inspired Claude Monet, and the moving landing beaches of Normandy, every bend of the river brings a new adventure. Onboard, guests enjoy gourmet French-inspired dining, all-inclusive premium drinks, and the signature personalized service of Uniworld's elegant floating boutique hotels.
-                                </p>
-                                <p className="fcel-lead-paragraph">
-                                    Whether you are a history buff, an art enthusiast, or a lover of fine food and wine, this itinerary offers an unforgettable French escape.
-                                </p>
-                            </div>
-                            <div className="fcel-intro-image-frame">
-                                <UsrcPlaceholder label="Uniworld Seine River Cruise Ship" />
-                                <div className="fcel-intro-badge-float">
-                                    <Award size={15} style={{ marginRight: '6px' }} />
-                                    <span>Seine Cruise Review Summary</span>
-                                </div>
-                            </div>
-                            <div className="fcel-intro-highlight-box">
-                                <span className="fcel-intro-quote-icon">"</span>
-                                <div className="fcel-intro-quote-content">
-                                    A Uniworld Seine River Cruise is one of the best ways to experience Paris and Normandy in luxury.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 3: QUICK ANSWER (AuthorityBox) ─── */}
+                <div className="max-w-4xl mx-auto px-6 py-8">
+                    <AuthorityBox
+                        title={pageData.quickAnswer.title}
+                        content={pageData.quickAnswer.text}
+                        author="Angela Hughes, Luxury River Cruise Specialist"
+                        authorImage={quickAnswerImg}
+                    />
+                </div>
 
-                {/* OVERALL RATING SECTION */}
-                <section className="usrc-rating-section">
-                    <div className="usrc-rating-container">
-                        <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-                            <span className="fcel-eyebrow-label usrc-eyebrow-onsoft">⭐ OVERALL RATING</span>
-                            <h2 className="fcel-section-heading">Expert Review Summary</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="usrc-rating-card">
-                            <div className="usrc-rating-grid">
-                                <div className="usrc-rating-item">
-                                    <span className="usrc-rating-label">Luxury</span>
-                                    <span className="usrc-rating-stars">⭐⭐⭐⭐⭐</span>
-                                </div>
-                                <div className="usrc-rating-item">
-                                    <span className="usrc-rating-label">Dining</span>
-                                    <span className="usrc-rating-stars">⭐⭐⭐⭐⭐</span>
-                                </div>
-                                <div className="usrc-rating-item">
-                                    <span className="usrc-rating-label">Service</span>
-                                    <span className="usrc-rating-stars">⭐⭐⭐⭐⭐</span>
-                                </div>
-                                <div className="usrc-rating-item">
-                                    <span className="usrc-rating-label">Excursions</span>
-                                    <span className="usrc-rating-stars">⭐⭐⭐⭐⭐</span>
-                                </div>
-                                <div className="usrc-rating-item">
-                                    <span className="usrc-rating-label">Scenic Beauty</span>
-                                    <span className="usrc-rating-stars">⭐⭐⭐⭐☆</span>
-                                </div>
-                                <div className="usrc-rating-item">
-                                    <span className="usrc-rating-label">Value</span>
-                                    <span className="usrc-rating-stars">⭐⭐⭐⭐☆</span>
-                                </div>
-                            </div>
-                            <div className="usrc-rating-score-box">
-                                <div className="usrc-rating-score">9.8/10</div>
-                                <div className="usrc-rating-score-label">Overall Rating</div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 4: RATING SUMMARY (LuxuryScorecardVisual) ─── */}
+                <LuxuryScorecardVisual
+                    title={pageData.ratingSummary.title}
+                    subtitle={`${pageData.ratingSummary.scoreLabel}: ${pageData.ratingSummary.score} — ${pageData.ratingSummary.eyebrow}`}
+                    items={pageData.ratingSummary.ratings}
+                    image={scorecardImg}
+                />
 
-                {/* QUICK ANSWER SECTION (FEATURED SNIPPET) */}
-                <section className="usrc-quick-answer-section">
-                    <div className="usrc-quick-answer-container">
-                        <div className="usrc-quick-answer-card">
-                            <span className="fcel-eyebrow-label">FEATURED SNIPPET</span>
-                            <h3 className="usrc-quick-answer-title">Is a Uniworld Seine River Cruise Worth It?</h3>
-                            <p className="usrc-quick-answer-text">
-                                Yes. A Uniworld Seine River Cruise is one of the best ways to experience Paris and Normandy in luxury. Guests enjoy boutique accommodations, gourmet French cuisine, premium beverages, immersive excursions, and visits to iconic destinations including Paris, Rouen, Honfleur, and the Normandy Beaches.
-                            </p>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── INLINE CTA 1 ─── */}
+                {pageData.inlineCtas[0] && (
+                    <InlineCTA
+                        tag={pageData.inlineCtas[0].tag}
+                        text={pageData.inlineCtas[0].text}
+                        btnText={pageData.inlineCtas[0].btnText}
+                        btnLink={pageData.inlineCtas[0].btnLink}
+                    />
+                )}
 
-                {/* INLINE CTA 1 */}
-                <section className="usrc-inline-cta-section">
-                    <div className="usrc-inline-cta-container">
-                        <span className="usrc-inline-cta-tag">Expert Planning</span>
-                        <p className="usrc-inline-cta-text">Ready to explore Paris and Normandy in Uniworld luxury?</p>
-                        <div className="usrc-inline-cta-btn-row">
-                            <Link to="/contact" className="usrc-btn-primary">
-                                <Phone size={18} />
-                                Schedule a Consultation
-                            </Link>
-                            <Link to="/contact" className="usrc-btn-outline">
-                                <LayoutList size={18} />
-                                Request Itinerary Options
-                            </Link>
-                        </div>
-                    </div>
-                </section>
-                {/* WHY CHOOSE A SEINE RIVER CRUISE */}
-                <section className="usrc-choice-section usrc-bg-white">
-                    <div className="usrc-choice-container">
-                        <div className="usrc-split-layout usrc-split-layout-reverse">
-                            <div className="usrc-split-image-col">
-                                <div className="usrc-image-wrapper-premium">
-                                    <div className="usrc-badge-overlay-gold">
-                                        <Compass size={14} />
-                                        <span>France In Luxury</span>
-                                    </div>
-                                    <UsrcPlaceholder label="Scenic Landscapes along the Seine River" />
-                                </div>
-                            </div>
-                            <div className="usrc-split-copy-col">
-                                <span className="fcel-eyebrow-label">FRANCE IN LUXURY</span>
-                                <h2 className="fcel-section-heading" style={{ textAlign: 'left' }}>Why Choose a Seine River Cruise?</h2>
-                                <div className="fcel-heading-bar" style={{ marginLeft: '0' }}></div>
-                                <div className="usrc-check-grid usrc-check-grid-split" style={{ marginTop: '20px' }}>
-                                    {['Paris & Normandy together', 'WWII history', 'French culture', 'Wine & cuisine', 'Charming villages', 'Art & Impressionism', 'Boutique luxury ships', 'Relaxed pace'].map((item, idx) => (
-                                        <div key={idx} className="usrc-check-item">
-                                            <CheckCircle size={18} className="usrc-check-icon" />
-                                            <span>{item}</span>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 5: WHY CHOOSE A SEINE CRUISE (AuthorityGrid) ─── */}
+                <AuthorityGrid
+                    title={pageData.whyChoose.heading}
+                    subtitle={pageData.whyChoose.eyebrow}
+                    items={whyChooseItems}
+                />
 
-                {/* WHAT'S INCLUDED */}
-                <section className="usrc-choice-section usrc-bg-soft">
-                    <div className="usrc-choice-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <span className="fcel-eyebrow-label usrc-eyebrow-onsoft">ALL-INCLUSIVE LUXURY</span>
-                            <h2 className="fcel-section-heading">What's Included</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="usrc-check-grid">
-                            {['Luxury accommodations', 'Gourmet dining', 'Unlimited premium beverages', 'Guided excursions', 'Wi-Fi', 'Gratuities', 'Entertainment', 'Airport transfers (select sailings)', 'Complimentary bicycles'].map((item, idx) => (
-                                <div key={idx} className="usrc-check-item">
-                                    <CheckCircle size={18} className="usrc-check-icon" />
-                                    <span>{item}</span>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 6: WHAT IS INCLUDED (InclusionsList) ─── */}
+                <InclusionsList
+                    title={pageData.included.heading}
+                    inclusions={pageData.included.items.map(item => ({
+                        title: item,
+                        description: "Included in standard luxury cruise fare"
+                    }))}
+                    image={inclusionsDiningImg}
+                />
 
-                {/* TOP DESTINATIONS */}
-                <section className="usrc-dest-section usrc-bg-white">
-                    <div className="usrc-dest-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <span className="fcel-eyebrow-label">WORLD CLASS RIVERWAYS</span>
-                            <h2 className="fcel-section-heading">Top Destinations</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="usrc-dest-grid">
-                            {[
-                                { name: 'Paris', desc: 'The City of Light with world-famous landmarks.', icon: <Landmark size={24} /> },
-                                { name: 'Rouen', desc: 'Historic medieval city linked to Joan of Arc.', icon: <Castle size={24} /> },
-                                { name: 'Honfleur', desc: 'Picturesque harbor town loved by Impressionist painters.', icon: <Anchor size={24} /> },
-                                { name: 'Normandy Beaches', desc: 'Visit Omaha Beach and other historic D-Day sites.', icon: <ShieldCheck size={24} />, img: normandyBeachesImg },
-                                { name: 'Vernon', desc: "Gateway to Monet's Gardens at Giverny.", icon: <Flower2 size={24} /> },
-                                { name: 'La Roche-Guyon', desc: 'Beautiful riverside village and castle.', icon: <Castle size={24} /> }
-                            ].map((dest, idx) => (
-                                <div key={idx} className="usrc-dest-card" style={{ padding: '0', overflow: 'hidden', textAlign: 'left' }}>
-                                    <div style={{ height: '180px', width: '100%', position: 'relative', background: '#e2e8f0', overflow: 'hidden' }}>
-                                        {dest.img ? (
-                                            <img src={dest.img} alt={dest.name} className="usrc-dest-img" />
-                                        ) : (
-                                            <UsrcPlaceholder label={`${dest.name} View`} className="usrc-placeholder-card" />
-                                        )}
-                                        <div className="usrc-badge-overlay-gold" style={{ top: '15px', right: '15px', fontSize: '11px', padding: '4px 10px' }}>
-                                            {dest.icon}
-                                            <span style={{ marginLeft: '6px' }}>{dest.name}</span>
-                                        </div>
-                                    </div>
-                                    <div style={{ padding: '24px' }}>
-                                        <h4 className="usrc-dest-name" style={{ margin: '0 0 10px 0' }}>{dest.name}</h4>
-                                        <p className="usrc-dest-desc">{dest.desc}</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
+                {/* ─── INLINE CTA 2 ─── */}
+                {pageData.inlineCtas[1] && (
+                    <InlineCTA
+                        tag={pageData.inlineCtas[1].tag}
+                        text={pageData.inlineCtas[1].text}
+                        btnText={pageData.inlineCtas[1].btnText}
+                        btnLink={pageData.inlineCtas[1].btnLink}
+                    />
+                )}
 
-                {/* INLINE CTA 2 */}
-                <section className="usrc-inline-cta-section">
-                    <div className="usrc-inline-cta-container">
-                        <span className="usrc-inline-cta-tag">Itinerary Planning</span>
-                        <p className="usrc-inline-cta-text">Want help choosing the perfect Seine itinerary and sailing date?</p>
-                        <div className="usrc-inline-cta-btn-row">
-                            <Link to="/contact" className="usrc-btn-primary">
-                                <Phone size={18} />
-                                Speak to a Cruise Advisor
-                            </Link>
-                            <Link to="/contact" className="usrc-btn-outline">
-                                <LayoutList size={18} />
-                                Compare Itineraries
-                            </Link>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 7: TOP DESTINATIONS (ThreeColumnGrid with placeholders where needed) ─── */}
+                <ThreeColumnGrid
+                    title={pageData.destinations.heading}
+                    subtitle={`${pageData.destinations.eyebrow}: Discover iconic French landmarks along the Seine`}
+                    items={destinationItems}
+                />
 
-                {/* DINING */}
-                <section className="usrc-review-section usrc-dining-dark-section">
-                    <div className="usrc-review-container">
-                        <div className="usrc-dining-container">
-                            <div className="usrc-image-wrapper-premium">
-                                <div className="usrc-badge-overlay-gold">
-                                    <Utensils size={14} />
-                                    <span>French Cuisine</span>
-                                </div>
-                                <UsrcPlaceholder label="Uniworld Seine River Cruise Dining" />
-                            </div>
-                            <div className="usrc-review-copy-col">
-                                <span className="fcel-eyebrow-label" style={{ width: "230px" }}>CULINARY EXCELLENCE</span>
-                                <h2 className="usrc-review-title">Dining</h2>
-                                <p className="fcel-lead-paragraph" style={{ color: "white" }}>
-                                    French-inspired cuisine featuring:
-                                </p>
-                                <div className="usrc-dining-menu-list">
-                                    {[
-                                        { text: 'Regional specialties', icon: <Globe size={20} /> },
-                                        { text: 'Fine wines', icon: <Wine size={20} /> },
-                                        { text: 'Fresh pastries', icon: <Coffee size={20} /> },
-                                        { text: 'Multi-course dinners', icon: <Utensils size={20} /> },
-                                        { text: 'Farm-to-table ingredients', icon: <Trees size={20} /> }
-                                    ].map((course, idx) => (
-                                        <div key={idx} className="usrc-dining-course-card">
-                                            <div className="usrc-dining-course-icon">
-                                                {course.icon}
-                                            </div>
-                                            <span className="usrc-dining-course-text">{course.text}</span>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 8: DINING ONBOARD (FeatureSplit) ─── */}
+                <FeatureSplit
+                    imagePosition="right"
+                    theme="white"
+                    image={diningImg}
+                    title={pageData.dining.heading}
+                    subtitles={[pageData.dining.eyebrow, pageData.dining.subheading]}
+                    features={pageData.dining.items}
+                    summary="French-inspired gourmet cuisine featuring farm-to-table seasonal ingredients, fine regional wines, and decadent Parisian pastries."
+                    ctaText="Speak to a Dining Specialist"
+                    ctaLink="/contact"
+                />
 
-                {/* LUXURY ACCOMMODATIONS */}
-                <section className="usrc-review-section usrc-bg-soft">
-                    <div className="usrc-review-container">
-                        <div className="usrc-cabins-container">
-                            <div className="usrc-review-copy-col">
-                                <span className="fcel-eyebrow-label usrc-eyebrow-onsoft">ACCOMMODATIONS</span>
-                                <h2 className="usrc-review-title" style={{ textAlign: "left" }}>Luxury Accommodations</h2>
-                                <div className="usrc-cabin-feature-grid">
-                                    {[
-                                        { text: 'Boutique staterooms', icon: <Bed size={20} /> },
-                                        { text: 'Butler service (selected suites)', icon: <Bell size={20} /> },
-                                        { text: 'Marble bathrooms', icon: <Bath size={20} /> },
-                                        { text: 'Luxury bedding', icon: <Sparkles size={20} /> },
-                                        { text: 'French balconies', icon: <Award size={20} /> }
-                                    ].map((feature, idx) => (
-                                        <div key={idx} className="usrc-cabin-feature-card">
-                                            <div className="usrc-cabin-card-icon">
-                                                {feature.icon}
-                                            </div>
-                                            <span className="usrc-cabin-card-text">{feature.text}</span>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                            <div className="usrc-image-wrapper-premium">
-                                <div className="usrc-badge-overlay-gold">
-                                    <Sparkles size={14} />
-                                    <span>Boutique Comfort</span>
-                                </div>
-                                <UsrcPlaceholder label="Uniworld Luxury Cabin / Suite Interior" />
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 9: ACCOMMODATIONS (FeatureSplit) ─── */}
+                <FeatureSplit
+                    imagePosition="left"
+                    theme="light"
+                    image={cabinImg}
+                    title={pageData.accommodations.heading}
+                    subtitles={[pageData.accommodations.eyebrow]}
+                    features={pageData.accommodations.items}
+                    summary="Every stateroom on S.S. Joie de Vivre features handcrafted French furnishings, marble baths, French balconies, and luxury bedding."
+                    ctaText="Explore Suite Options"
+                    ctaLink="/contact"
+                />
 
-                {/* INLINE CTA 3 */}
-                <section className="usrc-inline-cta-section">
-                    <div className="usrc-inline-cta-container">
-                        <span className="usrc-inline-cta-tag">Suite Upgrades</span>
-                        <p className="usrc-inline-cta-text">Curious about butler suites and French Balcony cabins?</p>
-                        <div className="usrc-inline-cta-btn-row">
-                            <Link to="/contact" className="usrc-btn-primary">
-                                <Phone size={18} />
-                                Schedule a Consultation
-                            </Link>
-                            <Link to="/contact" className="usrc-btn-outline">
-                                <LayoutList size={18} />
-                                Request Itinerary Options
-                            </Link>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── INLINE CTA 3 ─── */}
+                {pageData.inlineCtas[2] && (
+                    <InlineCTA
+                        tag={pageData.inlineCtas[2].tag}
+                        text={pageData.inlineCtas[2].text}
+                        btnText={pageData.inlineCtas[2].btnText}
+                        btnLink={pageData.inlineCtas[2].btnLink}
+                    />
+                )}
 
-                {/* BEST TIME TO CRUISE */}
-                <section className="usrc-dest-section usrc-bg-white">
-                    <div className="usrc-dest-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <span className="fcel-eyebrow-label">SEASONAL GUIDE</span>
-                            <h2 className="fcel-section-heading">Best Time to Cruise</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="usrc-dest-grid usrc-seasons-grid">
-                            {[
-                                { name: 'Spring', desc: "Flowers and Monet's Gardens.", icon: <Flower2 size={24} /> },
-                                { name: 'Summer', desc: 'Warm weather and long sightseeing days.', icon: <Sun size={24} /> },
-                                { name: 'Fall', desc: 'Wine harvest and colorful countryside.', icon: <Trees size={24} /> },
-                                { name: 'Christmas', desc: 'Festive Paris holiday atmosphere.', icon: <Snowflake size={24} /> }
-                            ].map((season, idx) => (
-                                <div key={idx} className="usrc-dest-card">
-                                    <div className="usrc-dest-icon-wrap">
-                                        {season.icon}
-                                    </div>
-                                    <h4 className="usrc-dest-name">{season.name}</h4>
-                                    <p className="usrc-dest-desc">{season.desc}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 10: BEST TIME TO CRUISE (CardGrid) ─── */}
+                <CardGrid
+                    title={pageData.seasons.heading}
+                    subtitle={pageData.seasons.eyebrow}
+                    cards={seasonCards}
+                    columns={4}
+                />
 
-                {/* IS IT WORTH THE MONEY */}
-                <section className="usrc-verdict-section usrc-bg-soft">
-                    <div className="usrc-verdict-container">
-                        <span className="fcel-eyebrow-label usrc-eyebrow-onsoft">VALUE ASSESSMENT</span>
-                        <h2 className="fcel-section-heading">Is It Worth the Money?</h2>
-                        <div className="fcel-heading-bar fcel-bar-center"></div>
-                        <div className="usrc-verdict-stars">⭐⭐⭐⭐⭐</div>
-                        <p className="fcel-lead-paragraph" style={{ color: '#475569' }}>
-                            Uniworld delivers exceptional value through its nearly all-inclusive luxury experience, personalized service, and unique French cultural immersion.
-                        </p>
-                    </div>
-                </section>
+                {/* ─── SECTION 11: IS IT WORTH IT & RECOMMENDATION (ConclusionSection) ─── */}
+                <ConclusionSection
+                    sections={[
+                        {
+                            heading: `${pageData.worthIt.heading} (${pageData.worthIt.stars})`,
+                            paragraphs: pageData.worthIt.paragraphs
+                        },
+                        {
+                            heading: pageData.recommendation.heading,
+                            paragraphs: pageData.recommendation.paragraphs
+                        }
+                    ]}
+                />
 
-                {/* PROS & CONS */}
-                <section className="usrc-pros-section usrc-bg-white">
-                    <div className="usrc-pros-cons-container">
-                        <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-                            <span className="fcel-eyebrow-label">PROS & CONS</span>
-                            <h2 className="fcel-section-heading">Pros & Cons</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
+                {/* ─── SECTION 12: PROS & CONS (ProsConsCards) ─── */}
+                <ProsConsCards
+                    title={pageData.prosCons.heading}
+                    prosTitle={pageData.prosCons.prosTitle}
+                    consTitle={pageData.prosCons.consTitle}
+                    bestFor={pageData.prosCons.pros}
+                    notBestFor={pageData.prosCons.cons}
+                />
 
-                        <div className="usrc-comparison-board">
-                            {/* Pros Panel */}
-                            <div className="usrc-pros-panel">
-                                <h3 className="usrc-panel-title pros-title">
-                                    <CheckCircle size={22} />
-                                    What We Love (Pros)
-                                </h3>
-                                <div className="usrc-panel-list">
-                                    {[
-                                        { title: 'Paris included', icon: <Landmark size={20} /> },
-                                        { title: 'Normandy excursions', icon: <Compass size={20} /> },
-                                        { title: 'Excellent cuisine', icon: <Utensils size={20} /> },
-                                        { title: 'Boutique luxury', icon: <Ship size={20} /> },
-                                        { title: 'Outstanding service', icon: <Smile size={20} /> },
-                                        { title: 'Historic experiences', icon: <ShieldCheck size={20} /> }
-                                    ].map((pro, idx) => (
-                                        <div key={idx} className="usrc-list-item">
-                                            <div className="usrc-item-icon-wrap pro-icon">
-                                                {pro.icon}
-                                            </div>
-                                            <div className="usrc-item-content">
-                                                <h4 className="usrc-item-title">{pro.title}</h4>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
+                {/* ─── INLINE CTA 4 ─── */}
+                {pageData.inlineCtas[3] && (
+                    <InlineCTA
+                        tag={pageData.inlineCtas[3].tag}
+                        text={pageData.inlineCtas[3].text}
+                        btnText={pageData.inlineCtas[3].btnText}
+                        btnLink={pageData.inlineCtas[3].btnLink}
+                    />
+                )}
 
-                            {/* Cons Panel */}
-                            <div className="usrc-cons-panel">
-                                <h3 className="usrc-panel-title cons-title">
-                                    <AlertTriangle size={22} />
-                                    Things to Consider (Cons)
-                                </h3>
-                                <div className="usrc-panel-list">
-                                    {[
-                                        'Premium pricing',
-                                        'Smaller ships',
-                                        'Popular departures sell out early',
-                                        'More traditional decor (may not appeal to minimalists)',
-                                        'Smaller fitness and wellness facilities',
-                                        'Fewer onboard activities compared to ocean liners'
-                                    ].map((con, idx) => (
-                                        <div key={idx} className="usrc-list-item">
-                                            <div className="usrc-item-icon-wrap con-icon">
-                                                <XCircle size={18} />
-                                            </div>
-                                            <div className="usrc-item-content">
-                                                <h4 className="usrc-item-title">{con}</h4>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 13: WHO IS IT FOR (ProsConsCards) ─── */}
+                <ProsConsCards
+                    title={pageData.audience.heading}
+                    prosTitle={pageData.audience.whoShouldTitle}
+                    consTitle={pageData.audience.whoPreferTitle}
+                    bestFor={pageData.audience.whoShould}
+                    notBestFor={pageData.audience.whoPrefer}
+                    bgClass="bg-slate-50"
+                />
 
-                {/* INLINE CTA 4 */}
-                <section className="usrc-inline-cta-section">
-                    <div className="usrc-inline-cta-container">
-                        <span className="usrc-inline-cta-tag">Promotions & Rates</span>
-                        <p className="usrc-inline-cta-text">Ready to compare itineraries and lock in the best suite promotions?</p>
-                        <div className="usrc-inline-cta-btn-row">
-                            <Link to="/contact" className="usrc-btn-primary">
-                                <Phone size={18} />
-                                Speak to a Cruise Advisor
-                            </Link>
-                            <Link to="/contact" className="usrc-btn-outline">
-                                <LayoutList size={18} />
-                                Request Itinerary Options
-                            </Link>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 14: PLANNING TIPS (StepByStepGuide) ─── */}
+                <StepByStepGuide
+                    title={pageData.planningTips.heading}
+                    subtitle={pageData.planningTips.eyebrow}
+                    steps={planningSteps}
+                />
 
-                {/* WHO SHOULD BOOK */}
-                <section className="usrc-audience-section usrc-bg-white">
-                    <div className="usrc-audience-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <span className="fcel-eyebrow-label">WHO IS IT FOR?</span>
-                            <h2 className="fcel-section-heading">Who Should Book?</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="usrc-audience-column">
-                            <h4 className="usrc-audience-title">Perfect for:</h4>
-                            <ul className="usrc-audience-list">
-                                {['Couples', 'History lovers', 'Food & wine enthusiasts', 'Luxury travelers', 'First-time France visitors', 'Anniversary celebrations'].map((item, idx) => (
-                                    <li key={idx} className="usrc-audience-item">
-                                        <CheckCircle size={18} className="usrc-audience-check" />
-                                        <span>{item}</span>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── INLINE CTA 5 ─── */}
+                {pageData.inlineCtas[4] && (
+                    <InlineCTA
+                        tag={pageData.inlineCtas[4].tag}
+                        text={pageData.inlineCtas[4].text}
+                        btnText={pageData.inlineCtas[4].btnText}
+                        btnLink={pageData.inlineCtas[4].btnLink}
+                    />
+                )}
 
-                {/* PLANNING TIPS */}
-                <section className="usrc-tips-section usrc-bg-soft">
-                    <div className="usrc-tips-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <span className="fcel-eyebrow-label usrc-eyebrow-onsoft">GOOD TO KNOW</span>
-                            <h2 className="fcel-section-heading">Planning Tips</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="usrc-tips-grid">
-                            {[
-                                { text: 'Book 9–18 months ahead.', icon: <Clock size={20} /> },
-                                { text: 'Visit during spring or fall.', icon: <Calendar size={20} /> },
-                                { text: 'Choose a French Balcony cabin.', icon: <Bed size={20} /> },
-                                { text: 'Add extra nights in Paris.', icon: <MapPin size={20} /> }
-                            ].map((tip, idx) => (
-                                <div key={idx} className="usrc-tip-card">
-                                    <div className="usrc-tip-icon-wrap">
-                                        {tip.icon}
-                                    </div>
-                                    <span className="usrc-tip-text">{tip.text}</span>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 15: WHY BOOK WITH TRIPS & SHIPS (LuxuryGrid) ─── */}
+                <LuxuryGrid
+                    title={pageData.whyBook.heading}
+                    subtitle={`${pageData.whyBook.eyebrow}: ${pageData.whyBook.lead}`}
+                    items={pageData.whyBook.items}
+                />
 
-                {/* INLINE CTA 5 */}
-                <section className="usrc-inline-cta-section">
-                    <div className="usrc-inline-cta-container">
-                        <span className="usrc-inline-cta-tag">Plan Ahead</span>
-                        <p className="usrc-inline-cta-text">Let our advisors help you time your Seine River Cruise perfectly.</p>
-                        <div className="usrc-inline-cta-btn-row">
-                            <Link to="/contact" className="usrc-btn-primary">
-                                <Phone size={18} />
-                                Schedule a Consultation
-                            </Link>
-                            <Link to="/contact" className="usrc-btn-outline">
-                                <LayoutList size={18} />
-                                Request Itinerary Options
-                            </Link>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 16: EXPERT INSIGHT FROM ANGELA HUGHES (ExpertCredentials) ─── */}
+                <ExpertCredentials
+                    name="Angela Hughes"
+                    title={pageData.expert.title}
+                    image={ProfilePictureAH}
+                    badge={pageData.expert.eyebrow}
+                    quote={pageData.expert.lead}
+                    quoteSubtitle="Travel Prioritization Matrix: Boutique, museum-quality ships, Truly all-inclusive luxury, Butler service in select suites, Gourmet farm-to-table dining"
+                    bio={pageData.expert.bio}
+                    credentials={pageData.expert.priorities}
+                    ctaText={pageData.expert.ctaText}
+                    ctaLink={pageData.expert.ctaLink}
+                />
 
-                {/* WHY BOOK WITH TRIPS & SHIPS */}
-                <section className="usrc-verdict-section usrc-bg-soft">
-                    <div className="usrc-verdict-container">
-                        <span className="fcel-eyebrow-label usrc-eyebrow-onsoft">PLANNING ADVANTAGE</span>
-                        <h2 className="fcel-section-heading">Why Book with Trips & Ships Luxury Travel?</h2>
-                        <div className="fcel-heading-bar fcel-bar-center"></div>
-                        <p className="fcel-lead-paragraph" style={{ color: '#475569' }}>
-                            Expert itinerary planning, exclusive offers, personalized recommendations, airfare assistance, hotel stays, transfers, and concierge service before and after your cruise.
-                        </p>
-                    </div>
-                </section>
+                {/* ─── SECTION 17: FREQUENTLY ASKED QUESTIONS (FAQAccordion) ─── */}
+                <FAQAccordion
+                    data={{
+                        title: "Frequently Asked Questions",
+                        subtitle: "Everything you need to know about planning a Uniworld Seine River Cruise.",
+                        faqs: pageData.faqs
+                    }}
+                />
 
-                {/* OUR RECOMMENDATION */}
-                <section className="usrc-verdict-section usrc-bg-white">
-                    <div className="usrc-verdict-container">
-                        <span className="fcel-eyebrow-label">OUR RECOMMENDATION</span>
-                        <h2 className="fcel-section-heading">Our Recommendation</h2>
-                        <div className="fcel-heading-bar fcel-bar-center"></div>
-                        <p className="fcel-lead-paragraph" style={{ color: '#475569' }}>
-                            A Uniworld Seine River Cruise offers one of Europe's finest luxury vacations, combining the romance of Paris, the history of Normandy, exceptional cuisine, and personalized service into one unforgettable journey.
-                        </p>
-                    </div>
-                </section>
+                {/* ─── SECTION 18: FINAL CTA (CenterCTA) ─── */}
+                <CenterCTA
+                    title={pageData.cta.title}
+                    description={pageData.cta.description}
+                    buttonText={pageData.cta.primaryBtn}
+                    buttonLink={pageData.cta.primaryBtnLink}
+                    image={ctaBgImg}
+                />
+            </main>
 
-                 {/* EXPERT INSIGHT */}
-                <section id="uniworld-growth-insight" className="medi-expert-editorial-section medi-growth-insight-section">
-                    <div className="medi-expert-editorial-container">
-                        <div className="medi-expert-editorial-card">
-
-                            {/* Left Side: Portrait and Floating Stat Badge */}
-                            <div className="medi-editorial-portrait-block">
-                                <div className="medi-editorial-image-frame">
-                                    <img src={ProfilePictureAH} alt="Angela Hughes - Luxury River Cruise Expert" />
-                                    <div className="medi-editorial-gradient-layer"></div>
-                                </div>
-
-                                <div className="medi-editorial-floating-stat">
-                                    <div className="medi-stat-tile">
-                                        <span className="medi-stat-number">40+</span>
-                                        <span className="medi-stat-label">Years Experience</span>
-                                    </div>
-                                    <div className="medi-stat-divider"></div>
-                                    <div className="medi-stat-tile">
-                                        <span className="medi-stat-number">121+</span>
-                                        <span className="medi-stat-label">Countries Visited</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Right Side: Editorial Text */}
-                            <div className="medi-editorial-content-block">
-                                <div className="medi-editorial-header">
-                                    <div className="medi-editorial-eyebrow-container">
-                                        <ExpertAward size={18} className="medi-editorial-icon-badge" />
-                                        <span className="medi-editorial-eyebrow">Expert Insight from Angela Hughes</span>
-                                    </div>
-                                    <h2 className="medi-editorial-title">
-                                        Why Discerning Travelers <br className="medi-growth-title-break" />Choose Uniworld River Cruises
-                                    </h2>
-                                    <div className="medi-editorial-accent-bar"></div>
-                                </div>
-
-                                <p className="medi-editorial-lead-para">
-                                    According to Angela Hughes, many travelers are initially drawn to Uniworld for its extraordinary boutique ships — but ultimately stay loyal because of the warmth of service, the depth of cultural immersion, and a level of all-inclusive luxury that few river cruise lines can match.
-                                </p>
-
-                                <div className="medi-priorities-box">
-                                    <p className="medi-priorities-intro">
-                                        After more than four decades in luxury travel and visiting over 121 countries, Angela consistently sees Uniworld travelers prioritizing:
-                                    </p>
-                                    <div className="medi-priorities-grid-pills">
-                                        {[
-                                            'Boutique, museum-quality ships',
-                                            'Truly all-inclusive luxury',
-                                            'Butler service in select suites',
-                                            'Gourmet farm-to-table dining',
-                                            'Intimate, destination-rich itineraries',
-                                            'Personalized, warm onboard service'
-                                        ].map((item, idx) => (
-                                            <div key={idx} className="medi-priority-pill-item">
-                                                <ExpertCheckCircle size={15} className="medi-priority-check" />
-                                                <span>{item}</span>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-
-                                <p className="medi-editorial-body-para">
-                                    As founder of Luxury Travel University and CEO of Trips &amp; Ships Luxury Travel, Angela Hughes helps travelers navigate the luxury river cruise landscape with honesty and real-world expertise — ensuring every client finds the right ship, the right itinerary, and the right experience for their lifestyle.
-                                </p>
-
-                                <div className="medi-expertise-section-box">
-                                    <span className="medi-expertise-intro-label">Her expertise spans:</span>
-                                    <div className="medi-expertise-horizontal-strip">
-                                        {[
-                                            { title: 'Luxury river cruising', icon: ExpertShip },
-                                            { title: 'European river itineraries', icon: ExpertGlobe },
-                                            { title: 'Butler & suite services', icon: ExpertUsers },
-                                            { title: 'All-inclusive cruise planning', icon: ExpertCompass },
-                                            { title: 'Gourmet & cultural travel', icon: ExpertSparkles }
-                                        ].map((item, idx) => {
-                                            const IconComponent = item.icon
-                                            return (
-                                                <div key={idx} className="medi-expertise-pills-row">
-                                                    <div className="medi-expertise-pill-icon-box">
-                                                        <IconComponent size={14} />
-                                                    </div>
-                                                    <span className="medi-expertise-pill-text">{item.title}</span>
-                                                </div>
-                                            )
-                                        })}
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-
-                {/* FAQ SECTION (MATCHED) */}
-                <section className="fcel-faq-section">
-                    <div className="fcel-faq-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <h2 className="fcel-section-heading">Frequently Asked Questions</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="fcel-faq-list">
-                            {usrcFaqs.map((faq, index) => (
-                                <div
-                                    key={index}
-                                    className="fcel-faq-item"
-                                    onClick={() => usrcToggleFaq(index)}
-                                >
-                                    <div className="fcel-faq-question-row">
-                                        <span>{faq.question}</span>
-                                        <span className="fcel-faq-toggle">
-                                            {usrcActiveFaq === index ? "−" : "+"}
-                                        </span>
-                                    </div>
-                                    {usrcActiveFaq === index && (
-                                        <p className="fcel-faq-answer">{faq.answer}</p>
-                                    )}
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-
-                {/* CTA SECTION (MATCHED) */}
-                <section className="fcel-cta-section">
-                    <div className="fcel-cta-bg-pattern"></div>
-                    <div className="fcel-cta-inner">
-                        <h2 className="fcel-cta-heading">Ready to Plan Your Uniworld Seine River Cruise?</h2>
-                        <div className="fcel-cta-separator"></div>
-                        <p className="fcel-cta-text">
-                            Contact our luxury cruise consultants to lock in extra credits, suite upgrades, and personalized transfers. We plan details so you can enjoy the trip.
-                        </p>
-                        <div className="fcel-cta-btn-row">
-                            <Link to="/contact" className="fcel-btn-primary">
-                                <Phone size={18} />
-                                Schedule a Consultation
-                            </Link>
-                            <button className="fcel-btn-outline">
-                                <LayoutList size={18} />
-                                Request Itinerary Options
-                            </button>
-                        </div>
-                    </div>
-                </section>
-
-            </div>
-
+            {/* Global Footer Navigation */}
             <Navbar />
-        </>
-    )
+        </div>
+    );
 }
 
-export default UniworldSeineRiverCruises
+export default UniworldSeineRiverCruises;
