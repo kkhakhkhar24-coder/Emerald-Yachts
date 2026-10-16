@@ -1,0 +1,326 @@
+{
+  "seo": {
+    "title": "Uniworld Cabin Categories Explained",
+    "metaTitle": "Uniworld Cabin Categories Explained",
+    "metaDescription": "Learn about Uniworld cabin categories, including Classic, Deluxe, French Balcony, and Suites. Compare features, amenities, and choose the best cabin.",
+    "keywords": "Uniworld Cabin Categories, Uniworld staterooms, Uniworld suites, French Balcony cabins, Uniworld room categories, luxury river cruise cabins, Uniworld accommodations, river cruise cabin guide",
+    "canonicalUrl": "https://www.tripsandships.com/uniworld-river-cruises/cabin-categories/"
+  },
+  "hero": {
+    "badge": "Uniworld River Cruises · Trips & Ships Luxury Travel",
+    "title": "Uniworld Cabin Categories Explained",
+    "subtitle": "Compare Classic, Deluxe, French Balcony, and Suite accommodations to choose the boutique river cruise cabin that best fits your travel style.",
+    "primaryCtaText": "Schedule a Consultation",
+    "primaryCtaLink": "/contact",
+    "secondaryCtaText": "Compare Stateroom Types",
+    "secondaryCtaLink": "#comparison"
+  },
+  "intro": {
+    "eyebrow": "CABIN GUIDE",
+    "heading": "Understanding Uniworld Cabin Categories",
+    "paragraphs": [
+      "Choosing the right cabin is one of the most important decisions when booking a luxury river cruise.",
+      "Uniworld Boutique River Cruises offers several accommodation categories designed to suit different travel styles, budgets, and comfort preferences. From elegantly appointed Classic Staterooms to spacious Suites with butler service, every room is thoughtfully designed to deliver a boutique hotel experience on the water.",
+      "This guide explains every Uniworld cabin category, highlights the differences between room types, and helps you decide which accommodation offers the best value for your next river cruise.",
+      "Each category provides luxury furnishings, premium amenities, and attentive service, with additional benefits available as you move into higher cabin grades."
+    ],
+    "quickOverview": {
+      "label": "Quick Overview",
+      "text": "Unlike many ocean cruise lines with dozens of cabin grades, Uniworld keeps its accommodation options relatively straightforward: Classic Stateroom, Deluxe Stateroom, French Balcony, Premium French Balcony, Junior Suite, and Suite."
+    }
+  },
+  "accommodations": {
+    "eyebrow": "ACCOMMODATIONS",
+    "title": "Explore Every Cabin Category",
+    "subtitle": "Uniworld accommodations are styled like boutique hotels, combining fine craftsmanship with modern luxury.",
+    "cabins": [
+      {
+        "name": "Classic Stateroom",
+        "category": "Category 01",
+        "size": "Entry-Level Stateroom",
+        "intro": "Classic Staterooms are the entry-level accommodations within the Uniworld fleet, offering an excellent balance between luxury and value.",
+        "featuresTitle": "Typical Features",
+        "features": [
+          "Comfortable queen or twin beds",
+          "Premium mattress and linens",
+          "Marble bathroom",
+          "Rain shower or luxury bath",
+          "Luxury toiletries",
+          "Flat-screen television",
+          "Complimentary Wi-Fi",
+          "Climate control",
+          "Daily housekeeping",
+          "Safe",
+          "Hair dryer"
+        ],
+        "note": "These cabins are ideal for guests who plan to spend most of their time exploring destinations rather than relaxing in their room.",
+        "bestFor": "First-time river cruisers, budget-conscious luxury travelers, solo travelers, guests focused on sightseeing."
+      },
+      {
+        "name": "Deluxe Stateroom",
+        "category": "Category 02",
+        "size": "Enhanced Location",
+        "intro": "Deluxe Staterooms typically offer additional space or a more desirable location on the ship.",
+        "featuresTitle": "Benefits Often Include",
+        "features": [
+          "Larger floor plan",
+          "Higher deck location",
+          "Improved river views",
+          "Comfortable seating area",
+          "Enhanced décor"
+        ],
+        "note": "Although amenities remain similar to Classic Staterooms, the extra space can make longer cruises more comfortable.",
+        "bestFor": "Although amenities remain similar to Classic Staterooms, the extra space can make longer cruises more comfortable."
+      },
+      {
+        "name": "French Balcony Rooms",
+        "category": "Category 03",
+        "size": "Panoramic Views",
+        "intro": "French Balcony accommodations are among the most popular choices on Uniworld ships. Instead of a walk-out balcony, these cabins feature floor-to-ceiling glass doors that open inward, allowing guests to enjoy fresh air and uninterrupted river views.",
+        "featuresTitle": "Advantages",
+        "features": [
+          "Panoramic scenery",
+          "Abundant natural light",
+          "Fresh air access",
+          "Elegant modern design",
+          "Excellent photography opportunities"
+        ],
+        "note": "For travelers who enjoy watching the landscape from their cabin, a French Balcony is often worth the upgrade.",
+        "bestFor": "For travelers who enjoy watching the landscape from their cabin, a French Balcony is often worth the upgrade."
+      },
+      {
+        "name": "Premium French Balcony Cabins",
+        "category": "Category 04",
+        "size": "Midship Placement",
+        "intro": "Some ships include Premium French Balcony categories positioned in more desirable locations.",
+        "featuresTitle": "Additional Advantages May Include",
+        "features": [
+          "Midship location",
+          "Reduced engine noise",
+          "Convenient access to public areas",
+          "Better views",
+          "Slightly larger layouts on selected vessels"
+        ],
+        "note": "These cabins combine comfort with premium positioning.",
+        "bestFor": "These cabins combine comfort with premium positioning."
+      },
+      {
+        "name": "Junior Suites",
+        "category": "Category 05",
+        "size": "Expanded Living Space",
+        "intro": "Available on selected ships, Junior Suites provide more living space than standard staterooms.",
+        "featuresTitle": "Features May Include",
+        "features": [
+          "Sitting area",
+          "Larger bathroom",
+          "Upgraded furnishings",
+          "Additional storage",
+          "Premium welcome amenities"
+        ],
+        "note": "Junior Suites appeal to travelers seeking extra comfort without moving to the highest suite category.",
+        "bestFor": "Junior Suites appeal to travelers seeking extra comfort without moving to the highest suite category."
+      },
+      {
+        "name": "Luxury Suites",
+        "category": "Category 06",
+        "size": "Finest Accommodations",
+        "intro": "Suites represent the finest accommodations available across much of the Uniworld fleet. Depending on the ship, guests may enjoy:",
+        "featuresTitle": "Suite Amenities",
+        "features": [
+          "Separate bedroom or living area",
+          "Spacious marble bathroom",
+          "Walk-in wardrobe",
+          "Butler service",
+          "Premium minibar",
+          "Complimentary laundry (on select sailings)",
+          "Fresh flowers",
+          "Fresh fruit",
+          "Priority services",
+          "Personalized amenities"
+        ],
+        "note": "Suite layouts vary between ships, making each accommodation unique.",
+        "bestFor": "Suite layouts vary between ships, making each accommodation unique."
+      }
+    ]
+  },
+  "butler": {
+    "eyebrow": "SUITE EXCLUSIVE",
+    "heading": "Butler Service Explained",
+    "intro": "Guests staying in qualifying suites receive personalized butler service designed to elevate every moment of their river cruise.",
+    "sub": "A dedicated butler anticipates your needs, coordinates arrangements, and ensures your suite experience is seamless from start to finish.",
+    "services": [
+      "Unpacking and packing assistance",
+      "Beverage service",
+      "Shoe shining",
+      "Laundry coordination",
+      "Dining arrangements",
+      "Personalized requests",
+      "Daily suite preparation"
+    ],
+    "highlight": "Butler service is one of the key distinctions that sets Uniworld suites apart from standard staterooms."
+  },
+  "amenities": {
+    "eyebrow": "STANDARD COMFORTS",
+    "heading": "Amenities Included in Every Cabin",
+    "lead": "Regardless of cabin category, guests generally receive:",
+    "items": [
+      "Premium bedding",
+      "Egyptian cotton linens",
+      "Marble bathroom",
+      "Luxury toiletries",
+      "Hair dryer",
+      "Flat-screen TV",
+      "Complimentary bottled water",
+      "Wi-Fi",
+      "Climate control",
+      "In-room safe",
+      "Housekeeping",
+      "Evening turndown service on many sailings"
+    ],
+    "conclusion": "Higher cabin categories primarily differ in space, views, and personalized services rather than basic amenities."
+  },
+  "comparisonTable": {
+    "eyebrow": "SIDE BY SIDE",
+    "title": "Cabin Comparison",
+    "headers": ["Feature", "Classic", "Deluxe", "French Balcony", "Premium French Balcony", "Suite"],
+    "rows": [
+      ["Premium Bedding", "✓", "✓", "✓", "✓", "✓"],
+      ["Marble Bathroom", "✓", "✓", "✓", "✓", "✓"],
+      ["Sitting Area", "Limited", "Small", "Moderate", "Moderate", "Large"],
+      ["River Views", "Standard", "Better", "Excellent", "Premium", "Premium"],
+      ["French Balcony", "No", "No", "Yes", "Yes", "Varies"],
+      ["Butler Service", "No", "No", "No", "No", "Select Suites"],
+      ["Largest Living Space", "No", "No", "Moderate", "Moderate", "Yes"]
+    ]
+  },
+  "chooseCabin": {
+    "eyebrow": "DECISION GUIDE",
+    "title": "How to Choose the Right Cabin",
+    "items": [
+      {
+        "title": "Choose a Classic Stateroom If",
+        "icon": "BedDouble",
+        "bullets": [
+          "Budget matters most.",
+          "You spend little time in your cabin.",
+          "You prefer using your vacation budget on excursions."
+        ]
+      },
+      {
+        "title": "Choose a Deluxe Stateroom If",
+        "icon": "Sofa",
+        "bullets": [
+          "You appreciate additional space.",
+          "You want a quieter location.",
+          "You prefer a higher deck."
+        ]
+      },
+      {
+        "title": "Choose a French Balcony If",
+        "icon": "DoorOpen",
+        "bullets": [
+          "Scenic views are important.",
+          "You enjoy natural light.",
+          "You like relaxing in your room between excursions."
+        ]
+      },
+      {
+        "title": "Choose a Suite If",
+        "icon": "Gem",
+        "bullets": [
+          "You're celebrating a special occasion.",
+          "Personalized service matters.",
+          "You want maximum comfort.",
+          "You expect to spend significant time onboard."
+        ]
+      }
+    ]
+  },
+  "upgradeWorthIt": {
+    "eyebrow": "VALUE CONSIDERATIONS",
+    "heading": "Is Upgrading Worth It?",
+    "paragraphs": [
+      "Whether an upgrade is worthwhile depends on your travel style.",
+      "A French Balcony upgrade often provides the best balance between price and enhanced experience, particularly on scenic itineraries along the Rhine, Danube, Douro, and Seine.",
+      "Suites provide additional luxury and exclusive services that appeal to travelers celebrating milestones or seeking the highest level of comfort."
+    ],
+    "highlights": [
+      "French Balcony: Best price-to-experience balance",
+      "Suite: Maximum luxury & exclusivity"
+    ]
+  },
+  "bookingTips": {
+    "eyebrow": "BEFORE YOU BOOK",
+    "title": "Tips Before Booking",
+    "subtitle": "To select the best cabin:",
+    "steps": [
+      { "title": "Compare Deck Plans", "description": "Compare deck plans for your chosen ship." },
+      { "title": "Book Early", "description": "Book early for the widest selection." },
+      { "title": "Review Dimensions", "description": "Review cabin dimensions." },
+      { "title": "Consider Scenery", "description": "Consider travel season and scenery." },
+      { "title": "Evaluate Time Onboard", "description": "Decide how much time you'll spend onboard." },
+      { "title": "Inquire About Upgrades", "description": "Ask about promotional upgrades." },
+      { "title": "Check Suite Perks", "description": "Check suite benefits before booking." }
+    ],
+    "proTip": "Since every Uniworld ship has a unique layout, reviewing the deck plan before reserving your cabin is always recommended."
+  },
+  "takeaways": {
+    "eyebrow": "SUMMARY",
+    "heading": "Key Takeaways",
+    "sections": [
+      {
+        "heading": "Key Takeaways",
+        "paragraphs": [
+          "Uniworld offers accommodation options ranging from Classic Staterooms to luxury Suites.",
+          "Every cabin includes premium amenities and boutique-style décor.",
+          "French Balcony rooms are popular for panoramic river views.",
+          "Suites provide additional space, luxury amenities, and butler service.",
+          "Choosing the right cabin depends on budget, itinerary, and onboard preferences.",
+          "Booking early provides the best selection of cabin locations and categories."
+        ]
+      }
+    ]
+  },
+  "expertCredentials": {
+    "name": "Angela Hughes",
+    "title": "CEO of Trips & Ships Luxury Travel",
+    "badge": "MEET THE CEO",
+    "experienceBadge": "40+ Years Designing Travel • 121+ Countries",
+    "quote": "Uniworld stateroom categories are designed to be straightforward. The biggest variance is layout and size, but boutique comfort remains high. Always evaluate how much time you will spend in your room before upgrading.",
+    "credentials": [
+      "Classic Comfort",
+      "Deluxe Floor Plan",
+      "Balcony Amenities",
+      "Butler Service Perks",
+      "Layout Functionality",
+      "Bespoke Furnishings"
+    ],
+    "bio": "As founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel, Angela Hughes uses her travel knowledge of river layouts to guide you in choosing the correct cabin category.",
+    "ctaText": "Schedule a Consultation",
+    "ctaLink": "/contact"
+  },
+  "faqs": [
+    { "question": "What are the cabin categories on Uniworld River Cruises?", "answer": "Uniworld generally offers Classic Staterooms, Deluxe Staterooms, French Balcony rooms, Premium French Balcony cabins, Junior Suites, and Suites." },
+    { "question": "What is the difference between a Classic and Deluxe Stateroom?", "answer": "Deluxe Staterooms usually provide more space or a more desirable location on the ship." },
+    { "question": "What is a French Balcony cabin?", "answer": "It features floor-to-ceiling glass doors that open inward, offering fresh air and panoramic river views." },
+    { "question": "Are French Balcony cabins worth the upgrade?", "answer": "Many travelers consider them worthwhile because of the enhanced scenery and natural light." },
+    { "question": "Do all cabins have marble bathrooms?", "answer": "Most Uniworld accommodations feature elegant marble bathrooms with luxury amenities." },
+    { "question": "Which cabin includes butler service?", "answer": "Butler service is available in qualifying suite categories." },
+    { "question": "Are suites significantly larger than standard cabins?", "answer": "Yes. Suites generally offer more living space, upgraded furnishings, and additional amenities." },
+    { "question": "Is Wi-Fi included in every cabin?", "answer": "Yes. Complimentary Wi-Fi is typically available throughout the ship." },
+    { "question": "Which cabin is best for first-time guests?", "answer": "French Balcony cabins offer an excellent combination of comfort, views, and value." },
+    { "question": "Are cabin layouts the same on every ship?", "answer": "No. Cabin sizes and layouts vary depending on the individual vessel." },
+    { "question": "Can solo travelers book any cabin category?", "answer": "Yes, although solo supplements may apply depending on the itinerary." },
+    { "question": "Which cabin offers the best value?", "answer": "Many travelers find French Balcony cabins provide the best balance between price and experience." },
+    { "question": "Are Premium French Balcony cabins different from standard French Balcony rooms?", "answer": "They are often located in more desirable positions and may offer slightly improved layouts." },
+    { "question": "Should I upgrade to a suite?", "answer": "If you value extra space, personalized service, and premium amenities, a suite can be an excellent investment." },
+    { "question": "How early should I reserve my preferred cabin?", "answer": "Booking several months in advance gives you the widest choice of cabin categories and locations." }
+  ],
+  "cta": {
+    "eyebrow": "RIVER CRUISE LUXURY",
+    "title": "Ready to Choose Your Perfect Cabin?",
+    "description": "Compare Uniworld cabin categories, explore ship deck plans, and book the accommodation that best matches your travel style.",
+    "buttonText": "Schedule a Consultation",
+    "buttonLink": "/contact"
+  }
+}

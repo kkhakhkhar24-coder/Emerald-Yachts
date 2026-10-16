@@ -1055,7 +1055,7 @@ const Navbar = () => {
                 Uniworld Seine River Cruises
               </NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/uniworld-river-cruises/rhone-saone"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
@@ -1069,7 +1069,7 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 Uniworld Bordeaux River Cruises
-              </NavLink> */}
+              </NavLink>
 
               <NavLink
                 to="/uniworld-river-cruises/cabin-categories/"
@@ -2677,7 +2677,7 @@ const Navbar = () => {
               Uniworld Seine River Cruises
             </NavLink>
 
-            {/* <NavLink
+            <NavLink
               to="/uniworld-river-cruises/rhone-saone"
               className="nav-dropdown-single"
               onClick={toggleMenu}
@@ -2691,7 +2691,7 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Uniworld Bordeaux River Cruises
-            </NavLink> */}
+            </NavLink>
 
             <NavLink
               to="/uniworld-river-cruises/cabin-categories/"
