@@ -1,0 +1,499 @@
+{
+  "seo": {
+    "title": "Best Uniworld River Cruise Itineraries",
+    "metaTitle": "Best Uniworld River Cruise Itineraries",
+    "metaDescription": "Discover the best Uniworld River Cruise itineraries across Europe, Egypt, India, and Peru. Compare destinations, cruise lengths, highlights, and travel tips.",
+    "keywords": "Best Uniworld River Cruise Itineraries, Uniworld itineraries, best Uniworld cruises, European river cruises, Danube river cruise, Rhine river cruise, Douro cruise, Nile cruise, luxury river cruise itineraries",
+    "canonicalUrl": "https://www.tripsandships.com/uniworld-river-cruises/best-itineraries/"
+  },
+  "hero": {
+    "badge": "River Cruise Guide · Trips & Ships Luxury Travel",
+    "title": "Best Uniworld River Cruise Itineraries",
+    "subtitle": "Discover the best Uniworld River Cruise itineraries across Europe, Egypt, India, and beyond — compare destinations, cruise lengths, highlights, and travel tips.",
+    "primaryCtaText": "Speak with a Specialist",
+    "primaryCtaLink": "/contact",
+    "secondaryCtaText": "Explore Regions",
+    "secondaryCtaLink": "#regions"
+  },
+  "intro": {
+    "eyebrow": "RIVER CRUISE PLANNING",
+    "heading": "Choosing Your Perfect Uniworld Journey",
+    "paragraphs": [
+      "One of the biggest advantages of sailing with Uniworld Boutique River Cruises is the variety of thoughtfully designed itineraries available across Europe and beyond.",
+      "Whether you're dreaming of castles along the Rhine, vineyards in Portugal, Christmas markets on the Danube, or ancient temples in Egypt, Uniworld offers journeys that combine luxury accommodations with immersive cultural experiences.",
+      "This guide highlights some of the best Uniworld River Cruise itineraries, explains who each journey is best suited for, and provides practical advice to help you choose the ideal cruise."
+    ]
+  },
+  "howToChoose": {
+    "eyebrow": "GETTING STARTED",
+    "heading": "How to Choose the Right Itinerary",
+    "lead": "Before selecting an itinerary, consider these core aspects to match your ideal cruise style.",
+    "factors": [
+      {
+        "text": "Destination preferences"
+      },
+      {
+        "text": "Cruise duration"
+      },
+      {
+        "text": "Time of year"
+      },
+      {
+        "text": "Historical and cultural interests"
+      },
+      {
+        "text": "Scenic cruising opportunities"
+      },
+      {
+        "text": "Included excursions"
+      },
+      {
+        "text": "Travel pace"
+      },
+      {
+        "text": "Budget"
+      }
+    ],
+    "callout": "Some itineraries focus on iconic European cities, while others emphasize wine regions, UNESCO World Heritage Sites, or lesser-known cultural experiences."
+  },
+  "regionsOverview": {
+    "eyebrow": "DESTINATION OVERVIEW",
+    "heading": "Explore Uniworld River Cruise Regions",
+    "regions": [
+      {
+        "id": "danube",
+        "name": "Danube River Cruises",
+        "intro": "The Danube is one of Uniworld's most popular cruise regions, flowing through several of Central Europe's most historic cities.",
+        "highlights": [
+          "Budapest",
+          "Vienna",
+          "Bratislava",
+          "Passau",
+          "Melk Abbey",
+          "Wachau Valley"
+        ],
+        "bestFor": [
+          "First-time river cruisers",
+          "History enthusiasts",
+          "Classical music lovers",
+          "Christmas Market travelers"
+        ],
+        "note": "The Danube offers a balanced mix of grand capitals, scenic landscapes, and cultural landmarks."
+      },
+      {
+        "id": "rhine",
+        "name": "Rhine River Cruises",
+        "intro": "The Rhine is famous for medieval castles, charming villages, and vineyard-covered hillsides.",
+        "highlights": [
+          "Cologne Cathedral",
+          "Rhine Gorge",
+          "Strasbourg",
+          "Heidelberg",
+          "Rüdesheim",
+          "Koblenz"
+        ],
+        "bestFor": [
+          "Couples",
+          "Photographers",
+          "Wine lovers",
+          "Scenic cruising enthusiasts"
+        ],
+        "note": "This itinerary combines dramatic river scenery with centuries of European history."
+      },
+      {
+        "id": "seine",
+        "name": "Seine River Cruises",
+        "intro": "Cruises along the Seine explore northern France while combining city experiences with rural landscapes.",
+        "highlights": [
+          "Paris",
+          "Rouen",
+          "Normandy",
+          "Honfleur",
+          "Giverny"
+        ],
+        "bestFor": [],
+        "note": "Travelers interested in French culture, Impressionist art, and World War II history often choose this itinerary."
+      },
+      {
+        "id": "douro",
+        "name": "Douro River Cruises",
+        "intro": "Portugal's Douro Valley is one of Europe's premier wine regions.",
+        "highlights": [
+          "Porto",
+          "Peso da Régua",
+          "Pinhão",
+          "Salamanca (Spain)",
+          "Vineyards",
+          "Wine tastings"
+        ],
+        "bestFor": [],
+        "note": "The Douro appeals to travelers seeking relaxed scenery, regional cuisine, and exceptional wines."
+      },
+      {
+        "id": "rhone",
+        "name": "Rhône and Provence Cruises",
+        "intro": "Southern France combines historic cities with renowned culinary traditions.",
+        "highlights": [
+          "Lyon",
+          "Avignon",
+          "Arles",
+          "Viviers"
+        ],
+        "showcase": [
+          "Roman heritage",
+          "Lavender fields",
+          "Provençal villages",
+          "Gastronomy",
+          "Wine culture"
+        ],
+        "bestFor": [],
+        "note": null
+      },
+      {
+        "id": "venice",
+        "name": "Venice and Northern Italy",
+        "intro": "Uniworld's Venetian itineraries provide a unique perspective on Italy's famous lagoon.",
+        "highlights": [
+          "Venice",
+          "Burano",
+          "Murano",
+          "Chioggia"
+        ],
+        "bestFor": [],
+        "note": "Many itineraries also include visits to historic villas and artisan workshops."
+      },
+      {
+        "id": "nile",
+        "name": "Egypt and the Nile",
+        "intro": "The Nile offers one of Uniworld's most distinctive itineraries.",
+        "highlights": [
+          "Luxor",
+          "Aswan",
+          "Karnak Temple",
+          "Valley of the Kings",
+          "Temple of Philae"
+        ],
+        "bestFor": [],
+        "note": "This itinerary combines luxury cruising with some of the world's most important archaeological sites."
+      },
+      {
+        "id": "ganges",
+        "name": "India and the Ganges",
+        "intro": "Uniworld also operates select journeys along the Ganges River.",
+        "highlights": [
+          "Kolkata",
+          "Kalna",
+          "Murshidabad",
+          "Varanasi"
+        ],
+        "bestFor": [],
+        "note": "Guests experience vibrant culture, sacred temples, colonial architecture, and traditional villages."
+      }
+    ]
+  },
+  "comparisonTable": {
+    "eyebrow": "QUICK COMPARISON",
+    "title": "Which Itinerary Is Best?",
+    "lead": "Match your primary vacation focus to the river cruise itinerary designed to deliver that exact experience.",
+    "headers": [
+      "Travel Interest / Focus",
+      "Recommended Uniworld Itinerary"
+    ],
+    "rows": [
+      [
+        "First river cruise",
+        "Danube"
+      ],
+      [
+        "Scenic landscapes",
+        "Rhine"
+      ],
+      [
+        "Wine lovers",
+        "Douro"
+      ],
+      [
+        "Food enthusiasts",
+        "Rhône"
+      ],
+      [
+        "Art & culture",
+        "Seine"
+      ],
+      [
+        "Ancient history",
+        "Nile"
+      ],
+      [
+        "Italy lovers",
+        "Venice Lagoon"
+      ],
+      [
+        "Spiritual & cultural travel",
+        "Ganges"
+      ]
+    ]
+  },
+  "seasonTable": {
+    "eyebrow": "SEASONAL PLANNING",
+    "title": "Best Time to Sail Each Region",
+    "headers": [
+      "Region / Destination",
+      "Best Time to Cruise"
+    ],
+    "rows": [
+      [
+        "Danube",
+        "Spring & Autumn"
+      ],
+      [
+        "Rhine",
+        "Spring to Early Autumn"
+      ],
+      [
+        "Seine",
+        "Late Spring to Autumn"
+      ],
+      [
+        "Douro",
+        "Spring & Harvest Season"
+      ],
+      [
+        "Rhône",
+        "Spring & Autumn"
+      ],
+      [
+        "Venice",
+        "Spring & Early Autumn"
+      ],
+      [
+        "Nile",
+        "October to April"
+      ],
+      [
+        "Ganges",
+        "Winter"
+      ]
+    ],
+    "footer": "Traveling during shoulder seasons often provides pleasant weather with fewer crowds."
+  },
+  "cruisePlanning": {
+    "length": {
+      "eyebrow": "TRIP PLANNING",
+      "title": "Cruise Length Options",
+      "lead": "Uniworld itineraries commonly range from:",
+      "items": [
+        "7-night cruises",
+        "8-day journeys",
+        "10-day itineraries",
+        "14-day combinations",
+        "Extended land and cruise packages"
+      ],
+      "note": "Longer itineraries provide additional opportunities for cultural immersion and destination exploration."
+    },
+    "tips": {
+      "eyebrow": "FOR FIRST-TIME CRUISERS",
+      "title": "Tips for Choosing Your Itinerary",
+      "lead": "If you're new to river cruising:",
+      "items": [
+        "Start with the Danube or Rhine.",
+        "Choose a 7- or 8-day itinerary.",
+        "Consider the season and local festivals.",
+        "Compare included excursions.",
+        "Review embarkation and disembarkation cities.",
+        "Book early for popular sailings."
+      ],
+      "note": "Experienced travelers may prefer more specialized routes such as the Douro, Nile, or Ganges."
+    }
+  },
+  "itineraryMatters": {
+    "eyebrow": "THE DECIDING FACTOR",
+    "title": "Why Itinerary Matters More Than Ship Choice",
+    "lead": "While every Uniworld ship offers luxury accommodations and personalized service, the itinerary often has the greatest influence on your overall experience.",
+    "subHeading": "Key factors to keep in mind:",
+    "factors": [
+      {
+        "title": "Historical interests",
+        "text": "Historical interests"
+      },
+      {
+        "title": "Culinary experiences",
+        "text": "Culinary experiences"
+      },
+      {
+        "title": "Scenic cruising",
+        "text": "Scenic cruising"
+      },
+      {
+        "title": "Local culture",
+        "text": "Local culture"
+      },
+      {
+        "title": "Pace of travel",
+        "text": "Pace of travel"
+      },
+      {
+        "title": "Excursion variety",
+        "text": "Excursion variety"
+      }
+    ],
+    "conclusion": "Choosing a destination that matches your interests is often more important than selecting a specific ship."
+  },
+  "trustAndReferences": {
+    "trust": {
+      "eyebrow": "WHY TRUST THIS GUIDE",
+      "title": "Objective, Destination-First Guidance",
+      "items": [
+        "Covers multiple destinations objectively.",
+        "Helps travelers match itineraries to interests.",
+        "Provides seasonal guidance and travel planning advice.",
+        "Explains itinerary differences rather than promoting one option."
+      ]
+    },
+    "references": {
+      "eyebrow": "TRUSTED RESOURCES",
+      "title": "External Authority References",
+      "items": [
+        "Official Uniworld Boutique River Cruises",
+        "Cruise Lines International Association (CLIA)",
+        "UNESCO World Heritage Centre",
+        "European tourism boards",
+        "Egypt Ministry of Tourism",
+        "Incredible India Tourism"
+      ]
+    }
+  },
+  "imageRecommendations": [
+    {
+      "suggestion": "Danube cruise ship",
+      "alt": "Uniworld river cruise sailing along the Danube River"
+    },
+    {
+      "suggestion": "Rhine castles",
+      "alt": "Medieval castles viewed from a Uniworld Rhine River Cruise"
+    },
+    {
+      "suggestion": "Douro vineyards",
+      "alt": "Vineyards along Portugal's Douro River during a Uniworld cruise"
+    },
+    {
+      "suggestion": "Paris and the Seine",
+      "alt": "Uniworld cruise on the Seine River near Paris"
+    },
+    {
+      "suggestion": "Nile temple",
+      "alt": "Ancient temple visited during a Uniworld Nile River Cruise"
+    },
+    {
+      "suggestion": "Venice lagoon",
+      "alt": "Uniworld ship cruising through the Venice Lagoon"
+    }
+  ],
+  "keyTakeaways": {
+    "eyebrow": "SUMMARY",
+    "title": "Key Takeaways",
+    "items": [
+      "The Danube and Rhine are excellent choices for first-time river cruisers.",
+      "The Douro is ideal for wine lovers and scenic landscapes.",
+      "The Seine combines French culture, history, and art.",
+      "The Nile offers unforgettable archaeological experiences.",
+      "The Ganges provides a unique cultural and spiritual journey.",
+      "Cruise length, season, and destination all influence the experience.",
+      "Selecting the right itinerary is often more important than choosing a specific ship."
+    ]
+  },
+  "expertInsight": {
+    "eyebrow": "MEET THE CEO",
+    "title": "Insight from Angela Hughes",
+    "quote": "Selecting the right river cruise itinerary is everything. Unlike ocean cruises where the ship itself is the destination, a river cruise is about where the ship takes you—the culture, history, and people you meet at every bend.",
+    "prioritiesTitle": "Itinerary Prioritization Matrix:",
+    "priorities": [
+      "Historic Sights",
+      "Scenic Rivers",
+      "Pace & Overnights",
+      "Exclusive Excursions",
+      "Wine Tastings",
+      "Cultural Immersive Guides"
+    ],
+    "bio": "As founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel, Angela Hughes leverages decades of personal travel experience and industry connections to help you craft the perfect customized Uniworld itinerary.",
+    "stats": [
+      {
+        "value": "40+",
+        "label": "Years Designing Travel"
+      },
+      {
+        "value": "121+",
+        "label": "Countries Traveled"
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "What is the best Uniworld River Cruise itinerary?",
+      "answer": "The Danube is often recommended for first-time travelers because it combines historic cities, scenic cruising, and cultural attractions."
+    },
+    {
+      "question": "Which Uniworld itinerary is best for first-time cruisers?",
+      "answer": "The Danube and Rhine itineraries are among the most popular choices for beginners."
+    },
+    {
+      "question": "What is the most scenic Uniworld cruise?",
+      "answer": "Many travelers consider the Rhine Gorge and Portugal's Douro Valley among the most scenic routes."
+    },
+    {
+      "question": "Which itinerary is best for wine lovers?",
+      "answer": "The Douro and Rhône itineraries are excellent choices thanks to their renowned wine regions."
+    },
+    {
+      "question": "Does Uniworld sail the Nile?",
+      "answer": "Yes. Uniworld offers luxury cruises exploring Egypt's Nile River."
+    },
+    {
+      "question": "Which itinerary includes Paris?",
+      "answer": "Seine River cruises typically begin or end in Paris."
+    },
+    {
+      "question": "Does Uniworld visit Christmas Markets?",
+      "answer": "Yes. Seasonal itineraries along the Danube and Rhine include famous European Christmas Markets."
+    },
+    {
+      "question": "What is the best time to cruise the Danube?",
+      "answer": "Spring and autumn generally offer pleasant weather and fewer crowds."
+    },
+    {
+      "question": "How long are most Uniworld cruises?",
+      "answer": "Many itineraries range from 7 to 14 days, with longer cruise-and-land packages available."
+    },
+    {
+      "question": "Which itinerary is best for history lovers?",
+      "answer": "The Nile, Danube, and Seine all feature significant historical landmarks."
+    },
+    {
+      "question": "Does Uniworld offer cruises in Italy?",
+      "answer": "Yes. Select itineraries explore Venice and the Venetian Lagoon."
+    },
+    {
+      "question": "Which itinerary is best for photographers?",
+      "answer": "The Rhine and Douro offer spectacular landscapes and picturesque villages."
+    },
+    {
+      "question": "Can I combine multiple itineraries?",
+      "answer": "Yes. Some departures offer back-to-back cruises or land extensions."
+    },
+    {
+      "question": "Are excursions included on every itinerary?",
+      "answer": "Most Uniworld itineraries include guided shore excursions as part of the cruise fare."
+    },
+    {
+      "question": "How should I choose my itinerary?",
+      "answer": "Consider your preferred destinations, interests, travel season, cruise length, and budget before booking."
+    }
+  ],
+  "cta": {
+    "eyebrow": "START SOMEWHERE REMARKABLE",
+    "title": "Ready to Explore Uniworld's Itineraries?",
+    "subtitle": "Explore Uniworld's award-winning itineraries, compare destinations, and find the luxury river cruise that best matches your travel interests, preferred scenery, and dream vacation.",
+    "buttonText": "Speak with a luxury river cruise specialist",
+    "buttonLink": "/contact"
+  }
+}

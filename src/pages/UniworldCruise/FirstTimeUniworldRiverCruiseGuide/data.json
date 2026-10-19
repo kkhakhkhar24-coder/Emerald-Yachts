@@ -1,0 +1,373 @@
+{
+  "seo": {
+    "canonicalUrl": "https://www.tripsandships.com/uniworld-river-cruises/first-time-guide/",
+    "title": "First-Time Uniworld River Cruise Guide",
+    "metaTitle": "First-Time Uniworld River Cruise Guide",
+    "metaDescription": "Planning your first Uniworld River Cruise? Learn what to expect, what's included, packing tips, cabin advice, excursions, dining, and booking recommendations.",
+    "keywords": "First-Time Uniworld River Cruise Guide, first Uniworld cruise, Uniworld tips, Uniworld beginner guide, what to expect on Uniworld, luxury river cruise guide, Uniworld travel tips, river cruise for beginners"
+  },
+  "hero": {
+    "tag": "Uniworld River Cruises · Trips & Ships Luxury Travel",
+    "title": "First-Time Uniworld River Cruise Guide",
+    "subtitle": "Everything first-time guests need to know before sailing — from choosing an itinerary and cabin to dining, excursions, packing, and onboard etiquette.",
+    "primaryCtaText": "Schedule a Consultation",
+    "primaryCtaLink": "/contact"
+  },
+  "intro": {
+    "eyebrow": "GETTING STARTED",
+    "heading": "Planning Your First River Cruise",
+    "leadParagraphs": [
+      "Planning your first Uniworld River Cruise is exciting, especially if you've never experienced river cruising before.",
+      "Unlike large ocean cruises, Uniworld Boutique River Cruises focuses on intimate ships, immersive cultural experiences, luxury accommodations, and personalized service. Understanding what to expect before you sail can help you choose the right itinerary, pack appropriately, and make the most of every day onboard.",
+      "This guide covers everything first-time guests should know—from booking your cruise and selecting a cabin to dining, excursions, onboard etiquette, and practical travel tips."
+    ],
+    "quote": "Unlike large ocean cruises, Uniworld Boutique River Cruises focuses on intimate ships, immersive cultural experiences, luxury accommodations, and personalized service."
+  },
+  "whyChoose": {
+    "eyebrow": "GETTING STARTED",
+    "heading": "Why Choose Uniworld for Your First River Cruise?",
+    "lead": "Uniworld is known for offering a boutique luxury experience rather than a traditional cruise vacation.",
+    "body": "For travelers new to river cruising, the all-inclusive approach simplifies planning and minimizes unexpected onboard expenses.",
+    "items": [
+      "Small guest capacity",
+      "Individually designed ships",
+      "All-inclusive amenities",
+      "Gourmet dining",
+      "Premium beverages",
+      "Included excursions",
+      "Personalized service",
+      "Destination-focused itineraries"
+    ]
+  },
+  "itineraries": {
+    "eyebrow": "PLAN YOUR ROUTE",
+    "heading": "Choosing the Right Itinerary",
+    "lead": "Selecting the right destination is often the most important decision.",
+    "footnote": "A seven- or eight-day itinerary is often ideal for first-time guests.",
+    "items": [
+      {
+        "dest": "Danube",
+        "best": "First-time cruisers"
+      },
+      {
+        "dest": "Rhine",
+        "best": "Scenic landscapes"
+      },
+      {
+        "dest": "Seine",
+        "best": "French culture"
+      },
+      {
+        "dest": "Douro",
+        "best": "Wine enthusiasts"
+      },
+      {
+        "dest": "Rhône",
+        "best": "Food and history"
+      },
+      {
+        "dest": "Nile",
+        "best": "Ancient Egypt"
+      },
+      {
+        "dest": "Venice Lagoon",
+        "best": "Italian art and architecture"
+      },
+      {
+        "dest": "Ganges",
+        "best": "Cultural exploration"
+      }
+    ]
+  },
+  "cabins": {
+    "eyebrow": "ACCOMMODATIONS",
+    "heading": "Selecting the Best Cabin",
+    "lead": "Uniworld offers several accommodation categories.",
+    "items": [
+      {
+        "name": "Classic Stateroom",
+        "desc": "Best for travelers who:",
+        "items": [
+          "Spend most of the day ashore",
+          "Want luxury at the lowest fare",
+          "Prioritize value"
+        ]
+      },
+      {
+        "name": "French Balcony",
+        "desc": "Ideal for guests who enjoy:",
+        "items": [
+          "Scenic river views",
+          "Fresh air",
+          "Bright cabins",
+          "Relaxing between excursions"
+        ]
+      },
+      {
+        "name": "Suites",
+        "desc": "Recommended for:",
+        "items": [
+          "Special celebrations",
+          "Longer cruises",
+          "Travelers seeking additional space",
+          "Guests interested in butler service"
+        ]
+      }
+    ]
+  },
+  "included": {
+    "eyebrow": "FARE BREAKDOWN",
+    "heading": "What Is Included?",
+    "lead": "Most Uniworld cruise fares include:",
+    "note": "Optional services such as spa, airfare, and shopping cost extra.",
+    "items": [
+      "Luxury accommodations",
+      "Breakfast, lunch, and dinner",
+      "Unlimited premium beverages",
+      "Guided excursions",
+      "Wi-Fi",
+      "Onboard gratuities",
+      "Entertainment",
+      "Fitness facilities"
+    ]
+  },
+  "packing": {
+    "eyebrow": "PACKING GUIDE",
+    "heading": "What to Pack",
+    "lead": "Packing for a river cruise is usually simpler than packing for an ocean voyage.",
+    "footnote": "Formal attire is generally not required.",
+    "items": [
+      "Comfortable walking shoes",
+      "Lightweight clothing",
+      "Smart casual evening attire",
+      "Light waterproof jacket",
+      "Sunglasses",
+      "Sunscreen",
+      "Travel adapter",
+      "Passport",
+      "Medications",
+      "Day bag for excursions"
+    ]
+  },
+  "typicalDay": {
+    "eyebrow": "ONBOARD RHYTHM",
+    "heading": "What a Typical Day Looks Like",
+    "lead": "Every itinerary differs slightly, but a typical day may include:",
+    "footnote": "The relaxed pace allows guests to enjoy both sightseeing and onboard amenities.",
+    "periods": [
+      {
+        "label": "Morning",
+        "items": [
+          "Breakfast",
+          "Scenic cruising",
+          "Guided excursion"
+        ]
+      },
+      {
+        "label": "Afternoon",
+        "items": [
+          "Lunch onboard",
+          "Optional sightseeing",
+          "Relaxation on deck"
+        ]
+      },
+      {
+        "label": "Evening",
+        "items": [
+          "Multi-course dinner",
+          "Local entertainment",
+          "Cocktails in the lounge",
+          "Overnight docking in a new destination"
+        ]
+      }
+    ]
+  },
+  "dining": {
+    "eyebrow": "CULINARY EXPERIENCE",
+    "heading": "Dining Expectations",
+    "lead": "Dining is a highlight of the Uniworld experience.",
+    "body": "Guests can expect:",
+    "footnote": "Menus often change throughout the itinerary to reflect local cuisine.",
+    "items": [
+      "Regional specialties",
+      "Fresh ingredients",
+      "Multiple-course dinners",
+      "Open seating",
+      "Premium wines",
+      "Vegetarian and special dietary options"
+    ]
+  },
+  "excursions": {
+    "eyebrow": "GOING ASHORE",
+    "heading": "Shore Excursions",
+    "lead": "Most Uniworld cruises include guided shore excursions led by expert local guides.",
+    "footnote": "Many itineraries provide multiple excursion choices based on activity level.",
+    "items": [
+      "Walking tours",
+      "Castle visits",
+      "Museums",
+      "Wine tastings",
+      "Culinary experiences",
+      "Bicycle tours",
+      "Cultural performances"
+    ]
+  },
+  "atmosphere": {
+    "eyebrow": "LIFE ONBOARD",
+    "heading": "Onboard Atmosphere",
+    "lead": "Uniworld ships offer a relaxed and elegant environment.",
+    "body": "Guests typically enjoy:",
+    "note": "Unlike ocean cruises, river ships do not feature casinos, water parks, or Broadway-style productions.",
+    "items": [
+      "Quiet lounges",
+      "Scenic sun decks",
+      "Boutique décor",
+      "Friendly crew",
+      "Destination lectures",
+      "Evening entertainment"
+    ]
+  },
+  "tips": {
+    "eyebrow": "PRACTICAL ADVICE",
+    "heading": "Tips & Mistakes to Avoid",
+    "tipsCol": {
+      "title": "Helpful Tips for First-Time Guests",
+      "lead": "To make the most of your cruise:",
+      "footnote": "Planning ahead helps reduce travel stress.",
+      "items": [
+        "Arrive at your embarkation city a day early.",
+        "Book excursions in advance if required.",
+        "Carry comfortable footwear.",
+        "Bring a reusable water bottle.",
+        "Review daily schedules each evening.",
+        "Keep travel documents easily accessible.",
+        "Purchase travel insurance."
+      ]
+    },
+    "mistakesCol": {
+      "title": "Common Mistakes to Avoid",
+      "lead": "Many first-time travelers can improve their experience by avoiding a few common mistakes.",
+      "lead2": "Try not to:",
+      "footnote": "Simple preparation helps ensure a smooth vacation.",
+      "items": [
+        "Overpack.",
+        "Skip included excursions.",
+        "Wait until the last minute to book.",
+        "Ignore local dress codes.",
+        "Forget travel adapters.",
+        "Underestimate walking distances."
+      ]
+    }
+  },
+  "fit": {
+    "eyebrow": "SELF-CHECK",
+    "heading": "Is Uniworld Right for You?",
+    "lead": "Uniworld is an excellent choice if you enjoy:",
+    "note": "Travelers seeking large-scale entertainment or extensive nightlife may prefer ocean cruises instead.",
+    "items": [
+      "Luxury accommodations",
+      "Small ships",
+      "Cultural immersion",
+      "Exceptional service",
+      "Fine dining",
+      "Scenic cruising",
+      "Relaxed travel"
+    ]
+  },
+  "takeaways": {
+    "eyebrow": "QUICK RECAP",
+    "heading": "Key Takeaways",
+    "items": [
+      "The Danube and Rhine are excellent first itineraries.",
+      "Uniworld offers an all-inclusive luxury river cruise experience.",
+      "French Balcony cabins are popular for scenic views.",
+      "Guided excursions are included on most itineraries.",
+      "Comfortable walking shoes are essential for daily sightseeing.",
+      "Booking early provides the best cabin selection."
+    ]
+  },
+  "expert": {
+    "eyebrow": "MEET THE CEO",
+    "heading": "Insight from Angela Hughes",
+    "quote": "For first-time Uniworld guests, the biggest surprise is always how uncomplicated everything feels. Every detail — from the moment you step aboard to shore excursions — is handled with genuine care. My advice: let yourself be guided and simply enjoy the journey.",
+    "prioritiesTitle": "First-Timer Priorities Matrix:",
+    "priorities": [
+      "Itinerary Selection",
+      "Cabin Category Choice",
+      "Pre-Cruise Flights",
+      "Shore Excursion Planning",
+      "Packing Essentials",
+      "Travel Insurance"
+    ],
+    "bio": "As founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel, Angela Hughes has guided hundreds of first-time river cruisers through the Uniworld experience — ensuring every guest chooses the right itinerary, the right cabin, and boards with total confidence."
+  },
+  "faqs": [
+    {
+      "question": "Is Uniworld good for first-time river cruisers?",
+      "answer": "Yes. Its all-inclusive experience and personalized service make it an excellent choice for first-time guests."
+    },
+    {
+      "question": "Which Uniworld itinerary is best for beginners?",
+      "answer": "The Danube and Rhine itineraries are often recommended because they combine scenic cruising with iconic destinations."
+    },
+    {
+      "question": "What should I pack for a Uniworld River Cruise?",
+      "answer": "Pack comfortable walking shoes, smart casual clothing, travel documents, weather-appropriate layers, and a day bag for excursions."
+    },
+    {
+      "question": "Are excursions included?",
+      "answer": "Yes. Most itineraries include guided shore excursions."
+    },
+    {
+      "question": "Is Wi-Fi included onboard?",
+      "answer": "Yes. Complimentary Wi-Fi is generally available throughout the ship."
+    },
+    {
+      "question": "Do I need formal clothes?",
+      "answer": "No. Smart casual attire is suitable for most evenings."
+    },
+    {
+      "question": "What is included in the cruise fare?",
+      "answer": "Typically, accommodations, meals, beverages, excursions, gratuities, Wi-Fi, and entertainment are included."
+    },
+    {
+      "question": "Are river cruises suitable for older travelers?",
+      "answer": "Yes. River cruises are popular with travelers seeking a relaxed pace and cultural experiences."
+    },
+    {
+      "question": "Can I explore destinations on my own?",
+      "answer": "Yes. Guests usually have free time to explore independently alongside included excursions."
+    },
+    {
+      "question": "Should I arrive before embarkation day?",
+      "answer": "Yes. Arriving one day early helps reduce the risk of travel delays affecting your cruise."
+    },
+    {
+      "question": "How much walking is involved?",
+      "answer": "Most excursions include moderate walking, often on cobblestone streets or uneven surfaces."
+    },
+    {
+      "question": "Can dietary restrictions be accommodated?",
+      "answer": "Yes. Most dietary requirements can be accommodated with advance notice."
+    },
+    {
+      "question": "Are drinks included?",
+      "answer": "Yes. Premium wines, spirits, beer, soft drinks, coffee, and tea are generally included."
+    },
+    {
+      "question": "Which cabin should first-time travelers choose?",
+      "answer": "French Balcony cabins offer an excellent combination of comfort, scenic views, and value."
+    },
+    {
+      "question": "How far in advance should I book?",
+      "answer": "Booking six to twelve months before departure often provides the best cabin availability and promotional pricing."
+    }
+  ],
+  "cta": {
+    "eyebrow": "START PLANNING YOUR JOURNEY",
+    "heading": "Ready to Book Your First Uniworld River Cruise?",
+    "subtitle": "Compare itineraries, choose the cabin that fits your travel style, and start planning an unforgettable luxury river journey.",
+    "primaryBtn": "Schedule a Consultation",
+    "primaryBtnLink": "/contact"
+  }
+}

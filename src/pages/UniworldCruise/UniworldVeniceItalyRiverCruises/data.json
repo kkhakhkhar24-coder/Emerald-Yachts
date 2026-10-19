@@ -1,0 +1,418 @@
+{
+  "seo": {
+    "title": "Uniworld Venice & Italy River Cruises : Prices, Itineraries & Expert Guide",
+    "metaTitle": "Uniworld Venice & Italy River Cruises | Luxury Italy Cruise Guide",
+    "metaDescription": "Thinking about a Uniworld Venice & Italy River Cruise? Discover Venice Lagoon itineraries, pricing, what's included, reviews, top destinations, and whether it's worth booking.",
+    "keywords": "Uniworld Venice & Italy River Cruises, Venice River Cruise, S.S. La Venezia, Luxury Italy River Cruises, Venetian Lagoon Cruise, Northern Italy River Cruise",
+    "canonicalUrl": "https://www.tripsandships.com/uniworld-river-cruises/italy-venice"
+  },
+  "hero": {
+    "tag": "Uniworld Venice & Italy River Cruises",
+    "title": "Uniworld Venice & Italy\nRiver Cruises",
+    "subtitle": "Experience Venice and Northern Italy in Boutique Luxury",
+    "primaryCtaText": "Schedule a Consultation",
+    "primaryCtaLink": "/contact",
+    "secondaryCtaText": "Request Itinerary Options",
+    "secondaryCtaLink": "/contact"
+  },
+  "intro": {
+    "eyebrow": "VENICE & ITALY CRUISE GUIDE",
+    "heading": "Uniworld Venice & Italy River Cruises",
+    "leadParagraphs": [
+      "A Uniworld Venice & Italy River Cruise offers an unforgettable way to discover one of Europe's most romantic destinations. Unlike traditional river cruises, this itinerary explores the Venetian Lagoon, historic islands, Renaissance cities, charming fishing villages, and UNESCO World Heritage Sites while delivering Uniworld's signature boutique luxury.",
+      "From the canals of Venice to colorful Burano and the elegant streets of Padua, every day offers exceptional culture, history, cuisine, and unforgettable scenery."
+    ],
+    "quote": "From the canals of Venice to colorful Burano and the elegant streets of Padua, every day offers exceptional culture, history, cuisine, and unforgettable scenery.",
+    "badge": "Venice Cruise Review Summary"
+  },
+  "ratingSummary": {
+    "eyebrow": "⭐ OVERALL RATING",
+    "title": "Expert Review Summary",
+    "score": "9.9/10",
+    "scoreLabel": "Overall Rating",
+    "ratings": [
+      {
+        "category": "Luxury",
+        "score": "5/5",
+        "rating": 5,
+        "stars": "⭐⭐⭐⭐⭐",
+        "description": "Boutique, museum-quality ships and Italian-inspired suites."
+      },
+      {
+        "category": "Dining",
+        "score": "5/5",
+        "rating": 5,
+        "stars": "⭐⭐⭐⭐⭐",
+        "description": "Authentic Italian cuisine and fine regional wines."
+      },
+      {
+        "category": "Service",
+        "score": "5/5",
+        "rating": 5,
+        "stars": "⭐⭐⭐⭐⭐",
+        "description": "Attentive, personalized European white-glove service."
+      },
+      {
+        "category": "Excursions",
+        "score": "5/5",
+        "rating": 5,
+        "stars": "⭐⭐⭐⭐⭐",
+        "description": "Curated private access to Venetian landmarks and islands."
+      },
+      {
+        "category": "Scenic Beauty",
+        "score": "5/5",
+        "rating": 5,
+        "stars": "⭐⭐⭐⭐⭐",
+        "description": "Breathtaking views across the Venetian Lagoon and canals."
+      },
+      {
+        "category": "Value",
+        "score": "4/5",
+        "rating": 4,
+        "stars": "⭐⭐⭐⭐☆",
+        "description": "Nearly all-inclusive luxury delivering exceptional value."
+      }
+    ]
+  },
+  "quickAnswer": {
+    "eyebrow": "QUICK ANSWER",
+    "title": "Is a Uniworld Venice & Italy River Cruise Worth It?",
+    "text": "Yes. A Uniworld Venice & Italy River Cruise is one of the best luxury vacations in Italy, combining boutique accommodations, gourmet Italian cuisine, premium beverages, immersive excursions, and exclusive access to Venice's iconic lagoon and surrounding destinations."
+  },
+  "inlineCtas": [
+    {
+      "tag": "Expert Planning",
+      "text": "Ready to explore Venice and Northern Italy in Uniworld luxury?",
+      "btnText": "Schedule a Consultation",
+      "btnLink": "/contact"
+    },
+    {
+      "tag": "Itinerary Planning",
+      "text": "Want help choosing the perfect Venice itinerary and sailing date?",
+      "btnText": "Speak to a Cruise Advisor",
+      "btnLink": "/contact"
+    },
+    {
+      "tag": "Suite Upgrades",
+      "text": "Curious about butler suites and French Balcony cabins?",
+      "btnText": "Schedule a Consultation",
+      "btnLink": "/contact"
+    },
+    {
+      "tag": "Promotions & Rates",
+      "text": "Ready to compare itineraries and lock in the best suite promotions?",
+      "btnText": "Speak to a Cruise Advisor",
+      "btnLink": "/contact"
+    },
+    {
+      "tag": "Plan Ahead",
+      "text": "Let our advisors help you time your Venice River Cruise perfectly.",
+      "btnText": "Schedule a Consultation",
+      "btnLink": "/contact"
+    }
+  ],
+  "highlights": {
+    "eyebrow": "ITALY IN LUXURY",
+    "heading": "Why Choose a Venice & Italy River Cruise?",
+    "lead": "Highlights include:",
+    "items": [
+      "Venice Lagoon",
+      "Burano & Murano Islands",
+      "UNESCO World Heritage Sites",
+      "Renaissance architecture",
+      "Italian cuisine",
+      "Wine tasting",
+      "Historic canals",
+      "Boutique luxury ships"
+    ]
+  },
+  "included": {
+    "eyebrow": "ALL-INCLUSIVE LUXURY",
+    "heading": "What's Included?",
+    "items": [
+      "Boutique luxury accommodations",
+      "Gourmet Italian-inspired dining",
+      "Unlimited premium beverages",
+      "Guided excursions",
+      "Complimentary Wi-Fi",
+      "Onboard gratuities",
+      "Evening entertainment",
+      "Airport transfers (select sailings)",
+      "Complimentary bicycles"
+    ],
+    "expertNote": "All-Inclusive Luxury in Venice & Northern Italy. Fine dining, premium Italian wines and spirits, guided lagoon excursions, airport transfers on select sailings, and gratuities are all covered seamlessly in your fare."
+  },
+  "destinations": {
+    "eyebrow": "WORLD CLASS WATERWAYS",
+    "heading": "Top Destinations",
+    "items": [
+      {
+        "name": "Venice",
+        "desc": "Explore St. Mark's Square, the Grand Canal, Doge's Palace, and Venice's world-famous waterways.",
+        "category": "Iconic City"
+      },
+      {
+        "name": "Burano",
+        "desc": "A picturesque island known for brightly colored houses and traditional lace-making.",
+        "category": "Lagoon Island"
+      },
+      {
+        "name": "Murano",
+        "desc": "Discover the birthplace of Venetian glassmaking and meet local artisans.",
+        "category": "Artisan Island"
+      },
+      {
+        "name": "Chioggia",
+        "desc": "A charming fishing town often called \"Little Venice.\"",
+        "category": "Historic Harbor"
+      },
+      {
+        "name": "Padua",
+        "desc": "Visit one of Italy's oldest cities, famous for Giotto's frescoes and historic university.",
+        "category": "Renaissance City"
+      },
+      {
+        "name": "Verona (Excursion)",
+        "desc": "Explore the romantic city of Romeo and Juliet and its beautifully preserved Roman Arena.",
+        "category": "Excursion Highlight"
+      }
+    ]
+  },
+  "dining": {
+    "eyebrow": "CULINARY EXCELLENCE",
+    "heading": "Dining Onboard",
+    "lead": "Guests enjoy authentic Italian cuisine featuring:",
+    "items": [
+      "Fresh regional ingredients",
+      "Handmade pasta",
+      "Local seafood",
+      "Italian wines",
+      "Multi-course gourmet dinners",
+      "Traditional desserts"
+    ],
+    "summary": "Experience the finest flavors of Northern Italy onboard with regionally inspired menus and complimentary Italian wines paired with every meal."
+  },
+  "accommodations": {
+    "eyebrow": "ACCOMMODATIONS",
+    "heading": "Luxury Accommodations",
+    "lead": "Guests enjoy:",
+    "items": [
+      "Elegant boutique staterooms",
+      "Butler service (select suites)",
+      "Marble bathrooms",
+      "Luxury bedding",
+      "French balconies (select cabins)",
+      "Personalized service"
+    ],
+    "summary": "Uniworld's S.S. La Venezia brings Venetian elegance to life with custom fabrics, Murano glass accents, and handcrafted luxury furniture in every stateroom and suite."
+  },
+  "seasons": {
+    "eyebrow": "SEASONAL GUIDE",
+    "heading": "Best Time to Cruise Venice",
+    "cards": [
+      {
+        "name": "Spring",
+        "description": "Pleasant temperatures and blooming gardens.",
+        "icon": "Flower2"
+      },
+      {
+        "name": "Summer",
+        "description": "Long sunny days perfect for sightseeing.",
+        "icon": "Sun"
+      },
+      {
+        "name": "Fall",
+        "description": "Fewer crowds and comfortable weather.",
+        "icon": "Trees"
+      },
+      {
+        "name": "Winter",
+        "description": "Holiday charm and festive Venetian celebrations.",
+        "icon": "Snowflake"
+      }
+    ]
+  },
+  "worthIt": {
+    "eyebrow": "VALUE ASSESSMENT",
+    "heading": "Is It Worth the Money?",
+    "stars": "⭐⭐⭐⭐⭐",
+    "paragraphs": [
+      "Uniworld offers exceptional value by including luxury accommodations, gourmet dining, premium beverages, guided excursions, gratuities, and personalized service, allowing travelers to experience Venice and Northern Italy without worrying about additional costs."
+    ]
+  },
+  "recommendation": {
+    "eyebrow": "OUR RECOMMENDATION",
+    "heading": "Our Recommendation",
+    "paragraphs": [
+      "A Uniworld Venice & Italy River Cruise is one of Europe's most unique luxury cruise experiences. Combining iconic Italian cities, boutique ships, exceptional cuisine, and immersive cultural excursions, it offers an unforgettable way to discover Northern Italy."
+    ]
+  },
+  "prosCons": {
+    "eyebrow": "PROS & CONS",
+    "heading": "Pros & Cons",
+    "prosTitle": "What We Love (Pros)",
+    "consTitle": "Things to Consider (Cons)",
+    "pros": [
+      "Exceptional Venice itinerary",
+      "Boutique luxury ships",
+      "Outstanding Italian cuisine",
+      "Premium service",
+      "Excellent included excursions",
+      "Unique lagoon cruising experience"
+    ],
+    "cons": [
+      "Premium pricing",
+      "Limited departures",
+      "Popular sailings sell out quickly",
+      "Best suites sell out early",
+      "More traditional decor",
+      "Fewer onboard activities compared to ocean liners"
+    ]
+  },
+  "audience": {
+    "eyebrow": "WHO IS IT FOR?",
+    "heading": "Who Should Book?",
+    "whoShouldTitle": "Perfect for:",
+    "whoPreferTitle": "Things to Keep in Mind:",
+    "whoShould": [
+      "Couples",
+      "Luxury travelers",
+      "Italy first-time visitors",
+      "Food lovers",
+      "Art enthusiasts",
+      "History lovers",
+      "Anniversary celebrations",
+      "Cultural travelers"
+    ],
+    "whoPrefer": [
+      "Travelers seeking mega-ship entertainment venues",
+      "Guests looking for late-night party scenes",
+      "Budget travelers seeking basic accommodations",
+      "Those who prefer open ocean days over cultural immersion"
+    ]
+  },
+  "planningTips": {
+    "eyebrow": "GOOD TO KNOW",
+    "heading": "Planning Tips",
+    "steps": [
+      {
+        "title": "Recommendation 01",
+        "description": "Book 9–18 months in advance."
+      },
+      {
+        "title": "Recommendation 02",
+        "description": "Spring and fall offer ideal weather."
+      },
+      {
+        "title": "Recommendation 03",
+        "description": "Arrive one or two days early to enjoy Venice."
+      },
+      {
+        "title": "Recommendation 04",
+        "description": "Reserve a Suite or French Balcony cabin."
+      },
+      {
+        "title": "Recommendation 05",
+        "description": "Wear comfortable walking shoes for historic cities."
+      }
+    ]
+  },
+  "whyBook": {
+    "eyebrow": "PLANNING ADVANTAGE",
+    "heading": "Why Book with Trips & Ships Luxury Travel?",
+    "lead": "Our luxury travel advisors help you:",
+    "items": [
+      "Compare Venice itineraries",
+      "Select the ideal suite",
+      "Arrange airfare and hotels",
+      "Secure exclusive promotions",
+      "Customize pre- and post-cruise stays",
+      "Coordinate transfers",
+      "Provide concierge-level service before, during, and after your vacation"
+    ]
+  },
+  "expert": {
+    "eyebrow": "MEET THE CEO",
+    "title": "CEO & Luxury River Cruise Specialist",
+    "lead": "According to Angela Hughes, many travelers are initially drawn to Uniworld for its extraordinary boutique ships — but ultimately stay loyal because of the warmth of service, the depth of cultural immersion, and a level of all-inclusive luxury that few river cruise lines can match.",
+    "bio": "As founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel, Angela Hughes helps travelers navigate the luxury river cruise landscape with honesty and real-world expertise — ensuring every client finds the right ship, the right itinerary, and the right experience for their lifestyle.",
+    "priorities": [
+      "Boutique, museum-quality ships",
+      "Truly all-inclusive luxury",
+      "Butler service in select suites",
+      "Gourmet farm-to-table dining",
+      "Intimate, destination-rich itineraries",
+      "Personalized, warm onboard service"
+    ],
+    "stats": [
+      {
+        "value": "40+",
+        "label": "Years Experience"
+      },
+      {
+        "value": "121+",
+        "label": "Countries Visited"
+      }
+    ],
+    "ctaText": "Speak with a luxury river cruise specialist",
+    "ctaLink": "/contact"
+  },
+  "faqs": [
+    {
+      "question": "Is a Uniworld Venice & Italy River Cruise worth the money?",
+      "answer": "Yes. It offers excellent value with luxury accommodations, gourmet dining, premium beverages, guided excursions, gratuities, and exceptional personalized service."
+    },
+    {
+      "question": "What is included on a Venice River Cruise?",
+      "answer": "Luxury accommodations, gourmet dining, unlimited premium beverages, Wi-Fi, guided excursions, gratuities, and entertainment are generally included."
+    },
+    {
+      "question": "Does the cruise visit Venice?",
+      "answer": "Yes. Venice is the centerpiece of the itinerary, with opportunities to explore St. Mark's Square, canals, historic landmarks, and nearby islands."
+    },
+    {
+      "question": "Which islands are included?",
+      "answer": "Many itineraries visit Burano, Murano, and other islands within the Venetian Lagoon."
+    },
+    {
+      "question": "Is Verona included?",
+      "answer": "Many sailings offer an included or optional excursion to Verona, famous for its Roman Arena and Shakespeare connections."
+    },
+    {
+      "question": "Are drinks included?",
+      "answer": "Yes. Premium wines, beer, spirits, specialty coffee, soft drinks, and bottled water are generally included."
+    },
+    {
+      "question": "Does Uniworld include gratuities?",
+      "answer": "Yes. Onboard gratuities are included on most Uniworld cruises."
+    },
+    {
+      "question": "Is Wi-Fi included?",
+      "answer": "Yes. Complimentary Wi-Fi is available throughout the ship."
+    },
+    {
+      "question": "When is the best time to cruise Venice?",
+      "answer": "Spring and fall provide pleasant temperatures and fewer crowds, while summer offers longer sightseeing days."
+    },
+    {
+      "question": "Who should choose this itinerary?",
+      "answer": "Couples, luxury travelers, food lovers, history enthusiasts, photographers, and anyone wanting an immersive Italian vacation."
+    },
+    {
+      "question": "Is this itinerary good for first-time visitors to Italy?",
+      "answer": "Absolutely. It combines Venice, the Venetian Lagoon, historic cities, and Italian culture into one luxury vacation."
+    },
+    {
+      "question": "Why book with Trips & Ships Luxury Travel?",
+      "answer": "Our advisors provide expert recommendations, exclusive offers, personalized planning, and concierge-level service before, during, and after your cruise."
+    }
+  ],
+  "cta": {
+    "eyebrow": "START SOMEWHERE REMARKABLE",
+    "heading": "Ready to Plan Your Uniworld\nVenice & Italy River Cruise?",
+    "text": "Contact our luxury cruise consultants to lock in extra credits, suite upgrades, and personalized transfers. We plan details so you can enjoy the trip.",
+    "primaryBtn": "Schedule a Consultation",
+    "primaryBtnLink": "/contact"
+  }
+}
