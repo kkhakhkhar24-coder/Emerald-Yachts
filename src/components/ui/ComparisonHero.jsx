@@ -15,6 +15,7 @@ const ComparisonHero = ({
   primaryCtaLink,
   secondaryCtaText,
   secondaryCtaLink,
+  showReadMore = true,
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const paragraphs = Array.isArray(description)
@@ -58,7 +59,7 @@ const ComparisonHero = ({
             </p>
             {description && (
               <div className="max-w-2xl mx-auto mb-5 sm:mb-6 drop-shadow-lg">
-                {!isExpanded ? (
+                {!isExpanded && showReadMore ? (
                   <p className="font-sans text-xs sm:text-sm md:text-base text-white/80 leading-relaxed font-light inline">
                     {isLong ? `${(paragraphs[0] || fullText).slice(0, 135).trim()}... ` : fullText}{' '}
                   </p>
@@ -69,7 +70,7 @@ const ComparisonHero = ({
                     ))}
                   </div>
                 )}
-                {isLong && (
+                {isLong && showReadMore && (
                   <button
                     type="button"
                     onClick={() => setIsExpanded(!isExpanded)}

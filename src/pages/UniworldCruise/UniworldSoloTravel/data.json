@@ -1,0 +1,454 @@
+{
+  "seo": {
+    "title": "Uniworld Solo River Cruises & Single Supplement Guide | Trips & Ships Luxury Travel",
+    "metaTitle": "Uniworld Solo Travel & Single Supplement Guide",
+    "metaDescription": "Planning a solo Uniworld River Cruise? Learn about single supplements, solo traveler benefits, cabins, costs, safety, and expert travel tips.",
+    "canonicalUrl": "https://www.tripsandships.com/uniworld-river-cruises/solo-travel",
+    "ogTitle": "Uniworld Solo River Cruises and Single Supplement Guide",
+    "ogDescription": "Your complete guide to solo river cruising with Uniworld — cabins, costs, safety, and expert tips.",
+    "keywords": "Uniworld Solo River Cruises, Uniworld single supplement, solo river cruises, solo luxury cruises, solo traveler guide, Uniworld solo cabins, river cruise for singles, luxury solo travel"
+  },
+  "hero": {
+    "badge": "UNIWORLD RIVER CRUISES · TRIPS & SHIPS LUXURY TRAVEL",
+    "title": "Uniworld Solo River Cruises and Single Supplement Guide",
+    "subtitle": "Your complete guide to solo river cruising with Uniworld — cabins, costs, safety, and expert tips.",
+    "description": "Traveling solo has become increasingly popular, and river cruising offers one of the easiest and most rewarding ways to explore the world independently. Uniworld Boutique River Cruises provides a welcoming environment where solo travelers can enjoy luxury accommodations, guided excursions, fine dining, and personalized service without the complexity often associated with planning an independent international trip.",
+    "primaryCtaText": "Schedule a Consultation",
+    "primaryCtaLink": "/contact",
+    "secondaryCtaText": "Explore Itineraries",
+    "secondaryCtaLink": "/uniworld-river-cruises/best-itineraries"
+  },
+  "intro": {
+    "eyebrow": "SOLO TRAVEL GUIDE",
+    "heading": "Is Uniworld a Good Choice for Solo Travelers?",
+    "lead": "Traveling solo has become increasingly popular, and river cruising offers one of the easiest and most rewarding ways to explore the world independently.",
+    "paragraphs": [
+      "Uniworld Boutique River Cruises provides a welcoming environment where solo travelers can enjoy luxury accommodations, guided excursions, fine dining, and personalized service without the complexity often associated with planning an independent international trip.",
+      "Many solo travelers appreciate Uniworld because its smaller ships create a friendly and relaxed atmosphere."
+    ]
+  },
+  "executiveInsight": {
+    "title": "Solo Cruising Empowerment & Value",
+    "quote": "River cruising is uniquely suited for solo travelers, offering safety, easy companionship, and intimate ships. By timing your booking to align with Uniworld's popular wave-season single supplement waivers, you can secure a luxury stateroom without the double cost penalty.",
+    "author": "Angela Hughes, Luxury River Cruise Specialist & CEO"
+  },
+  "benefits": {
+    "eyebrow": "WHY CHOOSE UNIWORLD",
+    "title": "Benefits for Solo Travelers",
+    "subtitle": "Uniworld's boutique atmosphere and all-inclusive approach offer unmatched advantages for independent explorers.",
+    "items": [
+      {
+        "title": "Boutique-Sized Ships",
+        "description": "Intimate vessels with 120-190 guests create a welcoming, relaxed atmosphere.",
+        "features": [
+          "Intimate guest capacity",
+          "Easy ship navigation",
+          "Uncrowded public spaces"
+        ],
+        "tag": "Intimacy"
+      },
+      {
+        "title": "Personalized Service",
+        "description": "Attentive crew members learn your preferences and cater to your needs.",
+        "features": [
+          "High staff-to-guest ratio",
+          "Dedicated butler in suites",
+          "Warm hospitality team"
+        ],
+        "tag": "Service"
+      },
+      {
+        "title": "Included Excursions",
+        "description": "Guided tours at every port make exploring effortless and social.",
+        "features": [
+          "Small group walking tours",
+          "Local expert guides",
+          "Exclusive VIP entry"
+        ],
+        "tag": "Exploration"
+      },
+      {
+        "title": "Open Dining Arrangements",
+        "description": "Flexible seating encourages meeting fellow travelers naturally.",
+        "features": [
+          "No assigned tables",
+          "Join group tables or dine solo",
+          "Casual lounge bistros"
+        ],
+        "tag": "Dining"
+      },
+      {
+        "title": "Social Lounges",
+        "description": "Elegant common areas provide comfortable spaces to relax and connect.",
+        "features": [
+          "Main observation lounge",
+          "Intimate library corners",
+          "Sun deck cocktail bars"
+        ],
+        "tag": "Connection"
+      },
+      {
+        "title": "Safe Destinations",
+        "description": "Well-established tourist routes with experienced crew guidance.",
+        "features": [
+          "Direct city center docking",
+          "Secure vessel access",
+          "24/7 onboard assistance"
+        ],
+        "tag": "Safety"
+      }
+    ]
+  },
+  "singleSupplement": {
+    "eyebrow": "UNDERSTANDING COSTS",
+    "title": "Understanding the Single Supplement",
+    "lead": "A single supplement is an additional charge applied when one traveler occupies a cabin designed for two guests.",
+    "subtitles": [
+      "The supplement helps offset the revenue that would normally come from double occupancy. However, the exact supplement varies by itinerary, sailing dates, cabin category, and available promotions.",
+      "Key factors determining supplement pricing:"
+    ],
+    "factors": [
+      "Varies by itinerary",
+      "Depends on sailing dates",
+      "May differ by cabin category",
+      "Can change based on promotions"
+    ],
+    "callout": "From time to time, promotional offers may reduce or eliminate the single supplement on selected sailings. These offers are capacity controlled, available on specific departures, and subject to availability. Booking early increases the chance of finding these promotions."
+  },
+  "cabins": {
+    "eyebrow": "ACCOMMODATIONS",
+    "title": "Choosing the Best Cabin as a Solo Traveler",
+    "subtitle": "Solo travelers have several accommodation options depending on budget and preferences.",
+    "items": [
+      {
+        "title": "Classic Stateroom",
+        "description": "A comfortable base for exploring, with all the luxury amenities you expect from Uniworld.",
+        "features": [
+          "Budget-conscious travelers",
+          "Guests spending most of the day ashore",
+          "Shorter itineraries"
+        ],
+        "tag": "Great Value"
+      },
+      {
+        "title": "French Balcony",
+        "description": "Floor-to-ceiling glass doors open to create an open-air balcony, perfect for watching river scenery pass by.",
+        "features": [
+          "Scenic views and natural light",
+          "Relaxing in your cabin",
+          "Photography enthusiasts"
+        ],
+        "tag": "Most Popular"
+      },
+      {
+        "title": "Suite",
+        "description": "Generous living space with separate sitting areas, premium amenities, and priority services.",
+        "features": [
+          "Extended cruises",
+          "Luxury travelers",
+          "Special occasions"
+        ],
+        "tag": "Ultimate Luxury"
+      }
+    ]
+  },
+  "dining": {
+    "eyebrow": "ONBOARD EXPERIENCE",
+    "title": "Dining as a Solo Guest",
+    "lead": "Dining is often one of the easiest ways to meet other guests.",
+    "subtitles": [
+      "Uniworld generally offers a welcoming dining environment where solo guests feel comfortable. Guests who prefer privacy can also enjoy quieter dining experiences.",
+      "Key dining highlights include:"
+    ],
+    "features": [
+      "Open seating arrangements",
+      "Shared dining opportunities",
+      "Friendly, attentive service",
+      "Relaxed atmosphere",
+      "Destination-inspired cuisine"
+    ],
+    "callout": "Open seating encourages natural conversation with fellow travelers."
+  },
+  "excursions": {
+    "eyebrow": "EXPLORE ASHORE",
+    "title": "Shore Excursions for Solo Travelers",
+    "subtitle": "Included excursions make independent travel much easier. Popular activities include:",
+    "items": [
+      {
+        "title": "Walking Tours",
+        "description": "Engaging historic strolls led by English-speaking local guides through quaint streets and riverfront promenades.",
+        "features": [
+          "Paced for comfort",
+          "Historic city centers",
+          "Quiet audio headsets"
+        ],
+        "tag": "Walking Tours"
+      },
+      {
+        "title": "Castle Visits",
+        "description": "Exclusive entry into towering fortress estates and iconic river gorge castles along the Rhine and Danube.",
+        "features": [
+          "Rhine & Danube castles",
+          "Architectural marvels",
+          "Royal history tours"
+        ],
+        "tag": "Castle Visits"
+      },
+      {
+        "title": "Museums",
+        "description": "Private docent tours and after-hours access to renowned UNESCO World Heritage imperial halls, palaces, and galleries.",
+        "features": [
+          "Fine arts & imperial halls",
+          "Curated historical exhibits",
+          "Expert local docents"
+        ],
+        "tag": "Museums"
+      },
+      {
+        "title": "Wine Tastings",
+        "description": "Private tastings at historic wine estates and steep hillside vineyards in Wachau, Bordeaux, and Rheingau.",
+        "features": [
+          "Historic estate cellars",
+          "Regional varietals & Rieslings",
+          "Sommelier-guided flights"
+        ],
+        "tag": "Wine Tastings"
+      },
+      {
+        "title": "Culinary Experiences",
+        "description": "Hands-on regional culinary pairings, chef tastings, and artisanal food workshops highlighting local gastronomy.",
+        "features": [
+          "Chef-led culinary demonstrations",
+          "Artisan cheese & truffle pairings",
+          "Farm-to-table food sampling"
+        ],
+        "tag": "Culinary Experiences"
+      },
+      {
+        "title": "Local Markets",
+        "description": "Vibrant exploration of open-air town markets, artisan craft stalls, and festive village squares.",
+        "features": [
+          "Authentic market stalls",
+          "Regional crafts & souvenirs",
+          "Atmospheric town squares"
+        ],
+        "tag": "Local Markets"
+      },
+      {
+        "title": "Bicycle Tours",
+        "description": "Scenic guided bike rides along flat riverside pathways and picturesque canal waterways using ship bicycles.",
+        "features": [
+          "Complimentary onboard bikes",
+          "Guided cycling paths",
+          "Scenic canal & riverside routes"
+        ],
+        "tag": "Bicycle Tours"
+      }
+    ],
+    "callout": "Guided excursions provide opportunities to explore destinations while meeting fellow travelers."
+  },
+  "safety": {
+    "eyebrow": "TRAVEL WITH CONFIDENCE",
+    "title": "Safety While Traveling Alone",
+    "lead": "River cruises are widely regarded as one of the safest ways to travel independently.",
+    "subtitles": [
+      "Uniworld provides round-the-clock peace of mind through coordinated logistics and secure environments:",
+      "Safety features include:"
+    ],
+    "features": [
+      "Organized transportation at every port",
+      "Guided sightseeing with expert local guides",
+      "Secure ship access with key card entry",
+      "Experienced crew focused on guest wellbeing",
+      "Well-established tourist destinations",
+      "Daily assistance from onboard staff"
+    ],
+    "callout": "As with any trip, normal travel precautions are recommended."
+  },
+  "socialOpportunities": {
+    "eyebrow": "CONNECT & SOCIALIZE",
+    "title": "Meeting Other Travelers",
+    "lead": "Solo guests often find it easy to socialize because of the intimate size of Uniworld ships. Natural opportunities include:",
+    "callout": "Participation is optional, allowing you to choose between social interaction and quiet relaxation.",
+    "strategies": [
+      {
+        "title": "Shore Excursions",
+        "description": "Shared exploration in small groups creates natural conversation and camaraderie.",
+        "icon": "Map"
+      },
+      {
+        "title": "Cocktail Hours",
+        "description": "Evening Captain's receptions and pre-dinner cocktail gatherings in the lounge.",
+        "icon": "Heart"
+      },
+      {
+        "title": "Lounge Entertainment",
+        "description": "Nightly local musical acts, pianists, and destination presentations.",
+        "icon": "Compass"
+      },
+      {
+        "title": "Shared Dining",
+        "description": "Open seating dining tables that invite effortless mingling over multi-course meals.",
+        "icon": "Coffee"
+      },
+      {
+        "title": "Cultural Presentations",
+        "description": "Enriching lectures on regional history, art, and geography in the ship salon.",
+        "icon": "Eye"
+      },
+      {
+        "title": "Sun Deck Gatherings",
+        "description": "Relaxed daytime scenic sailing, reading in shaded cabanas, and group yoga.",
+        "icon": "Ship"
+      }
+    ]
+  },
+  "valueCost": {
+    "eyebrow": "ALL-INCLUSIVE VALUE",
+    "title": "Is Solo Travel More Expensive?",
+    "lead": "Traveling alone may cost more because of the single supplement. However, value remains strong because the cruise fare typically includes:",
+    "inclusions": [
+      "Luxury accommodations",
+      "All meals",
+      "Premium beverages",
+      "Guided excursions",
+      "Wi-Fi",
+      "Gratuities",
+      "Entertainment"
+    ],
+    "callout": "Watching for special promotions can help reduce overall costs."
+  },
+  "bookingTips": {
+    "eyebrow": "PLAN SMART",
+    "title": "Tips for Booking a Solo Cruise",
+    "lead": "Before reserving your cruise, consider these expert tips:",
+    "tips": [
+      "Compare multiple departure dates",
+      "Ask about single supplement offers",
+      "Book early for the best cabin selection",
+      "Review included amenities carefully",
+      "Consider shoulder-season departures",
+      "Compare itinerary lengths"
+    ],
+    "callout": "Flexibility often leads to better pricing."
+  },
+  "packingTips": {
+    "eyebrow": "PACKING SMART",
+    "title": "Packing Tips for Solo Travelers",
+    "lead": "Packing efficiently makes transfers and excursions easier. Recommended essentials:",
+    "items": [
+      "Passport",
+      "Travel insurance documents",
+      "Comfortable walking shoes",
+      "Day backpack",
+      "Portable charger",
+      "Lightweight layers",
+      "Copies of travel documents"
+    ],
+    "callout": "Packing efficiently makes transfers and excursions easier."
+  },
+  "verdict": {
+    "eyebrow": "THE VERDICT",
+    "title": "Is Uniworld Worth It for Solo Travelers?",
+    "paragraphs": [
+      "For travelers seeking comfort, cultural experiences, and personalized service, Uniworld offers an enjoyable solo travel experience.",
+      "The combination of all-inclusive amenities, guided excursions, boutique ships, and welcoming public spaces creates an environment where traveling alone feels comfortable rather than isolating."
+    ]
+  },
+  "keyTakeaways": {
+    "eyebrow": "KEY TAKEAWAYS",
+    "title": "Plan Ahead for a Great Solo Experience",
+    "items": [
+      "Uniworld offers a welcoming environment for solo travelers.",
+      "Single supplements vary by itinerary, departure date, and cabin category.",
+      "Promotional sailings may feature reduced or waived supplements.",
+      "Guided excursions make exploring destinations easy and convenient.",
+      "Boutique ships encourage social interaction without feeling crowded.",
+      "French Balcony cabins are a popular choice for solo guests.",
+      "Booking early improves cabin availability and promotional opportunities."
+    ]
+  },
+  "expertInsight": {
+    "eyebrow": "MEET THE CEO",
+    "title": "Insight from Angela Hughes",
+    "quote": "River cruising is uniquely suited for solo travelers, offering safety, easy companionship, and intimate ships. By timing your booking to align with Uniworld's popular wave-season single supplement waivers, you can secure a luxury stateroom without the double cost penalty.",
+    "bio": "As founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel, Angela Hughes helps solo explorers navigate single-supplement promotions and match with itineraries that have high social integration.",
+    "priorities": [
+      "Supplement Waiver Offers",
+      "Solo-Friendly Seating",
+      "Group Excursion Options",
+      "Safe Port Logistics",
+      "Welcome Solo Gatherings",
+      "Stateroom Value Selection"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "Is Uniworld good for solo travelers?",
+      "answer": "Yes. The intimate ship size, organized excursions, and welcoming atmosphere make Uniworld a popular choice for solo travelers."
+    },
+    {
+      "question": "What is a single supplement?",
+      "answer": "A single supplement is an additional charge for occupying a cabin designed for two guests."
+    },
+    {
+      "question": "Does Uniworld ever waive the single supplement?",
+      "answer": "Some selected sailings may offer reduced or waived single supplements through limited-time promotions."
+    },
+    {
+      "question": "Which cabin is best for solo travelers?",
+      "answer": "Classic Staterooms and French Balcony cabins are popular choices depending on budget and preferences."
+    },
+    {
+      "question": "Is it easy to meet people onboard?",
+      "answer": "Yes. Open dining, guided excursions, lounges, and onboard events provide natural opportunities to socialize."
+    },
+    {
+      "question": "Are excursions included for solo guests?",
+      "answer": "Yes. Included excursions are generally available to all guests regardless of whether they are traveling alone."
+    },
+    {
+      "question": "Is solo cruising safe?",
+      "answer": "River cruising is generally considered one of the safest ways to travel independently due to organized transportation and guided activities."
+    },
+    {
+      "question": "Are drinks included?",
+      "answer": "Most Uniworld fares include premium beverages, wines, spirits, coffee, tea, and soft drinks."
+    },
+    {
+      "question": "Do solo travelers pay more?",
+      "answer": "Depending on the sailing, a single supplement may increase the overall cruise cost."
+    },
+    {
+      "question": "When is the best time to book?",
+      "answer": "Booking early offers the widest cabin selection and access to promotional pricing."
+    },
+    {
+      "question": "Can solo travelers dine alone?",
+      "answer": "Yes. Guests may dine independently or join other travelers through open seating arrangements."
+    },
+    {
+      "question": "Are there solo-only cabins?",
+      "answer": "Most Uniworld cabins are designed for double occupancy, although promotional pricing may make select cabins more affordable for solo travelers."
+    },
+    {
+      "question": "Is travel insurance recommended?",
+      "answer": "Yes. Travel insurance is recommended for all international river cruises."
+    },
+    {
+      "question": "Which itinerary is best for solo travelers?",
+      "answer": "The Danube and Rhine are popular first choices due to their variety of destinations and excursions."
+    },
+    {
+      "question": "Is Uniworld worth the cost for solo travelers?",
+      "answer": "Many solo travelers find the all-inclusive amenities, guided experiences, and luxury service provide excellent overall value despite any applicable single supplement."
+    }
+  ],
+  "cta": {
+    "eyebrow": "START SOMEWHERE REMARKABLE",
+    "title": "Ready to Plan Your Solo Uniworld Journey?",
+    "subtitle": "Start planning your solo Uniworld River Cruise by comparing itineraries, checking for single supplement promotions, and choosing the cabin that best matches your travel style.",
+    "primaryCtaText": "Speak with a solo cruise specialist",
+    "primaryCtaLink": "/contact"
+  }
+}

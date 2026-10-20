@@ -1,0 +1,384 @@
+{
+  "seo": {
+    "title": "Uniworld Food and Dining Guide | Gourmet Cuisine & Restaurants",
+    "metaTitle": "Uniworld Food and Dining Guide | Gourmet Cuisine & Restaurants",
+    "metaDescription": "Explore Uniworld River Cruises dining, gourmet cuisine, regional specialties, beverages, dietary options, and onboard restaurants in this complete guide.",
+    "canonicalUrl": "https://www.tripsandships.com/uniworld-river-cruises/food-dining",
+    "ogTitle": "Uniworld Food and Dining Review | Complete Guide",
+    "ogDescription": "Explore Uniworld River Cruises dining, gourmet cuisine, regional specialties, beverages, dietary options, and onboard restaurants in this complete guide.",
+    "keywords": "Uniworld Food and Dining, Uniworld dining review, Uniworld restaurants, Uniworld cuisine, gourmet river cruise dining, Uniworld beverages, luxury cruise food, Uniworld menus, river cruise dining experience"
+  },
+  "hero": {
+    "badge": "UNIWORLD RIVER CRUISES · FOOD & DINING",
+    "title": "Uniworld Food and Dining Review",
+    "subtitle": "Explore Uniworld River Cruises dining, gourmet cuisine, regional specialties, beverages, dietary options, and onboard restaurants in this complete guide.",
+    "description": "Dining is one of the defining features of the Uniworld Boutique River Cruises experience. Rather than offering standard cruise fare, Uniworld focuses on destination-inspired cuisine, locally sourced ingredients, premium beverages, and elegant dining venues that reflect the regions visited throughout each itinerary.",
+    "primaryCtaText": "Schedule a Consultation",
+    "primaryCtaLink": "/contact",
+    "secondaryCtaText": "Explore Itineraries",
+    "secondaryCtaLink": "/uniworld-river-cruises/best-itineraries"
+  },
+  "intro": {
+    "eyebrow": "OVERVIEW",
+    "heading": "Uniworld Boutique River Cruises Dining",
+    "lead": "Dining is one of the defining features of the Uniworld Boutique River Cruises experience. Rather than offering standard cruise fare, Uniworld focuses on destination-inspired cuisine, locally sourced ingredients, premium beverages, and elegant dining venues that reflect the regions visited throughout each itinerary.",
+    "body": "Whether you're cruising along the Danube, Rhine, Seine, Douro, Nile, or Venice Lagoon, meals are designed to immerse guests in local culinary traditions while maintaining the high standards expected from a luxury river cruise. This guide explores everything you can expect from Uniworld's food and dining experience, including restaurants, menus, beverages, dietary accommodations, and tips for making the most of every meal onboard."
+  },
+  "executiveInsight": {
+    "title": "Executive Dining Insight",
+    "quote": "Uniworld's dining is genuinely one of the most underrated luxuries on the river. From farm-sourced regional menus to the sommelier-curated wine cellar, every meal is an extension of the destination. It's not just food — it's part of the story.",
+    "author": "Angela Hughes, Luxury River Cruise Specialist & CEO"
+  },
+  "regionalInspiration": {
+    "eyebrow": "REGIONAL INSPIRATION",
+    "title": "A Culinary Experience Inspired by Every Destination",
+    "lead": "Uniworld's dining philosophy centers on authentic regional cuisine. Chefs incorporate seasonal ingredients and local recipes to create menus that complement the destinations visited during the cruise.",
+    "bodyIntro": "Examples include:",
+    "examples": [
+      { "item": "French pastries and cheeses on Seine itineraries" },
+      { "item": "Portuguese seafood and wines along the Douro" },
+      { "item": "Austrian desserts on Danube cruises" },
+      { "item": "Italian specialties in Venice" },
+      { "item": "Egyptian-inspired dishes on Nile sailings" }
+    ],
+    "callout": "This regional approach gives every itinerary a unique culinary identity."
+  },
+  "mainDining": {
+    "eyebrow": "ONBOARD RESTAURANTS",
+    "title": "Main Dining Venue",
+    "lead": "Most Uniworld ships feature a beautifully designed main restaurant where breakfast, lunch, and dinner are served.",
+    "bodyIntro": "Guests can generally expect:",
+    "pillars": [
+      "Open seating",
+      "Elegant table settings",
+      "Attentive table service",
+      "Rotating daily menus",
+      "Fresh regional ingredients",
+      "Multi-course dinners"
+    ],
+    "caption": "Dining rooms are designed to provide a relaxed atmosphere without assigned seating, encouraging guests to socialize throughout the voyage."
+  },
+  "inclusions": {
+    "eyebrow": "ALL-INCLUSIVE DINING",
+    "title": "What Is Included in the Dining Experience?",
+    "intro": "One of the advantages of Uniworld's all-inclusive model is that most dining expenses are already covered.",
+    "subtitle": "Included with the cruise fare are typically:",
+    "items": [
+      "Daily breakfast",
+      "Lunch",
+      "Multi-course dinner",
+      "Early riser breakfast",
+      "Afternoon tea",
+      "Light snacks",
+      "Welcome reception",
+      "Farewell dinner",
+      "Specialty desserts",
+      "Complimentary coffee and tea"
+    ],
+    "footnote": "Premium beverages are also included on most itineraries."
+  },
+  "dailyMeals": {
+    "eyebrow": "DAILY CULINARY JOURNEY",
+    "title": "Breakfast, Lunch & Dinner Highlights",
+    "intro": "Every meal onboard Uniworld is crafted to reflect the culinary artistry of the destinations traversed.",
+    "meals": [
+      {
+        "id": "breakfast",
+        "tab": "Breakfast",
+        "title": "Breakfast Options",
+        "lead": "Breakfast usually combines buffet selections with cooked-to-order menu items.",
+        "description": "Guests can enjoy a leisurely breakfast before beginning daily excursions.",
+        "offerings": [
+          "Fresh fruit", "Yogurt", "Cereals", "Pastries", "Artisan breads",
+          "Eggs cooked to order", "Bacon and sausage", "Smoked salmon",
+          "Cheese selections", "Fresh juices", "Coffee specialties"
+        ]
+      },
+      {
+        "id": "lunch",
+        "tab": "Lunch",
+        "title": "Lunch Service",
+        "lead": "Lunch often includes a mix of buffet stations and à la carte options.",
+        "description": "Outdoor dining may be available on select ships when weather permits.",
+        "offerings": [
+          "Fresh salads", "Regional soups", "Seafood", "Pasta", "Sandwiches",
+          "Grilled meats", "Vegetarian dishes", "Seasonal desserts"
+        ]
+      },
+      {
+        "id": "dinner",
+        "tab": "Dinner",
+        "title": "Dinner Highlights",
+        "lead": "Dinner is generally the culinary centerpiece of each day.",
+        "description": "Menus rotate frequently to showcase different regional flavors throughout the itinerary.",
+        "offerings": [
+          "Four- or five-course menus", "Regional specialties", "Premium wine pairings",
+          "Fresh seafood", "Locally sourced produce", "Artisan cheeses", "Decadent desserts"
+        ]
+      }
+    ]
+  },
+  "destinations": {
+    "eyebrow": "DESTINATION FLAVORS",
+    "title": "Regional Cuisine by Destination",
+    "note": "These culinary experiences help connect guests with the culture of each destination.",
+    "list": [
+      {
+        "destination": "France",
+        "experience": "Fine wines, cheeses, pastries, gourmet cuisine"
+      },
+      {
+        "destination": "Germany",
+        "experience": "Sausages, pretzels, seasonal specialties"
+      },
+      {
+        "destination": "Austria",
+        "experience": "Schnitzel, strudel, coffee culture"
+      },
+      {
+        "destination": "Portugal",
+        "experience": "Seafood, Port wine, traditional desserts"
+      },
+      {
+        "destination": "Italy",
+        "experience": "Fresh pasta, risotto, regional wines"
+      },
+      {
+        "destination": "Egypt",
+        "experience": "Middle Eastern flavors and local specialties"
+      }
+    ]
+  },
+  "beverages": {
+    "eyebrow": "ONBOARD BAR & BEVERAGES",
+    "title": "Beverages Included",
+    "lead": "Uniworld includes a generous beverage program as part of its all-inclusive experience.",
+    "bodyIntro": "Guests generally enjoy:",
+    "items": [
+      "Premium wines", "Champagne", "Local wines", "Cocktails",
+      "Premium spirits", "Beer", "Specialty coffee", "Espresso",
+      "Tea", "Soft drinks", "Bottled water"
+    ],
+    "callout": "Wine pairings are commonly offered during lunch and dinner."
+  },
+  "dietary": {
+    "eyebrow": "ACCOMMODATIONS",
+    "title": "Dietary Requirements",
+    "lead": "Uniworld accommodates many dietary preferences and medical requirements.",
+    "bodyIntro": "Guests can typically request:",
+    "options": [
+      "Vegetarian meals",
+      "Vegan dishes",
+      "Gluten-free menus",
+      "Dairy-free options",
+      "Low-sodium meals",
+      "Allergy-conscious preparations"
+    ],
+    "note": "Dietary requests should be communicated before departure to ensure the best experience."
+  },
+  "specialEvents": {
+    "eyebrow": "MEMORABLE MOMENTS",
+    "title": "Special Dining Events",
+    "lead": "Many itineraries include memorable culinary experiences beyond the main restaurant.",
+    "bodyIntro": "Examples may include:",
+    "events": [
+      "Captain's Welcome Dinner",
+      "Farewell Gala Dinner",
+      "Regional tasting menus",
+      "Wine tastings",
+      "Afternoon tea",
+      "Local food demonstrations",
+      "Destination-inspired celebrations"
+    ],
+    "callout": "Availability varies depending on the itinerary and ship."
+  },
+  "atmosphere": {
+    "eyebrow": "THE EXPERIENCE",
+    "title": "Dining Atmosphere",
+    "lead": "Uniworld maintains an elegant yet relaxed dining environment.",
+    "bodyIntro": "Guests generally appreciate:",
+    "pillars": [
+      "No formal dress code",
+      "Smart casual evenings",
+      "Comfortable seating",
+      "Friendly service",
+      "Scenic river views",
+      "Flexible dining times"
+    ],
+    "callout": "This atmosphere makes dining enjoyable without feeling overly formal."
+  },
+  "comparison": {
+    "eyebrow": "COMPARISON",
+    "title": "How Uniworld Dining Compares",
+    "description": "Compared with many premium river cruise lines, Uniworld places a strong emphasis on destination-inspired cuisine, premium beverages, and personalized service. Rather than offering identical menus across every sailing, meals evolve throughout the itinerary to reflect local culture and ingredients, giving guests a richer culinary experience.",
+    "headers": ["Dining Feature", "Uniworld Boutique River Cruises", "Mainstream River Lines"],
+    "rows": [
+      {
+        "feature": "Culinary Philosophy",
+        "uniworld": "Locally sourced, destination-inspired menus",
+        "typical": "Standardized regional menus"
+      },
+      {
+        "feature": "Wine & Beverages",
+        "uniworld": "Included premium wines, cocktails, spirits & pairings",
+        "typical": "Wine/beer at meals only (spirits extra)"
+      },
+      {
+        "feature": "Dining Venues",
+        "uniworld": "Main restaurant, bistros, alfresco dining",
+        "typical": "Single main dining hall"
+      },
+      {
+        "feature": "Seating Flexibility",
+        "uniworld": "Open seating at every meal",
+        "typical": "Fixed tables or assigned dining times"
+      },
+      {
+        "feature": "Dietary Customization",
+        "uniworld": "Dedicated chef consultations for vegan, GF & allergies",
+        "typical": "Basic buffet alternatives"
+      },
+      {
+        "feature": "Local Food Excursions",
+        "uniworld": "Chef-led market excursions & tastings included",
+        "typical": "Optional paid culinary tours"
+      }
+    ],
+    "footnote": "Uniworld's culinary philosophy connects guests with the culture, farms, and vineyards of each port visited."
+  },
+  "tips": {
+    "eyebrow": "INSIDER ADVICE",
+    "title": "Tips for Enjoying the Dining Experience",
+    "intro": "To make the most of your meals onboard:",
+    "strategies": [
+      {
+        "title": "Try regional specialties each day.",
+        "description": "Menus rotate daily to showcase authentic dishes from the towns and regions passed along the river."
+      },
+      {
+        "title": "Participate in wine tastings when available.",
+        "description": "Onboard sommeliers and local winemakers guide tastings of regional vintages."
+      },
+      {
+        "title": "Inform staff about dietary needs before sailing.",
+        "description": "Advance notice ensures the executive culinary team can tailor custom dishes effortlessly."
+      },
+      {
+        "title": "Pair meals with local wines.",
+        "description": "Complimentary sommelier pairings complement the flavor profile of each dinner course."
+      },
+      {
+        "title": "Save room for regional desserts.",
+        "description": "Pastry chefs craft fresh local confections, pastries, and artisanal sweets daily."
+      },
+      {
+        "title": "Ask servers about daily chef recommendations.",
+        "description": "Crew members are deeply knowledgeable about seasonal favorites and local specialties."
+      }
+    ],
+    "callout": "These small choices can enhance the overall culinary experience."
+  },
+  "expertInsight": {
+    "eyebrow": "MEET THE CEO",
+    "badge": "LUXURY TRAVEL EXPERT",
+    "title": "Insight from Angela Hughes",
+    "yearsExperience": "40+",
+    "yearsLabel": "Years Experience",
+    "countriesVisited": "121+",
+    "countriesLabel": "Countries Visited",
+    "quote": "Uniworld's dining is genuinely one of the most underrated luxuries on the river. From farm-sourced regional menus to the sommelier-curated wine cellar, every meal is an extension of the destination. It's not just food — it's part of the story.",
+    "prioritiesTitle": "Dining Highlights Matrix:",
+    "priorities": [
+      "Regional Cuisine Focus",
+      "Award-Winning Sommeliers",
+      "All-Inclusive Beverages",
+      "Private Dining Options",
+      "Chef-Led Cooking Classes",
+      "Farm-to-Table Philosophy"
+    ],
+    "bio": "As founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel, Angela Hughes has experienced Uniworld's culinary programme across multiple rivers — and consistently ranks it among the finest dining at sea or on land."
+  },
+  "keyTakeaways": {
+    "title": "Key Takeaways",
+    "items": [
+      "Uniworld emphasizes destination-inspired gourmet dining.",
+      "Breakfast, lunch, dinner, snacks, and premium beverages are typically included.",
+      "Menus feature regional specialties that reflect each itinerary.",
+      "Dietary requirements can usually be accommodated with advance notice.",
+      "Premium wines and local beverages complement daily meals.",
+      "Dining is elegant yet relaxed, with no formal dress code on most evenings.",
+      "Culinary experiences are an integral part of the overall luxury river cruise experience."
+    ]
+  },
+  "faqs": [
+    {
+      "question": "Is food included on Uniworld River Cruises?",
+      "answer": "Yes. Breakfast, lunch, dinner, snacks, and many specialty dining events are typically included in the cruise fare."
+    },
+    {
+      "question": "Are drinks included with meals?",
+      "answer": "Yes. Premium wines, beer, soft drinks, coffee, tea, and many spirits are generally included."
+    },
+    {
+      "question": "Does Uniworld offer regional cuisine?",
+      "answer": "Yes. Menus are inspired by the destinations visited during each itinerary."
+    },
+    {
+      "question": "Are vegetarian meals available?",
+      "answer": "Yes. Vegetarian options are available daily."
+    },
+    {
+      "question": "Can Uniworld accommodate food allergies?",
+      "answer": "Yes. Guests should notify the cruise line before departure about dietary restrictions or allergies."
+    },
+    {
+      "question": "Is there assigned seating at dinner?",
+      "answer": "No. Most ships offer open seating, allowing guests flexibility during meals."
+    },
+    {
+      "question": "Are specialty restaurants available?",
+      "answer": "Dining venues vary by ship, but most meals are served in the main restaurant with rotating regional menus."
+    },
+    {
+      "question": "Is room service available?",
+      "answer": "Availability varies by ship and cabin category, particularly for suite guests."
+    },
+    {
+      "question": "What is the dress code for dinner?",
+      "answer": "Smart casual attire is generally appropriate for evening dining."
+    },
+    {
+      "question": "Are wine pairings included?",
+      "answer": "Yes. Wine is commonly served with lunch and dinner on most itineraries."
+    },
+    {
+      "question": "Does Uniworld serve local wines?",
+      "answer": "Yes. Many itineraries feature wines from the regions visited."
+    },
+    {
+      "question": "Are children's menus available?",
+      "answer": "Family sailings may offer child-friendly options, but most itineraries primarily cater to adults."
+    },
+    {
+      "question": "Can vegan guests dine comfortably?",
+      "answer": "Yes. Vegan meals can usually be arranged with advance notice."
+    },
+    {
+      "question": "Are desserts made onboard?",
+      "answer": "Many desserts are freshly prepared and inspired by regional culinary traditions."
+    },
+    {
+      "question": "Is Uniworld dining considered luxurious?",
+      "answer": "Yes. The combination of gourmet cuisine, premium ingredients, destination-inspired menus, and attentive service makes dining one of the highlights of the Uniworld experience."
+    }
+  ],
+  "cta": {
+    "eyebrow": "START SOMEWHERE REMARKABLE",
+    "title": "Discover Uniworld's Exceptional Dining Experience",
+    "subtitle": "Explore itineraries, compare ships, and find the luxury river cruise that matches your culinary interests and travel style.",
+    "primaryCtaText": "Speak With a Travel Advisor",
+    "primaryCtaLink": "/contact",
+    "secondaryCtaText": "Explore Itineraries",
+    "secondaryCtaLink": "/uniworld-river-cruises/best-itineraries"
+  }
+}
