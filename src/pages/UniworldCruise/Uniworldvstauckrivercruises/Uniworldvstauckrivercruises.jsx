@@ -1,166 +1,168 @@
-import Navbar from '../../../components/Navbar/Navbar'
-import ProfilePictureAH from "../../../assets/Media (2).jpg"
-import {
-    Users as ExpertUsers,
-    Award as ExpertAward,
-    CheckCircle as ExpertCheckCircle,
-    Ship as ExpertShip,
-    Globe as ExpertGlobe,
-    Compass as ExpertCompass,
-    Sparkles as ExpertSparkles
-} from 'lucide-react'
-import './Uniworldvstauckrivercruises.css'
-import {
-    Ship, Sparkles, Phone, LayoutList, CheckCircle, Globe, Award,
-    Utensils, Wine, Bed, Compass, Bath, Bell, Landmark, MapPin,
-    Smile, ArrowRight, Image as ImageIcon, Trophy
-} from 'lucide-react'
-import { Helmet } from 'react-helmet-async'
-import { useState } from 'react'
-import { Link } from 'react-router'
+import React from 'react';
+import { Helmet } from 'react-helmet-async';
+import Navbar from '@/components/Navbar/Navbar';
 
-// Custom Image Placeholder Component
-function UvtcPlaceholder({ label, className = '' }) {
-    return (
-        <div className={`uvtc-image-placeholder ${className}`} role="img" aria-label={`Image placeholder: ${label}`}>
-            <ImageIcon size={28} />
-            <span>{label}</span>
-        </div>
-    )
-}
+// Page Data JSON
+import pageData from './data.json';
+
+// Shared UI System Components (Exclusively from @/components/ui matching Uniworld architecture)
+import ComparisonHero from '@/components/ui/ComparisonHero';
+import EditorialIntroSplit from '@/components/ui/EditorialIntroSplit';
+import AuthorityBox from '@/components/ui/AuthorityBox';
+import LuxuryCruiseComparisonTable from '@/components/ui/LuxuryCruiseComparisonTable';
+import FeatureSplit from '@/components/ui/FeatureSplit';
+import InclusionsList from '@/components/ui/InclusionsList';
+import ThreeColumnGrid from '@/components/ui/ThreeColumnGrid';
+import CostValueAnalysisCards from '@/components/ui/CostValueAnalysisCards';
+import CurvilinearGrid from '@/components/ui/CurvilinearGrid';
+import ConclusionSection from '@/components/ui/ConclusionSection';
+import ExpertCredentials from '@/components/ui/ExpertCredentials';
+import FAQAccordion from '@/components/ui/FAQAccordion';
+import CenterCTA from '@/components/ui/CenterCTA';
+
+// Profile Picture for Expert Authority and Insider Tip
+import ProfilePictureAH from '@/assets/Media (2).jpg';
+import insiderTipImg from '@/assets/image.jpg';
+
+// Media Assets from @/assets/UniworldCruise/Uniworldvstauckrivercruises
+import heroBgImg from '@/assets/UniworldCruise/Uniworldvstauckrivercruises/hero-paris-eiffel-sunset-river.webp';
+import introPrimaryImg from '@/assets/UniworldCruise/Uniworldvstauckrivercruises/uniworld-ss-joie-de-vivre-exterior-france.webp';
+import tauckShipImg from '@/assets/UniworldCruise/Uniworldvstauckrivercruises/tauck-ms-lumiere-exterior-sailing.webp';
+import shipDesignImg from '@/assets/UniworldCruise/Uniworldvstauckrivercruises/uniworld-grand-lounge-interior-design.webp';
+import suiteImg from '@/assets/UniworldCruise/Uniworldvstauckrivercruises/uniworld-deluxe-balcony-suite-rhone.webp';
+import diningImg from '@/assets/UniworldCruise/Uniworldvstauckrivercruises/tauck-onboard-chef-flambe-dining.webp';
+import inclusionsImg from '@/assets/UniworldCruise/Uniworldvstauckrivercruises/tauck-sundeck-swimming-pool.webp';
+import versaillesExcursionImg from '@/assets/UniworldCruise/Uniworldvstauckrivercruises/tauck-versailles-hall-of-mirrors-excursion.webp';
+import bikingExcursionImg from '@/assets/UniworldCruise/Uniworldvstauckrivercruises/tauck-chateau-biking-active-excursion.webp';
+import honfleurExcursionImg from '@/assets/UniworldCruise/Uniworldvstauckrivercruises/tauck-honfleur-harbor-cultural-tour.webp';
+import ctaBgImg from '@/assets/UniworldCruise/Uniworldvstauckrivercruises/tauck-chateau-gaillard-aerial-seine.webp';
 
 function UniworldVsTauckRiverCruises() {
-    const [uvtcActiveFaq, setUvtcActiveFaq] = useState(null)
-    const uvtcToggleFaq = (index) => {
-        setUvtcActiveFaq(uvtcActiveFaq === index ? null : index)
-    }
+    // 1. Data mapping for Excursions (ThreeColumnGrid) with matched Tauck VIP and active excursion photos
+    const excursionImages = [versaillesExcursionImg, bikingExcursionImg, honfleurExcursionImg];
+    const excursionItems = pageData.excursions.items.map((item, idx) => ({
+        title: item.title,
+        description: item.description,
+        features: [],
+        category: "Excursion Highlights",
+        image: excursionImages[idx],
+        placeholderLabel: item.title
+    }));
 
-    const uvtcFaqs = [
-        {
-            question: "1. Is Uniworld more luxurious than Tauck?",
-            answer: "Both are considered ultra-luxury river cruise lines. Uniworld is known for boutique elegance and unique ship designs, while Tauck focuses on luxury guided travel with exceptional inclusions."
-        },
-        {
-            question: "2. Is Tauck more expensive than Uniworld?",
-            answer: "Tauck is often similarly priced or slightly more expensive because it includes more exclusive land experiences, VIP access, transfers, and gratuities."
-        },
-        {
-            question: "3. Which cruise line includes gratuities?",
-            answer: "Both Uniworld and Tauck include onboard gratuities on most itineraries."
-        },
-        {
-            question: "4. Which has better food?",
-            answer: "Both cruise lines offer exceptional gourmet dining with regional specialties, premium wines, and locally inspired menus."
-        },
-        {
-            question: "5. Which has better excursions?",
-            answer: "Tauck is widely recognized for its exclusive shore excursions, smaller tour groups, and unique VIP experiences."
-        },
-        {
-            question: "6. Are drinks included on both?",
-            answer: "Yes. Both cruise lines include premium beverages throughout most of the cruise experience."
-        },
-        {
-            question: "7. Does either cruise line offer butler service?",
-            answer: "Uniworld offers butler service in many suite categories. Tauck does not provide butler service."
-        },
-        {
-            question: "8. Is Wi-Fi included?",
-            answer: "Yes. Complimentary Wi-Fi is included on both cruise lines."
-        },
-        {
-            question: "9. Which is better for first-time river cruisers?",
-            answer: "Uniworld is often recommended for first-time luxury river cruisers, while Tauck is especially appealing to experienced travelers seeking immersive guided experiences."
-        },
-        {
-            question: "10. Which is better for couples?",
-            answer: "Both are outstanding choices. Uniworld offers boutique romance and luxury, while Tauck delivers enriching cultural journeys and exceptional service."
-        },
-        {
-            question: "11. Which cruise line offers more destinations?",
-            answer: "Uniworld offers a broader selection of worldwide river cruise destinations, while Tauck concentrates primarily on Europe's most iconic rivers with select international itineraries."
-        },
-        {
-            question: "12. Why book with Trips & Ships Luxury Travel?",
-            answer: "Our advisors compare both cruise lines, recommend the ideal itinerary, secure exclusive offers, and provide concierge-level planning before, during, and after your luxury river cruise vacation."
-        }
-    ]
+    // 2. Data mapping for Cost & Value Analysis Cards
+    const pricingIncluded = pageData.pricing.uniworldPoints.map(point => ({
+        title: "Uniworld Inclusions",
+        description: point
+    }));
+    const pricingExtras = pageData.pricing.tauckPoints.map(point => ({
+        title: "Tauck Inclusions",
+        description: point
+    }));
 
-    const uvtcSchemaData = {
+    // 3. Data mapping for Who Should Choose Cards (CurvilinearGrid)
+    const whoShouldChooseItems = [
+        ...pageData.whoShouldChoose.uniworld.items.map(item => ({
+            title: "Uniworld Traveler",
+            description: item,
+            icon: "star"
+        })),
+        ...pageData.whoShouldChoose.tauck.items.map(item => ({
+            title: "Tauck Traveler",
+            description: item,
+            icon: "compass"
+        }))
+    ];
+
+    // 4. Data mapping for Why Book With Us (CurvilinearGrid)
+    const planningBenefits = pageData.whyBookWithUs.benefits.map((benefit, idx) => {
+        const icons = ["compass", "star", "ship", "map", "user", "utensils", "check"];
+        return {
+            title: `Advantage ${idx + 1}`,
+            description: benefit,
+            icon: icons[idx % icons.length]
+        };
+    });
+
+    // 5. Structured Data Schema matching exact reference standard (no trailing slashes)
+    const jsonLdSchema = {
         "@context": "https://schema.org",
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-tauck",
-                "name": "Uniworld vs Tauck River Cruises",
-                "url": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-tauck",
-                "description": "Compare Uniworld vs Tauck River Cruises including ships, pricing, dining, excursions, cabins, service, inclusions, destinations, and luxury river cruise experiences.",
+                "@id": `${pageData.seo.canonicalUrl}#webpage`,
+                "url": pageData.seo.canonicalUrl,
+                "name": pageData.seo.metaTitle,
+                "headline": pageData.seo.title,
+                "description": pageData.seo.metaDescription,
                 "inLanguage": "en-US",
+                "primaryImageOfPage": {
+                    "@type": "ImageObject",
+                    "url": "https://www.tripsandships.com/assets/UniworldCruise/Uniworldvstauckrivercruises/hero-paris-eiffel-sunset-river.webp",
+                    "caption": "Uniworld vs Tauck River Cruises Comparison"
+                },
+                "image": "https://www.tripsandships.com/assets/UniworldCruise/Uniworldvstauckrivercruises/hero-paris-eiffel-sunset-river.webp",
+                "author": {
+                    "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
+                },
                 "publisher": {
                     "@id": "https://www.tripsandships.com/#organization"
                 },
-                "mainEntity": {
-                    "@type": "Article",
-                    "@id": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-tauck#article"
+                "isPartOf": {
+                    "@id": "https://www.tripsandships.com/#website"
                 }
             },
             {
                 "@type": "Organization",
                 "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsandships.com"
+                "url": "https://www.tripsandships.com/",
+                "founder": {
+                    "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
+                }
             },
             {
                 "@type": "TravelAgency",
                 "@id": "https://www.tripsandships.com/#travelagency",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsandships.com",
-                "description": "Luxury travel agency specializing in luxury river cruises, expedition cruises, ocean cruises, and personalized travel planning."
-            },
-            {
-                "@type": "Person",
-                "@id": "https://www.tripsandships.com/#angela-hughes",
-                "name": "Angela Hughes",
-                "jobTitle": "CEO",
-                "worksFor": {
-                    "@id": "https://www.tripsandships.com/#travelagency"
-                },
-                "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
-            },
-            {
-                "@type": "Article",
-                "@id": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-tauck#article",
-                "headline": "Uniworld vs Tauck River Cruises",
-                "url": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-tauck",
-                "description": "Expert comparison of Uniworld and Tauck River Cruises including pricing, luxury, dining, excursions, service, cabins, destinations, and what's included.",
-                "image": "https://www.tripsandships.com/images/uniworld-vs-tauck-river-cruises.jpg",
-                "author": {
-                    "@id": "https://www.tripsandships.com/#angela-hughes"
-                },
-                "publisher": {
+                "url": "https://www.tripsandships.com/",
+                "description": "Luxury travel agency specializing in luxury river cruises, expedition cruises, yacht cruises, and personalized travel planning.",
+                "parentOrganization": {
                     "@id": "https://www.tripsandships.com/#organization"
-                },
-                "mainEntityOfPage": {
-                    "@id": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-tauck"
                 }
             },
             {
-                "@type": "Service",
-                "name": "Luxury River Cruise Comparison Services",
-                "provider": {
-                    "@id": "https://www.tripsandships.com/#travelagency"
+                "@type": "Person",
+                "@id": "https://www.tripsandships.com/about-angela-hughes/#person",
+                "name": "Angela Hughes",
+                "jobTitle": "CEO of Trips & Ships Luxury Travel",
+                "url": "https://www.tripsandships.com/about-angela-hughes",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "https://www.tripsandships.com/assets/Angela_Hughes.jpg",
+                    "caption": "Angela Hughes - Luxury River Cruise Specialist"
                 },
-                "serviceType": "Luxury River Cruise Consulting",
-                "description": "Expert comparison and planning services helping travelers choose between Uniworld, Tauck River Cruises, and other leading luxury river cruise lines."
+                "description": "Angela Hughes is a luxury travel expert with over 40 years of experience, having traveled to 121+ countries, specializing in luxury cruises and river cruises.",
+                "worksFor": {
+                    "@id": "https://www.tripsandships.com/#organization"
+                },
+                "knowsAbout": [
+                    "Luxury Travel",
+                    "Luxury River Cruises",
+                    "Uniworld Boutique River Cruises",
+                    "Tauck River Cruises",
+                    "European River Cruises",
+                    "Rhine, Danube & Seine River Cruises"
+                ]
             },
             {
                 "@type": "BreadcrumbList",
+                "@id": `${pageData.seo.canonicalUrl}#breadcrumb`,
                 "itemListElement": [
                     {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://www.tripsandships.com"
+                        "item": "https://www.tripsandships.com/"
                     },
                     {
                         "@type": "ListItem",
@@ -172,934 +174,246 @@ function UniworldVsTauckRiverCruises() {
                         "@type": "ListItem",
                         "position": 3,
                         "name": "Uniworld vs Tauck River Cruises",
-                        "item": "https://www.tripsandships.com/uniworld-river-cruises/uniworld-vs-tauck"
+                        "item": pageData.seo.canonicalUrl
                     }
                 ]
             },
             {
                 "@type": "FAQPage",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "Is Uniworld more luxurious than Tauck?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Both are considered ultra-luxury river cruise lines. Uniworld is known for boutique elegance and unique ship designs, while Tauck focuses on luxury guided travel with exceptional inclusions."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Is Tauck more expensive than Uniworld?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Tauck is often similarly priced or slightly more expensive because it includes more exclusive land experiences, VIP access, transfers, and gratuities."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Which cruise line includes gratuities?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Both Uniworld and Tauck include onboard gratuities on most itineraries."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Which has better food?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Both cruise lines offer exceptional gourmet dining with regional specialties, premium wines, and locally inspired menus."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Which has better excursions?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Tauck is widely recognized for its exclusive shore excursions, smaller tour groups, and unique VIP experiences."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Are drinks included on both?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes. Both cruise lines include premium beverages throughout most of the cruise experience."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Does either cruise line offer butler service?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Uniworld offers butler service in many suite categories. Tauck does not provide butler service."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Is Wi-Fi included?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes. Complimentary Wi-Fi is included on both Uniworld and Tauck River Cruises."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Which is better for first-time river cruisers?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Uniworld is often recommended for first-time luxury river cruisers, while Tauck is especially appealing to experienced travelers seeking immersive guided experiences."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Which is better for couples?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Both are outstanding choices. Uniworld offers boutique romance and luxury, while Tauck delivers enriching cultural journeys and exceptional service."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Which cruise line offers more destinations?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Uniworld offers a broader selection of worldwide river cruise destinations, while Tauck concentrates primarily on Europe's most iconic rivers with select international itineraries."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Why book with Trips & Ships Luxury Travel?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Trips & Ships Luxury Travel provides expert cruise comparisons, personalized recommendations, exclusive offers, and concierge-level planning before, during, and after your luxury river cruise vacation."
-                        }
+                "@id": `${pageData.seo.canonicalUrl}#faq`,
+                "mainEntity": pageData.faqs.map(faq => ({
+                    "@type": "Question",
+                    "name": faq.question,
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": faq.answer
                     }
-                ]
+                }))
             }
         ]
-    }
-
-    const uvtcAtAGlance = [
-        { feature: 'Overall Luxury', winner: 'Tie' },
-        { feature: 'Ship Design', winner: '🏆 Uniworld' },
-        { feature: 'Excursions', winner: '🏆 Tauck' },
-        { feature: 'Dining', winner: 'Tie' },
-        { feature: 'Service', winner: 'Tie' },
-        { feature: 'Included Amenities', winner: '🏆 Tauck' },
-        { feature: 'Boutique Experience', winner: '🏆 Uniworld' },
-        { feature: 'Value', winner: 'Tie' },
-        { feature: 'Cultural Experiences', winner: '🏆 Tauck' },
-        { feature: 'Overall Experience', winner: 'Tie' }
-    ]
-
-    const uvtcRatings = [
-        { category: 'Luxury', uniworld: '⭐⭐⭐⭐⭐', tauck: '⭐⭐⭐⭐⭐' },
-        { category: 'Dining', uniworld: '⭐⭐⭐⭐⭐', tauck: '⭐⭐⭐⭐⭐' },
-        { category: 'Service', uniworld: '⭐⭐⭐⭐⭐', tauck: '⭐⭐⭐⭐⭐' },
-        { category: 'Excursions', uniworld: '⭐⭐⭐⭐⭐', tauck: '⭐⭐⭐⭐⭐' },
-        { category: 'Included Amenities', uniworld: '⭐⭐⭐⭐☆', tauck: '⭐⭐⭐⭐⭐' }
-    ]
+    };
 
     return (
-        <>
+        <div className="min-h-screen bg-white font-sans text-slate-800">
+            {/* SEO and Schema Tags */}
             <Helmet>
-                <title>Uniworld vs Tauck River Cruises : Which Luxury River Cruise Is Better?</title>
-                <meta name="title" content="Uniworld vs Tauck River Cruises | Luxury River Cruise Comparison" />
-                <meta
-                    name="description"
-                    content="Compare Uniworld vs Tauck River Cruises including pricing, ships, dining, excursions, service, cabins, inclusions, and destinations to discover the best luxury river cruise for your next vacation."
-                />
+                <title>{pageData.seo.title}</title>
+                <meta name="title" content={pageData.seo.metaTitle} />
+                <meta name="description" content={pageData.seo.metaDescription} />
+                <meta name="keywords" content={pageData.seo.keywords} />
+                <link rel="canonical" href={pageData.seo.canonicalUrl} />
                 <script type="application/ld+json">
-                    {JSON.stringify(uvtcSchemaData)}
+                    {JSON.stringify(jsonLdSchema)}
                 </script>
             </Helmet>
 
+            {/* Global Navigation */}
             <Navbar />
 
-            <div className="fcel-page-wrapper">
+            <main>
+                {/* ─── SECTION 1: HERO SECTION ─── */}
+                <ComparisonHero
+                    badge={pageData.hero.badge}
+                    title={pageData.hero.title}
+                    subtitle={pageData.hero.subtitle}
+                    description={pageData.hero.description}
+                    showReadMore={false}
+                    backgroundImage={heroBgImg}
+                    bgPosition="bg-center"
+                    primaryCtaText={pageData.hero.primaryCtaText}
+                    primaryCtaLink={pageData.hero.primaryCtaLink}
+                    secondaryCtaText={pageData.hero.secondaryCtaText}
+                    secondaryCtaLink={pageData.hero.secondaryCtaLink}
+                />
 
-                {/* HERO SECTION (MATCHED) */}
-                <section className="fcel-hero-section">
-                    <div className="fcel-hero-overlay"></div>
-                    <div className="fcel-hero-content">
-                        <div className="fcel-hero-tag">
-                            <Sparkles size={16} />
-                            <span>Uniworld vs Tauck River Cruises</span>
-                        </div>
-                        <h1 className="fcel-hero-title">Uniworld vs Tauck River Cruises</h1>
-                        <p className="fcel-hero-subtitle">
-                            Which Luxury River Cruise Is Best?
-                        </p>
-                        <div className="fcel-hero-btn-row">
-                            <Link to='/contact' className="fcel-btn-primary">
-                                <Phone size={18} />
-                                Schedule a Consultation
-                            </Link>
-                            <button className="fcel-btn-outline">
-                                <LayoutList size={18} />
-                                Request Itinerary Options
-                            </button>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 2: EDITORIAL INTRO SECTION ─── */}
+                <EditorialIntroSplit
+                    eyebrow={pageData.intro.eyebrow}
+                    heading={pageData.intro.heading}
+                    primaryImage={introPrimaryImg}
+                    secondaryImage={tauckShipImg}
+                    paragraphs={[
+                        pageData.intro.lead,
+                        ...pageData.intro.paragraphs
+                    ]}
+                />
 
-                {/* INTRO SECTION (MATCHED) */}
-                <section className="fcel-intro-section">
-                    <div className="fcel-intro-container">
-                        <div className="fcel-intro-grid">
-                            <div className="fcel-intro-copy">
-                                <span className="fcel-eyebrow-label">EXPERT COMPARISON</span>
-                                <h2 className="fcel-section-heading">Two Titans of Luxury River Cruising</h2>
-                                <div className="fcel-heading-bar"></div>
-                                <p className="fcel-lead-paragraph">
-                                    If you're deciding between Uniworld and Tauck River Cruises, you're comparing two of the world's finest luxury river cruise companies. Both deliver exceptional service, gourmet dining, immersive excursions, and unforgettable journeys across Europe's most iconic waterways.
-                                </p>
-                                <p className="fcel-lead-paragraph">
-                                    Uniworld is known for boutique-style luxury, individually designed ships, and nearly all-inclusive fares. Tauck is famous for exclusive land experiences, smaller groups, premium guided tours, and one of the most inclusive luxury travel experiences available. Both cruise lines cater to discerning travelers, but each offers a distinct approach to luxury river cruising.
-                                </p>
-                            </div>
-                            <div className="fcel-intro-image-frame">
-                                <UvtcPlaceholder label="Uniworld vs Tauck River Cruises" />
-                                <div className="fcel-intro-badge-float">
-                                    <Award size={15} style={{ marginRight: '6px' }} />
-                                    <span>Head-to-Head Comparison</span>
-                                </div>
-                            </div>
-                            <div className="fcel-intro-highlight-box">
-                                <span className="fcel-intro-quote-icon">"</span>
-                                <div className="fcel-intro-quote-content">
-                                    Both cruise lines cater to discerning travelers, but each offers a distinct approach to luxury river cruising.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 3: QUICK ANSWER / INSIDER TIP AUTHORITY BOX ─── */}
+                <div className="max-w-4xl mx-auto px-6 my-8">
+                    <AuthorityBox
+                        title="Insider Tip"
+                        content={pageData.quickAnswer.quote}
+                        author={`${pageData.quickAnswer.author}, ${pageData.quickAnswer.role}`}
+                        authorImage={insiderTipImg}
+                    />
+                </div>
 
-                {/* QUICK ANSWER SECTION */}
-                <section className="uvtc-quick-answer-section">
-                    <div className="uvtc-quick-answer-container">
-                        <div className="uvtc-quick-answer-card">
-                            <h3 className="uvtc-quick-answer-title">Is Uniworld Better Than Tauck?</h3>
-                            <ul className="uvtc-quick-answer-list">
-                                <li className="uvtc-quick-answer-item">
-                                    <CheckCircle size={20} className="uvtc-quick-answer-icon" />
-                                    <span>Choose Uniworld if you prefer boutique luxury, elegant ship design, gourmet dining, and personalized onboard service.</span>
-                                </li>
-                                <li className="uvtc-quick-answer-item">
-                                    <CheckCircle size={20} className="uvtc-quick-answer-icon" />
-                                    <span>Choose Tauck if you value exclusive land experiences, smaller tour groups, VIP access, and one of the industry's most inclusive guided travel experiences.</span>
-                                </li>
-                            </ul>
-                            <p className="uvtc-quick-answer-text">
-                                Both consistently rank among the very best luxury river cruise lines.
-                            </p>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 4: AT A GLANCE HEAD-TO-HEAD COMPARISON TABLE ─── */}
+                <div id="comparison">
+                    <LuxuryCruiseComparisonTable
+                        title={pageData.atAGlance.title}
+                        headers={pageData.atAGlance.headers}
+                        rows={pageData.atAGlance.rows}
+                    />
+                </div>
 
-                {/* AT A GLANCE TABLE */}
-                <section className="uvtc-glance-section">
-                    <div className="uvtc-glance-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <span className="fcel-eyebrow-label">QUICK COMPARISON</span>
-                            <h2 className="fcel-section-heading">At a Glance</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="uvtc-glance-table-wrapper">
-                            <table className="uvtc-glance-table">
-                                <thead>
-                                    <tr>
-                                        <th className="uvtc-glance-th">Feature</th>
-                                        <th className="uvtc-glance-th">Winner</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {uvtcAtAGlance.map((row, idx) => {
-                                        const winner = row.winner;
-                                        const hasTrophy = winner.startsWith('🏆 ');
-                                        const cleanWinner = hasTrophy ? winner.replace('🏆 ', '') : winner;
-                                        return (
-                                            <tr key={idx}>
-                                                <td className="uvtc-glance-td">{row.feature}</td>
-                                                <td className="uvtc-glance-td">
-                                                    {hasTrophy && (
-                                                        <Trophy
-                                                            size={16}
-                                                            style={{
-                                                                marginRight: '6px',
-                                                                color: 'var(--uvtc-navy)',
-                                                                display: 'inline-block',
-                                                                verticalAlign: 'middle'
-                                                            }}
-                                                        />
-                                                    )}
-                                                    <span style={{ verticalAlign: 'middle' }}>{cleanWinner}</span>
-                                                </td>
-                                            </tr>
-                                        )
-                                    })}
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 5: EXECUTIVE BENCHMARK RATINGS ─── */}
+                <LuxuryCruiseComparisonTable
+                    title={pageData.ratings.title}
+                    headers={pageData.ratings.headers}
+                    rows={pageData.ratings.rows}
+                />
 
-                {/* CTA (INLINE CTA) */}
-                <section className="uvtc-inline-cta-section">
-                    <div className="uvtc-inline-cta-container">
-                        <span className="uvtc-inline-cta-tag">Expert Planning</span>
-                        <p className="uvtc-inline-cta-text">Not sure which luxury river cruise line is right for you?</p>
-                        <div className="uvtc-inline-cta-btn-row">
-                            <Link to="/contact" className="uvtc-btn-primary">
-                                <Phone size={18} />
-                                Schedule a Consultation
-                            </Link>
-                            <Link to="/contact" className="uvtc-btn-outline">
-                                <LayoutList size={18} />
-                                Request Itinerary Options
-                            </Link>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 6: SHIP DESIGN COMPARISON ─── */}
+                <FeatureSplit
+                    imagePosition="right"
+                    theme="light"
+                    image={shipDesignImg}
+                    title={pageData.shipDesign.title}
+                    subtitles={[
+                        pageData.shipDesign.lead,
+                        `Winner: ${pageData.shipDesign.winner}`
+                    ]}
+                    features={[
+                        ...pageData.shipDesign.uniworldPillars.map(p => `Uniworld: ${p}`),
+                        ...pageData.shipDesign.tauckPillars.map(p => `Tauck: ${p}`)
+                    ]}
+                    summary={pageData.shipDesign.verdict}
+                    ctaText="Explore Uniworld Ships"
+                    ctaLink="/uniworld-river-cruises/ships"
+                />
 
-                {/* OVERALL RATINGS */}
-                <section className="uvtc-rating-section">
-                    <div className="uvtc-rating-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <span className="fcel-eyebrow-label">⭐ OVERALL RATINGS</span>
-                            <h2 className="fcel-section-heading">How They Compare</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="uvtc-rating-table-wrapper">
-                            <table className="uvtc-rating-table">
-                                <thead>
-                                    <tr>
-                                        <th className="uvtc-rating-th">Category</th>
-                                        <th className="uvtc-rating-th">Uniworld</th>
-                                        <th className="uvtc-rating-th">Tauck</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {uvtcRatings.map((row, idx) => (
-                                        <tr key={idx}>
-                                            <td className="uvtc-rating-td">{row.category}</td>
-                                            <td className="uvtc-rating-td uvtc-rating-stars">{row.uniworld}</td>
-                                            <td className="uvtc-rating-td uvtc-rating-stars">{row.tauck}</td>
-                                        </tr>
-                                    ))}
-                                    <tr className="uvtc-rating-total-row">
-                                        <td className="uvtc-rating-td uvtc-rating-total-label">Overall</td>
-                                        <td className="uvtc-rating-td uvtc-rating-total-score">9.8/10</td>
-                                        <td className="uvtc-rating-td uvtc-rating-total-score">9.9/10</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 7: SUITES & CABINS COMPARISON ─── */}
+                <FeatureSplit
+                    imagePosition="left"
+                    theme="white"
+                    image={suiteImg}
+                    title={pageData.accommodations.title}
+                    subtitles={[
+                        pageData.accommodations.lead,
+                        `Winner: ${pageData.accommodations.winner}`
+                    ]}
+                    features={[
+                        ...pageData.accommodations.uniworldDetails.map(d => `Uniworld: ${d}`),
+                        ...pageData.accommodations.tauckDetails.map(d => `Tauck: ${d}`)
+                    ]}
+                    summary={pageData.accommodations.verdict}
+                    ctaText="Compare Cabin Categories"
+                    ctaLink="/uniworld-river-cruises/best-cabins"
+                />
 
-                {/* SHIP DESIGN */}
-                <section className="uvtc-vs-section uvtc-bg-soft">
-                    <div className="uvtc-vs-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <span className="fcel-eyebrow-label">DESIGN & STYLE</span>
-                            <h2 className="fcel-section-heading">Ship Design</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="uvtc-vs-grid">
-                            <div className="uvtc-vs-card">
-                                <h3 className="uvtc-vs-card-brand">Uniworld</h3>
-                                <div className="uvtc-card-image-wrapper">
-                                    <UvtcPlaceholder label="Uniworld Boutique Ship Design" />
-                                </div>
-                                <p className="uvtc-vs-card-text">
-                                    Every ship is individually decorated with boutique hotel-inspired interiors, handcrafted furnishings, and luxurious public spaces.
-                                </p>
-                                <p className="uvtc-vs-card-bestfor">
-                                    <strong>Best For:</strong> Travelers who appreciate elegant European design and intimate luxury.
-                                </p>
-                            </div>
-                            <div className="uvtc-vs-card">
-                                <h3 className="uvtc-vs-card-brand">Tauck</h3>
-                                <div className="uvtc-card-image-wrapper">
-                                    <UvtcPlaceholder label="Tauck Contemporary Ship Design" />
-                                </div>
-                                <p className="uvtc-vs-card-text">
-                                    Tauck ships feature classic contemporary interiors with spacious lounges, refined décor, and a relaxed luxury atmosphere.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="uvtc-winner-badge">
-                            <Trophy size={18} />
-                            <span>Winner: Uniworld</span>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 8: DINING COMPARISON ─── */}
+                <FeatureSplit
+                    imagePosition="right"
+                    theme="light"
+                    image={diningImg}
+                    title={pageData.dining.title}
+                    subtitles={[
+                        pageData.dining.lead,
+                        `Winner: ${pageData.dining.winner}`
+                    ]}
+                    features={[
+                        ...pageData.dining.uniworldDetails.map(d => `Uniworld: ${d}`),
+                        ...pageData.dining.tauckDetails.map(d => `Tauck: ${d}`)
+                    ]}
+                    summary={pageData.dining.verdict}
+                    ctaText="Uniworld Food & Dining Guide"
+                    ctaLink="/uniworld-river-cruises/food-dining"
+                />
 
-                {/* SUITES & ACCOMMODATIONS */}
-                <section className="uvtc-vs-section uvtc-bg-white">
-                    <div className="uvtc-vs-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <span className="fcel-eyebrow-label">STATEROOMS</span>
-                            <h2 className="fcel-section-heading">Suites & Accommodations</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="uvtc-vs-grid">
-                            <div className="uvtc-vs-card">
-                                <div className="uvtc-card-image-wrapper">
-                                    <UvtcPlaceholder label="Uniworld Luxury Suites & Accommodations" />
-                                </div>
-                                <h3 className="uvtc-vs-card-brand">Uniworld</h3>
-                                <ul className="uvtc-vs-card-list">
-                                    <li><Bed size={16} /><span>Boutique luxury cabins</span></li>
-                                    <li><Bath size={16} /><span>Marble bathrooms</span></li>
-                                    <li><Bell size={16} /><span>Butler service in select suites</span></li>
-                                    <li><Sparkles size={16} /><span>Elegant furnishings</span></li>
-                                </ul>
-                            </div>
-                            <div className="uvtc-vs-card">
-                                <div className="uvtc-card-image-wrapper">
-                                    <UvtcPlaceholder label="Tauck Luxury Suites & Accommodations" />
-                                </div>
-                                <h3 className="uvtc-vs-card-brand">Tauck</h3>
-                                <ul className="uvtc-vs-card-list">
-                                    <li><Bed size={16} /><span>Spacious suites</span></li>
-                                    <li><Sparkles size={16} /><span>Luxury bedding</span></li>
-                                    <li><Award size={16} /><span>Premium amenities</span></li>
-                                    <li><CheckCircle size={16} /><span>Well-appointed accommodations</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="uvtc-winner-badge">
-                            <Award size={18} />
-                            <span>Winner: Tie</span>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 9: WHAT'S INCLUDED COMPARISON ─── */}
+                <InclusionsList
+                    title={pageData.inclusions.title}
+                    inclusions={pageData.inclusions.uniworldItems}
+                    expertNote={pageData.inclusions.expertNote}
+                    image={inclusionsImg}
+                />
 
-                {/* DINING COMPARISON */}
-                <section className="uvtc-vs-section uvtc-bg-soft">
-                    <div className="uvtc-vs-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <span className="fcel-eyebrow-label">CULINARY EXCELLENCE</span>
-                            <h2 className="fcel-section-heading">Dining Comparison</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="uvtc-vs-grid">
-                            <div className="uvtc-vs-card">
-                                <div className="uvtc-card-image-wrapper">
-                                    <UvtcPlaceholder label="Uniworld Dining & Culinary Excellence" />
-                                </div>
-                                <h3 className="uvtc-vs-card-brand">Uniworld</h3>
-                                <ul className="uvtc-vs-card-list">
-                                    <li><Utensils size={16} /><span>Gourmet regional cuisine</span></li>
-                                    <li><Landmark size={16} /><span>Farm-to-table menus</span></li>
-                                    <li><Wine size={16} /><span>Premium wines and spirits</span></li>
-                                    <li><Sparkles size={16} /><span>Elegant dining experience</span></li>
-                                </ul>
-                            </div>
-                            <div className="uvtc-vs-card">
-                                <div className="uvtc-card-image-wrapper">
-                                    <UvtcPlaceholder label="Tauck Dining & Culinary Excellence" />
-                                </div>
-                                <h3 className="uvtc-vs-card-brand">Tauck</h3>
-                                <ul className="uvtc-vs-card-list">
-                                    <li><Utensils size={16} /><span>Gourmet cuisine</span></li>
-                                    <li><MapPin size={16} /><span>Regional specialties</span></li>
-                                    <li><Wine size={16} /><span>Complimentary beverages</span></li>
-                                    <li><Sparkles size={16} /><span>Fine dining throughout the journey</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="uvtc-winner-badge">
-                            <Award size={18} />
-                            <span>Winner: Tie</span>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 10: SHORE EXCURSIONS ─── */}
+                <ThreeColumnGrid
+                    title={pageData.excursions.title}
+                    subtitle={pageData.excursions.lead}
+                    items={excursionItems}
+                />
 
-                {/* WHAT'S INCLUDED */}
-                <section className="uvtc-vs-section uvtc-bg-white">
-                    <div className="uvtc-vs-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <span className="fcel-eyebrow-label">ALL-INCLUSIVE</span>
-                            <h2 className="fcel-section-heading">What's Included?</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="uvtc-vs-grid">
-                            <div className="uvtc-vs-card">
-                                <h3 className="uvtc-vs-card-brand">Uniworld Includes</h3>
-                                <ul className="uvtc-vs-card-checklist">
-                                    {['Gourmet dining', 'Premium beverages', 'Guided excursions', 'Wi-Fi', 'Gratuities', 'Butler service (select suites)'].map((item, idx) => (
-                                        <li key={idx}><CheckCircle size={16} className="uvtc-vs-check-icon" /><span>{item}</span></li>
-                                    ))}
-                                </ul>
-                            </div>
-                            <div className="uvtc-vs-card">
-                                <h3 className="uvtc-vs-card-brand">Tauck Includes</h3>
-                                <ul className="uvtc-vs-card-checklist">
-                                    {['Unlimited beverages', 'Gratuities', 'Airport transfers', 'Exclusive shore excursions', 'VIP experiences', 'Most onboard expenses'].map((item, idx) => (
-                                        <li key={idx}><CheckCircle size={16} className="uvtc-vs-check-icon" /><span>{item}</span></li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="uvtc-winner-badge">
-                            <Trophy size={18} />
-                            <span>Winner: Tauck</span>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 11: PRICING & VALUE ANALYSIS ─── */}
+                <CostValueAnalysisCards
+                    title={pageData.pricing.title}
+                    subtitle={pageData.pricing.subtitle}
+                    includedTitle={pageData.pricing.uniworldTitle}
+                    extrasTitle={pageData.pricing.tauckTitle}
+                    included={pricingIncluded}
+                    extras={pricingExtras}
+                />
 
-                {/* SERVICE */}
-                <section className="uvtc-service-section uvtc-bg-soft">
-                    <div className="uvtc-service-container">
-                        <span className="fcel-eyebrow-label uvtc-eyebrow-service">GUEST EXPERIENCE</span>
-                        <h2 className="fcel-section-heading">Service</h2>
-                        <div className="fcel-heading-bar fcel-bar-center"></div>
-                        <p className="fcel-lead-paragraph">
-                            Both cruise lines deliver exceptional personalized service with experienced crews and outstanding guest satisfaction.
-                        </p>
-                        <div className="uvtc-winner-badge">
-                            <Award size={18} />
-                            <span>Winner: Tie</span>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 12: WHO SHOULD CHOOSE EACH CRUISE LINE ─── */}
+                <CurvilinearGrid
+                    title={pageData.whoShouldChoose.title}
+                    subtitle="TRAVELER MATCHMAKER"
+                    items={whoShouldChooseItems}
+                    paragraphs={[pageData.whoShouldChoose.subtitle]}
+                />
 
-                {/* EXCURSIONS */}
-                <section className="uvtc-vs-section uvtc-bg-white">
-                    <div className="uvtc-vs-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <span className="fcel-eyebrow-label">SHORE EXCURSIONS</span>
-                            <h2 className="fcel-section-heading">Excursions</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="uvtc-vs-grid">
-                            <div className="uvtc-vs-card">
-                                <h3 className="uvtc-vs-card-brand">Uniworld</h3>
-                                <ul className="uvtc-vs-card-list">
-                                    <li><Compass size={16} /><span>Walking tours</span></li>
-                                    <li><Utensils size={16} /><span>Culinary experiences</span></li>
-                                    <li><Wine size={16} /><span>Wine tastings</span></li>
-                                    <li><Landmark size={16} /><span>Local cultural immersion</span></li>
-                                </ul>
-                            </div>
-                            <div className="uvtc-vs-card">
-                                <h3 className="uvtc-vs-card-brand">Tauck</h3>
-                                <ul className="uvtc-vs-card-list">
-                                    <li><Award size={16} /><span>Exclusive private experiences</span></li>
-                                    <li><Smile size={16} /><span>Small-group touring</span></li>
-                                    <li><Sparkles size={16} /><span>VIP access</span></li>
-                                    <li><Landmark size={16} /><span>Unique cultural events</span></li>
-                                    <li><Compass size={16} /><span>Guided land journeys</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="uvtc-winner-badge">
-                            <Trophy size={18} />
-                            <span>Winner: Tauck</span>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 13: OUR RECOMMENDATION & VERDICT ─── */}
+                <ConclusionSection
+                    sections={[
+                        {
+                            heading: pageData.recommendation.title,
+                            paragraphs: [
+                                ...pageData.recommendation.paragraphs,
+                                `Key Highlights: ${pageData.recommendation.takeaways.join(', ')}`
+                            ]
+                        }
+                    ]}
+                />
 
-                {/* DESTINATIONS */}
-                <section className="uvtc-vs-section uvtc-bg-soft">
-                    <div className="uvtc-vs-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <span className="fcel-eyebrow-label">WORLDWIDE REACH</span>
-                            <h2 className="fcel-section-heading">Destinations</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                            <p className="fcel-lead-paragraph" style={{ maxWidth: '800px', margin: '0 auto 10px auto' }}>
-                                Both cruise lines sail:
-                            </p>
-                        </div>
-                        <div className="uvtc-dest-shared-row">
-                            {['Rhine', 'Danube', 'Seine', 'Rhône', 'Douro'].map((river, idx) => (
-                                <span key={idx} className="uvtc-dest-shared-pill">
-                                    <MapPin size={14} />
-                                    {river}
-                                </span>
-                            ))}
-                        </div>
-                        <div className="uvtc-vs-grid" style={{ marginTop: '48px' }}>
-                            <div className="uvtc-vs-card">
-                                <div className="uvtc-card-image-wrapper">
-                                    <UvtcPlaceholder label="Uniworld River Cruise Destinations" />
-                                </div>
-                                <h3 className="uvtc-vs-card-brand">Uniworld</h3>
-                                <p className="uvtc-vs-card-text">
-                                    Uniworld also offers Egypt, Peru, India, and Southeast Asia.
-                                </p>
-                            </div>
-                            <div className="uvtc-vs-card">
-                                <div className="uvtc-card-image-wrapper">
-                                    <UvtcPlaceholder label="Tauck River Cruise Destinations" />
-                                </div>
-                                <h3 className="uvtc-vs-card-brand">Tauck</h3>
-                                <p className="uvtc-vs-card-text">
-                                    Tauck focuses primarily on Europe with selected itineraries beyond Europe.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="uvtc-winner-badge">
-                            <Trophy size={18} />
-                            <span>Winner: Uniworld</span>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 14: WHY BOOK WITH TRIPS & SHIPS ─── */}
+                <CurvilinearGrid
+                    title={pageData.whyBookWithUs.title}
+                    subtitle={pageData.whyBookWithUs.eyebrow}
+                    items={planningBenefits}
+                    paragraphs={[pageData.whyBookWithUs.lead]}
+                />
 
-                {/* PRICING */}
-                <section className="uvtc-vs-section uvtc-bg-white">
-                    <div className="uvtc-vs-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <span className="fcel-eyebrow-label">INVESTMENT</span>
-                            <h2 className="fcel-section-heading">Pricing</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="uvtc-vs-grid">
-                            <div className="uvtc-vs-card">
-                                <h3 className="uvtc-vs-card-brand">Uniworld</h3>
-                                <p className="uvtc-vs-card-text">
-                                    Luxury pricing with generous inclusions.
-                                </p>
-                            </div>
-                            <div className="uvtc-vs-card">
-                                <h3 className="uvtc-vs-card-brand">Tauck</h3>
-                                <p className="uvtc-vs-card-text">
-                                    Premium pricing with one of the industry's most comprehensive all-inclusive experiences.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="uvtc-winner-badge">
-                            <Award size={18} />
-                            <span>Winner: Tie</span>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 15: EXPERT CREDENTIALS (ANGELA HUGHES) ─── */}
+                <ExpertCredentials
+                    name={pageData.expertInsight.name}
+                    title={pageData.expertInsight.title}
+                    badge={pageData.expertInsight.badge}
+                    image={ProfilePictureAH}
+                    quote={pageData.expertInsight.quote}
+                    quoteSubtitle="Insight from Angela Hughes"
+                    bio={pageData.expertInsight.bio}
+                    credentials={pageData.expertInsight.credentials}
+                    ctaText="Schedule a Consultation"
+                    ctaLink="/contact"
+                />
 
-                {/* WHO SHOULD CHOOSE */}
-                <section className="uvtc-audience-section">
-                    <div className="uvtc-audience-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <span className="fcel-eyebrow-label">WHO IS IT FOR?</span>
-                            <h2 className="fcel-section-heading">Who Should Choose Each Line?</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="uvtc-audience-grid">
-                            <div className="uvtc-audience-column">
-                                <h3 className="uvtc-audience-heading">Who Should Choose Uniworld?</h3>
-                                <p className="uvtc-audience-subtext">Perfect for:</p>
-                                <ul className="uvtc-audience-list">
-                                    {['Luxury travelers', 'Couples', 'Food lovers', 'Boutique hotel enthusiasts', 'Travelers seeking elegant ship design'].map((item, idx) => (
-                                        <li key={idx} className="uvtc-audience-item">
-                                            <CheckCircle size={18} className="uvtc-audience-check" />
-                                            <span>{item}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                            <div className="uvtc-audience-column">
-                                <h3 className="uvtc-audience-heading">Who Should Choose Tauck?</h3>
-                                <p className="uvtc-audience-subtext">Perfect for:</p>
-                                <ul className="uvtc-audience-list">
-                                    {['Experienced travelers', 'Cultural explorers', 'Guests seeking VIP experiences', 'Travelers wanting the most inclusive land excursions', 'Luxury couples'].map((item, idx) => (
-                                        <li key={idx} className="uvtc-audience-item">
-                                            <CheckCircle size={18} className="uvtc-audience-check" />
-                                            <span>{item}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 16: FREQUENTLY ASKED QUESTIONS ─── */}
+                <FAQAccordion
+                    data={{
+                        title: "Frequently Asked Questions",
+                        subtitle: "Everything you need to know when comparing Uniworld Boutique River Cruises and Tauck River Cruises.",
+                        faqs: pageData.faqs
+                    }}
+                />
 
-                {/* OUR RECOMMENDATION */}
-                <section className="uvtc-recommendation-section uvtc-bg-white">
-                    <div className="uvtc-recommendation-container">
-                        <span className="fcel-eyebrow-label uvtc-eyebrow-verdict">OUR RECOMMENDATION</span>
-                        <h2 className="fcel-section-heading">Which Should You Choose?</h2>
-                        <div className="fcel-heading-bar fcel-bar-center"></div>
-                        <p className="fcel-lead-paragraph">
-                            Choose Uniworld if you prefer boutique luxury, elegant interiors, gourmet dining, and personalized service aboard beautifully designed ships.
-                        </p>
-                        <p className="fcel-lead-paragraph">
-                            Choose Tauck if your priority is immersive cultural experiences, exclusive excursions, VIP access, and an exceptionally inclusive luxury vacation.
-                        </p>
-                        <p className="fcel-lead-paragraph" style={{ fontWeight: '600', color: 'var(--uvtc-navy)' }}>
-                            Both are among the finest luxury river cruise experiences available today.
-                        </p>
-                    </div>
-                </section>
+                {/* ─── SECTION 17: BOTTOM CENTER CTA ─── */}
+                <CenterCTA
+                    title={pageData.cta.title}
+                    description={pageData.cta.description}
+                    primaryCtaText={pageData.cta.primaryCtaText}
+                    primaryCtaLink={pageData.cta.primaryCtaLink}
+                    secondaryCtaText={pageData.cta.secondaryCtaText}
+                    secondaryCtaLink={pageData.cta.secondaryCtaLink}
+                    backgroundImage={ctaBgImg}
+                />
+            </main>
 
-                {/* WHY BOOK WITH US */}
-                <section className="uvtc-why-book-section uvtc-bg-soft">
-                    <div className="uvtc-why-book-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <span className="fcel-eyebrow-label">PLANNING ADVANTAGE</span>
-                            <h2 className="fcel-section-heading">Why Book with Trips & Ships Luxury Travel?</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="uvtc-why-book-grid">
-                            <div className="uvtc-why-book-card">
-                                <div className="uvtc-why-book-icon">
-                                    <LayoutList size={20} />
-                                </div>
-                                <h4 className="uvtc-why-book-title">Compare Both Cruise Lines</h4>
-                                <p className="uvtc-why-book-desc">Compare both cruise lines side by side to find your best fit.</p>
-                            </div>
-                            <div className="uvtc-why-book-card">
-                                <div className="uvtc-why-book-icon">
-                                    <Compass size={20} />
-                                </div>
-                                <h4 className="uvtc-why-book-title">Choose the Best Itinerary</h4>
-                                <p className="uvtc-why-book-desc">Choose the best itinerary for your travel goals and timeline.</p>
-                            </div>
-                            <div className="uvtc-why-book-card">
-                                <div className="uvtc-why-book-icon">
-                                    <Bed size={20} />
-                                </div>
-                                <h4 className="uvtc-why-book-title">Select the Ideal Suite</h4>
-                                <p className="uvtc-why-book-desc">Select the ideal suite for your comfort and budget.</p>
-                            </div>
-                            <div className="uvtc-why-book-card">
-                                <div className="uvtc-why-book-icon">
-                                    <Award size={20} />
-                                </div>
-                                <h4 className="uvtc-why-book-title">Access Exclusive Promotions</h4>
-                                <p className="uvtc-why-book-desc">Access exclusive promotions unavailable when booking direct.</p>
-                            </div>
-                            <div className="uvtc-why-book-card">
-                                <div className="uvtc-why-book-icon">
-                                    <Globe size={20} />
-                                </div>
-                                <h4 className="uvtc-why-book-title">Arrange Flights & Hotels</h4>
-                                <p className="uvtc-why-book-desc">Arrange flights and hotels around your cruise dates.</p>
-                            </div>
-                            <div className="uvtc-why-book-card">
-                                <div className="uvtc-why-book-icon">
-                                    <MapPin size={20} />
-                                </div>
-                                <h4 className="uvtc-why-book-title">Customize Pre- & Post-Cruise Stays</h4>
-                                <p className="uvtc-why-book-desc">Customize pre- and post-cruise stays around your journey.</p>
-                            </div>
-                            <div className="uvtc-why-book-card uvtc-why-book-card-wide">
-                                <div className="uvtc-why-book-icon">
-                                    <CheckCircle size={20} />
-                                </div>
-                                <h4 className="uvtc-why-book-title">Concierge-Level Planning</h4>
-                                <p className="uvtc-why-book-desc">Provide concierge-level planning before, during, and after your vacation.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                 {/* EXPERT INSIGHT */}
-                <section id="uniworld-growth-insight" className="medi-expert-editorial-section medi-growth-insight-section">
-                    <div className="medi-expert-editorial-container">
-                        <div className="medi-expert-editorial-card">
-
-                            {/* Left Side: Portrait and Floating Stat Badge */}
-                            <div className="medi-editorial-portrait-block">
-                                <div className="medi-editorial-image-frame">
-                                    <img src={ProfilePictureAH} alt="Angela Hughes - Luxury River Cruise Expert" />
-                                    <div className="medi-editorial-gradient-layer"></div>
-                                </div>
-
-                                <div className="medi-editorial-floating-stat">
-                                    <div className="medi-stat-tile">
-                                        <span className="medi-stat-number">40+</span>
-                                        <span className="medi-stat-label">Years Experience</span>
-                                    </div>
-                                    <div className="medi-stat-divider"></div>
-                                    <div className="medi-stat-tile">
-                                        <span className="medi-stat-number">121+</span>
-                                        <span className="medi-stat-label">Countries Visited</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Right Side: Editorial Text */}
-                            <div className="medi-editorial-content-block">
-                                <div className="medi-editorial-header">
-                                    <div className="medi-editorial-eyebrow-container">
-                                        <ExpertAward size={18} className="medi-editorial-icon-badge" />
-                                        <span className="medi-editorial-eyebrow">Expert Insight from Angela Hughes</span>
-                                    </div>
-                                    <h2 className="medi-editorial-title">
-                                        Why Discerning Travelers <br className="medi-growth-title-break" />Choose Uniworld River Cruises
-                                    </h2>
-                                    <div className="medi-editorial-accent-bar"></div>
-                                </div>
-
-                                <p className="medi-editorial-lead-para">
-                                    According to Angela Hughes, many travelers are initially drawn to Uniworld for its extraordinary boutique ships — but ultimately stay loyal because of the warmth of service, the depth of cultural immersion, and a level of all-inclusive luxury that few river cruise lines can match.
-                                </p>
-
-                                <div className="medi-priorities-box">
-                                    <p className="medi-priorities-intro">
-                                        After more than four decades in luxury travel and visiting over 121 countries, Angela consistently sees Uniworld travelers prioritizing:
-                                    </p>
-                                    <div className="medi-priorities-grid-pills">
-                                        {[
-                                            'Boutique, museum-quality ships',
-                                            'Truly all-inclusive luxury',
-                                            'Butler service in select suites',
-                                            'Gourmet farm-to-table dining',
-                                            'Intimate, destination-rich itineraries',
-                                            'Personalized, warm onboard service'
-                                        ].map((item, idx) => (
-                                            <div key={idx} className="medi-priority-pill-item">
-                                                <ExpertCheckCircle size={15} className="medi-priority-check" />
-                                                <span>{item}</span>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-
-                                <p className="medi-editorial-body-para">
-                                    As founder of Luxury Travel University and CEO of Trips &amp; Ships Luxury Travel, Angela Hughes helps travelers navigate the luxury river cruise landscape with honesty and real-world expertise — ensuring every client finds the right ship, the right itinerary, and the right experience for their lifestyle.
-                                </p>
-
-                                <div className="medi-expertise-section-box">
-                                    <span className="medi-expertise-intro-label">Her expertise spans:</span>
-                                    <div className="medi-expertise-horizontal-strip">
-                                        {[
-                                            { title: 'Luxury river cruising', icon: ExpertShip },
-                                            { title: 'European river itineraries', icon: ExpertGlobe },
-                                            { title: 'Butler & suite services', icon: ExpertUsers },
-                                            { title: 'All-inclusive cruise planning', icon: ExpertCompass },
-                                            { title: 'Gourmet & cultural travel', icon: ExpertSparkles }
-                                        ].map((item, idx) => {
-                                            const IconComponent = item.icon
-                                            return (
-                                                <div key={idx} className="medi-expertise-pills-row">
-                                                    <div className="medi-expertise-pill-icon-box">
-                                                        <IconComponent size={14} />
-                                                    </div>
-                                                    <span className="medi-expertise-pill-text">{item.title}</span>
-                                                </div>
-                                            )
-                                        })}
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-
-                {/* FAQ SECTION (MATCHED) */}
-                <section className="fcel-faq-section">
-                    <div className="fcel-faq-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <h2 className="fcel-section-heading">Frequently Asked Questions</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="fcel-faq-list">
-                            {uvtcFaqs.map((faq, index) => (
-                                <div
-                                    key={index}
-                                    className="fcel-faq-item"
-                                    onClick={() => uvtcToggleFaq(index)}
-                                >
-                                    <div className="fcel-faq-question-row">
-                                        <span>{faq.question}</span>
-                                        <span className="fcel-faq-toggle">
-                                            {uvtcActiveFaq === index ? "−" : "+"}
-                                        </span>
-                                    </div>
-                                    {uvtcActiveFaq === index && (
-                                        <p className="fcel-faq-answer">{faq.answer}</p>
-                                    )}
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-
-                {/* RELATED GUIDES (RELATED CONTENT CTA) */}
-                <section className="uvtc-related-section">
-                    <div className="uvtc-related-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <span className="fcel-eyebrow-label">KEEP EXPLORING</span>
-                            <h2 className="fcel-section-heading">Related Luxury Cruise Guides</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="uvtc-related-grid">
-                            <Link to="/uniworld-river-cruises/review" className="uvtc-related-card">
-                                <div className="uvtc-related-icon">
-                                    <Ship size={20} />
-                                </div>
-                                <h4 className="uvtc-related-title">Uniworld River Cruises Review</h4>
-                                <p className="uvtc-related-desc">Our full expert review of Uniworld's boutique river cruise fleet.</p>
-                                <span className="uvtc-related-link">Read More <ArrowRight size={14} /></span>
-                            </Link>
-                            <Link to="/uniworld-river-cruises/rhone-saone" className="uvtc-related-card">
-                                <div className="uvtc-related-icon">
-                                    <Landmark size={20} />
-                                </div>
-                                <h4 className="uvtc-related-title">Uniworld Rhône & Saône River Cruises</h4>
-                                <p className="uvtc-related-desc">Discover Burgundy and Provence aboard a boutique river ship.</p>
-                                <span className="uvtc-related-link">Read More <ArrowRight size={14} /></span>
-                            </Link>
-                            <Link to="/uniworld-river-cruises/egypt-nile" className="uvtc-related-card">
-                                <div className="uvtc-related-icon">
-                                    <Compass size={20} />
-                                </div>
-                                <h4 className="uvtc-related-title">Uniworld Egypt & Nile River Cruises</h4>
-                                <p className="uvtc-related-desc">Sail the Nile in boutique luxury among ancient wonders.</p>
-                                <span className="uvtc-related-link">Read More <ArrowRight size={14} /></span>
-                            </Link>
-                            <Link to="/why-i-resisted-viking" className="uvtc-related-card">
-                                <div className="uvtc-related-icon">
-                                    <Globe size={20} />
-                                </div>
-                                <h4 className="uvtc-related-title">Why I Resisted Viking</h4>
-                                <p className="uvtc-related-desc">An honest editorial comparing Uniworld's boutique feel to Viking.</p>
-                                <span className="uvtc-related-link">Read More <ArrowRight size={14} /></span>
-                            </Link>
-                            <Link to="/scenic-cabins-guide" className="uvtc-related-card">
-                                <div className="uvtc-related-icon">
-                                    <Bed size={20} />
-                                </div>
-                                <h4 className="uvtc-related-title">Scenic Cabins Guide</h4>
-                                <p className="uvtc-related-desc">Compare suite categories across leading luxury river cruise lines.</p>
-                                <span className="uvtc-related-link">Read More <ArrowRight size={14} /></span>
-                            </Link>
-                        </div>
-                    </div>
-                </section>
-
-                {/* CTA SECTION (MATCHED) */}
-                <section className="fcel-cta-section">
-                    <div className="fcel-cta-bg-pattern"></div>
-                    <div className="fcel-cta-inner">
-                        <h2 className="fcel-cta-heading">Ready to Choose Your Luxury River Cruise?</h2>
-                        <div className="fcel-cta-separator"></div>
-                        <p className="fcel-cta-text">
-                            Contact our luxury cruise consultants to compare Uniworld and Tauck, secure exclusive promotions, and plan pre- and post-cruise stays. We handle every detail so you can enjoy the journey.
-                        </p>
-                        <div className="fcel-cta-btn-row">
-                            <Link to="/contact" className="fcel-btn-primary">
-                                <Phone size={18} />
-                                Schedule a Consultation
-                            </Link>
-                            <button className="fcel-btn-outline">
-                                <LayoutList size={18} />
-                                Request Itinerary Options
-                            </button>
-                        </div>
-                    </div>
-                </section>
-
-            </div>
-
+            {/* Global Footer Navigation */}
             <Navbar />
-        </>
-    )
+        </div>
+    );
 }
 
-export default UniworldVsTauckRiverCruises
+export default UniworldVsTauckRiverCruises;

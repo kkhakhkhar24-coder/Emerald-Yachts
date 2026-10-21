@@ -1,0 +1,421 @@
+{
+  "seo": {
+    "title": "Uniworld Family River Cruises and Generations Collection Guide",
+    "metaTitle": "Uniworld Family River Cruises and Generations Collection",
+    "metaDescription": "Discover Uniworld Family River Cruises and the Generations Collection. Learn about family-friendly itineraries, activities, cabins, dining, and travel tips.",
+    "ogTitle": "Uniworld Family River Cruises and Generations Collection",
+    "ogDescription": "Discover how Uniworld brings families together through luxury river cruising, cultural immersion, and shared experiences across Europe's most beautiful waterways.",
+    "keywords": "Uniworld Family River Cruises, Uniworld Generations Collection, family river cruises, multigenerational river cruises, Uniworld with kids, luxury family cruises, European family river cruise, Uniworld family vacations",
+    "canonicalUrl": "https://www.tripsandships.com/uniworld-river-cruises/family-cruises"
+  },
+  "hero": {
+    "badge": "UNIWORLD RIVER CRUISES · FAMILY TRAVEL GUIDE",
+    "title": "Uniworld Family River Cruises and\nGenerations Collection",
+    "subtitle": "Discover how Uniworld brings families together through luxury river cruising, cultural immersion, and shared experiences across Europe's most beautiful waterways.",
+    "description": "River cruising is no longer just for couples and retirees. Through its Generations Collection, Uniworld Boutique River Cruises offers selected departures designed specifically for families, bringing together luxury accommodations, immersive cultural experiences, and activities that appeal to travelers of different ages.",
+    "primaryCtaText": "Schedule a Consultation",
+    "primaryCtaLink": "/contact",
+    "secondaryCtaText": "Explore Family Cruises",
+    "secondaryCtaLink": "/uniworld-river-cruises"
+  },
+  "intro": {
+    "eyebrow": "FAMILY RIVER CRUISING",
+    "heading": "A New Way for Families to Explore Europe Together",
+    "lead": "River cruising is no longer just for couples and retirees.",
+    "paragraphs": [
+      "Through its Generations Collection, Uniworld Boutique River Cruises offers selected departures designed specifically for families, bringing together luxury accommodations, immersive cultural experiences, and activities that appeal to travelers of different ages.",
+      "Whether you're planning a multigenerational vacation with grandparents, parents, and children or simply looking for a unique family holiday in Europe, this guide explains how Uniworld Family River Cruises work, what to expect onboard, and how to choose the best itinerary."
+    ]
+  },
+  "executiveInsight": {
+    "title": "Insight from Angela Hughes",
+    "quote": "River cruises are not just for couples. During select summer and holiday breaks, Uniworld's Generations Collection brings families together with dedicated kids' guides, hands-on shore activities, and specialized menus. It's the ultimate multigenerational travel experience without the massive crowds.",
+    "author": "Angela Hughes",
+    "role": "CEO & Multigenerational River Cruise Specialist",
+    "bio": "As founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel, Angela Hughes helps multigenerational families plan luxury voyages that bridge the gap between grandparents and grandkids."
+  },
+  "generationsCollection": {
+    "eyebrow": "THE GENERATIONS COLLECTION",
+    "title": "What Is the Uniworld Generations Collection?",
+    "lead": "The Generations Collection is a selection of family-focused departures available on certain Uniworld itineraries during school holiday periods.",
+    "subtitle": "These sailings are designed to balance luxury travel with engaging experiences for younger guests while maintaining the high service standards Uniworld is known for.",
+    "features": [
+      {
+        "title": "Family-Friendly Shore Excursions",
+        "description": "Guided walking and cycling tours structured to captivate both young explorers and adults."
+      },
+      {
+        "title": "Kid-Focused Activities",
+        "description": "Hands-on workshops, games, and dedicated onboard Family Hosts catering to young travelers."
+      },
+      {
+        "title": "Flexible Dining Options",
+        "description": "Kid-friendly menus, regional tasting options, and adaptable dining times for family comfort."
+      },
+      {
+        "title": "Interactive Cultural Experiences",
+        "description": "Immersive cultural workshops connecting children directly with local European heritage."
+      },
+      {
+        "title": "Age-Appropriate Entertainment",
+        "description": "Engaging evening performances, movie nights, and group games curated for multiple age groups."
+      },
+      {
+        "title": "Family-Oriented Programming",
+        "description": "Shared multigenerational excursions making group exploration seamless and memorable."
+      }
+    ],
+    "callout": "Availability varies by itinerary and departure date. Booking early is strongly advised."
+  },
+  "idealGuests": {
+    "eyebrow": "IDEAL GUESTS",
+    "title": "Who Are These Cruises Best For?",
+    "lead": "The Generations Collection is ideal for:",
+    "items": [
+      {
+        "title": "Families with School-Age Children",
+        "description": "Parents seeking cultural discovery, safe environments, and engaging experiences without massive ocean ship crowds."
+      },
+      {
+        "title": "Grandparents Traveling with Grandchildren",
+        "description": "Multigenerational travelers looking for stress-free logistics, walkable towns, and effortless shared memories."
+      },
+      {
+        "title": "Parents Seeking Educational Vacations",
+        "description": "Families prioritizing authentic history, art, and geography outside the traditional classroom."
+      },
+      {
+        "title": "Multigenerational Family Reunions",
+        "description": "Large family gatherings where private dining, adjoining staterooms, and all-inclusive ease satisfy every generation."
+      },
+      {
+        "title": "Families Celebrating Milestones",
+        "description": "Birthdays, anniversaries, graduations, and landmark family events celebrated with boutique luxury."
+      }
+    ],
+    "callout": "Rather than offering amusement parks or water slides, these cruises emphasize cultural discovery and shared experiences."
+  },
+  "destinations": {
+    "eyebrow": "POPULAR ITINERARIES",
+    "title": "Family-Friendly Destinations",
+    "subtitle": "Several European itineraries are particularly well suited for families.",
+    "items": [
+      {
+        "river": "Danube River",
+        "tag": "Imperial Capitals & Castles",
+        "highlights": [
+          "Vienna & Budapest city discoveries",
+          "Bratislava historic castle walks",
+          "Medieval fortress explorations",
+          "Interactive science & music museums",
+          "Scenic riverside cycling trails"
+        ]
+      },
+      {
+        "river": "Rhine River",
+        "tag": "Castles & Folklore",
+        "highlights": [
+          "Fairy-tale castles of the Rhine Gorge",
+          "Historic half-timbered villages",
+          "Interactive Cologne chocolate museum",
+          "Scenic cable car rides over vineyards",
+          "Riverfront promenade walks"
+        ]
+      },
+      {
+        "river": "Seine River",
+        "tag": "Art, Castles & History",
+        "highlights": [
+          "Paris landmark walking tours",
+          "Impressionist art & Monet's gardens",
+          "Normandy historic landing beaches",
+          "Château de Versailles visits",
+          "French culinary & pastry workshops"
+        ]
+      },
+      {
+        "river": "Venice Lagoon",
+        "tag": "Gondolas & Island Traditions",
+        "highlights": [
+          "Murano glass-blowing demonstrations",
+          "Burano colorful lace-making island",
+          "Gondola-filled canals & historic bridges",
+          "St. Mark's Basilica after-hours access",
+          "Authentic Italian pizza & gelato tastings"
+        ]
+      }
+    ]
+  },
+  "educationalExperiences": {
+    "eyebrow": "LEARNING THROUGH TRAVEL",
+    "title": "Educational Experiences",
+    "lead": "One of the biggest advantages of family river cruising is learning through travel.",
+    "bodyIntro": "Children and teenagers can experience:",
+    "pillars": [
+      {
+        "title": "Local History",
+        "description": "Centuries of European history brought to life by local expert guides and storytellers."
+      },
+      {
+        "title": "European Culture",
+        "description": "Authentic traditions, language immersion, and local customs experienced in every port."
+      },
+      {
+        "title": "Traditional Crafts",
+        "description": "Hands-on artisan demonstrations such as Murano glass-blowing and Bavarian woodwork."
+      },
+      {
+        "title": "Regional Cuisine",
+        "description": "Tasting local delicacies and interactive cooking workshops inspired by port specialties."
+      },
+      {
+        "title": "Historical Landmarks",
+        "description": "Iconic castles, cathedrals, and ancient monuments explored up close at a relaxed pace."
+      },
+      {
+        "title": "UNESCO World Heritage Sites",
+        "description": "Visiting globally recognized preservation sites along European waterways."
+      }
+    ],
+    "callout": "These experiences create meaningful learning opportunities outside the classroom that last a lifetime."
+  },
+  "youngExplorers": {
+    "eyebrow": "YOUNG EXPLORERS",
+    "title": "Activities for Younger Guests",
+    "subtitle": "Depending on the sailing, children and teens enjoy specialized programming:",
+    "items": [
+      {
+        "title": "Treasure Hunts",
+        "description": "Exciting discovery activities and riddles at each port of call."
+      },
+      {
+        "title": "Junior Cooking Experiences",
+        "description": "Hands-on culinary workshops and dessert-making inspired by local cuisine."
+      },
+      {
+        "title": "Interactive Excursions",
+        "description": "Guided walking tours and scavenger hunts designed to engage younger travelers."
+      },
+      {
+        "title": "Local Cultural Workshops",
+        "description": "Crafts, painting, and cultural activities connecting kids directly to local traditions."
+      },
+      {
+        "title": "Games & Trivia",
+        "description": "Age-appropriate board games, deck sports, and group trivia nights onboard."
+      },
+      {
+        "title": "Family Activities",
+        "description": "Shared multigenerational excursions and friendly family challenges."
+      },
+      {
+        "title": "Destination Entertainment",
+        "description": "Folklore performances, acoustic musicians, and themed evening shows."
+      }
+    ],
+    "note": "Specific activity schedules vary by itinerary, vessel, and departure date."
+  },
+  "familyDining": {
+    "eyebrow": "ONBOARD DINING",
+    "title": "Dining for Families",
+    "lead": "Uniworld's dining experience is designed to accommodate travelers of all ages.",
+    "intro": "Families can typically expect:",
+    "inclusions": [
+      "Flexible open-seating dining allowing the whole family to sit together comfortably",
+      "Child-friendly meal options and dedicated young traveler menus alongside gourmet fare",
+      "Destination-inspired regional cuisine featuring authentic culinary traditions at every port",
+      "Locally sourced farm-to-table ingredients selected fresh each morning",
+      "Artisanal European desserts, pastries, and house-made gelato selections",
+      "Attentive dietary accommodations for allergies, gluten-free, vegan, and vegetarian preferences"
+    ],
+    "callout": "Parents are encouraged to notify the cruise line of any dietary needs or allergies before departure."
+  },
+  "accommodations": {
+    "eyebrow": "ACCOMMODATIONS",
+    "title": "Cabins for Families",
+    "subtitle": "Accommodation options depend on the ship.",
+    "options": [
+      {
+        "familySize": "Two guests",
+        "recommendation": "Deluxe Stateroom",
+        "description": "Classic luxury stateroom with handcrafted Savoir beds, marble bathroom, and ample wardrobe storage."
+      },
+      {
+        "familySize": "Parent and child",
+        "recommendation": "French Balcony Cabin",
+        "description": "Floor-to-ceiling glass drop-down window providing sweeping views of riverside landscapes."
+      },
+      {
+        "familySize": "Three guests",
+        "recommendation": "Suite (where available)",
+        "description": "Spacious suite with convertible sofa bed, dedicated butler service, and generous living area."
+      },
+      {
+        "familySize": "Larger families",
+        "recommendation": "Multiple adjoining or nearby cabins",
+        "description": "Adjacent or connecting staterooms providing privacy for parents and security for children."
+      }
+    ],
+    "note": "Because river ships are smaller than ocean cruise ships, booking early provides the best selection."
+  },
+  "whyRiverCruising": {
+    "eyebrow": "WHY RIVER CRUISING",
+    "title": "Why Families Choose River Cruises",
+    "lead": "Compared with large ocean cruises, river cruising offers:",
+    "pillars": [
+      {
+        "title": "Smaller Ships",
+        "description": "Intimate boutique vessels with under 150 guests eliminate overwhelming crowds and long queues."
+      },
+      {
+        "title": "Fewer Crowds",
+        "description": "Peaceful sundecks and personal attention create a safe, relaxing family environment."
+      },
+      {
+        "title": "Walkable Destinations",
+        "description": "Direct town access allows families to explore at their own pace without bus transfers."
+      },
+      {
+        "title": "City-Center Docking",
+        "description": "Step right off the ship into charming village squares and historic old towns."
+      },
+      {
+        "title": "Included Excursions",
+        "description": "Curated daily tours, bicycles, and guided excursions included without surprise bills."
+      },
+      {
+        "title": "Cultural Experiences",
+        "description": "Authentic discovery that connects kids with the world in a meaningful way."
+      },
+      {
+        "title": "Personalized Service",
+        "description": "High crew-to-guest ratios ensure staff know your family's names and preferences."
+      }
+    ],
+    "ageHeading": "Is There a Minimum Age?",
+    "ageBody": "Minimum age policies may vary depending on the itinerary and departure. Some family-focused sailings are specifically designed for younger travelers, while standard departures may have different age recommendations. Always review the age requirements for your chosen itinerary before booking."
+  },
+  "planningTips": {
+    "eyebrow": "PLANNING ADVICE",
+    "title": "Tips for Planning a Family Cruise",
+    "subtitle": "Essential strategies to make your multigenerational journey smooth and stress-free:",
+    "strategies": [
+      {
+        "title": "Travel During School Holidays",
+        "description": "Target designated Generations Collection sailings scheduled during June, July, August, and festive winter breaks."
+      },
+      {
+        "title": "Reserve Cabins Early",
+        "description": "Connecting cabins and family-friendly suites sell out 6 to 12 months ahead due to limited boutique capacity."
+      },
+      {
+        "title": "Review Excursion Activity Levels",
+        "description": "Balance active walking and biking tours with gentle-pace excursions suited for grandparents and younger kids."
+      },
+      {
+        "title": "Pack Comfortable Walking Shoes",
+        "description": "European cobblestone streets and castle paths require broken-in walking shoes or sturdy sneakers."
+      },
+      {
+        "title": "Bring Lightweight Layers",
+        "description": "Prepare for morning sundeck breezes that turn into sunny afternoon walking temperatures."
+      },
+      {
+        "title": "Check Passport Validity",
+        "description": "Ensure every family member's passport has at least 6 months validity beyond your planned return date."
+      },
+      {
+        "title": "Purchase Comprehensive Travel Insurance",
+        "description": "Protect your family's investment with coverage for unexpected health issues, delays, and trip interruptions."
+      }
+    ],
+    "callout": "Advance planning helps ensure a smooth, worry-free family vacation."
+  },
+  "worthIt": {
+    "eyebrow": "KEY TAKEAWAYS",
+    "title": "Is the Generations Collection Worth It?",
+    "takeaways": [
+      "The Generations Collection offers selected family-focused departures.",
+      "Activities are designed to engage both children and adults.",
+      "Popular itineraries include the Danube, Rhine, Seine, and Venice Lagoon.",
+      "Educational excursions are a highlight of the experience.",
+      "Family accommodations are limited, making early booking important.",
+      "Dining is flexible and can accommodate many dietary requirements.",
+      "River cruising offers a relaxed alternative to traditional family vacations."
+    ],
+    "paragraphs": [
+      "Families seeking educational travel, cultural immersion, and luxury accommodations often find the Generations Collection to be an excellent alternative to traditional resort vacations.",
+      "Instead of spending most of the trip onboard, guests enjoy exploring multiple destinations while returning each evening to the comfort of a boutique floating hotel."
+    ]
+  },
+  "faqs": [
+    {
+      "question": "What is the Uniworld Generations Collection?",
+      "answer": "It is a selection of family-focused departures designed for multigenerational travelers with activities and experiences suitable for different age groups."
+    },
+    {
+      "question": "Are Uniworld River Cruises suitable for children?",
+      "answer": "Yes. Selected Generations Collection sailings are designed specifically for families with children."
+    },
+    {
+      "question": "What is the minimum age for children?",
+      "answer": "Minimum age requirements vary by itinerary and departure, so check your selected sailing before booking."
+    },
+    {
+      "question": "Which Uniworld itinerary is best for families?",
+      "answer": "The Danube and Rhine are among the most popular family-friendly itineraries."
+    },
+    {
+      "question": "Are children's activities included?",
+      "answer": "Selected family departures include activities designed for younger guests."
+    },
+    {
+      "question": "Are family cabins available?",
+      "answer": "Suites and nearby cabins can accommodate families, but availability is limited."
+    },
+    {
+      "question": "Is dining suitable for children?",
+      "answer": "Yes. Flexible dining and child-friendly meal options are generally available."
+    },
+    {
+      "question": "Are excursions included?",
+      "answer": "Yes. Guided shore excursions are typically included in the cruise fare."
+    },
+    {
+      "question": "Is Wi-Fi available onboard?",
+      "answer": "Yes. Complimentary Wi-Fi is generally included."
+    },
+    {
+      "question": "Are grandparents welcome on Generations Collection cruises?",
+      "answer": "Yes. These sailings are specifically designed for multigenerational family travel."
+    },
+    {
+      "question": "Are there babysitting services?",
+      "answer": "Babysitting services are generally not available onboard."
+    },
+    {
+      "question": "What should families pack?",
+      "answer": "Pack comfortable walking shoes, weather-appropriate clothing, medications, travel documents, and a day bag."
+    },
+    {
+      "question": "Can dietary restrictions be accommodated?",
+      "answer": "Yes. Most dietary requirements can be accommodated with advance notice."
+    },
+    {
+      "question": "When should families book?",
+      "answer": "Booking six to twelve months in advance provides the best selection of cabins and departures."
+    },
+    {
+      "question": "Is the Generations Collection worth it?",
+      "answer": "Families seeking cultural experiences, luxury accommodations, and educational travel often find it an excellent choice."
+    }
+  ],
+  "cta": {
+    "title": "Plan Your Family's Next Adventure",
+    "description": "Plan an unforgettable family vacation with Uniworld's Generations Collection by comparing itineraries, choosing family-friendly accommodations, and booking early for the best availability.\n\nWith over four decades of luxury travel expertise, Angela Hughes and the team at Trips & Ships Luxury Travel help families find the perfect river cruise experience.",
+    "primaryCtaText": "Schedule a Consultation",
+    "primaryCtaLink": "/contact",
+    "secondaryCtaText": "Explore Family Cruises",
+    "secondaryCtaLink": "/uniworld-river-cruises"
+  }
+}
