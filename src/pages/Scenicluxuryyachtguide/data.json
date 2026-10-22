@@ -1,0 +1,368 @@
+{
+  "seo": {
+    "title": "Scenic Luxury Yacht Guide | Scenic Eclipse Discovery Yachts Expert Guide",
+    "metaTitle": "Scenic Luxury Yacht Guide | Scenic Eclipse Discovery Yachts Expert Guide",
+    "metaDescription": "Complete guide to Scenic Luxury Yachts including Scenic Eclipse, Scenic Eclipse II, destinations, suites, dining, expedition experiences, and expert cruise planning.",
+    "keywords": "Scenic Luxury Yacht Guide, Scenic Eclipse, Scenic Discovery Yachts, Scenic Eclipse II, Luxury Expedition Yachts, Scenic Luxury Cruises",
+    "canonicalUrl": "https://www.tripsandships.com/scenic-luxury-yacht-guide"
+  },
+  "hero": {
+    "badge": "Scenic Eclipse Cruises & Luxury Expeditions",
+    "title": "Scenic Luxury Yacht Guide",
+    "subtitle": "Discover Scenic Eclipse The World's First Discovery Yachts",
+    "description": "Scenic has redefined luxury cruising with the introduction of Scenic Eclipse and Scenic Eclipse II, combining the elegance of a six-star luxury yacht with the capabilities of a true expedition vessel.",
+    "primaryCtaText": "Schedule a Consultation",
+    "primaryCtaLink": "/contact",
+    "secondaryCtaText": "Request Itinerary Options",
+    "secondaryCtaLink": "#destinations"
+  },
+  "intro": {
+    "eyebrow": "THE WORLD'S FIRST DISCOVERY YACHTS",
+    "heading": "Discover Scenic Eclipse The World's First Discovery Yachts",
+    "lead": "Scenic has redefined luxury cruising with the introduction of Scenic Eclipse and Scenic Eclipse II, combining the elegance of a six-star luxury yacht with the capabilities of a true expedition vessel.",
+    "paragraphs": [
+      "Unlike traditional cruise ships, Scenic's Discovery Yachts are purpose-built to reach remote destinations while offering all-inclusive luxury, world-class dining, spacious suites, and unforgettable adventures.",
+      "Whether you're dreaming of Antarctica, the Arctic, the Mediterranean, the South Pacific, or the Norwegian Fjords, Scenic delivers an experience where exploration and luxury exist in perfect harmony."
+    ]
+  },
+  "authorityBox": {
+    "title": "Insider Tip",
+    "quote": "This guide will help you understand everything Scenic offers and determine whether a Scenic luxury yacht is the right choice for your next journey.",
+    "author": "Angela Hughes",
+    "role": "CEO & Luxury Expedition Specialist"
+  },
+  "whyChoose": {
+    "title": "Why Choose Scenic?",
+    "subtitle": "Scenic appeals to travelers who want both adventure and uncompromising luxury.",
+    "lead": "Every voyage is designed to eliminate hidden costs while maximizing unforgettable experiences. Guests enjoy:",
+    "pillars": [
+      {
+        "title": "Truly all-inclusive luxury",
+        "description": "Every voyage is designed to eliminate hidden costs while maximizing unforgettable six-star experiences."
+      },
+      {
+        "title": "Butler service for every suite",
+        "description": "Attentive, personalized white-glove butler service provided for 100% of suites across all decks."
+      },
+      {
+        "title": "Spacious veranda suites",
+        "description": "Every stateroom features a private outdoor walkout veranda with floor-to-ceiling glass doors."
+      },
+      {
+        "title": "Up to 10 dining experiences",
+        "description": "From French haute cuisine at Lumière to Asian fusion and teppanyaki at Koko's, with zero specialty surcharges."
+      },
+      {
+        "title": "Complimentary premium beverages",
+        "description": "Top-shelf spirits, over 130 whiskeys, fine sommelier-selected wines, and in-suite minibar restocked daily."
+      },
+      {
+        "title": "Included gratuities",
+        "description": "All onboard and onshore crew and guide gratuities are completely included in your fare."
+      },
+      {
+        "title": "Included Wi-Fi",
+        "description": "Complimentary high-speed satellite Wi-Fi access throughout all public areas and staterooms."
+      },
+      {
+        "title": "Scenic Enrich experiences",
+        "description": "Exclusive, once-in-a-lifetime private concerts and cultural encounters reserved solely for Scenic guests."
+      },
+      {
+        "title": "Scenic Freechoice excursions",
+        "description": "A diverse program of all-inclusive daily shore excursions tailored to active, cultural, and relaxed travel paces."
+      },
+      {
+        "title": "Zodiac excursions",
+        "description": "Guided Zodiac landings, wildlife cruising, and remote shore expeditions led by expert Discovery Teams."
+      },
+      {
+        "title": "Helicopter and submarine experiences",
+        "description": "Multi-dimensional exploration with two onboard state-of-the-art Airbus helicopters and custom submersible (select voyages)."
+      }
+    ]
+  },
+  "discoveryYacht": {
+    "title": "Meet The Scenic Discovery Yachts Scenic Eclipse",
+    "lead": "Launched in 2019, Scenic Eclipse introduced a completely new category of luxury cruising.",
+    "highlights": [
+      "Approximately 228 guests (200 in Polar Regions)",
+      "Spacious all-veranda suites",
+      "Nearly 1:1 crew-to-guest ratio",
+      "Two onboard helicopters (select itineraries)",
+      "Custom-built submarine",
+      "Polar Class 6 rating",
+      "Advanced stabilization systems",
+      "State-of-the-art expedition technology"
+    ],
+    "eclipse2Title": "Scenic Eclipse II",
+    "eclipse2Text": "Scenic Eclipse II builds upon the success of the original Discovery Yacht while offering refined public spaces, expanded wellness facilities, and even more immersive expedition experiences. Guests enjoy the same six-star service with enhanced comfort and innovation."
+  },
+  "suites": {
+    "title": "Luxury Suites",
+    "lead": "Every accommodation aboard Scenic Eclipse features:",
+    "features": [
+      "Private veranda",
+      "Butler service",
+      "King-size Scenic Slumber Bed",
+      "Premium linens",
+      "Spacious marble bathroom",
+      "Mini-bar",
+      "Luxury bath amenities",
+      "Personalized in-suite dining"
+    ],
+    "note": "Suite categories range from Deluxe Veranda Suites to the spectacular Two-Bedroom Owner's Penthouse Suite."
+  },
+  "dining": {
+    "title": "Dining Onboard",
+    "lead": "Scenic offers one of the most impressive culinary programs at sea. Dining venues may include:",
+    "venues": [
+      "Elements",
+      "Koko's Asian Fusion",
+      "Night Market @ Koko's",
+      "Lumière French Cuisine",
+      "Sushi @ Koko's",
+      "Azure Bar & Café",
+      "Yacht Club Grill",
+      "Chef's Table",
+      "In-suite dining"
+    ],
+    "footnote": "Menus emphasize regional ingredients and international cuisine."
+  },
+  "wellness": {
+    "title": "Wellness & Spa",
+    "intro": "Scenic Eclipse offers a destination-inspired wellness experience. Facilities include:",
+    "facilities": [
+      "Senses Spa",
+      "Infrared sauna",
+      "Salt therapy lounge",
+      "Steam room",
+      "Yoga & Pilates studio",
+      "Gym",
+      "Vitality pools",
+      "Outdoor relaxation areas"
+    ],
+    "footnote": "Guests can enjoy wellness treatments while sailing through some of the world's most spectacular scenery."
+  },
+  "expedition": {
+    "title": "Expedition Experiences",
+    "intro": "Scenic's Discovery Team leads immersive adventures ashore. Depending on your itinerary, experiences may include:",
+    "experiences": [
+      {
+        "title": "Zodiac Cruises & Wildlife Viewing",
+        "description": "Scenic's Discovery Team navigates Zodiacs through iceberg fields, sea caves, and remote shores for close wildlife encounters.",
+        "category": "Polar Zodiac Landings"
+      },
+      {
+        "title": "Sea Kayaking & Paddleboarding",
+        "description": "Gliding silently along glacial walls, calm fjords, and tropical bays in sea kayaks and stand-up paddleboards.",
+        "category": "Active Ocean Discovery"
+      },
+      {
+        "title": "Guided Nature Walks & Cultural Hikes",
+        "description": "Guided alpine hikes, historic site visits, snorkeling, and intimate cultural encounters led by expert naturalists.",
+        "category": "Immersive Shore Excursions"
+      }
+    ]
+  },
+  "destinations": {
+    "title": "Popular Scenic Yacht Destinations",
+    "subtitle": "Explore the world's most extraordinary destinations aboard Scenic Discovery Yachts:",
+    "items": [
+      {
+        "name": "Antarctica",
+        "text": "Experience towering glaciers, penguin colonies, whales, seals, and Zodiac landings.",
+        "category": "Polar Exploration"
+      },
+      {
+        "name": "Arctic & Greenland",
+        "text": "Visit Svalbard, Iceland, Greenland, and the Canadian Arctic while searching for polar bears and incredible wildlife.",
+        "category": "High Arctic Expedition"
+      },
+      {
+        "name": "Mediterranean",
+        "text": "Discover Italy, Greece, Croatia, France, Spain, and hidden coastal villages inaccessible to larger ships.",
+        "category": "Historic Yachting"
+      },
+      {
+        "name": "Norwegian Fjords",
+        "text": "Cruise dramatic fjords, charming villages, waterfalls, and spectacular mountain scenery.",
+        "category": "Dramatic Coastlines"
+      },
+      {
+        "name": "South Pacific",
+        "text": "Explore Fiji, French Polynesia, Papua New Guinea, Indonesia, and remote tropical islands.",
+        "category": "Tropical Archipelagos"
+      },
+      {
+        "name": "Australia & New Zealand",
+        "text": "Experience the Kimberley, Tasmania, New Zealand, and Australia's spectacular coastline.",
+        "category": "Kimberley & Oceania"
+      }
+    ]
+  },
+  "inclusions": {
+    "title": "What's Included?",
+    "lead": "Scenic is known for exceptional value through comprehensive inclusions. Most voyages include:",
+    "items": [
+      "Luxury accommodations",
+      "Butler service",
+      "Fine dining",
+      "Premium beverages",
+      "Wi-Fi",
+      "Gratuities",
+      "Scenic Freechoice excursions",
+      "Scenic Enrich experiences",
+      "Expedition equipment",
+      "Zodiac excursions",
+      "Airport transfers (select itineraries)"
+    ],
+    "footnote": "Some premium experiences such as helicopter flights or submarine dives may carry an additional fee depending on the itinerary."
+  },
+  "whoShouldCruise": {
+    "title": "Who Should Cruise with Scenic?",
+    "subtitle": "Travelers who enjoy both exploration and refined luxury often consider Scenic among the very best expedition cruise lines in the world.",
+    "items": [
+      "Luxury expedition cruising",
+      "Small ship experiences",
+      "Adventure with comfort",
+      "Exceptional dining",
+      "Personalized service",
+      "Couples travel",
+      "Bucket-list destinations",
+      "All-inclusive value"
+    ]
+  },
+  "whyBookWithUs": {
+    "title": "Why Book with Trips & Ships Luxury Travel?",
+    "lead": "Choosing the right Scenic itinerary involves much more than selecting a destination. Our advisors help you:",
+    "reasons": [
+      "Compare Scenic itineraries",
+      "Choose the right suite",
+      "Select the best sailing season",
+      "Understand what's included",
+      "Compare Scenic with other luxury cruise lines",
+      "Arrange pre- and post-cruise travel",
+      "Coordinate airfare",
+      "Secure exclusive offers",
+      "Plan private tours",
+      "Provide ongoing travel support"
+    ],
+    "footnote": "Our goal is to ensure every Scenic voyage exceeds your expectations."
+  },
+  "relatedGuides": {
+    "title": "Related Scenic Guides",
+    "subtitle": "Continue your research with our expert Scenic resources:",
+    "guides": [
+      "Scenic vs Viking",
+      "Scenic vs Explora Journeys",
+      "Scenic vs Silversea",
+      "Scenic vs Seabourn",
+      "Scenic Antarctica Cruises",
+      "Scenic Mediterranean Cruises",
+      "Scenic Arctic Cruises",
+      "Scenic Eclipse vs Scenic Eclipse II"
+    ]
+  },
+  "expertInsight": {
+    "badge": "EXPERT INSIGHT",
+    "name": "Angela Hughes",
+    "title": "CEO of Trips & Ships Luxury Travel & Founder of Luxury Travel University",
+    "heading": "Why Modern Luxury Travelers Are Choosing Scenic",
+    "quote": "According to Angela Hughes, many travelers are initially attracted to Scenic because of its ultra-luxury discovery yachts but ultimately fall in love with the all-inclusive onboard expedition experience.",
+    "bio": "As founder of Luxury Travel University and a globally recognized luxury travel speaker, Angela Hughes helps travelers compare luxury cruise experiences realistically based on real-world expertise rather than generic online recommendations.",
+    "priorities": [
+      "Polar discovery yachting",
+      "Truly all-inclusive luxury",
+      "Butler service for every suite",
+      "Helicopter & submarine features",
+      "Up to 10 dining experiences",
+      "Immersive Zodiac excursions"
+    ],
+    "expertise": [
+      "Ultra-luxury yachting",
+      "Polar expeditions",
+      "Butler services",
+      "Luxury cruise planning",
+      "Custom expedition travel"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "The Caribbean: Paradise for Yacht Charters",
+      "answer": "The Caribbean is a sailing paradise with turquoise waters, diverse islands, and destinations like the British Virgin Islands, Antigua and Barbuda, and Saint Lucia offering calm waters, beautiful beaches, and vibrant culture."
+    },
+    {
+      "question": "The Mediterranean: Culture, History, and Coastlines",
+      "answer": "The Mediterranean blends sailing with rich culture, history, and cuisine, with highlights including Greece, Italy's Amalfi Coast, and Turkey's Turquoise Coast offering ancient ruins and stunning coastlines."
+    },
+    {
+      "question": "Greece -- Cyclades & Ionian Islands",
+      "answer": "Greece offers world-class sailing with iconic Cyclades islands like Santorini and Mykonos, and lush Ionian islands like Corfu, each offering unique beauty and cultural experiences."
+    },
+    {
+      "question": "Croatia -- Dalmatian Coast",
+      "answer": "Croatia's Dalmatian Coast features medieval towns, clear Adriatic waters, and highlights like Dubrovnik, Split, and Hvar offering historic architecture and natural beauty."
+    },
+    {
+      "question": "French Riviera, France",
+      "answer": "The French Riviera combines luxury, sophistication, and beautiful coastlines with iconic destinations like Nice, Cannes, and Monaco offering cultural events and upscale amenities."
+    },
+    {
+      "question": "Thailand -- Andaman Sea",
+      "answer": "Thailand's Andaman Sea offers turquoise waters, limestone cliffs, and islands like Phang Nga Bay, Phi Phi Islands, and Similan Islands with excellent snorkeling and marine life."
+    },
+    {
+      "question": "Whitsunday Islands, Australia",
+      "answer": "The Whitsunday Islands near the Great Barrier Reef offer world-famous Whitehaven Beach, incredible diving, and 74 islands with pristine silica sand and marine biodiversity."
+    },
+    {
+      "question": "Seychelles, Indian Ocean",
+      "answer": "The Seychelles archipelago features secluded beaches, unique wildlife including giant tortoises, vibrant coral reefs, and year-round warm climate perfect for yachting."
+    },
+    {
+      "question": "Galápagos Islands, Ecuador",
+      "answer": "The Galapagos Islands offer unparalleled wildlife encounters, pristine environments, and rich marine life for snorkeling and diving with species found nowhere else on Earth."
+    },
+    {
+      "question": "Norway's Fjords",
+      "answer": "Norway's fjords offer dramatic landscapes, towering cliffs, serene waters, and charming coastal towns creating an enchanting environment perfect for sailing and exploration."
+    },
+    {
+      "question": "Tips for Planning Your Yacht Charter Adventure",
+      "answer": "Planning a yacht charter requires choosing the right season, understanding local regulations, budgeting for all expenses including mooring fees and provisions, and matching destinations to your experience level."
+    },
+    {
+      "question": "Conclusion: Choosing Your Dream Sailing Destination",
+      "answer": "Choosing the perfect sailing destination depends on your preferences for luxury, wildlife, culture, or adventure. Each destination offers unique experiences for an unforgettable nautical adventure."
+    },
+    {
+      "question": "I'm a first-time sailor which destinations are most beginner-friendly?",
+      "answer": "The British Virgin Islands in the Caribbean are ideal, thanks to calm waters and short island hops. Greece's Ionian Islands are also great for relaxed sailing, with gentle conditions and lush, sheltered scenery."
+    },
+    {
+      "question": "How do the Caribbean and the Mediterranean differ as sailing experiences?",
+      "answer": "The Caribbean emphasizes turquoise waters, hidden coves, and flexible routes from lively ports to secluded anchorages. The Mediterranean blends sailing with rich culture and history, ancient port cities, vibrant local markets, and standout cuisine."
+    },
+    {
+      "question": "Which destinations are best for wildlife and underwater exploration?",
+      "answer": "The Galapagos offer rare wildlife and pristine environments. Seychelles feature giant tortoises and vibrant reefs. Thailand's Andaman Sea is great for snorkeling, and Australia's Whitsundays sit beside the Great Barrier Reef for unforgettable diving."
+    },
+    {
+      "question": "When is the best season to sail these places?",
+      "answer": "It varies by destination as seasonality shapes wind, sea state, and crowds. One notable exception is Seychelles, which is suitable for year-round yachting."
+    },
+    {
+      "question": "What should I plan for before booking a yacht charter?",
+      "answer": "Align your destination with your experience level, pick the right season, understand local regulations and required documents, set a full-trip budget, and map a safe route."
+    }
+  ],
+  "cta": {
+    "title": "Ready to Sail Aboard Scenic Eclipse?",
+    "description": "From Antarctica to the Mediterranean, let our expert advisors help you choose the perfect Scenic voyage, suite, and season for an unforgettable six-star expedition.",
+    "primaryCtaText": "Schedule a Consultation",
+    "primaryCtaLink": "/contact",
+    "secondaryCtaText": "Request Itinerary Options",
+    "secondaryCtaLink": "#destinations"
+  }
+}

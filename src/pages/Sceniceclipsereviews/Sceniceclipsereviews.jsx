@@ -1,895 +1,454 @@
-import ProfilePictureAH from "../../assets/Media (2).jpg"
-import Navbar from '../../components/Navbar/Navbar'
-import './Sceniceclipsereviews.css'
-import antarcticaImg from "../../assets/Sceniceclipsereviews/zermatt-switzerland-matterhorn-snowy-alpine-village-winter.webp"
-import arcticImg from "../../assets/Sceniceclipsereviews/glacier-express-switzerland-scenic-railway-snowy-alps-winter.webp"
-import greenlandImg from "../../assets/Sceniceclipsereviews/hallstatt-austria-snowy-lakeside-village-alps-winter-travel-destination.webp"
-import mediterraneanImg from "../../assets/Sceniceclipsereviews/santorini-greece-oia-blue-domed-churches-whitewashed-village-caldera-sea-view.webp"
-import fjordsImg from "../../assets/Sceniceclipsereviews/lauterbrunnen-switzerland-waterfall-valley-alpine-village-summer.webp"
-import southPacificImg from "../../assets/Sceniceclipsereviews/zakynthos-greece-navagio-beach-shipwreck-cove-turquoise-water-cliffs.webp"
-import {
-    Sparkles, Phone, LayoutList, Star, CheckCircle, XCircle, Ship, Anchor, Compass, Users, Heart, Wifi, Coffee, Waves, Snowflake, Mountain, Globe, Award, Crown, MapPin, Wind, Plane, ChefHat, Bed, Home, Sun, Utensils
-} from 'lucide-react'
-import { Helmet } from 'react-helmet-async'
-import { useState, useEffect } from 'react'
-import { Link } from 'react-router'
+import React from 'react';
+import { Helmet } from 'react-helmet-async';
+import Navbar from '@/components/Navbar/Navbar';
 
-// import hero1 from '../../assets/ScenicEclipseReviews/scenic-eclipse-luxury-expedition-yacht-exterior.jpg'
-// import hero2 from '../../assets/ScenicEclipseReviews/scenic-eclipse-discovery-yacht-antarctica-cruise.jpg'
-// import hero3 from '../../assets/ScenicEclipseReviews/scenic-eclipse-suite-ocean-view-veranda.jpg'
+// Page Data JSON — Exact original content preserved
+import pageData from './data.json';
+import './Sceniceclipsereviews.css';
 
-// import introImg from '../../assets/ScenicEclipseReviews/scenic-eclipse-discovery-yacht-six-star-luxury.jpg'
-// import impressionsImg from '../../assets/ScenicEclipseReviews/scenic-eclipse-observation-lounge-interior-design.jpg'
-// import suitesImg from '../../assets/ScenicEclipseReviews/scenic-eclipse-suite-butler-service-luxury-bed.jpg'
+// Shared UI System Components (Strictly from @/components/ui)
+import ComparisonHero from '@/components/ui/ComparisonHero';
+import EditorialIntroSplit from '@/components/ui/EditorialIntroSplit';
+import AuthorityBox from '@/components/ui/AuthorityBox';
+import FeatureSplit from '@/components/ui/FeatureSplit';
+import DiningVenuesMasonry from '@/components/ui/DiningVenuesMasonry';
+import BrandPillarsShowcase from '@/components/ui/BrandPillarsShowcase';
+import ThreeColumnGrid from '@/components/ui/ThreeColumnGrid';
+import FeatureGrid from '@/components/ui/FeatureGrid';
+import InclusionsList from '@/components/ui/InclusionsList';
+import TravelerTypeGrid from '@/components/ui/TravelerTypeGrid';
+import ProsConsCards from '@/components/ui/ProsConsCards';
+import ConclusionSection from '@/components/ui/ConclusionSection';
+import ExpertAuthorityChecklist from '@/components/ui/ExpertAuthorityChecklist';
+import ExpertCredentials from '@/components/ui/ExpertCredentials';
+import FAQAccordion from '@/components/ui/FAQAccordion';
+import CenterCTA from '@/components/ui/CenterCTA';
 
-// Custom Image Placeholder Component
-function ScePlaceholder({ label, className = '' }) {
-    return (
-        <div className={`sce-image-placeholder ${className}`} role="img" aria-label={`Image placeholder: ${label}`}>
-            <Compass size={28} />
-            <span>{label}</span>
-        </div>
-    )
-}
+// Profile Pictures for Expert Authority and Insider Tip
+import ProfilePictureAH from '@/assets/Media (2).jpg';
+import insiderTipImg from '@/assets/image.jpg';
+
+// Authentic Media Assets strictly from ScenicLuxuryCruises via @/assets/Sceniceclipsereviews
+import heroBgImg from '@/assets/Sceniceclipsereviews/hero-scenic-eclipse-antarctica.webp';
+import discoveryYachtsImg from '@/assets/Sceniceclipsereviews/scenic-eclipse-discovery-yachts.webp';
+import helicopterImg from '@/assets/Sceniceclipsereviews/scenic-eclipse-helicopter.webp';
+import observationLoungeImg from '@/assets/Sceniceclipsereviews/scenic-eclipse-observation-lounge.webp';
+import verandahSuiteImg from '@/assets/Sceniceclipsereviews/scenic-eclipse-verandah-suite.webp';
+
+// Dining Venues Images
+import diningLumiereImg from '@/assets/Sceniceclipsereviews/dining-lumiere.webp';
+import diningElementsImg from '@/assets/Sceniceclipsereviews/dining-elements.webp';
+import diningKokosImg from '@/assets/Sceniceclipsereviews/dining-kokos.webp';
+import diningNightMarketImg from '@/assets/Sceniceclipsereviews/dining-night-market.webp';
+import diningYachtClubImg from '@/assets/Sceniceclipsereviews/dining-yacht-club.webp';
+import diningAzureImg from '@/assets/Sceniceclipsereviews/dining-azure.webp';
+
+// Expedition & Inclusions Images
+import expeditionZodiacImg from '@/assets/Sceniceclipsereviews/expedition-zodiac.webp';
+import expeditionKayakImg from '@/assets/Sceniceclipsereviews/expedition-kayak.webp';
+import expeditionSubmarineImg from '@/assets/Sceniceclipsereviews/expedition-submarine.webp';
+import inclusionsVitalityPoolImg from '@/assets/Sceniceclipsereviews/inclusions-vitality-pool.webp';
+
+// Destination Images
+import destAntarcticaImg from '@/assets/Sceniceclipsereviews/dest-antarctica.webp';
+import destArcticImg from '@/assets/Sceniceclipsereviews/dest-arctic.webp';
+import destGreenlandImg from '@/assets/Sceniceclipsereviews/dest-greenland.webp';
+import destMediterraneanImg from '@/assets/Sceniceclipsereviews/dest-mediterranean.webp';
+import destFjordsImg from '@/assets/Sceniceclipsereviews/dest-norwegian-fjords.webp';
+import destSouthPacificImg from '@/assets/Sceniceclipsereviews/dest-south-pacific.webp';
+
+// Final CTA Background
+import ctaBgImg from '@/assets/Sceniceclipsereviews/cta-sailaway-lisbon.webp';
 
 function ScenicEclipseReviews() {
+    // 1. Data mapping for Dining Venues (DiningVenuesMasonry)
+    const diningImages = [
+        diningLumiereImg,
+        diningElementsImg,
+        diningKokosImg,
+        diningNightMarketImg,
+        diningYachtClubImg,
+        diningAzureImg,
+        diningElementsImg,
+        diningKokosImg
+    ];
+    const diningItems = pageData.dining.venues.map((venue, idx) => ({
+        title: venue.title,
+        category: venue.category,
+        description: venue.description,
+        image: diningImages[idx % diningImages.length]
+    }));
 
-    /* Hero rotating background images */
-    const sceHeroImages = []
-    const [sceCurrentHero, setSceCurrentHero] = useState(0)
-    useEffect(() => {
-        const sceTimer = setInterval(() => {
-            setSceCurrentHero((prev) => (prev + 1) % sceHeroImages.length)
-        }, 5000)
-        return () => clearInterval(sceTimer)
-    }, [sceHeroImages.length])
+    // 2. Data mapping for Service (BrandPillarsShowcase)
+    const serviceData = {
+        title: pageData.service.title,
+        subtitle: `${pageData.service.lead} ${pageData.service.footnote}`,
+        pillars: pageData.service.highlights.map(item => ({
+            title: item.title,
+            description: item.description,
+            icon: item.icon
+        }))
+    };
 
-    const [sceActiveFaq, setSceActiveFaq] = useState(null)
-    const sceToggleFaq = (index) => {
-        setSceActiveFaq(sceActiveFaq === index ? null : index)
-    }
+    // 3. Data mapping for Expedition Experiences (ThreeColumnGrid)
+    const expeditionImages = [expeditionZodiacImg, expeditionKayakImg, expeditionSubmarineImg];
+    const expeditionItems = pageData.expedition.experiences.map((exp, idx) => ({
+        title: exp.title,
+        description: exp.description,
+        features: [],
+        category: exp.category,
+        image: expeditionImages[idx],
+        placeholderLabel: exp.title
+    }));
 
-    /* Reusable star rating renderer */
-    const SceRating = ({ label, dark }) => (
-        <div className={`sce-rating ${dark ? 'sce-rating-dark' : ''}`}>
-            <span className="sce-rating-stars">
-                {[...Array(5)].map((_, i) => (
-                    <Star key={i} size={18} />
-                ))}
-            </span>
-            <span className="sce-rating-text">{label}</span>
-        </div>
-    )
+    // 4. Data mapping for Wellness Facilities (FeatureGrid)
+    const wellnessFeatures = pageData.wellness.facilities.map(fac => ({
+        title: fac,
+        description: "Six-star relaxation and restorative sanctuary aboard Scenic Eclipse."
+    }));
 
-    /* First Impressions */
-    const sceFirstImpressionsList = [
-        { text: 'Elegant contemporary interiors', icon: Sparkles },
-        { text: 'Spacious observation lounges', icon: LayoutList },
-        { text: 'Floor-to-ceiling windows', icon: Sun },
-        { text: 'Exceptional crew attention', icon: Users },
-        { text: 'Relaxed luxury atmosphere', icon: Heart },
-        { text: 'Small ship intimacy', icon: Ship }
-    ]
+    // 5. Data mapping for Destinations (ThreeColumnGrid)
+    const destImages = [
+        destAntarcticaImg,
+        destArcticImg,
+        destGreenlandImg,
+        destMediterraneanImg,
+        destFjordsImg,
+        destSouthPacificImg
+    ];
+    const destinationItems = pageData.destinations.items.map((dest, idx) => ({
+        title: dest.name,
+        description: dest.desc,
+        features: [],
+        category: dest.category,
+        image: destImages[idx],
+        placeholderLabel: dest.name
+    }));
 
-    /* Suites & Accommodations */
-    const sceSuiteHighlights = [
-        'Butler service for every suite', 'King-size Scenic Slumber Bed', 'Spacious seating area',
-        'Walk-in closet (select categories)', 'Marble bathrooms', 'Luxury bath amenities',
-        'Pillow menu', 'Fully stocked mini-bar', 'In-suite dining'
-    ]
+    // 6. Data mapping for Who Should Choose (TravelerTypeGrid)
+    const audienceIcons = ["Compass", "Heart", "Mountain", "Ship", "UtensilsCrossed", "Star", "Anchor", "Gift"];
+    const audienceItems = pageData.audience.items.map((item, idx) => ({
+        title: item,
+        description: "Perfect for travelers seeking six-star ultra-luxury combined with authentic expedition adventures, personalized service, and all-inclusive value.",
+        icon: audienceIcons[idx % audienceIcons.length]
+    }));
 
-    /* Dining */
-    const sceDiningVenues = [
-        'Elements', 'Lumière', "Koko's Asian Fusion", "Night Market @ Koko's",
-        "Sushi @ Koko's", 'Azure Bar & Café', 'Yacht Club Grill', "Chef's Table (select experiences)"
-    ]
-    const sceDiningPraises = [
-        'High food quality', 'Fresh ingredients', 'Excellent wine selections',
-        'Diverse menus', 'Personalized service', 'Flexible dining'
-    ]
-
-    /* Service */
-    const sceServiceHighlights = [
-        { text: 'Butler service', icon: Bed },
-        { text: 'Friendly expedition staff', icon: Compass },
-        { text: 'Professional dining teams', icon: ChefHat },
-        { text: 'Personalized attention', icon: Heart },
-        { text: 'Fast response times', icon: Sparkles },
-        { text: 'Luxury hotel-level hospitality', icon: Crown }
-    ]
-
-    /* Expedition Experiences */
-    const sceExpeditionList = [
-        'Zodiac cruises', 'Guided wildlife viewing', 'Hiking', 'Kayaking',
-        'Snorkeling', 'Paddleboarding', 'Photography excursions', 'Cultural visits'
-    ]
-    const scePremiumList = [
-        { text: 'Helicopter sightseeing', icon: Plane },
-        { text: 'Submarine dives', icon: Waves }
-    ]
-
-    /* Wellness & Spa */
-    const sceWellnessList = [
-        'Indoor vitality pools', 'Infrared sauna', 'Steam room', 'Salt therapy lounge',
-        'Yoga studio', 'Fitness center', 'Massage treatments', 'Beauty services'
-    ]
-
-    /* Destinations — using local assets from src/assets/Sceniceclipsereviews/ */
-    const sceDestinations = [
-        { name: 'Antarctica', desc: "Witness glaciers, penguins, whales, and Zodiac landings in one of the world's most remote destinations.", icon: Snowflake, img: antarcticaImg },
-        { name: 'Arctic', desc: 'Explore polar landscapes, remote wilderness, and incredible wildlife.', icon: Mountain, img: arcticImg },
-        { name: 'Greenland', desc: 'Discover colossal icebergs, spectacular fjords, and remote polar landscapes.', icon: Wind, img: greenlandImg },
-        { name: 'Mediterranean', desc: 'Visit iconic ports alongside smaller coastal towns inaccessible to larger ships.', icon: Anchor, img: mediterraneanImg },
-        { name: 'Norwegian Fjords', desc: 'Cruise breathtaking fjords surrounded by waterfalls and mountain scenery.', icon: Waves, img: fjordsImg },
-        { name: 'South Pacific', desc: 'Discover remote islands, vibrant marine life, and unique cultural experiences.', icon: Globe, img: southPacificImg }
-    ]
-
-    /* What's Included */
-    const sceIncludedList = [
-        { text: 'Luxury suite accommodations', icon: Bed },
-        { text: 'Butler service', icon: Users },
-        { text: 'Premium beverages', icon: Coffee },
-        { text: 'Specialty dining', icon: Utensils },
-        { text: 'Wi-Fi', icon: Wifi },
-        { text: 'Gratuities', icon: CheckCircle },
-        { text: 'Scenic Freechoice excursions', icon: Compass },
-        { text: 'Scenic Enrich experiences', icon: Sparkles },
-        { text: 'Expedition equipment', icon: LayoutList },
-        { text: 'Zodiac excursions', icon: Ship }
-    ]
-
-    /* Who Should Choose */
-    const sceAudienceList = [
-        'Luxury travelers', 'Couples', 'Expedition enthusiasts', 'Adventure seekers',
-        'Food lovers', 'Bucket-list travelers', 'Small ship cruise fans', 'Travelers seeking all-inclusive value'
-    ]
-
-    /* Pros & Cons */
-    const scePros = [
-        'Six-star luxury experience', 'Spacious all-veranda suites', 'Butler service for every guest',
-        'Outstanding dining', 'Small ship atmosphere', 'Exceptional expedition program',
-        'Nearly all-inclusive pricing', 'Excellent wellness facilities', 'Polar expedition capabilities',
-        'Helicopter and submarine experiences'
-    ]
-    const sceCons = [
-        'Premium pricing', 'Limited entertainment compared to large cruise ships',
-        'Expedition itineraries may involve challenging weather',
-        'Helicopter and submarine experiences may not be available on every voyage'
-    ]
-
-    /* Why Book with Trips & Ships */
-    const sceWhyBookList = [
-        { text: 'Compare Scenic itineraries', icon: LayoutList },
-        { text: 'Select the best suite', icon: Bed },
-        { text: 'Understand inclusions', icon: CheckCircle },
-        { text: 'Choose the ideal sailing season', icon: Sun },
-        { text: 'Arrange pre- and post-cruise travel', icon: MapPin },
-        { text: 'Secure exclusive offers', icon: Award },
-        { text: 'Coordinate flights', icon: Plane },
-        { text: 'Plan private tours', icon: Compass },
-        { text: 'Provide concierge-level support', icon: Crown }
-    ]
-
-    /* FAQs */
-    const sceFaqs = [
-        { question: 'Is Scenic Eclipse worth the price?', answer: 'Yes. Many travelers feel Scenic Eclipse offers outstanding value thanks to its all-inclusive luxury, butler service, fine dining, and expedition experiences.' },
-        { question: 'Is Scenic Eclipse all-inclusive?', answer: 'Yes. Most voyages include accommodations, dining, premium beverages, Wi-Fi, gratuities, butler service, and many shore excursions.' },
-        { question: 'Does every suite include butler service?', answer: 'Yes. Every suite aboard Scenic Eclipse includes personalized butler service.' },
-        { question: 'Is Scenic Eclipse a true expedition ship?', answer: 'Yes. Scenic Eclipse is Polar Class 6 certified and purpose-built for expedition cruising with Zodiac operations and expert Discovery Teams.' },
-        { question: 'Does Scenic Eclipse have a submarine?', answer: 'Yes. Scenic Eclipse features a custom-built submarine available on select itineraries and conditions.' },
-        { question: 'Does Scenic Eclipse have helicopters?', answer: 'Yes. Scenic Eclipse carries onboard helicopters for sightseeing experiences on select voyages.' },
-        { question: 'What destinations does Scenic Eclipse visit?', answer: 'Scenic Eclipse sails to Antarctica, the Arctic, Greenland, Iceland, the Mediterranean, Norwegian Fjords, Australia, New Zealand, the South Pacific, and other remote destinations.' },
-        { question: 'Is Scenic Eclipse suitable for first-time expedition cruisers?', answer: 'Absolutely. Its combination of luxury, personalized service, and expert expedition teams makes it ideal for first-time expedition travelers.' },
-        { question: 'What is the dress code onboard?', answer: 'The atmosphere is elegant yet relaxed, with smart casual attire recommended for most evenings.' },
-        { question: 'Is Wi-Fi included?', answer: 'Yes. Complimentary Wi-Fi is included for guests.' },
-        { question: 'How many guests does Scenic Eclipse carry?', answer: 'Scenic Eclipse accommodates approximately 228 guests, with reduced capacity in Polar Regions.' },
-        { question: 'Who should choose Scenic Eclipse?', answer: 'Scenic Eclipse is perfect for travelers seeking six-star luxury combined with authentic expedition adventures, personalized service, and all-inclusive value.' }
-    ]
-
-    const sceSchemaData = {
+    // 7. Structured Data Schema matching exact reference standard (no trailing slashes)
+    const jsonLdSchema = {
         "@context": "https://schema.org",
         "@graph": [
             {
                 "@type": "WebPage",
-                "@id": "https://www.tripsandships.com/scenic-eclipse-reviews",
-                "name": "Scenic Eclipse Reviews",
-                "url": "https://www.tripsandships.com/scenic-eclipse-reviews",
-                "description": "Read our expert Scenic Eclipse reviews covering accommodations, dining, expedition experiences, destinations, service, inclusions, and whether Scenic Eclipse is worth the investment.",
+                "@id": `${pageData.seo.canonicalUrl}#webpage`,
+                "url": pageData.seo.canonicalUrl,
+                "name": pageData.seo.metaTitle,
+                "headline": pageData.seo.title,
+                "description": pageData.seo.metaDescription,
                 "inLanguage": "en-US",
-                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
-                "mainEntity": { "@type": "Article", "@id": "https://www.tripsandships.com/scenic-eclipse-reviews#article" }
+                "primaryImageOfPage": {
+                    "@type": "ImageObject",
+                    "url": "https://www.tripsandships.com/assets/Sceniceclipsereviews/hero-scenic-eclipse-antarctica.webp",
+                    "caption": "Scenic Eclipse Reviews - Honest Luxury Expedition Cruise Review"
+                },
+                "image": "https://www.tripsandships.com/assets/Sceniceclipsereviews/hero-scenic-eclipse-antarctica.webp",
+                "author": {
+                    "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
+                },
+                "publisher": {
+                    "@id": "https://www.tripsandships.com/#organization"
+                },
+                "isPartOf": {
+                    "@id": "https://www.tripsandships.com/#website"
+                }
             },
             {
                 "@type": "Organization",
                 "@id": "https://www.tripsandships.com/#organization",
                 "name": "Trips & Ships Luxury Travel",
-                "url": "https://www.tripsandships.com"
+                "url": "https://www.tripsandships.com",
+                "founder": {
+                    "@id": "https://www.tripsandships.com/about-angela-hughes/#person"
+                }
             },
             {
                 "@type": "TravelAgency",
                 "@id": "https://www.tripsandships.com/#travelagency",
                 "name": "Trips & Ships Luxury Travel",
                 "url": "https://www.tripsandships.com",
-                "description": "Luxury travel agency specializing in luxury cruises, expedition cruises, yacht cruises, and personalized travel planning."
+                "description": "Luxury travel agency specializing in luxury cruises, river cruises, expedition cruises, yacht cruises, and personalized travel planning.",
+                "parentOrganization": {
+                    "@id": "https://www.tripsandships.com/#organization"
+                }
             },
             {
                 "@type": "Person",
-                "@id": "https://www.tripsandships.com/#angela-hughes",
+                "@id": "https://www.tripsandships.com/about-angela-hughes/#person",
                 "name": "Angela Hughes",
-                "jobTitle": "CEO",
-                "worksFor": { "@id": "https://www.tripsandships.com/#travelagency" },
-                "description": "Luxury travel advisor, founder of Luxury Travel University and CEO of Trips & Ships Luxury Travel."
-            },
-            {
-                "@type": "Article",
-                "@id": "https://www.tripsandships.com/scenic-eclipse-reviews#article",
-                "headline": "Scenic Eclipse Reviews",
-                "url": "https://www.tripsandships.com/scenic-eclipse-reviews",
-                "description": "Expert Scenic Eclipse review covering accommodations, dining, service, expedition experiences, wellness, destinations, inclusions, and overall value.",
-                "image": "https://www.tripsandships.com/images/scenic-eclipse-reviews.jpg",
-                "author": { "@id": "https://www.tripsandships.com/#angela-hughes" },
-                "publisher": { "@id": "https://www.tripsandships.com/#organization" },
-                "mainEntityOfPage": { "@id": "https://www.tripsandships.com/scenic-eclipse-reviews" }
-            },
-            {
-                "@type": "Service",
-                "name": "Scenic Cruise Planning",
-                "provider": { "@id": "https://www.tripsandships.com/#travelagency" },
-                "serviceType": "Luxury Expedition Cruise Consulting",
-                "description": "Expert Scenic Eclipse cruise planning and comparison services helping travelers choose the best Discovery Yacht, itinerary, suite, and destination."
+                "jobTitle": "CEO of Trips & Ships Luxury Travel",
+                "url": "https://www.tripsandships.com/about-angela-hughes",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "https://www.tripsandships.com/assets/Angela_Hughes.jpg",
+                    "caption": "Angela Hughes - Luxury Cruise Specialist"
+                },
+                "description": "Angela Hughes is a luxury travel expert with over 40 years of experience, having traveled to 121+ countries, specializing in luxury cruises, polar expeditions, and discovery yacht travel.",
+                "worksFor": {
+                    "@id": "https://www.tripsandships.com/#organization"
+                },
+                "knowsAbout": [
+                    "Luxury Travel",
+                    "Luxury Expedition Cruises",
+                    "Scenic Luxury Cruises",
+                    "Scenic Eclipse Discovery Yachts",
+                    "Polar Discovery Yachting",
+                    "Butler Services"
+                ]
             },
             {
                 "@type": "BreadcrumbList",
+                "@id": `${pageData.seo.canonicalUrl}#breadcrumb`,
                 "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tripsandships.com" },
-                    { "@type": "ListItem", "position": 2, "name": "Scenic Cruises", "item": "https://www.tripsandships.com/scenic-cruises" },
-                    { "@type": "ListItem", "position": 3, "name": "Scenic Eclipse Reviews", "item": "https://www.tripsandships.com/scenic-eclipse-reviews" }
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.tripsandships.com"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Scenic Luxury Yacht Guide",
+                        "item": "https://www.tripsandships.com/scenic-luxury-yacht-guide"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Scenic Eclipse Reviews",
+                        "item": pageData.seo.canonicalUrl
+                    }
                 ]
             },
             {
                 "@type": "FAQPage",
-                "mainEntity": [
-                    { "@type": "Question", "name": "Is Scenic Eclipse worth the price?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Scenic Eclipse delivers exceptional value through six-star accommodations, butler service, premium dining, expedition experiences, and comprehensive all-inclusive pricing." } },
-                    { "@type": "Question", "name": "Is Scenic Eclipse all-inclusive?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Most Scenic Eclipse voyages include luxury accommodations, butler service, fine dining, premium beverages, Wi-Fi, gratuities, and many shore excursions." } },
-                    { "@type": "Question", "name": "Does every suite include butler service?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every suite aboard Scenic Eclipse includes personalized butler service." } },
-                    { "@type": "Question", "name": "Is Scenic Eclipse a true expedition ship?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Scenic Eclipse is Polar Class 6 certified and purpose-built for luxury expedition cruising with Zodiac operations and expert Discovery Teams." } },
-                    { "@type": "Question", "name": "Does Scenic Eclipse have a submarine?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Scenic Eclipse features a custom-built submarine available for select voyages and weather conditions." } },
-                    { "@type": "Question", "name": "Does Scenic Eclipse have helicopters?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Scenic Eclipse carries onboard helicopters that offer optional sightseeing experiences on select itineraries." } },
-                    { "@type": "Question", "name": "What destinations does Scenic Eclipse visit?", "acceptedAnswer": { "@type": "Answer", "text": "Scenic Eclipse sails to Antarctica, the Arctic, Greenland, Iceland, the Mediterranean, Norwegian Fjords, Australia, New Zealand, the South Pacific, and other remote destinations." } },
-                    { "@type": "Question", "name": "Is Scenic Eclipse suitable for first-time expedition cruisers?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Scenic Eclipse combines luxurious accommodations with expert expedition guidance, making it an excellent choice for first-time expedition travelers." } },
-                    { "@type": "Question", "name": "What is the dress code onboard Scenic Eclipse?", "acceptedAnswer": { "@type": "Answer", "text": "Scenic Eclipse offers an elegant yet relaxed atmosphere, with smart casual attire recommended for most evenings." } },
-                    { "@type": "Question", "name": "Is Wi-Fi included on Scenic Eclipse?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Complimentary Wi-Fi is included for guests throughout most Scenic Eclipse voyages." } },
-                    { "@type": "Question", "name": "How many guests does Scenic Eclipse accommodate?", "acceptedAnswer": { "@type": "Answer", "text": "Scenic Eclipse accommodates approximately 228 guests, with reduced capacity during Polar expeditions." } },
-                    { "@type": "Question", "name": "Who should choose Scenic Eclipse?", "acceptedAnswer": { "@type": "Answer", "text": "Scenic Eclipse is ideal for travelers seeking six-star luxury, immersive expedition experiences, personalized service, and access to bucket-list destinations around the world." } }
-                ]
+                "@id": `${pageData.seo.canonicalUrl}#faq`,
+                "mainEntity": pageData.faqs.map(faq => ({
+                    "@type": "Question",
+                    "name": faq.question,
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": faq.answer
+                    }
+                }))
             }
         ]
-    }
+    };
 
     return (
-        <>
+        <div className="fcel-page-wrapper">
+            {/* SEO and Schema Tags */}
             <Helmet>
-                <title>Scenic Eclipse Reviews | Honest Luxury Expedition Cruise Review & Expert Guide</title>
-                <meta name="title" content="Scenic Eclipse Reviews | Is Scenic Eclipse Worth It?" />
-                <meta
-                    name="description"
-                    content="Read our expert Scenic Eclipse reviews covering accommodations, dining, expedition experiences, destinations, service, inclusions, and who should sail aboard Scenic's six-star Discovery Yachts."
-                />
-                <meta name="keywords" content="Scenic Eclipse Reviews, Scenic Eclipse review, Scenic Eclipse cruise reviews, Scenic Discovery Yacht reviews, Scenic Eclipse experience, Scenic luxury yacht review, Scenic Eclipse Antarctica review, Scenic Eclipse II review, Luxury expedition cruise reviews" />
+                <title>{pageData.seo.title}</title>
+                <meta name="title" content={pageData.seo.metaTitle} />
+                <meta name="description" content={pageData.seo.metaDescription} />
+                <meta name="keywords" content={pageData.seo.keywords} />
+                <link rel="canonical" href={pageData.seo.canonicalUrl} />
                 <script type="application/ld+json">
-                    {JSON.stringify(sceSchemaData)}
+                    {JSON.stringify(jsonLdSchema)}
                 </script>
             </Helmet>
 
+            {/* Global Navigation */}
             <Navbar />
 
-            <div className="fcel-page-wrapper">
+            <main>
+                {/* ─── SECTION 1: HERO SECTION ─── */}
+                <ComparisonHero
+                    badge={pageData.hero.badge}
+                    title={pageData.hero.title}
+                    subtitle={pageData.hero.subtitle}
+                    description={pageData.hero.description}
+                    showReadMore={false}
+                    backgroundImage={heroBgImg}
+                    bgPosition="bg-center"
+                    primaryCtaText={pageData.hero.primaryCtaText}
+                    primaryCtaLink={pageData.hero.primaryCtaLink}
+                    secondaryCtaText={pageData.hero.secondaryCtaText}
+                    secondaryCtaLink={pageData.hero.secondaryCtaLink}
+                />
 
-                {/* HERO SECTION */}
-                <section className="fcel-hero-section">
-                    {sceHeroImages.map((img, idx) => (
-                        <div
-                            key={idx}
-                            className={`fcel-hero-slide ${sceCurrentHero === idx ? 'fcel-slide-active' : ''}`}
-                            style={{ backgroundImage: `url(${img})` }}
-                        />
-                    ))}
-                    <div className="fcel-hero-overlay"></div>
-                    <div className="fcel-hero-content">
-                        <div className="fcel-hero-tag">
-                            <Sparkles size={16} />
-                            <span>Honest Luxury Expedition Cruise Review & Expert Guide</span>
-                        </div>
-                        <h1 className="fcel-hero-title">Scenic Eclipse Reviews</h1>
-                        <p className="fcel-hero-subtitle">
-                            Is Scenic Eclipse Worth It?
-                        </p>
-                        <div className="fcel-hero-btn-row">
-                            <Link to='/contact' className="fcel-btn-primary">
-                                <Phone size={18} />
-                                Schedule a Consultation
-                            </Link>
-                            <button className="fcel-btn-outline">
-                                <LayoutList size={18} />
-                                Request Itinerary Options
-                            </button>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 2: EDITORIAL INTRO SECTION ─── */}
+                <EditorialIntroSplit
+                    eyebrow={pageData.intro.eyebrow}
+                    heading={pageData.intro.heading}
+                    primaryImage={discoveryYachtsImg}
+                    secondaryImage={helicopterImg}
+                    paragraphs={[
+                        pageData.intro.lead,
+                        ...pageData.intro.paragraphs
+                    ]}
+                />
 
-                {/* INTRO SECTION */}
-                <section className="fcel-intro-section">
-                    <div className="fcel-intro-container">
-                        <div className="fcel-intro-grid">
-                            <div className="fcel-intro-copy">
-                                <span className="fcel-eyebrow-label">SIX-STAR EXPEDITION LUXURY</span>
-                                <h2 className="fcel-section-heading">Is Scenic Eclipse Worth It?</h2>
-                                <div className="fcel-heading-bar"></div>
-                                <p className="fcel-lead-paragraph">
-                                    Scenic Eclipse has earned a reputation as one of the world's most luxurious expedition ships, combining six-star accommodations with the ability to explore some of the planet's most remote destinations. Marketed as "The World's First Discovery Yachts™," Scenic Eclipse and Scenic Eclipse II offer a unique blend of adventure and elegance.
-                                </p>
-                                <p className="fcel-lead-paragraph">
-                                    If you're considering a Scenic Eclipse cruise, this review covers everything from accommodations and dining to expedition experiences, service, inclusions, and overall value to help you decide if it's the right luxury cruise line for your travel style.
-                                </p>
-                            </div>
-                            <div className="fcel-intro-image-frame">
-                                {/* <img src={introImg} alt="Scenic Eclipse Discovery Yacht six-star luxury expedition ship" /> */}
-                                <div className="fcel-intro-badge-float">
-                                    <Crown size={15} />
-                                    <span>The World's First Discovery Yachts™</span>
-                                </div>
-                            </div>
-                            <div className="fcel-intro-highlight-box">
-                                <span className="fcel-intro-quote-icon">"</span>
-                                <div className="fcel-intro-quote-content">
-                                    Scenic Eclipse successfully combines luxury cruising with authentic expedition travel, giving guests the best of both adventure and comfort.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 3: AUTHORITY QUOTE BOX ─── */}
+                <div className="max-w-4xl mx-auto px-6 my-8">
+                    <AuthorityBox
+                        title={pageData.intro.badge}
+                        content={pageData.intro.quote}
+                        author="Angela Hughes, CEO & Luxury Expedition Specialist"
+                        authorImage={insiderTipImg}
+                    />
+                </div>
 
-                {/* FIRST IMPRESSIONS */}
-                <section className="sce-impressions-section">
-                    <div className="sce-impressions-container">
-                        <div className="sce-impressions-grid">
-                            <div className="sce-impressions-media">
-                                {/* <img src={impressionsImg} alt="Scenic Eclipse observation lounge interior design" /> */}
-                                <ScePlaceholder label="Scenic Eclipse Observation Lounge" className="sce-impressions-placeholder" />
-                            </div>
-                            <div>
-                                <h2 className="fcel-section-heading">
+                {/* ─── SECTION 4: FIRST IMPRESSIONS ─── */}
+                <FeatureSplit
+                    imagePosition="right"
+                    theme="light"
+                    image={observationLoungeImg}
+                    title={pageData.firstImpressions.title}
+                    subtitles={[
+                        pageData.firstImpressions.lead,
+                        pageData.firstImpressions.paragraph
+                    ]}
+                    features={pageData.firstImpressions.items}
+                    summary="Guests consistently rate Scenic Eclipse's first impressions 5/5 for spaciousness, relaxed yacht intimacy, and contemporary luxury design."
+                    ctaText="Request Itinerary Options"
+                    ctaLink="#destinations"
+                />
 
-                                    First Impressions
-                                </h2>
-                                <div className="fcel-heading-bar"></div>
-                                <p className="fcel-lead-paragraph">
-                                    From the moment you step aboard Scenic Eclipse, it's clear this is not a traditional cruise ship. The atmosphere feels more like an elegant private yacht than a large ocean liner.
-                                </p>
-                                <p className="fcel-lead-paragraph">
-                                    Contemporary design, spacious public areas, attentive service, and luxurious finishes create an upscale environment without feeling formal or crowded.
-                                </p>
-                                <p className="fcel-lead-paragraph" style={{ marginBottom: 0 }}>Guests immediately notice:</p>
-                                <ul className="sce-impressions-list">
-                                    {sceFirstImpressionsList.map((item, idx) => {
-                                        const SceIcon = item.icon
-                                        return (
-                                            <li key={idx} className="sce-impressions-list-item">
-                                                <SceIcon size={16} className="sce-impressions-icon" />
-                                                <span>{item.text}</span>
-                                            </li>
-                                        )
-                                    })}
-                                </ul>
-                                <SceRating label="Rating: 5/5" />
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 5: SUITES & ACCOMMODATIONS ─── */}
+                <FeatureSplit
+                    imagePosition="left"
+                    theme="white"
+                    image={verandahSuiteImg}
+                    title={pageData.suites.title}
+                    subtitles={[pageData.suites.lead]}
+                    features={pageData.suites.features}
+                    summary={pageData.suites.conclusion}
+                    ctaText="Schedule a Consultation"
+                    ctaLink="/contact"
+                />
 
-                {/* SUITES & ACCOMMODATIONS */}
-                <section className="sce-suites-section">
-                    <div className="sce-suites-container">
-                        <div className="sce-suites-grid">
-                            <div className="sce-suites-image-frame">
-                                {/* <img src={suitesImg} alt="Scenic Eclipse suite with butler service and luxury bed" /> */}
-                                <ScePlaceholder label="Scenic Eclipse Suite Cabin" className="sce-suites-placeholder" />
-                            </div>
-                            <div>
-                                <h2 className="fcel-section-heading">
+                {/* ─── SECTION 6: DINING EXPERIENCE ─── */}
+                <DiningVenuesMasonry
+                    title={pageData.dining.eyebrow}
+                    subtitle={`${pageData.dining.heading} ${pageData.dining.lead} ${pageData.dining.conclusion}`}
+                    items={diningItems}
+                />
 
-                                    Suites & Accommodations
-                                </h2>
-                                 <div className="fcel-heading-bar"></div>
-                                <p className="fcel-lead-paragraph">One of Scenic Eclipse's biggest strengths.</p>
-                               
-                                <p className="fcel-lead-paragraph">
-                                    One of Scenic Eclipse's biggest strengths is its accommodations. Every guest stays in an ocean-view suite with a private veranda, creating a residential feel that makes even longer voyages exceptionally comfortable.
-                                </p>
-                                <p className="fcel-lead-paragraph" style={{ marginBottom: 0 }}>Suite highlights include:</p>
-                                <div className="sce-suites-features-grid">
-                                    {sceSuiteHighlights.map((item, idx) => (
-                                        <div key={idx} className="sce-suites-feature-pill">
-                                            <CheckCircle size={16} />
-                                            <span>{item}</span>
-                                        </div>
-                                    ))}
-                                </div>
-                                <p className="fcel-lead-paragraph" style={{ marginTop: '22px' }}>
-                                    Even entry-level suites are larger than many accommodations found on traditional luxury cruise ships.
-                                </p>
-                                <SceRating label="Rating: 5/5" />
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 7: SERVICE ─── */}
+                <BrandPillarsShowcase data={serviceData} />
 
-                {/* CTA BANNER #1 */}
-                <section className="sce-cta-banner">
-                    <div className="sce-cta-banner-inner">
-                        <p className="sce-cta-banner-text">Ready to reserve your Scenic Eclipse suite?</p>
-                        <Link to="/contact" className="sce-cta-banner-btn">
-                            <Phone size={16} />
-                            Speak With an Advisor
-                        </Link>
-                    </div>
-                </section>
+                {/* ─── SECTION 8: EXPEDITION EXPERIENCES ─── */}
+                <ThreeColumnGrid
+                    title={pageData.expedition.title}
+                    subtitle={`${pageData.expedition.lead} ${pageData.expedition.prompt}`}
+                    items={expeditionItems}
+                />
 
-                {/* DINING EXPERIENCE */}
-                <section className="sce-dining-section">
-                    <div className="sce-dining-container">
-                        <div className="sce-dining-header">
-                            <span className="fcel-eyebrow-label">
-                                <Utensils size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
-                                Dining Experience
-                            </span>
-                            <h2 className="fcel-section-heading">Exceptional culinary experiences.</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                            <p className="fcel-lead-paragraph" style={{ color: '#cbd5e1' }}>
-                                Scenic Eclipse delivers exceptional culinary experiences with multiple restaurants offering international cuisine and destination-inspired menus.
-                            </p>
-                        </div>
-                        <div className="sce-dining-venues-grid">
-                            {sceDiningVenues.map((venue, idx) => (
-                                <div key={idx} className="sce-dining-venue-card">{venue}</div>
-                            ))}
-                        </div>
-                        <p className="fcel-lead-paragraph" style={{ color: '#cbd5e1', textAlign: 'center' }}>Guests consistently praise:</p>
-                        <div className="sce-dining-praises-wrap">
-                            {sceDiningPraises.map((praise, idx) => (
-                                <span key={idx} className="sce-dining-praise-pill">{praise}</span>
-                            ))}
-                        </div>
-                        <p className="fcel-lead-paragraph" style={{ color: '#cbd5e1', textAlign: 'center', maxWidth: '780px', margin: '30px auto 0' }}>
-                            Unlike many cruise lines, there are no crowded buffets or rushed dining experiences.
-                        </p>
-                        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '18px' }}>
-                            <SceRating label="Rating: 5/5" dark />
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 9: WELLNESS & SPA ─── */}
+                <FeatureGrid
+                    title={pageData.wellness.eyebrow}
+                    subtitle={`${pageData.wellness.heading} ${pageData.wellness.note}`}
+                    features={wellnessFeatures}
+                    bgClass="bg-ice-50"
+                />
 
-                {/* SERVICE */}
-                <section className="sce-service-section">
-                    <div className="sce-service-container">
-                        <h2 className="fcel-section-heading">
-                            Service
-                        </h2>
-                        <div className="fcel-heading-bar fcel-bar-center"></div>
-                        <p className="fcel-lead-paragraph">
-                            With nearly a 1:1 crew-to-guest ratio, staff members quickly learn guests' names and preferences.
-                        </p>
-                        <div className="sce-service-grid">
-                            {sceServiceHighlights.map((item, idx) => {
-                                const SceIcon = item.icon
-                                return (
-                                    <div key={idx} className="sce-service-card">
-                                        <SceIcon size={18} />
-                                        <span>{item.text}</span>
-                                    </div>
-                                )
-                            })}
-                        </div>
-                        <p className="fcel-lead-paragraph" style={{ marginTop: '26px' }}>
-                            Many guests describe the service as comparable to the world's finest luxury hotels.
-                        </p>
-                        <SceRating label="Rating: 5/5" />
-                    </div>
-                </section>
+                {/* ─── SECTION 10: DESTINATIONS ─── */}
+                <div id="destinations">
+                    <ThreeColumnGrid
+                        title={pageData.destinations.title}
+                        subtitle={pageData.destinations.subtitle}
+                        items={destinationItems}
+                    />
+                </div>
 
-                {/* EXPEDITION EXPERIENCES */}
-                <section className="sce-expedition-section">
-                    <div className="sce-expedition-container">
-                        <h2 className="fcel-section-heading">
-                            Expedition Experiences
-                        </h2>
-                        <div className="fcel-heading-bar"></div>
-                        <p className="fcel-lead-paragraph">Scenic Eclipse isn't just about luxury—it is a true expedition vessel.</p>
-                        <p className="fcel-lead-paragraph" style={{ marginBottom: '0' }}>Depending on your itinerary, you may enjoy:</p>
-                        <div className="sce-expedition-grid" style={{ marginTop: '20px' }}>
-                            <div className="sce-expedition-copy-col">
-                                <ul className="sce-expedition-list">
-                                    {sceExpeditionList.map((item, idx) => (
-                                        <li key={idx} className="sce-expedition-list-item">
-                                            <CheckCircle size={16} />
-                                            <span>{item}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                                <div className="sce-expedition-premium-box" style={{ marginTop: '20px' }}>
-                                    <p className="sce-expedition-premium-title">Select voyages also feature:</p>
-                                    {scePremiumList.map((item, idx) => {
-                                        const SceIcon = item.icon
-                                        return (
-                                            <div key={idx} className="sce-expedition-premium-item">
-                                                <SceIcon size={18} />
-                                                <span>{item.text}</span>
-                                            </div>
-                                        )
-                                    })}
-                                </div>
-                            </div>
-                            <div className="sce-expedition-media-col">
-                                <div className="sce-expedition-image-wrapper">
-                                    <ScePlaceholder label="Scenic Eclipse Discovery Voyage & Expedition Experience" />
-                                </div>
-                                <p className="sce-expedition-discovery-note" style={{ marginTop: '20px' }}>
-                                    The Discovery Team includes naturalists, historians, marine biologists, photographers, and destination experts who enrich every excursion.
-                                </p>
-                            </div>
-                        </div>
-                        <div style={{ marginTop: '24px' }}>
-                            <SceRating label="Rating: 5/5" />
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 11: WHAT'S INCLUDED? ─── */}
+                <InclusionsList
+                    title={pageData.inclusions.title}
+                    inclusions={pageData.inclusions.items}
+                    expertNote={`${pageData.inclusions.lead} ${pageData.inclusions.note}`}
+                    image={inclusionsVitalityPoolImg}
+                />
 
-                {/* CTA BANNER #2 */}
-                <section className="sce-cta-banner">
-                    <div className="sce-cta-banner-inner">
-                        <p className="sce-cta-banner-text">Curious about Zodiac excursions, helicopters, or submarine dives?</p>
-                        <Link to="/contact" className="sce-cta-banner-btn">
-                            <LayoutList size={16} />
-                            Request Itinerary Options
-                        </Link>
-                    </div>
-                </section>
+                {/* ─── SECTION 12: WHO SHOULD CHOOSE SCENIC ECLIPSE? ─── */}
+                <TravelerTypeGrid
+                    title={pageData.audience.title}
+                    subtitle={`${pageData.audience.lead} ${pageData.audience.subtitle}`}
+                    items={audienceItems}
+                />
 
-                {/* WELLNESS & SPA */}
-                <section className="sce-wellness-section">
-                    <div className="sce-wellness-container">
-                        <span className="fcel-eyebrow-label">
-                            <Waves size={14} style={{ verticalAlign: 'middle', marginRight: '6px' }} />
-                            Wellness & Spa
-                        </span>
-                        <h2 className="fcel-section-heading">The Senses Spa rivals many luxury resorts.</h2>
-                        <div className="fcel-heading-bar fcel-bar-center"></div>
-                        <p className="fcel-lead-paragraph">Guests can enjoy:</p>
-                        <div className="sce-wellness-grid">
-                            {sceWellnessList.map((item, idx) => (
-                                <div key={idx} className="sce-wellness-list-item">{item}</div>
-                            ))}
-                        </div>
-                        <p className="sce-wellness-note">
-                            The wellness facilities are especially appreciated during sea days and longer expedition voyages.
-                        </p>
-                        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '18px' }}>
-                            <SceRating label="Rating: 5/5" dark />
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 13: PROS & CONS ─── */}
+                <ProsConsCards
+                    title={pageData.prosCons.title}
+                    prosTitle={pageData.prosCons.prosTitle}
+                    consTitle={pageData.prosCons.consTitle}
+                    bestFor={pageData.prosCons.pros}
+                    notBestFor={pageData.prosCons.cons}
+                    bottomNote={pageData.prosCons.bottomNote}
+                />
 
-                {/* DESTINATIONS */}
-                <section className="sce-destinations-section">
-                    <div className="sce-destinations-container">
-                        <div className="sce-destinations-header">
-                            <h2 className="fcel-section-heading">
-                                Destinations
-                            </h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                            <p className="fcel-lead-paragraph">Popular itineraries include:</p>
-                        </div>
-                        <div className="sce-destinations-grid">
-                            {sceDestinations.map((dest, idx) => {
-                                const DestIcon = dest.icon
-                                return (
-                                    <div key={idx} className="sce-destination-card">
-                                        <img src={dest.img} alt={dest.name} className="sce-destination-img" />
-                                        <div className="sce-destination-card-content">
-                                            <div className="sce-destination-icon">
-                                                <DestIcon size={22} />
-                                            </div>
-                                            <h4 className="sce-destination-name">{dest.name}</h4>
-                                            <p className="sce-destination-desc">{dest.desc}</p>
-                                        </div>
-                                    </div>
-                                )
-                            })}
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 14: OUR VERDICT ─── */}
+                <ConclusionSection
+                    sections={[
+                        {
+                            heading: pageData.verdict.title,
+                            paragraphs: [
+                                pageData.verdict.lead,
+                                ...pageData.verdict.paragraphs,
+                                `Rating: ${pageData.verdict.rating.replace('Overall Rating: ', '')}`
+                            ]
+                        }
+                    ]}
+                />
 
-                {/* WHAT'S INCLUDED */}
-                <section className="sce-included-section">
-                    <div className="sce-included-container">
-                        <h2 className="fcel-section-heading">
-                            What's Included?
-                        </h2>
-                        <div className="fcel-heading-bar fcel-bar-center"></div>
-                        <p className="fcel-lead-paragraph">One of the most inclusive luxury cruise experiences available.</p>
-                        <p className="fcel-lead-paragraph">Most voyages include:</p>
-                        <div className="sce-included-grid">
-                            {sceIncludedList.map((item, idx) => {
-                                const SceIcon = item.icon
-                                return (
-                                    <div key={idx} className="sce-included-item">
-                                        <SceIcon size={16} />
-                                        <span>{item.text}</span>
-                                    </div>
-                                )
-                            })}
-                        </div>
-                        <p className="sce-included-note">
-                            Some premium helicopter and submarine experiences may require an additional fee depending on the itinerary.
-                        </p>
-                    </div>
-                </section>
+                {/* ─── SECTION 15: WHY BOOK WITH TRIPS & SHIPS LUXURY TRAVEL? ─── */}
+                <ExpertAuthorityChecklist
+                    title={pageData.whyBookWithUs.title}
+                    subtitle={`${pageData.whyBookWithUs.lead} ${pageData.whyBookWithUs.footnote}`}
+                    points={pageData.whyBookWithUs.reasons}
+                />
 
-                {/* WHO SHOULD CHOOSE */}
-                <section className="sce-audience-section">
-                    <div className="sce-audience-container">
-                        <h2 className="fcel-section-heading">
-                            Who Should Choose Scenic Eclipse?
-                        </h2>
-                        <div className="fcel-heading-bar fcel-bar-center"></div>
-                        <p className="fcel-lead-paragraph">Scenic Eclipse is ideal for:</p>
-                        <div className="sce-audience-pills-wrap">
-                            {sceAudienceList.map((item, idx) => (
-                                <span key={idx} className="sce-audience-pill">{item}</span>
-                            ))}
-                        </div>
-                        <p className="sce-audience-note">
-                            It is especially appealing to guests who want immersive exploration without sacrificing comfort or service.
-                        </p>
-                    </div>
-                </section>
+                {/* ─── SECTION 16: EXPERT INSIGHT FROM ANGELA HUGHES ─── */}
+                <ExpertCredentials
+                    name={pageData.expertInsight.name}
+                    title={pageData.expertInsight.title}
+                    badge={pageData.expertInsight.badge}
+                    image={ProfilePictureAH}
+                    quote={pageData.expertInsight.quote}
+                    quoteSubtitle={pageData.expertInsight.heading}
+                    bio={pageData.expertInsight.bio}
+                    credentials={[
+                        "40+ Years Experience",
+                        "121+ Countries Visited",
+                        ...pageData.expertInsight.priorities.slice(0, 4)
+                    ]}
+                    ctaText="Schedule a Consultation"
+                    ctaLink="/contact"
+                />
 
-                {/* PROS & CONS */}
-                <section className="sce-proscons-section">
-                    <div className="sce-proscons-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <span className="fcel-eyebrow-label">Honest Review Breakdown</span>
-                            <h2 className="fcel-section-heading">Pros & Cons</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="sce-proscons-grid">
-                            <div className="sce-proscons-col">
-                                <h3 className="sce-proscons-col-title">Pros</h3>
-                                <ul className="sce-proscons-list">
-                                    {scePros.map((item, idx) => (
-                                        <li key={idx} className="sce-proscons-item">
-                                            <CheckCircle size={17} className="sce-pros-icon" />
-                                            <span>{item}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                            <div className="sce-proscons-col">
-                                <h3 className="sce-proscons-col-title">Cons</h3>
-                                <ul className="sce-proscons-list">
-                                    {sceCons.map((item, idx) => (
-                                        <li key={idx} className="sce-proscons-item">
-                                            <XCircle size={17} className="sce-cons-icon" />
-                                            <span>{item}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                {/* ─── SECTION 17: FREQUENTLY ASKED QUESTIONS ─── */}
+                <FAQAccordion
+                    data={{
+                        title: "Frequently Asked Questions",
+                        faqs: pageData.faqs
+                    }}
+                />
 
-                {/* OUR VERDICT */}
-                <section className="sce-verdict-section">
-                    <div className="sce-verdict-container">
-                        <h2 className="fcel-section-heading">Our Verdict</h2>
-                                                <div className="fcel-heading-bar fcel-bar-center"></div>
+                {/* ─── SECTION 18: FINAL CALL TO ACTION ─── */}
+                <CenterCTA
+                    title={pageData.cta.title}
+                    description={pageData.cta.description}
+                    primaryCtaText={pageData.cta.primaryCtaText}
+                    primaryCtaLink={pageData.cta.primaryCtaLink}
+                    secondaryCtaText={pageData.cta.secondaryCtaText}
+                    secondaryCtaLink={pageData.cta.secondaryCtaLink}
+                    backgroundImage={ctaBgImg}
+                />
+            </main>
 
-                        <p className="sce-verdict-text">Scenic Eclipse successfully combines luxury cruising with authentic expedition travel.</p>
-                        <p className="sce-verdict-text">
-                            Rather than choosing between adventure and comfort, guests enjoy both. Spacious suites, exceptional dining, personalized service, and immersive expedition experiences create one of the most complete luxury cruise experiences available today.
-                        </p>
-                        <p className="sce-verdict-text">
-                            For travelers seeking Antarctica, the Arctic, the Mediterranean, or other bucket-list destinations, Scenic Eclipse consistently ranks among the finest expedition ships in the world.
-                        </p>
-                        <div className="sce-verdict-rating-wrap">
-                            <SceRating label="Overall Rating: 5/5" dark />
-                        </div>
-                    </div>
-                </section>
-
-                {/* WHY BOOK WITH TRIPS & SHIPS */}
-                <section className="sce-whybook-section">
-                    <div className="sce-whybook-container">
-                        <h2 className="fcel-section-heading">
-                            Why Book with Trips & Ships Luxury Travel?
-                        </h2>
-                        <div className="fcel-heading-bar fcel-bar-center"></div>
-                        <p className="fcel-lead-paragraph">Choosing the right Scenic itinerary is just as important as choosing the ship. Our advisors help you:</p>
-                        <ul className="sce-whybook-list">
-                            {sceWhyBookList.map((item, idx) => {
-                                const SceIcon = item.icon
-                                return (
-                                    <li key={idx} className="sce-whybook-item">
-                                        <SceIcon size={16} />
-                                        <span>{item.text}</span>
-                                    </li>
-                                )
-                            })}
-                        </ul>
-                        <p className="fcel-lead-paragraph">
-                            Our expertise helps ensure your Scenic Eclipse journey is as seamless as it is unforgettable.
-                        </p>
-                        <div className="sce-whybook-cta-row">
-                            <Link to="/contact" className="fcel-btn-primary">
-                                <Phone size={18} />
-                                Schedule a Consultation
-                            </Link>
-                        </div>
-                    </div>
-                </section>
-
-
-                {/* EXPERT INSIGHT */}
-                <section id="explora-growth-insight" className="medi-expert-editorial-section medi-growth-insight-section">
-                    <div className="medi-expert-editorial-container">
-                        <div className="medi-expert-editorial-card">
-
-                            {/* Left Side: Portrait and Floating Stat Badge */}
-                            <div className="medi-editorial-portrait-block">
-                                <div className="medi-editorial-image-frame">
-                                    <img src={ProfilePictureAH} alt="Angela Hughes - Luxury Cruise Expert" />
-                                    <div className="medi-editorial-gradient-layer"></div>
-                                </div>
-
-                                <div className="medi-editorial-floating-stat">
-                                    <div className="medi-stat-tile">
-                                        <span className="medi-stat-number">40+</span>
-                                        <span className="medi-stat-label">Years Experience</span>
-                                    </div>
-                                    <div className="medi-stat-divider"></div>
-                                    <div className="medi-stat-tile">
-                                        <span className="medi-stat-number">121+</span>
-                                        <span className="medi-stat-label">Countries Visited</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Right Side: Editorial Text */}
-                            <div className="medi-editorial-content-block">
-                                <div className="medi-editorial-header">
-                                    <div className="medi-editorial-eyebrow-container">
-                                        <Award size={18} className="medi-editorial-icon-badge" />
-                                        <span className="medi-editorial-eyebrow">Expert Insight from Angela Hughes</span>
-                                    </div>
-                                    <h2 className="medi-editorial-title">
-                                        Why Modern Luxury Travelers <br className="medi-growth-title-break" />Are Choosing Scenic
-                                    </h2>
-                                    <div className="medi-editorial-accent-bar"></div>
-                                </div>
-
-                                <p className="medi-editorial-lead-para">
-                                    According to Angela Hughes, many travelers are initially attracted to Scenic because of its ultra-luxury discovery yachts — but ultimately fall in love with the all-inclusive onboard expedition experience.
-                                </p>
-
-                                <div className="medi-priorities-box">
-                                    <p className="medi-priorities-intro">
-                                        After more than four decades in luxury travel and visiting over 121 countries, Angela consistently sees Scenic travelers prioritizing:
-                                    </p>
-                                    <div className="medi-priorities-grid-pills">
-                                        {[
-                                            'Polar discovery yachting',
-                                            'Truly all-inclusive luxury',
-                                            'Butler service for every suite',
-                                            'Helicopter & submarine features',
-                                            'Up to 10 dining experiences',
-                                            'Immersive Zodiac excursions'
-                                        ].map((item, idx) => (
-                                            <div key={idx} className="medi-priority-pill-item">
-                                                <CheckCircle size={15} className="medi-priority-check" />
-                                                <span>{item}</span>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-
-                                <p className="medi-editorial-body-para">
-                                    As founder of Luxury Travel University and a globally recognized luxury travel speaker, Angela Hughes helps travelers compare luxury cruise experiences realistically — based on real-world expertise rather than generic online recommendations.
-                                </p>
-
-                                <div className="medi-expertise-section-box">
-                                    <span className="medi-expertise-intro-label">Her expertise spans:</span>
-                                    <div className="medi-expertise-horizontal-strip">
-                                        {[
-                                            { title: 'Ultra-luxury yachting', icon: Ship },
-                                            { title: 'Polar expeditions', icon: Mountain },
-                                            { title: 'Butler services', icon: Users },
-                                            { title: 'Luxury cruise planning', icon: Compass },
-                                            { title: 'Custom expedition travel', icon: Sparkles }
-                                        ].map((item, idx) => {
-                                            const IconComponent = item.icon
-                                            return (
-                                                <div key={idx} className="medi-expertise-pills-row">
-                                                    <div className="medi-expertise-pill-icon-box">
-                                                        <IconComponent size={14} />
-                                                    </div>
-                                                    <span className="medi-expertise-pill-text">{item.title}</span>
-                                                </div>
-                                            )
-                                        })}
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-
-
-                {/* FAQ SECTION */}
-                <section className="fcel-faq-section">
-                    <div className="fcel-faq-container">
-                        <div style={{ textAlign: 'center' }}>
-                            <h2 className="fcel-section-heading">Frequently Asked Questions</h2>
-                            <div className="fcel-heading-bar fcel-bar-center"></div>
-                        </div>
-                        <div className="fcel-faq-list">
-                            {sceFaqs.map((faq, index) => (
-                                <div
-                                    key={index}
-                                    className="fcel-faq-item"
-                                    onClick={() => sceToggleFaq(index)}
-                                >
-                                    <div className="fcel-faq-question-row">
-                                        <span>{faq.question}</span>
-                                        <span className="fcel-faq-toggle">
-                                            {sceActiveFaq === index ? "−" : "+"}
-                                        </span>
-                                    </div>
-                                    {sceActiveFaq === index && (
-                                        <p className="fcel-faq-answer">{faq.answer}</p>
-                                    )}
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-
-                {/* CTA SECTION */}
-                <section className="fcel-cta-section">
-                    <div className="fcel-cta-bg-pattern"></div>
-                    <div className="fcel-cta-inner">
-                        <h2 className="fcel-cta-heading">Ready to Book Your Scenic Eclipse Voyage?</h2>
-                        <div className="fcel-cta-separator"></div>
-                        <p className="fcel-cta-text">
-                            Our advisors help you compare Scenic itineraries, select the best suite, understand inclusions, choose the ideal sailing season, arrange pre- and post-cruise travel, secure exclusive offers, coordinate flights, plan private tours, and provide concierge-level support.
-                        </p>
-                        <div className="fcel-cta-btn-row">
-                            <Link to="/contact" className="fcel-btn-primary">
-                                <Phone size={18} />
-                                Schedule a Consultation
-                            </Link>
-                            <button className="fcel-btn-outline">
-                                <LayoutList size={18} />
-                                Request Itinerary Options
-                            </button>
-                        </div>
-                    </div>
-                </section>
-
-            </div>
-        </>
-    )
+            {/* Global Footer Navigation */}
+            <Navbar />
+        </div>
+    );
 }
 
-export default ScenicEclipseReviews
+export default ScenicEclipseReviews;
