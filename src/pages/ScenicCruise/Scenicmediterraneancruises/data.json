@@ -1,0 +1,399 @@
+{
+  "seo": {
+    "metaTitle": "Scenic Mediterranean Cruises | Luxury Mediterranean Cruises & Discovery Yachts",
+    "title": "Scenic Mediterranean Cruises",
+    "metaDescription": "Discover Scenic Mediterranean Cruises aboard Scenic Eclipse and Scenic Eclipse II. Explore Italy, Greece, Croatia, France, Spain, and the Adriatic with six-star luxury, immersive excursions, and all-inclusive experiences.",
+    "canonicalUrl": "https://www.tripsandships.com/scenic-mediterranean-cruises",
+    "keywords": "Scenic Mediterranean Cruises, Scenic Mediterranean cruise, Scenic Eclipse Mediterranean, Luxury Mediterranean cruises, Scenic Discovery Yacht Mediterranean, Mediterranean luxury cruise, Scenic Europe cruises, Mediterranean yacht cruise"
+  },
+  "hero": {
+    "badge": "Six-Star Discovery Yacht Cruising",
+    "title": "Scenic Mediterranean Cruises",
+    "subtitle": "Discover the Mediterranean in Six-Star Luxury aboard Scenic Eclipse and Scenic Eclipse II.",
+    "primaryCta": {
+      "text": "Schedule a Consultation",
+      "link": "/contact"
+    },
+    "secondaryCta": {
+      "text": "Request Itinerary Options",
+      "link": "/contact"
+    }
+  },
+  "intro": {
+    "eyebrow": "SIX-STAR MEDITERRANEAN LUXURY",
+    "heading": "Discover the Mediterranean in Six-Star Luxury",
+    "paragraphs": [
+      "The Mediterranean has captivated travelers for centuries with its ancient civilizations, picturesque coastal villages, world-famous cuisine, and crystal-clear waters. A Scenic Mediterranean Cruise combines these unforgettable destinations with the exceptional luxury of Scenic's Discovery Yachts, creating a truly immersive travel experience.",
+      "Unlike larger cruise ships that often focus on crowded ports and rigid schedules, Scenic Eclipse and Scenic Eclipse II provide an intimate yacht-style atmosphere, allowing guests to explore iconic cities and hidden gems while enjoying six-star accommodations, personalized service, and nearly all-inclusive luxury.",
+      "Whether you're strolling through the charming streets of Dubrovnik, enjoying wine in Tuscany, exploring ancient Greek ruins, or relaxing on the French Riviera, Scenic delivers one of the most refined Mediterranean cruise experiences available."
+    ]
+  },
+  "whyChoose": {
+    "title": "Why Choose Scenic for a Mediterranean Cruise?",
+    "subtitle": "A luxury travel experience unlike traditional cruise lines.",
+    "footnote": "Every detail is designed to create a seamless luxury vacation where guests simply relax and enjoy the journey.",
+    "features": [
+      {
+        "title": "Six-star Discovery Yacht experience",
+        "description": "An intimate, boutique atmosphere with approximately 228 guests and exceptional guest-to-space ratios."
+      },
+      {
+        "title": "Spacious all-veranda suites",
+        "description": "Every single suite features a private balcony or terrace with sweeping Mediterranean sea views."
+      },
+      {
+        "title": "Butler service for every guest",
+        "description": "Dedicated personalized assistance from unpacking luggage to making private reservations."
+      },
+      {
+        "title": "Multiple fine dining venues",
+        "description": "Up to 10 world-class culinary experiences with no surcharges or supplement fees."
+      },
+      {
+        "title": "Premium beverages included",
+        "description": "Fine wines, Champagnes, top-shelf spirits, and craft cocktails included all day, every day."
+      },
+      {
+        "title": "Complimentary Wi-Fi",
+        "description": "High-speed onboard connectivity throughout your voyage across the Mediterranean."
+      },
+      {
+        "title": "Included gratuities",
+        "description": "All onboard tips and gratuities are covered in your fare for a worry-free vacation."
+      },
+      {
+        "title": "Scenic Freechoice excursions",
+        "description": "Curated small-group excursions tailored to your personal pacing and interests in every port."
+      },
+      {
+        "title": "Scenic Enrich experiences",
+        "description": "Exclusive after-hours access and private cultural performances unavailable to regular travelers."
+      },
+      {
+        "title": "Personalized service",
+        "description": "Nearly 1:1 crew-to-guest ratio delivering effortless, anticipatory European hospitality."
+      },
+      {
+        "title": "Small ship atmosphere",
+        "description": "Access to intimate yacht harbors, shallow bays, and historic city centers inaccessible to mega-liners."
+      }
+    ]
+  },
+  "destinations": {
+    "title": "Mediterranean Destinations",
+    "subtitle": "Scenic itineraries visit many of Europe's most spectacular coastal destinations.",
+    "items": [
+      {
+        "name": "Italy",
+        "desc": "Experience Rome, Venice, Florence, Sicily, the Amalfi Coast, Portofino, and charming seaside villages filled with history, art, and exceptional cuisine.",
+        "imageKey": "amalfi-coast-italy-scenic-coastal-village-sea-view-travel-vacation.webp"
+      },
+      {
+        "name": "Greece",
+        "desc": "Visit Athens, Santorini, Mykonos, Crete, Rhodes, and smaller Greek islands famous for whitewashed villages and stunning sunsets.",
+        "imageKey": "santorini-greece-oia-blue-domed-churches-whitewashed-village-caldera-sea-view.webp"
+      },
+      {
+        "name": "Croatia",
+        "desc": "Explore Dubrovnik, Split, Hvar, Korčula, and the breathtaking Dalmatian Coast aboard Zodiacs and tender crafts.",
+        "imageKey": "scenic-eclipse-croatia-sail-away-zodiac.webp"
+      },
+      {
+        "name": "France",
+        "desc": "Discover Nice, Cannes, Monaco, Marseille, Corsica, and the glamorous French Riviera with prime yacht marina dockings.",
+        "imageKey": "scenic-eclipse-st-tropez-france.webp"
+      },
+      {
+        "name": "Spain",
+        "desc": "Sail to Barcelona, Valencia, Málaga, Palma de Mallorca, Ibiza, and historic Mediterranean ports brimming with vibrant culture.",
+        "imageKey": "scenic-eclipse-park-guell-barcelona-spain.webp"
+      },
+      {
+        "name": "Portugal",
+        "desc": "Select itineraries include Lisbon and Portugal's scenic Atlantic coastline before entering the Mediterranean.",
+        "imageKey": "scenic-eclipse-ii-sailaway-lisbon-portugal.webp"
+      },
+      {
+        "name": "Montenegro",
+        "desc": "Cruise into the spectacular fjord-like Bay of Kotor, one of Europe's most beautiful natural harbors.",
+        "imageKey": "zakynthos-greece-navagio-beach-shipwreck-cove-turquoise-water-cliffs.webp"
+      }
+    ]
+  },
+  "experience": {
+    "title": "Scenic Eclipse Experience",
+    "subtitle": "A luxury yacht experience that transforms Mediterranean cruising.",
+    "footnote": "Unlike larger cruise ships carrying thousands of guests, Scenic's smaller ships create a peaceful and intimate atmosphere.",
+    "features": [
+      "Observation lounges with expansive panoramic views",
+      "Multiple outdoor viewing areas and expansive teak decks",
+      "Infinity pools and vitality pools overlooking the sea",
+      "Spacious sun decks with comfortable loungers",
+      "Elegant lounges with sommelier wine tastings",
+      "Private verandas with every single suite",
+      "Personalized butler service in all suite categories",
+      "Contemporary luxury design and advanced zero-speed stabilizers"
+    ]
+  },
+  "dining": {
+    "title": "Dining & Culinary Experiences",
+    "subtitle": "Food is an essential part of every Mediterranean journey.",
+    "footnote": "Every meal reflects the destinations you're visiting while maintaining exceptional culinary standards.",
+    "features": [
+      "Mediterranean regional cuisine crafted from fresh local ingredients",
+      "Locally caught fresh seafood prepared daily by master chefs",
+      "Authentic Italian regional specialties at Elements restaurant",
+      "Contemporary French fine dining at Lumière with sommelier pairings",
+      "Spanish tapas and pintxos tasting experiences",
+      "Greek favorites and regional mezze selections",
+      "International rotating menus and chef's table tasting dinners",
+      "Sommelier-curated premium wines and Champagnes included"
+    ]
+  },
+  "freechoice": {
+    "title": "Scenic Freechoice Excursions",
+    "subtitle": "Immersive shore experiences tailored to your personal travel style.",
+    "footnote": "Guests can personalize their vacation by selecting experiences that match their interests.",
+    "features": [
+      "Guided walking tours through UNESCO World Heritage historic centers",
+      "Visits to iconic European historic landmarks and ancient monuments",
+      "Wine tastings at premier Tuscan, Provencal, and Sicilian estates",
+      "Hands-on cooking classes with celebrated local chefs",
+      "Curated museum and art gallery visits with certified historians",
+      "Vibrant local food, spice, and artisan market explorations",
+      "Scenic coastal drives along the Amalfi Coast and French Riviera",
+      "In-depth archaeological site visits with specialist naturalists",
+      "Visits to picturesque, hidden coastal fishing villages",
+      "Private local musical and cultural performances"
+    ]
+  },
+  "enrich": {
+    "title": "Scenic Enrich Experiences",
+    "subtitle": "Exclusive cultural moments unavailable to most travelers.",
+    "footnote": "These curated moments create unforgettable memories beyond traditional sightseeing.",
+    "items": [
+      {
+        "title": "Private Concerts",
+        "desc": "Classical and regional performances inside historic European palaces and villas."
+      },
+      {
+        "title": "Historic Palace Events",
+        "desc": "Exclusive after-hours access and private receptions in landmark fortresses."
+      },
+      {
+        "title": "Local Cultural Performances",
+        "desc": "Traditional folklore and musical performances in authentic intimate settings."
+      },
+      {
+        "title": "Exclusive Dinners",
+        "desc": "Private dining experiences in aristocratic estates and scenic vineyards."
+      },
+      {
+        "title": "Behind-the-Scenes Access",
+        "desc": "VIP entry to historical monuments and private art collections."
+      },
+      {
+        "title": "Special Evening Events",
+        "desc": "Curated evening gatherings celebrating the unique heritage of the Mediterranean."
+      }
+    ]
+  },
+  "wellness": {
+    "title": "Wellness at Sea",
+    "subtitle": "Sea days are an opportunity to relax, recharge, and rejuvenate.",
+    "footnote": "The wellness facilities rival many of the world's finest luxury resorts.",
+    "features": [
+      "Expansive 550m² Senses Spa with tranquil relaxation lounges",
+      "Scandinavian-inspired steam rooms and saunas",
+      "Therapeutic KLAFS infrared sauna therapy",
+      "Salt Therapy Lounge with heated relaxation beds",
+      "Pure Yoga & Pilates studio with daily guided classes",
+      "State-of-the-art Power Gym fitness center with ocean views",
+      "Vitality pools and outdoor hydrotherapy relaxation areas",
+      "Signature massage treatments and bespoke wellness rituals",
+      "Full-service hair and beauty salon"
+    ]
+  },
+  "included": {
+    "title": "What's Included on Scenic Mediterranean Cruises?",
+    "subtitle": "A truly all-inclusive approach with no hidden costs.",
+    "footnote": "This all-inclusive approach allows guests to focus on enjoying their vacation instead of worrying about extra costs.",
+    "items": [
+      {
+        "title": "Luxury Suite Accommodations",
+        "description": "All-veranda suites with ultra-luxury bedding, marble baths, and private balconies."
+      },
+      {
+        "title": "Butler Service",
+        "description": "Dedicated butler service included for every suite category aboard."
+      },
+      {
+        "title": "Fine Dining",
+        "description": "Up to 10 distinct culinary experiences with all specialty dining included."
+      },
+      {
+        "title": "Premium Beverages",
+        "description": "Unlimited fine wines, Champagne, craft cocktails, spirits, and beers."
+      },
+      {
+        "title": "Specialty Restaurants",
+        "description": "French fine dining, Asian fusion, and Italian cuisine at no extra cost."
+      },
+      {
+        "title": "Complimentary Wi-Fi",
+        "description": "High-speed internet access throughout your entire Mediterranean journey."
+      },
+      {
+        "title": "All Gratuities Included",
+        "description": "All onboard tipping and gratuities are covered in your cruise fare."
+      },
+      {
+        "title": "Scenic Freechoice Excursions",
+        "description": "Curated small-group shore excursions included in every port of call."
+      },
+      {
+        "title": "Scenic Enrich Experiences",
+        "description": "Exclusive after-hours palace concerts and private cultural events."
+      },
+      {
+        "title": "Fitness & Spa Facilities",
+        "description": "Full access to thermal spa suites, infrared sauna, vitality pools, and gym."
+      },
+      {
+        "title": "Onboard Entertainment",
+        "description": "Lectures by regional experts, evening musical performances, and lounges."
+      },
+      {
+        "title": "Concierge Service",
+        "description": "Round-the-clock concierge-level travel assistance throughout your sailing."
+      }
+    ]
+  },
+  "seasons": {
+    "title": "Best Time for a Scenic Mediterranean Cruise",
+    "subtitle": "Plan your ideal sailing season for weather, sights, and atmosphere.",
+    "footnote": "Many luxury travelers prefer spring and fall for their comfortable climate and smaller crowds.",
+    "items": [
+      {
+        "title": "Spring (April–May)",
+        "desc": "Comfortable temperatures, blooming coastal landscapes, lush scenery, and significantly fewer crowds in popular historic ports."
+      },
+      {
+        "title": "Summer (June–August)",
+        "desc": "Warm sunny weather, lively coastal towns, vibrant beach destinations, and long Mediterranean daylight hours."
+      },
+      {
+        "title": "Fall (September–October)",
+        "desc": "Pleasant sea temperatures, excellent regional wine harvests, quieter historic centers, and ideal sightseeing conditions."
+      }
+    ]
+  },
+  "audience": {
+    "title": "Who Should Choose Scenic Mediterranean Cruises?",
+    "subtitle": "Scenic is designed for discerning travelers who value intimacy, elegance, and cultural depth.",
+    "footnote": "If you value exceptional service, spacious accommodations, and immersive destination experiences, Scenic is an outstanding choice.",
+    "items": [
+      "Couples seeking romance, privacy, and scenic sailing",
+      "Ultra-luxury travelers who expect six-star standards and service",
+      "Honeymooners celebrating in world-class style",
+      "Retirees looking for comprehensive all-inclusive ease",
+      "Small ship and boutique yacht enthusiasts",
+      "Food and wine lovers who appreciate regional culinary depth",
+      "Cultural travelers seeking immersive history and architecture",
+      "First-time Mediterranean visitors wanting an effortless journey",
+      "Experienced luxury cruisers seeking a more intimate alternative to mega-ships"
+    ]
+  },
+  "whyBook": {
+    "title": "Why Book with Trips & Ships Luxury Travel?",
+    "subtitle": "Our luxury cruise advisors ensure every Scenic Mediterranean Cruise is customized to your travel style.",
+    "points": [
+      "Compare Scenic itineraries to find the ideal balance of ports and sea days",
+      "Select the ideal suite category and optimal ship placement for your voyage",
+      "Choose the best sailing season based on climate and crowd preferences",
+      "Arrange premium flights, private transfers, and luxury pre-cruise hotels",
+      "Coordinate private transfers between airport, hotel, and the yacht",
+      "Secure exclusive travel agency amenities, bonus offers, and shipboard credits",
+      "Plan customized pre- and post-cruise land tours in Rome, Barcelona, or Athens",
+      "Provide dedicated concierge-level travel support before, during, and after your journey"
+    ]
+  },
+  "expertInsight": {
+    "title": "Expert Insight from Angela Hughes",
+    "name": "Angela Hughes",
+    "badge": "CEO & Luxury Cruise Specialist",
+    "quote": "According to Angela Hughes, many travelers are initially attracted to Scenic because of its ultra-luxury discovery yachts — but ultimately fall in love with the all-inclusive onboard expedition and Mediterranean yachting experience.",
+    "prioritiesTitle": "What Discerning Mediterranean Cruisers Prioritize",
+    "priorities": [
+      "Six-star boutique yachting with approximately 228 guests",
+      "Truly all-inclusive luxury with zero hidden onboard costs",
+      "Butler service for every suite ensuring seamless comfort",
+      "Access to smaller, historic ports where mega-ships cannot dock",
+      "Up to 10 distinct fine dining experiences featuring regional cuisine",
+      "Immersive Scenic Freechoice shore excursions and exclusive Scenic Enrich events"
+    ],
+    "bio": "With over 40 years of experience in luxury travel and journeys across 121+ countries, Angela Hughes helps travelers compare luxury cruise lines realistically based on first-hand industry expertise."
+  },
+  "faqs": [
+    {
+      "question": "Where do Scenic Mediterranean Cruises sail?",
+      "answer": "Scenic sails throughout the Mediterranean, including Italy, Greece, Croatia, France, Spain, Montenegro, Malta, and Portugal on select itineraries."
+    },
+    {
+      "question": "Which ships sail the Mediterranean?",
+      "answer": "Scenic Eclipse and Scenic Eclipse II both operate luxury Mediterranean voyages."
+    },
+    {
+      "question": "Are Scenic Mediterranean Cruises all-inclusive?",
+      "answer": "Yes. Most voyages include luxury accommodations, butler service, dining, premium beverages, Wi-Fi, gratuities, and many shore excursions."
+    },
+    {
+      "question": "Does every suite include butler service?",
+      "answer": "Yes. Every suite aboard Scenic Eclipse and Scenic Eclipse II includes personalized butler service."
+    },
+    {
+      "question": "Are shore excursions included?",
+      "answer": "Yes. Scenic includes Scenic Freechoice excursions and Scenic Enrich experiences on many Mediterranean itineraries."
+    },
+    {
+      "question": "What dining options are available?",
+      "answer": "Guests enjoy multiple restaurants serving Mediterranean specialties, international cuisine, fresh seafood, and premium wines."
+    },
+    {
+      "question": "What is the best time to cruise the Mediterranean?",
+      "answer": "Spring (April–May) and Fall (September–October) offer pleasant weather, fewer crowds, and excellent sightseeing opportunities."
+    },
+    {
+      "question": "Is Scenic suitable for first-time Mediterranean cruisers?",
+      "answer": "Absolutely. Scenic's all-inclusive experience and personalized service make it ideal for first-time luxury cruisers."
+    },
+    {
+      "question": "Is Wi-Fi included?",
+      "answer": "Yes. Complimentary Wi-Fi is included throughout most Scenic Mediterranean cruises."
+    },
+    {
+      "question": "Are gratuities included?",
+      "answer": "Yes. Scenic includes onboard gratuities in the cruise fare."
+    },
+    {
+      "question": "How many guests do Scenic Discovery Yachts accommodate?",
+      "answer": "Scenic Eclipse and Scenic Eclipse II accommodate approximately 228 guests, creating an intimate luxury yacht atmosphere."
+    },
+    {
+      "question": "Why choose Scenic over larger cruise ships?",
+      "answer": "Scenic offers a more personalized experience with spacious suites, butler service, fewer guests, immersive excursions, and nearly all-inclusive luxury, making it ideal for travelers seeking a refined Mediterranean journey."
+    }
+  ],
+  "finalCta": {
+    "title": "Ready to Book Your Scenic Mediterranean Cruise?",
+    "subtitle": "Our luxury cruise advisors help you compare Scenic itineraries, select the ideal suite, choose the best sailing season, arrange flights and hotels, coordinate private transfers, secure exclusive offers, plan pre- and post-cruise stays, and provide concierge-level travel support.",
+    "primaryCta": {
+      "text": "Schedule a Consultation",
+      "link": "/contact"
+    },
+    "secondaryCta": {
+      "text": "Request Itinerary Options",
+      "link": "/contact"
+    }
+  }
+}

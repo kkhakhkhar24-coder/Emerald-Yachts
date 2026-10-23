@@ -1,0 +1,357 @@
+{
+  "seo": {
+    "metaTitle": "Scenic Iceland Cruises | Luxury Iceland Cruises & Discovery Yachts (2026)",
+    "title": "Scenic Iceland Cruises",
+    "metaDescription": "Discover Scenic Iceland Cruises aboard Scenic Eclipse and Scenic Eclipse II. Explore Iceland's dramatic fjords, glaciers, volcanoes, waterfalls, wildlife, and geothermal wonders with six-star all-inclusive luxury.",
+    "canonicalUrl": "https://www.tripsandships.com/scenic-iceland-cruises",
+    "keywords": "Scenic Iceland Cruises, Scenic Iceland cruise, Scenic Eclipse Iceland, Iceland luxury cruises, Iceland Discovery Yacht, Iceland expedition cruise, Scenic Arctic cruises, Iceland small ship cruise"
+  },
+  "hero": {
+    "badge": "Luxury Iceland Cruises & Discovery Yachts",
+    "title": "Scenic Iceland Cruises",
+    "subtitle": "Experience Iceland Like Never Before aboard the world's most luxurious Discovery Yachts.",
+    "primaryCta": {
+      "text": "Schedule a Consultation",
+      "link": "/contact"
+    },
+    "secondaryCta": {
+      "text": "Request Itinerary Options",
+      "link": "/contact"
+    }
+  },
+  "intro": {
+    "eyebrow": "EXPERIENCE ICELAND LIKE NEVER BEFORE",
+    "heading": "A Destination Unlike Anywhere Else on Earth",
+    "paragraphs": [
+      "Towering waterfalls, active volcanoes, massive glaciers, black sand beaches, geothermal lagoons, and abundant wildlife combine to create one of the world's most extraordinary travel experiences.",
+      "A Scenic Iceland Cruise allows you to discover this remarkable island aboard the ultra-luxury Scenic Eclipse or Scenic Eclipse II. Unlike larger cruise ships, Scenic's Discovery Yachts provide an intimate, all-inclusive experience with personalized service, luxurious accommodations, and immersive excursions designed to bring you closer to Iceland's breathtaking natural beauty.",
+      "Whether you're exploring remote fjords, watching whales surface beside the ship, hiking volcanic landscapes, or visiting charming fishing villages, every day offers unforgettable discoveries."
+    ]
+  },
+  "whyChoose": {
+    "title": "Why Choose Scenic for an Iceland Cruise?",
+    "subtitle": "Six-star luxury combined with true expedition capability for an extraordinary voyage.",
+    "features": [
+      {
+        "title": "Six-star Discovery Yacht",
+        "description": "An ultra-luxury vessel specifically built to navigate Iceland's remote fjords with unrivaled elegance."
+      },
+      {
+        "title": "Spacious all-veranda suites",
+        "description": "Every single suite features a private balcony or terrace with sweeping North Atlantic sea views."
+      },
+      {
+        "title": "Butler service for every guest",
+        "description": "Personalized, attentive butler service extended across every suite category onboard."
+      },
+      {
+        "title": "Nearly all-inclusive pricing",
+        "description": "Cruise fares cover dining, top-shelf beverages, transfers, tipping, and daily guided excursions."
+      },
+      {
+        "title": "Expert Discovery Team",
+        "description": "Historians, marine biologists, and naturalists leading excursions and insightful onboard lectures."
+      },
+      {
+        "title": "Scenic Freechoice experiences",
+        "description": "Curated small-group shore excursions tailored to active exploration and cultural discoveries."
+      },
+      {
+        "title": "Scenic Enrich events",
+        "description": "Exclusive after-hours cultural experiences and private events inaccessible to typical visitors."
+      },
+      {
+        "title": "Premium beverages included",
+        "description": "Fine wines, Champagne, craft spirits, specialty coffees, and minibar restocked daily."
+      },
+      {
+        "title": "Complimentary Wi-Fi",
+        "description": "Stay connected throughout your voyage across Iceland with high-speed onboard satellite internet."
+      },
+      {
+        "title": "Included gratuities",
+        "description": "All onboard tipping and service charges are fully covered upfront in your cruise fare."
+      },
+      {
+        "title": "Personalized service",
+        "description": "Remarkable 1:1 guest-to-staff ratio ensuring every request is handled with meticulous care."
+      },
+      {
+        "title": "Small ship luxury",
+        "description": "Boutique scale of just 228 guests provides intimate access to hidden ports where mega-ships cannot dock."
+      }
+    ]
+  },
+  "destinations": {
+    "title": "Explore Iceland's Incredible Landscapes",
+    "subtitle": "Every Scenic Iceland itinerary showcases the country's extraordinary diversity and remote harbors.",
+    "items": [
+      {
+        "name": "Reykjavik",
+        "desc": "Begin or end your journey in Iceland's vibrant capital, known for colorful architecture, excellent restaurants, museums, and geothermal culture.",
+        "imageKey": "reykjavik"
+      },
+      {
+        "name": "Westfjords",
+        "desc": "Discover dramatic cliffs, secluded villages, Dynjandi waterfall, and some of Iceland's least-visited landscapes.",
+        "imageKey": "westfjords"
+      },
+      {
+        "name": "Ísafjörður",
+        "desc": "Explore one of Iceland's most picturesque fishing towns surrounded by towering mountains and pristine fjords.",
+        "imageKey": "isafjordur"
+      },
+      {
+        "name": "Akureyri",
+        "desc": "Known as the 'Capital of North Iceland,' offering botanical gardens, charming streets, and easy access to waterfalls and volcanic regions.",
+        "imageKey": "akureyri"
+      },
+      {
+        "name": "Seyðisfjörður",
+        "desc": "Nestled within a spectacular fjord, this colorful village is famous for its artistic community and breathtaking scenery.",
+        "imageKey": "seydisfjordur"
+      },
+      {
+        "name": "East Fjords",
+        "desc": "Cruise through peaceful waterways lined with waterfalls, mountains, and abundant wildlife.",
+        "imageKey": "eastfjords"
+      }
+    ]
+  },
+  "wildlife": {
+    "title": "Incredible Wildlife Encounters",
+    "subtitle": "Iceland is one of Europe's premier wildlife destinations, home to prolific marine life and seabirds.",
+    "footnote": "Scenic's expert Discovery Team helps guests understand Iceland's fascinating marine and coastal ecosystems throughout the voyage.",
+    "features": [
+      "Humpback and Minke whales feeding in nutrient-rich coastal waters",
+      "Playful pods of Orcas and dolphins breaching near the ship",
+      "Thousands of Atlantic puffins nesting on dramatic sea cliffs",
+      "Arctic terns, northern fulmars, and rare migratory seabird colonies",
+      "Harbor seals and grey seals resting along sheltered rocky shores",
+      "Elusive Arctic foxes roaming wild coastal tundras"
+    ]
+  },
+  "expedition": {
+    "title": "Expedition Experiences",
+    "subtitle": "Scenic Eclipse is purpose-built for immersive Arctic exploration.",
+    "footnote": "These immersive activities bring travelers closer to Iceland's remarkable natural environment.",
+    "features": [
+      "Zodiac cruises into hidden fjords, sea caves, and secluded bays",
+      "Guided nature walks and coastal hikes led by expert naturalists",
+      "Close-up wildlife observation from shipboard observation terraces",
+      "Glacier viewing and volcanic geology field exploration",
+      "Photography opportunities guided by professional wildlife photographers",
+      "Educational destination briefings and enriching scientific lectures",
+      "Local cultural visits to remote heritage fishing hamlets",
+      "Scenic cruising through narrow channels inaccessible to larger vessels"
+    ]
+  },
+  "luxury": {
+    "title": "Scenic Eclipse Luxury",
+    "subtitle": "While Iceland's landscapes are rugged, life onboard is exceptionally luxurious.",
+    "footnote": "The result is a perfect balance between polar adventure and refined six-star relaxation.",
+    "features": [
+      "Dedicated butler service catering to every suite onboard",
+      "Spacious all-veranda suites with private walkout balconies",
+      "Ultra-luxury bedding, Egyptian cotton linens, and pillow menus",
+      "Personalized concierge assistance for custom onboard arrangements",
+      "Expansive Observation Lounge with Swarovski telescopes",
+      "Multiple outdoor teak decks and heated vitality spa pools",
+      "Elegant public lounges featuring contemporary yacht design"
+    ]
+  },
+  "dining": {
+    "title": "Dining & Culinary Experiences",
+    "subtitle": "Exceptional dining inspired by global cuisine and authentic Nordic flavors.",
+    "footnote": "Every meal is prepared using premium ingredients and exceptional culinary expertise.",
+    "features": [
+      "Fresh locally sourced Icelandic seafood, Arctic char, and langoustines",
+      "Nordic culinary specialties crafted by master executive chefs",
+      "Up to 10 fine dining and casual restaurant experiences",
+      "French haute cuisine at Lumière and Asian fusion at Koko's",
+      "Unlimited premium wines, Champagne, and craft spirits",
+      "24-hour complimentary in-suite dining service"
+    ]
+  },
+  "wellness": {
+    "title": "Wellness at Sea",
+    "subtitle": "After exploring Iceland's dramatic landscapes, guests can relax in world-class wellness facilities.",
+    "footnote": "The 550 sq. meter Senses Spa provides the ultimate rejuvenating retreat after active days onshore.",
+    "features": [
+      "Full-service Senses Spa with holistic wellness therapies",
+      "Traditional Scandinavian sauna and eucalyptus steam rooms",
+      "Therapeutic infrared sauna suites for deep muscle recovery",
+      "Dedicated Salt Therapy Lounge promoting respiratory vitality",
+      "Pure Yoga and Pilates studio with complimentary daily classes",
+      "Fully equipped Power Gym with state-of-the-art Technogym machines",
+      "Indoor and outdoor heated vitality pools with panoramic ocean views"
+    ]
+  },
+  "included": {
+    "title": "What's Included on Scenic Iceland Cruises?",
+    "subtitle": "Truly all-inclusive luxury where nearly everything is covered upfront.",
+    "items": [
+      {
+        "title": "Luxury Suite Accommodations",
+        "description": "All-veranda suites featuring private balconies, luxury king beds, and marble bathrooms."
+      },
+      {
+        "title": "Dedicated Butler Service",
+        "description": "Personalized butler service included across every single suite category onboard."
+      },
+      {
+        "title": "Unlimited Fine Dining",
+        "description": "Up to 10 distinct culinary experiences with all specialty dining completely covered."
+      },
+      {
+        "title": "Premium Beverages",
+        "description": "Unlimited fine wines, Champagne, craft cocktails, spirits, beer, and specialty coffees."
+      },
+      {
+        "title": "Scenic Freechoice Excursions",
+        "description": "Daily curated small-group shore excursions led by knowledgeable regional guides."
+      },
+      {
+        "title": "Scenic Enrich Events",
+        "description": "Exclusive private access cultural events and concerts arranged solely for Scenic guests."
+      },
+      {
+        "title": "Expert Discovery Team",
+        "description": "Expedition naturalists, marine biologists, and historians guiding every landing."
+      },
+      {
+        "title": "Complimentary Wi-Fi",
+        "description": "High-speed onboard satellite internet throughout the ship during your Iceland voyage."
+      },
+      {
+        "title": "All Gratuities Included",
+        "description": "All crew tipping and service charges are fully included with zero hidden charges."
+      },
+      {
+        "title": "Comprehensive Wellness",
+        "description": "Complimentary access to thermal saunas, steam rooms, gym, and vitality pools."
+      },
+      {
+        "title": "Onboard Entertainment",
+        "description": "Enrichment lectures, musical performances, and curated evening entertainment."
+      },
+      {
+        "title": "Concierge Support",
+        "description": "24-hour concierge travel assistance ensuring seamless logistics throughout your journey."
+      }
+    ]
+  },
+  "seasons": {
+    "title": "Best Time to Cruise Iceland",
+    "subtitle": "Choose the season that matches your exploration style, weather preferences, and wildlife goals.",
+    "items": [
+      {
+        "title": "May–June (Spring Awakening)",
+        "time": "May – June",
+        "desc": "Long daylight hours, nesting puffin colonies on dramatic sea cliffs, blooming Arctic flora, and active whale migrations."
+      },
+      {
+        "title": "July–August (Peak Summer & Midnight Sun)",
+        "time": "July – August",
+        "desc": "Warmer temperatures, calm seas, 24 hours of daylight under the Midnight Sun, and optimal Zodiac expedition conditions."
+      },
+      {
+        "title": "September (Autumn & Northern Lights)",
+        "time": "September",
+        "desc": "Vibrant golden tundra colors, crisp Arctic air, and early opportunities to witness the ethereal Aurora Borealis on clear nights."
+      }
+    ]
+  },
+  "audience": {
+    "title": "Who Should Choose Scenic Iceland Cruises?",
+    "subtitle": "If you want to combine extraordinary landscapes with exceptional comfort, Scenic is one of the finest ways to experience Iceland."
+  },
+  "whyBook": {
+    "title": "Why Book with Trips & Ships Luxury Travel?",
+    "subtitle": "Trusted Scenic Cruise Specialists with over 40 years of luxury travel expertise.",
+    "points": [
+      "Compare Scenic Iceland itineraries with objective, firsthand advice",
+      "Choose the optimal sailing season for wildlife, weather, or northern lights",
+      "Select the ideal suite category and ship location for maximum comfort",
+      "Arrange custom flights, airport transfers, and private luxury hotels",
+      "Coordinate pre- and post-cruise extended stays across Iceland",
+      "Secure exclusive shipboard promotions, amenities, and VIP perks",
+      "Plan customized private excursions and unforgettable land experiences",
+      "Receive concierge-level support before, during, and after your expedition"
+    ]
+  },
+  "expertInsight": {
+    "badge": "EXPERT ADVISOR",
+    "name": "Angela Hughes",
+    "title": "Why Modern Luxury Travelers Are Choosing Scenic",
+    "quote": "According to Angela Hughes, many travelers are initially attracted to Scenic because of its ultra-luxury discovery yachts — but ultimately fall in love with the all-inclusive onboard expedition experience.",
+    "prioritiesTitle": "After more than four decades in luxury travel and visiting over 121 countries, Angela consistently sees Scenic travelers prioritizing:",
+    "priorities": [
+      "Polar discovery yachting",
+      "Truly all-inclusive luxury",
+      "Butler service for every suite",
+      "Helicopter & submarine features",
+      "Up to 10 dining experiences",
+      "Immersive Zodiac excursions"
+    ],
+    "bio": "As founder of Luxury Travel University and a globally recognized luxury travel speaker, Angela Hughes helps travelers compare luxury cruise experiences realistically — based on real-world expertise rather than generic online recommendations. Her expertise spans ultra-luxury yachting, polar expeditions, butler services, luxury cruise planning, and custom expedition travel."
+  },
+  "faqs": [
+    {
+      "question": "Where do Scenic Iceland Cruises sail?",
+      "answer": "Scenic itineraries visit Reykjavik, Ísafjörður, Akureyri, Seyðisfjörður, the East Fjords, Westfjords, and other spectacular Icelandic destinations."
+    },
+    {
+      "question": "Which Scenic ships sail to Iceland?",
+      "answer": "Scenic Eclipse and Scenic Eclipse II both operate luxury voyages to Iceland and the North Atlantic."
+    },
+    {
+      "question": "Are Scenic Iceland Cruises all-inclusive?",
+      "answer": "Yes. Most voyages include luxury accommodations, butler service, premium dining, beverages, Wi-Fi, gratuities, and many shore excursions."
+    },
+    {
+      "question": "Is butler service included?",
+      "answer": "Yes. Every suite aboard Scenic Eclipse and Scenic Eclipse II includes personalized butler service."
+    },
+    {
+      "question": "What wildlife can I see in Iceland?",
+      "answer": "Guests may see whales, puffins, seals, Arctic foxes, dolphins, seabirds, and numerous marine mammals depending on the season."
+    },
+    {
+      "question": "Are Zodiac excursions included?",
+      "answer": "Many expedition activities, including Zodiac cruises, are included when conditions permit."
+    },
+    {
+      "question": "What is the best time to cruise Iceland?",
+      "answer": "May through September offers excellent cruising conditions, with September also providing opportunities to see the Northern Lights on select voyages."
+    },
+    {
+      "question": "Is Scenic suitable for first-time expedition travelers?",
+      "answer": "Yes. Scenic combines expedition experiences with six-star luxury, making it ideal for first-time luxury expedition cruisers."
+    },
+    {
+      "question": "Is Wi-Fi included?",
+      "answer": "Yes. Complimentary Wi-Fi is included throughout most Scenic voyages."
+    },
+    {
+      "question": "Are gratuities included?",
+      "answer": "Yes. Scenic includes onboard gratuities as part of its all-inclusive pricing."
+    },
+    {
+      "question": "How many guests sail aboard Scenic Eclipse?",
+      "answer": "Scenic Eclipse and Scenic Eclipse II accommodate approximately 228 guests, creating an intimate and personalized experience."
+    },
+    {
+      "question": "Why choose Scenic for an Iceland cruise?",
+      "answer": "Scenic combines luxury accommodations, personalized butler service, expert-led expeditions, immersive shore experiences, and all-inclusive amenities to create one of the most refined ways to explore Iceland."
+    }
+  ],
+  "finalCta": {
+    "title": "Ready to Discover Iceland Aboard Scenic Eclipse?",
+    "subtitle": "From dramatic fjords to abundant wildlife, let our Scenic specialists design the perfect Iceland Discovery Yacht voyage for you.",
+    "primaryCta": {
+      "text": "Schedule a Consultation",
+      "link": "/contact"
+    }
+  }
+}

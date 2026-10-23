@@ -885,12 +885,12 @@ const Navbar = () => {
               >
                 Scenic Vs Ponant</NavLink>
 
-              {/* <NavLink
+              <NavLink
                 to="/scenic-vs-seabourn"
                 className="nav-dropdown-single"
                 onClick={toggleMenu}
               >
-                Scenic Vs Seabourn</NavLink> */}
+                Scenic Vs Seabourn</NavLink>
 
               <NavLink
                 to="/what-is-included-on-scenic"
@@ -2514,12 +2514,12 @@ const Navbar = () => {
             >
               Scenic Vs Ponant</NavLink>
 
-            {/* <NavLink
+            <NavLink
               to="/scenic-vs-seabourn"
               className="nav-dropdown-single"
               onClick={toggleMenu}
             >
-              Scenic Vs Seabourn</NavLink> */}
+              Scenic Vs Seabourn</NavLink>
 
             <NavLink
               to="/what-is-included-on-scenic"

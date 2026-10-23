@@ -1,0 +1,9 @@
+/* ============================================================
+   SCENIC ICELAND CRUISES — PAGE WRAPPER STYLES
+   All UI styling is strictly delivered through the design system components in @/components/ui
+   ============================================================ */
+
+.sic-page-wrapper {
+    overflow-x: hidden;
+    width: 100%;
+}

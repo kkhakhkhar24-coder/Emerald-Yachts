@@ -1,0 +1,11 @@
+/* ============================================================
+   WHAT IS INCLUDED ON SCENIC — PAGE STYLES
+   Minimalist container styling, UI system handles layout & tokens
+   ============================================================ */
+
+.wis-page-wrapper {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #ffffff;
+    font-family: inherit;
+}
