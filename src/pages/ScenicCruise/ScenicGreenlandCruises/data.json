@@ -1,0 +1,440 @@
+{
+  "seo": {
+    "metaTitle": "Scenic Greenland Cruises | Luxury Greenland Expeditions (2026-2027)",
+    "title": "Scenic Greenland Cruises",
+    "metaDescription": "Discover Scenic Greenland Cruises aboard Scenic Eclipse. Explore Ilulissat, Disko Bay, East Greenland, breathtaking fjords, Inuit culture, and Arctic wildlife with an all-inclusive luxury expedition.",
+    "canonicalUrl": "https://www.tripsandships.com/scenic-greenland-cruises",
+    "keywords": "Scenic Greenland Cruises, Scenic Greenland Expedition, Scenic Eclipse Greenland, Greenland Luxury Cruises, Greenland Expedition Cruises, Greenland Cruises 2026, Greenland Cruises 2027, Arctic Luxury Cruises, Scenic Arctic Cruises"
+  },
+  "hero": {
+    "badge": "Scenic Discovery Yacht · Greenland Expeditions",
+    "title": "Scenic Greenland Cruises",
+    "subtitle": "Explore the Arctic in Six-Star Ultra-Luxury aboard Scenic Eclipse, where colossal ice, remote fjords, and Inuit culture meet unrivaled exploration.",
+    "primaryCta": {
+      "text": "Plan Your Expedition",
+      "link": "https://www.tripsandships.com/contact"
+    },
+    "secondaryCta": {
+      "text": "Explore Destinations",
+      "link": "#destinations"
+    }
+  },
+  "intro": {
+    "eyebrow": "THE ARCTIC, ELEVATED",
+    "heading": "Experience the Untouched Beauty of the Arctic",
+    "paragraphs": [
+      "Greenland is one of the world's last true wilderness destinations, where towering icebergs, dramatic fjords, ancient glaciers, and vibrant Inuit communities create an unforgettable expedition experience.",
+      "Aboard Scenic Eclipse, Scenic's award-winning Discovery Yacht—purpose-built and Polar Class 6 certified with advanced stabilization systems and an ice-strengthened hull for confident navigation in polar waters—you'll experience Greenland in exceptional comfort while exploring some of the most remote and spectacular landscapes on Earth.",
+      "Guests can sail through breathtaking fjords, admire colossal ice formations, visit colorful coastal villages, and learn about Inuit culture with guidance from Scenic's expert Discovery Team. Many itineraries seamlessly combine Greenland with Iceland, allowing travelers to experience two extraordinary Arctic destinations on a single voyage."
+    ]
+  },
+  "whyChoose": {
+    "title": "Why Choose Scenic for a Greenland Cruise?",
+    "subtitle": "Six-star discovery yacht luxury combined with true polar expedition capability for an extraordinary voyage.",
+    "features": [
+      {
+        "title": "Six-Star Discovery Yacht",
+        "description": "Polar Class 6 ice-strengthened vessel specifically engineered for navigating polar waters with utmost safety and elegance."
+      },
+      {
+        "title": "Spacious All-Verandah Suites",
+        "description": "Every single suite features a private balcony or terrace with sweeping Arctic ocean and fjord vistas."
+      },
+      {
+        "title": "Personalized Butler Service",
+        "description": "Dedicated, attentive butler service extended to every guest across all suite categories onboard."
+      },
+      {
+        "title": "Expert Discovery Team",
+        "description": "Polar naturalists, marine biologists, historians, and geologists leading daily excursions and insightful onboard lectures."
+      },
+      {
+        "title": "Included Zodiac Excursions",
+        "description": "State-of-the-art Zodiac cruises and guided shore landings to remote landscapes inaccessible to larger ships."
+      },
+      {
+        "title": "Truly All-Inclusive Luxury",
+        "description": "Gourmet dining across multiple venues, top-shelf beverages, daily excursions, Wi-Fi, and gratuities are all covered."
+      },
+      {
+        "title": "Scenic Senses Spa & Wellness",
+        "description": "Expansive 550 sqm thermal spa, vitality pools, infrared saunas, yoga studio, and panoramic relaxation lounges."
+      },
+      {
+        "title": "Intimate Small-Ship Access",
+        "description": "With only 228 guests, enjoy personalized service, unhurried landings, and access to narrow, iceberg-filled fjords."
+      }
+    ]
+  },
+  "destinations": {
+    "title": "Incredible Greenland Destinations",
+    "subtitle": "Each destination reveals a different side of the world's largest island, from iceberg-choked bays to ancient Inuit settlements.",
+    "items": [
+      {
+        "name": "Ilulissat & Icefjord",
+        "desc": "One of Greenland's most iconic destinations, famous for the UNESCO-listed Ilulissat Icefjord, where colossal icebergs calve from Jakobshavn Glacier into the sea.",
+        "imageKey": "ilulissat"
+      },
+      {
+        "name": "Disko Bay",
+        "desc": "Renowned for spectacular floating icebergs and abundant marine wildlife. Guests frequently encounter humpback whales, fin whales, seals, and diverse Arctic seabirds.",
+        "imageKey": "diskoBay"
+      },
+      {
+        "name": "East Greenland & Scoresby Sound",
+        "desc": "One of the most remote regions on Earth, featuring the world's largest fjord system, towering Arctic mountains, massive glaciers, and small Inuit settlements.",
+        "imageKey": "eastGreenland"
+      },
+      {
+        "name": "Narsaq & South Greenland",
+        "desc": "Located in southern Greenland, Narsaq charms with brightly painted wooden homes, dramatic coastal peaks, and a rich blend of Norse and Inuit history.",
+        "imageKey": "narsaq"
+      },
+      {
+        "name": "Prince Christian Sound",
+        "desc": "A breathtaking narrow waterway framed by towering granite cliffs, cascading waterfalls, hanging glaciers, and drifting icebergs.",
+        "imageKey": "princeChristian"
+      },
+      {
+        "name": "Qaqortoq",
+        "desc": "The largest town in southern Greenland, featuring lovely colonial architecture, stone sculptures, historic churches, and panoramic fjord views.",
+        "imageKey": "qaqortoq"
+      }
+    ]
+  },
+  "wildlife": {
+    "title": "Incredible Wildlife Encounters",
+    "subtitle": "Observe magnificent Arctic wildlife in its natural habitat under the guidance of expert naturalists.",
+    "footnote": "Wildlife sightings vary by seasonal conditions, but Scenic's experienced expedition team maximizes opportunities while strictly respecting the fragile polar ecosystem.",
+    "features": [
+      {
+        "title": "Whales & Marine Life",
+        "description": "Spot humpback whales, minke whales, fin whales, and curious seals breaching among floating ice floes."
+      },
+      {
+        "title": "Polar Bears & Arctic Fauna",
+        "description": "Opportunities to spot polar bears on sea ice, musk oxen on tundra hillsides, and nimble Arctic foxes in remote coastal valleys."
+      },
+      {
+        "title": "Arctic Seabird Colonies",
+        "description": "Encounter puffins, guillemots, kittiwakes, and fulmars nesting in sheer coastal cliffs along the fjords."
+      }
+    ]
+  },
+  "culture": {
+    "title": "Immerse Yourself in Inuit Culture",
+    "subtitle": "A Greenland expedition is about more than scenery—it is a profound cultural encounter with resilient Arctic communities.",
+    "footnote": "Authentic interactions with local artisans, cultural presentations, and village visits provide a deep appreciation for Inuit traditions.",
+    "features": [
+      {
+        "title": "Traditional Village Landings",
+        "description": "Visit remote coastal settlements and learn firsthand about modern Greenlandic lifestyle and ancient traditions."
+      },
+      {
+        "title": "Inuit Art & Stone Sculptures",
+        "description": "Discover local craftsmanship, traditional tupilak carvings, and regional textile arts."
+      },
+      {
+        "title": "Onboard Cultural Lectures",
+        "description": "Gain historical insights into early Norse settlers, Arctic survival, and Greenland's unique geopolitical heritage."
+      }
+    ]
+  },
+  "expedition": {
+    "title": "Unforgettable Expedition Experiences",
+    "subtitle": "Active exploration designed for immersion in the Arctic wilderness with top-tier safety and comfort.",
+    "footnote": "Every expedition activity is led by seasoned polar leaders equipped with deep knowledge and respect for the environment.",
+    "features": [
+      {
+        "title": "Zodiac Cruising",
+        "description": "Maneuver safely between towering icebergs and explore shallow bays and fjord heads inaccessible to other ships."
+      },
+      {
+        "title": "Guided Shore Landings",
+        "description": "Trek across Arctic tundra, glacier viewpoints, and historic Norse ruins with experienced guides."
+      },
+      {
+        "title": "Polar Kayaking & Paddleboarding",
+        "description": "Glide peacefully across glassy Arctic waters surrounded by breathtaking glaciers and silence."
+      },
+      {
+        "title": "Discovery Team Lectures",
+        "description": "Daily briefings and recaps in the state-of-the-art theatre covering glaciology, geology, and wildlife biology."
+      }
+    ]
+  },
+  "luxury": {
+    "title": "Ultra-Luxury Living at the Edge of the World",
+    "subtitle": "Experience six-star discovery yachting with world-class suites, personalized butler care, and unrivaled space.",
+    "footnote": "Scenic Eclipse boasts an exceptional 1:1 guest-to-staff ratio, ensuring every moment of your voyage is effortless.",
+    "features": [
+      {
+        "title": "All-Verandah Suites",
+        "description": "Spacious suites ranging from 32 to 245 square meters with king-size beds, pillow menus, and private balconies."
+      },
+      {
+        "title": "Dedicated Butler Care",
+        "description": "Enjoy room service, morning beverage delivery, unpacking assistance, and customized onboard coordination."
+      },
+      {
+        "title": "Observation Lounge & Terrace",
+        "description": "Sip specialty drinks while viewing Arctic panoramas through Swarovski spotting scopes."
+      }
+    ]
+  },
+  "dining": {
+    "title": "World-Class Dining Across 10 Culinary Venues",
+    "subtitle": "Culinary excellence that rivals the finest Michelin-starred establishments on land.",
+    "footnote": "All dining experiences and premium wines, Champagnes, and top-shelf spirits are completely included.",
+    "features": [
+      {
+        "title": "Diverse Gourmet Venues",
+        "description": "From contemporary French fine dining at Lumière to authentic pan-Asian cuisine at Koko's and steakhouse classics at Elements."
+      },
+      {
+        "title": "Teppanyaki & Chef's Table",
+        "description": "Intimate dining experiences showcasing artisanal tasting menus and culinary craftsmanship."
+      },
+      {
+        "title": "24-Hour In-Suite Dining",
+        "description": "Dine in the comfort of your private suite or on your balcony overlooking Greenland's fjords."
+      }
+    ]
+  },
+  "wellness": {
+    "title": "Scenic Senses Spa & Thermal Sanctuary",
+    "subtitle": "Rejuvenate after a day on the ice in a luxurious 550 sqm thermal sanctuary.",
+    "footnote": "Features indoor temperature-controlled vitality pools, infrared saunas, steam rooms, and therapeutic treatment rooms.",
+    "features": [
+      {
+        "title": "Thermal Lounges & Saunas",
+        "description": "Unwind in Finnish saunas, aromatherapy steam rooms, and heated stone relaxation loungers."
+      },
+      {
+        "title": "Yoga & Pilates Studio",
+        "description": "Complimentary daily yoga, Pilates, and wellness classes led by qualified onboard instructors."
+      },
+      {
+        "title": "Panoramic Vitality Pools",
+        "description": "Soak in heated spa pools while gazing out at calving glaciers and drifting sea ice."
+      }
+    ]
+  },
+  "included": {
+    "title": "Truly All-Inclusive on Scenic Greenland Cruises",
+    "subtitle": "Everything is covered upfront so you can focus entirely on the Arctic wonders.",
+    "items": [
+      {
+        "title": "Six-Star Discovery Yacht",
+        "description": "Polar Class 6 luxury expedition vessel built for safe and smooth Arctic cruising."
+      },
+      {
+        "title": "All Verandah Suites",
+        "description": "Spacious private balcony accommodations with sweeping ocean and fjord views."
+      },
+      {
+        "title": "Butler Service For All",
+        "description": "Personalized butler service dedicated to every guest regardless of suite tier."
+      },
+      {
+        "title": "Up to 10 Dining Experiences",
+        "description": "Unlimited gourmet dining across all specialty restaurants with no surcharges."
+      },
+      {
+        "title": "Unlimited Premium Beverages",
+        "description": "Top-shelf spirits, fine wines, Champagne, craft beers, cocktails, and specialty coffees."
+      },
+      {
+        "title": "Included Zodiac Excursions",
+        "description": "Daily guided Zodiac excursions and polar shore landings with expert naturalists."
+      },
+      {
+        "title": "Complimentary Wi-Fi",
+        "description": "High-speed onboard satellite internet keeping you connected throughout the Arctic."
+      },
+      {
+        "title": "Expedition Parka & Backpack",
+        "description": "Complimentary expedition parka, water bottle, and use of insulated polar boots."
+      },
+      {
+        "title": "All Gratuities Included",
+        "description": "All onboard tipping and shore service fees are completely included in your fare."
+      },
+      {
+        "title": "Scenic Senses Spa Facilities",
+        "description": "Complimentary access to steam rooms, saunas, relaxation lounges, and vitality pools."
+      },
+      {
+        "title": "Airport Transfers Included",
+        "description": "Seamless return transfers between local airports and the ship on embarkation/disembarkation."
+      },
+      {
+        "title": "Expert Discovery Team",
+        "description": "Insights from marine biologists, historians, glaciologists, and professional photographers."
+      }
+    ]
+  },
+  "seasons": {
+    "title": "Best Time for Scenic Greenland Cruises",
+    "subtitle": "Greenland expedition sailings operate during the Arctic summer when ice conditions allow spectacular access.",
+    "items": [
+      {
+        "title": "June (Early Season)",
+        "time": "June",
+        "desc": "Longer daylight hours with the Midnight Sun, fresh pristine snow on coastal peaks, breaking pack ice, and active marine life."
+      },
+      {
+        "title": "July & August (Peak Summer)",
+        "time": "July - August",
+        "desc": "Peak expedition season with milder temperatures, optimal iceberg viewing in Disko Bay, thriving whale populations, and accessible hiking routes."
+      },
+      {
+        "title": "September (Early Autumn)",
+        "time": "September",
+        "desc": "Dramatic golden lighting, vibrant autumn tundra colors, crisp clear skies, fewer expedition vessels, and opportunities to view the Northern Lights."
+      }
+    ]
+  },
+  "audience": {
+    "title": "Who Should Choose a Scenic Greenland Cruise?",
+    "subtitle": "Tailor-made for travelers who seek genuine expedition adventure without sacrificing world-class luxury.",
+    "items": [
+      {
+        "title": "Luxury Expedition Seekers",
+        "description": "Travelers who want authentic polar exploration combined with six-star boutique luxury, fine dining, and attentive butler service.",
+        "icon": "Crown",
+        "tag": "Ultra-Luxury"
+      },
+      {
+        "title": "Adventure Enthusiasts",
+        "description": "Adventurers eager to navigate colossal icebergs by Zodiac, hike remote Arctic valleys, and kayak among glaciers.",
+        "icon": "Compass",
+        "tag": "Expedition"
+      },
+      {
+        "title": "Wildlife & Nature Lovers",
+        "description": "Nature enthusiasts hoping to encounter humpback whales, seals, musk oxen, Arctic foxes, and polar seabirds in untouched habitats.",
+        "icon": "Bird",
+        "tag": "Fauna"
+      },
+      {
+        "title": "Photography Aficionados",
+        "description": "Photographers drawn to towering ice sculptures, ethereal Arctic lighting, the Midnight Sun, and colorful coastal hamlets.",
+        "icon": "Camera",
+        "tag": "Photography"
+      },
+      {
+        "title": "Culture & History Buffs",
+        "description": "Travelers keen to learn about Inuit traditions, Viking archaeological ruins, and contemporary Greenlandic village life.",
+        "icon": "Globe2",
+        "tag": "Culture"
+      },
+      {
+        "title": "Bucket-List Explorers",
+        "description": "Discerning travelers checking off one of the world's most remote, pristine, and awe-inspiring geographic frontiers.",
+        "icon": "Award",
+        "tag": "Bucket-List"
+      }
+    ]
+  },
+  "whyBook": {
+    "title": "Why Book with Trips & Ships Luxury Travel",
+    "subtitle": "Benefit from personalized guidance and 40+ years of luxury cruise expertise.",
+    "points": [
+      "Objective, firsthand comparison of Scenic Greenland expedition voyages",
+      "Selecting the optimal sailing season for ice conditions, weather, and wildlife",
+      "Expert assistance with Polar Class 6 suite selection and ship locations",
+      "Arranging seamless flights, private transfers, and Copenhagen or Reykjavik hotel stays",
+      "Coordinating pre- and post-cruise extended Arctic explorations and excursions",
+      "Securing exclusive agency amenities, promotions, and shipboard credit",
+      "Advising on polar expedition gear, packing essentials, and travel logistics",
+      "Dedicated one-on-one concierge support before, during, and after your voyage"
+    ]
+  },
+  "expertInsight": {
+    "title": "Expert Insight from Angela Hughes",
+    "name": "Angela Hughes",
+    "badge": "EXPERT ADVISOR",
+    "quote": "According to Angela Hughes, many travelers are initially attracted to Scenic because of its ultra-luxury discovery yachts — but ultimately fall in love with the all-inclusive onboard expedition experience. Exploring Greenland aboard Scenic Eclipse allows guests to witness one of Earth's greatest natural spectacles in absolute comfort.",
+    "prioritiesTitle": "Scenic Greenland travelers consistently prioritize:",
+    "priorities": [
+      "Polar Class 6 discovery yachting",
+      "Truly all-inclusive luxury",
+      "Butler service for every suite",
+      "Up to 10 dining experiences",
+      "Immersive Zodiac excursions",
+      "Expert-led Discovery Team"
+    ],
+    "bio": "Angela Hughes is a luxury travel expert with over 40 years of experience, having traveled to 121+ countries, specializing in ultra-luxury yachting, polar expeditions, butler services, luxury cruise planning, and custom expedition travel."
+  },
+  "faqs": [
+    {
+      "question": "Where do Scenic Greenland Cruises sail?",
+      "answer": "Scenic itineraries visit destinations across Greenland, including Ilulissat, Disko Bay, East Greenland, Narsaq, and Prince Christian Sound. Many voyages also include Iceland."
+    },
+    {
+      "question": "Which ship sails to Greenland?",
+      "answer": "Scenic Greenland expeditions are operated aboard Scenic Eclipse, Scenic's ultra-luxury Discovery Yacht."
+    },
+    {
+      "question": "Are Scenic Greenland Cruises all-inclusive?",
+      "answer": "Yes. Most voyages include luxury accommodations, butler service, gourmet dining, premium beverages, Wi-Fi, gratuities, and expedition experiences."
+    },
+    {
+      "question": "What wildlife can I see in Greenland?",
+      "answer": "Depending on the season, guests may see whales, seals, Arctic birds, musk oxen, and other wildlife."
+    },
+    {
+      "question": "Does Scenic include Zodiac excursions?",
+      "answer": "Yes. Zodiac cruises and guided landings are key components of Scenic's Greenland expedition experience."
+    },
+    {
+      "question": "When is the best time to cruise Greenland?",
+      "answer": "Most Greenland cruises operate between June and September, offering ideal weather and wildlife viewing opportunities."
+    },
+    {
+      "question": "Does Scenic visit Ilulissat?",
+      "answer": "Yes. Many Greenland itineraries include Ilulissat and the spectacular UNESCO-listed Icefjord."
+    },
+    {
+      "question": "Are helicopter excursions available in Greenland?",
+      "answer": "Helicopter operations are subject to itinerary, regulations, weather, and operational conditions. Scenic notes that helicopter experiences may be available on select voyages where permitted."
+    },
+    {
+      "question": "Is butler service included?",
+      "answer": "Yes. Every Scenic suite includes personalized butler service."
+    },
+    {
+      "question": "What should I pack?",
+      "answer": "Warm layered clothing, waterproof outerwear, gloves, a hat, binoculars, sturdy walking shoes, and a camera are recommended."
+    },
+    {
+      "question": "Are Greenland cruises suitable for first-time expedition travelers?",
+      "answer": "Yes. Scenic combines expert guidance with luxury amenities, making Greenland an excellent introduction to expedition cruising."
+    },
+    {
+      "question": "Is Wi-Fi included?",
+      "answer": "Yes. Complimentary Wi-Fi is included on board."
+    },
+    {
+      "question": "How long are Scenic Greenland Cruises?",
+      "answer": "Itineraries typically range from about 8 to 16 days depending on the route and destinations."
+    },
+    {
+      "question": "Can I combine Greenland with Iceland?",
+      "answer": "Yes. Many Scenic itineraries include both Iceland and Greenland during the same voyage."
+    },
+    {
+      "question": "Why choose Scenic for Greenland?",
+      "answer": "Scenic combines six-star luxury, all-inclusive amenities, expert expedition leadership, and immersive Arctic exploration, creating one of the most comprehensive luxury Greenland cruise experiences available."
+    }
+  ],
+  "finalCta": {
+    "title": "Ready to Explore Greenland with Scenic?",
+    "subtitle": "A well-planned Scenic Greenland expedition combines six-star luxury with authentic Arctic exploration. Let our specialists help you find the perfect itinerary and secure exclusive amenities.",
+    "primaryCta": {
+      "text": "Schedule a Consultation",
+      "link": "https://www.tripsandships.com/contact"
+    }
+  }
+}

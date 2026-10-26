@@ -1,0 +1,312 @@
+{
+  "seo": {
+    "metaTitle": "Scenic Cabins Guide | Scenic Eclipse Suites & Cabin Categories",
+    "title": "Scenic Cabins Guide: Choose the Best Scenic Eclipse Suite",
+    "metaDescription": "Discover every suite category aboard Scenic Eclipse and Scenic Eclipse II. Compare cabin sizes, amenities, locations, butler service, and luxury features to find the perfect Scenic suite for your voyage.",
+    "canonicalUrl": "https://www.tripsandships.com/scenic-cabins-guide",
+    "keywords": "Scenic Cabins Guide, Scenic Eclipse cabins, Scenic Eclipse suites, Scenic cabin guide, Scenic suite categories, Scenic Eclipse cabin reviews, Scenic cruise suites, Scenic Eclipse accommodation"
+  },
+  "hero": {
+    "badge": "All-Veranda Suites · Dedicated Butler Service",
+    "title": "Scenic Cabins Guide",
+    "subtitle": "Find the perfect suite for your Scenic Eclipse journey. Discover all 8 suite categories, cabin sizes, panoramic verandas, personalized butler service, and expert recommendations.",
+    "primaryCta": {
+      "text": "Schedule a Consultation",
+      "link": "https://www.tripsandships.com/contact"
+    },
+    "secondaryCta": {
+      "text": "Compare Suite Categories",
+      "link": "#suites"
+    }
+  },
+  "intro": {
+    "eyebrow": "ALL-VERANDA LUXURY SUITES",
+    "heading": "Find the Perfect Suite for Your Scenic Eclipse Journey",
+    "paragraphs": [
+      "One of the defining features of Scenic Eclipse and Scenic Eclipse II is that every accommodation is a spacious, all-veranda suite. Unlike many luxury cruise lines that offer windowless inside or small oceanview cabins, Scenic ensures every single guest enjoys a private outdoor space, elegant furnishings, and personalized butler service.",
+      "Whether you're planning a polar expedition to Antarctica, exploring the sun-drenched Mediterranean, or cruising through the Arctic fjords of Greenland and Iceland, choosing the right suite elevates your journey into an unforgettable travel experience.",
+      "Scenic Eclipse was designed as a six-star Discovery Yacht, seamlessly blending polar expedition capability with the refined comforts of a five-star boutique hotel. This guide breaks down every suite category, highlights key amenities, and helps you select the accommodation that best fits your travel preferences."
+    ]
+  },
+  "standoutFeatures": {
+    "title": "Why Scenic Suites Stand Out",
+    "subtitle": "Every suite aboard Scenic Eclipse delivers exceptional comfort, generous space, and attentive six-star service.",
+    "features": [
+      {
+        "title": "Private Veranda in Every Suite",
+        "description": "Step outside onto your private teak terrace to take in panoramic ocean vistas, breaching whales, and calving icebergs."
+      },
+      {
+        "title": "Personalized Butler Service",
+        "description": "Every guest across all suite categories enjoys attentive butler service from embarkation to disembarkation."
+      },
+      {
+        "title": "Scenic Slumber King Beds",
+        "description": "Custom handcrafted adjustable king-size beds dressed in Egyptian cotton linens and a personalized pillow menu."
+      },
+      {
+        "title": "Spacious Marble Bathrooms",
+        "description": "Luxurious marble bathrooms featuring large walk-in showers, plush robes, slippers, and premium bath amenities."
+      },
+      {
+        "title": "Complimentary In-Suite Minibar",
+        "description": "Stocked with premium wines, craft beers, spirits, and soft drinks, replenished daily to your preferences."
+      },
+      {
+        "title": "Illy Espresso Machine",
+        "description": "In-suite coffee maker and premium tea selection for fresh barista-quality morning beverages on your balcony."
+      },
+      {
+        "title": "Walk-In Wardrobe & Dressing Area",
+        "description": "Thoughtfully planned storage and hanging space designed specifically for longer expedition cruises."
+      },
+      {
+        "title": "Complimentary High-Speed Wi-Fi",
+        "description": "High-speed satellite connectivity keeping you in touch with loved ones throughout remote global destinations."
+      }
+    ]
+  },
+  "suites": {
+    "title": "Scenic Eclipse Suite Categories",
+    "subtitle": "Explore all 8 suite categories ranging from 344 sq. ft. entry-level luxury accommodations to expansive 2,600+ sq. ft. owner-style penthouse residences.",
+    "items": [
+      {
+        "name": "Verandah Suite",
+        "desc": "Spanning approximately 344 sq. ft., this is the most popular suite on board. Features a private outdoor veranda, separate sitting lounge, butler service, walk-in wardrobe, and king-size Scenic Slumber Bed. Ideal for couples seeking outstanding value without compromising luxury.",
+        "imageKey": "verandah"
+      },
+      {
+        "name": "Deluxe Verandah Suite",
+        "desc": "Located on higher ship decks (Deck 6, 7 & 8), Deluxe Verandah Suites offer enhanced elevated ocean views, premium bath amenities, spacious sitting areas, and convenient proximity to onboard dining venues and observation lounges.",
+        "imageKey": "deluxeVerandah"
+      },
+      {
+        "name": "Grand Deluxe Verandah Suite",
+        "desc": "Offering extra interior floor space (approximately 410–430 sq. ft.) and expanded private balconies. Includes an enlarged living area, luxury furnishings, and prime midship positioning for maximum stability on open-ocean crossings.",
+        "imageKey": "grandDeluxeVerandah"
+      },
+      {
+        "name": "Spa Suite",
+        "desc": "Ranging from 495 to 538 sq. ft., Spa Suites are designed for wellness-focused travelers. Features a double-size Philippe Starck-designed Jacuzzi bath overlooking the ocean, steam shower with chromotherapy, and priority access to Senses Spa.",
+        "imageKey": "spaSuite"
+      },
+      {
+        "name": "Panorama Suite",
+        "desc": "Positioned forward on Decks 6 and 8, Panorama Suites (1,184 sq. ft.) boast sweeping curved panoramic windows and expansive wraparound terraces, offering unmatched views of polar sea ice, fjords, and wildlife.",
+        "imageKey": "panoramaSuite"
+      },
+      {
+        "name": "Grand Panorama Suite",
+        "desc": "Spectacular forward-facing suites (1,130–1,184 sq. ft.) featuring separate master bedrooms, grand living and dining salons, expansive outdoor terraces with sun loungers, and VIP culinary room service privileges.",
+        "imageKey": "grandPanoramaSuite"
+      },
+      {
+        "name": "Owner's Penthouse Suite",
+        "desc": "The pinnacle of ultra-luxury at sea (2,099 sq. ft.). Features an expansive master bedroom, private outdoor terrace with heated Jacuzzi, private dining salon for eight, dual walk-in dressing rooms, and complimentary 1-hour spa treatment.",
+        "imageKey": "ownersPenthouse"
+      },
+      {
+        "name": "Two-Bedroom Penthouse Suite",
+        "desc": "Formed by combining the Owner's Penthouse Suite with an adjoining Spa Suite to create an astounding 2,637 sq. ft. two-bedroom residence. Perfect for multigenerational families or couples traveling together.",
+        "imageKey": "twoBedroomPenthouse"
+      }
+    ]
+  },
+  "butlerService": {
+    "title": "Dedicated Butler Service in Every Suite",
+    "subtitle": "Unlike lines where butler care is reserved only for top penthouses, Scenic provides personalized butler service across every suite category.",
+    "footnote": "This dedicated level of personalized hospitality ensures every detail of your voyage is handled with seamless elegance.",
+    "features": [
+      {
+        "title": "Luggage Unpacking & Wardrobe Care",
+        "description": "Butlers assist with unpacking luggage, garment pressing, shoeshine, and organizing your personal wardrobe upon embarkation."
+      },
+      {
+        "title": "Specialty Restaurant Reservations",
+        "description": "Seamless coordination of table reservations at Lumière, Koko's, Chef's Table, and Teppanyaki."
+      },
+      {
+        "title": "In-Suite Dining & Bar Replenishment",
+        "description": "Breakfast served course-by-course on your veranda, evening canapés delivered daily, and custom minibar stocking."
+      },
+      {
+        "title": "Expedition Preparation & Laundry",
+        "description": "Arranging daily laundry, dry cleaning, and organizing thermal gear and polar expedition boots for shore landings."
+      }
+    ]
+  },
+  "amenities": {
+    "title": "Curated Suite Amenities & Finishes",
+    "subtitle": "Engineered for pure relaxation, each suite incorporates five-star residential finishes and advanced technology.",
+    "footnote": "Every detail has been carefully curated to provide a quiet, restorative sanctuary after an active day of exploration.",
+    "features": [
+      {
+        "title": "Marble Bathrooms & Walk-in Showers",
+        "description": "Generous bathrooms featuring mist-free vanity mirrors, rainfall showerheads, and luxury ESPA spa bath amenities."
+      },
+      {
+        "title": "Electronic Climate Control",
+        "description": "Individual multi-zone temperature controls with advanced medical-grade air filtration systems delivering fresh sea air."
+      },
+      {
+        "title": "Smart Infotainment & Flat Screens",
+        "description": "High-definition TVs featuring on-demand international movies, live bow-camera feeds, and Discovery lecture broadcasts."
+      },
+      {
+        "title": "Dyson Supersonic Hair Dryers",
+        "description": "Top-tier styling appliances, plush velour bathrobes, slippers, and evening turndown service with artisan chocolates."
+      }
+    ]
+  },
+  "suitePicker": {
+    "title": "Which Suite Should You Choose?",
+    "subtitle": "Match your travel style, voyage duration, and priorities to the ideal Scenic Eclipse accommodation.",
+    "items": [
+      {
+        "title": "Verandah Suite",
+        "description": "Best for couples seeking outstanding value without compromising six-star luxury, butler service, and private ocean verandas.",
+        "icon": "Award",
+        "tag": "Best Value"
+      },
+      {
+        "title": "Panorama Suite",
+        "description": "Best for Arctic and Antarctica expeditions where forward-facing curved windows offer first-sight wildlife and iceberg spotting.",
+        "icon": "Compass",
+        "tag": "Best for Views"
+      },
+      {
+        "title": "Spa Suite",
+        "description": "Best for travelers focused on wellness, featuring an in-suite double spa Jacuzzi overlooking the ocean and priority spa privileges.",
+        "icon": "Sparkles",
+        "tag": "Best for Wellness"
+      },
+      {
+        "title": "Two-Bedroom Penthouse Suite",
+        "description": "Best for multigenerational families or friends traveling together needing two full master bedrooms, dual verandas, and vast living space.",
+        "icon": "Users",
+        "tag": "Best for Families"
+      },
+      {
+        "title": "Owner's Penthouse Suite",
+        "description": "The ultimate indulgence at sea with over 2,000 sq. ft. of space, private outdoor Jacuzzi terrace, and dedicated master butler care.",
+        "icon": "Crown",
+        "tag": "Ultimate Luxury"
+      },
+      {
+        "title": "Grand Deluxe Verandah Suite",
+        "description": "Best for extended 14+ night ocean voyages where expanded floor plans and central midship elevator access maximize convenience.",
+        "icon": "Ship",
+        "tag": "Best for Long Voyages"
+      }
+    ]
+  },
+  "tips": {
+    "title": "Tips for Choosing the Right Cabin",
+    "subtitle": "Key factors to evaluate when selecting your suite location and category aboard Scenic Eclipse.",
+    "features": [
+      {
+        "title": "Cruise Destination & Scenery",
+        "description": "For polar expeditions, higher deck suites and forward Panorama suites provide dramatic vantage points for ice viewing."
+      },
+      {
+        "title": "Length of Voyage",
+        "description": "On longer 14 to 28-day voyages, upgrading to a Grand Deluxe or Spa Suite provides valuable extra lounging space."
+      },
+      {
+        "title": "Deck Location & Motion Sensitivity",
+        "description": "Guests sensitive to ocean motion should opt for midship suites on Decks 5 or 6, where ship stabilization is most effective."
+      },
+      {
+        "title": "Proximity to Amenities",
+        "description": "Consider proximity to Senses Spa (Deck 6 forward), dining venues (Deck 4 & 5), or the Observation Lounge (Deck 5 forward)."
+      }
+    ]
+  },
+  "whyBook": {
+    "title": "Why Book with Trips & Ships Luxury Travel?",
+    "subtitle": "Our Scenic cruise specialists ensure you secure the perfect suite, optimal deck location, and exclusive agency amenities.",
+    "points": [
+      "Objective, firsthand comparison of all Scenic Eclipse and Scenic Eclipse II suite categories",
+      "Selecting the optimal cabin location and deck based on itinerary and sea conditions",
+      "In-depth guidance on deck plans, elevator access, and suite layout differences",
+      "Securing exclusive agency perks, promotions, and complimentary shipboard credit",
+      "Arranging seamless business-class airfare, luxury airport transfers, and 5-star pre-cruise hotels",
+      "Coordinating specialized pre- and post-cruise excursions and private touring",
+      "Dedicated one-on-one travel advisor support before, during, and throughout your sailing"
+    ]
+  },
+  "expertInsight": {
+    "title": "Expert Insight from Angela Hughes",
+    "name": "Angela Hughes",
+    "badge": "LUXURY SUITE SPECIALIST",
+    "quote": "According to Angela Hughes, one of the greatest advantages of Scenic Eclipse is that there are no bad cabins. Because every single accommodation is an all-veranda suite with butler service, even the entry-level Verandah Suites feel lavish. For expedition sailings to polar regions, selecting a suite with an expansive terrace transforms your room into a private wildlife observation platform.",
+    "prioritiesTitle": "Scenic luxury travelers consistently prioritize:",
+    "priorities": [
+      "All-veranda suites with private balconies",
+      "Personalized butler service in every room",
+      "Handcrafted Scenic Slumber king beds",
+      "Spacious marble bathrooms & walk-in showers",
+      "Complimentary replenished in-suite minibar",
+      "Intimate, peaceful yacht accommodations"
+    ],
+    "bio": "Angela Hughes is a luxury travel expert with over 40 years of experience, having traveled to 121+ countries, specializing in luxury suites, expedition yachting, butler services, and custom bespoke itineraries."
+  },
+  "faqs": [
+    {
+      "question": "Do all Scenic Eclipse cabins have balconies?",
+      "answer": "Yes. Every single accommodation aboard Scenic Eclipse and Scenic Eclipse II is an all-veranda suite featuring a private outdoor balcony with floor-to-ceiling glass doors."
+    },
+    {
+      "question": "Does every suite include butler service?",
+      "answer": "Yes. Dedicated butler service is included for every suite category, from entry-level Verandah Suites up to the Owner's Penthouse Suite."
+    },
+    {
+      "question": "What is the smallest suite on Scenic Eclipse?",
+      "answer": "The Verandah Suite is the entry-level accommodation, offering a generous 344 square feet of luxurious living space including the private veranda."
+    },
+    {
+      "question": "Are Scenic suites suitable for long voyages?",
+      "answer": "Yes. Scenic suites are spacious, thoughtfully appointed with generous walk-in wardrobes, comfortable sitting areas, and ergonomic layouts designed for extended luxury voyages."
+    },
+    {
+      "question": "Which suite offers the best views?",
+      "answer": "Panorama Suites and Grand Panorama Suites feature spectacular forward-facing curved windows and wraparound verandas, providing the most dramatic scenic viewpoints."
+    },
+    {
+      "question": "Are minibars included in Scenic suites?",
+      "answer": "Yes. Every suite includes a complimentary in-suite minibar stocked with premium wines, beer, spirits, and soft drinks, replenished daily to your preferences."
+    },
+    {
+      "question": "Can families stay together in Scenic suites?",
+      "answer": "Yes. The Two-Bedroom Penthouse Suite (combining an Owner's Penthouse with a Spa Suite) offers over 2,600 square feet, two master bedrooms, and separate living areas ideal for families."
+    },
+    {
+      "question": "Is room service available?",
+      "answer": "Yes. Complimentary 24-hour in-suite dining and room service is available across all suite categories with assistance from your dedicated butler."
+    },
+    {
+      "question": "What amenities are included in Spa Suites?",
+      "answer": "Spa Suites feature a double-size Philippe Starck-designed Jacuzzi bath overlooking the ocean, steam shower with chromotherapy, priority Senses Spa bookings, and spa-inspired amenities."
+    },
+    {
+      "question": "Which Scenic suite offers the best value?",
+      "answer": "The Verandah Suite offers an outstanding balance of space (344 sq. ft.), luxury finishes, private balcony, butler care, and value."
+    },
+    {
+      "question": "Are all bathrooms luxurious on Scenic?",
+      "answer": "Yes. Every suite features a spacious marble bathroom with a large walk-in rainfall shower, premium ESPA toiletries, plush bathrobes, and Dyson Supersonic hair dryers."
+    },
+    {
+      "question": "How do I choose the best Scenic cabin location?",
+      "answer": "The ideal cabin depends on your sailing destination, preferred deck height, and sensitivity to motion. Midship suites on Decks 5 and 6 offer maximum stability, while forward suites provide panoramic views. Our luxury cruise specialists can review deck plans with you."
+    }
+  ],
+  "finalCta": {
+    "title": "Ready to Choose Your Scenic Eclipse Suite?",
+    "subtitle": "Let our Scenic specialists help you select the ideal suite category, secure prime deck positioning, and unlock exclusive agency promotions.",
+    "primaryCta": {
+      "text": "Schedule a Consultation",
+      "link": "https://www.tripsandships.com/contact"
+    }
+  }
+}
