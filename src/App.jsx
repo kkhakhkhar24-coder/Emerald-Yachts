@@ -134,9 +134,9 @@ import Scenicfoodreview from "./pages/ScenicCruise/Scenicfoodreview/Scenicfoodre
 import Sceniccabinsguide from "./pages/ScenicCruise/Sceniccabinsguide/Sceniccabinsguide";
 import Bestscenicsuites from "./pages/ScenicCruise/Bestscenicsuites/Bestscenicsuites";
 import ScenicHelicopterExperience from "./pages/ScenicCruise/ScenicHelicopterExperience/ScenicHelicopterExperience";
-import ScenicSubmarineExperience from "./pages/ScenicSubmarineExperience/ScenicSubmarineExperience";
-import BestExpeditionCruises from "./pages/BestExpeditionCruises/BestExpeditionCruises";
-import BestLuxuryExpeditionCruises from "./pages/BestLuxuryExpeditionCruises/BestLuxuryExpeditionCruises";
+import ScenicSubmarineExperience from "./pages/ScenicCruise/ScenicSubmarineExperience/ScenicSubmarineExperience";
+import BestExpeditionCruises from "./pages/ScenicCruise/BestExpeditionCruises/BestExpeditionCruises";
+import BestLuxuryExpeditionCruises from "./pages/ScenicCruise/BestLuxuryExpeditionCruises/BestLuxuryExpeditionCruises";
 import UniworldRiverCruises from "./pages/UniworldCruise/UniworldRiverCruises/UniworldRiverCruises";
 import UniworldRiverCruisesReview from "./pages/UniworldCruise/UniworldRiverCruisesReview/UniworldRiverCruisesReview";
 import Uniworldcruiseandrailjourneys from "./pages/UniworldCruise/Uniworldcruiseandrailjourneys/Uniworldcruiseandrailjourneys";

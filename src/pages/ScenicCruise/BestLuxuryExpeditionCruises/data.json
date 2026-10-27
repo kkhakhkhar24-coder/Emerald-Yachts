@@ -1,0 +1,518 @@
+{
+  "seo": {
+    "title": "Best Luxury Expedition Cruises | Expert Guide & Reviews",
+    "metaTitle": "Best Luxury Expedition Cruises | Expert Guide & Reviews",
+    "metaDescription": "Explore the best luxury expedition cruises to Antarctica, the Arctic, Galápagos, Alaska, Kimberley, and beyond. Compare the world's top luxury expedition cruise lines, ships, destinations, and experiences.",
+    "keywords": "Best Luxury Expedition Cruises, luxury expedition cruises, best luxury expedition cruise lines, ultra luxury expedition cruises, luxury adventure cruises, Scenic Eclipse, Silversea Expeditions, Seabourn Venture, Ponant luxury cruises, expedition yacht cruises",
+    "canonicalUrl": "https://www.tripsandships.com/best-luxury-expedition-cruises"
+  },
+  "hero": {
+    "badge": "Ultra-luxury adventure travel · Trips & Ships Luxury Travel",
+    "title": "Best Luxury Expedition Cruises",
+    "subtitle": "Explore the world's most remote destinations with exceptional accommodations, personalized service, and expert-led discovery.",
+    "primaryCta": {
+      "text": "Speak with an Expedition Specialist",
+      "link": "https://www.tripsandships.com/contact"
+    },
+    "secondaryCta": {
+      "text": "Explore Destinations",
+      "link": "#destinations"
+    }
+  },
+  "intro": {
+    "eyebrow": "THE COMPLETE GUIDE",
+    "heading": "Which Are the Best Luxury Expedition Cruises?",
+    "paragraphs": [
+      "Luxury expedition cruises combine world-class accommodations, personalized service, and fine dining with unforgettable adventures to some of the planet's most remote destinations. Unlike traditional cruises, these voyages focus on exploration, wildlife, and immersive experiences while maintaining the comfort and elegance of a luxury hotel.",
+      "Today's purpose-built expedition ships feature spacious suites, gourmet restaurants, expert expedition teams, Zodiac landings, wellness facilities, and innovative technology such as helicopters and submarines on select vessels.",
+      "Whether you're exploring Antarctica's frozen wilderness, the wildlife-rich Galápagos Islands, Greenland's dramatic fjords, or Australia's Kimberley coast, the best luxury expedition cruises deliver extraordinary journeys unlike any other form of travel."
+    ]
+  },
+  "different": {
+    "title": "What Is a Luxury Expedition Cruise?",
+    "subtitle": "Adventure Without Compromise",
+    "footnote": "Every voyage blends adventure with exceptional hospitality, small-ship intimacy, and personalized service.",
+    "features": [
+      {
+        "title": "Spacious Luxury Suites",
+        "description": "Expansive staterooms featuring private verandas, luxury linens, and panoramic views of the world's most remote coastlines."
+      },
+      {
+        "title": "Personalized Butler Service",
+        "description": "Dedicated European-trained butlers anticipating your every preference throughout your voyage."
+      },
+      {
+        "title": "Gourmet Dining Experiences",
+        "description": "Multiple specialty dining venues crafted by world-class chefs utilizing fresh regional ingredients."
+      },
+      {
+        "title": "Premium Included Beverages",
+        "description": "Complimentary fine wines, champagnes, top-shelf spirits, and custom cocktails served across all lounges."
+      },
+      {
+        "title": "Small Expedition Ships",
+        "description": "Boutique vessel sizes providing intimate access to shallow waterways, hidden fjords, and secluded coves inaccessible to large ships."
+      },
+      {
+        "title": "Immersive Zodiac Excursions",
+        "description": "Daily guided Zodiac cruises and remote shore landings navigating through icebergs, wildlife havens, and untamed shorelines."
+      },
+      {
+        "title": "Expert Naturalists & Guides",
+        "description": "World-renowned marine biologists, geologists, historians, and polar experts leading every expedition."
+      },
+      {
+        "title": "Destination-Focused Experiences",
+        "description": "Curated cultural encounters and conservation-minded scientific exploration at every port of call."
+      },
+      {
+        "title": "World-Class Wellness Facilities",
+        "description": "Full-service spas, heated vitality pools, saunas, and state-of-the-art fitness centers overlooking polar landscapes."
+      },
+      {
+        "title": "Truly All-Inclusive Amenities",
+        "description": "Gratuities, shore excursions, expedition gear, Wi-Fi, and personalized concierge planning fully covered."
+      }
+    ]
+  },
+  "destinations": {
+    "title": "Best Luxury Expedition Cruise Destinations",
+    "subtitle": "Luxury expedition cruises visit some of the world's most spectacular locations. Each destination offers unique wildlife, breathtaking scenery, and unforgettable exploration opportunities.",
+    "items": [
+      {
+        "name": "Antarctica",
+        "desc": "Frozen wilderness, towering icebergs, and penguin colonies in the Great White Continent.",
+        "imageKey": "antarctica"
+      },
+      {
+        "name": "Arctic & Svalbard",
+        "desc": "Polar bears, sea ice, dramatic Arctic light, and historic exploration routes.",
+        "imageKey": "svalbard"
+      },
+      {
+        "name": "Greenland",
+        "desc": "Dramatic fjords, colossal icebergs, calving glaciers, and remote coastal Inuit villages.",
+        "imageKey": "greenland"
+      },
+      {
+        "name": "Iceland",
+        "desc": "Volcanic coastlines, thundering waterfalls, steaming hot springs, and Arctic flora.",
+        "imageKey": "iceland"
+      },
+      {
+        "name": "Galápagos Islands",
+        "desc": "Wildlife-rich islands, volcanic landscapes, marine iguanas, and fearless endemic species.",
+        "imageKey": "galapagos"
+      },
+      {
+        "name": "Alaska",
+        "desc": "Breaching whales, temperate rainforests, immense tidewater glaciers, and rugged wilderness.",
+        "imageKey": "alaska"
+      },
+      {
+        "name": "Norwegian Fjords",
+        "desc": "Steep granite cliffs, quiet coastal villages, cascading waterfalls, and serene Arctic water.",
+        "imageKey": "norwegianFjords"
+      },
+      {
+        "name": "Kimberley (Australia)",
+        "desc": "Remote red gorges, thundering tidal rivers, ancient Indigenous rock art, and rugged coastlines.",
+        "imageKey": "kimberley"
+      },
+      {
+        "name": "South Pacific",
+        "desc": "Crystal-clear turquoise atolls, pristine coral reefs, and living Polynesian island cultures.",
+        "imageKey": "southPacific"
+      },
+      {
+        "name": "Patagonia & Chilean Fjords",
+        "desc": "Tidewater glaciers, sheer granite peaks, wild southern channels, and untamed wilderness.",
+        "imageKey": "patagonia"
+      },
+      {
+        "name": "Amazon River",
+        "desc": "Unrivaled rainforest biodiversity, pink river dolphins, and canopy exploration from custom river vessels.",
+        "imageKey": "amazon"
+      },
+      {
+        "name": "Canada's Arctic & Northwest Passage",
+        "desc": "Austere coastlines, drifting sea ice, historic maritime routes, and remarkable high Arctic wildlife.",
+        "imageKey": "canadaArctic"
+      }
+    ]
+  },
+  "cruiseLines": {
+    "title": "Top Luxury Expedition Cruise Lines",
+    "subtitle": "Several premier cruise lines are recognized for delivering exceptional luxury expedition experiences.",
+    "items": [
+      {
+        "name": "Scenic Cruises",
+        "desc": "Scenic Eclipse and Scenic Eclipse II combine ultra-luxury accommodations with helicopters, the Scenic Neptune™ submersible, Discovery Excursions, butler service, and all-inclusive luxury.",
+        "imageKey": "scenic"
+      },
+      {
+        "name": "Silversea Expeditions",
+        "desc": "Silversea offers elegant expedition voyages featuring luxurious suites, exceptional cuisine, personalized service, and expert-led exploration across the globe.",
+        "imageKey": "silversea"
+      },
+      {
+        "name": "Seabourn Expeditions",
+        "desc": "Purpose-built expedition ships deliver luxury accommodations, fine dining, expedition specialists, and immersive destination experiences in remote polar regions.",
+        "imageKey": "seabourn"
+      },
+      {
+        "name": "Ponant Explorations",
+        "desc": "Ponant blends French elegance with expedition cruising, offering intimate ships, refined cuisine, and unique itineraries worldwide.",
+        "imageKey": "ponant"
+      },
+      {
+        "name": "Lindblad Expeditions",
+        "desc": "Partnering with National Geographic, Lindblad emphasizes wildlife, conservation, cutting-edge exploration tools, and educational discovery.",
+        "imageKey": "lindblad"
+      },
+      {
+        "name": "HX (Hurtigruten Expeditions)",
+        "desc": "HX combines expedition expertise, sustainability initiatives, and scientific exploration with comfortable accommodations and polar heritage.",
+        "imageKey": "hx"
+      }
+    ]
+  },
+  "featuredShip": {
+    "title": "Scenic Eclipse",
+    "subtitle": "Ultra-Luxury Innovation & Polar Capabilities",
+    "footnote": "Its combination of luxury and expedition capabilities places Scenic Eclipse among the world's leading expedition yachts.",
+    "features": [
+      {
+        "title": "Ultra-Luxury Suites",
+        "description": "Spacious all-verandah suite accommodations with floor-to-ceiling windows and personalized butler service."
+      },
+      {
+        "title": "Scenic Neptune™ Submersible",
+        "description": "Custom submarine capable of diving to depths of up to 300 meters for unprecedented underwater exploration."
+      },
+      {
+        "title": "Helicopter Flightseeing",
+        "description": "Two state-of-the-art Airbus helicopters for breathtaking aerial perspectives over fjords, glaciers, and wildlife."
+      },
+      {
+        "title": "Up to 10 Dining Experiences",
+        "description": "From contemporary French fine dining to Asian fusion and Chef's Table degustation."
+      },
+      {
+        "title": "Scenic Discovery Team",
+        "description": "Up to 20 expert naturalists, marine biologists, and historians leading daily landings and lectures."
+      },
+      {
+        "title": "Expedition Equipment",
+        "description": "Fleet of Zodiacs, sea kayaks, stand-up paddleboards, and cold-weather expedition gear included."
+      },
+      {
+        "title": "Senses Spa & Vitality Pools",
+        "description": "Expansive 550 sqm thermal spa sanctuary with indoor and outdoor vitality pools and yoga studio."
+      },
+      {
+        "title": "Truly All-Inclusive Experience",
+        "description": "All dining, premium top-shelf beverages, transfers, gratuities, and excursions included without extra costs."
+      }
+    ]
+  },
+  "wildlife": {
+    "title": "Observe Wildlife in Its Natural Habitat",
+    "subtitle": "Incredible Wildlife Encounters",
+    "footnote": "Expert guides help guests better understand local ecosystems and wildlife conservation.",
+    "features": [
+      {
+        "title": "Penguin Colonies",
+        "description": "Encounter thousands of Adelie, Gentoo, Chinstrap, and Emperor penguins in polar rookeries."
+      },
+      {
+        "title": "Polar Bears & Arctic Predators",
+        "description": "Witness the King of the Arctic roaming sea ice in Svalbard and Greenland from ice-strengthened vessels."
+      },
+      {
+        "title": "Great Whales & Cetaceans",
+        "description": "Humpback, blue, fin, minke, and killer whales surfacing near Zodiacs and ship observation decks."
+      },
+      {
+        "title": "Marine Mammals & Seals",
+        "description": "Leopard seals, Weddell seals, walruses, and sea lions resting on drifting ice floes and rugged rocky beaches."
+      },
+      {
+        "title": "Endemic Island Species",
+        "description": "Marine iguanas, giant tortoises, and blue-footed boobies across the untouched Galápagos archipelago."
+      },
+      {
+        "title": "Pelagic & Seabird Colonies",
+        "description": "Wandering albatross, Atlantic puffins, and majestic bald eagles soaring over cliffs and remote channels."
+      }
+    ]
+  },
+  "activities": {
+    "title": "Expedition Adventure Activities",
+    "subtitle": "Active Discovery Led by World-Class Field Specialists",
+    "features": [
+      {
+        "title": "Zodiac Cruising",
+        "description": "Navigate through iceberg graveyards, shallow inlets, and dramatic sea cliffs alongside seasoned expedition drivers."
+      },
+      {
+        "title": "Guided Shore Landings",
+        "description": "Step foot onto remote shorelines, scientific research stations, and untouched wilderness zones."
+      },
+      {
+        "title": "Wildlife Observation",
+        "description": "Field naturalists provide spot-on identification, ethical viewing guidelines, and behavioral insights."
+      },
+      {
+        "title": "Kayaking & Paddleboarding",
+        "description": "Gliding silently through mirror-calm fjords and glacial lagoons for intimate, human-scale perspectives."
+      },
+      {
+        "title": "Tundra & Glacier Hiking",
+        "description": "Ranger-guided treks ranging from gentle coastal strolls to energetic ridge ascents overlooking immense icecaps."
+      },
+      {
+        "title": "Photography Workshops",
+        "description": "Professional wildlife photographers assist with gear settings, lighting, and composition in polar extremes."
+      },
+      {
+        "title": "Snorkeling & Polar Plunges",
+        "description": "Brave the icy waters with support crews or snorkel tropical reefs teeming with vibrant marine biodiversity."
+      },
+      {
+        "title": "Helicopter & Submersible Excursions",
+        "description": "Experience aerial flightseeing above inland ice sheets and deep-sea dives aboard next-generation submersibles."
+      }
+    ]
+  },
+  "onboard": {
+    "title": "Luxury Onboard Experience",
+    "subtitle": "Five-Star Comfort in the World's Most Remote Corners",
+    "footnote": "Despite visiting remote regions, luxury expedition ships provide exceptional onboard amenities designed for maximum comfort and relaxation.",
+    "features": [
+      {
+        "title": "Spacious Ocean-View Suites",
+        "description": "Refined residential layouts with private balconies, walk-in closets, and plush king-size bedding."
+      },
+      {
+        "title": "Gourmet Specialty Restaurants",
+        "description": "Diverse culinary options ranging from casual open-deck grills to formal multicourse tasting menus."
+      },
+      {
+        "title": "Premium Wines & Beverages",
+        "description": "Sommelier-selected vintages, craft spirits, and artisanal coffees poured throughout the day and evening."
+      },
+      {
+        "title": "Dedicated Butler Service",
+        "description": "Unpacking, evening aperitifs, in-suite dining, and priority shore excursion arrangements handled effortlessly."
+      },
+      {
+        "title": "Luxury Spa & Thermal Sanctuaries",
+        "description": "Saunas, steam rooms, relaxation lounges, and bespoke rejuvenating treatment menus."
+      },
+      {
+        "title": "Observation Lounges & Libraries",
+        "description": "Expansive forward lounges equipped with Swarovski binoculars and curated polar literature."
+      },
+      {
+        "title": "Educational Enrichment Theaters",
+        "description": "State-of-the-art auditoriums hosting daily briefings, scientific recaps, and guest lecturer presentations."
+      },
+      {
+        "title": "Concierge & Personalized Service",
+        "description": "Nearly 1:1 guest-to-crew ratios ensuring attentive, individualized hospitality throughout the voyage."
+      }
+    ]
+  },
+  "seasons": {
+    "title": "Best Time for a Luxury Expedition Cruise",
+    "subtitle": "The ideal travel season depends on your chosen destination. Choosing the right season improves wildlife viewing opportunities and weather conditions.",
+    "items": [
+      {
+        "title": "Antarctica",
+        "description": "November to March: Polar summer brings 20+ hours of daylight, opening waterways, blooming penguin rookeries, and whale migration."
+      },
+      {
+        "title": "Arctic & Svalbard",
+        "description": "May to September: Melting sea ice allows access to remote high-latitude straits, 24-hour midnight sun, and polar bear hunting."
+      },
+      {
+        "title": "Alaska",
+        "description": "May to September: Optimal conditions for witnessing calving tidewater glaciers, salmon runs, brown bears, and humpbacks."
+      },
+      {
+        "title": "Galápagos Islands",
+        "description": "Year-Round: Mild equatorial weather with continuous breeding, nesting, and feeding seasons across marine and terrestrial wildlife."
+      },
+      {
+        "title": "Kimberley (Australia)",
+        "description": "May to September: Dry season delivers majestic waterfalls, thundering horizontal falls, and dramatic red sandstone gorge excursions."
+      },
+      {
+        "title": "Iceland",
+        "description": "June to August: Warmer weather, midnight sun, blooming wildflowers, and massive nesting colonies of Atlantic puffins."
+      },
+      {
+        "title": "Norwegian Fjords",
+        "description": "May to September: Deep emerald waters, cascading meltwater falls, peaceful coastal villages, and gentle polar daylight."
+      }
+    ]
+  },
+  "howToChoose": {
+    "title": "How to Choose the Best Luxury Expedition Cruise",
+    "subtitle": "When comparing luxury expedition cruises, consider these essential criteria to find the journey that best aligns with your travel goals.",
+    "features": [
+      {
+        "title": "Destination & Scenery",
+        "description": "Choose between dramatic polar ice shelves, lush rainforests, geothermal wonders, or equatorial wildlife archipelagos."
+      },
+      {
+        "title": "Cruise Line Philosophy",
+        "description": "Decide between ultra-luxury yachting with butler service and helicopters, or science-focused expedition vessels."
+      },
+      {
+        "title": "Ship Size & Passenger Count",
+        "description": "Vessels under 200 guests guarantee prompt Zodiac disembarkation, compliant with strict Antarctic and Arctic landing regulations."
+      },
+      {
+        "title": "Included Excursions vs Add-ons",
+        "description": "Verify whether daily Zodiac cruises, landings, and flightseeing are fully inclusive or require supplementary fees."
+      },
+      {
+        "title": "Luxury Level & Atmosphere",
+        "description": "Evaluate dress codes, dining styles, and onboard service standards—from relaxed exploration to black-tie elegance."
+      },
+      {
+        "title": "Suite Layouts & Balconies",
+        "description": "Ensure private verandahs for spontaneous glacier viewing and adequate suite space for expedition attire."
+      },
+      {
+        "title": "Active Adventure Options",
+        "description": "Review availability of kayaking, polar plunges, snowshoeing, scuba diving, and deep-sea submarine excursions."
+      },
+      {
+        "title": "Wildlife Focus",
+        "description": "Match your travel calendar to peak wildlife events—such as polar bear tracking or humpback whale feeding seasons."
+      },
+      {
+        "title": "Travel Season & Weather",
+        "description": "Consult seasonal weather patterns to balance temperature, ice navigation feasibility, and wildlife activity."
+      },
+      {
+        "title": "Budget & All-Inclusive Value",
+        "description": "Factor in pre-cruise charter flights, luxury hotel overnights, expedition gear, and gratuities to assess true cost."
+      }
+    ]
+  },
+  "expertReview": {
+    "title": "Are Luxury Expedition Cruises Worth It?",
+    "subtitle": "Adventure travel at its highest standard. After reviewing the world's leading luxury expedition cruise lines, we believe these voyages represent the pinnacle of meaningful exploration combined with five-star comfort.",
+    "whatWeLove": [
+      "Access to extraordinary, pristine destinations unavailable on traditional large cruise ships",
+      "Small boutique luxury expedition ships with quick, efficient Zodiac disembarkation",
+      "Exceptional accommodations featuring private balconies and personalized European butler service",
+      "Near 1:1 guest-to-crew ratios delivering warm, highly personalized five-star hospitality",
+      "World-class expedition teams of marine biologists, geologists, and polar historians",
+      "Incredible close-up wildlife encounters managed safely and responsibly",
+      "Remarkable fine dining and gourmet specialty restaurants rivaling top land-based hotels",
+      "Next-generation adventure technology including helicopters and deep-diving submersibles",
+      "Exclusive Zodiac landings and small-group guided nature excursions",
+      "Outstanding onboard amenities including full thermal spas, saunas, and panoramic observation lounges"
+    ],
+    "areasToConsider": [
+      "Luxury expedition cruises generally cost more than traditional cruises due to high staff ratios, ice-strengthened hulls, and polar logistics.",
+      "Itineraries depend on weather and environmental conditions, meaning captains and expedition leaders adjust schedules dynamically for safety.",
+      "Some excursions and Zodiac wet landings require moderate physical mobility and balance in shifting coastal conditions.",
+      "Popular voyages and premier suites routinely sell out 12 to 18 months in advance due to strict destination passenger caps."
+    ]
+  },
+  "whyBook": {
+    "title": "Why Book with Trips & Ships Luxury Travel?",
+    "subtitle": "Our expert guidance ensures every detail of your luxury expedition cruise is tailored to your travel goals.",
+    "points": [
+      "Compare the world's leading luxury expedition cruise lines impartially based on your preferences",
+      "Choose the ideal destination, travel season, and optimal ice-viewing timing",
+      "Select the perfect suite category, deck position, and ship layout",
+      "Explain included and optional expedition experiences, helicopters, and submarines",
+      "Reserve exclusive luxury itineraries, maiden voyages, and limited-capacity polar permits",
+      "Arrange seamless international flights, private transfers, and luxury pre/post-cruise hotel stays",
+      "Secure exclusive agency amenities, shipboard credits, and preferred expedition pricing",
+      "Provide 24/7 personalized concierge service and support from your initial planning call through return home"
+    ]
+  },
+  "expertInsight": {
+    "title": "Expert Insight from Angela Hughes",
+    "name": "Angela Hughes",
+    "jobTitle": "CEO & Luxury Expedition Cruise Specialist",
+    "badge": "EXPERT ADVISOR",
+    "quote": "According to Angela Hughes, many travelers are initially attracted to Scenic because of its ultra-luxury discovery yachts but ultimately fall in love with the all-inclusive onboard expedition experience.",
+    "prioritiesTitle": "Scenic travelers consistently prioritize:",
+    "priorities": [
+      "Polar discovery yachting",
+      "Truly all-inclusive luxury",
+      "Butler service for every suite",
+      "Helicopter & submarine features",
+      "Up to 10 dining experiences",
+      "Immersive Zodiac excursions"
+    ],
+    "bio": "As founder of Luxury Travel University and a globally recognized luxury travel speaker, Angela Hughes helps travelers compare luxury cruise experiences realistically based on real-world expertise rather than generic online recommendations. Her expertise spans ultra-luxury yachting, polar expeditions, butler services, luxury cruise planning and custom expedition travel backed by 40+ years and 121+ countries visited."
+  },
+  "faqs": [
+    {
+      "question": "What is a luxury expedition cruise?",
+      "answer": "A luxury expedition cruise combines exploration of remote destinations with premium accommodations, personalized service, gourmet dining, and expert-led excursions."
+    },
+    {
+      "question": "Which cruise line offers the best luxury expedition cruises?",
+      "answer": "Leading options include Scenic Cruises, Silversea Expeditions, Seabourn Expeditions, Ponant, Lindblad Expeditions, and HX, depending on your travel style and destination."
+    },
+    {
+      "question": "Where do luxury expedition cruises travel?",
+      "answer": "Popular destinations include Antarctica, the Arctic, Greenland, Galápagos, Alaska, Kimberley, Iceland, Patagonia, and the South Pacific."
+    },
+    {
+      "question": "Are luxury expedition cruises all-inclusive?",
+      "answer": "Many luxury expedition cruise lines include accommodations, dining, premium beverages, guided excursions, gratuities, and expedition equipment, although inclusions vary by cruise line."
+    },
+    {
+      "question": "Are Zodiac excursions included?",
+      "answer": "Most luxury expedition cruises include Zodiac cruises and guided landings as part of the itinerary."
+    },
+    {
+      "question": "What wildlife can I expect to see?",
+      "answer": "Depending on the destination, guests may see penguins, whales, polar bears, seals, dolphins, sea turtles, seabirds, and many other native species."
+    },
+    {
+      "question": "Is Scenic Eclipse considered a luxury expedition ship?",
+      "answer": "Yes. Scenic Eclipse is widely recognized as one of the world's premier ultra-luxury expedition yachts, offering butler service, helicopters, a submersible, and all-inclusive luxury."
+    },
+    {
+      "question": "When is the best time for an expedition cruise?",
+      "answer": "The best season depends on the destination. Polar regions are generally explored during their summer months, while destinations such as the Galápagos are suitable year-round."
+    },
+    {
+      "question": "Are luxury expedition cruises suitable for first-time cruisers?",
+      "answer": "Yes. Many first-time cruisers choose luxury expedition cruises because they combine adventure with premium comfort and expert guidance."
+    },
+    {
+      "question": "What should I pack?",
+      "answer": "Pack destination-appropriate clothing, waterproof outerwear, sturdy walking shoes, binoculars, sunscreen, and a camera for wildlife and scenic photography."
+    },
+    {
+      "question": "Are luxury expedition cruises worth the price?",
+      "answer": "Many travelers believe the combination of exclusive destinations, expert-led experiences, luxury accommodations, and personalized service provides exceptional value."
+    },
+    {
+      "question": "Why choose Trips & Ships Luxury Travel?",
+      "answer": "Our experts provide personalized recommendations, exclusive offers, concierge-level planning, and ongoing support to help you choose the perfect luxury expedition cruise."
+    }
+  ],
+  "finalCta": {
+    "title": "Find Your Best Luxury Expedition Cruise",
+    "subtitle": "Let's compare the destinations, seasons, ships, suites, and experiences that fit your travel goals.",
+    "primaryCta": {
+      "text": "Speak with a luxury expedition specialist",
+      "link": "https://www.tripsandships.com/contact"
+    }
+  }
+}
