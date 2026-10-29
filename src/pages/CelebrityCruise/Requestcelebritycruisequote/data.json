@@ -1,0 +1,931 @@
+{
+  "seo": {
+    "title": "Request a Celebrity Cruise Quote | Personalized Cruise Planning",
+    "metaTitle": "Celebrity Cruise Quote | Get a Personalized Cruise Plan",
+    "metaDescription": "Request a personalized Celebrity Cruises quote for individual, suite, family or group travel. Compare ships, itineraries, cabins, offers and cruise options with expert planning.",
+    "canonicalUrl": "https://www.tripsandships.com/celebrity-cruises/request-a-quote/",
+    "imageUrl": "https://www.tripsandships.com/images/celebrity-cruise-quote.jpg"
+  },
+  "hero": {
+    "badge": "Celebrity Cruise Quote",
+    "title": "Request a Celebrity Cruise Quote",
+    "subtitle": "Get a Personalized Celebrity Cruise Plan",
+    "primaryCta": "Request My Celebrity Cruise Quote",
+    "primaryCtaLink": "#quote-steps",
+    "secondaryCta": "Speak With a Celebrity Cruise Planning Expert",
+    "secondaryCtaLink": "/celebrity-cruises/why-book-with-us"
+  },
+  "intro": {
+    "eyebrow": "PERSONALIZED CRUISE PLANNING",
+    "heading": "Get a Personalized Celebrity Cruise Plan",
+    "paragraphs": [
+      "Planning a Celebrity Cruises vacation involves more than choosing a ship and departure date. Your ideal cruise can depend on your destination, travel dates, stateroom category, number of travelers, budget, onboard preferences and whether you are traveling individually, with family or as a larger group.",
+      "Request a Celebrity Cruise Quote and let Trips & Ships Luxury Travel help you compare the options that fit your trip.",
+      "We can help with individual cruises, suites, family vacations, multi-generational travel and group cruises, along with pre- and post-cruise planning."
+    ],
+    "quickAnswerHeading": "What Can I Request a Celebrity Cruise Quote For?",
+    "quickAnswer": "You can request a personalized quote for:",
+    "quickAnswerFooter": "Tell us what you are looking for, and we can help narrow the choices based on your travel priorities."
+  },
+  "quoteFor": [
+    {
+      "label": "Individual Celebrity cruises",
+      "icon": "Ship"
+    },
+    {
+      "label": "Couples cruises",
+      "icon": "HeartHandshake"
+    },
+    {
+      "label": "Celebrity suites",
+      "icon": "Crown"
+    },
+    {
+      "label": "Family cruises",
+      "icon": "Users"
+    },
+    {
+      "label": "Multi-generational cruises",
+      "icon": "Home"
+    },
+    {
+      "label": "Group cruises",
+      "icon": "Users"
+    },
+    {
+      "label": "Luxury cruise vacations",
+      "icon": "Sparkles"
+    },
+    {
+      "label": "Celebrity Caribbean cruises",
+      "icon": "Sun"
+    },
+    {
+      "label": "Celebrity Mediterranean cruises",
+      "icon": "Landmark"
+    },
+    {
+      "label": "Celebrity Alaska cruises",
+      "icon": "Mountain"
+    },
+    {
+      "label": "Celebrity European cruises",
+      "icon": "Globe"
+    },
+    {
+      "label": "Celebrity expedition cruises",
+      "icon": "Compass"
+    },
+    {
+      "label": "Pre- and post-cruise stays",
+      "icon": "Building2"
+    },
+    {
+      "label": "Customized cruise vacations",
+      "icon": "Sliders"
+    }
+  ],
+  "inlineCta": {
+    "tag": "Expert Planning",
+    "text": "Ready to start planning your Celebrity cruise?",
+    "primaryCta": "Start My Celebrity Cruise Planning",
+    "secondaryCta": "Speak With a Celebrity Cruise Planning Expert"
+  },
+  "glance": [
+    {
+      "feature": "Celebrity cruise",
+      "detail": "Yes"
+    },
+    {
+      "feature": "Cruise stateroom",
+      "detail": "Yes"
+    },
+    {
+      "feature": "Suite",
+      "detail": "Yes"
+    },
+    {
+      "feature": "Family accommodations",
+      "detail": "Yes"
+    },
+    {
+      "feature": "Group accommodations",
+      "detail": "Yes"
+    },
+    {
+      "feature": "Cruise promotions",
+      "detail": "Reviewed"
+    },
+    {
+      "feature": "Captain's Club benefits",
+      "detail": "Reviewed"
+    },
+    {
+      "feature": "Flights",
+      "detail": "If requested"
+    },
+    {
+      "feature": "Hotels",
+      "detail": "If requested"
+    },
+    {
+      "feature": "Transfers",
+      "detail": "If requested"
+    },
+    {
+      "feature": "Shore excursions",
+      "detail": "If requested"
+    },
+    {
+      "feature": "Pre-cruise stay",
+      "detail": "If requested"
+    },
+    {
+      "feature": "Post-cruise stay",
+      "detail": "If requested"
+    },
+    {
+      "feature": "Land extensions",
+      "detail": "If applicable"
+    }
+  ],
+  "whyRequest": {
+    "eyebrow": "WHY REQUEST A QUOTE?",
+    "heading": "Why Request a Celebrity Cruise Quote?",
+    "lead": "Celebrity Cruises offers a wide range of ships, destinations, stateroom categories and itinerary lengths. Comparing everything independently can become time-consuming. A personalized quote can help you understand:",
+    "factors": [
+      {
+        "label": "Which Celebrity ships fit your travel style",
+        "icon": "Ship"
+      },
+      {
+        "label": "Which itineraries match your dates",
+        "icon": "Calendar"
+      },
+      {
+        "label": "Which stateroom category makes sense",
+        "icon": "BedDouble"
+      },
+      {
+        "label": "Whether a suite is worthwhile",
+        "icon": "Crown"
+      },
+      {
+        "label": "Which current offers may apply",
+        "icon": "BadgePercent"
+      },
+      {
+        "label": "Whether a group booking may be advantageous",
+        "icon": "Users"
+      },
+      {
+        "label": "Which departure port is most convenient",
+        "icon": "MapPin"
+      },
+      {
+        "label": "Whether pre- or post-cruise stays should be added",
+        "icon": "Building2"
+      },
+      {
+        "label": "What the overall vacation may cost",
+        "icon": "Wallet"
+      }
+    ],
+    "footerNote": "The goal is not simply to find the lowest advertised fare. It is to find the right Celebrity cruise for your trip."
+  },
+  "individualQuote": {
+    "eyebrow": "QUOTE OPTIONS",
+    "title": "Individual Celebrity Cruise Quote",
+    "lead": "Traveling solo or as a couple? We can help compare Celebrity sailings based on:",
+    "factors": [
+      {
+        "label": "Destination",
+        "icon": "MapPin"
+      },
+      {
+        "label": "Travel dates",
+        "icon": "Calendar"
+      },
+      {
+        "label": "Cruise length",
+        "icon": "Clock"
+      },
+      {
+        "label": "Ship",
+        "icon": "Ship"
+      },
+      {
+        "label": "Stateroom",
+        "icon": "BedDouble"
+      },
+      {
+        "label": "Budget",
+        "icon": "Wallet"
+      },
+      {
+        "label": "Preferred itinerary",
+        "icon": "Compass"
+      },
+      {
+        "label": "Onboard experience",
+        "icon": "Sparkles"
+      }
+    ],
+    "note": "Whether you already know the sailing you want or are still exploring options, a quote request gives us the information needed to begin planning."
+  },
+  "suiteQuote": {
+    "eyebrow": "QUOTE OPTIONS",
+    "title": "Celebrity Suite Cruise Quote",
+    "lead": "Interested in a suite? Celebrity offers multiple suite categories, including accommodations within The Retreat on eligible ships. A suite quote can help you compare:",
+    "factors": [
+      {
+        "label": "Suite category",
+        "icon": "Crown"
+      },
+      {
+        "label": "Location",
+        "icon": "MapPin"
+      },
+      {
+        "label": "Size",
+        "icon": "Home"
+      },
+      {
+        "label": "Balcony or outdoor space",
+        "icon": "Sun"
+      },
+      {
+        "label": "Included services",
+        "icon": "ConciergeBell"
+      },
+      {
+        "label": "Suite amenities",
+        "icon": "Sparkles"
+      },
+      {
+        "label": "The Retreat benefits",
+        "icon": "Star"
+      },
+      {
+        "label": "Overall value",
+        "icon": "Wallet"
+      }
+    ],
+    "note": "For travelers considering a significant upgrade, we can help compare the additional cost against the benefits included with the suite."
+  },
+  "familyQuote": {
+    "eyebrow": "QUOTE OPTIONS",
+    "title": "Celebrity Family Cruise Quote",
+    "lead": "Celebrity Cruises can be an option for families looking for a vacation that combines destinations, onboard activities and accommodations in one trip. A family quote can take into account:",
+    "factors": [
+      {
+        "label": "Number of adults",
+        "icon": "Users"
+      },
+      {
+        "label": "Number of children",
+        "icon": "Baby"
+      },
+      {
+        "label": "Stateroom requirements",
+        "icon": "BedDouble"
+      },
+      {
+        "label": "Connecting-room preferences",
+        "icon": "DoorOpen"
+      },
+      {
+        "label": "Family-friendly itineraries",
+        "icon": "Compass"
+      },
+      {
+        "label": "Dining preferences",
+        "icon": "UtensilsCrossed"
+      },
+      {
+        "label": "Shore excursions",
+        "icon": "Binoculars"
+      },
+      {
+        "label": "Travel dates",
+        "icon": "Calendar"
+      },
+      {
+        "label": "Budget",
+        "icon": "Wallet"
+      }
+    ],
+    "note": "We can also help compare whether booking multiple staterooms or a larger accommodation makes the most sense."
+  },
+  "multiGenQuote": {
+    "eyebrow": "QUOTE OPTIONS",
+    "title": "Celebrity Multi-Generational Cruise Quote",
+    "lead": "Multi-generational cruise planning can be more complicated because different travelers may have different priorities. For example:",
+    "factors": [
+      {
+        "label": "Grandparents may prioritize comfort",
+        "icon": "Home"
+      },
+      {
+        "label": "Parents may prioritize convenience",
+        "icon": "Clock"
+      },
+      {
+        "label": "Children may want activities",
+        "icon": "Sparkles"
+      },
+      {
+        "label": "Couples may prefer upgraded accommodations",
+        "icon": "Crown"
+      },
+      {
+        "label": "Some travelers may want more independent time",
+        "icon": "Compass"
+      }
+    ],
+    "note": "A personalized quote can help coordinate these different requirements around one Celebrity sailing."
+  },
+  "groupQuote": {
+    "eyebrow": "QUOTE OPTIONS",
+    "title": "Celebrity Group Cruise Quote",
+    "lead": "Planning a larger Celebrity cruise? A group quote can be useful for:",
+    "types": [
+      {
+        "label": "Family reunions",
+        "icon": "Home"
+      },
+      {
+        "label": "University alumni groups",
+        "icon": "GraduationCap"
+      },
+      {
+        "label": "Corporate travel",
+        "icon": "Briefcase"
+      },
+      {
+        "label": "Friends traveling together",
+        "icon": "Users"
+      },
+      {
+        "label": "Celebration cruises",
+        "icon": "PartyPopper"
+      },
+      {
+        "label": "Anniversary groups",
+        "icon": "HeartHandshake"
+      },
+      {
+        "label": "Birthday groups",
+        "icon": "Gift"
+      },
+      {
+        "label": "Wedding-related travel",
+        "icon": "HeartHandshake"
+      },
+      {
+        "label": "Associations",
+        "icon": "Landmark"
+      },
+      {
+        "label": "Clubs",
+        "icon": "Users"
+      },
+      {
+        "label": "Special-interest groups",
+        "icon": "Star"
+      }
+    ],
+    "note": "Celebrity's group program generally applies to groups booking eight staterooms or more, with separate rules and planning options. For Galápagos group bookings, Celebrity's requirements can differ."
+  },
+  "infoNeeded": {
+    "eyebrow": "GETTING STARTED",
+    "title": "What Information Do We Need for a Celebrity Cruise Quote?",
+    "lead": "You do not need to know every detail before submitting a request. Helpful information includes:",
+    "items": [
+      {
+        "label": "Destination",
+        "icon": "MapPin"
+      },
+      {
+        "label": "Travel Dates",
+        "icon": "Calendar"
+      },
+      {
+        "label": "Number of Travelers",
+        "icon": "Users"
+      },
+      {
+        "label": "Stateroom Preference",
+        "icon": "BedDouble"
+      },
+      {
+        "label": "Budget",
+        "icon": "Wallet"
+      },
+      {
+        "label": "Special Requirements",
+        "icon": "ClipboardList"
+      }
+    ],
+    "note": "If your dates are flexible, let us know — flexible dates can sometimes provide more options. A preferred budget range can help narrow the options, and you can provide either a per-person budget, total trip budget or approximate range."
+  },
+  "steps": [
+    {
+      "title": "Tell Us About Your Trip",
+      "desc": "Submit your travel preferences through the quote request form. Include your:",
+      "tags": [
+        "Destination",
+        "Dates",
+        "Number of travelers",
+        "Stateroom preference",
+        "Budget",
+        "Special requests"
+      ]
+    },
+    {
+      "title": "We Review Your Requirements",
+      "desc": "We use your information to understand what type of Celebrity vacation you are looking for. If your dates are flexible, we can consider additional sailing possibilities.",
+      "tags": []
+    },
+    {
+      "title": "Compare Celebrity Cruise Options",
+      "desc": "We can evaluate options based on:",
+      "tags": [
+        "Ship",
+        "Itinerary",
+        "Sailing date",
+        "Stateroom",
+        "Pricing",
+        "Promotions",
+        "Location",
+        "Overall trip value"
+      ]
+    },
+    {
+      "title": "Review Your Personalized Options",
+      "desc": "You can review the options and decide which Celebrity cruise best fits your priorities. There is no need to choose a sailing before requesting a quote.",
+      "tags": []
+    },
+    {
+      "title": "Plan the Rest of the Vacation",
+      "desc": "If needed, we can also help coordinate:",
+      "tags": [
+        "Flights",
+        "Hotels",
+        "Transfers",
+        "Shore excursions",
+        "Pre-cruise stays",
+        "Post-cruise stays",
+        "Land extensions",
+        "Group arrangements"
+      ]
+    }
+  ],
+  "destinations": [
+    {
+      "name": "Celebrity Caribbean Cruise Quote",
+      "intro": "Popular Caribbean planning can include:",
+      "bullets": [
+        "Eastern Caribbean",
+        "Western Caribbean",
+        "Southern Caribbean",
+        "Bahamas",
+        "Private-island experiences"
+      ],
+      "highlight": "A quote can help compare departure ports, sailing dates, ships and itinerary lengths."
+    },
+    {
+      "name": "Celebrity Mediterranean Cruise Quote",
+      "intro": "Mediterranean cruise planning can include destinations in:",
+      "bullets": [
+        "Greece",
+        "Italy",
+        "Spain",
+        "France",
+        "Turkey",
+        "Croatia",
+        "Malta"
+      ],
+      "highlight": "We can help compare itinerary length, ports, cruise dates and pre- or post-cruise stays."
+    },
+    {
+      "name": "Celebrity Alaska Cruise Quote",
+      "intro": "An Alaska quote can include comparisons for:",
+      "bullets": [
+        "Glacier itineraries",
+        "Inside Passage",
+        "Alaska ports",
+        "Cruise tours",
+        "Land extensions",
+        "Pre-cruise stays",
+        "Post-cruise stays"
+      ],
+      "highlight": "Alaska planning can benefit from looking at the complete vacation rather than the cruise alone."
+    },
+    {
+      "name": "Celebrity European Cruise Quote",
+      "intro": "Depending on the sailing, travelers may explore:",
+      "bullets": [
+        "Scandinavia",
+        "British Isles",
+        "Northern Europe",
+        "Mediterranean Europe"
+      ],
+      "highlight": "A quote can help match the itinerary to your available vacation time."
+    },
+    {
+      "name": "Celebrity Galápagos Cruise Quote",
+      "intro": "For travelers interested in expedition travel, a Galápagos quote can include planning around:",
+      "bullets": [
+        "Celebrity Flora",
+        "Galápagos itineraries",
+        "Suite accommodations",
+        "Expedition activities",
+        "Quito stays",
+        "Transfers",
+        "Longer South American journeys"
+      ],
+      "highlight": "Galápagos planning is different from a conventional ocean cruise and may require additional land arrangements."
+    }
+  ],
+  "suiteWorth": {
+    "eyebrow": "SUITE QUOTES",
+    "heading": "Is a Celebrity Suite Worth the Upgrade?",
+    "lead": "That depends on how you plan to use the ship. A suite may make sense when you value additional space, premium accommodations, suite-specific services, The Retreat experience, priority services and enhanced onboard amenities. A quote allows you to compare the suite price against other stateroom categories before making the decision."
+  },
+  "familyRooms": [
+    "Multiple nearby rooms",
+    "Connecting accommodations where available",
+    "Family room configurations",
+    "Suite options",
+    "Different cabin categories for different travelers"
+  ],
+  "groupEvaluate": [
+    "Cabin availability",
+    "Group pricing",
+    "Dining arrangements",
+    "Group events",
+    "Shore excursions",
+    "Payment schedules",
+    "Special requests"
+  ],
+  "familyGroupNote": "Celebrity generally defines a standard group as eight staterooms or more.",
+  "directVsQuote": {
+    "eyebrow": "MAKING THE RIGHT CHOICE",
+    "heading": "Celebrity Cruise Quote vs. Booking Direct",
+    "directTitle": "Booking Directly",
+    "directText": "Booking directly with the cruise line can be appropriate for travelers who already know exactly what they want.",
+    "quoteTitle": "Quote Through Trips & Ships",
+    "quoteText": "A professional cruise planning service can be useful when you need help comparing:",
+    "quoteItems": [
+      "Ships",
+      "Cabin categories",
+      "Itineraries",
+      "Promotions",
+      "Loyalty benefits",
+      "Group options",
+      "Pre- and post-cruise arrangements"
+    ],
+    "note": "The advantage is having one person help evaluate the complete vacation instead of comparing every component independently."
+  },
+  "goodQuote": [
+    {
+      "name": "Total Cost",
+      "desc": "Look at the overall vacation cost.",
+      "icon": "Wallet"
+    },
+    {
+      "name": "Cabin Category",
+      "desc": "A lower fare may not be the best choice if the cabin does not meet your needs.",
+      "icon": "BedDouble"
+    },
+    {
+      "name": "Location",
+      "desc": "Deck and cabin location can influence your onboard experience.",
+      "icon": "MapPin"
+    },
+    {
+      "name": "Itinerary",
+      "desc": "Compare the actual ports and time in each destination.",
+      "icon": "Compass"
+    },
+    {
+      "name": "Promotions",
+      "desc": "Review current eligible offers.",
+      "icon": "BadgePercent"
+    },
+    {
+      "name": "Loyalty Benefits",
+      "desc": "If you have Captain's Club status, check which benefits apply.",
+      "icon": "Award"
+    },
+    {
+      "name": "Flexibility",
+      "desc": "Consider cancellation, change and fare conditions.",
+      "icon": "ShieldCheck"
+    },
+    {
+      "name": "Complete Vacation",
+      "desc": "Include flights, hotels and transfers if required.",
+      "icon": "Plane"
+    }
+  ],
+  "dontNeedToKnow": [
+    "Which ship is best",
+    "Which cabin category is best",
+    "Which itinerary is best",
+    "Whether a suite is worth it",
+    "Which promotion applies",
+    "Whether you need a group booking",
+    "Which departure port is most convenient"
+  ],
+  "dontNeedNote": "That is part of the planning process. Simply provide the information you already know.",
+  "whoShould": [
+    {
+      "feature": "First-Time Celebrity Cruisers",
+      "detail": "If you have never sailed Celebrity, professional guidance can help you understand the differences between ships, accommodations and itineraries."
+    },
+    {
+      "feature": "Couples",
+      "detail": "Compare destinations, cabin categories and suite options."
+    },
+    {
+      "feature": "Families",
+      "detail": "Coordinate multiple travelers and stateroom requirements."
+    },
+    {
+      "feature": "Multi-Generational Groups",
+      "detail": "Balance different travel preferences within one vacation."
+    },
+    {
+      "feature": "Luxury Travelers",
+      "detail": "Compare suites and premium experiences."
+    },
+    {
+      "feature": "Group Leaders",
+      "detail": "Coordinate multiple staterooms and group requirements."
+    },
+    {
+      "feature": "Repeat Celebrity Guests",
+      "detail": "Review current offers alongside Captain's Club benefits."
+    }
+  ],
+  "checklist": [
+    {
+      "label": "Where do you want to cruise?",
+      "icon": "MapPin"
+    },
+    {
+      "label": "When do you want to travel?",
+      "icon": "Calendar"
+    },
+    {
+      "label": "How many people are traveling?",
+      "icon": "Users"
+    },
+    {
+      "label": "How many staterooms do you need?",
+      "icon": "BedDouble"
+    },
+    {
+      "label": "What is your approximate budget?",
+      "icon": "Wallet"
+    },
+    {
+      "label": "Do you want a suite?",
+      "icon": "Crown"
+    },
+    {
+      "label": "Do you have flexible dates?",
+      "icon": "Clock"
+    },
+    {
+      "label": "Do you have a preferred ship?",
+      "icon": "Ship"
+    },
+    {
+      "label": "Do you have Captain's Club status?",
+      "icon": "Award"
+    },
+    {
+      "label": "Are you traveling as a group?",
+      "icon": "Users"
+    },
+    {
+      "label": "Do you need flights?",
+      "icon": "Plane"
+    },
+    {
+      "label": "Do you need hotels?",
+      "icon": "Building2"
+    },
+    {
+      "label": "Do you need transfers?",
+      "icon": "ConciergeBell"
+    },
+    {
+      "label": "Do you want pre- or post-cruise travel?",
+      "icon": "Compass"
+    }
+  ],
+  "checklistNote": "You can provide as much or as little information as you currently know.",
+  "expert": {
+    "name": "Angela Hughes",
+    "title": "Founder & CEO, Trips & Ships Luxury Travel",
+    "stats": [
+      {
+        "value": "40+",
+        "label": "Years Experience"
+      },
+      {
+        "value": "120+",
+        "label": "Countries Visited"
+      }
+    ],
+    "expertise": [
+      "Premium & luxury cruising",
+      "Personalized cruise planning & quote comparison",
+      "Celebrity ship & itinerary planning",
+      "Suite & stateroom selection",
+      "Family & group cruise coordination"
+    ],
+    "eyebrow": "Expert Insight from Angela Hughes",
+    "headline": "What Makes a Celebrity Cruise Quote Worth It?",
+    "lead": "A good cruise quote is not just a price — it is a complete comparison.",
+    "quote": "When clients ask me what actually matters in a Celebrity cruise quote, I tell them to look past the base cruise fare and evaluate the total cost, the cabin category, the location, the itinerary, current promotions, loyalty benefits and the flexibility of the fare conditions. A lower fare is not always the better choice if the cabin, itinerary or flexibility does not fit what you actually need. That is how you find the right Celebrity cruise for your trip, not just the cheapest advertised price."
+  },
+  "whyPlan": {
+    "eyebrow": "PLANNING ADVANTAGE",
+    "heading": "Why Use Trips & Ships Luxury Travel?",
+    "lead": "Trips & Ships Luxury Travel focuses on personalized cruise planning rather than simply providing a cruise fare. We can help you evaluate the complete trip. Our planning can include:",
+    "items": [
+      {
+        "title": "Celebrity ship selection",
+        "icon": "Ship"
+      },
+      {
+        "title": "Itinerary comparison",
+        "icon": "Compass"
+      },
+      {
+        "title": "Stateroom selection",
+        "icon": "BedDouble"
+      },
+      {
+        "title": "Suite planning",
+        "icon": "Crown"
+      },
+      {
+        "title": "Family travel",
+        "icon": "Home"
+      },
+      {
+        "title": "Multi-generational travel",
+        "icon": "Users"
+      },
+      {
+        "title": "Group cruise planning",
+        "icon": "Users"
+      },
+      {
+        "title": "Celebrity offers",
+        "icon": "BadgePercent"
+      },
+      {
+        "title": "Captain's Club benefits",
+        "icon": "Award"
+      },
+      {
+        "title": "Pre-cruise hotels",
+        "icon": "Building2"
+      },
+      {
+        "title": "Post-cruise hotels",
+        "icon": "Building2"
+      },
+      {
+        "title": "Transfers",
+        "icon": "ConciergeBell"
+      },
+      {
+        "title": "Shore excursions",
+        "icon": "Binoculars"
+      },
+      {
+        "title": "Land extensions",
+        "icon": "TreeDeciduous"
+      },
+      {
+        "title": "Special travel requests",
+        "icon": "Sliders"
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "1. How do I request a Celebrity Cruise quote?",
+      "answer": "Complete the Celebrity Cruise quote request form with your destination, travel dates, number of travelers, stateroom preference and any other requirements. A personalized cruise planning process can then begin."
+    },
+    {
+      "question": "2. Can I request a Celebrity cruise quote if I don't know which ship I want?",
+      "answer": "Yes. You can provide your destination, dates and general preferences, and the planning process can help narrow down suitable Celebrity ships and itineraries."
+    },
+    {
+      "question": "3. Can I request a quote for a Celebrity suite?",
+      "answer": "Yes. Include your preferred suite category or simply indicate that you want to compare suite options."
+    },
+    {
+      "question": "4. Can families request a Celebrity Cruise quote?",
+      "answer": "Yes. Family requests can include multiple travelers, multiple staterooms, connecting-room preferences and family-specific requirements."
+    },
+    {
+      "question": "5. Can I request a Celebrity group cruise quote?",
+      "answer": "Yes. Group requests can be made for family reunions, corporate groups, alumni travel, celebrations and other organized travel."
+    },
+    {
+      "question": "6. How many rooms are usually required for a Celebrity group?",
+      "answer": "Celebrity generally defines a standard group as eight staterooms or more, although specific group requirements can vary by product and program."
+    },
+    {
+      "question": "7. Can I request a quote for a Celebrity Caribbean cruise?",
+      "answer": "Yes. You can request quotes for Eastern, Western and Southern Caribbean itineraries, subject to available Celebrity sailings."
+    },
+    {
+      "question": "8. Can I request a Celebrity Mediterranean cruise quote?",
+      "answer": "Yes. A quote can be requested for Mediterranean itineraries, including sailings visiting destinations in Italy, Greece, Spain, France and other Mediterranean regions."
+    },
+    {
+      "question": "9. Can I request a Celebrity Alaska cruise quote?",
+      "answer": "Yes. Alaska cruise requests can include cruise-only options as well as planning around cruise tours and additional land arrangements."
+    },
+    {
+      "question": "10. Can my Celebrity cruise quote include hotels?",
+      "answer": "Yes. If you need a pre- or post-cruise hotel, include this in your request so it can be considered as part of the overall vacation plan."
+    },
+    {
+      "question": "11. Can my Celebrity cruise quote include flights and transfers?",
+      "answer": "Flights and transfers can be considered when building a complete cruise vacation, depending on your requirements."
+    },
+    {
+      "question": "12. Can you help me compare Celebrity cruise offers?",
+      "answer": "Yes. Current promotions can be reviewed alongside the sailing, stateroom category and other booking considerations."
+    },
+    {
+      "question": "13. Can Captain's Club benefits be considered?",
+      "answer": "Yes. If you are a Captain's Club member, provide your loyalty information so applicable benefits can be considered during the planning process."
+    },
+    {
+      "question": "14. Can I request a quote if my travel dates are flexible?",
+      "answer": "Yes. Flexible dates can provide more opportunities to compare different Celebrity sailings, ships, cabins and pricing."
+    },
+    {
+      "question": "15. Is requesting a Celebrity Cruise quote the same as booking?",
+      "answer": "No. A quote request is the beginning of the planning process. You can review the available options before deciding whether to proceed with a booking."
+    }
+  ],
+  "related": [
+    {
+      "title": "Celebrity Mediterranean Cruises",
+      "desc": "Compare Celebrity itineraries, ports and stateroom options across the Mediterranean.",
+      "icon": "Anchor",
+      "link": "/celebrity-cruises/mediterranean/"
+    },
+    {
+      "title": "Celebrity Alaska Cruises",
+      "desc": "Glacier itineraries, Inside Passage sailings, Alaska ports and Cruisetours.",
+      "icon": "Mountain",
+      "link": "/celebrity-cruises/alaska/"
+    },
+    {
+      "title": "Celebrity Danube River Cruises",
+      "desc": "Explore Celebrity's Danube River sailings, ports and onboard experience.",
+      "icon": "Waves",
+      "link": "/celebrity-cruises/river-cruises/danube"
+    },
+    {
+      "title": "Celebrity Apex Ship Guide",
+      "desc": "Deck plans, staterooms, dining and The Retreat aboard Celebrity Apex.",
+      "icon": "Ship",
+      "link": "/celebrity-cruises/ships/celebrity-apex"
+    },
+    {
+      "title": "Celebrity Cruises Overview",
+      "desc": "Compare Caribbean, Mediterranean, European, Alaska and expedition itineraries across the Celebrity fleet.",
+      "icon": "Globe",
+      "link": "/celebrity-cruises/"
+    }
+  ],
+  "finalVerdict": {
+    "eyebrow": "FINAL VERDICT",
+    "heading": "Final Verdict",
+    "p1": "A Celebrity Cruise Quote is most useful when you want more than a basic cruise price. Whether you are planning an individual vacation, a suite experience, a family cruise, a multi-generational trip or a larger group, the right planning process can help you compare the complete vacation. Trips & Ships Luxury Travel can help evaluate Celebrity ships, destinations, itineraries, staterooms, suites, current offers, Captain's Club benefits, family arrangements, group opportunities, hotels, transfers and pre- and post-cruise travel.",
+    "p2": "Instead of starting with a single cabin price, start with what you want your Celebrity vacation to look like."
+  },
+  "centerCta": {
+    "title": "Request Your Celebrity Cruise Quote",
+    "description": "Ready to start planning your Celebrity cruise? Tell Trips & Ships Luxury Travel about your destination, dates, travelers, preferred accommodations and budget. We'll help you explore the Celebrity cruise options that fit your trip.",
+    "primaryCta": "Request My Celebrity Cruise Quote",
+    "secondaryCta": "Start My Celebrity Cruise Planning",
+    "tertiaryCta": "Plan My Celebrity Suite or Group Cruise"
+  }
+}
