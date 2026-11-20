@@ -1,4 +1,7 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useLayoutEffect, useState } from 'react';
+
+// useLayoutEffect warns during server rendering; fall back to useEffect there.
+const useIsomorphicLayoutEffect = typeof window !== 'undefined' ? useLayoutEffect : useEffect;
 
 // Singleton IntersectionObserver for better performance
 let observer = null;
@@ -27,15 +30,20 @@ const getObserver = () => {
 };
 
 const FadeIn = ({ children, delay = 0, direction = 'up', className = '', hover = false, style: incomingStyle = {} }) => {
-  const [isVisible, setIsVisible] = useState(false);
+  // Start visible: the prerendered HTML must paint its content immediately (otherwise
+  // the Largest Contentful Paint waits for JavaScript). After mount, only elements that
+  // are still below the viewport are hidden and then faded in as they scroll into view.
+  const [isVisible, setIsVisible] = useState(true);
   const ref = useRef(null);
 
-  useEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     const el = ref.current;
     if (!el) return;
-    
+    if (el.getBoundingClientRect().top < window.innerHeight) return;
+
     const obs = getObserver();
     if (obs) {
+      setIsVisible(false);
       callbacks.set(el, () => setIsVisible(true));
       obs.observe(el);
       
@@ -59,7 +67,7 @@ const FadeIn = ({ children, delay = 0, direction = 'up', className = '', hover =
     }
   };
 
-  const normalizedDelay = delay >= 10 ? delay / 1000 : delay;
+  const normalizedDelay = delay > 5 ? delay / 1000 : delay;
 
   const style = {
     opacity: isVisible ? 1 : 0,

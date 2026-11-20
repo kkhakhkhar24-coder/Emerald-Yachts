@@ -2,7 +2,7 @@ import React from 'react';
 import FadeIn from './FadeIn';
 import MasterImage from './MasterImage';
 
-const EditorialIntroSplit = ({ heading, paragraphs, primaryImage, secondaryImage, eyebrow = "EXPERT GUIDE" }) => {
+const EditorialIntroSplit = ({ heading, paragraphs, primaryImage, secondaryImage, primaryAlt, secondaryAlt, eyebrow = "EXPERT GUIDE" }) => {
   return (
     <section className="w-full py-24 md:py-32 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
@@ -59,7 +59,7 @@ const EditorialIntroSplit = ({ heading, paragraphs, primaryImage, secondaryImage
                  <MasterImage 
                    src={primaryImage} 
                    className="w-full h-full object-cover transition-transform duration-[3000ms] hover:scale-105" 
-                   alt="Primary Editorial Image"
+                   alt={primaryAlt || heading || "Editorial image"}
                  />
                )}
              </FadeIn>
@@ -70,7 +70,7 @@ const EditorialIntroSplit = ({ heading, paragraphs, primaryImage, secondaryImage
                  <MasterImage 
                    src={secondaryImage} 
                    className="w-full h-full object-cover transition-transform duration-[3000ms] hover:scale-105" 
-                   alt="Secondary Editorial Image"
+                   alt={secondaryAlt || heading || "Editorial image"}
                  />
                </FadeIn>
              )}

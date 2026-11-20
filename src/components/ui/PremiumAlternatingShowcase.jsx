@@ -1,6 +1,5 @@
 import React from 'react';
 import FadeIn from './FadeIn';
-import { motion } from 'framer-motion';
 
 const PremiumAlternatingShowcase = ({ title, subtitle, features }) => {
   if (!features || features.length === 0) return null;
@@ -44,12 +43,10 @@ const PremiumAlternatingShowcase = ({ title, subtitle, features }) => {
                   <FadeIn delay={0.1} direction={isReversed ? 'left' : 'right'}>
                     <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
                       {feature.image ? (
-                        <motion.img 
-                          whileHover={{ scale: 1.05 }}
-                          transition={{ duration: 0.7, ease: "easeOut" }}
+                        <img 
                           src={feature.image} 
                           alt={feature.title} 
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                           loading="lazy"
                         />
                       ) : (

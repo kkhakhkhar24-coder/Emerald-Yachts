@@ -1,5 +1,6 @@
 import React from 'react';
 import FadeIn from './FadeIn';
+import LiteYouTubeEmbed from '@/components/ui/LiteYouTubeEmbed';
 
 const GreeceFamilyVideoOne = () => {
   const youtubeId = "PlCPx9yETCo";
@@ -28,14 +29,14 @@ const GreeceFamilyVideoOne = () => {
           <div className="lg:col-span-7">
             <FadeIn>
               <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-slate-900">
-                <iframe
+                <LiteYouTubeEmbed
                   className="absolute inset-0 w-full h-full"
                   src={`https://www.youtube.com/embed/${youtubeId}?rel=0`}
                   title="Greece Family Trip Travel Guide Video 1"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
-                ></iframe>
+                />
               </div>
             </FadeIn>
           </div>

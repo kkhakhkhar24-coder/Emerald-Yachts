@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { PlaneLanding, PlaneTakeoff, Landmark, Waves, Utensils, Anchor, Sun, MapPin, Coffee, Camera, Sunset, Map } from 'lucide-react';
 import FadeIn from './FadeIn';
+import CrawlablePanels from './CrawlablePanels';
 
 const sequenceData = {
   first: {
@@ -172,6 +173,7 @@ export default function AthensSequenceVisualizer({ image1, image2 }) {
         </div>
 
       </div>
+      <CrawlablePanels items={sequenceData} activeIndex={activeStrategy} />
     </section>
   );
 }

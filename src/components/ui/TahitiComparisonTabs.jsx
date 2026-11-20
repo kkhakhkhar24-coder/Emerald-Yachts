@@ -39,7 +39,7 @@ const TahitiComparisonTabs = ({ data }) => {
           <div className="bg-white rounded-[40px] border border-slate-200/60 shadow-lg hover:shadow-xl overflow-hidden flex flex-col justify-between transition-all duration-300">
             {/* Image section */}
             <div className="relative aspect-[16/10] w-full overflow-hidden">
-              <MasterImage src={breezeImg} alt="Windstar Star Breeze Tahiti" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+              <MasterImage src={data.breeze.image || breezeImg} alt="Windstar Star Breeze Tahiti" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
               <div className="absolute top-6 left-6 bg-navy-950/80 backdrop-blur-sm border border-white/10 px-4 py-2 rounded-xl text-white flex items-center gap-2 text-xs font-bold uppercase tracking-wider">
                 <Ship className="w-4 h-4 text-ts-gold" />
                 <span>{data.breeze.name}</span>
@@ -94,7 +94,7 @@ const TahitiComparisonTabs = ({ data }) => {
           <div className="bg-white rounded-[40px] border border-slate-200/60 shadow-lg hover:shadow-xl overflow-hidden flex flex-col justify-between transition-all duration-300">
             {/* Image section */}
             <div className="relative aspect-[16/10] w-full overflow-hidden">
-              <MasterImage src={windstarImg} alt="Windstar Wind Star Tahiti" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+              <MasterImage src={data.windstar.image || windstarImg} alt="Windstar Wind Star Tahiti" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
               <div className="absolute top-6 left-6 bg-navy-950/80 backdrop-blur-sm border border-white/10 px-4 py-2 rounded-xl text-white flex items-center gap-2 text-xs font-bold uppercase tracking-wider">
                 <Sailboat className="w-4 h-4 text-ts-gold" />
                 <span>{data.windstar.name}</span>

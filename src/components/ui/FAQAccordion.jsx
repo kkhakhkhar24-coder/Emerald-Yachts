@@ -5,27 +5,15 @@ import FadeIn from './FadeIn';
 const FAQAccordion = ({ data }) => {
   const [openIndex, setOpenIndex] = useState(null);
 
-  const rawList = data?.questions || data?.items || data?.faqs;
-  const faqList = Array.isArray(rawList)
-    ? rawList
-    : Array.isArray(rawList?.items)
-      ? rawList.items
-      : Array.isArray(rawList?.questions)
-        ? rawList.questions
-        : Array.isArray(data)
-          ? data
-          : null;
-
-  if (!data || !faqList || !Array.isArray(faqList)) return null;
-
-  const title = data.title || "Frequently Asked Questions";
+  const faqList = data?.questions || data?.items || data?.faqs;
+  if (!data || !faqList) return null;
 
   return (
     <section className="w-full py-16 bg-transparent">
       <div className="max-w-[800px] mx-auto px-6">
-        {title && (
+        {data.title && (
           <FadeIn className="text-center mb-8">
-            <h2 className="font-display text-4xl md:text-5xl text-navy-950 mb-4">{title}</h2>
+            <h2 className="font-display text-4xl md:text-5xl text-navy-950 mb-4">{data.title}</h2>
             <div className="w-12 h-0.5 bg-navy-800 mx-auto mb-6"></div>
             {data.subtitle && (
               <p className="font-sans text-slate-500 max-w-2xl mx-auto">{data.subtitle}</p>

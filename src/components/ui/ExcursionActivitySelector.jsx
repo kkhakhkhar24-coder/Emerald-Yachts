@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import FadeIn from './FadeIn';
+import CrawlablePanels from './CrawlablePanels';
 
 const ExcursionActivitySelector = ({ title, subtitle, levels, images }) => {
   const [activeLevel, setActiveLevel] = useState(0);
@@ -82,6 +83,7 @@ const ExcursionActivitySelector = ({ title, subtitle, levels, images }) => {
         </div>
 
       </div>
+      <CrawlablePanels items={levels} activeIndex={activeLevel} />
     </section>
   );
 };

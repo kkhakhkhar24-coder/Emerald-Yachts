@@ -1,0 +1,596 @@
+{
+  "seo": {
+    "canonicalUrl": "https://www.tripsandships.com/crystal-cruises/crystal-symphony",
+    "metaTitle": "Crystal Symphony Guide: Suites, Dining and Life Onboard",
+    "title": "Crystal Symphony Guide: Suites, Dining and Life Onboard",
+    "metaDescription": "Explore Crystal Symphony, from luxury suites and private butler service to restaurants, entertainment, wellness and life onboard."
+  },
+  "hero": {
+    "title": "Crystal Symphony Guide: Suites, Dining and Life Onboard",
+    "subtitle": "An intimate approach to luxury ocean cruising combining 24-hour private butler service, world-class dining by Nobu and the Alajmo brothers, and an elegant 606-guest scale.",
+    "badge": "CRYSTAL OCEAN FLEET",
+    "lastUpdated": "November 2026",
+    "ctaText": "Plan Your Crystal Cruise",
+    "ctaLink": "/contact",
+    "secondaryCtaText": "View Suites & Staterooms",
+    "secondaryCtaLink": "/crystal-cruises/suites"
+  },
+  "introSection": {
+    "heading": "An Intimate Luxury Ocean Cruising Experience",
+    "paragraphs": [
+      "Crystal Symphony offers an intimate approach to luxury ocean cruising, combining personalized service, elegant accommodation and a varied collection of dining and entertainment experiences. With space for 606 guests, the ship provides a more intimate atmosphere while retaining the restaurants, lounges and onboard facilities expected from Crystal.",
+      "Following its 2025 refurbishment, Crystal Symphony continues to bring together contemporary design and the established Crystal style of hospitality. Every guest room and suite receives private butler service, while guests can enjoy specialty restaurants, relaxed outdoor spaces, wellness facilities and entertainment throughout the voyage.",
+      "Whether you are comparing Crystal's two ocean ships, choosing a suite or considering your first luxury cruise, this guide explains what life aboard Crystal Symphony is like and what to consider before booking."
+    ]
+  },
+  "atAGlance": {
+    "title": "Crystal Symphony at a Glance",
+    "subtitle": "Crystal Symphony is one of Crystal's two established ocean ships. Its smaller guest capacity creates a more intimate setting, with a focus on attentive service, dining and destination-led travel.",
+    "headers": ["Ship Feature", "Details"],
+    "rows": [
+      ["Guest capacity", "606 Guests"],
+      ["Ocean-view rooms and suites", "330 Staterooms"],
+      ["Dining venues", "9 Venues & Experiences"],
+      ["Length", "Approximately 781 feet (238 metres)"],
+      ["Gross tonnage", "51,068 GT"],
+      ["Refurbished", "November 2025 Dry Dock"],
+      ["Butler service", "Available in every guest room and suite"],
+      ["Guest-to-space ratio", "Approximately 1:84.2 cubic feet"]
+    ],
+    "footnote": "The ship combines a broad choice of onboard experiences with a scale that feels more personal than larger contemporary cruise vessels."
+  },
+  "whatIsItLike": {
+    "title": "What Is Crystal Symphony Like?",
+    "lead": "Classic luxury cruising paired with modern comforts and unhurried hospitality.",
+    "atmosphere": "Crystal Symphony is designed for travelers who appreciate classic luxury cruising with modern comforts. Its atmosphere is polished and welcoming rather than overly formal, allowing guests to enjoy the ship at their own pace.",
+    "typicalDay": "A typical day might include breakfast overlooking the sea, an afternoon exploring a port or relaxing on deck, and an evening that begins with cocktails before dinner and live entertainment.",
+    "appealsTo": [
+      "Personalized service and private European butler assistance in every stateroom and suite.",
+      "A range of specialty and casual dining experiences including Nobu Matsuhisa and Alajmo brothers.",
+      "Comfortable lounges and ocean-view public spaces that never feel crowded or rushed.",
+      "Live performances, music, enrichment activities, and destination lectures throughout.",
+      "Wellness facilities, Aurōra Spa, and opportunities to stay active with pickleball and padel tennis.",
+      "Worldwide itineraries that combine destination discovery with relaxing days at sea."
+    ],
+    "closingNote": "Crystal Symphony is not a mega-ship built around large-scale attractions. Its appeal comes from service, dining, comfortable surroundings and the pleasure of a well-paced luxury voyage."
+  },
+  "suitesSection": {
+    "title": "Crystal Symphony Suites and Guest Rooms",
+    "subtitle": "Refined residential comfort with 24-hour private butler service in every room category.",
+    "body": "Accommodation is central to the Crystal experience. Every guest room and suite aboard Crystal Symphony receives 24-hour private butler service, with assistance tailored to the accommodation category. Guests can request pillow preferences, minibar selections, packing and unpacking assistance, shoe-shining and in-suite dining. The ship's accommodation collection ranges from solo guest rooms to expansive penthouse suites.",
+    "categories": [
+      {
+        "name": "Crystal Penthouse Suite",
+        "tag": "Up to 909 sq. ft. | Veranda up to 107 sq. ft.",
+        "description": "The Crystal Penthouse Suite is the ship's largest accommodation category, offering expansive interior space with residential luxury appointments, panoramic ocean views, and the highest tier of butler hospitality.",
+        "features": [
+          "Separate elegant living and dining areas with panoramic ocean vistas",
+          "Two generous walk-in wardrobes and private study with custom-built bar",
+          "Luxurious master bathroom with Jacuzzi bathtub, separate shower, bidet, and guest bathroom",
+          "Enhanced specialty dining privileges and complimentary laundry and pressing services"
+        ],
+        "verdict": "Suited to guests who want the greatest amount of private space and an elevated level of in-suite comfort."
+      },
+      {
+        "name": "Junior Crystal Penthouse Suite",
+        "tag": "Up to 645 sq. ft. | Veranda up to 161 sq. ft.",
+        "description": "Offering a generous open-plan living experience with expansive private verandas, this suite combines residential roominess with enhanced Penthouse amenities.",
+        "features": [
+          "Spacious separate living and dining areas with walk-in wardrobe",
+          "Marble bathroom with Jacuzzi bathtub and separate shower",
+          "Afternoon canapés, fresh flowers, binoculars, and in-suite espresso maker",
+          "Complimentary specialty restaurant dining and enhanced laundry privileges"
+        ],
+        "verdict": "A strong choice for travelers who want generous space and additional benefits without booking the largest suite."
+      },
+      {
+        "name": "Sapphire Veranda Suite",
+        "tag": "Up to 430 sq. ft. | Veranda up to 107 sq. ft.",
+        "description": "Sapphire Veranda Suites blend comfortable interior living with a private veranda, ideal for morning ocean breezes and scenic coastal arrivals.",
+        "features": [
+          "Separate living area with sofa, desk, and walk-in wardrobe",
+          "Private teak veranda with comfortable outdoor loungers",
+          "Bathroom with walk-in shower or separate shower and bath (by specific layout)",
+          "Afternoon canapés, binoculars, coffee maker, and complimentary laundry, pressing, and dry-cleaning"
+        ],
+        "verdict": "Particularly appealing to guests who enjoy having private outdoor space alongside dedicated sitting areas."
+      },
+      {
+        "name": "Sapphire Ocean View Suite",
+        "tag": "Up to 430 sq. ft. | Large Picture Windows",
+        "description": "Designed for guests who prioritize interior living space over a veranda, featuring large picture windows that bathe the suite in natural ocean light.",
+        "features": [
+          "Expansive 430 sq. ft. interior layout matching the Sapphire Veranda interior",
+          "Large picture windows providing sweeping ocean horizons and natural light",
+          "Comfortable separate living area, plush sofa, and walk-in wardrobe",
+          "Dedicated 24-hour private butler service and in-suite dining conveniences"
+        ],
+        "verdict": "A practical option for guests who value interior roominess and a comfortable sitting area more than a balcony."
+      },
+      {
+        "name": "Aquamarine Veranda Suite",
+        "tag": "Up to 323 sq. ft. | Veranda up to 86 sq. ft.",
+        "description": "Aquamarine Veranda Suites provide a comfortable, well-appointed retreat with private veranda access, updated during the ship's 2025 dry dock.",
+        "features": [
+          "Comfortable living area with modern seating and walk-in wardrobe",
+          "Private veranda with ocean views and outdoor seating",
+          "Refurbished 2025 appointments including new textiles, carpets, and furnishings",
+          "Full 24-hour European butler hospitality and daily in-suite refreshments"
+        ],
+        "verdict": "Worth considering for travelers who want a veranda while keeping accommodation costs in perspective."
+      },
+      {
+        "name": "Single Guest Room with Ocean View",
+        "tag": "Up to 215 sq. ft. | Dedicated Solo Stateroom",
+        "description": "Crystal Symphony features dedicated single guest rooms designed specifically for solo occupancy, avoiding double-occupancy supplements.",
+        "features": [
+          "Thoughtfully designed 215 sq. ft. solo layout with comfortable queen-size bed",
+          "Large picture window framing scenic ocean horizons and coastal views",
+          "Comfortable sitting area, writing desk, and modern bathroom with walk-in shower",
+          "Full private butler service and complimentary shipboard amenities"
+        ],
+        "verdict": "A premier option for solo travelers who want dedicated independent accommodation without single supplements."
+      }
+    ],
+    "decisionGuide": {
+      "title": "Which Crystal Symphony Suite Should You Choose?",
+      "subtitle": "Match your voyage style and space preferences to the ideal stateroom or suite.",
+      "options": [
+        {
+          "priority": "For the Most Spacious Accommodation",
+          "recommendation": "Crystal Penthouse Suite",
+          "detail": "Choose for up to 909 sq. ft. of residential space, study, custom bar, Jacuzzi bathtub, and highest-tier privileges."
+        },
+        {
+          "priority": "For Generous Space and Enhanced Benefits",
+          "recommendation": "Junior Crystal Penthouse Suite",
+          "detail": "Enjoy 645 sq. ft. of comfort, separate living and dining spaces, Jacuzzi, canapés, and specialty dining privileges."
+        },
+        {
+          "priority": "For a Private Veranda and Separate Living Area",
+          "recommendation": "Sapphire Veranda Suite",
+          "detail": "Select for 430 sq. ft. of space, private outdoor balcony, walk-in wardrobe, and complimentary laundry services."
+        },
+        {
+          "priority": "For Maximum Interior Roominess Without a Balcony",
+          "recommendation": "Sapphire Ocean View Suite",
+          "detail": "Get the full 430 sq. ft. interior layout and picture windows if you prefer extra indoor sitting room over a veranda."
+        },
+        {
+          "priority": "For an Accessible Luxury Veranda",
+          "recommendation": "Aquamarine Veranda Suite",
+          "detail": "Ideal for travelers who want private balcony breezes and fresh 2025 refurbished styling at an accessible fare."
+        },
+        {
+          "priority": "For Independent Solo Travelers",
+          "recommendation": "Single Guest Room with Ocean View",
+          "detail": "Dedicated 215 sq. ft. solo stateroom with ocean views, walk-in shower, and dedicated butler service."
+        }
+      ]
+    }
+  },
+  "diningSection": {
+    "title": "Crystal Symphony Dining: Restaurants and Culinary Experiences",
+    "subtitle": "Nine distinct dining venues and experiences created in partnership with world-renowned master chefs.",
+    "lead": "Dining is one of the highlights of Crystal Symphony. The ship offers nine dining venues and experiences, ranging from specialty restaurants to relaxed cafés, poolside favorites and in-suite dining. Guests can enjoy different cuisines and settings throughout the voyage without needing to follow a single dining routine.",
+    "venues": [
+      {
+        "name": "Umi Uma",
+        "cuisine": "Japanese-Peruvian Fusion by Nobu Matsuhisa",
+        "description": "The only Nobu Matsuhisa restaurant at sea, combining traditional Japanese techniques with Peruvian flavors.",
+        "highlights": "Full sushi bar, signature black cod miso, wagyu beef, and artful sashimi. Reservations required.",
+        "cost": "Complimentary reservation allowance included by suite tier"
+      },
+      {
+        "name": "Osteria d'Ovidio",
+        "cuisine": "Contemporary Northern Italian Fine Dining",
+        "description": "Created in collaboration with the celebrated Michelin-starred Alajmo brothers, celebrating authentic regional Italian culinary artistry.",
+        "highlights": "Handmade pasta, seasonal Italian truffles, salt-crusted sea bass, and fine Italian vintages.",
+        "cost": "Complimentary reservation allowance included"
+      },
+      {
+        "name": "Beefbar",
+        "cuisine": "International Steakhouse Concept by Riccardo Giraudi",
+        "description": "Riccardo Giraudi's acclaimed global Beef, Reef and Leaf concept bringing modern street-food-inspired steakhouse dining to sea.",
+        "highlights": "Prime cuts, Kobe beef street food sliders, ceviche, and grilled leaf delicacies. Reservations required.",
+        "cost": "Included dinner menu; select ultra-premium cuts carry supplementary fee"
+      },
+      {
+        "name": "Waterside",
+        "cuisine": "Modern International Fine Dining",
+        "description": "Crystal Symphony's elegant main dining room featuring open-seating breakfast, lunch, and dinner with daily rotating menus.",
+        "highlights": "Locally sourced destination specialties, farm-to-table cuisine, and extensive complimentary sommelier wine pairings.",
+        "cost": "Fully included in cruise fare"
+      },
+      {
+        "name": "Marketplace",
+        "cuisine": "Casual International Buffet & Carvery",
+        "description": "A relaxed dining venue with floor-to-ceiling ocean views, open kitchen stations, and made-to-order selections.",
+        "highlights": "Fresh seafood, custom omelets, carving stations, and international hot dishes. Ideal before shore excursions.",
+        "cost": "Fully included in cruise fare"
+      },
+      {
+        "name": "Trident Grill",
+        "cuisine": "Poolside Casual Classics",
+        "description": "Relaxed outdoor venue on the Lido Deck serving made-to-order burgers, sandwiches, and casual poolside favorites.",
+        "highlights": "Gourmet burgers, Nathan's hot dogs, grilled salmon, wrap sandwiches, and crisp fries without leaving the pool.",
+        "cost": "Fully included in cruise fare"
+      },
+      {
+        "name": "The Bistro",
+        "cuisine": "European Coffee Bar & Patisserie",
+        "description": "Charming Parisian-style café serving freshly brewed espresso, specialty teas, artisanal cheeses, and fresh pastries.",
+        "highlights": "Fresh morning croissants, afternoon fruit tarts, charcuterie boards, and international coffee selections.",
+        "cost": "Fully included in cruise fare"
+      },
+      {
+        "name": "The Vintage Room",
+        "cuisine": "Exclusive Sommelier Wine-Pairing Dinners",
+        "description": "An intimate, private dining room offering rare vintage wine-pairing dinners hosted by the ship's Head Sommelier.",
+        "highlights": "Multi-course culinary tasting menus paired with world-class Grand Cru and reserve wines.",
+        "cost": "Additional charge; advance reservation recommended"
+      },
+      {
+        "name": "Scoops Gelato Bar",
+        "cuisine": "Artisanal Italian Gelato & Sweets",
+        "description": "A popular poolside stop serving authentic Italian-style gelato with rotating daily flavors and sweet toppings.",
+        "highlights": "Daily churned gelato, sorbets, decadent toppings, and fresh waffle cones.",
+        "cost": "Fully included in cruise fare"
+      }
+    ],
+    "inclusionsPolicy": {
+      "title": "Is Dining Included on Crystal Symphony?",
+      "content": "Many restaurants and dining experiences are included in the standard Crystal fare. These include the main dining and casual venues, while specialty dining follows specific reservation allowances and conditions. Crystal's current published suite information includes at least one complimentary reservation at Umi Uma and one at Osteria d'Ovidio, subject to availability and applicable terms. Penthouse categories receive enhanced specialty dining privileges. Beefbar reservations and premium menu items should be checked against the latest onboard policy, while the Vintage Room is an additional-cost experience. Guests in Penthouse suites may also enjoy selected dishes from Umi Uma and Osteria d'Ovidio delivered course-by-course by their butler for in-suite dining."
+    }
+  },
+  "publicSpaces": {
+    "title": "Public Spaces and Lounges",
+    "subtitle": "Sophisticated gathering areas, intimate bars, and panoramic outdoor decks.",
+    "spaces": [
+      {
+        "name": "Atrium & Crystal Cove",
+        "type": "Central Social Hub",
+        "description": "The redesigned Atrium serves as the ship's welcoming reception and concierge center. Crystal Cove offers a relaxed bar setting for pre-dinner drinks and conversation with fellow travelers.",
+        "updateNote": "Central connection hub linking guest services with social spaces."
+      },
+      {
+        "name": "Galaxy Lounge",
+        "type": "Main Show Lounge",
+        "description": "The ship's premier theater venue hosting full-cast Broadway-style musical revues, headline guest performers, and evening gala productions.",
+        "updateNote": "Equipped with state-of-the-art stage lighting and acoustics."
+      },
+      {
+        "name": "Avenue Saloon",
+        "type": "Signature Piano Bar",
+        "description": "Crystal Symphony's celebrated wood-paneled piano lounge, known for its intimate ambiance, classic cocktails, and late-night live jazz and vocal melodies.",
+        "updateNote": "Beloved gathering spot for cocktails before and after dinner."
+      },
+      {
+        "name": "Jade Night Club",
+        "type": "Late-Evening Lounge",
+        "description": "Offers an energetic late-night setting with lively dance music, DJ sets, karaoke nights, and social cocktails under ambient nightclub lighting.",
+        "updateNote": "Popular late-night venue for energetic travelers."
+      },
+      {
+        "name": "Starlite Club",
+        "type": "Cabaret & Dancing",
+        "description": "Hosts varied evening entertainment including ballroom dancing, cabaret spot shows, themed social events, and live musical ensembles.",
+        "updateNote": "Panoramic windows overlooking the ocean with wide dance floor."
+      },
+      {
+        "name": "Hollywood Theatre",
+        "type": "Cinema & Lecture Hall",
+        "description": "A dedicated cinema-style auditorium screening recent blockbuster films, broadcasting live sports, and hosting daytime enrichment lectures and religious services.",
+        "updateNote": "Comfortable tiered cinema seating with complimentary popcorn."
+      },
+      {
+        "name": "Avenue of the Stars Boutiques",
+        "type": "Luxury Retail",
+        "description": "High-end shopping arcade featuring curated selections of designer jewelry, fine Swiss watches, prestige fragrances, resort wear, and cruise apparel.",
+        "updateNote": "Tax- and duty-free retail shopping while sailing international waters."
+      },
+      {
+        "name": "Outdoor Decks & Observation Areas",
+        "type": "Open-Air Deck Living",
+        "description": "Expansive teak wrap-around promenade decks, a forward observation terrace, a heated swimming pool, whirlpool spas, and shaded plush loungers.",
+        "updateNote": "Unobstructed sea views and ample open-air loungers without crowds."
+      }
+    ]
+  },
+  "wellnessAndFitness": {
+    "title": "Wellness, Fitness and Recreation",
+    "subtitle": "Comprehensive rejuvenation, ocean-view fitness, and active sports at sea.",
+    "items": [
+      {
+        "title": "Aurōra Spa",
+        "category": "Holistic Spa & Salon",
+        "description": "A tranquil sanctuary offering therapeutic massages, facials, acupuncture, body wraps, and beauty salon services tailored to relax and revive.",
+        "highlight": "Features dry saunas, steam rooms, and ocean-facing relaxation beds."
+      },
+      {
+        "title": "Ocean-View Fitness Center",
+        "category": "Technogym Equipment & Classes",
+        "description": "Fully equipped gymnasium with state-of-the-art cardio machines, free weights, resistance equipment, and floor-to-ceiling panoramic ocean vistas.",
+        "highlight": "Complimentary scheduled fitness classes including yoga, Pilates, and stretching."
+      },
+      {
+        "title": "Outdoor Recreation & Sports",
+        "category": "Pickleball, Padel & Golf",
+        "description": "Active open-air sports facilities on the top decks including dedicated pickleball and padel tennis courts, golf driving nets, shuffleboard, and table tennis.",
+        "highlight": "Active social tournaments and equipment provided for all skill levels."
+      }
+    ]
+  },
+  "entertainment": {
+    "title": "Entertainment and Enrichment at Sea",
+    "subtitle": "Broadway-caliber stage shows, intimate piano lounges, and stimulating destination lectures.",
+    "paragraphs": [
+      "Entertainment aboard Crystal Symphony is varied, with options for guests who enjoy live performances, music, movies and social activities.",
+      "During the day, guest lectures and destination-focused programming add intellectual depth to your journey, while evenings transition into sophisticated musical productions, cabaret, and dancing."
+    ],
+    "pillars": [
+      {
+        "icon": "star",
+        "title": "Broadway-Caliber Theater Productions",
+        "description": "Full-cast musical revues, headliner concerts, and theatrical productions in the Galaxy Lounge designed for world-class evening entertainment."
+      },
+      {
+        "icon": "window",
+        "title": "Avenue Saloon Piano Bar & Live Music",
+        "description": "Intimate piano performances, cocktail recitals, and classic vocal melodies in the signature wood-paneled Avenue Saloon."
+      },
+      {
+        "icon": "compass",
+        "title": "Guest Lectures & Destination Enrichment",
+        "description": "Stimulating lectures by guest historians, former diplomats, marine biologists, and destination experts held in the Hollywood Theatre."
+      },
+      {
+        "icon": "ship",
+        "title": "Cabaret, Dancing & Late-Night Lounges",
+        "description": "Cabaret spot shows and ballroom dancing in the Starlite Club, transitioning to DJ sets and karaoke in Jade Night Club."
+      }
+    ]
+  },
+  "inclusions": {
+    "title": "What Is Included on Crystal Symphony?",
+    "subtitle": "Crystal's transparent all-inclusive luxury model covers virtually every onboard essential.",
+    "includedTitle": "Included in Your Cruise Fare",
+    "included": [
+      {
+        "title": "Curated Fine Wines, Champagne & Spirits",
+        "description": "Complimentary fine wines, Champagne, international craft beers, premium spirits, specialty coffees, and soft drinks throughout the ship."
+      },
+      {
+        "title": "Open-Seating Fine Dining Venues",
+        "description": "All meals across included restaurants: Waterside main dining room, Marketplace buffet, Trident Grill, The Bistro, and Scoops."
+      },
+      {
+        "title": "Nobu Matsuhisa & Italian Specialty Dining",
+        "description": "Complimentary dining reservation allowance at Umi Uma by master chef Nobu Matsuhisa and northern Italian fine dining at Osteria d'Ovidio."
+      },
+      {
+        "title": "24-Hour Private Butler Service",
+        "description": "Dedicated European butler hospitality in every guest room and suite for unpacking, packing, garment pressing, shoe-shining, and in-suite dining."
+      },
+      {
+        "title": "Complimentary 24-Hour In-Suite Dining",
+        "description": "Full-menu in-suite room service served course-by-course 24 hours a day, including Waterside restaurant selections during dinner hours."
+      },
+      {
+        "title": "Unlimited High-Speed Shipboard Wi-Fi",
+        "description": "Standard unlimited high-speed internet access across all accommodations and public decks throughout the voyage."
+      },
+      {
+        "title": "All Onboard Gratuities Included",
+        "description": "Prepaid onboard service gratuities for dining staff, housekeeping attendants, and personal suite butlers with no hidden daily fees."
+      },
+      {
+        "title": "Fitness, Thermal Suites & Recreation",
+        "description": "Full access to the ocean-view fitness center, dry saunas, steam rooms, pickleball courts, padel tennis, and golf driving nets."
+      },
+      {
+        "title": "Broadway Shows & Destination Lectures",
+        "description": "Broadway-caliber theatrical productions, live musical concerts, and daytime enrichment lectures by historians and diplomats."
+      }
+    ],
+    "additionalTitle": "Additional-Cost Experiences",
+    "additional": [
+      {
+        "title": "Curated Shore Excursions",
+        "description": "Destination discovery tours, private shoreside vehicles, and bespoke cultural excursions in each port of call."
+      },
+      {
+        "title": "The Vintage Room Wine Dinners",
+        "description": "Exclusive multi-course sommelier wine-pairing dinners in The Vintage Room, and specialty dining visits beyond your voyage allowance."
+      },
+      {
+        "title": "Cellar Master Reserve Vintages",
+        "description": "Connoisseur rare reserve wines, prestigious vintage Champagnes, and ultra-premium cellar spirits ordered à la carte."
+      },
+      {
+        "title": "Aurōra Spa & Salon Therapies",
+        "description": "Signature massage therapies, advanced facial treatments, acupuncture, medi-spa services, and full salon grooming."
+      },
+      {
+        "title": "Pre- & Post-Cruise Land Arrangements",
+        "description": "Customized luxury hotel stays, private airport transfers, and optional international business-class air arrangements."
+      },
+      {
+        "title": "Boutiques, Casino & Premium Wi-Fi",
+        "description": "Designer boutique purchases, gaming chips in the casino, premium streaming Wi-Fi upgrades, and select dry cleaning."
+      }
+    ]
+  },
+  "itineraries": {
+    "title": "Crystal Symphony Itineraries and Destinations",
+    "subtitle": "Worldwide voyages connecting historic capitals, scenic coastlines, and remote island harbors.",
+    "regions": [
+      {
+        "title": "Asia and the Pacific",
+        "description": "Sail between Japan's cherry blossoms, Southeast Asian archipelagos, Hong Kong, Singapore, and scenic Vietnamese coastlines."
+      },
+      {
+        "title": "Australia and New Zealand",
+        "description": "Explore Sydney Harbor, the Great Barrier Reef, Milford Sound fjords, and New Zealand's boutique wine regions."
+      },
+      {
+        "title": "Europe and the Mediterranean",
+        "description": "Discover the Greek Isles, Dalmatian Coast, French Riviera, and Iberian ports with late-evening stays and overnight departures."
+      },
+      {
+        "title": "The Americas and Caribbean",
+        "description": "Navigate the Panama Canal, secluded Virgin Island anchorages, Central American rainforests, and South American coastlines."
+      },
+      {
+        "title": "Alaska and North America",
+        "description": "Experience towering tidewater glaciers, Inside Passage navigation, wildlife sanctuaries, and historic Gold Rush frontier ports."
+      },
+      {
+        "title": "Canada and the Atlantic Coast",
+        "description": "Cruise picturesque New England harbors, the St. Lawrence Seaway, and Maritime provinces during vibrant autumn foliage."
+      },
+      {
+        "title": "Grand Journeys & Extended Voyages",
+        "description": "Combine consecutive voyages into extended multi-month journeys without changing staterooms or packing bags."
+      }
+    ]
+  },
+  "refurbishment": {
+    "title": "Crystal Symphony's 2025 Refurbishment",
+    "history": "Crystal Symphony entered a scheduled three-week dry dock in November 2025, focusing on selected suites and public spaces to further refine the onboard experience.",
+    "highlights": [
+      "Comprehensive redesign of Aquamarine and Sapphire Classic Suites on Deck 10",
+      "Fresh suite furnishings, Italian fabrics, and modernized ensuite marble bathrooms",
+      "New custom carpets and contemporary wall coverings throughout accommodation corridors",
+      "Design refinements aligning the ship with the aesthetic introduced in its 2023 transformation",
+      "Technological and infrastructural upgrades across selected public spaces and lounges",
+      "Officially recognized by Crystal as the ship's current modern refurbishment milestone"
+    ]
+  },
+  "travelerFit": {
+    "title": "Who Should Choose Crystal Symphony?",
+    "subtitle": "Identifying the ideal guest profile for Crystal's intimate 606-guest ocean ship.",
+    "personas": [
+      {
+        "persona": "Couples & Romantic Travelers",
+        "fit": "Exceptional Match",
+        "description": "Couples seeking specialty dining at Umi Uma, elegant sunset cocktails in Avenue Saloon, and unhurried destination exploration in a relaxed, intimate setting."
+      },
+      {
+        "persona": "Experienced Luxury Cruisers",
+        "fit": "Exceptional Match",
+        "description": "Travelers who appreciate attentive European butler service, Michelin-inspired dining, generous space-to-guest ratios, and smaller ship agility without mega-ship crowds."
+      },
+      {
+        "persona": "Solo Luxury Travelers",
+        "fit": "Outstanding Match",
+        "description": "Independent travelers benefit from dedicated Single Guest Rooms without double supplements, sociable open-seating dining, and welcoming lounge atmospheres."
+      },
+      {
+        "persona": "Multigenerational Families",
+        "fit": "Selective Match",
+        "description": "Families traveling with adult children or mature teens enjoy the culinary variety and shared spaces. Those seeking waterslides or kids' clubs should look to mega-ships."
+      }
+    ]
+  },
+  "comparisonVsSerenity": {
+    "title": "Crystal Symphony vs. Crystal Serenity",
+    "subtitle": "Understanding the key differences between Crystal's two operating sister ships.",
+    "table": {
+      "headers": ["Feature", "Crystal Symphony", "Crystal Serenity"],
+      "rows": [
+        ["Guest Capacity", "606 Guests", "740 Guests"],
+        ["Ocean-View Rooms & Suites", "330 Staterooms", "402 Staterooms"],
+        ["Dining Venues", "9 Venues", "10 Venues"],
+        ["Length", "781 ft (238 m)", "820 ft (250 m)"],
+        ["Gross Tonnage", "51,068 GT", "68,870 GT"],
+        ["Latest Major Refurbishment", "November 2025 Dry Dock", "2023 (Oct 2026 Dry Dock)"]
+      ]
+    },
+    "verdict": "Crystal Symphony is the smaller ship, with fewer guests and fewer accommodation units. This creates a more intimate scale for travelers who prefer a smaller onboard environment with swift port access. Crystal Serenity is larger and offers more guest rooms and dining venues. Both ships provide private butler service in every guest room and suite, along with a focus on dining, entertainment and personalized hospitality. The best choice often comes down to the itinerary, preferred suite and the atmosphere you enjoy."
+  },
+  "isItWorthIt": {
+    "title": "Is Crystal Symphony Worth Booking?",
+    "subtitle": "An honest assessment of value, service standards, and voyage investment.",
+    "strengths": [
+      "More intimate capacity of 606 guests ensuring uncrowded public lounges and relaxed pacing",
+      "Private 24-hour European butler service provided across every guest room and suite category",
+      "Collection of 9 world-class dining venues including Nobu Matsuhisa and Alajmo brothers",
+      "Dedicated Single Guest Room category tailored specifically for solo luxury travelers",
+      "Recent November 2025 dry dock refurbishment of suites and public spaces",
+      "Worldwide itineraries reaching boutique harbors inaccessible to larger cruise ships"
+    ],
+    "considerations": [
+      "Upfront cruise fare reflects its all-inclusive luxury tier and dedicated butler service",
+      "Shore excursions, spa therapies, and The Vintage Room carry additional charges",
+      "Less suited to travelers looking for large water parks, rock climbing walls, or loud family mega-resorts"
+    ],
+    "conclusion": "To assess value, compare the complete cost of the sailing, including flights, transfers, accommodation, excursions and any additional experiences you plan to enjoy. For discerning cruisers seeking boutique intimacy and master-chef dining, Crystal Symphony represents an exceptional luxury value."
+  },
+  "angelaBio": {
+    "name": "Angela Hughes",
+    "title": "Luxury Cruise Specialist & CEO, Trips & Ships Luxury Travel",
+    "bio": "Angela Hughes brings more than 40 years of travel-industry experience and has explored over 121 countries across seven continents. As CEO of Trips & Ships Luxury Travel and founder of Luxury Travel University, she specializes in matching discerning travelers with the ideal Crystal Symphony suite, stateroom location, and global itinerary.",
+    "credentials": [
+      "Over 4 Decades Designing Bespoke Luxury Travel Experiences",
+      "Personally Explored 121+ Countries Across Seven Continents",
+      "Certified Luxury Small Ship & Ocean Cruise Specialist",
+      "CEO & Founder of Trips & Ships Luxury Travel",
+      "Travel Leaders Network Luxury Travel Influencer of the Year",
+      "Named Most Influential Women in Travel 2026 by TravelPulse"
+    ],
+    "quote": "Crystal Symphony offers the ideal sweet spot in luxury cruising: small enough to feel like an exclusive private club with 606 guests, yet spacious enough to offer master-chef dining from Nobu and the Alajmo brothers with personalized butler care in every suite.",
+    "ctaText": "Plan Your Crystal Symphony Cruise",
+    "ctaLink": "/contact"
+  },
+  "faqs": [
+    {
+      "question": "How many guests can Crystal Symphony accommodate?",
+      "answer": "Crystal Symphony has a guest capacity of 606, with 330 ocean-view rooms and suites."
+    },
+    {
+      "question": "When was Crystal Symphony last refurbished?",
+      "answer": "Crystal Symphony underwent a three-week refurbishment in November 2025. The project included updates to selected suites and public areas."
+    },
+    {
+      "question": "Does every Crystal Symphony room have butler service?",
+      "answer": "Yes. Crystal provides private butler service in every guest room and suite. The specific services available depend on the accommodation category."
+    },
+    {
+      "question": "How many restaurants are on Crystal Symphony?",
+      "answer": "Crystal lists nine dining venues and experiences aboard Crystal Symphony. These include Beefbar, Umi Uma, Osteria d'Ovidio, Waterside, Marketplace, Trident Grill, The Bistro, The Vintage Room, Scoops Gelato Bar and 24-hour in-suite dining."
+    },
+    {
+      "question": "Is specialty dining included on Crystal Symphony?",
+      "answer": "Crystal's published suite information includes at least one complimentary reservation at Umi Uma and one at Osteria d'Ovidio, subject to availability and applicable terms. Penthouse categories receive enhanced specialty dining privileges. The Vintage Room is an additional-cost experience."
+    },
+    {
+      "question": "Does Crystal Symphony have a single room for solo travelers?",
+      "answer": "Yes. Crystal Symphony offers a dedicated Single Guest Room with Ocean View designed for solo occupancy."
+    },
+    {
+      "question": "Does Crystal Symphony have a swimming pool?",
+      "answer": "Crystal Symphony has an outdoor pool area and deck spaces where guests can relax and enjoy the sea views. Check the current ship facilities information for details."
+    },
+    {
+      "question": "Does Crystal Symphony have a spa and gym?",
+      "answer": "Yes. The ship offers Aurōra Spa, a fitness center and a selection of wellness and recreation activities. Treatments and some services carry additional charges."
+    },
+    {
+      "question": "Is Crystal Symphony suitable for families?",
+      "answer": "It can suit families traveling with older children and multiple generations who appreciate luxury accommodation, dining and destination experiences. However, it does not offer the extensive family attractions found on large family-focused cruise ships."
+    },
+    {
+      "question": "What is the difference between Crystal Symphony and Crystal Serenity?",
+      "answer": "Crystal Symphony accommodates 606 guests, while Crystal Serenity accommodates 740. Symphony has 330 ocean-view rooms and suites and nine dining venues, compared with Serenity's 402 rooms and suites and ten dining venues."
+    },
+    {
+      "question": "Where does Crystal Symphony sail?",
+      "answer": "Crystal Symphony operates itineraries across regions including Asia-Pacific, Australia and New Zealand, Europe, the Americas and the Caribbean. Its seasonal destinations and departure dates vary."
+    },
+    {
+      "question": "How can I book a Crystal Symphony cruise?",
+      "answer": "You can explore current voyages through Crystal or contact Trips & Ships Luxury Travel for help comparing itineraries, suite categories and the overall cost of your preferred sailing."
+    }
+  ]
+}

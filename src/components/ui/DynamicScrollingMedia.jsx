@@ -44,7 +44,7 @@ const DynamicScrollingMedia = ({ items }) => {
           return (
             <motion.div
               key={index}
-              className="absolute inset-0 flex items-center justify-center"
+              className="absolute inset-0 flex items-center justify-center bg-navy-950"
               style={{ opacity }}
             >
               <motion.img 

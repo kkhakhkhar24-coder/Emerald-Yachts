@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import FadeIn from './FadeIn';
+import CrawlablePanels from './CrawlablePanels';
 
 const UltimateFleetShowcase = ({ image }) => {
   const [activeShip, setActiveShip] = useState(0);
@@ -196,6 +197,7 @@ const UltimateFleetShowcase = ({ image }) => {
         </FadeIn>
 
       </div>
+      <CrawlablePanels items={ships} activeIndex={activeShip} />
     </section>
   );
 };

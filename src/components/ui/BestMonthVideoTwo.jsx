@@ -1,6 +1,7 @@
 import React from 'react';
 import FadeIn from './FadeIn';
 import { Compass, Check } from 'lucide-react';
+import LiteYouTubeEmbed from '@/components/ui/LiteYouTubeEmbed';
 
 const BestMonthVideoTwo = () => {
   const points = [
@@ -22,14 +23,14 @@ const BestMonthVideoTwo = () => {
             <FadeIn>
               <div className="relative p-3 bg-white border border-slate-100 rounded-[32px] shadow-2xl">
                 <div className="relative aspect-video rounded-3xl overflow-hidden shadow-inner bg-slate-950">
-                  <iframe
+                  <LiteYouTubeEmbed
                     className="absolute inset-0 w-full h-full"
                     src="https://www.youtube.com/embed/O_RzdX0dkow"
                     title="What is the Best Month to Visit Greece Video 2"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
-                  ></iframe>
+                  />
                 </div>
               </div>
             </FadeIn>

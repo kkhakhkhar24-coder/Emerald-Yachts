@@ -1,0 +1,460 @@
+{
+  "seo": {
+    "title": "Princess Cruises Wi-Fi: MedallionNet Costs and Packages",
+    "metaTitle": "Princess Cruises Wi-Fi: MedallionNet Costs and Packages",
+    "metaDescription": "Compare Princess Cruises Wi-Fi packages, MedallionNet and MedallionNet Max. Explore prices, device limits, Princess Plus benefits and internet speeds.",
+    "canonicalUrl": "https://www.tripsandships.com/princess-cruises/wifi",
+    "keywords": "Princess Cruises Wi-Fi, MedallionNet, MedallionNet Max, Princess Wi-Fi cost, Princess internet packages, Princess Plus Wi-Fi, Princess Premier Wi-Fi",
+    "ogTitle": "Princess Cruises Wi-Fi and MedallionNet: Packages, Costs and What to Expect",
+    "ogDescription": "Compare Princess Cruises Wi-Fi packages, MedallionNet and MedallionNet Max. Explore prices, device limits, Princess Plus benefits and internet speeds."
+  },
+  "hero": {
+    "badge": "Connectivity & Internet Guide",
+    "title": "Princess Cruises Wi-Fi and MedallionNet: Packages, Costs and What to Expect",
+    "subtitle": "Everything you need to know about onboard internet: MedallionNet Classic vs. MedallionNet Max, device allowances, current USD rates, bundled packages, and staying connected at sea.",
+    "ctaLabel": "Plan Your Princess Cruise",
+    "ctaUrl": "/contact",
+    "secondaryCtaLabel": "Princess Plus vs. Premier",
+    "secondaryCtaUrl": "/princess-cruises/plus-vs-premier"
+  },
+  "introSection": {
+    "heading": "Staying Connected at Sea on Princess Cruises",
+    "p1": "Staying connected at sea is increasingly important for cruise travellers. Whether you want to message family, check emails, share holiday photos, join video calls or stream entertainment, Princess Cruises offers onboard internet through its MedallionNet Wi-Fi service.",
+    "p2": "Princess provides standalone Wi-Fi packages for guests who want internet access without purchasing a larger cruise package. Guests who choose Princess Plus or Princess Premier also receive MedallionNet Max, with different device allowances. The right option depends on how many devices you need, how often you use the internet and whether you want Wi-Fi alone or a broader package that includes drinks, dining and other benefits.",
+    "p3": "This guide explains how Princess Wi-Fi works, compares MedallionNet and MedallionNet Max, reviews current standalone package prices and explains what to expect from internet access at sea."
+  },
+  "whatIsMedallionNet": {
+    "title": "What Is MedallionNet Wi-Fi?",
+    "subtitle": "High-Tech Satellite Connectivity Across the Fleet",
+    "intro": "MedallionNet is Princess Cruises' onboard internet service. It allows guests to connect their personal devices to the ship's Wi-Fi network and access the internet while sailing.",
+    "promotedActivities": [
+      {
+        "title": "Messaging & Email",
+        "description": "Sending messages and emails to stay in touch with family, work, and personal networks.",
+        "icon": "Mail"
+      },
+      {
+        "title": "Web & Social Media",
+        "description": "Browsing websites, reading news, checking feeds, and sharing social media updates.",
+        "icon": "Globe"
+      },
+      {
+        "title": "Holiday Photos & Videos",
+        "description": "Sharing vacation memories, images, and short videos with family and friends.",
+        "icon": "Camera"
+      },
+      {
+        "title": "Video Chatting",
+        "description": "Connecting via video calls with relatives, colleagues, and loved ones while at sea.",
+        "icon": "Video"
+      },
+      {
+        "title": "Streaming Online Content",
+        "description": "Streaming selected entertainment, shows, playlists, and online video content.",
+        "icon": "PlayCircle"
+      },
+      {
+        "title": "Remote Work & Personal Tasks",
+        "description": "Keeping up with time-sensitive work requirements, cloud documents, and travel logistics.",
+        "icon": "Laptop"
+      }
+    ],
+    "fleetwideNote": "Every ship in the Princess fleet is MedallionNet-enabled. However, the actual connection experience can vary depending on the ship, sailing location, satellite coverage, weather, network demand and the websites or applications being used.",
+    "satelliteReality": "MedallionNet is designed to make staying connected easier, but internet at sea is not always identical to a high-speed home or office broadband connection."
+  },
+  "classicVsMax": {
+    "title": "MedallionNet Classic vs. MedallionNet Max",
+    "subtitle": "Understanding the Two Service Tiers on Princess Cruises",
+    "classic": {
+      "title": "MedallionNet Classic",
+      "badge": "Standard Standalone Internet",
+      "description": "MedallionNet Classic is the standard standalone internet service. Guests can purchase it separately through the Princess app before sailing or onboard.",
+      "features": [
+        "Everyday internet activities such as messaging, browsing, email, and photo sharing",
+        "Available as standalone purchase for 1 device or 2 devices per package",
+        "Standard satellite connection bandwidth allocation across public and stateroom areas",
+        "Best for guests who do not need beverage packages, gratuities, or dining bundles"
+      ]
+    },
+    "max": {
+      "title": "MedallionNet Max",
+      "badge": "Prioritized Top-Tier Bandwidth",
+      "description": "MedallionNet Max is Princess's higher-performing Wi-Fi service. It offers prioritized access to the highest-quality bandwidth available to the ship.",
+      "features": [
+        "Included exclusively with current Princess Plus and Princess Premier packages",
+        "Princess Plus: MedallionNet Max for 1 device per guest",
+        "Princess Premier: MedallionNet Max for up to 4 devices per guest",
+        "Prioritized bandwidth access through the newest multi-orbit satellite network",
+        "Not sold as a standalone package; access is bundled with cruise fares"
+      ]
+    },
+    "whichIsBetter": {
+      "title": "Which Tier Is Right for You?",
+      "p1": "Choose standalone MedallionNet Classic if you mainly need basic connectivity and do not want the other Princess package benefits.",
+      "p2": "Consider MedallionNet Max through Princess Plus or Premier if you want the prioritized Wi-Fi service and expect to use the additional package benefits as well.",
+      "p3": "The Max service offers priority access, but it does not guarantee a particular internet speed or uninterrupted connectivity in every location."
+    }
+  },
+  "pricing": {
+    "title": "Princess Cruises Wi-Fi Prices",
+    "subtitle": "Current Published USD Standalone Rates & Options",
+    "intro": "Princess offers standalone Wi-Fi packages and bundled internet access through Princess Plus and Princess Premier. The following standalone prices reflect the announced USD rates effective October 13, 2026. Confirm the current price displayed in Manage Booking for your particular sailing before purchasing.",
+    "table": {
+      "headers": [
+        "Package",
+        "Pre-Cruise Price",
+        "Onboard Full-Voyage Price",
+        "Onboard 1-Day Price"
+      ],
+      "rows": [
+        [
+          "1 device",
+          ".99 per day",
+          ".99 per day",
+          ".99"
+        ],
+        [
+          "2 devices",
+          ".99 per day",
+          ".99 per day",
+          ".99"
+        ]
+      ]
+    },
+    "termsNote": "These are published USD rates. The one-day option is a single-day purchase, while the full-voyage price applies to the full sailing. Check the checkout screen for the exact amount, applicable terms and any additional charges.",
+    "discontinuedCallout": {
+      "title": "What Happened to the 4-Device Standalone Package?",
+      "description": "Princess discontinued the standalone four-device Wi-Fi package effective October 13, 2026. Four-device access is now available exclusively through Princess Premier. Guests who need to connect several devices should compare the two-device standalone option with the four-device allowance included in Premier."
+    }
+  },
+  "bundledWithPlusPremier": {
+    "title": "Wi-Fi Included With Princess Plus and Princess Premier",
+    "subtitle": "MedallionNet Max Integrated Into Full Cruise Bundles",
+    "intro": "If you are already considering Princess Plus or Princess Premier, the included Wi-Fi can be an important part of the package's overall value.",
+    "table": {
+      "headers": [
+        "Feature",
+        "Princess Plus",
+        "Princess Premier"
+      ],
+      "rows": [
+        [
+          "Wi-Fi service",
+          "MedallionNet Max",
+          "MedallionNet Max"
+        ],
+        [
+          "Device allowance",
+          "1 device per guest",
+          "Up to 4 devices per guest"
+        ],
+        [
+          "Service level",
+          "Prioritized Max access",
+          "Prioritized Max access"
+        ],
+        [
+          "Standalone Wi-Fi purchase needed?",
+          "No",
+          "No"
+        ]
+      ]
+    },
+    "plusDetail": {
+      "title": "Princess Plus Wi-Fi",
+      "description": "Princess Plus includes MedallionNet Max for one device per guest. This may be sufficient if you mainly use one smartphone or tablet and want to stay connected during your holiday."
+    },
+    "premierDetail": {
+      "title": "Princess Premier Wi-Fi",
+      "description": "Princess Premier includes MedallionNet Max for up to four devices per guest. This is more convenient for travellers who want to connect a smartphone, tablet, laptop and another personal device without repeatedly switching access."
+    },
+    "pricingTiers": {
+      "title": "Current Princess Plus and Premier Package Prices",
+      "subtitle": "Published USD Rates When Purchased at Least 96 Hours Before Departure",
+      "tiers": [
+        {
+          "name": "Princess Plus (Most Ships)",
+          "price": " / day",
+          "nights": "Per Guest",
+          "description": "Includes MedallionNet Max (1 device per guest), Plus Beverage Package (drinks up to ), crew appreciation, and 4 casual dining meals per voyage."
+        },
+        {
+          "name": "Princess Plus (Sun & Star Princess)",
+          "price": " / day",
+          "nights": "Per Guest",
+          "description": "Sphere-class package rate including MedallionNet Max (1 device per guest), Plus Beverage Package, crew appreciation, and 4 casual dining meals per voyage."
+        },
+        {
+          "name": "Princess Premier (All Ships)",
+          "price": "– / day",
+          "nights": "Top-Tier",
+          "description": "Includes MedallionNet Max (up to 4 devices per guest), Premier Beverage Package (drinks up to , no daily limit), crew appreciation, unlimited casual & specialty dining. (/day most ships; /day Sun & Star Princess)."
+        }
+      ],
+      "notes": "The onboard rates are  higher per person, per day under current USD terms. These are full cruise-package prices, not standalone Wi-Fi prices. The lower pre-cruise rate requires purchase at least 96 hours before scheduled departure. Princess Plus and Premier also include beverage packages, crew appreciation, and dining benefits, while Premier adds shore excursion credits and photo packages."
+    }
+  },
+  "deviceAllowances": {
+    "title": "How Many Devices Can You Connect?",
+    "subtitle": "Understanding Simultaneous Connections vs. Cabin Sharing",
+    "intro": "Your device allowance depends on the Wi-Fi package you purchase. If you use a phone, tablet and laptop, consider how often you need them online simultaneously. A one-device allowance may require you to switch between devices, while a multi-device package offers more flexibility.",
+    "cards": [
+      {
+        "title": "Standalone 1-Device Package",
+        "items": [
+          "Connect 1 device at a time under the selected package",
+          "Switching between a smartphone and a tablet is possible by logging in on the new device",
+          "Only one active connection is permitted at any given moment",
+          "Ideal for solo travellers or guests with minimal connectivity needs"
+        ]
+      },
+      {
+        "title": "Standalone 2-Device Package",
+        "items": [
+          "Connect up to 2 devices simultaneously under the selected package",
+          "Share between two people in the stateroom or use across a phone and a laptop",
+          "Eliminates constant login/logout steps between primary personal devices",
+          "Offers strong value compared to buying two separate 1-device plans"
+        ]
+      },
+      {
+        "title": "Princess Plus (1 Device / Guest)",
+        "items": [
+          "Each guest who purchases Princess Plus receives a 1-device MedallionNet Max allowance",
+          "A couple in one cabin with Plus can each keep one phone connected at the same time",
+          "Devices connect to the high-priority Max bandwidth tier",
+          "Does not pool devices (each guest logs in under their own booking credentials)"
+        ]
+      },
+      {
+        "title": "Princess Premier (4 Devices / Guest)",
+        "items": [
+          "Up to 4 active devices per guest with Princess Premier",
+          "Simultaneously connect a phone, tablet, laptop, and smartwatch or ereader",
+          "No switching or logging off needed between multiple work and personal devices",
+          "Exclusive access to four-device allowances since standalone plans were retired"
+        ]
+      }
+    ],
+    "cabinNote": "The device allowance is not the same as the number of people sharing a cabin. Each guest's package entitlement is governed by the relevant booking and package terms."
+  },
+  "howToConnect": {
+    "title": "How to Connect to MedallionNet on a Princess Cruise",
+    "subtitle": "Step-by-Step Connection & Onboard Setup Guide",
+    "steps": [
+      {
+        "title": "Download App Before Sailing",
+        "subtitle": "Pre-Cruise Preparation",
+        "description": "Download the Princess Cruises app on your smartphone or tablet before leaving home. Complete pre-cruise OceanReady check-in steps and ensure your app is fully updated.",
+        "icon": "Download"
+      },
+      {
+        "title": "Verify Package on Booking",
+        "subtitle": "Pre-Cruise Verification",
+        "description": "Confirm that your standalone Wi-Fi package, Princess Plus, or Princess Premier is attached to your booking under Manage Booking before embarkation.",
+        "icon": "CheckSquare"
+      },
+      {
+        "title": "Switch to Airplane Mode",
+        "subtitle": "Crucial Onboard Step",
+        "description": "Once you step onboard the ship, immediately switch your phone or tablet to Airplane Mode. This prevents accidental and expensive maritime cellular roaming charges.",
+        "icon": "Plane"
+      },
+      {
+        "title": "Turn Wi-Fi On & Select Network",
+        "subtitle": "Join Ship Network",
+        "description": "Turn Wi-Fi back on while keeping cellular data roaming disabled. Select the ship's MedallionNet Wi-Fi network from your available wireless network list.",
+        "icon": "Wifi"
+      },
+      {
+        "title": "Open App or Login Portal",
+        "subtitle": "Authentication",
+        "description": "Open the Princess Cruises app or open a web browser to load the onboard Wi-Fi login page. If the page does not appear, try navigating to any standard web URL.",
+        "icon": "Smartphone"
+      },
+      {
+        "title": "Activate Package & Confirm",
+        "subtitle": "Active Connection",
+        "description": "Follow the prompts to activate your existing package or purchase internet access. Use the same guest credentials as your booking, and confirm device status shows active.",
+        "icon": "ShieldCheck"
+      }
+    ]
+  },
+  "whatYouCanDo": {
+    "title": "What Can You Do With Princess Wi-Fi?",
+    "subtitle": "Everyday Online Capabilities & Usage Scenarios",
+    "cards": [
+      {
+        "title": "Messaging and Email",
+        "description": "Messaging and email are among the most practical uses of onboard Wi-Fi. You can keep in touch with family, check travel arrangements and manage personal messages with ease throughout the voyage.",
+        "icon": "Mail"
+      },
+      {
+        "title": "Social Media & Photo Sharing",
+        "description": "Guests can browse social media feeds, upload holiday photographs and share real-time updates with friends and family. Large video uploads may take longer depending on satellite conditions.",
+        "icon": "Share2"
+      },
+      {
+        "title": "Video Calls",
+        "description": "Princess promotes video chat as one of the uses of its internet service. However, video-call quality can vary with network congestion, satellite coverage, and the specific application used.",
+        "icon": "Video"
+      },
+      {
+        "title": "Streaming Content",
+        "description": "Princess advertises streaming as a supported use of MedallionNet. Actual performance can vary, and high-bandwidth applications may be restricted under certain network loads. Pre-downloading media is recommended.",
+        "icon": "Film"
+      },
+      {
+        "title": "Remote Work",
+        "description": "MedallionNet can be useful for checking email, accessing cloud documents and handling lighter online tasks. Guests with time-critical business or heavy file transfers should plan around satellite realities.",
+        "icon": "Briefcase"
+      }
+    ]
+  },
+  "expectationsAndRoaming": {
+    "title": "What to Expect From Wi-Fi at Sea",
+    "subtitle": "Satellite Realities, Ship Network Rules & Cellular Roaming Cautions",
+    "items": [
+      {
+        "title": "Satellite Technology at Sea",
+        "category": "Satellite Internet Realities",
+        "description": "Cruise ship internet is different from a land-based broadband connection. Princess uses satellite and other available connectivity sources to provide internet across its fleet. The connection may change as the ship moves between regions and satellite coverage areas. Expect changes in connection speed, temporary interruptions in remote locations, and slower performance during high onboard demand."
+      },
+      {
+        "title": "Free Princess App vs. Internet Access",
+        "category": "Onboard Network Access",
+        "description": "Standard Princess cruise fares do not automatically include an internet package. However, the Princess app and selected onboard features (dining menus, ship schedules, stateroom messaging, shipboard account review) can be used through the ship's local network without buying Wi-Fi. Accessing the wider internet, Google, or social media requires an eligible package."
+      },
+      {
+        "title": "Cellular at Sea & Maritime Roaming Risks",
+        "category": "Avoid Unexpected Charges",
+        "description": "You may be able to use your mobile phone through international roaming, but at sea your phone connects to maritime satellite cellular networks rather than terrestrial towers. Carrier rates can be exceptionally expensive. Keep your phone in Airplane Mode with Wi-Fi turned on to prevent accidental maritime roaming charges."
+      },
+      {
+        "title": "MedallionNet Max Priorities",
+        "category": "Bandwidth Prioritization",
+        "description": "MedallionNet Max offers prioritized bandwidth access for Plus and Premier guests, but it does not remove the fundamental limitations of satellite connectivity at sea. Downloading large work files, travel documents, and streaming shows before embarkation remains a sensible precaution."
+      }
+    ]
+  },
+  "valueEvaluation": {
+    "title": "Is Princess Wi-Fi Worth the Cost?",
+    "subtitle": "Evaluating Standalone Internet vs. Bundled Packages",
+    "whenStandaloneWorthIt": [
+      "You only want to message family and friends occasionally throughout the cruise",
+      "You need regular email and web access for essential personal tasks",
+      "You want to share vacation photographs and updates on social media",
+      "You do not drink alcohol or specialty coffees and do not need beverage packages",
+      "You do not plan on purchasing cruise bundles like Princess Plus or Premier"
+    ],
+    "whenPlusPremierBetter": [
+      "You want the prioritized, higher-performing MedallionNet Max Wi-Fi service",
+      "You need 1 device per guest and also plan to enjoy cocktails, wine, beer, or specialty coffees",
+      "You want crew appreciation (gratuities) included in your upfront cruise budget",
+      "You need up to 4 devices per guest simultaneously (exclusively available in Princess Premier)",
+      "You plan to take advantage of casual and specialty dining inclusions on your voyage"
+    ]
+  },
+  "tips": {
+    "title": "Tips for Getting the Most From Princess Wi-Fi",
+    "subtitle": "Practical Advice for Seamless Sea Connectivity",
+    "cards": [
+      {
+        "title": "Pre-Cruise Preparation",
+        "items": [
+          "Download before sailing: Save films, podcasts, playlists, maps, and offline documents before boarding",
+          "Choose your device allowance carefully based on how many devices need simultaneous access",
+          "Purchase ahead of time: Pre-cruise rates are lower than onboard pricing (saves up to /day)"
+        ]
+      },
+      {
+        "title": "Onboard Connection Habits",
+        "items": [
+          "Always use Airplane Mode: Keep cellular roaming off while Wi-Fi is active to avoid roaming shock",
+          "Limit background activity: Pause automatic cloud backups, app updates, and background photo syncing",
+          "Verify package details in the Princess app to confirm active device allowance and Max status"
+        ]
+      },
+      {
+        "title": "Work & Connectivity Contingency",
+        "items": [
+          "Keep a backup plan: If you must work, inform colleagues of satellite variance and avoid tight deadlines",
+          "Schedule large uploads during off-peak hours (early morning or late evening) when network load is low",
+          "Use port days for heavy data tasks by utilizing local terrestrial Wi-Fi or international roaming"
+        ]
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "How much does Princess Cruises Wi-Fi cost?",
+      "answer": "Current standalone USD rates announced for October 13, 2026, start at .99 per day pre-cruise for one device and .99 per day for two devices. Onboard full-voyage rates are .99 and .99 per day respectively. Single-day passes cost .99 (1 device) or .99 (2 devices). Check your sailing's checkout page for the exact current price."
+    },
+    {
+      "question": "What is MedallionNet Max?",
+      "answer": "MedallionNet Max is Princess's higher-performing, prioritized onboard Wi-Fi service. It offers prioritized access to the highest-quality bandwidth available on the ship and is included with Princess Plus and Princess Premier rather than sold as a separate standalone package."
+    },
+    {
+      "question": "Does Princess Plus include Wi-Fi?",
+      "answer": "Yes. Princess Plus includes MedallionNet Max for one device per guest for the entire duration of the cruise."
+    },
+    {
+      "question": "Does Princess Premier include Wi-Fi?",
+      "answer": "Yes. Princess Premier includes MedallionNet Max for up to four devices per guest for the entire duration of the cruise."
+    },
+    {
+      "question": "Can I stream movies on Princess Wi-Fi?",
+      "answer": "Princess promotes streaming as a supported use of MedallionNet. However, performance can vary with satellite coverage, weather, and network demand, and selected high-bandwidth applications may be restricted on some ships. We recommend downloading entertainment before sailing."
+    },
+    {
+      "question": "Can I work remotely on a Princess cruise?",
+      "answer": "You can use MedallionNet for email, web browsing, cloud documents, and lighter online tasks. However, satellite internet can experience latency, variable speeds, and brief interruptions, so it may not be suitable as the sole connection for mission-critical video conferences or massive file transfers."
+    },
+    {
+      "question": "Is Wi-Fi included in the standard Princess cruise fare?",
+      "answer": "No. Standard Princess cruise fares do not include a full internet package. Accessing the internet requires purchasing a standalone MedallionNet package or booking Princess Plus or Princess Premier."
+    },
+    {
+      "question": "Can I connect more than one device?",
+      "answer": "Yes. Standalone one-device and two-device packages are available. Princess Plus includes one device per guest, while Princess Premier includes up to four devices per guest. Note that the standalone four-device package was discontinued in October 2026."
+    },
+    {
+      "question": "Can I purchase Wi-Fi before my Princess cruise?",
+      "answer": "Yes. Princess allows guests to purchase standalone Wi-Fi through Manage Booking or the Princess app before sailing, which saves money compared to purchasing onboard."
+    },
+    {
+      "question": "Does the Princess app work without buying Wi-Fi?",
+      "answer": "Yes. Selected Princess app and onboard features (ship event schedules, stateroom account, dining menus, shipboard messaging) operate over the ship's free local intranet without purchasing an internet package. However, accessing external websites, email, and social media requires a paid package."
+    },
+    {
+      "question": "Should I use my mobile phone roaming instead of MedallionNet?",
+      "answer": "That depends on your cellular carrier, but generally no. At sea, phones connect to maritime satellite networks where carrier roaming fees can be extraordinarily high. It is much safer to keep your phone in Airplane Mode and use MedallionNet Wi-Fi."
+    },
+    {
+      "question": "Is MedallionNet available on every Princess ship?",
+      "answer": "Yes. Princess states that every ship in its fleet is MedallionNet-enabled. However, the available service level and actual real-world performance may vary depending on satellite coverage and geographic itinerary."
+    }
+  ],
+  "angelaBio": {
+    "name": "Angela Hughes",
+    "title": "Princess Cruises Specialist & CEO, Trips & Ships Luxury Travel",
+    "ctaText": "Plan Your Princess Cruise",
+    "ctaLink": "/contact",
+    "bio": "Angela Hughes has spent over 40 years as a luxury travel specialist and CEO of Trips & Ships Luxury Travel, having traveled to more than 121 countries. Her firsthand experience across the Princess fleet helps clients navigate Wi-Fi choices, evaluate Plus vs. Premier bundles, and avoid unnecessary onboard costs.",
+    "credentials": [
+      "40+ Years Luxury Cruise Experience",
+      "Traveled to 121+ Countries Worldwide",
+      "Princess Cruises Certified Specialist",
+      "CLIA Master Cruise Counselor"
+    ],
+    "quote": "Staying connected at sea shouldn't be a guessing game. Evaluating whether to buy standalone Wi-Fi or bundle it with Princess Plus or Premier depends entirely on your daily beverage habits, device needs, and whether you value prioritized bandwidth."
+  },
+  "finalCta": {
+    "title": "Plan Your Princess Cruise With Expert Guidance",
+    "subtitle": "Speak with Angela Hughes and the Trips & Ships luxury travel team to compare Princess ships, package perks, and ensure you have seamless connectivity at sea.",
+    "primaryCtaText": "Plan Your Princess Cruise",
+    "primaryCtaLink": "/contact",
+    "secondaryCtaText": "Explore Princess Cruises Guide",
+    "secondaryCtaLink": "/princess-cruises"
+  }
+}

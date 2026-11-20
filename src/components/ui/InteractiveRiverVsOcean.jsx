@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Waves, Ship, Droplets, Map, Anchor, Compass } from 'lucide-react';
+import CrawlablePanels from './CrawlablePanels';
 
 const InteractiveRiverVsOcean = ({ riverImg, oceanImg }) => {
   const [activeView, setActiveView] = useState('ocean');
@@ -120,6 +121,7 @@ const InteractiveRiverVsOcean = ({ riverImg, oceanImg }) => {
           ))}
         </div>
       </div>
+      <CrawlablePanels items={comparisons} activeIndex={activeView} />
     </section>
   );
 };

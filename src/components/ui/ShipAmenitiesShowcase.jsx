@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './ShipAmenitiesShowcase.module.css';
 import { Ship, Anchor, Compass, Coffee } from 'lucide-react';
+import CrawlablePanels from './CrawlablePanels';
 
 const icons = [Ship, Coffee, Anchor, Compass];
 
@@ -62,6 +63,7 @@ const ShipAmenitiesShowcase = ({ data, images = [] }) => {
           </div>
         </div>
       </div>
+      <CrawlablePanels items={data.items} activeIndex={activeIndex} />
     </section>
   );
 };

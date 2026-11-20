@@ -79,6 +79,8 @@ const GenerationalTravelMatcher = ({
               return (
                 <button
                   key={gen.id}
+                  type="button"
+                  aria-pressed={isActive}
                   onClick={() => setActiveTab(idx)}
                   className={`flex flex-col text-left p-5 rounded-2xl transition-all duration-300 border ${
                     isActive 
@@ -105,35 +107,42 @@ const GenerationalTravelMatcher = ({
 
           {/* Right Column: Active Display Card */}
           <div className="lg:w-2/3 h-full">
-            <div className="bg-white rounded-3xl border border-slate-200 shadow-2xl p-8 md:p-12 h-full flex flex-col justify-center relative overflow-hidden transition-all duration-500">
-              {/* Glass subtle gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-gold-50/50 via-transparent to-slate-50/80 pointer-events-none"></div>
+            {/* Generation cards — all rendered so every profile is in the prerendered HTML;
+                only the selected one is visible. */}
+            {dataToUse.map((gen, idx) => (
+              <div
+                key={gen.id || idx}
+                className={`bg-white rounded-3xl border border-slate-200 shadow-2xl p-8 md:p-12 h-full ${idx === activeTab ? "flex" : "hidden"} flex-col justify-center relative overflow-hidden transition-all duration-500`}
+              >
+                {/* Glass subtle gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-gold-50/50 via-transparent to-slate-50/80 pointer-events-none"></div>
               
-              <div className="relative z-10">
-                <div className="inline-block bg-navy-50 text-navy-800 text-xs px-4 py-1.5 rounded-full font-semibold mb-6 border border-navy-100">
-                  Target Profile: {dataToUse[activeTab].name}
-                </div>
+                <div className="relative z-10">
+                  <div className="inline-block bg-navy-50 text-navy-800 text-xs px-4 py-1.5 rounded-full font-semibold mb-6 border border-navy-100">
+                    Target Profile: {gen.name}
+                  </div>
                 
-                <h3 className="text-2xl md:text-4xl font-display text-navy-950 mb-6 leading-tight">
-                  "{dataToUse[activeTab].idealFor}"
-                </h3>
+                  <h3 className="text-2xl md:text-4xl font-display text-navy-950 mb-6 leading-tight">
+                    "{gen.idealFor}"
+                  </h3>
                 
-                <p className="text-slate-600 text-base md:text-lg leading-relaxed mb-10">
-                  {dataToUse[activeTab].description}
-                </p>
+                  <p className="text-slate-600 text-base md:text-lg leading-relaxed mb-10">
+                    {gen.description}
+                  </p>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 border-t border-slate-100 pt-8">
-                  {dataToUse[activeTab].highlights.map((highlight, hIdx) => (
-                    <div key={hIdx} className="flex flex-col space-y-2">
-                      <div className="w-8 h-8 rounded-full bg-gold-50 flex items-center justify-center">
-                        <span className="text-gold-600 font-display font-semibold text-sm">{hIdx + 1}</span>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 border-t border-slate-100 pt-8">
+                    {gen.highlights.map((highlight, hIdx) => (
+                      <div key={hIdx} className="flex flex-col space-y-2">
+                        <div className="w-8 h-8 rounded-full bg-gold-50 flex items-center justify-center">
+                          <span className="text-gold-600 font-display font-semibold text-sm">{hIdx + 1}</span>
+                        </div>
+                        <span className="text-sm text-navy-900 font-semibold leading-snug">{highlight}</span>
                       </div>
-                      <span className="text-sm text-navy-900 font-semibold leading-snug">{highlight}</span>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
 
         </div>

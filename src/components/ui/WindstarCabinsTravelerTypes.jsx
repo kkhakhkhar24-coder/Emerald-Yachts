@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import FadeIn from './FadeIn';
 import { Heart, Compass, Users, User, Calendar, Map, Activity, Layers, ArrowRight } from 'lucide-react';
 import MasterImage from './MasterImage';
+import CrawlablePanels from './CrawlablePanels';
 
 const WindstarCabinsTravelerTypes = ({ sectionImage }) => {
   const [activeTab, setActiveTab] = useState(0);
@@ -201,6 +202,7 @@ const WindstarCabinsTravelerTypes = ({ sectionImage }) => {
         </div>
 
       </div>
+      <CrawlablePanels items={travelerTabs} activeIndex={activeTab} />
     </section>
   );
 };

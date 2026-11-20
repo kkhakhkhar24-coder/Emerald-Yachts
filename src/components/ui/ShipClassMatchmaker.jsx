@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Ship, Wind, CheckCircle2, ArrowRight } from 'lucide-react';
 import FadeIn from './FadeIn';
+import CrawlablePanels from './CrawlablePanels';
 
 const ShipClassMatchmaker = ({ starClassImg, windClassImg }) => {
   const [activeClass, setActiveClass] = useState('star');
@@ -131,6 +132,7 @@ const ShipClassMatchmaker = ({ starClassImg, windClassImg }) => {
         </FadeIn>
 
       </div>
+      <CrawlablePanels items={classes} activeIndex={activeClass} />
     </section>
   );
 };

@@ -1,8 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import FadeIn from './FadeIn';
 
-const AsymmetricStoryIntro = ({ eyebrow, heading, paragraphs, highlights, image1, image2, ctaText, ctaLink }) => {
+const AsymmetricStoryIntro = ({ eyebrow, heading, paragraphs, highlights, image1, image2, image1Alt, image2Alt }) => {
   return (
     <section className="bg-white py-20 md:py-32 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
@@ -17,7 +16,7 @@ const AsymmetricStoryIntro = ({ eyebrow, heading, paragraphs, highlights, image1
                   <div className="absolute inset-0 bg-navy-900/10 mix-blend-multiply z-10" />
                   <img 
                     src={image1} 
-                    alt="AmaWaterways Experience" 
+                    alt={image1Alt || "Editorial Image"} 
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -27,7 +26,7 @@ const AsymmetricStoryIntro = ({ eyebrow, heading, paragraphs, highlights, image1
                   <div className="absolute -bottom-8 -right-4 md:-bottom-12 md:-right-8 w-2/3 aspect-[4/3] rounded-sm overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.3)] border-[8px] border-white z-20">
                     <img 
                       src={image2} 
-                      alt="Interior Detail" 
+                      alt={image2Alt || "Secondary Editorial Image"} 
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -94,17 +93,6 @@ const AsymmetricStoryIntro = ({ eyebrow, heading, paragraphs, highlights, image1
                     );
                   })}
                 </ul>
-              )}
-
-              {ctaText && (
-                <div className="mt-8">
-                  <Link
-                    to={ctaLink || "/contact"}
-                    className="inline-flex items-center justify-center px-8 py-3 bg-navy-950 text-white font-sans text-sm font-bold tracking-widest uppercase hover:bg-navy-900 transition-all rounded-full shadow-lg hover:scale-105"
-                  >
-                    {ctaText}
-                  </Link>
-                </div>
               )}
             </FadeIn>
           </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import FadeIn from './FadeIn';
 import MasterImage from './MasterImage';
 import { Film } from 'lucide-react';
+import LiteYouTubeEmbed from '@/components/ui/LiteYouTubeEmbed';
 
 const OriginVideoSectionTwo = ({ youtubeId, title, subtitle, description, sideImage }) => {
   return (
@@ -15,13 +16,13 @@ const OriginVideoSectionTwo = ({ youtubeId, title, subtitle, description, sideIm
           {/* Left Column: Embedded YouTube Player */}
           <div className="lg:col-span-7 order-last lg:order-first">
             <div className="relative aspect-video w-full rounded-3xl overflow-hidden shadow-2xl border border-slate-200/50 bg-slate-900">
-              <iframe
+              <LiteYouTubeEmbed
                 className="absolute inset-0 w-full h-full"
                 src={`https://www.youtube.com/embed/${youtubeId}?rel=0`}
                 title={title}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
-              ></iframe>
+              />
             </div>
           </div>
 

@@ -8,8 +8,6 @@ const TabbedComparison = ({ title, mainBrand, competitors, hideVs = false, leftL
 
   if (!competitors || competitors.length === 0) return null;
 
-  const activeCompetitor = competitors[activeTab];
-
   return (
     <section className="w-full py-16 bg-ice-50">
       <div className="max-w-[1024px] mx-auto px-6">
@@ -18,10 +16,15 @@ const TabbedComparison = ({ title, mainBrand, competitors, hideVs = false, leftL
           <div className="w-12 h-0.5 bg-navy-800 mx-auto mt-4 mb-10"></div>
           
           {/* Tabs */}
-          <div className="flex flex-wrap justify-center gap-4">
+          <div role="tablist" className="flex flex-wrap justify-center gap-4">
             {competitors.map((comp, idx) => (
               <button
                 key={idx}
+                type="button"
+                role="tab"
+                id={`tc-tab-${idx}`}
+                aria-selected={activeTab === idx}
+                aria-controls={`tc-panel-${idx}`}
                 onClick={() => setActiveTab(idx)}
                 className={`px-6 py-2.5 rounded-full font-sans text-sm font-semibold transition-all border ${
                   activeTab === idx
@@ -35,7 +38,16 @@ const TabbedComparison = ({ title, mainBrand, competitors, hideVs = false, leftL
           </div>
         </FadeIn>
 
-        <FadeIn key={activeTab}>
+        {/* Every panel is rendered so crawlers see all comparisons; inactive ones are hidden. */}
+        {competitors.map((activeCompetitor, panelIdx) => (
+        <div
+          key={panelIdx}
+          role="tabpanel"
+          id={`tc-panel-${panelIdx}`}
+          aria-labelledby={`tc-tab-${panelIdx}`}
+          hidden={panelIdx !== activeTab}
+        >
+        <FadeIn key={panelIdx === activeTab ? `active-${activeTab}` : panelIdx}>
           <div className="rounded-2xl border border-slate-100 shadow-lg overflow-hidden bg-white">
             {/* Image Header */}
             <div className="h-56 md:h-72 bg-slate-200 relative overflow-hidden">
@@ -54,14 +66,14 @@ const TabbedComparison = ({ title, mainBrand, competitors, hideVs = false, leftL
 
             {/* Comparison Content */}
             <div className="p-8 lg:p-12">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 items-start">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
                 {/* Main Brand Strengths */}
                 <div>
                   <div className="flex items-center gap-4 mb-6 pb-4 border-b border-slate-100">
                     <span className="bg-navy-900 text-white font-sans text-xs font-bold px-4 py-1.5 rounded">{mainBrand?.name || mainBrand}</span>
                     <span className="font-sans text-xs font-bold text-slate-400 uppercase tracking-[0.15em]">{leftLabel}</span>
                   </div>
-                  <ul className="space-y-4 max-h-[480px] lg:max-h-[520px] overflow-y-auto pr-2">
+                  <ul className="space-y-4">
                     {(activeCompetitor?.mainBrandStrengths || []).map((strength, idx) => (
                       <li key={idx} className="flex items-start gap-3 bg-ice-50 p-4 rounded-xl border border-slate-100">
                         <Check className="w-5 h-5 text-navy-700 flex-shrink-0 mt-0.5" />
@@ -77,7 +89,7 @@ const TabbedComparison = ({ title, mainBrand, competitors, hideVs = false, leftL
                     <span className="bg-slate-100 text-slate-700 font-sans text-xs font-bold px-4 py-1.5 rounded">{activeCompetitor.name}</span>
                     <span className="font-sans text-xs font-bold text-slate-400 uppercase tracking-[0.15em]">{rightLabel}</span>
                   </div>
-                  <ul className="space-y-4 max-h-[480px] lg:max-h-[520px] overflow-y-auto pr-2">
+                  <ul className="space-y-4">
                     {(activeCompetitor?.competitorStrengths || []).map((strength, idx) => (
                       <li key={idx} className="flex items-start gap-3 bg-slate-50 p-4 rounded-xl border border-slate-100">
                         <Circle className="w-5 h-5 text-slate-400 flex-shrink-0 mt-0.5" />
@@ -91,11 +103,11 @@ const TabbedComparison = ({ title, mainBrand, competitors, hideVs = false, leftL
               {/* Best For Section (Optional) */}
               {(activeCompetitor.bestForMainBrand || activeCompetitor.bestForCompetitor) && (
                 <div className="mt-12 pt-10 border-t border-slate-100">
-                  <h3 className="font-display text-2xl text-navy-950 mb-8 text-center">Who Is Each Brand Best For?</h3>
+                  <h4 className="font-display text-2xl text-navy-950 mb-8 text-center">Who Is Each Brand Best For?</h4>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
                     {activeCompetitor.bestForMainBrand && (
                       <div className="bg-ice-50/50 p-6 rounded-2xl border border-slate-100">
-                        <h4 className="font-sans font-bold text-navy-900 uppercase tracking-wider text-sm mb-4">Best For {mainBrand.name}</h4>
+                        <h5 className="font-sans font-bold text-navy-900 uppercase tracking-wider text-sm mb-4">Best For {mainBrand.name}</h5>
                         <ul className="space-y-3">
                           {activeCompetitor.bestForMainBrand.map((item, idx) => (
                             <li key={idx} className="flex items-start gap-3">
@@ -108,7 +120,7 @@ const TabbedComparison = ({ title, mainBrand, competitors, hideVs = false, leftL
                     )}
                     {activeCompetitor.bestForCompetitor && (
                       <div className="bg-slate-50/50 p-6 rounded-2xl border border-slate-100">
-                        <h4 className="font-sans font-bold text-slate-700 uppercase tracking-wider text-sm mb-4">Best For {activeCompetitor.name}</h4>
+                        <h5 className="font-sans font-bold text-slate-700 uppercase tracking-wider text-sm mb-4">Best For {activeCompetitor.name}</h5>
                         <ul className="space-y-3">
                           {activeCompetitor.bestForCompetitor.map((item, idx) => (
                             <li key={idx} className="flex items-start gap-3">
@@ -125,6 +137,8 @@ const TabbedComparison = ({ title, mainBrand, competitors, hideVs = false, leftL
             </div>
           </div>
         </FadeIn>
+        </div>
+        ))}
       </div>
     </section>
   );

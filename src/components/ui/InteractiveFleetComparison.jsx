@@ -6,8 +6,6 @@ const InteractiveFleetComparison = ({ title, subtitle, ships }) => {
 
   if (!ships || ships.length === 0) return null;
 
-  const current = ships[activeShip];
-
   return (
     <section className="py-20 bg-ice-50 overflow-hidden">
       <div className="max-w-[1280px] mx-auto px-6">
@@ -29,6 +27,8 @@ const InteractiveFleetComparison = ({ title, subtitle, ships }) => {
             {ships.map((ship, index) => (
               <button
                 key={index}
+                type="button"
+                aria-pressed={activeShip === index}
                 onClick={() => setActiveShip(index)}
                 className={`group relative flex items-center justify-between p-5 rounded-2xl transition-all duration-500 overflow-hidden ${
                   activeShip === index 
@@ -42,12 +42,12 @@ const InteractiveFleetComparison = ({ title, subtitle, ships }) => {
                 )}
                 
                 <div className="relative z-10 text-left">
-                  <h3 className="font-display text-xl md:text-2xl mb-1 group-hover:text-gold-500 transition-colors">
+                  <span className="block font-display text-xl md:text-2xl mb-1 group-hover:text-gold-500 transition-colors">
                     {ship.name}
-                  </h3>
-                  <p className={`font-sans text-sm tracking-wide uppercase ${activeShip === index ? 'text-ice-200' : 'text-navy-500'}`}>
+                  </span>
+                  <span className={`block font-sans text-sm tracking-wide uppercase ${activeShip === index ? 'text-ice-200' : 'text-navy-500'}`}>
                     {ship.type}
-                  </p>
+                  </span>
                 </div>
                 
                 <div className="relative z-10">
@@ -64,80 +64,82 @@ const InteractiveFleetComparison = ({ title, subtitle, ships }) => {
           {/* Main Display Area */}
           <div className="w-full lg:w-2/3 bg-white rounded-3xl p-6 lg:p-10 shadow-2xl border border-ice-100 relative min-h-[600px] flex flex-col justify-center">
             
-            {/* Animated content wrapper based on active index */}
-            <div key={activeShip} className="animate-fade-in-up">
+            {/* Ship panels — all rendered so every ship is in the prerendered HTML;
+                only the selected one is visible (and animates in on selection). */}
+            {ships.map((ship, index) => (
+              <div key={index} className={index === activeShip ? "animate-fade-in-up" : "hidden"}>
               
-              <div className="flex flex-col xl:flex-row gap-8 items-center mb-8">
-                {/* Image Showcase */}
-                <div className="w-full xl:w-1/2 rounded-2xl overflow-hidden aspect-[4/3] shadow-lg relative group">
-                  <div className="absolute inset-0 bg-navy-950/20 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
-                  <img 
-                    src={current.image} 
-                    alt={current.name} 
-                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
-                    loading="lazy"
-                  />
-                  {/* Floating Badge */}
-                  <div className="absolute bottom-4 right-4 z-20 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full shadow-lg">
-                    <span className="font-sans text-xs font-bold uppercase tracking-wider text-navy-900">
-                      {current.guests} Guests
-                    </span>
+                <div className="flex flex-col xl:flex-row gap-8 items-center mb-8">
+                  {/* Image Showcase */}
+                  <div className="w-full xl:w-1/2 rounded-2xl overflow-hidden aspect-[4/3] shadow-lg relative group">
+                    <div className="absolute inset-0 bg-navy-950/20 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
+                    <img 
+                      src={ship.image} 
+                      alt={ship.name} 
+                      className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                      loading="lazy"
+                    />
+                    {/* Floating Badge */}
+                    <div className="absolute bottom-4 right-4 z-20 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full shadow-lg">
+                      <span className="font-sans text-xs font-bold uppercase tracking-wider text-navy-900">
+                        {ship.guests} Guests
+                      </span>
+                    </div>
                   </div>
-                </div>
 
-                {/* Description & Overview */}
-                <div className="w-full xl:w-1/2">
-                  <h3 className="font-display text-3xl text-navy-950 mb-4">{current.name}</h3>
-                  <p className="font-sans text-navy-600 leading-relaxed mb-6">
-                    {current.description}
-                  </p>
+                  {/* Description & Overview */}
+                  <div className="w-full xl:w-1/2">
+                    <h3 className="font-display text-3xl text-navy-950 mb-4">{ship.name}</h3>
+                    <p className="font-sans text-navy-600 leading-relaxed mb-6">
+                      {ship.description}
+                    </p>
                   
-                  {/* Ideal For Note */}
-                  <div className="bg-ice-50 p-4 rounded-xl border border-ice-200 border-l-4 border-l-gold-500">
-                    <span className="block font-sans text-xs uppercase tracking-widest text-navy-400 font-bold mb-1">Ideal For</span>
-                    <span className="font-display text-navy-900 text-lg">{current.idealFor}</span>
+                    {/* Ideal For Note */}
+                    <div className="bg-ice-50 p-4 rounded-xl border border-ice-200 border-l-4 border-l-gold-500">
+                      <span className="block font-sans text-xs uppercase tracking-widest text-navy-400 font-bold mb-1">Ideal For</span>
+                      <span className="font-display text-navy-900 text-lg">{ship.idealFor}</span>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              {/* Specification Grid */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 pt-8 border-t border-ice-100">
+                {/* Specification Grid */}
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 pt-8 border-t border-ice-100">
                 
-                <div className="bg-white border border-ice-200 rounded-xl p-4 text-center hover:border-gold-300 transition-colors shadow-sm">
-                  <div className="text-gold-500 mb-2">
-                    <svg className="w-6 h-6 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                  <div className="bg-white border border-ice-200 rounded-xl p-4 text-center hover:border-gold-300 transition-colors shadow-sm">
+                    <div className="text-gold-500 mb-2">
+                      <svg className="w-6 h-6 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                    </div>
+                    <div className="font-sans text-xs uppercase tracking-wider text-navy-400 mb-1">Crew</div>
+                    <div className="font-display text-xl text-navy-950">{ship.crew}</div>
                   </div>
-                  <div className="font-sans text-xs uppercase tracking-wider text-navy-400 mb-1">Crew</div>
-                  <div className="font-display text-xl text-navy-950">{current.crew}</div>
-                </div>
 
-                <div className="bg-white border border-ice-200 rounded-xl p-4 text-center hover:border-gold-300 transition-colors shadow-sm">
-                  <div className="text-gold-500 mb-2">
-                    <svg className="w-6 h-6 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                  <div className="bg-white border border-ice-200 rounded-xl p-4 text-center hover:border-gold-300 transition-colors shadow-sm">
+                    <div className="text-gold-500 mb-2">
+                      <svg className="w-6 h-6 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    </div>
+                    <div className="font-sans text-xs uppercase tracking-wider text-navy-400 mb-1">Best Regions</div>
+                    <div className="font-display text-base text-navy-950 leading-tight">{ship.bestRegions}</div>
                   </div>
-                  <div className="font-sans text-xs uppercase tracking-wider text-navy-400 mb-1">Best Regions</div>
-                  <div className="font-display text-base text-navy-950 leading-tight">{current.bestRegions}</div>
-                </div>
 
-                <div className="bg-white border border-ice-200 rounded-xl p-4 text-center hover:border-gold-300 transition-colors shadow-sm">
-                  <div className="text-gold-500 mb-2">
-                    <svg className="w-6 h-6 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+                  <div className="bg-white border border-ice-200 rounded-xl p-4 text-center hover:border-gold-300 transition-colors shadow-sm">
+                    <div className="text-gold-500 mb-2">
+                      <svg className="w-6 h-6 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+                    </div>
+                    <div className="font-sans text-xs uppercase tracking-wider text-navy-400 mb-1">Rooms</div>
+                    <div className="font-display text-xl text-navy-950">{ship.rooms}</div>
                   </div>
-                  <div className="font-sans text-xs uppercase tracking-wider text-navy-400 mb-1">Rooms</div>
-                  <div className="font-display text-xl text-navy-950">{current.rooms}</div>
-                </div>
 
-                <div className="bg-white border border-ice-200 rounded-xl p-4 text-center hover:border-gold-300 transition-colors shadow-sm">
-                  <div className="text-gold-500 mb-2">
-                    <svg className="w-6 h-6 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                  <div className="bg-white border border-ice-200 rounded-xl p-4 text-center hover:border-gold-300 transition-colors shadow-sm">
+                    <div className="text-gold-500 mb-2">
+                      <svg className="w-6 h-6 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    </div>
+                    <div className="font-sans text-xs uppercase tracking-wider text-navy-400 mb-1">Built/Refurb</div>
+                    <div className="font-display text-xl text-navy-950">{ship.year}</div>
                   </div>
-                  <div className="font-sans text-xs uppercase tracking-wider text-navy-400 mb-1">Built/Refurb</div>
-                  <div className="font-display text-xl text-navy-950">{current.year}</div>
-                </div>
 
+                </div>
               </div>
-
-            </div>
+            ))}
           </div>
         </div>
       </div>

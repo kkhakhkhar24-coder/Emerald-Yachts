@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import FadeIn from './FadeIn';
+import CrawlablePanels from './CrawlablePanels';
 
 /**
  * GreeceNaxosParosPractical
@@ -141,6 +142,7 @@ const GreeceNaxosParosPractical = ({ mapImage }) => {
         </div>
 
       </div>
+      <CrawlablePanels items={itineraries} activeIndex={activeItinerary} />
     </section>
   );
 };

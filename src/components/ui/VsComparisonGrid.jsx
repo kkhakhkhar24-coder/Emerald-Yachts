@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
 
 const VsComparisonGrid = ({ data }) => {
@@ -10,14 +9,9 @@ const VsComparisonGrid = ({ data }) => {
     <section className="py-24 bg-gray-50/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-4xl font-serif text-ts-blue mb-4"
-          >
+          <h2 className="text-4xl font-serif text-ts-blue mb-4">
             {title}
-          </motion.h2>
+          </h2>
           <div className="w-24 h-1 bg-ts-gold mx-auto"></div>
         </div>
 
@@ -34,10 +28,7 @@ const VsComparisonGrid = ({ data }) => {
           </div>
 
           {/* Rhine Side */}
-          <motion.div 
-            whileHover={{ y: -5 }}
-            className="flex-1 bg-white p-8 md:p-12 rounded-3xl shadow-lg border border-gray-100 flex flex-col relative z-0"
-          >
+          <div className="flex-1 bg-white p-8 md:p-12 rounded-3xl shadow-lg border border-gray-100 flex flex-col relative z-0 transition-transform duration-300 hover:-translate-y-1">
             <div className="text-center mb-10">
               <h3 className="text-3xl font-serif text-ts-blue mb-3">{rhine.title}</h3>
               <span className="inline-block px-4 py-1.5 bg-ts-gold/10 text-ts-gold font-medium rounded-full text-sm tracking-wider uppercase">
@@ -54,13 +45,10 @@ const VsComparisonGrid = ({ data }) => {
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </div>
 
           {/* Danube Side */}
-          <motion.div 
-            whileHover={{ y: -5 }}
-            className="flex-1 bg-white p-8 md:p-12 rounded-3xl shadow-lg border border-gray-100 flex flex-col relative z-0"
-          >
+          <div className="flex-1 bg-white p-8 md:p-12 rounded-3xl shadow-lg border border-gray-100 flex flex-col relative z-0 transition-transform duration-300 hover:-translate-y-1">
             <div className="text-center mb-10">
               <h3 className="text-3xl font-serif text-ts-blue mb-3">{danube.title}</h3>
               <span className="inline-block px-4 py-1.5 bg-ts-gold/10 text-ts-gold font-medium rounded-full text-sm tracking-wider uppercase">
@@ -77,7 +65,7 @@ const VsComparisonGrid = ({ data }) => {
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </div>
 
         </div>
       </div>

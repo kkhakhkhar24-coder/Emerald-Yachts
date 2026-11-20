@@ -18,11 +18,18 @@ const GenericChecklistCards = ({ title, subtitle, cards }) => {
         </FadeIn>
         
         <div className={`grid grid-cols-1 md:grid-cols-2 gap-8 w-full mx-auto ${
-          cards.length === 2 || cards.length === 4 ? 'max-w-5xl lg:grid-cols-2' : 'lg:grid-cols-3 max-w-7xl'
+          cards.length === 2 || cards.length === 4 ? 'max-w-5xl lg:grid-cols-2' : 
+          cards.length === 5 ? 'max-w-7xl lg:grid-cols-6' : 
+          'lg:grid-cols-3 max-w-7xl'
         }`}>
-          {cards.map((card, cardIdx) => (
-            <FadeIn key={cardIdx} delay={cardIdx * 0.1} className="flex flex-col h-full">
-              <div className="bg-white border border-border-light rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow flex-grow">
+          {cards.map((card, cardIdx) => {
+            let spanClass = "";
+            if (cards.length === 5) {
+              spanClass = cardIdx === 3 ? "lg:col-span-2 lg:col-start-2" : "lg:col-span-2";
+            }
+            return (
+              <FadeIn key={cardIdx} delay={cardIdx * 0.1} className={`flex flex-col h-full ${spanClass}`}>
+                <div className="bg-white border border-border-light rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow flex-grow">
                 <h3 className="font-sans font-bold text-xl text-navy-900 mb-8 border-b border-border-light pb-4">
                   {card.title}
                 </h3>
@@ -38,7 +45,8 @@ const GenericChecklistCards = ({ title, subtitle, cards }) => {
                 </ul>
               </div>
             </FadeIn>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

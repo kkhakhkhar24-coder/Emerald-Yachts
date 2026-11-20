@@ -1,5 +1,6 @@
 import React from 'react';
 import FadeIn from './FadeIn';
+import MasterImage from './MasterImage';
 import { ChevronRight } from 'lucide-react';
 
 const AlternatingRiverShowcase = ({ title, description, rivers }) => {
@@ -25,7 +26,7 @@ const AlternatingRiverShowcase = ({ title, description, rivers }) => {
                   {/* Image Side */}
                   <div className={`w-full relative group rounded-2xl overflow-hidden shadow-2xl ${isEven ? 'order-1' : 'order-1 lg:order-2'}`}>
                     <div className="aspect-[4/3] lg:aspect-square xl:aspect-[4/3] w-full overflow-hidden bg-navy-900">
-                      <img 
+                      <MasterImage 
                         src={river.image} 
                         alt={river.name} 
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90"
@@ -42,29 +43,33 @@ const AlternatingRiverShowcase = ({ title, description, rivers }) => {
                         <span className="font-display text-4xl md:text-5xl text-ts-gold font-bold">
                           0{idx + 1}
                         </span>
-                        <h3 className="font-display text-3xl md:text-4xl text-navy-900">{river.name}</h3>
+                        <h3 className="font-display text-3xl md:text-4xl text-navy-900">{river.name || river.title}</h3>
                       </div>
                       
                       <p className="font-sans text-navy-700 mb-8 leading-relaxed text-lg">
                         {river.description}
                       </p>
 
-                      <div className="space-y-3 mb-8 bg-ice-50 p-5 rounded-xl border border-ice-100">
-                        <h4 className="font-sans font-bold text-navy-900 uppercase tracking-widest text-sm border-b border-ice-200 pb-2">Best For</h4>
-                        <p className="font-sans text-navy-700 italic text-base">{river.bestFor}</p>
-                      </div>
+                      {river.bestFor && (
+                        <div className="space-y-3 mb-8 bg-ice-50 p-5 rounded-xl border border-ice-100">
+                          <h4 className="font-sans font-bold text-navy-900 uppercase tracking-widest text-sm border-b border-ice-200 pb-2">Best For</h4>
+                          <p className="font-sans text-navy-700 italic text-base">{river.bestFor}</p>
+                        </div>
+                      )}
                       
-                      <div className="space-y-4">
-                        <h4 className="font-sans font-bold text-navy-900 uppercase tracking-widest text-sm border-b border-ice-100 pb-2">Highlights</h4>
-                        <ul className="space-y-3 pt-2">
-                          {river.highlights.map((highlight, hIdx) => (
-                            <li key={hIdx} className="flex items-start gap-3">
-                              <ChevronRight className="w-5 h-5 text-ts-gold shrink-0 mt-0.5" />
-                              <span className="font-sans text-navy-700 text-base">{highlight}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
+                      {river.highlights && river.highlights.length > 0 && (
+                        <div className="space-y-4">
+                          <h4 className="font-sans font-bold text-navy-900 uppercase tracking-widest text-sm border-b border-ice-100 pb-2">Highlights</h4>
+                          <ul className="space-y-3 pt-2">
+                            {river.highlights.map((highlight, hIdx) => (
+                              <li key={hIdx} className="flex items-start gap-3">
+                                <ChevronRight className="w-5 h-5 text-ts-gold shrink-0 mt-0.5" />
+                                <span className="font-sans text-navy-700 text-base">{highlight}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>

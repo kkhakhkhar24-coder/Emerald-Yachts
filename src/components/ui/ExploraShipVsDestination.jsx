@@ -1,44 +1,12 @@
 import React, { useState } from 'react';
 import FadeIn from './FadeIn';
+import CrawlablePanels from './CrawlablePanels';
 
-const ExploraShipVsDestination = ({ image }) => {
+const ExploraShipVsDestination = ({ image, data }) => {
   const [activeTab, setActiveTab] = useState('silversea');
 
-  const tabs = {
-    silversea: {
-      label: "Silversea Ships",
-      heading: "Classic Ultra-Luxury With an Exploratory Personality",
-      features: [
-        "Intimate luxury with smaller ships",
-        "All-suite accommodations with butler service",
-        "Destination-focused itineraries",
-        "Purpose-built expedition vessels",
-        "Fine dining with S.A.L.T. culinary program",
-        "Easy access to smaller, unusual ports",
-        "Personalized butler hospitality",
-        "Extensive global itineraries"
-      ],
-      quote: "The ship provides the luxury infrastructure. The destination provides the story.",
-      appeal: "Particularly appealing to travelers who want their cruise to feel like a luxury expedition with exceptional hospitality."
-    },
-    explora: {
-      label: "Explora Ships",
-      heading: "A Contemporary Luxury Aesthetic",
-      features: [
-        "Contemporary European design",
-        "Ocean-facing spaces throughout",
-        "Multiple pools — resort-inspired",
-        "Modern restaurants and lounges",
-        "Comprehensive wellness facilities",
-        "Residential-style spacious suites",
-        "Casual sophistication atmosphere",
-        "456 ocean-front suites per ship"
-      ],
-      quote: "The ship feels less like a traditional cruise ship and more like a luxury hospitality environment that happens to move.",
-      appeal: "Particularly attractive to travelers accustomed to Aman, Four Seasons, Rosewood, Mandarin Oriental, and contemporary boutique hotels."
-    }
-  };
-
+  const tabs = data.tabs;
+  const test = data.test;
   const active = tabs[activeTab];
 
   return (
@@ -46,31 +14,34 @@ const ExploraShipVsDestination = ({ image }) => {
       <div className="max-w-[1280px] mx-auto px-6">
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-          
+
           {/* Left: Image + Decision Test */}
           <FadeIn>
             <div>
-              <img 
+              <img
                 src={image}
-                alt="Ship design comparison"
+                alt={data.imageAlt}
                 className="w-full h-[380px] object-cover rounded-2xl shadow-lg mb-8"
                 loading="lazy"
               />
               <div className="bg-navy-950 rounded-2xl p-8 text-white">
-                <h4 className="font-display text-lg text-gold-400 mb-4">The "Ship vs Destination" Test</h4>
+                <h3 className="font-display text-lg text-gold-400 mb-4">{test.title}</h3>
                 <p className="font-sans text-slate-300 text-sm font-light leading-relaxed mb-4">
-                  Ask yourself: <em>"If the itinerary disappeared, would I still be excited about spending seven days on this ship?"</em>
+                  {test.text}
                 </p>
                 <div className="space-y-3">
-                  <div className="flex items-start gap-3">
-                    <span className="text-gold-400 font-bold text-sm mt-0.5">Yes →</span>
-                    <span className="text-slate-300 text-sm font-light">Explora Journeys deserves serious consideration</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="text-gold-400 font-bold text-sm mt-0.5">No →</span>
-                    <span className="text-slate-300 text-sm font-light">Silversea may be the better match</span>
-                  </div>
+                  {test.rows.map((row, i) => (
+                    <div key={i} className="flex items-start gap-3">
+                      <span className="text-gold-400 font-bold text-sm mt-0.5 whitespace-nowrap">{row.label}</span>
+                      <span className="text-slate-300 text-sm font-light">{row.text}</span>
+                    </div>
+                  ))}
                 </div>
+                {test.closing && (
+                  <p className="font-sans text-slate-300 text-sm font-light leading-relaxed mt-4">
+                    <em>{test.closing}</em>
+                  </p>
+                )}
               </div>
             </div>
           </FadeIn>
@@ -79,11 +50,15 @@ const ExploraShipVsDestination = ({ image }) => {
           <FadeIn delay={0.2}>
             <div>
               <span className="text-xs uppercase tracking-[0.25em] text-gold-500 font-bold mb-4 block">
-                Ship Design Comparison
+                {data.eyebrow}
               </span>
               <h2 className="font-display text-3xl md:text-4xl text-navy-950 mb-8 leading-tight">
-                Ships, Suites & Service
+                {data.heading}
               </h2>
+
+              {data.intro && (
+                <p className="font-sans text-slate-500 text-sm font-light mb-8">{data.intro}</p>
+              )}
 
               {/* Tabs */}
               <div className="flex gap-2 mb-8">
@@ -120,11 +95,19 @@ const ExploraShipVsDestination = ({ image }) => {
               </blockquote>
 
               <p className="font-sans text-slate-500 text-sm font-light">{active.appeal}</p>
+
+              {data.note && (
+                <p className="font-sans text-slate-400 text-xs font-light mt-6">{data.note}</p>
+              )}
+              {data.editorialNote && (
+                <p className="font-sans text-slate-400 text-xs font-light mt-3">{data.editorialNote}</p>
+              )}
             </div>
           </FadeIn>
 
         </div>
       </div>
+      <CrawlablePanels items={tabs} activeIndex={activeTab} />
     </section>
   );
 };

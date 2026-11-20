@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import FadeIn from './FadeIn';
 import MasterImage from './MasterImage';
 import { User, Star, MapPin, GraduationCap, Users, Pen, Shield, Award, Globe, Ship, Anchor, Quote } from 'lucide-react';
-import defaultAngelaImage from '../../../src/assets/Media (2).jpg';
+import angelaImage from '../../../src/assets/Media (2).jpg';
 
 const credentialIcons = [User, Star, MapPin, GraduationCap, Users, Pen, Shield, Award, Globe, Ship, Anchor, Award];
 
@@ -32,7 +32,7 @@ const ExpertCredentials = ({
   quoteSubtitle,
   bottomText,
   ctaText,
-  ctaLink,
+  ctaLink = "/contact"
 }) => {
   const expertName = name || authorName || "Angela Hughes";
   const expertTitle = title || "Greece Luxury Travel Specialist & CEO, Trips & Ships Luxury Travel";
@@ -126,16 +126,16 @@ const ExpertCredentials = ({
 
               {/* Credentials Dense List */}
               <div className="bg-slate-50 rounded-2xl p-5 border border-slate-100 mt-auto">
-                <h3 className="font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 mb-4">
+                <h4 className="font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 mb-4">
                   KEY QUALIFICATIONS & ACHIEVEMENTS
-                </h3>
+                </h4>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-3">
                   {finalCredentials.map((cred, idx) => {
                     const IconComp = credentialIcons[idx % credentialIcons.length];
                     const text = typeof cred === 'string' 
                       ? cred 
                       : (cred && typeof cred === 'object') 
-                        ? `${cred.number ? cred.number + ' ' : ''}${cred.label || ''}${cred.desc ? ' (' + cred.desc + ')' : ''}`.trim()
+                        ? `${cred.value ? cred.value + ': ' : cred.number ? cred.number + ' ' : ''}${cred.label || ''}${cred.detail ? ' – ' + cred.detail : cred.desc ? ' (' + cred.desc + ')' : ''}`.trim()
                         : String(cred);
                     return (
                       <li key={idx} className="flex items-start gap-2.5">
@@ -149,12 +149,14 @@ const ExpertCredentials = ({
                 </ul>
               </div>
 
-              {/* Optional CTA Button */}
               {ctaText && (
-                <div className="mt-6">
+                <div className="mt-6 pt-5 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+                  <span className="font-sans text-xs text-slate-500">
+                    Direct consultation & VIP cruise amenities with Angela Hughes.
+                  </span>
                   <Link
                     to={ctaLink || "/contact"}
-                    className="inline-flex items-center justify-center px-8 py-3 bg-navy-950 text-white font-sans text-sm font-bold tracking-widest uppercase hover:bg-navy-900 transition-all rounded-full shadow-lg hover:scale-105"
+                    className="inline-flex items-center justify-center px-8 py-3.5 bg-navy-950 text-white font-sans text-xs font-bold tracking-widest uppercase hover:bg-ts-gold hover:text-navy-950 transition-all rounded-full shadow-lg hover:scale-105 whitespace-nowrap"
                   >
                     {ctaText}
                   </Link>

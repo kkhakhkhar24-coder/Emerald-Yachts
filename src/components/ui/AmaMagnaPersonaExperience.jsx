@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import FadeIn from './FadeIn';
+import CrawlablePanels from './CrawlablePanels';
 
 const AmaMagnaPersonaExperience = ({ title, subtitle, personas }) => {
   const [activeTab, setActiveTab] = useState(0);
@@ -103,6 +104,7 @@ const AmaMagnaPersonaExperience = ({ title, subtitle, personas }) => {
           </AnimatePresence>
         </div>
       </div>
+      <CrawlablePanels items={personas} activeIndex={activeTab} />
     </section>
   );
 };

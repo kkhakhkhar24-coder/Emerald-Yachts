@@ -47,8 +47,12 @@ const FeatureGrid = ({ title, subtitle, features, bgClass = "bg-ice-50" }) => {
                   <div className="absolute top-0 left-0 right-0 h-1 bg-navy-800 z-10"></div>
                   
                   {feature.image && (
-                    <div className="w-full h-48 bg-slate-200 relative flex-shrink-0">
-                      <MasterImage src={feature.image} alt={feature.title} className="w-full h-full object-cover" />
+                    <div className={`w-full ${feature.imageHeight || 'h-60 sm:h-64 md:h-72'} bg-slate-200 relative flex-shrink-0 overflow-hidden`}>
+                      <MasterImage
+                        src={feature.image}
+                        alt={feature.title}
+                        className={`w-full h-full object-cover ${feature.imagePosition || 'object-center'}`}
+                      />
                     </div>
                   )}
                   

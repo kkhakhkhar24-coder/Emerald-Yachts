@@ -1,5 +1,6 @@
 import React from 'react';
 import FadeIn from './FadeIn';
+import LiteYouTubeEmbed from '@/components/ui/LiteYouTubeEmbed';
 
 const UltimateSilverseaVideoTwo = () => {
   return (
@@ -14,14 +15,14 @@ const UltimateSilverseaVideoTwo = () => {
           </h2>
           <div className="relative aspect-video w-full rounded-3xl overflow-hidden shadow-xl border border-slate-300 bg-slate-900 p-2 bg-white">
             <div className="w-full h-full rounded-2xl overflow-hidden relative">
-              <iframe
+              <LiteYouTubeEmbed
                 className="absolute inset-0 w-full h-full"
                 src="https://www.youtube.com/embed/UMgm4cjYWZQ"
                 title="Silversea vs Explora Journeys"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
-              ></iframe>
+              />
             </div>
           </div>
         </FadeIn>

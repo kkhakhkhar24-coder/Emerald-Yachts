@@ -54,13 +54,24 @@ const AccordionFlexGrid = ({
                   {/* Overlays */}
                   <div className={`absolute inset-0 transition-opacity duration-700 ${isExpanded ? 'bg-gradient-to-t from-navy-950/90 via-navy-950/40 to-transparent' : 'bg-navy-950/60'}`}></div>
 
-                  {/* Vertical Text (Visible when collapsed on Desktop) */}
-                  <div className={`absolute inset-0 p-6 flex flex-col justify-end lg:justify-start lg:items-center transition-opacity duration-300
-                    ${isExpanded ? 'opacity-0 pointer-events-none' : 'opacity-100 delay-300'}
-                    lg:pt-12`}>
-                    <h3 className="font-display text-2xl text-white transform lg:rotate-180 lg:[writing-mode:vertical-rl] whitespace-nowrap">
-                      {item.title}
-                    </h3>
+                  {/* Collapsed Title Overlay */}
+                  <div
+                    className={`absolute inset-0 p-6 flex flex-col justify-end lg:justify-center lg:items-center transition-opacity duration-300 pointer-events-none
+                      ${isExpanded ? 'opacity-0' : 'opacity-100 delay-300'}`}
+                  >
+                    {/* Desktop Vertical Text */}
+                    <div className="hidden lg:flex items-center justify-center max-h-[460px] overflow-hidden py-4">
+                      <h3 className="font-display text-lg xl:text-xl text-white tracking-wide transform rotate-180 [writing-mode:vertical-rl] whitespace-nowrap select-none">
+                        {item.title}
+                      </h3>
+                    </div>
+
+                    {/* Mobile Horizontal Text */}
+                    <div className="lg:hidden">
+                      <h3 className="font-display text-xl text-white truncate">
+                        {item.title}
+                      </h3>
+                    </div>
                   </div>
 
                   {/* Expanded Content */}

@@ -121,6 +121,15 @@ const InteractiveCompetitorComparison = ({ title, subtitle, competitors, classNa
                 </div>
               </motion.div>
             </AnimatePresence>
+            {/* Inactive panels stay in the HTML (hidden) so crawlers can read every comparison. */}
+            {competitors.map((comp, idx) =>
+              idx === activeIndex ? null : (
+                <div key={idx} hidden>
+                  <h4>{comp.name || comp.title}</h4>
+                  <p>{comp.description}</p>
+                </div>
+              )
+            )}
           </div>
 
         </div>

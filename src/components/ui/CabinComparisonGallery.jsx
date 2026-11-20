@@ -100,10 +100,12 @@ const CabinComparisonGallery = ({ title, subtitle, items, expertRecommendation }
                       className="absolute inset-0 transition-transform duration-1000 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 to-transparent"></div>
-                    <div className="absolute bottom-6 left-6 flex items-center gap-3">
-                      <Anchor className="w-5 h-5 text-gold-400" />
-                      <span className="font-display text-xl text-white drop-shadow-md">Avalon Suite Ships</span>
-                    </div>
+                    {item.imageLabel && (
+                      <div className="absolute bottom-6 left-6 flex items-center gap-3">
+                        <Anchor className="w-5 h-5 text-gold-400" />
+                        <span className="font-display text-xl text-white drop-shadow-md">{item.imageLabel}</span>
+                      </div>
+                    )}
                   </div>
                 </div>
 

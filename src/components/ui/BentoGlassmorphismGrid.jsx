@@ -36,12 +36,19 @@ const BentoGlassmorphismGrid = ({
           {bentoItems.map((item, index) => {
             // Complex spanning logic based on index to create a true bento feel
             let spanClass = "col-span-1 row-span-1";
-            if (index === 0) spanClass = "md:col-span-2 lg:col-span-2 row-span-2"; // Massive feature block
-            else if (index === 1) spanClass = "md:col-span-1 lg:col-span-2 row-span-1"; // Wide banner
-            else if (index === 2 && bentoItems.length === 4) spanClass = "md:col-span-1 lg:col-span-1 row-span-1";
-            else if (index === 3 && bentoItems.length === 4) spanClass = "md:col-span-3 lg:col-span-1 row-span-1"; // Span full width on md to avoid orphans
-            else if (index === 4) spanClass = "md:col-span-3 lg:col-span-2 row-span-2"; // Bottom heavy block
-            else if (index === 5) spanClass = "md:col-span-2 lg:col-span-1 row-span-1"; // Medium wide block
+            
+            if (bentoItems.length === 2) {
+              if (index === 0) spanClass = "md:col-span-2 lg:col-span-2 row-span-1";
+              else if (index === 1) spanClass = "md:col-span-1 lg:col-span-2 row-span-1";
+            } else {
+              if (index === 0) spanClass = "md:col-span-2 lg:col-span-2 row-span-2"; // Massive feature block
+              else if (index === 1) spanClass = "md:col-span-1 lg:col-span-2 row-span-1"; // Wide banner
+              else if (index === 2 && bentoItems.length === 3) spanClass = "md:col-span-3 lg:col-span-2 row-span-1"; // Bottom balanced banner when 3 items
+              else if (index === 2 && bentoItems.length === 4) spanClass = "md:col-span-1 lg:col-span-1 row-span-1";
+              else if (index === 3 && bentoItems.length === 4) spanClass = "md:col-span-3 lg:col-span-1 row-span-1"; // Span full width on md to avoid orphans
+              else if (index === 4) spanClass = "md:col-span-3 lg:col-span-2 row-span-2"; // Bottom heavy block
+              else if (index === 5) spanClass = "md:col-span-2 lg:col-span-1 row-span-1"; // Medium wide block
+            }
 
             return (
               <FadeIn 

@@ -1,4 +1,5 @@
 import React from 'react';
+import MasterImage from './MasterImage';
 
 const ScrollingGallery = ({ items }) => {
   if (!items || items.length === 0) return null;
@@ -12,7 +13,7 @@ const ScrollingGallery = ({ items }) => {
         <div className="flex w-max" style={{ animation: 'marquee 40s linear infinite' }}>
           {repeatedItems.map((item, idx) => (
             <div key={idx} className="relative inline-block w-[300px] md:w-[450px] h-60 md:h-72 mx-4 flex-shrink-0 rounded-2xl overflow-hidden shadow-xl group">
-              <img src={item} alt="Gallery" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <MasterImage src={item} alt="Gallery" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-navy-900/10 group-hover:bg-transparent transition-colors duration-300"></div>
             </div>
           ))}

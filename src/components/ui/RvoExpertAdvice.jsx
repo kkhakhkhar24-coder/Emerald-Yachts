@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import FadeIn from './FadeIn';
+import CrawlablePanels from './CrawlablePanels';
 
 const RvoExpertAdvice = ({ data, image }) => {
   const [selectedOption, setSelectedOption] = useState(null);
@@ -99,6 +100,7 @@ const RvoExpertAdvice = ({ data, image }) => {
         </div>
 
       </div>
+      <CrawlablePanels items={data.interactiveQuiz?.options} activeIndex={selectedOption} />
     </section>
   );
 };

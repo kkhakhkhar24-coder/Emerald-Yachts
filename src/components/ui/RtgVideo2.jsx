@@ -1,5 +1,6 @@
 import React from 'react';
 import FadeIn from './FadeIn';
+import LiteYouTubeEmbed from '@/components/ui/LiteYouTubeEmbed';
 
 const RtgVideo2 = ({ youtubeId, title, description }) => {
   if (!youtubeId) return null;
@@ -29,14 +30,14 @@ const RtgVideo2 = ({ youtubeId, title, description }) => {
         {/* Centered Video Frame */}
         <FadeIn delay={0.1}>
           <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-ts-gold/20 aspect-video bg-black max-w-2xl mx-auto">
-            <iframe
+            <LiteYouTubeEmbed
               className="absolute inset-0 w-full h-full"
               src={`https://www.youtube.com/embed/${youtubeId}?rel=0`}
               title={title || "YouTube video player"}
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
-            ></iframe>
+            />
           </div>
         </FadeIn>
 

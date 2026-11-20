@@ -74,7 +74,7 @@ const TravelerPersonaCards = ({ title, subtitle, personas }) => {
                         <div className="flex flex-wrap gap-2">
                           {persona.recommendations.map((rec, rIdx) => (
                             <span key={rIdx} className="bg-ice-50 border border-ice-200 text-navy-800 text-xs font-semibold px-3 py-1 rounded-full">
-                              {rec}
+                              {typeof rec === 'string' ? rec : (rec && rec.text ? (rec.label ? rec.label + ' ' + rec.text : rec.text) : '')}
                             </span>
                           ))}
                         </div>

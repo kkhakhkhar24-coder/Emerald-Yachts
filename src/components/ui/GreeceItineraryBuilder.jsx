@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import CrawlablePanels from './CrawlablePanels';
 
 /**
  * GreeceItineraryBuilder
@@ -104,6 +105,7 @@ const GreeceItineraryBuilder = ({ itineraries = [], image }) => {
         </div>
 
       </div>
+      <CrawlablePanels items={itineraries} activeIndex={activeTab} />
     </section>
   );
 };

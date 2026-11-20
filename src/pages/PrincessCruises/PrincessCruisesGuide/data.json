@@ -1,0 +1,550 @@
+{
+  "seo": {
+    "canonicalUrl": "https://www.tripsandships.com/princess-cruises",
+    "metaTitle": "Princess Cruises: The Complete Guide to Ships, Staterooms, Packages and Destinations",
+    "title": "Princess Cruises: The Complete Guide to Ships, Staterooms, Packages and Destinations",
+    "metaDescription": "Explore Princess Cruises’ 17-ship fleet, stateroom categories from Interior to Sanctuary Suites, Princess Plus vs Premier packages, dining, and global destinations.",
+    "ogTitle": "Princess Cruises: The Complete Guide to Ships, Staterooms, Packages and Destinations",
+    "ogDescription": "Explore Princess Cruises’ 17-ship fleet, stateroom categories from Interior to Sanctuary Suites, Princess Plus vs Premier packages, dining, and global destinations."
+  },
+  "hero": {
+    "badge": "PRINCESS CRUISES FLEET & VOYAGE GUIDE",
+    "title": "Princess Cruises: The Complete Guide to Ships, Staterooms, Packages and Destinations",
+    "subtitle": "Discover Princess Cruises’ 17-ship fleet, accommodations ranging from practical Interior rooms to the exclusive Sanctuary Collection, Plus and Premier fare packages, MedallionClass technology, and worldwide destinations across all seven continents.",
+    "author": "Angela Hughes",
+    "authorRole": "CEO & Luxury Cruise Specialist",
+    "lastUpdated": "November 2026",
+    "ctaText": "Plan Your Princess Cruise",
+    "ctaLink": "/contact",
+    "secondaryCtaText": "Compare Packages & Fares",
+    "secondaryCtaLink": "#packages"
+  },
+  "introSection": {
+    "heading": "A Destination-Led Cruise Experience for Every Style of Traveler",
+    "paragraphs": [
+      "Princess Cruises combines destination-focused itineraries, comfortable ships, varied dining and a range of onboard experiences designed for couples, families and travelers who enjoy exploring the world by sea. From Alaska's glaciers and the Caribbean's tropical islands to European cities, Asian ports and extended World Cruises, the cruise line offers a broad choice of ways to travel.",
+      "Its fleet includes ships of different sizes and styles, with accommodation ranging from practical Interior staterooms to expansive suites. Guests can choose a standard cruise fare or add a Princess Plus or Princess Premier package for additional drinks, dining, Wi-Fi and other benefits. On Sun Princess and Star Princess, the Sanctuary Collection offers another level of accommodation and exclusive onboard spaces.",
+      "Whether you are considering your first Princess cruise or comparing ships, staterooms and packages before booking, this guide explains how the experience works and what to consider when planning your voyage."
+    ]
+  },
+  "atAGlance": {
+    "title": "Princess Cruises at a Glance",
+    "subtitle": "Essential fleet metrics, destination reach, and onboard options across the Princess portfolio.",
+    "headers": ["Feature", "Overview"],
+    "rows": [
+      ["Cruise line", "Princess Cruises"],
+      ["Fleet", "17 ships in the published fleet listing"],
+      ["Destinations", "More than 345 worldwide ports"],
+      ["Countries", "More than 90 countries visited"],
+      ["Geographic coverage", "All seven continents"],
+      ["Voyage lengths", "Approximately 2 to 131 days, depending on itinerary"],
+      ["Accommodation", "Interior, Oceanview, Balcony, Mini-Suite and Suite"],
+      ["Cruise packages", "Standard, Princess Plus and Princess Premier"],
+      ["Digital experience", "MedallionClass technology and the Princess Cruises app"],
+      ["Travel styles", "Regional cruises, extended voyages, cruisetours and World Cruises"]
+    ],
+    "footnote": "Princess is particularly appealing to travelers who want a choice of destinations, onboard entertainment, dining options and accommodation categories without necessarily choosing an ultra-luxury cruise experience."
+  },
+  "brandPillars": {
+    "title": "What Is Princess Cruises Known For?",
+    "subtitle": "Core hallmarks that define the Princess cruising experience worldwide.",
+    "pillars": [
+      {
+        "icon": "compass",
+        "title": "Destination-Led Itineraries",
+        "description": "Itineraries across all seven continents and over 345 ports, featuring in-depth Alaska Cruisetours with inland rail, historic European voyages, and global World Cruises."
+      },
+      {
+        "icon": "ship",
+        "title": "Diverse 17-Ship Fleet",
+        "description": "A varied fleet spanning groundbreaking Sphere-class flagships with The Dome, amenity-rich Royal-class vessels, and intimate traditional ocean ships."
+      },
+      {
+        "icon": "window",
+        "title": "MedallionClass Technology",
+        "description": "The wearable Medallion device enables keyless stateroom entry, streamlined contactless boarding, on-demand OceanNow food and beverage delivery anywhere on ship, and digital navigation."
+      },
+      {
+        "icon": "star",
+        "title": "Flexible Fare Packages",
+        "description": "Tailor your vacation investment with transparent choices between unbundled Standard fares, popular Princess Plus, or fully inclusive Princess Premier packages."
+      }
+    ]
+  },
+  "fleetSection": {
+    "title": "The Princess Cruises Fleet: Ships and Classes",
+    "subtitle": "Princess Cruises has a fleet of 17 ships in its published ship listing, each offering distinct layouts, accommodation mixes, and onboard facilities.",
+    "ships": [
+      {
+        "name": "Sun Princess",
+        "class": "Sphere-Class Flagship",
+        "description": "Sun Princess is part of the Sphere-class generation and introduced a new approach to Princess ship design. Features include The Dome—a multi-level glass entertainment space—the Piazza, specialty restaurants, and the exclusive Sanctuary Collection.",
+        "highlight": "Groundbreaking Sphere-Class design featuring The Dome and Sanctuary Collection."
+      },
+      {
+        "name": "Star Princess",
+        "class": "Sphere-Class Next Generation",
+        "description": "Star Princess is the second Sphere-class ship. It builds on the design approach introduced by Sun Princess, with contemporary accommodation, elevated culinary venues, entertainment areas, and the Sanctuary Collection.",
+        "highlight": "Newest Sphere-class vessel offering next-generation ocean luxury."
+      },
+      {
+        "name": "Discovery Princess",
+        "class": "Royal-Class",
+        "description": "Discovery Princess is part of the Royal-class fleet. It offers a premier range of restaurants, lounges, Broadway-caliber entertainment, freshwater pools, and expansive luxury suites.",
+        "highlight": "Top-rated Royal-class vessel suited for scenic Alaska and West Coast sailings."
+      },
+      {
+        "name": "Sky Princess",
+        "class": "Royal-Class",
+        "description": "Sky Princess delivers contemporary accommodation, expansive Sky Suites with the largest balconies in the fleet, multiple dining rooms, and atmospheric outdoor viewing decks.",
+        "highlight": "Features the fleet's signature Sky Suites with panoramic top-deck views."
+      },
+      {
+        "name": "Enchanted Princess",
+        "class": "Royal-Class",
+        "description": "Enchanted Princess features sophisticated Royal-class architecture with specialty dining, vibrant Piazza entertainment, adult-focused retreats, and refined public lounges.",
+        "highlight": "Sophisticated styling with balanced daytime relaxation and active evenings."
+      },
+      {
+        "name": "Crown Princess",
+        "class": "Grand-Class",
+        "description": "Crown Princess offers a classic large-ship cruise experience with traditional ocean liner proportions, four pools, Lotus Spa, multiple dining rooms, and iconic Alaska itineraries.",
+        "highlight": "Traditional ocean cruising with proven scenic sailing capabilities."
+      }
+    ]
+  },
+  "fleetDecisionGuide": {
+    "title": "How to Choose the Right Princess Ship",
+    "subtitle": "Matching your personal travel preferences, ship scale, and vacation style.",
+    "steps": [
+      {
+        "step": "01",
+        "title": "For Next-Gen Architecture & Design",
+        "description": "Compare Sun Princess and Star Princess for cutting-edge Sphere-class innovations, The Dome glass pavilion, and the newly reimagined Piazza."
+      },
+      {
+        "step": "02",
+        "title": "For Complete Royal-Class Amenities",
+        "description": "Choose Discovery Princess, Enchanted Princess, Sky Princess, Regal Princess, or Royal Princess for modern large-ship amenities, spacious pools, and expansive suite choices."
+      },
+      {
+        "step": "03",
+        "title": "For an Intimate Traditional Experience",
+        "description": "Compare Coral Princess and Island Princess. Their smaller dimensions allow agile navigation into unique, boutique harbors and specialized transit voyages."
+      },
+      {
+        "step": "04",
+        "title": "For Specific Regional Itineraries",
+        "description": "Start with your bucket-list destination—such as Alaska, Japan, or Northern Europe—and compare the specific ships scheduled to deploy there."
+      },
+      {
+        "step": "05",
+        "title": "For Exclusive Luxury Privileges",
+        "description": "Book a qualifying suite or stateroom in the Sanctuary Collection on Sun Princess and Star Princess to enjoy private club access, exclusive dining, and included Premier perks."
+      }
+    ]
+  },
+  "staterooms": {
+    "title": "Princess Cruises Staterooms: Which Cabin Should You Choose?",
+    "subtitle": "Princess offers a comprehensive spectrum of accommodation categories tailored to space, views, privacy, and budget.",
+    "categories": [
+      {
+        "title": "Interior Staterooms",
+        "category": "APPROX. 136–162 SQ. FT.",
+        "description": "The most economical accommodation category without an exterior window. A practical, comfortable base for travelers who spend most of their time enjoying ship activities and shore excursions.",
+        "features": [
+          "Twin beds that convert to a queen-size Princess Luxury Bed",
+          "Private bathroom with shower and bespoke bath products",
+          "Flat-panel television, refrigerator, and generous closet space",
+          "Medallion keyless access and 24-hour room service availability"
+        ],
+        "verdict": "Budget-conscious travelers, short cruises, and guests who sleep best in total darkness."
+      },
+      {
+        "title": "Oceanview Staterooms",
+        "category": "APPROX. 145–212 SQ. FT.",
+        "description": "Featuring a picture window or porthole that fills the room with natural daylight and ocean vistas without the additional cost of a private veranda.",
+        "features": [
+          "Natural light through picture window or nautical porthole",
+          "Dedicated sitting area with desk and comfortable armchair",
+          "Convertible queen Princess Luxury Bed and full bathroom",
+          "Ideal midpoint between budget interiors and private verandas"
+        ],
+        "verdict": "Travelers who appreciate natural daylight and sea views at an attractive price point."
+      },
+      {
+        "title": "Balcony Staterooms",
+        "category": "APPROX. 179–279 SQ. FT. (INC. BALCONY)",
+        "description": "Floor-to-ceiling glass doors open to a private outdoor veranda with patio chairs and table, offering fresh sea breezes and private scenic viewing.",
+        "features": [
+          "Private outdoor veranda with floor-to-ceiling glass doors",
+          "Unobstructed views for scenic cruising in Alaska, Norway, and the Mediterranean",
+          "Outdoor dining table and chairs for private breakfast over the ocean",
+          "Spacious interior layout with vanity desk and convertible bed"
+        ],
+        "verdict": "Couples, scenic cruising enthusiasts, and travelers who love private ocean air."
+      },
+      {
+        "title": "Mini-Suites",
+        "category": "APPROX. 304–329 SQ. FT. (INC. BALCONY)",
+        "description": "Substantially larger than standard Balcony cabins, featuring a separate living room area with sofa bed, two flat-panel TVs, and an expanded bathroom with combination bathtub/shower.",
+        "features": [
+          "Separate sitting area with sofa bed for extra lounging or family travel",
+          "Expanded bathroom featuring a full bathtub and massage showerhead",
+          "Complimentary welcome glass of sparkling champagne at embarkation",
+          "Eligibility for Reserve Collection dining privileges on qualifying ships"
+        ],
+        "verdict": "Couples wanting more living space, longer voyages, and small families."
+      },
+      {
+        "title": "Full Suites & Penthouses",
+        "category": "UP TO APPROX. 1,500 SQ. FT.",
+        "description": "The pinnacle of standard Princess accommodation. Generous multi-room layouts, expansive teak balconies, walk-in closets, marble bathrooms, and dedicated concierge services.",
+        "features": [
+          "Expansive multi-room living and dining configurations",
+          "Priority embarkation, disembarkation, and tender boarding",
+          "Complimentary specialty dining dinner on embarkation evening",
+          "Complimentary mini-bar setup, laundry service, and nightly hors d'oeuvres"
+        ],
+        "verdict": "Travelers seeking elevated luxury, expansive space, and VIP service."
+      },
+      {
+        "title": "Sanctuary Collection",
+        "category": "EXCLUSIVE SUITES & STATEROOMS (SPHERE-CLASS)",
+        "description": "An exclusive ship-within-a-ship enclave available on Sun Princess and Star Princess, offering elevated private venues, dedicated dining, and inclusive Premier perks.",
+        "features": [
+          "Exclusive access to the private top-deck Sanctuary Club retreat",
+          "Dedicated Sanctuary Restaurant with custom chef creations",
+          "Princess Premier package benefits included with the accommodation fare",
+          "Premium bathroom amenities, luxury robes, and concierge hosting"
+        ],
+        "verdict": "Discerning travelers wanting an exclusive, resort-level luxury experience on Sphere-class ships."
+      }
+    ],
+    "selectionTable": {
+      "title": "Which Princess Stateroom Is Best for You?",
+      "headers": ["Your Priority", "Recommended Stateroom to Consider"],
+      "rows": [
+        ["Lowest accommodation cost", "Interior Stateroom"],
+        ["Natural light and sea views", "Oceanview Stateroom"],
+        ["Private outdoor space", "Balcony Stateroom"],
+        ["More room to relax & bathtub", "Mini-Suite"],
+        ["Additional space, walk-in closet & VIP perks", "Full Suite (Penthouse, Premium, Vista)"],
+        ["Enhanced dining & priority benefits fleetwide", "Reserve Collection Mini-Suite or Suite"],
+        ["Exclusive spaces & inclusive perks on Sphere-class", "Sanctuary Collection Suite or Mini-Suite"]
+      ]
+    }
+  },
+  "showdownCollections": {
+    "title": "Reserve Collection vs. Sanctuary Collection",
+    "reserve": {
+      "name": "Reserve Collection",
+      "summary": "Available fleetwide across the Princess fleet (except Sun Princess and Star Princess) for select premium-location Mini-Suites and Suites.",
+      "features": [
+        "Exclusive Reserve Dining section in the main dining room with no-wait seating",
+        "Priority specialty restaurant reservations throughout the voyage",
+        "Complimentary bottle of wine in stateroom on embarkation day",
+        "Evening canapés delivered directly to your stateroom upon request",
+        "Upgraded luxury bathrobes and premium bathroom amenities",
+        "Available on Royal-class, Grand-class, and Coral-class ships"
+      ]
+    },
+    "sanctuary": {
+      "name": "Sanctuary Collection",
+      "summary": "Available exclusively on Sun Princess and Star Princess, creating an elevated ship-within-a-ship sanctuary experience.",
+      "features": [
+        "Access to the private top-deck Sanctuary Club relaxation pavilion",
+        "Private Sanctuary Restaurant serving custom breakfast and dinner menus",
+        "Princess Premier package benefits fully included in the stateroom fare",
+        "Exclusive Sanctuary lounge access with dedicated concierge service",
+        "Enhanced luxury bedding, bathroom amenities, and priority tender service",
+        "Exclusively offered on next-generation Sphere-class vessels"
+      ]
+    }
+  },
+  "packages": {
+    "title": "Princess Cruises Packages: Standard, Plus and Premier",
+    "subtitle": "Choose your ideal balance of cruise inclusions, digital connectivity, and culinary experiences.",
+    "comparisonTable": {
+      "title": "Princess Plus vs. Princess Premier Inclusions",
+      "headers": ["Benefit", "Princess Plus", "Princess Premier"],
+      "rows": [
+        ["Beverage Package", "Up to 15 drinks/day (up to $15 each)", "Unlimited beverages (up to $20 each)"],
+        ["Specialty Coffee & Teas", "Included", "Included"],
+        ["Bottled Water", "Up to 12 bottles/day", "Unlimited"],
+        ["Casual Dining", "4 meals per guest per voyage", "Unlimited casual dining meals"],
+        ["Specialty Dining", "Not included (a la carte)", "Unlimited specialty dining meals"],
+        ["Wi-Fi Access", "MedallionNet Max (1 device/guest)", "MedallionNet Max (up to 4 devices/guest)"],
+        ["Crew Appreciation (Gratuities)", "Included", "Included"],
+        ["Shore Excursion Credit", "Not included", "Included (amount varies by voyage length)"],
+        ["Professional Photo Package", "Not included", "Unlimited digital photos + 3 prints"],
+        ["Reserved Theater Seating", "Not included", "Included for production shows"],
+        ["OceanNow Delivery Fee", "Waived ($14.99 value)", "Waived ($14.99 value)"],
+        ["Room Service Delivery", "Included", "Included"]
+      ]
+    },
+    "pricingTable": {
+      "title": "Princess Package Published Pricing (Pre-Cruise USD)",
+      "headers": ["Package Tier", "Most Ships (Pre-Cruise)", "Sun & Star Princess (Pre-Cruise)"],
+      "rows": [
+        ["Princess Plus", "$70 per person, per day", "$75 per person, per day"],
+        ["Princess Premier", "$105 per person, per day", "$110 per person, per day"]
+      ],
+      "footnote": "Onboard purchase rates are higher. Published rates are subject to change and require purchase at least 4 days prior to departure."
+    },
+    "analysis": {
+      "plusTitle": "Is Princess Plus Worth It?",
+      "plusDesc": "Princess Plus ($70–$75/day) is widely considered one of the best-value bundled packages in contemporary cruising. If you plan to drink 3–4 alcoholic beverages, enjoy specialty coffee, use Wi-Fi daily, and pay crew gratuities, the package easily pays for itself.",
+      "premierTitle": "Is Princess Premier Worth It?",
+      "premierDesc": "Princess Premier ($105–$110/day) is ideal for guests who dine at Crown Grill and Sabatini's multiple evenings, travel with multiple devices, value shore excursion credits, appreciate professional photos, and desire top-shelf spirits."
+    }
+  },
+  "dining": {
+    "title": "Princess Cruises Dining: Restaurants and Culinary Experiences",
+    "subtitle": "From multi-course main dining and international buffets to celebrated signature steakhouses and artisanal pizzerias.",
+    "venues": [
+      {
+        "title": "Main Dining Rooms",
+        "category": "INCLUDED WITH CRUISE FARE",
+        "description": "Multi-course breakfast, lunch, and dinner featuring regional specialties, chef creations, and signature favorites with flexible Dine My Way reservations."
+      },
+      {
+        "title": "World Fresh Marketplace",
+        "category": "CASUAL BUFFET DINING",
+        "description": "Extensive international buffet stations offering carved meats, fresh pastas, salad bars, artisan breads, and global comfort cuisine from morning to late evening."
+      },
+      {
+        "title": "Crown Grill Steakhouse",
+        "category": "SPECIALTY STEAK & SEAFOOD",
+        "description": "Princess's celebrated signature steakhouse serving premium aged beef, Maine lobster tail, chops, and decadent sides in an intimate mahogany dining room."
+      },
+      {
+        "title": "Sabatini's Italian Trattoria",
+        "category": "SPECIALTY ITALIAN",
+        "description": "Authentic multi-course Italian culinary dining featuring handmade fresh pastas, regional Italian seafood, and traditional rustic desserts."
+      },
+      {
+        "title": "Alfredo's Pizzeria",
+        "category": "CASUAL ARTISAN PIZZA",
+        "description": "Serving freshly prepared, hand-tossed Neapolitan-style thin crust pizzas baked to order, crisp salads, and Italian desserts."
+      },
+      {
+        "title": "The Catch by Rudi",
+        "category": "SPECIALTY SEAFOOD BISTRO",
+        "description": "Curated by Master Chef Rudi Sodamin, offering fresh catches of the day, whole fish preparations, oysters, and refined maritime delicacies."
+      }
+    ]
+  },
+  "technology": {
+    "title": "MedallionClass: How Princess Technology Works",
+    "subtitle": "The wearable Medallion device transforms ocean cruising into a personalized, effortless vacation experience.",
+    "features": [
+      {
+        "title": "Keyless Stateroom Access",
+        "description": "Your stateroom door unlocks automatically as you approach with your Medallion, allowing seamless hands-free entry when returning with bags or drinks."
+      },
+      {
+        "title": "OceanNow On-Demand Delivery",
+        "description": "Order drinks, gourmet bites, sunscreen, or extra towels directly through the app to wherever you are sitting on the ship—pool deck, lounge, or stateroom."
+      },
+      {
+        "title": "Streamlined Embarkation",
+        "description": "Complete paperwork at home, get OceanReady, and walk straight from curbside security onto the ship in minutes with green-lane priority check-in."
+      },
+      {
+        "title": "Ship Navigation & Travel Party Locator",
+        "description": "Step-by-step digital map directions guide you across all decks, while the companion locator lets you easily locate friends and family anywhere onboard."
+      }
+    ]
+  },
+  "destinations": {
+    "title": "Princess Cruises Destinations: Where Can You Sail?",
+    "subtitle": "Over 345 destinations across more than 90 countries and all seven continents.",
+    "regions": [
+      {
+        "title": "Alaska & Cruisetours",
+        "category": "SIGNATURE DESTINATION",
+        "description": "Glacier Bay National Park, Inside Passage fjords, coastal totem villages, and inland rail cruisetours into Denali National Park wilderness lodges.",
+        "highlight": "Best for: Nature lovers, glacier scenic cruising, and inland wilderness exploration."
+      },
+      {
+        "title": "Caribbean & Bahamas",
+        "category": "TROPICAL ESCAPES",
+        "description": "Eastern, Western, and Southern Caribbean itineraries visiting turquoise waters, private retreats, and the new Celebration Key island destination.",
+        "highlight": "Best for: Sun seekers, beach relaxation, families, and watersports."
+      },
+      {
+        "title": "Europe & Mediterranean",
+        "category": "HISTORY & CULTURE",
+        "description": "Historic Italian coasts, Greek Isles, French Riviera, British Isles, and Norwegian fjords sailing from Rome, Barcelona, Athens, and Southampton.",
+        "highlight": "Best for: History enthusiasts, cultural landmarks, and architectural immersion."
+      },
+      {
+        "title": "Japan & Asia",
+        "category": "CULTURAL DISCOVERY",
+        "description": "Intricate Japanese itineraries visiting historic Kyoto, Tokyo, Mount Fuji vistas, and ancient temples across Taiwan, Vietnam, and Singapore.",
+        "highlight": "Best for: Immersive Asian culture, culinary discovery, and cherry blossom seasons."
+      },
+      {
+        "title": "Australia & New Zealand",
+        "category": "DRAMATIC LANDSCAPES",
+        "description": "Sydney Harbour sailaways, Melbourne culture, New Zealand's dramatic Milford Sound fjords, and Great Barrier Reef coastal voyages.",
+        "highlight": "Best for: Oceanic coastal scenery, unique wildlife, and extended southern voyages."
+      },
+      {
+        "title": "Hawaii & South Pacific",
+        "category": "ISLAND PARADISE",
+        "description": "Roundtrip California to Hawaiian island voyages exploring volcanic landscapes, and extended South Pacific sailings to Tahiti and Bora Bora.",
+        "highlight": "Best for: Unhurried sea days, Polynesian culture, and scenic island escapes."
+      }
+    ]
+  },
+  "travelerProfiles": {
+    "title": "Is Princess Cruises Good for Families, Couples and Adults?",
+    "subtitle": "Matching Princess amenities, ship atmosphere, and programming with your travel party.",
+    "items": [
+      {
+        "title": "For Couples & Romantics",
+        "category": "Couples & Anniversaries",
+        "description": "Princess excels for romantic vacations with private balcony dining, couples treatments at the Lotus Spa, serene adults-only Sanctuary decks, intimate Crown Grill steaks, and sunset champagne toasts."
+      },
+      {
+        "title": "For Multi-Gen Families",
+        "category": "Family Vacations",
+        "description": "Camp Discovery youth clubs (ages 3–17 in partnership with Discovery Channel), poolside Movies Under the Stars with warm cookies and milk, family suites, and connecting staterooms."
+      },
+      {
+        "title": "For Adult Travelers & Friends",
+        "category": "Adults & Groups",
+        "description": "Live production shows, bustling Piazza wine bars, casino gaming, enrichment lectures, and relaxed daytime sea days make Princess a refined choice for adult groups."
+      }
+    ]
+  },
+  "costBreakdown": {
+    "title": "How Much Does a Princess Cruise Cost?",
+    "subtitle": "Comprehensive budget considerations to estimate the true cost of your Princess vacation.",
+    "items": [
+      {
+        "title": "Cruise Fare & Stateroom Choice",
+        "description": "Standard cruise fares start around $100–$150/night for interior rooms, $180–$250/night for balconies, and $350+/night for premium suites depending on destination and season."
+      },
+      {
+        "title": "Princess Plus or Premier Package",
+        "description": "Adding Plus ($70–$75/day) or Premier ($105–$110/day) bundles drinks, Wi-Fi, gratuities, and specialty dining into one predictable, discounted pre-cruise charge."
+      },
+      {
+        "title": "Airfare, Hotels & Transfers",
+        "description": "Budget for pre-cruise hotel nights and port transfers. Arriving one day prior to embarkation protects against unexpected flight delays."
+      },
+      {
+        "title": "Shore Excursions & Spa",
+        "description": "Princess shore excursions range from $75 for walking city tours to $400+ for Alaska glacier helicopter landings and catamaran charters."
+      }
+    ]
+  },
+  "luxuryComparison": {
+    "title": "Princess Cruises vs. Luxury Cruise Lines",
+    "subtitle": "Understanding how Princess premium cruising compares with ultra-luxury brands like Regent, Silversea, and Crystal.",
+    "headers": ["Travel Priority", "Princess Cruises (Premium)", "Luxury Lines (Ultra-Luxury)"],
+    "rows": [
+      ["Fleet & Ship Size", "Large ships (2,000–4,300 guests) with extensive entertainment", "Small ships (300–750 guests) with intimate country-club ambiance"],
+      ["All-Inclusive Model", "Standard unbundled fare with optional Plus ($70) or Premier ($105)", "Fully all-inclusive fares covering all drinks, dining, Wi-Fi, and tours"],
+      ["Service Style", "Friendly, professional large-ship service with Medallion tech", "Near 1:1 staff ratio with private European butler care in every suite"],
+      ["Specialty Dining", "Crown Grill, Sabatini's, Rudi ($35–$45 cover charge or Premier)", "All specialty restaurants complimentary (Nobu, Prime 7, Chartreuse)"],
+      ["Excursion Policy", "A la carte shore excursions or Premier cruise excursion credits", "Complimentary shore excursions included in every port of call"],
+      ["Exclusive Spaces", "Sanctuary Collection & Reserve Dining on eligible ships", "Entire ship is an exclusive luxury enclave with no tier restrictions"]
+    ],
+    "footnote": "Princess is ideal for travelers who want broad entertainment, multiple pools, and varied dining at an accessible price. Travelers seeking intimate ships, all-inclusive luxury, and butler care may prefer ultra-luxury lines."
+  },
+  "angelaBio": {
+    "name": "Angela Hughes",
+    "title": "CEO & Luxury Cruise Specialist",
+    "bio": "Angela Hughes is the CEO of Trips & Ships Luxury Travel and founder of Luxury Travel University. With more than 40 years of luxury travel industry expertise, Angela has traveled to over 121 countries across all seven continents. She provides trusted, impartial counsel on cruise line comparisons, ship selection, stateroom categories, and customized worldwide travel itineraries.",
+    "quote": "Choosing the right Princess cruise is about matching your travel priorities with the right ship class, stateroom location, and package tier. From scenic Alaska Cruisetours to next-generation Sphere-class voyages, we ensure every detail is tailored for maximum comfort and value.",
+    "credentials": [
+      "CEO & Founder, Trips & Ships Luxury Travel",
+      "Founder & Lead Educator, Luxury Travel University",
+      "Over 40 Years of Travel Industry Leadership",
+      "Visited 121+ Countries Across All 7 Continents",
+      "Accredited Cruise Lines International Association (CLIA) Elite Specialist",
+      "Featured Luxury Travel Contributor in National Travel Publications"
+    ],
+    "ctaText": "Consult Angela on Princess Cruises",
+    "ctaLink": "/contact"
+  },
+  "faqs": [
+    {
+      "question": "What is Princess Cruises known for?",
+      "answer": "Princess Cruises is known for its large fleet, destination-focused itineraries, range of staterooms, onboard dining, entertainment and MedallionClass technology."
+    },
+    {
+      "question": "How many ships does Princess Cruises have?",
+      "answer": "Princess's published fleet listing includes 17 ships, including Sun Princess and Star Princess. Fleet composition and deployment can change over time."
+    },
+    {
+      "question": "What are the different Princess Cruises stateroom categories?",
+      "answer": "The main categories are Interior, Oceanview, Balcony, Mini-Suite and Suite. Some ships also offer enhanced accommodation categories such as Reserve Collection and Sanctuary Collection."
+    },
+    {
+      "question": "What is the difference between Princess Plus and Princess Premier?",
+      "answer": "Princess Plus includes a beverage package (up to 15 drinks/day), Wi-Fi for one device, crew appreciation gratuities, and four casual dining meals. Princess Premier adds unlimited specialty and casual dining, a broader beverage package, Wi-Fi for up to four devices, shore excursion credit, photo packages, and reserved theater seating."
+    },
+    {
+      "question": "Is Princess Cruises all-inclusive?",
+      "answer": "The Standard cruise fare includes core dining, entertainment and access to selected ship facilities, but not every onboard expense. Princess Plus and Princess Premier add more inclusions for guests who want a more bundled experience."
+    },
+    {
+      "question": "What is the Sanctuary Collection on Princess Cruises?",
+      "answer": "Sanctuary Collection is an enhanced accommodation experience available on Sun Princess and Star Princess. It offers qualifying guests access to exclusive spaces and services, including the Sanctuary Club, Sanctuary Restaurant and Princess Premier benefits."
+    },
+    {
+      "question": "What is the Reserve Collection?",
+      "answer": "Reserve Collection is an enhanced accommodation category available on the Princess fleet except Sun Princess and Star Princess. Benefits can include an exclusive dining area, priority specialty dining reservations, a welcome bottle of wine and evening canapés."
+    },
+    {
+      "question": "Which Princess ship is the newest?",
+      "answer": "Star Princess is one of the newest ships in the fleet, following the introduction of Sun Princess. Check Princess's current fleet information for the latest ship announcements and deployment details."
+    },
+    {
+      "question": "Does Princess Cruises sail to Alaska?",
+      "answer": "Yes. Alaska is one of Princess's major destination regions. Selected itineraries can also be combined with land-based Alaska Cruisetours featuring scenic rail journeys and Denali National Park wilderness lodges."
+    },
+    {
+      "question": "Does Princess Cruises visit Europe?",
+      "answer": "Yes. Princess offers European itineraries that can include the Mediterranean, Northern Europe, the British Isles and other regional destinations."
+    },
+    {
+      "question": "Is Princess Cruises suitable for families?",
+      "answer": "Yes. Princess offers kids' and teen programs, family-friendly facilities, dining options and accommodation choices. Facilities vary by ship."
+    },
+    {
+      "question": "Does Princess Cruises have Wi-Fi?",
+      "answer": "Yes. MedallionNet Wi-Fi is available onboard. Guests can purchase internet separately or receive Wi-Fi benefits through applicable Princess Plus and Princess Premier packages."
+    },
+    {
+      "question": "Are drinks included on Princess Cruises?",
+      "answer": "Some basic dining and beverage options are included in the standard fare, but many alcoholic beverages and specialty drinks require payment or a beverage package. Princess Plus and Princess Premier provide broader beverage benefits subject to their terms."
+    },
+    {
+      "question": "Are shore excursions included with Princess Cruises?",
+      "answer": "Shore excursions are generally purchased separately with a Standard fare or Princess Plus. Princess Premier includes a shore excursion credit for eligible sailings, subject to the voyage's published terms."
+    },
+    {
+      "question": "How much does Princess Plus cost?",
+      "answer": "The published pre-cruise USD price checked in November 2026 is $70 per person per day on most ships and $75 on Sun Princess and Star Princess. Prices can change and should be confirmed for the selected sailing."
+    },
+    {
+      "question": "How much does Princess Premier cost?",
+      "answer": "The published pre-cruise USD price checked in November 2026 is $105 per person per day on most ships and $110 on Sun Princess and Star Princess. Confirm the current price and benefits before booking."
+    },
+    {
+      "question": "How do I choose the best Princess cruise?",
+      "answer": "Start with your preferred destination and travel dates. Then compare the ships, itinerary, port time, stateroom options, package benefits and total vacation cost."
+    },
+    {
+      "question": "Can I book a Princess World Cruise?",
+      "answer": "Yes. Princess offers extended World Cruise itineraries connecting multiple continents. Availability, voyage duration, segments and booking benefits depend on the published program."
+    }
+  ]
+}
+

@@ -1,4 +1,5 @@
 import React from 'react';
+import LiteYouTubeEmbed from '@/components/ui/LiteYouTubeEmbed';
 
 /**
  * GreeceNaxosParosVideoOne
@@ -19,14 +20,14 @@ const GreeceNaxosParosVideoOne = () => {
 
         {/* Video Aspect Ratio Wrapper */}
         <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-amber-900/20">
-          <iframe
+          <LiteYouTubeEmbed
             className="absolute inset-0 w-full h-full"
             src="https://www.youtube.com/embed/Q3ky16KD3yU"
             title="Greece Sailing Highlights Video"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-          ></iframe>
+          />
         </div>
 
         <p className="font-sans text-xs text-slate-400 font-light mt-6 leading-relaxed max-w-2xl mx-auto">

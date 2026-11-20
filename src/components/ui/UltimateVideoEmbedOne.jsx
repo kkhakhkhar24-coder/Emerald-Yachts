@@ -1,5 +1,6 @@
 import React from 'react';
 import FadeIn from './FadeIn';
+import LiteYouTubeEmbed from '@/components/ui/LiteYouTubeEmbed';
 
 const UltimateVideoEmbedOne = () => {
   return (
@@ -14,14 +15,14 @@ const UltimateVideoEmbedOne = () => {
             Experience Windstar: Small Ship Yacht Cruising
           </h2>
           <div className="relative aspect-video w-full rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-slate-900">
-            <iframe
+            <LiteYouTubeEmbed
               className="absolute inset-0 w-full h-full"
               src="https://www.youtube.com/embed/sKWVSThQKFY"
               title="Windstar Cruises Experience"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-            ></iframe>
+            />
           </div>
         </FadeIn>
       </div>

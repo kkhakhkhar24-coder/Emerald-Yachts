@@ -5,6 +5,7 @@ import {
   Briefcase, Network, GraduationCap,
   ChevronRight
 } from 'lucide-react';
+import CrawlablePanels from './CrawlablePanels';
 
 const iconMap = {
   "Users": Users,
@@ -114,6 +115,7 @@ const OccasionInteractiveTabs = ({ data }) => {
 
         </div>
       </div>
+      <CrawlablePanels items={data.events} activeIndex={activeIndex} />
     </section>
   );
 };

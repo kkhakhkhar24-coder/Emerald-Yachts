@@ -65,7 +65,7 @@ const BalconyValueFormula = ({ data, sectionImage }) => {
                       <Icon className="w-5 h-5" />
                     </div>
                     <div>
-                      <h4 className="font-display text-base font-bold mb-1">{s.condition}</h4>
+                      <h3 className="font-display text-base font-bold mb-1">{s.condition}</h3>
                       <p className="font-sans text-xs sm:text-sm leading-relaxed opacity-80">{s.recommendation}</p>
                     </div>
                   </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import FadeIn from './FadeIn';
+import LiteYouTubeEmbed from '@/components/ui/LiteYouTubeEmbed';
 
 const WindstarVsLargeVideo1 = ({ youtubeId, title, description }) => {
   return (
@@ -23,14 +24,14 @@ const WindstarVsLargeVideo1 = ({ youtubeId, title, description }) => {
         {/* Video Frame */}
         <FadeIn delay={0.2}>
           <div className="relative rounded-3xl overflow-hidden aspect-video max-w-4xl mx-auto bg-navy-900 border-2 border-ts-gold shadow-2xl">
-            <iframe
+            <LiteYouTubeEmbed
               className="absolute inset-0 w-full h-full"
               src={`https://www.youtube.com/embed/${youtubeId}?rel=0`}
               title="Windstar Yacht Experience vs Megaships"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
-            ></iframe>
+            />
           </div>
         </FadeIn>
 

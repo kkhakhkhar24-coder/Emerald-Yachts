@@ -1,4 +1,5 @@
 import React from 'react';
+import LiteYouTubeEmbed from '@/components/ui/LiteYouTubeEmbed';
 
 /**
  * GreeceUltimateVideoOne
@@ -19,14 +20,14 @@ const GreeceUltimateVideoOne = () => {
 
         {/* 16:9 Video Frame */}
         <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-blue-900/40 bg-slate-900">
-          <iframe
+          <LiteYouTubeEmbed
             className="absolute inset-0 w-full h-full"
             src="https://www.youtube.com/embed/dV2yrkh1ABI"
             title="Greece Luxury Island Travel & Yachting Video"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-          ></iframe>
+          />
         </div>
 
         <p className="font-sans text-xs sm:text-sm text-slate-400 font-light mt-6 leading-relaxed max-w-2xl mx-auto">

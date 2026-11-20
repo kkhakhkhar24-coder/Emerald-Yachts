@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import deckImg from '@/assets/Windstar Cruises/2025_WindStar_Deck_08_V0.webp';
 import { Sparkles, Ship, Anchor, Compass, Waves } from 'lucide-react';
 
 const FifteenDifferencesShowcase = ({ data }) => {
@@ -48,7 +49,7 @@ const FifteenDifferencesShowcase = ({ data }) => {
 
           <div className="hidden lg:block relative rounded-3xl overflow-hidden aspect-[4/5] border border-gold-500/20 shadow-2xl w-full">
             <img 
-              src="/assets/2025_WindStar_Deck_08_V0-C6nr5qk7.webp" 
+              src={deckImg} 
               alt="Windstar Luxury" 
               className="w-full h-full object-cover"
               onError={(e) => {

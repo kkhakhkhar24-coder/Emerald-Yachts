@@ -36,7 +36,7 @@ const DiningVenuesMasonry = ({ title, subtitle, items }) => {
                   {/* Background Image */}
                   <img
                     src={item.image}
-                    alt={item.title}
+                    alt={item.title || item.name || item.heading || item.label || ''}
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     loading="lazy"
                   />

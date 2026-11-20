@@ -1,6 +1,7 @@
 import React from 'react';
 import FadeIn from './FadeIn';
 import { Quote } from 'lucide-react';
+import LiteYouTubeEmbed from '@/components/ui/LiteYouTubeEmbed';
 
 const ButlerVideoOne = ({ data }) => {
   if (!data?.youtubeId) return null;
@@ -34,7 +35,7 @@ const ButlerVideoOne = ({ data }) => {
             {/* Film-grain styled border */}
             <div className="absolute -inset-1 bg-gradient-to-br from-gold-400/20 via-transparent to-gold-400/10 rounded-2xl" />
             <div className="relative w-full aspect-video bg-navy-900 rounded-2xl overflow-hidden shadow-2xl border border-white/10">
-              <iframe
+              <LiteYouTubeEmbed
                 width="100%"
                 height="100%"
                 src={`https://www.youtube-nocookie.com/embed/${data.youtubeId}?rel=0&modestbranding=1&vq=hd1080`}

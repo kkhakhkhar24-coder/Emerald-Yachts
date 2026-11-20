@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import FadeIn from './FadeIn';
 import { Heart, Compass, Wine, Gem, Star } from 'lucide-react';
 import MasterImage from './MasterImage';
+import CrawlablePanels from './CrawlablePanels';
 
 const RomanticMilestoneShowcase = ({ data, images = [] }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -141,6 +142,7 @@ const RomanticMilestoneShowcase = ({ data, images = [] }) => {
 
         </div>
       </div>
+      <CrawlablePanels items={data.items} activeIndex={activeIndex} />
     </section>
   );
 };

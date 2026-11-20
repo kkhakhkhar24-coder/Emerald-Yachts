@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import FadeIn from './FadeIn';
+import CrawlablePanels from './CrawlablePanels';
 
 const SeasonalGuide = ({ title, subtitle, items }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -87,6 +88,7 @@ const SeasonalGuide = ({ title, subtitle, items }) => {
           
         </div>
       </div>
+      <CrawlablePanels items={items} activeIndex={activeIndex} />
     </section>
   );
 };

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import FadeIn from './FadeIn';
+import CrawlablePanels from './CrawlablePanels';
 
 const CulinaryMenuShowcase = ({ title, subtitle, items, images }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -80,6 +81,7 @@ const CulinaryMenuShowcase = ({ title, subtitle, items, images }) => {
           </div>
         </div>
       </div>
+      <CrawlablePanels items={items} activeIndex={activeIndex} />
     </section>
   );
 };

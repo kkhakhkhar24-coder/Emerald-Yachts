@@ -3,18 +3,15 @@ import FadeIn from './FadeIn';
 
 const ExploraGlanceGrid = () => {
   const comparisons = [
-    { category: "Overall Luxury", silversea: "Ultra-luxury", explora: "Contemporary ultra-luxury" },
-    { category: "Service Style", silversea: "Highly personalized", explora: "Relaxed and contemporary" },
-    { category: "Butler Service", silversea: "Major strength", explora: "Different service model" },
-    { category: "Ship Design", silversea: "Elegant and intimate", explora: "Contemporary and residential" },
-    { category: "Suites", silversea: "All-suite luxury", explora: "Spacious ocean-front suites" },
-    { category: "Dining", silversea: "Destination-focused", explora: "Contemporary and varied" },
-    { category: "Wellness", silversea: "Strong", explora: "Major focus" },
-    { category: "Expedition Travel", silversea: "Major strength", explora: "Limited" },
-    { category: "Antarctica", silversea: "Excellent fit", explora: "Not the primary choice" },
-    { category: "Mediterranean", silversea: "Excellent", explora: "Excellent" },
-    { category: "Destination Immersion", silversea: "Major strength", explora: "Strong" },
-    { category: "Ship as Destination", silversea: "Strong", explora: "Major strength" }
+    { category: "Luxury style", silversea: "Traditional, personalized luxury", explora: "Contemporary, residential-style luxury" },
+    { category: "Atmosphere", silversea: "Refined and intimate", explora: "Relaxed and spacious" },
+    { category: "Itineraries", silversea: "Ocean and expedition voyages", explora: "Luxury ocean journeys" },
+    { category: "Cruise duration", silversea: "Varies by itinerary and region", explora: "Varies by journey and region" },
+    { category: "Dining", silversea: "Multiple dining concepts, depending on ship", explora: "Multiple contemporary dining experiences" },
+    { category: "Accommodations", silversea: "Luxury suites with ship-specific amenities", explora: "Oceanfront suites and residences" },
+    { category: "Service", silversea: "Personalized hospitality, including butler service", explora: "Attentive, contemporary hospitality" },
+    { category: "Inclusions", silversea: "Depend on fare, ship, and voyage", explora: "Broad onboard inclusions, with exceptions" },
+    { category: "Best suited for", silversea: "Travelers who value traditional luxury and destination exploration", explora: "Travelers who value contemporary ocean living and relaxation" }
   ];
 
   return (

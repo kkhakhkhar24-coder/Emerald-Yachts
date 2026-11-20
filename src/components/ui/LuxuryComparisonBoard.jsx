@@ -1,8 +1,18 @@
 import React, { useState } from 'react';
 import FadeIn from './FadeIn';
 import { Ship, CheckCircle2, XCircle, AlertCircle } from 'lucide-react';
+import CrawlablePanels from './CrawlablePanels';
 
-const LuxuryComparisonBoard = ({ title, subtitle, brands }) => {
+const LuxuryComparisonBoard = ({
+  title,
+  subtitle,
+  brands,
+  eyebrow = 'Competitive Analysis',
+  panelSuffix = 'Inclusions',
+  includedLabel = "What's Included",
+  extraLabel = 'What Costs Extra / Optional',
+  Icon = Ship,
+}) => {
   const [selectedBrand, setSelectedBrand] = useState(0);
 
   if (!brands || brands.length === 0) return null;
@@ -19,7 +29,7 @@ const LuxuryComparisonBoard = ({ title, subtitle, brands }) => {
         <div className="text-center mb-16">
           <FadeIn>
             <span className="font-sans text-xs uppercase tracking-[0.25em] text-gold-400 font-bold mb-4 block">
-              Competitive Analysis
+              {eyebrow}
             </span>
             <h2 className="font-display text-4xl md:text-5xl text-white mb-4">{title}</h2>
             {subtitle && <p className="font-sans text-lg text-ice-200/70 max-w-2xl mx-auto">{subtitle}</p>}
@@ -45,7 +55,7 @@ const LuxuryComparisonBoard = ({ title, subtitle, brands }) => {
                 <div className={`w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 ${
                   selectedBrand === idx ? 'bg-navy-950 text-gold-400' : 'bg-navy-850 text-ice-300'
                 }`}>
-                  <Ship className="w-5 h-5" />
+                  <Icon className="w-5 h-5" />
                 </div>
                 <div>
                   <h4 className="font-display font-semibold text-base lg:text-lg leading-tight">{brand.name}</h4>
@@ -62,7 +72,7 @@ const LuxuryComparisonBoard = ({ title, subtitle, brands }) => {
                 
                 <div>
                   <div className="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-navy-800">
-                    <h3 className="font-display text-3xl text-white">{brands[selectedBrand].name} Inclusions</h3>
+                    <h3 className="font-display text-3xl text-white">{brands[selectedBrand].name} {panelSuffix}</h3>
                     <span className="font-sans text-xs uppercase tracking-widest text-gold-400 font-bold bg-navy-800 px-4 py-1.5 rounded-full border border-navy-700">
                       {brands[selectedBrand].model}
                     </span>
@@ -73,7 +83,7 @@ const LuxuryComparisonBoard = ({ title, subtitle, brands }) => {
                     {/* What's Included */}
                     <div>
                       <h4 className="font-sans text-xs uppercase tracking-widest text-ice-200/80 font-bold mb-4">
-                        What's Included
+                        {includedLabel}
                       </h4>
                       <ul className="space-y-4">
                         {brands[selectedBrand].inclusions.map((inc, i) => (
@@ -88,7 +98,7 @@ const LuxuryComparisonBoard = ({ title, subtitle, brands }) => {
                     {/* What Costs Extra */}
                     <div>
                       <h4 className="font-sans text-xs uppercase tracking-widest text-gold-400/80 font-bold mb-4">
-                        What Costs Extra / Optional
+                        {extraLabel}
                       </h4>
                       <ul className="space-y-4">
                         {brands[selectedBrand].exclusions.map((exc, i) => (
@@ -119,6 +129,7 @@ const LuxuryComparisonBoard = ({ title, subtitle, brands }) => {
         </div>
 
       </div>
+      <CrawlablePanels items={brands} activeIndex={selectedBrand} />
     </section>
   );
 };

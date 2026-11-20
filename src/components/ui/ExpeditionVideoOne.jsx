@@ -1,6 +1,7 @@
 import React from 'react';
 import FadeIn from './FadeIn';
 import { Quote } from 'lucide-react';
+import LiteYouTubeEmbed from '@/components/ui/LiteYouTubeEmbed';
 
 const ExpeditionVideoOne = ({ data }) => {
   if (!data?.youtubeId) return null;
@@ -22,7 +23,7 @@ const ExpeditionVideoOne = ({ data }) => {
                 {/* Premium border offset */}
                 <div className="absolute -inset-1.5 bg-gradient-to-br from-sky-400/30 to-gold-400/20 rounded-2xl blur opacity-75" />
                 <div className="relative w-full aspect-video bg-navy-950 rounded-2xl overflow-hidden shadow-2xl border border-white/10">
-                  <iframe
+                  <LiteYouTubeEmbed
                     width="100%"
                     height="100%"
                     src={`https://www.youtube-nocookie.com/embed/${data.youtubeId}?rel=0&modestbranding=1&vq=hd1080`}

@@ -7,10 +7,24 @@ const iconMap = {
   Ship, Star, Heart, UtensilsCrossed, Compass, Clock, Sparkles
 };
 
-const HighlightsSplit = ({ title, items }) => {
+const HighlightsSplit = ({
+  title,
+  subtitle,
+  items: rawItems,
+  // Fallback images when items carry no `image` of their own (used in order, then repeated).
+  images,
+  // Labels on the 3+ item card; defaults keep the original wording.
+  badgeSuffix = 'FEATURED SEASON',
+  footerLeft = 'Signature Season Experience',
+  footerRight = 'Boutique Luxury River Cruising',
+}) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  if (!items || items.length === 0) return null;
+  if (!rawItems || rawItems.length === 0) return null;
+  const items = rawItems.map((item, idx) => ({
+    ...item,
+    image: item.image || (images && images.length ? images[idx % images.length] : undefined),
+  }));
 
   // Protect against out-of-bounds index during HMR or prop changes
   const safeActiveIndex = activeIndex >= items.length ? 0 : activeIndex;
@@ -27,6 +41,9 @@ const HighlightsSplit = ({ title, items }) => {
         <FadeIn className="text-center mb-16">
           <h2 className="font-display text-4xl md:text-5xl text-navy-950">{title}</h2>
           <div className="w-12 h-0.5 bg-navy-800 mx-auto mt-6"></div>
+          {subtitle && (
+            <p className="font-sans text-lg text-slate-600 max-w-2xl mx-auto mt-6">{subtitle}</p>
+          )}
         </FadeIn>
 
         {isCompact ? (
@@ -78,14 +95,12 @@ const HighlightsSplit = ({ title, items }) => {
 
               <FadeIn delay={0.1}>
                 <div className="rounded-2xl overflow-hidden h-64 lg:h-full min-h-[260px] relative bg-slate-200">
-                  {activeItem.image ? (
-                    <MasterImage src={activeItem.image} alt={activeItem.title} className="w-full h-full object-cover absolute inset-0 z-0" />
-                  ) : (
-                    <div className="absolute inset-0 flex flex-col items-center justify-center text-slate-400 font-sans tracking-widest text-xs uppercase z-0 text-center px-4 border-2 border-dashed border-slate-300">
-                      <span className="font-bold text-slate-400 tracking-[0.2em] mb-1">IMAGE PLACEHOLDER</span>
-                      <span className="font-display text-base text-slate-600">{activeItem.title}</span>
-                    </div>
-                  )}
+                  <MasterImage 
+                    src={activeItem.image} 
+                    alt={activeItem.imageAlt || activeItem.title} 
+                    placeholderLabel={activeItem.title}
+                    className="w-full h-full object-cover absolute inset-0 z-0" 
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-navy-950/60 to-transparent z-10"></div>
                   <div className="absolute bottom-4 left-4 z-20">
                     <span className="bg-navy-950/80 backdrop-blur text-white text-xs font-bold tracking-[0.2em] uppercase px-4 py-2 rounded">
@@ -130,20 +145,19 @@ const HighlightsSplit = ({ title, items }) => {
             <FadeIn direction="left" className="lg:col-span-7 flex flex-col justify-between">
               <div className="bg-navy-950 text-white rounded-2xl p-8 sm:p-10 lg:p-12 shadow-lg relative overflow-hidden flex flex-col justify-between min-h-[460px] h-full border border-white/10">
                 {/* Background Image Blended inside right card */}
-                {activeItem.image ? (
-                  <MasterImage src={activeItem.image} alt={activeItem.title || 'Highlight Image'} className="w-full h-full object-cover absolute inset-0 z-0 opacity-60 transition-all duration-700 scale-105" />
-                ) : (
-                  <div className="absolute inset-0 bg-navy-900 z-0 flex items-center justify-end p-8 flex-col opacity-50 border border-dashed border-white/20">
-                    <span className="text-white/60 text-[10px] font-bold tracking-[0.2em] uppercase">IMAGE PLACEHOLDER</span>
-                  </div>
-                )}
+                <MasterImage 
+                  src={activeItem.image} 
+                  alt={activeItem.imageAlt || activeItem.title || 'Highlight Image'} 
+                  placeholderLabel={activeItem.title}
+                  className="w-full h-full object-cover absolute inset-0 z-0 opacity-60 transition-all duration-700 scale-105" 
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-navy-950/50 to-navy-950/30 z-10" />
 
                 {/* Top Badge & Season Title */}
                 <div className="relative z-20 mb-6">
                   <div className="flex items-center space-x-3 mb-4">
                     <span className="bg-gold-400/20 text-gold-400 border border-gold-400/40 text-[10px] font-sans font-bold tracking-[0.2em] uppercase px-3.5 py-1.5 rounded inline-block">
-                      {brandName} FEATURED SEASON
+                      {brandName} {badgeSuffix}
                     </span>
                   </div>
                   <h3 className="font-display text-2xl sm:text-3xl text-white font-normal">
@@ -170,8 +184,8 @@ const HighlightsSplit = ({ title, items }) => {
 
                 {/* Bottom Signature Bar */}
                 <div className="pt-6 mt-6 border-t border-white/15 flex flex-wrap items-center justify-between gap-4 relative z-20 text-xs font-sans">
-                  <span className="text-gold-400 uppercase tracking-widest font-bold">Signature Season Experience</span>
-                  <span className="text-ice-300 font-medium">Boutique Luxury River Cruising</span>
+                  <span className="text-gold-400 uppercase tracking-widest font-bold">{footerLeft}</span>
+                  <span className="text-ice-300 font-medium">{footerRight}</span>
                 </div>
               </div>
             </FadeIn>

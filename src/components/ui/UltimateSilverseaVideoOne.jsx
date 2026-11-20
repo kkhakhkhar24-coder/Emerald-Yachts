@@ -1,5 +1,6 @@
 import React from 'react';
 import FadeIn from './FadeIn';
+import LiteYouTubeEmbed from '@/components/ui/LiteYouTubeEmbed';
 
 const UltimateSilverseaVideoOne = () => {
   return (
@@ -14,14 +15,14 @@ const UltimateSilverseaVideoOne = () => {
             Inside the Venetian Society Milestones &amp; Fares
           </h2>
           <div className="relative aspect-video w-full rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-slate-900">
-            <iframe
+            <LiteYouTubeEmbed
               className="absolute inset-0 w-full h-full"
               src="https://www.youtube.com/embed/n1N-FdIDo6M"
               title="Silversea Cruises Venetian Society"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-            ></iframe>
+            />
           </div>
         </FadeIn>
       </div>

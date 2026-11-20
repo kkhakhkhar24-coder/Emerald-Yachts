@@ -34,15 +34,17 @@ const CostAndInclusionsPanel = ({ title, subtitle, items }) => {
                 )}
 
                 <div className="text-center mb-8 pb-8 border-b border-slate-100">
-                  <h3 className="font-display text-2xl text-navy-900 mb-4">{item.tier}</h3>
+                  <h3 className="font-display text-2xl text-navy-900 mb-4">{item?.tier || item?.title}</h3>
                   <div className="text-gold-500 font-sans font-medium text-lg">
-                    {item.price}
+                    {item?.price || item?.subtitle}
                   </div>
-                  <div className="text-slate-400 font-sans text-xs uppercase tracking-wider mt-2">Per Person</div>
+                  <div className="text-slate-400 font-sans text-xs uppercase tracking-wider mt-2">
+                    {item?.category || 'Per Person'}
+                  </div>
                 </div>
 
                 <ul className="space-y-4">
-                  {item.inclusions.map((inclusion, i) => (
+                  {(item?.inclusions || item?.points || []).map((inclusion, i) => (
                     <li key={i} className="flex items-start text-sm font-sans text-slate-600">
                       <svg className="w-5 h-5 text-gold-500 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
                       <span className="leading-tight">{inclusion}</span>

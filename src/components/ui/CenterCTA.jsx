@@ -9,12 +9,13 @@ const CenterCTA = ({
   buttonLink = "/contact",
   image,
   imagePosition = "object-center",
-  theme = "dark"
+  theme = "dark",
+  className = ""
 }) => {
   const isDark = theme === "dark";
 
   return (
-    <section className={`w-full py-24 relative overflow-hidden flex items-center justify-center ${isDark ? '' : 'bg-ice-50'}`}>
+    <section className={`w-full py-24 relative overflow-hidden flex items-center justify-center ${isDark ? '' : 'bg-ice-50'} ${className}`}>
       {image ? (
         <img 
           src={image} 
@@ -31,10 +32,10 @@ const CenterCTA = ({
       {/* Content */}
       <div className="relative z-10 max-w-[800px] mx-auto px-6 text-center">
         <FadeIn>
+          <div className={`w-16 h-0.5 mx-auto mb-8 ${isDark ? 'bg-ts-gold' : 'bg-navy-900'}`}></div>
           <h2 className={`font-display text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight ${isDark ? 'text-white drop-shadow-lg' : 'text-navy-950'}`}>
             {title}
           </h2>
-          <div className={`w-16 h-0.5 mx-auto mb-6 ${isDark ? 'bg-ts-gold' : 'bg-navy-900'}`}></div>
           <p className={`font-sans text-lg md:text-xl mb-10 max-w-2xl mx-auto font-light ${isDark ? 'text-white/90 drop-shadow' : 'text-slate-600'}`}>
             {description}
           </p>

@@ -53,37 +53,49 @@ const DestinationPackingTabs = ({ data, images }) => {
                 ))}
               </div>
               
-              {/* Dynamic Information Box */}
+                {/* Dynamic Information Box */}
               <div className="bg-white rounded-2xl p-8 shadow-xl border border-ice-100 relative">
                 {/* Decorative pin */}
                 <div className="absolute -top-4 -right-4 w-12 h-12 bg-accent-500 rounded-full flex items-center justify-center shadow-lg border-4 border-ice-50">
                   <MapPin className="w-5 h-5 text-white" />
                 </div>
                 
-                <div className="mb-6">
-                  <h4 className="font-sans text-xs uppercase tracking-widest text-slate-500 mb-2 font-bold">The Vibe</h4>
-                  <p className="font-display text-2xl text-navy-950">{activeContent.vibe}</p>
-                </div>
-                
-                <div className="mb-8">
-                  <h4 className="font-sans text-xs uppercase tracking-widest text-slate-500 mb-2 font-bold">Climate</h4>
-                  <div className="flex items-start gap-3">
-                    <Sun className="w-5 h-5 text-accent-500 flex-shrink-0 mt-0.5" />
-                    <p className="font-sans text-slate-600">{activeContent.climate}</p>
+                {(activeContent.vibe || activeContent.title) && (
+                  <div className="mb-6">
+                    <h4 className="font-sans text-xs uppercase tracking-widest text-slate-500 mb-2 font-bold">
+                      {activeContent.vibe ? 'The Vibe' : 'Focus'}
+                    </h4>
+                    <p className="font-display text-2xl text-navy-950">{activeContent.vibe || activeContent.title}</p>
                   </div>
-                </div>
+                )}
                 
-                <div className="border-t border-slate-100 pt-6">
-                  <h4 className="font-sans text-xs uppercase tracking-widest text-accent-600 mb-4 font-bold">Must-Pack Items</h4>
-                  <ul className="space-y-3">
-                    {activeContent.mustPack.map((item, idx) => (
-                      <li key={idx} className="flex items-start gap-3">
-                        <CheckCircle2 className="w-5 h-5 text-navy-400 flex-shrink-0" />
-                        <span className="font-sans text-sm text-navy-900 font-medium">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                {(activeContent.climate || activeContent.description) && (
+                  <div className="mb-8">
+                    <h4 className="font-sans text-xs uppercase tracking-widest text-slate-500 mb-2 font-bold">
+                      {activeContent.climate ? 'Climate' : 'Styling Strategy'}
+                    </h4>
+                    <div className="flex items-start gap-3">
+                      <Sun className="w-5 h-5 text-accent-500 flex-shrink-0 mt-0.5" />
+                      <p className="font-sans text-slate-600">{activeContent.climate || activeContent.description}</p>
+                    </div>
+                  </div>
+                )}
+                
+                {Array.isArray(activeContent.mustPack || activeContent.highlights) && (
+                  <div className="border-t border-slate-100 pt-6">
+                    <h4 className="font-sans text-xs uppercase tracking-widest text-accent-600 mb-4 font-bold">
+                      {activeContent.mustPack ? 'Must-Pack Items' : 'Key Specifications'}
+                    </h4>
+                    <ul className="space-y-3">
+                      {(activeContent.mustPack || activeContent.highlights).map((item, idx) => (
+                        <li key={idx} className="flex items-start gap-3">
+                          <CheckCircle2 className="w-5 h-5 text-navy-400 flex-shrink-0 mt-0.5" />
+                          <span className="font-sans text-sm text-navy-900 font-medium">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </div>
             </FadeIn>
           </div>

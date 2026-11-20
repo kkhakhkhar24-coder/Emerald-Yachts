@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Check, X } from 'lucide-react';
 import MasterImage from './MasterImage';
 
@@ -13,8 +12,6 @@ const FeatureSplit = ({
   summary,
   bestFor = [],
   notIdealFor = [],
-  ctaText,
-  ctaLink,
   children
 }) => {
   const isRight = imagePosition === 'right';
@@ -64,17 +61,6 @@ const FeatureSplit = ({
             </p>
           )}
 
-          {ctaText && (
-            <div className="mt-4">
-              <Link
-                to={ctaLink || "/contact"}
-                className="inline-flex items-center justify-center px-8 py-3 bg-navy-950 text-white font-sans text-sm font-bold tracking-widest uppercase hover:bg-navy-900 transition-all rounded-full shadow-lg hover:scale-105"
-              >
-                {ctaText}
-              </Link>
-            </div>
-          )}
-
           {(bestFor.length > 0 || notIdealFor.length > 0) && (
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-4">
               {bestFor.length > 0 && (
@@ -115,18 +101,12 @@ const FeatureSplit = ({
 
         {/* Image / Placeholder */}
         <div className={`flex-1 min-h-[400px] md:min-h-full rounded-2xl overflow-hidden bg-slate-100 relative border border-slate-200 ${isRight ? 'order-2 md:order-2' : 'order-2 md:order-1'}`}>
-          {image ? (
-            <MasterImage
-              asBackground={true}
-              src={image}
-              className="absolute inset-0 bg-cover bg-center"
-            />
-          ) : (
-            <div className="absolute inset-0 bg-gradient-to-br from-slate-100 via-slate-50 to-slate-200 border-2 border-dashed border-slate-300 flex flex-col items-center justify-center p-8 text-center">
-              <span className="font-sans text-xs font-bold tracking-[0.2em] text-slate-400 uppercase mb-3">IMAGE PLACEHOLDER</span>
-              <span className="font-display text-2xl text-slate-600 max-w-md">{title || 'Featured Content'}</span>
-            </div>
-          )}
+          <MasterImage
+            asBackground={true}
+            src={image}
+            placeholderLabel={title || 'Featured Content'}
+            className="absolute inset-0 bg-cover bg-center"
+          />
         </div>
 
       </div>

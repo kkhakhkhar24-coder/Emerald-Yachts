@@ -1,5 +1,6 @@
 import React from 'react';
 import FadeIn from './FadeIn';
+import MasterImage from './MasterImage';
 import { Check, Minus } from 'lucide-react';
 
 const ProsConsWithImage = ({ title, bestFor, notBestFor, bottomNote, prosTitle, consTitle, image }) => {
@@ -17,7 +18,7 @@ const ProsConsWithImage = ({ title, bestFor, notBestFor, bottomNote, prosTitle, 
           
           {image && (
             <FadeIn className="lg:col-span-5 h-full min-h-[500px] hidden lg:block rounded-3xl overflow-hidden relative shadow-xl">
-              <img src={image} alt="Pros and Cons visual" className="absolute inset-0 w-full h-full object-cover" />
+              <MasterImage src={image} alt="Pros and Cons visual" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-navy-950/10"></div>
             </FadeIn>
           )}

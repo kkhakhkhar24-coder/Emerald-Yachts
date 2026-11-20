@@ -23,18 +23,13 @@ const ScenicGallery = ({ title, subtitle, items }) => {
             <FadeIn key={idx} delay={idx * 0.1} className={isLastOddItem ? 'md:col-span-2' : ''}>
               <div className="relative group rounded-2xl overflow-hidden shadow-md cursor-default aspect-[4/3] lg:aspect-video flex items-end">
                 {/* Background Image */}
-                {item.image ? (
-                  <MasterImage 
-                    src={item.image} 
-                    alt={item.title} 
-                    asBackground={true}
-                    className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat transition-transform duration-1000 group-hover:scale-110" 
-                  />
-                ) : (
-                  <div className="absolute inset-0 bg-gradient-to-br from-navy-900 to-navy-950 border border-dashed border-white/20 flex items-center justify-center">
-                    <span className="text-white/40 text-[10px] font-bold tracking-[0.2em] uppercase">IMAGE PLACEHOLDER</span>
-                  </div>
-                )}
+                <MasterImage 
+                  src={item.image} 
+                  alt={item.title} 
+                  asBackground={true}
+                  placeholderLabel={item.title}
+                  className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat transition-transform duration-1000 group-hover:scale-110" 
+                />
                 
                 {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-950/95 via-navy-950/40 to-transparent transition-opacity duration-500 group-hover:from-navy-950"></div>

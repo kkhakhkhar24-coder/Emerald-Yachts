@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import FadeIn from './FadeIn';
+import CrawlablePanels from './CrawlablePanels';
 
 const SailingVesselSpecsShowcase = ({ title, subtitle, brands }) => {
   const [activeTab, setActiveTab] = useState(0);
@@ -115,6 +116,7 @@ const SailingVesselSpecsShowcase = ({ title, subtitle, brands }) => {
         </FadeIn>
 
       </div>
+      <CrawlablePanels items={brands} activeIndex={activeTab} />
     </section>
   );
 };

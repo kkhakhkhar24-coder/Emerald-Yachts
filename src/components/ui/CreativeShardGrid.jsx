@@ -83,7 +83,7 @@ const CreativeShardGrid = ({ title, subtitle, items }) => {
                     {/* Header: Number & Icon */}
                     <div className="flex justify-between items-start mb-8">
                       <span className="font-display text-6xl text-white/5 font-bold group-hover:text-ts-gold/20 transition-colors duration-500 -ml-2">
-                        0{idx + 1}
+                        {(idx + 1).toString().padStart(2, '0')}
                       </span>
                       <div className="w-12 h-12 rounded-lg bg-navy-900 border border-white/10 flex items-center justify-center shadow-lg group-hover:border-ts-gold/50 transition-colors duration-300 transform group-hover:scale-110 group-hover:rotate-6">
                         <Icon className="w-5 h-5 text-ts-gold" />

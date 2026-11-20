@@ -1,7 +1,7 @@
 import React from 'react';
 import FadeIn from './FadeIn';
 
-const ExplorerHero = ({ title, subtitle, description, backgroundImage }) => {
+const ExplorerHero = ({ title, subtitle, description, backgroundImage, imageAlt = "Seven Seas Explorer" }) => {
   return (
     <section className="relative w-full min-h-[90vh] flex items-center bg-navy-950 text-white pt-32 pb-20 px-6 lg:px-12 overflow-hidden">
       {/* Background Image with elegant overlay */}
@@ -9,7 +9,7 @@ const ExplorerHero = ({ title, subtitle, description, backgroundImage }) => {
         {backgroundImage && (
           <img
             src={backgroundImage}
-            alt="Seven Seas Explorer"
+            alt={imageAlt}
             className="w-full h-full object-cover object-center scale-105 filter brightness-[0.7] contrast-[1.05]"
           />
         )}

@@ -17,7 +17,7 @@ const ItineraryCards = ({ title, items }) => {
           </h2>
         </FadeIn>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className={`grid grid-cols-1 md:grid-cols-2 ${items.length === 3 ? 'lg:grid-cols-3' : ''} gap-8`}>
           {items.map((item, idx) => (
             <FadeIn key={idx} delay={idx * 0.1}>
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-100 flex flex-col h-full group hover:shadow-xl transition-shadow duration-300">

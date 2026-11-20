@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const FooterCTA = ({ data }) => {
   if (!data) return null;
@@ -15,9 +16,12 @@ const FooterCTA = ({ data }) => {
           {data?.description}
         </p>
         
-        <button className="bg-white text-navy-950 font-sans font-medium uppercase tracking-wider text-sm px-8 py-4 rounded hover:bg-ice-50 transition-colors mb-16">
-          {data?.buttonText}
-        </button>
+        <Link
+          to={data?.buttonLink || '/contact'}
+          className="inline-block bg-white text-navy-950 font-sans font-medium uppercase tracking-wider text-sm px-8 py-4 rounded hover:bg-ice-50 transition-colors mb-16"
+        >
+          {data?.buttonText || 'Speak with an Advisor'}
+        </Link>
 
         <div className="border-t border-slate-700 pt-12">
           <h5 className="font-sans text-sm font-bold text-white mb-6 uppercase tracking-wider">{data?.specialtiesTitle}</h5>

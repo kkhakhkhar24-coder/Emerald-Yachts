@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import FadeIn from './FadeIn';
 import MasterImage from './MasterImage';
 import { Check } from 'lucide-react';
+import CrawlablePanels from './CrawlablePanels';
 
 const InteractiveSuiteDeckViewer = ({ title, subtitle, suites }) => {
   const [activeSuiteIndex, setActiveSuiteIndex] = useState(0);
@@ -124,6 +125,7 @@ const InteractiveSuiteDeckViewer = ({ title, subtitle, suites }) => {
         </div>
 
       </div>
+      <CrawlablePanels items={suites} activeIndex={activeSuiteIndex} />
     </section>
   );
 };

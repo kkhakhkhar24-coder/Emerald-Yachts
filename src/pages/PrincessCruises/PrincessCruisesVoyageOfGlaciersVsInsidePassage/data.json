@@ -1,0 +1,528 @@
+{
+  "seo": {
+    "title": "Princess Alaska: Voyage of the Glaciers vs. Inside Passage | Trips & Ships",
+    "metaTitle": "Princess Alaska: Voyage of the Glaciers vs. Inside Passage",
+    "metaDescription": "Compare Princess Cruises Alaska routes: 7-day one-way Voyage of the Glaciers vs. round-trip Inside Passage. Glacier viewing, ports, Denali land tours, and cost breakdown.",
+    "keywords": "Princess Alaska cruise routes, Voyage of the Glaciers vs Inside Passage, Glacier Bay National Park, Princess Alaska cruisetour, Princess Whittier to Vancouver, Princess Seattle Alaska cruise",
+    "canonicalUrl": "https://www.tripsandships.com/princess-cruises/voyage-of-the-glaciers-vs-inside-passage",
+    "ogTitle": "Princess Alaska: Voyage of the Glaciers vs. Inside Passage",
+    "ogDescription": "Deciding between Voyage of the Glaciers and Inside Passage? Discover the key differences in glacier viewing, ports, departure cities, and Denali extensions."
+  },
+  "hero": {
+    "badge": "PRINCESS ALASKA ROUTE COMPARISON",
+    "title": "Princess Alaska: Voyage of the Glaciers vs. Inside Passage",
+    "subtitle": "Comparing routes, ports, glacier viewing, departure logistics, and land tour connections to choose your ideal Alaska cruise.",
+    "ctaLabel": "Compare Alaska Itineraries",
+    "ctaUrl": "#comparison-table",
+    "secondaryCtaLabel": "Speak with an Alaska Expert",
+    "secondaryCtaUrl": "/contact"
+  },
+  "introSection": {
+    "heading": "Two Distinct Approaches to Exploring the Great Land",
+    "p1": "Choosing an Alaska cruise is not just about selecting a ship or departure date. The route determines how much of the coastline you explore, which glaciers you may see, where you embark and disembark, and whether you can easily add a land vacation to Denali.",
+    "p2": "Princess Cruises offers two major ways to experience Alaska: the round-trip Inside Passage and the one-way Voyage of the Glaciers. Both offer spectacular scenery and opportunities to visit historic Alaskan ports, but they provide different styles of travel.",
+    "p3": "The Inside Passage is ideal for travelers who prefer a convenient round-trip sailing through coastal waterways. Voyage of the Glaciers travels farther into the Gulf of Alaska, connects Vancouver with Whittier and offers two dedicated glacier-viewing experiences on every itinerary. This guide compares the routes, ports, glaciers, departure arrangements and overall experience to help you decide which Princess Alaska cruise is right for you."
+  },
+  "atAGlanceTable": {
+    "title": "Voyage of the Glaciers vs. Inside Passage: At a Glance",
+    "subtitle": "A side-by-side technical comparison of Princess Cruises' two premier Alaska route architectures.",
+    "headers": ["Feature", "Voyage of the Glaciers", "Inside Passage"],
+    "rows": [
+      ["Route style", "One-way", "Usually round-trip"],
+      ["Typical cruise length", "7 days", "Commonly 7 days, with longer options"],
+      ["Main departure ports", "Vancouver and Whittier", "Seattle, Vancouver and selected other ports"],
+      ["Glacier viewing", "Two dedicated glacier-viewing experiences", "Depends on itinerary; may include Glacier Bay or other scenic glacier areas"],
+      ["Coastal ports", "Commonly Juneau, Ketchikan and Skagway", "Often Juneau, Ketchikan and Skagway, with other ports on selected routes"],
+      ["Gulf of Alaska", "Yes", "Generally not the main route"],
+      ["Land-tour connection", "Convenient access to Denali and Alaska's interior", "Possible, but requires additional travel arrangements"],
+      ["Best for", "Glacier-focused travel and land extensions", "Round-trip convenience and coastal exploration"]
+    ],
+    "footnote": "The exact ports, glacier locations and ship assignments vary by sailing. Always check the itinerary for your selected departure date."
+  },
+  "voyageOfTheGlaciersShowcase": {
+    "title": "What Is the Princess Voyage of the Glaciers?",
+    "subtitle": "Princess Cruises' signature one-way 7-day sailing connecting Vancouver with Whittier and Prince William Sound.",
+    "inclusions": [
+      {
+        "title": "Signature One-Way Route",
+        "description": "A 7-day one-way voyage between Vancouver, British Columbia, and Whittier, Alaska (near Anchorage). The route crosses the Gulf of Alaska and Prince William Sound, allowing travelers to experience both southeastern and south-central Alaska."
+      },
+      {
+        "title": "Two Dedicated Glacier Experiences",
+        "description": "Every standard Voyage of the Glaciers sailing features two distinct glacier-viewing days: a full day cruising protected Glacier Bay National Park with park rangers onboard, plus either massive Hubbard Glacier or the cascading ice walls of College Fjord."
+      },
+      {
+        "title": "Historic Coastal Frontier Ports",
+        "description": "Visits top coastal communities including Ketchikan (salmon fishing and totem heritage), Juneau (Alaska's capital and Mendenhall Glacier), and Skagway (historic Gold Rush gateway and White Pass rail)."
+      },
+      {
+        "title": "Direct Denali Cruisetour Gateway",
+        "description": "Whittier connects seamlessly to Princess's exclusive Direct-to-the-Wilderness rail cars and wilderness lodges, making this the natural route for guests adding an interior land extension to Denali National Park."
+      }
+    ],
+    "summaryPoints": [
+      "Two dedicated glacier-viewing experiences on every standard sailing",
+      "Sails further north into the Gulf of Alaska and Prince William Sound",
+      "One-way convenience for seamless Denali and Fairbanks land tours",
+      "Includes prime ports of Ketchikan, Juneau, and Skagway",
+      "Combines coastal beauty with deeper Great Land exploration"
+    ]
+  },
+  "insidePassageShowcase": {
+    "title": "What Is the Princess Inside Passage?",
+    "subtitle": "A convenient round-trip coastal voyage through protected channels, fjords, and historic Gold Rush towns.",
+    "inclusions": [
+      {
+        "title": "Round-Trip Travel Convenience",
+        "description": "Embark and disembark in the same homeport—primarily Seattle, Washington, or Vancouver, B.C., with select longer voyages from San Francisco and Los Angeles. Simplifies round-trip flights, baggage logistics, and hotel stays."
+      },
+      {
+        "title": "Sheltered Island & Fjord Waterways",
+        "description": "Sails through a vast coastal network of tranquil channels, rainforest islands, and mountain-framed passages along southeastern Alaska and British Columbia, offering calm waters and forested shoreline vistas."
+      },
+      {
+        "title": "Iconic Alaskan Communities",
+        "description": "Calls at top ports such as Juneau, Ketchikan, and Skagway, with select sailings adding unique coastal gems like Sitka (Russian-American cultural heritage), Icy Strait Point, and scenic Haines."
+      },
+      {
+        "title": "Glacier Viewing Options",
+        "description": "Selected Inside Passage itineraries feature scenic cruising in Glacier Bay National Park, while others explore the granite fjords of Endicott Arm and Dawes Glacier or Tracy Arm."
+      }
+    ],
+    "summaryPoints": [
+      "Round-trip departures simplify flights and eliminate one-way airfare surcharges",
+      "Calm, sheltered cruising through protected coastal channels and rainforest fjords",
+      "Rich port days exploring Juneau, Ketchikan, Skagway, and Sitka",
+      "Flexible sailing durations ranging from 7-day getaways to 14-day extended voyages",
+      "Ideal introduction for first-time visitors seeking a relaxing, uncomplicated vacation"
+    ]
+  },
+  "glacierViewingCompare": {
+    "title": "Glacier Viewing: Which Route Offers More?",
+    "prosTitle": "Voyage of the Glaciers (Two Guaranteed Glaciers)",
+    "consTitle": "Inside Passage (Itinerary-Dependent Glaciers)",
+    "bestFor": [
+      "Every standard sailing includes two dedicated glacier-viewing days",
+      "Glacier Bay National Park with National Park Service rangers onboard providing live narration",
+      "Hubbard Glacier (on southbound Whittier-to-Vancouver sailings) featuring a 400-foot ice wall and dramatic calving",
+      "College Fjord (on northbound Vancouver-to-Whittier sailings) featuring five tidewater and dozens of valley glaciers",
+      "Deep cruising into Prince William Sound and the northern Gulf of Alaska"
+    ],
+    "notBestFor": [
+      "Scenic glacier viewing depends on the specific departure date and itinerary selected",
+      "Select sailings include Glacier Bay National Park, but permits are strictly limited",
+      "Alternative itineraries feature Endicott Arm and Dawes Glacier or Tracy Arm",
+      "Generally provides one primary scenic glacier-cruising day rather than two",
+      "Vessel routing stays along southeastern coastal passages rather than northern glacial fjords"
+    ]
+  },
+  "itineraryComparisonTable": {
+    "title": "Route & Itinerary Differences: Day-by-Day Comparison",
+    "subtitle": "Comparing a typical Northbound 7-day Voyage of the Glaciers against a 7-day Seattle Round-Trip Inside Passage sailing.",
+    "headers": ["Day", "Voyage of the Glaciers (Northbound)", "Inside Passage (Round-Trip Seattle)"],
+    "rows": [
+      ["Day 1", "Vancouver, British Columbia – Embarkation", "Seattle, Washington – Embarkation"],
+      ["Day 2", "At Sea – Scenic Inside Passage Cruising", "At Sea – Cruising the Pacific Coastline"],
+      ["Day 3", "Ketchikan – Historic Creek Street & Totem Parks", "Ketchikan – Saxman Native Village & Rainforests"],
+      ["Day 4", "Juneau – Mendenhall Glacier & Whale Watching", "Juneau – State Capitol & Mount Roberts Tramway"],
+      ["Day 5", "Skagway – White Pass & Yukon Route Railroad", "Skagway – Klondike Gold Rush Historic Park"],
+      ["Day 6", "Glacier Bay National Park – Full-Day Ranger Cruising", "Scenic Glacier Cruising (Glacier Bay or Endicott Arm)"],
+      ["Day 7", "College Fjord – Scenic Tidewater Glacier Cruising", "Victoria, British Columbia – Inner Harbour & Gardens"],
+      ["Day 8", "Whittier, Alaska – Disembarkation (Land Tour Connection)", "Seattle, Washington – Disembarkation"]
+    ],
+    "footnote": "Note: Port schedules, arrival times, and glacier experiences vary by departure date and direction. Southbound Voyage of the Glaciers sailings reverse this order and feature Hubbard Glacier instead of College Fjord."
+  },
+  "itineraryTimeline": {
+    "title": "Route & Itinerary Differences: Day-by-Day Comparison",
+    "subtitle": "Comparing a typical Northbound 7-day Voyage of the Glaciers against a 7-day Seattle Round-Trip Inside Passage sailing.",
+    "brand1Name": "Voyage of the Glaciers (Northbound)",
+    "brand2Name": "Inside Passage (Round-Trip Seattle)",
+    "footnote": "Note: Port schedules, arrival times, and glacier experiences vary by departure date and direction. Southbound Voyage of the Glaciers sailings reverse this order and feature Hubbard Glacier instead of College Fjord.",
+    "steps": [
+      {
+        "timeNode": "Day 1",
+        "brand1": {
+          "title": "Vancouver, British Columbia",
+          "description": "Embarkation and scenic evening sailaway past Stanley Park and beneath Lion's Gate Bridge into protected coastal waters."
+        },
+        "brand2": {
+          "title": "Seattle, Washington",
+          "description": "Embarkation from Pier 91 with sweeping views of the Seattle skyline and Puget Sound, sailing toward the open Pacific."
+        }
+      },
+      {
+        "timeNode": "Day 2",
+        "brand1": {
+          "title": "At Sea: Inside Passage",
+          "description": "Full day of tranquil scenic cruising through the sheltered channels and temperate rainforest islands of British Columbia's Inside Passage."
+        },
+        "brand2": {
+          "title": "At Sea: Pacific Coast",
+          "description": "Cruising northward along the Pacific coastline of British Columbia toward the protected waterways of southeastern Alaska."
+        }
+      },
+      {
+        "timeNode": "Day 3",
+        "brand1": {
+          "title": "Ketchikan, Alaska",
+          "description": "Historic Creek Street boardwalk over the water, Saxman Native Village totem parks, and temperate rainforest hiking trails."
+        },
+        "brand2": {
+          "title": "Ketchikan, Alaska",
+          "description": "Exploring the 'Salmon Capital of the World', Tongass Historical Museum, and coastal wildlife boat excursions."
+        }
+      },
+      {
+        "timeNode": "Day 4",
+        "brand1": {
+          "title": "Juneau, Alaska",
+          "description": "Alaska's mountain-framed capital, Mendenhall Glacier visitor center, whale watching in Auke Bay, and Mount Roberts Tramway."
+        },
+        "brand2": {
+          "title": "Juneau, Alaska",
+          "description": "Humpback whale watching excursions, glacier dog sledding by helicopter, and visiting the historic Red Dog Saloon."
+        }
+      },
+      {
+        "timeNode": "Day 5",
+        "brand1": {
+          "title": "Skagway, Alaska",
+          "description": "Gateway to the Klondike Gold Rush, historic frontier saloons, and the scenic narrow-gauge White Pass & Yukon Route Railroad."
+        },
+        "brand2": {
+          "title": "Skagway, Alaska",
+          "description": "Frontier wooden boardwalks, Klondike Gold Rush National Historical Park visitor center, and mountain summit rail excursions."
+        }
+      },
+      {
+        "timeNode": "Day 6",
+        "brand1": {
+          "title": "Glacier Bay National Park",
+          "description": "Full day of dedicated scenic cruising with National Park Service rangers providing live narration and spotting calving tidewater glaciers."
+        },
+        "brand2": {
+          "title": "Scenic Glacier Cruising",
+          "description": "Scenic glacier cruising in Glacier Bay National Park (on select departures) or the granite fjords of Endicott Arm and Dawes Glacier."
+        }
+      },
+      {
+        "timeNode": "Day 7",
+        "brand1": {
+          "title": "College Fjord",
+          "description": "Scenic cruising through Prince William Sound surrounded by five massive tidewater glaciers and towering snow-capped mountain walls."
+        },
+        "brand2": {
+          "title": "Victoria, British Columbia",
+          "description": "Evening Canadian port call to tour the world-famous floral displays at Butchart Gardens and stroll Victoria's historic Inner Harbour."
+        }
+      },
+      {
+        "timeNode": "Day 8",
+        "brand1": {
+          "title": "Whittier, Alaska (Disembarkation)",
+          "description": "Disembarkation and seamless connection to Princess Direct-to-the-Wilderness railcars bound for Anchorage and Denali Princess Wilderness Lodge."
+        },
+        "brand2": {
+          "title": "Seattle, Washington (Disembarkation)",
+          "description": "Disembarkation at Pier 91 with simple same-day domestic return flights from Seattle-Tacoma International Airport (SEA)."
+        }
+      }
+    ]
+  },
+  "itineraryCards": {
+    "title": "Route & Itinerary Differences: Day-by-Day Comparison",
+    "subtitle": "Comparing a typical Northbound 7-day Voyage of the Glaciers against a 7-day Seattle Round-Trip Inside Passage sailing.",
+    "footnote": "Planning note: Port arrival times, sea days, and glacier experiences vary by departure date and direction. Southbound Voyage of the Glaciers sailings reverse this order and feature Hubbard Glacier instead of College Fjord.",
+    "items": [
+      {
+        "title": "Voyage of the Glaciers (Northbound)",
+        "duration": "7 Days · One-Way (Vancouver to Whittier)",
+        "description": "Travels one-way between Vancouver and Whittier across the northern Gulf of Alaska and Prince William Sound. Features two guaranteed dedicated glacier experiences and seamless direct connection to Denali cruisetours.",
+        "highlights": [
+          "Day 1: Vancouver, B.C. (Embarkation)",
+          "Day 2: Inside Passage Scenic Cruising",
+          "Day 3: Ketchikan (Creek St & Totems)",
+          "Day 4: Juneau (Mendenhall Glacier)",
+          "Day 5: Skagway (White Pass Rail)",
+          "Day 6: Glacier Bay National Park",
+          "Day 7: College Fjord (Tidewater Glaciers)",
+          "Day 8: Whittier, AK (Denali Rail Connection)"
+        ]
+      },
+      {
+        "title": "Inside Passage (Round-Trip Seattle)",
+        "duration": "7 Days · Round-Trip (Seattle to Seattle)",
+        "description": "A convenient round-trip sailing through the tranquil, sheltered channels and temperate rainforest fjords of southeastern Alaska. Simplifies flight arrangements by returning to the exact same homeport.",
+        "highlights": [
+          "Day 1: Seattle, Washington (Embarkation)",
+          "Day 2: Pacific Coast Cruising",
+          "Day 3: Ketchikan (Rainforest & Wildlife)",
+          "Day 4: Juneau (Whale Watching & Tram)",
+          "Day 5: Skagway (Gold Rush Historic Park)",
+          "Day 6: Scenic Glacier Cruising",
+          "Day 7: Victoria, B.C. (Butchart Gardens)",
+          "Day 8: Seattle, Washington (Disembarkation)"
+        ]
+      }
+    ]
+  },
+  "departurePortsShowcase": {
+    "title": "Departure Ports: Vancouver, Whittier or Seattle?",
+    "subtitle": "Your embarkation and disembarkation ports shape the overall logistics, flight bookings, and pre-cruise hotel stays.",
+    "pillars": [
+      {
+        "icon": "ship",
+        "title": "Vancouver, British Columbia",
+        "description": "The primary starting or ending point for Voyage of the Glaciers and select Inside Passage sailings. Offers stunning harbor sailaways past Stanley Park and Lion's Gate Bridge, plus premier pre-cruise international dining and Canadian cultural attractions."
+      },
+      {
+        "icon": "compass",
+        "title": "Whittier & Anchorage, Alaska",
+        "description": "The Alaska terminal for Voyage of the Glaciers. Nestled in Prince William Sound, Whittier connects by rail and scenic highway through the Anton Anderson Memorial Tunnel directly to Anchorage and interior Princess Wilderness Lodges."
+      },
+      {
+        "icon": "star",
+        "title": "Seattle, Washington",
+        "description": "The premier U.S. homeport for round-trip Inside Passage cruises. Features non-stop domestic flights, simplified flight bookings with no one-way airfare complications, and popular attractions including Pike Place Market and the Space Needle."
+      },
+      {
+        "icon": "window",
+        "title": "San Francisco & Los Angeles",
+        "description": "Select extended Princess Alaska voyages depart round-trip from California ports. Ranging from 10 to 16 nights, these sailings offer extra sea days along the Pacific Coast for travelers who prefer cruising closer to home without domestic flights."
+      }
+    ]
+  },
+  "denaliLandTourGuide": {
+    "title": "Which Route Is Better for Denali and Alaska Land Tours?",
+    "intro": [
+      "If visiting Denali National Park is a priority, Voyage of the Glaciers is substantially more convenient. Its northern terminus at Whittier connects directly into Princess Cruises' integrated land infrastructure.",
+      "Our recommendation: If Denali is an essential part of your Great Land dream vacation, compare Voyage of the Glaciers with a Princess Cruisetour before committing to a round-trip Inside Passage itinerary."
+    ],
+    "items": [
+      {
+        "title": "Voyage of the Glaciers with a Princess Cruisetour",
+        "paragraphs": [
+          "Princess Alaska Cruisetours combine the 7-day Voyage of the Glaciers sailing with a 3- to 10-night land vacation. Guests step off the ship in Whittier directly onto glass-domed railcars with Princess's Direct-to-the-Wilderness rail service.",
+          "Packages include guaranteed accommodations at Princess Wilderness Lodges, excursions into Denali National Park (Natural History Tour or Tundra Wilderness Tour), and optional extensions to Fairbanks, Copper River, or the Kenai Peninsula. Luggage travels seamlessly ahead to your lodge room."
+        ],
+        "highlight": {
+          "title": "Seamless Coordination",
+          "text": "Direct-to-the-Wilderness dome train connections from Whittier dock straight to Denali lodges."
+        }
+      },
+      {
+        "title": "Inside Passage with Independent Land Travel",
+        "paragraphs": [
+          "An Inside Passage cruise can technically be combined with an interior land trip, but because the cruise starts and ends in Seattle or Vancouver, guests must arrange separate regional flights into Anchorage or Fairbanks before or after the voyage.",
+          "This approach requires booking independent hotels, car rentals, or Alaska Railroad tickets, and coordinating luggage transfers across separate travel segments without cruise-line transfers or tour director escort."
+        ],
+        "highlight": {
+          "title": "Logistical Complexity",
+          "text": "Requires separate domestic flights to Anchorage and independent hotel and rail bookings."
+        }
+      }
+    ]
+  },
+  "travelerMatchTabs": {
+    "title": "Which Princess Alaska Cruise Is Better for You?",
+    "subtitle": "Matching route logistics, pace, and touring highlights to your unique travel style.",
+    "categories": [
+      {
+        "name": "First-Time Alaska Visitors",
+        "mainBrandStrengths": [
+          "Two dedicated glacier-viewing days guaranteed on every standard sailing (Glacier Bay + Hubbard or College Fjord)",
+          "Deep cruising into the northern Gulf of Alaska and Prince William Sound",
+          "Seamless direct connection to Denali National Park & Princess Wilderness Lodges via Whittier",
+          "Visits iconic Gold Rush coastal ports: Ketchikan, Juneau, and Skagway"
+        ],
+        "competitorStrengths": [
+          "Convenient round-trip departure returning to the exact same homeport (Seattle or Vancouver)",
+          "Simplified round-trip domestic flights without multi-city or open-jaw ticketing",
+          "Sheltered coastal cruising through calm archipelago channels and rainforest fjords",
+          "Straightforward vacation planning without coordinating separate arrival and departure hotels"
+        ],
+        "bestForMainBrand": [
+          "First-time visitors who prioritize maximum glacier viewing and want the option to explore Denali."
+        ],
+        "bestForCompetitor": [
+          "First-time visitors who want a classic, uncomplicated 7-day cruise with simple logistics."
+        ]
+      },
+      {
+        "name": "Families with Children",
+        "mainBrandStrengths": [
+          "Dynamic two-week adventure riding glass-domed railcars through rugged mountain passes",
+          "Denali tundra wildlife excursions spotting grizzly bears, moose, and caribou",
+          "Witnessing massive tidewater glacier calving up close in Glacier Bay National Park",
+          "Active wilderness exploration: river rafting, gold panning, and hiking"
+        ],
+        "competitorStrengths": [
+          "Single-ship basecamp without unpacking and repacking across interior hotel rooms",
+          "Calmer waters and sheltered passages ideal for children sensitive to sea motion",
+          "Family-friendly port adventures: sled dog summer camps, totem parks, and lumberjack shows",
+          "Easier flight coordination into Seattle for multi-generational family groups"
+        ],
+        "bestForMainBrand": [
+          "Families with older kids and teens looking for an active, immersive Great Land vacation."
+        ],
+        "bestForCompetitor": [
+          "Families with younger children seeking a relaxed, seamless round-trip cruise."
+        ]
+      },
+      {
+        "name": "Couples & Photographers",
+        "mainBrandStrengths": [
+          "Unrivaled landscape and wildlife photography with two full dedicated glacier-viewing days",
+          "Spectacular 400-foot ice face of Hubbard Glacier and cascading amphitheater of College Fjord",
+          "Romantic evenings fireside at Princess Wilderness Lodges with panoramic mountain vistas",
+          "Direct access to Wrangell-St. Elias flightseeing, Kenai Fjords, and backcountry adventures"
+        ],
+        "competitorStrengths": [
+          "Relaxing, luxury-focused retreat centered on scenic coastal cruising and ship amenities",
+          "Private balcony viewing while gliding past tranquil rainforest islands and sheltered fjords",
+          "Charming evening call in Victoria, British Columbia, visiting Butchart Gardens and Inner Harbour",
+          "More continuous sea days to enjoy fine dining, Lotus Spa treatments, and MedallionClass service"
+        ],
+        "bestForMainBrand": [
+          "Photographers and couples seeking dramatic wilderness, tidewater glaciers, and mountain scenery."
+        ],
+        "bestForCompetitor": [
+          "Couples seeking a peaceful, stress-free luxury cruise vacation returning to Seattle."
+        ]
+      }
+    ]
+  },
+  "costComparisonTable": {
+    "title": "What About the Cost? Route Financial Breakdown",
+    "subtitle": "Evaluating total trip expenses beyond advertised cruise fares across both route architectures.",
+    "headers": ["Cost Consideration", "Voyage of the Glaciers", "Inside Passage"],
+    "rows": [
+      ["Cruise Fare", "Depends on ship, sailing date, and stateroom category", "Depends on ship, sailing date, and stateroom category"],
+      ["Flights & Airfare", "Requires multi-city (open-jaw) flights (e.g., fly into Vancouver, home from Anchorage)", "Allows standard round-trip flights into and out of one city (e.g., Seattle)"],
+      ["Airport / Port Transfers", "Includes Whittier-to-Anchorage motorcoach or train transfer", "Local port transfers within Seattle or Vancouver"],
+      ["Pre- & Post-Cruise Hotels", "Usually requires hotel nights in Vancouver and Anchorage/Fairbanks", "Simpler to arrange around one port city (1 night pre-cruise)"],
+      ["Land Tours / Denali", "Directly combinable with bundled Princess Cruisetours at packaged pricing", "Requires separate independent bookings if adding interior Alaska travel"],
+      ["Shore Excursions", "Glacier flightseeing, tidewater boat tours, and mountain excursions", "Coastal rainforest tours, whale watching, and Gold Rush rail journeys"]
+    ],
+    "footnote": "Planning tip: When comparing overall travel expenses, calculate the entire vacation cost—including multi-city flights, transfers, hotel nights, and excursions—rather than looking solely at the advertised cruise fare."
+  },
+  "howToChooseGuide": {
+    "title": "How to Choose: 8 Essential Decision Factors",
+    "subtitle": "Use these practical questions to determine the ideal Alaska route for your vacation style.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Do you prefer a round-trip cruise?",
+        "description": "If returning to the same city with simple round-trip flight arrangements is your highest priority, the Inside Passage from Seattle or Vancouver is your strongest choice.",
+        "tip": "Simplifies air travel and luggage handling."
+      },
+      {
+        "number": "02",
+        "title": "Are two glacier-viewing experiences important?",
+        "description": "Voyage of the Glaciers guarantees two dedicated glacier days—Glacier Bay National Park plus either Hubbard Glacier or College Fjord—on every standard sailing.",
+        "tip": "Guaranteed dual glacier days on every departure."
+      },
+      {
+        "number": "03",
+        "title": "Do you want to visit Denali National Park?",
+        "description": "If exploring the interior, staying at Princess Wilderness Lodges, and riding dome trains is part of your dream trip, select Voyage of the Glaciers with a Cruisetour.",
+        "tip": "Seamless Direct-to-the-Wilderness rail connections."
+      },
+      {
+        "number": "04",
+        "title": "Which Alaskan ports matter most?",
+        "description": "Both routes visit Ketchikan, Juneau, and Skagway, but Inside Passage sailings frequently add Sitka, Icy Strait Point, Haines, or Victoria, British Columbia.",
+        "tip": "Check the exact port duration and arrival hours."
+      },
+      {
+        "number": "05",
+        "title": "How much total vacation time do you have?",
+        "description": "A 7-day Inside Passage cruise fits neatly into a standard one-week vacation. A Voyage of the Glaciers cruisetour requires 10 to 17 days for a complete land and sea journey.",
+        "tip": "Add 3 to 7 days for meaningful Denali touring."
+      },
+      {
+        "number": "06",
+        "title": "Where do you prefer to fly?",
+        "description": "Compare flight schedules and multi-city fares between Seattle (round-trip) versus Vancouver and Anchorage (open-jaw) before locking in your reservation.",
+        "tip": "Check Princess EZair for competitive open-jaw rates."
+      },
+      {
+        "number": "07",
+        "title": "Which Princess ship appeals to you?",
+        "description": "Compare onboard amenities, stateroom categories, and ship classes (such as Royal Class vs. Grand Class) deployed on each specific route for your chosen season.",
+        "tip": "Pair your preferred ship class with your route choice."
+      },
+      {
+        "number": "08",
+        "title": "What is your total comprehensive budget?",
+        "description": "Factor in total cruise fares, airfare variance, pre-cruise hotels, transfers, optional land packages, and shore excursions across the entire vacation duration.",
+        "tip": "Evaluate full travel logistics, not just cabin prices."
+      }
+    ]
+  },
+  "finalVerdict": {
+    "title": "Final Verdict: Voyage of the Glaciers or Inside Passage?",
+    "description": "Neither route is automatically superior—they are engineered for different Alaska vacation goals. Choose Voyage of the Glaciers if glacier viewing, visiting Denali, and deep Great Land exploration are your priorities. Choose the Inside Passage if you value the effortless convenience of a round-trip sailing with classic coastal ports and straightforward flight logistics.",
+    "ctaLabel": "Plan Your Princess Alaska Cruise",
+    "ctaUrl": "/contact"
+  },
+  "angelaBio": {
+    "name": "Angela Hughes",
+    "title": "CEO, Trips & Ships Luxury Travel | Alaska Cruise Specialist",
+    "bio": "With more than 40 years of luxury travel industry expertise and visits to over 121 countries, Angela Hughes provides bespoke guidance for travelers exploring Alaska. She specializes in matching clients with the ideal Princess cruise route, ship class, stateroom, and Denali wilderness cruisetour extension.",
+    "quote": "Alaska's geography means the route you choose shapes your entire vacation experience. Whether you want the seamless relaxation of a Seattle round-trip or the majestic drama of sailing past Hubbard Glacier into Prince William Sound and Denali, we ensure every detail of your journey is flawlessly orchestrated.",
+    "quoteSubtitle": "Certified Princess Cruises Commodore & Luxury Travel Advisor",
+    "ctaText": "Work with Angela Hughes",
+    "ctaLink": "/contact"
+  },
+  "faqs": [
+    {
+      "question": "What is the main difference between Voyage of the Glaciers and the Inside Passage?",
+      "answer": "Voyage of the Glaciers is a one-way 7-day sailing between Vancouver and Whittier with two dedicated glacier-viewing experiences and direct connection to Denali land tours. Inside Passage cruises are generally round-trip (mostly from Seattle or Vancouver) and focus on coastal waterways and historic ports, with glacier experiences varying by itinerary."
+    },
+    {
+      "question": "Does Voyage of the Glaciers visit Glacier Bay?",
+      "answer": "Yes. Every standard Voyage of the Glaciers itinerary includes Glacier Bay National Park as one of its two dedicated glacier-viewing experiences, complete with National Park Service rangers providing onboard commentary."
+    },
+    {
+      "question": "Does the Inside Passage include Glacier Bay?",
+      "answer": "Some Inside Passage itineraries include Glacier Bay National Park, but not all. Because park entry permits are strictly regulated by the U.S. National Park Service, other Inside Passage sailings feature scenic cruising in Endicott Arm and Dawes Glacier or Tracy Arm instead. Always check the specific itinerary before booking."
+    },
+    {
+      "question": "Which route has more glacier viewing?",
+      "answer": "Voyage of the Glaciers offers more glacier viewing, guaranteeing two dedicated glacier experiences on every standard sailing (Glacier Bay plus either Hubbard Glacier or College Fjord). Inside Passage cruises typically offer one primary scenic glacier cruising day."
+    },
+    {
+      "question": "Is Voyage of the Glaciers a round-trip cruise?",
+      "answer": "No. The standard seven-day Voyage of the Glaciers itinerary is one-way between Vancouver, British Columbia, and Whittier, Alaska. However, Princess also offers a 14-day back-to-back option called the Voyage of the Glaciers Grand Adventure, which combines northbound and southbound sailings for a comprehensive round-trip experience."
+    },
+    {
+      "question": "Which glaciers can I see on Voyage of the Glaciers?",
+      "answer": "All standard itineraries include Glacier Bay National Park (Margerie Glacier, Grand Pacific Glacier) plus either massive Hubbard Glacier (on southbound Whittier-to-Vancouver sailings) or College Fjord's five tidewater glaciers (on northbound Vancouver-to-Whittier sailings)."
+    },
+    {
+      "question": "Which route is better for Denali National Park?",
+      "answer": "Voyage of the Glaciers is substantially better for Denali. Its northern terminus at Whittier connects directly to Princess Cruises' Direct-to-the-Wilderness rail cars, taking guests straight to Denali Princess Wilderness Lodge without intermediate bus transfers."
+    },
+    {
+      "question": "Which route is better for first-time Alaska visitors?",
+      "answer": "Both routes work well. Choose the Inside Passage if you want a straightforward, relaxing round-trip cruise with easy flight logistics into Seattle. Choose Voyage of the Glaciers if maximum glacier viewing and visiting Denali are top priorities for your first trip."
+    },
+    {
+      "question": "Do both routes visit Juneau, Ketchikan and Skagway?",
+      "answer": "Yes. Juneau, Ketchikan, and Skagway are signature ports of call included on almost all 7-day sailings for both Voyage of the Glaciers and the Inside Passage. Inside Passage sailings frequently add Sitka or Victoria, B.C."
+    },
+    {
+      "question": "Is a balcony worth it on either route?",
+      "answer": "A balcony stateroom is highly recommended on both Alaska routes. Having private outdoor space allows you to step outside at a moment's notice to photograph calving glaciers, marine wildlife, and mountain fjords without battling crowds on top viewing decks."
+    },
+    {
+      "question": "Can I combine the Inside Passage with a land tour?",
+      "answer": "Yes, but it is much less convenient. Because Inside Passage sailings start and end in Seattle or Vancouver, you would need to arrange separate flights between your cruise port and Anchorage or Fairbanks to reach Denali, whereas Voyage of the Glaciers connects directly via cruise-line rail."
+    },
+    {
+      "question": "How long are Princess Alaska cruises?",
+      "answer": "Both route styles commonly offer 7-day cruise itineraries. Princess also offers 10- to 14-day extended round-trip voyages from San Francisco and Los Angeles, as well as 10- to 17-night Cruisetours that combine the 7-day Voyage of the Glaciers with 3 to 10 nights on land."
+    }
+  ]
+}

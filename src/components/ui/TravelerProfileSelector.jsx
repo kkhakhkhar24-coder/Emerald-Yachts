@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import FadeIn from './FadeIn';
 import { Check, Minus } from 'lucide-react';
+import CrawlablePanels from './CrawlablePanels';
 
 const TravelerProfileSelector = ({ title, subtitle, profiles }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -23,8 +24,8 @@ const TravelerProfileSelector = ({ title, subtitle, profiles }) => {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
           {/* Left: Profile selector buttons */}
-          <div className="lg:col-span-4 h-full">
-            <div className="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 lg:p-8 flex flex-col gap-3 h-full">
+          <div className="lg:col-span-4 self-start">
+            <div className="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 lg:p-8 flex flex-col gap-3">
               {profiles.map((profile, idx) => (
                 <button
                   key={idx}
@@ -97,6 +98,7 @@ const TravelerProfileSelector = ({ title, subtitle, profiles }) => {
           </div>
         </div>
       </div>
+      <CrawlablePanels items={profiles} activeIndex={activeIndex} />
     </section>
   );
 };

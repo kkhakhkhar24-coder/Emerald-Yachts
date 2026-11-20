@@ -27,28 +27,32 @@ const getImageObserver = () => {
   return imageObserver;
 };
 
-const MasterImage = ({ 
-  src, 
-  alt = "Image", 
-  className = "", 
-  fallbackSrc = null, 
+const MAX_RETRIES = 2;
+
+const MasterImage = ({
+  src,
+  alt = "Image",
+  className = "",
+  fallbackSrc = null,
   placeholderLabel = "",
   asBackground = false,
   priority = false,
   children
 }) => {
-  const [error, setError] = useState(false);
+  const [retryCount, setRetryCount] = useState(0);
+  const [permanentError, setPermanentError] = useState(false);
   const [inView, setInView] = useState(priority);
   const ref = useRef(null);
 
-  // Reset error status if src prop changes
+  // Reset error/retry status if src prop changes
   useEffect(() => {
-    setError(false);
+    setRetryCount(0);
+    setPermanentError(false);
   }, [src]);
 
   useEffect(() => {
     if (priority || !asBackground) return;
-    
+
     const el = ref.current;
     if (!el) return;
 
@@ -56,7 +60,7 @@ const MasterImage = ({
     if (obs) {
       imageCallbacks.set(el, () => setInView(true));
       obs.observe(el);
-      
+
       return () => {
         imageCallbacks.delete(el);
         obs.unobserve(el);
@@ -67,14 +71,21 @@ const MasterImage = ({
   }, [priority, asBackground]);
 
   const handleError = () => {
-    if (!error) {
-      setError(true);
+    if (retryCount < MAX_RETRIES) {
+      // Retry with cache-busting — handles stale Vite HMR or transient load failures
+      setRetryCount(prev => prev + 1);
+    } else {
+      // All retries exhausted — show placeholder
+      console.warn('[MasterImage] Image failed after', MAX_RETRIES, 'retries:', src, '| label:', placeholderLabel || alt);
+      setPermanentError(true);
     }
   };
 
-  // If src is missing (null/undefined/empty) or image errored without valid fallback
-  const hasValidSrc = src && typeof src === 'string' && src.trim() !== '' && src !== 'null' && src !== 'undefined';
-  const shouldRenderPlaceholder = !hasValidSrc || (error && !fallbackSrc);
+  // Resolve src — handle both plain string URLs and module objects ({default: url})
+  const resolvedSrc = (typeof src === 'object' && src !== null && src.default) ? src.default : src;
+  const hasValidSrc = !!resolvedSrc && typeof resolvedSrc === 'string' && resolvedSrc.trim() !== '' && resolvedSrc !== 'null' && resolvedSrc !== 'undefined';
+
+  const shouldRenderPlaceholder = !hasValidSrc || (permanentError && !fallbackSrc);
 
   const displayLabel = placeholderLabel || alt || "IMAGE PLACEHOLDER";
 
@@ -82,17 +93,17 @@ const MasterImage = ({
     if (asBackground) {
       return (
         <div 
-          className={`bg-slate-800 flex flex-col items-center justify-center p-6 text-center border border-slate-700/60 relative overflow-hidden ${className}`}
+          className={`bg-navy-950 flex flex-col items-center justify-center p-6 text-center border border-navy-900 relative overflow-hidden ${className}`}
         >
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-navy-950/40 pointer-events-none" />
-          <div className="z-10 flex flex-col items-center justify-center gap-2 max-w-md mx-auto">
-            <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-blue-400 mb-1 shadow-sm">
-              <ImageIcon className="w-5 h-5" />
+          <div className="absolute inset-0 bg-gradient-to-br from-navy-900/40 via-navy-950 to-navy-950 pointer-events-none" />
+          <div className="z-10 flex flex-col items-center justify-center gap-2.5 max-w-md mx-auto">
+            <div className="w-12 h-12 rounded-full bg-navy-900 border border-[#c9a15c]/30 flex items-center justify-center text-[#c9a15c] mb-1 shadow-inner">
+              <ImageIcon className="w-5 h-5 text-[#c9a15c]" />
             </div>
-            <span className="text-xs font-mono tracking-widest text-blue-300 font-bold uppercase px-3 py-1 bg-navy-950/80 rounded border border-blue-500/30">
+            <span className="text-[10px] font-mono tracking-widest text-[#c9a15c] font-bold uppercase px-3 py-1 bg-navy-950 rounded-full border border-[#c9a15c]/40 shadow-sm">
               [ IMAGE PLACEHOLDER ]
             </span>
-            <span className="text-sm font-semibold text-slate-200 uppercase tracking-wide line-clamp-2">
+            <span className="font-display text-sm font-normal text-slate-200 uppercase tracking-wider line-clamp-2">
               {displayLabel}
             </span>
           </div>
@@ -103,17 +114,17 @@ const MasterImage = ({
 
     return (
       <div 
-        className={`bg-slate-800 flex flex-col items-center justify-center p-6 text-center border border-slate-700/60 relative overflow-hidden select-none ${className}`}
+        className={`bg-navy-950 flex flex-col items-center justify-center p-6 text-center border border-navy-900 relative overflow-hidden select-none ${className}`}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-navy-950/40 pointer-events-none" />
-        <div className="z-10 flex flex-col items-center justify-center gap-2 max-w-md mx-auto">
-          <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-blue-400 mb-1 shadow-sm">
-            <ImageIcon className="w-5 h-5" />
+        <div className="absolute inset-0 bg-gradient-to-br from-navy-900/40 via-navy-950 to-navy-950 pointer-events-none" />
+        <div className="z-10 flex flex-col items-center justify-center gap-2.5 max-w-md mx-auto">
+          <div className="w-12 h-12 rounded-full bg-navy-900 border border-[#c9a15c]/30 flex items-center justify-center text-[#c9a15c] mb-1 shadow-inner">
+            <ImageIcon className="w-5 h-5 text-[#c9a15c]" />
           </div>
-          <span className="text-[11px] font-mono tracking-widest text-blue-300 font-bold uppercase px-3 py-1 bg-navy-950/80 rounded border border-blue-500/30 shadow-sm">
+          <span className="text-[10px] font-mono tracking-widest text-[#c9a15c] font-bold uppercase px-3 py-1 bg-navy-950 rounded-full border border-[#c9a15c]/40 shadow-sm">
             [ IMAGE PLACEHOLDER ]
           </span>
-          <span className="text-sm font-semibold text-slate-200 uppercase tracking-wide line-clamp-2">
+          <span className="font-display text-sm font-normal text-slate-200 uppercase tracking-wider line-clamp-2">
             {displayLabel}
           </span>
         </div>
@@ -121,7 +132,13 @@ const MasterImage = ({
     );
   }
 
-  const finalSrc = error && fallbackSrc ? fallbackSrc : src;
+  // Build final src — use fallback if permanently errored, otherwise add cache-bust for retries
+  let finalSrc = permanentError && fallbackSrc ? fallbackSrc : resolvedSrc;
+  if (retryCount > 0 && !permanentError) {
+    // Append cache-busting param to force browser re-fetch on retry
+    const separator = finalSrc.includes('?') ? '&' : '?';
+    finalSrc = finalSrc + separator + 'retry=' + retryCount;
+  }
 
   if (asBackground) {
     return (
@@ -142,6 +159,7 @@ const MasterImage = ({
       className={className}
       onError={handleError}
       loading={priority ? "eager" : "lazy"}
+      // Lowercase on purpose: React 18 drops the camelCase `fetchPriority` prop from the DOM.
       fetchpriority={priority ? "high" : "auto"}
     />
   );

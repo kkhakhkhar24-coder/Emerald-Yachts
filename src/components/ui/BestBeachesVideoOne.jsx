@@ -1,5 +1,6 @@
 import React from 'react';
 import FadeIn from './FadeIn';
+import LiteYouTubeEmbed from '@/components/ui/LiteYouTubeEmbed';
 
 /**
  * BestBeachesVideoOne
@@ -25,14 +26,14 @@ const BestBeachesVideoOne = () => {
         {/* Video Aspect Ratio Wrapper */}
         <FadeIn delay={0.2} className="max-w-4xl mx-auto">
           <div className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl border border-slate-800">
-            <iframe
+            <LiteYouTubeEmbed
               className="absolute inset-0 w-full h-full"
               src="https://www.youtube.com/embed/iG9YKvYcvJg"
               title="Greece Island Beaches Video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-            ></iframe>
+            />
           </div>
         </FadeIn>
 

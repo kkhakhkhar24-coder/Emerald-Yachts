@@ -1,6 +1,14 @@
 import React from 'react';
 
-const ShipPhilosophyFaceoff = ({ data, regentImage, vikingImage }) => {
+const ShipPhilosophyFaceoff = ({
+  data,
+  regentImage,
+  vikingImage,
+  regentImagePos = "object-center",
+  vikingImagePos = "object-center",
+  regentImageAlt = "Regent Seven Seas Atmosphere",
+  vikingImageAlt = "Viking Ocean Cruises Atmosphere"
+}) => {
   if (!data) return null;
 
   return (
@@ -21,8 +29,9 @@ const ShipPhilosophyFaceoff = ({ data, regentImage, vikingImage }) => {
               <div className="relative h-64 md:h-80 w-full overflow-hidden">
                 <img 
                   src={regentImage} 
-                  alt="Regent Seven Seas Atmosphere" 
-                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                  alt={regentImageAlt} 
+                  style={{ objectPosition: regentImagePos?.replace('object-', '').replace('[', '').replace(']', '').replace('_', ' ') || 'center' }}
+                  className={`w-full h-full object-cover ${regentImagePos} transform group-hover:scale-110 transition-transform duration-700`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-950 to-transparent"></div>
               </div>
@@ -31,7 +40,7 @@ const ShipPhilosophyFaceoff = ({ data, regentImage, vikingImage }) => {
             {/* Content Section */}
             <div className={`relative z-10 flex flex-col h-full bg-navy-950 p-10 text-white ${regentImage ? '-mt-12' : ''}`}>
               <div className="inline-block bg-ts-gold text-navy-950 font-sans font-semibold px-4 py-1 rounded-full text-sm uppercase tracking-widest mb-6 w-max shadow-md">
-                Regent Seven Seas
+                {data.regent?.badge || "Regent Seven Seas"}
               </div>
               <h3 className="text-3xl lg:text-4xl font-display mb-6 group-hover:text-ts-gold transition-colors duration-300">
                 {data.regent.title}
@@ -57,8 +66,9 @@ const ShipPhilosophyFaceoff = ({ data, regentImage, vikingImage }) => {
               <div className="relative h-64 md:h-80 w-full overflow-hidden">
                 <img 
                   src={vikingImage} 
-                  alt="Viking Ocean Cruises Atmosphere" 
-                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                  alt={vikingImageAlt} 
+                  style={{ objectPosition: vikingImagePos?.replace('object-', '').replace('[', '').replace(']', '').replace('_', ' ') || 'center' }}
+                  className={`w-full h-full object-cover ${vikingImagePos} transform group-hover:scale-110 transition-transform duration-700`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ice-50 to-transparent"></div>
               </div>
@@ -67,7 +77,7 @@ const ShipPhilosophyFaceoff = ({ data, regentImage, vikingImage }) => {
             {/* Content Section */}
             <div className={`relative z-10 flex flex-col h-full bg-ice-50 p-10 text-navy-950 ${vikingImage ? '-mt-12' : ''}`}>
               <div className="inline-block bg-navy-900 text-white font-sans font-semibold px-4 py-1 rounded-full text-sm uppercase tracking-widest mb-6 w-max shadow-md">
-                Viking Ocean Cruises
+                {data.viking?.badge || "Viking Ocean Cruises"}
               </div>
               <h3 className="text-3xl lg:text-4xl font-display mb-6 group-hover:text-slate-600 transition-colors duration-300">
                 {data.viking.title}

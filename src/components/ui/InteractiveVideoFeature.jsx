@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import FadeIn from './FadeIn';
+import CrawlablePanels from './CrawlablePanels';
+import LiteYouTubeEmbed from '@/components/ui/LiteYouTubeEmbed';
 
 const InteractiveVideoFeature = ({ videos }) => {
   if (!videos || Object.keys(videos).length === 0) return null;
@@ -48,20 +50,21 @@ const InteractiveVideoFeature = ({ videos }) => {
           <div className="w-full lg:w-2/3">
             <FadeIn delay={0.2} key={activeVideo}>
               <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-navy-900">
-                <iframe
+                <LiteYouTubeEmbed
                   className="absolute inset-0 w-full h-full"
                   src={`https://www.youtube.com/embed/${videoList[activeVideo].youtubeId}?autoplay=0&rel=0`}
                   title={videoList[activeVideo].title}
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
-                ></iframe>
+                />
               </div>
             </FadeIn>
           </div>
 
         </div>
       </div>
+      <CrawlablePanels items={videoList} activeIndex={activeVideo} />
     </section>
   );
 };

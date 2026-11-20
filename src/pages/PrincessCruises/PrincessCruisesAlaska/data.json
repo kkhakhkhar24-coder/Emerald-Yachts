@@ -1,0 +1,435 @@
+{
+  "seo": {
+    "title": "Princess Alaska Cruises: Ships, Routes and How to Choose | Trips & Ships Luxury Travel",
+    "metaTitle": "Princess Alaska Cruises: Ships, Routes and How to Choose",
+    "metaDescription": "Explore Princess Alaska cruises and cruisetours. Compare Inside Passage, Voyage of the Glaciers, Denali wilderness lodges, ships, departure ports, glaciers, and expert booking advice.",
+    "keywords": "Princess Alaska cruises, Princess Alaska cruisetours, Voyage of the Glaciers, Inside Passage Alaska, Glacier Bay National Park cruise, Star Princess Alaska, Discovery Princess Alaska, Denali wilderness lodge rail",
+    "canonicalUrl": "https://www.tripsandships.com/princess-cruises/alaska",
+    "ogTitle": "Princess Alaska Cruises: Ships, Routes and How to Choose",
+    "ogDescription": "Plan your ultimate Alaska voyage with Princess Cruises. Compare round-trip Inside Passage vs. one-way Voyage of the Glaciers, Denali rail cruisetours, ships, and ports."
+  },
+  "hero": {
+    "badge": "Princess Alaska Voyage Guide",
+    "title": "Princess Alaska Cruises: Ships, Routes and How to Choose",
+    "subtitle": "A comprehensive guide to glacier viewing in Glacier Bay, one-way vs. round-trip routes, Denali wilderness cruisetours, ship deployments, and optimal booking seasons.",
+    "ctaLabel": "Plan with Angela Hughes",
+    "ctaUrl": "/contact",
+    "secondaryCtaLabel": "Explore Princess Fleet",
+    "secondaryCtaUrl": "/princess-cruises/ships"
+  },
+  "introSection": {
+    "heading": "Experiencing the Great Land with the Leader in Alaska Cruising",
+    "p1": "An Alaska cruise is about far more than reaching a collection of ports. It is an opportunity to watch glaciers move through dramatic fjords, explore historic coastal towns, look for whales and bald eagles, and experience some of North America's most remarkable wilderness.",
+    "p2": "Princess Cruises offers several ways to explore Alaska, from round-trip Inside Passage voyages to one-way glacier itineraries and extended land-and-sea cruisetours. The challenge is choosing the right combination of ship, route, departure port, and time ashore.",
+    "p3": "This guide explains the main Princess Alaska cruise options, the destinations and glaciers to look for, and how to decide which itinerary best suits your travel style."
+  },
+  "whyChoosePrincess": {
+    "title": "Why Choose Princess Cruises for Alaska?",
+    "subtitle": "Decades of heritage, premier glacier access, and seamless land-and-sea wilderness integration.",
+    "description": "Princess has operated in Alaska for decades and offers a broad range of cruise and land-tour combinations. Its itineraries are designed to connect coastal ports and glacier-viewing areas with opportunities to explore Alaska's interior.",
+    "features": [
+      {
+        "title": "Glacier Bay National Park",
+        "description": "Selected itineraries sail through this protected UNESCO World Heritage landscape, with National Park Service rangers boarding the ship to provide live educational commentary and wildlife spotting."
+      },
+      {
+        "title": "Multiple Glacier-Viewing Experiences",
+        "description": "Depending on the route, guests may experience Glacier Bay, the towering face of Hubbard Glacier, the dramatic peaks of College Fjord, or Endicott Arm and Dawes Glacier."
+      },
+      {
+        "title": "Inside Passage Itineraries",
+        "description": "Sail sheltered coastal waterways, island archipelagos, and emerald fjords along southeastern Alaska and British Columbia, visiting storied frontier towns."
+      },
+      {
+        "title": "Voyage of the Glaciers",
+        "description": "Princess' signature seven-day one-way route between Vancouver and Whittier (near Anchorage), incorporating two glacier-viewing days and coastal ports."
+      },
+      {
+        "title": "Alaska Cruisetours: Sea, Land & Rail",
+        "description": "Seamlessly combine a 7-day cruise with custom wilderness lodge stays, glass-domed railcars, and in-depth exploration of Denali National Park and Alaska's interior."
+      },
+      {
+        "title": "North to Alaska Programming",
+        "description": "Immerse yourself in regional culture with fresh Alaska seafood, sled dog puppies on board, talks by Iditarod champions, and Native cultural presentations."
+      }
+    ],
+    "takeaway": "The best itinerary is not necessarily the longest one. It is the one that gives you the right balance of glacier scenery, port time, land exploration, and time onboard."
+  },
+  "routesShowcase": {
+    "title": "Princess Alaska Cruise Routes Explained",
+    "subtitle": "Three distinct ways to experience Alaska: round-trip coastal journeys, one-way glacier passages, and comprehensive land-and-sea cruisetours.",
+    "routes": [
+      {
+        "title": "1. Inside Passage Cruises",
+        "badge": "ROUND-TRIP CONVENIENCE & COASTAL PORTS",
+        "description": "The Inside Passage is a network of coastal waterways, islands, and fjords along southeastern Alaska and western Canada. It is renowned for forested shorelines, mountain scenery, marine wildlife, and historic port communities. Princess offers round-trip Inside Passage itineraries from Seattle and Vancouver, with select extended voyages from San Francisco and Los Angeles.",
+        "ports": "Juneau, Ketchikan, Skagway, Sitka, Icy Strait Point, Haines, and Victoria (B.C.).",
+        "whoFor": "An Inside Passage cruise is a strong choice for first-time Alaska visitors, travelers who prefer the convenience of round-trip flights, and guests who want to explore several coastal communities without arranging separate hotel stays or one-way logistics."
+      },
+      {
+        "title": "2. Voyage of the Glaciers",
+        "badge": "MAXIMUM GLACIER TIME & LAND EXTENSIONS",
+        "description": "Voyage of the Glaciers is Princess' signature one-way Alaska cruise between Vancouver, British Columbia, and Whittier, near Anchorage. This seven-day route combines coastal frontier ports with major glacier-viewing days, visiting Glacier Bay National Park plus Hubbard Glacier or College Fjord.",
+        "ports": "Juneau, Skagway, Ketchikan, plus scenic cruising in Glacier Bay, College Fjord, or Hubbard Glacier.",
+        "whoFor": "Choose Voyage of the Glaciers if glacier viewing is your top priority or if you want a natural launching point to continue inland to Denali, Fairbanks, or the Kenai Peninsula after disembarking."
+      },
+      {
+        "title": "3. Alaska Cruisetours: Sea, Land and Rail",
+        "badge": "THE COMPLETE ALASKA EXPERIENCE",
+        "description": "A Princess Alaska cruisetour combines a Voyage of the Glaciers cruise with an overland wilderness journey. Guests stay at custom Princess wilderness lodges, ride exclusive glass-domed Direct-to-the-Wilderness railcars, and venture deep into Alaska's vast interior.",
+        "ports": "Denali National Park, Fairbanks, Kenai Fjords National Park, Wrangell-St. Elias National Park, and Klondike Gold Rush National Historical Park.",
+        "whoFor": "A cruisetour is especially appealing if you have 10 to 17 days, want to see Mount Denali and interior wildlife (grizzlies, moose, caribou), and prefer a fully coordinated land-and-sea vacation."
+      }
+    ]
+  },
+  "shipsDeployment": {
+    "title": "Which Princess Ships Sail in Alaska?",
+    "subtitle": "Published 2027 Alaska fleet deployment and choosing between larger newbuilds and traditional mid-sized vessels.",
+    "intro": "The Princess Alaska fleet changes by season. Ships are assigned to specific routes and departure ports, so the best way to choose is to compare the ship and itinerary together. Published season deployment reflects 8 ships across the Great Land.",
+    "table": {
+      "title": "Princess Cruises Published Alaska Fleet Deployment",
+      "headers": ["Ship", "Published Alaska Deployment & Itinerary Focus"],
+      "rows": [
+        ["Star Princess (Sphere Class)", "Round-trip Seattle Inside Passage"],
+        ["Royal Princess (Royal Class)", "Round-trip Seattle Inside Passage"],
+        ["Coral Princess (Coral Class)", "Voyage of the Glaciers and Inside Passage itineraries"],
+        ["Crown Princess (Grand Class)", "Voyage of the Glaciers and extended Inside Passage itineraries"],
+        ["Discovery Princess (Royal Class)", "Voyage of the Glaciers and Inside Passage itineraries"],
+        ["Emerald Princess (Grand Class)", "Vancouver and Los Angeles round-trip itineraries"],
+        ["Island Princess (Coral Class)", "Voyage of the Glaciers"],
+        ["Ruby Princess (Grand Class)", "Round-trip San Francisco Inside Passage"]
+      ]
+    },
+    "newerVsSmaller": {
+      "newer": {
+        "title": "Newer & Larger Ships (Sphere & Royal Class)",
+        "description": "Ships like Star Princess, Discovery Princess, and Royal Princess offer contemporary public spaces, dozens of dining venues, expansive top-deck retreats, and elevated entertainment. Ideal for multi-generational families and travelers wanting resort-style amenities."
+      },
+      "smaller": {
+        "title": "Smaller & Traditional Ships (Coral & Grand Class)",
+        "description": "Vessels like Coral Princess and Island Princess feature wrap-around promenade decks, a quieter classic maritime atmosphere, and proportions that allow intimate glacier approach angles."
+      }
+    },
+    "selectionTip": "Do not select a ship based on size alone. For Alaska, the route, glacier access, departure port, and time spent in each destination can be just as important as onboard amenities."
+  },
+  "glacierExperiences": {
+    "title": "The Four Major Glacier-Viewing Experiences",
+    "subtitle": "Glaciers are the defining moments of an Alaska cruise. Understanding the differences ensures you select the right route.",
+    "glaciers": [
+      {
+        "title": "Glacier Bay National Park",
+        "description": "A protected 3.3-million-acre UNESCO World Heritage sanctuary of tidewater glaciers, snow-capped peaks, and marine wildlife. Princess is an authorized concessioner; National Park Service rangers board the ship for the entire day to provide commentary, host junior ranger programs, and spot calving ice."
+      },
+      {
+        "title": "Hubbard Glacier",
+        "description": "North America's largest tidewater glacier, boasting an immense 6-mile-wide ice face that rises over 300 feet above the waterline. Surrounding mountain peaks and thundering ice calving create an unforgettable sensory experience on select routes."
+      },
+      {
+        "title": "College Fjord",
+        "description": "Tucked deep in Prince William Sound, College Fjord features an astonishing collection of tidewater and valley glaciers named after prestigious American universities. Featured on selected northbound Voyage of the Glaciers sailings."
+      },
+      {
+        "title": "Endicott Arm & Dawes Glacier",
+        "description": "A steep-walled, granite fjord flanked by roaring waterfalls, drifting blue icebergs, and temperate rainforest, terminating at the spectacular tidewater terminus of Dawes Glacier on select Inside Passage routes."
+      }
+    ],
+    "planningTip": "Planning tip: If a particular glacier (such as Glacier Bay) is on your must-see list, verify the exact sailing itinerary. A cruise marketed generically as an 'Alaska Glacier Voyage' does not necessarily include every glacier destination."
+  },
+  "departurePorts": {
+    "title": "Which Alaska Departure Port Should You Choose?",
+    "subtitle": "Your departure city dictates flight logistics, cruise duration, and whether you can add an overland land extension.",
+    "ports": [
+      {
+        "title": "Seattle, Washington",
+        "category": "Round-Trip Convenience",
+        "description": "The most convenient gateway for U.S. travelers seeking easy domestic flights and round-trip Inside Passage itineraries without needing separate arrival/departure flight bookings.",
+        "stats": [
+          { "label": "Format", "value": "7-Day Round-Trip" },
+          { "label": "Passport", "value": "WHTI Compliant" },
+          { "label": "Key Ships", "value": "Star & Royal Princess" }
+        ]
+      },
+      {
+        "title": "Vancouver, British Columbia",
+        "category": "Classic Inside Passage & Cruisetours",
+        "description": "Sails through the calm Canadian Inside Passage east of Vancouver Island. The primary southern turnaround port for one-way Voyage of the Glaciers sailings connecting to cruisetours.",
+        "stats": [
+          { "label": "Format", "value": "One-Way & Round-Trip" },
+          { "label": "Waterway", "value": "Sheltered Canadian waters" },
+          { "label": "Cruisetour Link", "value": "Southbound finish" }
+        ]
+      },
+      {
+        "title": "Whittier / Anchorage, Alaska",
+        "category": "Wilderness Land Extensions",
+        "description": "Located 60 miles south of Anchorage through the Anton Anderson Memorial Tunnel. The northern gateway for one-way sailings and the direct transfer hub for Princess wilderness railcars.",
+        "stats": [
+          { "label": "Format", "value": "One-Way Voyage" },
+          { "label": "Rail Link", "value": "Direct-to-Wilderness" },
+          { "label": "Key Feature", "value": "Gateway to Denali" }
+        ]
+      },
+      {
+        "title": "San Francisco & Los Angeles",
+        "category": "Extended West Coast Voyages",
+        "description": "10- to 16-day round-trip voyages allowing travelers to sail directly from California without flying to the Pacific Northwest, enjoying relaxing sea days along the Pacific coast.",
+        "stats": [
+          { "label": "Format", "value": "10- to 16-Night Round-Trip" },
+          { "label": "Flights", "value": "No domestic transfers needed" },
+          { "label": "Vibe", "value": "Leisurely Pacific sailing" }
+        ]
+      }
+    ]
+  },
+  "portsTable": {
+    "title": "Popular Alaska Ports and What to Experience",
+    "headers": ["Port of Call", "Signature Experiences & What Makes It Worth Visiting"],
+    "rows": [
+      ["Juneau", "Whale watching in Auke Bay, Mendenhall Glacier helicopter treks, Mount Roberts Tramway, and capital city history."],
+      ["Ketchikan", "Creek Street boardwalk, Saxman Native Totem Village, Misty Fjords flightseeing, and world-class salmon fishing heritage."],
+      ["Skagway", "White Pass & Yukon Route scenic railway, historic Klondike Gold Rush National Historical Park, and Red Onion Saloon."],
+      ["Sitka", "Baranof Castle Hill, Russian St. Michael's Cathedral, Fortress of the Bear, and sea otter marine wildlife quests."],
+      ["Icy Strait Point", "Native Tlingit cultural heritage, world's largest ZipRider, wilderness bear tracking, and humpback whale feeding grounds."],
+      ["Haines", "Dramatic Chilkat Bald Eagle Preserve, mountain hiking, glacier lake kayaking, and a quieter, less commercialized community."],
+      ["Victoria, British Columbia", "The world-famous Butchart Gardens, historic Empress Hotel tea, and charming evening harbor strolls on select routes."]
+    ]
+  },
+  "bestTimeToSail": {
+    "title": "When Is the Best Time to Take a Princess Alaska Cruise?",
+    "subtitle": "A month-by-month guide to weather, wildlife migrations, daylight hours, and scenic conditions.",
+    "seasons": [
+      {
+        "name": "May and Early June",
+        "description": "Crisp spring weather, lower rainfall statistics, snow-capped mountain peaks, and fewer crowds. Early-season sailings often offer excellent pricing, though some high-altitude excursions and mountain passes may have lingering snow."
+      },
+      {
+        "name": "June and July",
+        "description": "Peak summer season featuring up to 18–20 hours of daylight under the Midnight Sun, warmer temperatures (60s–70s°F), active bear viewing as salmon runs begin, and full access to all wilderness hiking and railway tours. Early booking is essential."
+      },
+      {
+        "name": "August",
+        "description": "Prime wildlife viewing with peak salmon spawning drawing hungry brown and black bears to rivers. Whales feed actively before southern migration. Rain increases in southeastern Alaska, so waterproof gear is critical."
+      },
+      {
+        "name": "September",
+        "description": "Vibrant autumn gold tundra foliage across Denali, freshly dusted snow on peaks ('termination dust'), potential northern lights (aurora borealis) viewings on clear dark nights, and late-season clearance shopping ashore."
+      }
+    ],
+    "takeaway": "There is no single best month for every traveler. The right time depends on your priorities: May for value and snowy peaks, June/July for daylight and warmth, August for bears and salmon, and September for fall colors and aurora potential."
+  },
+  "stateroomAdvice": {
+    "title": "Which Stateroom Should You Book for Alaska?",
+    "subtitle": "Matching your accommodation to how you plan to take in Alaska's dramatic glacier and mountain scenery.",
+    "categories": [
+      {
+        "title": "Balcony Stateroom (Highly Recommended)",
+        "description": "A private balcony offers an exclusive viewing perch for glacier viewing in robes, spotting marine mammals at sunrise, and watching coastal passages without battling crowds at public railings."
+      },
+      {
+        "title": "Mini-Suite",
+        "description": "Adds a spacious interior living room, sofa bed, and larger bathroom with a tub. Ideal for longer cruisetours or families needing extra space to unwind and dry outer layers."
+      },
+      {
+        "title": "Full Suite",
+        "description": "Offers expansive private verandas, complimentary laundry (invaluable after muddy shore excursions), exclusive dining perks, and concierge attention."
+      },
+      {
+        "title": "Interior or Oceanview",
+        "description": "A cost-effective option for active travelers who plan to spend every scenic hour on open top decks, the promenade, or participating in excursions."
+      }
+    ],
+    "observationTip": "While a private balcony is immensely rewarding, make sure to also spend time on the open upper decks and forward observation lounges during major glacier days for 360-degree panoramic perspectives."
+  },
+  "packingGuide": {
+    "title": "What Should You Pack for an Alaska Cruise?",
+    "subtitle": "Alaska's weather changes rapidly. Dressing in versatile layers is far more effective than packing a single heavy coat.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Waterproof Outerwear & Rain Jacket",
+        "description": "A breathable, waterproof (not just water-resistant) hooded jacket to shield against coastal drizzle and glacier mist.",
+        "tip": "Choose Gore-Tex or similar breathable shells."
+      },
+      {
+        "number": "02",
+        "title": "Insulating Mid-Layers",
+        "description": "Fleece pullovers, lightweight down or synthetic puffer jackets, and wool sweaters that trap heat without adding bulk.",
+        "tip": "Layers can be added or shed as temperatures swing 20°F in hours."
+      },
+      {
+        "number": "03",
+        "title": "Sturdy Walking Shoes or Trail Runners",
+        "description": "Waterproof footwear with aggressive traction for wet wooden boardwalks, gravel trails, and boat excursion decks.",
+        "tip": "Break in walking shoes well before your departure."
+      },
+      {
+        "number": "04",
+        "title": "Knit Hat, Scarf & Touchscreen Gloves",
+        "description": "Essential when standing near massive tidewater glaciers where cold catabatic winds sweep off the icefields.",
+        "tip": "Touchscreen gloves let you snap photos without freezing fingers."
+      },
+      {
+        "number": "05",
+        "title": "Quality Binoculars",
+        "description": "A good pair of 8x42 or 10x42 binoculars for spotting whales, sea otters, mountain goats, and bears on distant shores.",
+        "tip": "Pack one pair per traveler so nobody misses a breach."
+      },
+      {
+        "number": "06",
+        "title": "Polarized Sunglasses & Sunscreen",
+        "description": "The sun reflecting off massive glaciers and open water can cause intense glare even on overcast days.",
+        "tip": "Essential for glacier flightseeing and deck viewing."
+      },
+      {
+        "number": "07",
+        "title": "Casual Layered Clothing & Daypack",
+        "description": "Comfortable jeans, moisture-wicking base layers, and a lightweight daypack for holding extra layers during port tours.",
+        "tip": "Princess maintains an elegant casual onboard atmosphere."
+      },
+      {
+        "number": "08",
+        "title": "Specialist Excursion Gear",
+        "description": "Waterproof dry bags for kayak tours, camera telephoto lenses, and bug repellent for interior tundra hikes.",
+        "tip": "Review specific excursion gear notes in advance."
+      }
+    ]
+  },
+  "cruiseVsCruisetour": {
+    "title": "Princess Alaska Cruise vs. Alaska Cruisetour: Which Is Better?",
+    "subtitle": "Deciding between a 7-day coastal voyage and an extended 10- to 17-night land-and-sea wilderness journey.",
+    "table": {
+      "title": "Cruise Only vs. Cruise and Land Cruisetour Comparison",
+      "headers": ["Consideration", "Cruise Only", "Cruise and Land Cruisetour"],
+      "rows": [
+        ["Main focus", "Coastal Alaska and scenic marine waterways", "Coastal Alaska plus the interior wilderness"],
+        ["Denali National Park", "Not usually included (too far from coastal ports)", "Included on qualifying cruisetour itineraries"],
+        ["Wilderness lodge stays", "Not part of the cruise-only fare", "Included at custom Princess wilderness lodges"],
+        ["Scenic rail experience", "Optional short excursion in Skagway", "Included Direct-to-the-Wilderness railcars"],
+        ["Total trip length", "Typically 7 to 10 nights", "Usually 10 to 17 nights"],
+        ["Vacation planning", "Primarily cruise booking and port day excursions", "Coordinated cruise, land transit, rail, and lodging"],
+        ["Best suited for", "Travelers focused on glaciers, coastal towns, and relaxation", "Travelers wanting a comprehensive, bucket-list Alaska journey"]
+      ]
+    },
+    "decisionSummary": "If this is your first visit and your schedule allows 10–14+ days, a cruisetour delivers the complete Alaska experience. If you have one week or prefer a relaxing ocean voyage, a 7-day cruise provides world-class glacier viewing and coastal history."
+  },
+  "howToChooseGuide": {
+    "title": "How to Choose the Best Princess Alaska Cruise",
+    "subtitle": "8 strategic steps to ensure your ship, route, and cabin align with your dream vacation.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Choose Your Travel Style",
+        "description": "Decide between round-trip Inside Passage convenience, a one-way glacier passage, or an extended land-and-sea wilderness cruisetour.",
+        "tip": "Cruisetours can start with land first or cruise first."
+      },
+      {
+        "number": "02",
+        "title": "Compare Glacier Access",
+        "description": "Verify whether your sailing visits Glacier Bay National Park, Hubbard Glacier, College Fjord, or Endicott Arm.",
+        "tip": "Glacier Bay permits are limited; book early for these routes."
+      },
+      {
+        "number": "03",
+        "title": "Review Port Hours & Shore Excursions",
+        "description": "Check the actual hours in Juneau, Skagway, and Ketchikan to ensure ample time for major excursions like helicopter glacier treks or whale watching.",
+        "tip": "Longer port calls allow multi-activity combinations."
+      },
+      {
+        "number": "04",
+        "title": "Select the Right Departure Port",
+        "description": "Consider flight costs, hotel requirements, and whether round-trip Seattle or one-way Vancouver/Whittier fits your logistics.",
+        "tip": "Vancouver sailings offer calmer waters on Day 1."
+      },
+      {
+        "number": "05",
+        "title": "Choose Your Ship Profile",
+        "description": "Select between cutting-edge mega-ships (Star Princess) with Sanctuary retreats or intimate vessels (Coral Princess) with wrap-around decks.",
+        "tip": "Match ship amenities to multi-gen family vs. quiet couples travel."
+      },
+      {
+        "number": "06",
+        "title": "Invest in a Balcony Stateroom",
+        "description": "Evaluate whether private, quiet viewing of glaciers, fjords, and marine wildlife justifies the upgrade fare for your party.",
+        "tip": "Mini-Suites provide extra drying space for layered clothes."
+      },
+      {
+        "number": "07",
+        "title": "Allow Time for Interior Alaska",
+        "description": "If viewing Mount Denali, grizzly bears, or riding scenic dome trains is on your bucket list, allocate time for a multi-night land tour.",
+        "tip": "Two nights at Denali Princess Wilderness Lodge is recommended."
+      },
+      {
+        "number": "08",
+        "title": "Calculate the Complete Trip Investment",
+        "description": "Factor in airfare, pre-cruise hotels, gratuities, shore excursions, and Princess Plus or Premier packages when setting your budget.",
+        "tip": "Angela Hughes can identify package promotions and stateroom credits."
+      }
+    ]
+  },
+  "angelaBio": {
+    "name": "Angela Hughes",
+    "title": "CEO, Trips & Ships Luxury Travel | Certified Alaska Cruise Specialist",
+    "bio": "With more than 40 years of elite travel industry leadership and personal journeys across Alaska's coastal waterways and interior wilderness, Angela Hughes is a trusted authority on Great Land exploration. Having sailed on every class of Princess ship and inspected Princess Wilderness Lodges firsthand, Angela tailors Alaska itineraries that balance dramatic glacier encounters with seamless luxury.",
+    "quote": "Alaska is a destination that touches your soul, but the difference between a good Alaska trip and an extraordinary one comes down to route selection, glacier permits, and land planning. Whether it's watching tidewater ice thunder into Glacier Bay or gazing at Denali from a glass-domed train, we make sure every detail of your Princess voyage is unforgettable.",
+    "quoteSubtitle": "Personalized Alaska cruise and cruisetour advisory backed by four decades of travel expertise.",
+    "ctaText": "Plan with Angela Hughes",
+    "ctaLink": "/contact"
+  },
+  "faqs": [
+    {
+      "question": "How long are Princess Alaska cruises?",
+      "answer": "Princess offers Alaska cruises ranging from 7-day Inside Passage and Voyage of the Glaciers itineraries to 10- to 16-day round-trips from San Francisco and Los Angeles. Land-and-sea cruisetours generally range from 10 to 17 nights."
+    },
+    {
+      "question": "Which Princess ship is best for Alaska?",
+      "answer": "There is no single best ship for everyone. Star Princess and Discovery Princess are ideal for travelers seeking newbuild resort features, top-deck luxury retreats, and extensive dining. Coral Princess and Crown Princess offer more traditional ship proportions, wrap-around promenade decks, and classic glacier viewing."
+    },
+    {
+      "question": "Does Princess visit Glacier Bay National Park?",
+      "answer": "Yes. Princess is an authorized concessioner in Glacier Bay National Park and carries more guests into the park than any other cruise line. National Park Service rangers board the ship for the entire day. However, not every sailing visits Glacier Bay, so always verify the itinerary."
+    },
+    {
+      "question": "What is the difference between Inside Passage and Voyage of the Glaciers?",
+      "answer": "Inside Passage cruises are typically 7-day round-trip sailings (often from Seattle or Vancouver) focusing on coastal towns and scenic channels. Voyage of the Glaciers is a 7-day one-way itinerary between Vancouver and Whittier (Anchorage), featuring two major glacier-viewing days and acting as the cruise portion for interior Alaska cruisetours."
+    },
+    {
+      "question": "Can I visit Denali on a Princess Alaska cruise?",
+      "answer": "A cruise-only voyage does not visit Denali because the national park is located hundreds of miles inland. To visit Denali, book a Princess Alaska cruisetour, which pairs a 7-day Voyage of the Glaciers cruise with scenic rail and multi-night stays at Princess wilderness lodges."
+    },
+    {
+      "question": "What is a Princess Alaska cruisetour?",
+      "answer": "A cruisetour combines a 7-day Gulf of Alaska cruise with an overland adventure of 3 to 10 nights. It includes stays at Princess-owned wilderness lodges, glass-domed train travel on the Direct-to-the-Wilderness rail, and guided excursions in Denali and the Kenai Peninsula."
+    },
+    {
+      "question": "Which side of the ship is best for an Alaska cruise?",
+      "answer": "On a round-trip Inside Passage cruise, both sides enjoy equal coastal views. On a northbound Voyage of the Glaciers, the starboard (right) side faces the coastline; on southbound, port (left) faces land. However, on glacier days, the captain rotates the vessel 360 degrees so both sides get extended viewing."
+    },
+    {
+      "question": "Is a balcony worth it on an Alaska cruise?",
+      "answer": "Yes, a balcony is widely considered worth the upgrade for Alaska. It allows you to watch whales, icebergs, and dramatic fjords from the privacy of your stateroom without crowded deck railings, especially in early morning and late evening."
+    },
+    {
+      "question": "When should I book a Princess Alaska cruise?",
+      "answer": "It is best to book 9 to 14 months in advance. Prime summer dates (June, July, August), coveted Glacier Bay itineraries, and premier balcony/suite staterooms sell out rapidly."
+    },
+    {
+      "question": "What is the best month for a Princess Alaska cruise?",
+      "answer": "June and July offer the warmest weather, maximum daylight (Midnight Sun), and active wildlife. May offers snowier scenery and lower fares. August features peak salmon runs and bear activity. September offers dramatic fall foliage and potential northern lights."
+    },
+    {
+      "question": "Which ports do Princess Alaska cruises visit?",
+      "answer": "Common port calls include Juneau, Ketchikan, Skagway, Sitka, Icy Strait Point, and Haines, along with Victoria, British Columbia, on select U.S. round-trip sailings."
+    },
+    {
+      "question": "Can I combine a Princess Alaska cruise with a stay in Vancouver or Anchorage?",
+      "answer": "Yes. Pre- or post-cruise hotel stays can easily be arranged in Vancouver, Seattle, or Anchorage. One-way Voyage of the Glaciers voyages are especially well-suited for independent hotel extensions in Anchorage or the Kenai Peninsula."
+    }
+  ],
+  "finalCta": {
+    "title": "Ready to Plan Your Unforgettable Alaska Voyage?",
+    "description": "Let Angela Hughes and the Trips & Ships Luxury Travel team guide you to the perfect ship, glacier route, and cruisetour itinerary for the journey of a lifetime.",
+    "buttonText": "Contact Our Alaska Specialists",
+    "buttonLink": "/contact"
+  }
+}
+

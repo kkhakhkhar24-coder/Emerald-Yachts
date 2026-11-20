@@ -11,7 +11,8 @@ const InteractivePillarHubGrid = ({
   title = "Where You Can Go in Greece",
   subtitle = "From ancient monuments to secluded Aegean coves, explore our curated destination guides and island comparisons.",
   items = [],
-  variant = "destination"
+  variant = "destination",
+  showLinks = false
 }) => {
   return (
     <section className="py-20 bg-slate-50 border-t border-slate-200/60">
@@ -46,7 +47,7 @@ const InteractivePillarHubGrid = ({
                   <MasterImage
                     src={item.image}
                     alt={item.title || "Destination photo"}
-                    className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ${item.imagePosition || item.imageClassName || 'object-center'}`}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     placeholderLabel={item.placeholderLabel || item.title || "DESTINATION IMAGE"}
                   />
 
@@ -64,7 +65,7 @@ const InteractivePillarHubGrid = ({
                   )}
 
                   {/* Buttons Overlay on Top of Image (Matching Screenshot 2) */}
-                  <div className="absolute inset-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 flex flex-col justify-center gap-2 overflow-y-auto bg-black/40 backdrop-blur-[1px]">
+                  <div className={`absolute inset-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 flex-col justify-center gap-2 overflow-y-auto bg-black/40 backdrop-blur-[1px] ${showLinks ? "hidden" : "flex"}`}>
                     <span className="inline-flex items-center justify-center bg-white/90 text-navy-950/90 font-bold text-[11px] sm:text-xs uppercase tracking-wider py-2 px-3 rounded-lg shadow cursor-default">
                       {item.actionLabel || "EXPLORE THIS DESTINATION"}
                     </span>
@@ -98,6 +99,22 @@ const InteractivePillarHubGrid = ({
                   <p className="text-slate-600 leading-relaxed text-sm font-light flex-grow">
                     {item.description}
                   </p>
+
+                  {showLinks && hasLinks && (
+                    <ul className="mt-5 pt-4 border-t border-slate-100 space-y-2">
+                      {item.links.map((link, lIdx) => (
+                        <li key={lIdx}>
+                          <Link
+                            to={link.url || "#"}
+                            className="group/link flex items-start gap-2 text-sm font-medium text-navy-900 hover:text-blue-600 transition-colors"
+                          >
+                            <span className="text-blue-600 mt-px">→</span>
+                            <span>{link.label}</span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
 
                   {item.mainUrl && (
                     <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">

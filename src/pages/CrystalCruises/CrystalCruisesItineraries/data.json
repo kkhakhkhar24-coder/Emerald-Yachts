@@ -1,0 +1,492 @@
+{
+  "seo": {
+    "canonicalUrl": "https://www.tripsandships.com/crystal-cruises/itineraries",
+    "metaTitle": "Crystal Cruises Itineraries: How to Choose Your Destination and Voyage",
+    "title": "Crystal Cruises Itineraries: How to Choose Your Destination and Voyage",
+    "metaDescription": "Explore Crystal Cruises itineraries by destination, voyage length and season. Compare regional cruises, Grand Journeys and World Cruises."
+  },
+  "hero": {
+    "title": "Crystal Cruises Itineraries: How to Choose Your Destination and Voyage",
+    "subtitle": "Explore world-class destinations across six continents at an unhurried luxury pace, from regional Mediterranean and Caribbean voyages to multi-month Grand Journeys and global World Cruises.",
+    "badge": "CRYSTAL GLOBAL VOYAGES",
+    "lastUpdated": "November 2026",
+    "ctaText": "Plan Your Crystal Itinerary",
+    "ctaLink": "/contact",
+    "secondaryCtaText": "Compare Ships",
+    "secondaryCtaLink": "/crystal-cruises/serenity-vs-symphony"
+  },
+  "introSection": {
+    "heading": "Finding the Right Combination of Destinations, Time Ashore and Days at Sea",
+    "paragraphs": [
+      "Choosing a Crystal Cruises itinerary is about more than deciding where to travel. It is about finding the right combination of destinations, time ashore, days at sea and onboard experiences. From Mediterranean cities and Caribbean islands to the remote landscapes of the South Pacific and extended journeys around the world, Crystal offers voyages for travelers who want to explore at a comfortable, unhurried pace.",
+      "Crystal's itineraries span multiple continents and include shorter regional cruises, longer destination-focused voyages, Grand Journeys and World Cruises. Some sailings concentrate on a single region, while others connect several countries and cultures over a number of weeks.",
+      "This guide explores the destinations Crystal visits, how its different voyage formats work and what to consider when choosing the right sailing for your next luxury cruise."
+    ]
+  },
+  "atAGlance": {
+    "title": "Crystal Cruises Itineraries at a Glance",
+    "subtitle": "Crystal operates voyages across a wide range of global regions, with itineraries that vary by season, ship and year.",
+    "headers": ["Region", "Experiences and Highlights"],
+    "rows": [
+      ["Europe and the Mediterranean", "Historic cities, coastal villages, art, architecture and culinary experiences"],
+      ["The Americas and Caribbean", "Tropical islands, cultural destinations, beaches and the Panama Canal"],
+      ["North America and Canada", "Historic ports, coastal scenery and seasonal city itineraries"],
+      ["Baltic and Northern Europe", "Scandinavian capitals, historic towns, fjords and northern landscapes"],
+      ["Alaska", "Glaciers, wildlife, dramatic coastlines and wilderness experiences"],
+      ["Africa and the Indian Ocean", "Ancient civilizations, wildlife, islands and coastal destinations"],
+      ["Australia and New Zealand", "Natural landscapes, iconic cities, reefs and fjords"],
+      ["South Pacific", "Remote islands, beaches, tropical scenery and cultural discovery"],
+      ["Asia", "Historic cities, temples, modern capitals and regional cuisine"],
+      ["South America", "Coastal cities, dramatic landscapes, cultural experiences and scenic cruising"]
+    ],
+    "footnote": "The exact destinations and ports depend on the sailing date. Some itineraries also include overnight stays, longer port calls and consecutive voyages that allow guests to explore a region in greater depth."
+  },
+  "regionsDetailed": [
+    {
+      "name": "Europe and the Mediterranean",
+      "tag": "Historic Capitals, Greek Isles & Riviera Coastlines",
+      "description": "Europe and the Mediterranean are among Crystal's key cruising regions, offering a combination of historic cities, coastal scenery, art, architecture and regional cuisine. Guests explore Italy, Spain, France, Greece, Croatia, Portugal and beyond.",
+      "highlights": [
+        "Rome and the historic landmarks of the eternal Italian capital",
+        "The cliffside coastal villages and dramatic scenery of the Amalfi Coast",
+        "Barcelona's Gaudí architecture, tapas culture, and vibrant waterfront",
+        "The Greek islands and their iconic whitewashed villages and azure seas",
+        "Dubrovnik, Kotor, and historic walled Adriatic harbors",
+        "The French Riviera and its glamorous seaside promenades",
+        "Lisbon and the rich seafaring heritage of Portugal"
+      ],
+      "verdict": "First-time Mediterranean visitors, couples, culture enthusiasts and travelers who enjoy combining several countries in one seamless journey."
+    },
+    {
+      "name": "The Americas and Caribbean",
+      "tag": "Tropical Islands, Panama Canal & Central America",
+      "description": "Crystal's Americas and Caribbean itineraries bring together tropical islands, historic cities, cultural destinations and scenic coastal experiences, connecting the Caribbean with Central and South America.",
+      "highlights": [
+        "Secluded white-sand beaches and turquoise lagoons across the Virgin Islands and West Indies",
+        "Grand Turk, St. Barts, and distinctive boutique island ports",
+        "Cartagena's colonial fortress walls and vibrant Caribbean atmosphere",
+        "Full-day daylight transit through the historic locks of the Panama Canal",
+        "Costa Rica's lush biodiversity, rainforest canopies, and eco-reserves",
+        "Belize's barrier reef and ancient Mayan heritage",
+        "Rio de Janeiro and South America's infectious cultural energy"
+      ],
+      "verdict": "Couples, winter-sun travelers, beach lovers and guests interested in combining relaxing island days with engineering marvels like the Panama Canal."
+    },
+    {
+      "name": "North America and Canada",
+      "tag": "Maritime Heritage, Historic Ports & Autumn Foliage",
+      "description": "North American and Canadian itineraries offer a refined style of cruising, with historic Atlantic ports, maritime culture, and dramatic seasonal foliage along the St. Lawrence Seaway.",
+      "highlights": [
+        "Historic coastal towns across New England and Maine's rocky shoreline",
+        "Discovering Nova Scotia, Prince Edward Island, and Canadian maritime culture",
+        "Visiting world-renowned museums, Boston's Freedom Trail, and Quebec City's walled ramparts",
+        "Spectacular autumn foliage cruising through the St. Lawrence River and Saguenay Fjord",
+        "Combining vibrant cosmopolitan stays with unhurried, relaxing days at sea"
+      ],
+      "verdict": "Travelers interested in colonial history, coastal architecture, seafood traditions and a cooler, more temperate cruising climate."
+    },
+    {
+      "name": "Baltic and Northern Europe",
+      "tag": "Scandinavian Capitals, Norwegian Fjords & Iceland",
+      "description": "Northern European voyages offer a combination of historic royal capitals, Scandinavian design, maritime heritage, and striking glacial landscapes under the Midnight Sun.",
+      "highlights": [
+        "Copenhagen's royal palaces, canals, and world-leading culinary scene",
+        "Stockholm's historic Gamla Stan waterfront and archipelago navigation",
+        "Norway's deep glacial fjords, cascading waterfalls, and Geirangerfjord",
+        "Iceland's otherworldly volcanic landscapes, geysers, and geothermal lagoons",
+        "Edinburgh's medieval castle and Scotland's historic highlands",
+        "Remote northern archipelagos and scenic cruising with extended daylight hours"
+      ],
+      "verdict": "Nature lovers, history enthusiasts, travelers drawn to Scandinavian culture and guests who appreciate dramatic fjord cruising."
+    },
+    {
+      "name": "Alaska",
+      "tag": "Glaciers, Inside Passage & Untamed Wilderness",
+      "description": "Alaska offers an awe-inspiring wilderness voyage distinct from warm-weather cruising, showcasing towering tidewater glaciers, pristine temperate rainforests, and rich native heritage.",
+      "highlights": [
+        "Close-up glacier and fjord navigation in Glacier Bay and Hubbard Glacier",
+        "Incredible wildlife viewing including humpback whales, orcas, bald eagles, and coastal bears",
+        "Historic Gold Rush ports such as Ketchikan, Juneau, and Skagway",
+        "Indigenous Tlingit and Haida cultural experiences and artisan totem traditions",
+        "Intimate scenic cruising through the winding passages of the Inside Passage"
+      ],
+      "verdict": "Nature lovers, photographers, wildlife enthusiasts and active travelers seeking majestic alpine scenery."
+    },
+    {
+      "name": "Africa and the Indian Ocean",
+      "tag": "Ancient Wonders, Safari Lands & Tropical Atolls",
+      "description": "Africa and the Indian Ocean offer some of the most exotic itineraries in Crystal's portfolio, bridging ancient civilizations, big-five safari reserves, and idyllic coral islands.",
+      "highlights": [
+        "Egypt's ancient pyramids, Luxor temples, and Red Sea gateways",
+        "The turquoise atolls and granite boulder beaches of the Seychelles",
+        "Zanzibar's historic Stone Town, spice plantations, and coastal Swahili culture",
+        "South Africa's Cape Town, Table Mountain, and coastal winelands",
+        "Opportunities to combine voyages with pre- or post-cruise luxury overland safaris"
+      ],
+      "verdict": "Experienced luxury travelers and culture enthusiasts looking to combine deep ocean cruising with unforgettable land safaris."
+    },
+    {
+      "name": "Australia and New Zealand",
+      "tag": "Harbor Cities, Great Barrier Reef & Milford Sound",
+      "description": "Australia and New Zealand itineraries combine iconic cosmopolitan harbors, dramatic coastal geography, aboriginal heritage, and majestic fjordland scenery.",
+      "highlights": [
+        "Sydney's iconic Opera House, Harbour Bridge, and botanical gardens",
+        "Melbourne's vibrant laneways, artisan coffee culture, and arts precincts",
+        "Australia's Whitsunday Islands and access to the Great Barrier Reef",
+        "New Zealand's breathtaking Milford Sound and Dusky Sound fjord cruising",
+        "Auckland, Wellington, and historic Maori cultural performances in Rotorua",
+        "Hawke's Bay and Marlborough boutique vineyard tastings"
+      ],
+      "verdict": "Food and wine enthusiasts, nature lovers, and travelers seeking an extensive multi-week Southern Hemisphere exploration."
+    },
+    {
+      "name": "South Pacific",
+      "tag": "French Polynesia, Overwater Bungalows & Coral Lagoons",
+      "description": "The South Pacific represents the ultimate tropical escape, renowned for dramatic volcanic peaks, turquoise lagoons, fragrant tiare blossoms, and warm Polynesian hospitality.",
+      "highlights": [
+        "Exploring the Society Islands of French Polynesia including Tahiti and Moorea",
+        "Anchoring in the legendary turquoise lagoon of Bora Bora beneath Mount Otemanu",
+        "Boutique calls across Fiji, the Cook Islands, and Samoan archipelagos",
+        "Unspoiled coral reefs, snorkeling with stingrays, and pristine white-sand motus",
+        "Unhurried, relaxing sea days filled with ocean breezes and Polynesian cultural workshops"
+      ],
+      "verdict": "Couples, honeymooners, milestone celebrators and travelers who cherish tropical islands and peaceful sea days."
+    },
+    {
+      "name": "Asia",
+      "tag": "Ancient Temples, Modern Capitals & Culinary Wonders",
+      "description": "Crystal's Asia voyages showcase remarkable contrasts between ancient spiritual shrines, UNESCO heritage ports, ultra-modern skylines, and world-renowned street-food cultures.",
+      "highlights": [
+        "Japan's historic Kyoto temples, Tokyo neon, and scenic Inland Sea cruising",
+        "Singapore's futuristic Gardens by the Bay and Michelin-caliber dining",
+        "Vietnam's limestone karsts in Halong Bay and historic Hoi An lantern streets",
+        "Thailand's golden Bangkok temples and idyllic southern islands",
+        "Indonesia's Bali spiritual temples and Komodo National Park",
+        "India's historic coastal ports, spice trading hubs, and cultural traditions"
+      ],
+      "verdict": "Food lovers, culture seekers, and experienced travelers who want to explore diverse Asian civilizations in all-inclusive comfort."
+    },
+    {
+      "name": "South America",
+      "tag": "Patagonian Fjords, Cape Horn & Vibrant Latin Capitals",
+      "description": "South America delivers immense geographic grandeur, from tropical Brazilian rhythms and grand European-style boulevards to the glaciers of Patagonia and Cape Horn.",
+      "highlights": [
+        "Rio de Janeiro's Copacabana, Christ the Redeemer, and Sugarloaf Mountain",
+        "Buenos Aires' grand neoclassical architecture, tango clubs, and steak houses",
+        "Valparaíso's colorful bohemian hillsides and Chile's coastal wine valleys",
+        "Scenic cruising through the Chilean Fjords, Glacier Alley, and Beagle Channel",
+        "Navigating Cape Horn and experiencing the rugged majesty of Patagonia",
+        "Transiting the Panama Canal on extended transcontinental voyages"
+      ],
+      "verdict": "Adventurous luxury cruisers, wildlife enthusiasts, and travelers looking for dramatic scenic landscapes and vibrant Latin culture."
+    }
+  ],
+  "voyageFormats": {
+    "title": "Crystal Cruises Voyage Types: Which Format Is Right for You?",
+    "subtitle": "From flexible regional voyages to multi-month Grand Journeys and epic World Cruises.",
+    "formats": [
+      {
+        "title": "Standard Regional Voyages",
+        "duration": "7 to 14 Nights",
+        "description": "Ideal for travelers who want to explore a specific destination region without committing months away from home.",
+        "features": [
+          "Curated regional itineraries with carefully selected port calls",
+          "Balanced cadence of immersive port days and relaxing sea days",
+          "Convenient departure ports with excellent international flight access",
+          "Perfect introduction to Crystal's all-inclusive butler hospitality",
+          "Option to combine back-to-back sailings into custom extended journeys"
+        ]
+      },
+      {
+        "title": "Crystal Grand Journeys",
+        "duration": "54 to 85 Nights",
+        "description": "Extended itineraries linking several regions, featuring overnight port stays, exclusive shoreside events, and enhanced voyage benefits.",
+        "features": [
+          "Extended routing connecting continents and cultures without packing and unpacking",
+          "Overnight stays in marquee ports allowing evening dining and cultural exploration",
+          "Enhanced Grand Journey benefits for qualifying full-journey reservations",
+          "Complimentary airfare allowances, private transfers, and shipboard credits",
+          "Curated shoreside gala events and personalized concierge arrangements"
+        ]
+      },
+      {
+        "title": "Crystal World Cruises",
+        "duration": "127 to 150 Nights",
+        "description": "The pinnacle of ocean travel, circumnavigating the globe across dozens of countries, oceans, and civilizations in supreme luxury.",
+        "features": [
+          "Global circumnavigation connecting up to 39 countries in one continuous voyage",
+          "Exclusive gala shoreside celebrations, private events, and ambassador hosting",
+          "Complimentary business-class airfare, baggage valet, and unlimited dry cleaning",
+          "Generous shipboard credits and private overland excursions",
+          "Unparalleled camaraderie among an intimate community of fellow global explorers"
+        ]
+      }
+    ],
+    "grandJourneysList": [
+      {
+        "voyage": "2027 Lisbon to Reykjavik Grand Journey",
+        "ship": "Crystal Symphony",
+        "duration": "54 Nights",
+        "dates": "June 28 – August 21, 2027",
+        "route": "Connects Portugal and Iceland while exploring Western Europe, British Isles, Norwegian Fjords, and the Arctic Circle."
+      },
+      {
+        "voyage": "2027 New York to Fort Lauderdale Grand Journey",
+        "ship": "Crystal Serenity",
+        "duration": "71 Nights",
+        "dates": "October 12 – December 22, 2027",
+        "route": "Explores the Americas, Caribbean tropical anchorages, South America, and a full daylight Panama Canal transit."
+      },
+      {
+        "voyage": "2028 Fort Lauderdale to Singapore Grand Journey",
+        "ship": "Crystal Serenity",
+        "duration": "85 Nights",
+        "dates": "January 11 – April 6, 2028",
+        "route": "Connects the Americas, the South Pacific lagoons, Australia, Indonesia, and Southeast Asian capitals."
+      },
+      {
+        "voyage": "2028 Singapore to Fort Lauderdale Grand Journey",
+        "ship": "Crystal Serenity",
+        "duration": "65 Nights",
+        "dates": "April 6 – June 10, 2028",
+        "route": "Traverses Southeast Asia, the Indian Ocean, Middle Eastern cultural capitals, and the Mediterranean."
+      }
+    ],
+    "worldCruisesList": [
+      {
+        "voyage": "2027 World Cruise: Stories of the South Seas",
+        "ship": "Crystal Serenity",
+        "duration": "139 Nights | 28 Countries",
+        "dates": "Departs January 8, 2027 (San Diego to Vancouver)",
+        "route": "Connects Hawaii, French Polynesia, New Zealand, Australia, Indonesia, Japan, and Alaska in an epic Pacific crossing."
+      },
+      {
+        "voyage": "2028 World Cruise: Treasures of the Tides",
+        "ship": "Crystal Serenity",
+        "duration": "150 Nights | 39 Countries",
+        "dates": "Departs January 11, 2028 (Roundtrip Fort Lauderdale)",
+        "route": "Monumental global circumnavigation traversing South America, the South Pacific, Australia, Asia, the Mediterranean, and Atlantic."
+      },
+      {
+        "voyage": "2029 World Cruise: Connecting Cultures",
+        "ship": "Crystal Serenity",
+        "duration": "127 Nights | 22 Countries",
+        "dates": "Departs January 7, 2029 (Melbourne to New York)",
+        "route": "Connects Australia, Asia, Africa, Europe, and the Atlantic seaboard in a sweeping intercultural celebration."
+      }
+    ]
+  },
+  "decisionGuide7Steps": {
+    "title": "How to Choose the Right Crystal Cruises Itinerary",
+    "subtitle": "A 7-step practical framework to identify your ideal route, voyage length, and sailing season.",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Start With the Destinations You Want to Experience",
+        "description": "Focus first on your travel dreams. If historic architecture and gastronomy call to you, choose the Mediterranean. For tropical relaxation, look to the Caribbean or South Pacific. For dramatic wilderness and wildlife, prioritize Alaska or Northern Europe."
+      },
+      {
+        "step": "2",
+        "title": "Consider How Much Time You Have",
+        "description": "Match your available vacation schedule: 1 week for shorter regional getaways, 10–14 days for comprehensive regional itineraries, 2–4 weeks for combined sailings, 1–3 months for Grand Journeys, or 4+ months for a full World Cruise."
+      },
+      {
+        "step": "3",
+        "title": "Choose the Right Travel Season",
+        "description": "Align your travel with regional peak seasons: Mediterranean in spring/summer/early autumn, Alaska in warmer summer months, Northern Europe during midnight sun, and Caribbean warm-weather escapes during Northern Hemisphere winters."
+      },
+      {
+        "step": "4",
+        "title": "Compare the Ports and Time Ashore",
+        "description": "Look beyond destination names. Compare port duration, whether the ship stays overnight, if scenic cruising is included, and how close the pier is to historic city centers."
+      },
+      {
+        "step": "5",
+        "title": "Decide Between Sea Days and Port Days",
+        "description": "Port-intensive itineraries are great for active cultural discovery, while itineraries with multiple relaxing sea days let you fully enjoy Crystal's Umi Uma dining, Aurōra Spa, and private butler pampering."
+      },
+      {
+        "step": "6",
+        "title": "Consider Embarkation and Disembarkation Ports",
+        "description": "Check international flight access, airport-to-port transfer logistics, and whether a one-way open-jaw route requires specialized airline ticketing or pre-cruise hotel stays."
+      },
+      {
+        "step": "7",
+        "title": "Compare the Complete Cost",
+        "description": "Evaluate total travel investment including all-inclusive cruise fare, flights, private transfers, pre/post luxury hotels, shore excursions, and comprehensive travel insurance."
+      }
+    ],
+    "durationTable": {
+      "title": "Voyage Duration Planning Matrix",
+      "headers": ["Available Vacation Time", "Recommended Voyage Format", "Best Suited For"],
+      "rows": [
+        ["Around One Week (7 Nights)", "Shorter Regional Sailing", "First-time luxury cruisers, busy professionals, quick warm-weather escapes"],
+        ["10 to 14 Days", "Extended Regional Itinerary", "In-depth Mediterranean, Baltic, Caribbean, or Alaska exploration"],
+        ["2 to 4 Weeks", "Longer Regional Voyage / Combined Sailings", "Transatlantic crossings, Asia explorations, or back-to-back Mediterranean voyages"],
+        ["1 to 3 Months (54–85 Nights)", "Crystal Grand Journey", "Retirees, sabbaticals, multi-region exploration with full benefits"],
+        ["Several Months (127–150 Nights)", "Crystal World Cruise", "Ultimate global circumnavigation, community of seasoned global travelers"]
+      ]
+    }
+  },
+  "shipShowdown": {
+    "title": "Should You Choose Crystal Serenity or Crystal Symphony?",
+    "subtitle": "Comparing Crystal's two sister ships for global itinerary execution.",
+    "serenity": {
+      "name": "Crystal Serenity",
+      "features": [
+        "Capacity: 740 Guests across 402 Ocean-View Staterooms and Suites",
+        "Dining: 10 distinct culinary venues including Umi Uma by Nobu & Beefbar",
+        "Flagship for Grand Journeys & full World Cruises spanning 127–150 nights",
+        "Spacious ocean liner scale (68,870 GT) with wrap-around teak promenade",
+        "Upcoming May 2028 Owner's Suite and expanded premium suites",
+        "Ideal for travelers who enjoy expansive public lounges and transoceanic crossings"
+      ]
+    },
+    "symphony": {
+      "name": "Crystal Symphony",
+      "features": [
+        "Capacity: 606 Guests across 330 Ocean-View Staterooms and Suites",
+        "Dining: 9 world-class culinary venues and intimate social lounges",
+        "Dedicated Single Guest Rooms designed specifically for solo luxury travelers",
+        "Intimate boutique scale (51,068 GT) with agile access to smaller harbors",
+        "November 2025 dry dock refurbishment of Deck 10 Classic Suites and public spaces",
+        "Ideal for boutique coastal navigation and travelers who prefer smaller ship intimacy"
+      ]
+    },
+    "verdict": "Both Crystal Serenity and Crystal Symphony deliver the exact same standard of all-inclusive luxury, private European butler service in every room, and world-class dining from Nobu Matsuhisa and the Alajmo brothers. Crystal Serenity is slightly larger and frequently hosts extended World Cruises, while Crystal Symphony offers an intimate 606-guest boutique scale that navigates easily into secluded island anchorages. Rather than choosing by size alone, compare which ship operates your preferred route, available suite categories, and departure dates."
+  },
+  "benefitsSection": {
+    "title": "Crystal Grand Journey and World Cruise Benefits",
+    "subtitle": "Exclusive amenities and inclusions reserved for extended voyage travelers.",
+    "includedTitle": "Qualifying Extended Voyage Benefits",
+    "included": [
+      {
+        "title": "Complimentary Airfare Allowances",
+        "description": "Generous airfare credits or included business-class international airfare on qualifying full World Cruise and Grand Journey bookings."
+      },
+      {
+        "title": "Private Chauffeur Airport Transfers",
+        "description": "Seamless private luxury transfers between airports, embarkation hotels, and the cruise pier upon arrival and departure."
+      },
+      {
+        "title": "Generous Shipboard Spending Credit",
+        "description": "Substantial shipboard credits per suite applicable toward rare reserve cellar wines, Aurōra Spa therapies, and private boutique shopping."
+      },
+      {
+        "title": "Enhanced Specialty Dining Privileges",
+        "description": "Expanded complimentary reservation allowances at Umi Uma by Nobu Matsuhisa and northern Italian fine dining at Osteria d'Ovidio."
+      },
+      {
+        "title": "Complimentary Laundry & Garment Pressing",
+        "description": "Unlimited complimentary laundry, dry cleaning, and pressing services throughout the duration of your extended voyage."
+      },
+      {
+        "title": "Exclusive Shoreside Gala Celebrations",
+        "description": "Private, invitation-only cultural evenings, private museum tours, and gala dinners arranged exclusively for full-voyage guests."
+      }
+    ],
+    "additionalTitle": "Eligibility & Booking Considerations",
+    "additional": [
+      {
+        "title": "Full Voyage vs. Segment Bookings",
+        "description": "Many premier benefits apply exclusively to guests reserving the complete qualifying Grand Journey or World Cruise, rather than shorter individual segments."
+      },
+      {
+        "title": "Advance Suite Tier Requirements",
+        "description": "Specific airfare upgrades and private transfers may correlate with Penthouse and upper suite categories."
+      },
+      {
+        "title": "Terms and Promotional Validity",
+        "description": "Benefits and promotional amenities vary by published season and are subject to availability and specific booking windows."
+      },
+      {
+        "title": "Visa and Entry Document Management",
+        "description": "Multi-month voyages require thorough advance visa planning across 20 to 39 sovereign nations."
+      }
+    ]
+  },
+  "firstTimeAndCombining": {
+    "title": "First-Time Cruisers & Combining Consecutive Voyages",
+    "firstTimeTitle": "Are Crystal Itineraries Suitable for First-Time Luxury Cruisers?",
+    "firstTimeDesc": "Yes. Crystal offers regional itineraries that serve as a wonderful introduction to luxury cruising, particularly for travelers who want to experience the service, master-chef dining, and butler care without committing to an extended voyage. A 7- to 10-night Mediterranean or Caribbean sailing provides the perfect balance of port immersion and sea days.",
+    "combiningTitle": "Can You Combine Crystal Cruises Itineraries?",
+    "combiningDesc": "Yes. Consecutive Crystal voyages can easily be combined to create a longer, customized journey without having to pack bags or fly between destinations. A luxury travel advisor can ensure you retain the same suite across consecutive segments and confirm if the combination unlocks special extended-voyage savings.",
+    "checklist": [
+      "Confirm that consecutive sailings operate back-to-back without port transfers",
+      "Verify that your preferred suite category can be retained for both legs",
+      "Check if any destination entry or multi-entry visa requirements apply",
+      "Review whether combined bookings qualify for reduced deposits or voyage discounts",
+      "Coordinate international open-jaw flights and pre-cruise luxury hotel stays"
+    ]
+  },
+  "angelaBio": {
+    "name": "Angela Hughes",
+    "title": "Luxury Cruise Specialist & CEO, Trips & Ships Luxury Travel",
+    "bio": "Angela Hughes brings over 40 years of travel-industry leadership and has personally explored more than 121 countries across seven continents. As CEO of Trips & Ships Luxury Travel and founder of Luxury Travel University, she specializes in matching discerning travelers with the ideal Crystal Cruises itinerary, suite category, and global sailing season.",
+    "credentials": [
+      "Over 4 Decades Designing Bespoke Luxury Travel Experiences",
+      "Traveled Firsthand to 121+ Countries Across Seven Continents",
+      "Certified Luxury Small Ship & Ocean Cruise Specialist",
+      "CEO & Founder of Trips & Ships Luxury Travel",
+      "Travel Leaders Network Luxury Travel Influencer of the Year",
+      "Named Most Influential Women in Travel 2026 by TravelPulse"
+    ],
+    "quote": "Choosing a Crystal itinerary is about finding harmony between the destinations you dream of exploring and the unhurried rhythm of life at sea. Whether you are considering a 10-night Mediterranean voyage or circumnavigating the globe, we ensure every port call and sea day exceeds your expectations.",
+    "ctaText": "Plan Your Crystal Cruise Itinerary",
+    "ctaLink": "/contact"
+  },
+  "faqs": [
+    {
+      "question": "Where do Crystal Cruises sail?",
+      "answer": "Crystal sails across several regions, including Europe and the Mediterranean, the Caribbean, North America, Alaska, Asia, Africa and the Indian Ocean, Australia and New Zealand, the South Pacific and South America. Destinations vary by season and sailing."
+    },
+    {
+      "question": "Does Crystal offer World Cruises?",
+      "answer": "Yes. Crystal offers extended World Cruises that connect multiple continents and countries over several months. Published examples include the 2027, 2028 and 2029 World Cruises."
+    },
+    {
+      "question": "What is a Crystal Grand Journey?",
+      "answer": "A Grand Journey is an extended Crystal itinerary that connects multiple destinations over several weeks. These voyages can include longer port stays, overnight calls and additional benefits for qualifying full-voyage bookings."
+    },
+    {
+      "question": "How long are Crystal Cruises?",
+      "answer": "Voyage lengths vary. Crystal offers regional sailings as well as extended journeys lasting several weeks or months. World Cruises can last more than four months."
+    },
+    {
+      "question": "Which Crystal cruise is best for first-time guests?",
+      "answer": "A shorter regional sailing can be a good introduction. The Mediterranean and Caribbean are worth considering, depending on your preferred travel season, available time and destination interests."
+    },
+    {
+      "question": "Does Crystal visit the Greek Islands?",
+      "answer": "Yes. Selected Crystal Mediterranean itineraries include Greek destinations. The exact islands and ports depend on the sailing."
+    },
+    {
+      "question": "Does Crystal offer cruises through the Panama Canal?",
+      "answer": "Yes. Selected itineraries include Panama Canal transits, particularly some longer voyages connecting the Caribbean, Central America and South America."
+    },
+    {
+      "question": "Can I book only part of a Crystal World Cruise?",
+      "answer": "Crystal may offer selected World Cruise segments that allow guests to experience part of a longer itinerary. Segment availability and benefits vary, and full-voyage benefits may not apply to individual segments."
+    },
+    {
+      "question": "Are shore excursions included in Crystal cruise fares?",
+      "answer": "Shore excursions are generally an additional cost on standard Crystal voyages, although specific Grand Journey and World Cruise benefits may include selected discounts or experiences. Check the fare and voyage conditions."
+    },
+    {
+      "question": "When should I book a Crystal cruise?",
+      "answer": "Booking early can provide a wider choice of suite categories and departure dates, particularly for popular itineraries and extended voyages. Availability, promotional offers and cancellation terms vary."
+    },
+    {
+      "question": "How do I choose between a Grand Journey and a World Cruise?",
+      "answer": "A Grand Journey is generally a shorter extended itinerary focused on a particular route or combination of regions. A World Cruise is a much longer voyage designed to connect multiple continents. Your available time and preferred destinations are the main deciding factors."
+    },
+    {
+      "question": "Can I combine a Crystal cruise with a land vacation?",
+      "answer": "Yes. Guests can plan pre- or post-cruise stays and other land arrangements around their voyage. The right options depend on the embarkation and disembarkation ports, available time and destination."
+    },
+    {
+      "question": "How can I find current Crystal Cruises itineraries?",
+      "answer": "The official Crystal website publishes current voyages, destinations and departure dates. You can also contact Trips & Ships Luxury Travel for help comparing routes, accommodation and travel arrangements."
+    }
+  ]
+}

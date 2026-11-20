@@ -1,5 +1,6 @@
 import React from 'react';
 import FadeIn from './FadeIn';
+import LiteYouTubeEmbed from '@/components/ui/LiteYouTubeEmbed';
 
 /**
  * CreteCycladesVideoTwo
@@ -30,14 +31,14 @@ const CreteCycladesVideoTwo = () => {
           <div className="lg:col-span-7">
             <FadeIn delay={0.2}>
               <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-slate-200">
-                <iframe
+                <LiteYouTubeEmbed
                   className="absolute inset-0 w-full h-full"
                   src="https://www.youtube.com/embed/yrUiGeRy_RA"
                   title="Greece Island Travel Guide Video"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
-                ></iframe>
+                />
               </div>
             </FadeIn>
           </div>

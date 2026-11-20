@@ -1,0 +1,518 @@
+{
+  "seo": {
+    "title": "Princess Cruises Drink Packages: Prices, Inclusions and Value | Trips & Ships",
+    "metaTitle": "Princess Cruises Drink Packages: Prices, Inclusions and Value",
+    "metaDescription": "Compare Princess Cruises drink packages, prices and inclusions. Explore Plus, Premier, Zero-Alcohol and Soda options to find the best value.",
+    "canonicalUrl": "https://www.tripsandships.com/princess-cruises/drink-packages",
+    "keywords": "Princess drink packages, Princess Cruises beverage package prices, Princess Plus drink package, Princess Premier beverage package, Princess zero alcohol package, Princess soda package",
+    "ogTitle": "Princess Cruises Drink Packages: Prices, Inclusions and Value",
+    "ogDescription": "Compare Princess Cruises drink packages, prices and inclusions. Explore Plus, Premier, Zero-Alcohol and Soda options to find the best value."
+  },
+  "hero": {
+    "badge": "Beverage Package Guide",
+    "title": "Princess Cruises Drink Packages: Prices, Inclusions and Value",
+    "subtitle": "Compare Plus, Premier, Zero-Alcohol and Classic Soda packages, explore drink limits and pricing, and decide whether a beverage package is worth the cost for your voyage.",
+    "ctaLabel": "Plan Your Princess Cruise",
+    "ctaUrl": "/contact",
+    "secondaryCtaLabel": "Compare Plus vs. Premier",
+    "secondaryCtaUrl": "/princess-cruises/plus-vs-premier"
+  },
+  "introSection": {
+    "heading": "Understanding Princess Cruises Beverage Packages",
+    "p1": "Choosing a drink package on a Princess cruise can make onboard spending easier to manage, particularly if you enjoy cocktails, wine, specialty coffee, soft drinks or bottled water. Princess offers several beverage options, from packages that include alcoholic drinks to plans designed for guests who prefer non-alcoholic beverages.",
+    "p2": "The challenge is understanding which package includes what, how much it costs and whether it offers better value than paying for drinks individually.",
+    "p3": "This guide compares the Princess Plus Beverage Package, Premier Beverage Package, Zero-Alcohol Package and Classic Soda Package. It also explains how the beverage benefits work within Princess Plus and Princess Premier, including daily drink limits, exclusions and ways to decide whether a package is worthwhile."
+  },
+  "atAGlance": {
+    "title": "Princess Cruises Drink Packages at a Glance",
+    "subtitle": "Four distinct beverage packages tailored to different drinking preferences, available standalone or bundled within cruise fares.",
+    "items": [
+      {
+        "title": "Plus Beverage Package",
+        "description": "Cocktails, wine by the glass, beer, spirits and a range of non-alcoholic drinks, subject to the package's per-drink price limit ($15 USD) and daily restrictions (15 included drinks per day).",
+        "icon": "Wine",
+        "bullets": [
+          "Drinks priced up to $15 USD",
+          "15 included drinks per 24-hr day",
+          "Specialty coffees and teas included",
+          "Up to 12 bottles of water (<=500ml)"
+        ]
+      },
+      {
+        "title": "Premier Beverage Package",
+        "description": "A broader premium beverage selection with a higher per-drink price limit ($20 USD) and no daily limit on included alcoholic beverages under current terms.",
+        "icon": "Sparkles",
+        "bullets": [
+          "Drinks priced up to $20 USD",
+          "No daily limit on included alcoholic drinks",
+          "75+ spirits & 40+ wines by the glass",
+          "20+ crafted specialty cocktails"
+        ]
+      },
+      {
+        "title": "Zero-Alcohol Package",
+        "description": "Specialty coffees, gourmet teas, artisan mocktails, fountain sodas, selected bottled water, frappes and Red Bull energy drinks without alcohol.",
+        "icon": "Coffee",
+        "bullets": [
+          "Specialty espresso & gourmet teas",
+          "Mocktails & zero-alcohol cocktails",
+          "Fountain sodas & Red Bull",
+          "Selected premium bottled water"
+        ]
+      },
+      {
+        "title": "Classic Soda Package",
+        "description": "A simpler, value-driven option focused on fountain sodas, juices, mocktails and smoothies for travelers who do not need alcohol or specialty coffee.",
+        "icon": "GlassWater",
+        "bullets": [
+          "Fountain sodas & soft drinks",
+          "Fresh fruit juices",
+          "Refreshing fruit smoothies",
+          "Non-alcoholic mocktails"
+        ]
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Princess Drink Package Prices",
+    "subtitle": "Published USD daily rates and estimated seven-night package costs across standard itineraries.",
+    "table": {
+      "headers": [
+        "Beverage Package",
+        "Published Price or Value",
+        "Main Benefit",
+        "7-Night Estimated Cost"
+      ],
+      "rows": [
+        [
+          "Plus Beverage Package",
+          "$64.99 per person, per day",
+          "Drinks up to $15 USD",
+          "$454.93 per person"
+        ],
+        [
+          "Premier Beverage Package",
+          "$84.99 per person, per day",
+          "Premium drinks up to $20 USD",
+          "$594.93 per person"
+        ],
+        [
+          "Zero-Alcohol Package",
+          "$29.99 per person, per day",
+          "Non-alcoholic drinks & specialty coffees",
+          "$209.93 per person"
+        ],
+        [
+          "Classic Soda Package",
+          "$14.99 per person, per day",
+          "Sodas, juices, mocktails & smoothies",
+          "$104.93 per person"
+        ]
+      ]
+    },
+    "importantNotesCards": [
+      {
+        "title": "Standalone Value vs. Cruise Bundles",
+        "description": "Princess's beverage page displays $64.99 and $84.99 as the respective Plus and Premier Beverage Package values. These should not be confused with the separately priced Princess Plus ($70–$75/day) and Princess Premier ($105–$110/day) cruise packages. Confirm the actual standalone package price in Manage Booking for your sailing.",
+        "icon": "Layers",
+        "bullets": [
+          "Standalone Plus value: $64.99/day",
+          "Standalone Premier value: $84.99/day",
+          "Confirm in Manage Booking"
+        ]
+      },
+      {
+        "title": "Service Charges & Currency Variations",
+        "description": "Princess states that beverage package pricing is in USD, excludes applicable service charges and can vary with currency exchange rates. Its published beverage page lists a 20% service charge for itineraries other than Australia. Check the terms displayed for your voyage before calculating the final cost.",
+        "icon": "Receipt",
+        "bullets": [
+          "Published pricing in USD",
+          "20% service charge for non-Australia voyages",
+          "Exchange rates apply to foreign currencies"
+        ]
+      },
+      {
+        "title": "Illustration Figures vs. Final Checkout",
+        "description": "The seven-night figures are simple daily-price calculations, not confirmed checkout totals. Applicable service charges, currency conversion and sailing-specific pricing may change the final amount charged at booking.",
+        "icon": "Calculator",
+        "bullets": [
+          "Calculations reflect simple daily rate math",
+          "Does not include mandatory 20% gratuity",
+          "Verify checkout totals on official portal"
+        ]
+      }
+    ]
+  },
+  "plusPackage": {
+    "title": "Plus Beverage Package: What Is Included?",
+    "subtitle": "Designed for guests who want a broad range of drinks without paying separately for every eligible order.",
+    "intro": "Under Princess's current published terms, eligible beverages can cost up to $15 USD per drink. The exact brands and menu selections vary by ship and venue.",
+    "inclusions": [
+      {
+        "category": "Alcoholic Selections",
+        "items": [
+          "Cocktails and mixed drinks up to $15 USD",
+          "Spirits and premium liquors up to $15 USD",
+          "Wine by the glass up to $15 USD",
+          "Craft, draft, and bottled beers up to $15 USD"
+        ]
+      },
+      {
+        "category": "Non-Alcoholic Selections",
+        "items": [
+          "Zero-alcohol cocktails and mocktails",
+          "Fountain sodas and soft drinks",
+          "Specialty coffees and teas (espresso, lattes, herbal teas)",
+          "Selected bottled water (500 ml or less)",
+          "Fresh juices and smoothies where offered",
+          "Red Bull energy drinks"
+        ]
+      }
+    ],
+    "dailyLimit": {
+      "title": "Daily Beverage Limit Rules",
+      "p1": "Princess Plus has a daily limit of 15 included beverages over a 24-hour period, generally tracked from 6 a.m. to 6 a.m.",
+      "p2": "The limit applies to the included beverages covered by the package, not just alcoholic drinks. However, specialty coffees and teas do not count toward the 15-drink limit. Bottled sparkling or still water in containers of 500 ml or less is also excluded from that count but has its own limit of up to 12 bottles per day.",
+      "p3": "You cannot choose which eligible drinks are counted toward the daily allowance. The ship's point-of-sale system tracks package usage automatically."
+    },
+    "additionalBenefits": "The Plus Beverage Package also provides a 25% discount on selected excluded purchases, including wine bottles, one-litre bottles of water and canned soda."
+  },
+  "premierPackage": {
+    "title": "Premier Beverage Package: What Is Included?",
+    "subtitle": "A broader premium selection with higher per-drink allowances and no daily limit on included alcoholic drinks.",
+    "intro": "Under current published terms, eligible drinks can cost up to $20 USD each. Princess highlights a selection of more than 75 spirits, 40 wines by the glass and 20 high-end crafted cocktails on its beverage information page.",
+    "inclusions": [
+      {
+        "category": "Top-Shelf & Premium Spirits",
+        "items": [
+          "Top-shelf spirits and aged liquors up to $20 USD",
+          "Premium crafted specialty cocktails up to $20 USD",
+          "Curated reserve wines by the glass up to $20 USD",
+          "Premium beers and international craft ales"
+        ]
+      },
+      {
+        "category": "Full Non-Alcoholic & Confectionery",
+        "items": [
+          "Selected zero-alcohol cocktails and artisan mocktails",
+          "Unlimited specialty espresso coffees and organic teas",
+          "Fountain sodas and selected bottled water",
+          "Frappes and specialty shakes at Coffee & Cones",
+          "Red Bull energy drinks"
+        ]
+      }
+    ],
+    "dailyLimit": {
+      "title": "Is There a Daily Drink Limit on Premier?",
+      "p1": "The current Premier Beverage Package terms state that there is no daily limit on included alcoholic beverages.",
+      "p2": "This does not mean unlimited service without restrictions. All alcohol service remains subject to Princess's responsible-service policies, bartender discretion, venue availability and package exclusions."
+    },
+    "additionalBenefits": "Premier also provides a 25% discount on selected excluded purchases, including wine bottles, one-litre bottles of water and canned soda."
+  },
+  "nonAlcoholicSection": {
+    "title": "Non-Alcoholic Packages: Zero-Alcohol & Classic Soda",
+    "subtitle": "Dedicated beverage solutions for guests who prefer gourmet coffees, mocktails, juices and sodas without alcohol.",
+    "packages": [
+      {
+        "name": "Zero-Alcohol Package ($29.99/day)",
+        "price": "$29.99 per person, per day",
+        "description": "The Zero-Alcohol Package is designed for guests who want more than standard complimentary beverages but do not need an alcoholic drinks package. Subject to applicable terms and pricing changes.",
+        "inclusions": [
+          "Zero-alcohol cocktails and mocktails",
+          "Fountain sodas and soft drinks",
+          "Specialty espresso coffees and teas",
+          "Frappes at Coffee & Cones",
+          "Red Bull energy drinks",
+          "Selected bottled water, including premium water options",
+          "25% discount on one-litre still or sparkling bottled water",
+          "Suitable for guests who regularly order specialty coffee, mocktails, and premium water without alcohol"
+        ]
+      },
+      {
+        "name": "Classic Soda Package ($14.99/day)",
+        "price": "$14.99 per person, per day",
+        "description": "The Classic Soda Package is the simpler, lower-cost option for guests who mainly want soft drinks and selected non-alcoholic refreshments. Subject to change.",
+        "inclusions": [
+          "Fountain sodas (Coca-Cola, Diet Coke, Sprite, etc.)",
+          "Fruit juices",
+          "Mocktails",
+          "Fresh fruit smoothies and blends",
+          "Suitable for guests who regularly drink soda, juice, mocktails or smoothies without needing specialty coffee"
+        ]
+      }
+    ]
+  },
+  "plusVsPremierCruisePackages": {
+    "title": "Princess Plus vs. Princess Premier: Which Beverage Package Do You Get?",
+    "subtitle": "How beverage package benefits map into Princess's comprehensive vacation packages alongside Wi-Fi, dining and gratuities.",
+    "table": {
+      "headers": [
+        "Feature",
+        "Princess Plus",
+        "Princess Premier"
+      ],
+      "rows": [
+        [
+          "Beverage package",
+          "Plus Beverage Package",
+          "Premier Beverage Package"
+        ],
+        [
+          "Maximum eligible drink price",
+          "$15 USD",
+          "$20 USD"
+        ],
+        [
+          "Daily included beverage limit",
+          "15, with stated exceptions",
+          "No daily limit on included alcoholic beverages"
+        ],
+        [
+          "Specialty coffee and tea",
+          "Included; excluded from 15-drink count",
+          "Included"
+        ],
+        [
+          "Bottled water",
+          "Up to 12 qualifying bottles per day",
+          "Up to 12 qualifying bottles per day"
+        ],
+        [
+          "Wine bottle discount",
+          "25%",
+          "25%"
+        ],
+        [
+          "Wi-Fi",
+          "1 device per guest",
+          "4 devices per guest"
+        ],
+        [
+          "Casual dining",
+          "4 qualifying meals per guest per voyage",
+          "Unlimited qualifying casual dining"
+        ],
+        [
+          "Specialty dining",
+          "Not included as a general benefit",
+          "Unlimited qualifying specialty dining, subject to terms"
+        ],
+        [
+          "Crew appreciation",
+          "Included under applicable terms",
+          "Included under applicable terms"
+        ]
+      ]
+    },
+    "pricingTiers": {
+      "title": "Current Princess Plus and Premier Package Prices",
+      "subtitle": "Rates for guests purchasing at least 96 hours before departure (USD per person, per day)"
+    }
+  },
+  "exclusions": {
+    "title": "What Is Not Included in Princess Drink Packages?",
+    "subtitle": "A drink package covers eligible beverages, not every item sold onboard. Common exclusions include:",
+    "intro": [
+      "A drink package covers eligible beverages, not every item sold onboard.",
+      "Review the key package boundaries, excluded items, and discount opportunities before placing your order."
+    ],
+    "items": [
+      {
+        "title": "Bottles of Wine",
+        "description": "Full bottles of wine are not included in either package, but qualify for a 25% discount off the menu price."
+      },
+      {
+        "title": "One-Litre Water Bottles",
+        "description": "Large one-litre bottles of still or sparkling water are excluded, but eligible for a 25% discount."
+      },
+      {
+        "title": "Canned Soda",
+        "description": "Canned soft drinks are excluded from standard package pours (fountain sodas are included), qualifying for 25% off."
+      },
+      {
+        "title": "Drinks Exceeding Price Caps",
+        "description": "Any drink priced above $15 on Plus or $20 on Premier is subject to additional menu charges for the difference or full venue price."
+      },
+      {
+        "title": "In-Stateroom Mini-Bar",
+        "description": "Items ordered or consumed from the in-stateroom mini-bar are charged separately."
+      },
+      {
+        "title": "Vending & Self-Service",
+        "description": "Drinks obtained from automated vending machines or self-service beverage stations are not covered."
+      },
+      {
+        "title": "Souvenir Glassware",
+        "description": "Souvenir cups, commemorative glasses, drink buckets and presentation vessels carry extra charges."
+      },
+      {
+        "title": "Tobacco & Food Items",
+        "description": "Cigars, cigarettes, specialty snacks and food items sold in bars are strictly excluded from all drink packages."
+      }
+    ]
+  },
+  "logisticsBento": {
+    "title": "How Princess Drink Packages Work & Island Policies",
+    "subtitle": "Essential policies, operational rules, and private island guidelines every cruiser must know.",
+    "items": [
+      {
+        "title": "Voyage Duration",
+        "stat": "Full Cruise",
+        "description": "Beverage packages are generally purchased for the full cruise length rather than selected individual days.",
+        "icon": "Calendar",
+        "accent": "gold"
+      },
+      {
+        "title": "Sharing Policy",
+        "stat": "Non-Transferable",
+        "description": "Packages cannot be shared. Each package is assigned to an individual guest and cannot be transferred to another passenger.",
+        "icon": "Users",
+        "accent": "navy"
+      },
+      {
+        "title": "Cancellation Terms",
+        "stat": "3 Days Prior",
+        "description": "Packages are non-refundable within three days of sailing under Princess's published conditions. Review terms before buying.",
+        "icon": "ShieldAlert",
+        "accent": "white"
+      },
+      {
+        "title": "Service Gratuities",
+        "stat": "20% Added",
+        "description": "Princess's published beverage page lists a 20% service charge for itineraries other than Australia. Check your sailing's checkout terms.",
+        "icon": "DollarSign",
+        "accent": "white"
+      },
+      {
+        "title": "Age Restrictions",
+        "stat": "Legal Drinking Age",
+        "description": "Drinking age depends on the departure port. Underage guests automatically receive the Zero-Alcohol Package in place of alcoholic plans.",
+        "icon": "BadgeAlert",
+        "accent": "navy"
+      },
+      {
+        "title": "US Departure Limits",
+        "stat": "International Waters",
+        "description": "On sailings from CA, MA, NY, TX, VA, or WA, the alcoholic portion of the package does not take effect until the ship enters international waters.",
+        "icon": "Compass",
+        "accent": "white"
+      },
+      {
+        "title": "Princess Cays & Half Moon Cay",
+        "stat": "Included Ashore",
+        "description": "Princess's current Plus and Premier beverage terms allow eligible package beverages on Princess private islands.",
+        "icon": "Palmtree",
+        "accent": "gold"
+      },
+      {
+        "title": "Celebration Key Exclusion",
+        "stat": "Excluded",
+        "description": "Package terms specifically exclude Celebration Key. Venue availability and drinks offered ashore may differ from onboard.",
+        "icon": "Anchor",
+        "accent": "navy"
+      }
+    ]
+  },
+  "valueEvaluation": {
+    "title": "Do You Need a Drink Package on a Princess Cruise?",
+    "subtitle": "Comparing expected daily spending against package prices to determine whether purchasing a package or paying individually delivers better value.",
+    "whenWorthIt": [
+      "You enjoy multiple cocktails, beers or glasses of wine each day (4+ alcoholic drinks daily).",
+      "You regularly order specialty espresso coffees, bottled water and premium non-alcoholic drinks.",
+      "You want predictable beverage spending without tracking each itemized receipt.",
+      "You prefer premium spirits or higher-priced reserve wines by the glass.",
+      "You are booking the complete Princess Plus or Premier cruise bundle, which includes Wi-Fi, casual dining, and crew appreciation."
+    ],
+    "whenPayIndividually": [
+      "You drink mostly complimentary beverages (tap water, brewed buffet coffee, iced tea, lemonade).",
+      "You rarely order alcohol or limit yourself to one occasional cocktail per sailing.",
+      "You prefer water, tea or standard coffee and rarely order specialty drinks.",
+      "You spend long days in port and will not use onboard drink benefits for most of the day.",
+      "Your calculated daily drink spend remains comfortably below the $64.99 or $84.99 package cost."
+    ],
+    "calculationP1": "Compare the package's actual daily cost ($64.99 or $84.99) with the total you expect to spend on eligible beverages each day.",
+    "calculationP2": "Estimate how many eligible cocktails, specialty coffees, beers, or mocktails you would order and their individual menu prices. If your total is comfortably below the package cost, paying individually is more economical.",
+    "calculationP3": "For the broader Princess Plus or Premier packages, account for bundled Wi-Fi, crew appreciation (gratuities), and casual dining allowances. Comparing the beverage benefit alone would miss a significant portion of its overall vacation value."
+  },
+  "howToChoose": {
+    "title": "How to Choose the Right Princess Drink Package",
+    "subtitle": "Use these tailored traveler profiles to quickly identify the best beverage option for your travel style.",
+    "profiles": [
+      {
+        "title": "Plus Beverage Package",
+        "badge": "Most Popular",
+        "description": "Choose Plus if you enjoy a mix of cocktails, wine, beer, spirits and specialty non-alcoholic drinks, and your daily orders fit within the 15-drink daily limit."
+      },
+      {
+        "title": "Premier Beverage Package",
+        "badge": "Top-Shelf Luxury",
+        "description": "Choose Premier if you prefer premium drinks, often order beverages above the Plus $15 price allowance, or want no daily limit on included alcoholic beverages."
+      },
+      {
+        "title": "Zero-Alcohol Package",
+        "badge": "Non-Alcoholic Value",
+        "description": "Choose Zero-Alcohol if you do not drink alcohol but regularly enjoy mocktails, specialty coffees, gourmet teas, premium bottled water and Red Bull."
+      },
+      {
+        "title": "Classic Soda Package",
+        "badge": "Soft Drinks Only",
+        "description": "Choose Classic Soda if your main interest is fountain soda, fruit juices, mocktails and smoothies without specialty espresso or alcohol."
+      },
+      {
+        "title": "No Package (À la Carte)",
+        "badge": "Casual Drinker",
+        "description": "Choose no package if you drink occasionally, enjoy complimentary drinks, and expect your individual purchases to cost less than the daily package fee."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "How much is a Princess Cruises drink package?",
+      "answer": "Princess's beverage page currently lists a value of $64.99 per person, per day for the Plus Beverage Package and $84.99 for the Premier Beverage Package. It also lists the Zero-Alcohol Package at $29.99 and the Classic Soda Package at $14.99 per person, per day. Confirm the actual price and service charges for your sailing."
+    },
+    {
+      "question": "What is the difference between the Plus and Premier Beverage Packages?",
+      "answer": "Plus covers eligible drinks priced up to $15 USD and has a daily limit of 15 included beverages, with stated exceptions for specialty coffee, tea and bottled water. Premier covers eligible drinks up to $20 USD and has no daily limit on included alcoholic beverages under current terms."
+    },
+    {
+      "question": "Does Princess Plus include unlimited drinks?",
+      "answer": "No. The Plus Beverage Package has a daily limit of 15 included beverages over a 24-hour period. Specialty coffees and teas do not count toward that limit, and qualifying bottled water has a separate daily allowance of up to 12 bottles."
+    },
+    {
+      "question": "Does Princess Premier have a drink limit?",
+      "answer": "Princess Premier currently has no daily limit on included alcoholic beverages. All alcohol service remains subject to Princess's responsible-service policies and package conditions."
+    },
+    {
+      "question": "Are specialty coffees included in Princess drink packages?",
+      "answer": "Yes. Eligible specialty coffees and teas are included in the Plus and Premier Beverage Packages and the Zero-Alcohol Package. Under Plus, specialty coffees and teas do not count toward the 15-beverage daily limit."
+    },
+    {
+      "question": "Is bottled water included in Princess drink packages?",
+      "answer": "Selected still and sparkling bottled water in containers of 500 ml or less is included, subject to a limit of up to 12 bottles per day under the current Plus and Premier terms. Other sizes and products may be excluded or discounted."
+    },
+    {
+      "question": "Can I buy a Princess drink package for only a few days?",
+      "answer": "Princess's published terms state that beverage packages must be purchased for the full length of the voyage. They are not designed for individual-day purchase."
+    },
+    {
+      "question": "Can two guests share one Princess drink package?",
+      "answer": "No. Packages are assigned to individual guests and cannot be shared or transferred."
+    },
+    {
+      "question": "Does Princess Plus include alcohol?",
+      "answer": "Yes. The Plus Beverage Package includes eligible cocktails, spirits, wine by the glass and beer priced up to $15 USD, subject to the daily beverage limit and other conditions."
+    },
+    {
+      "question": "Is the Princess Zero-Alcohol Package worth it?",
+      "answer": "It may be worthwhile if you regularly order specialty coffees, mocktails, fountain sodas and premium water. If you mainly drink complimentary beverages, purchasing individual drinks may cost less."
+    },
+    {
+      "question": "Are Princess drink package prices inclusive of service charges?",
+      "answer": "Not necessarily. Princess's beverage page states that published USD pricing excludes service charges and lists a 20% service charge for itineraries other than Australia. Check the terms for your specific voyage."
+    },
+    {
+      "question": "Can I use my Princess drink package before the ship reaches international waters?",
+      "answer": "On sailings departing from certain US states, including California, New York and Washington, the alcoholic portion of the package does not take effect until the ship enters international waters. Non-alcoholic benefits may be treated differently under the applicable terms."
+    }
+  ]
+}

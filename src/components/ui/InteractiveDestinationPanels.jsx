@@ -1,5 +1,7 @@
 import React from 'react';
 import FadeIn from './FadeIn';
+import MasterImage from './MasterImage';
+import { BALANCED_GRID, balancedCellClass } from './balancedGrid';
 
 const InteractiveDestinationPanels = ({ title, description, items }) => {
   return (
@@ -15,18 +17,16 @@ const InteractiveDestinationPanels = ({ title, description, items }) => {
           </div>
         </FadeIn>
 
-        <div className={`grid grid-cols-1 gap-8 w-full ${items.length === 4 ? 'md:grid-cols-2 lg:grid-cols-4' : 'md:grid-cols-3'}`}>
+        <div className={`gap-8 w-full ${items.length === 4 ? 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4' : BALANCED_GRID}`}>
           {items.map((item, idx) => (
-            <FadeIn key={idx} delay={idx * 0.1}>
+            <FadeIn key={idx} delay={idx * 0.1} className={items.length === 4 ? '' : balancedCellClass(idx, items.length)}>
               <div 
                 className="relative group h-[500px] rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10"
               >
                 {/* Background Image */}
-                <img 
+                <MasterImage 
                   src={item.image}
                   alt={item.title}
-                  loading="lazy"
-                  decoding="async"
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1500ms] ease-out group-hover:scale-110"
                 />
 

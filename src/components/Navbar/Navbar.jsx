@@ -1663,6 +1663,318 @@ const Navbar = () => {
                 African Safaris for Solo Women
               </NavLink>
 
+              <NavLink
+                to="/crystal-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Crystal Cruises: Complete Guide
+              </NavLink>
+
+              <NavLink
+                to="/crystal-cruises/cost"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Crystal Cruises Cost &amp; Pricing
+              </NavLink>
+
+              <NavLink
+                to="/crystal-cruises/whats-included"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                What Is Included on Crystal Cruises?
+              </NavLink>
+
+              <NavLink
+                to="/crystal-cruises/is-it-worth-it"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Is Crystal Cruises Worth It?
+              </NavLink>
+
+              <NavLink
+                to="/crystal-cruises/serenity-vs-symphony"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Crystal Serenity vs. Symphony
+              </NavLink>
+
+              <NavLink
+                to="/crystal-cruises/crystal-vs-regent"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Crystal Cruises vs. Regent Seven Seas
+              </NavLink>
+
+              <NavLink
+                to="/crystal-cruises/dress-code"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Crystal Cruises Dress Code
+              </NavLink>
+
+              <NavLink
+                to="/crystal-cruises/suites"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Crystal Cruises Suites Guide
+              </NavLink>
+
+              <NavLink
+                to="/crystal-cruises/dining"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Crystal Cruises Dining &amp; Restaurants
+              </NavLink>
+
+              <NavLink
+                to="/crystal-cruises/crystal-vs-silversea"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Crystal vs. Silversea Cruises
+              </NavLink>
+
+              <NavLink
+                to="/crystal-cruises/crystal-serenity"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Crystal Serenity Ship Guide
+              </NavLink>
+
+              <NavLink
+                to="/crystal-cruises/crystal-symphony"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Crystal Symphony Ship Guide
+              </NavLink>
+
+              <NavLink
+                to="/crystal-cruises/itineraries"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Crystal Cruises Itineraries Guide
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Cruises: Complete Guide
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/cost"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Cruises Cost &amp; Pricing
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/whats-included"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                What Is Included on Princess Cruises?
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/plus-vs-premier"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Plus vs. Premier Packages
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/princess-plus"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Plus Package Guide
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/princess-premier"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Premier Package Guide
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/ships"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Cruises Ships &amp; Fleet Guide
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/ship-classes"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Cruises Ship Classes
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/staterooms-and-suites"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Cruises Staterooms &amp; Suites
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/balcony-vs-mini-suite"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Balcony vs. Mini-Suite
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/reserve-vs-sanctuary-collection"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Reserve vs. Sanctuary Collection
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/alaska"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Cruises Alaska Guide
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/alaska-cruisetours"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Alaska Cruisetours Guide
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/voyage-of-the-glaciers-vs-inside-passage"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Voyage of the Glaciers vs. Inside Passage
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/alaska-departure-ports"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Alaska Departure Ports
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/dining"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Cruises Dining &amp; Restaurants
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/drink-packages"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Cruises Drink Packages
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/wifi"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Cruises MedallionNet Wi-Fi
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/medallion-and-app"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Medallion &amp; App Guide
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/gratuities"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Cruises Gratuities &amp; Crew Appreciation
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/dress-code"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Cruises Dress Code
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/princess-vs-celebrity"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess vs. Celebrity Cruises
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/princess-vs-holland-america-alaska"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess vs. Holland America Alaska
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/princess-vs-royal-caribbean"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess vs. Royal Caribbean
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/families"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Cruises for Families &amp; Kids
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/accessibility"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Cruises Accessibility &amp; Special Needs
+              </NavLink>
+
 
             </div>
           </div>
@@ -3283,6 +3595,318 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 African Safaris for Solo Women
+              </NavLink>
+
+              <NavLink
+                to="/crystal-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Crystal Cruises: Complete Guide
+              </NavLink>
+
+              <NavLink
+                to="/crystal-cruises/cost"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Crystal Cruises Cost &amp; Pricing
+              </NavLink>
+
+              <NavLink
+                to="/crystal-cruises/whats-included"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                What Is Included on Crystal Cruises?
+              </NavLink>
+
+              <NavLink
+                to="/crystal-cruises/is-it-worth-it"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Is Crystal Cruises Worth It?
+              </NavLink>
+
+              <NavLink
+                to="/crystal-cruises/serenity-vs-symphony"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Crystal Serenity vs. Symphony
+              </NavLink>
+
+              <NavLink
+                to="/crystal-cruises/crystal-vs-regent"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Crystal Cruises vs. Regent Seven Seas
+              </NavLink>
+
+              <NavLink
+                to="/crystal-cruises/dress-code"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Crystal Cruises Dress Code
+              </NavLink>
+
+              <NavLink
+                to="/crystal-cruises/suites"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Crystal Cruises Suites Guide
+              </NavLink>
+
+              <NavLink
+                to="/crystal-cruises/dining"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Crystal Cruises Dining &amp; Restaurants
+              </NavLink>
+
+              <NavLink
+                to="/crystal-cruises/crystal-vs-silversea"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Crystal vs. Silversea Cruises
+              </NavLink>
+
+              <NavLink
+                to="/crystal-cruises/crystal-serenity"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Crystal Serenity Ship Guide
+              </NavLink>
+
+              <NavLink
+                to="/crystal-cruises/crystal-symphony"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Crystal Symphony Ship Guide
+              </NavLink>
+
+              <NavLink
+                to="/crystal-cruises/itineraries"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Crystal Cruises Itineraries Guide
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Cruises: Complete Guide
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/cost"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Cruises Cost &amp; Pricing
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/whats-included"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                What Is Included on Princess Cruises?
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/plus-vs-premier"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Plus vs. Premier Packages
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/princess-plus"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Plus Package Guide
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/princess-premier"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Premier Package Guide
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/ships"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Cruises Ships &amp; Fleet Guide
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/ship-classes"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Cruises Ship Classes
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/staterooms-and-suites"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Cruises Staterooms &amp; Suites
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/balcony-vs-mini-suite"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Balcony vs. Mini-Suite
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/reserve-vs-sanctuary-collection"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Reserve vs. Sanctuary Collection
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/alaska"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Cruises Alaska Guide
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/alaska-cruisetours"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Alaska Cruisetours Guide
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/voyage-of-the-glaciers-vs-inside-passage"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Voyage of the Glaciers vs. Inside Passage
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/alaska-departure-ports"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Alaska Departure Ports
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/dining"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Cruises Dining &amp; Restaurants
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/drink-packages"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Cruises Drink Packages
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/wifi"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Cruises MedallionNet Wi-Fi
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/medallion-and-app"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Medallion &amp; App Guide
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/gratuities"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Cruises Gratuities &amp; Crew Appreciation
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/dress-code"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Cruises Dress Code
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/princess-vs-celebrity"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess vs. Celebrity Cruises
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/princess-vs-holland-america-alaska"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess vs. Holland America Alaska
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/princess-vs-royal-caribbean"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess vs. Royal Caribbean
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/families"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Cruises for Families &amp; Kids
+              </NavLink>
+
+              <NavLink
+                to="/princess-cruises/accessibility"
+                className="nav-dropdown-single"
+                onClick={toggleMenu}
+              >
+                Princess Cruises Accessibility &amp; Special Needs
               </NavLink>
 
             <span className="mobile-dropdown-divider"></span>

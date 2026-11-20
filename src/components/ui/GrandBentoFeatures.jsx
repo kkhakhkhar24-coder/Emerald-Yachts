@@ -1,6 +1,7 @@
 import React from 'react';
 import FadeIn from './FadeIn';
 import { Compass, Sparkles, UtensilsCrossed, Landmark } from 'lucide-react';
+import MasterImage from './MasterImage';
 
 const GrandBentoFeatures = ({ title, subtitle, features, images = [] }) => {
   if (!features || features.length < 4) return null;
@@ -37,17 +38,12 @@ const GrandBentoFeatures = ({ title, subtitle, features, images = [] }) => {
           
           {/* Feature 0: Effortless Travel (2x2 - The Hero Card) */}
           <FadeIn delay={0.1} className="md:col-span-2 md:row-span-2 relative rounded-3xl overflow-hidden group shadow-xl">
-            {images && images[0] ? (
-              <img
-                src={images[0]}
-                alt={features[0]?.title}
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-              />
-            ) : (
-              <div className="absolute inset-0 bg-gradient-to-br from-navy-900 to-navy-950 flex items-center justify-center">
-                <span className="text-white/30 text-xs font-bold tracking-[0.2em] uppercase">IMAGE PLACEHOLDER</span>
-              </div>
-            )}
+            <MasterImage
+              src={images?.[0]}
+              alt={features[0]?.title}
+              placeholderLabel={features[0]?.title}
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+            />
             <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/50 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-80"></div>
             <div className="absolute inset-0 p-10 md:p-14 flex flex-col justify-end">
               <Compass className="w-14 h-14 text-white/90 mb-6" strokeWidth={1} />
@@ -60,7 +56,7 @@ const GrandBentoFeatures = ({ title, subtitle, features, images = [] }) => {
           <FadeIn delay={0.2} className="md:col-span-2 md:row-span-1 bg-white rounded-3xl overflow-hidden shadow-xl border border-slate-100 relative group">
             {images[2] ? (
               <>
-                <img src={images[2]} alt={features[2].title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+                <MasterImage src={images[2]} alt={features[2].title} placeholderLabel={features[2].title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-navy-950/60 transition-colors duration-700"></div>
                 <div className="absolute inset-0 p-10 md:p-12 flex flex-col justify-center">
                   <UtensilsCrossed className="w-10 h-10 text-white/90 mb-4" strokeWidth={1.5} />
@@ -91,7 +87,7 @@ const GrandBentoFeatures = ({ title, subtitle, features, images = [] }) => {
           <FadeIn delay={0.3} className="md:col-span-1 md:row-span-1 bg-navy-900 rounded-3xl overflow-hidden shadow-xl relative group">
             {images[1] ? (
               <>
-                <img src={images[1]} alt={features[1].title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+                <MasterImage src={images[1]} alt={features[1].title} placeholderLabel={features[1].title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-navy-950/70 group-hover:bg-navy-950/50 transition-colors duration-700 backdrop-blur-[2px]"></div>
                 <div className="absolute inset-0 p-8 flex flex-col justify-center items-center text-center">
                   <Sparkles className="w-10 h-10 text-white mb-4" strokeWidth={1.5} />
@@ -111,9 +107,10 @@ const GrandBentoFeatures = ({ title, subtitle, features, images = [] }) => {
 
           {/* Feature 3: Cultural Immersion (1x1 - The Image Card) */}
           <FadeIn delay={0.4} className="md:col-span-1 md:row-span-1 relative rounded-3xl overflow-hidden shadow-xl group">
-            <img 
+            <MasterImage 
               src={images[3] || images[1] || images[0]} 
               alt={features[3].title} 
+              placeholderLabel={features[3].title}
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" 
             />
             <div className="absolute inset-0 bg-navy-950/70 group-hover:bg-navy-950/50 transition-colors duration-700 backdrop-blur-[2px]"></div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import FadeIn from './FadeIn';
 import { Play } from 'lucide-react';
+import LiteYouTubeEmbed from '@/components/ui/LiteYouTubeEmbed';
 
 const GreeceHeatVideoOne = () => {
   return (
@@ -27,14 +28,14 @@ const GreeceHeatVideoOne = () => {
         <FadeIn>
           <div className="max-w-5xl mx-auto">
             <div className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl border border-white/5 bg-slate-950">
-              <iframe
+              <LiteYouTubeEmbed
                 className="absolute inset-0 w-full h-full"
                 src="https://www.youtube.com/embed/PlCPx9yETCo"
                 title="Greece Luxury Travel Guide Video 1"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
-              ></iframe>
+              />
             </div>
 
             {/* Editorial Quote Box below Video */}

@@ -35,7 +35,8 @@ const LuxuryZigZagShowcase = ({ title, subtitle, items, images = [] }) => {
         <div className="flex flex-col gap-24 lg:gap-32">
           {items.map((item, index) => {
             const isEven = index % 2 === 0;
-            const imageSrc = images[index % images.length];
+            const imageSrc = item.image || (images && images.length > 0 ? images[index % images.length] : null);
+            const imageAlt = item.alt || item.title;
 
             return (
               <div 
@@ -51,7 +52,7 @@ const LuxuryZigZagShowcase = ({ title, subtitle, items, images = [] }) => {
                     {imageSrc && (
                       <MasterImage
                         src={imageSrc}
-                        alt={item.title}
+                        alt={imageAlt}
                         className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
                       />
                     )}

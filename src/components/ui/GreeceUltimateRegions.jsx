@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import CrawlablePanels from './CrawlablePanels';
 
 /**
  * GreeceUltimateRegions
@@ -84,6 +85,7 @@ const GreeceUltimateRegions = ({ regions = [] }) => {
           </div>
         )}
       </div>
+      <CrawlablePanels items={regions} activeIndex={activeTab} />
     </section>
   );
 };

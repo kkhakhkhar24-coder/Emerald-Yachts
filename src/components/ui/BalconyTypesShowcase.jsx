@@ -42,6 +42,8 @@ const BalconyTypesShowcase = ({ data }) => {
             return (
               <button
                 key={idx}
+                type="button"
+                aria-pressed={activeType === idx}
                 onClick={() => setActiveType(idx)}
                 className={`flex items-center gap-3 px-6 py-4 rounded-full border text-sm font-bold transition-all duration-300 ${
                   activeType === idx
@@ -56,12 +58,15 @@ const BalconyTypesShowcase = ({ data }) => {
           })}
         </div>
 
-        {/* Active Type Detail — Magazine Spread Layout */}
-        {(() => {
-          const type = data.types[activeType];
-          const Icon = icons[activeType];
+        {/* Type details — all rendered so every balcony type is in the prerendered HTML;
+            only the selected one is visible. */}
+        {data.types.map((type, idx) => {
+          const Icon = icons[idx];
           return (
-            <div className="grid grid-cols-1 lg:grid-cols-5 gap-0 bg-white rounded-[40px] border border-slate-200/60 shadow-xl overflow-hidden">
+            <div
+              key={idx}
+              className={`${idx === activeType ? "grid" : "hidden"} grid-cols-1 lg:grid-cols-5 gap-0 bg-white rounded-[40px] border border-slate-200/60 shadow-xl overflow-hidden`}
+            >
               
               {/* Left: Rating & Visual */}
               <div className="lg:col-span-2 bg-navy-950 p-10 md:p-14 flex flex-col justify-between text-white relative">
@@ -72,7 +77,7 @@ const BalconyTypesShowcase = ({ data }) => {
                       <Icon className="w-7 h-7" />
                     </div>
                     <span className="text-xs font-bold uppercase tracking-[0.2em] text-slate-400">
-                      Balcony Type {activeType + 1}
+                      Balcony Type {idx + 1}
                     </span>
                   </div>
                   <h3 className="font-display text-3xl sm:text-4xl text-white leading-tight">
@@ -134,7 +139,7 @@ const BalconyTypesShowcase = ({ data }) => {
 
             </div>
           );
-        })()}
+        })}
 
       </div>
     </section>

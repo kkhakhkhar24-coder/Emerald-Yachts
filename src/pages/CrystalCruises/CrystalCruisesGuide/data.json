@@ -1,0 +1,811 @@
+{
+  "seo": {
+    "title": "Crystal Cruises: The Complete Guide to Ships, Suites, Dining and Luxury Voyages",
+    "metaTitle": "Crystal Cruises: The Complete Guide to Ships, Suites, Dining and Luxury Voyages",
+    "metaDescription": "Explore Crystal Cruises ships, luxury suites, fine dining, destinations, inclusions and prices. Compare voyages and plan your Crystal cruise with expert guidance.",
+    "canonicalUrl": "https://www.tripsandships.com/crystal-cruises",
+    "ogTitle": "Crystal Cruises: The Complete Guide to Ships, Suites, Dining and Luxury Voyages",
+    "ogDescription": "Explore Crystal Cruises ships, luxury suites, fine dining, destinations, inclusions and prices. Compare voyages and plan your Crystal cruise with expert guidance.",
+    "keywords": "Crystal Cruises, Crystal Cruises ships, Crystal Cruises suites, Crystal Cruises dining, Crystal Cruises itineraries, Crystal Cruises reviews, Crystal Cruises cost"
+  },
+  "hero": {
+    "title": "Crystal Cruises: The Complete Guide to Ships, Suites, Dining and Luxury Voyages",
+    "subtitle": "An independent luxury travel assessment of Crystal Serenity, Crystal Symphony, and the future Crystal Grace",
+    "ctaLabel": "Plan Your Crystal Cruise",
+    "ctaUrl": "/contact",
+    "secondaryCtaLabel": "View Pricing & Fares",
+    "secondaryCtaUrl": "/crystal-cruises/cost",
+    "author": "Angela Hughes",
+    "authorUrl": "https://www.tripsandships.com/about-angela-hughes"
+  },
+  "introSection": {
+    "p1": "Crystal Cruises is an ultra-luxury ocean cruise experience built around spacious accommodation, attentive personal service, destination-focused itineraries and an exceptional choice of dining. Its current fleet includes Crystal Serenity and Crystal Symphony, with the new Crystal Grace scheduled to join the fleet in 2028.",
+    "p2": "For travelers comparing luxury cruise lines, Crystal deserves consideration for its all-suite, ocean-view accommodation, butler service in every guest room and suite, specialty restaurants and relaxed onboard atmosphere. The best voyage depends on the ship, itinerary, accommodation category, travel dates and the experiences you value most.",
+    "p3": "Planning a Crystal voyage? Explore the ships, compare suites and dining, and speak with a luxury travel advisor before choosing your sailing.",
+    "ctaLabel": "Plan Your Crystal Cruise",
+    "ctaUrl": "/contact"
+  },
+  "differenceSection": {
+    "badge": "The Crystal Difference",
+    "title": "What Is Crystal Cruises?",
+    "subtitle": "Crystal is a luxury cruise brand known for combining elegant ships, personalized hospitality, refined dining and itineraries that give travelers time to explore destinations.",
+    "body": "The experience is designed around more than the destination. Guests can spend a day exploring a historic port, return to attentive service onboard, enjoy a specialty restaurant and finish the evening with live entertainment. The atmosphere is polished without requiring every moment to feel formal. Its current operation follows the acquisition of the Crystal brand by A&K Travel Group in 2022 and the refurbishment and relaunch of Crystal Serenity and Crystal Symphony.",
+    "specialtiesTitle": "Crystal May Appeal to Travelers Who Want:",
+    "specialties": [
+      "A smaller-ship atmosphere compared with large mainstream cruise vessels",
+      "Ocean-view accommodation and a choice of veranda suites",
+      "Butler service across guest room and suite categories",
+      "A strong emphasis on restaurant quality and culinary variety",
+      "Itineraries with opportunities for longer stays and destination exploration",
+      "A more personal onboard experience, with a high level of service"
+    ],
+    "videoText": "Crystal Grace is a future addition and is scheduled to enter service in 2028. Travelers should check the latest published sailing schedule and ship-specific itinerary before making plans."
+  },
+  "whyAttention": {
+    "badge": "Expert Insight",
+    "title": "Who Owns Crystal Cruises & Why It Matters",
+    "quote": "The current Crystal brand should not be confused with former ownership. Under A&K Travel Group, Crystal Serenity and Crystal Symphony have been revitalized with elevated butler service, world-class gastronomy, and small-ship elegance.",
+    "author": "Angela Hughes, CEO of Trips & Ships Luxury Travel",
+    "body": "Crystal is owned by A&K Travel Group, which acquired the Crystal brand in 2022. Following the acquisition, the company refurbished and relaunched Crystal Serenity and Crystal Symphony and announced Crystal Grace as its next ship. Travelers considering an older review or article should check whether it describes the pre-2022 operation or the current A&K Travel Group era.",
+    "operatingStatus": "Is Crystal Operating Now? Yes. Crystal is operating with Crystal Serenity and Crystal Symphony. Crystal Grace is scheduled to enter service in 2028.",
+    "differentiators": [
+      {
+        "label": "A&K Travel Group Ownership",
+        "desc": "Acquired in 2022, bringing world-renowned luxury heritage and investments."
+      },
+      {
+        "label": "Butler Service in Every Room",
+        "desc": "Dedicated personalized butler assistance across stateroom and suite tiers."
+      },
+      {
+        "label": "Master Chef Gastronomy",
+        "desc": "Nobu Matsuhisa’s Umi Uma, Alajmo brothers’ Osteria d’Ovidio, and Beefbar."
+      },
+      {
+        "label": "All-Ocean-View Fleet",
+        "desc": "100% ocean-view accommodation with spacious veranda and penthouse options."
+      }
+    ]
+  },
+  "atAGlance": {
+    "title": "Crystal Cruises at a Glance",
+    "headers": [
+      "Feature",
+      "What to know"
+    ],
+    "rows": [
+      [
+        "Cruise style",
+        "Ultra-luxury ocean cruising"
+      ],
+      [
+        "Current ships",
+        "Crystal Serenity and Crystal Symphony"
+      ],
+      [
+        "Future ship",
+        "Crystal Grace, scheduled for 2028"
+      ],
+      [
+        "Ownership",
+        "Crystal is owned by A&K Travel Group"
+      ],
+      [
+        "Accommodation",
+        "Ocean-view guest rooms and suites, including veranda categories"
+      ],
+      [
+        "Personal service",
+        "Butler service in every guest room and suite"
+      ],
+      [
+        "Dining",
+        "Multiple restaurants, including Umi Uma, Osteria d’Ovidio and Beefbar"
+      ],
+      [
+        "Wi-Fi",
+        "Complimentary Standard Wi-Fi; paid Premium option"
+      ],
+      [
+        "Gratuities",
+        "Included for housekeeping, bar and dining onboard crew"
+      ],
+      [
+        "Shore excursions",
+        "Generally priced separately from the cruise fare"
+      ],
+      [
+        "Best suited to",
+        "Travelers who value service, dining, comfort and enriching itineraries"
+      ]
+    ]
+  },
+  "fleetOverview": {
+    "title": "The Crystal Cruises Fleet: Compare the Ships",
+    "subtitle": "Crystal’s current fleet consists of two refurbished ships, with a third ship planned for 2028. The operating vessels offer different capacities and onboard layouts, so comparing them is a useful first step.",
+    "items": [
+      {
+        "title": "Crystal Serenity",
+        "subtitle": "Operating | 740 Guest Capacity | 402 Ocean-View Suites | 10 Dining Venues",
+        "description": "Crystal Serenity is the larger of the two currently operating ships, with a published guest capacity of 740. It offers a broad choice of public spaces, restaurants, entertainment and accommodation.",
+        "highlights": [
+          "Published guest capacity of 740 in 402 ocean-view rooms and suites",
+          "10 distinct dining venues including Umi Uma and Beefbar",
+          "Wider selection of onboard venues while retaining an intimate atmosphere",
+          "Consider Serenity if you value larger dining choice and public spaces"
+        ],
+        "icon": "Ship",
+        "linkUrl": "/crystal-cruises/serenity-vs-symphony"
+      },
+      {
+        "title": "Crystal Symphony",
+        "subtitle": "Operating | 606 Guest Capacity | 330 Ocean-View Suites | 9 Dining Venues",
+        "description": "Crystal Symphony has a published guest capacity of 606, with 330 ocean-view guest rooms and suites and nine dining venues. Its smaller guest capacity creates a distinctive onboard scale.",
+        "highlights": [
+          "Published guest capacity of 606 in 330 ocean-view rooms and suites",
+          "Dedicated single-occupancy staterooms for solo luxury cruisers",
+          "Nine world-class dining venues and refined wellness facilities",
+          "Consider Symphony if you prefer a smaller guest capacity or specific dates"
+        ],
+        "icon": "Anchor",
+        "linkUrl": "/crystal-cruises/serenity-vs-symphony"
+      },
+      {
+        "title": "Crystal Grace",
+        "subtitle": "Planned for 2028 | 650 Guests (Double Occupancy) | New Dining Concepts",
+        "description": "Crystal Grace is Crystal’s planned new ocean ship, scheduled to debut in 2028. The published capacity is 650 guests at double occupancy, designed around the contemporary Crystal vision.",
+        "highlights": [
+          "Scheduled to debut in 2028 with 650 guests at double occupancy",
+          "Newly engineered stateroom architecture and spacious suite layouts",
+          "Innovative dining concepts and bespoke luxury entertainment",
+          "Inaugural season voyages opening for advance luxury travel planning"
+        ],
+        "icon": "Sparkles",
+        "linkUrl": "/contact"
+      }
+    ],
+    "table": {
+      "title": "Crystal Ship Comparison",
+      "headers": [
+        "Feature",
+        "Crystal Serenity",
+        "Crystal Symphony",
+        "Crystal Grace"
+      ],
+      "rows": [
+        [
+          "Status",
+          "Operating",
+          "Operating",
+          "Planned for 2028"
+        ],
+        [
+          "Published guest capacity",
+          "740",
+          "606",
+          "650 at double occupancy"
+        ],
+        [
+          "Ocean-view rooms and suites",
+          "402",
+          "330",
+          "Confirm final published details"
+        ],
+        [
+          "Dining venues",
+          "10",
+          "9",
+          "New dining concepts planned"
+        ],
+        [
+          "Best comparison point",
+          "Larger current ship",
+          "Smaller current ship",
+          "Future new-build experience"
+        ]
+      ],
+      "note": "The published figures above are useful for an initial comparison. Ship configurations, capacity descriptions and venue availability may change, so confirm details for the specific sailing before booking."
+    },
+    "guideLinks": [
+      {
+        "label": "Crystal Serenity vs. Crystal Symphony",
+        "url": "/crystal-cruises/serenity-vs-symphony"
+      },
+      {
+        "label": "Crystal Cruises What's Included",
+        "url": "/crystal-cruises/whats-included"
+      },
+      {
+        "label": "Plan Your Crystal Cruise",
+        "url": "/contact"
+      }
+    ]
+  },
+  "cabinInnovations": {
+    "title": "Crystal Cruises Suites: Which Accommodation Should You Choose?",
+    "subtitle": "Ocean-view guest rooms, private veranda suites, expansive penthouses, and dedicated butler service in every room tier.",
+    "intro": "Accommodation is an important part of the Crystal experience. The fleet offers ocean-view guest rooms and a range of suites, including veranda categories and larger penthouse accommodation. Butler service is offered across all guest room and suite categories, although the specific services vary by category. When comparing rooms, look beyond the headline suite name: consider total living space, veranda size, bathroom configuration, storage, included amenities, location on the ship and the amount of time you expect to spend in your accommodation.",
+    "features": [
+      {
+        "title": "Crystal Penthouse Suites",
+        "category": "Flagship Luxury",
+        "description": "Designed for guests who want generous living space and an elevated residential feel. On Crystal Serenity, the Crystal Penthouse can reach approximately 1,265 square feet, while on Symphony it reaches approximately 909 square feet."
+      },
+      {
+        "title": "Junior Crystal Penthouse Suites",
+        "category": "Spacious Elegance",
+        "description": "Offers a separate living area and additional space compared with lower categories. A practical choice for travelers who want a more spacious suite without selecting the largest penthouse."
+      },
+      {
+        "title": "Sapphire Veranda Suites",
+        "category": "Indoor-Outdoor Living",
+        "description": "Offers private outdoor space, a separate living area and additional suite amenities. Worth considering for travelers who enjoy spending time on their veranda or prefer an indoor-outdoor connection."
+      },
+      {
+        "title": "Ocean-View Rooms & Suites",
+        "category": "Scenic Comfort",
+        "description": "A suitable option for guests who want natural light and sea views without prioritizing a private veranda. Compare layout and included amenities rather than assuming all ocean-view categories are identical."
+      },
+      {
+        "title": "Aquamarine Veranda Suites",
+        "category": "Enhanced Comforts",
+        "description": "Enhanced room amenities and selected veranda options. Designed for travelers seeking additional comforts and seamless outdoor balcony access while cruising."
+      },
+      {
+        "title": "Single Guest Rooms",
+        "category": "Solo Travelers",
+        "description": "Dedicated single-occupancy staterooms with ocean views on selected ships. Eliminates excessive solo supplements while retaining full butler service and ship amenities."
+      }
+    ],
+    "table": {
+      "title": "Main Crystal Accommodation Categories",
+      "headers": [
+        "Accommodation category",
+        "General features",
+        "May suit"
+      ],
+      "rows": [
+        [
+          "Single Guest Room",
+          "Designed for solo occupancy, with an ocean view",
+          "Individual travelers"
+        ],
+        [
+          "Double Guest Room",
+          "Ocean-view or veranda configurations, depending on ship",
+          "Guests prioritizing value within the luxury experience"
+        ],
+        [
+          "Aquamarine",
+          "Enhanced room amenities and selected veranda options",
+          "Travelers seeking additional comforts"
+        ],
+        [
+          "Sapphire",
+          "Higher-category accommodation, including veranda and ocean-view options",
+          "Guests wanting more space and added amenities"
+        ],
+        [
+          "Junior Crystal Penthouse",
+          "Larger accommodation with separate living and dining areas",
+          "Travelers who value extra room and suite privileges"
+        ],
+        [
+          "Crystal Penthouse",
+          "Among the largest accommodation options, with expansive living areas",
+          "Guests seeking the most spacious suite experience"
+        ]
+      ],
+      "note": "Exact names, dimensions and amenities can differ between ships. Check the accommodation details for the vessel and sailing you are considering."
+    },
+    "guideLinks": [
+      {
+        "label": "Crystal Suites & Staterooms Guide",
+        "url": "/crystal-cruises/suites"
+      },
+      {
+        "label": "Crystal Cruises Inclusions & Butler Service",
+        "url": "/crystal-cruises/whats-included"
+      },
+      {
+        "label": "Crystal Cruise Costs & Fares",
+        "url": "/crystal-cruises/cost"
+      },
+      {
+        "label": "Consult with a Crystal Cruises Specialist",
+        "url": "/contact"
+      }
+    ]
+  },
+  "diningAndInclusions": {
+    "title": "Crystal Cruises Dining: Restaurants, Menus and Culinary Experiences",
+    "subtitle": "World-class specialty venues created with legendary chefs, casual poolside cafés, and 24-hour in-suite dining.",
+    "intro": "Dining is one of Crystal’s central attractions. The onboard selection ranges from specialty restaurants and a main dining room to casual cafés, a poolside grill, gelato and 24-hour in-suite dining. Specialty dining reservations may be limited and should be considered when planning a voyage.",
+    "items": [
+      {
+        "title": "Umi Uma (Chef Nobu Matsuhisa)",
+        "category": "Japanese-Peruvian",
+        "description": "Features Japanese-Peruvian cuisine created by master chef Nobu Matsuhisa. Combines a signature menu with a sushi bar and is one of Crystal’s best-known dining experiences. Reservations required."
+      },
+      {
+        "title": "Osteria d’Ovidio (Alajmo Brothers)",
+        "category": "Refined Italian",
+        "description": "Focuses on Italian cuisine in collaboration with the Alajmo brothers. Offers a more formal specialty dining experience and is a notable option for guests who enjoy Italian food and carefully presented dishes."
+      },
+      {
+        "title": "Beefbar",
+        "category": "Beef, Reef & Leaf",
+        "description": "Brings the renowned Beef, Reef and Leaf concept to the ships, featuring premium cuts, seafood and plant-based dishes. Complimentary under current policy, with select premium cuts carrying surcharges."
+      },
+      {
+        "title": "Waterside Restaurant",
+        "category": "Main Dining Room",
+        "description": "The elegant main dining room offering changing daily dinner menus, open seating, fresh seasonal specialties, and impeccable table-side sommelier service."
+      },
+      {
+        "title": "Marketplace & Trident Grill",
+        "category": "Casual & Poolside",
+        "description": "Marketplace provides buffet-style breakfast and lunch with open kitchens, while Trident Grill offers made-to-order burgers, wraps, and comfort food poolside."
+      },
+      {
+        "title": "The Bistro, Scoops & 24/7 Room Service",
+        "category": "Cafés & In-Suite",
+        "description": "The Bistro offers Parisian café coffees and light bites, Scoops serves authentic Italian gelato, and complimentary 24-hour in-suite dining is served course-by-course by your butler."
+      }
+    ],
+    "otherVenuesTable": {
+      "title": "Other Dining Options",
+      "headers": [
+        "Restaurant or venue",
+        "Experience"
+      ],
+      "rows": [
+        [
+          "Waterside",
+          "Main dining room with changing menus"
+        ],
+        [
+          "Marketplace",
+          "Buffet-style breakfast and lunch"
+        ],
+        [
+          "Trident Grill",
+          "Casual grill and comfort food"
+        ],
+        [
+          "The Bistro",
+          "Café-style drinks, snacks and light dishes"
+        ],
+        [
+          "The Vintage Room",
+          "Private gourmet dining and wine experience; charges apply"
+        ],
+        [
+          "Scoops Gelato Bar",
+          "Italian-style gelato"
+        ],
+        [
+          "In-suite dining",
+          "Room service available around the clock"
+        ]
+      ]
+    },
+    "isIncluded": {
+      "title": "Is Dining Included on Crystal Cruises?",
+      "body": "Most onboard restaurants are complimentary, with important exceptions and conditions. The Vintage Room is a chargeable experience. Beefbar is complimentary under the current policy, although selected premium meat items may cost extra. Umi Uma and Osteria d’Ovidio have complimentary reservation allowances that vary according to voyage length and booking terms. Always review dining inclusions for your specific sailing."
+    },
+    "guideLinks": [
+      {
+        "label": "Crystal Cruises All-Inclusive Dining Guide",
+        "url": "/crystal-cruises/dining"
+      },
+      {
+        "label": "Is Crystal Cruises Worth the Money?",
+        "url": "/crystal-cruises/is-it-worth-it"
+      },
+      {
+        "label": "Crystal Cruise Cost & Pricing Guide",
+        "url": "/crystal-cruises/cost"
+      },
+      {
+        "label": "Crystal Serenity vs Symphony Dining",
+        "url": "/crystal-cruises/serenity-vs-symphony"
+      }
+    ]
+  },
+  "inclusionsVsExpenses": {
+    "title": "What Is Included on Crystal Cruises?",
+    "subtitle": "Crystal’s cruise fare includes extensive onboard services and experiences. Before comparing with another luxury line, compare actual fare inclusions rather than relying only on starting prices.",
+    "includedTitle": "Commonly Included Elements",
+    "included": [
+      "Accommodation in the booked guest room or suite",
+      "Shipboard dining at most restaurants, subject to venue-specific terms",
+      "Selected wines, Champagne, spirits and non-alcoholic beverages",
+      "Butler service in every guest room and suite, with services varying by category",
+      "Complimentary Standard Wi-Fi, subject to onboard connectivity conditions",
+      "Gratuities for housekeeping, bar and dining onboard crew",
+      "Access to the ship's public spaces, entertainment and fitness facilities"
+    ],
+    "additionalTitle": "Common Additional Expenses",
+    "additional": [
+      "Shore excursions and destination experiences (priced separately)",
+      "Premium Wi-Fi packages for high-bandwidth streaming or multi-device needs",
+      "The Vintage Room and other specifically chargeable dining or menu items",
+      "Spa treatments, salon services and certain wellness programs",
+      "Laundry or other services where not included in the booked category",
+      "Airfare, transfers and hotel arrangements unless included in the specific offer",
+      "Taxes, port expenses, surcharges and items identified in booking terms"
+    ],
+    "inclusionsGuideLink": {
+      "label": "Read What Is Included on a Crystal Cruise and What Costs Extra?",
+      "url": "/crystal-cruises/whats-included"
+    }
+  },
+  "pricingEstimates": {
+    "title": "How Much Do Crystal Cruises Cost?",
+    "subtitle": "Crystal cruise fares vary according to ship, itinerary, departure date, voyage length, accommodation category, availability and booking promotions.",
+    "intro": "When comparing prices, look at the complete trip cost rather than the cruise fare alone. Consider accommodation tier, number of ports, seasonal demand, transfers, optional excursions, premium internet, and taxes. A higher fare may offer more attractive overall value if it includes benefits that matter to you. Conversely, a lower starting fare may not represent the best choice if the itinerary or accommodation does not meet your expectations.",
+    "tiers": [
+      {
+        "priceRange": "Regional Voyages",
+        "duration": "7 to 10-Night Sailings",
+        "description": "Mediterranean, Caribbean, or Northern European sailings. Ideal for discovering Crystal’s butler service, dining, and port enrichment."
+      },
+      {
+        "priceRange": "Extended Itineraries",
+        "duration": "11 to 21-Night Voyages",
+        "description": "Alaska wilderness, Asia explorations, and transoceanic repositioning sailings with extra sea days and destination immersion."
+      },
+      {
+        "priceRange": "Grand Journeys",
+        "duration": "22 to 50-Night Routes",
+        "description": "Multi-regional segment sailings combining several cultural continents with VIP onboard enrichment and extended port overnights."
+      },
+      {
+        "priceRange": "World Cruises",
+        "duration": "Full Circumnavigations",
+        "description": "Extended 100+ night World Cruises designed for global travelers seeking complete logistics, visas, private shore events, and luxury suites."
+      }
+    ],
+    "costGuideLink": {
+      "label": "How Much Does a Crystal Cruise Cost?",
+      "url": "/crystal-cruises/cost"
+    },
+    "reviewsGuideLink": {
+      "label": "Is Crystal Cruises Worth the Money?",
+      "url": "/crystal-cruises/is-it-worth-it"
+    }
+  },
+  "reviewsSection": {
+    "title": "Crystal Cruises Reviews: Is Crystal Worth It?",
+    "body1": "Crystal may be worth considering for travelers who place a high value on personal service, refined dining, spacious accommodation and a more intimate onboard environment.",
+    "body2": "Its strongest appeal is the combination of butler service, a wide range of dining venues, ocean-view accommodation and itineraries across multiple regions. Travelers should also consider the total cost, excursion expenses, onboard internet needs and whether the sailing offers the destinations and pace they want.",
+    "verdict": "Crystal may be less suitable for travelers whose main priorities are extensive family entertainment, large-scale attractions or a low-cost cruise holiday. The best way to assess value is to compare the specific Crystal sailing with alternatives offering a similar itinerary, accommodation level and set of inclusions."
+  },
+  "brandComparison": {
+    "title": "Crystal Cruises vs. Other Luxury Cruise Lines",
+    "subtitle": "When comparing brands, focus on the actual voyage rather than assuming that one cruise line is best for every traveler.",
+    "intro": "Crystal is one of several brands competing in the luxury cruise market. Each has a different approach to ship design, onboard atmosphere, dining, itineraries and inclusions.",
+    "table": {
+      "title": "Crystal Cruises vs. Other Luxury Cruise Lines",
+      "headers": [
+        "Comparison",
+        "What to evaluate"
+      ],
+      "rows": [
+        [
+          "Crystal vs. Regent Seven Seas",
+          "Compare accommodation, inclusions, excursions and the overall onboard experience"
+        ],
+        [
+          "Crystal vs. Silversea",
+          "Compare ship size, service style, dining and itinerary choices"
+        ],
+        [
+          "Crystal vs. Seabourn",
+          "Compare atmosphere, suite categories, dining and destination programming"
+        ],
+        [
+          "Crystal vs. Explora Journeys",
+          "Compare contemporary ship design, onboard lifestyle and itinerary"
+        ],
+        [
+          "Crystal vs. Ritz-Carlton Yacht Collection",
+          "Compare yacht-style scale, onboard experience and voyage structure"
+        ]
+      ]
+    },
+    "cards": [
+      {
+        "title": "Crystal vs. Regent Seven Seas",
+        "body": "Compare accommodation, inclusions, excursions and the overall onboard experience. Regent features free unlimited shore excursions, while Crystal separates excursions to allow deeper culinary and custom port flexibility."
+      },
+      {
+        "title": "Crystal vs. Silversea",
+        "body": "Compare ship size, service style, dining and itinerary choices. Silversea offers a wider expedition ecosystem, while Crystal excels in traditional ocean cruising, larger stateroom square footage, and Nobu dining."
+      },
+      {
+        "title": "Crystal vs. Seabourn",
+        "body": "Compare atmosphere, suite categories, dining and destination programming. Seabourn leans heavily into yacht-like intimacy, while Crystal Serenity and Symphony offer more expansive public lounges and diverse venues."
+      },
+      {
+        "title": "Crystal vs. Explora Journeys",
+        "body": "Compare contemporary European resort design, onboard lifestyle and itineraries. Explora brings modern ocean resort vibes, whereas Crystal delivers classic ultra-luxury service with butler care in every room."
+      },
+      {
+        "title": "Crystal vs. Ritz-Carlton Yacht Collection",
+        "body": "Compare yacht-style scale, onboard experience and voyage structure. Ritz-Carlton yachts host 298 to 452 guests with signature marinas, while Crystal offers larger ocean ships with broader entertainment and dining variety."
+      }
+    ],
+    "guideLinks": [
+      {
+        "label": "Crystal vs. Regent Seven Seas",
+        "url": "/crystal-cruises/crystal-vs-regent"
+      },
+      {
+        "label": "Crystal vs. Silversea",
+        "url": "/crystal-cruises/crystal-vs-silversea"
+      },
+      {
+        "label": "Explora Journeys vs. Crystal Cruises",
+        "url": "/explora-vs-crystal"
+      },
+      {
+        "label": "Crystal Cruises Fleet Overview",
+        "url": "/crystal-cruises"
+      },
+      {
+        "label": "Serenity vs. Symphony Comparison",
+        "url": "/crystal-cruises/serenity-vs-symphony"
+      },
+      {
+        "label": "Contact Luxury Cruise Specialist",
+        "url": "/contact"
+      }
+    ]
+  },
+  "destinationsSection": {
+    "title": "Crystal Cruises Destinations and Itineraries",
+    "subtitle": "Crystal operates voyages across a wide range of international regions. The right itinerary depends on the season, length of travel, preferred ports and the balance you want between time at sea and time ashore.",
+    "regions": [
+      {
+        "name": "Mediterranean",
+        "desc": "Combines historic cities, coastal villages, cultural landmarks and food-focused experiences across Italy, Greece, Spain, and France."
+      },
+      {
+        "name": "Northern Europe",
+        "desc": "Historic ports, capital cities, coastal landscapes and scenic cruising through the Baltic, British Isles, and Scandinavia."
+      },
+      {
+        "name": "Alaska",
+        "desc": "Dramatic coastal scenery, wildlife encounters and glacier-focused experiences with scenic cruising time and small-port exploration."
+      },
+      {
+        "name": "Asia",
+        "desc": "Connects major cities, cultural destinations and regional ports with longer port stays, overnights, and deep destination immersion."
+      },
+      {
+        "name": "Australia & New Zealand",
+        "desc": "Combines major harbor cities, fjords, coastal scenery and distinctive natural landscapes on extended itineraries."
+      },
+      {
+        "name": "Caribbean & Central America",
+        "desc": "Warm-weather island destinations, secluded beaches, colonial ports and warm sailing routes."
+      },
+      {
+        "name": "South America & Transoceanic",
+        "desc": "Longer voyages exploring multiple countries and spending extended periods at sea for travelers who prefer relaxed sea days."
+      },
+      {
+        "name": "World Cruises & Grand Journeys",
+        "desc": "Extended multi-month circumnavigations covering multiple continents with white-glove logistics and exclusive events."
+      }
+    ],
+    "guideLinks": [
+      {
+        "label": "Crystal Cruises Complete Overview",
+        "url": "/crystal-cruises"
+      },
+      {
+        "label": "Crystal Cruise Fares & Pricing",
+        "url": "/crystal-cruises/cost"
+      },
+      {
+        "label": "Crystal Inclusions Breakdown",
+        "url": "/crystal-cruises/whats-included"
+      },
+      {
+        "label": "Is Crystal Worth It?",
+        "url": "/crystal-cruises/is-it-worth-it"
+      },
+      {
+        "label": "Ship Comparison Guide",
+        "url": "/crystal-cruises/serenity-vs-symphony"
+      },
+      {
+        "label": "Book Your Crystal Itinerary",
+        "url": "/contact"
+      }
+    ]
+  },
+  "lifeOnboard": {
+    "title": "Life Onboard Crystal Cruises",
+    "subtitle": "A Crystal voyage is shaped by the time spent onboard as much as by the destinations. Guests can move between dining, entertainment, wellness, social spaces and quiet areas throughout the day.",
+    "pillars": [
+      {
+        "title": "Personal Service & Butler Assistance",
+        "description": "Crystal provides butler service in every guest room and suite. The specific services depend on the category, but the overall approach is designed to make the onboard experience more personal and convenient."
+      },
+      {
+        "title": "Entertainment & Enrichment",
+        "description": "Onboard entertainment includes live music, cabaret, comedy, talks, classes and enrichment activities. The programme varies by sailing and may include special guest lecturers or themed events."
+      },
+      {
+        "title": "Spa & Wellness (Aurōra Spa)",
+        "description": "Aurōra Spa and the modern fitness facilities provide options for guests who want to maintain a wellness routine or enjoy treatments during their voyage. Treatments are charged separately."
+      },
+      {
+        "title": "Pools & Outdoor Spaces",
+        "description": "Guests can enjoy spacious outdoor teak decks, heated pool areas and wrap-around promenade spaces for relaxing between ports with dedicated attentive deck service."
+      }
+    ]
+  },
+  "travelerGuides": {
+    "title": "Key Traveler Questions & Guides",
+    "subtitle": "Essential information regarding family suitability, solo cruising, connectivity, gratuities, shore tours, and dress codes.",
+    "items": [
+      {
+        "title": "Is Crystal Good for Children & Families?",
+        "summary": "Children are welcome (minimum 6 months at embarkation). While not a mega-ship with waterparks, junior activities and children's programming are offered on selected voyages. Best advice: choose a sailing with confirmed children's programming.",
+        "link": {
+          "label": "Read Crystal Cruises Family Guide",
+          "url": "/crystal-cruises/whats-included"
+        }
+      },
+      {
+        "title": "Is Crystal Suitable for Solo Travelers?",
+        "summary": "Yes. Crystal offers dedicated single-occupancy staterooms on selected ships, solo meet-ups, and Ambassador Hosts on Crystal Serenity and Crystal Symphony for dancing, dinners, and shows.",
+        "link": {
+          "label": "Read Crystal Cruises Solo Travel Guide",
+          "url": "/crystal-cruises/is-it-worth-it"
+        }
+      },
+      {
+        "title": "Does Crystal Cruises Have Wi-Fi?",
+        "summary": "Yes. Complimentary Standard Wi-Fi is included for all guests. Paid Premium Wi-Fi is available for $20 per day or $100 for a 7-day package for video streaming and multi-device priority.",
+        "link": {
+          "label": "Read Crystal Cruises Wi-Fi Guide",
+          "url": "/crystal-cruises/whats-included"
+        }
+      },
+      {
+        "title": "Are Gratuities Included on Crystal Cruises?",
+        "summary": "Yes. Gratuities for onboard housekeeping, bar, and dining crew are included in Crystal’s published cruise fare. Additional tipping is discretionary.",
+        "link": {
+          "label": "Read Crystal Cruises Gratuities Guide",
+          "url": "/crystal-cruises/cost"
+        }
+      },
+      {
+        "title": "Are Shore Excursions Included?",
+        "summary": "No. Shore excursions on Crystal Serenity and Crystal Symphony are priced separately, allowing guests complete freedom of choice. Pre-booking typically opens around 180 days before embarkation.",
+        "link": {
+          "label": "Read Crystal Shore Excursions Guide",
+          "url": "/contact"
+        }
+      },
+      {
+        "title": "What Is the Dress Code on Crystal Cruises?",
+        "summary": "Crystal’s dress expectations vary by evening: daytime is casual resort wear, while evenings transition to elegant casual with optional formal evenings on longer sailings.",
+        "link": {
+          "label": "Read Crystal Cruises Dress Code Guide",
+          "url": "/crystal-cruises/dress-code"
+        }
+      }
+    ]
+  },
+  "howToChoose": {
+    "title": "How to Choose the Right Crystal Cruise",
+    "subtitle": "Choosing the right Crystal voyage requires more than selecting a destination. The ship, itinerary, accommodation and travel dates all influence the experience.",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Start With the Destination",
+        "description": "Decide which region you want to explore and when you can travel. Consider climate, seasonal highlights, port duration and the amount of time spent at sea."
+      },
+      {
+        "step": "2",
+        "title": "Compare the Ships",
+        "description": "Review Crystal Serenity and Crystal Symphony based on capacity, dining venues, public spaces and available itineraries. Remember Crystal Grace is scheduled for 2028."
+      },
+      {
+        "step": "3",
+        "title": "Select Your Accommodation",
+        "description": "Decide whether an ocean-view room, veranda suite or penthouse is the right fit. Compare actual square footage, veranda size, and butler amenities."
+      },
+      {
+        "step": "4",
+        "title": "Review Dining and Onboard Preferences",
+        "description": "If specialty dining is important, check restaurant availability and reservation allowances. Plan reservations for Umi Uma, Osteria d’Ovidio, and Beefbar early."
+      },
+      {
+        "step": "5",
+        "title": "Calculate the Complete Budget",
+        "description": "Include the cruise fare, flights to departure ports, pre-cruise hotels, transfers, shore excursions, and optional premium spending before paying a deposit."
+      },
+      {
+        "step": "6",
+        "title": "Get Expert Help Before Booking",
+        "description": "A luxury cruise advisor can help compare voyages, explain suite categories, and unlock valuable perks that are not obvious from a headline fare."
+      }
+    ]
+  },
+  "angelaBio": {
+    "name": "Angela Hughes",
+    "title": "CEO of Trips & Ships Luxury Travel, Luxury Cruise Specialist",
+    "bio": "Angela Hughes brings more than four decades of travel-industry experience and has explored more than 121 countries. Her work in luxury travel includes cruise, expedition, river cruise and destination planning. For a Crystal voyage, the most useful advice is often specific: which ship offers the best fit for your dates, which suite category is worth considering, how to compare the total fare and which ports deserve additional time.",
+    "quote": "Choosing a luxury cruise involves several connected decisions: the right ship, the right itinerary, the right accommodation and the right overall travel arrangement.",
+    "quoteSubtitle": "On Crystal Cruises Selection"
+  },
+  "faqs": [
+    {
+      "question": "Who owns Crystal Cruises?",
+      "answer": "Crystal is owned by A&K Travel Group, which acquired the Crystal brand in 2022. The company refurbished and relaunched Crystal Serenity and Crystal Symphony and is developing Crystal Grace for its planned 2028 debut."
+    },
+    {
+      "question": "Is Crystal Cruises operating now?",
+      "answer": "Yes. Crystal is operating Crystal Serenity and Crystal Symphony. Crystal Grace is scheduled to join the fleet in 2028. Always confirm the latest sailing schedule before booking."
+    },
+    {
+      "question": "What ships are in the Crystal Cruises fleet?",
+      "answer": "The current operating ships are Crystal Serenity and Crystal Symphony. Crystal Grace is the planned new ship scheduled for 2028."
+    },
+    {
+      "question": "Are children allowed on Crystal Cruises?",
+      "answer": "Yes. Children are welcome, and the published minimum age to sail is six months at embarkation, subject to Crystal's policies. Children's and teen activities are offered on selected voyages, so families should confirm the programme for their sailing."
+    },
+    {
+      "question": "Is Crystal Cruises good for solo travelers?",
+      "answer": "Yes. Crystal offers solo-traveler meet-ups and activities, Ambassador Hosts on Crystal Serenity and Crystal Symphony, and single-occupancy accommodation on selected ships. Fares and solo supplements vary by voyage and accommodation category."
+    },
+    {
+      "question": "Does Crystal Cruises include Wi-Fi?",
+      "answer": "Crystal includes complimentary Standard Wi-Fi for guests. A paid Premium plan is available for travelers who want an enhanced connection option. Actual speed and availability depend on satellite coverage, weather and network demand."
+    },
+    {
+      "question": "Are gratuities included on Crystal Cruises?",
+      "answer": "Yes. Gratuities for onboard housekeeping, bar and dining crew are included under Crystal's published policy. Additional tipping for these services is discretionary."
+    },
+    {
+      "question": "Are shore excursions included in the Crystal cruise fare?",
+      "answer": "Generally, no. Shore excursions on Crystal Serenity and Crystal Symphony are priced separately. Prices and availability depend on the tour and itinerary, and some experiences can be reserved in advance."
+    },
+    {
+      "question": "Does Crystal Cruises offer butler service?",
+      "answer": "Yes. Butler service is offered in every guest room and suite. The specific services depend on the accommodation category."
+    },
+    {
+      "question": "Is dining included on Crystal Cruises?",
+      "answer": "Most onboard restaurants are complimentary, subject to reservation rules and specific terms. The Vintage Room is chargeable, and certain premium menu items at Beefbar may carry an additional cost."
+    },
+    {
+      "question": "What is the difference between Crystal Serenity and Crystal Symphony?",
+      "answer": "Crystal Serenity has a published guest capacity of 740, 402 ocean-view rooms and suites and 10 dining venues. Crystal Symphony has a capacity of 606, 330 ocean-view rooms and suites and nine dining venues. The best choice depends on the itinerary, ship layout and accommodation available for your dates."
+    },
+    {
+      "question": "When will Crystal Grace start sailing?",
+      "answer": "Crystal Grace is scheduled to debut in 2028. Travelers interested in its inaugural season should check the latest official announcements and confirmed voyage details."
+    },
+    {
+      "question": "Is Crystal Cruises worth the price?",
+      "answer": "Crystal may offer strong value for travelers who prioritize personalized service, dining, spacious accommodation and destination-focused itineraries. Whether it is worth the price depends on the specific sailing, suite category, included benefits and total trip budget."
+    }
+  ],
+  "finalCta": {
+    "title": "Plan Your Crystal Cruise",
+    "description": "A memorable luxury cruise begins with choosing the right voyage. Whether you are considering Crystal Serenity, Crystal Symphony or the future Crystal Grace, the best option depends on your preferred destinations, travel dates, accommodation and onboard priorities.",
+    "subtext": "Speak with Trips & Ships about your plans. We can help you compare suitable Crystal voyages, review suite options and understand the details that matter before you book.",
+    "buttonText": "Plan Your Crystal Cruise",
+    "buttonLink": "/contact"
+  }
+}

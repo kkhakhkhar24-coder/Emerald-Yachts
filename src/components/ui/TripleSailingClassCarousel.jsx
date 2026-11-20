@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Ship, Wind, Anchor, ChevronRight } from 'lucide-react';
 import FadeIn from './FadeIn';
+import CrawlablePanels from './CrawlablePanels';
 
 const TripleSailingClassCarousel = ({ data, images }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -104,6 +105,7 @@ const TripleSailingClassCarousel = ({ data, images }) => {
           </div>
         </div>
       </div>
+      <CrawlablePanels items={items} activeIndex={activeIndex} />
     </section>
   );
 };

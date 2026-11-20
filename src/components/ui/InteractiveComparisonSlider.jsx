@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import FadeIn from './FadeIn';
 
-import riverImg from '../../assets/Amawaterways/tain-l-hermitage-rhone-river-vineyards-france.webp';
+import riverImg from '../../assets/Amawaterways/BestOf_French_hero.webp';
 import oceanImg from '../../assets/Amawaterways/AmaMagna_Exterior_Aerial_AT_Grein_Danube_Jul 2024_PhotogVV_DJI_175451_0122_D_LE_Edit-3.webp'; // Using a wide/grand shot to represent "Ocean/Large" scale if an ocean pic isn't available
 
 const InteractiveComparisonSlider = ({ title, subtitle, features }) => {

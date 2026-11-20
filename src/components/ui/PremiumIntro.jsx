@@ -1,9 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import FadeIn from './FadeIn';
 import MasterImage from './MasterImage';
 
-const PremiumIntro = ({ sections, image1, image2, alt1, alt2, ctaText, ctaLink, watermarkText = "Verdict" }) => {
+const PremiumIntro = ({ sections, image1, image2, watermarkText = "Verdict" }) => {
   if (!sections || sections.length === 0) return null;
 
   const [firstSection, ...remainingSections] = sections;
@@ -14,16 +13,16 @@ const PremiumIntro = ({ sections, image1, image2, alt1, alt2, ctaText, ctaLink, 
   return (
     <section className="w-full py-24 md:py-32 bg-white relative overflow-hidden">
       <div className="max-w-[1200px] mx-auto px-6 relative z-10">
-
+        
         <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
-
+          
           {/* Left: Architectural Arched Image */}
           <div className="w-full lg:w-5/12 relative">
             <FadeIn direction="up">
               {/* Main Arch */}
               <div className="aspect-[3/4] w-full rounded-t-[1000px] rounded-b-xl overflow-hidden shadow-2xl relative border-4 border-white ring-1 ring-slate-100">
                 {image1 ? (
-                  <MasterImage src={image1} alt={alt1 || sections?.[0]?.heading || "Luxury cruise experience"} className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-1000 ease-out" />
+                  <MasterImage src={image1} alt="River Cruise Landscape" className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-1000 ease-out" />
                 ) : (
                   <div className="w-full h-full bg-slate-100 flex items-center justify-center">Image</div>
                 )}
@@ -35,7 +34,7 @@ const PremiumIntro = ({ sections, image1, image2, alt1, alt2, ctaText, ctaLink, 
               {image2 && (
                 <div className="absolute -bottom-8 -right-8 md:-right-12 w-40 h-40 md:w-48 md:h-48 rounded-full bg-white p-2 shadow-xl z-20 hidden sm:block">
                   <div className="w-full h-full rounded-full overflow-hidden border border-ts-gold/20 relative">
-                    <MasterImage src={image2} alt={alt2 || "Cruise ship details and amenities"} className="w-full h-full object-cover" />
+                    <MasterImage src={image2} alt="Detail" className="w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-navy-950/25 mix-blend-multiply rounded-full"></div>
                   </div>
                   {/* Floating decorative element */}
@@ -55,22 +54,23 @@ const PremiumIntro = ({ sections, image1, image2, alt1, alt2, ctaText, ctaLink, 
                 {watermarkText}
               </div>
             )}
-
+            
             <FadeIn direction="left" className="relative z-10 pl-0 lg:pl-12">
-              <h2 className="font-display text-3xl md:text-4xl text-navy-950 leading-tight mb-6">
+              <span className="inline-block border border-ts-gold/30 rounded-full px-5 py-1.5 font-sans text-ts-gold uppercase tracking-[0.2em] text-xs font-bold mb-8 shadow-sm">
                 {firstSection.heading || firstSection.title || "Quick Answer"}
-              </h2>
+              </span>
+              
               <div className="relative">
                 {/* Decorative quote mark */}
                 <span className="absolute -top-10 -left-8 text-6xl text-ts-gold/20 font-display leading-none select-none">"</span>
-
+                
                 {/* The "Hook" Paragraph - rendered large and editorial */}
                 {firstParagraph && (
-                  <p className="font-display text-xl md:text-2xl text-navy-950 leading-relaxed mb-8 relative z-10 italic">
+                  <h3 className="font-display text-2xl md:text-3xl lg:text-4xl text-navy-950 leading-snug mb-8 relative z-10">
                     {firstParagraph}
-                  </p>
+                  </h3>
                 )}
-
+                
                 {/* The remaining explanation */}
                 <div className="space-y-6">
                   {restParagraphs.map((p, idx) => (
@@ -92,17 +92,6 @@ const PremiumIntro = ({ sections, image1, image2, alt1, alt2, ctaText, ctaLink, 
                   ))}
                 </ul>
               )}
-
-              {ctaText && (
-                <div className="mt-12">
-                  <Link
-                    to={ctaLink || "/contact"}
-                    className="inline-flex items-center justify-center px-8 py-3 bg-navy-950 text-white font-sans text-sm font-bold tracking-widest uppercase hover:bg-navy-900 transition-all rounded-full shadow-lg hover:scale-105"
-                  >
-                    {ctaText}
-                  </Link>
-                </div>
-              )}
             </FadeIn>
           </div>
 
@@ -114,7 +103,8 @@ const PremiumIntro = ({ sections, image1, image2, alt1, alt2, ctaText, ctaLink, 
             <div className={`grid grid-cols-1 ${remainingSections.length === 1 ? 'max-w-4xl mx-auto' : 'md:grid-cols-2'} gap-12 lg:gap-20`}>
               {remainingSections.map((section, idx) => (
                 <FadeIn key={idx} delay={idx * 0.1}>
-                  <h3 className={`font-display text-2xl text-navy-950 mb-4 ${remainingSections.length === 1 ? 'text-center md:text-3xl' : ''}`}>{section.heading || section.title}</h3>
+                  <h4 className={`font-display text-2xl text-navy-950 mb-4 ${remainingSections.length === 1 ? 'text-center md:text-3xl' : ''}`}>{section.heading || section.title}</h4>
+                  
                   {/* Decorative underline */}
                   <div className={`w-12 h-px bg-ts-gold mb-6 ${remainingSections.length === 1 ? 'mx-auto' : ''}`}></div>
 
@@ -123,7 +113,7 @@ const PremiumIntro = ({ sections, image1, image2, alt1, alt2, ctaText, ctaLink, 
                       <p key={i} className="font-sans text-slate-600 leading-relaxed font-light text-lg">{p}</p>
                     ))}
                   </div>
-
+                  
                   {section.list && (
                     <ul className="mt-6 space-y-3">
                       {section.list.map((item, i) => (

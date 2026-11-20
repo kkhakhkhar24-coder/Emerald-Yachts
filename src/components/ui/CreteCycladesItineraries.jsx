@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import FadeIn from './FadeIn';
+import CrawlablePanels from './CrawlablePanels';
 
 /**
  * CreteCycladesItineraries
@@ -104,6 +105,7 @@ const CreteCycladesItineraries = ({ itineraries = [], mapImage }) => {
         </div>
 
       </div>
+      <CrawlablePanels items={itineraries} activeIndex={activeItinerary} />
     </section>
   );
 };

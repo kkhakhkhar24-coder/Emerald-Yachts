@@ -1,0 +1,562 @@
+{
+  "seo": {
+    "title": "Princess Cruises Dining Guide: Restaurants and Specialty Dining",
+    "metaTitle": "Princess Cruises Dining Guide: Restaurants and Specialty Dining",
+    "metaDescription": "Explore Princess Cruises dining, including complimentary restaurants, specialty dining, menus, reservations and Princess Plus and Premier benefits.",
+    "keywords": "Princess Cruises dining guide, Princess Cruises complimentary dining, Princess specialty restaurants, Crown Grill, Sabatini's, Princess Plus dining, Princess Premier dining",
+    "canonicalUrl": "https://www.tripsandships.com/princess-cruises/dining",
+    "ogTitle": "Princess Cruises Dining Guide: Restaurants and Specialty Dining",
+    "ogDescription": "Explore Princess Cruises dining, including complimentary restaurants, specialty dining, menus, reservations and Princess Plus and Premier benefits."
+  },
+  "hero": {
+    "badge": "PRINCESS CRUISES DINING GUIDE",
+    "title": "Princess Cruises Dining Guide: Included Restaurants and Specialty Dining",
+    "subtitle": "Everything you need to know about complimentary main dining rooms, casual eateries, signature specialty steak and seafood venues, and package dining perks.",
+    "ctaLabel": "Plan Your Princess Vacation",
+    "ctaUrl": "/contact",
+    "secondaryCtaLabel": "Compare Plus vs. Premier",
+    "secondaryCtaUrl": "/princess-cruises/plus-vs-premier"
+  },
+  "introSection": {
+    "heading": "Culinary Excellence Across the Princess Fleet",
+    "p1": "Dining is an important part of the Princess Cruises experience. From multi-course meals in the main dining rooms to freshly prepared pizza, international buffet dishes and premium specialty restaurants, guests have a range of choices throughout their voyage.",
+    "p2": "The dining experience is not identical on every ship. Some restaurants are included in the standard cruise fare, while others have an additional cover charge or menu price. Princess Plus and Princess Premier can also change how much you pay for selected dining experiences.",
+    "p3": "This guide explains what dining is included on a Princess cruise, which restaurants may cost extra, what to expect from the specialty dining experience and how to choose the right options for your sailing."
+  },
+  "diningCategories": {
+    "title": "How Dining Works on Princess Cruises",
+    "subtitle": "Princess generally organizes its onboard culinary offerings into four distinct categories across the fleet.",
+    "pillars": [
+      {
+        "icon": "ship",
+        "title": "Complimentary Dining",
+        "description": "Restaurants and food options included in your standard cruise fare, providing breakfast, lunch, multi-course dinners, and snacks throughout the day."
+      },
+      {
+        "icon": "compass",
+        "title": "Casual Dining",
+        "description": "Relaxed sit-down restaurants, gastro-pubs, and specialty pizzerias. Some are complimentary, while others carry an à la carte charge or package allowance."
+      },
+      {
+        "icon": "star",
+        "title": "Specialty Dining",
+        "description": "Premium signature venues offering focused menus, upscale ambiance, and attentive table service, typically with a fixed cover charge or prix fixe menu."
+      },
+      {
+        "icon": "window",
+        "title": "Experiential Dining",
+        "description": "Exclusive culinary events and immersive multi-sensory meals that combine world-class gastronomy with storytelling, magic, or limited-capacity galley access."
+      }
+    ]
+  },
+  "complimentaryDining": {
+    "title": "What Restaurants Are Included on a Princess Cruise?",
+    "intro": [
+      "Your standard Princess cruise fare includes a generous selection of dining venues providing breakfast, lunch, dinner, snacks, and casual food options throughout the day.",
+      "Guests can enjoy gourmet multi-course meals, expansive international buffets, and round-the-clock light bites without paying a single dollar extra."
+    ],
+    "items": [
+      {
+        "title": "Main Dining Rooms",
+        "paragraphs": [
+          "The main dining rooms are the heart of the traditional Princess dining experience. Guests enjoy multi-course meals with a rotating evening selection of appetizers, soups, salads, chef-curated entrees, and decadent desserts.",
+          "Menus combine familiar favorites with regional dishes inspired by the voyage itinerary. Breakfast and lunch service are also available on sea days and selected port days."
+        ],
+        "lists": [
+          {
+            "title": "Three Flexible Dining Approaches",
+            "items": [
+              "Traditional Dining: Choose an early or late fixed seating to enjoy the same table and dedicated waitstaff every evening. Perfect for guests who value a consistent routine.",
+              "Flexible Dining: Reserve your preferred dining time each evening through the Princess app. Ideal when shore excursion times and daily plans vary.",
+              "Walk-in Dining: Arrive whenever you are ready to eat and request a table. Wait times may vary during peak evening dining hours."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Buffet, Café & Casual Food Counters",
+        "paragraphs": [
+          "World Fresh Marketplace and The Eatery: Princess buffet dining offers an expansive, convenient alternative to sit-down dining. Known as World Fresh Marketplace, Horizon Court, or The Eatery depending on ship class.",
+          "International Café: Open 24 hours on many Princess ships, serving freshly baked pastries, artisanal sandwiches, paninis, quiches, salads, and gourmet desserts between meals."
+        ],
+        "lists": [
+          {
+            "title": "Buffet & Casual Highlights",
+            "items": [
+              "International cuisine, live cooking stations, and rotating regional specialties.",
+              "Expansive salad bars, fresh fruits, charcuterie, and wholesome lighter choices.",
+              "Hot entrees, roasted carving stations, and hot breakfast made-to-order favorites.",
+              "Selected poolside grills serving complimentary burgers, hot dogs, and poolside snacks.",
+              "Complimentary slice pizza counters and quick-service grab-and-go options."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "specialtyDining": {
+    "title": "Princess Cruises Specialty Restaurants",
+    "subtitle": "Signature upscale venues offering elevated menus, intimate table settings, and personalized service.",
+    "venues": [
+      {
+        "title": "Crown Grill: American Steakhouse",
+        "category": "Signature Steakhouse",
+        "description": "Crown Grill is Princess's renowned signature steakhouse experience. The menu focuses on premium cuts of aged beef, custom hand-cut steaks, chops, fresh seafood, and classic steakhouse accompaniments, served in an elegant wood-paneled dining room with an open show kitchen.",
+        "bestFor": "Steak lovers, couples, and celebratory special-occasion dinners."
+      },
+      {
+        "title": "Sabatini's Italian Trattoria",
+        "category": "Authentic Italian Cuisine",
+        "description": "Sabatini's celebrates the heritage of Italian cuisine with handmade pasta crafted fresh daily, traditional family recipes, and contemporary interpretations of regional Italian cooking. Guests enjoy multi-course dining with antipasti, handmade pasta, seafood, veal, and classic tiramisu.",
+        "bestFor": "Guests who enjoy authentic Italian food, handmade pasta, and leisurely dinners."
+      },
+      {
+        "title": "The Catch by Rudi",
+        "category": "Fresh Ocean Seafood",
+        "description": "Created by Princess Head of Culinary Arts Chef Rudi Sodamin, The Catch by Rudi focuses on fresh ocean treasures and culinary art inspired by the sea. Guests enjoy seafood towers, freshly shucked oysters, grilled whole fish, lobster preparations, and artisanal seafood pastas.",
+        "bestFor": "Seafood enthusiasts and guests looking for a distinctive specialty restaurant (selected ships)."
+      },
+      {
+        "title": "Makoto Ocean & Umai Teppanyaki",
+        "category": "Japanese & Teppanyaki Experience",
+        "description": "Makoto Ocean brings refined Japanese sushi and modern omakase-inspired dining by Master Chef Makoto Okuwa. Umai Teppanyaki combines Japanese-style grilling with thrilling live cooking performances right at your table, blending sizzling steaks and seafood with culinary showmanship.",
+        "bestFor": "Families, groups, sushi enthusiasts, and interactive dining lovers (selected ships, including Sun Princess)."
+      }
+    ],
+    "otherSpecialty": {
+      "title": "Other Specialty and Experiential Venues",
+      "subtitle": "Immersive, experiential, and regional culinary venues featured across selected Princess ships.",
+      "items": [
+        "Harmony: Contemporary high-end Chinese cuisine developed with Michelin-starred Master Chef Richard Chen (selected ships).",
+        "The Butcher's Block by Dario: An immersive meat-lover's communal feast created with world-famous Tuscan butcher Dario Cecchini (Sun Princess).",
+        "Churrascaria: Brazilian-style barbecue featuring continuous tableside skewers of carved grilled meats (selected ships).",
+        "Crab Shack: A casual seafood pop-up feast featuring steamed clams, peel-and-eat shrimp, and crab legs (popular on Alaska voyages).",
+        "Chef's Table: A limited-seat VIP event featuring behind-the-scenes galley tours, champagne hors d'oeuvres, and multi-course pairings hosted by executive chefs.",
+        "360: An Extraordinary Experience: A 7-course multi-sensory visual, auditory, and culinary voyage through the Mediterranean.",
+        "Spellbound by Magic Castle: A theatrical Victorian dining and cocktail lounge featuring illusionists and magic (Sun Princess)."
+      ],
+      "venues": [
+        {
+          "title": "Harmony",
+          "category": "Cantonese Fine Dining",
+          "description": "Contemporary high-end Chinese cuisine developed in partnership with Michelin-starred Master Chef Richard Chen, featuring classic Cantonese dishes with modern presentations."
+        },
+        {
+          "title": "The Butcher's Block by Dario",
+          "category": "Artisanal Italian Steakhouse",
+          "description": "An immersive carnivore-focused steakhouse and communal meat feast created with world-famous Tuscan master butcher Dario Cecchini (exclusive to Sun Princess)."
+        },
+        {
+          "title": "Churrascaria",
+          "category": "Brazilian Barbecue",
+          "description": "Authentic Brazilian-style barbecue featuring continuous tableside skewers of premium carved meats, roasted cuts, and traditional South American sides."
+        },
+        {
+          "title": "Crab Shack",
+          "category": "Alaskan Seafood Feast",
+          "description": "A casual pop-up seafood feast featuring steamed clams, peel-and-eat shrimp, clam chowder, and colossal Alaskan king crab legs (popular on Alaska voyages)."
+        },
+        {
+          "title": "Chef's Table / Lumiere",
+          "category": "VIP Galley & Wine Pairing",
+          "description": "A multi-course VIP culinary event featuring an exclusive behind-the-scenes galley tour, champagne hors d'oeuvres, and personalized pairings hosted by executive chefs."
+        },
+        {
+          "title": "360: An Extraordinary Experience",
+          "category": "Multi-Sensory Digital Voyage",
+          "description": "An award-winning, seven-course multimedia dining journey engaging sight, sound, scent, and taste with 360-degree digital projection storytelling."
+        },
+        {
+          "title": "Spellbound by Magic Castle",
+          "category": "Theatrical Magic & Dinner",
+          "description": "An exclusive Victorian-themed dining and illusionist experience created with Hollywood's famed Magic Castle, combining parlor magic, themed cocktails, and dinner."
+        }
+      ],
+      "cards": [
+        {
+          "title": "Harmony",
+          "icon": "Utensils",
+          "description": "Contemporary high-end Cantonese fine dining developed in partnership with Michelin-starred Master Chef Richard Chen, featuring classic Cantonese dishes with modern presentations.",
+          "bullets": [
+            "Michelin-starred chef partnership",
+            "Available on selected ships"
+          ]
+        },
+        {
+          "title": "The Butcher's Block by Dario",
+          "icon": "Flame",
+          "description": "An immersive carnivore-focused steakhouse and communal meat feast created with world-famous Tuscan master butcher Dario Cecchini, celebrating artisanal Italian butchery.",
+          "bullets": [
+            "Tuscan master butcher partnership",
+            "Exclusive to Sun Princess"
+          ]
+        },
+        {
+          "title": "Churrascaria",
+          "icon": "UtensilsCrossed",
+          "description": "Authentic Brazilian-style barbecue featuring continuous tableside skewers of premium carved meats, roasted cuts, and traditional South American sides.",
+          "bullets": [
+            "Tableside continuous meat carving",
+            "Available on selected ships"
+          ]
+        },
+        {
+          "title": "Crab Shack",
+          "icon": "Fish",
+          "description": "A casual pop-up seafood feast featuring steamed clams, peel-and-eat shrimp, clam chowder, and colossal Alaskan king crab legs.",
+          "bullets": [
+            "Casual seafood pop-up feast",
+            "Popular on Alaska voyages"
+          ]
+        },
+        {
+          "title": "Chef's Table / Lumiere",
+          "icon": "Award",
+          "description": "A multi-course VIP culinary event featuring an exclusive behind-the-scenes galley tour, champagne hors d'oeuvres, and personalized pairings hosted by executive chefs.",
+          "bullets": [
+            "Behind-the-scenes galley tour",
+            "Multi-course wine pairing"
+          ]
+        },
+        {
+          "title": "360: An Extraordinary Experience",
+          "icon": "Sparkles",
+          "description": "An award-winning, seven-course multimedia dining journey engaging sight, sound, scent, and taste with 360-degree digital projection storytelling.",
+          "bullets": [
+            "7-course sensory tasting menu",
+            "Immersive 360° projection"
+          ]
+        },
+        {
+          "title": "Spellbound by Magic Castle",
+          "icon": "Wand2",
+          "description": "An exclusive Victorian-themed dining and illusionist experience created with Hollywood's famed Magic Castle, combining parlor magic, themed cocktails, and dinner.",
+          "bullets": [
+            "Hollywood Magic Castle collaboration",
+            "Exclusive to Sun Princess"
+          ]
+        }
+      ]
+    }
+  },
+  "casualDining": {
+    "title": "Casual Dining: What Is Included and What Costs Extra?",
+    "subtitle": "Bridging the gap between complimentary dining rooms and upscale specialty venues with relaxed, sit-down charm.",
+    "features": [
+      {
+        "title": "Popular Casual Venues Across the Fleet",
+        "description": "Depending on your ship, casual eateries may include Alfredo's or Gigi's Pizzeria (serving freshly tossed personal pizzas and antipasti), O'Malley's Irish Pub (comfort pub fare and live music), Ocean Terrace seafood bar, and noodle or sushi counters."
+      },
+      {
+        "title": "Pricing & Fare Structure",
+        "description": "Some casual spots are complimentary, while others charge a modest cover fee (typically $14.99 per person for a multi-course meal) or individual à la carte prices. Guests without packages pay the listed menu or cover price."
+      },
+      {
+        "title": "Princess Plus Package Casual Allowance",
+        "description": "Princess Plus includes four qualifying casual dining meals per guest, per voyage. This allows guests to enjoy sit-down pizzerias or pub meals without paying extra."
+      },
+      {
+        "title": "Princess Premier Package Casual Allowance",
+        "description": "Princess Premier includes unlimited qualifying casual dining meals throughout the entire voyage, offering complete freedom to dine at casual eateries as often as desired."
+      }
+    ]
+  },
+  "packageDiningBenefits": {
+    "title": "Princess Plus vs. Princess Premier: Dining Benefits",
+    "subtitle": "Compare how onboard package choices transform your dining budget and dining privileges across the voyage.",
+    "table": {
+      "headers": [
+        "Dining Benefit",
+        "Standard Cruise Fare",
+        "Princess Plus",
+        "Princess Premier"
+      ],
+      "rows": [
+        [
+          "Main dining rooms",
+          "Included",
+          "Included",
+          "Included"
+        ],
+        [
+          "Standard buffet dining",
+          "Included",
+          "Included",
+          "Included"
+        ],
+        [
+          "Included casual food venues",
+          "Included",
+          "Included",
+          "Included"
+        ],
+        [
+          "Qualifying casual dining meals",
+          "Pay venue charge where applicable",
+          "4 per guest per voyage",
+          "Unlimited"
+        ],
+        [
+          "Qualifying specialty dining",
+          "Pay cover charge",
+          "Not included",
+          "Unlimited"
+        ],
+        [
+          "Experiential dining",
+          "Additional charge",
+          "Additional charge unless specifically covered",
+          "Additional charge unless specifically covered"
+        ]
+      ]
+    },
+    "packageRulesCards": [
+      {
+        "title": "Princess Plus Dining Rules",
+        "items": [
+          "Princess Plus includes four qualifying casual dining meals per guest, per voyage (such as Alfredo's Pizzeria, Gigi's, or O'Malley's).",
+          "Princess Plus does not include complimentary specialty dining at Crown Grill, Sabatini's, or The Catch.",
+          "Guests with Princess Plus pay the regular cover charge or menu price for specialty restaurants.",
+          "Reservations for casual and specialty venues can be booked in advance via the Princess app or once onboard."
+        ]
+      },
+      {
+        "title": "Princess Premier Dining Rules",
+        "items": [
+          "Princess Premier includes unlimited qualifying casual dining throughout the entire voyage.",
+          "Princess Premier includes unlimited qualifying specialty dining meals throughout the voyage (Crown Grill, Sabatini's, etc.).",
+          "Delivers exceptional value for food lovers planning to dine at specialty restaurants multiple evenings.",
+          "Certain premium experiential dining events (such as Chef's Table or 360) and high-end menu supplements may still carry an extra fee."
+        ]
+      }
+    ],
+    "plusDetails": {
+      "title": "Princess Plus Dining Rules",
+      "p1": "Princess Plus includes four qualifying casual dining meals per guest, per voyage (such as Alfredo's Pizzeria, Gigi's, or O'Malley's).",
+      "p2": "Princess Plus does not include complimentary specialty dining at Crown Grill, Sabatini's, or The Catch. Guests with Princess Plus pay the regular cover charge for specialty restaurants."
+    },
+    "premierDetails": {
+      "title": "Princess Premier Dining Rules",
+      "p1": "Princess Premier includes unlimited qualifying casual dining AND unlimited qualifying specialty dining meals throughout the voyage.",
+      "p2": "This delivers exceptional value for food lovers planning to dine at specialty restaurants multiple evenings. Note that certain premium experiential dining events (such as Chef's Table or 360) and high-end menu supplements may still carry an extra fee."
+    }
+  },
+  "pricingAndReservations": {
+    "title": "Specialty Dining Costs & Reservation Strategies",
+    "subtitle": "Planning your dining budget, menu supplements, and reservation timing through the Princess app.",
+    "items": [
+      {
+        "title": "Specialty Cover Charges",
+        "stat": "Pricing",
+        "description": "Specialty venues typically charge a fixed cover fee (around $39 to $49 per adult) for a multi-course meal including appetizers, entree, and dessert. Certain experiential meals like Chef's Table or 360 carry higher fixed pricing."
+      },
+      {
+        "title": "Menu Supplements & Service Charges",
+        "stat": "Supplements",
+        "description": "While cover charges cover full multi-course meals, ultra-premium items (such as whole Maine lobster, colossal seafood platters, or caviar) may carry a nominal supplemental charge. Gratuities are either included or added to the bill."
+      },
+      {
+        "title": "App-Based Advance Reservations",
+        "stat": "Princess App",
+        "description": "Guests can reserve specialty restaurants, dates, and preferred times prior to sailing via the Princess Cruises app (OceanCompass). Popular sea-day dining times fill up quickly, making early booking advisable."
+      },
+      {
+        "title": "Port Day Dining Opportunities",
+        "stat": "Port Days",
+        "description": "Reservations for popular specialty venues are often easier to secure on port day evenings when many guests dine in town or arrive back later. Booking on port evenings offers a more relaxed, unhurried atmosphere."
+      }
+    ]
+  },
+  "dressCode": {
+    "title": "What Is the Dress Code in Princess Dining Rooms?",
+    "subtitle": "Princess dining is relaxed and comfortable during the day, with evening expectations matching the venue ambiance.",
+    "smartCasual": {
+      "title": "Smart Casual (Most Evenings)",
+      "items": [
+        "Dresses, skirts, casual dresses, and stylish pantsuits.",
+        "Collared shirts, polo shirts, sweaters, and tailored trousers or slacks.",
+        "Smart dark denim is generally accepted in main dining rooms.",
+        "Poolside swimwear, tank tops, and bare feet are not permitted in dining rooms."
+      ]
+    },
+    "formalNights": {
+      "title": "Formal Nights (1 to 2 Nights per Week)",
+      "items": [
+        "Evening gowns, cocktail dresses, and elegant pantsuits for women.",
+        "Tuxedos, dark suits with ties, or dinner jackets with dress trousers for men.",
+        "Formal nights are celebrated in main dining rooms and specialty restaurants.",
+        "Guests preferring relaxed casual attire can enjoy full-course dining at the buffet."
+      ]
+    }
+  },
+  "dietaryAndFamily": {
+    "title": "Dietary Accommodations & Family Dining",
+    "subtitle": "Personalized culinary care for every dietary need and child-friendly options across the ship.",
+    "features": [
+      {
+        "title": "Vegetarian, Vegan & Plant-Based Choices",
+        "description": "Every main dining room menu includes clearly labeled vegetarian dishes, alongside a dedicated plant-based and vegan selection created in partnership with culinary specialists."
+      },
+      {
+        "title": "Food Allergies & Gluten-Free Dining",
+        "description": "Princess takes allergies seriously. Guests can submit dietary requests prior to embarkation and consult daily with dining room head waiters to review the next day's menus and pre-order tailored dishes."
+      },
+      {
+        "title": "Family-Friendly Dining Flexibility",
+        "description": "Main dining rooms offer dedicated children's menus featuring familiar favorites, while buffets allow quick meals between youth activities, pool time, and evening theater shows."
+      },
+      {
+        "title": "Interactive Dining for Kids & Teens",
+        "description": "Venues such as Umai Teppanyaki, Gigi's Pizzeria, and gelato bars provide engaging, interactive dining experiences that turn dinner into an entertaining family highlight."
+      }
+    ]
+  },
+  "whichDiningWorthTrying": {
+    "title": "Which Princess Dining Options Are Worth Trying?",
+    "subtitle": "Match your dining mood and taste preferences with the standout venues across the Princess fleet.",
+    "items": [
+      {
+        "title": "Classic Cruise Dinner",
+        "category": "Main Dining Room",
+        "features": [
+          "Attentive multi-course table service with rotating menus",
+          "Traditional or flexible evening seatings",
+          "Included in standard cruise fare with zero extra charges"
+        ]
+      },
+      {
+        "title": "Premium Steak Experience",
+        "category": "Crown Grill",
+        "features": [
+          "Sterling Silver beef, New York strip, and filet mignon",
+          "Handcrafted chops and grilled tiger prawns",
+          "Refined steakhouse ambiance and open show kitchen"
+        ]
+      },
+      {
+        "title": "Handmade Italian Feast",
+        "category": "Sabatini's Trattoria",
+        "features": [
+          "Daily scratch-made pastas and traditional sauces",
+          "Classic antipasti, osso buco, and decadent desserts",
+          "Relaxed yet polished Italian trattoria experience"
+        ]
+      },
+      {
+        "title": "Ocean-Inspired Seafood",
+        "category": "The Catch by Rudi",
+        "features": [
+          "Fresh catches, oysters on the half-shell, and lobster tails",
+          "Artistic seafood plating curated by Master Chef Rudi Sodamin",
+          "Sophisticated contemporary marine atmosphere"
+        ]
+      },
+      {
+        "title": "Live Interactive Teppanyaki",
+        "category": "Umai Teppanyaki",
+        "features": [
+          "Live hibachi-style chef showmanship right at your table",
+          "Sizzling beef tenderloin, chicken, scallops, and fried rice",
+          "Energetic, fun dining format ideal for groups and families"
+        ]
+      },
+      {
+        "title": "VIP Milestone Celebration",
+        "category": "Chef's Table & 360",
+        "features": [
+          "Exclusive behind-the-scenes galley tour with executive chef",
+          "Multi-course wine-paired dinner with specialty ingredients",
+          "Intimate seating for an unforgettable anniversary or milestone"
+        ]
+      }
+    ]
+  },
+  "howToMakeTheMost": {
+    "title": "How to Make the Most of Dining on a Princess Cruise",
+    "subtitle": "Seven expert strategies to maximize culinary variety and value throughout your sailing.",
+    "steps": [
+      {
+        "step": "01",
+        "title": "Start with the Included Restaurants",
+        "description": "Explore the main dining rooms, World Fresh Marketplace, and International Café before adding paid specialty meals—the complimentary quality is exceptional."
+      },
+      {
+        "step": "02",
+        "title": "Review Package Terms Before Dining",
+        "description": "Understand your casual and specialty allowances. Remember Princess Plus covers 4 casual meals, while Princess Premier covers unlimited casual and specialty dining."
+      },
+      {
+        "step": "03",
+        "title": "Reserve High-Demand Venues Early",
+        "description": "Crown Grill, Sabatini's, and Umai Teppanyaki fill up fast on sea days. Book reservations via the Princess app as soon as your booking opens."
+      },
+      {
+        "step": "04",
+        "title": "Vary Your Evening Dining Formats",
+        "description": "Mix formal multi-course main dining room dinners with lively teppanyaki shows, quiet steakhouse evenings, and relaxed pizzeria lunches."
+      },
+      {
+        "step": "05",
+        "title": "Check Ship-Specific Venue Availability",
+        "description": "Specialty venues vary by ship class. Venues like The Catch by Rudi, Makoto Ocean, and Umai Teppanyaki operate only on selected vessels."
+      },
+      {
+        "step": "06",
+        "title": "Watch for Premium Menu Supplements",
+        "description": "A package benefit covers the full specialty multi-course meal, but select luxury items like caviar or whole lobster may carry a nominal supplement."
+      },
+      {
+        "step": "07",
+        "title": "Coordinate Meals with Port Schedules",
+        "description": "On long port days, book later dining times or enjoy casual pizzeria dining so you never feel rushed returning from shore excursions."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "Is food included on Princess Cruises?",
+      "answer": "Yes. The standard cruise fare includes meals in the main dining rooms, buffet and selected complimentary dining venues. Specialty restaurants and some casual dining options have additional charges unless covered by an applicable package."
+    },
+    {
+      "question": "Which Princess restaurants are complimentary?",
+      "answer": "Complimentary options generally include the main dining rooms, the ship's buffet and selected casual venues. International Café and other quick-service choices may also be included, depending on the ship and specific menu. Check your ship's dining directory for details."
+    },
+    {
+      "question": "Are Crown Grill and Sabatini's included in the cruise fare?",
+      "answer": "Crown Grill and Sabatini's are specialty restaurants and generally charge an additional cover fee. Qualifying specialty dining is included with Princess Premier under its current terms, subject to exclusions and availability."
+    },
+    {
+      "question": "Does Princess Plus include specialty dining?",
+      "answer": "No. Princess Plus includes four qualifying casual dining meals per guest, per voyage. It does not include the general specialty dining benefit available with Princess Premier."
+    },
+    {
+      "question": "Does Princess Premier include specialty dining?",
+      "answer": "Yes. Under the current package structure, Princess Premier includes unlimited qualifying specialty dining and casual dining. Some experiential dining venues, seasonal venues and supplementary menu items may still cost extra."
+    },
+    {
+      "question": "Do I need to pay extra for the buffet?",
+      "answer": "Standard buffet dining is included in the cruise fare. Certain separately operated venues or premium menu items may have additional charges."
+    },
+    {
+      "question": "Can I make specialty dining reservations before my cruise?",
+      "answer": "Princess recommends booking early through the Princess Cruises app to secure your preferred restaurant, date and time. Reservations are subject to availability."
+    },
+    {
+      "question": "Does Princess Cruises offer vegetarian and vegan meals?",
+      "answer": "Yes. The main dining rooms provide vegetarian and vegan choices, and guests with specific dietary requirements should notify Princess in advance and speak with the onboard dining team."
+    },
+    {
+      "question": "Are drinks included with Princess dining?",
+      "answer": "Some basic beverages may be available with meals, but alcoholic drinks, specialty coffees and other premium beverages may cost extra unless covered by an applicable beverage package or promotion."
+    },
+    {
+      "question": "Is room service included on Princess Cruises?",
+      "answer": "Room-service food and delivery arrangements vary by item and package. Princess Plus and Princess Premier include eligible room-service delivery under current terms, but not every menu item is necessarily complimentary."
+    },
+    {
+      "question": "Are specialty dining restaurants available on every Princess ship?",
+      "answer": "No. Restaurant availability varies by ship and itinerary. Crown Grill and Sabatini's are offered across many ships, while venues such as The Catch by Rudi, Makoto Ocean and Umai Teppanyaki are available only on selected ships."
+    }
+  ]
+}
+

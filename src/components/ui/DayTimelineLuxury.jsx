@@ -25,7 +25,7 @@ const DayTimelineLuxury = ({ data }) => {
         <div className="text-center mb-16 lg:mb-24">
           <div className="inline-flex items-center space-x-2 text-xs uppercase tracking-widest text-gold-400 font-semibold px-4 py-1.5 rounded-full bg-gold-400/10 border border-gold-400/30 mb-6">
             <Clock className="w-3.5 h-3.5" />
-            <span>The Windstar Rhythm</span>
+            <span>{data.badge || "The Windstar Rhythm"}</span>
           </div>
           <h2 className="font-display text-4xl lg:text-6xl text-white mb-6">
             {data.title}

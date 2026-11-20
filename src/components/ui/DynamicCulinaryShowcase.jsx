@@ -25,7 +25,7 @@ const DynamicCulinaryShowcase = ({ title, subtitle, items, images = [] }) => {
                 {images[idx % images.length] ? (
                   <img 
                     src={images[idx % images.length]} 
-                    alt={item.title}
+                    alt={item.title || item.name || item.heading || item.label || ''}
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                     loading="lazy"
                   />

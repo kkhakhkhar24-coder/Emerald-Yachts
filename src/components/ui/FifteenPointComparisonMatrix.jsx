@@ -7,6 +7,8 @@ const icons = [Anchor, Navigation, Users, Utensils, Waves, MapPin, Wine, Calenda
 const FifteenPointComparisonMatrix = ({ title, subtitle, points }) => {
   const [activeIdx, setActiveIdx] = useState(null);
 
+  if (!points || points.length === 0) return null;
+
   return (
     <section className="w-full py-24 bg-ice-50 relative overflow-hidden border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -14,16 +16,18 @@ const FifteenPointComparisonMatrix = ({ title, subtitle, points }) => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <FadeIn>
             <span className="inline-flex items-center space-x-2 text-xs uppercase tracking-widest text-navy-600 font-semibold px-4 py-1.5 rounded-full bg-white border border-slate-200 shadow-sm mb-4">
-              <Compass className="w-3.5 h-3.5" />
+              <Compass className="w-3.5 h-3.5 text-gold-500" />
               <span>Detailed Comparison</span>
             </span>
             <h2 className="text-3xl md:text-5xl font-display text-navy-950 mb-6">
               {title}
             </h2>
             <div className="w-16 h-0.5 bg-gold-400 mx-auto mb-6"></div>
-            <p className="text-base md:text-lg text-slate-600 leading-relaxed">
-              {subtitle}
-            </p>
+            {subtitle && (
+              <p className="text-base md:text-lg text-slate-600 leading-relaxed">
+                {subtitle}
+              </p>
+            )}
           </FadeIn>
         </div>
 
@@ -33,11 +37,11 @@ const FifteenPointComparisonMatrix = ({ title, subtitle, points }) => {
             const isActive = activeIdx === idx;
             
             return (
-              <FadeIn key={idx} delay={idx * 50}>
+              <FadeIn key={idx} delay={Math.min(idx * 0.03, 0.3)}>
                 <div 
                   className={`bg-white rounded-2xl border transition-all duration-300 overflow-hidden cursor-pointer flex flex-col h-full ${
                     isActive 
-                      ? 'border-gold-400 shadow-lg shadow-gold-400/10 scale-[1.02]' 
+                      ? 'border-gold-400 shadow-xl shadow-gold-400/10 scale-[1.02] ring-1 ring-gold-400' 
                       : 'border-slate-200 hover:border-gold-400/50 hover:shadow-md'
                   }`}
                   onClick={() => setActiveIdx(isActive ? null : idx)}
@@ -49,29 +53,27 @@ const FifteenPointComparisonMatrix = ({ title, subtitle, points }) => {
                       }`}>
                         <Icon className="w-6 h-6" />
                       </div>
-                      <span className="text-3xl font-display text-slate-100 font-bold select-none">
+                      <span className="text-3xl font-display text-slate-200 font-bold select-none">
                         {(idx + 1).toString().padStart(2, '0')}
                       </span>
                     </div>
                     
-                    <h3 className="text-xl font-display text-navy-950 mb-3">
+                    <h3 className="text-xl font-display text-navy-950 mb-3 font-semibold">
                       {point.title}
                     </h3>
                     
-                    <div className={`text-sm text-slate-600 leading-relaxed transition-all duration-300 overflow-hidden ${
-                      isActive ? 'max-h-[500px] opacity-100' : 'max-h-12 opacity-80'
-                    }`}>
-                      <p className={isActive ? '' : 'line-clamp-2'}>
+                    <div className="text-sm text-slate-600 leading-relaxed mt-1">
+                      <p>
                         {point.description}
                       </p>
                     </div>
                   </div>
                   
-                  <div className="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between mt-auto">
+                  <div className="px-6 py-3.5 bg-slate-50 border-t border-slate-100 flex items-center justify-between mt-auto">
                     <span className="text-xs font-semibold uppercase text-gold-600 tracking-wider">
-                      {isActive ? 'Close Details' : 'Read More'}
+                      Difference {(idx + 1).toString().padStart(2, '0')}
                     </span>
-                    <ChevronRight className={`w-4 h-4 text-gold-600 transition-transform duration-300 ${isActive ? 'rotate-90' : ''}`} />
+                    <ChevronRight className={`w-4 h-4 text-gold-600 transition-transform duration-300 ${isActive ? 'rotate-90 text-gold-500' : ''}`} />
                   </div>
                 </div>
               </FadeIn>

@@ -3,7 +3,7 @@ import FadeIn from './FadeIn';
 import { ChevronRight } from 'lucide-react';
 
 const TopQuestionsReveal = ({ title, subtitle, questions }) => {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <section className="relative w-full bg-navy-950 text-white py-24">

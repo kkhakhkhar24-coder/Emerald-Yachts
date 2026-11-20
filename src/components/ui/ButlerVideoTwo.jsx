@@ -1,6 +1,7 @@
 import React from 'react';
 import FadeIn from './FadeIn';
 import { CheckCircle } from 'lucide-react';
+import LiteYouTubeEmbed from '@/components/ui/LiteYouTubeEmbed';
 
 const ButlerVideoTwo = ({ data }) => {
   if (!data?.youtubeId) return null;
@@ -17,7 +18,7 @@ const ButlerVideoTwo = ({ data }) => {
               <div className="absolute -bottom-4 -right-4 w-24 h-24 border-r-2 border-b-2 border-gold-400/30 rounded-br-xl" />
               
               <div className="relative w-full aspect-video bg-navy-950 rounded-2xl overflow-hidden shadow-2xl border border-slate-200/40">
-                <iframe
+                <LiteYouTubeEmbed
                   width="100%"
                   height="100%"
                   src={`https://www.youtube-nocookie.com/embed/${data.youtubeId}?rel=0&modestbranding=1&vq=hd1080`}

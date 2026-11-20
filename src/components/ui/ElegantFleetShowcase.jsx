@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import FadeIn from './FadeIn';
 import MasterImage from './MasterImage';
 import { Ship, Users, Star } from 'lucide-react';
+import CrawlablePanels from './CrawlablePanels';
 
 const ElegantFleetShowcase = ({ title, subtitle, ships = [] }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -116,6 +117,7 @@ const ElegantFleetShowcase = ({ title, subtitle, ships = [] }) => {
           </div>
         </div>
       </div>
+      <CrawlablePanels items={ships} activeIndex={activeIndex} />
     </section>
   );
 };

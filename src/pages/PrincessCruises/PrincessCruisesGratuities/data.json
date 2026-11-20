@@ -1,0 +1,582 @@
+{
+  "seo": {
+    "title": "Princess Cruises Gratuities: Daily Rates & Tipping Guide",
+    "metaTitle": "Princess Cruises Gratuities: Daily Rates & Tipping Guide",
+    "metaDescription": "Understand Princess Cruises gratuities, daily Crew Appreciation rates, package inclusions, optional service charges and additional tipping.",
+    "canonicalUrl": "https://www.tripsandships.com/princess-cruises/gratuities",
+    "keywords": "Princess Cruises gratuities, Princess Crew Appreciation, cruise tipping, Princess Plus gratuities, Princess Premier gratuities, daily service charge",
+    "ogTitle": "Princess Cruises Gratuities and Crew Appreciation Explained",
+    "ogDescription": "Understand Princess Cruises gratuities, daily Crew Appreciation rates, package inclusions, optional service charges and additional tipping."
+  },
+  "hero": {
+    "badge": "Gratuities & Service Charges Guide",
+    "title": "Princess Cruises Gratuities and Crew Appreciation Explained",
+    "subtitle": "Understand Daily Gratuities, Service Charges and Tipping on Princess Cruises: daily rates by stateroom category, total voyage costs, package inclusions in Plus & Premier, and tipping policies.",
+    "ctaLabel": "Plan Your Princess Cruise",
+    "ctaUrl": "/contact",
+    "secondaryCtaLabel": "Princess Plus vs. Premier",
+    "secondaryCtaUrl": "/princess-cruises/plus-vs-premier"
+  },
+  "introSection": {
+    "heading": "Understand Daily Gratuities, Service Charges and Tipping on Princess Cruises",
+    "p1": "When planning a Princess Cruises holiday, it is worth understanding how gratuities work before you sail. Princess uses the term Crew Appreciation for its daily service charge, which recognises the many crew members who contribute to your onboard experience.",
+    "p2": "The charge is generally added to your onboard account each day, unless it has already been prepaid or covered by an eligible package. Its amount depends on your stateroom category, and guests have the option to adjust it while onboard. There are also separate service charges on certain optional purchases, including drinks and specialty dining. These are not the same as daily Crew Appreciation.",
+    "p3": "This guide explains Princess Cruises' gratuity rates, how much to budget, what Princess Plus and Princess Premier include, and whether you should consider tipping crew members separately."
+  },
+  "whatAreGratuities": {
+    "title": "What Are Princess Cruises Gratuities?",
+    "subtitle": "Pooled Crew Appreciation Supporting Guest-Facing & Behind-the-Scenes Teams",
+    "intro": "Princess Cruises refers to its daily gratuities as Crew Appreciation. It is a per-person, per-day amount intended to recognise the work of crew members across the ship. Rather than being distributed only to the staff members guests interact with directly, the collected funds are pooled and distributed among eligible crew members in guest-facing and behind-the-scenes departments.",
+    "departments": [
+      {
+        "title": "Housekeeping & Staterooms",
+        "description": "Stateroom stewards and housekeeping staff who service cabins twice daily, manage linens, and maintain immaculate stateroom hallways.",
+        "icon": "Sparkles"
+      },
+      {
+        "title": "Dining Room & Restaurant Teams",
+        "description": "Head waiters, servers, assistant servers, and bus staff delivering multi-course meals across the main dining rooms and casual eateries.",
+        "icon": "Utensils"
+      },
+      {
+        "title": "Bar & Beverage Staff",
+        "description": "Bartenders, bar servers, and sommeliers crafting cocktails, pouring wines, and preparing specialty coffees across shipboard lounges.",
+        "icon": "Wine"
+      },
+      {
+        "title": "Galley & Food Preparation",
+        "description": "Behind-the-scenes culinary teams, sous chefs, bakers, and line cooks preparing fresh cuisine, pastries, and buffet presentations 24/7.",
+        "icon": "ChefHat"
+      },
+      {
+        "title": "Entertainment & Production",
+        "description": "Audio, lighting, stage crews, activity staff, and production teams operating theater shows, music venues, and daily cruise activities.",
+        "icon": "Music"
+      },
+      {
+        "title": "Guest Services & Hotel Operations",
+        "description": "Front desk receptionists, concierge staff, onboard revenue teams, and guest relations specialists resolving stateroom inquiries.",
+        "icon": "HelpCircle"
+      }
+    ],
+    "note": "This means the daily charge recognises a much wider team than just your stateroom attendant or dining server."
+  },
+  "dailyRates": {
+    "title": "Princess Cruises Daily Gratuity Rates",
+    "subtitle": "Current Published USD Crew Appreciation Rates by Stateroom Category",
+    "intro": "Princess Cruises' current published Crew Appreciation amounts are based on your stateroom category. These amounts are in US dollars. Guests sailing on ships operating in Australian dollars are charged the equivalent amount in AUD, subject to the applicable regional policy. The charge applies per guest, per day, including children. The exact category assigned to your stateroom determines the applicable rate.",
+    "table": {
+      "headers": [
+        "Stateroom Category",
+        "Daily Charge per Guest"
+      ],
+      "rows": [
+        [
+          "Interior, Oceanview and Balcony",
+          " USD"
+        ],
+        [
+          "Mini-Suite, Cabanas and Reserve Collection",
+          " USD"
+        ],
+        [
+          "Suite",
+          " USD"
+        ]
+      ]
+    }
+  },
+  "sevenNightCosts": {
+    "title": "How Much Are Gratuities for a 7-Night Cruise?",
+    "subtitle": "Cumulative Crew Appreciation Breakdown for 1 and 2 Guests",
+    "intro": "For a seven-night sailing, the daily charge adds up as follows based on stateroom category and guest count:",
+    "table": {
+      "headers": [
+        "Stateroom Category",
+        "Per Guest (7 Nights)",
+        "Two Guests (7 Nights)"
+      ],
+      "rows": [
+        [
+          "Interior, Oceanview or Balcony",
+          " USD",
+          " USD"
+        ],
+        [
+          "Mini-Suite, Cabanas or Reserve Collection",
+          " USD",
+          " USD"
+        ],
+        [
+          "Suite",
+          " USD",
+          " USD"
+        ]
+      ]
+    },
+    "exampleNote": "For example, two guests staying in a Balcony stateroom on a seven-night cruise would have a total Crew Appreciation amount of  USD."
+  },
+  "longerVoyageCosts": {
+    "title": "How Much Are Gratuities for a Longer Princess Cruise?",
+    "subtitle": "Calculated Per-Guest Cumulative Estimates for 7, 10, 14, and 21 Nights",
+    "intro": "Longer voyages naturally have higher totals because Crew Appreciation is calculated daily. All figures are per guest, in USD, and based on published daily rates. Multiply by the number of guests in your stateroom to estimate your total.",
+    "table": {
+      "headers": [
+        "Cruise Length",
+        "Interior, Oceanview or Balcony",
+        "Mini-Suite or Reserve Collection",
+        "Suite"
+      ],
+      "rows": [
+        [
+          "7 nights",
+          " USD",
+          " USD",
+          " USD"
+        ],
+        [
+          "10 nights",
+          " USD",
+          " USD",
+          " USD"
+        ],
+        [
+          "14 nights",
+          " USD",
+          " USD",
+          " USD"
+        ],
+        [
+          "21 nights",
+          " USD",
+          " USD",
+          " USD"
+        ]
+      ]
+    }
+  },
+  "paymentMethods": {
+    "title": "How Are Princess Cruises Gratuities Charged?",
+    "subtitle": "Three Common Ways to Manage and Settle Crew Appreciation",
+    "intro": "If Crew Appreciation has not been prepaid or included in an eligible package, Princess generally adds the daily amount to your onboard account automatically. You can review charges through your onboard account in the Princess app. There are three common ways to handle payment:",
+    "cards": [
+      {
+        "title": "Pay Automatically Onboard",
+        "items": [
+          "The daily amount is automatically posted to your stateroom folio every day of the voyage",
+          "Charges accumulate throughout the cruise and settle against your linked credit card on disembarkation morning",
+          "Convenient if you prefer paying at the end of the cruise rather than upfront before departure",
+          "Review real-time running balances daily in the Princess Cruises app"
+        ]
+      },
+      {
+        "title": "Prepay Before Your Cruise",
+        "items": [
+          "Prepay Crew Appreciation through Princess Manage Booking at any point prior to sailing",
+          "Locks in your gratuity budget before leaving home and reduces charges on your onboard account",
+          "Treated as part of your applicable cruise fare booking payment arrangements",
+          "Check payment deadlines in your booking; subject to regional terms and cancellation policies"
+        ]
+      },
+      {
+        "title": "Covered by a Cruise Package",
+        "items": [
+          "Princess Plus and Princess Premier packages pay Crew Appreciation on behalf of eligible guests",
+          "Daily service charges are automatically waived and will not appear on your stateroom bill",
+          "Combines gratuities with beverage packages, Wi-Fi, casual and specialty dining",
+          "Check package terms if booking onboard or sailing on ships operating under AUD currency rules"
+        ]
+      }
+    ]
+  },
+  "packageInclusions": {
+    "title": "Are Gratuities Included in Princess Plus and Princess Premier?",
+    "subtitle": "Crew Appreciation Fully Covered in Both All-Inclusive Bundles",
+    "intro": "Yes. Under the current USD package terms, both Princess Plus and Princess Premier include Crew Appreciation paid on behalf of eligible guests. This is a significant benefit because it covers the daily service charge and removes the need to manage that charge separately during the voyage.",
+    "packages": [
+      {
+        "title": "Princess Plus (– / Day)",
+        "subtitle": "Essential Package Value",
+        "items": [
+          "Crew Appreciation paid on behalf of eligible guests (worth –/day)",
+          "Plus Beverage Package (drinks up to , 15 daily alcohol limit + unlimited non-alcoholic)",
+          "MedallionNet Max Wi-Fi for 1 device per guest",
+          "4 qualifying casual dining meals per guest during the voyage",
+          "Complimentary OceanNow location-based delivery and room-service delivery"
+        ]
+      },
+      {
+        "title": "Princess Premier (– / Day)",
+        "subtitle": "Ultimate Luxury Inclusion",
+        "items": [
+          "Crew Appreciation paid on behalf of eligible guests (worth –/day)",
+          "Premier Beverage Package (drinks up to , no daily alcoholic limit)",
+          "MedallionNet Max Wi-Fi for up to 4 devices per guest",
+          "Unlimited qualifying casual dining meals throughout the voyage",
+          "Unlimited specialty dining meals (subject to current meal-per-mealtime terms)",
+          "Eligible shore excursion credits, professional photo packages, and reserved theater seating"
+        ]
+      }
+    ],
+    "regionalNote": "Regional exception: Princess' terms distinguish between USD and AUD package purchases. For example, Crew Appreciation is not included when certain packages are purchased onboard a cruise operating in AUD. Check the terms attached to your booking rather than assuming every package purchase covers gratuities in every market."
+  },
+  "serviceCharges": {
+    "title": "Are There Additional Service Charges on Princess Cruises?",
+    "subtitle": "Understanding the Automatic 20% Gratuity on Optional Onboard Purchases",
+    "intro": "Yes. Daily Crew Appreciation is separate from service charges applied to certain optional purchases. Princess' published policy states that an automatic 20% service charge is added to eligible optional purchases.",
+    "categories": [
+      {
+        "title": "Bar & Beverage Purchases",
+        "description": "A 20% service charge is automatically added to individual cocktails, glasses of wine, beers, sodas, and specialty coffees purchased a la carte outside of an active drink package."
+      },
+      {
+        "title": "Specialty Dining Cover Charges",
+        "description": "A 20% service charge is added to cover charges and a la carte menus at Crown Grill, Sabatini's, The Catch by Rudi, and other specialty dining venues when paying out-of-pocket."
+      },
+      {
+        "title": "Lotus Spa Treatments & Salon",
+        "description": "Spa treatments, massages, facials, and salon services automatically incur an 18% to 20% service charge added to the stateroom folio upon checkout."
+      },
+      {
+        "title": "Private Group Functions & Corkage",
+        "description": "Private cocktail parties, catering arrangements, wine tasting seminars, and personal wine corkage fees (/bottle) carry applicable service charges."
+      }
+    ],
+    "example": "For example, if you purchase an optional specialty item for  that is subject to a 20% service charge, the additional charge is . Paying daily Crew Appreciation does not remove service charges on optional purchases, though beverage and dining packages cover applicable service charges for included items."
+  },
+  "adjustingGratuities": {
+    "title": "Can You Adjust or Remove Princess Cruises Gratuities?",
+    "subtitle": "Onboard Discretion Policy and Important Timelines",
+    "intro": "Princess states that guests have discretion to adjust Crew Appreciation while onboard. If you have a concern about service, the first step should always be to speak with the onboard team so they have an opportunity to address it during your cruise.",
+    "rules": [
+      {
+        "title": "Onboard Adjustment Discretion",
+        "items": [
+          "Crew Appreciation can be increased, reduced, or removed at the guest's discretion while onboard",
+          "Adjustments must be requested at Guest Services before settling your account prior to disembarkation",
+          "Once the stateroom account is finalized and closed on disembarkation morning, charges are non-refundable",
+          "Adjustments cannot be made retroactively after leaving the ship"
+        ]
+      },
+      {
+        "title": "Package Benefit Rules",
+        "items": [
+          "Guests who booked Princess Plus or Princess Premier have Crew Appreciation paid as a bundled perk",
+          "This component cannot be removed, refunded, credited, or exchanged for cash or onboard credit",
+          "Crew members still receive their pooled gratuity entitlement directly from Princess on your behalf",
+          "Package benefits remain governed by the terms of the original fare booking"
+        ]
+      }
+    ]
+  },
+  "additionalTipping": {
+    "title": "Should You Tip Princess Crew Members Extra?",
+    "subtitle": "When and How to Give Personal Cash Gratuities",
+    "intro": "Additional tipping is completely optional. Crew Appreciation is designed to recognise a broad group of crew members across the ship, so you are not expected to give additional tips simply because you received attentive service. However, guests are welcome to provide an additional tip directly to individual crew members who have gone above and beyond.",
+    "scenarios": [
+      {
+        "title": "Stateroom Stewards",
+        "description": "For exceptionally thoughtful cabin care, accommodating special requests, or delivering delightful daily towel animals and ice setups."
+      },
+      {
+        "title": "Dining Room Servers",
+        "description": "For memorable evening dinner service, anticipating dietary preferences, and exceptional attention to wine pairings and courses."
+      },
+      {
+        "title": "Bartenders & Bar Servers",
+        "description": "For talented mixologists who remember your favorite drinks and provide warm, personalized service in your favorite ship lounge."
+      },
+      {
+        "title": "Special Requests & Luggage Porters",
+        "description": "For shoreside baggage handlers (– per bag at terminal drop-off) and crew who deliver extra assistance with mobility or celebrations."
+      }
+    ],
+    "guidance": "There is no required or standard amount for extra tips. Guests who choose to provide additional gratuities often give  to  in cash to their stateroom attendant or dining team at the end of the voyage. Any additional gratuity is a personal choice based on your experience and budget."
+  },
+  "budgetingRoadmap": {
+    "title": "How to Calculate Your Total Gratuities Budget",
+    "subtitle": "Three-Step Framework to Plan Your Princess Cruise Gratuity Costs",
+    "steps": [
+      {
+        "title": "Identify Daily Rate by Category",
+        "subtitle": "Step 01 • Stateroom Rate",
+        "description": "Determine your category rate: /day for Balcony, Oceanview, and Interior; /day for Mini-Suite, Cabana, and Reserve; or /day for Suites (all USD)."
+      },
+      {
+        "title": "Multiply by Guests and Nights",
+        "subtitle": "Step 02 • Calculate Base Total",
+        "description": "Multiply the daily rate by the total number of guests in the cabin and voyage nights. For example: 2 guests in a Mini-Suite on a 10-night cruise = 2 x  x 10 =  USD."
+      },
+      {
+        "title": "Account for Packages and Extras",
+        "subtitle": "Step 03 • Adjust for Inclusions",
+        "description": "If you booked Princess Plus or Premier, deduct the daily gratuity (it is 100% covered). Budget separately for 20% service charges on optional drinks or spa visits."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "How much are Princess Cruises gratuities per day?",
+      "answer": "The published daily Crew Appreciation rates are  USD per guest for Interior, Oceanview, and Balcony staterooms;  USD per guest for Mini-Suites, Cabanas, and Reserve Collection staterooms; and  USD per guest for Suites."
+    },
+    {
+      "question": "Are Princess Cruises gratuities automatically added?",
+      "answer": "Yes. Unless Crew Appreciation has been prepaid prior to sailing or is included as part of an eligible Princess Plus or Princess Premier package, it is automatically posted to your stateroom folio on a daily basis."
+    },
+    {
+      "question": "Do children pay gratuities on Princess Cruises?",
+      "answer": "Yes. The daily Crew Appreciation charge applies to every guest in the stateroom regardless of age, including infants and children, based on the stateroom category rate."
+    },
+    {
+      "question": "Are gratuities included in Princess Plus?",
+      "answer": "Yes. Under current USD package terms, Princess Plus includes daily Crew Appreciation paid on behalf of eligible guests, along with the Plus Beverage Package, Wi-Fi, and casual dining."
+    },
+    {
+      "question": "Are gratuities included in Princess Premier?",
+      "answer": "Yes. Princess Premier includes daily Crew Appreciation for all eligible guests, alongside the Premier Beverage Package, 4-device Wi-Fi, unlimited specialty and casual dining, and photo packages."
+    },
+    {
+      "question": "Can I prepay Princess Cruises gratuities?",
+      "answer": "Yes. Guests can prepay their Crew Appreciation through Princess Manage Booking at any time up until the pre-cruise payment deadline, which locks in your gratuity budget before departure."
+    },
+    {
+      "question": "Can I remove or reduce Crew Appreciation?",
+      "answer": "Princess allows guests to adjust or remove Crew Appreciation while onboard by visiting Guest Services prior to settling their account on disembarkation morning. After disembarkation, gratuities are finalized and non-refundable. Note that Crew Appreciation bundled into Princess Plus or Premier cannot be refunded or removed."
+    },
+    {
+      "question": "Is the 20% service charge the same as daily gratuities?",
+      "answer": "No. Crew Appreciation is a daily per-person service charge supporting shipwide crew teams. The 20% service charge applies automatically to optional a la carte purchases such as cocktails, wine by the bottle, and specialty dining cover charges."
+    },
+    {
+      "question": "Should I tip my stateroom attendant separately?",
+      "answer": "Additional tipping is completely optional. Daily Crew Appreciation already compensates stateroom stewards, dining servers, and behind-the-scenes staff. However, you are welcome to give extra cash directly to crew members who provide exceptional personal service."
+    },
+    {
+      "question": "Are Princess Cruises gratuities charged in US dollars?",
+      "answer": "Yes, published rates are stated in USD. Ships operating primarily in Australian dollars charge the equivalent amount in AUD based on regional cruise policies, with specific inclusions for Australia and New Zealand residents."
+    }
+  ],
+  "angelaBio": {
+    "name": "Angela Hughes",
+    "title": "Princess Cruises Specialist & CEO, Trips & Ships Luxury Travel",
+    "ctaText": "Plan Your Princess Cruise",
+    "ctaLink": "/contact",
+    "bio": "Angela Hughes has spent over 40 years as a luxury travel specialist and CEO of Trips & Ships Luxury Travel, having traveled to more than 121 countries. Her firsthand experience across the Princess fleet helps clients navigate cruise budgeting, evaluate whether Princess Plus or Premier covers their gratuities, and avoid unexpected onboard charges.",
+    "credentials": [
+      "40+ Years Luxury Cruise Experience",
+      "Traveled to 121+ Countries Worldwide",
+      "Princess Cruises Certified Specialist",
+      "CLIA Master Cruise Counselor"
+    ],
+    "quote": "Factoring Crew Appreciation into your upfront cruise budget eliminates surprises on disembarkation morning. Comparing standalone gratuity totals with the bundled benefits of Princess Plus often reveals that the package pays for itself."
+  },
+  "finalCta": {
+    "title": "Plan Your Princess Cruise With Confidence",
+    "subtitle": "Connect with Angela Hughes and the Trips & Ships luxury travel team to compare Princess ships, staterooms, package perks, and ensure your cruise budget is clear and optimized.",
+    "primaryCtaText": "Plan Your Princess Cruise",
+    "primaryCtaLink": "/contact",
+    "secondaryCtaText": "Explore Princess Cruises Guide",
+    "secondaryCtaLink": "/princess-cruises"
+  },
+  "dailyPricingTiers": [
+    {
+      "name": "Interior, Oceanview & Balcony",
+      "price": " / day",
+      "nights": "Per Guest",
+      "description": "Standard daily Crew Appreciation rate applicable to all Interior, Oceanview, and Balcony stateroom categories across the Princess Cruises fleet."
+    },
+    {
+      "name": "Mini-Suite, Cabana & Reserve",
+      "price": " / day",
+      "nights": "Per Guest",
+      "description": "Enhanced stateroom rate for Mini-Suites, Cabanas, and Reserve Collection cabins, reflecting dedicated steward touches and premium amenities."
+    },
+    {
+      "name": "Full Suites",
+      "price": " / day",
+      "nights": "Per Guest",
+      "description": "Premium suite rate reflecting comprehensive concierge attention, dedicated stateroom attendants, priority embarkation, and suite-level care."
+    }
+  ],
+  "sevenNightGrid": [
+    {
+      "title": "Interior, Oceanview & Balcony",
+      "category": "7-Night Voyage Rate",
+      "features": [
+        "Per Guest:  USD total for 7 nights (/day)",
+        "Two Guests:  USD total cabin gratuity",
+        "Daily automatic posting to stateroom folio",
+        "100% covered when booking Princess Plus or Premier"
+      ]
+    },
+    {
+      "title": "Mini-Suite, Cabana & Reserve",
+      "category": "7-Night Voyage Rate",
+      "features": [
+        "Per Guest:  USD total for 7 nights (/day)",
+        "Two Guests:  USD total cabin gratuity",
+        "Covers enhanced housekeeping and Reserve dining teams",
+        "100% covered when booking Princess Plus or Premier"
+      ]
+    },
+    {
+      "title": "Full Suites",
+      "category": "7-Night Voyage Rate",
+      "features": [
+        "Per Guest:  USD total for 7 nights (/day)",
+        "Two Guests:  USD total cabin gratuity",
+        "Recognises concierge, priority services, and suites staff",
+        "100% covered when booking Princess Plus or Premier"
+      ]
+    }
+  ],
+  "longerVoyageBento": [
+    {
+      "title": "7-Night Cruise",
+      "category": "Standard Week Voyage",
+      "description": "Standard one-week sailing totals per guest:  (Balcony & below),  (Mini-Suite/Reserve),  (Suites). Double occupancy totals range from  to  USD."
+    },
+    {
+      "title": "10-Night Cruise",
+      "category": "Extended Itinerary",
+      "description": "Ten-day voyage totals per guest:  (Balcony & below),  (Mini-Suite/Reserve),  (Suites). Double occupancy stateroom totals range from  to  USD."
+    },
+    {
+      "title": "14-Night Cruise",
+      "category": "Two-Week Voyage",
+      "description": "Two-week voyage totals per guest:  (Balcony & below),  (Mini-Suite/Reserve),  (Suites). Double occupancy stateroom totals range from  to  USD."
+    },
+    {
+      "title": "21-Night Cruise",
+      "category": "Three-Week Grand Voyage",
+      "description": "Grand cruise totals per guest:  (Balcony & below),  (Mini-Suite/Reserve),  (Suites). Double occupancy stateroom totals range from  to  USD."
+    }
+  ],
+  "howChargedSteps": [
+    {
+      "title": "Pay Automatically Onboard",
+      "subtitle": "Option 01 • Stateroom Folio",
+      "description": "Daily amounts post to your onboard stateroom folio automatically each night. Charges accumulate throughout the cruise and settle against your linked credit card on disembarkation morning."
+    },
+    {
+      "title": "Prepay Before Your Cruise",
+      "subtitle": "Option 02 • Pre-Cruise Planning",
+      "description": "Prepay Crew Appreciation through Princess Manage Booking at any point prior to sailing. This locks in your gratuity budget before leaving home and avoids surprise charges on your final statement."
+    },
+    {
+      "title": "Covered by a Cruise Package",
+      "subtitle": "Option 03 • Bundled Inclusions",
+      "description": "Guests with Princess Plus or Princess Premier have Crew Appreciation 100% paid on their behalf. Daily charges are waived and will not appear on your stateroom bill."
+    }
+  ],
+  "extraTippingDetails": [
+    {
+      "title": "Stateroom Stewards",
+      "category": "Personalized Cabin Care",
+      "paragraphs": [
+        "Stateroom attendants service cabins twice daily, replenish towels, provide fresh ice, and prepare evening turndown service. While they participate in the pooled Crew Appreciation fund, an extra cash tip of  to  at the end of the cruise is a customary way to recognize exceptional attention."
+      ],
+      "lists": [
+        {
+          "title": "When to Consider Extra Tipping",
+          "items": [
+            "Immediate fulfillment of special pillow, ice, or laundry requests",
+            "Accommodating traveling families with cribs or sofa beds",
+            "Delightful daily towel animal artistry and spotless cabin care"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dining Room Waitstaff",
+      "category": "Culinary Team Service",
+      "paragraphs": [
+        "Main dining room servers, junior waitstaff, and sommeliers work tirelessly each evening. For guests who dine at the same table under Traditional Dining or receive outstanding care in Dine My Way venues, personal gratuities of  to  per server are warmly welcomed."
+      ],
+      "lists": [
+        {
+          "title": "When to Consider Extra Tipping",
+          "items": [
+            "Anticipating dietary restrictions, allergies, and favorite beverage orders",
+            "Providing exceptional pacing and warm recommendations across courses",
+            "Creating memorable dining moments for birthdays or anniversaries"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Bartenders & Bar Servers",
+      "category": "Lounge & Mixology Service",
+      "paragraphs": [
+        "While drink packages and a la carte beverage purchases automatically include a 20% service charge, slipping a  to  cash tip per drink to your favorite lounge bartender or pool server often results in expedited service and generous pours throughout the cruise."
+      ],
+      "lists": [
+        {
+          "title": "When to Consider Extra Tipping",
+          "items": [
+            "Crafting custom off-menu cocktails tailored to your palate",
+            "Remembering your name and preferred drink when you visit the lounge",
+            "Prompt poolside service on busy warm-weather sea days"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Shoreside Porters & Special Crew",
+      "category": "Baggage & Specialty Assistance",
+      "paragraphs": [
+        "Curbside luggage porters at the embarkation terminal are not Princess shipboard crew members and are not compensated by Crew Appreciation. Tipping  to  per bag ensures your luggage is handled securely and staged promptly for shipboard loading."
+      ],
+      "lists": [
+        {
+          "title": "When to Consider Extra Tipping",
+          "items": [
+            "Terminal curbside porters loading checked bags onto terminal carts (–/bag)",
+            "Room service delivery crew delivering complimentary or OceanNow meals (–)",
+            "Youth center counselors and spa specialists delivering standout care"
+          ]
+        }
+      ]
+    }
+  ],
+  "budgetAnalysis": {
+    "includedTitle": "Standard Daily Crew Appreciation (Budget Mandatory)",
+    "extrasTitle": "Optional Onboard Extras (Budget Separately)",
+    "included": [
+      {
+        "title": "Interior, Oceanview & Balcony (/day)",
+        "description": "Budget  per person, per day (/week per guest,  for a couple) for standard staterooms."
+      },
+      {
+        "title": "Mini-Suite & Reserve Collection (/day)",
+        "description": "Budget  per person, per day (/week per guest,  for a couple) for mini-suites."
+      },
+      {
+        "title": "Suites (/day)",
+        "description": "Budget  per person, per day (/week per guest,  for a couple) for full suites."
+      },
+      {
+        "title": "Package Deductions (Plus & Premier)",
+        "description": "If you booked Princess Plus (–) or Premier (–), daily gratuities are 100% covered."
+      }
+    ],
+    "extras": [
+      {
+        "title": "20% Bar & Beverage Service Charge",
+        "description": "Automatically added to all individual cocktails, wine, and beer bought outside a drink package."
+      },
+      {
+        "title": "20% Specialty Dining Gratuity",
+        "description": "Added to cover charges at Crown Grill, Sabatini's, and The Catch when paying out-of-pocket."
+      },
+      {
+        "title": "18%–20% Lotus Spa & Salon Gratuity",
+        "description": "Automatically added to massage, facial, and salon invoices upon checkout."
+      },
+      {
+        "title": "Shoreside Curbside Baggage Porters",
+        "description": "Cash tips of – per checked bag given directly to shoreside terminal porters."
+      }
+    ]
+  }
+}

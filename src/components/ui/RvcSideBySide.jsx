@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import FadeIn from './FadeIn';
+import CrawlablePanels from './CrawlablePanels';
 
 const RvcSideBySide = ({ data, image }) => {
   const [activeCategory, setActiveCategory] = useState('space');
@@ -149,6 +150,7 @@ const RvcSideBySide = ({ data, image }) => {
         </div>
 
       </div>
+      <CrawlablePanels items={categories} activeIndex={activeCategory} />
     </section>
   );
 };

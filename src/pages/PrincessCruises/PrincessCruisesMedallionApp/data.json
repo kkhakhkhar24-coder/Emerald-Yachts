@@ -1,0 +1,366 @@
+{
+  "seo": {
+    "title": "Princess Medallion & App Guide: Pre-Cruise Setup",
+    "metaTitle": "Princess Medallion & App Guide: Pre-Cruise Setup",
+    "metaDescription": "Learn how to set up the Princess Cruises app and Medallion before sailing. Complete OceanReady check-in and explore onboard features.",
+    "canonicalUrl": "https://www.tripsandships.com/princess-cruises/medallion-and-app",
+    "keywords": "Princess Medallion, Princess Cruises app, OceanReady check-in, MedallionClass, OceanNow, MedallionPay, OceanCompass, Princess cruise prep",
+    "ogTitle": "Princess Medallion and App Guide: What to Set Up Before Your Cruise",
+    "ogDescription": "Learn how to set up the Princess Cruises app and Medallion before sailing. Complete OceanReady check-in and explore onboard features."
+  },
+  "hero": {
+    "badge": "MedallionClass & Digital Guide",
+    "title": "Princess Medallion and App Guide: What to Set Up Before Your Cruise",
+    "subtitle": "Make the most of Princess MedallionClass before you sail: complete OceanReady digital check-in, set up MedallionPay, arrange dining, and navigate your voyage with ease.",
+    "ctaLabel": "Plan Your Princess Cruise",
+    "ctaUrl": "/contact",
+    "secondaryCtaLabel": "Princess Wi-Fi Guide",
+    "secondaryCtaUrl": "/princess-cruises/wifi"
+  },
+  "introSection": {
+    "heading": "Make the Most of Princess MedallionClass Before You Sail",
+    "p1": "Princess Cruises combines its wearable Medallion device with the Princess Cruises app to make many parts of the cruise experience easier to manage. From completing digital check-in and accessing your stateroom to ordering refreshments, viewing activities and finding your way around the ship, these tools help simplify life onboard.",
+    "p2": "The best way to enjoy the experience is to prepare before embarkation. Download the app, review your booking, complete the required OceanReady steps and understand which features need an internet connection or are available only once you are onboard.",
+    "p3": "This guide explains how the Princess Medallion and app work, what to set up before departure and how to use the main features during your voyage."
+  },
+  "whatIsMedallion": {
+    "title": "What Is the Princess Medallion?",
+    "subtitle": "Wearable Contactless Technology Across the Fleet",
+    "intro": "The Princess Medallion is a small, wearable device that connects you to the ship's MedallionClass experience. It is designed to make everyday cruise activities more convenient without requiring you to carry a traditional room key or repeatedly enter payment details. The Medallion is designed to be worn or carried throughout your cruise and does not need to be switched on or off like a conventional electronic device.",
+    "capabilities": [
+      {
+        "title": "Keyless Stateroom Access",
+        "description": "Your stateroom door automatically recognises your Medallion as you approach, unlocking seamlessly without touching a keycard.",
+        "icon": "Key"
+      },
+      {
+        "title": "Contactless Onboard Purchases",
+        "description": "Eligible onboard purchases at shops, bars, and specialty venues charge directly to your stateroom account through MedallionPay.",
+        "icon": "CreditCard"
+      },
+      {
+        "title": "Personalised Delivery (OceanNow)",
+        "description": "Order food, cocktails, and amenities via the app and have crew deliver them directly to your live location anywhere on the ship.",
+        "icon": "Coffee"
+      },
+      {
+        "title": "Shipboard Navigation (OceanCompass)",
+        "description": "Find venues, restrooms, and dining rooms easily with turn-by-turn interactive directional maps throughout the vessel.",
+        "icon": "Compass"
+      },
+      {
+        "title": "Travel-Party Connections (Shipmate)",
+        "description": "Locate family members onboard and communicate through integrated in-app messaging designed for traveling groups.",
+        "icon": "Users"
+      },
+      {
+        "title": "Streamlined Embarkation",
+        "description": "Link your completed OceanReady check-in for expedited terminal arrival, heading straight through the Green Lane to the ship.",
+        "icon": "CheckCircle"
+      }
+    ]
+  },
+  "whatIsApp": {
+    "title": "What Is the Princess Cruises App?",
+    "subtitle": "Your All-in-One Pre-Cruise & Onboard Digital Companion",
+    "intro": "The Princess Cruises app is the digital companion for your voyage. It brings together pre-cruise preparation and onboard services in one place. Before departure, the app helps you complete OceanReady check-in, review travel info, customise your Medallion, and plan your itinerary.",
+    "features": [
+      {
+        "title": "Daily Activities & Entertainment",
+        "description": "Browse the daily JourneyView schedule, bookmark live shows, fitness classes, trivia, and enrichment lectures."
+      },
+      {
+        "title": "Dining Reservations & Preferences",
+        "description": "Reserve dining times in main dining rooms and specialty restaurants, and set dietary preferences before you sail."
+      },
+      {
+        "title": "On-Demand OceanNow Delivery",
+        "description": "Order drinks, snacks, sunscreen, or fresh towels delivered to your exact deck lounger or stateroom."
+      },
+      {
+        "title": "Folio & Account Tracking",
+        "description": "Check onboard transactions, track spending in real time, and monitor package allowances throughout the voyage."
+      },
+      {
+        "title": "Interactive Ship Wayfinding",
+        "description": "Point-to-point step-by-step navigation helps you find lounges, pools, medical centers, and guest services."
+      },
+      {
+        "title": "Travel Party Messaging",
+        "description": "Connect with family members, coordinate meeting spots, and message without buying an internet package."
+      }
+    ]
+  },
+  "setupSteps": {
+    "title": "How to Set Up the Princess App Before Your Cruise",
+    "subtitle": "Seven Essential Steps to Complete Before Embarkation Day",
+    "steps": [
+      {
+        "title": "Download the Official App",
+        "subtitle": "Step 01 • App Installation",
+        "description": "Download the Princess Cruises app from the Apple App Store or Google Play Store. Sign in with the account linked to your booking, verify your sailing details, and install all available updates."
+      },
+      {
+        "title": "Complete OceanReady Check-In",
+        "subtitle": "Step 02 • Digital Check-In",
+        "description": "OceanReady is Princess's digital check-in. Complete your personal information, emergency contacts, Passage Contract, and required acknowledgements at least 24 hours before embarkation."
+      },
+      {
+        "title": "Upload Your Travel Documents",
+        "subtitle": "Step 03 • Passport & Visas",
+        "description": "Enter your passport or government ID details exactly as they appear. Confirm expiration dates and review destination visa requirements for every guest in your stateroom reservation."
+      },
+      {
+        "title": "Add Security & Profile Photos",
+        "subtitle": "Step 04 • Facial Recognition",
+        "description": "Take or upload a clear, front-facing passport-style photo for each guest. This image is used for security identification at gangways and personalized crew service onboard."
+      },
+      {
+        "title": "Set Up Payment Method",
+        "subtitle": "Step 05 • MedallionPay Setup",
+        "description": "Link a credit or debit card for onboard stateroom folio spending. Set spending privileges for children or group members and confirm currency authorizations before departure."
+      },
+      {
+        "title": "Order or Customise Medallion",
+        "subtitle": "Step 06 • Accessories & Delivery",
+        "description": "Order complimentary home delivery if residing in the US, Puerto Rico, or Canada. Select optional accessories (clips, wristbands, pendants), or plan to collect your Medallion at the port."
+      },
+      {
+        "title": "Review Status & Boarding Pass",
+        "subtitle": "Step 07 • Green Lane vs Blue Lane",
+        "description": "Verify your Green Lane status for express embarkation. Save your OceanReady boarding QR code and note your assigned arrival time window for terminal check-in."
+      }
+    ]
+  },
+  "preCruiseCapabilities": {
+    "title": "What Can You Do With the Princess App Before Embarkation?",
+    "subtitle": "Advance Planning & Vacation Customisation Features",
+    "cards": [
+      {
+        "title": "Check In and Prepare for Boarding",
+        "items": [
+          "Complete all required OceanReady personal and travel information",
+          "Upload passport scans and verify visa entry documentation",
+          "Add security profile photos for every stateroom guest",
+          "Access your digital OceanReady boarding QR code for expedited terminal processing"
+        ]
+      },
+      {
+        "title": "Plan Your Onboard Activities",
+        "items": [
+          "Explore the interactive JourneyView daily timeline and entertainment lineup",
+          "Bookmark live stage shows, culinary demonstrations, and trivia sessions",
+          "Build a synchronized digital calendar for your entire traveling party",
+          "Get a clear preview of sea days, port calls, and formal evening schedules"
+        ]
+      },
+      {
+        "title": "Arrange Dining Reservations",
+        "items": [
+          "Select preferred dining times across main dining rooms",
+          "Book high-demand specialty dining venues (Crown Grill, Sabatini's, The Catch)",
+          "Specify dietary preferences, allergy alerts, and special celebration notes",
+          "Coordinate table arrangements with linked friends and family reservations"
+        ]
+      },
+      {
+        "title": "Review Booking & Add-Ons",
+        "items": [
+          "Review shore excursions, spa treatments, and celebration packages",
+          "Verify Princess Plus or Princess Premier beverage and Wi-Fi package entitlements",
+          "Check flight details, airport transfers, and luggage tag delivery status",
+          "Access Princess Manage Booking for additional travel documents and policies"
+        ]
+      }
+    ]
+  },
+  "onboardFeatures": {
+    "title": "How to Use the Medallion and App Onboard",
+    "subtitle": "Six Signature Onboard Services Powered by MedallionClass",
+    "items": [
+      {
+        "title": "Keyless Stateroom Entry",
+        "category": "Automated Cabin Access",
+        "description": "Your Medallion unlocks your stateroom door automatically as you approach—no keycards, scanning, or fumbling with bags required. A digital display outside your cabin welcomes you by name and confirms your entry status."
+      },
+      {
+        "title": "OceanNow: Food and Drink Delivery",
+        "category": "On-Demand Shipboard Delivery",
+        "description": "Order freshly prepared snacks, signature cocktails, coffee, sunscreen, or fresh towels from anywhere on the ship. Using Bluetooth sensors, the crew pinpoints your location and delivers your order directly to your deck lounger or seat."
+      },
+      {
+        "title": "OceanCompass: Interactive Navigation",
+        "category": "Turn-by-Turn Wayfinding",
+        "description": "Easily navigate multi-deck cruise ships with interactive 3D ship maps on your phone and public touchscreens. OceanCompass guides you to dining rooms, theaters, elevators, and public lounges with clear walking directions."
+      },
+      {
+        "title": "JourneyView: Real-Time Event Schedules",
+        "category": "Personalized Daily Schedule",
+        "description": "View the complete ship schedule in real time. JourneyView lets you browse upcoming entertainment, enrichment talks, youth center events, and fitness schedules, seamlessly integrating your dining and spa appointments."
+      },
+      {
+        "title": "MedallionPay: Contactless Onboard Purchases",
+        "category": "Frictionless Spending",
+        "description": "Make secure, touch-free purchases at ship shops, bars, art auctions, and shore excursion desks simply by tapping or having crew verify your photo. Review your running folio balance in real time on the Princess app."
+      },
+      {
+        "title": "Shipmate: Group Messaging & Location Sharing",
+        "category": "Travel Party Connectivity",
+        "description": "Keep in touch with family and friends through in-app group chat and opt-in location sharing. Locate companions on interactive deck plans without international cellular roaming, with granular parental controls for teens and kids."
+      }
+    ]
+  },
+  "wifiVsApp": {
+    "title": "Does the Princess App Require Wi-Fi?",
+    "subtitle": "Free Shipboard Intranet vs. General Internet Access",
+    "prosTitle": "Free Onboard Intranet Features (No Internet Package Needed)",
+    "consTitle": "General Internet Features (Requires Paid MedallionNet Package)",
+    "bestFor": [
+      "Accessing the Princess Cruises app throughout the ship",
+      "Viewing JourneyView daily schedules, activities, and ship news",
+      "Ordering food, drinks, and amenities via OceanNow delivery",
+      "Point-to-point shipboard navigation with OceanCompass",
+      "In-app Shipmate messaging with other guests on your sailing",
+      "Reviewing onboard stateroom folio spending and folio transactions",
+      "Making and managing main dining and specialty restaurant bookings"
+    ],
+    "notBestFor": [
+      "Sending external emails (Gmail, Outlook, iCloud) or iMessage / SMS",
+      "Browsing external websites, search engines, and travel blogs",
+      "Accessing social media platforms (Instagram, Facebook, TikTok, X)",
+      "Making FaceTime, WhatsApp, Zoom, or video calls to family back home",
+      "Streaming movies, series, YouTube, podcasts, or online music",
+      "Cloud file access, VPNs, remote work connections, and software updates"
+    ],
+    "bottomNote": "Princess Plus includes MedallionNet Max for 1 device per guest, while Princess Premier includes up to 4 devices per guest. For standalone internet pricing and details, see our Princess Cruises Wi-Fi Guide."
+  },
+  "troubleshooting": {
+    "title": "What to Do If the Princess App Is Not Working",
+    "subtitle": "Practical Troubleshooting Steps for Home and Onboard",
+    "cards": [
+      {
+        "title": "Pre-Cruise Troubleshooting",
+        "items": [
+          "Confirm a stable Wi-Fi or cellular data internet connection",
+          "Verify you are signed in with the exact email address linked to your cruise reservation",
+          "Confirm that your booking number appears under Upcoming Voyages",
+          "Update the Princess Cruises app to the latest version in the App Store or Google Play",
+          "Force close and reopen the app, or restart your mobile device"
+        ]
+      },
+      {
+        "title": "Onboard Connection Steps",
+        "items": [
+          "Switch your phone to Airplane Mode immediately upon boarding",
+          "Turn Wi-Fi back on while keeping cellular roaming strictly disabled",
+          "Connect to the ship's MedallionNet network from your Wi-Fi settings",
+          "Open a web browser or the Princess app to trigger the onboard portal",
+          "Do not assume your Medallion is defective—some features activate only once at sea"
+        ]
+      },
+      {
+        "title": "Guest Services Assistance",
+        "items": [
+          "Visit the dedicated OceanReady or MedallionClass desk at the embarkation terminal",
+          "Speak with onboard Guest Services or the Digital Support team in the Piazza",
+          "Crew can reset account credentials, re-link bookings, or issue replacement Medallions",
+          "Terminal kiosks provide alternative manual check-in if phone access fails"
+        ]
+      }
+    ]
+  },
+  "embarkationChecklist": {
+    "title": "What to Bring on Embarkation Day",
+    "subtitle": "Essential Documents & Items to Keep in Your Day Carry-On",
+    "cards": [
+      {
+        "title": "Essential Identification",
+        "items": [
+          "Original passport or government-issued photo ID (valid for 6+ months)",
+          "Any destination visas, ESTA/eTA approvals, or entry permits required",
+          "Physical copies of emergency contacts and travel insurance policies"
+        ]
+      },
+      {
+        "title": "Digital & Boarding Passes",
+        "items": [
+          "Smartphone with the Princess Cruises app installed and updated",
+          "Accessible OceanReady boarding pass QR code (saved offline or in digital wallet)",
+          "Printed cruise booking confirmation and assigned terminal arrival window"
+        ]
+      },
+      {
+        "title": "Medallion & Personal Devices",
+        "items": [
+          "Pre-delivered Princess Medallion (if delivered to your home before sailing)",
+          "Phone charging cable and portable power bank for embarkation day",
+          "Lanyard, clip, or preferred wearable accessory for your Medallion"
+        ]
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "question": "Do I need the Princess Cruises app to go on a Princess cruise?",
+      "answer": "The app is strongly recommended because it helps guests complete OceanReady check-in, access digital boarding passes, and utilize digital cruise services like keyless entry and OceanNow delivery. However, if you cannot use a compatible smartphone, Princess provides alternative assistance, terminal check-in kiosks, and physical Medallions for all onboard tasks."
+    },
+    {
+      "question": "Is the Princess Medallion free?",
+      "answer": "Yes, the Medallion itself and terminal collection are complimentary and included with your cruise fare. Home delivery is available for guests residing in the US, Puerto Rico, and Canada for a nominal shipping fee (complimentary with Princess Plus and Premier packages). Optional decorative accessories like bracelets and pendants are sold separately."
+    },
+    {
+      "question": "Do I need to wear my Medallion all the time?",
+      "answer": "You should keep your Medallion with you whenever you leave your stateroom, as it acts as your room key, ID card at gangways, and onboard payment method. You can wear it on the included complimentary lanyard, place it in a pocket, or use optional clips, wristbands, or jewelry accessories."
+    },
+    {
+      "question": "Can I use the Princess app without buying Wi-Fi?",
+      "answer": "Yes. Major Princess app features—such as viewing the JourneyView daily schedule, ordering OceanNow room service, navigating with OceanCompass, and messaging travel companions—operate over the ship's free internal network without purchasing an internet package. Browsing external websites, email, and social media requires a paid MedallionNet Wi-Fi plan."
+    },
+    {
+      "question": "Can one person complete check-in for the whole family?",
+      "answer": "Yes. The Princess Cruises app allows the lead guest or primary account manager to switch between stateroom guests on the same reservation and complete required personal details, document uploads, and emergency contacts for family members and dependents."
+    },
+    {
+      "question": "Can I order food and drinks from anywhere on the ship?",
+      "answer": "Yes. Through OceanNow, you can order meals, snacks, cocktails, and convenience items delivered directly to your current location (such as poolside loungers, theaters, or staterooms), subject to ship service areas and operational conditions."
+    },
+    {
+      "question": "Can I find family members using the Princess app?",
+      "answer": "Yes. Supported Shipmate and OceanCompass features allow you to locate travel party members on interactive ship deck maps, provided they have enabled location-sharing permissions in their app settings."
+    },
+    {
+      "question": "What happens if I forget my Medallion?",
+      "answer": "If you leave your Medallion in your cabin or misplace it, visit Guest Services or locate a crew member. They can verify your security photo and issue a replacement Medallion in minutes. Your previous Medallion is deactivated immediately for security."
+    },
+    {
+      "question": "Does the Princess Medallion work on every Princess ship?",
+      "answer": "Yes. Every ship across the entire Princess Cruises fleet is fully MedallionClass-enabled, featuring automated stateroom door locks, contactless payments, OceanNow delivery, and shipboard sensors."
+    },
+    {
+      "question": "When should I complete OceanReady?",
+      "answer": "Complete OceanReady check-in as early as possible after booking. Princess advises completing all travel document uploads, security photos, and personal information at least 24 hours prior to departure to secure Green Lane express boarding status."
+    }
+  ],
+  "angelaBio": {
+    "name": "Angela Hughes",
+    "title": "Princess Cruises Specialist & CEO, Trips & Ships Luxury Travel",
+    "ctaText": "Plan Your Princess Cruise",
+    "ctaLink": "/contact",
+    "bio": "Angela Hughes has spent over 40 years as a luxury travel specialist and CEO of Trips & Ships Luxury Travel, having traveled to more than 121 countries. Her firsthand experience across the Princess fleet helps clients navigate MedallionClass technology, streamline OceanReady check-in, and select the ideal package perks for their vacation.",
+    "credentials": [
+      "40+ Years Luxury Cruise Experience",
+      "Traveled to 121+ Countries Worldwide",
+      "Princess Cruises Certified Specialist",
+      "CLIA Master Cruise Counselor"
+    ],
+    "quote": "MedallionClass transforms the cruise experience from the moment you complete OceanReady at home. Getting your green lane pass, unlocking your cabin touch-free, and ordering refreshments right to your lounger makes onboard life feel effortlessly intuitive."
+  },
+  "finalCta": {
+    "title": "Plan Your Princess Cruise With Expert Guidance",
+    "subtitle": "Connect with Angela Hughes and the Trips & Ships luxury travel team to compare Princess ships, package benefits, and ensure your cruise check-in and onboard experience are flawless.",
+    "primaryCtaText": "Plan Your Princess Cruise",
+    "primaryCtaLink": "/contact",
+    "secondaryCtaText": "Explore Princess Cruises Guide",
+    "secondaryCtaLink": "/princess-cruises"
+  }
+}

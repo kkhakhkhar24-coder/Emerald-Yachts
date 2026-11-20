@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import FadeIn from './FadeIn';
+import CrawlablePanels from './CrawlablePanels';
 
 const YachtDayProgressionComparison = ({ title, subtitle, progressions }) => {
   const [activeStep, setActiveStep] = useState(0);
@@ -103,6 +104,7 @@ const YachtDayProgressionComparison = ({ title, subtitle, progressions }) => {
         </FadeIn>
 
       </div>
+      <CrawlablePanels items={progressions} activeIndex={activeStep} />
     </section>
   );
 };

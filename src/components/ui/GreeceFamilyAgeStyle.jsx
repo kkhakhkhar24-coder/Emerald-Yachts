@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import FadeIn from './FadeIn';
 import { Baby, Users, Smile, Activity, Compass, Heart, Sparkles, Star } from 'lucide-react';
+import CrawlablePanels from './CrawlablePanels';
 
 const GreeceFamilyAgeStyle = ({ ageGroups = [], familyTypes = [] }) => {
   const [activeAgeTab, setActiveAgeTab] = useState(0);
@@ -130,6 +131,8 @@ const GreeceFamilyAgeStyle = ({ ageGroups = [], familyTypes = [] }) => {
         </div>
 
       </div>
+      <CrawlablePanels items={ageGroups} activeIndex={activeAgeTab} />
+      <CrawlablePanels items={familyTypes} activeIndex={activeTypeTab} />
     </section>
   );
 };

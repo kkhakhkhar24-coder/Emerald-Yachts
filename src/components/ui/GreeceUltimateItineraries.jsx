@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import CrawlablePanels from './CrawlablePanels';
 
 /**
  * GreeceUltimateItineraries
@@ -54,7 +55,7 @@ const GreeceUltimateItineraries = ({ blueprints = [] }) => {
                 </h3>
               </div>
               <a
-                href="https://tripsandships.com/contact/"
+                href="https://www.tripsandships.com/contact"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold uppercase tracking-wider transition-all shadow-md self-start md:self-auto"
@@ -86,6 +87,7 @@ const GreeceUltimateItineraries = ({ blueprints = [] }) => {
           </div>
         )}
       </div>
+      <CrawlablePanels items={blueprints} activeIndex={activePlan} />
     </section>
   );
 };

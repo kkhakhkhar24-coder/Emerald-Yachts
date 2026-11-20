@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import FadeIn from './FadeIn';
 import { Users, Building, HelpCircle, Check, ArrowRight } from 'lucide-react';
+import CrawlablePanels from './CrawlablePanels';
 
 const GroupVsCharterDecisionMatrix = ({ data }) => {
   const [activeStage, setActiveStage] = useState(0);
@@ -91,6 +92,7 @@ const GroupVsCharterDecisionMatrix = ({ data }) => {
           </div>
         </div>
       </div>
+      <CrawlablePanels items={data.stages} activeIndex={activeStage} />
     </section>
   );
 };

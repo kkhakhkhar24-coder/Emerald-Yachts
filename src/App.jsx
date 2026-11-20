@@ -223,6 +223,49 @@ import TravelSafety from "./pages/LuxurySoloWomensTravel/TravelSafety/TravelSafe
 import SingleSupplementCruises from "./pages/LuxurySoloWomensTravel/SingleSupplementCruises/SingleSupplementCruises";
 import SoloVsGroupTravel from "./pages/LuxurySoloWomensTravel/SoloVsGroupTravel/SoloVsGroupTravel";
 import SoloAfricanSafaris from "./pages/LuxurySoloWomensTravel/SoloAfricanSafaris/SoloAfricanSafaris";
+
+// ─── Crystal Cruises Pages ────────────────────────────────────────────────────
+import CrystalCruises from "./pages/CrystalCruises/CrystalCruisesGuide/CrystalCruisesGuide";
+import CrystalCruisesCost from "./pages/CrystalCruises/CrystalCruisesCost/CrystalCruisesCost";
+import CrystalCruisesWhatsIncluded from "./pages/CrystalCruises/CrystalCruisesWhatsIncluded/CrystalCruisesWhatsIncluded";
+import CrystalCruisesWorthIt from "./pages/CrystalCruises/CrystalCruisesWorthIt/CrystalCruisesWorthIt";
+import CrystalSerenityVsSymphony from "./pages/CrystalCruises/CrystalSerenityVsSymphony/CrystalSerenityVsSymphony";
+import CrystalVsRegent from "./pages/CrystalCruises/CrystalVsRegent/CrystalVsRegent";
+import CrystalDressCode from "./pages/CrystalCruises/CrystalDressCode/CrystalDressCode";
+import CrystalSuites from "./pages/CrystalCruises/CrystalSuites/CrystalSuites";
+import CrystalDining from "./pages/CrystalCruises/CrystalDining/CrystalDining";
+import CrystalVsSilversea from "./pages/CrystalCruises/CrystalVsSilversea/CrystalVsSilversea";
+import CrystalSerenityGuide from "./pages/CrystalCruises/CrystalSerenityGuide/CrystalSerenityGuide";
+import CrystalSymphonyGuide from "./pages/CrystalCruises/CrystalSymphonyGuide/CrystalSymphonyGuide";
+import CrystalCruisesItineraries from "./pages/CrystalCruises/CrystalCruisesItineraries/CrystalCruisesItineraries";
+
+// ─── Princess Cruises Pages ───────────────────────────────────────────────────
+import PrincessCruisesGuide from "./pages/PrincessCruises/PrincessCruisesGuide/PrincessCruisesGuide";
+import PrincessCruisesCost from "./pages/PrincessCruises/PrincessCruisesCost/PrincessCruisesCost";
+import PrincessCruisesWhatsIncluded from "./pages/PrincessCruises/PrincessCruisesWhatsIncluded/PrincessCruisesWhatsIncluded";
+import PrincessCruisesPlusVsPremier from "./pages/PrincessCruises/PrincessCruisesPlusVsPremier/PrincessCruisesPlusVsPremier";
+import PrincessCruisesPlus from "./pages/PrincessCruises/PrincessCruisesPlus/PrincessCruisesPlus";
+import PrincessCruisesPremier from "./pages/PrincessCruises/PrincessCruisesPremier/PrincessCruisesPremier";
+import PrincessCruisesShips from "./pages/PrincessCruises/PrincessCruisesShips/PrincessCruisesShips";
+import PrincessCruisesShipClasses from "./pages/PrincessCruises/PrincessCruisesShipClasses/PrincessCruisesShipClasses";
+import PrincessCruisesStateroomsSuites from "./pages/PrincessCruises/PrincessCruisesStateroomsSuites/PrincessCruisesStateroomsSuites";
+import PrincessCruisesBalconyVsMiniSuite from "./pages/PrincessCruises/PrincessCruisesBalconyVsMiniSuite/PrincessCruisesBalconyVsMiniSuite";
+import PrincessCruisesReserveVsSanctuary from "./pages/PrincessCruises/PrincessCruisesReserveVsSanctuary/PrincessCruisesReserveVsSanctuary";
+import PrincessCruisesAlaska from "./pages/PrincessCruises/PrincessCruisesAlaska/PrincessCruisesAlaska";
+import PrincessCruisesAlaskaCruisetours from "./pages/PrincessCruises/PrincessCruisesAlaskaCruisetours/PrincessCruisesAlaskaCruisetours";
+import PrincessCruisesVoyageOfGlaciersVsInsidePassage from "./pages/PrincessCruises/PrincessCruisesVoyageOfGlaciersVsInsidePassage/PrincessCruisesVoyageOfGlaciersVsInsidePassage";
+import PrincessCruisesAlaskaDeparturePorts from "./pages/PrincessCruises/PrincessCruisesAlaskaDeparturePorts/PrincessCruisesAlaskaDeparturePorts";
+import PrincessCruisesDining from "./pages/PrincessCruises/PrincessCruisesDining/PrincessCruisesDining";
+import PrincessCruisesDrinkPackages from "./pages/PrincessCruises/PrincessCruisesDrinkPackages/PrincessCruisesDrinkPackages";
+import PrincessCruisesWiFi from "./pages/PrincessCruises/PrincessCruisesWiFi/PrincessCruisesWiFi";
+import PrincessCruisesMedallionApp from "./pages/PrincessCruises/PrincessCruisesMedallionApp/PrincessCruisesMedallionApp";
+import PrincessCruisesGratuities from "./pages/PrincessCruises/PrincessCruisesGratuities/PrincessCruisesGratuities";
+import PrincessCruisesDressCode from "./pages/PrincessCruises/PrincessCruisesDressCode/PrincessCruisesDressCode";
+import PrincessCruisesVsCelebrity from "./pages/PrincessCruises/PrincessCruisesVsCelebrity/PrincessCruisesVsCelebrity";
+import PrincessCruisesVsHollandAmerica from "./pages/PrincessCruises/PrincessCruisesVsHollandAmerica/PrincessCruisesVsHollandAmerica";
+import PrincessCruisesVsRoyalCaribbean from "./pages/PrincessCruises/PrincessCruisesVsRoyalCaribbean/PrincessCruisesVsRoyalCaribbean";
+import PrincessCruisesFamilies from "./pages/PrincessCruises/PrincessCruisesFamilies/PrincessCruisesFamilies";
+import PrincessCruisesAccessibility from "./pages/PrincessCruises/PrincessCruisesAccessibility/PrincessCruisesAccessibility";
 function App() {
   return (
     <HelmetProvider>
@@ -1203,6 +1246,49 @@ function App() {
             path="/luxury-solo-womens-travel/solo-african-safaris"
             element={<SoloAfricanSafaris />}
           />
+
+          {/* --- Crystal Cruises Pages --- */}
+          <Route path="/crystal-cruises" element={<CrystalCruises />} />
+          <Route path="/crystal-cruises/cost" element={<CrystalCruisesCost />} />
+          <Route path="/crystal-cruises/whats-included" element={<CrystalCruisesWhatsIncluded />} />
+          <Route path="/crystal-cruises/is-it-worth-it" element={<CrystalCruisesWorthIt />} />
+          <Route path="/crystal-cruises/serenity-vs-symphony" element={<CrystalSerenityVsSymphony />} />
+          <Route path="/crystal-cruises/crystal-vs-regent" element={<CrystalVsRegent />} />
+          <Route path="/crystal-cruises/dress-code" element={<CrystalDressCode />} />
+          <Route path="/crystal-cruises/suites" element={<CrystalSuites />} />
+          <Route path="/crystal-cruises/dining" element={<CrystalDining />} />
+          <Route path="/crystal-cruises/crystal-vs-silversea" element={<CrystalVsSilversea />} />
+          <Route path="/crystal-cruises/crystal-serenity" element={<CrystalSerenityGuide />} />
+          <Route path="/crystal-cruises/crystal-symphony" element={<CrystalSymphonyGuide />} />
+          <Route path="/crystal-cruises/itineraries" element={<CrystalCruisesItineraries />} />
+
+          {/* --- Princess Cruises Pages --- */}
+          <Route path="/princess-cruises" element={<PrincessCruisesGuide />} />
+          <Route path="/princess-cruises/cost" element={<PrincessCruisesCost />} />
+          <Route path="/princess-cruises/whats-included" element={<PrincessCruisesWhatsIncluded />} />
+          <Route path="/princess-cruises/plus-vs-premier" element={<PrincessCruisesPlusVsPremier />} />
+          <Route path="/princess-cruises/princess-plus" element={<PrincessCruisesPlus />} />
+          <Route path="/princess-cruises/princess-premier" element={<PrincessCruisesPremier />} />
+          <Route path="/princess-cruises/ships" element={<PrincessCruisesShips />} />
+          <Route path="/princess-cruises/ship-classes" element={<PrincessCruisesShipClasses />} />
+          <Route path="/princess-cruises/staterooms-and-suites" element={<PrincessCruisesStateroomsSuites />} />
+          <Route path="/princess-cruises/balcony-vs-mini-suite" element={<PrincessCruisesBalconyVsMiniSuite />} />
+          <Route path="/princess-cruises/reserve-vs-sanctuary-collection" element={<PrincessCruisesReserveVsSanctuary />} />
+          <Route path="/princess-cruises/alaska" element={<PrincessCruisesAlaska />} />
+          <Route path="/princess-cruises/alaska-cruisetours" element={<PrincessCruisesAlaskaCruisetours />} />
+          <Route path="/princess-cruises/voyage-of-the-glaciers-vs-inside-passage" element={<PrincessCruisesVoyageOfGlaciersVsInsidePassage />} />
+          <Route path="/princess-cruises/alaska-departure-ports" element={<PrincessCruisesAlaskaDeparturePorts />} />
+          <Route path="/princess-cruises/dining" element={<PrincessCruisesDining />} />
+          <Route path="/princess-cruises/drink-packages" element={<PrincessCruisesDrinkPackages />} />
+          <Route path="/princess-cruises/wifi" element={<PrincessCruisesWiFi />} />
+          <Route path="/princess-cruises/medallion-and-app" element={<PrincessCruisesMedallionApp />} />
+          <Route path="/princess-cruises/gratuities" element={<PrincessCruisesGratuities />} />
+          <Route path="/princess-cruises/dress-code" element={<PrincessCruisesDressCode />} />
+          <Route path="/princess-cruises/princess-vs-celebrity" element={<PrincessCruisesVsCelebrity />} />
+          <Route path="/princess-cruises/princess-vs-holland-america-alaska" element={<PrincessCruisesVsHollandAmerica />} />
+          <Route path="/princess-cruises/princess-vs-royal-caribbean" element={<PrincessCruisesVsRoyalCaribbean />} />
+          <Route path="/princess-cruises/families" element={<PrincessCruisesFamilies />} />
+          <Route path="/princess-cruises/accessibility" element={<PrincessCruisesAccessibility />} />
         </Routes>
       </BrowserRouter>
     </HelmetProvider>
