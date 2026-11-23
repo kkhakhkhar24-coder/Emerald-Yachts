@@ -292,7 +292,7 @@ function App() {
           ></Route>
           <Route path="/luxury-travel" element={<LuxuryTravel />}></Route>
           <Route
-            path="/ScenicvsEmeraldYachts"
+            path="/scenic-vs-emerald-yachts"
             element={<ScenicvsEmeraldYachts />}
           ></Route>
           <Route

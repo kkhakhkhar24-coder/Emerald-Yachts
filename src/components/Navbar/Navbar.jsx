@@ -67,7 +67,7 @@ const Navbar = () => {
               <NavLink to="/scenic-vs-silversea-antarctica">
                 Scenic vs Silversea Antarctica
               </NavLink>
-              <NavLink to="/ScenicvsEmeraldYachts">
+              <NavLink to="/scenic-vs-emerald-yachts">
                 Scenic vs Emerald Yachts
               </NavLink>
               <NavLink to="/DrakePassagePage">The Drake Passage</NavLink>
@@ -2025,7 +2025,7 @@ const Navbar = () => {
             <NavLink to="/scenic-vs-silversea-antarctica" onClick={toggleMenu}>
               Scenic vs Silversea Antarctica
             </NavLink>
-            <NavLink to="/ScenicvsEmeraldYachts" onClick={toggleMenu}>
+            <NavLink to="/scenic-vs-emerald-yachts" onClick={toggleMenu}>
               Scenic vs Emerald Yachts
             </NavLink>
             <NavLink to="/DrakePassagePage" onClick={toggleMenu}>
